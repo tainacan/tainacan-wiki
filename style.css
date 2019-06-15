@@ -1,0 +1,42 @@
+/* Body typography */
+body {
+    font-family: Roboto,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+
+/* Sidebar Logo */
+.app-name-link img {
+    padding: 24px 36px;
+}
+
+/* Navbar menu */
+.app-nav li ul {
+    border-radius: 0;
+    padding: 0;
+}
+
+/* Headings */
+.markdown-section h1 {
+    border-bottom: 2px solid #298596;
+}
+.markdown-section h1 a>span {
+    color: #01295c;
+}
+.markdown-section h1 a:hover {
+    color: #01295c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.markdown-section .anchor span {
+    color: #01295c;
+}
+
+/* Tabs */
+.docsify-tabs__tab {
+    border: none;
+    cursor: pointer;
+}
+.docsify-tabs__tab.docsify-tabs__tab--active {
+    box-shadow: none;
+    border-bottom: 3px solid var(--docsifytabs-tab-highlight-color);
+}
+
