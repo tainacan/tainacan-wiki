@@ -4,8 +4,11 @@
     * [F.A.Q.](faq.md)
     * [Introduction to Tainacan](introduction-to-tainacan.md)
 * Install and Setup
+    * **Prerequisites**
+        * [Xampp for Windows](/pt-br/xampp)
+        * [Xampp for Linux](/)
     * [WordPress :link:](http://codex.wordpress.org/pt-br:P%C3%A1gina_Inicial ':ignore')
-    * [Plugin](plugin.md)
+    * [Plugin](/pt-br/tainacan)
     * [Theme](theme.md)
     * [Optimization](optimization.md)
 * Using Tainacan
