@@ -40,3 +40,23 @@ body {
     border-bottom: 3px solid var(--docsifytabs-tab-highlight-color);
 }
 
+/* Sidebar */
+.sidebar ul li a,
+.sidebar ul li p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar ul li ul a,
+.sidebar ul li ul p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.sidebar ul li.active > a {
+    border-right: 4px solid;
+}
+.sidebar ul li ul {
+    margin-bottom: 20px;
+}
+.sidebar ul li .emoji {
+    font-size: 1rem;
+}

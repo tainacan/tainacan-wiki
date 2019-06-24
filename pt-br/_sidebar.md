@@ -18,7 +18,7 @@
     * [Exporters](/pt-br/exporters.md)
     * [Bulk edition](/pt-br/bulk-edition)
     * [User permission](/pt-br/user-permission.md)
-* [For Developers](/pt-br//dev/)
+* [For Developers](/pt-br/dev/)
 * About Tainacan
     * [Oficial website :link:](https://tainacan.org/ ':ignore')
     * [Publications :link:](http://pesquisa.medialab.ufg.br/artigos/ ':ignore')
