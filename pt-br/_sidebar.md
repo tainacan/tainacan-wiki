@@ -1,8 +1,13 @@
 * [PÁGINA INICIAL](/pt-br/README.md)
- 
+
 * Básico
     * [Perguntas Frequentes](/pt-br/faq.md)
     * [Introdução ao Tainacan](/pt-br/introduction-to-tainacan.md)
+* Tutoriais
+    * **Windows**
+        * [Xampp](xampp)
+        * [Wordpress](wordpress)
+        * [Tainacan](tainacan)
 * Install and Setup
     * [WordPress :link:](http://codex.wordpress.org/ ':ignore')
     * [Plugin](/pt-br/plugin.md)
