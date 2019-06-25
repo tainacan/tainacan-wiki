@@ -1,6 +1,10 @@
-/* Body typography */
+/* Body, typography and containers */
 body {
     font-family: Roboto,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+.markdown-section {
+    padding-top: 5px;
+    max-width: 940px;
 }
 
 /* Sidebar Logo */
@@ -12,6 +16,9 @@ body {
 .app-nav li ul {
     border-radius: 0;
     padding: 0;
+}
+.app-nav ul li>p {
+    font-size: 16px;
 }
 
 /* Headings */
