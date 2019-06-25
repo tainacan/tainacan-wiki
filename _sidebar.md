@@ -3,14 +3,12 @@
 * Basics
     * [F.A.Q.](faq.md)
     * [Introduction to Tainacan](introduction-to-tainacan.md)
-* Install and Setup
-    * **Prerequisites**
-        * [Xampp for Windows](/pt-br/xampp)
-        * [Xampp for Linux](/)
-    * [WordPress :link:](http://codex.wordpress.org/pt-br:P%C3%A1gina_Inicial ':ignore')
-    * [Plugin](/pt-br/tainacan)
+* [**Install and Setup**](install.md)
     * [Theme](theme.md)
     * [Optimization](optimization.md)
+    * [Installing the plugin](/tainacan)
+    * [Installing the theme](/wordpress)
+    * [Installing the Environment](/xampp)
 * Using Tainacan
     * [Collections](collections.md)
     * [Items](items.md)
