@@ -1,143 +1,140 @@
-# ENGLISH - Como instalar o wordpress no windows #
+# How to install WordPress on windows #
 
-## Baixando ##
+## Downloading ##
 
-Para iniciar, vamos até o link https://br.wordpress.org/download/ e vamos baixar o **wordpress** para **windows**.
+To start, let's go to https://www.wordpress.org/download/ and download **wordpress** for **windows**.
 
 ![](/pt-br/assets/images/wordpress_01.png)
 
-Na figura acima, clique em **Baixar o WordPress 5.2.1** para fazer o download. Ao concluir o processo, vamos iniciar a instalação descompactando o arquivo baixado.
+In the figure above, click on **Download WordPress 5.2.1** to download. At the end of the process, we will start the installation by unpacking the downloaded file.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_02.png)
-**Descompactando**
+**Unpacking**
 
-No arquivo compactado, clique com o botão direito e depois em **Extrair tudo…**. Aguarde a descompactação terminar.
+Right-click on the compressed file and then click **Extract All...**. Wait for the unpacking to finish.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_03.png)
 
-Abra a pasta descompactada, clique com o botão direito na pasta **wordpress** e depois em **Copiar**.
+Open the unzipped folder, right-click on the **wordpress** folder, and then click **Copy**.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_04.png)
 
-Agora vá para **C:/xampp/htdocs**, clique com o botão direito dentro da pasta e depois clique em **Colar**.
+Now go to **C:/xampp/htdocs**, right-click inside the folder and then click **Paste**.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_05.png)
 
-Veja na imagem acima a pasta, já com o processo de transferência concluído.
+See in the image above the folder with the transfer process completed.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_06.png)
 
-Agora, para este projeto, nós iremos mudar o nome da pasta **wordpress** para **projeto_teste**. Fique à vontade para colocar o nome que achar melhor nesta pasta, de preferência o nome do projeto que você está criando.
+Now, for this project, we will change the name of the **wordpress** folder to **project_test**. Feel free to put the name you like most in this folder, preferably the name of the project you are creating.
 
 <br><br>
 
-## Criando um novo banco de dados ##
+## Creating a new database ##
 
 ![](/pt-br/assets/images/wordpress_07.png)
 
-Pronto. O **wordpress** já foi renomeado e está no local certo. Agora é preciso configurá-lo. Para isso, precisamos criar um banco de dados que será utilizado por ele. Para isso, abra uma nova aba no seu navegador e digite **localhost/phpmyadmin**
+OK. **Wordpress** has already been renamed and is in the right place. Now you have to configure it. To do this, we need to create a database that will be used by it. So open a new tab in your browser and type **localhost/phpmyadmin**.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_08.png)
 
-Essa é a tela do **phpmyadmin**. Aqui é possível alterar os bancos de dados utilizados nos projetos contidos no **XAMPP**. Muito cuidado para não causar estragos aqui. Para criar um novo banco, clique no botão **New** (**Novo**), na lista da esquerda.
+This is the **phpmyadmin** screen. Here you can change the databases used in the projects contained in **XAMPP**. Be careful to not cause damage here. To create a new bank, click the **New** button in the list on the left.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_09.png)
 
-Nesta tela, vamos digitar o nome do banco de dados no campo **Nome da base de dados**. Para este exemplo, vamos colocar o nome **banco_teste**, mas você pode colocar o nome que quiser aqui, de preferência o nome do projeto que você está criando. Ao terminar de digitar, clique no botão **Criar**.
+On this screen, enter the database name in the **Database name** field. For this example, we will use the name **bank_test**, but you can put the name you like, preferably the name of the project you are creating. When you are finished typing, click the **Create** button.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_10.png)
 
-Esta tela mostra que o banco foi criado e está vazio. Repare o nome do mesmo na lista da esquerda.
+This screen shows that the database has been created and is empty. Notice its name in the list on the left.
 
 <br><br>
 
-## Conectando o banco ao projeto ##
+## Connecting the bank to the project ##
 
 ![](/pt-br/assets/images/wordpress_11.png)
 
-Agora abriremos uma nova aba, no seguinte endereço: **localhost/projeto_teste**
-Como é a primeira vez que abriremos o site, ele irá realizar as últimas configurações.
+Now we will open a new tab, at the following address: **localhost/project_test**
+As it is the first time we open the site, it will perform the latest settings.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_12.png)
 
-Como já criamos o banco de dados, nós podemos clicar em **Vamos lá!** Para dar continuidade à instalação.
+Since we have created the database, we can click on **Come on!** to continue the installation.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_13.png)
 
-Nesta tela, você deve inserir as seguintes informações:
-1. O nome do **banco** que você acabou de criar;
-2. O **nome de usuário** utilizado para acessar o banco. O **Xampp** normalmente utiliza o nome de usuário **root**.
-3. A **senha** utilizada para acessar o banco. O **Xampp** normalmente deixa a senha em branco.
-4. **Servidor do banco de dados** e **Prefixo da tabela** não precisam ser alterados.
+On this screen, you must enter the following information:
+1. The name of the **bank** you just created;
+2. The **username** used to access the bank. **Xampp** normally uses **root** as username.
+3. The **password** used to access the bank. **Xampp** usually leaves the password blank.
+4. **Database Server** and **Table Prefix** do not need to be changed.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_14.png)
 
-No nosso caso, os dados ficaram como se vê na imagem acima. Ao final, clique no botão **Enviar**, no final da página.
+In our case, the data is as shown in the image above. At the end, click on the **Submit** button at the bottom of the page.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_15.png)
 
-Essa tela informa que esta parte da instalação foi concluída. Clique no botão **Instalar**, conforme imagem acima.
+This screen says that this part of the installation is complete. Click on the **Install** button, as shown above.
 
 <br><br>
 
-## Últimas informações ##
+## Latest Information ##
 
 ![](/pt-br/assets/images/wordpress_16.png)
 
-Se tudo der certo, esta tela surgirá. Aqui você irá definir dados como **Título do site**, **Nome de usuário** e **Senha** que serão utilizados para acessar o **Painel de Controle** (**admin**), **e-mail** do administrador do site e opção de **visibilidade** em sites como o **google**. Digite todos os campos da forma que achar melhor e em seguida, clique em **Instalar Wordpress**, no final da página.
+If all goes well, this screen will appear. Here you will define data such as **Site Title**, **Username** and **Password** that will be used to access the **Control Panel** (**admin**), **e-mail** from the site administrator and **visibility** option on sites such as **google**. Enter all the fields as you think better, and then click on **Install Wordpress** at the bottom of the page.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_17.png)
 
-Tudo pronto. Agora o **Wordpress** está instalado. Clique em **Acessar** para visualizar o site.
+OK, all ready. **Wordpress** is now installed. Click **Sign in** to view the site.
 
 <br><br>
 
-## O admin ##
+## The admin ##
 
 ![](/pt-br/assets/images/wordpress_18.png)
 
-A tela de login do **Painel de Controle** surgirá, como na imagem acima. Digite o **Nome de usuário** que escolheu e a **Senha** para poder acessar.
+The login screen of the **Control Panel** will appear, as in the image above. Enter the **username** you have chosen and the **password** to access.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_19.png)
 
-Este é o **Painel de Controle** do **Wordpress**. Tudo o que há no site pode ser alterado nas opções deste painel. Para visualizar o site, clique no título escolhido, no topo, à esquerda, conforme marcado na imagem acima.
+This is the **Wordpress Control Panel**. Everything on the site can be changed in the options in this panel. To view the site, click on the chosen title at the top left, as marked in the image above.
 
 <br><br>
 
 ![](/pt-br/assets/images/wordpress_20.png)
-**A home do wordpress**
+**The Wordpress home**
 
-Pronto. Nas próximas vezes, caso prefira acessar diretamente o site, basta visitar o endereço **localhost/projeto_teste** (ou o nome escolhido).
-Para acessar diretamente o **Painel de Controle**, basta visitar o endereço **localhost/projeto_teste/wp-admin** (ou o nome escolhido no lugar de **projeto_teste**)
-
-A seguir, começaremos a instalar o plugin do **Tainacan**.
+That's it. In the next times, if you prefer to access the site directly, just visit the address **localhost/project_test** (or the name chosen). To access the **Control Panel** directly, simply visit the address **localhost/project_test/wp-admin** (or the chosen name instead of **project_test**)
 
 <br><br>
