@@ -1,6 +1,7 @@
 /* Body, typography and containers */
 body {
     font-family: Roboto,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    color: #454647;
 }
 .markdown-section {
     padding-top: 5px;
@@ -74,8 +75,13 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     border-right: 4px solid;
 }
 .sidebar ul li ul {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 .sidebar ul li .emoji {
     font-size: 1rem;
+}
+
+/* Blockquote */
+.markdown-section blockquote p {
+    font-weight: 500;
 }

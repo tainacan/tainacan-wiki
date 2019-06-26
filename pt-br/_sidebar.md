@@ -2,7 +2,7 @@
  
 * Básico
     * [Perguntas Frequentes](/pt-br/faq.md)
-    * [Introdução ao Tainacan](/pt-br/introduction-to-tainacan.md)
+    * [Introdução ao Tainacan](/pt-br/introduction.md)
 * Install and Setup
     * [WordPress :link:](http://codex.wordpress.org/ ':ignore')
     * [Plugin](/pt-br/plugin.md)
