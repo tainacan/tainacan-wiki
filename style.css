@@ -21,6 +21,18 @@ body {
     font-size: 16px;
 }
 
+/* Cover page */
+section.cover .cover-main h1 {
+    margin: 1.75rem 0 2.5rem;
+}
+section.cover .cover-main ul {
+    margin: 3.5rem auto;
+}
+section.cover .cover-main > p:last-child a:last-child:hover {
+    color: white;
+    opacity: 1;
+}
+
 /* Headings */
 .markdown-section h1 {
     border-bottom: 2px solid #298596;
