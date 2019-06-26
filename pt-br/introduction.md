@@ -129,7 +129,6 @@ Termos também podem ter uma descrição, um ícone ou uma imagem que o represen
 > [Consulte o tópico "Tipos de Metadados" para saber como.](#tipos-de-metadados)
 
 ### Vídeo Tutorial: Filtros e Taxonomias
-{{#ev:youtube|https://youtu.be/y2WIzDyzKSs?list=PLteLL13jy2zAZx3k2Dp1kNFv4B0kKY2CM&|||||start=17}}
 
 <iframe
     width="560"

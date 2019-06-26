@@ -87,6 +87,23 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 }
 
 /* Content ----------------------- */
+/* DETAILS */
+.content .markdown-section details {
+    padding:  0 1rem 0 1rem;
+    margin-bottom: 0.5rem;
+}
+.content .markdown-section details summary {
+    padding: 0.5rem;
+    margin-left: -1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #44638e;
+    font-weight: 500;
+}
+.content .markdown-section details summary:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+}
+
 /* CODE */
 .content .markdown-section code {
 	color: #454647;

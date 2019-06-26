@@ -13,6 +13,7 @@ As coleções também podem ter coleções "filhas", que vão herdar seus metada
 <!-- tabs:start -->
 
 #### ** Criar **
+
 ## Criar Coleções
 1. Acesse o painel de controle do "WordPress";
 2. Na barra lateral esquerda, clique em "Tainacan";
