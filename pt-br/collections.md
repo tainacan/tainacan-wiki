@@ -10,7 +10,9 @@ Para cada coleção você pode configurar um conjunto diferente de metadados, en
 
 As coleções também podem ter coleções "filhas", que vão herdar seus metadados e a partir disso podem também é possível adicionar outros metadados ao seu conjunto.
 
-----
+<!-- tabs:start -->
+
+#### ** Criar **
 ## Criar Coleções
 1. Acesse o painel de controle do "WordPress";
 2. Na barra lateral esquerda, clique em "Tainacan";
@@ -46,12 +48,13 @@ Coleções criadas com metadados pré-definidos contam com um conjunto de metada
 
 Consulte a seção de [[Ações em Massa | Importadores do Tainacan]] para saber mais sobre a criação itens e termos em massa.
 
-----
+#### ** Editar **
 ## Editar Coleções
 1. Acesse o painel de controle do "WordPress";
 2. Na barra lateral esquerda, clique em <span style="color: #298596">"Tainacan"</span>;
 3. Na seção "Coleções" clique na engrenagem à direita para editar a coleção desejada.
-----
+
+#### ** Excluir **
 ## Excluir Coleções
 1. Acesse o painel de controle do "WordPress";
 2. Na barra lateral esquerda, clique em <span style="color: #298596">"Tainacan"</span>;
@@ -71,3 +74,4 @@ Consulte a seção de [[Ações em Massa | Importadores do Tainacan]] para saber
 
 (Consulte [[Registro de atividades]] para saber mais)
 
+<!-- tabs:end -->
