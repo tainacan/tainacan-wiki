@@ -14,6 +14,7 @@
     * [Metadata](metadata.md)
     * [Filters](filters.md)
     * [Taxonomies](taxonomies.md)
+    * [Activities](/pt-br/activities.md)
     * [Importers](importers.md)
     * [Exporters](exporters.md)
     * [Bulk edition](bulk-edition)
