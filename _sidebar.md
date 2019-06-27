@@ -18,7 +18,7 @@
     * [Activities](/pt-br/activities.md)
     * [Importers](importers.md)
     * [Exporters](exporters.md)
-    * [Bulk edition](bulk-edition)
+    * [Bulk actions](bulk-actions)
     * [User permission](user-permission.md)
 * [For Developers](/dev/)
 * About Tainacan

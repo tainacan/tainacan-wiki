@@ -21,9 +21,9 @@ As coleções também podem ter coleções **filhas**, que vão herdar seus meta
   1. Nomeie a coleção no campo **Nome**;
   2. Defina seu status entre **público**, **privado**, **rascunho** ou **lixo**. 
     * **Público**: Coleções definidas como públicas serão visualizadas assim que criadas. 
-    * **Rascunho**: Coleções *rascunho* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: editores, moderadores e administradores). (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais). 
+    * **Rascunho**: Coleções *rascunho* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: editores, moderadores e administradores). (Consulte [Permissões de Usuários](/pt-br/users) para saber mais). 
     * **Privado**: Coleções *privadas* aparecem apenas para seu criador e moderadores desta coleção. 
-    * **Lixo**: Coleções no *lixo* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: *editores*, *moderadores* e *administradores*). (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais). 
+    * **Lixo**: Coleções no *lixo* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: *editores*, *moderadores* e *administradores*). (Consulte [Permissões de Usuários](/pt-br/users) para saber mais). 
   3. Defina uma miniatura e uma imagem da *header* com imagens que representem o conteúdo que fará parte dessa coleção. 
     * A **imagem de miniatura** representará a coleção em diferentes ambientes no plugin e no tema do repositório (assim como uma foto de perfil no *Facebook*)
     * A **imagem da header**, ou cabeçalho, aparece na visualização da coleção, dependendo das configurações e do layout adotado. o tema padrão do *Tainacan* exibe a imagem da *header* na página da coleção.  
@@ -33,7 +33,7 @@ As coleções também podem ter coleções **filhas**, que vão herdar seus meta
   6. Escolha uma coleção raiz para herdar metadados de outra coleção.  (Consulte [Metadados](/pt-br/metadada) para saber mais) 
   7. Selecione se deseja ou não **Permitir Comentários** na coleção, os comentários podem ser geridos na seção de comentários do painel do WordPress (saiba mais na [documentação do WordPress](https://codex.wordpress.org/pt-br:Painel_Coment%C3%A1rios). 
   8. No campo **Moderadores** é possível adicionar outros usuários para novas atribuições nesta coleção em específico:
-    * para adicionar moderadores digite ao menos as três primeiras letras do usuário e selecione na lista.  (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais)  
+    * para adicionar moderadores digite ao menos as três primeiras letras do usuário e selecione na lista.  (Consulte [Permissões de Usuários](/pt-br/users) para saber mais)  
   9. O campo **slug** permite alterar o final da URL desta coleção. Por padrão ela é criada a partir do Nome da Coleção, mas pode ser alterada neste campo. 
 5. Clique em uma das opções abaixo: (a coleção será criada com os parâmetros de privacidade definidos em **Status**).
   10. Clique em `Salvar e ir para Metadados` para acessar a configuração de metadados desta coleção. (Consulte [Metadados](/pt-br/metadada) para saber mais) 
@@ -67,7 +67,7 @@ Consulte a seção de [Ações em Massa](/pt-br/bulk-edition) e de [Importadores
 2. Na lista de coleções exibidas, clique na *engrenagem* à direita da coleção desejada;
   1. Edite a coleção alterando o *status* entre **público**, **privado**ou **rascunho**; 
     * **Público**: Coleções definidas como públicas serão visualizadas assim que criadas; 
-    * **Rascunho**: Coleções *rascunho* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: editores, moderadores e administradores). (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais) 
+    * **Rascunho**: Coleções *rascunho* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: editores, moderadores e administradores). (Consulte [Permissões de Usuários](/pt-br/users) para saber mais) 
     * **Privado**: Coleções privadas aparecem apenas para seu criador e moderadores desta coleção. 
 3. Na listagem de coleções da aba **Lixo" também é possível excluir a coleção permanentemente. 
 

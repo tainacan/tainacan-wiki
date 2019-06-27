@@ -113,7 +113,7 @@ Atualmente o Tainacan tem seis tipos de metadados e filtros por padrão, mas nov
     3. **URL Semântica**: URL da descrição semântica do metadado.
     4. **Status**: determina o nível de privacidade do metadado, por exemplo metadados para informações sensíveis, como Estado de conservação ou Valor da obra.
       * **Visível para todos**: são exibidos junto com o item, a depender do nível de privacidade deste item e a coleção a qual pertence.
-      * **Visível apenas para editores**: são exibidos apenas para administradores, editores e moderadores da coleção. (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais detalhes)
+      * **Visível apenas para editores**: são exibidos apenas para administradores, editores e moderadores da coleção. (Consulte [Permissões de Usuários](/pt-br/users) para saber mais detalhes)
     5. **Exibir na Listagem**: Determina se o metadado é apresentado por padrão na visualização dos itens.
       * Exibir por padrão: o metadado é exibido por padrão na visualização da coleção (dependendo do tipo de visualização) e na visualização do item
       * Não exibir por padrão: o metadado é não é exibido por padrão na visualização da coleção, mas pode ser selecionado para exibição pelo usuário (dependendo do tipo de visualização) e exibido na visualização do item

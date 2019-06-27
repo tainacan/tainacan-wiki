@@ -38,7 +38,7 @@ Um item sempre pertencerá a uma determinada coleção e, durante seu envio ser�
   * **URL**: permite a incorporação de links (*embed*) multimídia de vários sites (como *YouTube*, *Vimeo*, etc.);
 6. Determine a privacidade do item nas opções de visibilidade:
   * **Visível para todos**: o item será visualizado por todos (A depender dos parâmetros de privacidade da coleção);
-  * **Visível apenas para editores**: visível apenas para editores da coleção. (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais);
+  * **Visível apenas para editores**: visível apenas para editores da coleção. (Consulte [Permissões de Usuários](/pt-br/users) para saber mais);
 7. Defina uma miniatura para o item;
   1. Clique no ícone **lápis** no quadrado que ilustra a miniatura;
   2. Selecione o arquivo da *biblioteca de mídia* ou faça o *Upload* a partir do seu computador:

@@ -18,8 +18,8 @@
     * [Atividades](/pt-br/activities.md)
     * [Importadores](/pt-br/importers.md)
     * [Exportadores](/pt-br/exporters.md)
-    * [Edição em Massa](/pt-br/bulk-edition)
-    * [Permissões de Usuários](/pt-br/user-permission.md)
+    * [Ações em Massa](/pt-br/bulk-actions)
+    * [Usuários](/pt-br/users.md)
 * [Para Desenvolvedores](/pt-br/dev/)
 * Sobre o Tainacan
     * [Site Oficial :link:](https://tainacan.org/ ':ignore')
