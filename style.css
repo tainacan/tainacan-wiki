@@ -1,6 +1,11 @@
-/* Body typography */
+/* Body, typography and containers */
 body {
     font-family: Roboto,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    color: #454647;
+}
+.markdown-section {
+    padding-top: 5px;
+    max-width: 940px;
 }
 
 /* Sidebar Logo */
@@ -12,6 +17,21 @@ body {
 .app-nav li ul {
     border-radius: 0;
     padding: 0;
+}
+.app-nav ul li>p {
+    font-size: 16px;
+}
+
+/* Cover page */
+section.cover .cover-main h1 {
+    margin: 1.75rem 0 2.5rem;
+}
+section.cover .cover-main ul {
+    margin: 3.5rem auto;
+}
+section.cover .cover-main > p:last-child a:last-child:hover {
+    color: white;
+    opacity: 1;
 }
 
 /* Headings */
@@ -40,3 +60,218 @@ body {
     border-bottom: 3px solid var(--docsifytabs-tab-highlight-color);
 }
 
+/* Sidebar */
+.sidebar ul li a,
+.sidebar ul li p {
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar ul li ul a,
+.sidebar ul li ul p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.sidebar ul li.active > a {
+    border-right: 4px solid;
+}
+.sidebar ul li ul {
+    margin-bottom: 14px;
+}
+.sidebar ul li .emoji {
+    font-size: 1rem;
+}
+
+/* Blockquote */
+.markdown-section blockquote p {
+    font-weight: 500;
+}
+
+/* Content ----------------------- */
+/* DETAILS */
+.content .markdown-section details {
+    padding:  0 1rem 0 1rem;
+    margin-bottom: 0.5rem;
+}
+.content .markdown-section details summary {
+    padding: 0.5rem;
+    margin-left: -1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #44638e;
+    font-weight: 500;
+}
+.content .markdown-section details summary:hover {
+    cursor: pointer;
+    background: #f2f2f2;
+}
+
+/* CODE */
+.content .markdown-section code {
+	color: #454647;
+	background-color: #f2f2f2;
+	border: 1px solid #dbdbdb;
+	border-radius: 2px;
+	padding: 1px 4px;
+}
+
+/* UL LI not so special style */
+.content .markdown-section ul, 
+.content .markdown-section .content .markdown-section ul {
+	margin: .5em 0 .6em 1em;
+	list-style: none;
+}
+.content .markdown-section ul>li:before, 
+.content .markdown-section .content .markdown-section ul>li:before {
+	content: '\25a0';
+	padding-right: 0.75rem;
+	color: #01295c;
+}
+.content .markdown-section ul li ul li:before, 
+.content .markdown-section .content .markdown-section ul li ul li:before,
+.content .markdown-section ol li ul li:before, 
+.content .markdown-section .content .markdown-section ol li ul li:before {
+	content: '\1f790';
+	padding-right: 0.75rem;
+	color: #01295c;
+}
+.content .markdown-section ul li ul li ul li:before, 
+.content .markdown-section .content .markdown-section ul li ul li ul li:before,
+.content .markdown-section ul li ol li ul li:before, 
+.content .markdown-section .content .markdown-section ul li ol li ul li:before,
+.content .markdown-section ol li ol li ul li:before, 
+.content .markdown-section .content .markdown-section ol li ol li ul li:before,
+.content .markdown-section ol li ul li ul li:before, 
+.content .markdown-section .content .markdown-section ol li ul li ul li:before {
+	content: '\23fa';
+	padding-right: 0.75rem;
+	color: #298596;
+}
+.content .markdown-section ul li ul li ul li ul li:before, 
+.content .markdown-section .content .markdown-section ul li ul li ul li ul li:before,
+.content .markdown-section ul li ol li ul li ul li:before, 
+.content .markdown-section .content .markdown-section ul li ol li ul li ul li:before,
+.content .markdown-section ol li ol li ul li ul li:before, 
+.content .markdown-section .content .markdown-section ol li ol li ul li ul li:before,
+.content .markdown-section ol li ul li ul li ul li:before, 
+.content .markdown-section .content .markdown-section ol li ul li ul li ul li:before,
+
+.content .markdown-section ul li ul li ol li ul li ul li:before, 
+.content .markdown-section .content .markdown-section ul li ul li ol li ul li:before,
+.content .markdown-section ul li ol li ol li ul li:before, 
+.content .markdown-section .content .markdown-section ul li ol li ol li ul li:before,
+.content .markdown-section ol li ol li ol li ul li:before, 
+.content .markdown-section .content .markdown-section ol li ol li ol li ul li:before,
+.content .markdown-section ol li ul li ol li ul li:before, 
+.content .markdown-section .content .markdown-section ol li ul li ol li ul li:before {
+	content: '\1f786';
+	padding-right: 0.75rem;
+	color: #298596;
+}
+
+/* OL LI special style */
+.content .markdown-section li:before,
+.content .markdown-section .content .markdown-section li:before {
+	color: #298596;
+	font-weight: 600;
+}
+.content .markdown-section ol,
+.content .markdown-section .content .markdown-section ol {
+	padding: 0;
+	counter-reset: li-counter;
+	margin: 2em 0 1em 3em;
+	list-style-type: none;
+}
+.content .markdown-section ol>li ,
+.content .markdown-section .content .markdown-section ol>li {
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 1.5em;
+    min-height: 3em;
+}
+.content .markdown-section ol>li:before,
+.content .markdown-section .content .markdown-section ol>li:before {
+    position: absolute;
+    top: -4px;
+    left: -1.33em;
+    width: 2.125rem;
+    height: 2.125rem;
+    font-size: 1.125rem;
+    line-height: 2.1rem;
+    text-align: center;
+	color: #f5f5f5;
+	border-radius: 50%;
+	background-color: #4ea2ad;
+	content: counter(li-counter);
+	counter-increment: li-counter;
+	font-weight: 600;
+}
+/* Second Level */
+.content .markdown-section ol>li>ol,
+.content .markdown-section ul>li>ol,
+.content .markdown-section ol>li>ol>li>ol,
+.content .markdown-section ul>li>ul>li>ol,
+.content .markdown-section ol>li>ul>li>ol 
+.content .markdown-section .content .markdown-section ol>li>ol,
+.content .markdown-section .content .markdown-section ul>li>ol,
+.content .markdown-section .content .markdown-section ol>li>ol>li>ol,
+.content .markdown-section .content .markdown-section ul>li>ul>li>ol,
+.content .markdown-section .content .markdown-section ol>li>ul>li>ol {
+	padding: 0;
+	counter-reset: li-counter;
+	margin: 0.75em 0 0.6em 1em;
+	list-style-type: none;
+}
+.content .markdown-section ol>li>ol>li,
+.content .markdown-section ul>li>ol>li,
+.content .markdown-section ol>li>ol>li>ol>li,
+.content .markdown-section ul>li>ul>li>ol>li,
+.content .markdown-section ol>li>ul>li>ol>li, 
+.content .markdown-section .content .markdown-section ol>li>ol>li,
+.content .markdown-section .content .markdown-section ul>li>ol>li,
+.content .markdown-section .content .markdown-section ol>li>ol>li>ol>li,
+.content .markdown-section .content .markdown-section ul>li>ul>li>ol>li,
+.content .markdown-section .content .markdown-section ol>li>ul>li>ol>li {
+    position: initial;
+    margin-bottom: initial;
+    padding-left: initial;
+    min-height: initial;
+}
+.content .markdown-section ol>li>ol>li:before,
+.content .markdown-section ul>li>ol>li:before,
+.content .markdown-section ol>li>ol>li>ol>li:before,
+.content .markdown-section ul>li>ul>li>ol>li:before,
+.content .markdown-section ol>li>ul>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ol>li:before,
+.content .markdown-section .content .markdown-section ul>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ol>li>ol>li:before,
+.content .markdown-section .content .markdown-section ul>li>ul>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ul>li>ol>li:before {
+    position: initial;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+    font-size: initial;
+    line-height: initial;
+    text-align: initial;
+	color: #298596;
+	border-radius: initial;
+	background-color: initial;
+	content: counter(li-counter, lower-alpha);
+	counter-increment: li-counter;
+	font-weight: 600;
+	padding-right: 1rem;
+}
+.content .markdown-section ol>li>ol>li:before,
+.content .markdown-section ul>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ol>li:before,
+.content .markdown-section .content .markdown-section ul>li>ol>li:before  {
+	content: counter(li-counter, lower-alpha);
+}
+.content .markdown-section ol>li>ol>li>ol>li:before,
+.content .markdown-section ul>li>ul>li>ol>li:before,
+.content .markdown-section ol>li>ul>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ol>li>ol>li:before,
+.content .markdown-section .content .markdown-section ul>li>ul>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ul>li>ol>li:before {
+	content: counter(li-counter, lower-roman);
+}
