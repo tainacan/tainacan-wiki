@@ -3,12 +3,12 @@
 * Basics
     * [F.A.Q.](faq.md)
     * [Introduction to Tainacan](introduction-to-tainacan.md)
-* [**Install and Setup**](install.md)
-    * [Theme](theme.md)
-    * [Optimization](optimization.md)
-    * [Installing the plugin](/tainacan)
-    * [Installing the theme](/wordpress)
-    * [Installing the Environment](/xampp)
+* [**Install and Setup**](install)
+    * [Environment setup](xampp)
+    * [Install WordPress](wordpress)
+    * [Install the plugin](tainacan)
+    * [Install the theme](theme)
+    * [Optimization](optimization)
 * Using Tainacan
     * [Collections](collections.md)
     * [Items](items.md)
