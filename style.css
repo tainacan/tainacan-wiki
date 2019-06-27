@@ -119,6 +119,18 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 	border-radius: 2px;
 	padding: 1px 4px;
 }
+.content .markdown-section pre>code {
+    color: inherit;
+    background-color: inherit;
+    border: inherit;
+    border-radius: inherit;
+    padding: 1.5em 5px;
+}
+
+/* PRE */
+.content .markdown-section pre {
+    background-color: #e6f6f8;
+}
 
 /* TABLE */
 .content .markdown-section table {

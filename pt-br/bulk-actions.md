@@ -121,7 +121,7 @@
 
 ## Importar Itens
 
-Importe vários itens com metadados pré-configurados e valores preenchidos com o [Importador .csv](/pt-br/importers#importador-csv).
+Importe vários itens com metadados pré-configurados e valores preenchidos com o [Importador .csv](/pt-br/importers#importador-csv-items).
 
 ### Vídeo Tutorial: Importação de Itens
 
@@ -138,7 +138,7 @@ Importe vários itens com metadados pré-configurados e valores preenchidos com 
 
 ## Importar Taxonomias
 
-Crie taxonomias com vocabulários controlados e valores hierárquicos utilizando o [Importador de Vocabulário](/pt-br/importers#importador-de-vocabulário).
+Crie taxonomias com vocabulários controlados e valores hierárquicos utilizando o [Importador de Vocabulário](/pt-br/importers#importador-csv-de-vocabulários-taxonomias).
 
 ### Vídeo Tutorial: Importação de Termos e Taxonomias
 
