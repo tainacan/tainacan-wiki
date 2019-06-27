@@ -36,9 +36,9 @@ As coleções também podem ter coleções "filhas", que vão herdar seus metada
     * para adicionar moderadores digite ao menos as três primeiras letras do usuário e selecione na lista.  (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais)  
   9. O campo "slug" permite alterar o final da URL desta coleção. Por padrão ela é criada a partir do Nome da Coleção, mas pode ser alterada neste campo. 
 5. Clique em uma das opções abaixo: (a coleção será criada com os parâmetros de privacidade definidos em "Status").
-  10. Clique em `Salvar e ir para Metadados` para acessar a configuração de metadados desta coleção. (Consulte [[Metadados]] para saber mais) 
+  10. Clique em `Salvar e ir para Metadados` para acessar a configuração de metadados desta coleção. (Consulte [Metadados](/pt-br/metadada) para saber mais) 
   11. ou
-  12. Clique em `Salvar e ir para Filtros` para acessar a configuração de filtros desta coleção. (Consulte [[Filtros]] para saber mais); 
+  12. Clique em `Salvar e ir para Filtros` para acessar a configuração de filtros desta coleção. (Consulte [Filtros](/pt-br/filters) para saber mais); 
   13. Clique em `Concluir` para terminar a configuração desta nova coleção.
 
 Novas coleções podem ser criadas também com um modelo de metadados pré-definido ou importadas por fontes externas.
@@ -70,7 +70,7 @@ Consulte a seção de [Ações em Massa](/pt-br/bulk-edition) e de [Importadores
     * "Rascunho": Coleções "rascunho" serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: editores, moderadores e administradores). (Consulte [Permissões de Usuários](/pt-br/user-permission) para saber mais) 
     * "Privado": Coleções privadas aparecem apenas para seu criador e moderadores desta coleção. 
 3. Na listagem de coleções da aba "Lixo" também é possível excluir a coleção permanentemente. 
-  2. "Atenção": a exclusão da coleção implica também na exclusão de seus itens, metadados e informações desta coleção. Esta operação só poderá ser desfeita por administradores. (Consulte [[Registro de atividades]] para saber mais)
+  2. "Atenção": a exclusão da coleção implica também na exclusão de seus itens, metadados e informações desta coleção. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de atividades](/pt-br/activities) para saber mais)
   3. "Atenção": Exclua a coleção somente se tiver certeza de que não haverá perdas graves de informação. (Consulte [Registro de atividades](/pt-br/activities) para saber mais)
 
 <!-- tabs:end -->
