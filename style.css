@@ -81,12 +81,13 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     font-size: 1rem;
 }
 
-/* Blockquote */
-.markdown-section blockquote p {
-    font-weight: 500;
+/* Content ----------------------- */
+
+/* BLOCKQUOTE */
+.content .markdown-section blockquote p {
+    font-weight: 400;
 }
 
-/* Content ----------------------- */
 /* DETAILS */
 .content .markdown-section details {
     padding:  0 1rem 0 1rem;
@@ -104,6 +105,12 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     background: #f2f2f2;
 }
 
+/* EM e STRONG */
+.content .markdown-section em,
+.content .markdown-section strong {
+    color: #555758;
+}
+
 /* CODE */
 .content .markdown-section code {
 	color: #454647;
@@ -111,6 +118,24 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 	border: 1px solid #dbdbdb;
 	border-radius: 2px;
 	padding: 1px 4px;
+}
+
+/* TABLE */
+.content .markdown-section table {
+    font-size: 0.875rem;
+}
+.content .markdown-section table thead th {
+    border: 0px solid #f2f2f2;
+    border-bottom: 1px solid #cbcbcb;
+    text-align: left;
+}
+.content .markdown-section table thead tr {
+    border: none;
+}
+.content .markdown-section table td {
+    border: 1px solid #f2f2f2;
+    border-left: 0;
+    border-right: 0;
 }
 
 /* UL LI not so special style */
@@ -192,10 +217,10 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     position: absolute;
     top: -4px;
     left: -1.33em;
-    width: 2.125rem;
-    height: 2.125rem;
-    font-size: 1.125rem;
-    line-height: 2.1rem;
+    width: 2.0rem;
+    height: 2.0rem;
+    font-size: 1.0rem;
+    line-height: 2.0rem;
     text-align: center;
 	color: #f5f5f5;
 	border-radius: 50%;
