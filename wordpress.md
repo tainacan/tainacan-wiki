@@ -25,7 +25,7 @@ Open the unzipped folder, right-click on the **wordpress** folder, and then clic
 
 ![](/pt-br/assets/images/wordpress_04.png)
 
-Now go to **C:/xampp/htdocs**, right-click inside the folder and then click **Paste**.
+Now go to `C:/xampp/htdocs`, right-click inside the folder and then click **Paste**.
 
 <br><br>
 
@@ -45,7 +45,7 @@ Now, for this project, we will change the name of the **wordpress** folder to **
 
 ![](/pt-br/assets/images/wordpress_07.png)
 
-OK. **Wordpress** has already been renamed and is in the right place. Now you have to configure it. To do this, we need to create a database that will be used by it. So open a new tab in your browser and type **localhost/phpmyadmin**.
+OK. **Wordpress** has already been renamed and is in the right place. Now you have to configure it. To do this, we need to create a database that will be used by it. So open a new tab in your browser and type `localhost/phpmyadmin`.
 
 <br><br>
 
@@ -71,7 +71,7 @@ This screen shows that the database has been created and is empty. Notice its na
 
 ![](/pt-br/assets/images/wordpress_11.png)
 
-Now we will open a new tab, at the following address: **localhost/project_test**
+Now we will open a new tab, at the following address: `localhost/project_test`
 As it is the first time we open the site, it will perform the latest settings.
 
 <br><br>
@@ -135,6 +135,6 @@ This is the **Wordpress Control Panel**. Everything on the site can be changed i
 ![](/pt-br/assets/images/wordpress_20.png)
 **The Wordpress home**
 
-That's it. In the next times, if you prefer to access the site directly, just visit the address **localhost/project_test** (or the name chosen). To access the **Control Panel** directly, simply visit the address **localhost/project_test/wp-admin** (or the chosen name instead of **project_test**)
+That's it. In the next times, if you prefer to access the site directly, just visit the address `localhost/project_test` (or the name chosen). To access the **Control Panel** directly, simply visit the address `localhost/project_test/wp-admin` (or the chosen name instead of **project_test**)
 
 <br><br>

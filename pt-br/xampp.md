@@ -71,7 +71,7 @@ OBS: Esses dois serviços devem ser ativados sempre que o servidor for utilizado
 
 ![](/assets/images/xampp_11.png)
 
-Se tudo der certo, ambos os serviços ficarão verdes, como na imagem acima. Agora clique no botão Admin. O seu navegador principal (**Google Chrome**, **Firefox**, **Internet Explorer**... o que você tiver instalado na sua máquina) irá se abrir, com o endereço **localhost/dashboard** já digitado.
+Se tudo der certo, ambos os serviços ficarão verdes, como na imagem acima. Agora clique no botão Admin. O seu navegador principal (**Google Chrome**, **Firefox**, **Internet Explorer**... o que você tiver instalado na sua máquina) irá se abrir, com o endereço `localhost/dashboard` já digitado.
 
 <br><br>
 
@@ -85,7 +85,7 @@ Se a instalação tiver corrido sem problemas, a tela acima aparecerá. Agora qu
 
 ![](/assets/images/xampp_13.png)
 
-Na imagem acima, é possível ver o endereço da pasta: **C:/xampp/htdocs**
+Na imagem acima, é possível ver o endereço da pasta: `C:/xampp/htdocs`
 É lá que ficam os arquivos que serão visualizados no navegador.
 Pronto. Já temos um servidor **XAMPP** rodando no **windows**.
 

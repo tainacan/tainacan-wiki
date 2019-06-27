@@ -25,7 +25,7 @@ Abra a pasta descompactada, clique com o botão direito na pasta **wordpress** e
 
 ![](/assets/images/wordpress_04.png)
 
-Agora vá para **C:/xampp/htdocs**, clique com o botão direito dentro da pasta e depois clique em **Colar**.
+Agora vá para `C:/xampp/htdocs`, clique com o botão direito dentro da pasta e depois clique em **Colar**.
 
 <br><br>
 
@@ -45,7 +45,7 @@ Agora, para este projeto, nós iremos mudar o nome da pasta **wordpress** para *
 
 ![](/assets/images/wordpress_07.png)
 
-Pronto. O **wordpress** já foi renomeado e está no local certo. Agora é preciso configurá-lo. Para isso, precisamos criar um banco de dados que será utilizado por ele. Para isso, abra uma nova aba no seu navegador e digite **localhost/phpmyadmin**
+Pronto. O **wordpress** já foi renomeado e está no local certo. Agora é preciso configurá-lo. Para isso, precisamos criar um banco de dados que será utilizado por ele. Para isso, abra uma nova aba no seu navegador e digite `localhost/phpmyadmin``.
 
 <br><br>
 
@@ -71,7 +71,7 @@ Esta tela mostra que o banco foi criado e está vazio. Repare o nome do mesmo na
 
 ![](/assets/images/wordpress_11.png)
 
-Agora abriremos uma nova aba, no seguinte endereço: **localhost/projeto_teste**
+Agora abriremos uma nova aba, no seguinte endereço: `localhost/projeto_teste`
 Como é a primeira vez que abriremos o site, ele irá realizar as últimas configurações.
 
 <br><br>
@@ -135,8 +135,8 @@ Este é o **Painel de Controle** do **Wordpress**. Tudo o que há no site pode s
 ![](/assets/images/wordpress_20.png)
 **A home do wordpress**
 
-Pronto. Nas próximas vezes, caso prefira acessar diretamente o site, basta visitar o endereço **localhost/projeto_teste** (ou o nome escolhido).
-Para acessar diretamente o **Painel de Controle**, basta visitar o endereço **localhost/projeto_teste/wp-admin** (ou o nome escolhido no lugar de **projeto_teste**)
+Pronto. Nas próximas vezes, caso prefira acessar diretamente o site, basta visitar o endereço `localhost/projeto_teste` (ou o nome escolhido).
+Para acessar diretamente o **Painel de Controle**, basta visitar o endereço `localhost/projeto_teste/wp-admin` (ou o nome escolhido no lugar de **projeto_teste**)
 
 A seguir, começaremos a instalar o plugin do **Tainacan**.
 

@@ -71,7 +71,7 @@ NOTE: These two services must be enabled whenever the server is used.
 
 ![](/pt-br/assets/images/xampp_11.png)
 
-If all work out, both services will turn green, as in the image above. Now click on the **Admin** button. Your main browser (**Google Chrome**, **Firefox**, **Internet Explorer**... the one you use the most in your machine) will open with the **localhost/dashboard** address already entered.
+If everything went well, both services will turn green, as in the image above. Now click on the **Admin** button. Your main browser (**Google Chrome**, **Firefox**, **Internet Explorer**... the one you use the most in your machine) will open with the `localhost/dashboard` address already entered.
 
 <br><br>
 
@@ -85,7 +85,7 @@ If the installation has been completed without problems, the screen above will a
 
 ![](/pt-br/assets/images/xampp_13.png)
 
-In the image above, you can see the folder address: **C:/xampp/htdocs**.
+In the image above, you can see the folder address: `C:/xampp/htdocs`.
 That's where the files are to be viewed in the browser.
 That's it. Now we have a **XAMPP** server running on **windows**.
 
