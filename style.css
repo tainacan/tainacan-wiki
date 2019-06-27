@@ -104,6 +104,13 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     background: #f2f2f2;
 }
 
+/* EM e STRONG */
+.content .markdown-section em,
+.content .markdown-section strong {
+    color: #555758;
+}
+
+
 /* CODE */
 .content .markdown-section code {
 	color: #454647;
