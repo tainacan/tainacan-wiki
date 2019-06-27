@@ -217,4 +217,75 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 
 ## Importador CSV de Vocabulários (Taxonomias)
 
+Este importador permite que usuários adicionem termos a uma taxonomia. Essa ferramenta é útil para a importação de vocabulários controlados para uma instalação do Tainacan.
+
+#### Vídeo Tutorial: Importação de Termos e Taxonomias
+
+<iframe
+    width="560"
+    height="513" 
+    src="https://www.youtube.com/embed/B76ENqOEZfw?start=83"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+-----
+
+### Como configurar o .csv
+
+O formato de arquivo para a importação de vocabulários é o *.csv* - *comma separated values* (valores separados por vírgula).
+
+Para cada termo você pode informar o nome do termo e sua definição, por exemplo:
+
+```
+Termo 1,Definição do termo 1
+Termo 2,Definição do termo 2
+Termo 3,Definição do termo 3
+```
+
+Também é possível informar a hierarquia. Para isso, deixe as células à esquerda vazias, indicando o nível de hierarquia entre estes termos.
+
+A planilha deve ficar parecida com este exemplo:
+
+|           |                       |                           |                                |
+|-----------|-----------------------|---------------------------|--------------------------------|
+| Termo 1 	| Definição do Termo 1 	|                           | 	                             |
+| Termo 2 	| Definição do Termo 2 	| 	                        |                                |
+| 	        | 1 Filho do Termo 2 	| Definição desse termo     |                                |
+| 	        | 2 Filho do Termo 2 	| Definição desse termo 	|                                |
+| 		    |                       | 1 Neto do Filho 2 	    | Definição do 1 Neto do Filho 2 |
+| Termo 3 	| Definição do Termo 3 	| 	                        |                                |
+| Termo 4 	| Definição do Termo 4 	| 	                        |                                |
+
+Essa mesma planilha, quando salva no formato .csv, deve se parecer com este exemplo:
+```
+Term 1,Definition of term 1,,
+Term 2,Definition of term 2,,
+,1st Child of term 2,Definition of this term,
+,2nd Child of term 2,Definition of this term,
+,,Gran child,Definition of grand child
+Term 3,Definition of term 3,,
+Term 4,Definition of term 4,,
+```
+
+----
+
+### Enviar o .csv para o Tainacan
+
+Uma vez terminada a criação do seu arquivo *.csv* com os termos desejados, siga estes passos:
+
+1. Acesse o painel de controle do WordPress
+2. Na barra lateral esquerda, clique em Tainacan
+3. Acesse a sessão *Importadores*;
+4. Na seção **Importadores Disponíveis**, selecione `Vocabulário CSV`;
+5. Configure o campo **Delimitador csv** de acordo com as caractere delimitador do seu arquivo .csv:
+6. Selecione o arquivo *.csv* para upload;
+7. Crie ou escolha a *Taxonomia* de destino (Consulte [Taxonomias](/pt-br/taxonomies) para saber mais);
+8. Clique em `Executar`;
+9. Você será redirecionado para a tela de **Atividades do Repositório** onde poderá acompanhar o andamento do *processo de importação*.
+  1. Esta tela exibe todos os processos de importação já realizados nesta instalação, do mais recente para o mais antigo.
+  2. Quando o processo for concluído serão exibidos o **arquivo de registro** e, em caso de erros, o **arquivo de registro de erros**.
+10. Uma vez terminado com sucesso o processo de importação do vocabulário, vá para a seção de **Taxonomias** e revise se a *Taxonomia* e os *Termos* foram importados como o esperado.
+
 <!-- tabs:end -->
