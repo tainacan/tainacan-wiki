@@ -24,9 +24,7 @@ Seu objetivo principal é ajudar instituições culturais a organizarem, publica
 
 ## É possível inserir itens do Tainacan em postagens no WordPress?
 
-Sim, é possível! Para adicionar itens do Tainacan em uma postagem do WordPress (a partir da versão 5.0) crie um bloco do Tainacan pelo editor de texto.
-
-Confira o passo-a-passo aqui.
+Sim, é possível! Para adicionar itens do Tainacan em uma postagem do WordPress (a partir da versão 5.0) crie um bloco Gutenberg do Tainacan pelo editor de texto. Ao inserir um bloco, pode-se pesquisar por Tainacan que será possível ver quais tipos de blocos do Tainacan existem, incluindo o de Items e Items Dinâmico.
 
 ## Como criar metadados para tags e deixar a edição aberta aos usuários?
 
