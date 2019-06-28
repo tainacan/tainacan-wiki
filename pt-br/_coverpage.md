@@ -1,4 +1,4 @@
-![logo](../_assets/logo_tainacan.png)
+![logo](../_assets/images/logo_tainacan.png)
 
 # Bem-vindo à Wiki do Tainacan <small>0.9</small>
 

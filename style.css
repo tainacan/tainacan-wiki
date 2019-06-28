@@ -23,6 +23,9 @@ body {
 }
 
 /* Cover page */
+section.cover {
+    border-bottom: 4px solid #298596;
+}
 section.cover .cover-main h1 {
     margin: 1.75rem 0 2.5rem;
 }
@@ -311,4 +314,85 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 .content .markdown-section .content .markdown-section ul>li>ul>li>ol>li:before,
 .content .markdown-section .content .markdown-section ol>li>ul>li>ol>li:before {
 	content: counter(li-counter, lower-roman);
+}
+
+
+/* HOME PANEL */
+.home-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-col {
+    width: 33.33333%;
+    flex-basis: 33.333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media screen and (max-width: 1024px){
+    .home-col {
+        width: 50%;
+        flex-basis: 50%;
+    }       
+}
+@media screen and (max-width: 768px){
+    .home-col {
+        width: 100%;
+        flex-basis: 100%;
+    }       
+}
+.home-panel {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+.home-panel .panel-heading {
+    border: none;
+    background: #298596 !important;
+    color: white !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+.home-panel .panel-body {
+	padding: 24px;
+	border: none;
+	background: #4ea2ad;
+	color: white;
+	font-size: 30px;
+	height: 138px;
+}
+.home-panel .panel-body pre {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    padding: 0;
+}
+.home-panel .panel-body pre .fa {
+	margin-left: calc(-50% + 14px);
+}
+.home-panel .list-group {
+	border: none;
+    background: #f2f2f2;
+	padding: 10px !important;
+    box-shadow: none;
+    margin: 0 !important;
+}
+.home-panel .list-group .list-group-item {
+    border: none;
+    background: transparent;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+	padding: 2px 15px;
+}
+.home-panel .list-group .list-group-item::before {
+	content: '';
+	padding-right: 0;
+}
+.home-panel .list-group .list-group-item a {
+    text-decoration: none;
 }

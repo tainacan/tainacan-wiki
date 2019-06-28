@@ -15,7 +15,7 @@ Each has it's specificities, but in case you're not satisfied with them, a devel
 
 As shown in [our post for extra view modes](http://tainacan.org/2018/06/13/custom-view-modes-how-will-the-world-see-your-collection/), we've created [a sample plugin](https://github.com/tainacan/tainacan-extra-viewmodes) with some inspirational ideas for custom view modes, such as the one bellow:
 
-![Image with an example of an extra view mode, showing borders around items thumbnail.](/_assets/Example_of_an_Extra_View_Mode.jpeg)
+![Image with an example of an extra view mode, showing borders around items thumbnail.](/_assets/images/Example_of_an_Extra_View_Mode.jpeg)
 
 We here describe the process to create such plugin. You will basically need three files:
 
@@ -85,7 +85,7 @@ The `type` parameter is one of the most relevants here. When registering view mo
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Enabled Metadata Dropdown.png" 
-		src="/dev/_assets/Enabled_Metadata_Dropdown.png"
+		src="/dev/_assets/images/Enabled_Metadata_Dropdown.png"
 		width="300"
 		height="256">
 </div>
