@@ -1,6 +1,6 @@
 # Wiki do Tainacan
 
-Olá e seja bem-vindo(a) à Wiki! Este é o lar da documentação do Tainacan.
+**Olá e seja bem-vindo(a) à Wiki!** Este é o lar da documentação do Tainacan.
 
 > O Tainacan é uma plataforma poderosa e flexível de repositórios para *WordPress*. Gerencie e publique suas coleções digitais tão facilmente quanto se publica um post no seu blog, dispondo de todas as ferramentas de uma plataforma de repositórios profissional. 
 

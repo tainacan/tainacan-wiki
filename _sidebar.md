@@ -9,6 +9,7 @@
     * [Install the plugin](tainacan)
     * [Install the theme](theme)
     * [Optimization](optimization)
+    * [Hosting](hosting)
 * Using Tainacan
     * [Collections](collections)
     * [Items](items)

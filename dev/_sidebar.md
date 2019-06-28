@@ -19,6 +19,7 @@
 	* [Mapping Standards](/dev/mapping-standards.md)
 	* [Permissions](/dev/permissions.md) 	
 	* [Release](/dev/release.md) 
+	* [Release Testing](/dev/release-testing.md) 
 	* [Repository Filters](/dev/repository-filters.md) 
 	* [Repository Items](/dev/repository-items.md) 
 	* [Repository Metadata](/dev/repository-metadata.md) 
