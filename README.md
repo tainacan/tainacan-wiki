@@ -17,8 +17,16 @@ You can browse or search for specific topics on the side menu. Follows some rele
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Frequently Asked Questions" href="/#/faq">F.A.Q.</a></li>
-                <li class="list-group-item"><a title="Introduction to Tainacan" href="/#/introduction">Introduction to Tainacan</a></li>
+<li class="list-group-item">
+
+[F.A.Q.](faq)
+
+</li>
+<li class="list-group-item">
+
+[Introduction to Tainacan](introduction)
+
+</li>
                 <li class="list-group-item"><a title="Email List of the User's Community" href="https://lists.riseup.net/www/subscribe/tainacan">User's Community</a></li>
             </ul>
         </div>
@@ -32,9 +40,21 @@ You can browse or search for specific topics on the side menu. Follows some rele
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Plugin" href="/#/tainacan">Plugin</a></li>
-                <li class="list-group-item"><a title="Tema" href="/#/theme">Theme</a></li>
-                <li class="list-group-item"><a title="Otimização" href="/#/optimization">Optimization</a></li>
+<li class="list-group-item">
+
+[Plugin](tainacan)
+
+</li>
+<li class="list-group-item">
+
+[Theme](theme)
+
+</li>
+<li class="list-group-item">
+
+[Optimization](optimization)
+
+</li>
             </ul>
         </div>
     </div>
@@ -47,9 +67,21 @@ You can browse or search for specific topics on the side menu. Follows some rele
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Collections" href="/#/collections">Collections</a></li>
-                <li class="list-group-item"><a title="Taxonomies" href="/#/taxonomies">Taxonomies</a></li>
-                <li class="list-group-item"><a title="Ações em Massa" href="/#/bulk-actions">Bulk Actions</a></li>
+<li class="list-group-item">
+
+[Collections](collections)
+
+</li>
+<li class="list-group-item">
+
+[Taxonomies](taxonomies)
+
+</li>
+<li class="list-group-item">
+
+[Bulk Actions](bulk-actions)
+
+</li>
             </ul>
         </div>
     </div>
@@ -64,7 +96,11 @@ You can browse or search for specific topics on the side menu. Follows some rele
             <ul class="list-group">
                 <li class="list-group-item"><a title="Tainacan's Oficial Website" href="https://tainacan.org">Tainacan.org</a></li>
                 <li class="list-group-item"><a title="Research Blog" href="http://pesquisa.medialab.ufg.br/">Research Blog</a></li>
-                <li class="list-group-item"><a title="Presentations" href="/#/presentations">Presentations</a></li>
+<li class="list-group-item">
+
+[Presentations](presentations)
+
+</li>
             </ul>
         </div>
     </div>
@@ -77,8 +113,16 @@ You can browse or search for specific topics on the side menu. Follows some rele
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="For Plugin Developers" href="/dev/">Plugin</a></li>
-                <li class="list-group-item"><a title="For Theme Developers" href="/dev/">Theme</a></li>
+<li class="list-group-item">
+
+[Plugin](/dev/)
+
+</li>
+<li class="list-group-item">
+
+[Theme](/dev/)
+
+</li>
                 <li class="list-group-item"><a title="API Documentation" href="https://tainacan.org/api-docs/">API Documentation</a></a></li>
             </ul>
         </div>
@@ -92,8 +136,16 @@ You can browse or search for specific topics on the side menu. Follows some rele
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Importers" href="/#/importers">Importers</a></li>
-                <li class="list-group-item"><a title="Data and Archival Processing" href="/data-processing">Data and Archival Processing</a></li>
+<li class="list-group-item">
+
+[Importers](importers)
+
+</li>
+<li class="list-group-item">
+
+[Data and Archival Processing](data-processing)
+
+</li>
                 <li class="list-group-item"><a title="Open Refine" href="http://openrefine.org/">Open Refine</a></li>
             </ul> 
         </div>
