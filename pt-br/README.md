@@ -11,13 +11,11 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Primeiros Passos</div>
-            <div class="panel-body">
-                <img 
-                    alt="Primeiros passos"
-                    src="../_assets/images/Primeiros_passos.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Primeiros Passos](../_assets/images/Primeiros_passos.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Perguntas Frequentes" href="/#/pt-br/faq">Perguntas Frequentes</a></li>
                 <li class="list-group-item"><a title="Introdução ao Tainacan" href="/#/pt-br/introduction">Introdução ao Tainacan</a></li>
@@ -28,13 +26,11 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Instalação e Configurações</div>
-            <div class="panel-body">
-                <img 
-                    alt="Instalação e Configurações"
-                    src="../_assets/images/Instalacao_e_configuracoes.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Instalação e Configurações](../_assets/images/Instalacao_e_configuracoes.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Plugin" href="/#/pt-br/tainacan">Plugin</a></li>
                 <li class="list-group-item"><a title="Tema" href="/#/pt-br/theme">Tema</a></li>
@@ -45,13 +41,11 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Usando o Tainacan</div>
-            <div class="panel-body">
-                <img 
-                    alt="Usando o Tainacan"
-                    src="../_assets/images/Usando_a_plataforma.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Usando o Tainacan](../_assets/images/Usando_a_plataforma.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Coleção" href="/#/pt-br/collections">Coleções</a></li>
                 <li class="list-group-item"><a title="Taxonomies" href="/#/pt-br/taxonomies">Taxonomias</a></li>
@@ -62,13 +56,11 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Sobre o Tainacan</div>
-            <div class="panel-body">
-                <img 
-                    alt="Sobre o Tainacan"
-                    src="../_assets/images/Sobre_o_tainacan.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Sobre o Tainacan](../_assets/images/Sobre_o_tainacan.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Site Oficial do Tainacan" href="https://tainacan.org">Tainacan.org</a></li>
                 <li class="list-group-item"><a title="Blog de Pesquisa" href="http://pesquisa.medialab.ufg.br/">Blog de Pesquisa</a></li>
@@ -79,13 +71,11 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Para desenvolvedores</div>
-            <div class="panel-body">
-                <img 
-                    alt="Para desenvolvedores"
-                    src="../_assets/images/Para_desenvolvedores.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Para Desenvolvedores](../_assets/images/Para_desenvolvedores.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Para desenvolvedores de plugin" href="/dev/">Plugin</a></li>
                 <li class="list-group-item"><a title="Para desenvolvedores de temas" href="/dev/">Tema</a></li>
@@ -96,13 +86,11 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Tratamento de Dados</div>
-            <div class="panel-body">
-                <img 
-                    alt="Tratamento de Dados"
-                    src="../_assets/images/Tratamento_de_dados.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Tratamento de Dados](../_assets/images/Tratamento_de_dados.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Importadores" href="/#/pt-br/importers">Importadores</a></li>
                 <li class="list-group-item"><a title="Processamento de Dados e Acervos" href="/pt-br/data-processing">Processamento de Dados e Acervos</a></li>

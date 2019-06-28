@@ -8,6 +8,14 @@ body {
     max-width: 940px;
 }
 
+/* Github corner link*/
+@media screen and (max-width: 768px) {
+    .github-corner svg {
+        height: 56px;
+        width: 56px;
+    }
+}
+
 /* Sidebar Logo */
 .app-name-link img {
     padding: 24px 36px;
@@ -31,6 +39,11 @@ section.cover .cover-main h1 {
 }
 section.cover .cover-main ul {
     margin: 3.5rem auto;
+}
+@media screen and (max-width: 768px) {
+    section.cover .cover-main ul {
+        display: none;
+    }
 }
 section.cover .cover-main > p:last-child a:last-child:hover {
     color: white;
@@ -362,6 +375,9 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 	color: white;
 	font-size: 30px;
 	height: 138px;
+}
+.home-panel .panel-body p {
+    margin: 0;
 }
 .home-panel .panel-body pre {
     background: none;

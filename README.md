@@ -11,13 +11,11 @@ You can browse or search for specific topics on the side menu. Follows some rele
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">First Steps</div>
-            <div class="panel-body">
-                <img 
-                    alt="First Steps"
-                    src="../_assets/images/Primeiros_passos.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![First Steps](/_assets/images/Primeiros_passos.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Frequently Asked Questions" href="/#/faq">F.A.Q.</a></li>
                 <li class="list-group-item"><a title="Introduction to Tainacan" href="/#/introduction">Introduction to Tainacan</a></li>
@@ -28,13 +26,11 @@ You can browse or search for specific topics on the side menu. Follows some rele
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Install and Setup</div>
-            <div class="panel-body">
-                <img 
-                    alt="Install and Setup"
-                    src="../_assets/images/Instalacao_e_configuracoes.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Install and Setup](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Plugin" href="/#/tainacan">Plugin</a></li>
                 <li class="list-group-item"><a title="Tema" href="/#/theme">Theme</a></li>
@@ -45,13 +41,11 @@ You can browse or search for specific topics on the side menu. Follows some rele
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Using Tainacan</div>
-            <div class="panel-body">
-                <img 
-                    alt="Using Tainacan"
-                    src="../_assets/images/Usando_a_plataforma.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Using Tainacan](/_assets/images/Usando_a_plataforma.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Collections" href="/#/collections">Collections</a></li>
                 <li class="list-group-item"><a title="Taxonomies" href="/#/taxonomies">Taxonomies</a></li>
@@ -62,13 +56,11 @@ You can browse or search for specific topics on the side menu. Follows some rele
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">About Tainacan</div>
-            <div class="panel-body">
-                <img 
-                    alt="About Tainacan"
-                    src="../_assets/images/Sobre_o_tainacan.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![About Tainacan](/_assets/images/Sobre_o_tainacan.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Tainacan's Oficial Website" href="https://tainacan.org">Tainacan.org</a></li>
                 <li class="list-group-item"><a title="Research Blog" href="http://pesquisa.medialab.ufg.br/">Research Blog</a></li>
@@ -79,13 +71,11 @@ You can browse or search for specific topics on the side menu. Follows some rele
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">For Developers</div>
-            <div class="panel-body">
-                <img 
-                    alt="For Developers"
-                    src="../_assets/images/Para_desenvolvedores.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![For Developers](/_assets/images/Para_desenvolvedores.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="For Plugin Developers" href="/dev/">Plugin</a></li>
                 <li class="list-group-item"><a title="For Theme Developers" href="/dev/">Theme</a></li>
@@ -96,13 +86,11 @@ You can browse or search for specific topics on the side menu. Follows some rele
     <div class="home-col">
         <div class="panel home-panel">
             <div class="panel-heading">Data Processing</div>
-            <div class="panel-body">
-                <img 
-                    alt="Data Processing"
-                    src="../_assets/images/Tratamento_de_dados.png" 
-                    width="85" 
-                    height="85">
-            </div>
+<div class="panel-body">
+
+![Data Processing](/_assets/images/Tratamento_de_dados.png ":no-zoom")
+
+</div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Importers" href="/#/importers">Importers</a></li>
                 <li class="list-group-item"><a title="Data and Archival Processing" href="/data-processing">Data and Archival Processing</a></li>
