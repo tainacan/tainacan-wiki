@@ -4,15 +4,15 @@ This is a work in progress documentaion on how to release a new version.
 
 Assuming:
 
-* $CURRENT_VERSION is the current "old" version (e.g. 0.2)
-* $NEW_VERSION is the version we are releasing (e.g. 0.3)
-* $GIT_PATH is where our repository is cloned
-* $BUILD_PATH is where the plugin is condigured to buid 
-* $SVN_PATH is where the WordPress.org SVN repo is
+* `$CURRENT_VERSION` is the current "old" version (e.g. 0.2)
+* `$NEW_VERSION` is the version we are releasing (e.g. 0.3)
+* `$GIT_PATH` is where our repository is cloned
+* `$BUILD_PATH` is where the plugin is condigured to buid 
+* `$SVN_PATH` is where the WordPress.org SVN repo is
 
 ## Pre-release
 
-Before we publish a new version, we always release one or more Release Candidates so the community have time to test and make sure the new version of Tainacan is clean and ready to reach the world.
+Before we publish a new version, we always release one or more Release Candidates so the community have time to [test and make sure](/dev/tests-script) the new version of Tainacan is clean and ready to reach the world.
 
 ### Start in the git repository
 
@@ -135,29 +135,29 @@ svn add tags/$NEW_VERSION
 
 ### Finish and commit
 
-Go to the SVN folder
+1. Go to the SVN folder
 
-```
-cd $SVN_PATH
-```
+  ```
+  cd $SVN_PATH
+  ```
 
-`svn rm` all files that have been removed
+2. `svn rm` all files that have been removed
+  
+  ```
+  svn st | grep '^!' | awk '{print $2}' | xargs svn rm
+  ```
 
-```
-svn st | grep '^!' | awk '{print $2}' | xargs svn rm
-```
+3. `svn add` all new files
 
-`svn add` all new files
+  ```
+  svn st | grep '^?' | awk '{print $2}' | xargs svn add
+  ```
 
-```
-svn st | grep '^?' | awk '{print $2}' | xargs svn add
-```
+4. Commit!
 
-Commit!
-
-```
-svn ci
-```
+  ```
+  svn ci
+  ```
 
 ### Check
 
