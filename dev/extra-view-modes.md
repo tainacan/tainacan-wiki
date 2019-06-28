@@ -13,11 +13,15 @@ Each has it's specificities, but in case you're not satisfied with them, a devel
 
 ## Creating your extra view mode
 
-As shown in [our post for extra view modes](http://tainacan.org/2018/06/13/custom-view-modes-how-will-the-world-see-your-collection/), we've created [a sample plugin](https://github.com/tainacan/tainacan-extra-viewmodes) with some inspirational ideas for custom view modes. We here describe the process to create such plugin. You will basically need three files:
+As shown in [our post for extra view modes](http://tainacan.org/2018/06/13/custom-view-modes-how-will-the-world-see-your-collection/), we've created [a sample plugin](https://github.com/tainacan/tainacan-extra-viewmodes) with some inspirational ideas for custom view modes, such as the one bellow:
 
-1. The .php file for registering the plugin and view mode;
-2. The .php file with the items list template;
-3. The .css file with the styling for your template;
+![Image with an example of an extra view mode, showing borders around items thumbnail.](/_assets/Example_of_an_Extra_View_Mode.jpeg)
+
+We here describe the process to create such plugin. You will basically need three files:
+
+1. The *.php* file for registering the plugin and view mode;
+2. The *.php* file with the items list template;
+3. The *.css* file with the styling for your template;
 
 ### Registering your plugin
 
@@ -62,20 +66,29 @@ The function `tainacan_register_view_mode` is part of Tainacan's plugin. It's fi
 
 | Type   | Name             | Description | Default                                   |
 |--------|------------------|-------------|-------------------------------------------|
-| string | label            | Label, visible to users on the view modes dropdown.            | Same of the variable $slug                |
+| string | label            | Label, visible to users on the view modes dropdown.            | Same of the variable `$slug`                |
 | string | icon             | HTML that outputs an icon that represents the view mode. Visible to users on view modes dropdown.            | None                                      |
 | string | description      | Description, visible only to editors in the admin.            | None                                      |
-| string | type             | Type. Accepted values are 'template' or 'component'.             | 'template'                                |
-| string | template         | Full path to the template file to be used. Required if $type is set to template.             | 'theme-path/tainacan/view-mode-{$slug}.php' |
-| string | component        | Component tag name. The web component js must be included and must accept two props: 1) items: the list of items to be rendered ; 2) displayed-metadata: list of metadata to be displayed;            | 'view-mode-{$slug}'                         |
+| string | type             | Type. Accepted values are 'template' or 'component'.             | *template*                                |
+| string | template         | Full path to the template file to be used. Required if $type is set to template.             | *theme-path/tainacan/view-mode-`$slug`.php* |
+| string | component        | Component tag name. The web component js must be included and must accept two props: 1) items: the list of items to be rendered ; 2) displayed-metadata: list of metadata to be displayed;            | *view-mode-`$slug`*                         |
 | string | thumbnail        | Full URL to a thumbnail that represents the view mode. Displayed only in Admin.             | None                                      |
 | string   | skeleton_template | HTML that outputs a preview of the items to be loaded, such as gray blocks, mimicking the shape of the items. | None |
-| bool   | show_pagination  | Wether to display or not pagination controls.            | true                                      |
-| bool   | full-screen      | Wether the view mode will display full screen or not.             | false                                     |
-| bool   | dynamic_metadata | Wether to display or not (and use or not) the "displayed metadata" selector.            | false                                     |
-| bool   | implements_skeleton | Wheter the view modes takes care of showing it's own Skeleton/Ghost css classes for loading items. | false |
+| bool   | show_pagination  | Wether to display or not pagination controls.            | `true`                                      |
+| bool   | full-screen      | Wether the view mode will display full screen or not.             | `false`                                     |
+| bool   | dynamic_metadata | Wether to display or not (and use or not) the "displayed metadata" selector.            | `false`                                     |
+| bool   | implements_skeleton | Wheter the view modes takes care of showing it's own Skeleton/Ghost css classes for loading items. | `false` |
+
 
 The `type` parameter is one of the most relevants here. When registering view modes, you can either create a simple PHP `template` using WordPress functions (as the ones in our sample plugin), or more complex Vue.js `component`. When passing a template, the file path should be provided, while for components the name of previously loaded .vue component must be provided. Vue components must also have two props, one for receiving the items list as a parsed JSON Object and other for an array of metadata that will be displayed.
+
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Enabled Metadata Dropdown.png" 
+		src="/dev/_assets/Enabled_Metadata_Dropdown.png"
+		width="300"
+		height="256">
+</div>
 
 View modes as Cards and Grid do not allow users to choose which metadata should be displayed, but rather decide that only certain will be visible. For this kind of view mode, it is used the `dynamic_metadata` parameter as `false`.
 
@@ -145,8 +158,8 @@ The classes `my-view-mode-container` and `my-view-mode-item`, and so forth shoul
 
 Thumbnail is obtained via the function `the_post_thumbnail()`, which accepts as first parameter any of the following:
 
- - 'tainacan-small' (40px width, 40px height, cropped);
- - 'tainacan-medium' (275px width, 275 height, cropped);
- - 'tainacan-medium-full', (max. 205px width, max. 1500px height, not cropped );
+ - `tainacan-small` (40px width, 40px height, cropped);
+ - `tainacan-medium` (275px width, 275 height, cropped);
+ - `tainacan-medium-full`, (max. 205px width, max. 1500px height, not cropped );
 
 You can see that this view mode displays the array of metadata obtained from `tainacan_the_metadata()` function. 
