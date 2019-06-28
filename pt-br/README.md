@@ -17,8 +17,16 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Perguntas Frequentes" href="/#/pt-br/faq">Perguntas Frequentes</a></li>
-                <li class="list-group-item"><a title="Introdução ao Tainacan" href="/#/pt-br/introduction">Introdução ao Tainacan</a></li>
+<li class="list-group-item">
+
+[Perguntas Frequentes](/pt-br/faq)
+                
+</li>
+<li class="list-group-item">
+
+[Introdução ao Tainacan](/pt-br/introduction)
+
+</li>
                 <li class="list-group-item"><a title="Lista de Email da Comunidade de Usuários" href="https://lists.riseup.net/www/subscribe/tainacan">Comunidade de Usuários</a></li>
             </ul>
         </div>
@@ -32,9 +40,21 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Plugin" href="/#/pt-br/tainacan">Plugin</a></li>
-                <li class="list-group-item"><a title="Tema" href="/#/pt-br/theme">Tema</a></li>
-                <li class="list-group-item"><a title="Otimização" href="/#/pt-br/optimization">Otimização</a></li>
+<li class="list-group-item">
+
+[Plugin](/pt-br/tainacan)
+
+</li>
+<li class="list-group-item">
+
+[Tema](/pt-br/theme)
+
+</li>
+<li class="list-group-item">
+
+[Otimização](/pt-br/optimization)
+
+</li>
             </ul>
         </div>
     </div>
@@ -47,9 +67,21 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Coleção" href="/#/pt-br/collections">Coleções</a></li>
-                <li class="list-group-item"><a title="Taxonomies" href="/#/pt-br/taxonomies">Taxonomias</a></li>
-                <li class="list-group-item"><a title="Ações em Massa" href="/#/pt-br/bulk-actions">Ações em Massa</a></li>
+<li class="list-group-item">
+
+[Coleções](/pt-br/collections)
+
+</li>
+<li class="list-group-item">
+
+[Taxonomias](/pt-br/taxonomies)
+
+</li>
+<li class="list-group-item">
+
+[Ações em Massa](/pt-br/bulk-actions)
+
+</li>
             </ul>
         </div>
     </div>
@@ -64,7 +96,11 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
             <ul class="list-group">
                 <li class="list-group-item"><a title="Site Oficial do Tainacan" href="https://tainacan.org">Tainacan.org</a></li>
                 <li class="list-group-item"><a title="Blog de Pesquisa" href="http://pesquisa.medialab.ufg.br/">Blog de Pesquisa</a></li>
-                <li class="list-group-item"><a title="Apresentações" href="/#/pt-br/presentations">Apresentações</a></li>
+<li class="list-group-item">
+
+[Apresentações](/pt-br/presentations)
+
+</li>
             </ul>
         </div>
     </div>
@@ -77,8 +113,16 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Para desenvolvedores de plugin" href="/dev/">Plugin</a></li>
-                <li class="list-group-item"><a title="Para desenvolvedores de temas" href="/dev/">Tema</a></li>
+<li class="list-group-item">
+
+[Plugin](/dev/)
+
+</li>
+<li class="list-group-item">
+
+[Tema](/dev/)
+
+</li>
                 <li class="list-group-item"><a title="Documentação da API" href="https://tainacan.org/api-docs/">Documentação da API</a></li>
             </ul>
         </div>
@@ -92,8 +136,16 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 
 </div>
             <ul class="list-group">
-                <li class="list-group-item"><a title="Importadores" href="/#/pt-br/importers">Importadores</a></li>
-                <li class="list-group-item"><a title="Processamento de Dados e Acervos" href="/pt-br/data-processing">Processamento de Dados e Acervos</a></li>
+<li class="list-group-item">
+
+[Importadores](/pt-br/importers)
+
+</li>
+<li class="list-group-item">
+
+[Processamento de Dados e Acervos](/pt-br/data-processing)
+
+</li>
                 <li class="list-group-item"><a title="Open Refine" href="http://openrefine.org/">Open Refine</a></li>
             </ul> 
         </div>

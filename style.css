@@ -409,6 +409,9 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 	content: '';
 	padding-right: 0;
 }
+.home-panel .list-group .list-group-item p {
+    margin: 0;
+}
 .home-panel .list-group .list-group-item a {
     text-decoration: none;
 }
