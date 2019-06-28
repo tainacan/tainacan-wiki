@@ -24,7 +24,7 @@
 * Sobre o Tainacan
     * [Site Oficial :link:](https://tainacan.org/ ':ignore')
     * [Publicações :link:](http://pesquisa.medialab.ufg.br/artigos/ ':ignore')
-    * [Apresentaçõe :link:](https://wiki.tainacan.org/index.php?title=Apresenta%C3%A7%C3%B5es ':ignore')
+    * [Apresentações](/pt-br/presentations)
 * Comunidade & Outros
     * [Lista da Comunidade :link:](https://lists.riseup.net/www/subscribe/tainacan ':ignore')
     * [Colabore com esta Wiki](/pt-br/improve-this-wiki.md)
