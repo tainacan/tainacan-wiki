@@ -2,7 +2,7 @@
 
 Olá e seja bem-vindo(a) à Wiki! Este é o lar da documentação do Tainacan.
 
-> O Tainacan é uma plataforma poderosa e flexível de repositórios para WordPress. Gerencie e publique suas coleções digitais tão facilmente quanto se publica um post no seu blog, dispondo de todas as ferramentas de uma plataforma de repositórios profissional. 
+> O Tainacan é uma plataforma poderosa e flexível de repositórios para *WordPress*. Gerencie e publique suas coleções digitais tão facilmente quanto se publica um post no seu blog, dispondo de todas as ferramentas de uma plataforma de repositórios profissional. 
 
 Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, alguns links relevantes:
 <br>
@@ -54,8 +54,8 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
             </div>
             <ul class="list-group">
                 <li class="list-group-item"><a title="Coleção" href="/#/pt-br/collections">Coleções</a></li>
+                <li class="list-group-item"><a title="Taxonomies" href="/#/pt-br/taxonomies">Taxonomias</a></li>
                 <li class="list-group-item"><a title="Ações em Massa" href="/#/pt-br/bulk-actions">Ações em Massa</a></li>
-                <li class="list-group-item"><a title="Usuários" href="/#/pt-br/users">Usuários</a></li>
             </ul>
         </div>
     </div>
@@ -111,6 +111,5 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
         </div>
     </div>
 </div>
-<br>
 
 A documentação pode ser navegada pelo GitHub Pages + Docsify [aqui](/pt-br).
