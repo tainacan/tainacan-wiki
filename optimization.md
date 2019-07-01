@@ -155,7 +155,7 @@ Segue abaixo as configurações recomendadas que devem ser realizadas no arquivo
 * **MaxRequestsPerChild**: definir o valor para `5`.
 * **MaxRequestWorkers**: definir o valor para `250`.
 
-Realizadas tais configurações outro aspecto importante é blindar a instalação Wordpress na qual o plugin e tema do Tainacan serão executados. A próxima sessão trata desse aspecto. 
+Realizadas tais configurações outro aspecto importante é blindar a instalação Wordpress na qual o plugin e tema do Tainacan serão executados. A próxima seção trata desse aspecto. 
 
 -----
 

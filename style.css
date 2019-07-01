@@ -167,54 +167,54 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 }
 
 /* UL LI not so special style */
-.content .markdown-section ul, 
-.content .markdown-section .content .markdown-section ul {
+.content .markdown-section ul:not(.task-list), 
+.content .markdown-section .content .markdown-section ul:not(.task-list) {
 	margin: .5em 0 .6em 1em;
 	list-style: none;
 }
-.content .markdown-section ul>li:before, 
-.content .markdown-section .content .markdown-section ul>li:before {
+.content .markdown-section ul:not(.task-list)>li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li:before {
 	content: '\25a0';
 	padding-right: 0.75rem;
 	color: #01295c;
 }
-.content .markdown-section ul li ul li:before, 
-.content .markdown-section .content .markdown-section ul li ul li:before,
-.content .markdown-section ol li ul li:before, 
-.content .markdown-section .content .markdown-section ol li ul li:before {
+.content .markdown-section ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li:before,
+.content .markdown-section ol li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ol li ul:not(.task-list) li:before {
 	content: '\1f790';
 	padding-right: 0.75rem;
 	color: #01295c;
 }
-.content .markdown-section ul li ul li ul li:before, 
-.content .markdown-section .content .markdown-section ul li ul li ul li:before,
-.content .markdown-section ul li ol li ul li:before, 
-.content .markdown-section .content .markdown-section ul li ol li ul li:before,
-.content .markdown-section ol li ol li ul li:before, 
-.content .markdown-section .content .markdown-section ol li ol li ul li:before,
-.content .markdown-section ol li ul li ul li:before, 
-.content .markdown-section .content .markdown-section ol li ul li ul li:before {
+.content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before,
+.content .markdown-section ul:not(.task-list) li ol li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list) li ol li ul:not(.task-list) li:before,
+.content .markdown-section ol li ol li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ol li ol li ul:not(.task-list) li:before,
+.content .markdown-section ol li ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ol li ul:not(.task-list) li ul:not(.task-list) li:before {
 	content: '\23fa';
 	padding-right: 0.75rem;
 	color: #298596;
 }
-.content .markdown-section ul li ul li ul li ul li:before, 
-.content .markdown-section .content .markdown-section ul li ul li ul li ul li:before,
-.content .markdown-section ul li ol li ul li ul li:before, 
-.content .markdown-section .content .markdown-section ul li ol li ul li ul li:before,
-.content .markdown-section ol li ol li ul li ul li:before, 
-.content .markdown-section .content .markdown-section ol li ol li ul li ul li:before,
-.content .markdown-section ol li ul li ul li ul li:before, 
-.content .markdown-section .content .markdown-section ol li ul li ul li ul li:before,
+.content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before,
+.content .markdown-section ul:not(.task-list) li ol li ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list) li ol li ul:not(.task-list) li ul:not(.task-list) li:before,
+.content .markdown-section ol li ol li ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ol li ol li ul:not(.task-list) li ul:not(.task-list) li:before,
+.content .markdown-section ol li ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ol li ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before,
 
-.content .markdown-section ul li ul li ol li ul li ul li:before, 
-.content .markdown-section .content .markdown-section ul li ul li ol li ul li:before,
-.content .markdown-section ul li ol li ol li ul li:before, 
-.content .markdown-section .content .markdown-section ul li ol li ol li ul li:before,
-.content .markdown-section ol li ol li ol li ul li:before, 
-.content .markdown-section .content .markdown-section ol li ol li ol li ul li:before,
-.content .markdown-section ol li ul li ol li ul li:before, 
-.content .markdown-section .content .markdown-section ol li ul li ol li ul li:before {
+.content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ol li ul:not(.task-list) li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ol li ul:not(.task-list) li:before,
+.content .markdown-section ul:not(.task-list) li ol li ol li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ul:not(.task-list) li ol li ol li ul:not(.task-list) li:before,
+.content .markdown-section ol li ol li ol li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ol li ol li ol li ul:not(.task-list) li:before,
+.content .markdown-section ol li ul:not(.task-list) li ol li ul:not(.task-list) li:before, 
+.content .markdown-section .content .markdown-section ol li ul:not(.task-list) li ol li ul:not(.task-list) li:before {
 	content: '\1f786';
 	padding-right: 0.75rem;
 	color: #298596;
@@ -259,45 +259,45 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 }
 /* Second Level */
 .content .markdown-section ol>li>ol,
-.content .markdown-section ul>li>ol,
+.content .markdown-section ul:not(.task-list)>li>ol,
 .content .markdown-section ol>li>ol>li>ol,
-.content .markdown-section ul>li>ul>li>ol,
-.content .markdown-section ol>li>ul>li>ol 
+.content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol,
+.content .markdown-section ol>li>ul:not(.task-list)>li>ol 
 .content .markdown-section .content .markdown-section ol>li>ol,
-.content .markdown-section .content .markdown-section ul>li>ol,
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ol,
 .content .markdown-section .content .markdown-section ol>li>ol>li>ol,
-.content .markdown-section .content .markdown-section ul>li>ul>li>ol,
-.content .markdown-section .content .markdown-section ol>li>ul>li>ol {
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol,
+.content .markdown-section .content .markdown-section ol>li>ul:not(.task-list)>li>ol {
 	padding: 0;
 	counter-reset: li-counter;
 	margin: 0.75em 0 0.6em 1em;
 	list-style-type: none;
 }
 .content .markdown-section ol>li>ol>li,
-.content .markdown-section ul>li>ol>li,
+.content .markdown-section ul:not(.task-list)>li>ol>li,
 .content .markdown-section ol>li>ol>li>ol>li,
-.content .markdown-section ul>li>ul>li>ol>li,
-.content .markdown-section ol>li>ul>li>ol>li, 
+.content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol>li,
+.content .markdown-section ol>li>ul:not(.task-list)>li>ol>li, 
 .content .markdown-section .content .markdown-section ol>li>ol>li,
-.content .markdown-section .content .markdown-section ul>li>ol>li,
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ol>li,
 .content .markdown-section .content .markdown-section ol>li>ol>li>ol>li,
-.content .markdown-section .content .markdown-section ul>li>ul>li>ol>li,
-.content .markdown-section .content .markdown-section ol>li>ul>li>ol>li {
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol>li,
+.content .markdown-section .content .markdown-section ol>li>ul:not(.task-list)>li>ol>li {
     position: initial;
     margin-bottom: initial;
     padding-left: initial;
     min-height: initial;
 }
 .content .markdown-section ol>li>ol>li:before,
-.content .markdown-section ul>li>ol>li:before,
+.content .markdown-section ul:not(.task-list)>li>ol>li:before,
 .content .markdown-section ol>li>ol>li>ol>li:before,
-.content .markdown-section ul>li>ul>li>ol>li:before,
-.content .markdown-section ol>li>ul>li>ol>li:before,
+.content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol>li:before,
+.content .markdown-section ol>li>ul:not(.task-list)>li>ol>li:before,
 .content .markdown-section .content .markdown-section ol>li>ol>li:before,
-.content .markdown-section .content .markdown-section ul>li>ol>li:before,
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ol>li:before,
 .content .markdown-section .content .markdown-section ol>li>ol>li>ol>li:before,
-.content .markdown-section .content .markdown-section ul>li>ul>li>ol>li:before,
-.content .markdown-section .content .markdown-section ol>li>ul>li>ol>li:before {
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ul:not(.task-list)>li>ol>li:before {
     position: initial;
     top: initial;
     left: initial;
@@ -315,17 +315,17 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 	padding-right: 1rem;
 }
 .content .markdown-section ol>li>ol>li:before,
-.content .markdown-section ul>li>ol>li:before,
+.content .markdown-section ul:not(.task-list)>li>ol>li:before,
 .content .markdown-section .content .markdown-section ol>li>ol>li:before,
-.content .markdown-section .content .markdown-section ul>li>ol>li:before  {
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ol>li:before  {
 	content: counter(li-counter, lower-alpha);
 }
 .content .markdown-section ol>li>ol>li>ol>li:before,
-.content .markdown-section ul>li>ul>li>ol>li:before,
-.content .markdown-section ol>li>ul>li>ol>li:before,
+.content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol>li:before,
+.content .markdown-section ol>li>ul:not(.task-list)>li>ol>li:before,
 .content .markdown-section .content .markdown-section ol>li>ol>li>ol>li:before,
-.content .markdown-section .content .markdown-section ul>li>ul>li>ol>li:before,
-.content .markdown-section .content .markdown-section ol>li>ul>li>ol>li:before {
+.content .markdown-section .content .markdown-section ul:not(.task-list)>li>ul:not(.task-list)>li>ol>li:before,
+.content .markdown-section .content .markdown-section ol>li>ul:not(.task-list)>li>ol>li:before {
 	content: counter(li-counter, lower-roman);
 }
 

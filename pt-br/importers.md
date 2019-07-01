@@ -277,7 +277,7 @@ Uma vez terminada a criação do seu arquivo *.csv* com os termos desejados, sig
 
 1. Acesse o painel de controle do WordPress
 2. Na barra lateral esquerda, clique em Tainacan
-3. Acesse a sessão *Importadores*;
+3. Acesse a seção *Importadores*;
 4. Na seção **Importadores Disponíveis**, selecione `Vocabulário CSV`;
 5. Configure o campo **Delimitador csv** de acordo com as caractere delimitador do seu arquivo .csv:
 6. Selecione o arquivo *.csv* para upload;
