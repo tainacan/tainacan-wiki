@@ -14,7 +14,7 @@ Para contribuições mais complexas, que envolvam criar páginas, inserção de 
 
 ## Familiarizando-se com a formatação markdown
 
-Vários sistemas colaborativos adotam determinadas convenções de formatação para tornar o trabalho dos editores mais fácil. Em nossa wiki, utilizamos a linguagem **markdown** para tal, mas também utlizamos alguns recursos extras. Esse sistema consiste em sintaxes e palavras-chave específicas para comunicar ao software como determinado texto deve ser exibido.
+Vários sistemas colaborativos adotam determinadas convenções de formatação para tornar o trabalho dos editores mais fácil. Em nossa wiki, utilizamos a linguagem **`markdown`** para tal, mas também utlizamos alguns recursos extras. Esse sistema consiste em sintaxes e palavras-chave específicas para comunicar ao software como determinado texto deve ser exibido.
 
 ### Funcionam em qualquer lugar do texto:
 
@@ -58,7 +58,6 @@ Que será renderizado como:
 
 > Obs: deixe pelo menos uma linha em branco entre este símbolo e qualquer outro texto, caso contrário será entendido como cabeçalho.
 
-
 ### Imagens
 | O que é 	              |  O que você escreve 	               | O que você vê                                                     |
 |-------------------------|----------------------------------------|-------------------------------------------------------------------|
@@ -77,7 +76,7 @@ Usamos um `iframe` para encorporar textos, que é a alternativa padrão para a m
     frameborder="0" allow="accelerometer; 
     autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 ```
-Note que estão configurados a largura (560px), a altura (513px) e também o tempo de início do vídeo (18s).
+> Note que estão configurados a largura (560px), a altura (513px) e também o tempo de início do vídeo (18s).
 
 O resultado será como abaixo:
 
@@ -85,7 +84,7 @@ O resultado será como abaixo:
 
 ### Trechos de código
 
-Para mostrar trechos de código pré-formatado, o próprio markdown já possibilita isso, mas também podemos acrescentar diretivas para dar destaque a algumas linguagens, basta envolver o código desejado com três crases ` ``` ` antes e depois de seu conteúdo. Se for um código em `php`, por exemplo, basta começar com ` ```php `. O resultado será como abaixo:
+Para mostrar trechos de código pré-formatado, o próprio `markdown` já possibilita isso, mas também podemos acrescentar diretivas para dar destaque a algumas linguagens, basta envolver o código desejado com três crases ` ``` ` antes e depois de seu conteúdo. Se for um código em `php`, por exemplo, basta começar com ` ```php `. O resultado será como abaixo:
 
 ```php
 <?php
@@ -99,7 +98,7 @@ function foo($arg_1, $arg_2, /* ..., */ $arg_n)
 
 ### Abas 
 
-Uma das coisas extras que nossa Wiki consegue fazer para além do markdown renderizar abas. Elas podem ser úteis para segmentar conteúdos em seções dentro de uma mesma página. Por exemplo, o código abaixo:
+Uma das coisas extras que nossa Wiki consegue fazer para além do `markdown` renderizar abas. Elas podem ser úteis para segmentar conteúdos em seções dentro de uma mesma página. Por exemplo, o código abaixo:
 
 ```markdown
 <!-- tabs:start -->
@@ -136,3 +135,50 @@ Conteúdo da Aba 2
 Conteúdo da Aba 3
 
 <!-- tabs:end -->
+
+### Collapses 
+
+Para esconder alguns conteúdos extensos em regiões collpsáveis, usamos a tag `HTML` `<description></description>` e `<summary></summary>`. Por exemplo:
+
+```
+<details>
+<summary>Um collapse (Clique para expandir)</summary>
+
+- Conteúdo markdown aqui dentro
+- E o que mais for preciso
+
+</details>
+```
+
+Resultará em:
+<details>
+<summary>Um collapse (Clique para expandir)</summary>
+
+- Conteúdo markdown aqui dentro
+- E o que mais for preciso
+
+</details>
+
+> Note que há uma linha de espaço entre o que é código `HTML` e o que é `markdown`.
+
+### Tabelas
+
+A maneira de se criar tabelas é um pouco limitada em `markdown`. Segue um exemplo:
+
+```
+| Cabeçalho 1   | Cabeçalho 2   |
+|---------------|---------------|
+| Dados 1       | Dados 2       |
+| Dados 3       | Dados 4       |
+```
+
+Que gera a seguinte tabela:
+
+| Cabeçalho 1   | Cabeçalho 2   |
+|---------------|---------------|
+| Dados 1       | Dados 2       |
+| Dados 3       | Dados 4       |
+
+## Contribuição Avançada com a Docsify
+
+?> _TODO_ Instruções para rodar a Docsify em ambiente local.
