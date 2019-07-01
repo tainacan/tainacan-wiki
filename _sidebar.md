@@ -3,11 +3,12 @@
 * Basics
     * [F.A.Q.](faq)
     * [Introduction to Tainacan](introduction)
-* [**Install and Setup**](install)
-    * [Environment setup](xampp)
-    * [Install WordPress](wordpress)
-    * [Install the plugin](tainacan)
-    * [Install the theme](theme)
+* Install and Setup
+    * [**Install Tainacan**](install)
+    * [Install Tainacan on a local Windows machine](xampp)
+        * [Install WordPress](wordpress)
+        * [Install the plugin](tainacan)
+        * [Install the theme](theme)
     * [Optimization](optimization)
     * [Hosting](hosting)
 * Using Tainacan

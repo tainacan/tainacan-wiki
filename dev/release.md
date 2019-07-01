@@ -32,7 +32,7 @@ git flow release start $NEW_VERSION
 
 ### Edit version numbers
 
-Edit `src/readme.txt` and `src/tainacan.php` and change the version numbers to `$NEW_VERSION`. In `tainacan.php` also change the `TAINACAN_VERSION` constant after the comments section
+Edit `src/tainacan.php` and change the version numbers to `$NEW_VERSION`. Also change the `TAINACAN_VERSION` constant after the comments section.
 
 When releasing a RC version, append RC (number) to the version.
 
@@ -55,11 +55,62 @@ cd $GIT_PATH
 git checkout webpack.config.js
 ```
 
+### Commit and push
+
+Commit and push this release branch.
+
+```
+git commit -am"version $NEW_VERSION"
+git push
+```
+
+### Update trunk in SVN
+
+When we release the RC is a good time to update the SVN trunk. This will allow the community to work on the translations before the final release.
+
+Note that the `Stable tag` in the `readme.txt` file must not be edited and keep pointing to $CURRENT_VERSION.
+
+1. clean trunk
+
+```
+rm -rf $SVN_PATH/trunk/*
+```
+
+2. Copy new files
+
+```
+cp -R $BUILD_PATH/* $SVN_PATH/trunk/
+```
+
+3. Go to the SVN folder
+
+  ```
+  cd $SVN_PATH
+  ```
+
+4. `svn rm` all files that have been removed
+  
+  ```
+  svn st | grep '^!' | awk '{print $2}' | xargs svn rm
+  ```
+
+5. `svn add` all new files
+
+  ```
+  svn st | grep '^?' | awk '{print $2}' | xargs svn add
+  ```
+
+6. Commit!
+
+  ```
+  svn ci
+  ```
+
 ### Publish the RC
 
 Create a ZIP package with the built plugin and publish a blog post calling for tests.
 
-Commit and push to Git!
+Use previous blog posts as templates, keeping all the content explaining what a RC is and how to contribute.
 
 ### Test
 
@@ -84,6 +135,16 @@ git checkout release/$NEW_VERSION
 git pull
 ```
 Edit `src/readme.txt` and `src/tainacan.php` and change the version numbers to `$NEW_VERSION`.
+
+In `src/readme.txt`:
+
+* Edit `Stable tag` to $NEW_VERSION
+* If applicable, edit `Tested up to`
+
+In `src/tainacan.php`:
+
+* Edit `Version`
+* Edit the `TAINACAN_VERSION` constant
 
 Commit and push.
 

@@ -3,11 +3,12 @@
 * Básico
     * [Perguntas Frequentes](/pt-br/faq)
     * [Introdução ao Tainacan](/pt-br/introduction)
-* [**Instalação e configuração**](/pt-br/instalacao)
-    * [Configurando o ambiente](/pt-br/xampp)
-    * [Instalando o WordPress](/pt-br/wordpress)
-    * [Instalando o plugin](/pt-br/tainacan)
-    * [Instalando o tema](/pt-br/theme)
+* Instalação e configuração
+    * [**Instalando o Tainacan**](/pt-br/instalacao)
+    * [Instalando Tainacan em um computador Windows (sem servidor)](/pt-br/xampp)
+        * [Instalando o WordPress](/pt-br/wordpress)
+        * [Instalando o plugin](/pt-br/tainacan)
+        * [Instalando o tema](/pt-br/theme)
     * [Otimização](/pt-br/optimization)
     * [Hospedagem](/pt-br/hosting)
 * Usando o Tainacan
