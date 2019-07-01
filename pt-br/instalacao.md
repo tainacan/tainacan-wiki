@@ -26,5 +26,5 @@ No entanto, entenda que essas versões, como o próprio nome já diz, ainda est�
 
 Dito isto, aqui estão os links para Download.
 
-* [Plugin Tainacan: versão de desenvolvimento](https://tainacan.org/nightly-builds/tainacan-nightly.zip)  
-* [Tema Tainacan: versão de desenvolvimento](https://tainacan.org/nightly-builds/tainacan-interface-nightly.zip)
+* [Plugin Tainacan: versão de desenvolvimento](https://tainacan.org/wp-content/uploads/nightly-builds/tainacan-nightly.zip)  
+* [Tema Tainacan: versão de desenvolvimento](https://tainacan.org/wp-content/uploads/nightly-builds/tainacan-interface-nightly.zip)
