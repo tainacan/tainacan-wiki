@@ -239,6 +239,29 @@ Isso instanciará um servidor local de testes, geralmente na porta `http://local
 
 ### Fazendo sua primeira contribuição via Pull-Request
 
-O procedimento acima, exceto pelo último comando, só precisa ser executado uma vez. A seguir detalhamos como propor uma mudança para algum arquivo da Wiki. Suponha que você deseja acrescentar mais informações sobre Hospedagem. Este arquivo, em português, se encontra em `/pt-br/hosting.md`, como pode ser visto pelo enderço na barra do navegador.
+O procedimento acima, exceto pelo último comando, só precisa ser executado uma vez. A seguir detalhamos como propor uma mudança para algum arquivo da Wiki. Suponha que você deseja acrescentar mais informações sobre [Hospedagem](/pt-br/hosting). Este arquivo, em português, se encontra em `/pt-br/hosting.md`, como pode ser visto pelo endereço na barra do navegador.
 
-?> _TODO_ Continuar explicação da pull request.
+Uma boa prática é começar atualizando seu repositório local com as mudanças que podem ter sido feitas no repositório oficial da wiki:
+
+```
+git fetch upstream
+git merge upstream/master
+```
+
+Faça então as alterações que você deseja e salve o arquivo. Atualize o seu *Fork*:
+
+```
+git add .
+git commit -m "Atualiza o conteúdo da página de hospedagem com mais opções."
+git push
+```
+
+Você deve poder ver as alterações no seu repositório no GitHub. Vá então para o [repositório oficial da Wiki](https://github.com/tainacan/tainacan-wiki) e clique na opção "Criar Pull Request":
+
+![Captura de Tela da página da Wiki no Github, onde está em destaque o botão de criar Pull Request](/_assets/images/contributing_3.png)
+
+Você escolherá seu *Fork* como origem para a *Pull Request* e poderá escrever uma descrição resumindo suas alterações. 
+
+![Captura de Tela da página da Wiki no Github, mostrando a opção de escolher a branch de origem da Fork](/_assets/images/contributing_4.png)
+
+Criada a requisição, é só aguardar a revisão da equipe!
