@@ -1,6 +1,6 @@
 # Colabore com esta Wiki
 
-Se você chegou a esta página, provavelmente está pensando em contribuir com a nossa Wiki :smile: . Isto é ótimo! Com projeto de Software Livre, o Tainacan está calcado nos princípios da colaboração em diversos níveis: na **pesquisa**, no **código**, na **tradução** e também na **documentação**. Como usuário, você pode trazer contribuições valorosas para deixar nosso material mais claro e acessível. 
+Se você chegou a esta página, provavelmente está pensando em contribuir com a nossa Wiki :smile: . Isto é ótimo! Como projeto de Software Livre, o Tainacan está calcado nos princípios da colaboração em diversos níveis: na **pesquisa**, no **código**, na **tradução** e também na **documentação**. Como usuário, você pode trazer contribuições valorosas para deixar nosso material mais claro e acessível. 
 
 Para colaborar, entretanto, é preciso se familiarizar um pouco com nossas ferramentas de documentação. Não se preocupe - aqui te daremos o auxílio necessário para que você possa fazer contribuições de qualidade sem dificuldades! Nesta página você vai ver:
 
