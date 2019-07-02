@@ -77,6 +77,12 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 }
 
 /* Sidebar */
+.sidebar ul li a {
+    padding: 6px 0;
+    line-height: normal;
+    text-overflow: initial;
+    white-space: normal;
+}
 .sidebar ul li a,
 .sidebar ul li p {
     font-size: 16px;

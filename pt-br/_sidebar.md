@@ -5,7 +5,7 @@
     * [Introdução ao Tainacan](/pt-br/introduction)
 * Instalação e configuração
     * [**Instalando o Tainacan**](/pt-br/instalacao)
-    * [Instalando Tainacan em um computador Windows (sem servidor)](/pt-br/xampp#como-instalar-o-xampp-no-windows)
+    * [Instalando o Tainacan em uma máquina windows local (sem servidor)](/pt-br/xampp#como-instalar-o-xampp-no-windows)
     * [Otimização](/pt-br/optimization)
     * [Hospedagem](/pt-br/hosting)
 * Usando o Tainacan
