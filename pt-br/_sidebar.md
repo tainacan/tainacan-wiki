@@ -28,6 +28,7 @@
 * Comunidade & Outros
     * [Lista da Comunidade :link:](https://lists.riseup.net/www/subscribe/tainacan ':ignore')
     * [Colabore com esta Wiki](/pt-br/CONTRIBUTING)
+	* [Teste de Versões](/pt-br/release-testing.md) 
     * [Processamento de Dados e Acervos](/pt-br/data-processing)
     * [OpenRefine :link:](http://openrefine.org/ ':ignore')
  
