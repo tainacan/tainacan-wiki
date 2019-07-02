@@ -90,3 +90,7 @@ That's where the files are to be viewed in the browser.
 That's it. Now we have a **XAMPP** server running on **windows**.
 
 <br><br>
+
+Now it's time to start installing [Wordpress](wordpress#how-to-install-wordpress-on-windows) on your **XAMPP** server.
+
+<br><br>

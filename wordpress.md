@@ -137,4 +137,6 @@ This is the **Wordpress Control Panel**. Everything on the site can be changed i
 
 That's it. In the next times, if you prefer to access the site directly, just visit the address `localhost/project_test` (or the name chosen). To access the **Control Panel** directly, simply visit the address `localhost/project_test/wp-admin` (or the chosen name instead of **project_test**)
 
+Now we can begin to install the [Tainacan](tainacan#how-to-install-the-tainacan-plugin-on-wordpress).
+
 <br><br>

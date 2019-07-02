@@ -138,6 +138,6 @@ Este é o **Painel de Controle** do **Wordpress**. Tudo o que há no site pode s
 Pronto. Nas próximas vezes, caso prefira acessar diretamente o site, basta visitar o endereço `localhost/projeto_teste` (ou o nome escolhido).
 Para acessar diretamente o **Painel de Controle**, basta visitar o endereço `localhost/projeto_teste/wp-admin` (ou o nome escolhido no lugar de **projeto_teste**)
 
-A seguir, começaremos a instalar o plugin do **Tainacan**.
+A seguir, começaremos a instalar o plugin do [Tainacan](/pt-br/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
 
 <br><br>

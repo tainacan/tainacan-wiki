@@ -90,3 +90,7 @@ Na imagem acima, é possível ver o endereço da pasta: `C:/xampp/htdocs`
 Pronto. Já temos um servidor **XAMPP** rodando no **windows**.
 
 <br><br>
+
+Agora é hora de começar a instalar o [Wordpress](/pt-br/wordpress#como-instalar-o-wordpress-no-windows) no seu servidor **XAMPP**.
+
+<br><br>

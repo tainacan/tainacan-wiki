@@ -14,11 +14,15 @@ Please note that Tainacan is still in Beta version and is published only for tes
 
 Download Tainacan from the [official WordPress repository](https://wordpress.org/plugins/tainacan) or install it directly from your WordPress Dashboard. You can also visit its [Github page](https://github.com/tainacan/tainacan).
 
+See the [tainacan installation tutorial](tainacan#how-to-install-the-tainacan-plugin-on-wordpress) for step-by-step installation.
+
 ## Tainacan default theme ##
 
 Tainacan will run with any WordPress theme. However, to take the most of all it’s features, you should use a theme that supports Tainacan.
 
 Download “Tainacan Interface” theme from the [official WordPress repository](https://wordpress.org/themes/tainacan-interface) or install it directly from your WordPress Dashboard. You can also visit its [Github page](https://github.com/tainacan/tainacan-theme).
+
+See the [theme installation tutorial](theme#tema) for step-by-step installation.
 
 ## Development Downloads ##
 
