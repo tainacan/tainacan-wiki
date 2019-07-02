@@ -2,7 +2,12 @@
 
 Se você chegou a esta página, provavelmente está pensando em contribuir com a nossa Wiki :smile: . Isto é ótimo! Com projeto de Software Livre, o Tainacan está calcado nos princípios da colaboração em diversos níveis: na **pesquisa**, no **código**, na **tradução** e também na **documentação**. Como usuário, você pode trazer contribuições valorosas para deixar nosso material mais claro e acessível. 
 
-Para colaborar, entretanto, é preciso se familiarizar um pouco com nossas ferramentas de documentação. Não se preocupe - aqui te daremos o auxílio necessário para que você possa fazer contribuições de qualidade sem dificuldades!
+Para colaborar, entretanto, é preciso se familiarizar um pouco com nossas ferramentas de documentação. Não se preocupe - aqui te daremos o auxílio necessário para que você possa fazer contribuições de qualidade sem dificuldades! Nesta página você vai ver:
+
+* [Como editar arquivos online via GitHub](#editando-arquivos-diretamente-no-github)
+* [Como funciona a sintaxe dos artigos da Wiki](#familiarizando-se-com-a-formatação-markdown)
+* [Como testar e fazer contribuições avançadas na Wiki](#contribuição-avançada-com-a-docsify)
+* [Como funciona a estrutura de arquivos da Wiki](#entendendo-a-estrutura-da-wiki)
 
 ## Editando arquivos diretamente no GitHub
 
