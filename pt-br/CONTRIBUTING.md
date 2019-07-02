@@ -10,7 +10,7 @@ Nossa Wiki está hospedada inteiramente no GitHub no seguinte repositório: http
 
 Clicando no botão de editar, em formato de pincel, você poderá fazer as alterações desejadas, e ao final do formulário, explicar quais mudanças estão sendo propostas. Ao submeter uma proposta de mudança, o GitHub está, por trás dos panos, criando uma *Fork* para você e aplicando uma *Pull-Request*.
 
-Para contribuições mais complexas, que envolvam criar páginas, inserção de imagens, abas, vídeos, ou mesmo alterações na estrutura de navegação da Wiki, sugerimos seguir nossas instruções para rodar a [Docsify](#docsify).
+Para contribuições mais complexas, que envolvam criar páginas, inserção de imagens, abas, vídeos, ou mesmo alterações na estrutura de navegação da Wiki, sugerimos seguir nossas [instruções para rodar a Docsify](#contribuição-avançada-com-a-docsify).
 
 ## Familiarizando-se com a formatação markdown
 
@@ -179,6 +179,66 @@ Que gera a seguinte tabela:
 | Dados 1       | Dados 2       |
 | Dados 3       | Dados 4       |
 
+Para inserir quebras de linha dentro de tabelas `markdown`, usamos a tag `HTML` `<br>`:
+
+```
+| Cabeçalho 1   | Cabeçalho 2        |
+|---------------|--------------------|
+| Dados 1       | Dados 2            |
+| Dados 3       | Dados 4<br>Dados 5 |
+```
+
+Que resulta na seguinte tabela:
+
+| Cabeçalho 1   | Cabeçalho 2        |
+|---------------|--------------------|
+| Dados 1       | Dados 2            |
+| Dados 3       | Dados 4<br>Dados 5 |
+
 ## Contribuição Avançada com a Docsify
 
-?> _TODO_ Instruções para rodar a Docsify em ambiente local.
+Tudo o que foi mostrado até o momento pode ser [editado diretamente via GitHub](#editando-arquivos-diretamente-no-github), porém fica difícil prever como irão ficar alguns recursos mais avançados, como as imagens ou as abas, que só podem ser visualizadas mesmo quando já submetidas para a Wiki. Para essas e outras contribuções mais avançadas, como mecher na estrutura de navegação, sugerimos o teste do conteúdo em sua máquina local, o que vai requerer alguns conhecimentos extras. 
+
+### Preparando o ambiente
+
+Em sua máquina ter, é preciso ter instalados:
+
+* Git
+* NodeJS
+
+Primeiramente, faça uma *Fork* do nosso repositório no GitHub:
+
+![Captura de Tela da página da Wiki no Github, onde está em destaque o botão de criar Fork.](/_assets/images/contributing_2.png)
+
+Clone e acesse sua cópia local. Nós assumimos aqui que você já tenha realizado as [configurações inicias do Git](https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git), usando uma conta criada no GitHub:
+
+```
+git clone https://github.com/SEU_NOME_DE_USUARIO/tainacan-wiki
+cd tainacan-wiki
+```
+
+O proximo comando garante que a sua *Fork* possa ser sincronizada futuramente com atualizações vindas do repositório original da Wiki:
+
+```
+git remote add upstream https://github.com/tainacan/tainacan-wiki.git
+```
+
+Agora instale globalmente a `CLI` da Docsify, nossa framework que auxilia na criação da Wiki:
+
+```
+npm -i docsify-cli -g
+```
+
+Tenha certeza de que está no diretório do respositóio (`cd tainacan-wiki`, ou qualquer caminho necessário) e inicie o servidor da Docsify:
+
+```
+docsify serve
+```
+
+Isso instanciará um servidor local de testes, geralmente na porta `http://localhost:3000`. Ao acessar este endereço no seu navegador, você terá uma prévia de como ficará a Wiki após as edições feitas na sua cópia local. Qualquer mudança em algum arquivo dentro do repositório será refletida automaticamente neste endereço, assim que o arquivo for salvo.
+
+### Fazendo sua primeira contribuição via Pull-Request
+
+O procedimento acima, exceto pelo último comando, só precisa ser executado uma vez. A seguir detalhamos como propor uma mudança para algum arquivo da Wiki. Suponha que você deseja acrescentar mais informações sobre Hospedagem. Este arquivo, em português, se encontra em `/pt-br/hosting.md`, como pode ser visto pelo enderço na barra do navegador.
+
+?> _TODO_ Continuar explicação da pull request.
