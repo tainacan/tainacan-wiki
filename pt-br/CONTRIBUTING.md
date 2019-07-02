@@ -34,11 +34,11 @@ Vários sistemas colaborativos adotam determinadas convenções de formatação 
 
 | O que é 	              |  O que você escreve 	               | O que você vê                                                     |
 |-------------------------|----------------------------------------|-------------------------------------------------------------------|
-| Seções 	              | `## Nível 2`                           | <h2>Nível 2</h2>                                                  |
-| Seções 	              | `### Nível 3`                          | <h3>Nível 3</h3>                                                  |
-| Seções 	              | `#### Nível 4`                         | <h4>Nível 4</h4>                                                  |
-| Seções 	              | `##### Nível 5`                        | <h5>Nível 5</h5>                                                  |
-| Seções 	              | `###### Nível 6`                       | <h6>Nível 6</h6>                                                  |
+| Cabeçalho de Seção      | `## Nível 2`                           | <h2>Nível 2</h2>                                                  |
+| Cabeçalho de Seção      | `### Nível 3`                          | <h3>Nível 3</h3>                                                  |
+| Cabeçalho de Seção      | `#### Nível 4`                         | <h4>Nível 4</h4>                                                  |
+| Cabeçalho de Seção      | `##### Nível 5`                        | <h5>Nível 5</h5>                                                  |
+| Cabeçalho de Seção      | `###### Nível 6`                       | <h6>Nível 6</h6>                                                  |
 | Listas com marcadores   | `* Este é um ponto`<br>`* Este é outro ponto`<br>&nbsp;&nbsp;`* Ponto dentro de um ponto` | <ul><li>Este é um ponto</li><li>Este é outro  ponto<ul><li>Ponto dentro de um ponto</li></ul></li></ul> |
 | Listas enumeradas       | `1. Este é um ponto`<br>`2. Este é outro ponto`<br>&nbsp;&nbsp;`1. Ponto dentro de um ponto` | <ol><li>Este é um ponto</li><li>Este é outro  ponto<ol><li>Ponto dentro de um ponto</li></ol></li></ol> |
 | Lista de checks         | `- [ ] Este é um ponto`<br>`- [x] Este é outro ponto`<br>&nbsp;&nbsp;`- [ ] Ponto dentro de um ponto` | <ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Este é um ponto</label></li><li class="task-list-item"><label><input checked disabled="" type="checkbox">Este é outro ponto</label><ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Ponto dentro de um ponto</label></li></ul></li></ul> |
@@ -267,3 +267,50 @@ Você escolherá seu *Fork* como origem para a *Pull Request* e poderá escrever
 ![Captura de Tela da página da Wiki no Github, mostrando a opção de escolher a branch de origem da Fork](/_assets/images/contributing_4.png)
 
 Criada a requisição, é só aguardar a revisão da equipe!
+
+## Entendendo a estrutura da Wiki
+
+Agora que você já está capaz de colaborar e testar mudanças na nossa Wiki, está na hora de entender um pouco melhor como funciona a Docsify, responsável por transformar os arquivos `markdown` existentes em nosso repositório no site que você vê hospedado em https://tainacan.github.io/tainacan-wiki/#/pt-br/.
+
+Observando a estrutura de arquivos do repositório, temos as seguintes páginas e arquivos, entre outros:
+
+```
+/_assets
+/dev
+    README.md
+    _sidebar.md
+/pt-br
+    /_assets
+    /dev
+        README.md
+        _sidebar.md
+    CONTRIBUTING.md
+    README.md
+    _coverpage.md
+    _navbar.md
+    _sidebar.md
+    introduction.md
+CONTRIBUTING.md
+README.md
+_coverpage.md
+_navbar.md
+_sidebar.md
+introduction.md
+index.html
+style.css
+```
+Vamos comentar sobre alguns:
+
+* **/_assets**: é a pasta onde guardamos imagens e demais arquivos de mídia. Ela existirá em níveis mais internos da Wiki para guardar arquivos relativos àquele escopo;
+* **/dev**: é a pasta que guarda a parte da Wiki relativa a documentação para desenvolvedores. Esta separação ajuda a organizar um pouco o conteúdo extenso da Wiki. No futuro, podem ser criadas outras pastas específicas para uma parte da Wiki, desde que ajustadas as referências paras os arquivos que ficam nela;
+* **/pt-br**: é a pasta onde está guardada a documentação da Wiki traduzida para Português Brasileiro. Observe que quase todos os arquivos e pastas do resto da Wiki estão replicadas aqui. Quando não há uma versão traduzida para um arquivo dentro desta pasta, o usuário será redirecionado para o arquivo correspondente na pasta raiz;
+* **CONTRIBUTING.md**: Instruções para quem deseja colaborar com a Wiki. Você está lendo a versão traduzida deste arquivo, que está em `/pt-br/CONTRIBUTING.md`;
+* **README.md**: Página Inicial da Wiki, que é carregada ao se acessar `/`. Usamos o nome README para que o GitHub também reconheça este arquivo como o de apresentação. A versão traduzida está em `/pt-br/README.md` e é carregada ao se acessar `/pt-br`. Internamente às pastas `/dev`, também há uma versão deste arquivo, que será a Página Inicial da sessão de Desenvolvedores;
+* **_coverpage.md**: Página de capa, que é carregada acima da página inicial;
+* **_navbar.md**: Barra superior da Wiki, atualmente contém link para o site oficial e um dropdown para escolher a linguagem do site. Esta é uma página especial que é renderizada pela Docsify, transformando sublistas, por exemplo, em dropdowns;
+* **_sidebar.md**: Lista de links que são exibidos na barra lateral. Observe que há uma dessas na pasta `/pt-br` com seu conteúdo traduzido, mas também há versões nas pastas `/dev` e `/dev/pt-br`. Isso garante que ao navegar em arquivos da sessão de desenvolvedores, seja mostrada uma lista de links dedicada para o assunto.
+* **introduction.md**: Um exemplo de uma das várias páginas comuns que existem na Wiki. Estas páginas costumam ter sua própria hierarquia definida pelos cabeçalhos de sessão, que são exibidos também na barra lateral quando se entra nela;
+* **index.html**: Arquivo usadado para configurar a Docsify, plugins e imports. Não recomendamos alterações aqui, há menos que saiba o que está fazendo!
+* **style.css**: Folha de estilos CSS do site, que customiza a aparência da Wiki.
+
+Encorajamos fortemente a exploração desta estrutura e de alterações pelo servidor de testes locais da Docsify para se familiarizar com os conceitos. Para mais detalhes, consulte a [documentação da Docsify](https://docsify.js.org/).
