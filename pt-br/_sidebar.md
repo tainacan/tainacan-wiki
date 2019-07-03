@@ -3,6 +3,7 @@
 * Básico
     * [Perguntas Frequentes](/pt-br/faq)
     * [Conceitos Gerais](/pt-br/general-concepts)
+    * [Primeiros Passos](/pt-br/getting-started)
 * Instalação e configuração
     * [**Instalando o Tainacan**](/pt-br/instalacao)
     * [Instalando o Tainacan em uma máquina windows local (sem servidor)](/pt-br/xampp#como-instalar-o-xampp-no-windows)

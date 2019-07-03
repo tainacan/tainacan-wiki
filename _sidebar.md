@@ -3,6 +3,7 @@
 * Basics
     * [F.A.Q.](faq)
     * [General Concepts](general-concepts)
+    * [Getting Started](/pt-br/getting-started)
 * Install and Setup
     * [**Install Tainacan**](install)
     * [Install Tainacan on a local windows machine (no server)](xampp#how-to-install-xampp-on-windows)
