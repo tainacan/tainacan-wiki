@@ -1,5 +1,13 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Importadores" 
+		src="/_assets/images/icon_importers.png"
+		width="40"
+		height="40">
+</div>
+
 # Importadores
 
 ?> _TODO_ Fazer introdução para o assunto importadores antes de listar eles

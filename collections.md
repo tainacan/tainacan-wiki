@@ -1,5 +1,13 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Coleções" 
+		src="/_assets/images/icon_collections.png"
+		width="42"
+		height="42">
+</div>
+
 # Coleções
 
 Uma "coleção" é um grupo de itens que compartilham um mesmo conjunto de metadados. Cada item enviado para seu repositório digital pertencerá a uma única coleção.

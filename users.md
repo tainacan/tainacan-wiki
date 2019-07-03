@@ -1,5 +1,13 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Usuários" 
+		src="/_assets/images/icon_users.png"
+		width="40"
+		height="40">
+</div>
+
 # Usuários
 
 ## Permissões de Usuários no Tainacan
