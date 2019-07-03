@@ -1,5 +1,13 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Taxonomias" 
+		src="/_assets/images/icon_taxonomies.png"
+		width="42"
+		height="42">
+</div>
+
 # Taxonomias
 
 *Taxonomias* podem ser criadas e usadas para a classificação de itens. Exemplos de taxonomias comuns são a de *Gênero*, *Países*, etc.

@@ -1,5 +1,13 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Filtros" 
+		src="/_assets/images/icon_filters.png"
+		width="42"
+		height="42">
+</div>
+
 # Filtros
 
 Para cada coleção é possível escolher quais de seus metadados serão usados como opção de filtros para resultados em uma busca facetada na visualização da coleção. Sendo assim, os pré-requisitos para o uso dos filtros no repositório são:

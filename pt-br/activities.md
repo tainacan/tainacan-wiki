@@ -1,3 +1,11 @@
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Atividades" 
+		src="/_assets/images/icon_logs.png"
+		width="42"
+		height="42">
+</div>
+
 # Registro de Atividades
 
 Todas ações realizadas no repositório são registradas: a criação, edição e exclusão de coleções, metadados, itens e taxonomias.

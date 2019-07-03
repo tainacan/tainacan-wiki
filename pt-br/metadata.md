@@ -1,3 +1,11 @@
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Metadados" 
+		src="/_assets/images/icon_metadata.png"
+		width="42"
+		height="42">
+</div>
+
 # Metadados
 
 No Tainacan, cada coleção tem um conjunto de metadados para descrever seus documentos. Isso significa que a **coleção** a qual o **item** pertence determina os *metadados* que ele tem.
