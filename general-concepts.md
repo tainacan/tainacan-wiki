@@ -1,15 +1,6 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
-# Introdução ao Tainacan
-
-## Conceitos Gerais
-
-O fluxo de trabalho comum na criação de um repositório digital com o Tainacan é: 
-
-- Criar uma coleção
-- Escolher os metadados que cada item terá nessa coleção
-- Escolher os filtros que serão usados quando a coleção for visualizada
-- Inserir itens na coleção ou importar eles de uma fonte externa
+# Conceitos Gerais
 
 ### Vídeo Tutorial: Usando o Tainacan - Conceitos gerais
 <iframe

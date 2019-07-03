@@ -24,7 +24,7 @@ You can browse or search for specific topics on the side menu. Follows some rele
 </li>
 <li class="list-group-item">
 
-[Introduction to Tainacan](introduction)
+[General Concepts](general-concepts)
 
 </li>
                 <li class="list-group-item"><a title="Email List of the User's Community" href="https://lists.riseup.net/www/subscribe/tainacan">User's Community</a></li>
