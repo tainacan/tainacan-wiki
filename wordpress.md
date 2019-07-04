@@ -1,4 +1,8 @@
-# How to install WordPress on windows #
+# How to install wordpress on a XAMPP server (windows) #
+
+<br>
+
+After install the web server on your local machine, we will now install **wordpress**. If you have not yet installed the web server, [click here to view the tutorial](xampp#install-tainacan-on-a-local-windows-machine-no-server). To install **Tainacan**, [you can see this tutorial](tainacan#how-to-install-the-tainacan-plugin-on-wordpress).
 
 ## Downloading ##
 

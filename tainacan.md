@@ -1,5 +1,9 @@
 # How to install the Tainacan plugin on Wordpress #
 
+<br>
+
+Continuing the installation of **wordpress**, we will now start the installation of **Tainacan**. If you have not installed **wordpress** yet, [see this tutorial on how to install it](wordpress#how-to-install-wordpress-on-windows). If you still do not have a web server on your local machine, [see this tutorial](xampp#install-tainacan-on-a-local-windows-machine-no-server).
+
 ## Entering the admin ##
 
 There are several ways to perform this installation. This tutorial will show only one of them.

@@ -1,4 +1,11 @@
-# How to install XAMPP on windows #
+# Install Tainacan on a local windows machine (no server) #
+
+<br>
+
+**Tainacan** is a **wordpress** plugin. To use it, if you have nothing installed, you'll need to perform three very simple installations:
+1. A web server in your machine. Here we show [how to install XAMPP on windows](#downloading).
+2. The **wordpress**. See [how to install wordpress on a XAMPP server (windows)](wordpress#how-to-install-wordpress-on-windows).
+3. The **Tainacan** plugin. We taught [how to install Tainacan in wordpress](tainacan#how-to-install-the-tainacan-plugin-on-wordpress).
 
 ## Downloading ##
 
