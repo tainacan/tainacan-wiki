@@ -7,6 +7,11 @@ O **Tainacan** é um plugin de **wordpress**. Para utilizá-lo, caso não tenha 
 2. O **wordpress**. Aqui ensinamos [como instalar o wordpress num servidor XAMPP (windows)](/pt-br/wordpress#como-instalar-o-wordpress-no-windows).
 3. O plugin do **Tainacan**. Ensinamos [como instalar o Tainacan no wordpress](/pt-br/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
 
+Se preferir, você pode assistir os mesmos tutoriais em vídeo:
+* [XAMPP](https://www.youtube.com/watch?v=rznX0EZhWG4)
+* [Wordpress](https://www.youtube.com/watch?v=7v6qNHmqm0I)
+* [Tainacan](https://www.youtube.com/watch?v=qRtoNRUlVkk)
+
 ## Baixando ##
 
 Para iniciar, vamos até o link https://www.apachefriends.org/pt_br/index.html e vamos baixar o **XAMPP** para **windows**.
