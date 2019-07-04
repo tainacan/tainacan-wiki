@@ -2,7 +2,8 @@
  
 * Basics
     * [F.A.Q.](faq)
-    * [Introduction to Tainacan](introduction)
+    * [General Concepts](general-concepts)
+    * [Getting Started](/pt-br/getting-started)
 * Install and Setup
     * [**Install Tainacan**](install)
     * [Install Tainacan on a local windows machine (no server)](xampp#install-tainacan-on-a-local-windows-machine-no-server)
@@ -24,10 +25,11 @@
     * [Oficial website :link:](https://tainacan.org/ ':ignore')
     * [Releases](/releases)
     * [Publications :link:](http://pesquisa.medialab.ufg.br/artigos/ ':ignore')
-    * [Presentations :link:](https://wiki.tainacan.org/index.php?title=Apresenta%C3%A7%C3%B5es ':ignore')
+    * [Presentations](/presentations)
 * Community & Misc
     * [Community list :link:](https://lists.riseup.net/www/subscribe/tainacan ':ignore')
     * [Improve this wiki](CONTRIBUTING)
+	* [Release Testing](/release-testing.md) 
     * [Data and Archival Processing](data-processing)
     * [OpenRefine :link:](http://openrefine.org/ ':ignore')
  

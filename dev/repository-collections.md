@@ -1,9 +1,8 @@
-
 # Collections Repository
 
 ## Main Methods
 
-These are the most used methods of this repository. For a complete list see [the repository file](../src/classes/repositories/class-tainacan-collections.php).
+These are the most used methods of this repository. For a complete list see [the repository file](https://github.com/tainacan/tainacan/master/develop/src/classes/repositories/class-tainacan-collections.php).
 
 
 ### fetch()

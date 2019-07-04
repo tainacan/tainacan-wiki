@@ -17,9 +17,9 @@ If you want to disable this change to the default WordPress behavior you can do 
 ```
 define('TAINACAN_DISABLE_DEFAULT_SEARCH_ENGINE', true);
 ```
-Our efforts right now are to improve the compatibility with [ElasticPress](https://wordpress.org/plugins/elasticpress/) plugin. Its already working for searches and most parts of the plugin. We are now starting to make it work to build the facets.
+Our efforts right now are to improve the compatibility with [ElasticPress](https://wordpress.org/plugins/elasticpress/) plugin. Its already fully functional since [version 0.9](https://tainacan.org/blog/2019/05/20/tainacan-beta-0-9-elastic-search-new-gutenberg-block-and-importers/)
 
 
-Our understanding is that, if a reposiory gets too big, it might need a more robust infrastructure and Elastic Search is our call. Therefore we are working to better integrate it with the ElasticPress plugin.
+Our understanding is that, if a reposiory gets too big, it might need a more robust infrastructure and Elastic Search is our call.
 
 However, since we made sure to build things in the "WordPress way", and since Tainacan search uses the native `WP_Query` class to make it queries, any plugin that filters its behavior might work with Tainacan. So feel free to try other search plugins for WordPress and please let us know how well they work!

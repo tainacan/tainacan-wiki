@@ -1,15 +1,6 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+# Conceitos Gerais
 
-# Introdução ao Tainacan
-
-## Conceitos Gerais
-
-O fluxo de trabalho comum na criação de um repositório digital com o Tainacan é: 
-
-- Criar uma coleção
-- Escolher os metadados que cada item terá nessa coleção
-- Escolher os filtros que serão usados quando a coleção for visualizada
-- Inserir itens na coleção ou importar eles de uma fonte externa
+Nesta página introduzimos alguns conceitos importantes para o uso do Tainacan no dia-a-dia. É importante dizer que os termos aqui apresentados são definidos pela equipe de pesquisa e desenvolvimento do Tainacan, mas dependo da sua área de atuação, podem ser sinônimos de outros termos conhecidos.
 
 ### Vídeo Tutorial: Usando o Tainacan - Conceitos gerais
 <iframe
@@ -33,6 +24,8 @@ Para cada coleção você pode configurar um conjunto diferente de metadados, en
 
 As coleções também podem ter coleções "filhas", que vão herdar seus metadados e a partir disso podem também adicionar outros metadados para informações adicionais.
 
+Veja o artigo completo sobre uso das **Coleções** [aqui](/pt-br/collections). 
+
 ## Itens
 
 Itens são o verdadeiro conteúdo do repositório. A "pintura", o "filme",o "livro" e assim por diante. Estes itens são da uma coleção e possuem todos os metadados configurados à coleção a qual pertencem. 
@@ -42,14 +35,13 @@ Itens são o verdadeiro conteúdo do repositório. A "pintura", o "filme",o "liv
 ### Documento
 
 O documento é a informação principal do item. É o objeto que os metadados se referem. O Tainacan aceita 3 tipos de documentos: 
+* **"Arquivo"**: um arquivo adicionado ao item. Pode ser uma imagem, vídeo, pdf, audio ou outro tipo arquivo suportado. 
+* **"URL"**: um link de um site com conteúdo ou arquivo externo. Estes links podem ser de um site genérico, um arquivo específico ou serviços de mídia. No caso de serviços de mídia (como o YouTube, por exemplo) o Tainacan reconhece o endereço e exibe o player apropriado usando [oEmbed](https://oembed.com/). A lista de serviços compatíveis com a conversão para "embeds" no WordPress pode ser consultada [neste link](https://codex.wordpress.org/pt-br:Incorporados).
+* **"Texto"**:  Um texto simples, armazenado diretamente no banco de dados, o usuário pode digitar ao criar ou editar um item. 
 
-* "Arquivo": um arquivo adicionado ao item. Pode ser uma imagem, vídeo, pdf, audio ou outro tipo arquivo suportado. 
+> O "tipo de documento" pode ser alterado após o envio do item, por exemplo: você pode enviar o item com um documento do tipo "texto" de referência e posteriormente inserir o "arquivo" ou "URL" pertencente a ele.
 
-* "URL": um link de um site com conteúdo ou arquivo externo. Estes links podem ser de um site genérico, um arquivo específico ou serviços de mídia. No caso de serviços de mídia (como o YouTube, por exemplo) o Tainacan reconhece o endereço e exibe o player apropriado usando [oEmbed](https://oembed.com/). A lista de serviços compatíveis com a conversão para "embeds" no WordPress pode ser consultada [neste link](https://codex.wordpress.org/pt-br:Incorporados).
-
-* "Texto":  Um texto simples, armazenado diretamente no banco de dados, o usuário pode digitar ao criar ou editar um item. 
-
->  O "tipo de documento" pode ser alterado após o envio do item, por exemplo: você pode enviar o item com um documento do tipo "texto" de referência e posteriormente inserir o "arquivo" ou "URL" pertencente a ele.
+Veja o artigo completo sobre uso dos **Itens** [aqui](/pt-br/items). 
 
 ## Metadados
 
@@ -78,11 +70,8 @@ Cada metadado tem um conjunto de configurações possíveis. É um metadado obri
 >  Também é possível "importar e exportar metadados predefinidos".
 
 ### Tipos de Metadados
-?> _TODO_: Listar e descrever "Tipos de Metadados"
 
-### Metadada Types
-
-`Metadata Types` são os objetos que representam os tipos de metadados que podem ser usados. 
+`Metadata Types` ou Tipos de Metadados são os objetos que representam os tipos de metadados que podem ser usados. 
 
 > Alguns exemplos de `Metadata Types` são "Texto", "Texto Longo", "Data", "Relacionamento", etc. 
 
@@ -90,7 +79,7 @@ Cada "tipo de metadado" possui suas próprias configurações e componentes da w
 
 `Metadata Types` são tipos de metadados que podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos fornecidos com o Tainacan. 
 
-> [Consulte o tópico "Tipos de Metadados"](#tipos-de-metadados)
+Veja o artigo completo sobre uso dos **Metadados** [aqui](/pt-br/metadata). 
 
 ## Filtros
 
@@ -98,24 +87,21 @@ Para cada coleção é possível escolher quais de seus metadados serão usados 
 
 > Filtros permitem que o usuário filtre a visualização dos itens de uma coleção.
 
-### Tipos de Filtros 
-?> _TODO_: Listar e descrever "Tipos de Filtros"
+### Tipos de Filtros
 
-### Filter Types
+`Filter Types` ou Tipos de Filtros são diferentes tipos de interfaces para filtrar itens baseados num tipo de metadado específico nas coleções. São alguns exemplos de `Filter Types`:
 
-`Filter Types` são diferentes tipos de interfaces para filtrar itens baseados num tipo de metadado específico nas coleções. São alguns exemplos de `Filter Types`:
-
-* "input text" - entrada de texto
-* "datepicker" - seleção de data
-* "date range picker" - seleção de intervalo de data
-* "number range slider" - barra de intervalo numérico
-* "list of checkboxes" - lista de seleção múltipla
+* **"input text"** - entrada de texto
+* **"datepicker"** - seleção de data
+* **"date range picker"** - seleção de intervalo de data
+* **"number range slider"** - barra de intervalo numérico
+* **"list of checkboxes"** - lista de seleção múltipla
 
 Cada objeto `Filter Types` possui suas próprias configurações e componentes da web que serão usados na renderização de sua interface.
 
-?> `Filter Types` podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos de filtros do Tainacan.
+> `Filter Types` podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos de filtros do Tainacan.
 
-> [Consulte o tópico Tipos de Filtros](#tipos-de-filtros)
+Veja o artigo completo sobre uso dos **Filtros** [aqui](/pt-br/filtros). 
 
 ## Taxonomias
 
@@ -130,6 +116,8 @@ Termos também podem ter uma descrição, um ícone ou uma imagem que o represen
 >  As taxonomias podem ser compartilhadas por várias coleções. 
 > [Consulte o tópico "Tipos de Metadados" para saber como.](#tipos-de-metadados)
 
+Veja o artigo completo sobre uso das **Taxonomias** [aqui](/pt-br/taxonomies). 
+
 ### Vídeo Tutorial: Filtros e Taxonomias
 
 <iframe
@@ -143,7 +131,7 @@ Termos também podem ter uma descrição, um ícone ou uma imagem que o represen
 
 ## Em discussão
 
-Esta seção reúne algumas funcionalidades que estão em discussão para desenvolvimento! 
+Esta seção reúne alguns conceitos e funcionalidades que estão em discussão para desenvolvimento! 
  
 ### Tipos de Itens
 

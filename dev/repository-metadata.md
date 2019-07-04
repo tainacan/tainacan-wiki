@@ -3,7 +3,7 @@
 
 ## Main Methods
 
-These are the most used methods of this repository. For a complete list see [the repository file](../src/classes/repositories/class-tainacan-metadata.php).
+These are the most used methods of this repository. For a complete list see [the repository file](https://github.com/tainacan/tainacan/tree/master/src/classes/repositories/class-tainacan-metadata.php).
 
 
 ### fetch()

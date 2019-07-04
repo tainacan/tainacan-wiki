@@ -1,6 +1,6 @@
 # Colabore com esta Wiki
 
-Se você chegou a esta página, provavelmente está pensando em contribuir com a nossa Wiki :smile: . Isto é ótimo! Com projeto de Software Livre, o Tainacan está calcado nos princípios da colaboração em diversos níveis: na **pesquisa**, no **código**, na **tradução** e também na **documentação**. Como usuário, você pode trazer contribuições valorosas para deixar nosso material mais claro e acessível. 
+Se você chegou a esta página, provavelmente está pensando em contribuir com a nossa Wiki :smile: . Isto é ótimo! Como projeto de Software Livre, o Tainacan está calcado nos princípios da colaboração em diversos níveis: na **pesquisa**, no **código**, na **tradução** e também na **documentação**. Como usuário, você pode trazer contribuições valorosas para deixar nosso material mais claro e acessível. 
 
 Para colaborar, entretanto, é preciso se familiarizar um pouco com nossas ferramentas de documentação. Não se preocupe - aqui te daremos o auxílio necessário para que você possa fazer contribuições de qualidade sem dificuldades! Nesta página você vai ver:
 
@@ -294,13 +294,13 @@ Observando a estrutura de arquivos do repositório, temos as seguintes páginas 
     _coverpage.md
     _navbar.md
     _sidebar.md
-    introduction.md
+    collections.md
 CONTRIBUTING.md
 README.md
 _coverpage.md
 _navbar.md
 _sidebar.md
-introduction.md
+collections.md
 index.html
 style.css
 ```
@@ -314,7 +314,7 @@ Vamos comentar sobre alguns:
 * **_coverpage.md**: Página de capa, que é carregada acima da página inicial;
 * **_navbar.md**: Barra superior da Wiki, atualmente contém link para o site oficial e um dropdown para escolher a linguagem do site. Esta é uma página especial que é renderizada pela Docsify, transformando sublistas, por exemplo, em dropdowns;
 * **_sidebar.md**: Lista de links que são exibidos na barra lateral. Observe que há uma dessas na pasta `/pt-br` com seu conteúdo traduzido, mas também há versões nas pastas `/dev` e `/dev/pt-br`. Isso garante que ao navegar em arquivos da sessão de desenvolvedores, seja mostrada uma lista de links dedicada para o assunto.
-* **introduction.md**: Um exemplo de uma das várias páginas comuns que existem na Wiki. Estas páginas costumam ter sua própria hierarquia definida pelos cabeçalhos de sessão, que são exibidos também na barra lateral quando se entra nela;
+* **collections.md**: Um exemplo de uma das várias páginas comuns que existem na Wiki. Estas páginas costumam ter sua própria hierarquia definida pelos cabeçalhos de sessão, que são exibidos também na barra lateral quando se entra nela;
 * **index.html**: Arquivo usadado para configurar a Docsify, plugins e imports. Não recomendamos alterações aqui, há menos que saiba o que está fazendo!
 * **style.css**: Folha de estilos CSS do site, que customiza a aparência da Wiki.
 

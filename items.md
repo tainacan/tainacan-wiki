@@ -1,5 +1,13 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Itens" 
+		src="/_assets/images/icon_items.png"
+		width="42"
+		height="42">
+</div>
+
 # Itens
 
 Os **itens** são o verdadeiro conteúdo do repositório. A *pintura*, o *filme*, o *livro* e assim por diante. Estes itens são da uma coleção e possuem todos os metadados configurados à **coleção** a qual pertencem.

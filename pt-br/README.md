@@ -24,10 +24,14 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 </li>
 <li class="list-group-item">
 
-[Introdução ao Tainacan](/pt-br/introduction)
+[Conceitos Gerais](/pt-br/general-concepts)
 
 </li>
-                <li class="list-group-item"><a title="Lista de Email da Comunidade de Usuários" href="https://lists.riseup.net/www/subscribe/tainacan">Comunidade de Usuários</a></li>
+<li class="list-group-item">
+
+[Primeiros Passos](/pt-br/getting-started)
+
+</li>
             </ul>
         </div>
     </div>

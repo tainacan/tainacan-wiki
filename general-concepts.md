@@ -1,13 +1,6 @@
-# Introdução ao Tainacan
+?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
-## Conceitos Gerais
-
-O fluxo de trabalho comum na criação de um repositório digital com o Tainacan é: 
-
-- Criar uma coleção
-- Escolher os metadados que cada item terá nessa coleção
-- Escolher os filtros que serão usados quando a coleção for visualizada
-- Inserir itens na coleção ou importar eles de uma fonte externa
+# Conceitos Gerais
 
 ### Vídeo Tutorial: Usando o Tainacan - Conceitos gerais
 <iframe
@@ -40,14 +33,11 @@ Itens são o verdadeiro conteúdo do repositório. A "pintura", o "filme",o "liv
 ### Documento
 
 O documento é a informação principal do item. É o objeto que os metadados se referem. O Tainacan aceita 3 tipos de documentos: 
+* **"Arquivo"**: um arquivo adicionado ao item. Pode ser uma imagem, vídeo, pdf, audio ou outro tipo arquivo suportado. 
+* **"URL"**: um link de um site com conteúdo ou arquivo externo. Estes links podem ser de um site genérico, um arquivo específico ou serviços de mídia. No caso de serviços de mídia (como o YouTube, por exemplo) o Tainacan reconhece o endereço e exibe o player apropriado usando [oEmbed](https://oembed.com/). A lista de serviços compatíveis com a conversão para "embeds" no WordPress pode ser consultada [neste link](https://codex.wordpress.org/pt-br:Incorporados).
+* **"Texto"**:  Um texto simples, armazenado diretamente no banco de dados, o usuário pode digitar ao criar ou editar um item. 
 
-* "Arquivo": um arquivo adicionado ao item. Pode ser uma imagem, vídeo, pdf, audio ou outro tipo arquivo suportado. 
-
-* "URL": um link de um site com conteúdo ou arquivo externo. Estes links podem ser de um site genérico, um arquivo específico ou serviços de mídia. No caso de serviços de mídia (como o YouTube, por exemplo) o Tainacan reconhece o endereço e exibe o player apropriado usando [oEmbed](https://oembed.com/). A lista de serviços compatíveis com a conversão para "embeds" no WordPress pode ser consultada [neste link](https://codex.wordpress.org/pt-br:Incorporados).
-
-* "Texto":  Um texto simples, armazenado diretamente no banco de dados, o usuário pode digitar ao criar ou editar um item. 
-
->  O "tipo de documento" pode ser alterado após o envio do item, por exemplo: você pode enviar o item com um documento do tipo "texto" de referência e posteriormente inserir o "arquivo" ou "URL" pertencente a ele.
+> O "tipo de documento" pode ser alterado após o envio do item, por exemplo: você pode enviar o item com um documento do tipo "texto" de referência e posteriormente inserir o "arquivo" ou "URL" pertencente a ele.
 
 ## Metadados
 
@@ -76,11 +66,8 @@ Cada metadado tem um conjunto de configurações possíveis. É um metadado obri
 >  Também é possível "importar e exportar metadados predefinidos".
 
 ### Tipos de Metadados
-?> _TODO_: Listar e descrever "Tipos de Metadados"
 
-### Metadada Types
-
-`Metadata Types` são os objetos que representam os tipos de metadados que podem ser usados. 
+`Metadata Types` ou Tipos de Metadados são os objetos que representam os tipos de metadados que podem ser usados. 
 
 > Alguns exemplos de `Metadata Types` são "Texto", "Texto Longo", "Data", "Relacionamento", etc. 
 
@@ -88,32 +75,25 @@ Cada "tipo de metadado" possui suas próprias configurações e componentes da w
 
 `Metadata Types` são tipos de metadados que podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos fornecidos com o Tainacan. 
 
-> [Consulte o tópico "Tipos de Metadados"](#tipos-de-metadados)
-
 ## Filtros
 
 Para cada coleção é possível escolher quais de seus metadados serão usados como opção de filtros para resultados em uma busca facetada na visualização da coleção.
 
 > Filtros permitem que o usuário filtre a visualização dos itens de uma coleção.
 
-### Tipos de Filtros 
-?> _TODO_: Listar e descrever "Tipos de Filtros"
+### Tipos de Filtros
 
-### Filter Types
+`Filter Types` ou Tipos de Filtros são diferentes tipos de interfaces para filtrar itens baseados num tipo de metadado específico nas coleções. São alguns exemplos de `Filter Types`:
 
-`Filter Types` são diferentes tipos de interfaces para filtrar itens baseados num tipo de metadado específico nas coleções. São alguns exemplos de `Filter Types`:
-
-* "input text" - entrada de texto
-* "datepicker" - seleção de data
-* "date range picker" - seleção de intervalo de data
-* "number range slider" - barra de intervalo numérico
-* "list of checkboxes" - lista de seleção múltipla
+* **"input text"** - entrada de texto
+* **"datepicker"** - seleção de data
+* **"date range picker"** - seleção de intervalo de data
+* **"number range slider"** - barra de intervalo numérico
+* **"list of checkboxes"** - lista de seleção múltipla
 
 Cada objeto `Filter Types` possui suas próprias configurações e componentes da web que serão usados na renderização de sua interface.
 
-?> `Filter Types` podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos de filtros do Tainacan.
-
-> [Consulte o tópico Tipos de Filtros](#tipos-de-filtros)
+> `Filter Types` podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos de filtros do Tainacan.
 
 ## Taxonomias
 

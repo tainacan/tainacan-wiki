@@ -1,6 +1,6 @@
-Documentar os hooks do tainacan:
+?> _TODO_ Document Tainacan Hooks!
 
-**Actions**
+## Actions
 
 tainacan-insert
 
@@ -14,7 +14,7 @@ tainacan-insert-'.$obj->get_post_type()
 
 tainacan-insert-Term
 
-**Filters**
+## Filters
 
 rest_{$this->collection->get_post_type()}_collection_params
 
