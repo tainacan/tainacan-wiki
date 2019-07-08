@@ -20,7 +20,7 @@
     * [Exportadores](/pt-br/exporters)
     * [Ações em Massa](/pt-br/bulk-actions)
     * [Usuários](/pt-br/users)
-* [Para Desenvolvedores](/pt-br/dev/)
+* [Para Desenvolvedores](/dev/)
 * Sobre o Tainacan
     * [Site Oficial :link:](https://tainacan.org/ ':ignore')
     * [Versões](/pt-br/releases)

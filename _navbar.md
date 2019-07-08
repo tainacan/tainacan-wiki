@@ -1,5 +1,5 @@
 * [Oficial website](https://tainacan.org ':ignore')
   
 * Language
-  * [English](/)
-  * [Brazilian Portuguese](/pt-br/)
+  * [English](/#tainacan-wiki)
+  * [Brazilian Portuguese](/pt-br/#wiki-do-tainacan)

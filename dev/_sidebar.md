@@ -1,4 +1,4 @@
-* [:arrow_left: Back to Wiki Home](/)
+* [:arrow_left: Back to Wiki Home](/#tainacan-wiki)
 * [Developer's Documentation](/dev/)
  
 * Development Basics
