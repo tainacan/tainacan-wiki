@@ -4,6 +4,11 @@
 
 Continuando a instalação do **wordpress**, agora daremos início à instalação do **Tainacan**. Se você não instalou o **wordpress** ainda, [veja este tutorial sobre como instalá-lo](/pt-br/wordpress#como-instalar-o-wordpress-no-windows). Se você ainda não tem servidor web na sua máquina local, [veja este tutorial](#acessando-o-admin).
 
+Se preferir, você pode assistir os mesmos tutoriais em vídeo:
+* [XAMPP](https://www.youtube.com/watch?v=rznX0EZhWG4)
+* [Wordpress](https://www.youtube.com/watch?v=7v6qNHmqm0I)
+* [Tainacan](https://www.youtube.com/watch?v=qRtoNRUlVkk)
+
 ## Acessando o admin ##
 
 Existem várias formas de realizar essa instalação. Este tutorial vai mostrar apenas uma delas. 

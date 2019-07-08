@@ -5,6 +5,11 @@
 Dando continuidade à instalação do servidor web na sua máquina local, agora iremos instalar o **wordpress**. Se você ainda não instalou o servidor web, [clique aqui para ver o tutorial](/pt-br/xampp#instalando-o-tainacan-em-uma-máquina-windows-local-sem-servidor).
 Para instalar o **Tainacan**, [você pode optar por ver esse tutorial](/pt-br/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
 
+Se preferir, você pode assistir os mesmos tutoriais em vídeo:
+* [XAMPP](https://www.youtube.com/watch?v=rznX0EZhWG4)
+* [Wordpress](https://www.youtube.com/watch?v=7v6qNHmqm0I)
+* [Tainacan](https://www.youtube.com/watch?v=qRtoNRUlVkk)
+
 ## Baixando ##
 
 Para iniciar, vamos até o link https://br.wordpress.org/download/ e vamos baixar o **wordpress** para **windows**.
