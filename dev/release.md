@@ -185,16 +185,7 @@ Update assets
 cp $GIT_PATH/wp-repo-assets/* $SVN_PATH/assets/
 ```
 
-Create tag folder
-
-```
-cd $SVN_PATH
-mkdir tags/$NEW_VERSION
-cp -R trunk/* tags/$NEW_VERSION/
-svn add tags/$NEW_VERSION
-```
-
-### Finish and commit
+### Commit
 
 1. Go to the SVN folder
 
@@ -219,6 +210,12 @@ svn add tags/$NEW_VERSION
   ```
   svn ci
   ```
+
+### Create tag folder
+
+```
+svn cp https://plugins.svn.wordpress.org/tainacan/trunk https://plugins.svn.wordpress.org/tainacan/tags/$NEW_VERSION
+```
 
 ### Check
 
