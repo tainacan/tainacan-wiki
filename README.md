@@ -12,7 +12,7 @@ You can browse or search for specific topics on the side menu. Follows some rele
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![First Steps](../_assets/images/Primeiros_passos.png ":no-zoom")](/getting-started)
+[![First Steps](/_assets/images/Primeiros_passos.png ":no-zoom")](/getting-started)
 
 </div>
 <div class="panel-heading">
@@ -26,7 +26,7 @@ You can browse or search for specific topics on the side menu. Follows some rele
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Install](../_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/install)
+[![Install](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/install)
 
 </div>
 <div class="panel-heading">
@@ -40,7 +40,7 @@ You can browse or search for specific topics on the side menu. Follows some rele
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![General Concepts](../_assets/images/Usando_a_plataforma.png ":no-zoom")](/general-concepts)
+[![General Concepts](/_assets/images/Usando_a_plataforma.png ":no-zoom")](/general-concepts)
 
 </div>
 <div class="panel-heading">
@@ -54,7 +54,7 @@ You can browse or search for specific topics on the side menu. Follows some rele
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Developers](../_assets/images/Para_desenvolvedores.png ":no-zoom")](/dev/)
+[![Developers](/_assets/images/Para_desenvolvedores.png ":no-zoom")](/dev/)
 
 </div>
 <div class="panel-heading">

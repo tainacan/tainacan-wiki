@@ -401,7 +401,7 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 	height: 138px;
 }
 .home-panel p {
-    margin: 0;
+    margin: 0 !important;
 }
 .home-panel .panel-body pre {
     background: none;
