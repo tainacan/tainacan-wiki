@@ -2,6 +2,7 @@
 
 ## 2019
 
+* [Tainacan, a WordPress based repository platform](https://tinyurl.com/tainacan-or2019). [Open Repositories 2019](https://or2019.blogs.uni-hamburg.de/). Hamburg, 12/06/2019
 * [Acervos em rede e memória em tempos de cultura digital: experiências e desafios do projeto Taiancan](https://www.dropbox.com/home/Apresenta%C3%A7%C3%B5es?preview=Apresenta%C3%A7%C3%A3o+Senado+Federal+2019.pdf). [Semana Nacional de Museus](http://www.interlegis.leg.br/comunicacao/eventos/tarde-de-palestras-referentes-a-17a-semana-nacional-de-museus). Senado Federal. Brasília, 16/05/2019.
 * [De que forma o acesso a Internet afeta o consumo cultural?](https://www.dropbox.com/s/xtm2vstc9bzz6rt/Apresenta%C3%A7%C3%A3o%20CPF%20SESC%20Consumo%20Cultural%20e%20Internet.pdf?dl=0) [Centro de Pesquisa e Formação do SESC São Paulo](https://centrodepesquisaeformacao.sescsp.org.br/atividade/de-que-forma-o-acesso-a-internet-afeta-o-consumo-cultural), São Paulo, 10/04/2019.
 * [Curadoria informacional e websemântica: perspectivas do projeto Tainacan](https://www.dropbox.com/home/Apresenta%C3%A7%C3%B5es?preview=Apresenta%C3%A7%C3%A3o+Tainacan+-+Casper+L%C3%ADbero.pdf). [Fundação Cásper Líbero](https://pt.wikiversity.org/wiki/Pesquisa_em_Difus%C3%A3o_Cient%C3%ADfica_do_CEPID_NeuroMat/Curadoria_informacional_e_web_sem%C3%A2ntica), São Paulo, 04/04/2019.
