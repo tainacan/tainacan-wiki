@@ -11,12 +11,10 @@
 * Plugin development and extension 
 	* [Creating a Metadata Type](/dev/creating-metadata-type.md)
 	* [Exporting and Exposing](/dev/exporting-and-exposing.md)
+	    * [Mapping Standards](/dev/mapping-standards.md)
+	    * [Exposers](/dev/exposers.md)
 	* [Exporter Flow](/dev/exporter-flow.md)
-	* [Exposers](/dev/exposers.md)
 	* [Importer Flow](/dev/importer-flow.md)
-	* [CSV Importer](/dev/csv-importer.md)
-	* [Vocabulary Importer](/dev/vocabulary-importer.md)
-	* [Mapping Standards](/dev/mapping-standards.md)
     * Repository methods 	
 	  * [Repository Filters](/dev/repository-filters.md) 
 	  * [Repository Items](/dev/repository-items.md) 
