@@ -17,6 +17,7 @@
     * [Taxonomies](taxonomies)
     * [Activities](activities)
     * [Importers](importers)
+        * [CSV Importer](/dev/csv-importer.md)
     * [Exporters](exporters)
     * [Bulk actions](bulk-actions)
     * [User permission](users)
