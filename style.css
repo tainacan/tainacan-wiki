@@ -337,15 +337,26 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 
 
 /* HOME PANEL */
+@keyframes box-enter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
 .home-row {
     display: flex;
     flex-wrap: wrap;
 }
 .home-col {
-    width: 33.33333%;
-    flex-basis: 33.333333%;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 25%;
+    flex-basis: 25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    animation-name: box-enter;
+    animation-duration: 2s;
 }
 @media screen and (max-width: 1024px){
     .home-col {
@@ -359,6 +370,7 @@ section.cover .cover-main > p:last-child a:last-child:hover {
         flex-basis: 100%;
     }       
 }
+
 .home-panel {
     box-shadow: none;
     border: none;
@@ -366,13 +378,19 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     margin-bottom: 30px;
     background-color: #fff;
 }
-.home-panel .panel-heading {
+
+.home-row .panel-heading {
     border: none;
     background: #298596 !important;
     color: white !important;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 15px;
+}
+.home-panel .panel-heading a,
+.home-panel .panel-heading a:hover {
+    color: white;
+    text-decoration: none;
 }
 .home-panel .panel-body {
 	padding: 24px;
@@ -382,7 +400,7 @@ section.cover .cover-main > p:last-child a:last-child:hover {
 	font-size: 30px;
 	height: 138px;
 }
-.home-panel .panel-body p {
+.home-panel p {
     margin: 0;
 }
 .home-panel .panel-body pre {

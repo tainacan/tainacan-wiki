@@ -10,148 +10,58 @@ You can browse or search for specific topics on the side menu. Follows some rele
 <div class="home-row clearfix" style="text-align:center">
     <div class="home-col">
         <div class="panel home-panel">
-            <div class="panel-heading">First Steps</div>
 <div class="panel-body">
 
-![First Steps](/_assets/images/Primeiros_passos.png ":no-zoom")
+[![First Steps](../_assets/images/Primeiros_passos.png ":no-zoom")](/getting-started)
 
 </div>
-            <ul class="list-group">
-<li class="list-group-item">
+<div class="panel-heading">
 
-[F.A.Q.](faq)
+[First Steps](/getting-started)
 
-</li>
-<li class="list-group-item">
-
-[General Concepts](general-concepts)
-
-</li>
-<li class="list-group-item">
-
-[Getting Started](/getting-started)
-
-</li>
-            </ul>
+</div>
         </div>
     </div>
     <div class="home-col">
         <div class="panel home-panel">
-            <div class="panel-heading">Install and Setup</div>
 <div class="panel-body">
 
-![Install and Setup](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")
+[![Install](../_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/install)
 
 </div>
-            <ul class="list-group">
-<li class="list-group-item">
+<div class="panel-heading">
 
-[Plugin](tainacan)
+[Install](/install)
 
-</li>
-<li class="list-group-item">
-
-[Theme](theme)
-
-</li>
-<li class="list-group-item">
-
-[Optimization](optimization)
-
-</li>
-            </ul>
+</div>
         </div>
     </div>
     <div class="home-col">
         <div class="panel home-panel">
-            <div class="panel-heading">Using Tainacan</div>
 <div class="panel-body">
 
-![Using Tainacan](/_assets/images/Usando_a_plataforma.png ":no-zoom")
+[![General Concepts](../_assets/images/Usando_a_plataforma.png ":no-zoom")](/general-concepts)
 
 </div>
-            <ul class="list-group">
-<li class="list-group-item">
+<div class="panel-heading">
 
-[Collections](collections)
+[General Concepts](/general-concepts)
 
-</li>
-<li class="list-group-item">
-
-[Taxonomies](taxonomies)
-
-</li>
-<li class="list-group-item">
-
-[Bulk Actions](bulk-actions)
-
-</li>
-            </ul>
+</div>
         </div>
     </div>
     <div class="home-col">
         <div class="panel home-panel">
-            <div class="panel-heading">About Tainacan</div>
 <div class="panel-body">
 
-![About Tainacan](/_assets/images/Sobre_o_tainacan.png ":no-zoom")
+[![Developers](../_assets/images/Para_desenvolvedores.png ":no-zoom")](/dev/)
 
 </div>
-            <ul class="list-group">
-                <li class="list-group-item"><a title="Tainacan's Oficial Website" href="https://tainacan.org">Tainacan.org</a></li>
-                <li class="list-group-item"><a title="Research Blog" href="http://pesquisa.medialab.ufg.br/">Research Blog</a></li>
-<li class="list-group-item">
-
-[Presentations](presentations)
-
-</li>
-            </ul>
-        </div>
-    </div>
-    <div class="home-col">
-        <div class="panel home-panel">
-            <div class="panel-heading">For Developers</div>
-<div class="panel-body">
-
-![For Developers](/_assets/images/Para_desenvolvedores.png ":no-zoom")
-
+<div class="panel-heading">
+            
+[Developers](/dev/)
+            
 </div>
-            <ul class="list-group">
-<li class="list-group-item">
-
-[Plugin](/dev/)
-
-</li>
-<li class="list-group-item">
-
-[Theme](/dev/)
-
-</li>
-                <li class="list-group-item"><a title="API Documentation" href="https://tainacan.org/api-docs/">API Documentation</a></a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="home-col">
-        <div class="panel home-panel">
-            <div class="panel-heading">Data Processing</div>
-<div class="panel-body">
-
-![Data Processing](/_assets/images/Tratamento_de_dados.png ":no-zoom")
-
-</div>
-            <ul class="list-group">
-<li class="list-group-item">
-
-[Importers](importers)
-
-</li>
-<li class="list-group-item">
-
-[Data and Archival Processing](data-processing)
-
-</li>
-                <li class="list-group-item"><a title="Open Refine" href="http://openrefine.org/">Open Refine</a></li>
-            </ul> 
         </div>
     </div>
 </div>

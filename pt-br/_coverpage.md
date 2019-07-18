@@ -1,6 +1,6 @@
 ![logo](../_assets/images/logo_tainacan.png)
 
-# Bem-vindo à Wiki do Tainacan <small>Beta 0.9</small>
+# Bem-vindo à Wiki do Tainacan <small>Beta 0.10.1</small>
 
 > Uma plataforma de repositório flexível e poderosa para WordPress.
 

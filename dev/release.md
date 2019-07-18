@@ -239,5 +239,8 @@ git push --all
 git push --tags
 ```
 
+## Update this wiki!
+
+The `/_coverpage.md` and `/pt-br/_coverpage.md` files of this Wiki have the version number on it, that is displayed on [home page](/). Make sure to keep it updated following our [contributing guidelines](/CONTRIBUTING)!
 
 
