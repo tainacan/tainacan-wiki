@@ -44,9 +44,9 @@ Even if a person manages to find out the real file path, with the prefixed folde
 
 ## Changing base folder and prefixes
 
-The base folder for items attachments can be changed setting the `TAINACAN_ITEMS_UPLOADS_DIR` constant in `wp-config.php`.
+The base folder for items attachments can be changed setting the `TAINACAN_ITEMS_UPLOADS_DIR` constant in `wp-config.php`. Default value is `tainacan-items`.
 
-The prefix for private folders can be changed setting the `TAINACAN_PRIVATE_FOLDER_PREFIX` constant in `wp-config.php`.
+The prefix for private folders can be changed setting the `TAINACAN_PRIVATE_FOLDER_PREFIX` constant in `wp-config.php`. Default value is `_x_`.
 
 !> This constants must be setted in a fresh install. If they are changed after there are uploads, all the links to the existing files will break.
 
