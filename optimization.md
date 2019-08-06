@@ -38,6 +38,29 @@ Os resultados são acompanhados de um pequeno retorno visual (▇) à esquerda e
 
 Em caso de dúvidas ou sugestões inscreva-se na [comunidade do Tainacan](https://lists.riseup.net/www/subscribe/tainacan)! 
 
+### Imagick module permissions (solves not generating thumbnails from PDF files)
+
+Imagick module is used to extract the first page from a PDF file and automatically generate a thumbnail for the item. If it is not present, System check will throw a warning.
+
+However, due to recent changes in Imagick package, it may come pre-configured in a way it does not have the rights to open and read PDF files.
+
+In order to solve this you must do the following.
+
+In file `/etc/ImageMagick-6/policy.xml` (or `/etc/ImageMagick/policy.xml`) find the following line
+
+```
+<policy domain="coder" rights="none" pattern="PDF" />
+```
+
+and change it to allow reading and writing by the PDF coder in ImageMagick:
+
+```
+<policy domain="coder" rights="read|write" pattern="PDF" />
+```
+
+Finally, don't forget to restart your web server.
+
+
 ------
 
 ## Orientações para performance
