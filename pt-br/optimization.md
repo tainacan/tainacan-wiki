@@ -36,6 +36,29 @@ Os resultados são acompanhados de um pequeno retorno visual (▇) à esquerda e
 
 Em caso de dúvidas ou sugestões inscreva-se na [comunidade do Tainacan](https://lists.riseup.net/www/subscribe/tainacan)! 
 
+### Permissões do Módulo Imagick (Não está gerando miniaturas a partir de arquivos PDF)
+
+O módulo Imagick é utilizado para extrair a primeira página de arquivos PDFs enviados ao servidor para gerar miniaturas automáticas. Se ele não estiver presente, o Diagnóstico de Sistema irá avisar.
+
+Contudo, devido a mudanças recentes no pacote Imagick, em alguns casos ele vem configurado para não ter permissão para abrir e ler arquivos PDF.
+
+Para resolver isso é preciso:
+
+No arquivo `/etc/ImageMagick-6/policy.xml` (ou `/etc/ImageMagick/policy.xml`) Encontre a seguinte linja:
+
+```
+<policy domain="coder" rights="none" pattern="PDF" />
+```
+
+E mude para ficar assim:
+
+```
+<policy domain="coder" rights="read|write" pattern="PDF" />
+```
+
+Em seguida, reinicie seu servidor web.
+
+
 ------
 
 ## Orientações para performance
