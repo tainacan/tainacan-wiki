@@ -29,6 +29,7 @@
 	* [Faceted Search](/dev/faceted-search.md) 
 	* [Search Engine](/dev/search-engine.md) 
 	* [Garbage Collector](/dev/garbage-collector.md)
-* Other development contributions
+	* [Protecting private files](/dev/private-files.md)
+* Other development topics
     * [Contributing](/dev/CONTRIBUTING.md)
     * [Release](/dev/release.md) 
