@@ -59,7 +59,7 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 </div>
 <div class="panel-heading">
             
-[Desenvolvedores](/pt-br/dev/)
+[Desenvolvedores](/dev/)
             
 </div>
         </div>
