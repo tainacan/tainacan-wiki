@@ -23,6 +23,9 @@
     * [Bulk actions](bulk-actions)
     * [User permission](users)
 * [For Developers](/dev/)
+* [Plugins](/plugins)
+    * [PDF Exposer](/plugin-pdf-exposer)
+    * [Extra View Modes](/plugin-extra-view-modes)
 * About Tainacan
     * [Oficial website :link:](https://tainacan.org/ ':ignore')
     * [Releases](/releases)
