@@ -18,7 +18,7 @@
     * [Activities](activities)
     * [Importers](importers)
         * [CSV Importer](/dev/csv-importer.md)
-	* [Vocabulary Importer](/dev/vocabulary-importer.md)
+    	* [Vocabulary Importer](/dev/vocabulary-importer.md)
     * [Exporters](exporters)
     * [Bulk actions](bulk-actions)
     * [User permission](users)
@@ -26,6 +26,7 @@
 * [Plugins](/plugins)
     * [PDF Exposer](/plugin-pdf-exposer)
     * [Extra View Modes](/plugin-extra-view-modes)
+    * [WordPress 3DHOP](/plugin-3d-hop)
 * About Tainacan
     * [Oficial website :link:](https://tainacan.org/ ':ignore')
     * [Releases](/releases)

@@ -17,6 +17,8 @@
     * [Taxonomias](/pt-br/taxonomies)
     * [Atividades](/pt-br/activities)
     * [Importadores](/pt-br/importers)
+        * [CSV Importer](/dev/csv-importer.md)
+    	* [Vocabulary Importer](/dev/vocabulary-importer.md)
     * [Exportadores](/pt-br/exporters)
     * [Ações em Massa](/pt-br/bulk-actions)
     * [Usuários](/pt-br/users)
@@ -24,6 +26,7 @@
 * [Plugins](/pt-br/plugins)
     * [Expor em PDF](/pt-br/plugin-pdf-exposer)
     * [Modos de Visualização Extras](/pt-br/plugin-extra-view-modes)
+    * [WordPress 3DHOP](/pt-br/plugin-3d-hop)
 * Sobre o Tainacan
     * [Site Oficial :link:](https://tainacan.org/ ':ignore')
     * [Versões](/pt-br/releases)

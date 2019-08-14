@@ -1,4 +1,4 @@
-# Plugin: Extra View Modes
+# Plugin: PDF Exposer
 
 This plugin adds an exposer option for rendering **PDF files** containing information from items, similar to an archival report.
 
