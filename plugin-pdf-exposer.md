@@ -8,7 +8,7 @@ By default, every Tainacan list or item offers what we call *Exposers* or *Alter
 
 ## Instalation
 
-Download the `.zip` file from [the GitHub repository](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
+Download the [.zip](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate/archive/master.zip) file from [the GitHub repository](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
 
 Activate our plugin on the *WordPress* administrative panel section for plugins.
 
