@@ -23,10 +23,10 @@
     * [Bulk actions](bulk-actions)
     * [User permission](users)
 * [Plugins](/plugins)
-* [For Developers](/dev/)
     * [PDF Exposer](/plugin-pdf-exposer)
     * [Extra View Modes](/plugin-extra-view-modes)
     * [WordPress 3DHOP](/plugin-3d-hop)
+* [For Developers](/dev/)
 * About Tainacan
     * [Oficial website :link:](https://tainacan.org/ ':ignore')
     * [Releases](/releases)

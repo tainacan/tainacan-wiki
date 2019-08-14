@@ -23,9 +23,9 @@
     * [Ações em Massa](/pt-br/bulk-actions)
     * [Usuários](/pt-br/users)
 * [Plugins](/pt-br/plugins)
-        * [Expor em PDF](/pt-br/plugin-pdf-exposer)
-        * [Modos de Visualização Extras](/pt-br/plugin-extra-view-modes)
-        * [WordPress 3DHOP](/pt-br/plugin-3d-hop)
+    * [Expor em PDF](/pt-br/plugin-pdf-exposer)
+    * [Modos de Visualização Extras](/pt-br/plugin-extra-view-modes)
+    * [WordPress 3DHOP](/pt-br/plugin-3d-hop)
 * [Para Desenvolvedores](/dev/)
 * Sobre o Tainacan
     * [Site Oficial :link:](https://tainacan.org/ ':ignore')
