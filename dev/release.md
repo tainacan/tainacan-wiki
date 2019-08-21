@@ -4,10 +4,10 @@ This is a work in progress documentaion on how to release a new version.
 
 Assuming:
 
-* `$CURRENT_VERSION` is the current "old" version (e.g. 0.2)
-* `$NEW_VERSION` is the version we are releasing (e.g. 0.3)
+* `$CURRENT_VERSION` is the current "old" version (e.g. 0.10)
+* `$NEW_VERSION` is the version we are releasing (e.g. 0.11)
 * `$GIT_PATH` is where our repository is cloned
-* `$BUILD_PATH` is where the plugin is condigured to buid 
+* `$BUILD_PATH` is where the plugin is configured to buid, inside your WordPress plugins folder 
 * `$SVN_PATH` is where the WordPress.org SVN repo is
 
 ## Pre-release
@@ -93,6 +93,8 @@ cp -R $BUILD_PATH/* $SVN_PATH/trunk/
   ```
   svn st | grep '^!' | awk '{print $2}' | xargs svn rm
   ```
+
+  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insuficient input paramethers". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
 5. `svn add` all new files
 
@@ -198,6 +200,8 @@ cp $GIT_PATH/wp-repo-assets/* $SVN_PATH/assets/
   ```
   svn st | grep '^!' | awk '{print $2}' | xargs svn rm
   ```
+
+  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insuficient input paramethers". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
 3. `svn add` all new files
 
