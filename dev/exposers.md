@@ -166,14 +166,13 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 ### Registering a new exposer
 
-To register a new exposer, the action need to be added to the `init` hook, like:
+To register a new exposer, the action need to be added to the `tainacan-register-exposers` hook, like:
 ```PHP 
 <?php
-	function registerMyExposer() {
-		$exposers = \Tainacan\Exposers_Handler::get_instance();
-		$exposers->register_exposer_type('MyExposer');
+	function registerMyExposer($exposers) {
+		$exposers->register_exposer('MyExposer');
 	}
-	add_action('init', 'registerMyExposer');
+	add_action('tainacan-register-exposers', 'registerMyExposer');
 ```
 
 ### Full Example
@@ -188,7 +187,7 @@ Description: This is a sample exposer class
 */
 
 function myNewExposer($exposers) {
-
+	
 	class TxtExposer extends \Tainacan\Exposers\Exposer {
 		
 		public $slug = 'txt'; // type slug for url safe
@@ -251,10 +250,8 @@ function myNewExposer($exposers) {
 		}
 	}
 	
-	$exposers = \Tainacan\Exposers_Handler::get_instance();
 	$exposers->register_exposer('TxtExposer');
-	
-	
 }
-add_action('init', 'myNewExposer');
+add_action('tainacan-register-exposers', 'myNewExposer');
+
 ```

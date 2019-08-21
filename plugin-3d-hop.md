@@ -8,7 +8,7 @@ This plugin allows WordPress to render interactive 3D models using [3D HOP](http
 
 ## Instalation
 
-Download the `.zip` file from [the GitHub repository](https://github.com/tainacan/wordpress-3dhop) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
+Download the [.zip](https://github.com/tainacan/wordpress-3dhop/archive/master.zip) file from [the GitHub repository](https://github.com/tainacan/wordpress-3dhop) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
 
 Activate our plugin on the *WordPress* administrative panel section for plugins.
 
