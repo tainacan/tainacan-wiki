@@ -17,13 +17,16 @@
     * [Taxonomias](/pt-br/taxonomies)
     * [Atividades](/pt-br/activities)
     * [Importadores](/pt-br/importers)
+        * [CSV Importer](/dev/csv-importer.md)
+        * [Vocabulary Importer](/dev/vocabulary-importer.md)
     * [Exportadores](/pt-br/exporters)
     * [Ações em Massa](/pt-br/bulk-actions)
     * [Usuários](/pt-br/users)
-* [Para Desenvolvedores](/dev/)
 * [Plugins](/pt-br/plugins)
     * [Expor em PDF](/pt-br/plugin-pdf-exposer)
     * [Modos de Visualização Extras](/pt-br/plugin-extra-view-modes)
+    * [WordPress 3DHOP](/pt-br/plugin-3d-hop)
+* [Para Desenvolvedores](/dev/)
 * Sobre o Tainacan
     * [Site Oficial :link:](https://tainacan.org/ ':ignore')
     * [Versões](/pt-br/releases)
@@ -32,7 +35,7 @@
 * Comunidade & Outros
     * [Lista da Comunidade :link:](https://lists.riseup.net/www/subscribe/tainacan ':ignore')
     * [Colabore com esta Wiki](/pt-br/CONTRIBUTING)
-	* [Teste de Versões](/pt-br/release-testing.md) 
+    * [Teste de Versões](/pt-br/release-testing.md) 
     * [Processamento de Dados e Acervos](/pt-br/data-processing)
     * [OpenRefine :link:](http://openrefine.org/ ':ignore')
  

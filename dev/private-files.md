@@ -1,7 +1,5 @@
 # Protecting private files
 
-(to be released in version 0.11)
-
 This page explains how Tainacan protects access to attachments made to private items.
 
 ## How it works

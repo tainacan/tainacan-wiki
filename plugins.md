@@ -6,12 +6,13 @@ Tainacan is a *plugin* for *WordPress*, in the means that it expands *WordPress*
 
 So far the ones below are the plugins available for Tainacan:
 
-* [PDF Exposer](/plugin-pdf-exposer) - Adds an option to expose your items as PDFs on the "View as..." modal, AKA Exposers or Alternative URLs.
-* [Extra View Modes](/plugin-extra-view-modes) - Adds demonstration templates of Extra View Modes, ideal for developers who want to learn how to create their own.
+* [PDF Exposer](/plugin-pdf-exposer) - Adds an option to expose your items as PDFs on the "View as..." modal, AKA Exposers or Alternative URLs;
+* [Extra View Modes](/plugin-extra-view-modes) - Adds demonstration templates of Extra View Modes, ideal for developers who want to learn how to create their own;
+* [WordPress 3DHOP](/plugin-3d-hop) - Allows WordPress to render interactive 3D models using [3D HOP](http://3dhop.net/);
 
 If you are a developer and would like to extend Tainacan with some solution, we invite you to check our [developers session for that](/dev/#plugin-development-or-extension) and also to dive into their source code as it can be a good learning resource 🤓 . Also, in case you have created a plugin and want to have it listed here, please talk to us in [our mailing list](https://lists.riseup.net/www/subscribe/tainacan)!
 
-## Instaling a Plugin
+## Installing a Plugin
 
 Our plugin plugins so far are not submited to the WordPress oficial repository of Plugins, so their instalation is not as straightfoward as Tainacan's itself. But worry not! There are three basic ways to do this, all of them of course require administrative permission to your instalation. You should begin by downloading the `.zip` file containing the plugin code, which will probably be available from GitHub.
 
