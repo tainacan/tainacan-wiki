@@ -1,6 +1,6 @@
 # Tainacan Wiki
 
-**Hello and Welcome to the Wiki!** This is the home for Tainacan's documentation.
+**Hello and Welcome to the Wiki!!** This is the home for Tainacan's documentation.
 
 > Tainacan is a powerful and flexible repository platform for *WordPress*. Manage and publish your digital collections as easily as you publish a post on your blog while having all professional repository platform tools available. 
 
