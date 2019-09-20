@@ -14,10 +14,10 @@ define('TAINACAN_INDEX_PDF_CONTENT', true);
 Quando o recurso estiver ativado, os arquivos PDF enviados a partir deste momento terão seu conteúdo indexado e pesquisável.
 
 ## Pesquisando
-O conteúdo do PDF indexado será pesquisado sempre que você usar o recurso "pesquisa de texto", que pesquisa em todos os metadados. (Se ativo, veja [Search Engine](dev/search-engine.md))
+O conteúdo do PDF indexado será pesquisado sempre que você usar o recurso "pesquisa de texto", que pesquisa em todos os metadados. (Se ativo, veja [Search Engine](/dev/search-engine.md))
 Você também pode pesquisar o conteúdo dos PDFs usando a pesquisa avançada. Existe uma nova opção chamada "Documento" que pesquisará dentro do conteúdo dos arquivos PDFs indexados.
 
-## Indexando arquivo existente
+## Indexando arquivos existentes
 Se ao habilitar o recurso já houver arquivos PDF em seu repositório sendo utilizados como documentos dos itens, é possível executar um comando para indexar todos eles. Isso é feito utilizando a ferramenta CLI do WP.
 
 Acesse seu servidor e digite:
