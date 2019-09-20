@@ -22,6 +22,7 @@
     * [Exporters](exporters)
     * [Bulk actions](bulk-actions)
     * [User permission](users)
+    * [Indexing PDF contents](indexing-pdf.md)
 * [Plugins](/plugins)
     * [PDF Exposer](/plugin-pdf-exposer)
     * [Extra View Modes](/plugin-extra-view-modes)
