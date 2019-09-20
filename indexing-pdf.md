@@ -27,17 +27,17 @@ If at the moment you enable this feature you already have many PDF files in your
 Access your server and type:
 
 ```
-
+wp tainacan index-content --collection=all
 ```
 
 Or if you want to index PDF only from a certain collection:
 
 ```
-
+wp tainacan index-content --collection=<id of collection>
 ```
 
 Type this for help on how to use this command:
 
 ```
-
+wp tainacan index-content --help
 ```
