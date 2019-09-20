@@ -22,6 +22,7 @@
     * [Exportadores](/pt-br/exporters)
     * [Ações em Massa](/pt-br/bulk-actions)
     * [Usuários](/pt-br/users)
+    * [Indexando e buscando dentro de PDFs](indexing-pdf.md)
 * [Plugins](/pt-br/plugins)
     * [Expor em PDF](/pt-br/plugin-pdf-exposer)
     * [Modos de Visualização Extras](/pt-br/plugin-extra-view-modes)
