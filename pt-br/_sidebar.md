@@ -23,6 +23,13 @@
     * [Ações em Massa](/pt-br/bulk-actions)
     * [Usuários](/pt-br/users)
     * [Indexando e buscando dentro de PDFs](indexing-pdf.md)
+* Páginas & Blocos Gutenberg
+    * [Páginas do Tainacan](/pt-br/tainacan-pages.md)
+    * [Blocos Gutenberg](/pt-br/gutenberg-blocks.md)
+        * [Itens](/pt-br/blocks-items.md)
+        * [Coleções](/pt-br/blocks-collections.md)
+        * [Termos](/pt-br/blocks-terms.md)
+        * [Facetas](/pt-br/blocks-facets.md)  
 * [Plugins](/pt-br/plugins)
     * [Expor em PDF](/pt-br/plugin-pdf-exposer)
     * [Modos de Visualização Extras](/pt-br/plugin-extra-view-modes)

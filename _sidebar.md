@@ -23,6 +23,13 @@
     * [Bulk actions](bulk-actions)
     * [User permission](users)
     * [Indexing PDF contents](indexing-pdf.md)
+* Pages & Gutenberg Blocks
+    * [Tainacan Pages](tainacan-pages.md)
+    * [Gutenberg Blocks](gutenberg-blocks.md)
+        * [Items](blocks-items.md)
+        * [Collections](blocks-collections.md)
+        * [Terms](blocks-terms.md)
+        * [Facets](blocks-facets.md)  
 * [Plugins](/plugins)
     * [PDF Exposer](/plugin-pdf-exposer)
     * [Extra View Modes](/plugin-extra-view-modes)
