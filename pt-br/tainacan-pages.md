@@ -1,3 +1,11 @@
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Ver no Tema" 
+		src="/_assets/images/icon_see.png"
+		width="42"
+		height="42">
+</div>
+
 # Páginas do Tainacan
 
 Com o plugin Tainacan ativado em seu WordPress, algumas páginas especiais passam a ser criadas pelo próprio plugin. São elas:
@@ -7,7 +15,7 @@ Com o plugin Tainacan ativado em seu WordPress, algumas páginas especiais passa
 * Páginas de Itens de uma Coleção de slug *nome-da-colecao* `/nome-da-colecao`;
 * Páginas de Itens com algum metadado Taxonomia que tenham um Termo de slug *nome-do-termo* `/nome-do-termo`;
 
-A medida que você cria Coleções, Itens e Termos, automaticamente já poderá ter acesso no seu site nestes endereços. Para além disso, também é possível configurar suas *próprias páginas* apresentando suas coleções ou explicando algo sobre seu repositório. São dois caminhos diferentes, mas que estão à sua disposição graças à **integração do Tainacan com o WordPress**. Saiba mais a seguir:
+A medida que você cria Coleções, Itens e Termos, automaticamente já poderá ter acesso no seu site nestes endereços. Em geral, no painel administrativo do Tainacan, você encontra links para estas páginas em botões com ícones de olho (como o que se encontra no topo direito desta página). Para além disso, também é possível configurar suas *próprias páginas* apresentando suas coleções ou explicando algo sobre seu repositório. São dois caminhos diferentes, mas que estão à sua disposição graças à **integração do Tainacan com o WordPress**. Saiba mais a seguir:
 
 * [Páginas Especiais Geradas pelo Tainacan](#as-páginas-especiais-do-Tainacan)
 * [Criando suas Próprias páginas com Blocos Gutenberg](/pt-br/gutenberg-blocks)
