@@ -137,6 +137,7 @@ Os tipos de metadados suportados nativamente atualmente são:
 * `taxonomy` - Taxonomia: quando esse tipo é usado, uma nova taxonomia será criada.
 * `date` - Data: os valores devem ser informados no formato YYYY-MM-DD (2018-01-01).
 * `numeric` - Numérico
+* `selectbox` - Caixa de seleção
 * `relationship` - Relacionamento: os valores devem ser a ID do item relacionado.
 
 Por exemplo:
