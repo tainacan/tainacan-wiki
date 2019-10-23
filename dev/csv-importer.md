@@ -89,7 +89,8 @@ The natively supported types right now are:
 * textarea
 * taxonomy - when this type is used, a new taxonomy will be created
 * date - Values must be informed in YYYY-MM-DD format 
-* numeric 
+* numeric
+* selectbox
 * relationship - Values must be the ID of the related item
 
 After the type, you can use keywords to inform other features:
