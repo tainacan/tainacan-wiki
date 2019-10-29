@@ -2,7 +2,7 @@
 
 # Bem-vindo à Wiki do Tainacan <small>Beta 0.11</small>
 
-> Uma plataforma de repositório flexível e poderosa para WordPress.
+> Uma plataforma de repositório código aberto, poderosa e flexível para WordPress.
 
 - Crie coleções coms metadados e filtros customizados
 - Navegue pelos seus itens com uma busca facetada

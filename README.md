@@ -2,7 +2,7 @@
 
 **Hello and Welcome to the Wiki!!** This is the home for Tainacan's documentation.
 
-> Tainacan is a powerful and flexible repository platform for *WordPress*. Manage and publish your digital collections as easily as you publish a post on your blog while having all professional repository platform tools available. 
+> Tainacan is an open source, powerful and flexible repository platform for *WordPress*. Manage and publish your digital collections as easily as you publish a post on your blog while having all professional repository platform tools available. 
 
 You can browse or search for specific topics on the side menu. Follows some relevant links:
 <br>
