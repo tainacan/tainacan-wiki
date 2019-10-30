@@ -18,7 +18,7 @@ If you want to disable this change to the default WordPress behavior you can do 
 define('TAINACAN_DISABLE_DEFAULT_SEARCH_ENGINE', true);
 ```
 Our efforts right now are to improve the compatibility with [ElasticPress](https://wordpress.org/plugins/elasticpress/) plugin. Its already fully functional since [version 0.9](https://tainacan.org/blog/2019/05/20/tainacan-beta-0-9-elastic-search-new-gutenberg-block-and-importers/)
-
+*note: supported version elasticsearch 6.1.0+*
 
 Our understanding is that, if a reposiory gets too big, it might need a more robust infrastructure and Elastic Search is our call.
 
