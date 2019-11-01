@@ -89,7 +89,7 @@ fetch taxonomies by collection, considering inheritance
 
 ## Usage 
 
-```PHP
+```php
 $repository = \Tainacan\Repositories\Taxonomies::get_instance();
 ```
 
@@ -113,12 +113,12 @@ Collections|The IDs of collection where the taxonomy is used|collections_ids|`$e
 
 Create new
 
-```PHP
+```php
 $entity = new \Tainacan\Entities\Taxonomy();
 ```
 
 Get existing by ID
-```PHP
+```php
 $repository = \Tainacan\Repositories\Taxonomies::get_instance();
 $entity = $repository->fetch(12);
 echo 'My ID is ' . $entity->get_id(); // 12

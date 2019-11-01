@@ -13,7 +13,7 @@ This layer is based on a Repository pattern. Each entity Tainacan deals with hav
 
 Repositories are the classes that comunicate with the database and know where everything is stored and how to find things. It is a singleton class, so it have only one instance available to be used by any part of the application.
 
-```PHP
+```php
 $metadata_repo = Tainacan\Repositories\Metadata::get_instance();
 ```
 Entities classes are the representation of the individual of each repository. 
@@ -24,7 +24,7 @@ For example, Metadata have many attributes, such as `name` and `required` (indic
 
 However, you dont need to bother about that. This pattern allows you to manipulate a Field entity and it attributes in a transparent way, such as:
 
-```PHP
+```php
 $metadatum->get_name(); // returns the metadatum name
 $metadatum->get_required(); // returns the required value 
 $metadatum->set_name('new name');
@@ -38,7 +38,7 @@ Tainacan will automatically map the values of the attributes to and from where t
 
 When you want to fetch entities from the database, this abstraction layer steps aside and let you use all the power and flexibility of `WP_Query`, which you know and love. For example:
 
-```PHP
+```php
 Repositories\Metadata::get_instance()->fetch('s=test');
 ```
 
@@ -61,14 +61,14 @@ Every repository have a `fetch()` method to fetch data from the database. Some r
 
 If you have the ID or the `WP_Post` object, you can get the item by initializing a new instance of the Entity class:
 
-```PHP
+```php
 $collection = new Tainacan\Entities\Collection($collection_post);
 $collection = new Tainacan\Entities\Collection($collection_id);
 ```
 
 This will have the same effect as calling the `fetch` method from the repository passing an integer as argument. The repository will assume it is the collection ID.
 
-```PHP
+```php
 $collection = Tainacan\Repositories\Collections::get_instance()->fetch($collection_id);
 ```
 
@@ -80,7 +80,7 @@ To fetch collections (or any other entity) based on a query search, you may call
 
 Examples:
 
-```PHP
+```php
 $repo = Tainacan\Repositories\Collections::get_instance();
 $items_repo = Tainacan\Repositories\Collections::get_instance();
 
@@ -106,7 +106,7 @@ $items = $items_repo->fetch([
 
 Note that you can use the mapped attribute names to build your query, but it is just fine if you want to use the native WordPress names. The same can be achievied with attributes stored as post_meta:
 
-```PHP
+```php
 $repo = Tainacan\Repositories\Metadata::get_instance();
 
 $metadata = $repo->fetch([
@@ -143,7 +143,7 @@ However, before insertion, you must validate the entity, calling the `validate()
 
 So this is a typical routine for creating an entity:
 
-```PHP
+```php
 $collectionsRepo = \Tainacan\Repositories\Collections::get_instance();
 $collection = new \Tainacan\Entities\Collection();
 $collection->set_name('New Collection');
@@ -181,7 +181,7 @@ So imagine a Collection of pens has a Metadata called "color". This means that a
 
 So the Item Metadata Entity constructor gets two entities: an item and a metadatum. Lets see an example, considering I alredy have a collection with metadata and an item.
 
-```PHP
+```php
 // Considering $item is an existing Item Entity an $metadatum an existing Field Entity
 $itemMetadada = new \Tainacan\Entities\ItemMetadataEntity($item, $metadatum);
 
@@ -227,12 +227,12 @@ When you use WordPress custom post types, you dont need to know the exact name o
 
 For example, for a post type called `book`, that have capabilities such as `edit_books`, you could:
 
-```PHP
+```php
 if (current_user_can('edit_books')) 
 	// do something
 ```
 OR
-```PHP
+```php
 $book_cpt = get_post_type_object('book');
 if (current_user_can( $book_cpt->cap->edit_posts )) 
 	// do something
@@ -240,7 +240,7 @@ if (current_user_can( $book_cpt->cap->edit_posts ))
 
 This makes life easier and Tainacan works exacty the same way.
 
-```PHP
+```php
 
 $collection = new \Tainacan\Entities\Collection(23);
 
@@ -252,18 +252,18 @@ This is specially usefull when handling Items, because they are posts of dynamic
 
 Also, every entity implement 3 methods to check for the Meta Capabilities `edit_post`, `delete_post` and `read_post`, so intead of:
 
-```PHP
+```php
 current_user_can( $item->get_capabilities()->edit_post, $item->get_id() ); 
 ```
 
 You can simply
-```PHP
+```php
 $item->can_edit(); 
 ```
 
 So now you know how to check the permision when a user wants to update an item. Here is the complete code:
 
-```PHP
+```php
 $collectionsRepo = \Tainacan\Repositories\Collections::get_instance();
 $collection = new \Tainacan\Entities\Collection(23);
 

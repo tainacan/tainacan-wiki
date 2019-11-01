@@ -1,4 +1,4 @@
-Notice: This page describes the roles & caps structure that is currently under development and not released yet.
+?> _NOTICE_ This page describes the roles & caps structure that is currently under development and not released yet.
 
 # Roles and Capabilities
 
@@ -12,11 +12,11 @@ It also explains how WordPress handles capaibility check, as it is not very well
 
 Tainacan introduces several capabilities to WordPress. They are divided in two groups:
 
-**General Capabilities**
+### General Capabilities
 
 Capabilities relative to the entire Repository
 
-```PHP
+```php
 'manage_tainacan' => [
     'display_name' => __('Manage Tainacan', 'tainacan'),
     'description' => __('Manage all Tainacan features and all Collections', 'tainacan')
@@ -91,11 +91,11 @@ Capabilities relative to the entire Repository
 ```
 *(list extracted from `src/classes/class-tainacan-roles.php)*
 
-**Collection Capabilities**
+### Collection Capabilities
 
 Each collection has its own set of capabilities, where `%d` is the collection ID.
 
-```PHP
+```php
 'manage_tainacan_collection_%d' => [
     'display_name' => __('Manage Collection', 'tainacan'),
     'description' => __('Manage all collection settings, items, metadata, filters, etc.', 'tainacan')
@@ -207,8 +207,7 @@ So this is the preferred way of checking for capabilities. Also because you don'
 
 For example, if `$item` is an Item entity:
 
-```PHP
-
+```php
 // this
 current_user_can( 'tnc_col_' . $item->get_collection_id() . '_edit_item', $item->get_id() );
 
@@ -259,7 +258,7 @@ If you are not familiar with capabilities for custom post types, read the [regis
 
 Let's have a look at taxonomies capabilities (from `classes/entities/class-tainacan-taxonomy.php`):
 
-```PHP
+```php
     public function get_capabilities() {
 
 		return (object) [
@@ -290,7 +289,7 @@ Notice how many capabilties are set as the same `tnc_rep_edit_taxonomies`. This 
 
 Items capabilities are dynamically generated, as they include the ID of the collection the item is part of. So this is declared in the Collection entity:
 
-```PHP
+```php
 	function get_items_capabilities() {
 
 		$id = $this->get_id();
@@ -345,7 +344,7 @@ Example:
 
 Lets's say you have a `$post_ID `and you want to know if current user can edit it, you will ask:
 
-```PHP
+```php
 current_user_can('edit_post', $post_ID);
 ```
 

@@ -15,7 +15,7 @@ A Metadata Type is composed of a simple PHP class and a Vue Web Component.
 
 First of all, you have to register you Metadata type class. You do this by calling the `register_metadata_type` method of the `Metadata` Repository:
 
-```PHP
+```php
 add_action('init', 'my_custom_mt_registration');
 
 function my_custom_mt_registration() {
@@ -27,7 +27,7 @@ function my_custom_mt_registration() {
 
 Now you have to create the class you just register, and use its constructor to set the basic features of you Metadata Type:
 
-```PHP
+```php
 class MyCustomMetadataTypeClass {
 	
 	public function __construct() {
@@ -64,7 +64,7 @@ However, you metadata type may have specific options you want to give to the use
 
 In order to do this, you have to declare what are the options your metadata type has, and prepare another web component to be rendered in the metadata form:
 
-```PHP
+```php
 class MyCustomMetadataTypeClass {
 	
 	public function __construct() {
@@ -90,7 +90,7 @@ class MyCustomMetadataTypeClass {
 
 Optionally you can implement `validate_options` method to validate the form before it gets saved:
 
-```PHP
+```php
 class MyCustomMetadataTypeClass {
 	
 	public function __construct() {
@@ -136,7 +136,7 @@ There are few other methods you can implement that can change the items interact
 
 This method will override the validation of the Item Metadata Entity, which means every time Tainacan saves a value for a metadata of this type, it will call this method. For example, the Date Metadata Type override this method to make sure the date is in the correct format:
 
-```PHP
+```php
 public function validate( Item_Metadata_Entity $item_metadata) {
 	$value = $item_metadata->get_value();
 	$format = 'Y-m-d';

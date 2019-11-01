@@ -109,7 +109,7 @@ fetch filters IDs by collection, considering inheritance
 
 ## Usage 
 
-```PHP
+```php
 $repository = \Tainacan\Repositories\Filters::get_instance();
 ```
 
@@ -136,12 +136,12 @@ Max of options|The max number of options to be showed in filter sidebar.|max_opt
 
 Create new
 
-```PHP
+```php
 $entity = new \Tainacan\Entities\Filter();
 ```
 
 Get existing by ID
-```PHP
+```php
 $repository = \Tainacan\Repositories\Filters::get_instance();
 $entity = $repository->fetch(12);
 echo 'My ID is ' . $entity->get_id(); // 12

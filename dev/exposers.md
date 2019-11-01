@@ -8,7 +8,7 @@ In order to create a new exposer you basically have to create an Exposer class a
 
 Create a class that extends `\Tainacan\Exposers\Exposer`.
 
-```PHP 
+```php 
 <?php 
 
 class MyExposer extends \Tainacan\Exposers\Exposer {
@@ -27,7 +27,7 @@ In this class you will have to set up some attributes and methods:
 
 A URL friendly version of the Exposer name, to be used as a parameter to the API request informing you want to get the data using this exposer.
 
-```PHP 
+```php 
 <?php 
 
 class MyExposer extends \Tainacan\Exposers\Exposer {
@@ -44,7 +44,7 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 A list of mapping standards that is exposer supports. This means that whenever someone makes a request to receive data via this exposer, he/she will also be able to choose in which mapping standard they want the content to be served. If set to `true` the exposer will accept all mapping standards.
 
-```PHP 
+```php 
 <?php 
 
 class MyExposer extends \Tainacan\Exposers\Exposer {
@@ -58,7 +58,7 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 or 
 
-```PHP 
+```php 
 <?php 
 
 class MyExposer extends \Tainacan\Exposers\Exposer {
@@ -75,7 +75,7 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 Indicates whether this exposer accept to serve data in its native form, without any mapping standards.
 
-```PHP 
+```php 
 <?php 
 
 class MyExposer extends \Tainacan\Exposers\Exposer {
@@ -95,7 +95,7 @@ Now that you have declared the basic attributes of your Exposer, there are two m
 
 In this method you must call `set_name()` and `set_description()` to identify your exposer.
 
-```PHP 
+```php 
 <?php 
 
 class MyExposer extends \Tainacan\Exposers\Exposer {
@@ -131,7 +131,7 @@ It receives 3 parameters:
 
 This method have to return the modified version of the `\WP_REST_Response` object.
 
-```PHP 
+```php 
 <?php 
 
 class MyExposer extends \Tainacan\Exposers\Exposer {
@@ -167,7 +167,7 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 ### Registering a new exposer
 
 To register a new exposer, the action need to be added to the `tainacan-register-exposers` hook, like:
-```PHP 
+```php 
 <?php
 	function registerMyExposer($exposers) {
 		$exposers->register_exposer('MyExposer');
@@ -179,7 +179,7 @@ To register a new exposer, the action need to be added to the `tainacan-register
 
 This is a full example of a plugin that implements a simple text exposer
 
-```PHP 
+```php 
 <?php
 /*
 Plugin Name: Tainacan TXT Exposer
