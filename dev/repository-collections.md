@@ -68,7 +68,7 @@ Note: Does not work with Item_Metadata Repository
 
 ## Usage 
 
-```PHP
+```php
 $repository = \Tainacan\Repositories\Collections::get_instance();
 ```
 
@@ -108,12 +108,12 @@ Allow Items Comments|Collection items comment status: "open" means comments are 
 
 Create new
 
-```PHP
+```php
 $entity = new \Tainacan\Entities\Collection();
 ```
 
 Get existing by ID
-```PHP
+```php
 $repository = \Tainacan\Repositories\Collections::get_instance();
 $entity = $repository->fetch(12);
 echo 'My ID is ' . $entity->get_id(); // 12

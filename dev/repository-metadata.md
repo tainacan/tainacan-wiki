@@ -203,7 +203,7 @@ Get the Core Description Metadatum for a collection
 
 ## Usage 
 
-```PHP
+```php
 $repository = \Tainacan\Repositories\Metadata::get_instance();
 ```
 
@@ -239,12 +239,12 @@ The semantic metadatum description URI|The semantic metadatum description URI li
 
 Create new
 
-```PHP
+```php
 $entity = new \Tainacan\Entities\Metadatum();
 ```
 
 Get existing by ID
-```PHP
+```php
 $repository = \Tainacan\Repositories\Metadata::get_instance();
 $entity = $repository->fetch(12);
 echo 'My ID is ' . $entity->get_id(); // 12

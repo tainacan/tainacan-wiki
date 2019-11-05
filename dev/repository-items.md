@@ -95,7 +95,7 @@ Get a default thumbnail ID from the item document.
 
 ## Usage 
 
-```PHP
+```php
 $repository = \Tainacan\Repositories\Items::get_instance();
 ```
 
@@ -124,12 +124,12 @@ Comment Status|Item comment status: "open" means comments are allowed, "closed" 
 
 Create new
 
-```PHP
+```php
 $entity = new \Tainacan\Entities\Item();
 ```
 
 Get existing by ID
-```PHP
+```php
 $repository = \Tainacan\Repositories\Items::get_instance();
 $entity = $repository->fetch(12);
 echo 'My ID is ' . $entity->get_id(); // 12
