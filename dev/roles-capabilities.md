@@ -100,6 +100,10 @@ Each collection has its own set of capabilities, where `%d` is the collection ID
     'display_name' => __('Manage Collection', 'tainacan'),
     'description' => __('Manage all collection settings, items, metadata, filters, etc.', 'tainacan')
 ],
+'tnc_col_%d_edit_users' => [
+    'display_name' => __('Edit users permissions', 'tainacan'),
+    'description' => __('Configure which roles and users have permission to perform actions in this collection', 'tainacan')
+],
 'tnc_col_%d_bulk_edit' => [
     'display_name' => __('Bulk edit items', 'tainacan'),
     'description' => __('Access to the Bulk edit items feature.', 'tainacan')
@@ -186,6 +190,59 @@ There a few capabalities that have super powers and override others capabilities
 * `manage_tainacan_collection_all` -> the same idea of the above. If this capability is present any check to any collection capability of any collection ID will return `true`. A user or role with this capability will be able to do everything in all collections, but might not have other repositories capabilities.
 * Collection owner -> When checking for any `tnc_col_%d` capability, Tainacan will verify if the user is the owner (author) of the collection. If he/she is, the check will also return `true`, even if the user does not have the capability. In short, it is as if every user automatically was granted `manage_tainacan_collection_%d` for their own collections.
 
+Also, any user with the WordPress native `edit_users` capability will always have `tnc_rep_edit_users`.
+
+## Default Roles
+
+By default, WordPress **Administrators** and **Editors** are granted `manage_tainacan` capability.
+
+Also, Tainacan creates 3 roles with the following capabilities:
+
+```php
+
+'tainacan-administrator' => [
+    'slug' => 'tainacan-administrator',
+    'display_name' => 'Tainacan Administrator',
+    'caps' => [
+        'manage_tainacan' => true
+    ]
+],
+'tainacan-editor' => [
+    'slug' => 'tainacan-editor',
+    'display_name' => 'Tainacan Editor',
+    'caps' => [
+        'tnc_rep_edit_collections' => true,
+        'tnc_rep_delete_collections' => true,
+        'tnc_rep_edit_taxonomies' => true,
+        'tnc_rep_edit_others_taxonomies' => true,
+        'tnc_rep_delete_taxonomies' => true,
+        'tnc_rep_delete_others_taxonomies' => true,
+        'tnc_rep_edit_metadata' => true,
+        'tnc_rep_edit_filters' => true,
+        'tnc_rep_delete_metadata' => true,
+        'tnc_rep_delete_filters' => true,
+        'tnc_rep_read_private_collections' => true,
+        'tnc_rep_read_private_taxonomies' => true,
+        'tnc_rep_read_private_metadata' => true,
+        'tnc_rep_read_private_filters' => true,
+        'tnc_rep_read_logs' => true,
+        'manage_tainacan_collection_all' => true
+    ]
+],
+'tainacan-author' => [
+    'slug' => 'tainacan-author',
+    'display_name' => 'Tainacan Author',
+    'caps' => [
+        'tnc_rep_edit_collections' => true,
+        'tnc_rep_edit_taxonomies' => true,
+        'tnc_rep_read_private_collections' => true,
+        'tnc_rep_read_private_taxonomies' => true,
+        'tnc_rep_read_private_metadata' => true,
+        'tnc_rep_read_private_filters' => true,
+    ]
+],
+
+```
 
 ## Checking permissions
 
