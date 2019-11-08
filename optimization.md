@@ -1,42 +1,42 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
-# Otimização
+# Optimization
 
-## Orientações para otimização do Tainacan
+## Guides to optimize Tainacan
 
-Esta página reúne dicas e configurações para **otimizar a performance** do Tainacan em seu servidor.
+This page gathers tips and configuration guidelines to your server in order to optimize Tainacan performance.
 
-Algumas coisas podem ser feitas diretamente pelo painel administrativo do **WordPress**, e outras ações podem envolver edição de *arquivos de configuração e acesso a configurações no seu servidor*, também pode ser necessário conhecimento técnico mais avançado ou contato com o administrador do servidor da instalação.
+Some of the things listed here can be performed directly in tha WordPress admin panel, while others might need you to edit some configuration files and have access to your server configuration. It might also be needed some knowledge on server administration.
+
 
 ------
 
-## Diagnóstico do Sistema
+## System check
 
-A partir da versão [0.8](https://wordpress.org/plugins/tainacan/%7C) do plugin do Tainacan para *WordPress* foi implementada uma seção para a realização automática de um *diagnóstico* da sua instalação.
+Taincan has a **System Check** page that gives you important information on your installation:
 
-1. Acesse o *painel administrativo* do WordPress;
-2. No menu lateral esquerdo, **passe** o *mouse* sobre Tainacan;
-3. Selecione o submenu **Diagnóstico do Sistema**;
+1. Access the WordPress admin panel;
+2. In the left menu, pass the mouse over Tainacan;
+3. Select the subitem **System Check**;
 
-Esta tela exibe as seguintes informações:
+This screen gives you the following information:
 
-* **Versão do WordPress**: Retorna informações sobre a sua versão *instalada* do **WordPress** em comparação com a versão mais recente disponível.
-* **Versão PHP**: Retorna informações sobre a sua versão *instalada* do **PHP** em comparação com a versão mais recente disponível.
-* **Versão da base de dados**: Retorna informações sobre a sua versão *instalada* do **Banco de Dados** em comparação com a versão mais recente disponível.
-* **Módulos PHP**: Retorna informações sobre os módulos obrigatórios e recomendados para o funcionamento adequado do Tainacan.
-* **Tempo máximo de execução do PHP**: Retorna o *valor atual* e o *recomendado* para a execução de processos.
-* **Estrutura de Links Permanentes**: Retorna se a estrutura de *Links Permanentes* está **habilitada** ou não.
-* **Pasta de Upload**: Retorna se a *pasta para envio de mídia* está **gravável** ou não.
-* **Tamanho máximo do upload de arquivos**: Retorna o **tamanho máximo** de arquivos permitido para *upload* na instalação.
-* **Cron**: Retorna a **existência** ou *ausência* de **tarefas agendadas** de *backup* da instalação.
+* **WordPress version**: Gives you the current WordPress version compared to the latest version
+* **PHP version**: Gives you the version of the PHP installed on your server
+* **Database version**: Gives you the version of the database server installed on your server
+* **PHP modules**: Gives you information about required and recommended PHP modules installed on your server
+* **Maximum exection time of PHP scripts**: Gives you the current value for the Maximum exection time of PHP scripts
+* **Permalinks structure**: Informs you if your permalink strucutre is configured correctly
+* **Uploads folder**: Informs you if the permission to write in your uploads folder is configured correctly
+* **Upload limit**: Gives you the maximum file size an user can upload, as it is configured in your server
+* **Cron**: Informs you about cron jobs configuration
 
-Os resultados são acompanhados de um pequeno retorno visual (▇) à esquerda em que as cores indicam:
+Results have a small icon (▇) at the left indicating:
 
-* <span style="color: #a23939">▇</span> - Parâmetro **incorreto** para funcionamento adequado;
-* <span style="color: #e69810">▇</span> - Parâmetro **parcialmente suficiente**, com ajustes possíveis;
-* <span style="color: #25a189">▇</span> - Parâmetro **adequado**!
+* <span style="color: #a23939">▇</span> - Incorrect configuration, Tainacan may not work;
+* <span style="color: #e69810">▇</span> - Partially correct configuration, some functions might not work
+* <span style="color: #25a189">▇</span> - Correct!
 
-Em caso de dúvidas ou sugestões inscreva-se na [comunidade do Tainacan](https://lists.riseup.net/www/subscribe/tainacan)! 
 
 ### Imagick module permissions (solves not generating thumbnails from PDF files)
 
@@ -237,3 +237,15 @@ Require all denied
 Fechando as recomendações de segurança recomenda-se a instalação, ativação e configuração do plugin [Wordfence](https://wordpress.org/plugins/wordfence/) que possui uma gama de recursos que objetivam proteger a instalação Wordpress do mais diversos tipos de ataques e exploração de vulnerabildades.
 
 O plugin e a sua documentação podem ser acessados [aqui](https://wordpress.org/plugins/wordfence/). 
+
+## Cache
+
+There are many WordPress plugins to add caching for your site. This is a good approach and could speed up page load time for your visitors.
+
+There is one thing you have to pay attention when configuring cache in your Tainacan site, though. 
+
+Tainacan uses `nonces`, which a is a security procedure to verify users intention to perform some actions. These `nonces` are codes generated to users that last for a shor period of time and then are regenerated.
+
+In order to make cache plugins work fine, you must **set your cache lifetime for no longer than 12 hours**, which is how long the `nonce` codes last. If your cache lives longer, your user may access the website using an expired code and have permission issues.
+
+If you want to better understand this issue, check [this](https://medium.com/myatus/wordpress-caching-and-nonce-lifespan-bb357d984da9) [articles](https://joshpress.net/wordpress-nonces-and-wordpress-caching/).
