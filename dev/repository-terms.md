@@ -66,7 +66,7 @@ Note: Does not work with Item_Metadata Repository
 
 ## Usage 
 
-```PHP
+```php
 $repository = \Tainacan\Repositories\Terms::get_instance();
 ```
 
@@ -91,12 +91,12 @@ Hide empty|Hide empty terms|hide_empty|`$entity->get_hide_empty()`|`$entity->set
 
 Create new
 
-```PHP
+```php
 $entity = new \Tainacan\Entities\Term();
 ```
 
 Get existing by ID
-```PHP
+```php
 $repository = \Tainacan\Repositories\Terms::get_instance();
 $entity = $repository->fetch(12);
 echo 'My ID is ' . $entity->get_id(); // 12
