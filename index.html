@@ -44,7 +44,17 @@
       subMaxLevel: 3,
       loadNavbar: true,
       plugins: [
-          EditOnGithubPlugin.create('https://github.com/tainacan/tainacan-wiki/blob/master/')
+          EditOnGithubPlugin.create(
+            'https://github.com/tainacan/tainacan-wiki/blob/master/',
+            null,
+            function(file) {
+              if (file.indexOf('pt-br') >= 0) {
+                return 'Editar no Github'
+              } else {
+                return 'Edit on Github'
+              }
+            }
+          )
       ]
     }
   </script>
