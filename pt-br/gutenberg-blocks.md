@@ -26,13 +26,13 @@ O Tainacan não poderia ficar de fora, e usa desta ferramenta para fornecer bloc
 
 Para usar algum dos blocos, basta editar um post ou uma página e procurar na lista de blocos disponíveis por um dos nosso blocos. São eles:
 
-* [Lista de Itens](#lista-de-itens) *(estático)*;
+* [Lista de Itens](/pt-br/blocks-items#lista-de-itens) *(estático)*;
 * Lista de Coleções *(estático)*;
 * Lista de Termos *(estático)*;
-* [Lista de Itens da Coleção](#lista-de-itens-da-coleção);
-* [Barra de Busca](#barra-de-busca-tainacan) Tainacan;
+* [Lista de Itens da Coleção](/pt-br/blocks-items#lista-de-itens-da-coleção);
+* [Barra de Busca](/pt-br/blocks-items#barra-de-busca-tainacan) Tainacan;
 * Lista de Facetas;
-* [Carrossel de Itens](#carrossel-de-itens);
+* [Carrossel de Itens](/pt-br/blocks-items#carrossel-de-itens);
 * Carrossel de Coleções;
 * Carrossel de Termos;
 
@@ -97,7 +97,7 @@ Primeiramente, esta simetria entre editor e página depende muito do quão bom f
 
 Não tenha medo de procurar por [outros blocos](https://br.wordpress.org/plugins/browse/blocks/ ':ignore') para instalar e testar em suas publicações. 
 
-?> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia! 
+!> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia! 
 
 Eis aqui exemplos de blocos extras que gostamos:
 
