@@ -1,6 +1,6 @@
 # Blocos de Itens
 
-Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente,há 4 blocos relacionados aos itens do Tainaca:
+Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente, há 4 blocos relacionados aos itens do Tainacan:
 
 1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) *(Dinâmico)*
 2. O [Carrossel de Itens](#carrossel-de-itens)
