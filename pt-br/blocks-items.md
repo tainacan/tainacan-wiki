@@ -150,6 +150,8 @@ Mas não precisamos parar por aí. De maneira similar ao Bloco [Lista de Itens d
 
 ![Configurações do Cabeçalho da Coleção](/_assets/gifs/blocks-search-bar-3.gif)
 
+!> A Barra de Busca é um dos raros blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada.
+
 ---------
 
 ## Lista de Itens
