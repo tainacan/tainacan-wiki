@@ -2,10 +2,10 @@
 
 Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente,há 3 blocos relacionados aos itens do Tainaca:
 
-1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) (Dinâmico)
+1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) *(Dinâmico)*
 2. O [Carrossel de Itens](#carrossel-de-itens)
-3. A [Barra de Busca](#barra-de-busca-1)
-4. A [Lista de Itens](#lista-de-itens) (Estático)
+3. A [Barra de Busca Tainacan](#barra-de-busca-tainacan)
+4. A [Lista de Itens](#lista-de-itens) *(Estático)*
 
 ---------
 
@@ -34,7 +34,7 @@ Com os itens carregados, podemos realizar uma série de configurações que est�
 
 A primeira opção te permite decorar seu bloco um pouco, acrescentando ao início da lista um cabeçalho da sua coleção. Este deverá ser similar ao que você vê na página de itens, porém uma versão reduzida, com a miniatura da coleção ao meio, a imagem de cabeçalho à direita e o nome da coleção à esquerda. Você pode configurar a cor de fundo do cabeçalho, do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma.
 
-### Barra de Busca
+### Barra de Busca Tainacan
 
 Caso você esteja oferecendo uma prévia de sua lista de itens mas não quer impedir que o usuário explore-a um pouco mais, você pode oferecer, no próprio bloco, uma barra de busca. Esta barra filtrará os itens mostrados, carregando sempre no máximo a quantidade configurada para a busca. Lembrando que os filtros que tiverem sido aplicados antes continuarão aplicados nesta listagem, assim você pode restringir o que será mostrado. A barra também te permite alternar o sentido da ordenação escolhida como _ascendente_ ou _descendente_ e mudar de página caso hajam mais itens resultantes da sua busca.
 
