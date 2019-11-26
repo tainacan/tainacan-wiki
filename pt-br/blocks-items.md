@@ -1,6 +1,6 @@
 # Blocos de Itens
 
-Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente,há 3 blocos relacionados aos itens do Tainaca:
+Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente,há 4 blocos relacionados aos itens do Tainaca:
 
 1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) *(Dinâmico)*
 2. O [Carrossel de Itens](#carrossel-de-itens)
@@ -134,25 +134,21 @@ Logo na parte de cima do bloco, ao lado das tradicionais opções de largura e d
 
 ### Estilos de Barra
 
-Já no painel lateral, nas configurações do bloco, temos 3 estilos que podem ser aplicados. O estilo Padrão oferece uma barra simples de borda cinza e fundo branco:
+Já no painel lateral, nas configurações do bloco, temos 3 estilos que podem ser aplicados. 
 
-> IMAGEM
+* O estilo Padrão oferece uma barra simples de borda cinza e fundo branco;
+* O estilo Alternativo, começa sem borda e com um fundo claro transparente. Seu tamanho é menor no início e fica maior ao se passar o mouse sobre a barra ou com um clique. Ao ficar ativa, uma borda branca é exibida;
+* Por fim, o modesto estilo "Estiloso" começa apenas com um ícone e um botão largo arredondado, que se expande para mostrar o campo de busca;
 
-O estilo Alternativo, começa sem borda e com um fundo claro transparente. Seu tamanho é menor no início e fica maior ao se passar o mouse sobre a barra ou com um clique. Ao ficar ativa, uma borda branca é exibida:
-
-> GIF
-
-Por fim, o modesto estilo "Estiloso" começa apenas com um ícone e um botão largo arredondado, que se expande para mostrar o campo de busca:
-
-> GIF
+![Estilos e alinhamento da barra de busca](/_assets/gifs/blocks-search-bar-2.gif)
 
 ### Opções Gerais da Barra
 
 Escolhido o estilo, é possível determinar o quão larga a barra irá ficar em sua versão expandida (o valor é em porcentagem). Também podemos mudar o rótulo exibido na parte de dentro da barra para algo mais específico como "Digite aqui para procurar pinturas...".
 
-Mas não precisamos pararpor aí. De maneira similar ao Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) e (Carrossel de Itens)[#carrossel-de-itens], neste bloco você pode exibir um cabeçalho da coleção. Você pode configurar a altura, a cor de fundo do cabeçalho, a cor do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma. Note que combinando estilos e alinhamentos diferentes, a sua barra e o cabeçalho sofrerão algumas alterações:
+Mas não precisamos parar por aí. De maneira similar ao Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) e [Carrossel de Itens](#carrossel-de-itens), neste bloco você pode exibir um cabeçalho da coleção. Você pode configurar a altura e a cor de fundo do cabeçalho, além da cor e tamanho do texto. Note que combinando estilos e alinhamentos diferentes, a sua barra e o cabeçalho sofrerão algumas alterações:
 
-> GIF
+![Configurações do Cabeçalho da Coleção](/_assets/gifs/blocks-search-bar-3.gif)
 
 ---------
 
@@ -160,13 +156,15 @@ Mas não precisamos pararpor aí. De maneira similar ao Bloco [Lista de Itens da
 
 O Bloco Lista de Itens foi o primeiro bloco disponibilizado pelo Tainacan, ainda em suas iniciais versões Beta. Nele, você seleciona manualmente quais itens deseja exibir. 
 
-!> A grande desvantagem - e razão pela qual hoje não recomendamos seu uso - é que este é um **bloco estático**. Isso significa que os itens selecionados (título e imagem) serão salvos na configuração do bloco no post e não são atualizados se vc fizer alguma mudança na coleção. Suponhamos que você escolheu alguns itens, salvou seu post e alguns dias depois alterou o título ou a imagem daquele item. Ao voltar para o bloco, estas mudanças não estarão refletidas. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) ou do (Carrossel de Itens)[#carrossel-de-itens] em seu lugar.
+!> A grande desvantagem - e razão pela qual hoje não recomendamos seu uso - é que este é um **bloco estático**. Isso significa que os itens selecionados (título e imagem) serão salvos na configuração do bloco no post e não são atualizados se vc fizer alguma mudança na coleção. Suponhamos que você escolheu alguns itens, salvou seu post e alguns dias depois alterou o título ou a imagem daquele item. Ao voltar para o bloco, estas mudanças não estarão refletidas. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) ou do [Carrossel de Itens](#carrossel-de-itens) em seu lugar.
 
 ### Configurações Iniciais do Bloco
 
 Para começar, escolha se seus itens serão escolhidos da lista de todos os itens do repositório ou da lista de itens de uma coleção. Em seguida, escolha os itens que serão adicionados ao bloco. Você adiciona itens através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do item inserido.
 
-Com os itens carregados, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
+Com os itens carregados, podemos realizar algumas de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
+
+![Configurações Inicias do Bloco](/_assets/gifs/blocks-items-list-1.gif)
 
 ### Configurações da Exibição de Itens
 
