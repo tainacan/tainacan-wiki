@@ -43,8 +43,8 @@ Antes de começar a explorar os blocos do Tainacan, porém, talvez caiba entende
 ![Sessões relacionadas ao bloco no editor](/_assets/images/gutenberg-blocks-sections.jpg)
 
 1. É a barra superior do seu bloco. Nela costumam ficar configurações como o modo de visualização, alinhamento do bloco, além de opções de deletar, inserir blocos antes ou depois e criar um grupo de blocos;
-2. É a região do conteúdo do bloco em si. Quando ativos - ou seja, clicados, em foco - os blocos do Tainacan em geral possuem uma região em cinza com a principal configuração a ser feita (geralmente escolher uma fonte dos dados mostrados, como uma coleção). Esta região não aparece na versão final do post, o pode ser observado ao se mover o foco pra fora do bloco;
-3. É a barra lateral do editor, onde além das configurações do documento estão as documentações do bloco atualmente ativo. Nela ficam diversos tipos de opções relacionadas ao bloco. Todos os blocos possuem ao final desta sessão uma configuração avançada que permite atribuir classes aos blocos, o que pode ser usado para fazer customizações avançadas com CSS.
+2. É a região do conteúdo do bloco em si. Quando ativos - ou seja, clicados, em foco - os blocos do Tainacan em geral possuem uma região em cinza com a principal configuração a ser feita (geralmente escolher uma fonte dos dados mostrados, como uma coleção). Esta região não aparece na versão final do post, o que pode ser observado ao se mover o foco pra fora do bloco;
+3. É a barra lateral do editor onde, além das configurações do documento, estão as documentações do bloco atualmente ativo. Nela ficam diversos tipos de opções relacionadas ao bloco. Todos os blocos possuem ao final desta sessão uma configuração avançada que permite atribuir classes aos blocos, o que pode ser usado para fazer customizações avançadas com CSS.
 
 <div style="float: right; margin-left: 32px;">
 
@@ -56,9 +56,9 @@ Antes de começar a explorar os blocos do Tainacan, porém, talvez caiba entende
 
 Das configurações mencionadas acima cabe comentar sobre os **alinhamentos de bloco**. Alguns blocos (não só os do Tainacan) oferecem um ou mais dos alinhamentos da figura ao lado. 
 
-No geral, um bloco está de início com a configuração "Centralizar" por padrão. Ao se selecionar "Alinhar à esquerda" ou Alinhar à direita", o editor jogará o bloco para aquele lado, usando as opções `float` do CSS. Isso pode funcionar bem caso haja texto fluído ao lado do bloco, mas também pode deixar seu bloco com pouco espaço, cabe testar bem.
+No geral, um bloco está de início com a configuração "Centralizar" por padrão. Ao se selecionar "Alinhar à esquerda" ou Alinhar à direita", o editor jogará o bloco para aquele lado, usando as opções `float` do CSS. Isso pode funcionar bem caso haja texto fluído ao lado do bloco, **mas também pode deixar seu bloco com pouco espaço**, cabe testar e pré-visualizar o documento para se ter certeza se fica adequado!
 
-Já as duas opções de "Largura ampla" e "Lagura completa" são úteis para temas (o Tainacan Interface incluso) que oferecem templates com margem larga e que pode ser extrapolada. A figura a seguir demonstra isso:
+Já as duas opções de "Largura ampla" e "Largura completa" são úteis para temas que oferecem templates com margem larga e que pode ser extrapolada. A figura a seguir demonstra isso:
 
 ![Lista de Possíveis Alinhamentos de Bloco](/_assets/images/gutenberg-wide-alignment.jpg)
 
@@ -66,7 +66,7 @@ O tema (_Tainacan Interface_) possui uma margem lateral que limita a largura do 
 
 ### Templates de Página
 
-Alguns temas oferecem um recurso do WordPress denominado **"Templates de Página"**. São modos de se oferecer diferentes estilos de páginas para um usuário. Por exemplo, pode-se preferir uma página com a barra lateral ao lado, ou sem margem nenhuma. Esta configuração pode ser feita na **Barra Lateral do Editor**, na **Aba Documento**, em geral está entre as últimas opções.
+Alguns temas oferecem um recurso do WordPress denominado **"Templates de Página"**. São modos de se oferecer diferentes _layouts_ de páginas para um usuário. Por exemplo, pode-se preferir uma página com a barra lateral ao lado, ou sem margem nenhuma. Esta configuração pode ser feita na **Barra Lateral do Editor**, na **Aba Documento**, em geral está entre as últimas opções.
 
 O _Tainacan Interface_ oferece atualmente 3 templates:
 
@@ -87,8 +87,20 @@ Estes elementos podem ser indesejados em algumas situações. Suponhamos que voc
 
 ![Exemplos de usos dos templates](/_assets/gifs/gutenberg_page_templates.gif)
 
+### WYSIWYG ou as Diferenças entre Editor e a Página
+
+Idealmente, a experiência de edição deveria ser, como chamamos na computação, **"WYSIWYG"** sigla em inglês para "O que você vê é o que você tem". Em outras palavras, o que é visto no editor de blocos deveria ser equivalente ao que terá na página publicada. Isso é verdade para 99% dos casos, mas vale ressaltar algumas exceções.
+
+Primeiramente, esta simetria entre editor e página depende muito do quão bom foi o suporte oferecido pelo Tema para isto. Em alguns temas, até mesmo a fonte vista no editor será diferente da vista na página. No _Tainacan Interface_ tentamos aplicar o máximo de estilização possível, mas nem tudo sai perfeito. Um exemplo disso são **os alinhamentos e margens**. No editor, existem margens extras entre os elementos, que fazem parte dos blocos. Estas margens são importantes para permitir o manejo dos blocos, mas ao visualizarmos a página, as mesmas não estarão lá. Ao usarmos os alinhamentos "Largura ampla" e "Largura completa" podemos achar que cabem X itens em uma linha só da página, mas ao visualizarmos, vemos que há mais espaço, pois no editor, temos **a Barra Lateral do Editor e do próprio Painel Administrativo do WordPress que tomam espaço da tela**. Para se eliminar um pouco este efeito, pode-se usar o editor em Tela Cheia. Por fim, **as cores observadas em elementos como Títulos, Linhas e Links, serão sempre o padrão do tema** no editor (o "Azul Turquesa"), mas ao visualizar no site, estas terão sido substituídas pela cor que foi personalizada para o Tema.
+
 ### Novos Blocos
 
-Não tenha medo de procurar por outros blocos para instalar e testar em suas publicações. É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia!
+Não tenha medo de procurar por [outros blocos](https://br.wordpress.org/plugins/browse/blocks/ ':ignore') para instalar e testar em suas publicações. 
 
-Outra observação importante é que, ao mudar de tema, seus blocos poderão ter uma aparência bem diferente. Ainda é muito recente a chegada do Gutenberg e nem todos os temas oferecem um bom suporte aos seus recursos (como o alinhamento amplo, por exemplo). Nossos blocos devem funcionar bem nos temas em geral, mas podem haver diferenças de margem, fonte e alinhamentos dependendo dos estilos de página.
+?> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia! 
+
+Eis aqui exemplos de blocos extras que gostamos:
+
+* [Grids - Layout Builder for WordPress](https://wordpress.org/plugins/grids/ ':ignore')
+
+Outra observação importante é que, ao mudar de tema, seus blocos poderão ter uma aparência bem diferente. Ainda é muito recente a chegada do Gutenberg e nem todos os temas oferecem um bom suporte aos seus recursos (como o alinhamento "Largura ampla", por exemplo). Nossos blocos devem funcionar bem nos temas em geral, mas podem haver diferenças de espaçamento, fonte e alinhamentos dependendo dos estilos de página.
