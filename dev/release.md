@@ -154,11 +154,16 @@ Commit and push.
 
 Edit `webpack.config.js` to set production mode.
 
+### Clean your folder to make sure everything is built
+
+```
+rm last-*
+```
+
 ### Build
 
 ```
 ./build.sh
-cd $BUILD_PATH
 ```
 ### Set build to development mode
 
@@ -188,6 +193,8 @@ cp $GIT_PATH/wp-repo-assets/* $SVN_PATH/assets/
 ```
 
 ### Commit
+
+Before commit, verify the output of `svn st` and check if there are no undesired files or folders. Also verify the total size of the trunk folder to see it looks ok.
 
 1. Go to the SVN folder
 

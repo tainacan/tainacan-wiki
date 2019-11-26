@@ -235,3 +235,11 @@ Require all denied
 Fechando as recomendações de segurança recomenda-se a instalação, ativação e configuração do plugin [Wordfence](https://wordpress.org/plugins/wordfence/) que possui uma gama de recursos que objetivam proteger a instalação Wordpress do mais diversos tipos de ataques e exploração de vulnerabildades.
 
 O plugin e a sua documentação podem ser acessados [aqui](https://wordpress.org/plugins/wordfence/). 
+
+## Cache
+
+Existem diversos plugins de cache para o WordPress que podem acelerar bastante o carregamento das páginas para seus visitantes.
+
+Existe um cuidado que precisa ser tomado quando for utilizar um plugin de cache. Como o Tainacan utiliza "nonces", que são códigos de segurança para verificar a intenção do usuário de realizar determinadas ações, é preciso configurar o cache para não durar mais do que 12 horas. Esses códigos duram esse tempo e, se o cache durar mais do que 12 horas, possivelmente você irá visitar o site com um código expirado e terá problemas de permissão. 
+
+Se quiser mais detalhes sobre isso, veja [estes](https://medium.com/myatus/wordpress-caching-and-nonce-lifespan-bb357d984da9) [artigos](https://joshpress.net/wordpress-nonces-and-wordpress-caching/).
