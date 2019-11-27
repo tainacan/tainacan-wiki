@@ -27,13 +27,13 @@ O Tainacan não poderia ficar de fora, e usa desta ferramenta para fornecer bloc
 Para usar algum dos blocos, basta editar um post ou uma página e procurar na lista de blocos disponíveis por um dos nosso blocos. São eles:
 
 * [Lista de Itens](/pt-br/blocks-items#lista-de-itens) *(estático)*;
-* Lista de Coleções *(estático)*;
+* [Lista de Coleções](/pt-br/blocks-collections#lista-de-coleções) *(estático)*;
 * Lista de Termos *(estático)*;
 * [Lista de Itens da Coleção](/pt-br/blocks-items#lista-de-itens-da-coleção);
 * [Barra de Busca](/pt-br/blocks-items#barra-de-busca-tainacan) Tainacan;
 * Lista de Facetas;
 * [Carrossel de Itens](/pt-br/blocks-items#carrossel-de-itens);
-* Carrossel de Coleções;
+* [Carrossel de Coleções](/pt-br/blocks-collections#carrossel-de-coleções);
 * Carrossel de Termos;
 
 ## Alguns conceitos importantes

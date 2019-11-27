@@ -164,7 +164,7 @@ O Bloco Lista de Itens foi o primeiro bloco disponibilizado pelo Tainacan, ainda
 
 Para começar, escolha se seus itens serão escolhidos da lista de todos os itens do repositório ou da lista de itens de uma coleção. Em seguida, escolha os itens que serão adicionados ao bloco. Você adiciona itens através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do item inserido.
 
-Com os itens carregados, podemos realizar algumas de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
+Com os itens carregados, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
 
 ![Configurações Inicias do Bloco](/_assets/gifs/blocks-items-list-1.gif)
 

@@ -110,6 +110,16 @@ section.cover .cover-main > p:last-child a:last-child:hover {
     font-weight: 400;
 }
 
+/*IMAGE PLACEHOLDER */
+.content img {
+    color:#888;
+    font-style: italic;
+}
+.content img:after {
+    content:  '  🖼️ ';
+    font-style: normal;
+}
+
 /* DETAILS */
 .content .markdown-section details {
     padding:  0 1rem 0 1rem;
