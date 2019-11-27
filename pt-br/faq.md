@@ -7,7 +7,7 @@ Listamos e respondemos as perguntas mais frequentes feitas pela nossa comunidade
 Pule pra alguma sessão específica:
 
 * [O Tainacan](#o-tainacan)
-* [Erros e Suporte](#erros-e-suporte)
+* [Suporte](#erros-e-suporte)
 * [Instalação e Hospedagem](#instalação-e-hospedagem)
 * [Editoração, Páginas e Blocos](#editoração-páginas-e-blocos)
 
@@ -67,9 +67,15 @@ Cheque na [Página de Diagnóstico do Sistema](/pt-br/optimization?id=diagnósti
 
 Caso mesmo assim não funcione, entre em contato na lista para analisarmos. Você consegue subir arquivos para o WordPress mas não consegue para o Tainacan? Qual formato do arquivo que está tentando subir? São algumas informações que podem ajudar a começarmos.
 
+Outras questões à respeito podem ser encontradas [aqui](/optimization#blindando-o-wordpress).
+
 ### Ocorreu algum erro no processo de importação ou exportação de itens. O que fazer?
 
 Em geral, erros de processos como importadores e exportadores são gravados em um arquivo de log que pode ser acessado pela própria interface administrativa do Tainacan. Na lista de Processos, abra o processo que deu erro e baixe o arquivo de log. Envie este para ser analisado por quem puder ajudar.
+
+### Sinto que minha instalação está demorando muito para carregar os itens... tem como melhorar?
+
+Se sua coleção é pequena e simples, então é bem capaz que há algum problema ocorrendo e pode ser discutido na lista de emails. Já se sua base tem milhares e itens, com dezenas de metadados, então as razões para lentidões podem ter relação com o servidor ou com as configurações de busca atuais. Sugerimos uma leitura detalhada [desta página](#/optimization) que vai te guiar por algumas opções em questão de performance.
 
 
 -------------------
