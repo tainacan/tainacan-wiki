@@ -12,6 +12,10 @@ Atualmente o Tainacan oferece um bloco de faceta:
 
 1. [Lista de Facetas](#lista-de-facetas)
 
+
+---------
+
+
 ## Lista de Facetas
 
 ### Configurações Iniciais do Bloco

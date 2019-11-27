@@ -1,6 +1,6 @@
 # Blocos de Termos
 
-Se seu repositório possui múltiplas taxonomias de múltiplos termos, pode ser uma boa ideia apresentá-los na página inicial ou em um post de introdução ao acervo. Para estas situações vale a pena usar um bloco de termos. Atualmente, o Tainacan oferece dois destes:
+Se seu repositório possui taxonomias de múltiplos termos, pode ser uma boa ideia apresentá-los na página inicial ou em um post de introdução ao acervo. Para estas situações vale a pena usar um bloco de termos. Atualmente, o Tainacan oferece dois destes:
 
 1. O [Carrossel de Termos](#carrossel-de-termos)
 2. A [Lista de Termos](#lista-de-termos) *(Estático)*
@@ -66,7 +66,7 @@ Este bloco oferece dois modos de visualização, disponíveis na barra superior 
 
 #### ** Grade de Termos **
 
-O modo padrão é a grade de termos, que mostrará as imagens dos termos (185px _x_ 185px), com seus nomes abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o nome do termo e se deseja um espaço maior entre eles. Lembrando que quanto maior o espaçamento, menos termos cabem por linha.
+O modo padrão é a grade de termos, que mostrará as imagens dos termos (185px _x_ 185px), com seus nomes abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o nome do termo.
 
 #### ** Lista de Termos **
 
