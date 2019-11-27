@@ -4,6 +4,15 @@ Listamos e respondemos as perguntas mais frequentes feitas pela nossa comunidade
 
 > Para participar da comunidade do Tainacan [inscreva-se aqui](https://lists.riseup.net/www/subscribe/tainacan)!
 
+Pule pra alguma sessão específica:
+
+* [O Tainacan](#o-tainacan)
+* [Erros e Suporte](#erros-e-suporte)
+* [Instalação e Hospedagem](#instalação-e-hospedagem)
+* [Editoração, Páginas e Blocos](#editoração-páginas-e-blocos)
+
+-------------------
+
 ## O Tainacan
 
 ### O que significa Tainacan?
@@ -21,6 +30,8 @@ Atualmente nossa rede reúne pesquisadores da Universidade de Brasília (UnB), U
 ### Por que o Tainacan é um software livre?
 
 Seu objetivo principal é ajudar instituições culturais a organizarem, publicarem e difundirem suas coleções. Ele também pode ser usado para construção de repositórios individuais ou coletivos, para qualquer finalidade, e opera de forma integrada à plataforma WordPress.
+
+-------------------
 
 ## Erros e Suporte
 
@@ -50,6 +61,8 @@ Alguns erros podem ser reportados no navegador ao invés do servidor. Isso acont
 
 Na **aba de console**, erros em geral são listados com destaque, em vermelho. Na **aba de rede**, haverá sempre uma lista de várias requisições. Aquelas que podem ter problema em geral são apresentadas em vermelho ou com códigos `404`, `401`, `500`, logo de início. Às vezes, pode ser necessário clicar em uma requisição desta lista para se saber mais informações, como a resposta da mesma. Saber destas informações podem ajudar o desenvolvedor a identificar o problema. Se possível, faça uma captura de tela mostrando o conteúdo destas telas, incluindo informações escondidas por scroll. Se é um erro que acontece logo ao se entrar na página ou se clicar em algum botão, tente repetir a ação com esta tela aberta, para se ter certeza de que foi registrada ali.
 
+-------------------
+
 ## Instalação e Hospedagem
 
 ### Qual a diferença entre wp.com e wp.org?
@@ -63,6 +76,8 @@ Sim! Mas infelizmente o [plano gratuito](https://br.wordpress.com/pricing/ 'igno
 ### É possível instalar o Tainacan no meu próprio computador?
 
 Sim. Mas é bom deixar claro, **o Tainacan é um plugin para uma plataforma de sites**. Sua função não é bem a de um programa que você abre e fecha! Instalações _locais_ - como chamamos quando você configura em seu próprio computador - são úteis para desenvolvedores que querem contribuir ou apenas para quem quer fazer testes antes de mandar para um servidor, onde de fato o site ficará hospedado na web e online 24 horas por dia. Para configurar uma instalação do WordPress pronta para o Tainacan, dê uma olhada em [nossos tutoriais de instalação](/pt-br/instalacao)!
+
+-------------------
 
 ## Editoração, Páginas e Blocos
 
