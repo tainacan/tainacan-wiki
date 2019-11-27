@@ -44,7 +44,7 @@ Antes de começar a explorar os blocos do Tainacan, porém, talvez caiba entende
 
 1. É a barra superior do seu bloco. Nela costumam ficar configurações como o modo de visualização, alinhamento do bloco, além de opções de deletar, inserir blocos antes ou depois e criar um grupo de blocos;
 2. É a região do conteúdo do bloco em si. Quando ativos - ou seja, clicados, em foco - os blocos do Tainacan em geral possuem uma região em cinza com a principal configuração a ser feita (geralmente escolher uma fonte dos dados mostrados, como uma coleção). Esta região não aparece na versão final do post, o que pode ser observado ao se mover o foco pra fora do bloco;
-3. É a barra lateral do editor onde, além das configurações do documento, estão as documentações do bloco atualmente ativo. Nela ficam diversos tipos de opções relacionadas ao bloco. Todos os blocos possuem ao final desta sessão uma configuração avançada que permite atribuir classes aos blocos, o que pode ser usado para fazer customizações avançadas com CSS.
+3. É a barra lateral do editor onde, além das configurações do documento, estão as opções do bloco atualmente ativo. Nela ficam diversos tipos de opções relacionadas ao bloco. Todos os blocos possuem ao final desta sessão uma configuração avançada que permite atribuir classes aos blocos, o que pode ser usado para fazer customizações avançadas com CSS.
 
 <div style="float: right; margin-left: 32px;">
 
