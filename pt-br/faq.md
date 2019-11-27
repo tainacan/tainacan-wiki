@@ -61,6 +61,17 @@ Alguns erros podem ser reportados no navegador ao invés do servidor. Isso acont
 
 Na **aba de console**, erros em geral são listados com destaque, em vermelho. Na **aba de rede**, haverá sempre uma lista de várias requisições. Aquelas que podem ter problema em geral são apresentadas em vermelho ou com códigos `404`, `401`, `500`, logo de início. Às vezes, pode ser necessário clicar em uma requisição desta lista para se saber mais informações, como a resposta da mesma. Saber destas informações podem ajudar o desenvolvedor a identificar o problema. Se possível, faça uma captura de tela mostrando o conteúdo destas telas, incluindo informações escondidas por scroll. Se é um erro que acontece logo ao se entrar na página ou se clicar em algum botão, tente repetir a ação com esta tela aberta, para se ter certeza de que foi registrada ali.
 
+### Não estou conseguindo fazer upload de arquivos. O que faço?
+
+Cheque na [Página de Diagnóstico do Sistema](/pt-br/optimization?id=diagnóstico-do-sistema) se a pasta de `uploads` do seu servidor está com permissões de escrita. Caso não esteja, é preciso corrigir isso, atribuindo permissões de leitura e escrita para o usuário de acesso ao servidor (geralmente o `www-data`).
+
+Caso mesmo assim não funcione, entre em contato na lista para analisarmos. Você consegue subir arquivos para o WordPress mas não consegue para o Tainacan? Qual formato do arquivo que está tentando subir? São algumas informações que podem ajudar a começarmos.
+
+### Ocorreu algum erro no processo de importação ou exportação de itens. O que fazer?
+
+Em geral, erros de processos como importadores e exportadores são gravados em um arquivo de log que pode ser acessado pela própria interface administrativa do Tainacan. Na lista de Processos, abra o processo que deu erro e baixe o arquivo de log. Envie este para ser analisado por quem puder ajudar.
+
+
 -------------------
 
 ## Instalação e Hospedagem
