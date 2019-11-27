@@ -166,7 +166,7 @@ Para começar, escolha se seus itens serão escolhidos da lista de todos os iten
 
 Com os itens carregados, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
 
-![Configurações Inicias do Bloco](/_assets/gifs/blocks-items-list-1.gif)
+![Configurações Iniciais do Bloco](/_assets/gifs/blocks-items-list-1.gif)
 
 ### Configurações da Exibição de Itens
 

@@ -19,7 +19,7 @@ Para apresentar várias coleções em sequência e ainda dar um ar mais "dinâmi
 
 Para começar, escolha as coleções que serão adicionadas ao bloco. Você adiciona coleções através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima da coleção inserida.
 
-Com as coleções carregadas, você pode notar que o carrossel não se move. Na verdade, ele só é ativado na versão publicada ou pré-visualização do post ou página. Aqui no editor, você verá uma lista comum com scroll. Agora, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
+Com as coleções carregadas, você pode notar que o carrossel não se move. Na verdade, ele só é ativado na versão publicada ou pré-visualização do post ou página. Aqui no editor, você verá uma lista comum com scroll. Observe que ao clicar em uma coleção, o link te leva para a [Lista de Itens da Coleção](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção) ou para sua página especial configurada. Agora, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
 
 ### Modos de Visualização da Coleção
 
@@ -49,11 +49,11 @@ Com o bloco Lista de Coleções, você seleciona manualmente quais itens deseja 
 
 ### Configurações Iniciais do Bloco
 
-Para começar, escolha as coleções que serão adicionados ao bloco. Você adiciona coleções através do modal e as remove na própria lista, clicando no botão com "X" que aparece acima da coleção inserida.
+Para começar, escolha as coleções que serão adicionados ao bloco. Você adiciona coleções através do modal e as remove na própria lista, clicando no botão com "X" que aparece acima da coleção inserida. Ao clicar em uma coleção, o link te leva para a [Lista de Itens da Coleção](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção) ou para sua página especial configurada.
 
 Com as coleções carregadas, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo. 
 
-![Configurações Inicias do Bloco](/_assets/gifs/blocks-collections-list-1.gif)
+![Configurações Iniciais do Bloco](/_assets/gifs/blocks-collections-list-1.gif)
 
 ### Configurações da Exibição de Coleções
 
