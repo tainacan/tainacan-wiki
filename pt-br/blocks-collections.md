@@ -63,7 +63,7 @@ Este bloco oferece dois modos de visualização, disponíveis na barra superior 
 
 #### ** Grade de Coleções **
 
-O modo padrão é a grade de coleções, que mostrará as miniaturas das coleções (185px _x_ 185px), com seus nomes abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o nome da coleção e se deseja um espaço maior entre os elas. Lembrando que quanto maior o espaçamento, menos coleções cabem por linha.
+O modo padrão é a grade de coleções, que mostrará as miniaturas das coleções (185px _x_ 185px), com seus nomes abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o nome da coleção e se deseja um espaço maior entre elas. Lembrando que quanto maior o espaçamento, menos coleções cabem por linha.
 
 #### ** Lista de Coleções **
 
