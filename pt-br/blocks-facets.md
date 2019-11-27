@@ -32,7 +32,11 @@ Com as facetas carregadas, podemos realizar algumas configurações que estão d
 
 Por padrão, são carregadas apenas 12 facetas no seu bloco. Para carregar mais facetas por vez, aumente o **Número Máximo de Facetas** no painel lateral. Também pode-se mostrar um **botão de "Carregar Mais Facetas"** logo abaixo da lista, que fará uma nova requisição e incrementará a lista atual (note que apesar de exibido no editor, este botão terá efeito apenas no documento publicado ou pré-visualizado). Caso queira oferecer uma busca textual simples, habilite a opção de **Mostrar Barra de Busca**.
 
-![Configurando o carregamento de facetas](/_assets/gifs/blocks-collection-facets-2.gif)
+<div style="max-width: calc(100% - 240px);">
+
+![Configurando o carregamento de facetas](/_assets/gifs/blocks-facets-list-2.gif)
+
+</div>
 
 No caso de facetas oriundas de metadados tipo Taxonomia, são carregas facetas de qualquer termo que seja valor em algum item. Pode ser desejado, porém, que só sejam mostradas facetas de termos **filhos de um termo em específico**, ou apenas termos raiz, aqueles que **não são filhos de nenhum outro termo**. Para configurar isso, pode-se selecionar o **Termo Pai** no painel lateral.
 
@@ -47,19 +51,19 @@ Este bloco oferece três modos de visualização. Para todos eles é possível h
 
 O modo padrão é a grade de facetas, que mostrará as miniaturas das facetas (185px _x_ 185px) relacionadas a termos de taxonomias, com seus nomes e número de itens abaixo. Neste modo, você pode configurar se deve ou não ser mostrado a imagem da faceta e se deseja um espaço maior entre as facetas. Lembrando que quanto maior o espaçamento, menos facetas cabem por linha.
 
-![Configurando o bloco no modo grade](/_assets/gifs/blocks-collection-facets-3.gif)
+![Configurando o bloco no modo grade](/_assets/gifs/blocks-facets-list-3.gif)
 
 #### ** Lista de Facetas **
 
 A lista de facetas permite uma visão mais simplificada, com miniaturas menores (54px _x_ 54px) e os nomes ao lado. Neste modo, você pode escolher não mostrar a miniatura, o ideal para facetas que não possuem imagens. 
 
-![Configurando o bloco no modo lista](/_assets/gifs/blocks-collection-facets-4.gif)
+![Configurando o bloco no modo lista](/_assets/gifs/blocks-facets-list-4.gif)
 
 #### ** Nuvem de Facetas **
 
 Por fim, o bloco de facetas possui um modo especial, inspirado nas _nuvens de tags_ frequentemente vistas em blogs. Com ele, a lista de facetas é mostrada centralizada e cada faceta tem um tamanho de fonte ajustado segundo uma razão de quantos itens estão associados à ela. Assim, facetas com vários itens tem proporcionalmente maior destaque. Esta proporção pode ser ajustada no painel lateral ao lado, na opção **Taxa de Crescimento** das configurações da nuvem.
 
-![Configurando o bloco no modo nuvem](/_assets/gifs/blocks-collection-facets-4.gif)
+![Configurando o bloco no modo nuvem](/_assets/gifs/blocks-facets-list-5.gif)
 
 <!-- tabs:end -->
 
