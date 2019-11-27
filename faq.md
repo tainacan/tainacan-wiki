@@ -11,7 +11,7 @@ Pule pra alguma sessão específica:
 * [O Tainacan](#o-tainacan)
 * [Suporte](#erros-e-suporte)
 * [Instalação e Hospedagem](#instalação-e-hospedagem)
-* [Editoração, Páginas e Blocos](#editoração-páginas-e-blocos)
+* [Menus, Páginas e Blocos](#menus-páginas-e-blocos)
 
 -------------------
 
@@ -98,7 +98,7 @@ Sim. Mas é bom deixar claro, **o Tainacan é um plugin para uma plataforma de s
 
 -------------------
 
-## Editoração, Páginas e Blocos
+## Menus, Páginas e Blocos
 
 ### É possível inserir itens do Tainacan em postagens no WordPress?
 
@@ -107,6 +107,10 @@ Sim, é possível! Para adicionar itens do Tainacan em uma postagem do WordPress
 ### Como vejo a lista de coleções no tema?
 
 A lista de coleções é uma das [Páginas Especiais](#/pt-br/tainacan-pages) que o Tainacan insere. Basta adicionar `/colecoes` ou `collections` à URL do seu site.
+
+### Como coloco a lista de coleções no menu do meu site?
+
+Basta ir no menu superior em **Personalizar** > **Menus** > **Selecionar o Menu Principal** > **Adicionar Itens**. Dalí, além de outros links customizados, você pode escolher **"Repositório de Coleções"** para mostrar sua lista de coleções ou selecionar qualquer outra coleção ou termo de taxonomia.
 
 ### Como posso fazer a página inicial do meu site ser a lista de coleções?
 
