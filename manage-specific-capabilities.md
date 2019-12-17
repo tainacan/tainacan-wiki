@@ -14,4 +14,4 @@ Editando uma permissão, pode-se ver quais funções a possuem. As funções sã
 
 ?> _TODO_ Inserir captura de tela
 
-Para ter acesso à estas telas, é preciso que o usuário tenha uma função com a permissão [Gerenciar Permissões de Usuários](/pt-br/capabilities#repositório-em-geral) ou [Gerenciar Permissões de Usuários da Coleção](/pt-br/capabilities#coleção)
+Para ter acesso à estas telas, é preciso que o usuário tenha uma função com a permissão [Gerenciar Permissões de Usuários](capabilities#repositório-em-geral) ou [Gerenciar Permissões de Usuários da Coleção](capabilities#coleção)

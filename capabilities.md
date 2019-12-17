@@ -17,7 +17,7 @@ Algumas permissões podem garantir um acesso equivalente ao de outra permissões
 | Nome						    	| Descrição		|
 |-----------------------------------|---------------|
 | Gerenciar Tainacan	    		| Gerenciar todos os recursos do Tainacan e todas as coleções |
-| Gerenciar Permissões de Usuários	| [Gerenciar funções de usuários e permissões](/pt-br/manage-user-roles.md) | 
+| Gerenciar Permissões de Usuários	| [Gerenciar funções de usuários e permissões](manage-user-roles.md) | 
 
 
 ### Taxonomias
@@ -90,4 +90,4 @@ Permissões nível coleção existem em duas instâncias: a **geral**, que afeta
 
 <!-- tabs:end -->
 
-Estas são as permissões relacionadas ao Tainacan. Veja [aqui](/pt-br/manage-user-roles.md) como editar as funções de usuários para que eles possam ter mais ou menos destas, e [aqui](/pt-br/manage-specific-capabilities.md) como retirar ou adicionar exceções em certas coleções.
+Estas são as permissões relacionadas ao Tainacan. Veja [aqui](manage-user-roles.md) como editar as funções de usuários para que eles possam ter mais ou menos destas, e [aqui](manage-specific-capabilities.md) como retirar ou adicionar exceções em certas coleções.

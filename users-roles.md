@@ -22,6 +22,6 @@ Uma **permissão** é o que é verificado ao se fornecer acesso para um usuário
 
 A seguir, detalhamos:
 
-1. As [Permissões do Tainacan](/pt-br/capabilities.md)
-2. Como [Gerenciar Funções de Usuários](/pt-br/manage-user-roles.md)
-3. Como [Gerenciar Permissões Específicas](/pt-br/manage-specific-capabilities.md) em certas coleções
+1. As [Permissões do Tainacan](capabilities.md)
+2. Como [Gerenciar Funções de Usuários](manage-user-roles.md)
+3. Como [Gerenciar Permissões Específicas](manage-specific-capabilities.md) em certas coleções

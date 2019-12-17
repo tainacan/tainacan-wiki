@@ -2,13 +2,13 @@
 
 # Manage User Roles
 
-Desde a versão 1.0 do Tainacan, é possível configurar as **funções de usuários** no que diz respeito [às permisssões do Tainacan](/pt-br/capabilities.md). Assim fica fácil limitar o acesso de *Editores do Tainacan* à algumas configurações ou até mesmo dar para *Autores* do seu site WordPress algumas permissões de edição no painel administrativo do seu repositório.
+Desde a versão 1.0 do Tainacan, é possível configurar as **funções de usuários** no que diz respeito [às permisssões do Tainacan](capabilities.md). Assim fica fácil limitar o acesso de *Editores do Tainacan* à algumas configurações ou até mesmo dar para *Autores* do seu site WordPress algumas permissões de edição no painel administrativo do seu repositório.
 
 Esta função está disponibilizada pelo menu do plugin, que pode ser acessado no menu lateral do painel administrativo do WordPress:
 
 ![Tela de Gestão de Funções de Usuários](/_assets/images/manage-user-roles-1.png)
 
-Somente usuários que possuem a permissão de [Gerenciar Permissões de Usuários](/pt-br/capabilities#repositório-em-geral) poderão acessar esta tela.
+Somente usuários que possuem a permissão de [Gerenciar Permissões de Usuários](capabilities#repositório-em-geral) poderão acessar esta tela.
 
 ## Permissões do WordPress vs. Permissões do Tainacan
 
@@ -22,7 +22,7 @@ Ao clicar em *Editar* em qualquer uma das funções acima, a seguinte tela apare
 
 ![Tela de Configuração de uma Função de Usuário, aba Repositório](/_assets/images/manage-user-roles-2.png)
 
-Além do nome, é possível marcar nas caixas qual permissão está atribuida àquela função de usuário. Note que, como explicado na [página sobre permissões](/pt-br/capabilities), algumas permissões afetam outras. A permissão "Gerenciar Tainacan", neste caso, já concede à função todas as outras permissões por padrão.
+Além do nome, é possível marcar nas caixas qual permissão está atribuida àquela função de usuário. Note que, como explicado na [página sobre permissões](capabilities), algumas permissões afetam outras. A permissão "Gerenciar Tainacan", neste caso, já concede à função todas as outras permissões por padrão.
 
 Na aba "Coleções", podemos gerenciar não apenas permissões que afetam a todas as coleções, mas também especificar para certas coleções se haverá ou não uma permissão para aquela função:
 
@@ -53,4 +53,4 @@ O que funciona bem para a maioria dos casos. Porém, podem haver situações em 
 
 > Coleção > Permissão > Função de Usuário
 
-Para entender como fazer isso, acesse a documentação de como [Gerenciar Permissões Específicas](/pt-br/manage-specific-capabilities.md)
+Para entender como fazer isso, acesse a documentação de como [Gerenciar Permissões Específicas](manage-specific-capabilities.md)
