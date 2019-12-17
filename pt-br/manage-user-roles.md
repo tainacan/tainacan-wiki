@@ -6,6 +6,8 @@ Esta função está disponibilizada pelo menu do plugin, que pode ser acessado n
 
 ![Tela de Gestão de Funções de Usuários](/_assets/images/manage-user-roles-1.png)
 
+Somente usuários que possuem a permissão de [Gerenciar Permissões de Usuários](/pt-br/capabilities#repositório-em-geral) poderão acessar esta tela.
+
 ## Permissões do WordPress vs. Permissões do Tainacan
 
 Note que além das funções de usuários criadas para o Tainacan, são listadas também as funções padrão do WordPress. Você não pode deletar estas funções e o controle das permissões feitas terá relação apenas com o Tainacan. Para gerir outras permissões por função, tal como a de "Editar posts", "Trocar Tema", existem plugins específicos do WordPress. Aqui, tratamos apenas do que afeta o Tainacan.
@@ -16,6 +18,37 @@ Com esta divisão, seus usuários que possuírem apenas funções do Tainacan, n
 
 Ao clicar em *Editar* em qualquer uma das funções acima, a seguinte tela aparecerá:
 
+![Tela de Configuração de uma Função de Usuário, aba Repositório](/_assets/images/manage-user-roles-2.png)
+
+Além do nome, é possível marcar nas caixas qual permissão está atribuida àquela função de usuário. Note que, como explicado na [página sobre permissões](/pt-br/capabilities), algumas permissões afetam outras. A permissão "Gerenciar Tainacan", neste caso, já concede à função todas as outras permissões por padrão.
+
+Na aba "Coleções", podemos gerenciar não apenas permissões que afetam a todas as coleções, mas também especificar para certas coleções se haverá ou não uma permissão para aquela função:
+
+![Tela de Configuração de uma Função de Usuário, aba Coleções](/_assets/images/manage-user-roles-3.png)
+
+Neste caso, qualquer permissão que for marcada para todas as coleções, afetará a permissão de mesmo nome ao se trocar para as coleções específicas.
 
 
-## Criando Funções do zero, ou a partir de outras
+## Criando funções do zero, ou a partir de outras
+
+<div style="float: right; margin-left: 32px;">
+
+![Criando uma função de usuário a partir de outra](/_assets/images/manage-user-roles-4.png ':size=220')
+
+</div>
+
+Pode ser desável criar uma função de usuário nova, com permisssões bem específicas. Neste caso, basta clicar em "Nova Função" no botão do canto superior esquerdo da tela de Funções do Usuário. Isto criará uma função limpa, sem nenhum permissão algum. 
+
+Porém, se o que pretende-se é criar uma função com permissões muito parecidas das de um "Editor", salvas algumas exceções, um caminho mais simples pode ser feito: basta clicar na setinha para usar alguma função existente como *modelo*. A nova função agora terá as mesmas permissões que a modelo escolhida de início.
+
+## Configurando permissões específicas
+
+O processo descrito nesta página te leva por um caminho de configuração no seguinte fluxo:
+
+> Função de Usuário > Permissão > Repositório > Coleção
+
+O que funciona bem para a maioria dos casos. Porém, podem haver situações em que se deseja remover ou adicionar uma permissão para uma função especificamente em uma coleção. Neste caso, um fluxo mais interessante seria:
+
+> Coleção > Permissão > Função de Usuário
+
+Para entender como fazer isso, acesse a documentação de como [Gerenciar Permissões Específicas](/pt-br/manage-specific-capabilities.md)

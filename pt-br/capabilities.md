@@ -12,10 +12,10 @@ Algumas permissões podem garantir um acesso equivalente ao de outra permissões
 ## Repositório
 
 ### Repositório em Geral
-| Nome							| Descrição		|
-|-------------------------------|---------------|
-| Gerenciar Tainacan			| Gerenciar todos os recursos do Tainacan e todas as coleções |
-| Gerenciar Permissões Usuários	| Gerenciar funções de usuários e permissões | 
+| Nome						    	| Descrição		|
+|-----------------------------------|---------------|
+| Gerenciar Tainacan	    		| Gerenciar todos os recursos do Tainacan e todas as coleções |
+| Gerenciar Permissões de Usuários	| [Gerenciar funções de usuários e permissões](/pt-br/manage-user-roles.md) | 
 
 
 ### Taxonomias
