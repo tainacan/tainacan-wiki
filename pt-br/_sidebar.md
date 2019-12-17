@@ -19,8 +19,8 @@
     * [Importadores](/pt-br/importers)
     * [Exportadores](/pt-br/exporters)
     * [Ações em Massa](/pt-br/bulk-actions)
-    * [Usuários](/pt-br/users)
-    * [Indexando e buscando dentro de PDFs](indexing-pdf.md)
+    * [Permissões e Usuários](/pt-br/users-roles.md)
+    * [Buscando dentro de PDFs](indexing-pdf.md)
 * Páginas & Blocos Gutenberg
     * [Páginas do Tainacan](/pt-br/tainacan-pages.md)
     * [Blocos Gutenberg](/pt-br/gutenberg-blocks.md)

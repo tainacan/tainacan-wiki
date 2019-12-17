@@ -1,0 +1,1 @@
+# Gerenciar Permissões Específicas
