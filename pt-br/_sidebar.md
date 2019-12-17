@@ -20,6 +20,9 @@
     * [Exportadores](/pt-br/exporters)
     * [Ações em Massa](/pt-br/bulk-actions)
     * [Permissões e Usuários](/pt-br/users-roles.md)
+      * [Permissões do Tainacan](/pt-br/capabilities.md)
+      * [Gerenciar Funções de Usuários](/pt-br/manage-user-roles.md)
+      * [Gerenciar Permissões Específicas](/pt-br/manage-specific-capabilities.md)
     * [Buscando dentro de PDFs](indexing-pdf.md)
 * Páginas & Blocos Gutenberg
     * [Páginas do Tainacan](/pt-br/tainacan-pages.md)
