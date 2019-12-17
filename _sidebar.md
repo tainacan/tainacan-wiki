@@ -21,7 +21,10 @@
     	* [Vocabulary Importer](/dev/vocabulary-importer.md)
     * [Exporters](exporters)
     * [Bulk actions](bulk-actions)
-    * [User permission](users)
+    * [Capabilities and Users](users-roles.md)
+        * [Tainacan Capabilities](capabilities.md)
+        * [Manage User Roles](manage-user-roles.md)
+        * [Manage Specific Capabilities](manage-specific-capabilities.md)
     * [Indexing PDF contents](indexing-pdf.md)
 * Pages & Gutenberg Blocks
     * [Tainacan Pages](tainacan-pages.md)

@@ -1,4 +1,4 @@
-?> _TODO_ Esta página diz respeito ao esquema de permissões de usuários nas versões do **Tainacan anteriores a 1.0**. Recomendamos fortemente o uso de versões mais recentes, onde a permissão de usuários funciona de acordo com [essa documentação](/pt-br/users-roles).
+!> Esta página diz respeito ao esquema de permissões de usuários nas versões do **Tainacan anteriores a 1.0**. Recomendamos fortemente o uso de versões mais recentes, onde a permissão de usuários funciona de acordo com [essa documentação](/pt-br/users-roles).
 
 <div style="float: right; margin-left: 1rem;">
 	<img 

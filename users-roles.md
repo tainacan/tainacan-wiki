@@ -1,3 +1,5 @@
+?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Usuários" 
@@ -6,9 +8,9 @@
 		height="40">
 </div>
 
-# Permissões e Usuários
+# Capabilities and Users
 
-> Este artigo explica como as **permissões** são tratadas no Tainacan, bem como quais são as **funções dos usuários** disponíveis e o que cada uma delas pode fazer. Para versões anteriores ao Tainacan 1.0, cheque [esta documentação](/pt-br/users).
+> This page explains how **capabilities** are handled on Tainacan, as well as which are the available **user roles** and what each of them can do. For Tainacan versions previous to 1.0, check [this documentation](users).
 
 O Tainacan lida com permissões de usuários de maneira simular ao [WordPress](https://codex.wordpress.org/pt-br:Pap%C3%A9is_e_Capacidades). Se você está acostumado com as funções e permissões do WordPress, você já tem meio caminho andado!
 

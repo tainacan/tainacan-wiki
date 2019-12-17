@@ -1,4 +1,6 @@
-# Gerenciar Permissões Específicas
+?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+
+# Manage Specific Capabilities
 
 A partir da versão 1.0 do Tainacan, ao acessar o Painel Administrativo do Tainacan, é possível acessar, tanto a nível repositório, quanto a nível de uma coleção, a tela de configuração de Permisssões:
 

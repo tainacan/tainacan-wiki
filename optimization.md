@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+?> _TODO_  This page is partially in *Brazilian Portuguese*. **If you can, please help us translate it completely to *English*.**
 
 # Optimization
 
