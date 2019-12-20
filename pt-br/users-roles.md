@@ -8,7 +8,7 @@
 
 # Permissões e Usuários
 
-> Este artigo explica como as **permissões** são tratadas no Tainacan, bem como quais são as **funções dos usuários** disponíveis e o que cada uma delas pode fazer. Para versões anteriores ao Tainacan 1.0, cheque [esta documentação](/pt-br/users).
+> Este artigo explica como as **permissões** são tratadas no Tainacan, bem como quais são as **funções dos usuários** disponíveis e o que cada uma delas pode fazer. Para versões anteriores ao Tainacan 0.15, cheque [esta documentação](/pt-br/users).
 
 O Tainacan lida com permissões de usuários de maneira simular ao [WordPress](https://codex.wordpress.org/pt-br:Pap%C3%A9is_e_Capacidades). Se você está acostumado com as funções e permissões do WordPress, você já tem meio caminho andado!
 

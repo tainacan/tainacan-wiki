@@ -2,7 +2,7 @@
 
 # Manage User Roles
 
-Desde a versão 1.0 do Tainacan, é possível configurar as **funções de usuários** no que diz respeito [às permisssões do Tainacan](capabilities.md). Assim fica fácil limitar o acesso de *Editores do Tainacan* à algumas configurações ou até mesmo dar para *Autores* do seu site WordPress algumas permissões de edição no painel administrativo do seu repositório.
+Desde a versão 0.15 do Tainacan, é possível configurar as **funções de usuários** no que diz respeito [às permisssões do Tainacan](capabilities.md). Assim fica fácil limitar o acesso de *Editores do Tainacan* à algumas configurações ou até mesmo dar para *Autores* do seu site WordPress algumas permissões de edição no painel administrativo do seu repositório.
 
 Esta função está disponibilizada pelo menu do plugin, que pode ser acessado no menu lateral do painel administrativo do WordPress:
 

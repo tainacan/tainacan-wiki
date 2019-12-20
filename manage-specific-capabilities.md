@@ -2,7 +2,7 @@
 
 # Manage Specific Capabilities
 
-A partir da versão 1.0 do Tainacan, ao acessar o Painel Administrativo do Tainacan, é possível acessar, tanto a nível repositório, quanto a nível de uma coleção, a tela de configuração de Permisssões:
+A partir da versão 0.15 do Tainacan, ao acessar o Painel Administrativo do Tainacan, é possível acessar, tanto a nível repositório, quanto a nível de uma coleção, a tela de configuração de Permisssões:
 
 ?> _TODO_ Inserir captura de tela
 
