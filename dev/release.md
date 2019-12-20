@@ -70,22 +70,29 @@ When we release the RC is a good time to update the SVN trunk. This will allow t
 
 Note that the `Stable tag` in the `readme.txt` file must not be edited and keep pointing to $CURRENT_VERSION.
 
-1. clean trunk
-
-```
-rm -rf $SVN_PATH/trunk/*
-```
-
-2. Copy new files
-
-```
-cp -R $BUILD_PATH/* $SVN_PATH/trunk/
-```
-
-3. Go to the SVN folder
+1. Go to the SVN folder
 
   ```
   cd $SVN_PATH
+  ```
+
+2. Make sure your local SVN is up to date
+    
+  ```
+  svn cleanup
+  svn update
+  ```
+
+1. Clean trunk
+
+  ```
+  rm -rf trunk/*
+  ```
+
+2. Copy new files
+
+  ```
+  cp -R $BUILD_PATH/* trunk/
   ```
 
 4. `svn rm` all files that have been removed
