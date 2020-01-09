@@ -6,7 +6,7 @@ Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua col
 
 1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) *(Dinâmico)*
 2. O [Carrossel de Itens](#carrossel-de-itens)
-3. A [Barra de Busca Tainacan](#barra-de-busca-tainacan)
+3. A [Barra de Busca Tainacan](#barra-de-busca)
 4. A [Lista de Itens](#lista-de-itens) *(Estático)*
 
 ---------
