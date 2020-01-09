@@ -1,6 +1,6 @@
 ![logo](_assets/images/logo_tainacan.png)
 
-# Welcome to Tainacan Wiki <small>Beta 0.14</small>
+# Welcome to Tainacan Wiki <small>Beta 0.15</small>
 
 > An open source, powerfull and flexible repository platform for WordPress.
 

@@ -184,7 +184,7 @@ Each collection has its own set of capabilities, where `%d` is the collection ID
 
 There a few capabalities that have super powers and override others capabilities:
 
-* `manage_tainacan` -> If this capability is present, check for any capability starting with `tnc_cap_` will return `true`. This includes repository and collection capabilities. A user or role with this capability is considered a "Tainacan administrator"
+* `manage_tainacan` -> If this capability is present, check for any capability starting with `tnc_` will return `true`. This includes repository and collection capabilities. A user or role with this capability is considered a "Tainacan administrator"
 * `manage_tainacan_collection_%d` -> If this capability is present for a collection, check for any capability starting with `tnc_col_%s` will return `true`. Where `%d` is the collection ID. A user or role with this capability is a Collection manager and can do everything in this collection.
 * `tnc_col_all_*` All collections capabilities -> For every capability starting with `tnc_col_%d` there is a relative `tnc_col_all` capability that will apply for every collection. For example, if `tnc_col_all_edit_items` is present, checking for `tnc_col_%d_edit_items` with ANY number replacing `%d` will return `true`. This is a way to assign a capability to all collections, including collections yet to be created.
 * `manage_tainacan_collection_all` -> the same idea of the above. If this capability is present any check to any collection capability of any collection ID will return `true`. A user or role with this capability will be able to do everything in all collections, but might not have other repositories capabilities.
