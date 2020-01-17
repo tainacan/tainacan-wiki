@@ -23,7 +23,7 @@
 	  * [Repository Taxonomies](/dev/repository-taxonomies.md)
 	  * [Repository Terms](/dev/repository-terms.md) 
 * Theme development and extension 
-    * Creating compatible themes - *Soon*
+    * [Creating compatible themes](/dev/creating-compatible-themes.md)
 	* [Custom Templates](/dev/custom-templates.md)
 	* [Extra View Modes](/dev/extra-view-modes.md)
 * Configuration and performance 
