@@ -17,7 +17,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 
 ## Development Resources
 
-### Development Basics
+### Development Basics {docsify-ignore}
 
 * [Setting up local environment](/dev/setup-local.md) - If you want to contribute to Tainacan core, you must set up your local environment. Alternatively, you can use our [Docker repository](https://github.com/tainacan/tainacan-docker ':ignore'). **If you want to develop themes or plugins, you don't need this**. 
 * [Key Concepts](/dev/key-concepts.md) - First things first. Let's understand what is what in Tainacan.
@@ -26,7 +26,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Tainacan API](https://tainacan.org/api-docs/ ':ignore')
 * [Permissions](/dev/permissions.md) 
 
-### Plugin development or extension
+### Plugin development or extension {docsify-ignore}
 * [Creating a new Metadata Type](/dev/creating-metadata-type.md)
 * [Exporting and Exposing](/dev/exporting-and-exposing.md)
 * [How to create Exporters](/dev/exporter-flow.md)
@@ -37,13 +37,13 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Mapping Standards](/dev/mapping-standards.md)
 * [Repository Methods](/dev/repository-methods.md)
   
-### Theme development or extension
+### Theme development or extension {docsify-ignore}
 * [Creating compatible themes](/dev/creating-compatible-themes.md) - How to create a theme that fully support Tainacan features
 * [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates that Tainacan add to WordPress Template Hierarchy
 * [Tainacan Template Tags](https://github.com/tainacan/tainacan/blob/develop/src/theme-helper/template-tags.php ':ignore') - Template tags useful to use in templates
 * [Creating new View Modes](/dev/extra-view-modes)
 
-### Configuration and performance
+### Configuration and performance {docsify-ignore}
 
 * [Faceted Search](/dev/faceted-search.md)
 * [Search Engine](/dev/search-engine.md)
