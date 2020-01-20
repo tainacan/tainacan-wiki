@@ -42,7 +42,7 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 **Array or true $mappers**
 
-A list of mapping standards that is exposer supports. This means that whenever someone makes a request to receive data via this exposer, he/she will also be able to choose in which mapping standard they want the content to be served. If set to `true` the exposer will accept all mapping standards.
+A list of mapping standards that is exposer supports. This means that whenever someone requests to receive data via this exposer, he/she will also be able to choose which mapping standard they want the content to be served. If set to `true` the exposer will accept all mapping standards.
 
 ```php 
 <?php 
@@ -73,7 +73,7 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 
 **Bool $accept_no_mapper**
 
-Indicates whether this exposer accept to serve data in its native form, without any mapping standards.
+Indicates whether this exposer accepts to serve data in its native form, without any mapping standards.
 
 ```php 
 <?php 
@@ -112,16 +112,16 @@ class MyExposer extends \Tainacan\Exposers\Exposer {
 }
 ```
 
-**Note**: The reason Name and Description are declared this way, and not as attributes, is to give you the opportunity to localize your strings to different languages. Please refer to the WordPress documentation to learn how to internationalize your plugin.
+**Note**: The reason Name and Description are declared this way, and not as attributes, is to allow you to localize your strings to different languages. Please refer to the WordPress documentation to learn how to internationalize your plugin.
 
 
 #### rest_request_after_callbacks()
 
-Now this is where all the magic happens!
+Now, this is where all the magic happens!
 
 This method will be called right before the API returns the data to the client.
 
-It will give you all the items it received, in the way they were about to be served in the default JSON format, and give you the opportunity to transform it.
+It will give you all the items it received, in the way they were about to be served in the default JSON format, and allow you to transform it.
 
 It receives 3 parameters:
 
@@ -129,7 +129,7 @@ It receives 3 parameters:
 * $handler: an instance of the `\WP_REST_Server` object 
 * $request: an instance of the `\WP_REST_Request` object 
 
-This method have to return the modified version of the `\WP_REST_Response` object.
+This method has to return the modified version of the `\WP_REST_Response` object.
 
 ```php 
 <?php 

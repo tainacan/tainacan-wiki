@@ -1,6 +1,6 @@
-# Setting up your local enviroment
+# Setting up your local environment
 
-This document will run you through setting up your local enviroment and running the tests. If you haven't done it yet, please have a look at [key concepts](key-concepts.md) so you can have a better Understanding of the project.
+This document will run you through setting up your local environment and running the tests. If you haven't done it yet, please have a look at [key concepts](key-concepts.md) so you can have a better understanding of the project.
 
 ## Overview
 
@@ -19,13 +19,13 @@ This repository includes all the tools needed to develop Tainacan, such as tests
 
 Tainacan is a WordPress plugin, so you will need all the basic dependencies you usually have to run a WordPress site, such as PHP and MySQL.
 
-You wil also need:
+You will also need:
 
 * `Composer` to manage dependencies
 * `Sass` to compile sass into css files
 * `WP-Cli` to configure the test environment
 * `Phpunit` to run unit tests
-* `Node` to handle dependencies and vuild the JS application
+* `Node` to handle dependencies and build the JS application
 
 ```
 sudo apt-get install phpunit composer ruby ruby-dev nodejs npm
@@ -39,17 +39,17 @@ sudo gem install sass
 
 First of all, clone this repository.
 
-Note that you can NOT clone it directly in the WordPress `plugins` directory. Clone it in a folder of its own and configure your build to point to  your local WordPress `plugins` folder.
+Note that you can NOT clone it directly in the WordPress `plugins` directory. Clone it in a folder of its own and configure your build to point to your local WordPress `plugins` folder.
 
 ```
 git clone git@git.github.com:tainacan/tainacan.git
 ```
 
-Set up a WordPress installation. This could be a dedicated installation to develop tainacan or you can use an existing instance you have. Its up to you, but you will need one, both for developing and manually testing, as well to run automated integration tests.
+Set up a WordPress installation. This could be a dedicated installation to develop Tainacan or you can use an existing instance you have. It is up to you, but you will need one, both for developing and manually testing, as well to run automated integration tests.
 
 ## Build
 
-When we want to build the plugin, we run `build.sh` that basically installs any dependencies, compiles all the assets (sass and js) and moves the files to the plugin directory. This compiled version of the plugin is the one added to the official WordPress Plugin repository.
+When we want to build the plugin, we run `build.sh` that installs any dependencies, compiles all the assets (sass and js) and moves the files to the plugin directory. This compiled version of the plugin is the one added to the official WordPress Plugin repository.
 
 In order to use it, make a copy of `build-config-sample.cfg` and name it only `build-config.cfg`. Edit and fill in your environment details:
 
@@ -67,9 +67,9 @@ While developing, you might want to run `build-watch.sh`. This script will watch
 
 ## Tests
 
-Tainacan uses `phpunit` to run tests for the backend and the API. This is a very important part of the development proccess! Never commit anything before run all the tests to make sure you did not break anything. If you are developing a new feature, you must write tests for it. If you are fixing a bug, you should first write a test that reproduces the bug and then make it pass.
+Tainacan uses `phpunit` to run tests for the backend and the API. This is a very important part of the development process! Never commit anything before running all the tests to make sure you did not break anything. If you are developing a new feature, you must write tests for it. If you are fixing a bug, you should first write a test that reproduces the bug and then make it pass.
 
-To execute all the tests, simply execute the `phpunit` command from the project root folder. But first you need to configure PHPUnit.
+To execute all the tests, simply execute the `phpunit` command from the project root folder. But first, you need to configure PHPUnit.
 
 #### Preparing PHPUnit
 
@@ -90,12 +90,12 @@ The parameters are:
 * WordPress version
 * Optional: skip create database
 
-\* `WordPress Test Directory` will be created with 2 sub folders:
+\* `WordPress Test Directory` will be created with 2 subfolders:
 
 * `wordpress-test` - An installation of WordPress
 * `wordpress-tests-lib` - As the name says, the WordPress Tests Library
 
-Inside `tests` folder, edit the file called `bootstrap-config-sample.php` and inform the folder where you installed your WordPress Test Library. This will be `/path/to/wordpress-test-folder/wodpress-tests-lib`. Save the file as `bootstrap-config.php`.
+Inside the `tests` folder, edit the file called `bootstrap-config-sample.php` and inform the folder where you installed your WordPress Test Library. This will be `/path/to/wordpress-test-folder/wodpress-tests-lib`. Save the file as `bootstrap-config.php`.
 
 Note that the installation script will create a config file in the destination folder with your database credentials. If you have to change it, you will need to edit it there.
 
@@ -109,5 +109,5 @@ Simply type this command from the project root folder:
 phpunit
 ```
 
-(Note that `phpunit` accpets several parametrs, for example if you want to run just a specific group of tests).
+(Note that `phpunit` accepts several parameters, for example, if you want to run just a specific group of tests).
 

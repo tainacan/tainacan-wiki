@@ -1,24 +1,24 @@
 # Tainacan Internal API
 
-This page shows how the internal API works and how to create and fetch all kinds of entities in Tainacan: Collections, items, taxnomies, metadata, filters, terms, item metadata and logs.
+This page shows how the internal API works and how to create and fetch all kinds of entities in Tainacan: Collections, items, taxonomies, metadata, filters, terms, item metadata, and logs.
 
-Its important that you first get familiar with the [key concepts](key-concepts.md) of tainacan. 
+It is important that you first get familiar with the [key concepts](key-concepts.md) of Tainacan. 
 
 
 ## Overview
 
-Tainacan adds a tiny layer of abstraction over WordPress to handle all its entities, but at the end of the day, everything is stored as a post of a specific post type (except terms). So for someone used to the way WordPress works, the data structure have no misteries at all.
+Tainacan adds a tiny layer of abstraction over WordPress to handle all its entities, but at the end of the day, everything is stored as a post of a specific post type (except terms). So for someone used to the way WordPress works, the data structure has no misteries at all.
 
 This layer is based on a Repository pattern. Each entity Tainacan deals with have a correspondent Repository class and a correspondent Entity class.
 
-Repositories are the classes that comunicate with the database and know where everything is stored and how to find things. It is a singleton class, so it have only one instance available to be used by any part of the application.
+Repositories are the classes that communicate with the database and know where everything is stored and how to find things. It is a singleton class, so it has only one instance available to be used by any part of the application.
 
 ```php
 $metadata_repo = Tainacan\Repositories\Metadata::get_instance();
 ```
 Entities classes are the representation of the individual of each repository. 
 
-This abstraction allows us to easily manipulate entities without worrying how to save or fetch them.
+This abstraction allows us to easily manipulate entities without worrying about how to save or fetch them.
 
 For example, Metadata have many attributes, such as `name` and `required` (indicating wether this metadatum is required or not). As mentioned before, Metadata are stored as posts of a special post type called `tainacan-metadatum`. The name of the metadatum is, of course, the `post_title` and this `required` attribute is stored as a `post_meta`.
 
@@ -36,13 +36,13 @@ $metadatum->set_required('yes');
 
 Tainacan will automatically map the values of the attributes to and from where they are stored.
 
-When you want to fetch entities from the database, this abstraction layer steps aside and let you use all the power and flexibility of `WP_Query`, which you know and love. For example:
+When you want to fetch entities from the database, this abstraction layer steps aside and lets you use all the power and flexibility of `WP_Query`, which you know and love. For example:
 
 ```php
 Repositories\Metadata::get_instance()->fetch('s=test');
 ```
 
-The `fetch` method from the repositories accept exactly the same arguments accepted by `WP_Query` and uses it internally. In fact, you could use `WP_Query` directly if you prefer, but using the repository class gives you some advantages. You dont have to know the name of the post type, you can also fetch by some mapped attribute calling it directly, without having to use `meta_query` (or even know wether a property is stored as a post attribute or post_meta). See more details in the Fetch section below.
+The `fetch` method from the repositories accept the same arguments accepted by `WP_Query` and uses it internally. You could use `WP_Query` directly if you prefer, but using the repository class gives you some advantages. You don't have to know the name of the post type, you can also fetch by some mapped attribute calling it directly, without having to use `meta_query` (or even know whether a property is stored as a post attribute or post_meta). See more details in the Fetch section below.
 
 Documentation for each repository:
 
@@ -55,7 +55,7 @@ Documentation for each repository:
 
 ## Fetching data
 
-Every repository have a `fetch()` method to fetch data from the database. Some repositories may have other fetch methods, such as `fetch_by_collection`, please refer to their reference to find out.
+Every repository has a `fetch()` method to fetch data from the database. Some repositories may have other fetch methods, such as `fetch_by_collection`, please refer to their reference to find out.
 
 ### Getting one single individual
 
@@ -72,11 +72,11 @@ This will have the same effect as calling the `fetch` method from the repository
 $collection = Tainacan\Repositories\Collections::get_instance()->fetch($collection_id);
 ```
 
-### Fethcing many individuals
+### Fetching many individuals
 
-To fetch collections (or any other entity) based on a query search, you may call the `fetch` method from the repository and use any paramater of the `WP_Query` class.
+To fetch collections (or any other entity) based on a query search, you may call the `fetch` method from the repository and use any parameter of the `WP_Query` class.
 
-> the only exception for this are terms, which are saved as WordPress terms and gets paramaters from the `get_terms()` function instead
+> the only exception for this are terms, which are saved as WordPress terms and gets parameters from the `get_terms()` function instead
 
 Examples:
 
@@ -104,7 +104,7 @@ $items = $items_repo->fetch([
 
 ```
 
-Note that you can use the mapped attribute names to build your query, but it is just fine if you want to use the native WordPress names. The same can be achievied with attributes stored as post_meta:
+Note that you can use the mapped attribute names to build your query, but it is just fine if you want to use the native WordPress names. The same can be achieved with attributes stored as post_meta:
 
 ```php
 $repo = Tainacan\Repositories\Metadata::get_instance();
@@ -131,13 +131,13 @@ Fetch methods accept an attribute to choose how you want your output.
 
 By default, it is a `WP_Query` object, which you can use to build your loop just as if you had called `WP_Query` your self.
 
-But it also can be an array of Taincan Entities objects. This is very useful when you want to manipulate them.
+But it also can be an array of Tainacan Entities objects. This is very useful when you want to manipulate them.
 
 ## Inserting
 
-All repositories have an `insert()` method that gets an Entity as argument and save it in the database. If the entity has an ID, this method will update the entity. (yes, the same way `wp_insert_post` works)
+All repositories have an `insert()` method that gets an Entity as argument and saves it in the database. If the entity has an ID, this method will update the entity. (yes, the same way `wp_insert_post` works)
 
-Each repository will get as a parameter an instace of its correspondent entity. For example, Collections repository `insert()` will get an instace of `Tainacan\Entities\Collection` and return the updated entity.
+Each repository will get as a parameter an instance of its corresponding entity. For example, Collections repository `insert()` will get an instance of `Tainacan\Entities\Collection` and return the updated entity.
 
 However, before insertion, you must validate the entity, calling the `validate()` method every entity has. You can only insert valid entities.
 
@@ -167,7 +167,8 @@ if ($collection->validate()) {
 }
 
 ```
-> IMPORTANT: Repositories `insert()` methods do not check for user permissions. If you call it, it will save entities to the database no matter who is logged in (or even if some is logged in). Again, this works the same way WordPress works with its internal functions. All permission checks must be done before you call the insertion methods. See "checking for permissions" section below.
+
+> IMPORTANT: Repositories `insert()` methods do not check for user permissions. If you call it, it will save entities to the database no matter who is logged in (or even if some are logged in). Again, this works the same way WordPress works with its internal functions. All permission checks must be done before you call the insertion methods. See the "checking for permissions" section below.
 
 The example above shows how to create and update a Collection, but it applies to every entity. They all work in the very same way.
 
@@ -175,11 +176,11 @@ Well, Item Metadata Entity is slightly different.
 
 ### Handling Item Metadata
 
-`Item Metada` is a special kind of entity, because it is not an actual entity itself. Rather, it is the relationship between an Item and a Field. And this relationship has a value.
+`Item Metadata` is a special kind of entity, because it is not an actual entity itself. Rather, it is the relationship between an Item and a Field. And this relationship has a value.
 
 So imagine a Collection of pens has a Metadata called "color". This means that an item of this collection will have a relationship with this metadatum, and this relation will have a value. "Red", for example.
 
-So the Item Metadata Entity constructor gets two entities: an item and a metadatum. Lets see an example, considering I alredy have a collection with metadata and an item.
+So the Item Metadata Entity constructor gets two entities: an item and a metadatum. Let us see an example, considering I already have a collection with metadata and an item.
 
 ```php
 // Considering $item is an existing Item Entity an $metadatum an existing Field Entity
@@ -196,9 +197,9 @@ if ($itemMetadata->validate()) {
 
 ```
 
-> Note: "Multiple" Metadata, which can have more than one value for the same item, work exactly the same way, with the difference that its value is an array of values, and not just one single value. 
+> Note: "Multiple" Metadata, which can have more than one value for the same item, works the same way, with the difference that its value is an array of values and not just one single value. 
 
-If you want to iterate over all metadata of an item or a collection, there are 2 usefull methods you can use. Metadata repository have a `fetch_by_collection()` method that will fetch all metadata from a given collection and return them in the right order.
+If you want to iterate over all metadata of an item or a collection, there are 2 useful methods you can use. The metadata repository has a `fetch_by_collection()` method that will fetch all metadata from a given collection and return them in the right order.
 
 Also, ItemMetadata Repository `fetch()` method will return an array of ItemMetadata Entities related to a given item. 
 
@@ -219,11 +220,11 @@ Validate Field -> call validate_options() of the Field type
 
 Each entity type is stored as a post type and has its own set of capabilities. For example, Collections are posts of the `tainacan-collection` post type, and have associated capabilities such as `edit_tainacan-collections` and `edit_others_tainacan-collections`. 
 
-If you are familiar with WordPress Roles and capabilities and, more specifically, with custom post types capabilities, this is very easy to understand. If you are not, its best if you first learn how WordPress handles custom post types capabilities and you will easily understand how tainacan works with it.
+If you are familiar with WordPress Roles and capabilities and, more specifically, with custom post types capabilities, this is very easy to understand. If you are not, it's best if you first learn how WordPress handles custom post types capabilities and you will easily understand how Tainacan works with it.
 
-To see a complete list of tainacan capabilities see [Tainacan Permissions](permissions.md).
+To see a complete list of Tainacan capabilities see [Tainacan Permissions](permissions.md).
 
-When you use WordPress custom post types, you dont need to know the exact name of the capabilities of a post type to check for them. The post type object has a property called `cap` that informs you what are the specific capabilities that the post type have for the post type actions.
+When you use WordPress custom post types, you don't need to know the exact name of the capabilities of a post type to check for them. The post type object has a property called `cap` that informs you what are the specific capabilities that the post type have for the post type actions.
 
 For example, for a post type called `book`, that have capabilities such as `edit_books`, you could:
 
@@ -238,7 +239,7 @@ if (current_user_can( $book_cpt->cap->edit_posts ))
 	// do something
 ```
 
-This makes life easier and Tainacan works exacty the same way.
+This makes life easier and Tainacan works exactly the same way.
 
 ```php
 
@@ -248,7 +249,7 @@ var_dump( $collection->get_capabilities() ); // all capabilities of the collecti
 
 ```
 
-This is specially usefull when handling Items, because they are posts of dynamic created post types, and it would cost too much to find out the correct capabilties names.
+This is especially useful when handling Items, because they are posts of dynamically created post types, and it would cost too much to find out the correct capabilities names.
 
 Also, every entity implement 3 methods to check for the Meta Capabilities `edit_post`, `delete_post` and `read_post`, so intead of:
 

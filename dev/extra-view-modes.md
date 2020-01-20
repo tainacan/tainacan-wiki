@@ -17,7 +17,7 @@ As shown in [our post for extra view modes](http://tainacan.org/2018/06/13/custo
 
 ![Image with an example of an extra view mode, showing borders around items thumbnail.](/_assets/images/Example_of_an_Extra_View_Mode.jpeg)
 
-We here describe the process to create such plugin. You will basically need three files:
+We here describe the process to create such a plugin. You will need three files:
 
 1. The *.php* file for registering the plugin and view mode;
 2. The *.php* file with the items list template;
@@ -62,7 +62,7 @@ add_action( 'after_setup_theme', function() {
 ?> /* End of file */
 ```
 
-The function `tainacan_register_view_mode` is part of Tainacan's plugin. It's first paramether is a unique *slug* that will be used to identify your view mode. Then follows an array of paramethers:
+The function `tainacan_register_view_mode` is part of Tainacan's plugin. Its first parameter is a unique *slug* that will be used to identify your view mode. Then follows an array of parameters:
 
 | Type   | Name             | Description | Default                                   |
 |--------|------------------|-------------|-------------------------------------------|
@@ -71,16 +71,16 @@ The function `tainacan_register_view_mode` is part of Tainacan's plugin. It's fi
 | string | description      | Description, visible only to editors in the admin.            | None                                      |
 | string | type             | Type. Accepted values are 'template' or 'component'.             | *template*                                |
 | string | template         | Full path to the template file to be used. Required if $type is set to template.             | *theme-path/tainacan/view-mode-`$slug`.php* |
-| string | component        | Component tag name. The web component js must be included and must accept two props: 1) items: the list of items to be rendered ; 2) displayed-metadata: list of metadata to be displayed;            | *view-mode-`$slug`*                         |
+| string | component        | Component tag name. The web component js must be included and must accept two props: 1) items: the list of items to be rendered; 2) displayed-metadata: list of metadata to be displayed;            | *view-mode-`$slug`*                         |
 | string | thumbnail        | Full URL to a thumbnail that represents the view mode. Displayed only in Admin.             | None                                      |
 | string   | skeleton_template | HTML that outputs a preview of the items to be loaded, such as gray blocks, mimicking the shape of the items. | None |
-| bool   | show_pagination  | Wether to display or not pagination controls.            | `true`                                      |
-| bool   | full-screen      | Wether the view mode will display full screen or not.             | `false`                                     |
-| bool   | dynamic_metadata | Wether to display or not (and use or not) the "displayed metadata" selector.            | `false`                                     |
-| bool   | implements_skeleton | Wheter the view modes takes care of showing it's own Skeleton/Ghost css classes for loading items. | `false` |
+| bool   | show_pagination  | Whether to display or not pagination controls.            | `true`                                      |
+| bool   | full-screen      | Whether the view mode will display full screen or not.             | `false`                                     |
+| bool   | dynamic_metadata | Whether to display or not (and use or not) the "displayed metadata" selector.            | `false`                                     |
+| bool   | implements_skeleton | Whether the view modes take care of showing it's own Skeleton/Ghost css classes for loading items. | `false` |
 
 
-The `type` parameter is one of the most relevants here. When registering view modes, you can either create a simple PHP `template` using WordPress functions (as the ones in our sample plugin), or more complex Vue.js `component`. When passing a template, the file path should be provided, while for components the name of previously loaded .vue component must be provided. Vue components must also have two props, one for receiving the items list as a parsed JSON Object and other for an array of metadata that will be displayed.
+The `type` parameter is one of the most relevant here. When registering view modes, you can either create a simple PHP `template` using WordPress functions (as the ones in our sample plugin) or more complex Vue.js `component`. When passing a template, the file path should be provided, while for components the name of previously loaded .vue component must be provided. Vue components must also have two props, one for receiving the items list as a parsed JSON Object and other for an array of metadata that will be displayed.
 
 <div style="float: right; margin-left: 1rem;">
 	<img 
@@ -92,7 +92,7 @@ The `type` parameter is one of the most relevants here. When registering view mo
 
 View modes as Cards and Grid do not allow users to choose which metadata should be displayed, but rather decide that only certain will be visible. For this kind of view mode, it is used the `dynamic_metadata` parameter as `false`.
 
-By default a spinning circle loading animation is shown when items are being fetch. Most of our oficial view modes override this by implementing a so called skeleton/ghost list, that mimics a list of gray blocks in the shape of items before they arrived. If your view mode does that, you should set `implements_skeleton` to true and provide a HTML template with such skeleton to `skeleton_template`. Tainacan will take care of rendering this skeleton while items are being loaded.   
+By default, a spinning circle loading animation is shown when items are being fetched. Most of our official view modes override this by implementing a so-called skeleton/ghost list, that mimics a list of gray blocks in the shape of items before they arrived. If your view mode does that, you should set `implements_skeleton` to true and provide an HTML template with such skeleton to `skeleton_template`. Tainacan will take care of rendering this skeleton while items are being loaded.   
 
 ## Making an extra view mode template
 

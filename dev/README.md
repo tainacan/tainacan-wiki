@@ -35,15 +35,10 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [CSV Importer](/dev/csv-importer.md)
 * [Vocabulary Importer](/dev/vocabulary-importer.md)
 * [Mapping Standards](/dev/mapping-standards.md)
-* Repository methods 	
-  * [Repository Filters](/dev/repository-filters.md) 
-  * [Repository Items](/dev/repository-items.md) 
-  * [Repository Metadata](/dev/repository-metadata.md) 
-  * [Repository Taxonomies](/dev/repository-taxonomies.md)
-  * [Repository Terms](/dev/repository-terms.md) 
+* [Repository Methods](/dev/repository-methods.md)
   
 ### Theme development or extension
-* Creating compatible themes - *Soon*
+* [Creating compatible themes](/dev/creating-compatible-themes.md) - How to create a theme that fully support Tainacan features
 * [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates that Tainacan add to WordPress Template Hierarchy
 * [Tainacan Template Tags](https://github.com/tainacan/tainacan/blob/develop/src/theme-helper/template-tags.php ':ignore') - Template tags useful to use in templates
 * [Creating new View Modes](/dev/extra-view-modes)

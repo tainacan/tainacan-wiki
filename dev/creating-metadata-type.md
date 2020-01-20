@@ -44,14 +44,14 @@ class MyCustomMetadataTypeClass {
 }
 ```
 
-These are the basic methods you have to call to set up you MT:
+These are the basic methods you have to call to set up your MT:
 
 * **set_name(string $name)** - Sets the name of the Metadata type. This is the name the user will see in the front end and should be internationalized.
 * **set_description(string $name)** - Sets the description of the Metadata type. This is the text the user will see in the front end and should be internationalized.
-* **set_primitive(string $type)** - Inform what is the raw type of data that will be stored. This is used mainly by Filter Types to decide what kind of Filters will be available for each Metadata Type. Current used primitive types are: string, date, float, item, term and long_string (you can create new ones if you want, just note that not Filter Types will be available to them)
+* **set_primitive(string $type)** - Inform what is the raw type of data that will be stored. This is used mainly by Filter Types to decide what kind of Filters will be available for each Metadata Type. Current used primitive types are: string, date, float, item, term, and long_string (you can create new ones if you want, just note that not Filter Types will be available to them)
 set_preview_template 
 
-You can also set a HTML preview of your Metadata Type to help users visualize how it works. This will be displayed in the Metadata configuration screen, when the user click on the "?" icon of a Metadata Type.
+You can also set an HTML preview of your Metadata Type to help users visualize how it works. This will be displayed in the Metadata configuration screen, when the user click on the "?" icon of a Metadata Type.
 
 * **set_preview_template(string $template)** - The HTML code that previwes the plugin. Use [Buefy](https://buefy.github.io/) and [Bulma](http://bulma.io/) classes.
 
@@ -60,9 +60,9 @@ You can also set a HTML preview of your Metadata Type to help users visualize ho
 
 When you register a new Metadata Type, it will be automatically added as an option in the Metadata configuration screen. It will also have the default metadata configuration form, where you set whether the metadata is required or not, accept multiple values or not, and so on.
 
-However, you metadata type may have specific options you want to give to the users. For example: In the Selectbox Metadata type, you have the ability to set what will be the options in your Selectbox.
+However, your metadata type may have specific options you want to give to the users. For example: In the Selectbox Metadata type, you can set what will be the options in your Selectbox.
 
-In order to do this, you have to declare what are the options your metadata type has, and prepare another web component to be rendered in the metadata form:
+To do this, you have to declare what are the options your metadata type has, and prepare another web component to be rendered in the metadata form:
 
 ```php
 class MyCustomMetadataTypeClass {
@@ -130,11 +130,11 @@ class MyCustomMetadataTypeClass {
 
 ### Additional Methods
 
-There are few other methods you can implement that can change the items interact with metadata depending on the metadata type:
+There are a few other methods you can implement that can change the items interact with metadata depending on the metadata type:
 
 #### **validate( Item_Metadata_Entity $item_metadata)**
 
-This method will override the validation of the Item Metadata Entity, which means every time Tainacan saves a value for a metadata of this type, it will call this method. For example, the Date Metadata Type override this method to make sure the date is in the correct format:
+This method will override the validation of the Item Metadata Entity, which means every time Tainacan saves a value for metadata of this type, it will call this method. For example, the Date Metadata Type overrides this method to make sure the date is in the correct format:
 
 ```php
 public function validate( Item_Metadata_Entity $item_metadata) {
@@ -178,15 +178,15 @@ Note that it checks whether the value is a string (single value) or an array (mu
 
 #### **get_value_as_html( Item_Metadata_Entity $item_metadata)**
 
-This method will change the way a value is converted to HTML for metadata of this metadata type. For example, Taxonomy and Relationship Metadata Type use this to add links to the related term/item in the HTML output.
+This method will change the way value is converted to HTML for metadata of this metadata type. For example, Taxonomy and Relationship Metadata Type use this to add links to the related term/item in the HTML output.
 
 ## Creating Vue Web Component
 
 *TODO: explain how to load the web component code.*
 
-The Vue component is the chunk that will be rendered inside the Item Edition form so the user can edit it's metadata of your custom type. 
+The Vue component is the chunk that will be rendered inside the Item Edition form so the user can edit its metadata of your custom type. 
 
-As in any Vue component, you should provide a `template` with it's HTML content, a `script` with it's logic and optionally a `style`. Bellow are the template and script for the Selectbox metadata type:
+As in any Vue component, you should provide a `template` with its HTML content, a `script` with its logic and optionally a `style`. Below are the template and script for the Selectbox metadata type:
 
 ```html
 <template>
@@ -202,6 +202,7 @@ As in any Vue component, you should provide a `template` with it's HTML content,
             @input="onInput($event)"/>
 </template>
 ```
+
 ```javascript
 <script>
     export default {
@@ -236,13 +237,13 @@ As in any Vue component, you should provide a `template` with it's HTML content,
 ```
 
 Notice first the "props" on the component. They are passed to every metadata:
-- `metadadum` is the metadatum object itself, wich also contains the `metadata_type_options`;
+- `metadatum` is the metadatum object itself, which also contains the `metadata_type_options`;
 - `value` is the value used for binding whatever is the content of this metadatum;
 - `id` is the metadatum id;
 - `disabled` is a boolean handled by the Item's form, which can be used to disable any inner component in case the options are not loaded and other situations that might be desired;
 
-The "data" here has only a copy of the input value, passed during the `created()` lifecycle. Props are usualy not to be modified so we use this as an internal variable.
+The "data" here has only a copy of the input value, passed during the `created()` lifecycle. Props are usually not to be modified so we use this as an internal variable.
 
-The "methods" here simply delegate the blur and input events to the default parent component, which is responsible for passing this values to the Item's form. **Attention: all metadatum component must emit an input value, passing the updated value that they received from the props**.
+The "methods" here simply delegate the blur and input events to the default parent component, which is responsible for passing these values to the Item's form. **Attention: every metadatum component must emit an input value, passing the updated value that they received from the props**.
  
-In the above example, a custom component from [Buefy](https://buefy.github.io/), `b-input` is used. You can use any javascript available from your plugin here, or just try out theirs, as it's already loaded on Tainacan's plugin. The styling also come from this library, inheriting [Bulma](http://bulma.io/), and it's recommended the use of their classes as most are overrided by Tainacan stylesheets. 
+In the above example, a custom component from [Buefy](https://buefy.github.io/), `b-input` is used. You can use any javascript available from your plugin here, or just try out theirs, as it's already loaded on Tainacan's plugin. The styling also comes from this library, inheriting [Bulma](http://bulma.io/), and it's recommended the use of their classes as most are override by Tainacan stylesheets. 

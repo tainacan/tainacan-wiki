@@ -84,12 +84,12 @@ fetch metadata IDs by collection, considering inheritance
 fetch all registered metadatum type classes
 
 Possible outputs are:
-CLASS (default) - returns the Class name of of metadatum types registered
+CLASS (default) - returns the Class name of metadatum types registered
 NAME - return an Array of the names of metadatum types registered
 
 @param $output string CLASS | NAME
 
-@return array of Entities\Metadata_Types\Metadata_Type classes path name
+@return array of Entities\Metadata_Types\Metadata_Type classes pathname
  
 
 ### get_core_metadata()
@@ -139,7 +139,7 @@ Get the Core Description Metadatum for a collection
  @param array|string $args {
      Optional. Array or string of arguments.
  
- @type mixed $collection_idThe collection ID you want to consider or null for all collections. If a collectoin is set
+ @type mixed $collection_idThe collection ID you want to consider or null for all collections. If a collection is set
  then only values applied to items in this collection will be returned
  
      @type int $numberThe number of values to return (for pagination). Default empty (unlimited)
@@ -160,7 +160,7 @@ Get the Core Description Metadatum for a collection
  
  }
  
- @return array        Array with the total number of values found. The total number of pages with the current number and the results with id and label for each value. Terms also include parent, taxonomy and number of children.
+ @return array        Array with the total number of values found. The total number of pages with the current number and the results with id and label for each value. Terms also include parent, taxonomy, and number of children.
   
 
 ### insert()

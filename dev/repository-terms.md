@@ -14,7 +14,7 @@ fetch terms based on ID or get terms args
 Terms are stored as WordPress regular terms. Check (@see https://developer.wordpress.org/reference/functions/get_terms/) get_terms() docs
 to learn all args accepted in the $args parameter
 
-The second paramater specifies from which taxonomies terms should be fetched.
+The second parameter specifies from which taxonomies terms should be fetched.
 You can pass the Taxonomy ID or object, or an Array of IDs or taxonomies objects
 
 @param array $args WP_Query args || int $args the term id

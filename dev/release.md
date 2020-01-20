@@ -1,18 +1,18 @@
 # Releasing a new version
 
-This is a work in progress documentaion on how to release a new version.
+This is a work in progress documentation on how to release a new version.
 
 Assuming:
 
 * `$CURRENT_VERSION` is the current "old" version (e.g. 0.10)
 * `$NEW_VERSION` is the version we are releasing (e.g. 0.11)
 * `$GIT_PATH` is where our repository is cloned
-* `$BUILD_PATH` is where the plugin is configured to buid, inside your WordPress plugins folder 
+* `$BUILD_PATH` is where the plugin is configured to build, inside your WordPress plugins folder 
 * `$SVN_PATH` is where the WordPress.org SVN repo is
 
 ## Pre-release
 
-Before we publish a new version, we always release one or more Release Candidates so the community have time to [test and make sure](/dev/tests-script) the new version of Tainacan is clean and ready to reach the world.
+Before we publish a new version, we always release one or more Release Candidates so the community has time to [test and make sure](/dev/tests-script) the new version of Tainacan is clean and ready to reach the world.
 
 ### Start in the git repository
 
@@ -32,9 +32,9 @@ git flow release start $NEW_VERSION
 
 ### Edit version numbers
 
-Edit `src/tainacan.php` and change the version numbers to `$NEW_VERSION`. Also change the `TAINACAN_VERSION` constant after the comments section.
+Edit `src/tainacan.php` and change the version numbers to `$NEW_VERSION`. Also, change the `TAINACAN_VERSION` constant after the comments section.
 
-When releasing a RC version, append RC (number) to the version.
+When releasing an RC version, append RC (number) to the version.
 
 Also increase the `Tested Up` version, if applicable.
 
@@ -101,9 +101,9 @@ Note that the `Stable tag` in the `readme.txt` file must not be edited and keep 
   svn st | grep '^!' | awk '{print $2}' | xargs svn rm
   ```
 
-  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insuficient input paramethers". This will happen if you haven't added or removed any file, only modified, which should be ok.
+  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
-5. `svn add` all new files
+5. `svn add` every new files
 
   ```
   svn st | grep '^?' | awk '{print $2}' | xargs svn add
@@ -119,7 +119,7 @@ Note that the `Stable tag` in the `readme.txt` file must not be edited and keep 
 
 Create a ZIP package with the built plugin and publish a blog post calling for tests.
 
-Use previous blog posts as templates, keeping all the content explaining what a RC is and how to contribute.
+Use previous blog posts as templates, keeping all the content explaining what an RC is and how to contribute.
 
 ### Test
 
@@ -132,7 +132,7 @@ If bugs are found, fix them and commit to the release branch. Publish a new RC, 
 
 ## Release
 
-The plugin is ready to go. We have published one or more RCs and the community have tested it. Lets get it live to the world!
+The plugin is ready to go. We have published one or more RCs and the community has tested it. Let us get it live to the world!
 
 ### Finish version number
 
@@ -201,7 +201,7 @@ cp $GIT_PATH/wp-repo-assets/* $SVN_PATH/assets/
 
 ### Commit
 
-Before commit, verify the output of `svn st` and check if there are no undesired files or folders. Also verify the total size of the trunk folder to see it looks ok.
+Before commit, verify the output of `svn st` and check if there are no undesired files or folders. Also, verify the total size of the trunk folder to see it looks ok.
 
 1. Go to the SVN folder
 
@@ -215,9 +215,9 @@ Before commit, verify the output of `svn st` and check if there are no undesired
   svn st | grep '^!' | awk '{print $2}' | xargs svn rm
   ```
 
-  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insuficient input paramethers". This will happen if you haven't added or removed any file, only modified, which should be ok.
+  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
-3. `svn add` all new files
+3. `svn add` every new files
 
   ```
   svn st | grep '^?' | awk '{print $2}' | xargs svn add
@@ -229,7 +229,7 @@ Before commit, verify the output of `svn st` and check if there are no undesired
   svn ci
   ```
 
-### Create tag folder
+### Create the tag folder
 
 ```
 svn cp https://plugins.svn.wordpress.org/tainacan/trunk https://plugins.svn.wordpress.org/tainacan/tags/$NEW_VERSION
@@ -237,11 +237,11 @@ svn cp https://plugins.svn.wordpress.org/tainacan/trunk https://plugins.svn.word
 
 ### Check
 
-In few minutes the new release should be available in the WordPress directory. 
+In a few minutes, the new release should be available in the WordPress directory. 
 
 Check if everything is ok.
 
-### Commit and create tag on git
+### Commit and create the tag on git
 
 Once the release is tested and confirmed, commit and create the tag on git.
 

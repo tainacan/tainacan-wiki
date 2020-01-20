@@ -19,14 +19,14 @@ appropriate WP_Query argument
 If a number is passed to $args, it will return a \Tainacan\Entities\Item object.  But if the post is not found or
 does not match the entity post type, it will return an empty array
 
-The second paramater specifies from which collections item should be fetched.
+The second parameter specifies from which collections item should be fetched.
 You can pass the Collection ID or object, or an Array of IDs or collection objects
 
 @param array $args WP_Query args || int $args the item id
 @param array $collections Array Entities\Collection || Array int collections IDs || int collection id || Entities\Collection collection object
 @param string $output The desired output format (@see \Tainacan\Repositories\Repository::fetch_output() for possible values)
 
-@return \WP_Query|Array|Item an instance of wp query OR array of entities OR a Item;
+@return \WP_Query|Array|Item an instance of wp query OR array of entities OR an Item;
  
 
 ### fetch_one()
@@ -50,7 +50,7 @@ to learn all args accepted in the $args parameter (@see https://developer.wordpr
 You can also use a mapped property, such as name and description, as an argument and it will be mapped to the
 appropriate WP_Query argument
 
-The second paramater specifies from which collections item should be fetched.
+The second parameter specifies from which collection items should be fetched.
 You can pass the Collection ID or object, or an Array of IDs or collection objects
 
 @param array $args WP_Query args || int $args the item id

@@ -9,7 +9,7 @@ Tainacan uses the ordinary WordPress template hierarchy for its templates. It ad
 * `tainacan/archive-taxonomy.php` - Used as a template for all Tainacan Taxonomies (list items based on a term)
 * `tainacan/archive-repository.php` - Used in the `/items/` URL, which is added by the Tainacan plugin, and lists all items of all collections
 
-Since each collection is a new custom post type, these templates are usefull to create a template that will be used by all collections.
+Since each collection is a new custom post type, these templates are useful to create a template that will be used by all collections.
 
 Nevertheless, you are still able to create more specific templates, using the standard WordPress hierarchy.
 
@@ -35,6 +35,6 @@ A template for a specific taxonomy
 
 `taxonomy-tnc_tax_123.php`
 
-A teplate for a specific term
+A template for a specific term
 
 `taxonomy-tnc_tax_123-term-name.php`

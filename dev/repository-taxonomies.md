@@ -58,9 +58,9 @@ fetch taxonomies by collection, considering inheritance
 * @param Entities\Taxonomy $taxonomy The taxonomy object where to look for terms
 * @param string $term_name The term name 
 * @param int|null $parent The ID of the parent term to look for children or null to look for terms in any hierarchical position. Default is null 
-* @param bool $return_term wether to return the term object if it exists. default is to false 
+* @param bool $return_term whether to return the term object if it exists. default is to false 
 * 
-* @return bool|WP_Term return boolean indicating if term exists. If $return_term is true and term exists, return WP_Term object 
+* @return bool|WP_Term return boolean indicating if the term exists. If $return_term is true and term exists, return WP_Term object 
 
 
 ### insert()

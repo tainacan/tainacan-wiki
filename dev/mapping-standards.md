@@ -16,28 +16,29 @@ The name of the Mapping Standard.
 
 	Array or false $metadata
 
-A list of metadata, terms or attributes that this mapping have. These are the element you will be able to map your Collection's Metadata.
+A list of metadata, terms or attributes that this mapping has. These are the element you will be able to map your Collection's Metadata.
 
 Each metadatum has the following attributes:
 
 * slug - The metadatum name, that refers to the name of the attribute in the origin vocabulary or ontology (e.g. title)
-* label - The human readable name
-* URI - The URI of this term/attribute in the origin Ontoloy/Vocabulary
-* metadata_type - The prefered type for the metadatum
+* label - The human-readable name
+* URI - The URI of this term/attribute in the origin Ontology/Vocabulary
+* metadata_type - The preferred type for the metadatum
 
 Array of:
-```
+```php
 	['slug'] => [
 		'URI' => 'http://...',
 		'label' => 'Label',
 		'metadata_type' => 'date',
 	]
 ```
+
 ### Allow additional custom metadata
 
 	Boolean $allow_extra_metadata
 
-Boolen indicating wether this mapping allows additional custom metadata to be added.
+Boolean indicating whether this mapping allows additional custom metadata to be added.
 
 ### Context URL / Vocab URL
 
@@ -56,7 +57,7 @@ The Class of the ontology that this mapping refers to. For example `CreativeWork
 	String $header
 
 The header to be append to API answer, like for Dublin Core, if we need to add RDF to xml header when using Dublin Core as mapper, so:
-```
+```php
 public $header = '<?xml version="1.0"?><!DOCTYPE rdf:RDF SYSTEM "http://dublincore.org/2000/12/01-dcmes-xml-dtd.dtd"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" ></rdf:RDF>';
 ```
 
@@ -64,11 +65,11 @@ public $header = '<?xml version="1.0"?><!DOCTYPE rdf:RDF SYSTEM "http://dublinco
 
 	String $prefix
 	
-The optional prefix for the key labels, like ```dc:``` for Dublin Core in XML exposing. 
+The optional prefix for the key labels, like `dc:` for Dublin Core in XML exposing. 
 
 ### Registering a new mapper
-For register a new mapper, the action need to be added to `tainacan-register-exposer-mappers` hook, like:
-```
+For register a new mapper, the action needs to be added to `tainacan-register-exposer-mappers` hook, like:
+```php
 	function myNewMapper($exposers) {
 		$exposers->register_exposer_mapper('Tainacan\Exposers\Mappers\NewMapper');
 	}
@@ -77,7 +78,7 @@ For register a new mapper, the action need to be added to `tainacan-register-exp
 
 ## Examples
 
-```
+```php
 namespace Tainacan\Exposers\Mappers;
 
 /**
@@ -108,7 +109,7 @@ class Dublin_Core extends Mapper {
 	...
 ```
 
-```
+```php
 namespace Tainacan\Exposers\Mappers;
 
 class CreativeWorks extends Mapper {
