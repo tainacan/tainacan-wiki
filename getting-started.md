@@ -119,4 +119,4 @@ Todos estes blocos possuem diferentes configurações de exibição e funcioname
 
 ## Explorando mais a fundo
 
-Neste artigo você pode tocar um poquinho do que é possível com o Tainacan, mas não se engane, esta foi apenas uma espiada! Há muitos assuntos que podem ser abordados como Metadados Tipo Relacionamento, Importadores, Exportadores, Expositores, Padrão de Metadados, Controle de Atividades, Anexos, Tipos de Documentos, etc. Esperamos que o Tainacan possa te ajudar a construir repositórios digitais incríveis! ir repositórios digitais incríveis! 
+Neste artigo você pode tocar um poquinho do que é possível com o Tainacan, mas não se engane, esta foi apenas uma espiada! Há muitos assuntos que podem ser abordados como Metadados Tipo Relacionamento, Importadores, Exportadores, Expositores, Padrão de Metadados, Controle de Atividades, Anexos, Tipos de Documentos, etc. Esperamos que o Tainacan possa te ajudar a construir repositórios digitais incríveis!
