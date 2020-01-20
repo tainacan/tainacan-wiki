@@ -127,6 +127,8 @@ section.cover img {
     color: #01295c;
 }
 .markdown-section kbd {
+    position: relative;
+    top: -0.15rem;
     font-size: 0.75rem;
     border-left-width: 2px;
     border-right-width: 3px;
