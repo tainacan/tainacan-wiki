@@ -38,10 +38,10 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Repository Methods](/dev/repository-methods.md)
   
 ### Theme development or extension {docsify-ignore}
-* [Creating compatible themes](/dev/creating-compatible-themes.md) - How to create a theme that fully support Tainacan features
-* [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates that Tainacan add to WordPress Template Hierarchy
-* [Tainacan Template Tags](https://github.com/tainacan/tainacan/blob/develop/src/theme-helper/template-tags.php ':ignore') - Template tags useful to use in templates
-* [Creating new View Modes](/dev/extra-view-modes)
+* [Creating compatible themes](/dev/creating-compatible-themes.md) - An Introduction on how to create a theme that fully support Tainacan features
+* [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates for those that Tainacan adds to WordPress Template Hierarchy
+* [Creating Extra View Modes](/dev/extra-view-modes) - How to create Extra View Modes that will be avaialble for displaying items list
+* [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) - Details to offer better support to the latest content block editor
 
 ### Configuration and performance {docsify-ignore}
 

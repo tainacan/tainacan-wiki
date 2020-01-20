@@ -9,8 +9,7 @@ Considering that, the development of the plugin was made in sync with the produc
 Here is a summary of what you can do:
 * [Creating custom templates](/dev/custom-templates.md) to one of [Tainacan pages](tainacan-pages.md);
 * [Registering custom Extra View Modes](/dev/extra-view-modes.md);
-* Using form hooks to add extra properties to some Tainacan Entity;
-* Using the latest Block Editor - Gutenberg features;
+* [Adding support to the latest Block Editor](/dev/theme-gutenberg-support.md) - Gutenberg features;
 
 
 

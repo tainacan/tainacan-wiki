@@ -21,6 +21,7 @@
     * [Creating Compatible Themes](/dev/creating-compatible-themes.md)
 	* [Custom Templates](/dev/custom-templates.md)
 	* [Extra View Modes](/dev/extra-view-modes.md)
+	* [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) 
 * Configuration and performance 
 	* [Faceted Search](/dev/faceted-search.md) 
 	* [Search Engine](/dev/search-engine.md) 
