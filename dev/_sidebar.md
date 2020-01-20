@@ -18,7 +18,7 @@
 	* [Importer Flow](/dev/importer-flow.md)
     * [Repository Methods](/dev/repository-methods.md) 	
 * Theme development and extension 
-    * [Creating compatible themes](/dev/creating-compatible-themes.md)
+    * [Creating Compatible Themes](/dev/creating-compatible-themes.md)
 	* [Custom Templates](/dev/custom-templates.md)
 	* [Extra View Modes](/dev/extra-view-modes.md)
 * Configuration and performance 
