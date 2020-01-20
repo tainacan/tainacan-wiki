@@ -36,6 +36,8 @@
     --notice-important-border-color: #e69810;
     --notice-important-background: #fcebd9;
     --notice-tip-border-color: #44638e;
+    --kbd-padding: 0.35rem 0.5rem 0.35rem 0.35rem;
+    --kbd-background: radial-gradient(white, #f2f2f2);
     --zoomimage-overlay-background: rgba(230,230,230,0.75);
 }
 
@@ -124,7 +126,14 @@ section.cover img {
 .markdown-section .anchor span {
     color: #01295c;
 }
-
+.markdown-section kbd {
+    font-size: 0.75rem;
+    border-left-width: 2px;
+    border-right-width: 3px;
+    border-bottom-width: 4px;
+    border-bottom-color: #cbcbcb;
+    border-radius: 3px;
+}
 .markdown-section .warn {
     margin: 1rem 0;
 }
