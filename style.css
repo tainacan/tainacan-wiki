@@ -61,6 +61,12 @@ body {
     padding: 4px 6px;
 }
 
+/* Search bar*/
+.search input:focus {
+    box-shadow: none !important;
+    border-color: #898d8f !important;
+}
+
 /* Navbar menu */
 .app-nav li ul {
     border-radius: 0;
@@ -93,7 +99,6 @@ section.cover img {
 }
 
 /* Headings */
-
 .app-nav:not(:empty) ~ main .markdown-section {
     padding-top: 6rem;
 }
