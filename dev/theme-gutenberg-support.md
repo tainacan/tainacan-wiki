@@ -89,5 +89,5 @@ So it is time to face the beast!
 
 ## Adding color scheme support to blocks
 
-Another interesting feature that Gutenberg offers is the ability 
+Another interesting feature that Gutenberg offers is the ability to customize which colors will be offered on color-pickers available across many of the blocks.
 
