@@ -246,4 +246,42 @@ Now that you have a bigger picture, we can take a look at where is the source co
         └── theme-search.vue
 ```
 
-As you can see, there is a similar structure on both `/src/view/theme-search` and `/src/view/admin` folders, but the last one is considerably more complex. The stuff that is used by both is always inside "admin" as it is the main "module" of the plugin. Because of that, if you want to change any override any css class, for example, you will probably find its definition inside `/src/view/admin/scss/`. But Vue components have a particularity of allowing scoped css inside their code, which means you may find what you are looking for inside one of the `.vue` files across the code as well.
+As you can see, there is a similar structure on both `/src/view/theme-search` and `/src/view/admin` folders, but the last one is considerably more complex. The stuff that is used by both is always inside "admin" as it is the main "module" of the plugin. Because of that, if you want to override any css class, for example, you will probably find its definition inside `/src/view/admin/scss/`. But Vue components have a particularity of allowing `scoped css` inside their code, which means you may find what you are looking for inside one of the `.vue` files across the code as well.
+
+### CSS Customizations to the Vue component
+
+So here are a few examples of customizations that you can do, now that you understand more of the Items list component:
+
+1. __Hide or change the order of elements__. Let us suppose that you wish to tweak the *pagination* section a bit. You don't want the "Items per Page select" to appear and the "Go to Page" select should probably be after the pagination links. A look into the Pagination [component](https://github.com/tainacan/tainacan/blob/4cbc0b21e660a4a667d784bcb3a353e54f59d1f2/src/admin/components/search/pagination.vue ':ignore') and [scss](https://github.com/tainacan/tainacan/blob/4cbc0b21e660a4a667d784bcb3a353e54f59d1f2/src/admin/scss/_pagination.scss ':ignore') may give us a hint on what do do:
+    ```css
+    /* Hide this one, please */
+    .pagination-area .items-per-page:not(.go-to-page) {
+        display: none;
+        visibility: hidden;
+    }
+    /* Move this to end of .pagination-area */
+    .pagination-area .go-to-page {
+        order: 2;
+    }
+    ```
+    Of course, you need to take care of margins and paddings here too, depending on how much you are changing these values;
+2. __Increase the font size of some element__. *Tainacan Interface* font sizes are rather small due to its formal styling, but you can tweak that too looking for *font-size* definitions of your elements. Here are some adjustments made to Items list Search Control (the region where the Sorting option and View Mode selection are available):
+    ```css
+    /* This shall increase labels */
+    .search-control-item .label {
+        font-size: 1.5rem;
+    }
+    /* This will make dropdown buttons and other buttons bigger*/
+    .button:not(.is-small):not(.is-medium):not(.is-large) {
+        font-size: 1.5rem !important;
+    }
+    /* This one is for dropdown list items */
+    .dropdown .dropdown-menu .dropdown-content .dropdown-item {
+        font-size: 1.25rem;
+    }
+    /* Finally, for the icon font */
+    .theme-items-list .search-control .gray-icon i::before, 
+    .theme-items-list .search-control .gray-icon .icon i::before {
+        font-size: 1.5rem;
+    }
+    ```
