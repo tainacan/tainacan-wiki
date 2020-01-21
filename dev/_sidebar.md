@@ -19,6 +19,7 @@
 * Theme development and extension 
     * [Creating Compatible Themes](/dev/creating-compatible-themes.md)
 	* [Custom Templates](/dev/custom-templates.md)
+	* [The Vue Items List Component](/dev/the-vue-items-list-component.md)
 	* [Extra View Modes](/dev/extra-view-modes.md)
 	* [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) 
 * Configuration and performance 
