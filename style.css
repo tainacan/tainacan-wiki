@@ -34,6 +34,7 @@
     --link-color: #284472;
     --emoji-size: 1.125rem;
     --code-font-size: 0.85rem;
+    --code-block-padding: 0.75rem;
     --code-inline-background: #f2f2f2;
     --blockquote-font-size: 0.95rem;
     --notice-important-border-color: #e69810;
@@ -222,7 +223,7 @@ section.cover img {
 /* EM e STRONG */
 .content .markdown-section em,
 .content .markdown-section strong {
-    color: #555758;
+    color: inherit;
 }
 
 /* CODE */
@@ -231,14 +232,12 @@ section.cover img {
 	background-color: #f2f2f2;
 	border: 1px solid #dbdbdb;
 	border-radius: 2px;
-	padding: 1px 4px;
 }
 .content .markdown-section pre>code {
     color: inherit;
     background-color: inherit;
     border: inherit;
     border-radius: inherit;
-    padding: 1.5em 5px;
 }
 
 /* PRE */

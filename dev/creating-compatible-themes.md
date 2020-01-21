@@ -1,10 +1,10 @@
 # Creating Compatible Themes
 
-Tainacan plugin offers management tools for creating and organizing your repository, but in the end, publishing it online is one of the most important features to be desired. To avoid *reinventing the wheel*, all the work of having navigation menus, home pages, etc are handled by WordPress with its ecosystem of CMS features, plugins and of course, **themes**. 
+Tainacan plugin offers tools to manage your digital repository, but in the end, publishing it online is one of the most important features to be desired. To avoid *reinventing the wheel*, all the work of having navigation menus, home pages, etc is handled by WordPress with its ecosystem of CMS features, plugins and of course, **themes**. 
 
-> Themes are the default way that WordPress allows customizing the appearance of your website. They can show different layouts, font, and colors, but beyond that, they can offer customizations of different sorts.
+> Themes are the default way that WordPress offers for tweaking the appearance of your website. They can show different layouts, font, and colors, but beyond that, they can offer customizations of different sorts.
 
-Considering that, the development of the plugin was made in sync with the production of an "official theme", planned to attend the majority of use cases, which is the [Tainacan Interface](https://wordpress.org/themes/tainacan-interface/). Nevertheless, if you are a developer and have interest on adapting your theme to support some Tainacan features, you are free to do it by using some tooling that is described on this Section.
+Considering that, the development of the plugin was made *in sync* with the production of an "official theme", planned to attend the majority of use cases, which is the [Tainacan Interface](https://wordpress.org/themes/tainacan-interface/). Nevertheless, if you are a developer and have interest on adapting your theme to support some Tainacan features, you are free to do it by using the strategies that are described on this section.
 
 Here is a summary of what you can do:
 * [Creating custom templates](/dev/custom-templates.md) to one of [Tainacan pages](tainacan-pages.md);

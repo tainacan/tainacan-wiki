@@ -8,30 +8,34 @@ A Mapping Standard has the following attributes.
 
 ### Name
 
-	String $name
+```php
+String $name
+```
 
 The name of the Mapping Standard.
 
 ### Metadata
 
-	Array or false $metadata
+```php
+Array or false $metadata
+```
 
 A list of metadata, terms or attributes that this mapping has. These are the element you will be able to map your Collection's Metadata.
 
 Each metadatum has the following attributes:
 
-* slug - The metadatum name, that refers to the name of the attribute in the origin vocabulary or ontology (e.g. title)
-* label - The human-readable name
-* URI - The URI of this term/attribute in the origin Ontology/Vocabulary
-* metadata_type - The preferred type for the metadatum
+* `slug` - The metadatum name, that refers to the name of the attribute in the origin vocabulary or ontology (e.g. title)
+* `label` - The human-readable name
+* `URI` - The URI of this term/attribute in the origin Ontology/Vocabulary
+* `metadata_type` - The preferred type for the metadatum
 
 Array of:
 ```php
-	['slug'] => [
-		'URI' => 'http://...',
-		'label' => 'Label',
-		'metadata_type' => 'date',
-	]
+['slug'] => [
+	'URI' => 'http://...',
+	'label' => 'Label',
+	'metadata_type' => 'date',
+]
 ```
 
 ### Allow additional custom metadata

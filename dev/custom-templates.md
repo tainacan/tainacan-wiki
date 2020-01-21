@@ -1,16 +1,16 @@
 # Custom Templates
 
-When using Tainacan plugin with your custom theme enabled, you'll have access to any of [Tainacan pages](tainacan-pages.md) such as Items, Collections and Taxonomy Term Items in the same way that WordPress displays any **custom post_type**. An Item's list, for example, shall have *thumbnail*, *title* and *description* in the same appearance that your blog posts, without featuring a *Collection banner*, *filters list* or the *advanced search* that is offered by [Tainacan Interface](https://wordpress.org/themes/tainacan-interface).
+When using Tainacan plugin with your custom theme enabled, you'll have access to all of [Tainacan pages](tainacan-pages.md) such as Items, Collections and Taxonomy Term Items in the same way that WordPress displays any custom **post_type**. An Item's list, for example, shall have *thumbnail*, *title* and *description* with the same appearance that your blog posts, without featuring a *Collection banner*, *filters list* or the *advanced search* that is offered by themes such as [Tainacan Interface](https://wordpress.org/themes/tainacan-interface).
 
 Here is an example of an item list in a [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/):
 
 ![Items list, single item page, and term items list pages on TwentyTwenty theme.](/_assets/images/creating-compatible-themes-1.gif)
 
-It looks like a blog, right? You can also see the Item single page, which is pretty much like any post, showing the *thumbnail*, *document* and then *metadata*.
+It looks like a blog, right? You can also see the Item single page, which is pretty much like any post, displaying the *thumbnail*, *document* and then *metadata*.
 
 ## Create your files for the templates
 
-The WordPress way of changing this is by creating custom templates. To put it simply, you need `.php` equivalent files to the ones that Tainacan plugin registers by default:
+The *WordPress way* of changing this is by creating **custom templates**. To put it simply, you need `.php` files equivalent to the ones that Tainacan plugin registers by default:
 
 * `/tainacan/archive-items.php` - Lists Collection Items 
 * `/tainacan/archive-repository.php` - Lists Repository Items (all items from all collections)
@@ -18,7 +18,7 @@ The WordPress way of changing this is by creating custom templates. To put it si
 * `/tainacan/single-items.php` - Single Item Page
 * `/tainacan/archive-tainacan-collection.php` - Lists all Collections (not be confused with `archive-collections.php`, which is another template, that WordPress already uses)
 
-Ok, so all you need to do is to create these files and fill them as you wish... but how to fetch and render the content related to Tainacan there?
+Ok, so all you have to do is creating these files and fill them as you wish... but how to fetch and render the content related to Tainacan there? 
 
 ### Theme Helper functions
 
@@ -50,7 +50,7 @@ If you're building a custom term items archive, these functions may help:
 * `tainacan_get_the_term_description()` or `tainacan_the_term_description()` - Returns the current term description inside a term items archive;
  
 And more...
-* `tainacan_get_initials()` - A presentation function used by some thumbnails in some themes. It outputs a string version of a name with its initials;
+* `tainacan_get_initials()` - A presentation function used by some thumbnails in some themes. It outputs a string version of a name with its initials - for example: "Classic Paintings" would be returned as "CP";
 
 Those are, of course, *helper functions*. If you're not satisfied with the way the rendering is performed by then, you can create your own. Check [the source code]() for a more complete idea of how to fetch Tainacan content.
 

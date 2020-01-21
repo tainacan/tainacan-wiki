@@ -1,3 +1,5 @@
+?> _NOTICE_ This page describes the roles & caps structure for Tainacan versions older than 0.15. If you use earlier versions, check the [Roles and Capabilities](/dev/roles-capabilities.md) page.
+
 # Tainacan Users Permissions
 
 This page explains how permissions are handled in Tainacan, what are the user's roles available and what each one of them can do.

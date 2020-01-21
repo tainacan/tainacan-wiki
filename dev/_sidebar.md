@@ -7,7 +7,6 @@
 	* [Internal API](/dev/internal-api.md)
 	* [Tainacan Hooks](/dev/hooks.md)
 	* [JSON API :link:](https://tainacan.org/api-docs/ ':ignore')
-	* [Permissions](/dev/permissions.md) 
 	* [New Roles and Capabilities](/dev/roles-capabilities.md) 
 * Plugin development and extension 
 	* [Creating a Metadata Type](/dev/creating-metadata-type.md)

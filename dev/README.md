@@ -4,14 +4,14 @@ As you know, Tainacan is a [WordPress](https://wordpress.org) plugin and is buil
 
 ## Well, but I'm new to WordPress
 
-If you don't have experience with WordPress and would like to develop a plugin for Tainacan, or to contribute to the Tainacan plugin, it's a good idea to get to know some *WordPress* fundamentals. Those will be useful to everything you will deal with while working with Tainacan.
+If you don't have experience with WordPress and would like to develop a plugin for Tainacan, or to contribute to the Tainacan plugin, it's a good idea to learn some *WordPress* fundamentals. Those will be useful to everything you will deal with while working with Tainacan.
 
 This is a non-exhaustive list of the most important topics you should look into:
 
 * [WP_Query](https://codex.wordpress.org/Class_Reference/WP_Query ':ignore') class - This is the heart of WordPress, the class that gives you the interface fo query for posts in the database. All interaction with the database in Tainacan uses this class.
 * [Custom Post types](https://codex.wordpress.org/Post_Types ':ignore') and [taxonomies](https://codex.wordpress.org/Taxonomies ':ignore') - All Tainacan entities, such as collections, metadata, filters and items, are WordPress Custom post types. To understand how WordPress handles custom post types and custom taxonomies is very helpful.
 * [The Loop](https://codex.wordpress.org/The_Loop ':ignore') - One of the main WordPress elements used to interact through posts. Useful specially if you are tweaking with themes.
-* [Template Tags](https://codex.wordpress.org/Template_Tags ':ignore') - Simple functions used by theme developers to display dynamic content. Usually these function are used inside "The Loop" and Tainacan implements [it's own Template tags](../src/theme-helper/template-tags.php ':ignore').
+* [Template Tags](https://codex.wordpress.org/Template_Tags ':ignore') - Simple functions used by theme developers to display dynamic content. Usually these function are used inside "The Loop" and Tainacan implements [it's own Template tags](https://github.com/tainacan/tainacan/blob/develop/src/theme-helper/template-tags.php ':ignore').
 * [Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/ ':ignore') - Crucial if working with themes.
 * Custom queries and loops - Based on the topics above, it is good to understand how to build custom queries and loops to list posts.
 
@@ -24,7 +24,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Tainacan internals](/dev/internal-api.md) - Reference on Tainacan main classes and how to use them.
 * Tainacan Hooks - [Hooks](/dev/hooks.md)
 * [Tainacan API](https://tainacan.org/api-docs/ ':ignore')
-* [Permissions](/dev/permissions.md) 
+* [Roles and Capabilities](/dev/roles-capabilities.md) 
 
 ### Plugin development or extension {docsify-ignore}
 * [Creating a new Metadata Type](/dev/creating-metadata-type.md)
