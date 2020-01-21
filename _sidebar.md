@@ -30,14 +30,14 @@
     * [WordPress 3DHOP](/plugin-3d-hop)
 * [For Developers](/dev/)
 * About Tainacan
-    * [Oficial website :link:](https://tainacan.org/ ':ignore')
+    * [:link:Oficial website](https://tainacan.org/ ':ignore')
     * [Releases](/releases)
-    * [Publications :link:](http://pesquisa.medialab.ufg.br/artigos/ ':ignore')
+    * [:link:Publications](http://pesquisa.medialab.ufg.br/artigos/ ':ignore')
     * [Presentations](/presentations)
 * Community & Misc
-    * [Community list :link:](https://lists.riseup.net/www/subscribe/tainacan ':ignore')
+    * [:link:Community list](https://lists.riseup.net/www/subscribe/tainacan ':ignore')
     * [Improve this wiki](CONTRIBUTING)
 	* [Release Testing](/release-testing.md) 
     * [Data and Archival Processing](data-processing)
-    * [OpenRefine :link:](http://openrefine.org/ ':ignore')
+    * [:link:OpenRefine](http://openrefine.org/ ':ignore')
  

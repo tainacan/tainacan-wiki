@@ -69,7 +69,7 @@ Que será renderizado como:
 | O que é 	              |  O que você escreve 	               | O que você vê                                                     |
 |-------------------------|----------------------------------------|-------------------------------------------------------------------|
 | Imagem e descrição      | `![Logo do Tainacan](../_assets/images/logo_tainacan.png)` | ![Logo do Tainacan](../_assets/images/logo_tainacan.png) |
-| Imagem e descrição, redimensionada | `![Logo do Tainacan](../_assets/images/logo_tainacan.png ':size=125')` | ![Logo do Tainacan](../_assets/images/logo_tainacan.png ':size=125') |
+| Imagem e descrição, redimensionada | `![Logo do Tainacan](../_assets/images/logo_tainacan.png ':size=50')` | ![Logo do Tainacan](../_assets/images/logo_tainacan.png ':size=50') |
 
 ### Vídeos
 

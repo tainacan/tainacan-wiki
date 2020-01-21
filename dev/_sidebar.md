@@ -6,7 +6,7 @@
 	* [Key Concepts](/dev/key-concepts.md)
 	* [Internal API](/dev/internal-api.md)
 	* [Tainacan Hooks](/dev/hooks.md)
-	* [JSON API :link:](https://tainacan.org/api-docs/ ':ignore')
+	* [:link: JSON API](https://tainacan.org/api-docs/ ':ignore')
 	* [New Roles and Capabilities](/dev/roles-capabilities.md) 
 * Plugin development and extension 
 	* [Creating a Metadata Type](/dev/creating-metadata-type.md)
