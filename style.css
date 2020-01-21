@@ -25,6 +25,7 @@
     --heading-h2-border-width: 0;
     --heading-h2-margin: 2rem 0 1rem 0;
     --heading-h3-margin: 1.875rem 0 0 0;
+    --heading-h4-margin: 1.75rem 0 0 0;
     --sidebar-toggle-background: #ceedef;
     --sidebar-toggle-icon-color: #298596; 
     --sidebar-toggle-border-color: transparent;
@@ -248,6 +249,8 @@ section.cover img {
 /* PRE */
 .content .markdown-section pre {
     background-color: #e6f6f8;
+    max-height: 600px;
+    overflow-y: auto;
 }
 
 /* TABLE */
