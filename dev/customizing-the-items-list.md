@@ -166,7 +166,7 @@ Nevertheless, we can mention some of the "main" classes that you may be interest
 
 So here are a few examples of customizations that you can do, now that you understand more of the Items list component:
 
-1. __Hide or change the order of elements__. Let us suppose that you wish to tweak the *pagination* section a bit. You don't want the "Items per Page select" to appear and the "Go to Page" select should probably be after the pagination links. A look into the Pagination [component](https://github.com/tainacan/tainacan/blob/4cbc0b21e660a4a667d784bcb3a353e54f59d1f2/src/admin/components/search/pagination.vue ':ignore') and [scss](https://github.com/tainacan/tainacan/blob/4cbc0b21e660a4a667d784bcb3a353e54f59d1f2/src/admin/scss/_pagination.scss ':ignore') may give us a hint on what do do:
+1. __Hide or change the order of elements__. Let us suppose that you wish to tweak the *pagination* section a bit. You don't want the "Items per Page select" to appear and the "Go to Page" select should probably be after the pagination links. A look into the Pagination [component](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/search/pagination.vue ':ignore') and [scss](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_pagination.scss ':ignore') may give us a hint on what do do:
     ```css
     /* Hide this one, please */
     .pagination-area .items-per-page:not(.go-to-page) {

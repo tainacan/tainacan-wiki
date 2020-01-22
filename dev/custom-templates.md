@@ -22,7 +22,7 @@ Ok, so all you have to do is creating these files and fill them as you wish... b
 
 ### Theme Helper functions
 
-For helping you creating your template, exclusive functions are available on your theme once the plugin is activated. You can find all or their definitions on the [Tainacan Template Tags](https://github.com/tainacan/tainacan/blob/develop/src/theme-helper/template-tags.php ':ignore') file. We summarize them below.
+For helping you creating your template, exclusive functions are available on your theme once the plugin is activated. You can find all or their definitions on the [Tainacan Template Tags](https://github.com/tainacan/tainacan/blob/develop/src/classes/theme-helper/template-tags.php ':ignore') file. We summarize them below.
 
 If you're building a custom `single-items.php`, you might be interested in:
 * `tainacan_get_item()` - Returns the Item object according to given ID; 
