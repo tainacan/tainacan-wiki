@@ -66,4 +66,4 @@ You can browse or search for specific topics on the side menu. Follows some rele
     </div>
 </div>
 
-The documentation can be accessed via GitHub Pages + Docsify [here](/).
+The documentation can be accessed via GitHub Pages + Docsify [here](https://wiki.tainacan.org ':ignore').

@@ -54,7 +54,7 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Desenvolvedores](../_assets/images/Para_desenvolvedores.png ":no-zoom")](/pt-br/dev/)
+[![Desenvolvedores](../_assets/images/Para_desenvolvedores.png ":no-zoom")](/dev/)
 
 </div>
 <div class="panel-heading">
@@ -66,4 +66,4 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
     </div>
 </div>
 
-A documentação pode ser navegada pelo GitHub Pages + Docsify [aqui](/pt-br).
+A documentação pode ser navegada pelo GitHub Pages + Docsify [aqui](https://wiki.tainacan.org ':ignore').
