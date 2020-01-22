@@ -15,11 +15,12 @@
 	    * [Exposers](/dev/exposers.md)
 	* [Exporter Flow](/dev/exporter-flow.md)
 	* [Importer Flow](/dev/importer-flow.md)
-    * [Repository Methods](/dev/repository-methods.md) 	
+    * [Repository Methods](/dev/repository-methods.md)
+	* [The Vue Items List Component](/dev/the-vue-items-list-component.md) 	
 * Theme development and extension 
     * [Creating Compatible Themes](/dev/creating-compatible-themes.md)
 	* [Custom Templates](/dev/custom-templates.md)
-	* [The Vue Items List Component](/dev/the-vue-items-list-component.md)
+	* [Customizing the Items List](/dev/customizing-the-items-list.md)
 	* [Extra View Modes](/dev/extra-view-modes.md)
 	* [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) 
 * Configuration and performance 

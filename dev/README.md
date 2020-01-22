@@ -36,11 +36,12 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Vocabulary Importer](/dev/vocabulary-importer.md)
 * [Mapping Standards](/dev/mapping-standards.md)
 * [Repository Methods](/dev/repository-methods.md)
+* [The Vue Items List Component](/dev/the-vue-items-list-component.md) - The client-side rendered items list that provides all power to faceted search.
   
 ### Theme development or extension {docsify-ignore}
 * [Creating compatible themes](/dev/creating-compatible-themes.md) - An Introduction on how to create a theme that fully support Tainacan features
 * [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates for those that Tainacan adds to WordPress Template Hierarchy
-* [The Vue Items List Component](/dev/the-vue-items-list-component.md) - The client-side rendered items list that provides all power to faceted search.
+* [Customizing the Items List](/dev/customizing-the-items-list.md) - Tweaking the appearence of the items list
 * [Creating Extra View Modes](/dev/extra-view-modes) - How to create Extra View Modes that will be avaialble for displaying items list
 * [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) - Details to offer better support to the latest content block editor
 
