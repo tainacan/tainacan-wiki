@@ -38,6 +38,7 @@
     --code-block-padding: 0.75rem;
     --code-inline-background: #f2f2f2;
     --blockquote-font-size: 0.95rem;
+    --blockquote-em-font-style: italic;
     --notice-important-border-color: #e69810;
     --notice-important-background: #fcebd9;
     --notice-tip-border-color: #44638e;

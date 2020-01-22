@@ -2,7 +2,7 @@
 
 When using Tainacan plugin with your custom theme enabled, you'll have access to all of [Tainacan pages](tainacan-pages.md) such as Items, Collections and Taxonomy Term Items in the same way that WordPress displays any custom **post_type**. An Item's list, for example, shall have *thumbnail*, *title* and *description* with the same appearance that your blog posts, without featuring a *Collection banner*, *filters list* or the *advanced search* that is offered by themes such as [Tainacan Interface](https://wordpress.org/themes/tainacan-interface).
 
-Here is an example of an item list in a [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/):
+Here is an example of an item list in a raw [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/):
 
 ![Items list, single item page, and term items list pages on TwentyTwenty theme.](/_assets/images/custom-templates-1.gif)
 
@@ -52,7 +52,7 @@ If you're building a custom term items archive, these functions may help:
 And more...
 * `tainacan_get_initials()` - A presentation function used by some thumbnails in some themes. It outputs a string version of a name with its initials - for example: "Classic Paintings" would be returned as "CP";
 
-Those are, of course, *helper functions*. If you're not satisfied with the way the rendering is performed by then, you can create your own. Check [the source code]() for a more complete idea of how to fetch Tainacan content.
+Those are, of course, *helper functions*. If you're not satisfied with the way the rendering is performed by then, you can create your own. Check [the source code]() for a more complete idea of how to fetch Tainacan content. There is also [an example](/dev/the-vue-items-list-component) of an `archive-items.php` implementation in the next section.
 
 ## Even more specific templates
 

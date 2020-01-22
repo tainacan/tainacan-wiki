@@ -64,7 +64,7 @@ Some Gutenberg Blocks (including most of Tainacan Blocks) offer alignment option
 
 The editing experience with the new Block Editor, *aka* Gutenberg, can be both magical and frustrating depending on your theme support. That's because, despite the promise, it is not really *What You See Is What You Get* unless you take care of it, which means you need a dedicated stylesheet to guarantee that your editing-side appearance is as close as possible as the *preview/published* side of your post.
 
-> It may sound annoying at first, but having to implement an **editor stylesheet** makes sense: On your theme side, you may have classes to style a `<button>` as you wish, but on the *editor-side*, that button is actually a `<input type="text">` form, waiting for your content to be inserted by the user. So you have to fake it to look like a button. Furthermore, a post on your theme may have zero or lots or lateral margin, while the *editor-side* has to display admin menus, block controls, and document options aside from the content editor. 
+> It may sound redundant at first, but having to implement an **editor stylesheet** makes sense: On your *theme-side*, you may have classes to style a `<button>` as you wish, but on the *editor-side*, that button is actually a `<input type="text">` form, waiting for content to be inserted by the user. So you have to fake it to look like a button. Furthermore, a post on your theme may have zero or lots or lateral margin, while the *editor-side* has to display admin menus, block controls, and document options aside from the content editor. 
 
 So it is time to face the beast! 
 
@@ -90,4 +90,3 @@ So it is time to face the beast!
 ## Adding color scheme support to blocks
 
 Another interesting feature that Gutenberg offers is the ability to customize which colors will be offered on color-pickers available across many of the blocks.
-
