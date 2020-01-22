@@ -1,6 +1,7 @@
 :root {
     --base-font-size: 16px;
     --theme-color: #298596;
+    --content-max-width: 58em;
     --base-background-color: white;
     --base-font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
     --strong-color: inherit;
@@ -53,7 +54,6 @@ body {
 }
 .markdown-section {
     padding-top: 5px;
-    max-width: 940px;
 }
 
 /* Github corner link*/
@@ -458,7 +458,7 @@ section.cover img {
     animation-name: box-enter;
     animation-duration: 2s;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1160px){
     .home-col {
         width: 50%;
         flex-basis: 50%;
@@ -484,7 +484,7 @@ section.cover img {
     background: #298596 !important;
     color: white !important;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.125rem;
     padding: 10px 13px;
 }
 .home-panel .panel-heading a,
