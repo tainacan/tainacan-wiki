@@ -273,6 +273,20 @@ section.cover img {
 }
 
 /* UL LI not so special style */
+.content .markdown-section ul label h1, 
+.content .markdown-section ol label h1,
+.content .markdown-section ul label h2, 
+.content .markdown-section ol label h2,
+.content .markdown-section ul label h3, 
+.content .markdown-section ol label h3,
+.content .markdown-section ul label h4, 
+.content .markdown-section ol label h4,
+.content .markdown-section ul label h5, 
+.content .markdown-section ol label h5
+.content .markdown-section ul label h6, 
+.content .markdown-section ol label h6 {
+	display: inline;
+}
 .content .markdown-section ul:not(.task-list), 
 .content .markdown-section .content .markdown-section ul:not(.task-list) {
 	margin: .5em 0 .6em 0em;

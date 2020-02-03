@@ -1,6 +1,6 @@
 # Roteiro de Testes
 
-Este artigo descreve o roteiro para testes de integridade na instalação ou atualização do Plugin do Tainacan para WordPress:
+Esta sessão descreve o roteiro para testes de integridade na instalação ou atualização do Plugin do Tainacan para WordPress:
 
 ## Fluxo para lançamento de versão RC *(Release Candidate)*
 
@@ -35,91 +35,18 @@ Há vários tipos de testes que podem ser feitos para cobrir o máximo de funcio
   - [x] Observe se todos elementos da página foram exibidos corretamente;
   - [x] Observe novamente estes aspectos ao concluir os processos a seguir para reportar eventuais alterações substanciais no tempo de carregamento de tela ou exibição incorreta dos elementos.
 
-<!-- tabs:start -->
+Feito isto, escolha um tópico que deseja testar mais a fundo:
 
-### ** Coleções **
-### Coleções
+<div style="column-count: 2; column-width: 250px;">
 
-1. Crie DUAS ou mais coleções
-2. Preencha seus campos, incluindo miniatura e imagem de cabeçalho;
-3. Defina status diferentes para cada uma, como Pública e Privado, ou Pública e Rascunho;
-4. Conclua ou clique em `Salve e ir para Metadados`:
-  - [x] Observe o tempo de carregamento da tela de *Criação de coleção*;
-  - [x] Observe se todos elementos da página foram exibidos corretamente;
-  - [x] Observe o tempo de conclusão ao **concluir** ou **salvar** as coleções;
+- [x] ### [Coleções](/pt-br/testing-collections.md)
+- [x] ### [Taxonomias](/pt-br/testing-taxonomies.md)
+- [x] ### [Metadados](/pt-br/testing-metadata.md)
+- [x] ### [Filtros](/pt-br/testing-filters.md)
+- [x] ### [Itens](/pt-br/testing-items.md)
+- [x] ### [Importadores](/pt-br/testing-importers.md)
+- [x] ### [Exportadores](/pt-br/testing-exporters.md)
+- [x] ### [Atividades](/pt-br/testing-activities.md)
+- [x] ### [Permissões](/pt-br/testing-cababilities.md)
 
-### ** Taxonomias **
-### Taxonomias
-
-1. Crie uma ou mais taxonomias;
-2. Crie um ou mais termos em cada taxonomia criada;
-  1. Envie uma *Imagem da Header* em pelo menos um item de cada taxonomia;
-  2. Busque preencher todos os campos, como **nome**, **descrição**, etc.
-  3. Crie pelo menos um nível hierárquico em cada taxonomia;
-  - [x] Observe o tempo de carregamento da tela de *Criação de Taxonomia*;
-  - [x] Observe se todos elementos da página foram exibidos corretamente;
-  - [x] Observe o tempo de conclusão ao **salvar** cada taxonomia;
-  - [x] Observe o tempo de conclusão ao **salvar** cada termo;
-
-### ** Metadados **
-### Metadados
-
-1. Crie os diferentes tipos de metadados a **nível de repositório**:
-  1. Lembre-se de criar metadado do tipo *taxonomia*;
-  2. Busque marcar opções diferentes entre os metadados em:
-    * Status;
-    * Exibir na listagem;
-    * Opções de Preenchimento;
-    * Demais campos de texto;
-2. Crie alguns metadados também a **nível de coleção**, em cada coleção:
-  1. Lembre-se de criar metadado do tipo *relacionamento*;
-  2. Busque marcar opções diferentes entre os metadados em:
-    * Status;
-    * Exibir na listagem;
-    * Opções de Preenchimento;
-    * Demais campos de texto;
-3. Teste as ações de *exclusão* ou *edição de metadados*.
-  - [x] Observe o tempo de carregamento na criação de metadados;
-  - [x] Observe se todos elementos da página foram exibidos corretamente;
-  - [x] Observe o tempo de conclusão ao **salvar** cada metadado;
-
-### ** Itens **
-### Itens
-
-1. Abra uma coleção;
-2. Adicione um Item;
-3. Crie itens com diferentes tipos de documento;
-4. Edite a miniatura de diferentes itens;
-5. Edite e adicione anexos em diferentes itens;
-6. Preencha os campos de metadados;
-  1. Teste o *não preenchimento* de metadados marcados como obrigatório;
-  2. Teste o preenchimento de campos de metadados do tipo taxonomia, e a criação de novos termos;
-  3. Após criar itens em uma *primeira coleção*, teste o preenchimento de metadados do tipo relacionamento em *outra coleção*.
-  - [x] Observe o tempo de carregamento ao abrir as coleções;
-  - [x] Observe o tempo de carregamento ao criar itens;
-  - [x] Observe se todos elementos da página da coleção foram exibidos corretamente;
-  - [x] Observe se todos elementos da página da criação de item foram exibidos corretamente;
-  - [x] Observe se todos metadados a nível de repositório e da colação foram exibidos corretamente para preenchimento, na página da criação de item;
-  - [x] Observe se eventuais dicas de preenchimento, configuradas em determinados metadados, estão exibidas corretamente
-  - [x] Observe se o aviso de **preenchimento de metadados obrigatórios** funciona corretamente, ao **salvar** ou **publicar** cada item;
-  - [x] Observe o tempo de conclusão ao **salvar** ou **publicar** cada item;
-
-### ** Importadores **
-### Importadores
-
-?> _TODO_ Implementar este roteiro de testes
-
-### ** Atividades **
-### Atividades
-
-?> _TODO_ Implementar este roteiro de testes
-
-### ** Permissões **
-### Permissões
-
-?> _TODO_ Implementar este roteiro de testes
-
-<!-- tabs:end -->
-
-
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [e-mail da comunidade](tainacan@lists.riseup.net) do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](#acho-que-encontrei-um-erro-como-devo-proceder).
+</div>
