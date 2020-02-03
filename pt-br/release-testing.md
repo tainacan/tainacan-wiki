@@ -44,6 +44,7 @@ Feito isto, escolha um tópico que deseja testar mais a fundo:
 - [x] ### [Metadados](/pt-br/testing-metadata.md)
 - [x] ### [Filtros](/pt-br/testing-filters.md)
 - [x] ### [Itens](/pt-br/testing-items.md)
+- [x] ### [Busca Facetada](/pt-br/testing-search.md)
 - [x] ### [Importadores](/pt-br/testing-importers.md)
 - [x] ### [Exportadores](/pt-br/testing-exporters.md)
 - [x] ### [Atividades](/pt-br/testing-activities.md)
