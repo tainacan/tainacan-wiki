@@ -295,4 +295,25 @@ Uma vez terminada a criação do seu arquivo *.csv* com os termos desejados, sig
   2. Quando o processo for concluído serão exibidos o **arquivo de registro** e, em caso de erros, o **arquivo de registro de erros**.
 10. Uma vez terminado com sucesso o processo de importação do vocabulário, vá para a seção de **Taxonomias** e revise se a *Taxonomia* e os *Termos* foram importados como o esperado.
 
+#### ** Importador Teste **
+
+## Importador Teste
+
+O Importador teste é uma ferramenta útil para usuários que desejam testar funcionalidades do Tainacan, seja para conhecer melhor do que ela é capaz, seja para seguir um [roteiro de testes pré-lançamento](/pt-br/release-testing.md). Com ele podemos criar e popular coleções com items, metadados e filtros genéricos de maneira rápida.
+
+Ao contrário dos importadores de CSV, não estamos realmente "importando" dados de uma fonte externa, mas sim deixando por conta do Tainacan que crie tudo isso. Portanto as configurações são bem simples:
+
+1. Acesse o painel de controle do WordPress
+2. Na barra lateral esquerda, clique em Tainacan
+3. Acesse a seção *Importadores*;
+4. Na seção **Importadores Disponíveis**, selecione `Teste`;
+5. Preencha os primeiros campos como desejar. Se for criada uma segunda coleção, metadados de relacionamento poderão linkar seus itens;
+6. Se deseja importar imagens do [LoremFlickr](https://loremflickr.com/ ':ignore') pra popular os seus itens, configure o tamanho da imagem e um termo de busca para filtrar o conteúdo da imagem;
+   
+  ?> Embora diversas, as imagens fornecidas pelo LoremFlickr possuem tamanho bem reduzido. Isso significa que mesmo não passando parâmetros elas pode vir pequenas e se comportar de maneira inesperada em alguns modos de visualização caso estes esperem recortes maiores que o mínimo criado pelo importador.
+
+7. Execute a importação clicando em "Executar";
+8. Uma vez terminado com sucesso o processo de importação, vá para as coleções criadas e revise se os **metadados**, **itens** e **valores** estão de acordo com esperado.
+
+
 <!-- tabs:end -->

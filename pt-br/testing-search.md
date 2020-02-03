@@ -1,8 +1,8 @@
 # Testando a Busca de Itens
 
-## O Básico
+Para testar a busca facetada de itens, é preciso ter uma coleção com uma mínima diversidade de tipos de metadados, filtros e é claro, itens. Sugerimos a criação de Coleções usando o [Importador Teste](/pt-br/importers#importador-teste) para ajudar neste processo. Feito isso, deve-se:
 
-Para testar a busca facetada de itens, é preciso ter uma coleção com uma mínima diversidade de tipos de metadados, filtros e é claro, itens. Sugerimos a criação de Coleções usando o **Importador Teste** para ajudar neste processo. Feito isso, deve-se:
+## O Básico
 
 1. Acessar a Coleção ou a lista de Itens Nível Repositório;
 2. Aplicar a busca textual simples;

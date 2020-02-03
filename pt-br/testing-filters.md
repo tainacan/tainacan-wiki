@@ -3,7 +3,7 @@
 ## O Básico
 
 1. Para poder testar ao máximo os filtros, crie pelo menos um de cada tipo de metadado existente na tela de configuração de metadados de coleção ou de repositório;
-2. Também sugerimos criar alguns itens com valores destes metadados preenchidos. O **Importador Teste** neste momento pode ser bem útil!
+2. Também sugerimos criar alguns itens com valores destes metadados preenchidos. O [Importador Teste](/pt-br/importers#importador-teste) neste momento pode ser bem útil!
 3. Crie os diferentes tipos de filtros a **nível de coleção**, em coleções diferentes:
   1. Lembre-se de criar pelo menos um filtro para um metadado do tipo *relacionamento* e um para um metadado do tipo *taxonomia*;
   2. Busque marcar opções diferentes de Status entre os filtros e demais campos de texto:
