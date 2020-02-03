@@ -14,13 +14,13 @@
 
 1. Configure, os modos de visualização da coleção, marque quantos que desejar;
 2. Configure a opção de "Permitir comentários";
-3. Salve as mudanças clciando em `Concluir`;
+3. Salve as mudanças clicando em `Concluir`;
 4. Acesse a Página da Coleção no tema (por padrão a lista de itens da coleção), clicando no botão em formato de olho no canto superior direito;
   - [x] Observe se todos elementos da página foram exibidos corretamente;
   - [x] Cheque se os modos habilitados estão disponíveis e se o modo marcado como padrão foi o primeiro;
   - [x] Veja se estão permitidos comentários na página da coleção;
 4. Volte às configurações e habilite a opção "Página de capa". Escolha uma página qualquer como página de capa da coleção;
-5. Salve as mudanças cliando em `Concluir`;
+5. Salve as mudanças clicando em `Concluir`;
 6. Acesse novamente a Página da Coleção no tema;
   - [x] Cheque se a página marcada foi definida como a capa página desta coleção;
 7. Volte às configurações e lembre-se de desabilitar a opção "Página de capa" caso não deseje utilizá-la. 
@@ -28,7 +28,7 @@
 ## O *slug* da Coleção
 
 1. No formulário de edição da coleção, troque o `slug` por algum valor de peferência sua;
-2. Salve a mudança cliando em `Concluir`;
+2. Salve a mudança clicando em `Concluir`;
 3. Acesse a Página da Coleção no tema, clicando no botão em formato de olho no canto superior direito;
   - [x] O link da página está escrito usando o `slug` configurado?
 

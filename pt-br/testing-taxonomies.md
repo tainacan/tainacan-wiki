@@ -23,7 +23,7 @@
 
 1. Abra o formulário de edição de algum termo, ou crie um novo;
 2. Habilite a opção "Termo Pai" e busque por termos que podem ser escolhidos como pai;
-3. Salve a mudança clciando em `Salvar`;
+3. Salve a mudança clicando em `Salvar`;
    - [x] Cheque se dentre os termos oferecidos não foi listado o próprio termo;
    - [x] Se o termo escolhido atual possuir filhos, verifique se a lista será recarregada corretamente ao se mudar sua hierarquia; 
 
