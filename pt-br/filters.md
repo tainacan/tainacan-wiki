@@ -39,7 +39,7 @@ Para cada coleção é possível escolher quais de seus metadados serão usados 
 
 !> **Atenção**: O filtro deixará de existir caso seu respectivo metadado seja desabilitado ou excluído. A exclusão do do filtro implica somente na navegabilidade da visualização da coleção. Esta operação só pode ser desfeita por administradores. (Consulte [Registro de atividades](pt-br/activities) para saber mais)
 * Os valores preenchidos no metadado de cada item aparecerão como opção para seleção em cada filtro, de acordo com suas configurações de *tipo de metadado* configurado.
-* Atualmente o Tainacan tem **sete tipos de metadados** por padrão, mas novos conjuntos podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. (Consulte o artigo sobre o [Desenvolvimento do Plugin](/pt-br/dev/) para saber mais)
+* Atualmente o Tainacan tem **sete tipos de metadados** por padrão, mas novos conjuntos podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. (Consulte o artigo sobre o [Desenvolvimento do Plugin](/dev/) para saber mais)
 
 ## Tipos de Filtros
 

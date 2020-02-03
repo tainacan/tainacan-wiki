@@ -97,7 +97,7 @@ Metadados do tipo Relacionamento atribuem um item de uma coleção como valor pa
 
 Existem diferentes tipos de metadados para permitir a criação de forma mais adequada com o tipo de informação que será preenchido durante o envio dos itens.
 
-Atualmente o Tainacan tem seis tipos de metadados e filtros por padrão, mas novos conjuntos podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. (Consulte o artigo sobre o [Desenvolvimento do Plugin](/pt-br/dev/) para saber mais.
+Atualmente o Tainacan tem seis tipos de metadados e filtros por padrão, mas novos conjuntos podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. (Consulte o artigo sobre o [Desenvolvimento do Plugin](/dev/) para saber mais.
 
 <!-- tabs:start -->
 

@@ -275,7 +275,7 @@ section.cover img {
 /* UL LI not so special style */
 .content .markdown-section ul:not(.task-list), 
 .content .markdown-section .content .markdown-section ul:not(.task-list) {
-	margin: .5em 0 .6em 1em;
+	margin: .5em 0 .6em 0em;
 	list-style: none;
 }
 .content .markdown-section ul:not(.task-list)>li:before, 
@@ -336,13 +336,13 @@ section.cover img {
 .content .markdown-section .content .markdown-section ol {
 	padding: 0;
 	counter-reset: li-counter;
-	margin: 2em 0 1em 3em;
+	margin: 2em 0 1em 2em;
 	list-style-type: none;
 }
 .content .markdown-section ol>li ,
 .content .markdown-section .content .markdown-section ol>li {
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     padding-left: 1.5em;
     min-height: 3em;
 }
@@ -376,7 +376,7 @@ section.cover img {
 .content .markdown-section .content .markdown-section ol>li>ul:not(.task-list)>li>ol {
 	padding: 0;
 	counter-reset: li-counter;
-	margin: 0.75em 0 0.6em 1em;
+	margin: 0.75em 0 0.6em 0.25em;
 	list-style-type: none;
 }
 .content .markdown-section ol>li>ol>li,

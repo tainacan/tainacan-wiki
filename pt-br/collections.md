@@ -53,7 +53,7 @@ Novas coleções podem ser criadas também com um modelo de metadados pré-defin
 Coleções criadas com metadados pré-definidos contam com um conjunto de metadados pré-estabelecidos durante sua criação, e podem ser geridas da mesma maneira que outras coleções. 
 > Desde a versão 0.6 do plugin existe a opção para a criação de coleções com um conjunto de metadados a partir do modelo **Dublin Core**.
 
-> Novos conjuntos de metadados podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao Tainacan (Consulte [Desenvolvimento do Plugin](/pt-br/dev/) para saber mais sobre o desenvolvimento do Tainacan)
+> Novos conjuntos de metadados podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao Tainacan (Consulte [Desenvolvimento do Plugin](/dev/) para saber mais sobre o desenvolvimento do Tainacan)
 
 Consulte a seção de [Ações em Massa](/pt-br/bulk-edition) e de [Importadores do Tainacan](/pt-br/importers) para saber mais sobre a criação itens e termos em massa.
 
