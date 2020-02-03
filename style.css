@@ -287,6 +287,10 @@ section.cover img {
 .content .markdown-section ol label h6 {
 	display: inline;
 }
+.content .markdown-section ul .task-list-item input, 
+.content .markdown-section ol .task-list-item input {
+	vertical-align: -0.125em;
+}
 .content .markdown-section ul:not(.task-list), 
 .content .markdown-section .content .markdown-section ul:not(.task-list) {
 	margin: .5em 0 .6em 0em;

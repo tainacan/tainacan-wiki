@@ -1,13 +1,43 @@
 # Testando Taxonomias
 
+## O Básico
+
 1. Crie uma ou mais taxonomias;
 2. Crie um ou mais termos em cada taxonomia criada;
-  1. Envie uma *Imagem da Header* em pelo menos um item de cada taxonomia;
+  1. Envie uma *Imagem da Header* em pelo menos um termo de cada taxonomia;
   2. Busque preencher todos os campos, como **nome**, **descrição**, etc.
-  3. Crie pelo menos um nível hierárquico em cada taxonomia;
-  - [x] Observe o tempo de carregamento da tela de *Criação de Taxonomia*;
-  - [x] Observe se todos elementos da página foram exibidos corretamente;
+  3. Crie pelo menos um nível hierárquico em cada taxonomia (adicionando termos filhos);
+3. Vá para a lista de coleções e cheque se as coleções estão nas abas corretas de acordo com seu status;
+  - [x] Observe o tempo de carregamento da tela de *Criação de Taxonomia*, *Lista de Termos* e *Lista de Taxonomias*
   - [x] Observe o tempo de conclusão ao **salvar** cada taxonomia;
   - [x] Observe o tempo de conclusão ao **salvar** cada termo;
+
+## A Visualização do Termo no Tema
+
+1. Abra o formulário de edição de algum termo;
+2. Clique em "Ver no Tema";
+   - [x] Veja se a lista de itens do termo é renderizada corretamente, incluindo a imagem e descrição passada;
+   - [x] Verifique seestão listados os itens que possam ter aquele termo marcado em algum metadado tipo taxonomia.
+
+## A Definição de um novo Termo Pai
+
+1. Abra o formulário de edição de algum termo, ou crie um novo;
+2. Habilite a opção "Termo Pai" e busque por termos que podem ser escolhidos como pai;
+3. Salve a mudança clciando em `Salvar`;
+   - [x] Cheque se dentre os termos oferecidos não foi listado o próprio termo;
+   - [x] Se o termo escolhido atual possuir filhos, verifique se a lista será recarregada corretamente ao se mudar sua hierarquia; 
+
+## A Permissão para Termos Novos
+
+1. No formulário de configurações de uma taxonomia, desmarque a opção "Permitir Termos Novos";
+2. Salve a mudança clicando em `Salvar`;
+3. Vá para uma Coleção, na sua tela de Configurar Metadados;
+   1. Crie um Metadado do tipo Taxonomia a partir da taxonomia alterada.
+   2. Deixe marcada a opção "Permitir Termos Novos";
+4. Vá a lista de Itens da Coleção e crie ou edite um item;
+   1. Adicione termos existentes ao metadado tipo taxnomia;
+   2. Tente adicionar termos novos à taxonomia a partir do formulário de edição do metadado; 
+    - [x] Confirme que não é possível inserir novos termos na taxonomia, já que a configuração da Taxonomia tem prioridade sobre a do Metadado;
+    - [x] Recarregue a página do item para ver se os termos possíveis foram salvos,
 
 ?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [e-mail da comunidade](tainacan@lists.riseup.net) do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](#acho-que-encontrei-um-erro-como-devo-proceder).
