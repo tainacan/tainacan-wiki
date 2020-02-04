@@ -1,5 +1,7 @@
 # Testando Permissões
 
+As permissões e a gestão de funções de usuários estão entre os recursos mais importantes de se testar no Tainacan, já que envolvem questões sensíveis de segurança para os repositórios. Idealmente, para se realizar estes testes, é preciso ser administrador do seu WordPress, com permissões para criar e alterar diferentes usuários de teste.
+
 ## O Básico
 
 1. Acesse o **painel de controle do WordPress** onde a sua versão de testes do plugin Tainacan está instalada e ativada (geralmente, o endereço do seu site + `/wp-admin`);
@@ -14,7 +16,7 @@
    - [x] Veja por outro lado se estão disponíveis:
      * Os links de Taxonomias, Atividades, Importadores e Exportadores nível repositório;
      * Os links para a Lista de Coleções e para as listas de itens de cada coleção;
-7. Acesso a Lista de Itens uma das Coleções do Repositório;
+7. Acesse a Lista de Itens uma das Coleções do Repositório;
    - [x] Confira se estão inacessíveis:
      * O botão de adicionar novo Item; 
      * Os items privados;
@@ -27,7 +29,15 @@
 8. Clique em um dos Itens para acessar sua página no Admin:
    - [x] Confirme que não há link para editar o item;
    - [x] Veja se todos os dados do item estão visíveis, exceto pelas Atividades, que não devem ser listadas;
-9. Vá para lista de Taxonomias, disponível no menu lateral do Repositório;
+9. Vá para lista de Coleções, disponível no menu lateral do Repositório;
+   - [x] Confira se estão inacessíveis:
+     * O botão de adicionar nova Coleção; 
+     * As coleções privadas;
+     * Os links para editar ou deletar as Coleções;
+   - [x] Confirme que estão disponíveis:
+     * As abas de Coleções Publicados, Rascunho e Lixeira;
+     * As opções de Ordenação e Busca textual;
+10. Vá para lista de Taxonomias, disponível no menu lateral do Repositório;
    - [x] Confira se estão inacessíveis:
      * O botão de adicionar nova Taxonomia; 
      * As taxonomias privadas;
@@ -35,11 +45,55 @@
    - [x] Confirme que estão disponíveis:
      * As abas de Taxonomias Publicados, Rascunho e Lixeira;
      * As opções de Ordenação e Busca textual;
-10. Escolha uma Taxonomia e clique nela;
+11. Escolha uma Taxonomia e clique nela;
    - [x] Confirme que a aba onde seria feita a edição da Taxonomia está sem permissão de acesso;
    - [x] Cheque se a aba que lista os termos está acessível. Porém não deve ser possível adicionar ou editar termos;
-11. Vá para a lista de Atividades do Repositório, disponível no menu lateral do Repositório;
+12. Vá para a lista de Atividades do Repositório, disponível no menu lateral do Repositório;
    - [x] Confirme que as Atividades não são listadas da aba Atividades;
    - [x] Confirme que a aba Processos não contém nenhum processo em execução (não por falta de permissão, mas porque este usuário, recém criado, não possui nenhum processo);             
+
+## Adicionando todas as permissões para uma função de usuário
+
+1. Logado como administrador, acesse o **painel de controle do WordPress** onde a sua versão de testes do plugin Tainacan está instalada e ativada (geralmente, o endereço do seu site + `/wp-admin`);
+2. Na barra lateral esquerda, clique em **Funções de Usuários** na seção **Tainacan**;
+3. Na lista de papéis, procure pelo papel "Assinante", ou qualquer outro que queira atribuir/remover permissões;
+4. Passando o mouse em cima do função, selecione a opção "Editar";
+5. Na tela de edição da função, marque a opção `Gerenciar Tainacan`;
+   - [x] Observe que todas demais permissões foram marcadas e não podem ser alteradas já que estão sobre influência da permissão maior.
+4. Clique em `Salvar Alterações`;
+5. Faça *log-off*, clicando em `Sair` no canto do menu de usuário do canto superior direito;
+6. Entre com um usuário de testes criado que possua a função de usuário alterada no painel de controle do Wordpress;
+7. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
+   - [x] Confirme que todos os elementos e funções do Tainacan estão acessíveis desta vez;
+8. Volte para o painel de controle do WordPress, clicando na logo do WordPress no canto superior direito;
+9. Faça *log-off*, clicando em `Sair` no canto do menu de usuário do canto superior direito;
+
+## Adicionando algumas permissões para uma função de usuário
+
+1. Entre como administrador novamente e acesse mais uma vez a tela de configuração da função de usuário escolhida (*por exemplo, Assinante*);
+2. Na tela de edição da função, desmarque a opção `Gerenciar Tainacan`;
+  - [x] Observe que as permissões foram todas desmarcadas e agora podem ser alteradas.
+3. Troque para a aba "Coleções";
+4. Com o seletor marcado em `Todas as Coleções`, ative as seguintes permissões:
+    1. Gerenciar Metadados;
+    2. Deletar Filtros;
+    3. Ver Itens Privados;
+5. Troque o seletor para alguma coleção específica;
+  - [x] Note que algumas permissões já estão marcadas e não podem ser alteradas, aquelas marcadas no nível de `Todas as coleções`;
+6. Nesta coleção, marque as seguintes permissões:
+    1. Editar Itens em Massa;
+    2. Editar Itens;
+    3. Deletar Itens de Outros;
+7. Clique em `Salvar Alterações`;
+8. Faça *log-off*, clicando em `Sair` no canto do menu de usuário do canto superior direito;
+9. Entre com um usuário de testes criado que possua a função de usuário alterada no painel de controle do Wordpress;
+10. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
+   - [x] Já na página inicial do plugin, verifique se estão inacessíveis:
+     * Os links de Metadados e Filtros Nível Repositório;
+     * Os links de Atividades Nível Coleção;
+   - [x] Veja por outro lado se estão disponíveis:
+     * Os links de Taxonomias, Atividades, Importadores e Exportadores nível repositório;
+     * Os links para a Lista de Coleções e para as Listas de Itens e Metadados de cada coleção;       
+
 
 ?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
