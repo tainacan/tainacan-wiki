@@ -6,7 +6,7 @@ Há diversos importadores para o Tainacan, incluindo alguns que podem ser criado
 
 1. Vá para a página de Importadores, acessível pelo menu do repositório;
 2. Selecione o Importador CSV;
-3. Escolha um arquivo CSV para testar. É importante que seu arquivo cubra alguns dos casos mais comuns da importação, como as [colunas especiais](/pt-br/importers#colunas-especiais). Se você não tiver um em mãos, pode utilizar algum [destes aqui](http://oficinas.tainacan.org/ ':ignore');
+3. Escolha um arquivo CSV para testar. É importante que seu arquivo cubra alguns dos casos mais comuns da importação. Se você não tiver um em mãos, pode utilizar algum [destes aqui](http://oficinas.tainacan.org/ ':ignore');
 4. Preencha o formulário, selecionando uma Coleção destino e subindo o arquivo CSV;
 5. Clique em `Próximo`;
    - [x] Ao entrar na Tela de Mapeamento, verifique se as coluna foram devidamente separadas de acordo com seu separador configurado na página anterior.
@@ -50,4 +50,4 @@ Há diversos importadores para o Tainacan, incluindo alguns que podem ser criado
    - [x] Ao concluir a execução do importador, verifique os logs na página de processos para ver se não houve nenhum alerta;
    - [x] Confirme que os tipos de metadados foram criados corretamente, incluindo suas configurações como "Permitir valores múltiplos", "Status" e "Permitir inserção de novos termos";
 
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).

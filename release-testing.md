@@ -17,7 +17,7 @@ Este fluxo pretende estabelecer procedimentos para que novas versões do plugin 
 
 Este roteiro é destinado para a realização de testes que verifiquem o funcionamento adequado das funções e a realização de processos pelo Plugin do Tainacan.
 
-> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [e-mail da comunidade](tainacan@lists.riseup.net) do Tainacan.
+> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net) do Tainacan.
 
 1. Acesse o endereço onde a versão *RC* do Tainacan está instalada;
 2. Acesse o **painel de controle do WordPress**;
@@ -110,4 +110,4 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 
 ?> _TODO_ Implementar este roteiro de testes
 
-> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [e-mail da comunidade](tainacan@lists.riseup.net) do Tainacan.
+> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net) do Tainacan.
