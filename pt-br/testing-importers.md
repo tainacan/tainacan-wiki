@@ -15,7 +15,7 @@ Há diversos importadores para o Tainacan, incluindo alguns que podem ser criado
    - [x] Confirme que, cada vez que um metadado é associado à uma coluna do mapeador, ele deixa de estar disponível nos outros seletores;  
 7. Clique em `Executar` para rodar o importador;
    - [x] Confirme que, se você não tiver mapeado nenhuma coluna para o "Metadado principal Título" da Coleção, você receberá um alerta sugerindo que isso seja feito;
-   - [x] Ao concluir a execução do importador, verifique os logs na página de processos para ver se não houve nenhum alerta;
+   - [x] Ao concluir a execução do importador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta;
    - [x] Confirme que os tipos de metadados foram mapeados corretamente, que as imagens foram carregadas e que novos termos foram criados caso haja metadados de Taxonomias que estavam vazias;
 
 ## Substituindo Itens
@@ -32,7 +32,7 @@ Há diversos importadores para o Tainacan, incluindo alguns que podem ser criado
 10. Na tela de Mapeamento dos Metadados, mantenha as mesmas colunas que foram usadas para os metadados na importação anterior;
    - [x] Cheque se o campo especial `special_item_id` foi detectado. 
 11. Clique em `Executar` para rodar o importador;
-    - [x] Ao concluir a execução do importador, verifique os logs na página de processos para ver se não houve nenhum alerta;
+    - [x] Ao concluir a execução do importador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta;
     - [x] Confirme que os itens que tiveram linhas alteradas foram atualizados no processo de importação;
 
 ## Criando Metadados no Mapeamento
@@ -47,7 +47,7 @@ Há diversos importadores para o Tainacan, incluindo alguns que podem ser criado
    - [x] Verifique, ao concluir o processo de criar o metadado que o mesmo está disponível nos seletores do mapeamento;.
 8. Escolha um metadado para mapear usando o seu metadado recém-criado, ao invés de permitir que o importador crie;
 9. Clique em `Executar` para rodar o importador;
-   - [x] Ao concluir a execução do importador, verifique os logs na página de processos para ver se não houve nenhum alerta;
+   - [x] Ao concluir a execução do importador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta;
    - [x] Confirme que os tipos de metadados foram criados corretamente, incluindo suas configurações como "Permitir valores múltiplos", "Status" e "Permitir inserção de novos termos";
 
 ?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
