@@ -93,7 +93,21 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
      * Os links de Atividades Nível Coleção;
    - [x] Veja por outro lado se estão disponíveis:
      * Os links de Taxonomias, Atividades, Importadores e Exportadores nível repositório;
-     * Os links para a Lista de Coleções e para as Listas de Itens e Metadados de cada coleção;       
+     * Os links para a Lista de Coleções e para as Listas de Itens e Metadados de cada coleção;
+11. 
+  
+  ?> _TODO_ Continuar a descrever o teste.       
+
+## Configurando permissões específicas em uma coleção
+
+1. Entre como administrador no painel de controle do Wordpress;
+2. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
+3. Entre na página da coleção que desejar configurar;
+4. Acesse a página de Permissões Relacionadas à Coleção, na barra de menu da coleção;
+5. Selecione alguma permissão para alterar, por exemplo "Editar itens em massa";
+6. Retire ou adicione esta permissão de alguma função de usuário;
+7. Faça *log-off* e entre com algum usuário da função alterada;
+  - [x] Verifique se a permissão foi modificada;
 
 
 ?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
