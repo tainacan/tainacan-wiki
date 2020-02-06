@@ -109,6 +109,17 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
      * As opções de controle da Busca como Ordenação e Modos de Visualização;
      * A opção de selecionar e editar itens em massa;
      * Os link no menu da coleção para Metadados da Coleção;
+12. Entre em algum dos itens desta coleção;
+   - [x] Confirme que há link para editar o item;
+   - [x] Veja se todos os dados do item estão visíveis, exceto pelas Atividades, que não devem ser listadas;
+13. Clique em "Editar Item";
+   - [x] Confirme que não há link para deletar o item, já que este item foi criado por outro usuário;
+14. Voltando à Lista de Itens, clique em Adicionar Novo para criar um novo Item;
+15. Preecha o item como desejar;
+16. Ao concluir, volte para a Lista de Itens;
+  - [x] Veja que o item que você acabou de criar pode, além de ser editado, ser deletado;
+
+  
 
   ?> _TODO_ Continuar a descrever o teste.       
 
