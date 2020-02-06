@@ -116,9 +116,11 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
    - [x] Confirme que não há link para deletar o item, já que este item foi criado por outro usuário;
 14. Voltando à Lista de Itens, clique em Adicionar Novo para criar um novo Item;
 15. Preecha o item como desejar;
+  - [x] Note que, por não ter a permissão "Publicar Items" você só pode salvar o novo item como rascunho;
 16. Ao concluir, volte para a Lista de Itens;
-  - [x] Veja que o item que você acabou de criar pode, além de ser editado, ser deletado;
-
+  - [x] Veja que o item que você acabou de criar está na aba rascunho e pode, além de ser editado, ser deletado;
+17. Por fim, entre na tela de Metadados da Coleção;
+  - [x] Confirme que é possível ordenar e editar os metados, porém não é possível deletá-los;
   
 
   ?> _TODO_ Continuar a descrever o teste.       
