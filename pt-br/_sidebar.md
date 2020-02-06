@@ -37,7 +37,16 @@
 * Comunidade & Outros
     * [:link:Lista da Comunidade](https://lists.riseup.net/www/subscribe/tainacan ':ignore')
     * [Colabore com esta Wiki](/pt-br/CONTRIBUTING "Como contribuir com a Wiki do Tainacan - Tainacan Wiki")
-    * [Teste de Versões](/pt-br/release-testing.md "Como realizar testes de versões do Tainacan - Tainacan Wiki") 
+    * [Teste de Versões](/pt-br/release-testing.md "Como realizar testes de versões do Tainacan - Tainacan Wiki")
+        * [Coleções](/pt-br/testing-collections.md)
+        * [Taxonomias](/pt-br/testing-taxonomies.md)
+        * [Metadados](/pt-br/testing-metadata.md)
+        * [Filtros](/pt-br/testing-filters.md)
+        * [Itens](/pt-br/testing-items.md)
+        * [Busca Facetada](/pt-br/testing-search.md)
+        * [Importadores](/pt-br/testing-importers.md)
+        * [Exportadores](/pt-br/testing-exporters.md)
+        * [Permissões](/pt-br/testing-capabilities.md) 
     * [Processamento de Dados e Acervos](/pt-br/data-processing "Um pouco sobre Processamento de Dados e Acervos - Tainacan Wiki")
     * [:link:OpenRefine](http://openrefine.org/ ':ignore')
  
