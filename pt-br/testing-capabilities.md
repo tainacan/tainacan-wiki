@@ -21,6 +21,7 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
      * O botão de adicionar novo Item; 
      * Os items privados;
      * Os links para editar ou deletar os itens;
+     * A opção de selecionar e editar itens em massa;
      * Os links no menu da coleção para Metadados, Atividades, Filtros e Permissões da Coleção;
    - [x] Confirme que estão disponíveis:
      * Os filtros ao lado da lista de itens;
@@ -83,19 +84,32 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
 6. Nesta coleção, marque as seguintes permissões:
     1. Editar Itens em Massa;
     2. Editar Itens;
-    3. Deletar Itens de Outros;
+    3. Editar Itens Publicados;
+    4. Editar Itens de Outros;
+    5. Deletar Itens;
 7. Clique em `Salvar Alterações`;
 8. Faça *log-off*, clicando em `Sair` no canto do menu de usuário do canto superior direito;
 9. Entre com um usuário de testes criado que possua a função de usuário alterada no painel de controle do Wordpress;
 10. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
    - [x] Já na página inicial do plugin, verifique se estão inacessíveis:
      * Os links de Metadados e Filtros Nível Repositório;
-     * Os links de Atividades Nível Coleção;
+     * Os links de Atividades e Filtros Nível Coleção;
    - [x] Veja por outro lado se estão disponíveis:
      * Os links de Taxonomias, Atividades, Importadores e Exportadores nível repositório;
      * Os links para a Lista de Coleções e para as Listas de Itens e Metadados de cada coleção;
-11. 
-  
+11. Entre na Coleção definida no passo **5**;
+   - [x] Confira se estão inacessíveis:
+     * Os links para deletar os itens;
+     * Os links no menu da coleção para Atividades, Filtros e Permissões da Coleção;
+   - [x] Confirme que estão disponíveis:
+     * O botão de adicionar novo Item; 
+     * Os links para editar os itens;
+     * Os filtros ao lado da lista de itens;
+     * As abas de Itens Publicados, Privados, Rascunho e Lixeira;
+     * As opções de controle da Busca como Ordenação e Modos de Visualização;
+     * A opção de selecionar e editar itens em massa;
+     * Os link no menu da coleção para Metadados da Coleção;
+
   ?> _TODO_ Continuar a descrever o teste.       
 
 ## Configurando permissões específicas em uma coleção
