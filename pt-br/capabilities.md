@@ -58,7 +58,7 @@ Permissões nível coleção existem em duas instâncias: a **geral**, que afeta
 |-----------------------------------|---------------|
 | Gerenciar Coleção					| Configurar a coleção, além de gerenciar todos os seus itens, metadados e filtros |
 | Gerenciar Permissões de Usuários	| Gerenciar funções de usuários e permissões no que diz respeito à esta coleção |
-| Editar Itens em Massa 			| Realizar operações de edição ou adição em massa em itens desta coleção |
+| Editar Itens em Massa 			| Realizar operações de edição ou adição em massa em itens desta coleção. Note que sem outras permissões como "Editar item" ou "Editar Itens de Outros", esta permissão não terá efeito. |
 
 ### Metadados
 | Nome					 | Descrição	|
