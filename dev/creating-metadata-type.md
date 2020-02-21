@@ -1,4 +1,4 @@
-# Creating a custom Metadata type 
+# Creating a Custom Metadata Type 
 
 Metadata types are the objects that represent the types of metadata that can be used. Examples of Metadata Types are "Text", "Long text", "Date", "Relationship with another item", etc. Each metadata type object has its settings and web component that will be used to render the interface. 
 
@@ -27,18 +27,25 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 add_action("tainacan-register-metadata-type", "register_metadata_type");
 
 function register_metadata_type($helper) {
-	require_once( plugin_dir_path(__FILE__) . 'metadata_type/metadata-type.php' );
+    
+    // Registering the Class
+    require_once( plugin_dir_path(__FILE__) . 'metadata_type/metadata-type.php' );
 
+    // Registering the Vue Component
 	$handle = 'custom-metadata-type';
 	$class_name = 'Custom_Metadata_Type';
 	$metadata_script_url = plugin_dir_url(__FILE__) . 'metadata_type/metadata-type.js';
-
-	$helper->register_metadata_type($handle, $class_name, $metadata_script_url);
+    $helper->register_metadata_type($handle, $class_name, $metadata_script_url);
+    
+    // Registering the Vue Component for the Metadata Options Form
+    $handle2 = 'custom-metadata-type-form';
+	$component_script_url = plugin_dir_url(__FILE__) . 'metadata_type/metadata-type-form.js';
+	$helper->register_vuejs_component($handle2, $component_script_url);
 }
 ?>
 ```
 
-You can see that we have a folder named "metadata_type" to keep the class and component separate, which is up to you as you prefer to organize the plugin file structure.
+You can see that we have a folder named "metadata_type" to keep the class and component separate, which is up to you as you prefer to organize the plugin file structure. Now we'll understand better what each of the registered parts means.
 
 ## Creating the PHP Class
 
@@ -246,7 +253,7 @@ The `methods` here simply delegate the blur and input events to the default pare
 
 That might not be your case, but if your metadata component has registered a Metadata Form Component with extra options then you can access them via the `this.metadatum.metadatum.metadata_type_options` object. In the code above, we access this value with a  Computed function.
 
-Finally, in this example, a custom component from [Buefy](https://buefy.github.io/), `b-input` is used. We recommend checking it out, as this library is already loaded on Tainacan, and most of its classes are styled to match our default style. But if you want to use another Vue.js library or component, you can check the session of [Registering Custom Vue JS](#) for understanding how to use it.
+Finally, in this example, a custom component from [Buefy](https://buefy.github.io/), `b-input` is used. We recommend checking it out, as this library is already loaded on Tainacan, and most of its classes are styled to match our default style. But if you want to use another Vue.js library or component, you can check the session of [Registering Custom Vue JS](/dev/registering-custom-vue-components.md) for understanding how to use it, but the process is much alike what we have done to register the Metadata Form Component.
 
 ## Creating Vue Web Component for the Form Metadata
 
