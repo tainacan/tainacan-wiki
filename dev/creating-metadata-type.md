@@ -1,6 +1,6 @@
 # Creating a custom Metadata type 
 
-Metadata types are the objects that represent the types of metadata that can be used. Examples of Metadata Types are "Text", "Long text", "Date", "Relationship with another item", etc. Each metadata type object have its own settings and web component that will be used to render the interface. 
+Metadata types are the objects that represent the types of metadata that can be used. Examples of Metadata Types are "Text", "Long text", "Date", "Relationship with another item", etc. Each metadata type object has its settings and web component that will be used to render the interface. 
 
 Developers can create custom Metadata Types via plugins starting from Tainacan 0.16. This article shows how to do this, divided in the following sections:
 
@@ -10,7 +10,7 @@ Developers can create custom Metadata Types via plugins starting from Tainacan 0
 
 ## Registering your Metadata Type 
 
-First of all, you have to register your Metadata Type class. You do this by calling the `register_metadata_type` method of the `Metadata Type Helper`, avaialable if the Tainacan plugin is installed. For the simplicity of this article, let us suppose that you are creating a custom version of the existing *Numeric* metadata type, which you'll call "Custom Metadata Type". You might have a main plugin file, named `custom-metadata-type.php` with the following content:
+First of all, you have to register your Metadata Type class. You do this by calling the `register_metadata_type` method of the `Metadata Type Helper`, available if the Tainacan plugin is installed. For the simplicity of this article, let us suppose that you are creating a custom version of the existing *Numeric* Metadata Type, which you'll call "Custom Metadata Type". You might have the main plugin file, named `custom-metadata-type.php` with the following content:
 
 ```php
 <?php
@@ -42,7 +42,7 @@ You can see that we have a folder named "metadata_type" to keep the class and co
 
 ## Creating the PHP Class
 
-Now you have to create the class you just register, and use its constructor to set the basic features of you Metadata Type. Lets go slowly by checking the content of `metadata_type/metadata-type.php`:
+Now you have to create the class you just registered, and use its constructor to set the basic features of your Metadata Type. Let's go slowly by checking the content of `metadata_type/metadata-type.php`:
 
 ```php
 <?php
@@ -87,7 +87,7 @@ These are the methods you have to call to set up your Metadata Type:
 * **set_description(string $description)** - Sets the description of the Metadata type. This is the text the user will see in the front end and should be internationalized with your text domain (`custom-metadata-type`).
 * **set_primitive(string $type)** - Inform what is the raw type of data that will be stored. This is used mainly by Filter Types to decide what kind of Filters will be available for each Metadata Type. Current used primitive types are: `string`, `date`, `float`, `item`, `term`, and `long_string` (you can create new ones if you want, just note that not all Filter Types may be available to them).
 * **set_component(string $component_name)** - The name of the vue component that will be created on the next session. We recommend adding the prefix *tainacan-metadata-type-* to avoid collisions. 
-* **set_preview_template(string $template)** - An HTML preview of how the component will look like. This is seen by users inside the tooltip "Metadata Type Preview", when hovering by the Metadata Type button. If you can use [Bulma](https://bulma.io ':ignore') and [Buefy](https://buefy.org/ ':ignore') classes here.  This parameter is not obligatory but can improve user experience.
+* **set_preview_template(string $template)** - An HTML preview of how the component will look like. This is seen by users inside the tooltip "Metadata Type Preview" when hovering by the Metadata Type button. If you can use [Bulma](https://bulma.io ':ignore') and [Buefy](https://buefy.org/ ':ignore') classes here.  This parameter is not obligatory but can improve user experience.
 
 The last two (**set_form_component** and **set_default_options**) are only needed as we describe bellow:
 
@@ -96,7 +96,7 @@ The last two (**set_form_component** and **set_default_options**) are only neede
 
 When you register a new Metadata Type, it will be automatically added as an option in the Metadata configuration screen. It will also have the default metadata configuration form, where you set whether the metadata is *required* or not, accept *multiple values* or not, and so on.
 
-However, your metadata type may have specific options you want to give to the users. For example: In the Selectbox Metadata type, you can set what will be the options in your Selectbox. In the Numeric Metadata Type, we ant to allow users to decide the *step* for increasing values.
+However, your metadata type may have specific options you want to give to the users. For example: In the Select Metadata type, you can set what will be the options in your Select. In the Numeric Metadata Type, we ant to allow users to decide the *step* for increasing values.
 
 To do this, you have to declare what are the options your metadata type has, and prepare another web component to be rendered in the metadata form:
 
@@ -148,83 +148,214 @@ class Custom_Metadata_Type extends \Tainacan\Metadata_Types\Metadata_Type {
 
 ### Additional Methods
 
-There are a few other methods you can implement that can change the items interact with metadata depending on the metadata type:
+There are a few other methods you can implement that can change how the items interact with metadata depending on the metadata type:
 
 #### **validate( Item_Metadata_Entity $item_metadata)**
 
 This method will override the validation of the Item Metadata Entity, which means every time Tainacan saves a value for metadata of this type, it will call this method. 
 
-For example, the Date Metadata Type overrides [this method](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/date/class-tainacan-date.php#L43 ':ignore') to make sure the date is in the correct format. Notice that it takes care of checking whether the value is a string (single value) or an array (multiple values).
+For example, the Date Metadata Type overrides [this method](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/date/class-tainacan-date.php#L30 ':ignore') to make sure the date is in the correct format. Notice that it takes care of checking whether the value is a string (single value) or an array (multiple values).
 
 
 #### **get_value_as_html( Item_Metadata_Entity $item_metadata)**
 
-This method will change the way value is converted to HTML for metadata of this metadata type. For example, Taxonomy and Relationship Metadata Type use [this]() and [this](), respectivelly, to add links to the related term/item in the HTML output.
+This method will change the way value is converted to HTML for metadata of this metadata type. For example, Taxonomy and Relationship Metadata Type use [this](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php#L197 ':ignore') and [this](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php#L111 ':ignore'), respectivelly, to add links to the related term/item in the HTML output.
 
 ## Creating Vue Web Component
 
-> TODO: explain how to load the web component code.
-
 The Vue component is the chunk that will be rendered inside the Item Edition form so the user can edit its metadata of your custom type. 
 
-As in any Vue component, you should provide a `template` with its HTML content, a `script` with its logic and optionally a `style`. Below are the template and script for the Selectbox metadata type:
+Our [Vue.js](vuejs.org/ ':ignore') components use the Options API, which means they are defined by an object with options, usually including:
 
-```html
-<template>
-    <b-input
-            :disabled="disabled"
-            :class="{'has-content': inputValue !== undefined && inputValue !== ''}"
-            :id="id"
-            type="number"
-            :value="inputValue"
-            step="0.01"
-            @blur="onBlur"
-            @change="onBlur"
-            @input="onInput($event)"/>
-</template>
-```
+* `template` - With its HTML content with vue notation for binding data and events;
+* `data` - A function that returns an object with your data, or local variables;
+* `props` - The variables that will be passed from the [Tainacan Form Item](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/components/metadata-types/tainacan-form-item.vue ':ignore') parent component. We'll learn more about them below;
+* `methods` - The array of functions that are evoked inside this component;
+* `computed` - Array of functions that return local data that are derived from some processing of other variables;
+* `watch` - Array of functions that are listening to some variable change to perform some update.
+* And others such as lifecycle hooks, which you can check in the [Vue.js](vuejs.org/ ':ignore') documentation.
+
+This object should be in that path referenced in our [registering process](#registering-your-metadata-type), so `metadata_type/metadata-type.js` in our Custom Metadata Type example, which is a copy of the Numeric Metadata Type:
 
 ```javascript
-<script>
-    export default {
-        created(){
-            if( this.value )
-                this.inputValue = this.value;
-        },
-        data() {
-            return {
-                inputValue: ''
-            }
-        },
-        props: {
-            id: '',
-            metadatum: {
-                type: Object
-            },
-            value: [String, Number, Array],
-            disabled: false,
-        },
-        methods: {
-            onBlur() {
-                this.$emit('blur');
-            },
-            onInput($event) {
-                this.inputValue = $event;
-                this.$emit('input', this.inputValue);
-            }
+var TainacanExtraVueComponents = TainacanExtraVueComponents ? TainacanExtraVueComponents : {};
+
+const TainacanMetadataCustomType = {
+	name: "TainacanMetadataCustomType",
+	props: {
+        metadatum: Object,
+        value: [String, Number, Array],
+        disabled: false,
+    },
+    computed: {
+        getStep: function() {
+            if (this.metadatum && this.metadatum.metadatum.metadata_type_options && this.metadatum.metadatum.metadata_type_options.step)
+                return this.metadatum.metadatum.metadata_type_options.step;
+            else
+                return 0.01;
         }
-    }
-</script>
+    },
+    methods: {
+        onInput: function(value) {
+            this.$emit('input', value);
+        },
+        onBlur: function() {
+            this.$emit('blur');
+        }
+    },
+	template: `
+	<b-input
+            :disabled="disabled"
+            :id="metadatum.metadatum.metadata_type_object.component + '-' + metadatum.metadatum.slug"
+            :value="value"
+            @input="onInput($event)"
+            @blur="onBlur"
+            type="number"
+            lang="en"
+            :step="getStep"/>
+	`
+}
+
+TainacanExtraVueComponents["tainacan-metadata-type-custom"] = TainacanMetadataCustomType;
 ```
 
-Notice first the "props" on the component. They are passed to every metadata:
-- `metadatum` is the metadatum object itself, which also contains the `metadata_type_options`;
-- `value` is the value used for binding whatever is the content of this metadatum;
-- `id` is the metadatum id;
+The first and last lines are an important step for registering custom components to the plugin JS bundle. 
+
+!> You MUST keep the `TainacanExtraVueComponents` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
+
+The `slug` passed to the array in the last line is the same used by the *set_component* method previously in our [registration process](#registering-your-metadata-type).
+
+### Understanding the component logic
+
+#### Props: what the component receives from the parent component.
+
+Notice first the `props` on the component. They are passed to every metadata:
+- `metadatum` is the metadatum object itself, which contains important data as the `id` and the `metadata_type_options`;
+- `value` is the value used for binding whatever is the content value of this metadatum;
 - `disabled` is a boolean handled by the Item's form, which can be used to disable any inner component in case the options are not loaded and other situations that might be desired;
 
-The "data" here has only a copy of the input value, passed during the `created()` lifecycle. Props are usually not to be modified so we use this as an internal variable.
+Prop's values are not be modified by the component. If you want to perform changes to some local data before sending it to the API, you should probably use the `data` component option with a copy of the input value, passed during the `created()` lifecycle.
 
-The "methods" here simply delegate the blur and input events to the default parent component, which is responsible for passing these values to the Item's form. **Attention: every metadatum component must emit an input value, passing the updated value that they received from the props**.
+#### Methods: where we send values back to the parent component
+.
+The `methods` here simply delegate the blur and input events to the default parent component, which is responsible for passing these values to the Item's form. 
+
+?> Every metadatum component must emit an input value, passing the updated value that they received from the props.
  
-In the above example, a custom component from [Buefy](https://buefy.github.io/), `b-input` is used. You can use any javascript available from your plugin here, or just try out theirs, as it's already loaded on Tainacan's plugin. The styling also comes from this library, inheriting [Bulma](http://bulma.io/), and it's recommended the use of their classes as most are override by Tainacan stylesheets. 
+#### Getting the Metatada Type Options on a Computed function
+
+That might not be your case, but if your metadata component has registered a Metadata Form Component with extra options then you can access them via the `this.metadatum.metadatum.metadata_type_options` object. In the code above, we access this value with a  Computed function.
+
+Finally, in this example, a custom component from [Buefy](https://buefy.github.io/), `b-input` is used. We recommend checking it out, as this library is already loaded on Tainacan, and most of its classes are styled to match our default style. But if you want to use another Vue.js library or component, you can check the session of [Registering Custom Vue JS](#) for understanding how to use it.
+
+## Creating Vue Web Component for the Form Metadata
+
+Registering the Metadata Form Component follows similar steps. You need to take care of using the path registered before, in our case `metadata_type/metadata-form-type.js` and take care of using the same slug from the registration step: `tainacan-metadata-form-type-custom`. Here is our considerably longer file:
+
+```js
+var TainacanExtraVueComponents = TainacanExtraVueComponents ? TainacanExtraVueComponents : {};
+
+const TainacanMetadataFormCustomType = {
+	name: "TainacanMetadataFormTypeCustom",
+	props: {
+        value: [String, Number, Array]
+    },
+    data: function() {
+        return {
+            step: [Number, String],
+            showEditStepOptions: false
+        }
+    },
+    created: function() {
+        this.step = this.value && this.value.step ? this.value.step : 1;
+    },
+    methods: {
+        onUpdateStep: function(value) {
+            this.$emit('input', { step: value });
+        },
+    },
+	template: `
+	<div>
+        <b-field :addons="false">
+            <label class="label is-inline">
+                {{ $i18n.getHelperTitle('tainacan-filter-numeric', 'step') }}<span>&nbsp;*&nbsp;</span>
+                <help-button
+                        :title="$i18n.getHelperTitle('tainacan-filter-numeric', 'step')"
+                        :message="$i18n.getHelperMessage('tainacan-filter-numeric', 'step')"/>
+            </label>
+            <div
+                    v-if="!showEditStepOptions"
+                    class="is-flex">
+                <b-select
+                        name="step_options"
+                        v-model="step"
+                        @input="onUpdateStep">
+                    <option value="0.001">0.001</option>
+                    <option value="0.01">0.01</option>
+                    <option value="0.1">0.1</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="100">100</option>
+                    <option value="1000">1000</option>
+                    <option
+                            v-if="step && ![0.001,0.01,0.1,1,2,5,10,100,1000].find( function(element) { return element == step })"
+                            :value="step">
+                        {{ step }}</option>
+                </b-select>
+                <button
+                        class="button is-white is-pulled-right"
+                        :aria-label="$i18n.get('edit')"
+                        @click.prevent="showEditStepOptions = true">
+                    <span 
+                            v-tooltip="{
+                                content: $i18n.get('edit'),
+                                autoHide: true,
+                                placement: 'bottom'
+                            }"
+                            class="icon">
+                        <i class="tainacan-icon tainacan-icon-18px tainacan-icon-edit has-text-secondary"/>
+                    </span>
+                </button>
+            </div>
+            <div
+                    v-if="showEditStepOptions"
+                    class="is-flex">
+                <b-input
+                        name="max_options"
+                        v-model="step"
+                        @input="onUpdateStep"
+                        type="number"
+                        step="1" />
+                <button
+                        @click.prevent="showEditStepOptions = false"
+                        class="button is-white is-pulled-right">
+                    <span 
+                            v-tooltip="{
+                                content: $i18n.get('close'),
+                                autoHide: true,
+                                placement: 'bottom'
+                            }"
+                            class="icon">
+                        <i class="tainacan-icon tainacan-icon-18px tainacan-icon-close has-text-secondary"/>
+                    </span>
+                </button>
+            </div>
+        </b-field>
+    </div>
+	`
+}
+TainacanExtraVueComponents["tainacan-metadata-form-type-custom"] = TainacanMetadataFormCustomType;
+```
+
+Some observation here:
+* The form components always receive a `value` prop from its parent, that is an object containing any option registered on the Metadata Type Class;
+* You don't need to wrap your template with a `<form>` tag, as the parent component of this will be the default Metadata Edition Form;
+* In the example above, we store a local copy of the `value.step`, obtained on the `created()` lifecycle. That is because we want to change the value internally and also emit the updated version to the parent form. Notice, when `emit()` is performed, that the value goes inside an object, the same way that it was received from the parent.
+
+## Wrapping up
+
+Creating your custom Metadata Type for Tainacan requires following some *naming conventions* and understanding a bit of the structure existing on the plugin code. We here summarized how to [Register](#registering-your-metadata-type), create the [Class](#creating-the-php-class) and the [Custom Vue Components](#creating-vue-web-component) related to it. But you can learn a lot more by studying the [source code of some more complex examples](https://github.com/tainacan/tainacan/tree/develop/src/views/admin/components/metadata-types ':ignore'). Feel free to reach us at the GitHub repo or at the [community mailing list](https://lists.riseup.net/www/subscribe/tainacan ':ignore')  :wink:
+
+> Oh, and BTW. Are you ready to also create a [Custom Filter Type](/dev/creating-filters-type) for your new Metadata Type?
