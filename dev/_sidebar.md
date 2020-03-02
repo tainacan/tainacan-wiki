@@ -18,7 +18,7 @@
 * Plugin Extension	
 	* [Creating a Metadata Type](/dev/creating-metadata-type.md "How to Create a new Metadata Type - Tainacan Wiki")
 	* [Creating a Filter Type](/dev/creating-filters-type.md "How to Create a new Filters Type - Tainacan Wiki")
-	* [Registering New Vue Components](/dev/registegin-custom-vue-components.md "How to register new Vue Components to use in your plugins - Tainacan Wiki")
+	* [Registering New Vue Components](/dev/registering-custom-vue-components.md "How to register new Vue Components to use in your plugins - Tainacan Wiki")
 	* [The Vue Items List Component](/dev/the-vue-items-list-component.md "The Vue Items List Component rendered by Tainacan - Tainacan Wiki") 	
 * Theme development and extension 
     * [Creating Compatible Themes](/dev/creating-compatible-themes.md "How to create themes fully compatible with Tainacan - Tainacan Wiki")
