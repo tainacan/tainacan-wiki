@@ -185,7 +185,7 @@ Our [Vue.js](vuejs.org/ ':ignore') components use the Options API, which means t
 This object should be in that path referenced in our [registering process](#registering-your-metadata-type), so `metadata_type/metadata-type.js` in our Custom Metadata Type example, which is a copy of the Numeric Metadata Type:
 
 ```javascript
-var TainacanExtraVueComponents = TainacanExtraVueComponents ? TainacanExtraVueComponents : {};
+var window.tainacan_extra_components = typeof window.tainacan_extra_components != "undefined" ? window.tainacan_extra_components : {};
 
 const TainacanMetadataCustomType = {
 	name: "TainacanMetadataCustomType",
@@ -223,12 +223,12 @@ const TainacanMetadataCustomType = {
 	`
 }
 
-TainacanExtraVueComponents["tainacan-metadata-type-custom"] = TainacanMetadataCustomType;
+window.tainacan_extra_components["tainacan-metadata-type-custom"] = TainacanMetadataCustomType;
 ```
 
 The first and last lines are an important step for registering custom components to the plugin JS bundle. 
 
-!> You MUST keep the `TainacanExtraVueComponents` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
+!> You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
 
 The `slug` passed to the array in the last line is the same used by the *set_component* method previously in our [registration process](#registering-your-metadata-type).
 
@@ -260,7 +260,7 @@ Finally, in this example, a custom component from [Buefy](https://buefy.github.i
 Registering the Metadata Form Component follows similar steps. You need to take care of using the path registered before, in our case `metadata_type/metadata-form-type.js` and take care of using the same slug from the registration step: `tainacan-metadata-form-type-custom`. Here is our considerably longer file:
 
 ```js
-var TainacanExtraVueComponents = TainacanExtraVueComponents ? TainacanExtraVueComponents : {};
+var window.tainacan_extra_components = typeof window.tainacan_extra_components != "undefined" ? window.tainacan_extra_components : {};
 
 const TainacanMetadataFormCustomType = {
 	name: "TainacanMetadataFormTypeCustom",
@@ -353,7 +353,7 @@ const TainacanMetadataFormCustomType = {
     </div>
 	`
 }
-TainacanExtraVueComponents["tainacan-metadata-form-type-custom"] = TainacanMetadataFormCustomType;
+window.tainacan_extra_components["tainacan-metadata-form-type-custom"] = TainacanMetadataFormCustomType;
 ```
 
 Some observation here:

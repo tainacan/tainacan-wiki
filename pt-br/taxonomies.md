@@ -1,7 +1,7 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Taxonomias" 
-		src="/_assets/images/icon_taxonomies.png"
+		src="_assets/images/icon_taxonomies.png"
 		width="42"
 		height="42">
 </div>

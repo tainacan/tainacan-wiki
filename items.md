@@ -3,7 +3,7 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Itens" 
-		src="/_assets/images/icon_items.png"
+		src="_assets/images/icon_items.png"
 		width="42"
 		height="42">
 </div>

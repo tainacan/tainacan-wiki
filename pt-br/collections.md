@@ -1,7 +1,7 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Coleções" 
-		src="/_assets/images/icon_collections.png"
+		src="_assets/images/icon_collections.png"
 		width="42"
 		height="42">
 </div>

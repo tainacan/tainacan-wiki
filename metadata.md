@@ -3,7 +3,7 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Metadados" 
-		src="/_assets/images/icon_metadata.png"
+		src="_assets/images/icon_metadata.png"
 		width="42"
 		height="42">
 </div>

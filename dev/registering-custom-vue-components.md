@@ -20,17 +20,17 @@ Every global component in our Vue.JS code is registered in the `/src/views/admin
 2. The components and plugins registrations to the global Vue instance, such as `Vue.use(VueMasonry);` and `Vue.component('tainacan-filter-numeric', FilterNumeric);`;
 3. The `new Vue(...)` instantiation, passing all the necessary settings.
 
-Because of this process, tags such as `<masonry>` or `<component is="tainacan-filter-numeric">` are understood by the Vue components across the source code and the registered components are rendered. In order register our own components, we need to *hook into* the steps 1 and 2 describred above. That is where the following routine (present on lines 73-78 `/src/views/admin/js/main.js` code and lines 46-51 of `/src/views/theme-search/theme-main.js`) comes in handy:
+Because of this process, tags such as `<masonry>` or `<component is="tainacan-filter-numeric">` are understood by the Vue components across the source code and the registered components are rendered. In order register our own components, we need to *hook into* the steps 1 and 2 described above. That is where the following routine (present on lines 73-78 `/src/views/admin/js/main.js` code and lines 46-51 of `/src/views/theme-search/theme-main.js`) comes in handy:
 
 ```javascript
-/* Registers Extra Vue Components passed to the TainacanExtraVueComponents  */
-if (typeof TainacanExtraVueComponents != "undefined") {
-    for (let [extraVueComponentName, extraVueComponentObject] of Object.entries(TainacanExtraVueComponents))
+/* Registers Extra Vue Components passed to the window.tainacan_extra_components  */
+if (typeof window.tainacan_extra_components != "undefined") {
+    for (let [extraVueComponentName, extraVueComponentObject] of Object.entries(window.tainacan_extra_components))
         Vue.component(extraVueComponentName, extraVueComponentObject);
 }
 ```
 
-You see, Vue Components can be exported as mere JS objects, containing their configuration. So here we're registering any components that are passed to this global array *TainacanExtraVueComponents*. For adding any component to this array, we have a special Helper method, available for plugin developers: the `tainacan-register-vuejs-component()`. Let's see how to use it.
+You see, Vue Components can be exported as mere JS objects, containing their configuration. So here we're registering any components that are passed to this global array *window.tainacan_extra_components*. For adding any component to this array, we have a special Helper method, available for plugin developers: the `tainacan-register-vuejs-component()`. Let's see how to use it.
 
 ## Registering your our Custom Component
 
@@ -62,8 +62,8 @@ function register_vuejs_component($helper) {
 Simple as it looks, this plugin tells Tainacan where is the JS plugin code that should be load before the plugin `main.js` or `theme-main.js` scripts. Here is the content for `some-tainacan-plugin-component.js`:
 
 ```javascript
-// Getting existing or creating the TainacanExtraVueComponents object
-var TainacanExtraVueComponents = TainacanExtraVueComponents ? TainacanExtraVueComponents : {};
+// Getting existing or creating the window.tainacan_extra_components object
+var window.tainacan_extra_components = typeof window.tainacan_extra_components != "undefined" ? window.tainacan_extra_components : {};
 
 // Creating your own VueJS component and passing it
 const SomeTainacanPluginComponent = {
@@ -78,12 +78,12 @@ const SomeTainacanPluginComponent = {
      <!-- Here goes the template, including any components that we desire -->
 	`
 }
-TainacanExtraVueComponents["some-tainacan-plugin-component"] = SomeTainacanPluginComponent;
+window.tainacan_extra_components["some-tainacan-plugin-component"] = SomeTainacanPluginComponent;
 ```
 
 Thanks to the routine seen before the `<some-tainacan-plugin-component>` component shall be available. 
 
-!> Warning: You MUST keep the `TainacanExtraVueComponents` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
+!> Warning: You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
 
 The good news is that, as the component is registered in the same *Vue Instance* of all the Tainacan bundle, any other globally registered plugin or component will be available. That means that, inside your *SomeTainacanPluginComponent* you have access to all of [Buefy](https://buefy.org/ ':ignore') components, to plugins such as [VTooltip](https://akryum.github.io/v-tooltip/#/ ':ignore'), [VueMasonry](https://github.com/paulcollett/vue-masonry-css ':ignore') and [VueDraggable](https://github.com/SortableJS/Vue.Draggable ':ignore'). You can even use some of our utility plugins made for Tainacan, such as the [UserPrefsPlugin](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/js/utilities.js#L126 ':ignore'), which exposes methos for getting and setting user preferences ]]][UserCapabilitiesPlugin](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/js/utilities.js#L346 ':ignore'), which helps us check user capabilities.
 
@@ -92,12 +92,12 @@ The good news is that, as the component is registered in the same *Vue Instance*
 That seems good, but what if you want some third party components? The process gets a bit more complicated depending on how the plugin is available. If you can't load its content from a CDN to just `require()` it in your JS, you will need some extra work to pass it to the global array. Ideally, it would be like this:
 
 ```javascript
-// Getting existing or creating the TainacanExtraVueComponents object
-var TainacanExtraVueComponents = TainacanExtraVueComponents ? TainacanExtraVueComponents : {};
+// Getting existing or creating the window.tainacan_extra_components object
+var window.tainacan_extra_components = window.tainacan_extra_components ? window.tainacan_extra_components : {};
 
 // Importing and Passing a Third Party Component ...
 import SomeThirdPartyComponent from 'some-third-party-component';
-TainacanExtraVueComponents["some-third-party-component"] = SomeThirdPartyComponent;
+window.tainacan_extra_components["some-third-party-component"] = SomeThirdPartyComponent;
 ```
 
 But the '*some-third-party-component*' should be available before, probably thanks to a `npm install some-third-party-component`. This requires our project to have a Bundler and Package Management files. While this can be done with many different libraries, we'll use NPM as *package manager* and Webpack as *bundler*. Your project should have a **package.json** file or you can create one by calling `npm init .`. Now open it and set up some basic dependencies:
@@ -166,7 +166,7 @@ Finally, after executing `npm run build` a `/dist/some-plugin-component.bundle.j
 
 ## Wrapping up
 
-To register Vue components to the same instance of Tainacan plugin, all you have to do is pass a Vue component object to the *TainacanExtraVueComponents* global array. This can be referenced from a JS file set up in your plugin using the `tainacan-register-vuejs-component()` Helper method. For registering third party components, although, you need to handle how the import to your JS file will be bundled.
+To register Vue components to the same instance of Tainacan plugin, all you have to do is pass a Vue component object to the *window.tainacan_extra_components* global array. This can be referenced from a JS file set up in your plugin using the `tainacan-register-vuejs-component()` Helper method. For registering third party components, although, you need to handle how the import to your JS file will be bundled.
 
 You can see more examples of using this strategy by checking the documentation of:
 

@@ -1,7 +1,7 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Usuários" 
-		src="/_assets/images/icon_users.png"
+		src="_assets/images/icon_users.png"
 		width="40"
 		height="40">
 </div>
