@@ -26,17 +26,21 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Tainacan API](https://tainacan.org/api-docs/ ':ignore')
 * [Roles and Capabilities](/dev/roles-capabilities.md) 
 
-### Plugin development or extension {docsify-ignore}
-* [Creating a new Metadata Type](/dev/creating-metadata-type.md)
+### More on Plugin Development {docsify-ignore}
 * [Exporting and Exposing](/dev/exporting-and-exposing.md)
-* [How to create Exporters](/dev/exporter-flow.md)
-* [How to create Importers](/dev/importer-flow.md)
-* [How to create Exposers](/dev/exposers.md)
 * [CSV Importer](/dev/csv-importer.md)
 * [Vocabulary Importer](/dev/vocabulary-importer.md)
 * [Mapping Standards](/dev/mapping-standards.md)
 * [Repository Methods](/dev/repository-methods.md)
-* [The Vue Items List Component](/dev/the-vue-items-list-component.md) - The client-side rendered items list that provides all power to faceted search.
+
+### Plugin Extension {docsify-ignore}
+* [Creating a new Metadata Type](/dev/creating-metadata-type.md) - A guide for creating your custom Metadata Type
+* [Creating a new Filters Type](/dev/creating-filters-type.md) - A guide for creating your custom Filters Type
+* [How to create Exporters](/dev/exporter-flow.md)
+* [How to create Importers](/dev/importer-flow.md)
+* [How to create Exposers](/dev/exposers.md)
+* [Registering New Vue Components](/dev/registering-custom-vue-components.md) - Registering new Vue components that can be used by your plugin, such as metadata and filter types or extra view modes.
+* [The Vue Items List Component](/dev/the-vue-items-list-component.md) - Understanding the client-side rendered items list that provides all power to faceted search.
   
 ### Theme development or extension {docsify-ignore}
 * [Creating compatible themes](/dev/creating-compatible-themes.md) - An Introduction on how to create a theme that fully support Tainacan features

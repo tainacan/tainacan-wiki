@@ -2,7 +2,7 @@
 
 This page shows how the internal API works and how to create and fetch all kinds of entities in Tainacan: Collections, items, taxonomies, metadata, filters, terms, item metadata, and logs.
 
-It is important that you first get familiar with the [key concepts](key-concepts.md) of Tainacan. 
+It is important that you first get familiar with the [key concepts](/dev/key-concepts.md) of Tainacan. 
 
 
 ## Overview
@@ -46,12 +46,12 @@ The `fetch` method from the repositories accept the same arguments accepted by `
 
 Documentation for each repository:
 
-* [Collections](repository-collections.md)
-* [Metadata'](repository-metadata.md)
-* [Filters](repository-filters.md)
-* [Taxonomies](repository-taxonomies.md)
-* [Items](repository-items.md)
-* [Terms](repository-terms.md)
+* [Collections](/dev/repository-collections.md)
+* [Metadata'](/dev/repository-metadata.md)
+* [Filters](/dev/repository-filters.md)
+* [Taxonomies](/dev/repository-taxonomies.md)
+* [Items](/dev/repository-items.md)
+* [Terms](/dev/repository-terms.md)
 
 ## Fetching data
 
@@ -222,7 +222,7 @@ Each entity type is stored as a post type and has its own set of capabilities. F
 
 If you are familiar with WordPress Roles and capabilities and, more specifically, with custom post types capabilities, this is very easy to understand. If you are not, it's best if you first learn how WordPress handles custom post types capabilities and you will easily understand how Tainacan works with it.
 
-To see a complete list of Tainacan capabilities see [Tainacan Permissions](permissions.md).
+To see a complete list of Tainacan capabilities see [Tainacan Permissions](/dev/roles-capabilities.md).
 
 When you use WordPress custom post types, you don't need to know the exact name of the capabilities of a post type to check for them. The post type object has a property called `cap` that informs you what are the specific capabilities that the post type have for the post type actions.
 

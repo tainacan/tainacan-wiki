@@ -21,7 +21,7 @@
 
 1. Repita os passos descritos acima para alguns metadados nível repositório;
 2. Entre na página de metadados de uma coleção;
-   - [x] Verifique se os metadados foram herdados e se suas configurações foram respeitas; 
-   - [x] Verifique se é possível trocar a ordem dos mesmos no nível da coleção;
+   - [x] Verifique se os metadados foram herdados; 
+   - [x] Verifique se é possível trocar a ordem dos mesmos quando acessados na tela de configuração de metadados da coleção;
 
 ?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).

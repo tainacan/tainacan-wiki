@@ -7,10 +7,14 @@
   1. Envie uma *Imagem da Header* em pelo menos um termo de cada taxonomia;
   2. Busque preencher todos os campos, como **nome**, **descrição**, etc.
   3. Crie pelo menos um nível hierárquico em cada taxonomia (adicionando termos filhos);
-3. Vá para a lista de coleções e cheque se as coleções estão nas abas corretas de acordo com seu status;
+  4. Altere o Status de pelo menos uma taxonomia, após a sua criação;
+3. Vá para a lista de taxonomias e cheque se as mesmas estão nas abas corretas de acordo com seu status;
   - [x] Observe o tempo de carregamento da tela de *Criação de Taxonomia*, *Lista de Termos* e *Lista de Taxonomias*
   - [x] Observe o tempo de conclusão ao **salvar** cada taxonomia;
   - [x] Observe o tempo de conclusão ao **salvar** cada termo;
+4. Teste excluir uma taxonomia. Veja se há alguma alteração nas outra taxonomias ou metadados de taxonomia;
+5. Relacione pelo menos uma taxonomia e um metadado e repita as operações acima com esta taxonomia;
+6. Tente relacionar uma mesma taxonomia a dois metadados de uma mesma coleção. Isto não deve ser possível.
 
 ## A Visualização do Termo no Tema
 

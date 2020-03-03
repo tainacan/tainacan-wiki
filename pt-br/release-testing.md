@@ -39,14 +39,14 @@ Feito isto, escolha um tópico que deseja testar mais a fundo:
 
 <div style="column-count: 2; column-width: 250px;">
 
-- [x] ### [Coleções](/pt-br/testing-collections.md)
-- [x] ### [Taxonomias](/pt-br/testing-taxonomies.md)
-- [x] ### [Metadados](/pt-br/testing-metadata.md)
-- [x] ### [Filtros](/pt-br/testing-filters.md)
-- [x] ### [Itens](/pt-br/testing-items.md)
-- [x] ### [Busca Facetada](/pt-br/testing-search.md)
-- [x] ### [Importadores](/pt-br/testing-importers.md)
-- [x] ### [Exportadores](/pt-br/testing-exporters.md)
-- [x] ### [Permissões](/pt-br/testing-capabilities.md)
+* [Coleções](/pt-br/testing-collections.md)
+* [Taxonomias](/pt-br/testing-taxonomies.md)
+* [Metadados](/pt-br/testing-metadata.md)
+* [Filtros](/pt-br/testing-filters.md)
+* [Itens](/pt-br/testing-items.md)
+* [Busca Facetada](/pt-br/testing-search.md)
+* [Importadores](/pt-br/testing-importers.md)
+* [Exportadores](/pt-br/testing-exporters.md)
+* [Permissões](/pt-br/testing-capabilities.md)
 
 </div>

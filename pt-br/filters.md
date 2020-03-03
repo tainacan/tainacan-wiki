@@ -1,7 +1,7 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Filtros" 
-		src="/_assets/images/icon_filters.png"
+		src="_assets/images/icon_filters.png"
 		width="42"
 		height="42">
 </div>
