@@ -10,18 +10,19 @@
    - [x] Observe o tempo de carregamento da tela de *Criação de coleção* e *Lista de Coleções*;
    - [x] Observe o tempo de conclusão ao **concluir** ou **salvar** as coleções;
 
-## A Visualização da Coleção no Tema
+## A Visualização da Coleção no Tema e Comentários nos Itens
 
 1. Configure, os modos de visualização da coleção, marque quantos que desejar;
-2. Configure a opção de "Permitir comentários";
+2. Configure a opção de "Permitir comentários" para habilitar a configuração de comentários nos itens;
 3. Salve as mudanças clicando em `Concluir`;
 4. Acesse a Página da Coleção no tema (por padrão a lista de itens da coleção), clicando no botão em formato de olho no canto superior direito;
   - [x] Observe se todos elementos da página foram exibidos corretamente;
   - [x] Cheque se os modos habilitados estão disponíveis e se o modo marcado como padrão foi o primeiro;
-  - [x] Veja se estão permitidos comentários na página da coleção;
-4. Volte às configurações e habilite a opção "Página de capa". Escolha uma página qualquer como página de capa da coleção;
-5. Salve as mudanças clicando em `Concluir`;
-6. Acesse novamente a Página da Coleção no tema;
+5. Volte ao painel administrativo e desta vez acesse tente editar um item desta coleção:
+  - [x] Verifique que existe ou não a opção de alterar comentários na página de edição do item, de acordo com o configurado no passo *2*;
+7. Volte às configurações da coleção e habilite a opção "Página de capa". Escolha uma página qualquer como página de capa da coleção;
+8. Salve as mudanças clicando em `Concluir`;
+9. Acesse novamente a Página da Coleção no tema;
   - [x] Cheque se a página marcada foi definida como a capa página desta coleção;
 7. Volte às configurações e lembre-se de desabilitar a opção "Página de capa" caso não deseje utilizá-la. 
 
