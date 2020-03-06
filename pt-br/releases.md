@@ -14,12 +14,15 @@ Em desenvolvimento.
 
 * Metadados Compostos;
 * Sessões de Metadados;
+* Bloco de Lista de Itens (a Busca Facetada);
 * Metadados de Data com valores aproximados;
 * Novo Filtro de Autor do Item;
-* Tipo de Metadado URL 
+* Tipo de Metadado URL; 
 
 #### Melhorias
 
+* Diversas parametrizações disponíveis para desenvolvedores de Temas que desejam fazer a Lista de Itens adaptada ao seu tema;
+* Melhor acessibilidade: escala de tamanho de fonte agora deverá ser mais proporcional entre todos os elementos: inputs, ícones, rótulos, etc;
 * Scroll infinito em todos os autocompletes e entrada de etiquetas;
 * Exibir não só o nome da coleção que utiliza a Taxonomia, mas também o Metadado;
 * Atualização de imagens em anexo via importador CSV;
@@ -27,6 +30,10 @@ Em desenvolvimento.
 #### Correções
 
 * Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;
+
+#### Data Prevista
+
+* Meados de Abril
 
 ----
 
