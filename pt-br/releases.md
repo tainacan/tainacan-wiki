@@ -1,5 +1,35 @@
 # Versões
 
+Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainacan. Recomendamos, especialmente enquanto estamos em Beta, utilizar sempre a versão mais recente.
+
+## Tainacan Beta 0.16 (em desenvolvimento)
+
+### Postagem
+
+Em desenvolvimento.
+
+### Resumo da Versão (o que é esperado)
+
+#### Novidades
+
+* Metadados Compostos;
+* Sessões de Metadados;
+* Metadados de Data com valores aproximados;
+* Novo Filtro de Autor do Item;
+* Tipo de Metadado URL 
+
+#### Melhorias
+
+* Scroll infinito em todos os autocompletes e entrada de etiquetas;
+* Exibir não só o nome da coleção que utiliza a Taxonomia, mas também o Metadado;
+* Atualização de imagens em anexo via importador CSV;
+
+#### Correções
+
+* Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;
+
+----
+
 ## Tainacan Beta 0.15.1
 
 ### Postagem
