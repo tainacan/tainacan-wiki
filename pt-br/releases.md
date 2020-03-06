@@ -1,3 +1,52 @@
 # Versões
 
-?> _TODO_ Esta página ainda não foi documentada.
+## Tainacan Beta 0.15.1
+
+### Postagem
+
+[Tainacan Beta 0.15.1 – Importante Correção de Erro na Criação de Taxonomias](https://tainacan.org/blog/2020/02/20/tainacan-beta-0-15-1-importante-correcao-de-erro-na-criacao-de-taxonomias/)
+
+### Resumo da Versão
+
+#### Correção
+
+Correção de erro ao criar uma nova taxonomia, onde os metadados que a usam tinham seus status alterados para “rascunho automático”, o que modificava completamente sua visibilidade e funcionamento em geral.
+
+#### Data de Lançamento
+
+20 de Fevereiro de 2020
+
+----
+
+## Tainacan Beta 0.15
+
+### Postagem
+
+[Tainacan Beta 0.15 – Permissões e Funções de Usuários, Melhor Performance e Edição em Massa Refatorada](https://tainacan.org/blog/2020/02/13/tainacan-beta-0-15-permissoes-e-funcoes-de-usuarios-melhor-performance-e-edicao-em-massa-refatorada/)
+
+### Resumo da Versão
+
+#### Novidades
+
+* Novo esquema de Permissões de Usuários;
+* Telas de gestão de funções de usuários e de permissões específicas do repositório ou de coleções;
+  
+#### Melhorias
+
+* Edição em Massa executada como processo em Plano de Fundo;
+* Maior eficiência nas requisições ao Banco de Dados;
+* Adicionadas informações ao arquivo de registro (log) para processos de edição em massa, como o total de itens processados;
+* Exibição de apenas campos especiais válidos na lista de mapeamento de metadados do importador CSV;
+
+#### Correções
+
+* Correção da ordem de listagem do bloco de Carrossel de Termos;
+* Melhorias na segurança da API, evitando a exibição de metadados e filtros privados para usuários não logados;
+
+#### Data de Lançamento
+
+12 de Fevereiro de 2020
+
+
+
+
