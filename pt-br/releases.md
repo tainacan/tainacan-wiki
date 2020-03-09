@@ -13,7 +13,7 @@ Em desenvolvimento.
 #### Novidades
 
 * Metadados Compostos;
-* Sessões de Metadados;
+* ~~Sessões de Metadados~~;
 * Bloco de Lista de Itens (a Busca Facetada);
 * Metadados de Data com valores aproximados;
 * Novo Filtro de Autor do Item;
@@ -28,7 +28,7 @@ Em desenvolvimento.
 * Atualização de imagens em anexo via importador CSV;
 
 #### Correções
-
+* Erro com os filtros do nível repositório quando visualizados na pagina de uma coleção (em instalações com múltiplas coleções); 
 * Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;
 
 #### Data Prevista
