@@ -17,7 +17,8 @@ Em desenvolvimento.
 * Bloco de Lista de Itens (a Busca Facetada);
 * Metadados de Data com valores aproximados;
 * Novo Filtro de Autor do Item;
-* Tipo de Metadado URL; 
+* Tipo de Metadado URL;
+* Compatibilidade com WordPress 5.4 
 
 #### Melhorias
 
@@ -30,6 +31,7 @@ Em desenvolvimento.
 #### Correções
 * Erro com os filtros do nível repositório quando visualizados na pagina de uma coleção (em instalações com múltiplas coleções); 
 * Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;
+* Blocos Gutenberg que estavam com erros ao se editar seu conteúdo via modal;
 
 #### Data Prevista
 
