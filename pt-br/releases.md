@@ -15,7 +15,7 @@ Em desenvolvimento.
 * Metadados Compostos;
 * ~~Sessões de Metadados~~;
 * Bloco de Lista de Itens (a Busca Facetada);
-* Metadados de Data com valores aproximados;
+* ~~Metadados de Data com valores aproximados~~;
 * Novo Filtro de Autor do Item;
 * Tipo de Metadado URL; 
 
