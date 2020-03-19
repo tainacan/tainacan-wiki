@@ -32,6 +32,7 @@ Em desenvolvimento.
 * Erro com os filtros do nível repositório quando visualizados na pagina de uma coleção (em instalações com múltiplas coleções); 
 * Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;
 * Blocos Gutenberg que estavam com erros ao se editar seu conteúdo via modal;
+* Correção de problemas ao carregar a lista de anexos quando o documento do item é do tipo Texto ou Link.
 
 #### Data Prevista
 
