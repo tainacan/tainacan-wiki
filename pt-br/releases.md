@@ -27,7 +27,8 @@ Em desenvolvimento.
 * Scroll infinito em todos os autocompletes e entrada de etiquetas;
 * Exibir não só o nome da coleção que utiliza a Taxonomia, mas também o Metadado;
 * Atualização de imagens em anexo via importador CSV;
-* Ao se abrir um formulário de edição de metadado, a tela automaticamente scrolla para ele.
+* Ao se abrir um formulário de edição de metadado, a tela automaticamente faz scroll para ele.
+* Ao se realizar scroll na tela de edição de item, a barra do formulário é escondida.
 
 #### Correções
 * Erro com os filtros do nível repositório quando visualizados na pagina de uma coleção (em instalações com múltiplas coleções); 
