@@ -12,13 +12,11 @@ Em desenvolvimento.
 
 #### Novidades
 
-* Metadados Compostos;
-* ~~Sessões de Metadados~~;
-* Bloco de Lista de Itens (a Busca Facetada);
-* ~~Metadados de Data com valores aproximados~~;
-* Novo Filtro de Autor do Item;
-* Tipo de Metadado URL;
-* Compatibilidade com WordPress 5.4 
+* **Metadados Compostos**;
+* **Bloco de Lista de Itens** (a Busca Facetada);
+* Tipo de metadado Usuário do WordPress;
+* Ação de copiar valores de metadado em massa;
+* Compatibilidade com WordPress 5.4 .
 
 #### Melhorias
 
@@ -40,7 +38,7 @@ Em desenvolvimento.
 
 #### Data Prevista
 
-* Meados de Abril
+* Final de Abril
 
 ----
 
