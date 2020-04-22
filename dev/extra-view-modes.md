@@ -75,7 +75,7 @@ The function `tainacan_register_view_mode` is part of Tainacan's plugin. Its fir
 | string | thumbnail        | Full URL to a thumbnail that represents the view mode. Displayed only in Admin.             | None                                      |
 | string   | skeleton_template | HTML that outputs a preview of the items to be loaded, such as gray blocks, mimicking the shape of the items. | None |
 | bool   | show_pagination  | Whether to display or not pagination controls.            | `true`                                      |
-| bool   | full-screen      | Whether the view mode will display full screen or not.             | `false`                                     |
+| bool   | full_screen      | Whether the view mode will display full screen or not.             | `false`                                     |
 | bool   | dynamic_metadata | Whether to display or not (and use or not) the "displayed metadata" selector.            | `false`                                     |
 | bool   | implements_skeleton | Whether the view modes take care of showing it's own Skeleton/Ghost css classes for loading items. | `false` |
 
