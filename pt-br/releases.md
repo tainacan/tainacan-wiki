@@ -33,7 +33,7 @@ Anúncio da Versão de Teste: https://tainacan.org/blog/2020/04/24/teste-agora!-
 
 #### Correções
 * Erro com os filtros do nível repositório quando visualizados na pagina de uma coleção (em instalações com múltiplas coleções); 
-* Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;
+* ~~Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;~~
 * Blocos Gutenberg que estavam com erros ao se editar seu conteúdo via modal;
 * Ao mudar de página na lista de itens e retornar a página anterior, o número da página da busca não era mantido.
 * A inserção de novos termos não estava sendo bloqueada caso a configuração na taxonomia não permitisse mas a do metadado sim.
