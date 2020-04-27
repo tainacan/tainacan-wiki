@@ -1,125 +1,18 @@
-# Customizing the Items List
+# Customizing the Items List (previous to 0.16)
+
+?> WARNING: this page was made before 0.16 release, which means it is outdated. For the latest content on how to customize the items list, please visit [this page](/dev/customizing-the-items-list).
 
 A lot can be done for adding Tainacan support to your theme using the template hierarchy logic mentioned in the section [Custom Templates](/dev/custom-templates.md). While this might be enough you may be interested in tweaking a bit more of the appearance of the most complex page that Tainacan offers to you: **The Items List Page**. Check the example bellow, of the child theme of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/ ':ignore') that implemented a basic `archive-items.php`:
 
-![Template added to the items list page.](/_assets/images/the-vue-items-list-component-1-new.png)
+![Template added to the items list page.](/_assets/images/the-vue-items-list-component-1.png)
 
-Looks like a powerful faceted search interface, but we definitely could make some adjustments to match better with our parent theme. It turns out that this page works in a much different strategy, which is explained in detail in [the "Vue Items List Component" section](/dev/the-vue-items-list-component.md). 
+Looks like a powerfull faceted search interface, but we definitelly could make some font adjustments to match better with our parent theme. It turns out that this page works in a much different strategy, which is explained in details in [the "Vue Items List Component" section](/dev/the-vue-items-list-component.md). 
 
-> To summarize, **the Items List returned by _tainacan_the_faceted_search()_ is actually a Vue.js component**, rendered on the client-side. Most of its code is shared with the admin panel version of the items list. 
+> To summarize, **the Items List returned by _tainacan_the_faceted_search()_ is acually a Vue.js component**, rendered on the client side. Most of its code is shared with the admin panel version of the items list. 
 
-## Playing with some customization variables
+So, in order to customize it, we should take a look at where is the source code of each part of the list, so that if you need to change CSS for example, you can see where to look for class definitions.
 
-Luckily for theme developers, a lot of customization options are offered since Tainacan 0.16. There are two types of customizations that can easily be applied:
-
-* [Passing `php` variables do the template function call](/dev/customizing-the-items-list#passing-php-variables-to-tainacan_the_faceted_search);
-* [Passing `css` variables to the items list class](/dev/customizing-the-items-list#passing-css-variables-to-the-items-list-class);
-
-Here are three examples of template results after playing with this variables:
-
-<div style="display: flex; align-items: center; justify-contents: space-evenly;">
-<div style="margin: 0 12px">
-
-![Exemplo da lista configurada 1](../pt-br/_assets/images/blocks-faceted-search-2.jpg)
-
-</div>
-<div style="margin: 0 12px">
-
-![Exemplo da lista configurada 2](../pt-br/_assets/images/blocks-faceted-search-3.jpg)
-
-</div>
-<div>
-
-![Exemplo da lista configurada 3](../pt-br/_assets/images/blocks-faceted-search-4.jpg)
-
-</div>
-</div>
-
-Lets see how this is possible:
-
-### Passing `php` variables to _tainacan_the_faceted_search()_
-
-As seen in our introdution of [introduction about creating compatible theme](/dev/creating-compatible-themes). Having a rich faceted search items list is as simple as creating a file with three lines. The magic is done by the `tainacan_the_faceted_search()` helper function, which renders the Vue.js component. Not surprisingly, this function offers several customization variables, that we describe bellow:
-
-| Variable name                                | Type        | Default        | Description                          |
-|----------------------------------------------|-------------|-------------|--------------------------------------|
-| `$hide-filters`                              | `bool`      | `false`      | Completely hide filter sidebar or modal                                                         |
-| `$hide-hide-filters-button`                  | `bool`      | `false`      | Hides the button resonsible for collpasing filters sidebar on desktop                           |   |
-| `$hide-search`                               | `bool`      | `false`      | Hides the complete search bar, including advanced search link                                   |   |
-| `$hide-advanced-search`                      | `bool`      | `false`      | Hides only the advanced search link                                                             |   |
-| `$hide-displayed-metadata-dropdown`          | `bool`      | `false`      | Hides the "Displayed metadata" dropdown even if the current view modes allows it                |   |
-| `$hide-sorting-area`                         | `bool`      | `false`      | Completely hides all sorting controls                                                           |   |
-| `$hide-sort-by-button`                       | `bool`      | `false`      | Hides the button where user can select the metadata to sort by items (keeps the sort direction) |   |
-| `$hide-exposers-button`                      | `bool`      | `false`      | Hides the "View as..." button, a.k.a. Exposers modal                                            |   |
-| `$hide-items-per-page-button`                | `bool`      | `false`      | Hides the button for selecting amount of items loaded per page                                  |   |
-| `$hide-go-to-page-button`                    | `bool`      | `false`      | Hides the button for skiping to a specific page                                                 |   |
-| `$hide-pagination-area`                      | `bool`      | `false`      | Completely hides pagination controls                                                            |   |
-| `$default-items-per-page`                    | `int`       | `12`       | Default number of items per page loaded                                                         |   |
-| `$show-filters-button-inside-search-control` | `bool`      | `false`      | Display the "hide filters" button inside of the search control instead of floating              |   |
-| `$start-with-filters-hidden`                 | `bool`      | `false`      | Loads the filters list hidden from start                                                        |   |
-| `$filters-as-modal`                          | `bool`      | `false`      | Display the filters as a modal instead of a collapsable region on desktop                       |   |
-| `$show-inline-view-mode-options`             | `bool`      | `false`      | Display view modes as inline icon buttons instead of the dropdown                               |   |
-| `$show-fullscreen-with-view-modes`           | `bool`      | `false`      | Lists fullscreen viewmodes alongside with other view modes istead of separatelly                |   |
-| `$default-view-mode`                         | `string`    | `masonry`    | The default view mode                                                                           |   |
-| `$is-forced-view-mode`                       | `bool`      | `false`      | Ignores user prefs to always render the choosen default view mode                               |   |
-| `$enabled-view-modes`                        | `string[]`  | *All registered view modes for repository and terms page. Enabled view modes on the collection settings for collection items list.*  | The list of enable view modes to display                                                        |   |
-
-### Passing `css` variables to the items list class;
-
-Besides that, you can use css variables to override Tainacan's own CSS variables. You can check all the existing ones [in this file](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_custom_variables.scss). Notice, althought, that it wouldn't be interesting to override them directly on the `:root` selector, as this would affect all of yout Tainacan Admin styles as well. For themes, a better approach would be to override them directly on the `.theme-items-list` class. Bellow you can see the ones we consider more relevant for this part of the rendered Vue.js content:
-
-```css
-
-.theme-items-list {
-    /* Form and Text styling */
-    --tainacan-input-color: #1d1d1d; /* Not quite black */
-    --tainacan-input-background-color: #fff;
-    --tainacan-input-border-color: #dbdbdb; /* Some input borders disabled state colors */
-    --tainacan-label-color: #454647;
-    --tainacan-info-color: #555758;
-    --tainacan-heading-color: #000;
-
-    /* Skeleton loading color */
-    --tainacan-skeleton-color: #eee;
-
-    /* Items */
-    --tainacan-item-background-color: #fff;
-    --tainacan-item-hover-background-color: #f2f2f2;
-    --tainacan-item-heading-hover-background-color: #dbdbdb;
-
-    /* Derived colors */
-    --tainacan-primary: #d9eced; /* Tooltips and selected dropwdown items background (not really a good name, as secondary is the most important color overall) */
-    --tainacan-secondary: #298596; /* Link, active state, accent color! */
-    --tainacan-success: #25a189;
-    --tainacan-danger: #a23939; 
-    --tainacan-warning: #e69810;
-
-    /* Background */
-    --tainacan-background-color: #fff;
-
-    /* Font family and size */
-    --tainacan-font-family: Roboto, Source Sans, Helvetica, sans-serif;
-    --tainacan-base-font-size: 1em; /* 16px on most browsers, but not necessarly in your theme. The items list will get the next parent that has font-size value defined. */
-
-    /* Filter Menu Width when not a modal */
-    --tainacan-filter-menu-width-theme: 20%;
-
-    /* One column is 1/24 and it is used a lot in the horizontal space distribution */
-    --tainacan-one-column: 4.16667%;
-
-    /* Not really used in EVERY container, but a rather frequent value */
-    --tainacan-container-padding: 25px;
-}
-
-```
-
-?> If you want to see a more "visual" approach of these variables in play, check the [Faceted Search Block](/blocks-items#busca-facetada) which allows tweaking most of them on the block settings control.
-
-## Further customization
-
-If you want to perform more advanced customization, you should take a look at where is the source code of each part of the list, so that if you need to change CSS for example, you can see where to look for class definitions.
-
-### The Vue component file structure
+## The Vue component file structure
 
 The file tree bellow contains only the elements that are in somehow imported to the ThemeSearch bundle - other files related to the admin panel are hidden for simplicity:
 
@@ -271,7 +164,7 @@ Nevertheless, we can mention some of the "main" classes that you may be interest
       * `.table-container>.table-wrapper`: where the items list result is rendered with different view modes;
       * `.pagination-area`: the footer bar with pagination-related stuff;
 
-### Advanced CSS Customizations to the Vue component
+## CSS Customizations to the Vue component
 
 So here are a few examples of customizations that you can do, now that you understand more of the Items list component:
 
@@ -329,3 +222,9 @@ So here are a few examples of customizations that you can do, now that you under
     }
     ```
     We use the *id* `#filters-desktop-aside` instead of the *class* `.filters-menu` because that would also affect the filters modal that appear on the mobile version.
+
+After applying some of the suggestions mentioned, our items list looks a lot better on the TwentyTwenty child theme:
+
+![TwentyTwenty items list page with css fixes.](/_assets/images/the-vue-items-list-component-3.png)
+
+Much better, right? :wink:
