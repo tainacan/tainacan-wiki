@@ -162,24 +162,83 @@ A **Busca Facetada** é o bloco mais complexo que o plugin oferece. Com ele voc�
 
 ### Configurações Iniciais do Bloco
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-facted-search-1.gif)
+![Selecionando a coleção no bloco](/_assets/gifs/blocks-faceted-search-1.gif)
 
 Ao inserir o bloco, devo configurar o origem da busca. Ela pode ser a lsita de todos os itens do repositório, a lista de itens de uma coleção ou a lista de itens associados a um termo. Nos dois últimos casos, um modal oferecerá as opções disponíveis para escolha. Feita esta configuração, uma figura ilustrativa irá aparecer onde a Lista será renderizada. Esta é apenas uma demonstração porque a lista completa é muito complexa para ser exibida dentro do editor, mas você pode ver os resultados pré-visualizando a página ou publicando-a.
 
-De imediato é possível que você deseje dar mais espaço para a sua lista, o que pode ser configurado ajustando o bloco para ter Largura Completa ou Largura Ampla. À seguir detalhamos as diversas configurações que podem ser feitas, por sessão:
+De imediato é possível que você deseje dar mais espaço para a sua lista, o que pode ser configurado ajustando o bloco para ter **Largura Completa** ou **Largura Ampla**. No painel lateral dezenas de configurações podem ser encontradas. Detalhamos estas à seguir e damos abaixo três exemplos de resultados podem ser alcançados apenas fazendo estes ajustes neste bloco:
+
+
+<div style="display: flex; align-items: center; justify-contents: space-evenly;">
+<div style="margin: 0 12px">
+
+![Exemplo da lista configurada 1](/_assets/images/blocks-faceted-search-2.jpg   )
+
+</div>
+<div style="margin: 0 12px">
+
+![Exemplo da lista configurada 2](/_assets/images/blocks-faceted-search-3.jpg)
+
+</div>
+<div>
+
+![Exemplo da lista configurada 3](/_assets/images/blocks-faceted-search-4.jpg)
+
+</div>
+</div>
 
 <!-- tabs:start -->
 
 #### ** Área de Controle da Busca **
 
+A área de controle da busca é como é chamada a barra horizontal que fica acima da região dos filtros e da lista de itens em si. Como vários controles ali disponíveis podem ser demais para o que você deseja mostrar neste bloco, a maioria das opções possibilita limitar alguns destes controles:
+
+* **Esconder o campo de buscar**: esta opção esconde a barra de busca textual e o link de busca avançada juntos.
+* **Esconder a busca avançada**: não mostra o link para a busca avançada.
+* **Esconder o botão de "Metadados exibidos"**: deixa oculto o botão de "Metadados Exibidos". Vale notar que este botão só está visível na lista caso o modo de visualização atual permita esta exibição, como por exemplo a Tabela e as Fichas.
+* **Esconder a região de ordenação**: esconde os *dropdowns* relacionados ao sentido de ordenação e ao metadado pelo qual a lista é ordenada.
+* **Esconder o botão "Ordenar por"**: esconde apenas o *dropdown* onde são listados diferentes metadados pelos quais se ordena a busca.
+* **Mostrar opções de Modos de Visualização em linha**: Ao invés de exibir um *dropdown* com as opções dos modos de visualização, com esta configuração são exibidos apenas ícones um ao lado do outro para o usuário escolher. 
+* **Mostrar o modo de visualização "Galeria" (tela cheia) junto com os demais modos de visualização**: por padrão este modo fica listado como um botão ao lado das opções de visualização. Com esta configuração esta diferenciação deixa de existir.
+* **Esconder botão "Ver como..."**: faz com que o botão "Ver como..." também chamado de botão de expositores ou links alternativos não apareça. Este botão é responsável por abrir um modal com opções de compartilhamento e acesso da lista de itens em diferentes formatos.
+* **Modo de visualização padrão forçado para listas de itens de termos ou repositório**: Diferentemente das coleções, lista de itens de termos ou do repositório possuem um modo de visualização padrão definido pelo sistema: o Mosaico. Com esta opção pode se configurar qual será o modo de visualização inicial.
+* **Modos de visualização disponíveis na lista**: Nas coleções, estas opções vem da própria configuração da coleção, e nos temos e repositório, vem do sistema. Aqui podem ser habilitados ou desabilidados por completo alguns modos de visualização para seu tema. Se apenas um modo permanecer ativo, este será o padrão e nenhum botão de selecionar modo de visualização será disponibilizado.
 
 #### ** Área dos Filtros **
 
+A área de filtros, por padrão, é um painel lateral presente ao lado da lista de itens. Estas opções permitem alterar um pouco do seu comportamento.
+
+* **Esconder filtros**: oculta por completo a barra, sem ter como acessá-la neste bloco.
+* **Esconder o botão "Esconder filtros"**: não oferece a opção de ocultar a barra de filtros para o usuário.
+* **Começar com filtros escondidos**: faz com que de início o painel de filtros comece escondido, mas ainda podendo ser chamado pelo botão de "Exibir/esconder filtros";
+* **Renderizar lista de filtros como uma modal**: mostra os filtros como uma modal de tela cheia ao invés de um painel lateral, sobrepondo-se a lista de itens.
 
 #### ** Área de Paginação **
 
+A paginação é essencial para não pesar a busca com listas de resultados muito grandes. Por padrão, é controlada na barra que fica abaixo da lista de itens, mostrando 12 itens por vez, à menos que configurada de maneira diferente pelo usuário.
+
+* **Esconder a área de paginação**: esconde por completo os controles de paginação, permitindo que apenas uma página seja vista neste bloco, a inicial.
+* **Esconder botão "Itens por página"**: oculta o botão onde se seleciona quantos itens por página devem ser exibidos.
+* **Esconde o botão "Ir para a página:"**: esconde o botão que permite pular facilmente de uma página para a outra.
+* **Número padrão de itens por página**: útil especialmente se alguns dos controles acima foi escondido, aqui pode ser definida a quantidade de itens por página que é carregada, forçando o valor sobre aquele configurado pelo usuário.
 
 #### ** Cores e Tamanhos **
+
+Para além do comportamento e presença de certos elementos no bloco, é possível também configurar a cor de vários componentes da interface, e outras configurações mais estéticas:
+
+* **Tamanho base da fonte**: por padrão todos os elementos da interface são escalados a partir de uma fonte de *16px*. Nesta opção pode-se aumentar ou diminuir este valor para se melhorar a legibilidade da sua lista.
+* **Largura do painel de filtros**: O painel de filtros ocupa uma largura máxima de *20%* da lista de itens (e mínima de *154px*). Nesta configuração pode-se alterar este valor, dando mais ou menos espaço para os filtros.
+* **Cor de fundo**: A cor de fundo da lista de itens como um todo;
+* **Cor de links e estados ativos**: Na interface, links e alguns ícones aparecem coloridos com uma cor para indicar seu estado ativo. Por padrão esta cor é o *Azul Turquesa* do Tainacan, mas pode ser configurado por temas para outras cores. Com esta configuração você pode sobrescrever este valor;
+* **Cor de fundo de tooltips**: Em geral a cor de links é muito escura para mostrar os tooltips (os balõezinhos que possuem ficas ou resumos de conteúdo). Nesta configuração, pode ser escolhida uma cor mais clara, que sirva para esta função. Isso também afeta o botão de "Esconder Filtros".
+* **Cor de fundo dos campos**: esta é a cor que aparecerá no fundo de campos de texto e outros elementos da interface relacionados à entrada de dados. Por padrão é a mesma do plano de fundo e pode ser alterada para uma cor de maior destaque.
+* **Cor da borda dos campos**: a cor da borda de campos de texto, checkbox e similares.
+* **Cor dos rótulos**: a cor dos rótulos de campos na interface, tais como os nomes dos filtros.
+* **Cor dos cabeçalhos**: a cor dos cabeçalhos, ou seja, dos rótulos principais, tais como os nomes do itens e o indicador da sessão dos filtros.
+* **Cor geral de informações**: esta cor por padrão é um cinza utilizado para informações secundárias na interface. Por exemplo, os valores de metadados de menor importância e os ícones dos botões de controle da busca.
+* **Cor de fundo dos itens**: a cor de cada unidade item na lista, por padrão é a mesma da cor de fundo.
+* **Cor de fundo dos itens com o mouse em cima**: a cor de cada unidade item da lista quando o mouse está sobre ele.
+* **Cor de fundo do cabeçalho do item com o mouse em cima**: alguns itens possuem uma cor de destaque para o cabeçalho do seu modo de visualização (como o cartões, por exemplo). Nestes casos, esta será a cor que aparecerá nesta região do item com o mouse acima do mesmo.
 
 <!-- tabs:end -->
 
