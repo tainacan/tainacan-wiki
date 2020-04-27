@@ -118,6 +118,16 @@ Note que, ao usá-los:
 2. Note que a ordenação functiona internamente entre filhos mas uma vez criados, não é possível promover os metadados para "não filhos".
 </details>
 
+<details>
+<summary>Usuário</summary>
+
+Metadados do tipo Usuário atribuem um usuário WordPress como valor para seu preenchimento. São uma maneira de vincular usuários à itens e definir um significado para tal vínculo, em geral desejado para fins de gestão.
+
+1. Caso deseje que o campo seja de início preenchido com o valor do atual Autor do item (o usuário que o criou), marque a opção "Por padrão é o autor do item".  
+</details>
+
+____
+
 Atualmente o Tainacan tem nove tipos de metadados por padrão, mas novos conjuntos [podem ser desenvolvidos](/dev/creating-metadata-type) de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. (Consulte o artigo sobre o [Desenvolvimento do Plugin](/dev/) para saber mais.
 
 <!-- tabs:start -->
