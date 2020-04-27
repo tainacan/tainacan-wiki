@@ -5,14 +5,15 @@ Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua col
 1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) *(Dinâmico)*
 2. O [Carrossel de Itens](#carrossel-de-itens)
 3. A [Barra de Busca Tainacan](#barra-de-busca)
-4. A [Lista de Itens](#lista-de-itens) *(Estático)*
+4. A [Busca Facetada](#busca-facetada) *(A Lista de Itens Completa)*
+5. A [Lista de Itens](#lista-de-itens) *(Estático)*
 
 ---------
 
 
 ## Lista de Itens da Coleção
 
-Este é provavelmente o bloco mais complexo e também mais importante que o Tainacan oferece. Com ele você configura uma "Busca de Itens" para serem exibidos. Mas como assim uma busca? É que ao invés de selecionar itens um a um, você determina quais parâmetros irão filtrar uma listagem de itens. Por isso chamamos este bloco de lista "dinâmica" de itens, pois se novos itens forem inseridos àquela listagem, seu bloco continuará atualizado. Veja a seguir:
+Este é um dos blocos mais mais importantes que o Tainacan oferece. Com ele você configura uma "Busca de Itens" para serem exibidos. Mas como assim uma busca? É que ao invés de selecionar itens um a um, você determina quais parâmetros irão filtrar uma listagem de itens. Por isso chamamos este bloco de lista "dinâmica" de itens, pois se novos itens forem inseridos àquela listagem, seu bloco continuará atualizado. Veja a seguir:
 
 ### Configurações Iniciais do Bloco
 
@@ -153,6 +154,39 @@ Mas não precisamos parar por aí. De maneira similar ao Bloco [Lista de Itens d
 !> A Barra de Busca é um dos raros blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada.
 
 ---------
+
+
+## Busca Facetada
+
+A **Busca Facetada** é o bloco mais complexo que o plugin oferece. Com ele você exibe, em qualquer pagina ou post, a Lista de Itens completa tal como é vista na [Páginas de Itens](/pt-br/tainacan-pages#as-páginas-especiais-do-tainacan) do Tainacan, incluindo aí a possibilidade de aplicar filtros, fazer a busca avançada, trocar modos de visualização e ordenação, além de paginação. É uma maneira prática de oferecer todos estes recursos em uma página caso você esteja usando um Tema que não implementou suporte para estas páginas especiais que o plugin registra, ou queria customizar bastante o restante do template. Também é uma alternativa mais versátil ao `shortcode` que antes era sugerido para renderizar esta lista. Veja a seguir:
+
+### Configurações Iniciais do Bloco
+
+![Selecionando a coleção no bloco](/_assets/gifs/blocks-facted-search-1.gif)
+
+Ao inserir o bloco, devo configurar o origem da busca. Ela pode ser a lsita de todos os itens do repositório, a lista de itens de uma coleção ou a lista de itens associados a um termo. Nos dois últimos casos, um modal oferecerá as opções disponíveis para escolha. Feita esta configuração, uma figura ilustrativa irá aparecer onde a Lista será renderizada. Esta é apenas uma demonstração porque a lista completa é muito complexa para ser exibida dentro do editor, mas você pode ver os resultados pré-visualizando a página ou publicando-a.
+
+De imediato é possível que você deseje dar mais espaço para a sua lista, o que pode ser configurado ajustando o bloco para ter Largura Completa ou Largura Ampla. À seguir detalhamos as diversas configurações que podem ser feitas, por sessão:
+
+<!-- tabs:start -->
+
+#### ** Área de Controle da Busca **
+
+
+#### ** Área dos Filtros **
+
+
+#### ** Área de Paginação **
+
+
+#### ** Cores e Tamanhos **
+
+<!-- tabs:end -->
+
+!> A Busca Facetada é um dos blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada. Isto ocorre porque ao se realizar qualquer busca a URL do site é complementada com os parâmetros que causariam conflito entre diferentes listas.
+
+---------
+
 
 ## Lista de Itens
 
