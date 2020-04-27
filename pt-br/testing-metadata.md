@@ -3,7 +3,7 @@
 ## O Básico
 
 1. Crie os diferentes tipos de metadados a **nível de coleção**, em coleções diferentes:
-  1. Lembre-se de criar pelo menos um metadado do tipo *relacionamento* e um do tipo *taxonomia*;
+  1. Lembre-se de criar pelo menos um metadado do tipo *relacionamento*, um do tipo *taxonomia*, um do tipo *composto* e um do tipo*"usuário*;
   2. Busque marcar opções diferentes entre os metadados em:
     * Status;
     * Exibir na listagem;
@@ -15,7 +15,9 @@
   - [x] Observe o tempo de conclusão ao **salvar** cada metadado;
   - [x] Veja se as **configurações se refletem** na lista de items e nos formulários de criação de itens;
   
-  ?> Nota: É diferente um metadado estar "desabilitado" de estar marcado para "Não exibir na listagem". Com o primeiro, não é possível nem mesmo inserir o metadado no item. Com o segundo, ele só muda a visibilidade na lista de itens.
+  ?> *Nota 1*: É diferente um metadado estar "desabilitado" de estar marcado para "Não exibir na listagem". Com o primeiro, não é possível nem mesmo inserir o metadado no item. Com o segundo, ele só muda a visibilidade na lista de itens.
+
+  ?> *Nota 2*: A ordenação de filhos do metadado composto só funciona dentro de seu grupo e não são permitidos, no momento, taxonomias como filhos de compostos.
 
 ## Nível Repositório
 
