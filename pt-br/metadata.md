@@ -38,35 +38,41 @@ Cada metadado tem um conjunto de configurações possíveis. É um metadado *obr
 
 * Por padrão, todos os itens possuem o metadado de **Título** e de **Descrição**, que não podem ser excluídos, mas podem ser *editados* ou desabilitados.
 * Metadados **herdados** podem ser *habilitados* ou *desabilitados*, o que implica na sua existência para o preenchimento durante o envio de um novo item e também na sua ausência (com seus respectivos dados) durante a visualização de coleções e dos itens.
-* Metadados a nível de **repositório** são herdados por todas coleções no repositório, assinalados com *"herdado"* a frente do nome.
-* Coleções configuradas para herdar metadados de uma **coleção acima** apresentam estes metadados com *"herdado"* assinalado à frente.
-* Não é possível alterar o **tipo do Metadado**. (Por exemplo, alterar um metadado do tipo *Texto* para *Texto Longo*, ou *Numérico* para *Data*)
+* Metadados a nível de **repositório** são herdados por todas coleções no repositório, assinalados com  "*herdado*" a frente do nome.
+* Coleções configuradas para herdar metadados de uma **coleção acima** apresentam estes metadados com "*herdado*" assinalado à frente.
+* Não é possível alterar o **tipo do Metadado**. (Por exemplo, alterar um metadado do tipo *Texto* para *Texto Longo*, ou *Numérico* para *Data*), após ser criado.
 * Metadados que não foram herdados do repositório (ou de coleções acima) podem ser excluídos, apresentado um **ícone de lixeira** à frente. (Consulte [Excluir metadados](#excluir-metadados).)
 
-## Tipos de metadados
+## Tipos de Metadados
+
+Existem diferentes tipos de metadados para permitir a criação de forma mais adequada com o tipo de informação que será preenchido durante o envio dos itens. É importante selecionar um tipo de metadado apropriado pois isto influenciará em quais filtros estarão disponíveis para a lista de itens.
 
 <details>
-<summary>Texto:</summary>
+<summary>Texto</summary>
 Metadado ideal para inserção de textos curtos.
 </details>
 
 <details>
-<summary>Área de Texto:</summary>
+<summary>Área de Texto</summary>
+
 Metadado ideal para inserção de textos longos, com parágrafos.
 </details>
 
 <details>
-<summary>Data:</summary>
+<summary>Data</summary>
+
 Metadado ideal para a inserção de datas completas no formato **DD/MM/AAAA**.
 </details>
 
 <details>
-<summary>Numérico:</summary>
+<summary>Numérico</summary>
+
 Metadado ideal para inserção de informações que contenham apenas números. 
 </details>
 
 <details>
-    <summary>Lista de seleção:</summary>
+<summary>Lista de seleção</summary>
+
 Metadado ideal para inserção de um pequeno conjunto de termos controlados. Adicione termos no campo **Opções**, para adicionar mais valores separe o valor atual por vírgula ou tecle *enter*.
     
 !> **Atenção**: Para criar novos termos na lista de seleção é necessário que o usuário tenha permissão para a edição do metadado em questão. (Consulte [Criar Taxonomias](/pt-br/taxonomies#criar-taxonomias) para saber como permitir a adição de novos termos durante o envio de itens)
@@ -74,7 +80,8 @@ Metadado ideal para inserção de um pequeno conjunto de termos controlados. Adi
 </details>
 
 <details>
-    <summary>Taxonomias:</summary>
+<summary>Taxonomias</summary>
+
 Metadados do tipo Taxonomia usam uma taxonomia criada previamente, este tipo de metadado é especialmente útil para informações estruturadas a partir de um vocabulário controlado, permitindo inclusive a hierarquização de termos. Passos para configurar um metadado do tipo **Taxonomia**:
 
 1. Crie uma taxonomia. (consulte [Criar Taxonomias](/pt-br/taxonomies#criar-taxonomias));
@@ -85,7 +92,7 @@ Metadados do tipo Taxonomia usam uma taxonomia criada previamente, este tipo de 
 </details>
 
 <details>
-<summary>Relacionamento:</summary>
+<summary>Relacionamento</summary>
 
 Metadados do tipo Relacionamento atribuem um item de uma coleção como valor para seu preenchimento (com os itens desta coleção).
 
@@ -94,10 +101,24 @@ Metadados do tipo Relacionamento atribuem um item de uma coleção como valor pa
 3. Habilite **"permitir itens repetidos"** para que um mesmo item da coleção relacionada seja atribuído como valor do metadado em diferentes itens.
 </details>
 
+<details>
+<summary>Composto</summary>
 
-Existem diferentes tipos de metadados para permitir a criação de forma mais adequada com o tipo de informação que será preenchido durante o envio dos itens.
+Metadados Compostos (introduzidos na versão 0.16 do Tainacan) são aqueles cujo valor não pode ser representado de maneira isolada por um único campo. Por exemplo, um endereço residencial pode ser composto por campos de texto, número e até listas de seleção. Estes campos ou metadados internos ao composto são chamados *Metadados Filhos*.
 
-Atualmente o Tainacan tem seis tipos de metadados e filtros por padrão, mas novos conjuntos podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. (Consulte o artigo sobre o [Desenvolvimento do Plugin](/dev/) para saber mais.
+!> É importante diferenciar este conceito de uma "Sessão de Metadados", cujo propósito é apenas de organizar dados "agrupados". **Para simples separação visual, não o use**. No caso do metadado composto, é possível ter multivalores compostos, ou seja, uma lista de valores constituidos por diferentes sub-valores que se relacionam.
+
+Note que, ao usá-los:
+* Não é possível ter uma Taxonomia como metadado filho;
+* Um metadado composto não pode ser marcado como "Obrigatório" ou "Valor Único". Esse atributo será marcado nos filhos; 
+* Os metadados filhos não podem ser marcados como "Multivalorados", nem tem opções de visualização ("Ver na lista"), estas configurações correspondem ao pai.
+* Metadados compostos não estão disponíveis como opção para Busca Avançada ou Edição em Massa, apenas seus filhos.
+
+1. Logo ao se criar um metadado composto, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de metadado desejados para dentro desta área para criar filhos e os configurar como quiser;
+2. Note que a ordenação functiona internamente entre filhos mas uma vez criados, não é possível promover os metadados para "não filhos".
+</details>
+
+Atualmente o Tainacan tem nove tipos de metadados por padrão, mas novos conjuntos [podem ser desenvolvidos](/dev/creating-metadata-type) de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. (Consulte o artigo sobre o [Desenvolvimento do Plugin](/dev/) para saber mais.
 
 <!-- tabs:start -->
 
