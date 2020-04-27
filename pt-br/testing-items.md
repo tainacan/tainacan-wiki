@@ -23,8 +23,11 @@
   2. Teste o preenchimento de campos de metadados do tipo taxonomia, e a criação de novos termos;
   3. Teste o preenchimento inválido de campos de metadados tipo numérico ou data;
   4. Após criar itens em uma *primeira coleção*, teste o preenchimento de metadados do tipo relacionamento em *outra coleção*.
-  - [x] Observe se todos metadados a nível de repositório e da colação foram exibidos corretamente para preenchimento, na página da criação de item;
-  - [x] Observe se eventuais dicas de preenchimento, configuradas em determinados metadados, estão exibidas corretamente
-  - [x] Observe se o aviso de **preenchimento de metadados obrigatórios** funciona corretamente, ao **salvar** ou **publicar** cada item;
+   - [x] Observe se todos metadados a nível de repositório e da colação foram exibidos corretamente para preenchimento, na página da criação de item;
+   - [x] Observe se eventuais dicas de preenchimento, configuradas em determinados metadados, estão exibidas corretamente;
+   - [x] Observe se o aviso de **preenchimento de metadados obrigatórios** funciona corretamente, ao **salvar** ou **publicar** cada item;
+  5. Teste o preenchimento de *metadados compostos* que aceitam valores múltiplos. De início, o campo virá vazio, apenas com o botão de adicionar valor. Ao adicionar, surgirá o primeiro grupo de inputs com os metadados filhos
+   - [x] Observe se metadados filhos marcados como obrigatórios estão gerando erros na lista de erros do formulário;
+   - [x] Observe se a ordem em que os filhos aparecem é aquela que foi configurada na tela de configurações do metadado. 
  
 ?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).

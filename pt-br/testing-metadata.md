@@ -3,7 +3,7 @@
 ## O Básico
 
 1. Crie os diferentes tipos de metadados a **nível de coleção**, em coleções diferentes:
-  1. Lembre-se de criar pelo menos um metadado do tipo *relacionamento*, um do tipo *taxonomia*, um do tipo *composto* e um do tipo*"usuário*;
+  1. Lembre-se de criar pelo menos um metadado do tipo *relacionamento*, um do tipo *taxonomia*, um do tipo *composto* e um do tipo *usuário*;
   2. Busque marcar opções diferentes entre os metadados em:
     * Status;
     * Exibir na listagem;
