@@ -29,5 +29,6 @@
   5. Teste o preenchimento de *metadados compostos* que aceitam valores múltiplos. De início, o campo virá vazio, apenas com o botão de adicionar valor. Ao adicionar, surgirá o primeiro grupo de inputs com os metadados filhos
    - [x] Observe se metadados filhos marcados como obrigatórios estão gerando erros na lista de erros do formulário;
    - [x] Observe se a ordem em que os filhos aparecem é aquela que foi configurada na tela de configurações do metadado. 
+  6. Teste a funcionalidade de *Definir o item do autor como padrão* para metadados tipo *Usuário*. Ao se criar o item este campo deve vir preenchido.
  
 ?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
