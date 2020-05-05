@@ -4,7 +4,7 @@
 
 1. Crie DUAS ou mais coleções
 2. Preencha seus campos, incluindo miniatura e imagem de cabeçalho;
-3. Defina status diferentes para cada uma, como Pública e Privado, ou Pública e Rascunho;
+3. Defina status diferentes para cada uma, como Pública e Privado, ou Pública (Rascunho não é possível);
 4. Salve as mudanças cliando em `Concluir`:
 5. Vá para a lista de coleções e cheque se as coleções estão nas abas corretas de acordo com seu status;
    - [x] Observe o tempo de carregamento da tela de *Criação de coleção* e *Lista de Coleções*;
