@@ -113,6 +113,7 @@ Note que, ao usá-los:
 * Um metadado composto não pode ser marcado como "Obrigatório" ou "Valor Único". Esse atributo será marcado nos filhos; 
 * Os metadados filhos não podem ser marcados como "Multivalorados", nem tem opções de visualização ("Ver na lista"), estas configurações correspondem ao pai.
 * Metadados compostos não estão disponíveis como opção para Busca Avançada ou Edição em Massa, apenas seus filhos.
+* Por hora, ainda não é possível mapear os valores de metadados compostos em importadores ou exportadores, isto está em desenvolvimento.
 
 1. Logo ao se criar um metadado composto, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de metadado desejados para dentro desta área para criar filhos e os configurar como quiser;
 2. Note que a ordenação functiona internamente entre filhos mas uma vez criados, não é possível promover os metadados para "não filhos".
