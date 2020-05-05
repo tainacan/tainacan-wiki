@@ -46,7 +46,8 @@
         * [Busca Facetada](/pt-br/testing-search.md)
         * [Importadores](/pt-br/testing-importers.md)
         * [Exportadores](/pt-br/testing-exporters.md)
-        * [Permissões](/pt-br/testing-capabilities.md) 
+        * [Permissões](/pt-br/testing-capabilities.md)
+        * [Blocos Gutenberg](/pt-br/testing-gutenberg-blocks.md) 
     * [Processamento de Dados e Acervos](/pt-br/data-processing "Um pouco sobre Processamento de Dados e Acervos - Tainacan Wiki")
     * [:link:OpenRefine](http://openrefine.org/ ':ignore')
  
