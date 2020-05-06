@@ -54,19 +54,19 @@
   3. `Substituir valor` para alterar um valor já existente por outro;
     * Será exibido um campo para selecionar o valor a ser substituído e outro campo será exibido para a inserção do novo valor.
   4. `Copiar valor` para fazer uma cópia dos valores a partir de um outro metadado do item;
-    * Será exibido um campo para selecionar o metadado da qual o valor será copiado, importante ressaltar que os tipos dos metadados de origem e destino devem ser iguais. A tabela ~ mostra as restrições entre as configurações dos metadados para que se possa realizar a cópia.
+    * Será exibido um campo para selecionar o metadado da qual o valor será copiado, importante ressaltar que os tipos dos metadados de origem e destino devem ser iguais. A tabela seguinte mostra as restrições entre as configurações dos metadados para que se possa realizar a cópia.
 
-    |Metadado destino | Metadado origem |  É possivel copiar   |
-    |-----------------|-----------------|----------------------|
-    |Simples          | Simples         |  Sim                 |
-    |Multiplo         | Simples         |  Sim                 |
-    |Simples          | Multiplo        |  Não                 |
-    |Multiplo         | Multiplo        |  Sim                 |
-    |Qualquer         | Composto        |  Não                 |
-    |Simples          | Filho Simples   |  Sim                 |
-    |Multiplo         | Filho Simples   |  Sim                 |
-    |Filho Simples    | Simples         |  Não                 |
-    |Filho Simples    | Multiplo        |  Não                 |
+  |Metadado destino                  | Metadado origem                   |  É possivel copiar   |
+  |----------------------------------|-----------------------------------|----------------------|
+  |Simples                           | Simples                           |  Sim                 |
+  |Multiplo                          | Simples                           |  Sim                 |
+  |Simples                           | Multiplo                          |  Não                 |
+  |Multiplo                          | Multiplo                          |  Sim                 |
+  |Qualquer                          | Composto                          |  Não                 |
+  |Simples                           | Filho Simples (metadado composto) |  Sim                 |
+  |Multiplo                          | Filho Simples (metadado composto) |  Sim                 |
+  |Filho Simples (metadado composto) | Simples                           |  Não                 |
+  |Filho Simples (metadado composto) | Multiplo                          |  Não                 |
 
 7. Ao concluir a configuração das alterações desejadas, clique no botão de **play** à direita para executar a ação;
   * Ou clique no ícone de cancelar para **cancelar** a ação;
