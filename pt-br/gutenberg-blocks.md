@@ -31,6 +31,7 @@ Para usar algum dos blocos, basta editar um post ou uma página e procurar na li
 * [Lista de Termos](/pt-br/blocks-terms#lista-de-termos) *(estático)*;
 * [Lista de Itens da Coleção](/pt-br/blocks-items#lista-de-itens-da-coleção);
 * [Barra de Busca](/pt-br/blocks-items#barra-de-busca-tainacan) Tainacan;
+* [Busca Facetada](/pt-br/blocks-items#busca-facetada) - *(A Lista de Itens Completa)*;
 * [Lista de Facetas](/pt-br/blocks-facets#lista-de-facetas);
 * [Carrossel de Itens](/pt-br/blocks-items#carrossel-de-itens);
 * [Carrossel de Coleções](/pt-br/blocks-collections#carrossel-de-coleções);

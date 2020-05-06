@@ -6,7 +6,7 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 
 ### Postagem
 
-Em desenvolvimento.
+Anúncio da Versão de Teste: https://tainacan.org/blog/2020/04/24/teste-agora!-pre-lancamento-da-versao-0-16!
 
 ### Resumo da Versão (o que é esperado)
 
@@ -16,10 +16,12 @@ Em desenvolvimento.
 * **Bloco de Lista de Itens** (a Busca Facetada);
 * Tipo de metadado Usuário do WordPress;
 * Ação de copiar valores de metadado em massa;
-* Compatibilidade com WordPress 5.4 .
+* Compatibilidade com WordPress 5.4;
+* Popup de erros no formulário de edição do item;
 
 #### Melhorias
 
+* Mudanças na interface do cabeçalho de coleção: todos os ícones agora tem rótulos e uma nova cor de fundo; 
 * Melhor acessibilidade: escala de tamanho de fonte agora deverá ser mais proporcional entre todos os elementos: inputs, ícones, rótulos, etc;
 * Scroll infinito em todos os autocompletes e entrada de etiquetas;
 * Exibir não só o nome da coleção que utiliza a Taxonomia, mas também o Metadado;

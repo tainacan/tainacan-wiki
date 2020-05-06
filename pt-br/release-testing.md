@@ -48,5 +48,6 @@ Feito isto, escolha um tópico que deseja testar mais a fundo:
 * [Importadores](/pt-br/testing-importers.md)
 * [Exportadores](/pt-br/testing-exporters.md)
 * [Permissões](/pt-br/testing-capabilities.md)
+* [Blocos Gutenberg](/pt-br/testing-gutenberg-blocks.md)
 
 </div>

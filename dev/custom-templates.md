@@ -52,7 +52,7 @@ If you're building a custom term items archive, these functions may help:
 And more...
 * `tainacan_get_initials()` - A presentation function used by some thumbnails in some themes. It outputs a string version of a name with its initials - for example: "Classic Paintings" would be returned as "CP";
 
-Those are, of course, *helper functions*. If you're not satisfied with the way the rendering is performed by then, you can create your own. Check [the source code]() for a more complete idea of how to fetch Tainacan content. There is also [an example](/dev/the-vue-items-list-component) of an `archive-items.php` implementation in the next section.
+Those are, of course, *helper functions*. If you're not satisfied with the way the rendering is performed by then, you can create your own. Check [the source code](https://github.com/tainacan/tainacan/blob/develop/src/classes/) for a more complete idea of how to fetch Tainacan content. There is also [an example](/dev/the-vue-items-list-component) of an `archive-items.php` implementation in the next section.
 
 ## Even more specific templates
 
