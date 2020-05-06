@@ -36,7 +36,7 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
      * As coleções privadas;
      * Os links para editar ou deletar as Coleções;
    - [x] Confirme que estão disponíveis:
-     * As abas de Coleções Publicados, Rascunho e Lixeira;
+     * As abas de Coleções Publicadas e Lixeira;
      * As opções de Ordenação e Busca textual;
 10. Vá para lista de Taxonomias, disponível no menu lateral do Repositório;
    - [x] Confira se estão inacessíveis:
