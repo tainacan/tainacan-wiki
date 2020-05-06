@@ -124,7 +124,10 @@ Note que, ao usá-los:
 
 Metadados do tipo Usuário atribuem um usuário WordPress como valor para seu preenchimento. São uma maneira de vincular usuários à itens e definir um significado para tal vínculo, em geral desejado para fins de gestão.
 
-1. Caso deseje que o campo seja de início preenchido com o valor do atual Autor do item (o usuário que o criou), marque a opção "Por padrão é o autor do item".  
+1. Caso deseje que o campo seja de início preenchido com o valor do atual Autor do item (o usuário que o criou), marque a opção "Por padrão é o autor do item".
+
+?> Nota: Marcar a opção acima não faz com que itens *já existentes* tenham seus valores deste metadado automaticamente preenchidos. Para isso, é possível usar o método "Copiar" da edição em massa, passando dados para o metadado tipo usuário, vindos do atributo "Criado por", que equivale ao *autor* do item.
+
 </details>
 
 ____
