@@ -203,6 +203,7 @@ A área de controle da busca é como é chamada a barra horizontal que fica acim
 * **Esconder botão "Ver como..."**: faz com que o botão "Ver como..." também chamado de botão de expositores ou links alternativos não apareça. Este botão é responsável por abrir um modal com opções de compartilhamento e acesso da lista de itens em diferentes formatos.
 * **Modo de visualização padrão forçado para listas de itens de termos ou repositório**: Diferentemente das coleções, lista de itens de termos ou do repositório possuem um modo de visualização padrão definido pelo sistema: o Mosaico. Com esta opção pode se configurar qual será o modo de visualização inicial.
 * **Modos de visualização disponíveis na lista**: Nas coleções, estas opções vem da própria configuração da coleção, e nos temos e repositório, vem do sistema. Aqui podem ser habilitados ou desabilidados por completo alguns modos de visualização para seu tema. Se apenas um modo permanecer ativo, este será o padrão e nenhum botão de selecionar modo de visualização será disponibilizado.
+* **Mostrar o botão de filtros na barra de controle**: Exibe o botão de mostrar ou esconder filtros dentro da própria barra de controle da busca.
 
 #### ** Área dos Filtros **
 
@@ -232,6 +233,7 @@ Para além do comportamento e presença de certos elementos no bloco, é possív
 * **Cor de links e estados ativos**: Na interface, links e alguns ícones aparecem coloridos com uma cor para indicar seu estado ativo. Por padrão esta cor é o *Azul Turquesa* do Tainacan, mas pode ser configurado por temas para outras cores. Com esta configuração você pode sobrescrever este valor;
 * **Cor de fundo de tooltips**: Em geral a cor de links é muito escura para mostrar os tooltips (os balõezinhos que possuem ficas ou resumos de conteúdo). Nesta configuração, pode ser escolhida uma cor mais clara, que sirva para esta função. Isso também afeta o botão de "Esconder Filtros".
 * **Cor de fundo dos campos**: esta é a cor que aparecerá no fundo de campos de texto e outros elementos da interface relacionados à entrada de dados. Por padrão é a mesma do plano de fundo e pode ser alterada para uma cor de maior destaque.
+* * **Cor de texto dos campos**: esta é a cor que aparecerá no conteúdo de campos de texto e outros elementos da interface relacionados à entrada de dados.
 * **Cor da borda dos campos**: a cor da borda de campos de texto, checkbox e similares.
 * **Cor dos rótulos**: a cor dos rótulos de campos na interface, tais como os nomes dos filtros.
 * **Cor dos cabeçalhos**: a cor dos cabeçalhos, ou seja, dos rótulos principais, tais como os nomes do itens e o indicador da sessão dos filtros.
