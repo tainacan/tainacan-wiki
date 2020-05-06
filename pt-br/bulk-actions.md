@@ -73,9 +73,9 @@
 8. Clique em `Concluir` quando concluir as ações desejadas.
 
 > **Observação:** Além dos metadados da coleção, na edição em massa é possível alterar duas configurações dos items:
-> 1. Status - é possível alterar essa configuração para os valores: 
+> * **Status** - é possível alterar essa configuração para os valores: 
 `Publicado`, `Privado`, `Rascunho` e `Lixo`
-> 2. Permitir comentários - é possível alterar essa configuração para os valores: `Aberto` e `Fechado`
+> * **Permitir comentários** - é possível alterar essa configuração para os valores: `Aberto` e `Fechado`
 
 
 -----
