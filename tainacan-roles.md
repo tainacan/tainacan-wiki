@@ -8,7 +8,7 @@ Administradores do WordPress, frequentemente encontram por padrão as seguintes 
 * **Editor** - Usuários com acesso e permissão de edição para o conteúdo do site tais como Posts e Comentários. Também podem subir imagens, criar categorias e atividades similares.
 * **Autor** - Usuários que podem criar conteúdos e editar seus próprios Posts.
 * **Colaborador** - Similar ao Autor, porém não podem publicar o post, isso fica responsável para funções de maior poder. Não podem gerir conteúdos de mídia como imagens nem criar categorias.
-* **Assinante** - Usuários sem nenhum poder dentro do painel administrativo do WordPress, apenas enchergam o que é público no site. Servem apenas para se ter controle sobre usuários com login que podem, por exemplo, ler posts exclusivos para assinantes.
+* **Assinante** - Usuários sem nenhum poder dentro do painel administrativo do WordPress, apenas enxergam o que é público no site. Servem apenas para se ter controle sobre usuários com login que podem, por exemplo, ler posts exclusivos para assinantes.
 
 Ao instalar o Tainacan, porém, novas funções de usuário surgem. Vejamos a seguir quais são elas:
 

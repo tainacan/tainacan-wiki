@@ -81,7 +81,7 @@ Vamos para a lista de itens, experimentar estes filtros. Observe como, ao aplica
 
 ![Usando filtros](/pt-br/_assets/gifs/getting-started-9.gif)
 
-## Enchergando sua coleção no site
+## Enxergando sua coleção no site
 
 Tudo isso parece bem legal, mas até então estamos dentro do painel administrativo do Tainacan, que pode ser acessado apenas por quem tem permissão... e como isto se integra ao meu site *WordPress*? Basta clicarmos no ícone de olho, no canto superior direito para descobrirmos:
 
