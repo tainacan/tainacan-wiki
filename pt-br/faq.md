@@ -110,7 +110,7 @@ Sim, é possível! Para adicionar itens do Tainacan em uma postagem do WordPress
 
 ### Como vejo a lista de coleções no tema?
 
-A lista de coleções é uma das [Páginas Especiais](#/pt-br/tainacan-pages) que o Tainacan insere. Basta adicionar `/colecoes` ou `collections` à URL do seu site.
+A lista de coleções é uma das [Páginas Especiais](/pt-br/tainacan-pages) que o Tainacan insere. Basta adicionar `/colecoes` ou `collections` à URL do seu site.
 
 ### Como coloco a lista de coleções no menu do meu site?
 
@@ -118,7 +118,7 @@ Basta ir na barra superior em **Personalizar** > **Menus** > **Selecionar o Menu
 
 ### Como posso fazer a página inicial do meu site ser a lista de coleções?
 
-Por padrão, a página inicial do seu site será a lista de posts do seu blog. Para configurar uma página inicial customizada, deve-se ir no menu superior em **Personalizar** > **Configurações da página inicial** > **Uma página estática** e escolher a página. Entretanto, por ser uma [página especial](#/pt-br/tainacan-pages) criada pelo plugin, a página padrão da lista de coleções não está listada como opção. A solução é criar uma página e listar as suas coleções nela, usando algum dos [Blocos de Coleções](/pt-br/blocks-collections.md).
+Por padrão, a página inicial do seu site será a lista de posts do seu blog. Para configurar uma página inicial customizada, deve-se ir no menu superior em **Personalizar** > **Configurações da página inicial** > **Uma página estática** e escolher a página. Entretanto, por ser uma [página especial](/pt-br/tainacan-pages) criada pelo plugin, a página padrão da lista de coleções não está listada como opção. A solução é criar uma página e listar as suas coleções nela, usando algum dos [Blocos de Coleções](/pt-br/blocks-collections.md).
 
 
 > Para participar da comunidade do Tainacan [inscreva-se aqui](https://lists.riseup.net/www/subscribe/tainacan)!
