@@ -110,7 +110,7 @@ Metadados Compostos (introduzidos na versão 0.16 do Tainacan) são aqueles cujo
 
 Note que, ao usá-los:
 * Não é possível ter uma Taxonomia como metadado filho;
-* Um metadado composto não pode ser marcado como "Obrigatório" ou "Valor Único". Esse atributo será marcado nos filhos; 
+* Um metadado composto não pode ser marcado como "Obrigatório" ou "Valor Único". Esse atributo será marcado nos filhos. Se o metadado composto porém, está marcado como "Aceita múltiplos valores", nem seus filhos poderão ser marcados como "Obrigatório"; 
 * Os metadados filhos não podem ser marcados como "Multivalorados", nem tem opções de visualização ("Ver na lista"), estas configurações correspondem ao pai.
 * Metadados compostos não estão disponíveis como opção para Busca Avançada ou Edição em Massa, apenas seus filhos.
 * Por hora, ainda não é possível mapear os valores de metadados compostos em importadores ou exportadores, isto está em desenvolvimento.
