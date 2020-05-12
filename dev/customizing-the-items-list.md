@@ -43,30 +43,32 @@ As seen in our introdution of [introduction about creating compatible theme](/de
 
 | Variable name                                | Type        | Default        | Description                          |
 |----------------------------------------------|-------------|-------------|--------------------------------------|
-| `$hide-filters`                              | `bool`      | `false`      | Completely hide filter sidebar or modal                                                         |
-| `$hide-hide-filters-button`                  | `bool`      | `false`      | Hides the button resonsible for collpasing filters sidebar on desktop                           |   |
-| `$hide-search`                               | `bool`      | `false`      | Hides the complete search bar, including advanced search link                                   |   |
-| `$hide-advanced-search`                      | `bool`      | `false`      | Hides only the advanced search link                                                             |   |
-| `$hide-displayed-metadata-dropdown`          | `bool`      | `false`      | Hides the "Displayed metadata" dropdown even if the current view modes allows it                |   |
-| `$hide-sorting-area`                         | `bool`      | `false`      | Completely hides all sorting controls                                                           |   |
-| `$hide-sort-by-button`                       | `bool`      | `false`      | Hides the button where user can select the metadata to sort by items (keeps the sort direction) |   |
-| `$hide-exposers-button`                      | `bool`      | `false`      | Hides the "View as..." button, a.k.a. Exposers modal                                            |   |
-| `$hide-items-per-page-button`                | `bool`      | `false`      | Hides the button for selecting amount of items loaded per page                                  |   |
-| `$hide-go-to-page-button`                    | `bool`      | `false`      | Hides the button for skiping to a specific page                                                 |   |
-| `$hide-pagination-area`                      | `bool`      | `false`      | Completely hides pagination controls                                                            |   |
-| `$default-items-per-page`                    | `int`       | `12`       | Default number of items per page loaded                                                         |   |
-| `$show-filters-button-inside-search-control` | `bool`      | `false`      | Display the "hide filters" button inside of the search control instead of floating              |   |
-| `$start-with-filters-hidden`                 | `bool`      | `false`      | Loads the filters list hidden from start                                                        |   |
-| `$filters-as-modal`                          | `bool`      | `false`      | Display the filters as a modal instead of a collapsable region on desktop                       |   |
-| `$show-inline-view-mode-options`             | `bool`      | `false`      | Display view modes as inline icon buttons instead of the dropdown                               |   |
-| `$show-fullscreen-with-view-modes`           | `bool`      | `false`      | Lists fullscreen viewmodes alongside with other view modes istead of separatelly                |   |
-| `$default-view-mode`                         | `string`    | `masonry`    | The default view mode                                                                           |   |
-| `$is-forced-view-mode`                       | `bool`      | `false`      | Ignores user prefs to always render the choosen default view mode                               |   |
-| `$enabled-view-modes`                        | `string[]`  | *All registered view modes for repository and terms page. Enabled view modes on the collection settings for collection items list.*  | The list of enable view modes to display                                                        |   |
+| `$hide_filters`                              | `bool`      | `false`      | Completely hide filter sidebar or modal                                                         |
+| `$hide_hide_filters_button`                  | `bool`      | `false`      | Hides the button resonsible for collpasing filters sidebar on desktop                           |   |
+| `$hide_search`                               | `bool`      | `false`      | Hides the complete search bar, including advanced search link                                   |   |
+| `$hide_advanced_search`                      | `bool`      | `false`      | Hides only the advanced search link                                                             |   |
+| `$hide_displayed_metadata_dropdown`          | `bool`      | `false`      | Hides the "Displayed metadata" dropdown even if the current view modes allows it                |   |
+| `$hide_sorting_area`                         | `bool`      | `false`      | Completely hides all sorting controls                                                           |   |
+| `$hide_sort_by_button`                       | `bool`      | `false`      | Hides the button where user can select the metadata to sort by items (keeps the sort direction) |   |
+| `$hide_exposers_button`                      | `bool`      | `false`      | Hides the "View as..." button, a.k.a. Exposers modal                                            |   |
+| `$hide_items_per_page_button`                | `bool`      | `false`      | Hides the button for selecting amount of items loaded per page                                  |   |
+| `$hide_go_to_page_button`                    | `bool`      | `false`      | Hides the button for skiping to a specific page                                                 |   |
+| `$hide_pagination_area`                      | `bool`      | `false`      | Completely hides pagination controls                                                            |   |
+| `$default_items_per_page`                    | `int`       | `12`       | Default number of items per page loaded                                                         |   |
+| `$show_filters_button_inside_search_control` | `bool`      | `false`      | Display the "hide filters" button inside of the search control instead of floating              |   |
+| `$start_with_filters_hidden`                 | `bool`      | `false`      | Loads the filters list hidden from start                                                        |   |
+| `$filters_as_modal`                          | `bool`      | `false`      | Display the filters as a modal instead of a collapsable region on desktop                       |   |
+| `$show_inline_view_mode_options`             | `bool`      | `false`      | Display view modes as inline icon buttons instead of the dropdown                               |   |
+| `$show_fullscreen_with_view_modes`           | `bool`      | `false`      | Lists fullscreen viewmodes alongside with other view modes istead of separatelly                |   |
+| `$default_view_mode`                         | `string`    | `masonry`    | The default view mode                                                                           |   |
+| `$is_forced_view_mode`                       | `bool`      | `false`      | Ignores user prefs to always render the choosen default view mode                               |   |
+| `$enabled_view_modes`                        | `string[]`  | *All registered view modes for repository and terms page. Enabled view modes on the collection settings for collection items list.*  | The list of enable view modes to display                                                        |   |
+
+Notice that `$enabled_view_modes` are overided by collections setting when the items list is a collection items archive.
 
 ### Passing `css` variables to the items list class;
 
-Besides that, you can use css variables to override Tainacan's own CSS variables. You can check all the existing ones [in this file](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_custom_variables.scss). Notice, althought, that it wouldn't be interesting to override them directly on the `:root` selector, as this would affect all of yout Tainacan Admin styles as well. For themes, a better approach would be to override them directly on the `.theme-items-list` class. Bellow you can see the ones we consider more relevant for this part of the rendered Vue.js content:
+Besides that, you can use css variables to override Tainacan's own CSS variables. You can check all the existing ones [in this file](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/scss/_custom_variables.scss). Notice, although, that it wouldn't be interesting to override them directly on the `:root` selector, as this would affect all of your Tainacan Admin styles as well. For themes, a better approach would be to override them directly on the `.theme-items-list` class. Bellow you can see the ones we consider more relevant for this part of the rendered Vue.js content:
 
 ```css
 
