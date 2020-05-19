@@ -2,11 +2,11 @@
 
 Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainacan. Recomendamos, especialmente enquanto estamos em Beta, utilizar sempre a versão mais recente.
 
-## Tainacan Beta 0.16 (em desenvolvimento)
+## Tainacan Beta 0.16
 
 ### Postagem
 
-Anúncio da Versão de Teste: https://tainacan.org/blog/2020/04/24/teste-agora!-pre-lancamento-da-versao-0-16!
+Anúncio da Versão de Teste: https://tainacan.org/blog/2020/05/19/tainacan-beta-0-16-metadado-tipo-composto-e-usuario-bloco-da-busca-facetada-suporte-ao-wordpress-5-4/
 
 ### Resumo da Versão (o que é esperado)
 
@@ -48,9 +48,9 @@ Anúncio da Versão de Teste: https://tainacan.org/blog/2020/04/24/teste-agora!-
     * Variáveis do template para exibir ou esconder diversos elementos, mudar o comportamento padrão de algumas áreas como o painel de filtros;
 * Novo esquema para registrar tipos filtros e metadados terceiros, incluindo componentes vue sem precisar alterar o código core, apenas via plugins.
 
-#### Data Prevista
+#### Data de Lançamentos
 
-* Final de Abril
+* 19 de Maio de 2020
 
 ----
 
