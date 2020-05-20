@@ -2,13 +2,43 @@
 
 Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainacan. Recomendamos, especialmente enquanto estamos em Beta, utilizar sempre a versão mais recente.
 
+## Tainacan Beta 0.17
+
+### Resumo da Versão (o que é esperado)
+
+#### Novidades
+
+* Fluxo de submissão (depósito) e avaliação de itens por usuários não logados;
+* Filtro por tipo de Documento;
+* Mudar a ordem de anexos;
+* Desfazer algumas ações no modal de atividades;
+* Tipo de metadado URL embutida;
+
+#### Melhorias
+
+* Controle de visibilidade de Documento e Anexos de um item;
+* Melhorias na inserção de termos novos e existentes em metadados de taxonomia;
+* Melhorias na inserção de novos itens em metadados relacionamento;
+* O importador CSV vai criar automaticamente metadados nível repositório também;
+* Novas opções de tamanhos das miniaturas nos itens de blocos de carrosseis;
+
+#### Correções de Erros
+
+* Fazer com que a permissão `manage_collection_x` permita alterar tbm as configurações da coleção, não apenas seus metadados, itens, etc.
+
+### Data de Lançamento
+
+* Indefinido.
+  
+-----
+
 ## Tainacan Beta 0.16
 
 ### Postagem
 
 Anúncio da Versão de Teste: https://tainacan.org/blog/2020/05/19/tainacan-beta-0-16-metadado-tipo-composto-e-usuario-bloco-da-busca-facetada-suporte-ao-wordpress-5-4/
 
-### Resumo da Versão (o que é esperado)
+### Resumo da Versão
 
 #### Novidades
 
