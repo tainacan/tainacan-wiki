@@ -29,7 +29,36 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 ### Data de Lançamento
 
 * Indefinido.
-  
+* 
+----
+
+## Tainacan Beta 0.16.1
+
+### Postagem
+
+Em rascunho...
+
+### Resumo da Versão
+
+#### Melhorias
+* O Importador CSV de itens agora obedece a ordem em que os metadados são passados quando usada a opção de criar metadado automaticamente;
+* Evita fechar o painel de filtros com 'ESC' caso tenha sido escondido o botão de ocultar/mostrar filtros;
+* Carrega o JS e CSS da lista de itens apenas uma vez (devido ao bloco gutenberg busca facetada);
+
+#### Correções
+
+* A edição em massa não estava funcionando  opção "Substituir valores" para taxonomias;
+* A remoção de valores em metadados multivalorados pela edição em massa removia valores errados quando o metadado era do tipo taxonomia;
+* Corretamente desabilita os logs do importador quando estão sendo atualizados itens já criados;
+* A listagem de itens do termo não estava exibindo título e descrição nos modos de visualização Tabela e Fichas;
+* Erro `wp.primitives is undefined` impedia o ícone dos blocos Tainacan Gutenberg de aparecer;
+* Várias correções de tradução ou digitação em strings relacionadas aos novos recursos;
+* Ajustes de css para os filtros e cartões que possuiam alinhamento errado no Google Chrome;
+
+#### Data de Lançamento
+
+28 de Maio de 2020
+
 -----
 
 ## Tainacan Beta 0.16
