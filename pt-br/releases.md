@@ -47,9 +47,9 @@ Em rascunho...
 
 #### Correções
 
-* A edição em massa não estava funcionando  opção "Substituir valores" para taxonomias;
+* A edição em massa não estava funcionando opção "Substituir valores" para taxonomias;
 * A remoção de valores em metadados multivalorados pela edição em massa removia valores errados quando o metadado era do tipo taxonomia;
-* Corretamente desabilita os logs do importador quando estão sendo atualizados itens já criados;
+* Corretamente desabilita os logs das atividades, para os metadados, ao execucar o importador quando estão sendo incluidos novos itens;
 * A listagem de itens do termo não estava exibindo título e descrição nos modos de visualização Tabela e Fichas;
 * Erro `wp.primitives is undefined` impedia o ícone dos blocos Tainacan Gutenberg de aparecer;
 * Várias correções de tradução ou digitação em strings relacionadas aos novos recursos;
