@@ -29,7 +29,7 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 ### Data de Lançamento
 
 * Indefinido.
-* 
+
 ----
 
 ## Tainacan Beta 0.16.1
@@ -55,7 +55,7 @@ Em rascunho...
 * Várias correções de tradução ou digitação em strings relacionadas aos novos recursos;
 * Ajustes de css para os filtros e cartões que possuiam alinhamento errado no Google Chrome;
 
-#### Data de Lançamento
+### Data de Lançamento
 
 28 de Maio de 2020
 
