@@ -87,14 +87,9 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
    ```
 
 9. No canto inferior direito da tela clique em:
-
    1. `Enviar para a lixeira` para que o item seja enviado para a lixeira;
-
    2. `Voltar pra rascunho` para que o item tenha seu *status* alterado para **rascunho**;
-
    3. `Atualizar` para confirmar as alterações realizadas no item;
-
-      
 
 ![Inserir imagen na biblioteca](\_assets\gifs\inserindo-imagens-individualmente.gif)
 
