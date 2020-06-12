@@ -21,6 +21,7 @@
     * [Ações em Massa](/pt-br/bulk-actions "Aplicando ações em Massa no Tainacan - Tainacan Wiki")
     * [Permissões e Usuários](/pt-br/users-roles.md "Gerenciando Permissões e Funções de Usuários no Tainacan - Tainacan Wiki")
     * [Buscando dentro de PDFs](indexing-pdf.md "Realizando buscas dentro de PDFs via Tainacan - Tainacan Wiki")
+    * [Inserir e editar imagens](/pt-br/inserir-e-editar-imagens "Inserção e edição de imagens")
 * Páginas & Blocos Gutenberg
     * [Páginas do Tainacan](/pt-br/tainacan-pages.md "As Páginas geradas pelo plugin Tainacan - Tainacan Wiki")
     * [Blocos Gutenberg](/pt-br/gutenberg-blocks.md "Os Blocos Gutenberg do Tainacan - Tainacan Wiki")
@@ -50,4 +51,4 @@
         * [Blocos Gutenberg](/pt-br/testing-gutenberg-blocks.md) 
     * [Processamento de Dados e Acervos](/pt-br/data-processing "Um pouco sobre Processamento de Dados e Acervos - Tainacan Wiki")
     * [:link:OpenRefine](http://openrefine.org/ ':ignore')
- 
+
