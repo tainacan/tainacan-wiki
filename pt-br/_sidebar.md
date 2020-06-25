@@ -20,7 +20,7 @@
     * [Exportadores](/pt-br/exporters "O que são e como usar Exportadores no Tainacan - Tainacan Wiki")
     * [Ações em Massa](/pt-br/bulk-actions "Aplicando ações em Massa no Tainacan - Tainacan Wiki")
     * [Permissões e Usuários](/pt-br/users-roles.md "Gerenciando Permissões e Funções de Usuários no Tainacan - Tainacan Wiki")
-    * [Buscando dentro de PDFs](indexar-pdf.md "Realizando buscas dentro de PDFs via Tainacan - Tainacan Wiki")
+    * [Buscando dentro de PDFs](/pt-br/indexar-pdf.md "Realizando buscas dentro de PDFs via Tainacan - Tainacan Wiki")
     * [Inserir e editar imagens](/pt-br/inserir-e-editar-imagens "Inserção e edição de imagens")
 * Páginas & Blocos Gutenberg
     * [Páginas do Tainacan](/pt-br/tainacan-pages.md "As Páginas geradas pelo plugin Tainacan - Tainacan Wiki")
