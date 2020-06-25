@@ -33,6 +33,8 @@ Após ativado o plugin Tainacan, você pode conferir na [página "Diagnóstico d
 
 ### Domínio registrado
 
+De maneira resuminda, registrar um domínio significa ter um endereço na internet reservado, para o qual os navegadores irão apontar seu site quando as pessoas pesquisarem pela sua URL, ou link (por exemplo, `meuacervoonline.com.br`). Este é um serviço separado da hospedagem do conteúdo em si, e pode tanto ser feito por provedores específicos (como [registro.br](https://registro.br/ 'ignore') e [br.godaddy.com](https://br.godaddy.com/ 'ignore')), quanto oferecido pelo provedor de hospedagem.
+
 ## Serviços de hospedagem terceiros testados
 
 A seguir temos links de alguns serviços de hospedagens conhecidos por membros de nossa comunidade. É importante ressaltar que podem haver muitos outros e que não endossamos necessariamente uma alternativa mais que a outra.
