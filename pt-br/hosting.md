@@ -39,5 +39,6 @@ De maneira resuminda, registrar um domínio significa ter um endereço na intern
 
 A seguir temos links de alguns serviços de hospedagens conhecidos por membros de nossa comunidade. É importante ressaltar que podem haver muitos outros e que não endossamos necessariamente uma alternativa mais que a outra.
 
-| Serviço | Descrição do Plano | Inclui | Média de Preço | Pontos positivos | Pontos negativos |
-|---------|--------------------|--------|----------------|------------------|------------------|
+| Serviço | Link | Comentários |
+|---------|------|------------------|
+| Hostinger | https://www.hostinger.com.br/hospedagem-wordpress | Configuração simples. Inclui todos os módulos PHP necessários, SSL e oferece por um certo tempo dominio gratuíto. |
