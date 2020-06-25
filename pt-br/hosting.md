@@ -2,7 +2,7 @@
 
 ?> Esta página é dedicada a listar opções de hospedagem prontas para produção de instalações WordPress testadas com Tainacan. Usuários da comunidade são encorajados a relatar suas experiências aqui.
 
-Para usar o Tainacan é necessário uma instalação WordPress *no ar*. Se você tem conhecimentos em *Tecnologia da Informação* é possível fazer esta instalação em seu próprio computador, como [descrito nesta sessão](pt-br/xampp). Porém, idealmente seu site estará hospedado em um servidor, uma máquina que fica sempre ligada e em permanente conexão com a internet. Há vários serviços diponíveis para **hospedagem online**, muitos inclusives otimizados para o WordPress.
+Para usar o Tainacan é necessário uma instalação WordPress *no ar*. Se você tem conhecimentos em *Tecnologia da Informação* é possível fazer esta instalação em seu próprio computador, como [descrito nessa sessão](pt-br/xampp). Porém, idealmente seu site estará hospedado em um servidor, uma máquina que fica sempre ligada e em permanente conexão com a internet. Há vários serviços diponíveis para **hospedagem online**, muitos inclusives otimizados para o WordPress.
 
 Nesta página listaremos:
 * [Recursos e características a se esperar de um serviço de hospedagem adequado para uso do Tainacan](#o-que-se-espera-de-uma-hospedagem-para-o-tainacan);
@@ -10,9 +10,32 @@ Nesta página listaremos:
 
 ## O que se espera de uma hospedagem para o Tainacan?
 
+### WordPress instalado
+
+Como quesito mais essencial, sua instalação precisa incluir um [WordPress](https://br.wordpress.org/ 'ignore'), ou pelo menos precisa permitir instalar um, com acesso completo ao painel admin. Embora o Tainacan vá funcionar com qualquer versão a partir da 4.8 do WordPress, recomendamos instalações com [versão mais recente](https://br.wordpress.org/download/releases/ 'ignore') e acima da 5.0 para poder tirar proveito de todos os recursos, como os [blocos gutenberg](/pt-br/gutenberg-blocks.md). Você precisará ter permissões para instalar plugins para poder ativar o Tainacan (o que, [como mencionado aqui](/pt-br/faq.md#qual-a-diferença-entre-wpcom-e-wporg), já tira de possibilidade algumas opções gratuitas de planos como as do [WordPress.com](https://br.wordpress.com/ 'ignore'));
+
+#### Alguns requisitos do Servidor
+
+É bem provável que se seu plano de hospedagem inclui um WordPress instalado, estes requisitos já estejam preenchidos, mas caso você vá instalar um por conta própria, certifique-se de ter:
+
+* `Apache` ou `Nginx` rodando;
+* `PHP` versão de mínima 5.6;
+* Módulos do `PHP` esperados:
+  * `curl`
+  * `exif`
+  * `imagick`
+  * `gd`
+  * `zlib`
+
+Após ativado o plugin Tainacan, você pode conferir na [página "Diagnóstico do sistema"](/pt-br/optimization#diagnóstico-do-sistema) se estas informações estão atendidas. Caso o contrário, você pode contatar seu provedor de hospedagem para pedir ajuda com sua configuração.
+
+### SSL ativado
+
+### Domínio registrado
+
 ## Serviços de hospedagem terceiros testados
 
 A seguir temos links de alguns serviços de hospedagens conhecidos por membros de nossa comunidade. É importante ressaltar que podem haver muitos outros e que não endossamos necessariamente uma alternativa mais que a outra.
 
-| Serviço | Descrição | Inclui | Média de Preço | Pontos positivos | Pontos negativos |
-|---------|-----------|--------|----------------|------------------|------------------|
+| Serviço | Descrição do Plano | Inclui | Média de Preço | Pontos positivos | Pontos negativos |
+|---------|--------------------|--------|----------------|------------------|------------------|

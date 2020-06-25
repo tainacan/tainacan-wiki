@@ -100,6 +100,10 @@ Sim! Mas infelizmente o [plano gratuito](https://br.wordpress.com/pricing/ 'igno
 
 Sim. Mas é bom deixar claro, **o Tainacan é um plugin para uma plataforma de sites**. Sua função não é bem a de um programa que você abre e fecha! Instalações _locais_ - como chamamos quando você configura em seu próprio computador - são úteis para desenvolvedores que querem contribuir ou apenas para quem quer fazer testes antes de mandar para um servidor, onde de fato o site ficará hospedado na web e online 24 horas por dia. Para configurar uma instalação do WordPress pronta para o Tainacan, dê uma olhada em [nossos tutoriais de instalação](/pt-br/instalacao)!
 
+### Então, quais opções tenho para hospedar meu repositório?
+
+Boa pergunta! Discutimos isso em mais detalhes na nossa página de [Hospedagem](/pt-br/hosting).
+
 -------------------
 
 ## Menus, Páginas e Blocos
