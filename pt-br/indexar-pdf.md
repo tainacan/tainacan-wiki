@@ -16,7 +16,7 @@ Uma vez que a funcionalidade foi ativada, arquivos PDF cattegados como documento
 
 ## Buscando no texto indexados dos documentos no formato PDF
 
-O conteúdo textual do PDF indexado será buscado através da funcionalidade de "busca textual do Tainacan", que busca em todos os metadados. (Veja mais em: [Search Engine](dev/search-engine.md))
+O conteúdo textual do PDF indexado será buscado através da funcionalidade de "busca textual do Tainacan", que busca em todos os metadados. (Veja mais em: [Mecanismo de Busca](pt-br/search-engine.md))
 
 Você pode também buscar somente no conteúdo do PDF utilizando a opção de Busca Avançada. Existe uma nova opção de bsuca chamada "Documento" que  buscará diretamente no conteúdo indexado dos documento em PDF carregados.
 
