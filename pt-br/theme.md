@@ -1,8 +1,19 @@
 # Temas
 
-Os temas do Tainacan podem ser utilizados de forma independente ao plugin, mas a combinação do *Tema* e do *Plugin* na mesma instalação permite que itens e coleções sejam exibidos com todas as funcionalidades de navegação do acervo como a busca de itens, filtros, diferentes formas de exibição, etc.
+Uma das razões pelos quais o *WordPress* é tão famoso e versátil é sua diversidade de [temas](https://wordpress.org/themes/ 'ignore'). São milhares de temas que podem atribuir ao seu site estilo e estrutura mais formais, chamativos ou minimalistas. A grande maioria é gratuito e está a um clique de instalação.  
 
-## Temas do Tainacan
+?> **É possível usar o plugin Tainacan com qualquer tema ativado**, porém a experiência pode ser melhor com temas que oferecem compatibilidade para suas páginas.
+
+Nesta página falamos sobre:
+
+* Quais são [os temas que oferecem melhor compatibilidade](#temas-compatíveis-com-o-tainacan) para o Tainacan e,
+* [Como instalar e gerenciar temas](#gerir-temas-no-wordpress) no seu *WordPress*.
+
+## Temas compatíveis com o Tainacan
+
+Além de inserir um novo campo no seu painel administrativo do *WordPress*, onde você acessa o painel administrativo do Tainacan em si, o plugin Tainacan também gera [páginas especiais](/pt-br/tainacan-pages.md) no seu site. Se o seu tema foi pensado para apresentar estas páginas, listagens de itens e coleções serão exibidos com todas as funcionalidades de navegação do acervo como a busca de itens, filtros, diferentes formas de exibição, etc. Caso contrário, estas listagens deverão ser muito próximas a maneira como o tema exibe postagens do blog.
+
+Desenvolver um tema compatível não é complicado e também não precisa ser feito do zero, já que muitos podem ser gerados a partir de [temas filhos](https://codex.wordpress.org/pt-br:Temas_Filhos 'ingnore') de outros já existentes. Aqui na Wiki temos [uma sessão inteira](/dev/creating-compatible-themes.md) dedicada a ensinar isto para desenvolvedores.
 
 Atualmente existe um tema desenvolvido pela comunidade do Tainacan e publicado no [repositório oficial do WordPress](https://br.wordpress.org/themes/). Para instalar temas compatíveis com a exibição de itens do Tainacan, acesse o painel de instalação de temas do WordPress e siga os passos na seção abaixo:
 
@@ -13,6 +24,8 @@ Atualmente existe um tema desenvolvido pela comunidade do Tainacan e publicado n
 Outros temas compatíveis com os modos de visualização e navegação do Tainacan também podem ser desenvolvidos, consulte a documentação para desenvolvimento de [temas compatíveis](/dev/custom-templates). 
 
 -----
+
+## Gerir Temas no WordPress
 
 ### Vídeo Tutorial: Instalação de Temas
 
@@ -27,7 +40,7 @@ Outros temas compatíveis com os modos de visualização e navegação do Tainac
 
 > Veja também como instalar o [plugin do Tainacan](/pt-br/tainacan) para WordPress.
 
-## Atualizar o Tema
+### Atualizar o Tema
 
 1. Acesse o Painel de Controle do *WordPress*;
 2. No menu lateral esquerdo, clique em **Aparência**;
@@ -35,7 +48,7 @@ Outros temas compatíveis com os modos de visualização e navegação do Tainac
 4. No bloco de cada tema a mensagem "*Nova versão disponível. Atualizar agora*" é exibida sempre que uma nova versão é lançada;
   1. Clique em **Atualizar agora** para receber a última versão estável do Tema.
 
-## Alterar ou Excluir o Tema
+### Alterar ou Excluir o Tema
 
 1. Acesse o Painel de Controle do *WordPress*;
 2. No menu lateral esquerdo, clique em Aparência;
