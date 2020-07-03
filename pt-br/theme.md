@@ -1,4 +1,4 @@
-# Tema
+# Temas
 
 Os temas do Tainacan podem ser utilizados de forma independente ao plugin, mas a combinação do *Tema* e do *Plugin* na mesma instalação permite que itens e coleções sejam exibidos com todas as funcionalidades de navegação do acervo como a busca de itens, filtros, diferentes formas de exibição, etc.
 
