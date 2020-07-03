@@ -559,3 +559,9 @@ img.medium-zoom-image {
 .home-panel .list-group .list-group-item a {
     text-decoration: none;
 }
+
+/* Share Links */
+a.fab,
+a.fab:hover {
+    color: white;
+}

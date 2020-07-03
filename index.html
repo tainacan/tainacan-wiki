@@ -10,6 +10,7 @@
   <link rel="icon" href="favicon.ico" type="image/ico"/>
   <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
   <!-- Theme: Simple (latest v0.x.x) -->
+  <link rel="stylesheet" href="https://unpkg.com/mytest-share/assets/css/docsify-share.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -63,6 +64,16 @@
       formatUpdated: '{MM}/{DD} {HH}:{mm}',
       subMaxLevel: 3,
       loadNavbar: true,
+      share: {
+          facebook: true,
+          twitter: true,
+          whatsapp: true,
+          telegram: true,
+          reddit: true,
+          options: {
+              color: '#298596'
+          },
+      },
       plugins: [
           EditOnGithubPlugin.create(
             'https://github.com/tainacan/tainacan-wiki/blob/master/',
@@ -87,5 +98,6 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="https://unpkg.com/prismjs/components/prism-php.min.js"></script>
+  <script src="https://unpkg.com/docsify-share/build/index.min.js"></script>
 </body>
 </html>
