@@ -11,17 +11,44 @@ Nesta página falamos sobre:
 
 ## Temas compatíveis com o Tainacan
 
-Além de inserir um novo campo no seu painel administrativo do *WordPress*, onde você acessa o painel administrativo do Tainacan em si, o plugin Tainacan também gera [páginas especiais](/pt-br/tainacan-pages.md) no seu site. Se o seu tema foi pensado para apresentar estas páginas, listagens de itens e coleções serão exibidos com todas as funcionalidades de navegação do acervo como a busca de itens, filtros, diferentes formas de exibição, etc. Caso contrário, estas listagens deverão ser muito próximas a maneira como o tema exibe postagens do blog.
+Além de inserir um novo campo no seu painel administrativo do *WordPress*, onde você acessa o painel administrativo do Tainacan em si, o plugin Tainacan também gera [páginas especiais](/pt-br/tainacan-pages.md) no seu site. Se o seu tema foi pensado para apresentar estas páginas, listagens de itens e coleções serão exibidas com todas as funcionalidades de navegação do acervo como a busca de itens, filtros, diferentes formas de exibição, etc. Caso contrário, estas listagens deverão ser muito próximas da maneira como o tema exibe postagens do blog.
 
 Desenvolver um tema compatível não é complicado e também não precisa ser feito do zero, já que muitos podem ser gerados a partir de [temas filhos](https://codex.wordpress.org/pt-br:Temas_Filhos 'ingnore') de outros já existentes. Aqui na Wiki temos [uma sessão inteira](/dev/creating-compatible-themes.md) dedicada a ensinar isto para desenvolvedores.
 
-Atualmente existe um tema desenvolvido pela comunidade do Tainacan e publicado no [repositório oficial do WordPress](https://br.wordpress.org/themes/). Para instalar temas compatíveis com a exibição de itens do Tainacan, acesse o painel de instalação de temas do WordPress e siga os passos na seção abaixo:
+Atualmente existe um tema desenvolvido pela comunidade do Tainacan e publicado no [repositório oficial do WordPress](https://br.wordpress.org/themes/). Os demais estão disponíveis via GitHub. Para instalar temas, acesse o painel de instalação de temas do WordPress e siga os passos na [seção de instalação](gerir-temas-no-wordpress).
 
-### Temas da comunidade Tainacan
+### Tainacan Interface
 
-* [Tainacan Interface](https://br.wordpress.org/themes/tainacan-interface/): Este é o tema padrão do projeto Tainacan. Use em conjunto com o plugin do Tainacan para gerenciar e publicar facilmente suas coleções digitais com uma bela interface de pesquisa facetada. Este tema é ideal para museus, galerias, bibliotecas e qualquer pessoa que tenha um repositório digital.
+Este é o tema padrão do projeto Tainacan e está disponível nos repos oficiais do Wordpress [neste link](https://br.wordpress.org/themes/tainacan-interface/). Foi desenvolvido pela mesma equipe de design que elaborou a interface administrativa do Tainacan plugin, por isso deve trazer a mesma formalidade, com uma boa legibilidade e layouts que suportam grandes quantidades de informações exibidas em uma mesma tela. Este tema é ideal para museus, galerias, bibliotecas e qualquer pessoa que tenha um repositório digital. Destacamos suas principais vantagens:
 
-Outros temas compatíveis com os modos de visualização e navegação do Tainacan também podem ser desenvolvidos, consulte a documentação para desenvolvimento de [temas compatíveis](/dev/custom-templates). 
+* Templates específicos para as listas de itens do Repositório, da Coleção e do Termo, com várias configurações incluindo:
+  * Sobrescrever o modo de visualização padrão para listagens de termos;
+  * Esconder diversos elementos de controle da busca;
+  * Alterar comportamento da barra de filtros, como seu tamanho ou se aparece escondida de início;
+* Template específico para a lista de coleções, com dois modos de visualização, busca textual e ordenação;
+* Template específico para a página do item, com diversas opções, entre elas:
+  * Alterar a ordem em que anexos, metadados e documento são exibidos;
+  * Exibir a lista de metadados em mais de uma coluna;
+  * Mostrar os anexos como um carrossel e integrar o documento nesta mesma lista;
+  * Exibir um cabeçalho customizado que se assemelha ao da coleção;
+  * Botão de download no Documento;
+* Atualizações frequentes e em sincronia com novas versões do plugin Tainacan;
+* Paleta de cores customizável;
+* Cor do cabeçalho de cada coleção customizável dentro do plugin, quando o tema está ativo;
+* Novo modo de visualização "Miniatura";
+* Botões de compartilhar para Facebook, Twitter, WhatsApp e Telegram na maioria das páginas;
+* Blocos Gutenberg padrão estilizados de acordo com a identidade visual do tema;
+* Suporte a barra lateral;
+
+![Algumas telas do Tema Tainacan Interface](/_assets/gifs/themes-tainacan-interface.gif)
+
+### IDG-WP
+
+### Veganos (Tema Filho)
+
+### Rife Free (Tema Filho)
+
+### Twenty Twenty (Tema Filho)
 
 -----
 
