@@ -42,7 +42,19 @@ Este é o tema padrão do projeto Tainacan e está disponível nos repos oficiai
 
 ![Algumas telas do Tema Tainacan Interface](/_assets/gifs/themes-tainacan-interface.gif)
 
-### IDG-WP
+### Identidade do Governo (IDG-WP)
+
+Este tema WordPress foi desenvolvido por uma equipe de voluntários vinculados ao antigo Ministério da Cultura, com o objetivo de padronizar diversos sites WordPress utilizados pelo governo federal. Um exemplo é o próprio site da [Secretaria de Cultura](http://cultura.gov.br/ 'ignore). O [tema original](https://github.com/culturagovbr/IDG-WP 'ignore') em si não possui suporte ao Tainacan, mas com a demanda de vários museus vinculados ao Ibram para uso do mesmo, foi criado um *fork*, uma variação do tema, em [outro repositório](https://github.com/medialab-ufg/IDG-WP 'ignore'). Infelizmente, este projeto está necessitando de mantenedores. Destacamos suas características:
+
+* Templates específicos para as listas de itens do Repositório, da Coleção e do Termo porém sem imagens de cabeçalhos;
+* Template específico para a página do item, incluindo carrossel de anexo;
+* Integração padrão com a barra de links e acessibilidade do Governo Federal;
+* Suporte à maioria dos blocos gutenberg;
+* Dois locais para menu: na barra principal e no painel escondido ao seu lado;
+* Carrossel de notícias na página inicial;
+* Customização de sessões da página inicial via plugins;
+
+![Algumas telas do Tema IDG-WP](/_assets/gifs/themes-idg-wp.gif)
 
 ### Veganos (Tema Filho)
 
