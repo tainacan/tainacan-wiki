@@ -44,7 +44,7 @@ Este é o tema padrão do projeto Tainacan e está disponível nos repos oficiai
 
 ### Identidade do Governo (IDG-WP)
 
-Este tema WordPress foi desenvolvido por uma equipe de voluntários vinculados ao antigo Ministério da Cultura, com o objetivo de padronizar diversos sites WordPress utilizados pelo governo federal. Um exemplo é o próprio site da [Secretaria de Cultura](http://cultura.gov.br/ 'ignore). O [tema original](https://github.com/culturagovbr/IDG-WP 'ignore') em si não possui suporte ao Tainacan, mas com a demanda de vários museus vinculados ao Ibram para uso do mesmo, foi criado um *fork*, uma variação do tema, em [outro repositório](https://github.com/medialab-ufg/IDG-WP 'ignore'). Infelizmente, este projeto está necessitando de mantenedores. Destacamos suas características:
+Este tema WordPress foi desenvolvido por uma equipe de voluntários vinculados ao antigo Ministério da Cultura, com o objetivo de padronizar diversos sites WordPress utilizados pelo governo federal. Um exemplo é o próprio site da [Secretaria de Cultura](http://cultura.gov.br/ 'ignore). O [tema original](https://github.com/culturagovbr/IDG-WP 'ignore') em si não possui suporte ao Tainacan, mas com a demanda de vários museus vinculados ao Ibram para uso do mesmo, foi criado uma *fork*, uma variação do tema, em [outro repositório](https://github.com/medialab-ufg/IDG-WP 'ignore'). Infelizmente, este projeto está necessitando de mantenedores e pode apresentar alguns problemas. Destacamos suas características:
 
 * Templates específicos para as listas de itens do Repositório, da Coleção e do Termo porém sem imagens de cabeçalhos;
 * Template específico para a página do item, incluindo carrossel de anexo;
@@ -58,9 +58,36 @@ Este tema WordPress foi desenvolvido por uma equipe de voluntários vinculados a
 
 ### Veganos (Tema Filho)
 
+Criado para o projeto [Covid-19 - UnB em Ação](http://repositoriocovid19.unb.br/ 'ignore'), este é um tema filho do tema [Veganos](https://wordpress.org/themes/veganos/ 'ignore'), portanto, além de baixá-lo do seu [repositório](https://github.com/tainacan/tainacan-unb-covid-19 'ignore') é preciso também instalar o tema pai. Sua característica mais notável é o formato "ondulado" das imagens de cabeçalho, dentre outras:
+
+* Templates específicos para as listas de itens do Repositório, da Coleção e do Termo incluindo imagens de cabeçalho e estilizados com algumas bordas e sombras;
+* Template específico para a página do item, com metadados listados antes do Documento e anexos;
+* Listagem de posts em formado de blocos, em uma lista de duas colunas;
+* Botões estilizados com efeito ondulado;
+* Paleta de cores customizável
+* Integração padrão com abarra de links e acessibilidade do Governo Federal;
+* Integração com a barra de menus da UnB (caso não queira usar ela, basta puxar da [branch 'not-unb'](https://github.com/tainacan/tainacan-unb-covid-19/tree/not-unb 'ignore') do GitHub);
+
+![Algumas telas do Tema Veganos](/_assets/gifs/themes-veganos.gif)
+
 ### Rife Free (Tema Filho)
 
+Este é um [tema filho](https://github.com/tainacan/rife-free-child 'ignore') do popular tema [Rife Free](https://wordpress.org/themes/rife-free/ 'ignore'). Ele tem uma dependência de um plugin instalado, o [Apollo13 Framework extensions](https://apollo13themes.com/rife/free 'ignore'), mas em compensação, traz muitas opções de customização, deste o formato de páginas e posts até comportamento do cabeçalho. Outros destaques são:
+
+* Templates específicos para as listas de itens do Repositório, da Coleção e do Termo incluindo imagens de cabeçalho;
+* Template específico para a página do item, incluindo botões de próximo e anterior, que mostra a miniatura dos mesmos;
+* Botão de scroll para o topo;
+* Paleta de cores diversa e customizável;
+* Animações e efeitos de transição;
+* Listagem de posts em formado de blocos, opcionalmente em uma lista de três colunas;
+
+![Algumas telas do Tema Rife Free](/_assets/gifs/themes-rife-free.gif)
+
 ### Twenty Twenty (Tema Filho)
+
+Todo ano o WordPress lança um "tema oficial", que vem ativado por padrão em suas instalações e que costuma ter um design popular, com boa aplicação dos blocos gutenberg além de testes de acessibilidade e responsibidade. Criamos, para validar nossos testes com o plugin, um tema filho do [TwentyTweny](https://wordpress.org/themes/twentytwenty/ 'ignore'), disponível [neste link](https://github.com/tainacan/TwentyTwentyChild 'ignore').
+
+![Algumas telas do Tema Twenty Twenty](/_assets/gifs/themes-twentytwenty.gif)
 
 -----
 
