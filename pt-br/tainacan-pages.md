@@ -13,7 +13,7 @@ Com o plugin Tainacan ativado em seu WordPress, algumas páginas especiais passa
 * Página de Coleções `/colecoes`;
 * Página de todos os Items do Repositório `/itens`;
 * Páginas de Itens de uma Coleção de slug *nome-da-colecao* `/nome-da-colecao`;
-* Páginas de Itens com algum metadado Taxonomia que tenham um Termo de slug *nome-do-termo* `/nome-do-termo`;
+* Páginas de Itens com algum metadado Taxonomia de slug *nome-da-taxonomia* que tenham um Termo de slug *nome-do-termo* `/nome-da-taxonomia/nome-do-termo`;
 
 A medida que você cria Coleções, Itens e Termos, automaticamente já poderá ter acesso no seu site nestes endereços. Em geral, no painel administrativo do Tainacan, você encontra links para estas páginas em botões com ícones de olho (como o que se encontra no topo direito desta página). Para além disso, também é possível configurar suas *próprias páginas* apresentando suas coleções ou explicando algo sobre seu repositório. São dois caminhos diferentes, mas que estão à sua disposição graças à **integração do Tainacan com o WordPress**. Saiba mais a seguir:
 
@@ -21,6 +21,8 @@ A medida que você cria Coleções, Itens e Termos, automaticamente já poderá 
 * [Criando suas Próprias páginas com Blocos Gutenberg](/pt-br/gutenberg-blocks)
 
 ## As páginas Especiais do Tainacan
+
+![Conjunto de captura de telas exemplificando as páginas especiais do Tainacan, no  tema Tainacan Interface](/_assets/images/paginas_especiais_tainacan.png)
 
 ### Página de Coleções
 
@@ -47,11 +49,11 @@ Esta é em geral a página mais importante de uma instalação Tainacan. Nela vo
 * Modos de visualização incluindo o modo Tela Cheia (são habilitados ou desabilitados também no formulário de edição da coleção);
 * Modal de URLs relacionadas, provendo acesso à mesma lista em diferentes formatos como JSON, HTML, CSV, PDF (caso [o plugin](/pt-br/plugin-pdf-exposer) esteja instalado) e com a possibilidade de se realizar mapeamentos;
 
-Observe que a lista de itens é então a página de uma coleção em si. Se você clicar em uma coleção na Lista de Coleções do site ela irá para esta lista. Porém, você pode preferir ter uma [página customizada de apresentação](/pt-br/gutenberg-blocks), por exemplo, para só então redirecionar para sua lista de itens. Isto pode ser modificado também no formulário de configuração da sua coleção.
+Observe que a lista de itens é então a página de uma coleção em si. Se você clicar em uma coleção na *Lista de Coleções* do site ela irá para esta lista. Porém, você pode preferir ter uma [página customizada de apresentação](/pt-br/gutenberg-blocks), por exemplo, para só então redirecionar para sua lista de itens. Isto pode ser modificado também no formulário de configuração da sua coleção, na opção "Página de Capa".
 
 ### Páginas de Itens de um Termo
 
-`/nome-do-termo`
+`/nome-da-taxonomia/nome-do-termo`
 
 Similar à lista de itens de uma coleção, esta página mostra todos os itens que possuem algum metadado tipo taxonomia e que tenham neste metadado um termo específico. A principal diferença da lista da coleção é que o cabeçalho terá a imagem e descrição do termo, configurável no seu formulário de edição.
 
