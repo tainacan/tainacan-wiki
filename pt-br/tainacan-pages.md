@@ -1,7 +1,7 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Ver no Tema" 
-		src="/_assets/images/icon_see.png"
+		src="/pt-br/_assets/images/icon_see.png"
 		width="42"
 		height="42">
 </div>
