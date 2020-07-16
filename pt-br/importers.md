@@ -62,7 +62,7 @@ As colunas especiais que podem ser usadas são:
   * `publish`: público
 * `special_item_id` - Informa o **ID do item** no banco de dados do Tainacan. Essa função é útil para re-importar itens e permitir que o usuário decida atualizar os itens * existente ou ignora-los e adicionar novos itens.
 * `special_document` - permite que o usuário informe o documento do item. Consulte [Importando arquivos e anexos](#importar-arquivos-e-anexos).
-* `special_attachments` - permite que o usuário informe os anexos. Consulte [Importando arquivos e anexos](#importar-arquivos-e-anexos).
+* `special_attachments`, `special_attachments|REPLACE` ou `special_attachments|APPEND` - permite que o usuário informe os anexos. Consulte [Importando arquivos e anexos](#importar-arquivos-e-anexos).
 * `special_comment_status` - permite que o usuário informe se os items podem receber ou não comentários, as opções são: *"open"* ou *"closed"* (padrão).
 
 
@@ -104,6 +104,12 @@ Uma imagem,http://example.com/image.jpg
 Várias imagens,http://example.com/image.jpg%7C%7Chttp://example.com/image2.jpg%7C%7Chttp://example.com/image3.jpg
 Imagens enviadas por FTP,myfolder/image.jpg||myfolder/image2.jpg
 ```
+
+
+O `special_attachments` possui duas variações, na presença do campo especial `special_item_id`:
+* `special_attachments|REPLACE`: substitui os anexos existentes pela lista de arquivos informados no *.csv*;
+* `special_attachments|APPEND`: opção padrão utilizada para adicionar os arquivos aos anexos do item;
+
 
 #### Vídeo Tutorial: Importar arquivos e anexos
 
