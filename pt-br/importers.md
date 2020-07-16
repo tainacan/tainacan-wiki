@@ -146,11 +146,12 @@ Os tipos de metadados suportados nativamente atualmente são:
 * `selectbox` - Select Box
 * `user` - Usuário
 * `relationship` - Relacionamento: os valores devem ser a ID do item relacionado.
+* `compound([*nome do metadado*|*tipo do metadado*,...])` -  Metadado composto: a lista de metadados que compõe o metadado composto deve ser informado entre os parentes utilizando a mesma sintaxe para definir metadados simples
 
 Por exemplo:
 
 ```
-Nome,Assunto|taxonomy,Data de criação|date
+Nome,Assunto|taxonomy,Data de criação|date, "Avaliação|compound(Descrição|text,Pontuação|numeric)
 ```
 
 #### Informações sobre o metadado de Taxonomia
