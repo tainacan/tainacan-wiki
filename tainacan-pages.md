@@ -1,30 +1,39 @@
 ?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+<div style="float: right; margin-left: 1rem;">
+	<img 
+		alt="Ícone de Ver no Tema" 
+		src="/_assets/images/icon_see.png"
+		width="42"
+		height="42">
+</div>
 
-# Tainacan Pages
+# Páginas do Tainacan
 
 Com o plugin Tainacan ativado em seu WordPress, algumas páginas especiais passam a ser criadas pelo próprio plugin. São elas:
 
 * Página de Coleções `/colecoes`;
 * Página de todos os Items do Repositório `/itens`;
 * Páginas de Itens de uma Coleção de slug *nome-da-colecao* `/nome-da-colecao`;
-* Páginas de Itens com algum metadado Taxonomia que tenham um Termo de slug *nome-do-termo* `/nome-do-termo`;
+* Páginas de Itens com algum metadado Taxonomia de slug *nome-da-taxonomia* que tenham um Termo de slug *nome-do-termo* `/nome-da-taxonomia/nome-do-termo`;
 
-A medida que você cria Coleções, Itens e Termos, automaticamente já poderá ter acesso no seu site nestes endereços. Para além disso, também é possível configurar suas *próprias páginas* apresentando suas coleções ou explicando algo sobre seu repositório. São dois caminhos diferentes, mas que estão à sua disposição graças à **integração do Tainacan com o WordPress**. Saiba mais a seguir:
+A medida que você cria Coleções, Itens e Termos, automaticamente já poderá ter acesso no seu site nestes endereços. Em geral, no painel administrativo do Tainacan, você encontra links para estas páginas em botões com ícones de olho (como o que se encontra no topo direito desta página). Para além disso, também é possível configurar suas *próprias páginas* apresentando suas coleções ou explicando algo sobre seu repositório. São dois caminhos diferentes, mas que estão à sua disposição graças à **integração do Tainacan com o WordPress**. Saiba mais a seguir:
 
 * [Páginas Especiais Geradas pelo Tainacan](#as-páginas-especiais-do-Tainacan)
-* [Criando suas Próprias páginas com Blocos Gutenberg](/pt-br/gutenberg-blocks)
+* [Criando suas Próprias páginas com Blocos Gutenberg](/gutenberg-blocks)
 
 ## As páginas Especiais do Tainacan
 
+![Conjunto de captura de telas exemplificando as páginas especiais do Tainacan](/pt-br/_assets/images/paginas_especiais_tainacan.png)
+
 ### Página de Coleções
 
-`/colecoes` ou `/collections`, caso sua instalação esteja em inglês.
+`/collections`
 
 Disponível no seu site a partir do momento em que é criada uma coleção, esta página lista suas coleções com opções de ordenação, busca, paginação e visualização em tabela ou cartões. É uma boa maneira de prover ao público uma visão sistemática de quais coleções existem no seu repositório.
 
 ### Página de Items do Repositório
 
-`/itens` ou `/items`, caso sua instalação esteja em inglês.
+`/items`
 
 Disponível no seu site a partir do momento em que algum item é criado em qualquer coleção, esta página lista **todos os itens de todos as coleções do repositório**. Ela apresentará alguns modos de visualização padrão, opções de ordenação pelos metadados nível repositório e a listagem de todos os filtros de todas as coleções, além de um filtro de coleções. Embora seja poderoso o acesso à todos os itens, *recomendamos seu uso com cautela*. A filtragem por um metadado específico de uma coleção, por exemplo, esconderá da lista os itens que não possuem aquele metadado, o que pode ser confuso para quem não conhece a organização do seu repositório.
 
@@ -45,7 +54,7 @@ Observe que a lista de itens é então a página de uma coleção em si. Se voc�
 
 ### Páginas de Itens de um Termo
 
-`/nome-do-termo`
+`/nome-da-taxonomia/nome-do-termo`
 
 Similar à lista de itens de uma coleção, esta página mostra todos os itens que possuem algum metadado tipo taxonomia e que tenham neste metadado um termo específico. A principal diferença da lista da coleção é que o cabeçalho terá a imagem e descrição do termo, configurável no seu formulário de edição.
 

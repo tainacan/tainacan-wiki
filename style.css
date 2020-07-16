@@ -309,7 +309,7 @@ img.medium-zoom-image {
 .content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li:before,
 .content .markdown-section ol li ul:not(.task-list) li:before, 
 .content .markdown-section .content .markdown-section ol li ul:not(.task-list) li:before {
-	content: '\1f790';
+	content: '\25a1';
 	padding-right: 0.75rem;
 	color: #01295c;
 }
@@ -558,4 +558,10 @@ img.medium-zoom-image {
 }
 .home-panel .list-group .list-group-item a {
     text-decoration: none;
+}
+
+/* Share Links */
+a.fab,
+a.fab:hover {
+    color: white;
 }
