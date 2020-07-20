@@ -10,6 +10,8 @@ Developers can create custom Metadata Types via plugins starting from Tainacan 0
 - Creating Vue Web Component for the [Metadata Form](#creating-vue-web-component-for-the-metadata-form)
 - Advanced usage of third party [Vue Components](#advanced-usage-of-vue-components)
 
+If you want to play with the sample used here, it is all available in this github repo: [https://github.com/tainacan/custom-metadata-type-samples](https://github.com/tainacan/custom-metadata-type-samples ":ignore").
+
 ## Registering your Metadata Type
 
 First of all, you have to register your Metadata Type class. You do this by calling the `register_metadata_type` method of the `Metadata Type Helper`, available if the Tainacan plugin is installed. For the simplicity of this article, let us suppose that you are creating a custom version of the existing _Numeric_ Metadata Type, which you'll call "Custom Metadata Type". You might have the main plugin file, named `custom-metadata-type.php` with the following content:
@@ -27,22 +29,25 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 add_action("tainacan-register-metadata-type", "register_metadata_type");
-
 function register_metadata_type($helper) {
 
     // Registering the Class
     require_once( plugin_dir_path(__FILE__) . 'metadata_type/metadata-type.php' );
 
     // Registering the Vue Component
-	$handle = 'custom-metadata-type';
-	$class_name = 'Custom_Metadata_Type';
-	$metadata_script_url = plugin_dir_url(__FILE__) . 'metadata_type/metadata-type.js';
+    $handle = 'custom-metadata-type';
+    $class_name = 'Custom_Metadata_Type';
+    $metadata_script_url = plugin_dir_url(__FILE__) . 'metadata_type/metadata-type.js';
     $helper->register_metadata_type($handle, $class_name, $metadata_script_url);
+}
+
+add_action("tainacan-register-vuejs-component", "register_metadata_type_form");
+function register_metadata_type_form($helper) {
 
     // Registering the Vue Component for the Metadata Options Form
     $handle2 = 'custom-metadata-type-form';
-	$component_script_url = plugin_dir_url(__FILE__) . 'metadata_type/metadata-type-form.js';
-	$helper->register_vuejs_component($handle2, $component_script_url);
+    $component_script_url = plugin_dir_url(__FILE__) . 'metadata_type/metadata-type-form.js';
+    $helper->register_vuejs_component($handle2, $component_script_url);
 }
 ?>
 ```
@@ -138,7 +143,7 @@ Optionally you can implement the `validate_options` method to validate the form 
 class Custom_Metadata_Type extends \Tainacan\Metadata_Types\Metadata_Type {
 
 	// ... More above ...
-	public function validate_options( Metadatum $metadatum ) {
+	public function validate_options( \Tainacan\Entities\Metadatum $metadatum ) {
 
 		$option = $this->get_option('step');
 
@@ -185,32 +190,38 @@ Our [Vue.js](vuejs.org/ ":ignore") components use the Options API, which means t
 This object should be in that path referenced in our [registering process](#registering-your-metadata-type), so `metadata_type/metadata-type.js` in our Custom Metadata Type example, which is a copy of the Numeric Metadata Type:
 
 ```javascript
-var window.tainacan_extra_components = typeof window.tainacan_extra_components != "undefined" ? window.tainacan_extra_components : {};
+window.tainacan_extra_components =
+  typeof window.tainacan_extra_components != "undefined"
+    ? window.tainacan_extra_components
+    : {};
 
 const TainacanMetadataTypeCustom = {
-	name: "TainacanMetadataTypeCustom",
-	props: {
-        itemMetadatum: Object,
-        value: [String, Number, Array],
-        disabled: false,
+  name: "TainacanMetadataTypeCustom",
+  props: {
+    itemMetadatum: Object,
+    value: [String, Number, Array],
+    disabled: false,
+  },
+  computed: {
+    getStep: function () {
+      if (
+        this.itemMetadatum &&
+        this.itemMetadatum.metadatum.metadata_type_options &&
+        this.itemMetadatum.metadatum.metadata_type_options.step
+      )
+        return this.itemMetadatum.metadatum.metadata_type_options.step;
+      else return 0.01;
     },
-    computed: {
-        getStep: function() {
-            if (this.metadatum && this.itemMetadatum.metadatum.metadata_type_options && this.itemMetadatum.metadatum.metadata_type_options.step)
-                return this.itemMetadatum.metadatum.metadata_type_options.step;
-            else
-                return 0.01;
-        }
+  },
+  methods: {
+    onInput: function (value) {
+      this.$emit("input", value);
     },
-    methods: {
-        onInput: function(value) {
-            this.$emit('input', value);
-        },
-        onBlur: function() {
-            this.$emit('blur');
-        }
+    onBlur: function () {
+      this.$emit("blur");
     },
-	template: `
+  },
+  template: `
 	<b-input
             :disabled="disabled"
             :id="itemMetadatum.metadatum.metadata_type_object.component + '-' + itemMetadatum.metadatum.slug"
@@ -220,10 +231,12 @@ const TainacanMetadataTypeCustom = {
             type="number"
             lang="en"
             :step="getStep"/>
-	`
-}
+	`,
+};
 
-window.tainacan_extra_components["tainacan-metadata-type-custom"] = TainacanMetadataTypeCustom;
+window.tainacan_extra_components[
+  "tainacan-metadata-type-custom"
+] = TainacanMetadataTypeCustom;
 ```
 
 The first and last lines are an important step for registering custom components to the plugin JS bundle.
@@ -259,31 +272,34 @@ Finally, in this example, a custom component from [Buefy](https://buefy.github.i
 
 ## Creating Vue Web Component for the Metadata Form
 
-Registering the Metadata Form Component follows similar steps. You need to take care of using the path registered before, in our case `metadata_type/metadata-form-type.js` and take care of using the same slug from the registration step: `tainacan-metadata-form-type-custom`. Here is our considerably longer file:
+Registering the Metadata Form Component follows similar steps. You need to take care of using the path registered before, in our case `metadata_type/metadata-form-type.js` and care of using the same slug from the registration step: `tainacan-metadata-form-type-custom`. We are now registering not a metadata type, but an isolated vuejs component, thats why in the `PHP` file we're calling the `register_vuejs_component` function. Here is our considerably longer `.js` file:
 
 ```js
-var window.tainacan_extra_components = typeof window.tainacan_extra_components != "undefined" ? window.tainacan_extra_components : {};
+window.tainacan_extra_components =
+  typeof window.tainacan_extra_components != "undefined"
+    ? window.tainacan_extra_components
+    : {};
 
 const TainacanMetadataFormCustomType = {
-	name: "TainacanMetadataFormTypeCustom",
-	props: {
-        value: [String, Number, Array]
+  name: "TainacanMetadataFormTypeCustom",
+  props: {
+    value: [String, Number, Array],
+  },
+  data: function () {
+    return {
+      step: [Number, String],
+      showEditStepOptions: false,
+    };
+  },
+  created: function () {
+    this.step = this.value && this.value.step ? this.value.step : 1;
+  },
+  methods: {
+    onUpdateStep: function (value) {
+      this.$emit("input", { step: value });
     },
-    data: function() {
-        return {
-            step: [Number, String],
-            showEditStepOptions: false
-        }
-    },
-    created: function() {
-        this.step = this.value && this.value.step ? this.value.step : 1;
-    },
-    methods: {
-        onUpdateStep: function(value) {
-            this.$emit('input', { step: value });
-        },
-    },
-	template: `
+  },
+  template: `
 	<div>
         <b-field :addons="false">
             <label class="label is-inline">
@@ -353,9 +369,11 @@ const TainacanMetadataFormCustomType = {
             </div>
         </b-field>
     </div>
-	`
-}
-window.tainacan_extra_components["tainacan-metadata-form-type-custom"] = TainacanMetadataFormCustomType;
+	`,
+};
+window.tainacan_extra_components[
+  "tainacan-metadata-form-type-custom"
+] = TainacanMetadataFormCustomType;
 ```
 
 Some observation here:
@@ -445,21 +463,23 @@ Now, instead of using the "_object-with-options_" logic for [creating the Vue co
 
 ```vue
 <template>
-  <b-input
-    :disabled="disabled"
-    :id="
-      itemMetadatum.metadatum.metadata_type_object.component +
-      '-' +
-      itemMetadatum.metadatum.slug
-    "
-    :value="value"
-    @input="onInput($event)"
-    @blur="onBlur"
-    type="number"
-    lang="en"
-    :step="getStep"
-  />
-  <some-third-party-component />
+    <div v-if="itemMetadatum">
+        <b-input
+            :disabled="disabled"
+            :id="
+            itemMetadatum.metadatum.metadata_type_object.component +
+            '-' +
+            itemMetadatum.metadatum.slug
+            "
+            :value="value"
+            @input="onInput($event)"
+            @blur="onBlur"
+            type="number"
+            lang="en"
+            :step="getStep"
+        />
+        <some-third-party-component />
+  </did>
 </template>
 
 <script>
@@ -468,7 +488,7 @@ import SomeThirdPartyComponent from "some-third-party-component";
 export default {
   name: "TainacanMetadataTypeCustom",
   components: {
-    SomeThirdPartyComponent,
+    //SomeThirdPartyComponent,
   },
   props: {
     itemMetadatum: Object,
@@ -478,7 +498,7 @@ export default {
   computed: {
     getStep: function () {
       if (
-        this.metadatum &&
+        this.itemMetadatum &&
         this.itemMetadatum.metadatum.metadata_type_options &&
         this.itemMetadatum.metadatum.metadata_type_options.step
       )
@@ -509,8 +529,13 @@ Now the previous `.js` file only have to import the component and pass it to the
 ```js
 import TainacanMetadataTypeCustom from "./metadata-type.vue";
 
-var window.tainacan_extra_components = typeof window.tainacan_extra_components != "undefined" ? window.tainacan_extra_components : {};
-window.tainacan_extra_components["tainacan-metadata-type-custom"] = TainacanMetadataTypeCustom;
+window.tainacan_extra_components =
+  typeof window.tainacan_extra_components != "undefined"
+    ? window.tainacan_extra_components
+    : {};
+window.tainacan_extra_components[
+  "tainacan-metadata-type-custom"
+] = TainacanMetadataTypeCustom;
 ```
 
 ### Build it!
