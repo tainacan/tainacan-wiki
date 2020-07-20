@@ -10,7 +10,7 @@ Developers can create custom Metadata Types via plugins starting from Tainacan 0
 - Creating Vue Web Component for the [Metadata Form](#creating-vue-web-component-for-the-metadata-form)
 - Advanced usage of third party [Vue Components](#advanced-usage-of-vue-components)
 
-If you want to play with the sample used here, it is all available in this github repo: [https://github.com/tainacan/custom-metadata-type-samples](https://github.com/tainacan/custom-metadata-type-samples ":ignore").
+> If you want to play with the sample used here, it is all available in [this Github repo](https://github.com/tainacan/custom-metadata-type-samples ":ignore") :wink:
 
 ## Registering your Metadata Type
 
