@@ -32,69 +32,69 @@ O **Importador CSV** permite que usuários importem itens para uma coleção dir
 
 > Consulte também como [importar Taxonomias](#importador-csv-de-vocabulários-taxonomias) para criar vocabulários controlados ou realizar a importação de tesauros.
 
-### Parâmetros do *.csv*
+### *.csv* Parameters
 
-O arquivo para envio deve ser um .csv padrão, em que cada linha abriga a informação de um item, e cada coluna abriga os valores para cada metadado em específico. Além disso, a primeira linha contem os títulos das colunas.
+The file to be uploaded must be a standard .csv, where each row contains the information for an item, and each column the values for each specific metadata. In addition, the first row contains the column headings. 
 
-Exemplo:
+Example:
 
-| Coluna dos Itens  | Coluna do Metadado 1 | Coluna do Metadado 2 |
+| Item Column  | Metadata Column 1 | Metadata Column 2 |
 |-------------------|----------------------|----------------------|
-| Arquivo do Item 1 | Valor do Metadado 1  | Valor do Metadado 2  |
-| Arquivo do Item 2 | Valor do Metadado 1  | Valor do Metadado 2  |
+| Item 1 | Value of Metadata 1  | Value of Metadata 2  |
+| Item 2 | Value of Metadata 1  | Value of Metadata 2  |
 
-Quando o usuário inicia o processo de importação, deve-se escolher a codificação em que o arquivo *.csv* foi salvo (geralmente está em *UTF-8*), o caractere de separação das colunas e o caractere de compartimento da célula. Essas opções são configuradas quando o usuário cria o arquivo .csv, usando um programa de edição de planilhas (como *Microsoft Excel* ou *LibreOffice Calc*, por exemplo).
+When you start the import process, you must choose the encoding in which the *.csv* file was saved (usually in UTF-8), the column separator character, and the cell compartment character. These options are set when the user creates the *.csv* file, using a spreadsheet editing program (such as *Microsoft Excel* or *LibreOffice Calc*, for example).
 
-Nessa seção o usuário também irá informar o caractere (ou caracteres) usados para separar múltiplos valores dentro de uma única célula (recomenda-se o uso do símbolo pipe: "`|`").
+In this section the user will also enter the character (or characters) used to separate multiple values within a single cell (it is recommended to use the pipe symbol: "`|`").
 
-Depois de configurar o importador e selecionar a coleção de destino, o arquivo .csvé enviado e o usuário tem a chance de mapear as colunas presentes no .csvpara os metadados presentes na coleção de destino.
+After configuring the importer and selecting the destination collection, the *.csv* file is uploaded and the user has the chance to map the columns present in the *.csv* to the metadata present in the destination collection. 
 
-Se o metadado não foi criado anteriormente na coleção, o usuário pode criar e mapear o metadado nesta mesma tela, ou escolher a opção `Criar Metadado` no mapeador. Se esta opção é selecionada, o Tainacan irá automaticamente criar o metadado quando o importador for executado.
+If the metadata was not previously created in the collection, the user can create and map the metadata in this same screen, or choose the option `Create Metadata` in Mapper. If this option is selected, Tainacan will automatically create the metadata when the importer runs.
 
-> (Veja [como criar metadados automaticamente](#criar-metadados-automaticamente) na seção abaixo para aprender como dizer ao Tainacan o tipo e os atributos de metadados a serem criados.)
+> (See [how to automatically create metadata](#criar-metadados-automaticamente) in the section below to learn how to tell Tainacan the type and attributes of metadata to create).
 
-#### Colunas Especiais
+#### Special Columns
 
-Cada coluna do arquivo *.csv* deve ser mapeado para um metadado na coleção de destino. Entretanto, existem colunas especiais que podem ser usadas para configurar outros aspectos do item. Por exemplo, o status do item pode ser configurado como público, rascunho ou privado para editores.
+Each column of the *.csv* file must be mapped to a metadata in the target collection. However, there are special columns that can be used to configure other aspects of the item. For example, the item status can be set to public, draft, or private for editors.
 
-As colunas especiais que podem ser usadas são:
+The special columns that can be used are:
 
-* `special_item_status` - Informa o status do Item. Os valores possíveis são:
-  * `draft`: rascunho
-  * `private`: privado
-  * `publish`: público
-* `special_item_id` - Informa o **ID do item** no banco de dados do Tainacan. Essa função é útil para re-importar itens e permitir que o usuário decida atualizar os itens * existente ou ignora-los e adicionar novos itens.
-* `special_document` - permite que o usuário informe o documento do item. Consulte [Importando arquivos e anexos](#importar-arquivos-e-anexos).
-* `special_attachments` - permite que o usuário informe os anexos. Consulte [Importando arquivos e anexos](#importar-arquivos-e-anexos).
-* `special_comment_status` - permite que o usuário informe se os items podem receber ou não comentários, as opções são: *"open"* ou *"closed"* (padrão).
-
+* `special_item_status` - Informs about the status of the item. Possible values are:
+  * `draft`
+  * `private`
+  * `publish`
+* `special_item_id` - The **item ID** in the Tainacan database. This function is useful for re-importing items and allowing you to decide whether to update existing items or ignore them and add new items.
+* `special_document` - allows you to enter the item document. See [importing files and attachments](#importar-arquivos-e-anexos).
+* `special_attachments` - allows you to enter attachments. See [importing files and attachments](#importar-arquivos-e-anexos).
+* `special_comment_status` - allows the user to inform if the items can receive comments or not, the options are: "open" or "closed" (default).
 
 Exemplo:
 
-| Coluna dos Itens 	| Coluna do Metadado 1 | Coluna do Metadado 2 |	special_item_status | special_item_id |	special_document 	              | special_atachments                 |
+| Item column 	| Metadata Column 1 | Metadata Column 2 |	special_item_status | special_item_id |	special_document 	              | special_atachments                 |
 |-------------------|----------------------|----------------------|---------------------|-----------------|-----------------------------------|------------------------------------|
-| Arquivo do Item 1 | Valor do Metadado 1  | Valor do Metadado 2  |	publish 	        | 01 	          | url:http://exemplo.br/abcd 	      | file:http://seusite.br/anexo1.frmt |
-| Arquivo do Item 2 | Valor do Metadado 1  | Valor do Metadado 2  |	draft 	            | 02 	          | file:http://seusite.br/item2.frmt |	url:http://exemplo.br/abcd         |
-| Arquivo do Item 3 | Valor do Metadado 1  | Valor do Metadado 2  |	private 	        | 03 	          | text:texto de exemplo             | file:http://seusite.br/anexo3.frmt |
+| Item 1 | Value of Metadata 1  | Value of Metadata 2  |	publish 	        | 01 	          | url:http://exemplo.br/abcd 	      | file:http://seusite.br/anexo1.frmt |
+| Item 2 | Value of Metadata 1  | Value of Metadata 2  |	draft 	            | 02 	          | file:http://seusite.br/item2.frmt |	url:http://exemplo.br/abcd         |
+| Item 3 | Value of Metadata 1  | Value of Metadata 2  |	private 	        | 03 	          | text:texto de exemplo             | file:http://seusite.br/anexo3.frmt |
 
-#### Importar arquivos e anexos
+#### Import files and attachments
 
-Se você também tem arquivos para importar que estão relacionados aos itens no seu arquivo *.csv*, você pode usar algumas colunas especiais para isso.
+If you have files to import that are related to the items in your *.csv* file, you can use some special columns for that.
 
-Use `special_document`, para definir o documento do seu item, e `special_attachments` para adicionar um ou mais anexos.
+Use `special_document`, to define the document for your item, and `special_attachments` to add one or more attachments.
 
-Os valores para `special_document` podem ser:
+The values for `special_document` can be:
+
 * url
 * file
 * text
 
-Exemplo:
+Example:
 
 ```
-nome, special_document
-Uma imagem,file:http://example.com/image.jpg
-Um vídeo do youtube,url:http://youtube.com/?w=123456
-Um texto,text:This is a sample text
+name, special_document
+an image,file:http://example.com/image.jpg
+a youtube video,url:http://youtube.com/?w=123456
+a text,text:This is a sample text
 ```
 
 Os valores para `special_attachments` são apenas uma lista de arquivos. Se você deseja adicionar muitos anexos, use o caractere separador que você definiu na opção de *separador de células multivaloradas* do seu arquivo *.csv*. Nos dois casos você pode apontar um arquivo usando uma URL, ou apenas o nome do arquivo. Para apontar o nome do arquivo, você deve configurar essa opção para o Tainacan localizar os arquivos no seu servidor. Você pode enviar eles diretamente (via FTP, por exemplo) e o Tainacan irá adicionar eles aos seus itens.
