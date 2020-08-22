@@ -51,7 +51,7 @@ After configuring the importer and selecting the destination collection, the *.c
 
 If the metadata was not previously created in the collection, the user can create and map the metadata in this same screen, or choose the option `Create Metadata` in Mapper. If this option is selected, Tainacan will automatically create the metadata when the importer runs.
 
-> (See [how to automatically create metadata](#criar-metadados-automaticamente) in the section below to learn how to tell Tainacan the type and attributes of metadata to create).
+> (See [how to automatically create metadata](#automatic-creation-of-metadata) in the section below to learn how to tell Tainacan the type and attributes of metadata to create).
 
 #### Special Columns
 
@@ -64,8 +64,8 @@ The special columns that can be used are:
   * `private`
   * `publish`
 * `special_item_id` - The **item ID** in the Tainacan database. This function is useful for re-importing items and allowing you to decide whether to update existing items or ignore them and add new items.
-* `special_document` - allows you to enter the item document. See [importing files and attachments](#importar-arquivos-e-anexos).
-* `special_attachments` - allows you to enter attachments. See [importing files and attachments](#importar-arquivos-e-anexos).
+* `special_document` - allows you to enter the item document. See [importing files and attachments](#import-files-and-attachments).
+* `special_attachments` - allows you to enter attachments. See [importing files and attachments](#import-files-and-attachments).
 * `special_comment_status` - allows the user to inform if the items can receive comments or not, the options are: "open" or "closed" (default).
 
 Exemplo:
@@ -97,18 +97,18 @@ a youtube video,url:http://youtube.com/?w=123456
 a text,text:This is a sample text
 ```
 
-Os valores para `special_attachments` são apenas uma lista de arquivos. Se você deseja adicionar muitos anexos, use o caractere separador que você definiu na opção de *separador de células multivaloradas* do seu arquivo *.csv*. Nos dois casos você pode apontar um arquivo usando uma URL, ou apenas o nome do arquivo. Para apontar o nome do arquivo, você deve configurar essa opção para o Tainacan localizar os arquivos no seu servidor. Você pode enviar eles diretamente (via FTP, por exemplo) e o Tainacan irá adicionar eles aos seus itens.
+The values for `special_attachments` are just a list of files. If you want to add many attachments, use the separator character you set in the multi-value cell separator option of your *.csv* file. In both cases you can point to a file using a URL, or just the file name. To point to the file name, you must set this option for Tainacan to locate the files on your server. You can upload them directly (via FTP, for example) and Tainacan will add them to your items.
 
-Exemplo:
+Example:
 
 ```
-nome, special_attachments
-Uma imagem,http://example.com/image.jpg
-Várias imagens,http://example.com/image.jpg%7C%7Chttp://example.com/image2.jpg%7C%7Chttp://example.com/image3.jpg
-Imagens enviadas por FTP,myfolder/image.jpg||myfolder/image2.jpg
+name, special_attachments
+an image,http://example.com/image.jpg
+several images,http://example.com/image.jpg%7C%7Chttp://example.com/image2.jpg%7C%7Chttp://example.com/image3.jpg
+images uploaded via FTP,myfolder/image.jpg||myfolder/image2.jpg
 ```
 
-#### Vídeo Tutorial: Importar arquivos e anexos
+#### Vídeo Tutorial: Import files and attachments (in Portuguese)
 
 <iframe
     width="560"
@@ -121,89 +121,105 @@ Imagens enviadas por FTP,myfolder/image.jpg||myfolder/image2.jpg
 
 -----
 
-#### Criar metadados automaticamente
+#### Automatic Creation of Metadata
 
-Quando o usuário mapeia as colunas encontradas no arquivo .csv aos metadados presentes na coleção de destino, é possível selecionar a opção `Criar Metadado`, então o importador irá criar o metadado automaticamente durante o processamento do arquivo *.csv*.
+When you map the columns found in the *.csv* file to the metadata present in the target collection, you can select the `Create Metadata` option. Then the importer will create the metadata automatically during the *.csv* file processing.
 
-Por padrão, o metadado criado será do tipo Texto e público, mas é possível informar ao Tainacan o tipo e outras opções do metadado no começo do arquivo *.csv*.
+By default, the metadata created will be of type `Text` and `public`. If you want otherwise, you can define the type and other options of the metadata at the beginning of the *.csv* file. 
 
-Na primeira linha, onde você define o nome de cada coluna, é possível adicionar algumas informações que serão usadas pelo importador para criar o `metadatum_id`.
+In the first line, where you define the name of each column, you can add some information that will be used by the importer to create the `metadatum_id`. 
 
-Cada informação sobre o metadado deve ser separada pelo caractere "`|`".
+Each information about the metadata must be separated by the character "`|`".
 
-A primeira informação deve ser o *nome do metadado*, e na sequência o *tipo do metadado*,
+The first information is the *name of the metadata*, and then follows *the type of metadata*.
 
-Os tipos de metadados suportados nativamente atualmente são:
+The types of metadata currently supported natively are:
 
-* `text` - Texto
-* `textarea` - Texto Longo
-* `taxonomy` - Taxonomia: quando esse tipo é usado, uma nova taxonomia será criada.
-* `date` - Data: os valores devem ser informados no formato YYYY-MM-DD (2018-01-01).
-* `numeric` - Numérico
-* `relationship` - Relacionamento: os valores devem ser a ID do item relacionado.
+* `text`
+* `textarea`
+* `taxonomy` - when that type is used, a new taxonomy will be created.
+* `date` - the values must be entered in the format YYYY-MM-DD (2018-01-01).
+* `numeric`
+* `relationship` - the values must be the related item ID.
 
-Por exemplo:
-
-```
-Nome,Assunto|taxonomy,Data de criação|date
-```
-
-#### Informações sobre o metadado de Taxonomia
-
-Se uma das colunas do seu CSV tem valores para um **metadado de taxonomia** e esta taxonomia possui hierarquia, você pode informar essa hierarquia utilizando o sinal de `>>`.
-
-Por exemplo:
+Example:
 
 ```
-nome, Categoria
-Nome do item,Categoria Pai>>Categoria Filha>>Categoria Neta
+Name,Subject|taxonomy,Date of creation|date
 ```
 
-> Lembrando que esta notação só irá funcionar se esta coluna for mapeada para um **metadado de Taxonomia**, ou se você estiver usando a técnica de **Criar metadados automaticamente** explicada acima, e marcando esta coluna como um **metadado de Taxonomia**.
+#### Taxonomy metadata information
 
-Também é possível utilizar o Importador de vocabulários e, em uma segunda etapa, importar os itens. Caso siga esse caminho, a hierarquia já estará montada, e no seu *.csv* de itens não será necessário representá-la completamente. Basta inserir o Termo do último nível. *Neste caso, o exemplo acima ficaria apenas*:
 
-```
-nome, Categoria
-Nome do item,Categoria Neta
-```
+If one of your CSV columns has values for a taxonomy metadata and this taxonomy has a hierarchy, you can enter that hierarchy using the `>>` sign.
 
-#### Instruções para Metadados
-
-Depois do tipo de metadado, você também pode informar outras instruções:
-
-* `multiple` - Múltiplo: para metadados que permitem múltiplos valores
-* `required` - Obrigatório: para metadados obrigatórios
-* `display_yes` - Exibir na lista: habilitar metadado na visualização.
-* `display_no` - Não exibir na lista: ocultar metadado na visualização.
-* `display_never` - Nunca exibir metadado na visualização.
-* `status_public` - Status público: metadado visível para todos
-* `status_private` - Status privado: metadado visível apenas para editores
-* `collection_key_yes` - Configurar valores deste metadado como único: os valores desse metadado não se repetem em itens nessa coleção.
-
-Exemplo de várias instruções combinadas:
+Example:
 
 ```
-Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|collection_key_yes|status_private
+name, category
+name of item,parent category>>child category>>needed category
 ```
 
-### Importar .csv para o Tainacan
+> This notation will only work if this column is mapped to a **taxonomy** metadata, or if you are using the **Automatically Create Metadata** technique explained above, and marking this column as a **taxonomy** metadata.
 
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Acesse a seção **Importadores**;
-4. Na seção **Importadores Disponíveis**, selecione `CSV`;
-5. Configure os campos a seguir de acordo com as configurações realizadas no seu aquivo *.csv*:
-  * **Delimitador csv**: caractere que separa valores;
-  * **Delimitador de metadado multi-valorado**: caractere que separa valores dentro de uma mesma célula;
-  * **Delimitador de texto**: caractere que delimita todos os valores dentro de uma mesma célula
-  * **Codificação do arquivo**: parâmetro que determina a codificação dos valores de texto do aquivo. (Geralmente **UTF-8**, garanta que o arquivo *.csv* esteja codificado conforme as opções disponíveis no importador).
-6. Configure estes campos de acordo com suas preferências para importação:
-  * **Item repetido**: Determina o comportamento do Tainacan ao identificar itens idênticos no processo de importação. Selecione Atualizar para que o item receba os  valores do arquivo .csv ou seleciona Ignorar para que o item já existente na coleção não seja modificado.
-  * **Importando Anexos**: O Importador permite que vários itens sejam inseridos em uma coleção diretamente de um arquivo .csv. Consulte Importador-csv#Importando  arquivos e anexos para saber como configurar seu arquivo .csv corretamente.
-    1. De acordo com a documentação, aponte a URL no campo caminho para o servidor.
+You can also use the Vocabulary Importer and, in a second step, import the items. If you follow this path, the hierarchy will already be assembled, and in your *.csv* of items it will not be necessary to represent it completely. Just insert the term of the last level. *In this case, the example above would be only*:
+
+```
+name, category
+name of item,needed category
+```
+
+#### Instructions for Metadata
+
+Besides the metadata type, you can also report other instructions:
+
+* `multiple` - allowing metadata to have multiple values
+* `required` - required metadata
+* `display_yes` - Display in list: enable metadata in view.
+* `display_no` - Do not show in list: hide metadata in view.
+* `display_never` - Never display metadata in the view.
+* `status_public` - metadata visible to all
+* `status_private` - visible only to editors.
+* `collection_key_yes` - Set values of this metadata as unique: the values of this metadata are not repeated in items in this collection.
+
+Example of several instructions combined:
+
+```
+Nome,subject|taxonomy|multiple|required,registration number|numeric|required|collection_key_yes|status_private
+```
+
+### Import .csv to Tainacan
+
+1. Access the *WordPress* control panel
+2. In the left sidebar, click Tainacan
+3. Go to **Importers**
+4. In the **Available Importers** section, select `CSV`
+5. Configure the following fields according to the settings made in your *.csv* file:
+  * **Csv delimiter**: character that separates values within the same cell
+  * **Multi-value metadata delimiter**: character that separates values within a single cell
+  * **Text delimiter**: character delimiting all values within a single cell
+  * **File encoding**: parameter that determines the encoding of the text values in the file. (Usually **UTF-8**, make sure that the *.csv* file is encoded according to the options available in the importer).
+6. Configure these fields according to your import preferences:  
+  * **Item repeated**: Determines the behavior of Tainacan by identifying identical items in the import process. Choose Update so that the item receives the values from the *.csv* file, or choose ignore so that the item already in the collection is not changed.
+  * **Importing attachments**: The importer allows multiple items to be inserted into a collection directly from a *.csv* file. See [importing files and attachments](#import-files-and-attachments) to know how to configure your .csv file properly.
+    1. According to the documentation, point the URL in the path field to the server. 
+    
+    
+    
+    
+    
+    
 7. Selecione ou crie uma **Coleção Destino** para indicar onde os itens serão criados;
    *. Selecionando criar uma nova coleção em branco, ao `Concluir` a coleção, você será redirecionado para o **Importador** novamente.
+   
+   
+   
+   
+   
+8. Select or create a **Fate Collection** to indicate where the items will be created
+  * Selecting to create a new blank collection, when `Complete` the collection, you will be redirected to the **Importer** again.
+  * Upload the *.csv* file into the **Font File** field.
+
 8. Faça o upload do arquivo *.csv* no campo **Arquivo Fonte**.
 9. Clique em `Próximo`;
 10. Na tela Mapeamento de Metadados é possível realizar o processo de-para entre os metadados previamente configurados no *.csv*;
