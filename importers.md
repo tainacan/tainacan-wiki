@@ -1,5 +1,3 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
-
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Importadores" 
@@ -8,18 +6,20 @@
 		height="40">
 </div>
 
-# Importadores
+# Importers
 
-?> _TODO_ Fazer introdução para o assunto importadores antes de listar eles
+?> _TODO_ Add introduction before listing importers.
 
 
 <!-- tabs:start -->
 
-#### ** Importador CSV **
+#### ** CSV Importer **
 
-## Importador CSV (Items)
+## CSV Importer (Items)
 
-O **Importador CSV** permite que usuários importem itens para uma coleção diretamente de um arquivo *.csv*. 
+The **CSV Importer** allows users to import items into a collection directly from a *.csv* file. 
+
+Video tutorial in in Portuguese:
 
 <iframe
     width="560"
@@ -30,7 +30,7 @@ O **Importador CSV** permite que usuários importem itens para uma coleção dir
     allowfullscreen>
 </iframe>
 
-> Consulte também como [importar Taxonomias](#importador-csv-de-vocabulários-taxonomias) para criar vocabulários controlados ou realizar a importação de tesauros.
+> See also how to [import Taxonomies](#import-csv-vocabulary-taxonomies) to create controlled vocabularies or to import thesaurus.
 
 ### *.csv* Parameters
 
@@ -202,50 +202,34 @@ Nome,subject|taxonomy|multiple|required,registration number|numeric|required|col
 6. Configure these fields according to your import preferences:  
   * **Item repeated**: Determines the behavior of Tainacan by identifying identical items in the import process. Choose Update so that the item receives the values from the *.csv* file, or choose ignore so that the item already in the collection is not changed.
   * **Importing attachments**: The importer allows multiple items to be inserted into a collection directly from a *.csv* file. See [importing files and attachments](#import-files-and-attachments) to know how to configure your .csv file properly.
-    1. According to the documentation, point the URL in the path field to the server. 
-    
-    
-    
-    
-    
-    
-7. Selecione ou crie uma **Coleção Destino** para indicar onde os itens serão criados;
-   *. Selecionando criar uma nova coleção em branco, ao `Concluir` a coleção, você será redirecionado para o **Importador** novamente.
-   
-   
-   
-   
-   
-8. Select or create a **Fate Collection** to indicate where the items will be created
-  * Selecting to create a new blank collection, when `Complete` the collection, you will be redirected to the **Importer** again.
-  * Upload the *.csv* file into the **Font File** field.
-
-8. Faça o upload do arquivo *.csv* no campo **Arquivo Fonte**.
-9. Clique em `Próximo`;
-10. Na tela Mapeamento de Metadados é possível realizar o processo de-para entre os metadados previamente configurados no *.csv*;
-  1. Selecione metadados identificados no *.csv* (à esquerda) e seu correspondente da *coleção destino* (à direita) no Tainacan.
-  2. Caso o metadado ainda não exista na coleção, selecione **"Criar metadado"**.
-  3. Para criar novos metadados na coleção, selecione `Adicionar mais metadados`; (Consulte [Metadados](/pt-br/metadata) para saber mais sobre a criação e os tipos de metadados  existentes)
+    1. According to the documentation, point the URL in the path field to the server.    
+7. Select or create a **Destination Collection** to indicate where the items will be created. Selecting to create a new blank collection, when `Complete` the collection, you will be redirected to the **Importer** again.
+8. Upload the *.csv* file in the **Source File** field.
+9. Click on `Next`;
+10. In the Metadata Mapping screen it is possible to carry out the process from among the metadata previously configured in the *.csv*
+  1. Select metadata identified in the *.csv* (on the left) and its correspondent from the *.csv* (on the right) in Tainacan.
+  2. If the metadata does not yet exist in the collection, select **"Create metadata "**.
+  3. To create new metadata in the collection, select `Add more metadata`; (See [Metadata](metadata) to learn more about the creation and types of existing metadata)
   
-  !> **Atenção**: Neste processo, metadados do arquivo *.csv* não serão criados se não tiverem um metadado apontado na coleção destino.
+  !> **Attention**: In this process, metadata from the *.csv* file will not be created if they do not have a metadata pointed in the target collection.
   
-  !> **Atenção**: As informações de cada metadado em cada item dependem da criação de seu respectivo metadado neste processo.
+  !> **Attention**: The information of each metadata in each item depends on the creation of its respective metadata in this process.
   
-  !> **Atenção**: Uma vez criado, não é possível alterar o tipo do Metadado. (Por exemplo, alterar um metadado do tipo Texto para Texto Longo, ou Numérico para Data).
-    * Consulte [Características gerais de metadados](/pt-br/metadata#características-gerais-de-metadados) para saber mais.
-11. Ao concluir, clique em `Executar` para iniciar o **processo de importação**;
-12. Você será redirecionado para a tela de **Atividades do Repositório** onde poderá acompanhar o andamento do *processo de importação*.
-     Esta tela exibe todos os processos de importação já realizados nesta instalação, do mais recente para o mais antigo.
-     Quando o processo for concluído serão exibidos o **arquivo de registro** e, em caso de erros, o **arquivo de registro de erros**.
-13. Uma vez terminado com sucesso o processo de importação, vá para a coleção destino da importação e revise se os **metadados**, **itens** e **valores** estão de acordo com  esperado.
+  !> **Attention**: Once created, it is not possible to change the Metadata type. (For example, change a Metadata type Text to Long Text, or Numeric to Date).
+    * See [General metadata characteristics](metadata#general-metadata-characteristics) for more information.
+11.  When finished, click 'Run' to start the **import process**
+12. You will be redirected to the **Repository Activities** screen where you can follow the progress of the *import process*. This screen displays all the import processes already performed in this installation, from the most recent to the oldest.  When the process is completed, the **log file** will be displayed and, in case of errors, the **error file**.
+13. Once the import process is successfully completed, go to the import destination collection and review whether the **metadata**, **items** and **values** are as expected.
 
-#### ** Importador Vocabulários **
+#### ** Vocabulary Importer **
 
-## Importador CSV de Vocabulários (Taxonomias)
+## CSV Vocabulary Importer (Taxonomies)
 
-Este importador permite que usuários adicionem termos a uma taxonomia. Essa ferramenta é útil para a importação de vocabulários controlados para uma instalação do Tainacan.
+This importer allows users to add terms to a taxonomy. This tool is useful for importing controlled vocabularies for a Tainacan installation.
 
-#### Vídeo Tutorial: Importação de Termos e Taxonomias
+#### Video Tutorial: Importing Terms and Taxonomies
+
+(in Portuguese)
 
 <iframe
     width="560"
@@ -258,60 +242,61 @@ Este importador permite que usuários adicionem termos a uma taxonomia. Essa fer
 
 -----
 
-### Como configurar o .csv
+### How to configure the .csv
 
-O formato de arquivo para a importação de vocabulários é o *.csv* - *comma separated values* (valores separados por vírgula).
+The file format for vocabulary import is *.csv* - *comma separated values*.
 
-Para cada termo você pode informar o nome do termo e sua definição, por exemplo:
+For each term you can enter the name of the term and its definition, for example:
 
 ```
-Termo 1,Definição do termo 1
-Termo 2,Definição do termo 2
-Termo 3,Definição do termo 3
+Term 1,Definition of term 1
+Term 2,Definition of term 2
+Term 3,Definition of term 3
 ```
 
-Também é possível informar a hierarquia. Para isso, deixe as células à esquerda vazias, indicando o nível de hierarquia entre estes termos.
+It is also possible to add the hierarchy. To do this, leave the cells on the left empty, indicating the hierarchy level between these terms.
 
 A planilha deve ficar parecida com este exemplo:
 
 |           |                       |                           |                                |
 |-----------|-----------------------|---------------------------|--------------------------------|
-| Termo 1 	| Definição do Termo 1 	|                           | 	                             |
-| Termo 2 	| Definição do Termo 2 	| 	                        |                                |
-| 	        | 1 Filho do Termo 2 	| Definição desse termo     |                                |
-| 	        | 2 Filho do Termo 2 	| Definição desse termo 	|                                |
-| 		    |                       | 1 Neto do Filho 2 	    | Definição do 1 Neto do Filho 2 |
-| Termo 3 	| Definição do Termo 3 	| 	                        |                                |
-| Termo 4 	| Definição do Termo 4 	| 	                        |                                |
+| Term 1 	| Definition of term 1 	|                           | 	                             |
+| Term 2 	| Definition of term 2 	| 	                        |                                |
+| 	        | 1st Child of term 2 	| Definition of this term       |                                |
+| 	        | 2nd Child of term 2 	| Definition of this term   	|                                |
+| 		    |                       | Grandchild of 2nd Child	    | Definition of the grandchild |
+| Term 3 	| Definition of term 3 	| 	                        |                                |
+| Term 4 	| Definition of term 4 	| 	                        |                                |
 
-Essa mesma planilha, quando salva no formato .csv, deve se parecer com este exemplo:
+This same spreadsheet, when saved in *.csv* format, should look like this example:
+
 ```
 Term 1,Definition of term 1,,
 Term 2,Definition of term 2,,
 ,1st Child of term 2,Definition of this term,
 ,2nd Child of term 2,Definition of this term,
-,,Gran child,Definition of grand child
+,,Grand child,Definition of grand child
 Term 3,Definition of term 3,,
 Term 4,Definition of term 4,,
 ```
 
 ----
 
-### Enviar o .csv para o Tainacan
+### Import .csv to Tainacan
 
-Uma vez terminada a criação do seu arquivo *.csv* com os termos desejados, siga estes passos:
+Once you have finished creating your *.csv* file with the desired terms, follow these steps:
 
-1. Acesse o painel de controle do WordPress
-2. Na barra lateral esquerda, clique em Tainacan
-3. Acesse a seção *Importadores*;
-4. Na seção **Importadores Disponíveis**, selecione `Vocabulário CSV`;
-5. Configure o campo **Delimitador csv** de acordo com as caractere delimitador do seu arquivo .csv:
-6. Selecione o arquivo *.csv* para upload;
-7. Crie ou escolha a *Taxonomia* de destino (Consulte [Taxonomias](/pt-br/taxonomies) para saber mais);
-8. Clique em `Executar`;
-9. Você será redirecionado para a tela de **Atividades do Repositório** onde poderá acompanhar o andamento do *processo de importação*.
-  1. Esta tela exibe todos os processos de importação já realizados nesta instalação, do mais recente para o mais antigo.
-  2. Quando o processo for concluído serão exibidos o **arquivo de registro** e, em caso de erros, o **arquivo de registro de erros**.
-10. Uma vez terminado com sucesso o processo de importação do vocabulário, vá para a seção de **Taxonomias** e revise se a *Taxonomia* e os *Termos* foram importados como o esperado.
+1. Access the WordPress control panel
+2. In the left sidebar, click on Tainacan
+3. Access the *Importers* section
+4. In the section **Available Importers**, select `Vocabulary CSV'
+5. Configure the **CSV delimiter field* according to the delimiting characters of your *.csv* file.
+6. Select the *.csv* file to upload
+7.  Create or choose the *Taxonomy* of destination (See [Taxonomies](/taxonomies) to learn more)
+8. Click on `Run`;
+9.  You will be redirected to the **Repository Activities** screen where you can follow the progress of the *import process*.
+  1. This screen displays all the import processes already performed in this installation, from the most recent to the oldest.
+  2. When the process is completed, the **record file** will be displayed and, in case of errors, the **record file**.
+10.  Once you have successfully completed the vocabulary import process, go to the **Taxonomies** section and review whether *Taxonomy* and *Terms* have been imported as expected.
 
 <!-- tabs:end -->
