@@ -157,7 +157,7 @@ Example:
 
 ```
 name, category
-name of item,parent category>>child category>>needed category
+name of item,parent category>>child category>>grandchild category
 ```
 
 > This notation will only work if this column is mapped to a **taxonomy** metadata, or if you are using the **Automatically Create Metadata** technique explained above, and marking this column as a **taxonomy** metadata.
@@ -166,7 +166,7 @@ You can also use the Vocabulary Importer and, in a second step, import the items
 
 ```
 name, category
-name of item,needed category
+name of item,grandchild category
 ```
 
 #### Instructions for Metadata
