@@ -1,5 +1,3 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
-
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Taxonomias" 
@@ -8,99 +6,100 @@
 		height="42">
 </div>
 
-# Taxonomias
+# Taxonomies
 
-*Taxonomias* podem ser criadas e usadas para a classificação de itens. Exemplos de taxonomias comuns são a de *Gênero*, *Países*, etc.
+*Taxonomies* can be created and used for item classification. Examples of common taxonomies are *Gender*, *Countries*, etc.
 
-> Na linguagem do *WordPress*, elas são taxonomias personalizadas. Consulte a [documentação do WordPress](https://codex.wordpress.org/pt-br:Taxonomias) para saber mais.
+> In *WordPress* language, they are custom taxonomies. See the [WordPress documentation](https://wordpress.org/support/article/taxonomies/) to learn more.
 
-Cada taxonomia tem um conjunto de **termos**, por exemplo, a taxonomia gênero pode ter termos como drama e comédia.
+Each taxonomy has a set of **terms**, for example, gender taxonomy can have terms like drama and comedy.
 
-Os termos podem ter hierarquia, o que significa que quando você procura por itens que tem termos com termos *filhos* (por exemplo, *Samba*), os resultados incluirão itens que tenham qualquer um dos termos filhos. (Por exemplo, *Samba de Gafieira* e *Samba Maxixe*).
+The terms may have hierarchy, meaning that when you search for items that have terms with *children* (for example, *Samba*), the results will include items that have any of the terms children. (For example, *Samba de Gafieira* and *Samba Maxixe*).
 
-Termos podem ter uma descrição, um ícone, ou uma imagem que o represente, e também pode ser ligado a um conceito existente um uma ontologia. Os termos também podem ter sua própria URL no site, com uma página listando todos os itens relacionados a ele, inclusive de diferentes coleções, dessa forma eles se comportam como se fossem uma coleção.
+Terms may have a description, an icon, or an image that represents it, and an ontology may also be linked to an existing concept. Terms can also have their own URL on the site, with a page listing all the items related to it, including from different collections, so they behave as if they were a collection.
 
-> As taxonomias podem ser compartilhadas por várias coleções no repositório.
+> Taxonomies can be shared by several collections in the repository.
 
-> As taxonomias devem ser configuradas em um metadado para sua inserção nas coleções: consulte o tópico [Criar Metadados](/pt-br/metadata#criar-metadados) para saber como.
+> The taxonomies must be configured in a metadata for their insertion in the collections: see the topic [Create Metadata](/metadata#create-metadata) to know how.
+
 
 
 <!-- tabs:start -->
 
-#### ** Criar **
-## Criar Taxonomias
+### ** Create **
+## Create Taxonomies
 
-1. Acesse o painel de controle do WordPress;
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Clique em `Taxonomias`
-4. Clique em `Nova Taxonomia`
-5. Na aba **Taxonomia** preencha os campos desejados
-  1. **Nome**: nome da taxonomia
-  2. **Descrição**: descrição da taxonomia
-  3. **Slug**: O campo slug permite alterar o final da URL da taxonomia, por padrão ela é criada a partir do nome da taxonomia, mas pode ser editada neste campo.
-  4. **Permitir Termos Novos**: permite que novos termos sejam adicionados à taxonomia durante o envio de itens.
-  5. **Status**: configuração de privacidade da taxonomia, nos valores:
-    1. **Público**: A taxonomia pode ser visualizada pelos visitantes do repositório
-    2. **Privado**: A taxonomia pode ser visualizada somente por editores do repositório
-    3. **Rascunho**: A taxonomia pode ser visualizada somente pelo seu autor
-    4. **Lixo**: A taxonomia, e seus termos, não serão mais aplicados aos seus itens e poderão ser deletados permanentemente.
-6. Em seguida, clique na aba **Termos** e clique em `Criar Novo Termo`
+1. Access the WordPress control panel
+2. In the left sidebar, click Tainacan
+3. Click `Taxonomies`
+4. Click on `New Taxonomy`
+5. In the tab **Taxonomy** fill the desired fields
+  1. **Name**: name of the taxonomy
+  2. **Description**: description of the taxonomy
+  3. **Slug**: The slug field allows you to change the end of the taxonomy URL, by default it is created from the taxonomy name, but can be edited in this field
+  4. **Allow New Terms**: allows new terms to be added to the taxonomy when sending items
+  5. **Status**: privacy setting of taxonomy, in values:
+    1. **Public**: Taxonomy can be viewed by visitors to the repository
+    2. **Private**: Taxonomy can be viewed only by editors of the repository
+    3. **Draft**: Taxonomy can be viewed only by its author
+    4. **Trash**: Taxonomy, and its terms, will no longer be applied to your items and may be permanently deleted
+6. Then click on the **Terms** tab and click on `Create New Term`
 
-### Criar Termos
+### Create Terms
 
-1. Clique em Criar Novo Termo;
-2. Preencha os campos a seguir de acordo com cada termo a ser criado:
-  1. **Imagem da Header**: É possível adicionar uma imagem que aparece na visualização da taxonomia, dependendo das configurações e do tema adotado. O tema padrão do Tainacan exibe a imagem da header na página do termo da taxonomia.
-  2. **Nome**: nome do termo que fará parte da taxonomia
-    * **Descrição**: descrição do termo que fará parte da taxonomia
-    * **Termo pai**: determina o nível hierárquico do termo em relação aos demais desta mesma taxonomia,
-3. Clique em `Salvar` para concluir a criação do termo
+1. Click `Create New Term`
+2. Fill out the following fields according to each term to be created:
+  1. **Header Image**: It is possible to add an image that appears in the taxonomy view, depending on the settings and the theme adopted. The default Tainacan theme displays the header image on the taxonomy term page
+  2. * **Name**: Name of the term that will be part of taxonomy
+    * **Description**: description of the term that will be part of the taxonomy
+    * **Parent term**: determines the hierarchical level of the term in relation to the others of this same taxonomy,
+3. Click `Save` to finish creating the term
 
-Repita a ação para adicionar novos termos, clicando novamente em `Criar Novo Termo`.
+Repeat the action to add new terms by clicking on `Create New Term` again.
 
-Taxonomias também podem ser criadas a partir do importador de vocabulário. Consulte [Importador de Vocabulário](/pt-br/importers) para saber mais.
+Taxonomies can also be created from the vocabulary importer. See [Vocabulary Importer](/importers) to learn more.
 
-#### ** Editar **
-## Editar Taxonomias
+### ** Edit **
+## Edit Taxonomies
 
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Clique em **Taxonomias**;
-4. Clique na **taxonomia** desejada na lista de taxonomias;
-  * Altere os campos desejados na *aba taxonomia*;
-  * Na aba *termos* é possível adicionar, editar ou excluir termos desta taxonomia.
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on Tainacan;
+3. Click on **Taxonomies**;
+4. Click on the **taxonomy** desired in the list of taxonomies;
+  * Change the desired fields
+  * In the *terms* tab you can add, edit or delete terms of this taxonomy.
 
-### Editar Termos
+### Edit Terms
 
-1. Na lista de termos, selecione o desejado para edição:
-  1. Clique no *ícone de Lápis* à direita para abrir os campos de edição deste termo
-  2. Altere os campos desejados
-  3. Clique em:
-    * `Cancelar`, para cancelar a edição do termo
-    * `Visualizar termo`, para visualizar o termo no tema
-    * `Salvar` para concluir a edição do termo
+1. In the list of terms, select the desired one for editing:
+  1. Click the *Pencil icon* on the right to open the editing fields of this term
+  2. Change the desired fields
+  3. Click in:
+    * `Cancel`, to cancel the term edition
+    * `View term`, to view the term in the theme
+    * "Save" to finish editing the term
 
 
-#### ** Excluir **
-## Excluir Taxonomias
+### ** Exclude **
+## Exclude Taxonomies
 
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Clique em **Taxonomias**
-4. Clique no ícone **lixeira** à direita na taxonomia desejada
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on Tainacan;
+3. Click on **Taxonomies**
+4. Click on the **link** icon to the right on the desired taxonomy
    
-  !> Atenção: um aviso será exibido para confirmar esta ação. A exclusão da taxonomia implica também na exclusão das informações em metadados, itens e coleções que usam esta taxonomia. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de Atividades](/pt-br/activities) para saber mais). Exclua a taxonomia somente se tiver certeza de que não haverá perdas graves de informação. (Consulte [Registro de Atividades](/pt-br/activities) para saber mais)
+  !> Attention: a warning will be displayed to confirm this action. The exclusion of taxonomy also implies the exclusion of information in metadata, items and collections that use this taxonomy. This operation can only be undone by administrators. (See [Activity Register](/activities) for more information). Delete the taxonomy only if you are sure that there will be no serious loss of information. (See [Activity Register](/activities) to learn more)
 
-### Excluir Termos
+### Exclude Terms
 
-1. Acesse o painel de controle do *WordPress*
-2. Na barra lateral esquerda, clique em Tainacan
-3. Clique em **Taxonomias**
-4. Clique na taxonomia desejada na lista de taxonomias
-5. Clique na aba de termos
-  1. Na lista de termos, selecione o desejado para exclusão:
-  2. Clique no ícone de **Lixeira** à direita para excluir o item
+1. Access the *WordPress* control panel
+2. In the left sidebar, click on Tainacan
+3. Click on **Taxonomies**
+4. Click on the desired taxonomy in the list of taxonomies
+5. Click the terms tab
+  1. In the list of terms, select the desired one for exclusion:
+  2. Click the **Trash** icon on the right to delete the item
     
-  !> Atenção: um aviso será exibido para confirmar esta ação. A exclusão do termo implica também na exclusão deste valor em metadados, itens e coleções que usam esta taxonomia. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de Atividades](/pt-br/activities) para saber mais). Exclua o termo somente se tiver certeza de que não haverá perdas graves de informação. (Consulte [Registro de Atividades](/pt-br/activities) para saber mais)
+  !> Attention: a warning will be displayed to confirm this action. The exclusion of the term also implies the exclusion of this value in metadata, items and collections that use this taxonomy. This operation can only be undone by administrators. (See [Activity Register](/activities) for more information). Delete the term only if you are sure that there will be no serious loss of information. (See [Activity Register](/activities) to learn more)
 
 <!-- tabs:end -->
