@@ -43,3 +43,4 @@ A seguir temos links de alguns serviços de hospedagens conhecidos por membros d
 | Serviço   | Link                                              | Comentários                                                                                                       |
 | --------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | Hostinger | https://www.hostinger.com.br/hospedagem-wordpress | Configuração simples. Inclui todos os módulos PHP necessários, SSL e oferece por um certo tempo dominio gratuíto. |
+| Hostgator | https://www.hostgator.com.br/                     | Configuração simples possui utilitário para instalação do wordpress. Inclui todos os módulos PHP necessários (em algumas hospedagens mais antigas faltava o módulo imagick). Boa documentação e suporte para possíveis configurações. |
