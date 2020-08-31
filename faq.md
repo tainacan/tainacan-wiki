@@ -8,8 +8,8 @@ Skip to an specific section:
 
 - [About Tainacan](#about-tainacan)
 - [Support](#errors-and-support)
-- [Instalação e Hospedagem](#instalação-e-hospedagem)
-- [Menus, Páginas e Blocos](#menus-páginas-e-blocos)
+- [Installation and Hosting](#installation-and-hosting)
+- [Menus, Pages and Blocks](#menus-pages-and-blocks)
 
 ---
 
@@ -85,42 +85,42 @@ If your collection is small and simple, then it's quite capable that there is so
 
 ---
 
-## Instalação e Hospedagem
+## Installation and Hosting
 
-### Qual a diferença entre wp.com e wp.org?
+### What is the difference between wp.com and wp.org?
 
-O wp.com ou [wordpress.com](https://br.wordpress.com ":ignore") é uma plataforma de hospedagem, entre as várias existentes que oferecem instalações e servidores prontos com o WordPress. O wp.org, ou [wordpress.org](https://br.wordpress.org ":ignore") é o site oficial do software livre WordPress, de onde se encontram informações de instalação, a documentação, links da comunidade, eventos... e entre estas coisas também opções de hospedagem. Mas seu objetivo principal é fornecer a ferramenta que pode ser usada por qualquer um para construir sites em qualquer serviço de hospedagem.
+wp.com or [wordpress.com](https://wordpress.com ":ignore") is a hosting platform, among the many existing ones that offer installations and servers ready with WordPress. wp.org, or [wordpress.org](https://wordpress.org ":ignore") is the official free WordPress software site, from where you can find installation information, documentation, community links, events... and among these things also hosting options. But its main purpose is to provide the tool that can be used by anyone to build websites in any hosting service.
 
-### Posso usar o Tainacan no meu blog do wordpress.com?
+### Can I use Tainacan on my wordpress.com blog?
 
-Sim! Mas infelizmente o [plano gratuito](https://br.wordpress.com/pricing/ ":ignore") do _wordpress.com_ não te permitirá instalar plugins. Para isso você precisa usar um plano pago que eles oferecem. Lembre-se que esta não é a única maneira nem opção de se hospedar sites WordPress!
+Yes! But unfortunately the [free plan](https://wordpress.com/pricing/ ":ignore") of _wordpress.com_ will not allow you to install plugins. For that you need to use a paid plan that they offer. Remember that this is not the only way or option to host WordPress sites!
 
-### É possível instalar o Tainacan no meu próprio computador?
+### Can I install Tainacan on my own computer?
 
-Sim. Mas é bom deixar claro, **o Tainacan é um plugin para uma plataforma de sites**. Sua função não é bem a de um programa que você abre e fecha! Instalações _locais_ - como chamamos quando você configura em seu próprio computador - são úteis para desenvolvedores que querem contribuir ou apenas para quem quer fazer testes antes de mandar para um servidor, onde de fato o site ficará hospedado na web e online 24 horas por dia. Para configurar uma instalação do WordPress pronta para o Tainacan, dê uma olhada em [nossos tutoriais de instalação](/pt-br/instalacao)!
+Yes. But it's good to make it clear, **Tainacan is a plugin for a website platform**. Its function is not really that of a program that you open and close! _Local_ installations - as we call it when you set it up on your own computer - are useful for developers who want to contribute or just for those who want to do some testing before sending it to a server, where in fact the site will be hosted on the web and online 24 hours a day. To set up a WordPress installation ready for Tainacan, take a look at [our installation tutorials](/install)!
 
-### Então, quais opções tenho para hospedar meu repositório?
+### So, what options do I have to host my repository?
 
-Boa pergunta! Discutimos isso em mais detalhes na nossa página de [Hospedagem](/pt-br/hosting).
+Good question! We discuss this in more details in our [Hosting](/hosting) page.
 
 ---
 
-## Menus, Páginas e Blocos
+## Menus, Pages and Blocks
 
-### É possível inserir itens do Tainacan em postagens no WordPress?
+### Can Tainacan items be inserted in WordPress posts?
 
-Sim, é possível! Para adicionar itens do Tainacan em uma postagem do WordPress (a partir da versão 5.0) crie um [bloco Gutenberg do Tainacan](/pt-br/gutenberg-blocks) pelo editor de texto. Ao inserir um bloco, pode-se pesquisar por Tainacan que será possível ver quais tipos de blocos do Tainacan existem.
+Yes, it is possible! To add Tainacan items to a WordPress post (from version 5.0 on) insert a [Tainacan Gutenberg block](/gutenberg-blocks) by on the text editor. When inserting a block, you can search for Tainacan and you will be able to see which types of Tainacan blocks exist.
 
-### Como vejo a lista de coleções no tema?
+### How do I see the list of collections in the theme?
 
-A lista de coleções é uma das [Páginas Especiais](/pt-br/tainacan-pages) que o Tainacan insere. Basta adicionar `/colecoes` ou `collections` à URL do seu site.
+The list of collections is one of [Special Pages](/tainacan-pages) that Tainacan inserts. Just add `/collections` or `collections` to your website URL.
 
-### Como coloco a lista de coleções no menu do meu site?
+### How do I put the list of collections on the menu of my site?
 
-Basta ir na barra superior em **Personalizar** > **Menus** > **Selecionar o Menu Principal** > **Adicionar Itens**. Dalí, além de outros links customizados, você pode escolher **"Repositório de Coleções"** para mostrar sua lista de coleções ou selecionar qualquer outra coleção ou termo de taxonomia.
+Just go to the top bar in **Customize** > **Menus** > Select the Main Menu > **Add Items**. From here, in addition to other custom links, you can choose **"Collection Repository "** to show your list of collections or select any other collection or taxonomy term.
 
-### Como posso fazer a página inicial do meu site ser a lista de coleções?
+### How can I make the home page of my site the list of collections?
 
-Por padrão, a página inicial do seu site será a lista de posts do seu blog. Para configurar uma página inicial customizada, deve-se ir no menu superior em **Personalizar** > **Configurações da página inicial** > **Uma página estática** e escolher a página. Entretanto, por ser uma [página especial](/pt-br/tainacan-pages) criada pelo plugin, a página padrão da lista de coleções não está listada como opção. A solução é criar uma página e listar as suas coleções nela, usando algum dos [Blocos de Coleções](/pt-br/blocks-collections.md).
+By default, your website homepage will be the list of posts to your blog. To set up a custom home page, go to the top menu at **Customize** > **Static page settings** and choose the page. However, because it is a [special page](/tainacan-pages) created by the plugin, the default page from the list of collections is not listed as an option. The solution is to create a page and list your collections on it, using one of the [Collection Blocks](/blocks-collections.md).
 
-> Para participar da comunidade do Tainacan [inscreva-se aqui](https://lists.riseup.net/www/subscribe/tainacan)!
+> To join the Tainacan community [sign up here](https://lists.riseup.net/www/subscribe/tainacan)!
