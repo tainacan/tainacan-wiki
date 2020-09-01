@@ -11,7 +11,7 @@ On this page we talk about:
 
 ## Compatible Themes
 
-Besides inserting a new field in your _WordPress_ admin panel, where you access the Tainacan admin panel itself, the Tainacan plugin also generates [special pages](/tainacan-pages.md) on your site. If your theme was thought to present these pages, item and collection listings will be displayed with all the navigation features of the collection such as item search, filters, different display forms, etc. Otherwise, these listings should be very close to the way the theme displays blog posts.
+Besides inserting a new field in your _WordPress_ admin panel, where you access the Tainacan admin panel itself, the Tainacan plugin also generates [special pages](/tainacan-pages.md) on your site. If your theme was thought to present these pages, item and collection listings will be displayed with all the navigation features of the collection such as item search, filters, different view modes, etc. Otherwise, these listings should be very close to the way the theme displays blog posts.
 
 Developing a compatible theme is not complicated and also does not need to be done from scratch, since many can be generated from [child themes](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of others that already exist. Here on the Wiki we have [an entire session](/dev/creating-compatible-themes.md) dedicated to teaching this to developers.
 
@@ -40,11 +40,11 @@ This is the standard theme of the Tainacan project and is available in the offic
 - Standard Gutenberg blocks stylized according to the visual identity of the theme;
 - Sidebar support;
 
-![Algumas telas do Tema Tainacan Interface](/_assets/gifs/themes-tainacan-interface.gif)
+![Some screens of the Tainacan Interface theme](/_assets/gifs/themes-tainacan-interface.gif)
 
 ### Identidade do Governo (IDG-WP)
 
-This WordPress theme was developed by a team of volunteers linked to the former Ministry of Culture, with the objective of standardizing several WordPress sites used by the federal government. One example is the [Secretariat of Culture](http://cultura.gov.br/) website itself. The [original theme](https://github.com/culturagovbr/IDG-WP) itself does not have support to Tainacan, but with the demand of several museums linked to Ibram to use it, was created a _fork_, a variation of the theme, in [another repository](https://github.com/medialab-ufg/IDG-WP ":ignore"). Unfortunately, this project is in need of maintainers and may present some problems. We highlight its characteristics:
+This WordPress theme was developed by a team of volunteers linked to the former  Brazilian Ministry of Culture, with the objective of standardizing several WordPress sites used by the federal government. One example is the [Secretariat of Culture](http://cultura.gov.br/) website itself. The [original theme](https://github.com/culturagovbr/IDG-WP) itself does not have support to Tainacan, but with the demand of several museums linked to Ibram to use it, was created a _fork_, a variation of the theme, in [another repository](https://github.com/medialab-ufg/IDG-WP ":ignore"). Unfortunately, this project is in need of maintainers and may present some problems. We highlight its characteristics:
 
 - Specific templates for the Repository, Collection and Term item lists but no header images;
 - Specific templates for the item page, including attachment carousel;
@@ -54,7 +54,7 @@ This WordPress theme was developed by a team of volunteers linked to the former 
 - News carousel on the home page;
 - Customization of sessions on the home page via plugins;
 
-![Algumas telas do Tema IDG-WP](/_assets/gifs/themes-idg-wp.gif)
+![Some screens from IDG-WP theme](/_assets/gifs/themes-idg-wp.gif)
 
 ### Veganos (Child Theme)
 
@@ -68,9 +68,9 @@ Created for the project [Covid-19 - UnB in Action](http://repositoriocovid19.unb
 - Standard integration with the Federal Government's link holder and accessibility;
 - Integration with the UnB menu bar (if you don't want to use it, just pull from the [branch 'not-unb'](https://github.com/tainacan/tainacan-unb-covid-19/tree/not-unb ":ignore") of GitHub);
 
-![Algumas telas do Tema Veganos](/_assets/gifs/themes-veganos.gif)
+![Some screens from Veganos theme](/_assets/gifs/themes-veganos.gif)
 
-### Rife Free (Tema Filho)
+### Rife Free (Child theme)
 
 This is a [child theme](https://github.com/tainacan/rife-free-child ":ignore") from the popular [Rife Free theme](https://wordpress.org/themes/rife-free/ ":ignore"). It has a dependency on an installed plugin, [Apollo13 Framework extensions](https://apollo13themes.com/rife/free ":ignore"), but in compensation, it brings many customization options, from page and post format to header behavior. Other highlights are
 
@@ -83,7 +83,7 @@ This is a [child theme](https://github.com/tainacan/rife-free-child ":ignore") f
 
 ![Algumas telas do Tema Rife Free](/_assets/gifs/themes-rife-free.gif)
 
-### Twenty Twenty (Tema Filho)
+### Twenty Twenty (Child theme)
 
 Every year WordPress releases an "official theme", which is activated by default in its installations and usually has a popular design, with good application of gutenberg blocks in addition to accessibility and responsiveness tests. To validate our tests with the plugin, we created a child theme of [TwentyTweny](https://wordpress.org/themes/twentytwenty/ ":ignore"), available [at this link](https://github.com/tainacan/TwentyTwentyChild ":ignore").
 
@@ -91,9 +91,9 @@ Every year WordPress releases an "official theme", which is activated by default
 
 ---
 
-## Gerir Temas no WordPress
+## Manage themes on Wordpress
 
-### Vídeo Tutorial: Instalação de Temas
+### Video Tutorial: Installing Themes (Portuguese only)
 
 <iframe
     width="560"
