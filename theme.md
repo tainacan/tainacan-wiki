@@ -40,11 +40,11 @@ This is the standard theme of the Tainacan project and is available in the offic
 - Standard Gutenberg blocks stylized according to the visual identity of the theme;
 - Sidebar support;
 
-![Some screens of the Tainacan Interface theme](/_assets/gifs/themes-tainacan-interface.gif)
+![Some screens of the Tainacan Interface theme](/pt-br/_assets/gifs/themes-tainacan-interface.gif)
 
 ### Identidade do Governo (IDG-WP)
 
-This WordPress theme was developed by a team of volunteers linked to the former  Brazilian Ministry of Culture, with the objective of standardizing several WordPress sites used by the federal government. One example is the [Secretariat of Culture](http://cultura.gov.br/) website itself. The [original theme](https://github.com/culturagovbr/IDG-WP) itself does not have support to Tainacan, but with the demand of several museums linked to Ibram to use it, was created a _fork_, a variation of the theme, in [another repository](https://github.com/medialab-ufg/IDG-WP ":ignore"). Unfortunately, this project is in need of maintainers and may present some problems. We highlight its characteristics:
+This WordPress theme was developed by a team of volunteers linked to the former Brazilian Ministry of Culture, with the objective of standardizing several WordPress sites used by the federal government. One example is the [Secretariat of Culture](http://cultura.gov.br/) website itself. The [original theme](https://github.com/culturagovbr/IDG-WP) itself does not have support to Tainacan, but with the demand of several museums linked to Ibram to use it, was created a _fork_, a variation of the theme, in [another repository](https://github.com/medialab-ufg/IDG-WP ":ignore"). Unfortunately, this project is in need of maintainers and may present some problems. We highlight its characteristics:
 
 - Specific templates for the Repository, Collection and Term item lists but no header images;
 - Specific templates for the item page, including attachment carousel;
@@ -54,7 +54,7 @@ This WordPress theme was developed by a team of volunteers linked to the former 
 - News carousel on the home page;
 - Customization of sessions on the home page via plugins;
 
-![Some screens from IDG-WP theme](/_assets/gifs/themes-idg-wp.gif)
+![Some screens from IDG-WP theme](/pt-br/_assets/gifs/themes-idg-wp.gif)
 
 ### Veganos (Child Theme)
 
@@ -68,7 +68,7 @@ Created for the project [Covid-19 - UnB in Action](http://repositoriocovid19.unb
 - Standard integration with the Federal Government's link holder and accessibility;
 - Integration with the UnB menu bar (if you don't want to use it, just pull from the [branch 'not-unb'](https://github.com/tainacan/tainacan-unb-covid-19/tree/not-unb ":ignore") of GitHub);
 
-![Some screens from Veganos theme](/_assets/gifs/themes-veganos.gif)
+![Some screens from Veganos theme](/pt-br/_assets/gifs/themes-veganos.gif)
 
 ### Rife Free (Child theme)
 
@@ -81,13 +81,13 @@ This is a [child theme](https://github.com/tainacan/rife-free-child ":ignore") f
 - Animations and transition effects;
 - List of posts in blocks, optionally in a list of three columns;
 
-![Algumas telas do Tema Rife Free](/_assets/gifs/themes-rife-free.gif)
+![Algumas telas do Tema Rife Free](/pt-br/_assets/gifs/themes-rife-free.gif)
 
 ### Twenty Twenty (Child theme)
 
 Every year WordPress releases an "official theme", which is activated by default in its installations and usually has a popular design, with good application of gutenberg blocks in addition to accessibility and responsiveness tests. To validate our tests with the plugin, we created a child theme of [TwentyTweny](https://wordpress.org/themes/twentytwenty/ ":ignore"), available [at this link](https://github.com/tainacan/TwentyTwentyChild ":ignore").
 
-![Algumas telas do Tema Twenty Twenty](/_assets/gifs/themes-twentytwenty.gif)
+![Algumas telas do Tema Twenty Twenty](/pt-br/_assets/gifs/themes-twentytwenty.gif)
 
 ---
 
