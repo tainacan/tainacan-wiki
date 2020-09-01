@@ -14,7 +14,7 @@
 
 Each taxonomy has a set of **terms**, for example, gender taxonomy can have terms like drama and comedy.
 
-The terms may have hierarchy, meaning that when you search for items that have terms with *children* (for example, *Samba*), the results will include items that have any of the terms children. (For example, *Samba de Gafieira* and *Samba Maxixe*).
+The terms may have hierarchy, meaning that when you search for items that have terms with *children* (for example, *Music*), the results will include items that have any of the terms children (for example, *Rock*, *Progressive Rock* and *Metal*).
 
 Terms may have a description, an icon, or an image that represents it, and an ontology may also be linked to an existing concept. Terms can also have their own URL on the site, with a page listing all the items related to it, including from different collections, so they behave as if they were a collection.
 
