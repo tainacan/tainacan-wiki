@@ -1,3 +1,5 @@
+?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+
 # Inserir e editar imagens
 
 Existem algumas formas de adicionar imagens aos itens do Tainacan. Esse tipo de ação pode ser realizada individualmente, adicionando a imagem direto ao item ou primeiro a biblioteca, em sequência ou em massa. Sendo que, todas as imagens utilizadas no tainacan se encontram alocadas na Biblioteca de mídia do WordPress.
@@ -16,7 +18,7 @@ Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídi
 
 4. Arraste ou selecione a imagem que se deseja adicionar.
 
-   ![Inserir imagem na biblioteca](_assets/gifs/inserindo-imagens-biblioteca.gif)
+   ![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-biblioteca.gif)
 
 ### Editar imagens
 
@@ -38,7 +40,7 @@ Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídi
    - Redimensionar a imagem;
    - Recorte da imagem.
 
-![Inserir imagen na biblioteca](_assets/gifs/editando-imagens-biblioteca.gif)
+![Inserir imagen na biblioteca](pt-br/_assets/gifs/editando-imagens-biblioteca.gif)
 
 ---
 
@@ -81,7 +83,7 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
    2. `Voltar pra rascunho` para que o item tenha seu _status_ alterado para **rascunho**;
    3. `Atualizar` para confirmar as alterações realizadas no item;
 
-![Inserir imagen na biblioteca](_assets/gifs/inserindo-imagens-individualmente.gif)
+![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-individualmente.gif)
 
 ### Inserir imagem em sequência
 
@@ -123,7 +125,7 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
     3. `Salvar como rascunho` para que o item exibido tenha seu _status_ alterado para **rascunho**;
     4. `Anterior` para voltar ao item anterior.
 
-![Inserir imagen na biblioteca](/pt-br_/assets/gifs/inserindo-imagens-em-sequencia.gif)
+![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-em-sequencia.gif)
 
 ### Inserir imagem em massa
 
