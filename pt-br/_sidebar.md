@@ -50,5 +50,6 @@
     - [Exportadores](/pt-br/testing-exporters.md)
     - [Permissões](/pt-br/testing-capabilities.md)
     - [Blocos Gutenberg](/pt-br/testing-gutenberg-blocks.md)
+    - [Submissão de Itens](/pt-br/testing-item-submission.md)
   - [Processamento de Dados e Acervos](/pt-br/data-processing "Um pouco sobre Processamento de Dados e Acervos - Tainacan Wiki")
   - [:link:OpenRefine](http://openrefine.org/ ":ignore")
