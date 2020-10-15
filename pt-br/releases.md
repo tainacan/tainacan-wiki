@@ -15,6 +15,7 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 
 - Controle de visibilidade de Documento e Anexos de um item;
 - O importador CSV vai criar automaticamente metadados nível repositório também;
+- Atributos alt em todas as imagens inseridas no plugin (acessibilidade);
 
 #### Correções de Erros
 
@@ -43,11 +44,11 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 - Novo input de taxonomias via checkboxes;
 - Melhorias na inserção de termos novos e existentes em metadados de taxonomia;
 - Melhorias na inserção de novos itens em metadados relacionamento;
-- Filtros começam collapsados se não possuem valores para a faceta atual;
-- Opção de direcionar links de termos para a lista de itens filtrada por certs coleções (configuração do metadado tipo taxonomia);
+- Filtros começam colapsados se não possuem valores para a faceta atual;
+- Opção de direcionar links de termos para a lista de itens filtrada por certas coleções (configuração do metadado tipo taxonomia);
 - Opção para nunca exibir a miniatura se sua coleção não costuma ter imagens;
-- Novas opções de tamanhos das miniaturas nos itens de blocos de carrosseis;
-- Temas agora podem implementar navegação item a item em suas páginas baseadondo-se em queries passadas ao clicar no item da lista;
+- Novas opções de tamanhos das miniaturas nos itens de blocos de carrosséis;
+- Temas agora podem implementar navegação item a item em suas páginas baseando-se em queries passadas ao clicar no item da lista;
 - Ajustes no modo tela cheia, incluindo modal de instruções para navegação via teclado;
 - Paginação nos expositores e exposição apenas de itens selecionados;
 - Compatibilidade com o WordPress 5.5 (incluindo algumas adaptações dos blocos aos novos recursos);
@@ -55,14 +56,14 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 
 #### Correções de Erros
 
-- Fazer com que a permissão `manage_collection_x` permita alterar tbm as configurações da coleção, não apenas seus metadados, itens, etc;
+- Fazer com que a permissão `manage_collection_x` permita alterar também as configurações da coleção, não apenas seus metadados, itens, etc;
 - Erros na execução de algumas operações em massa;
 - Miniaturas de capas de PDFs com transparência agora resultam em imagens de fundo branco ao invés de preto;
 - Esconde o botão de "Selecionar todos os itens" quando apenas uma página existe;
 - Redirecionamento do bloco de busca não estava funcionando em temas que não suportam o Tainacan;
 - Evita a quebra da coleção se um tipo de metadado registrado não está mais presente;
 - Metadado numérico estava entendendo o valor 0 como "vazio";
-- Metadadados herdados de uma coleção raiz estavam sendo criados na ordem reversa a da coleção raiz;
+- Metadados herdados de uma coleção raiz estavam sendo criados na ordem reversa a da coleção raiz;
 - Inserção de metadados relacionamento via taginput estava limitado a 100 itens e removendo alguns valores quando duplicados.
 
 ### Data de Lançamento
