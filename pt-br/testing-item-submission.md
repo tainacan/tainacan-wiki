@@ -49,6 +49,15 @@ A partir da versão 0.17 o Tainacan permite a submissão de itens em páginas p�
 5. Repita o teste de preenchimento do formulário;
 6. Ao logar novamente, chegue se os itens estão submetidos com o status correto;
 
+## Testando a proteção _reCAPTCHA_
+
+1. Nas configurações da coleção, habilite a opção "Usar verificação _reCAPTCHA_ no formulário de submissão";
+2. No painel administrativo do WordPress, acesse o submenu do plugin Tainacan chamado "Submissão de Itens";
+3. Insira nesta página os campos de "Chave do Site" e "Chave Secreta", gerados no formulário de [_reCAPTCHA_ da Google](https://www.google.com/reCAPTCHA/admin/create ":ignore");
+4. Salve as configurações;
+5. Insira um novo bloco de submissão (apague um já existente, se for o caso), lembrando-se de selecionar como destino uma coleção cuja configuração de _reCAPTCHA_ tenha sido habilitada;
+6. Preencha o formulário. No final da página deve haver uma caixa verificadora do _reCAPTCHA_. Tente submeter sem preenchê-la e depois preenchendo-a.
+
 ## Testando as configurações do bloco
 
 1. Experimente alterar as demais opções do bloco, localizadas na barra lateral:
