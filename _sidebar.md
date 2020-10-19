@@ -19,6 +19,7 @@
   - [Importers](importers "What are and how to use Importers on Tainacan  - Tainacan Wiki")
   - [Exporters](exporters "What are and how to use Exporters on Tainacan  - Tainacan Wiki")
   - [Bulk actions](bulk-actions "Applying bulk actions on Tainacan - Tainacan Wiki")
+  - [Items submission](item-submission "Using Item Submission feature to allow public contribution to a Collection - Tainacan Wiki")
   - [Capabilities and Users](users-roles.md "Managing capabilities and user roles on Taiancan - Tainacan Wiki")
   - [Indexing PDF contents](indexing-pdf.md "Searching inside PDF files via Tainacan - Tainacan Wiki")
   - [Imagens upload and edition](image-upload-and-edition "Image upload and edition - Tainacan Wiki")
