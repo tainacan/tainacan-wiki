@@ -1,4 +1,6 @@
-# Submissão de Itens
+?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+
+# Items Submission
 
 A [versão _0.17_](/pt-br/releases#tainacan-beta-017) do Tainacan trás a possibilidade de se abrirem coleções para _submissão pública_ de itens (também referida como _auto-depósito_). Isto significa que usuários sem privilégios administrativos, ou até mesmo visitantes do site passam a poder eles mesmos criarem itens em uma Coleção, **ampliando assim as possibilidades de um acervo _colaborativo_ gerado por diversas pessoas**.
 
@@ -14,7 +16,7 @@ Por trás dos panos, a Submissão de Itens nada mais é do que levar o [formulá
 
 Na página de configuração de toda Coleção, há um campo que permite habilitar a submissão de itens. Ao habilitá-lo, novas opções surgem, como mostrada na captura de tela a seguir:
 
-![Captura de Tela das configurações relacionadas a submissão de itens na coleção](_assets/images/colecao_submissao_de_item.png)
+![Captura de Tela das configurações relacionadas a submissão de itens na coleção](pt-br/_assets/images/colecao_submissao_de_item.png)
 
 Com este campo habilitado, esta coleção poderá ser listada para [o bloco de submissão de itens](#criando-o-bloco-de-submissão-de-itens), sobre o qual falaremos em breve. O campo seguinte, **"Permitir a submissão por usuários anônimos"**, diz respeito a quais usuários poderão enviar este formulário. Por padrão, não é qualquer pessoa que visita o site, mas pelo menos pessoas cadastradas no sistema do seu WordPress que tem este poder. Se habilitado, mesmo pessoas que nunca logaram no site poderão enviar informações.
 
@@ -28,19 +30,19 @@ Por fim, como em qualquer formulário na Web, é importante proteger seu site co
 
 Para ter seu formulário disponível para visitantes do site, é preciso criar uma página ou post no seu painel administrativo do _WordPress_. Como explicado em maiores detalhes [na nossa página sobre os Blocos Gutenberg](/pt-br/gutenberg-blocks), este é o novo editor de conteúdo do _WordPress_, no qual você poderá dar um nome a página ou mesmo incluir conteúdo para apresentar o seu formulário ao usuário, como um título e texto explicativo. Feito isto, uma busca pelo bloco "Formulário de Submissão de Itens" na lista de blocos, te permitirá inserir o formulário:
 
-![Processo de inserção do bloco de submissão de itens em uma página nova](_assets/gifs/bloco_submissão_de_itens_1.gif)
+![Processo de inserção do bloco de submissão de itens em uma página nova](pt-br/_assets/gifs/bloco_submissão_de_itens_1.gif)
 
 De início, o bloco vem vazio, porque espera que você configure de qual coleção este formulário se refere. Ao clicar no botão "Selecione a Coleção destino", o modal apresentado mostrará apenas as coleções configuradas para aceitar a submissão pública de itens, como mencionado [na sessão anterior](#configurando-a-coleção).
 
 Escolhida a coleção, o bloco será preenchido com uma "prévia visual" de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em Visualizar ou Publicar a página.
 
-![Visualizando o bloco de submissão de itens em uma página nova](_assets/gifs/bloco_submissão_de_itens_2.gif)
+![Visualizando o bloco de submissão de itens em uma página nova](pt-br/_assets/gifs/bloco_submissão_de_itens_2.gif)
 
 O formulário preenchido no exemplo acima gerou um novo item privado na coleção, que pode então ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
 
 <div style="float: right; margin-left: 32px;">
 
-![Opções do bloco de submissão](_assets/gifs/bloco_submissão_de_itens_3.gif)
+![Opções do bloco de submissão](pt-br/_assets/gifs/bloco_submissão_de_itens_3.gif)
 
 </div>
 
@@ -54,7 +56,7 @@ Clicando no bloco de submissão do item e na engrenagem que fica no canto superi
 
 Esta configuração diz respeito a mensagem que vai ser mostrada quando o item tiver sido submetido com sucesso no formulário. Por padrão, esta informação aparece como na imagem abaixo:
 
-![Opções do bloco de submissão](_assets/images/bloco_submissao_de_itens_1.png)
+![Opções do bloco de submissão](pt-br/_assets/images/bloco_submissao_de_itens_1.png)
 
 Pode ser um bom lugar para informar, por exemplo, que a submissão está sendo avaliada pela equipe administrativa e que se aprovado, o item será disponibilizado na listagem de itens da coleção.
 
@@ -107,7 +109,7 @@ Para proteger seu site deste tipo de ataque, recomendamos fortemente o uso de um
 
 No painel administrativo do WordPress, há um submenu do plugin Tainacan específico para isso, o "Submissão de Itens". Acessando ele, você encontrar dois campos que precisam ser preenchidos: A _chave do site_ e a _palavra secreta do site_.
 
-![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](_assets/images/submissao-itens-captcha-1.png)
+![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](pt-br/_assets/images/submissao-itens-captcha-1.png)
 
 Ambos os campos são obtidos no site do reCAPTCHA, quando vc cadastra seu site neste link: [https://www.google.com/reCAPTCHA/admin/create](https://www.google.com/reCAPTCHA/admin/create ":ignore"). Não esqueça de clicar em "Salvar alterações" ao concluir esta etapa.
 

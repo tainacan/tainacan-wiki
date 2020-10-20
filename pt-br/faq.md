@@ -123,4 +123,8 @@ Basta ir na barra superior em **Personalizar** > **Menus** > **Selecionar o Menu
 
 Por padrão, a página inicial do seu site será a lista de posts do seu blog. Para configurar uma página inicial customizada, deve-se ir no menu superior em **Personalizar** > **Configurações da página inicial** > **Uma página estática** e escolher a página. Entretanto, por ser uma [página especial](/pt-br/tainacan-pages) criada pelo plugin, a página padrão da lista de coleções não está listada como opção. A solução é criar uma página e listar as suas coleções nela, usando algum dos [Blocos de Coleções](/pt-br/blocks-collections.md).
 
+### E se eu quiser que outras pessoas colaborem com meu acervo?
+
+Como administrador do seu site, é possível cadastrar novos usuário com diferentes [papéis e permissões](/pt-br/users-roles) para editar seu acervo. Se no entanto você quer que possam ser inseridos itens sem o cadastro de novos usuários no sistema, pode criar um [Formulário de Submissão de itens](/pt-br/item-submission) público, para receber contribuições externas diretas no seu repositório.
+
 > Para participar da comunidade do Tainacan [inscreva-se aqui](https://lists.riseup.net/www/subscribe/tainacan)!

@@ -1,6 +1,6 @@
 # Testando a Submissão de Itens
 
-A partir da versão 0.17 o Tainacan permite a submissão de itens em páginas públicas por usuários não logados no site. Isto é feito através do bloco gutenberg criado para esta função.
+A partir da versão 0.17 o Tainacan permite a submissão de itens em páginas públicas por usuários não logados no site. Para uma explicação detalhada sobre esta funcionalidade, leia a página [Submissão de Itens](/pt-br/item-submission.md).
 
 ## O Básico
 

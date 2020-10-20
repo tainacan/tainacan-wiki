@@ -123,4 +123,8 @@ Just go to the top bar in **Customize** > **Menus** > Select the Main Menu > **A
 
 By default, your website homepage will be the list of posts to your blog. To set up a custom home page, go to the top menu at **Customize** > **Static page settings** and choose the page. However, because it is a [special page](/tainacan-pages) created by the plugin, the default page from the list of collections is not listed as an option. The solution is to create a page and list your collections on it, using one of the [Collection Blocks](/blocks-collections.md).
 
+### What if I want other people to collaborate with my collection?
+
+As your site administrator, you can register new users with different [roles and permissions](/users-roles) to edit your collection. If, however, you want items to be submited without new users being registered in the system, you can create a public [Item Submission Form](/item-submission), to receive direct external contributions in your repository.
+
 > To join the Tainacan community [sign up here](https://lists.riseup.net/www/subscribe/tainacan)!
