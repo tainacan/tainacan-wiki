@@ -34,10 +34,12 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 - Fluxo de submissão (depósito) de itens por usuários não logados (Bloco de Submissão de Itens)
 - Filtro por tipo de Documento;
 - Filtro por Coleções mais inteligente (inclui facetas);
+- Filtro por Miniatura do item (possui ou não);
 - Mudar a ordem de anexos;
 - Tipo de metadado URL embutida (por hora via plugin);
 - Popup de aviso de erros em requisições do sistema;
 - Botão para começar entrar no modo tela cheia a partir de um item específico;
+- Barra de filtros fixa com scroll na tela pública da listagem de itens;
 
 #### Melhorias
 
@@ -47,6 +49,7 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 - Filtros começam colapsados se não possuem valores para a faceta atual;
 - Opção de direcionar links de termos para a lista de itens filtrada por certas coleções (configuração do metadado tipo taxonomia);
 - Opção para nunca exibir a miniatura se sua coleção não costuma ter imagens;
+- Seleção via SHIFT nas listagens de itens no admin.
 - Novas opções de tamanhos das miniaturas nos itens de blocos de carrosséis;
 - Temas agora podem implementar navegação item a item em suas páginas baseando-se em queries passadas ao clicar no item da lista;
 - Ajustes no modo tela cheia, incluindo modal de instruções para navegação via teclado;
@@ -64,11 +67,9 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 - Evita a quebra da coleção se um tipo de metadado registrado não está mais presente;
 - Metadado numérico estava entendendo o valor 0 como "vazio";
 - Metadados herdados de uma coleção raiz estavam sendo criados na ordem reversa a da coleção raiz;
-- Inserção de metadados relacionamento via taginput estava limitado a 100 itens e removendo alguns valores quando duplicados.
-
-### Data de Lançamento
-
-- Final de Outubro/Início de Novembro de 2020.
+- Inserção de metadados relacionamento via taginput estava limitado a 100 itens e removendo alguns valores quando duplicados;
+- Filtros de taxonomia herdados fazendo a requisição errada;
+- Edição em massa para alterar status gerando erros;
 
 ---
 
