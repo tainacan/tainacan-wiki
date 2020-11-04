@@ -39,7 +39,7 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 - Tipo de metadado URL embutida (por hora via plugin);
 - Popup de aviso de erros em requisições do sistema;
 - Botão para começar entrar no modo tela cheia a partir de um item específico;
-- Barra de filtros fixa com scroll na tela pública da listagem de itens;
+- Barra de filtros fixa com scroll na tela pública da listagem de itens (requer atualização do tema Tainacan Inferface);
 
 #### Melhorias
 
