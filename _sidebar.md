@@ -9,6 +9,7 @@
   - [Install on a local windows machine](xampp "Installing Tainacan plugin on a local Windows machine (no sever) - Tainacan Wiki")
   - [Optimization](optimization "Optimization Strategies for the Tainacan plugin - Tainacan Wiki")
   - [Hosting](hosting "Hosting options for Tainacan Plugin - Tainacan Wiki")
+  - [Tainacan CLI](tainacan-cli.md "Tainacan WP-CLI")
 - Using Tainacan
   - [Collections](collections "What are and how to manage Collections on Tainacan - Tainacan Wiki")
   - [Items](items "What are and how to manage Items on Tainacan  - Tainacan Wiki")
