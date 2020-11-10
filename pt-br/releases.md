@@ -32,14 +32,14 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 #### Novidades
 
 - Fluxo de submissão (depósito) de itens por usuários não logados (Bloco de Submissão de Itens)
-- Filtro por tipo de Documento;
+- Filtros por tipo de Documento e Miniatura;
 - Filtro por Coleções mais inteligente (inclui facetas);
-- Filtro por Miniatura do item (possui ou não);
-- Mudar a ordem de anexos;
+- Modo de Visualização Lista
+- Mudar a ordem e título de anexos;
 - Tipo de metadado URL embutida (por hora via plugin);
 - Popup de aviso de erros em requisições do sistema;
 - Botão para começar entrar no modo tela cheia a partir de um item específico;
-- Barra de filtros fixa com scroll na tela pública da listagem de itens (requer atualização do tema Tainacan Inferface);
+- Opção de Barra de filtros fixa com scroll na listagem de itens (requer atualização do tema Tainacan Inferface);
 
 #### Melhorias
 
@@ -68,8 +68,14 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 - Metadado numérico estava entendendo o valor 0 como "vazio";
 - Metadados herdados de uma coleção raiz estavam sendo criados na ordem reversa a da coleção raiz;
 - Inserção de metadados relacionamento via taginput estava limitado a 100 itens e removendo alguns valores quando duplicados;
+- Evita o auto-foco do modal de filtros caso este seja um painel lateral;
+- Links incorporados como Twittes e Páginas no documento tipo URL estavam com uma margem enorme abaixo deles;
 - Filtros de taxonomia herdados fazendo a requisição errada;
 - Edição em massa para alterar status gerando erros;
+
+### Data de Lançamento
+
+- Meados de Novembro de 2020.
 
 ---
 
