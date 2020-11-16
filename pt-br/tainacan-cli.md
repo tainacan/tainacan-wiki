@@ -1,5 +1,7 @@
 # Tainacan CLI
 
+O WP-CLI (https://wp-cli.org/) é a interface de linha de comando para WordPress. Você pode atualizar plugins, configurar instalações e muito mais, sem usar um navegador web.
+
 ## WP-CLI Commands
 Os seguintes comandos para o WP-CLI são suportados pelo Tainacan:
 
@@ -17,14 +19,14 @@ Remover entidades e arquivos não utilizados pela instalação do Tainacan
 #### OPTIONS:
 | options           | description |
 |-------------------|-------------|
-|--run              | Padrão, este comando apenas emite um relatório, mas não elimina nada. Se quiser realmente apagar o lixo, passe --run |
+|--run              | Por padrão, este comando apenas emite um relatório, mas não elimina nada. Se quiser realmente apagar o lixo, passe --run |
 |--deep             | Abordagem mais agresiva para encontrar lixo. Em alguns casos, poder apagar algo relacionado com outras partes do site. Atualmente, o modo deep apaga todos os anexos com os IDs de post não encontrados, independentemente de terem sido carregados pelo tainacan ou não |
 |--skip-attachments | Ignorar anexos não utilizados |
 |--skip-items       | Ignorar itens não utilizados |
 |--skip-taxonomies  | Ignorar taxonomias não utilizados |
 |--skip-metadata    | Ignorar metadados não utilizados |
 |--skip-transients  | Ignorar tainacan transients |
-|--yes              | Confirmação as operações antes da execução |
+|--yes              | Confirmar as operações antes da execução |
 
 Exemplo:
 ```

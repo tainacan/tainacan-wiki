@@ -1,5 +1,7 @@
 # Tainacan CLI
 
+WP-CLI (https://wp-cli.org/) is the command-line interface for WordPress. You can update plugins, configure multisite installations and much more, without using a web browser.
+
 ## WP-CLI Commands
 The following WP-CLI commands are supported by Tainacan:
 
@@ -18,7 +20,7 @@ Clean your Tainacan installation removing unused files and database entries
 | options           | description |
 |-------------------|-------------|
 |--run              | By default, this command only looks for garbage and output a report, but does not delete anything. If you want to really delete the garbage, pass --run |
-|--deep             | More aressive approach finding garbage. In some cases it could delete something related to other parts of the website. Currently, deep mode deletes all attachments with broken parent IDs, regardless whether they were uploaded via tainacan or not |
+|--deep             | More aressive approach for finding garbage. In some cases it could delete something related to other parts of the website. Currently, deep mode deletes all attachments with broken parent IDs, regardless whether they were uploaded via tainacan or not |
 |--skip-attachments | Do not try to find orphan and unused attachments |
 |--skip-items       | Do not try to find orphan and unused items |
 |--skip-taxonomies  | Do not try to find orphan and unused taxonomies |
@@ -50,7 +52,7 @@ wp tainacan index-content --collection=all
 Show a list of collections
 
 ### wp tainacan collection clean
-remove items of specific collection.
+Remove items of specific collection.
 
 #### OPTIONS:
 | options        | description |
@@ -67,17 +69,17 @@ wp tainacan collection clean 1201 --permanently
 
 
 ### wp tainacan index-content
-index content of documents
+Index content of documents
 
 #### OPTIONS:
 | options             | description |
 |---------------------|-------------|
 |--collection=<value> | <value> Specific ID of the collection into which the document content of the items will be indexed, or 'all' to all collections. |
-|--dry-run            | only count the total of item which will index, just output a report |
+|--dry-run            | only count the total of items which will index, just output a report |
 
 
 ### wp tainacan control-metadata
-recalculete values of metadata control
+Recalculate values of metadata control
 
 #### OPTIONS:
 | options              | description |
