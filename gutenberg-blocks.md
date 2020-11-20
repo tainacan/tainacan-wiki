@@ -1,43 +1,44 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 # Gutenberg Blocks
 
 ## O que é esse tal Gutenberg?
 
-No final de 2018, o WordPress 5.0 apresentou ao mundo seu novo editor de Posts e Páginas, apelidado de Gutenberg: 
+No final de 2018, o WordPress 5.0 apresentou ao mundo seu novo editor de Posts e Páginas, apelidado de Gutenberg:
 
 <div style="text-align: center; font-size: 1.5rem;">
 
-[https://br.wordpress.org/gutenberg/](https://br.wordpress.org/gutenberg/ ':ignore').
+[https://br.wordpress.org/gutenberg/](https://br.wordpress.org/gutenberg/ ":ignore").
 
 </div>
 
-Focado em fornecer uma maneira dinâmica e visual para a editoração de conteúdo. Neste editor, todos os elementos de uma página, desde os mais simples parágrafos até a mais complexa galeria de imagens, são denominados **"Blocos"**. Com ele, fica fácil construir um post de lançamento de uma coleção, usando de imagens com diferentes alinhamentos, colunas, grades de texto, mapas, títulos ou botões mais chamativos. Além disso, [são diversos os plugins existentes](https://br.wordpress.org/plugins/browse/blocks/ ':ignore') para o WordPress que te oferecem novos blocos ricos e atraentes.
+Focado em fornecer uma maneira dinâmica e visual para a editoração de conteúdo. Neste editor, todos os elementos de uma página, desde os mais simples parágrafos até a mais complexa galeria de imagens, são denominados **"Blocos"**. Com ele, fica fácil construir um post de lançamento de uma coleção, usando de imagens com diferentes alinhamentos, colunas, grades de texto, mapas, títulos ou botões mais chamativos. Além disso, [são diversos os plugins existentes](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para o WordPress que te oferecem novos blocos ricos e atraentes.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Blocos Gutenberg do Tainacan](/_assets/images/gutenberg-blocks-list.jpg ':size=450')
+![Lista de Blocos Gutenberg do Tainacan](/_assets/images/gutenberg-blocks-list.jpg ":size=450")
 
 </div>
 
 ## Os Blocos Tainacan
 
-O Tainacan não poderia ficar de fora, e usa desta ferramenta para fornecer blocos dedicados ao conteúdo gerado no seu repositório. 
+O Tainacan não poderia ficar de fora, e usa desta ferramenta para fornecer blocos dedicados ao conteúdo gerado no seu repositório.
 
 > Combinando os blocos Gutenberg com seu conteúdo Tainacan, fica simples criar narrativas, contar histórias e apresentar o seu acervo digital de maneira acessível ao mundo.
 
 Para usar algum dos blocos, basta editar um post ou uma página e procurar na lista de blocos disponíveis por um dos nosso blocos. São eles:
 
-* [Lista de Itens](/blocks-items#lista-de-itens) *(estático)*;
-* [Lista de Coleções](/blocks-collections#lista-de-coleções) *(estático)*;
-* [Lista de Termos](/blocks-terms#lista-de-termos) *(estático)*;
-* [Lista de Itens da Coleção](/blocks-items#lista-de-itens-da-coleção);
-* [Barra de Busca](/blocks-items#barra-de-busca-tainacan) Tainacan;
-* [Busca Facetada](/blocks-items#busca-facetada) - *(A Lista de Itens Completa)*;
-* [Lista de Facetas](/blocks-facets#lista-de-facetas);
-* [Carrossel de Itens](/blocks-items#carrossel-de-itens);
-* [Carrossel de Coleções](/blocks-collections#carrossel-de-coleções);
-* [Carrossel de Termos](/blocks-terms#carrossel-de-termos);
+- [Lista de Itens](/blocks-items#lista-de-itens) _(estático)_;
+- [Lista de Coleções](/blocks-collections#lista-de-coleções) _(estático)_;
+- [Lista de Termos](/blocks-terms#lista-de-termos) _(estático)_;
+- [Lista de Itens da Coleção](/blocks-items#lista-de-itens-da-coleção);
+- [Formulário de Submissão de Itens](/blocks-items#formulário-de-submissão-de-itens);
+- [Barra de Busca](/blocks-items#barra-de-busca-tainacan) Tainacan;
+- [Busca Facetada](/blocks-items#busca-facetada) - _(A Lista de Itens Completa)_;
+- [Lista de Facetas](/blocks-facets#lista-de-facetas);
+- [Carrossel de Itens](/blocks-items#carrossel-de-itens);
+- [Carrossel de Coleções](/blocks-collections#carrossel-de-coleções);
+- [Carrossel de Termos](/blocks-terms#carrossel-de-termos);
 
 ## Alguns conceitos importantes
 
@@ -51,13 +52,13 @@ Antes de começar a explorar os blocos do Tainacan, porém, talvez caiba entende
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Possíveis Alinhamentos de Bloco](/_assets/images/gutenberg-blocks-alignments.png ':size=250')
+![Lista de Possíveis Alinhamentos de Bloco](/_assets/images/gutenberg-blocks-alignments.png ":size=250")
 
 </div>
 
 ### Alinhamentos de Bloco
 
-Das configurações mencionadas acima cabe comentar sobre os **alinhamentos de bloco**. Alguns blocos (não só os do Tainacan) oferecem um ou mais dos alinhamentos da figura ao lado. 
+Das configurações mencionadas acima cabe comentar sobre os **alinhamentos de bloco**. Alguns blocos (não só os do Tainacan) oferecem um ou mais dos alinhamentos da figura ao lado.
 
 No geral, um bloco está de início com a configuração "Centralizar" por padrão. Ao se selecionar "Alinhar à esquerda" ou Alinhar à direita", o editor jogará o bloco para aquele lado, usando as opções `float` do CSS. Isso pode funcionar bem caso haja texto fluído ao lado do bloco, **mas também pode deixar seu bloco com pouco espaço**, cabe testar e pré-visualizar o documento para se ter certeza se fica adequado!
 
@@ -73,9 +74,9 @@ Alguns temas oferecem um recurso do WordPress denominado **"Templates de Página
 
 O _Tainacan Interface_ oferece atualmente 3 templates:
 
-* `Default`;
-* `Landing`;
-* `Landing with Breadcrumb`;
+- `Default`;
+- `Landing`;
+- `Landing with Breadcrumb`;
 
 Se você já criou alguma página com ele então já conhece o template `Default`. Este é modelo usadado para páginas e posts e possui sempre, na seguinte ordem:
 
@@ -98,12 +99,12 @@ Primeiramente, esta simetria entre editor e página depende muito do quão bom f
 
 ### Novos Blocos
 
-Não tenha medo de procurar por [outros blocos](https://br.wordpress.org/plugins/browse/blocks/ ':ignore') para instalar e testar em suas publicações. 
+Não tenha medo de procurar por [outros blocos](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para instalar e testar em suas publicações.
 
-!> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia! 
+!> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia!
 
 Eis aqui exemplos de blocos extras que gostamos:
 
-* [Grids - Layout Builder for WordPress](https://wordpress.org/plugins/grids/ ':ignore')
+- [Grids - Layout Builder for WordPress](https://wordpress.org/plugins/grids/ ":ignore")
 
 Outra observação importante é que, ao mudar de tema, seus blocos poderão ter uma aparência bem diferente. Ainda é muito recente a chegada do Gutenberg e nem todos os temas oferecem um bom suporte aos seus recursos (como o alinhamento "Largura ampla", por exemplo). Nossos blocos devem funcionar bem nos temas em geral, mas podem haver diferenças de espaçamento, fonte e alinhamentos dependendo dos estilos de página.
