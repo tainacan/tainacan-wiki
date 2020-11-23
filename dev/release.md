@@ -47,12 +47,6 @@ It is extremely important to build the release version in _production_ mode. Tak
 cd $BUILD_PATH
 ```
 
-### Set build to development mode
-
-```
-cd $GIT_PATH
-git checkout webpack.config.js
-```
 
 ### Commit and push
 
@@ -170,12 +164,6 @@ It is extremely important to build the release version in _production_ mode. Tak
 ./build.sh --prod
 ```
 
-### Set build to development mode
-
-```
-cd $GIT_PATH
-git checkout webpack.config.js
-```
 
 ### Prepare SVN repo
 
