@@ -26,7 +26,7 @@ With that minimal update, the items list goes from a standard _blog-posts-like_ 
 We have a sample child theme made to take care of this small adjustment, that you can download here:
 
 <div style="width: 100%; text-align: center;">
-    <a style="margin: 4px; padding: 10px 16px; color: #298596; border: 2px solid #298596; border-radius: 4px;" href="tainacan-wiki/#/dev/_assets/some-theme-child.zip">
+    <a style="margin: 4px; padding: 10px 16px; color: #298596; border: 2px solid #298596; border-radius: 4px;" href="/#/dev/_assets/some-theme-child.zip">
         Sample Child Theme
     </a>
 </div>
