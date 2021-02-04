@@ -31,7 +31,7 @@ Os novos modos disponíveis são:
 
 Na sua página de plugins do _WordPress_, procure por "Tainacan" e ative o "plugin Tainacan Modos de Visualização Extra". Você também vai encontrar ele [neste link](https://br.wordpress.org/plugins/tainacan-extra-view-modes/). Dalí, basta instalar com o clique de um botão.
 
-Se você preferir, pode também baixar o arquivo [.zip](https://github.com/tainacan/tainacan-extra-viewmodes/releases) do [repositório do GitHub repository](https://github.com/tainacan/tainacan-extra-viewmodes) e seguir as instruções de instalação descritas em [nossa sessão sobre instalar plugins](/plugins#instaling-a-plugin).
+Se você preferir, pode também baixar o arquivo [.zip](https://github.com/tainacan/tainacan-extra-viewmodes/releases) do [repositório do GitHub repository](https://github.com/tainacan/tainacan-extra-viewmodes) e seguir as instruções de instalação descritas em [nossa sessão sobre instalar plugins](/pt-br/plugins#instalando-os-plugins).
 
 Ative o plugin na sessão de plugins do painel administrativo do _WordPress_.
 

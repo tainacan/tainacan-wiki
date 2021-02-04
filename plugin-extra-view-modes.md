@@ -29,9 +29,9 @@ The new view modes available are:
 
 ## Instalation
 
-In your *WordPress *plugins page, search for "Tainacan" and activate the "Tainacan Extra View Modes plugin". You will also find is [in this link](https://wordpress.org/plugins/tainacan-extra-view-modes/). From there you can just install it by pressing a button.
+In your *WordPress *plugins page, search for "Tainacan" and activate the "Tainacan Extra View Modes plugin". You will also find i [in this link](https://wordpress.org/plugins/tainacan-extra-view-modes/ ":ignore"). From there you can just install it by pressing a button.
 
-If you prefer, you can also download the [.zip](https://github.com/tainacan/tainacan-extra-viewmodes/releases) file from [the GitHub repository](https://github.com/tainacan/tainacan-extra-viewmodes) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
+If you prefer, you can also download the [.zip](https://github.com/tainacan/tainacan-extra-viewmodes/releases ":ignore") file from [the GitHub repository](https://github.com/tainacan/tainacan-extra-viewmodes ":ignore") and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
 
 Activate our plugin on the _WordPress_ administrative panel section for plugins.
 

@@ -30,6 +30,7 @@
   - [Gutenberg Blocks](gutenberg-blocks.md "The Tainacan Gutenberg Blocks - Tainacan Wiki")
 - [Plugins](/plugins "Plugins to extend Tainacan functionalities - Tainacan Wiki")
   - [PDF Exposer](/plugin-pdf-exposer "A PDF Exposer plugin for Taiancan - Tainacan Wiki")
+  - [URL Metadata Type](/plugin-metadata-type-url "A plugin that registers a metadata type for displaying and previewing URLs links - Tainacan Wiki")
   - [Extra View Modes](/plugin-extra-view-modes "A plugin of extra view modes for Tainacan - Tainacan Wiki")
   - [WordPress 3DHOP](/plugin-3d-hop "A plugin for rendering 3D objects via 3DHOP inside Tainacan - Tainacan Wiki")
 - [For Developers](/dev/ "Developers Session of Pages - Tainacan Wiki")
