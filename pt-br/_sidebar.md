@@ -37,7 +37,7 @@
 - Sobre o Tainacan
   - [:link:Site Oficial](https://tainacan.org/ ":ignore")
   - [Versões](/pt-br/releases "Versões Lançadas - Tainacan Wiki")
-  - [:link:Publicações](http://pesquisa.medialab.ufg.br/ ":ignore")
+  - [:link:Publicações](https://pesquisa.tainacan.org// ":ignore")
   - [Apresentações](/pt-br/presentations "Apresentações relacionadas ao Tainacan - Tainacan Wiki")
 - Comunidade & Outros
   - [:link:Lista da Comunidade](https://lists.riseup.net/www/subscribe/tainacan ":ignore")
