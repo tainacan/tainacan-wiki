@@ -2,7 +2,7 @@
 
 We list and answer the most frequently asked questions by our community:
 
-> To participate in the Tainacan community [register here](https://lists.riseup.net/www/subscribe/tainacan ":ignore")!
+> To participate in the Tainacan community [register here](https://tainacan.discourse.group ":ignore")!
 
 Skip to an specific section:
 
@@ -25,7 +25,7 @@ Tainacan as free software is developed from results of scientific research and e
 
 We are a network of researchers and developers that unites scientific knowledge and the implementation of technological solutions in cultural institutions.
 
-Currently our network gathers researchers from the University of Brasilia (UnB), Federal University of Goiás (UFG) and Brazilian Institute of Information in Science and Technology (IBICT) and also our developers and users from our Tainacan community [(register here)](https://lists.riseup.net/www/subscribe/tainacan).
+Currently, our network gathers researchers from the University of Brasilia (UnB), Federal University of Goiás (UFG) and Brazilian Institute of Information in Science and Technology (IBICT) and also our developers and users from our Tainacan community [(register here)](https://tainacan.discourse.group).
 
 ### Why is Tainacan free software?
 
@@ -37,7 +37,7 @@ Its main goal is to help cultural institutions to organize, publish and spread t
 
 ### I think I found an error. How should I proceed?
 
-We are always available at [Tainacan's mailing list](https://lists.riseup.net/www/subscribe/tainacan ":ignore"), where conversations can be started and at [the project's github](https://github.com/tainacan/tainacan ":ignore"), where more technical _issues_ can be reported. If you start a conversation on the list, we recommend that you always give as much detail as possible so that you can help identify what is happening. Some suggestions are:
+We are always available at [Tainacan's forum](https://tainacan.discourse.group ":ignore"), where conversations can be started and at [the project's github](https://github.com/tainacan/tainacan ":ignore"), where more technical _issues_ can be reported. If you start a conversation on the list, we recommend that you always give as much detail as possible so that you can help identify what is happening. Some suggestions are:
 
 - Describe step by step what is being done, what occurs and what was expected;
 - Check and if possible send us the information from [System Diagnosis Page](/optimization#system-check);
@@ -127,4 +127,4 @@ By default, your website homepage will be the list of posts to your blog. To set
 
 As your site administrator, you can register new users with different [roles and permissions](/users-roles) to edit your collection. If, however, you want items to be submited without new users being registered in the system, you can create a public [Item Submission Form](/item-submission), to receive direct external contributions in your repository.
 
-> To join the Tainacan community [sign up here](https://lists.riseup.net/www/subscribe/tainacan)!
+> To join the Tainacan community [sign up here](https://tainacan.discourse.group)!

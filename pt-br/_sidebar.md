@@ -40,7 +40,7 @@
   - [:link:Publicações](https://pesquisa.tainacan.org// ":ignore")
   - [Apresentações](/pt-br/presentations "Apresentações relacionadas ao Tainacan - Tainacan Wiki")
 - Comunidade & Outros
-  - [:link:Lista da Comunidade](https://lists.riseup.net/www/subscribe/tainacan ":ignore")
+  - [:link:Fórum da Comunidade](https://tainacan.discourse.group ":ignore")
   - [Colabore com esta Wiki](/pt-br/CONTRIBUTING "Como contribuir com a Wiki do Tainacan - Tainacan Wiki")
   - [Teste de Versões](/pt-br/release-testing.md "Como realizar testes de versões do Tainacan - Tainacan Wiki")
     - [Coleções](/pt-br/testing-collections.md)

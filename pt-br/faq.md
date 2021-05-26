@@ -2,7 +2,7 @@
 
 Listamos e respondemos as perguntas mais frequentes feitas pela nossa comunidade:
 
-> Para participar da comunidade do Tainacan [inscreva-se aqui](https://lists.riseup.net/www/subscribe/tainacan)!
+> Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!
 
 Pule pra alguma sessão específica:
 
@@ -25,7 +25,7 @@ O software livre Tainacan é desenvolvido a partir de resultados de pesquisas ci
 
 Somos uma rede de pesquisadores e desenvolvedores que une o conhecimento científico e a implementação de soluções tecnológicas em instituições culturais.
 
-Atualmente nossa rede reúne pesquisadores da Universidade de Brasília (UnB), Universidade Federal de Goiás (UFG) e Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT) e também nossa desenvolvedores e usuários da nossa comunidade do Tainacan [(inscreva-se aqui)](https://lists.riseup.net/www/subscribe/tainacan).
+Atualmente nossa rede reúne pesquisadores da Universidade de Brasília (UnB), Universidade Federal de Goiás (UFG) e Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT) e também nossa desenvolvedores e usuários da nossa comunidade do Tainacan [(inscreva-se aqui)](https://tainacan.discourse.group).
 
 ### Por que o Tainacan é um software livre?
 
@@ -37,7 +37,7 @@ Seu objetivo principal é ajudar instituições culturais a organizarem, publica
 
 ### Acho que encontrei um erro. Como devo proceder?
 
-Estamos sempre a disposição na [lista de emails do Tainacan](https://lists.riseup.net/www/subscribe/tainacan), onde podem ser iniciadas conversas e no [github do projeto](https://github.com/tainacan/tainacan), onde podem ser reportadas _issues_ mais técnicas. Caso você comece uma conversa na lista, recomendamos dar sempre o máximo de detalhes para que possa ajudar a identificar o que está ocorrendo. Algumas sugestões, são:
+Estamos sempre a disposição no [fórum de discussão do Tainacan](https://tainacan.discourse.group), onde podem ser iniciadas conversas e no [github do projeto](https://github.com/tainacan/tainacan), onde podem ser reportadas _issues_ mais técnicas. Caso você comece uma conversa na lista, recomendamos dar sempre o máximo de detalhes para que possa ajudar a identificar o que está ocorrendo. Algumas sugestões, são:
 
 - Descrever passo a passo o que está sendo feito, o que ocorre e o que era esperado;
 - Verificar e se possível nos mandar as informações da [Página de Diagnóstico do Sistema](/pt-br/optimization?id=diagnóstico-do-sistema);
@@ -81,7 +81,7 @@ Em geral, erros de processos como importadores e exportadores são gravados em u
 
 ### Sinto que minha instalação está demorando muito para carregar os itens... tem como melhorar?
 
-Se sua coleção é pequena e simples, então é bem capaz que há algum problema ocorrendo e pode ser discutido na lista de emails. Já se sua base tem milhares de itens, com dezenas de metadados, então as razões para lentidões podem ter relação com o servidor ou com as configurações de busca atuais. Sugerimos uma leitura detalhada [desta página](#/optimization) que vai te guiar por algumas opções em questão de performance.
+Se sua coleção é pequena e simples, então é bem capaz que há algum problema ocorrendo e pode ser discutido no fórum de suporte. Já se sua base tem milhares de itens, com dezenas de metadados, então as razões para lentidões podem ter relação com o servidor ou com as configurações de busca atuais. Sugerimos uma leitura detalhada [desta página](#/optimization) que vai te guiar por algumas opções em questão de performance.
 
 ---
 
@@ -127,4 +127,4 @@ Por padrão, a página inicial do seu site será a lista de posts do seu blog. P
 
 Como administrador do seu site, é possível cadastrar novos usuário com diferentes [papéis e permissões](/pt-br/users-roles) para editar seu acervo. Se no entanto você quer que possam ser inseridos itens sem o cadastro de novos usuários no sistema, pode criar um [Formulário de Submissão de itens](/pt-br/item-submission) público, para receber contribuições externas diretas no seu repositório.
 
-> Para participar da comunidade do Tainacan [inscreva-se aqui](https://lists.riseup.net/www/subscribe/tainacan)!
+> Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!

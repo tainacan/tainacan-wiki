@@ -40,7 +40,7 @@
   - [:link:Publications](https://pesquisa.tainacan.org/ ":ignore")
   - [Presentations](/presentations "Slideshow presentations related to Tainacan - Tainacan Wiki")
 - Community & Misc
-  - [:link:Community list](https://lists.riseup.net/www/subscribe/tainacan ":ignore")
+  - [:link:Community forum](https://tainacan.discourse.group ":ignore")
   - [Improve this wiki](CONTRIBUTING "How to contribute to the Tainacan Wiki - Tainacan Wiki")
   - [Release Testing](/release-testing.md "How to test Tainacan versions - Tainacan Wiki")
   - [Data and Archive Processing](data-processing "A word on Data and Archive Processing - Tainacan Wiki")

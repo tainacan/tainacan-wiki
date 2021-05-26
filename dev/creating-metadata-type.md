@@ -234,9 +234,8 @@ const TainacanMetadataTypeCustom = {
 	`,
 };
 
-window.tainacan_extra_components[
-  "tainacan-metadata-type-custom"
-] = TainacanMetadataTypeCustom;
+window.tainacan_extra_components["tainacan-metadata-type-custom"] =
+  TainacanMetadataTypeCustom;
 ```
 
 The first and last lines are an important step for registering custom components to the plugin JS bundle.
@@ -371,9 +370,8 @@ const TainacanMetadataFormCustomType = {
     </div>
 	`,
 };
-window.tainacan_extra_components[
-  "tainacan-metadata-form-type-custom"
-] = TainacanMetadataFormCustomType;
+window.tainacan_extra_components["tainacan-metadata-form-type-custom"] =
+  TainacanMetadataFormCustomType;
 ```
 
 Some observation here:
@@ -533,9 +531,8 @@ window.tainacan_extra_components =
   typeof window.tainacan_extra_components != "undefined"
     ? window.tainacan_extra_components
     : {};
-window.tainacan_extra_components[
-  "tainacan-metadata-type-custom"
-] = TainacanMetadataTypeCustom;
+window.tainacan_extra_components["tainacan-metadata-type-custom"] =
+  TainacanMetadataTypeCustom;
 ```
 
 ### Build it!
@@ -551,6 +548,6 @@ If everything goes well, you shall have a new folder `node_modules` and a new fi
 
 ## Wrapping up
 
-Creating your custom Metadata Type for Tainacan requires following some _naming conventions_ and understanding a bit of the structure existing on the plugin code. We here summarized how to [Register](#registering-your-metadata-type), create the [Class](#creating-the-php-class) and the [Custom Vue Components](#creating-vue-web-component) related to it. But you can learn a lot more by studying the [source code of some more complex examples](https://github.com/tainacan/tainacan/tree/develop/src/views/admin/components/metadata-types ":ignore"). Feel free to reach us at the GitHub repo or at the [community mailing list](https://lists.riseup.net/www/subscribe/tainacan ":ignore") :wink:
+Creating your custom Metadata Type for Tainacan requires following some _naming conventions_ and understanding a bit of the structure existing on the plugin code. We here summarized how to [Register](#registering-your-metadata-type), create the [Class](#creating-the-php-class) and the [Custom Vue Components](#creating-vue-web-component) related to it. But you can learn a lot more by studying the [source code of some more complex examples](https://github.com/tainacan/tainacan/tree/develop/src/views/admin/components/metadata-types ":ignore"). Feel free to reach us at the GitHub repo or at the [community forum](https://tainacan.discourse.group ":ignore") :wink:
 
 > Oh, and BTW. Are you ready to also create a [Custom Filter Type](/dev/creating-filters-type) for your new Metadata Type?

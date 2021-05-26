@@ -1,4 +1,3 @@
-
 ?> _TODO_ Esta página pode ser melhorada com mais exemplos
 
 # Testando Exportadores
@@ -14,4 +13,4 @@ O Tainacan oferece diferentes importadores, incluindo alguns que podem ser criad
    - [x] Ao concluir a execução do exportador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta.
    - [x] Baixe e abra o arquivo gerado para confirmar que os dados foram exportados corretamente, incluindos os valores e campos especiais dos metadados.
 
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ':ignore') ou para o [e-mail da comunidade](mailto:tainacan@lists.riseup.net ':ignore') do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).

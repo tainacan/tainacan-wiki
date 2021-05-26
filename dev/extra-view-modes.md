@@ -530,4 +530,4 @@ In our sample repository, we also have a `build.sh` script, that takes care of c
 
 ## Conclusion
 
-There are lots of things that you can do to improve your items list visualization. Hopefully our [sample files](https://github.com/tainacan/tainacan-extra-view-mode-samples ":ignore") and our [demo plugin](https://wordpress.org/plugins/tainacan-extra-view-modes/ ":ignore") will set you up for creating your own. Feel free to reach us in the [Tainacan email list](https://lists.riseup.net/www/info/tainacan ":ignore") to discuss any issues!
+There are lots of things that you can do to improve your items list visualization. Hopefully our [sample files](https://github.com/tainacan/tainacan-extra-view-mode-samples ":ignore") and our [demo plugin](https://wordpress.org/plugins/tainacan-extra-view-modes/ ":ignore") will set you up for creating your own. Feel free to reach us in the [Tainacan Discourse Forum](https://tainacan.discourse.group ":ignore") to discuss any issues!
