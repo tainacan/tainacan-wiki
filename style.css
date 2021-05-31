@@ -565,3 +565,36 @@ a.fab,
 a.fab:hover {
     color: white;
 }
+
+/* Page TOC */
+.page_toc {
+    margin-top: 120px;
+    font-size: 0.875rem;
+    padding: 0rem 1rem 0rem 0.25rem;
+}
+.page_toc ul a {
+    font-weight: 400;
+    color: #888888;
+}
+.page_toc ul a:hover span {
+    color: var(--theme-color, #298596);
+}
+.page_toc .active {
+    border-left: none;
+    color: var(--theme-color, #298596);
+    padding-left: 0px;
+}
+.page_toc .active::before {
+    content: '';
+    width: 3px;
+    background-color: var(--theme-color, #298596);
+    display: inline-block;
+    height: 1.25rem;
+    position: absolute;
+    left: 0px;
+}
+@media screen and (max-width: 1300px) {
+    .page_toc {
+        margin-bottom: -120px;
+    }
+}
