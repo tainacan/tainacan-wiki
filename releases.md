@@ -6,24 +6,37 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 
 ## Tainacan Beta 0.18
 
-### Resumo da Versão (o que é esperado)
+### Resumo da Versão
 
 #### Novidades
 
-- Sessão de Metadados;
-- Desfazer algumas ações no modal de atividades;
+- Página de Relatórios do Tainacan, apresentando gráficos e informações estatísticas relativas ao acervo e a gestão do repositório;
+- Novo modal de anexos com zoom e opção de mostrar título, descrição e legenda de arquivos (para ser utilizado pelos temas);
+- Ícones por tipo de documento para items sem miniatura;
+- Carregamento progressivo de imagens com efeito blur;
+- Filtragem textual e por tipo na tela de metadados e de filtros;
+- Substituir Documento de um item via importador CSV;
+- Opção de limpar um item pelo importador CSV;
+- Opção de adicionar um link no final do bloco de submissão de itens para o item criado;
 
 #### Melhorias
 
-- Controle de visibilidade de Documento e Anexos de um item;
-- O importador CSV vai criar automaticamente metadados nível repositório também;
-- Atributos alt em todas as imagens inseridas no plugin (acessibilidade);
+- Opção de criar todos os metadados na tela de mapeamento do importador;
+- Adiciona paginação na busca do input de checkbox, tanto no filtro quanto no metadado tipo taxonomia;
+- Diversas melhorias na eficiência do importador e do exportador;
+- Melhorias na aparência da tela de metadados e exibição de mais informações relevantes sem a necessidade de se abrir para edição;
+- Coleções são criadas com comentários desabilitado, por padrão;
+- Melhorias na exibição de embeds (e resolução de conflitos com css do WordPres);
+- Melhor rótulo para status de comentários na coleção;
 
 #### Correções de Erros
 
+- Resolvemos diversos conflitos de css com bibliotecas externas;
+- Criamos um filtro para se listar páginas onde não se queira carregar o javascript e css relacionados aos blocos do Tainacan;
+
 ### Data de Lançamento
 
-- Indefinido.
+- 02 de Maio de 2021
 
 ---
 
