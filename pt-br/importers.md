@@ -200,16 +200,17 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 3. Acesse a seção **Importadores**;
 4. Na seção **Importadores Disponíveis**, selecione `CSV`;
 5. Configure os campos a seguir de acordo com as configurações realizadas no seu aquivo *.csv*:
-  * **Delimitador csv**: caractere que separa valores;
-  * **Delimitador de metadado multi-valorado**: caractere que separa valores dentro de uma mesma célula;
-  * **Delimitador de texto**: caractere que delimita todos os valores dentro de uma mesma célula
-  * **Codificação do arquivo**: parâmetro que determina a codificação dos valores de texto do aquivo. (Geralmente **UTF-8**, garanta que o arquivo *.csv* esteja codificado conforme as opções disponíveis no importador).
+    * **Delimitador csv**: caractere que separa valores;
+    * **Delimitador de metadado multi-valorado**: caractere que separa valores dentro de uma mesma célula;
+    * **Delimitador de texto**: caractere que delimita todos os valores dentro de uma mesma célula
+    * **Codificação do arquivo**: parâmetro que determina a codificação dos valores de texto do aquivo. (Geralmente **UTF-8**, garanta que o arquivo *.csv* esteja codificado conforme as opções disponíveis no importador).
+    * **Valor vazio**: A string que representa um valor não informado para os metadados (utilizado apenas para atualizações).
 6. Configure estes campos de acordo com suas preferências para importação:
-  * **Item repetido**: Determina o comportamento do Tainacan ao identificar itens idênticos no processo de importação. Selecione Atualizar para que o item receba os  valores do arquivo .csv ou seleciona Ignorar para que o item já existente na coleção não seja modificado.
-  * **Importando Anexos**: O Importador permite que vários itens sejam inseridos em uma coleção diretamente de um arquivo .csv. Consulte Importador-csv#Importando  arquivos e anexos para saber como configurar seu arquivo .csv corretamente.
-    1. De acordo com a documentação, aponte a URL no campo caminho para o servidor.
+    * **Item repetido**: Determina o comportamento do Tainacan ao identificar itens idênticos no processo de importação. Selecione Atualizar para que o item receba os  valores do arquivo .csv ou seleciona Ignorar para que o item já existente na coleção não seja modificado.
+    * **Caminho para o servidor**: O Importador permite que vários itens sejam inseridos em uma coleção diretamente de um arquivo .csv. Consulte Importador-csv#Importando arquivos e anexos para saber como configurar seu arquivo .csv corretamente.
+      1. De acordo com a documentação, aponte a URL base dos para acessar os arquivos no campo caminho para o servidor.
 7. Selecione ou crie uma **Coleção Destino** para indicar onde os itens serão criados;
-   *. Selecionando criar uma nova coleção em branco, ao `Concluir` a coleção, você será redirecionado para o **Importador** novamente.
+    * Selecionando criar uma nova coleção em branco, ao `Concluir` a coleção, você será redirecionado para o **Importador** novamente.
 8. Faça o upload do arquivo *.csv* no campo **Arquivo Fonte**.
 9. Clique em `Próximo`;
 10. Na tela Mapeamento de Metadados é possível realizar o processo de-para entre os metadados previamente configurados no *.csv*;
