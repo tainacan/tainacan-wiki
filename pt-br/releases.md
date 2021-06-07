@@ -4,6 +4,10 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 
 ## Tainacan Beta 0.18
 
+### Postagem
+
+Post de lançamento: [https://tainacan.org/blog/2021/06/07/tainacan-beta-0-18-relatorios-sobre-o-acervo-nova-galeria-de-midias-e-melhorias-na-lista-de-itens/](https://tainacan.org/blog/2021/06/07/tainacan-beta-0-18-relatorios-sobre-o-acervo-nova-galeria-de-midias-e-melhorias-na-lista-de-itens/ ":ignore")
+
 ### Resumo da Versão
 
 #### Novidades
@@ -34,7 +38,7 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 
 ### Data de Lançamento
 
-- 02 de Maio de 2021
+- 07 de Junho de 2021
 
 ---
 
