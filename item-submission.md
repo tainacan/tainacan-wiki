@@ -111,7 +111,7 @@ No painel administrativo do WordPress, há um submenu do plugin Tainacan especí
 
 ![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](pt-br/_assets/images/submissao-itens-captcha-1.png)
 
-Ambos os campos são obtidos no site do reCAPTCHA, quando vc cadastra seu site neste link: [https://www.google.com/reCAPTCHA/admin/create](https://www.google.com/reCAPTCHA/admin/create ":ignore"). Não esqueça de clicar em "Salvar alterações" ao concluir esta etapa.
+Ambos os campos são obtidos no site do reCAPTCHA, quando vc cadastra seu site neste link: [https://www.google.com/recaptcha/admin/create](https://www.google.com/recaptcha/admin/create ":ignore"). Não esqueça de clicar em "Salvar alterações" ao concluir esta etapa.
 
 ### Habilitando a Coleção para uso do reCAPTCHA
 

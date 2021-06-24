@@ -15,7 +15,7 @@ Besides inserting a new field in your _WordPress_ admin panel, where you access 
 
 Developing a compatible theme is not complicated and also does not need to be done from scratch, since many can be generated from [child themes](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of others that already exist. Here on the Wiki we have [an entire session](/dev/creating-compatible-themes.md) dedicated to teaching this to developers.
 
-Currently there is a theme developed by the Tainacan community and published in [WordPress official repository](https://wordpress.org/themes/). The others are available via GitHub. To install themes, access the WordPress theme installation panel and follow the steps in the [installation section](manage-themes).
+Currently, there is a theme developed by the Tainacan community and published in [WordPress official repository](https://wordpress.org/themes/). The others are available via GitHub. To install themes, access the WordPress theme installation panel and follow the steps in the [installation section](manage-themes).
 
 ### Tainacan Interface
 
@@ -32,6 +32,7 @@ This is the standard theme of the Tainacan project and is available in the offic
   - Show attachments as a carousel and integrate the document in this same list;
   - Display a custom header that resembles the collection;
   - Download button on the Document;
+  - Item navigation (next and previous);
 - Frequent updates and in sync with new versions of the Tainacan plugin;
 - Customizable color palette;
 - Header color of each customizable collection within the plugin, when the theme is active;
@@ -41,6 +42,31 @@ This is the standard theme of the Tainacan project and is available in the offic
 - Sidebar support;
 
 ![Some screens of the Tainacan Interface theme](/pt-br/_assets/gifs/themes-tainacan-interface.gif)
+
+### Blocksy
+
+The second most recommended that we mention here is not a child theme, but a popular theme [available on the WordPress repository](https://wordpress.org/themes/blocksy/ ":ignore"). It's integration with Tainacan is provided via a plugin, also released on [the WordPress repository](https://wordpress.org/plugins/tainacan-blocksy/ ":ignore"). Having both the plugin and the theme (or a child theme of it) activated, you'll have access to a series of settings available for the customizer. We cover these options in details on [the release post](https://tainacan.org/en/blog/2021/06/14/using-the-blocksy-theme-with-tainacan/ ":ignore") and it is also a good idea to check their [official page](https://creativethemes.com/blocksy/ ":ignore"). To cover a bit its features:
+
+- Specific templates for the Repository, and Term item lists, including separate settings for each Collection, with various configurations including:
+  - Selecting different color palettes;
+  - Hiding various search control elements;
+  - Change filter bar behavior, such as its size or whether it appears hidden at first;
+  - Tweaking a bit of the header layout;
+- Specific template for the item's page of each collection, with several options, among them:
+  - Change the order in which attachments, metadata and document are displayed including the possibility of having two columns, with attachments aside of the metadata;
+  - Display the metadata list in more than one column;
+  - Dispaly metadata labels aside of their values;
+  - Show attachments as a carousel and integrate the document in this same list;
+  - Display a custom header that uses featured image as a banner;
+  - Download button on the Document;
+  - Item navigation (next and previous);
+  - Related Items Section;
+  - Custom share box;
+- Customizable color palette;
+- Automatic "More" dropdown button added to menu when number of items doesn't fit into current screen;
+- Many other layout options available thanks to the theme features;
+
+![Some screens from Blocksy theme](/pt-br/_assets/gifs/themes-blocksy.gif)
 
 ### Identidade do Governo (IDG-WP)
 
