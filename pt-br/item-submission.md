@@ -48,17 +48,37 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
 
 3. Feito isto, uma busca pelo bloco _“Formulário de Submissão de Itens”_ na lista de blocos, te permitirá inserir o formulário;
 
-   ![Acesse o painel de controle](_assets\images.png)
+   ![Acesse o painel de controle](_assets\images\submissao.png.png)
 
 4. De início, o bloco vem vazio, porque espera que você configure de qual _“coleção”_ este formulário se refere. Ao clicar no botão _“Selecione a Coleção destino”_, o modal apresentado mostrará apenas as _“coleções”_ configuradas para aceitar a submissão pública de _“itens”_, como mencionado[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção)[na sessão anterior](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção);
 
-   ![Acesse o painel de controle](_assets\gifs.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/m7B1Axx00bk" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 5. Escolhida a _“coleção”_, o bloco será preenchido com uma _“prévia visual”_ de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em _“Visualizar”_ ou _“Publicar a página”_;
 
    ![Acesse o painel de controle](_assets\gifs.mp4)
 
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/PacoTywllQs" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
+
 6. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a _“aba de rascunho”_ na _“coleção”_. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
+
+   ![Acesse o painel de controle](_assets\gifs.mp4)
+
+7. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a _“aba de rascunho”_ na _“coleção”_. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
 
 ## Configurações Avançadas do Bloco
 
@@ -66,7 +86,14 @@ O _“bloco de submissão”_ possui algumas configurações adicionais.
 
 1. Clique no “_bloco de submissão do item”_ e depois na _“engrenagem”_ que fica no canto superior direito da tela, o painel lateral direito do editor mostrará uma série de _“configurações do bloco”_;
 
-   ![Acesse o painel de controle](_assets\gifs.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/5AKOazA13tM" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 2. **“Mensagem de retorno da submissão”:** Configure os campos de retorno para o usuário após o preenchimento. O primeiro deles diz respeito a mensagem que vai ser mostrada quando o _“item”_ tiver sido submetido com sucesso no formulário;
 

@@ -45,15 +45,36 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
    ● “Arquivo”: Faça o upload de um arquivo como “imagens”, “áudios”, “arquivos de texto”, “vídeos”, etc., a partir do seu computador, ou selecione a partir da “biblioteca de mídia” do WordPress. Consulte este artigo sobre a compatibilidade de arquivos do WordPress para saber mais;
 
-   ![Acesse o painel de controle](\_assets\gifs\.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/LSNu9qV-htM" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
    ● “Texto simples”: Um campo para inserção de texto sem formatação;
 
-   ![Acesse o painel de controle](\_assets\gifs\.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/v_wOBFRtb1Y" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
    ● “URL”: Permite a incorporação de links (embed) multimídia de vários sites, como YouTube, Vimeo e etc.;
 
-   ![Acesse o painel de controle](\_assets\gifs\.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/fh5KLS70Z-o" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 6. Defina uma miniatura para o “item”
 
@@ -89,7 +110,14 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
    b. Metadados configurados como “obrigatórios”, não permitirão que o “item” seja salvo como “rascunho” ou “publicado”, caso não estejam preenchidos. Consulte Metadados e Coleções para saber mais.
 
-   ![Acesse o painel de controle](\_assets\gifs\.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/o8--OSPVm1Y" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 10. Para concluir a “criação do item”, escolha entre as opções abaixo:
 

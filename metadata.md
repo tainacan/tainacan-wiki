@@ -70,7 +70,7 @@ Metadado ideal para inserção de informações que contenham apenas números.
 <details>
     <summary>Lista de seleção:</summary>
 Metadado ideal para inserção de um pequeno conjunto de termos controlados. Adicione termos no campo **Opções**, para adicionar mais valores separe o valor atual por vírgula ou tecle *enter*.
-    
+
 !> **Atenção**: Para criar novos termos na lista de seleção é necessário que o usuário tenha permissão para a edição do metadado em questão. (Consulte [Criar Taxonomias](/pt-br/taxonomies#criar-taxonomias) para saber como permitir a adição de novos termos durante o envio de itens)
     
 </details>
@@ -109,8 +109,10 @@ Atualmente o Tainacan tem seis tipos de metadados e filtros por padrão, mas nov
 1. Acesse o painel de *Controle do WordPress*;
 2. Na barra lateral esquerda clique em Tainacan e então:
   1. Crie Metadados a nível de **Repositório**:
+
     * Clique em **Metadados do Repositório** para criar metadados que serão herdados por todas as coleções. Devem ser pensados para permitir a inserção de informações globais, ou seja, comuns a pelo menos grande parte do repositório. (Por exemplo: Número de Registro, Tipo de arquivo, Data do registro do item, Estado de Conservação etc.)
   2. Crie Metadados a nível de **Coleções**.
+
     * Metadados a nível de coleção são aplicados apenas aos itens criados nesta coleção. (Os metadados também são em coleções *filhas* desta coleção)
     * Crie ou escolha a coleção que deseja criar novos metadados (Consulte [Criar coleção](/pt-br/collections#criar-coleções)) para saber mais);
   3. Clique no ícone **Metadados** à direita, na barra superior de cor cinza;
@@ -144,15 +146,16 @@ Atualmente o Tainacan tem seis tipos de metadados e filtros por padrão, mas nov
 1. Acesse o painel de *Controle do WordPress*;
 2. Na barra lateral esquerda clique em Tainacan e então:
   1. Edite Metadados a nível de **Repositório**:
-  
+
   !> **Atenção**: As modificações em configurações de metadados a **nível de repositório** podem afetar dados já preenchidos e informações em itens que serão ou já foram criados em todo o repositório.
     * Clique em **Metadados do Repositório** para editar metadados que são herdados por todas as coleções. (Por exemplo: Número de Registro, Tipo de arquivo, Data do registro do item, Estado de Conservação etc.)
     * Clique no **ícone de lápis** à direita do metadado que deseja editar.
     * Ao concluir as alterações clique em `Salvar`
       * ou clique em `cancelar` para abortar a missão.
-  
+
   !> **Atenção**: Não é possível alterar o tipo de Metadado. (Por exemplo, alterar um metadado do tipo Texto para Texto Longo, ou Numérico para Data)
   1. Edite Metadados a nível de **Coleções**.
+
     *  A edição de Metadados a nível de **coleção** são aplicados apenas aos itens criados nesta coleção. (A edição destes metadados também afetam coleções *filhas* desta coleção)
     * Escolha a coleção que deseja editar os metadados (Consulte [Criar coleção](/pt-br/collections#criar-coleções) para saber mais);
       1. Clique no ícone **Metadados** à direita, na barra superior de cor cinza;
@@ -174,15 +177,16 @@ Metadados que não foram herdados a nível de **repositório** (ou de **coleçõ
 3. Excluir Metadados a nível de **Repositório**:
   1. Clique em **Metadados do Repositório** para excluir metadados que são herdados por todas as coleções.
   2. Clique no *ícone de lixeira* à direita do metadado que deseja excluir.
-    
+
   !> **Atenção**: Ao clicar na *lixeira* o metadado é excluído imediatamente. Esta operação não poderá ser desfeita. A exclusão de metadados a nível de **repositório** afetam **todos** dados já preenchidos e informações em itens que já foram criados em todo o repositório. Antes da exclusão do metadado, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Exclua o metadado somente se tiver certeza de que não haverá perdas graves de informação. (Consulte [Registro de atividades](/pt-br/activities) para saber mais).
 4. Excluir Metadados a nível de **Coleções**.
   1. Escolha a coleção que deseja editar os metadados (Consulte [Criar coleção](/pt-br/collections#criar-coleções) para saber mais);
   2. Clique no ícone Metadados à direita, na barra superior de cor cinza;
-  
+
   !> **Atenção**: Excluir Metadados a nível de **coleção** afeta as informações de todos os itens criados nesta coleção. A exclusão destes metadados também afeta itens **coleções filhas** desta coleção.
 5. Na tela de edição de Metadados (a nível de repositório ou a nível de coleção), é possível visualizar os metadados já criados (ou herdados) na coluna à esquerda.
   3. Clique no *ícone de lixeira* à direita do metadado que deseja excluir.
+
     * Outra opção disponível para metadados herdados a nível de **repositório** ou de **coleções acima** consiste em desabilitar o metadado desejado (ao invés da exclusão);
 
   !> **Atenção**: a exclusão do metadado implica também na exclusão de seus valores em todos os itens aos quais se aplica. Esta operação só pode ser desfeita por administradores. (Consulte [Registro de atividades](/pt-br/activities) para saber mais). Antes da exclusão do metadado, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações).
