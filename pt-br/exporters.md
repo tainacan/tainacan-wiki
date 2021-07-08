@@ -42,7 +42,7 @@ Com o Tainacan é possível exportar suas coleções ou suas Taxonomias (Vocabul
 
    
 
-   ### Parêmetros
+   ### Parâmetros
 
    
 
