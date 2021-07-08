@@ -1,62 +1,70 @@
-# Plugin: Extra View Modes
+# Plugin: Modos de Visualização Extras
 
-This plugin adds 8 extra view mode options to the list of view modes available on your Collection settings.
+Este plugin adiciona 8 modos de visualização extras para as configurações da sua Coleção.
 
-## Introduction
+## Introdução
 
-By default, every Tainacan collection can show the item's list with six default view modes:
+Por padrão, toda coleção do Tainacan pode mostrar a lista de itens com sete modos de visualização:
 
-* Table
-* Cards
-* Records
-* Masonry
-* Thumbnails
-* Slideshow
+- Tabela
+- Cartões
+- Fichas
+- Masonry
+- Miniaturas (se usado o tema Tainacan Interface)
+- Lista
+- Tela Cheia (Galeria)
 
-Excepting for the last one, they are all available on the admin list view as well. This plugin installs extra view modes that will be visible on the theme side of the instalation (the website itself) and that do not follow Tainacan's default design guidelines. It was created in the early days of Tainacan development to demonstrate the possibility of this kind of customization and serves as a good first step for any developer who wants to learn [how to create your custom view mode](/dev/extra-view-modes). We also cover this possibilty - of using new view modes - [on this post](https://tainacan.org/blog/2018/06/13/custom-view-modes-how-will-the-world-see-your-collection/) in our official page.
+A maioria destes está disponível do lado administrativo também. Este plugin instala modos de visualização extra que serão vistos na parte pública, ou seja, no tema da sua instalação, no site em si. Eles não seguem o padrão do design do Tainacan. Foram criados nos primeiros dias de desenvolvimento do Tainacan como uma maneira de demonstrar a possibilidade deste tipo de customização e servem como um bom primeiro passo para quem quer aprender a [criar seus próprios modos de visualização customizados](/dev/extra-view-modes). Mais detalhes podem ser vistos no [post de lançamento do plugin](https://tainacan.org/blog/2021/02/04/novo-plugin-modos-de-visualizacao-extra/).
 
-The new view modes available are:
+Os novos modos disponíveis são:
 
-* Albums
-* Books
-* Documents
-* Gallery
-* Frame
-* Mosaic (different from Masonry)
-* Polaroid
-* Profile
+1. **Galeria** - Um modo estilo Masonry, mas que exibe dois metadados e abre uma visão ampliada da imagem em modal.
+2. **Mosaico** - Um simples mosaico de miniaturas de itens sem margem.
+3. **Moldura** - Uma visualização alinhada ao centro de minaturas com molduras, similar a exposições em galerias.
+4. **Exibição** - Um modo tipo ficha com moldura, onde imagens e metadados são expandidos ao se passar o mouse.
+5. **Álbuns** - Miniaturas exibidas como se fossem capas de álbuns e um disco dentro.
+6. **Documento** - Fichas com estilo de papéis empilhados, voltados para divulgar artigos.
+7. **Livros** - Uma visualização que imita a capa de livros, voltada para bibliotecas.
+8. **Polaroid** - Uma irregular visualização de fotos com molduras estilo polaroid.
 
-## Instalation
+## Instalação
 
-Download the [.zip](https://github.com/tainacan/tainacan-extra-viewmodes/archive/master.zip) file from [the GitHub repository](https://github.com/tainacan/tainacan-extra-viewmodes) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
+Na sua página de plugins do _WordPress_, procure por "Tainacan" e ative o "plugin Tainacan Modos de Visualização Extra". Você também vai encontrar ele [neste link](https://br.wordpress.org/plugins/tainacan-extra-view-modes/). Dalí, basta instalar com o clique de um botão.
 
-Activate our plugin on the *WordPress* administrative panel section for plugins.
+Se você preferir, pode também baixar o arquivo [.zip](https://github.com/tainacan/tainacan-extra-viewmodes/releases) do [repositório do GitHub repository](https://github.com/tainacan/tainacan-extra-viewmodes) e seguir as instruções de instalação descritas em [nossa sessão sobre instalar plugins](/pt-br/plugins#instalando-os-plugins).
 
-## Configuration
+Ative o plugin na sessão de plugins do painel administrativo do _WordPress_.
 
-Go to your collection settings page. Look for the Available View Modes section and check the ones that you wish to be available on theme list:
+## Configuração
 
-![Setting up desired view modes](/_assets/images/plugins_extra_view_modes_1.png ':size=420')
+Vá para a página de configuração da sua coleção. Procure pela sessão de Modos de Visualização Disponíveis e marque aqueles que você deseja que estejam disponíveis na lista do tema:
 
-## Usage
+![Configurando modos de visualização](../_assets/images/plugins_extra_view_modes_1.png ":size=420")
 
-And that's it! Now you can view your list with a different style. Below are screenshots taken with the available view modes. We highlight that the toolbar above the list may have changed during Tainacan versions.
+## Uso
+
+E é isso! Agora você pode ver sua lista de diferentes maneiras. A seguir temos capturas de tela com os diferentes modos:
 
 <div style="display: flex;flex-wrap: wrap; justify-content: space-around;">
 
-![Frame View Mode](/dev/_assets/images/Example_of_an_Extra_View_Mode.jpeg ':size=280')
+![Captura de Tela do Modo de Visualização Galeria](../_assets/images/plugin_extra_viewmodes_screenshot-1.png ":size=320")
 
-![Gallery View Mode](/_assets/images/plugins_extra_view_modes_5.jpg ':size=280')
+![Captura de Tela do Modo de Visualização Galeria com destaque no item](../_assets/images/plugin_extra_viewmodes_screenshot-2.png ":size=320")
 
-![Albums View Mode](/_assets/images/plugins_extra_view_modes_7.jpg ':size=280')
+![Captura de Tela do Modo de Visualização Gallery com destaque no item e nos metadados](../_assets/images/plugin_extra_viewmodes_screenshot-3.png ":size=320")
 
-![Books View Mode](/_assets/images/plugins_extra_view_modes_8.jpg ':size=280')
+![Captura de Tela do Modo de Visualização Mosaico](../_assets/images/plugin_extra_viewmodes_screenshot-4.png ":size=320")
 
-![Documents View Mode](/_assets/images/plugins_extra_view_modes_9.jpg ':size=280')
+![Captura de Tela do Modo de Visualização Moldura](../_assets/images/plugin_extra_viewmodes_screenshot-5.png ":size=320")
 
-![Polaroid View Mode](/_assets/images/plugins_extra_view_modes_4.jpg ':size=280')
+![Captura de Tela do Modo de Visualização Exibição](../_assets/images/plugin_extra_viewmodes_screenshot-6.png ":size=320")
 
-![Profile View Mode](/_assets/images/plugins_extra_view_modes_6.jpg ':size=280')
+![Captura de Tela do Modo de Visualização Albuns](../_assets/images/plugin_extra_viewmodes_screenshot-7.png ":size=320")
+
+![Captura de Tela do Modo de Visualização Documentos](../_assets/images/plugin_extra_viewmodes_screenshot-8.png ":size=320")
+
+![Captura de Tela do Modo de Visualização Livros](../_assets/images/plugin_extra_viewmodes_screenshot-9.png ":size=320")
+
+![Captura de Tela do Modo de Visualização Polaroid](../_assets/images/plugin_extra_viewmodes_screenshot-10.png ":size=320")
 
 </div>
-

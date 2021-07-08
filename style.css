@@ -55,6 +55,12 @@ body {
 .markdown-section {
     padding-top: 5px;
 }
+article h1 {
+    page-break-inside: auto;
+    page-break-before: always;
+    break-inside: auto;
+    page-break-before: always;
+}
 
 /* Github corner link*/
 @media screen and (max-width: 768px) {
@@ -309,7 +315,7 @@ img.medium-zoom-image {
 .content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li:before,
 .content .markdown-section ol li ul:not(.task-list) li:before, 
 .content .markdown-section .content .markdown-section ol li ul:not(.task-list) li:before {
-	content: '\1f790';
+	content: '\25a1';
 	padding-right: 0.75rem;
 	color: #01295c;
 }
@@ -558,4 +564,43 @@ img.medium-zoom-image {
 }
 .home-panel .list-group .list-group-item a {
     text-decoration: none;
+}
+
+/* Share Links */
+a.fab,
+a.fab:hover {
+    color: white;
+}
+
+/* Page TOC */
+.page_toc {
+    margin-top: 120px;
+    font-size: 0.875rem;
+    padding: 0rem 1rem 0rem 0.25rem;
+}
+.page_toc ul a {
+    font-weight: 400;
+    color: #888888;
+}
+.page_toc ul a:hover span {
+    color: var(--theme-color, #298596);
+}
+.page_toc .active {
+    border-left: none;
+    color: var(--theme-color, #298596);
+    padding-left: 0px;
+}
+.page_toc .active::before {
+    content: '';
+    width: 3px;
+    background-color: var(--theme-color, #298596);
+    display: inline-block;
+    height: 1.25rem;
+    position: absolute;
+    left: 0px;
+}
+@media screen and (max-width: 1300px) {
+    .page_toc {
+        margin-bottom: -120px;
+    }
 }

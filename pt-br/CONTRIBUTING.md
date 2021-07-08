@@ -233,7 +233,7 @@ git remote add upstream https://github.com/tainacan/tainacan-wiki.git
 Agora instale globalmente a `CLI` da Docsify, nossa framework que auxilia na criação da Wiki:
 
 ```
-npm -i docsify-cli -g
+npm i docsify-cli -g
 ```
 
 Tenha certeza de que está no diretório do respositóio (`cd tainacan-wiki`, ou qualquer caminho necessário) e inicie o servidor da Docsify:

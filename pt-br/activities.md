@@ -8,45 +8,102 @@
 
 # Registro de Atividades
 
-Todas ações realizadas no repositório são registradas: a criação, edição e exclusão de coleções, metadados, itens e taxonomias.
+Todas as ações realizadas no Tainacan são registradas e podem ser consultadas a nível de “repositório”, “coleção” e em cada “item”.
 
-Ao clicar em uma atividade, é exibida uma janela com:
+Ao clicar em uma “atividade”, é exibida uma janela com:
 
-* Descrição da atividade
-* Data e hora da atividades
-* Autor da atividade
-* Duas listas:
-  * À esquerda o quadro reúne informações **antes** da alteração
-  * À direita o quadro reúne as informações **depois** da alteração
-* Administradores podem reverter estas alterações clicando em 
+![Acesse o painel de controle](\_assets\images\103.png)
 
-?> _TODO_ Completar onde administradores devem ir para reverter alterações
+​	a. “Descrição da atividade”;
 
-As atividades são registradas e podem ser consultadas e revertidas a nível de repositório, coleção e em cada item.
+​	b. “Data e hora das atividades”;
 
-## Repositório:
+​	c. “Autor da atividade”;
 
-Reúne atividades como criação, edição e exclusão de: coleções, metadados e filtros a nível de repositório e taxonomias. Em registros de atividades a nível de repositório processos de importação e exportação também podem ser acompanhados e ficam registrados na aba processos.
+​	d. “Duas listas”:
 
-1. Acesse o painel de controle do *WordPress*
+​		○ À esquerda, o quadro reúne informações antes da alteração;
+
+​		○ À direita, o quadro reúne as informações depois da alteração. e. Administradores podem reverter estas alterações clicando em
+
+
+
+## Registro de atividades do Repositório
+
+Reúne atividades como criação, edição e exclusão de “coleções”, “metadados” e “filtros a nível de repositório” e “taxonomias”. Em registros de atividades a nível de repositório, processos de importação e exportação também podem ser acompanhados, e ficam registrados na aba “processos”.
+
+1. Acesse o painel de controle do *WordPress*;
+
+   ![Acesse o painel de controle](\_assets\images\050.png)
+
+2. Na barra lateral esquerda, clique em Tainacan;
+
+   ![Acesse o painel de controle](\_assets\images\051.png)
+
+3. Clique em “Atividades do Repositório”;
+
+   ![Acesse o painel de controle](\_assets\images\104.png)
+
+4. Nesta página você pode filtrar as “atividades” por:
+
+   a. “Intervalo de datas”;
+
+   b. “Por usuário”;
+
+   c. “Busca geral”.
+
+   ![Acesse o painel de controle](\_assets\images\105.png)
+
+   
+
+## Registro de atividades da Coleção
+
+Reúne “atividades” como criação, edição e exclusão de “itens”, configurações de “metadados” e “filtros a nível de coleção” e configurações da “coleção”.
+
+1. Acesse o painel de controle do *WordPress*;
+
+   ![Acesse o painel de controle](\_assets\images\050.png)
+
 2. Na barra lateral esquerda, clique em Tainacan
-3. Clique em **Atividades do Repositório**
 
-## Coleção:
+   ![Acesse o painel de controle](\_assets\images\051.png)
 
-Reúne atividades como criação, edição e exclusão de itens, configurações de metadados e filtros a nível de coleção e configurações da coleção.
+3. Clique na “Coleção” que você deseja e depois em "Atividades";
 
-1. Acesse o painel de controle do *WordPress*
+   ![Acesse o painel de controle](\_assets\images\106.png)
+
+4. Nesta página você pode “filtrar as atividades” por:
+
+   ![Acesse o painel de controle](\_assets\images\107.png)
+
+   ​	a. “Intervalo de datas”;
+
+   ​	b. “Por usuário”;
+
+   ​	c. “Busca geral”.
+
+
+
+## Registro de atividades do Item
+
+Reúne “atividades” como criação, edição e exclusão de “valores no item”.
+
+1. Acesse o painel de controle do *WordPress*;
+
+   ![Acesse o painel de controle](\_assets\images\050.png)
+
 2. Na barra lateral esquerda, clique em Tainacan
-3. Clique na coleção desejada na seção **Coleções**
-4. Clique no ícone de **registro de atividades** à direita, na barra superior cinza.
 
-## Item
+   ![Acesse o painel de controle](\_assets\images\051.png)
 
-Reúne atividades como criação, edição e exclusão de valores no item.
+3. Clique na “Coleção” que você deseja e, depois, clique no “Item” onde você deseja checar as “atividades”;
 
-1. Acesse o painel de controle do *WordPress*
-2. Na barra lateral esquerda, clique em Tainacan
-3. Clique na coleção desejada na seção **Coleções**
-4. Clique no item desejado
-5. Em seguida, clique no aba de **Atividades** à direita.
+   ![Acesse o painel de controle](\_assets\images\108.png)
+
+4. No “item”, clique na aba “Atividades”;
+
+   ![Acesse o painel de controle](\_assets\images\109.png)
+
+5. Nesta página você pode “filtrar as atividades” por:
+
+   ![Acesse o painel de controle](\_assets\images\110.png)

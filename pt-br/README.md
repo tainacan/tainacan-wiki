@@ -2,11 +2,12 @@
 
 **Olá e seja bem-vindo(a) à Wiki!** Este é o lar da documentação do Tainacan.
 
-> O Tainacan é uma plataforma código aberto, poderosa e flexível de repositórios para *WordPress*. Gerencie e publique suas coleções digitais tão facilmente quanto se publica um post no seu blog, dispondo de todas as ferramentas de uma plataforma de repositórios profissional. 
+> O Tainacan é uma plataforma código aberto, poderosa e flexível de repositórios para _WordPress_. Gerencie e publique suas coleções digitais tão facilmente quanto se publica um post no seu blog, dispondo de todas as ferramentas de uma plataforma de repositórios profissional.
 
 Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, alguns links relevantes:
 <br>
 <br>
+
 <div class="home-row clearfix" style="text-align:center">
     <div class="home-col">
         <div class="panel home-panel">
@@ -58,12 +59,12 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
 
 </div>
 <div class="panel-heading">
-            
+
 [Desenvolvedores](/dev/)
-            
+
 </div>
         </div>
     </div>
 </div>
 
-A documentação pode ser navegada pelo GitHub Pages + Docsify [aqui](https://wiki.tainacan.org ':ignore').
+A documentação pode ser navegada pelo GitHub Pages + Docsify [aqui](https://wiki.tainacan.org ":ignore").

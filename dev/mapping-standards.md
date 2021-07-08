@@ -72,12 +72,12 @@ public $header = '<?xml version="1.0"?><!DOCTYPE rdf:RDF SYSTEM "http://dublinco
 The optional prefix for the key labels, like `dc:` for Dublin Core in XML exposing. 
 
 ### Registering a new mapper
-For register a new mapper, the action needs to be added to `tainacan-register-exposer-mappers` hook, like:
+For register a new mapper, the action needs to be added to `tainacan-register-mappers` hook, like:
 ```php
 	function myNewMapper($exposers) {
 		$exposers->register_exposer_mapper('Tainacan\Exposers\Mappers\NewMapper');
 	}
-	add_action('tainacan-register-exposer-mappers', 'myNewMapper');
+	add_action('tainacan-register-mappers', 'myNewMapper');
 ```
 
 ## Examples

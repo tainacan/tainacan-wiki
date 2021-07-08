@@ -4,11 +4,11 @@ This is a work in progress documentation on how to release a new version.
 
 Assuming:
 
-* `$CURRENT_VERSION` is the current "old" version (e.g. 0.10)
-* `$NEW_VERSION` is the version we are releasing (e.g. 0.11)
-* `$GIT_PATH` is where our repository is cloned
-* `$BUILD_PATH` is where the plugin is configured to build, inside your WordPress plugins folder 
-* `$SVN_PATH` is where the WordPress.org SVN repo is
+- `$CURRENT_VERSION` is the current "old" version (e.g. 0.10)
+- `$NEW_VERSION` is the version we are releasing (e.g. 0.11)
+- `$GIT_PATH` is where our repository is cloned
+- `$BUILD_PATH` is where the plugin is configured to build, inside your WordPress plugins folder
+- `$SVN_PATH` is where the WordPress.org SVN repo is
 
 ## Pre-release
 
@@ -38,22 +38,15 @@ When releasing an RC version, append RC (number) to the version.
 
 Also increase the `Tested Up` version, if applicable.
 
-### Set build to production mode
+### Build in production mode
 
-Edit `webpack.config.js` to set production mode.
-
-### Build
+It is extremely important to build the release version in _production_ mode. Take time to compare your bundle final sizes, which should be considerably smaller than in _development_ mode.
 
 ```
-./build.sh
+./build.sh --prod
 cd $BUILD_PATH
 ```
-### Set build to development mode
 
-```
-cd $GIT_PATH
-git checkout webpack.config.js
-```
 
 ### Commit and push
 
@@ -68,52 +61,52 @@ git push
 
 When we release the RC is a good time to update the SVN trunk. This will allow the community to work on the translations before the final release.
 
-Note that the `Stable tag` in the `readme.txt` file must not be edited and keep pointing to $CURRENT_VERSION.
+Note that the `Stable tag` in the `readme.txt` file must not be edited and keep pointing to \$CURRENT_VERSION.
 
 1. Go to the SVN folder
 
-  ```
-  cd $SVN_PATH
-  ```
+```
+cd $SVN_PATH
+```
 
 2. Make sure your local SVN is up to date
-    
-  ```
-  svn cleanup
-  svn update
-  ```
+
+```
+svn cleanup
+svn update
+```
 
 1. Clean trunk
 
-  ```
-  rm -rf trunk/*
-  ```
+```
+rm -rf trunk/*
+```
 
 2. Copy new files
 
-  ```
-  cp -R $BUILD_PATH/* trunk/
-  ```
+```
+cp -R $BUILD_PATH/* trunk/
+```
 
 4. `svn rm` all files that have been removed
-  
-  ```
-  svn st | grep '^!' | awk '{print $2}' | xargs svn rm
-  ```
 
-  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
+```
+svn st | grep '^!' | awk '{print $2}' | xargs svn rm
+```
+
+?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
 5. `svn add` every new files
 
-  ```
-  svn st | grep '^?' | awk '{print $2}' | xargs svn add
-  ```
+```
+svn st | grep '^?' | awk '{print $2}' | xargs svn add
+```
 
 6. Commit!
 
-  ```
-  svn ci
-  ```
+```
+svn ci
+```
 
 ### Publish the RC
 
@@ -124,7 +117,6 @@ Use previous blog posts as templates, keeping all the content explaining what an
 ### Test
 
 Using the Test guide as a resource, test every feature of the plugin, including importers and exporters. With time, we can build more detailed test scripts and distribute tests among people in the community.
-
 
 ### Fix and publish new RC, or finish
 
@@ -143,23 +135,20 @@ cd $GIT_PATH
 git checkout release/$NEW_VERSION
 git pull
 ```
+
 Edit `src/readme.txt` and `src/tainacan.php` and change the version numbers to `$NEW_VERSION`.
 
 In `src/readme.txt`:
 
-* Edit `Stable tag` to $NEW_VERSION
-* If applicable, edit `Tested up to`
+- Edit `Stable tag` to \$NEW_VERSION
+- If applicable, edit `Tested up to`
 
 In `src/tainacan.php`:
 
-* Edit `Version`
-* Edit the `TAINACAN_VERSION` constant
+- Edit `Version`
+- Edit the `TAINACAN_VERSION` constant
 
 Commit and push.
-
-### Set build to production mode
-
-Edit `webpack.config.js` to set production mode.
 
 ### Clean your folder to make sure everything is built
 
@@ -167,17 +156,14 @@ Edit `webpack.config.js` to set production mode.
 rm last-*
 ```
 
-### Build
+### Build in production mode
+
+It is extremely important to build the release version in _production_ mode. Take time to compare your bundle final sizes, which should be considerably smaller than in _development_ mode.
 
 ```
-./build.sh
+./build.sh --prod
 ```
-### Set build to development mode
 
-```
-cd $GIT_PATH
-git checkout webpack.config.js
-```
 
 ### Prepare SVN repo
 
@@ -205,29 +191,29 @@ Before commit, verify the output of `svn st` and check if there are no undesired
 
 1. Go to the SVN folder
 
-  ```
-  cd $SVN_PATH
-  ```
+```
+cd $SVN_PATH
+```
 
 2. `svn rm` all files that have been removed
-  
-  ```
-  svn st | grep '^!' | awk '{print $2}' | xargs svn rm
-  ```
 
-  ?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
+```
+svn st | grep '^!' | awk '{print $2}' | xargs svn rm
+```
+
+?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
 3. `svn add` every new files
 
-  ```
-  svn st | grep '^?' | awk '{print $2}' | xargs svn add
-  ```
+```
+svn st | grep '^?' | awk '{print $2}' | xargs svn add
+```
 
 4. Commit!
 
-  ```
-  svn ci
-  ```
+```
+svn ci
+```
 
 ### Create the tag folder
 
@@ -237,7 +223,7 @@ svn cp https://plugins.svn.wordpress.org/tainacan/trunk https://plugins.svn.word
 
 ### Check
 
-In a few minutes, the new release should be available in the WordPress directory. 
+In a few minutes, the new release should be available in the WordPress directory.
 
 Check if everything is ok.
 
@@ -260,5 +246,3 @@ git push --tags
 ## Update this wiki!
 
 The `/_coverpage.md` and `/pt-br/_coverpage.md` files of this Wiki have the version number on it, that is displayed on [home page](/). Make sure to keep it updated following our [contributing guidelines](/CONTRIBUTING)!
-
-
