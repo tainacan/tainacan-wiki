@@ -1,173 +1,251 @@
 # Ações em Massa
 
+O Tainacan permite a realização de “ações em massa”. É possível criar, editar, importar e deletar itens em massa com poucos cliques.
+
 ## Criar Itens em Massa
 
+A criação de “itens em massa” é diferente da “importação de itens” a partir de um arquivo “.csv”. Diferente da última, que ocorre a partir da seção de importadores do Tainacan, a
+
+criação em massa é feita diretamente do “painel administrativo da coleção”, mediante o upload dos documentos principais que irão compor a “coleção”.
+
+> Nota: Se você possui uma base de itens estruturada e tratada em um documento de planilha, considere utilizar o “Importador CSV”.
+
+> Nota: O que diferencia a função “Criar Itens em Massa” da Criação da função “Adicionar Um Item” é o processo de definição do documento principal. Para a última função, o preenchimento dos “metadados” independe da existência de um documento vinculado ao “item”. Enquanto que para a primeira função, o preenchimento dos “metadados” se dá a partir do upload do conjunto dos documentos principais.
+
+#### Atenção: Por padrão, o Tainacan irá considerar o nome do arquivo como o “Título Principal” do item.
+
 1. Acesse o painel de controle do *WordPress*;
+
+    ![Acesse o painel de controle](\_assets\images\Painel_Adm_WordPress.png)
+
 2. Na barra lateral esquerda, clique em Tainacan;
-3. Selecione a **Coleção** que deseja para a criação dos itens;
-4. Clique em `Adicionar Novo`;
-5. Selecione a opção `Adicionar Itens em Massa`;
-6. Clique ou arraste a mídia dos itens que deseja criar para o campo de **Envio de documentos**;
-7. Os arquivos selecionados serão enviados automaticamente e o progresso de upload pode ser acompanhado em tempo real.
 
-    > Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
+    ![Acesse o painel de controle](\_assets\images\Painel_Acesso_Tainacan.png)
 
-8. Quando o processo for concluído, será possível:
-  1. Selecionar `Edição de itens em sequência` para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
-  2. `Editar itens em massa` para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa; 
-  3. `Cancelar` para encerrar a operação. Os arquivos de mídia que já estiverem com o upload concluído ficarão disponíveis na Biblioteca de mídia da sua instalação.
+3. Selecione a “Coleção” que deseja para a criação dos “itens”;
+
+    ![Acesse o painel de controle](\_assets\images\Selecao_Colecao.png)
+
+4. Clique em “Adicionar novo” e selecione a opção “Adicionar itens em massa”;
+
+    ![Acesse o painel de controle](\_assets\images\Adicionar_novo_Itens_Massa.png)
+
+5. Clique ou arraste a mídia dos “itens” que deseja criar para o campo de “Envio de documentos”;
+
+    ![Acesse o painel de controle](\_assets\images\Itens_em_masas_Envio_arquivos.png)
+
+6. Os arquivos selecionados serão enviados automaticamente e o progresso de upload pode ser acompanhado em tempo real;
+
+    ![Acesse o painel de controle](\_assets\images\Itens_em_massa _concluido_upload_arquivos.png)
+
+    > Nota: Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
+
+7. Quando o processo for concluído, será possível:
+
+    a. “Edição de itens em sequência” para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
+
+    b. “Editar itens em massa” para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa;
+
+    #### Atenção: Todos os valores inseridos via edição em massa são atribuídos a todos os “itens” criados em massa.
+
+    c. “Cancelar” para encerrar a operação. Os arquivos de mídia que já estiverem com o upload concluído ficarão disponíveis na “Biblioteca de Mídia” do WordPress.
+
+    ![Acesse o painel de controle](\_assets\images\Itens_em_massa _comandos_finais.png)
+
+    
 
 ### Editar Itens criados em Massa
 
-1. Na tela **Editar Itens em massa** as configurações e os valores de metadados inseridos são atribuídos a todos os itens da seleção.
-2. Após concluir o preenchimento dos campos desejados, selecione:
-  1. `Enviar para a lixeira` para enviar o conjunto de itens para a lixeira;
-  2. Selecione `Edição de itens em sequência` para editar cada mídia individualmente em sequência;
+1. Selecione a “Coleção” que contém os “itens” que deseja editar;
 
-### Vídeo Tutorial: Criar Itens em Massa
-<iframe
-    width="560"
-    height="513" 
-    src="https://www.youtube.com/embed/spf9qfmXU3U?start=272"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+   ![Acesse o painel de controle](\_assets\images\Selecao_Colecao.png)
 
------
+2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos itens) de cada um que deseja editar, ou clique em “Selecionar todos os itens na página”;
 
-## Editar Itens em Massa
+   ● Se desejar, também é possível selecionar todos os itens da coleção. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
 
-1. Selecione a Coleção que deseja para a edição dos itens;
-2. Clique nas caixa de seleção dos itens que deseja editar ou clique em **Selecionar todos os itens na página**
-  * Se desejar, também é possível **Selecionar todos** itens da coleção;
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_Massa_Editar_Itens_selecao.png)
 
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+  3. À direita, clique em “Ações para seleção”;
 
-3. À direita clique em `Ações em massa`
-4. Selecione `Editar itens selecionados em massa`
-5. Selecione o metadado que deseja editar na janela exibida;
-6. Em seguida, com base nas opções e configurações do metadado, selecione uma ação:
-  1. `Atribuir um novo valor`, para adicionar um novo valor ao metadado;
-  2. `Remover valor`, para remover um valor já existente;
-    * Um campo para selecionar o valor a ser removido será exibido à direita.
-  3. `Substituir valor` para alterar um valor já existente por outro;
-    * Será exibido um campo para selecionar o valor a ser substituído e outro campo será exibido para a inserção do novo valor.
-  4. `Copiar valor` para fazer uma cópia dos valores a partir de um outro metadado do item;
-    * Será exibido um campo para selecionar o metadado da qual o valor será copiado, importante ressaltar que os tipos dos metadados de origem e destino devem ser iguais. A tabela seguinte mostra as restrições entre as configurações dos metadados para que se possa realizar a cópia.
+     ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Acoes_para_selecao.png)
 
-  |Metadado destino                  | Metadado origem                   |  É possivel copiar   |
-  |----------------------------------|-----------------------------------|----------------------|
-  |Simples                           | Simples                           |  Sim                 |
-  |Multiplo                          | Simples                           |  Sim                 |
-  |Simples                           | Multiplo                          |  Não                 |
-  |Multiplo                          | Multiplo                          |  Sim                 |
-  |Qualquer                          | Composto                          |  Não                 |
-  |Simples                           | Filho Simples (metadado composto) |  Sim                 |
-  |Multiplo                          | Filho Simples (metadado composto) |  Sim                 |
-  |Filho Simples (metadado composto) | Simples                           |  Não                 |
-  |Filho Simples (metadado composto) | Multiplo                          |  Não                 |
+  4. Selecione “Editar itens selecionados em massa”;
 
-7. Ao concluir a configuração das alterações desejadas, clique no botão de **play** à direita para executar a ação;
-  * Ou clique no ícone de cancelar para **cancelar** a ação;
-8. Clique em `Concluir` quando concluir as ações desejadas.
+  5. Selecione o “metadado” que deseja editar na janela exibida;
 
-> **Observação:** Além dos metadados da coleção, na edição em massa é possível alterar duas configurações dos items:
-> * **Status** - é possível alterar essa configuração para os valores: 
-`Publicado`, `Privado`, `Rascunho` e `Lixo`
-> * **Permitir comentários** - é possível alterar essa configuração para os valores: `Aberto` e `Fechado`
+     ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_selecionar_metadado.png)
 
+6. Em seguida, com base nas opções e configurações do “metadado”, selecione uma ação:
+
+   ○ “Adicionar valor”: Para acrescentar um novo valor a um “metadado” com a configuração “Permitir valores múltiplos” habilitada;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_adicionar_valor.png)
+
+   ○ “Atribuir novo valor”: Para adicionar um novo valor ao “metadado”.
+
+   I. Se houver valores para os “itens” selecionados, eles serão substituídos pelo novo valor;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_atribuir_novo_valor.png)
+
+   ○ “Substituir valor”: Para alterar um valor já existente por outro;
+
+   I. Será exibido um campo para selecionar o valor a ser substituído e outro campo será exibido para a inserção do novo valor.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_substituir_valor.png)
+
+   ○ “Remover um valor”: Para remover um valor específico em um metadado com a configuração “Permitir valores múltiplos" habilitada;
+
+   I. Um campo para selecionar o valor a ser removido será exibido à direita.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_remover_um_valor.png)
+
+   ○ “Limpar valores”: Para remover todos os valores de um “metadado”;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_limpar_valores.png)
+
+   ○ “Copiar valor”: Para fazer uma cópia dos valores a partir de um outro “metadado do item”;
+
+   I. Será exibido um campo para selecionar o “metadado” do qual o valor será copiado. Importante ressaltar que os “tipos dos metadados” de origem e destino devem ser iguais. A tabela seguinte mostra as restrições entre as configurações dos “metadados” para que se possa realizar a cópia.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_copiar_valor.png)
+
+   | Metadado destino                  | Metadado origem                   | É possível copiar |
+   | --------------------------------- | --------------------------------- | ----------------- |
+   | Simples                           | Simples                           | Sim               |
+   | Múltiplo                          | Simples                           | Sim               |
+   | Simples                           | Múltiplo                          | Não               |
+   | Múltiplo                          | Múltiplo                          | Sim               |
+   | Qualquer                          | Composto                          | Não               |
+   | Simples                           | Filho Simples (metadado composto) | Sim               |
+   | Múltiplo                          | Filho Simples (metadado composto) | Sim               |
+   | Filho Simples (metadado composto) | Simples                           | Não               |
+   | Filho Simples (metadado composto) | Múltiplo                          | Não               |
+
+7. Ao concluir a configuração das alterações desejadas, clique no botão de “play” à direita para executar a ação;
+
+   ● Ou clique no “ícone de cancelar” para cancelar a ação;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_botao_play.png)
+
+8. Clique em “Concluir” quando concluir as ações desejadas.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_botao_concluir.png)
+
+   > Nota: Além dos “metadados”, na “edição em massa” é possível alterar as seguintes configurações de cada item:
+   >
+   > § “Status”: É possível alterar essa configuração para os valores: “Publicado”, “Privado”, “Rascunho” e “Lixo”;
+   >
+   > § “Permitir comentários”: É possível alterar essa configuração para os valores: “Aberto” e “Fechado”.
+
+### 
 
 -----
 
 ## Excluir Itens em Massa
 
-1. Selecione a **Coleção** que deseja para a edição dos itens;
-2. Clique nas caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`;
-  * Se desejar, também é possível `Selecionar todos` itens da coleção;
-  
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+1. Selecione a “Coleção” que contém os “itens” que deseja excluir;
 
-3. À direita clique em Ações em massa
-4. Selecione `Enviar para lixeira` para excluir os itens selecionados;
-    * Uma janela de confirmação será exibida, clique em `Continuar` para confirmar a operação;
+   ![Acesse o painel de controle](\_assets\images\Selecao_Colecao.png)
 
-### Excluir Permanentemente ou restaurar Itens em Massa
+2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos itens) de cada um que deseja excluir ou clique em “Selecionar todos os itens na página”;
 
-1. Os arquivos enviados para a lixeira estão disponíveis na aba **Lixo** da coleção;
-2. Clique na caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`;
-    * Se desejar, também é possível `Selecionar todos` itens da coleção;
-  
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+   ● Se desejar, também é possível selecionar todos os “itens da coleção”. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
 
-3. À direita clique em Ações em massa
-  1. Clique em `Deletar permanentemente` para **excluir os itens de forma irreversível**;
-  2. Ou clique em `Remover da lixeira`, para restaurar os itens selecionados para a coleção.
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_Massa_Editar_Itens_selecao.png)
+
+3. À direita, clique em “Ações para seleção”;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Acoes_para_selecao.png)
+
+4. Selecione “Enviar para lixeira” para excluir os “itens” selecionados;
+
+   ○ Uma janela de confirmação será exibida, clique em “Continuar” para confirmar a operação.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_enviar_lixeira.png)
+
+### Excluir Permanentemente ou restaurar Itens em Massa da Lixeira
+
+1. Os arquivos enviados para a lixeira estão disponíveis na aba “Lixo” da “coleção”;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_itens_no_lixo.png)
+
+2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos itens) de cada um que deseja deletar permanentemente ou clique em “Selecionar todos os itens na página”;
+
+   ○ Se desejar, também é possível selecionar todos os “itens” que estão na lixeira. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_selecao_itens_lixeira.png)
+
+3. À direita, clique em “Ações para seleção”;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Lixeira_Acoes_para_selecao.png)
+
+  4. Clique em “Deletar permanentemente” para excluir os “itens” de forma irreversível;
+
+     ○ Atenção: Uma vez deletado permanentemente um “item”, não é possível o recuperar.
+
+     ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Deletar_permanentemente.png)
+
+  5. Ou clique em “Restaurar do Lixo”, para restaurar os “itens” selecionados para a coleção.
+
+     ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Restaurar_do_Lixo.png)
 
 -----
 
 ## Editar Itens em Sequencia
 
-1. Selecione a **Coleção** que deseja para a edição dos itens;
-2. Clique nas caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`
-  * Se desejar, também é possível `Selecionar todos itens` da coleção;
-  
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+1. Selecione a “Coleção” que deseja para a edição dos “itens”;
 
-3. À direita clique em `Ações em massa`
-4. Selecione `Editar itens selecionados em sequência`
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_itens_no_lixo.png)
+
+2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos “itens”) de cada um que deseja editar ou clique em “Selecionar todos os itens na página”;
+
+   ● Se desejar, também é possível selecionar todos os “itens da coleção”. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_selecao_itens.png)
+
+3. À direita, clique em “Ações para seleção”;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Acoes_para_selecao.png)
+
+4. Selecione “Editar itens selecionados em sequência”;
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Editar_itens_sequencia.png)
+
 5. Edite os campos desejados;
-  1. No rodapé da página é exibida uma barra de progresso com as informações:
-    * Item atual e total de itens;
-    * Última vez que as alterações realizadas foram salvas;
-6. Ao concluir as alterações no item exibido, selecione:
-  2. `Enviar para a lixeira` para que o item exibido seja enviado para a lixeira; 
-  3. `Voltar pra rascunho` para que o item exibido tenha seu *status* alterado para **rascunho**;
-  4. `Atualizar` para confirmar as alterações realizadas no item;
-7. Clique em `Próximo` ou `Anterior` quando concluir as ações desejadas no item atual e seguir a edição de itens em sequência.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_editar_metadados.png)
+
+  6. No “rodapé da página” é exibida uma barra de progresso com as informações:
+
+     ○ “Item” atual e total de “itens”;
+
+     ○ Última vez que as alterações realizadas foram salvas;
+
+     ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_barra_progresso.png)
+
+7. Ao concluir as alterações no “item” exibido, selecione:
+
+   ○ “Atualizar”: As alterações realizadas no “item” serão salvas e o próximo “item” é exibido para edição;
+
+   ○ “Salvar como rascunho”: O “item” tem seu “status” alterado para rascunho.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_concluir_alteracoes.png)
+
+8. Quando chegar no último “item” clique em “Atualizar” e depois “Concluir”.
+
+   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_atualizar_concluir.png)
+
+   > Nota: Por padrão, ao iniciar a edição em sequência, os “metadados do item” aparecem colapsados. Para expandir os “metadados” e visualizar os valores preenchidos de cada “item” existem dois caminhos: clicar em “Expandir todos” ou “clicar em um metadado por vez”.
 
 
-### Vídeo Tutorial: Editar Itens em Sequência
 
-<iframe
-    width="560"
-    height="513" 
-    src="https://www.youtube.com/embed/spf9qfmXU3U?start=360"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+## Importar itens
 
------
+Importe vários “itens” com “metadados pré-configurados” e valores preenchidos com o Importador .csv.
 
-## Importar Itens
-
-Importe vários itens com metadados pré-configurados e valores preenchidos com o [Importador .csv](/pt-br/importers#importador-csv-items).
-
-### Vídeo Tutorial: Importação de Itens
-
-<iframe
-    width="560"
-    height="513" 
-    src="https://www.youtube.com/embed/B76ENqOEZfw?start=199"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
------
+------
 
 ## Importar Taxonomias
 
-Crie taxonomias com vocabulários controlados e valores hierárquicos utilizando o [Importador de Vocabulário](/pt-br/importers#importador-csv-de-vocabulários-taxonomias).
-
-### Vídeo Tutorial: Importação de Termos e Taxonomias
-
-<iframe
-    width="560"
-    height="513" 
-    src="https://www.youtube.com/embed/B76ENqOEZfw?start=83"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+Crie taxonomias com “vocabulários controlados” e “valores hierárquicos” utilizando o Importador de Vocabulário.
