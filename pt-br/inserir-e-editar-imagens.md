@@ -1,20 +1,20 @@
 # Inserir e editar imagens
 
-Existem algumas formas de adicionar imagens aos itens do Tainacan. Esse tipo de ação pode ser realizada individualmente, adicionando a imagem direto ao item ou primeiro a biblioteca, em sequência ou em massa. Sendo que, todas as imagens utilizadas no tainacan se encontram alocadas na Biblioteca de mídia do WordPress.
+Existem algumas formas de adicionar imagens aos _“itens”_ do Tainacan. Esse tipo de ação pode ser realizada individualmente, adicionando a imagem direto ao item ou primeiro à biblioteca, em sequência ou em massa. Sendo que, todas as imagens utilizadas no Tainacan se encontram alocadas na _“Biblioteca de Mídia do WordPress”_.
 
 ## Biblioteca de mídia do WordPress
 
-Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídia do _WordPress_. As imagens podem ser incorporadas diretamente a biblioteca antes de serem adicionadas a um item. As edições nas imagens só podem ser realizadas na Biblioteca de mídia.
+Todas as imagens utilizadas no Tainacan ficam armazenadas na _“Biblioteca de Mídia do WordPress”_. As imagens podem ser incorporadas diretamente à biblioteca antes de serem adicionadas a um _“item”_. As edições nas imagens só podem ser realizadas na _“Biblioteca de Mídia”_.
 
 ### Inserir imagens
 
-1. Acesse o painel de controle do _WordPress_;
+1. Acesse o _“painel de controle”_ do WordPress;
 
-2. Na barra lateral esquerda clique em `Mídia` e então em `Biblioteca`;
+2. Na barra lateral esquerda, clique em _“Mídia”_ e então em _“Biblioteca”_;
 
-3. Na tela da Biblioteca de mídia clique em `Adicionar nova` no canto superior esquerdo;
+3. Na tela da _“Biblioteca de mídia”_ clique em _“Adicionar nova”_ no canto superior esquerdo;
 
-4. Arraste ou selecione a imagem que se deseja adicionar.
+4. Arraste ou selecione a _“imagem”_ que deseja adicionar.
 
    ![Inserir imagem na biblioteca](_assets/gifs/inserindo-imagens-biblioteca.gif)
 
@@ -30,13 +30,19 @@ Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídi
 
 5. Realize as edições desejadas:
 
-   - Recortar;
-   - Rotacionar para a esquerda;
-   - Rotacionar para a direita;
-   - Virar na vertical;
-   - Virar na horizontal;
-   - Redimensionar a imagem;
-   - Recorte da imagem.
+   **“Recortar”**;
+
+   **“Rotacionar para a esquerda”**;
+
+   **“Rotacionar para a direita”**;
+
+   **“Virar na vertical”**;
+
+   **“Virar na horizontal”**;
+
+   **“Redimensionar a imagem”**;
+
+   **“Recorte da imagem”**.
 
 ![Inserir imagen na biblioteca](_assets/gifs/editando-imagens-biblioteca.gif)
 
@@ -46,9 +52,9 @@ Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídi
 
 As imagens podem ser inseridas diretamente ao item, sem que antes sejam adicionadas a Biblioteca de mídia. Existem três formas de realizar essa ação:
 
-1. Inserir a imagem individualmente em cada item;
-2. Inserir imagens em sequência em um conjunto de itens;
-3. Inserir imagens em massa.
+1. **Inserir a imagem individualmente em cada item;**
+2. **Inserir imagens em sequência em um conjunto de itens;**
+3. **Inserir imagens em massa.**
 
 A ação de inserir imagens individualmente é indicada para os casos em que existem poucos itens em que imagens serão adicionadas. A inserção de imagens em sequência é adequada para um conjunto de itens, que pode abranger de dois até todos os itens de uma mesma página. Já a inserção de imagens em massa visa abranger uma grande quantidade de itens.
 
@@ -56,74 +62,90 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
 1. Acesse o painel de controle do _WordPress_;
 
-2. Na barra lateral esquerda clique em `Tainacan`;
+   ![Acesse o painel de controle](_assets\images\050.png)
+
+2. Na barra lateral esquerda, clique em _“Tainacan”_;
+
+   ![Acesse o painel de controle](_assets\images\051.png)
 
 3. Selecione uma coleção;
 
-4. Selecione o item desejado;
+4. Selecione o _“item”_ desejado e clique em _“Editar item”_;
 
-5. Clique em `Editar item`;
+   ![Acesse o painel de controle](_assets\images\selecione_a_imagem.png)
 
-6. Clique em `Arquivo`;
+5. Clique em _“Arquivo”_;
 
-7. Selecione uma imagem que já se encontra na Biblioteca de mídia ou envie uma imagem do seu computador;
+   ![Acesse o painel de controle](_assets\images\138.png)
 
-8. Clique em `Selecionar arquivo`;
+6. Selecione uma _“imagem”_ que já se encontra na _“Biblioteca de mídia”_ ou envie uma _“imagem”_ do seu computador;
 
-   1. No rodapé da página é exibida uma barra de progresso com as informações referentes:
+   ![Acesse o painel de controle](_assets\gifs.mp4)
 
-   ```
-   * Última vez que as alterações realizadas foram salvas.
-   ```
+7. Clique em _“Selecionar arquivo”_;
 
-9. No canto inferior direito da tela clique em:
-   1. `Enviar para a lixeira` para que o item seja enviado para a lixeira;
-   2. `Voltar pra rascunho` para que o item tenha seu _status_ alterado para **rascunho**;
-   3. `Atualizar` para confirmar as alterações realizadas no item;
+   No _“rodapé da página”_ é exibida uma barra de progresso com as informações referentes:
 
-![Inserir imagen na biblioteca](_assets/gifs/inserindo-imagens-individualmente.gif)
+   \* Última vez que as alterações realizadas foram salvas.
+
+   ![Acesse o painel de controle](_assets\gifs.mp4)
+
+8. No canto inferior direito da tela clique em:
+
+   ![Acesse o painel de controle](_assets\images\141.png)
+
+   1. **“Enviar para a lixeira”**, para que o _“item”_ seja enviado para a lixeira;
+   2. **“Voltar para rascunho”**, para que o _“item”_ tenha seu _status_ alterado para _“rascunho”_;
+   3. **“Atualizar”**, para confirmar as alterações realizadas no “item”;
+   4. No rodapé da página é exibida uma barra de progresso com as informações referentes:
 
 ### Inserir imagem em sequência
 
-1. Acesse o painel de controle do _WordPress_;
+1. Acesse o _“painel de controle”_ do WordPress;
 
-2. Na barra lateral esquerda clique em `Tainacan`;
+   ![Acesse o painel de controle](_assets\images\050.png)
 
-3. Selecione uma coleção;
+2. Na barra lateral esquerda, clique em _“Tainacan”_;
 
-4. Clique nas caixas de seleção dos itens que deseja editar;
+   ![Acesse o painel de controle](_assets\images\051.png)
 
-   - [ ] Todos os itens da página podem ser selecionados ao clicar em `Selecionar todos os itens da página`.
+3. Selecione uma _“coleção”_;
 
-5. Clique em `Ações em massa` e então em `Editar itens selecionados em sequência`;
+4. Clique nas _“caixas de seleção”_ dos _“itens”_ que deseja editar;
 
-6. Clique em `Arquivo`;
+   I. Todos os “itens” da página podem ser selecionados ao clicar em “Selecionar todos os itens da página”.
 
-7. Selecione uma imagem que já se encontra na Biblioteca de mídia ou envie uma imagem do seu computador;
+   ![Acesse o painel de controle](_assets\gifs\142.mp4)
 
-8. Clique em `Selecionar arquivo`;
+5. Clique em “Ações em massa” e então em “Editar itens selecionados em sequência”;
 
-   1. No rodapé da página é exibida uma barra de progresso com as informações referentes:
+   ![Acesse o painel de controle](_assets\images\143.png)
 
-   - Item atual e total de itens;
-   - Última vez que as alterações realizadas foram salvas;
+6. Clique em “Arquivo”
 
-9. No canto inferior direito da tela clique em:
+   ![Acesse o painel de controle](_assets\images\138.png)
 
-   1. `Enviar para a lixeira` para que o item exibido seja enviado para a lixeira;
-   2. `Voltar pra rascunho` para que o item exibido tenha seu _status_ alterado para **rascunho**;
-   3. `Atualizar` para confirmar as alterações realizadas no item;
+7. Selecione uma “imagem” que já se encontra na “Biblioteca de mídia” ou envie uma “imagem” do seu computador;
 
-10. Clique em `Próximo` ou `Anterior` para editar o próximo item ou voltar ao anterior;
+8. Clique em “Selecionar arquivo”;
 
-11. Quando todos os itens forem editados no canto inferior direito da tela clique em:
+   I. No “rodapé da página” é exibida uma barra de progresso com as informações referentes;
 
-    1. `Concluir` para concluir e salvar as edições realizadas em todos os itens;
-    2. `Atualizar` para confirmar as alterações realizadas no item exibido;
-    3. `Salvar como rascunho` para que o item exibido tenha seu _status_ alterado para **rascunho**;
-    4. `Anterior` para voltar ao item anterior.
+   i. Item atual e total de itens;
 
-![Inserir imagen na biblioteca](/pt-br_/assets/gifs/inserindo-imagens-em-sequencia.gif)
+   ii. Última vez que as alterações realizadas foram salvas;
+
+   ![Acesse o painel de controle](_assets\gifs\139.mp4)
+
+9. No canto inferior direito da tela, clique em:
+
+   I. “Anterior”, para voltar ao “item” anterior;
+
+   II. “Salvar como Rascunho”, para que o “item” exibido tenha seu status alterado para “rascunho”;
+
+   III. “Atualizar”, para confirmar as alterações realizadas no “item” e ir para o próximo.
+
+   ![Acesse o painel de controle](_assets\images\144.png)
 
 ### Inserir imagem em massa
 
