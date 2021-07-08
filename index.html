@@ -62,7 +62,7 @@
       auto2top: true,
       loadSidebar: true,
       mergeNavbar: true,
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      formatUpdated: '{DD}/{MM}/{YY} {HH}:{mm}',
       subMaxLevel: 2,
       loadNavbar: true,
       share: {
@@ -91,7 +91,22 @@
                 return 'Edit on Github'
               }
             }
-          )
+          ),
+          function(hook, vm) {
+            hook.beforeEach(function(html) {
+              if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
+                return (
+                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 114px;"> Modificado em: {docsify-updated} </code></div>\n\n '
+                  + html
+                );
+              } else {
+                return (
+                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 114px;"> Last modified: {docsify-updated} </code></div>\n\n '
+                  + html
+                );
+              }
+            });
+          }
       ]
     }
   </script>
