@@ -50,15 +50,31 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
 
 3. Feito isto, uma busca pelo bloco *“Formulário de Submissão de Itens”* na lista de blocos, te permitirá inserir o formulário; 
 
-   ![Acesse o painel de controle](\_assets\images\.png)
+   ![Acesse o painel de controle](\_assets\images\submissao.png.png)
 
 4. De início, o bloco vem vazio, porque espera que você configure de qual *“coleção”* este formulário se refere. Ao clicar no botão *“Selecione a Coleção destino”*, o modal apresentado mostrará apenas as *“coleções”* configuradas para aceitar a submissão pública de *“itens”*, como mencionado[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção)[na sessão anterior](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção); 
 
-   ![Acesse o painel de controle](\_assets\gifs\.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/m7B1Axx00bk" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 5. Escolhida a *“coleção”*, o bloco será preenchido com uma *“prévia visual”* de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em *“Visualizar”* ou *“Publicar a página”*; 
 
    ![Acesse o painel de controle](\_assets\gifs\.mp4)
+
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/PacoTywllQs" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 6. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a *“aba de rascunho”* na *“coleção”*. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan. 
 
@@ -70,7 +86,14 @@ O *“bloco de submissão”* possui algumas configurações adicionais.
 
 1. Clique no “*bloco de submissão do item”* e depois na *“engrenagem”* que fica no canto superior direito da tela, o painel lateral direito do editor mostrará uma série de *“configurações do bloco”*; 
 
-   ![Acesse o painel de controle](\_assets\gifs\.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/5AKOazA13tM" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 2. **“Mensagem de retorno da submissão”:** Configure os campos de retorno para o usuário após o preenchimento. O primeiro deles diz respeito a mensagem que vai ser mostrada quando o *“item”* tiver sido submetido com sucesso no formulário; 
 

@@ -256,7 +256,14 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 
 11. Selecione “metadados” identificados no “.csv” (à esquerda) e seu correspondente da “coleção destino” (à direita) no Tainacan;
 
-    ![Acesse o painel de controle](\_assets\gifs\.mp4)
+    <iframe
+        width="560"
+        height="513" 
+        src="https://www.youtube.com/embed/201a_2snaVQ" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
 
     ● Caso algum “metadado” ainda não exista na “coleção”, selecione “Criar metadado”.
 

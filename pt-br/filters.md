@@ -195,13 +195,17 @@ Não existe diferença no processo de criação de *“filtros no nível reposit
 > Nota: Só é possível editar o *“Título”, “Descrição”* e *“Status”* de filtros existentes; 
 >
 > Para alterar o tipo de um *“filtro”* é necessário deletar o filtro existente, e criar um novo com as configurações desejadas. 
->
 
 ■Clique em *“Salvar”*. 
 
-![Acesse o painel de controle](\_assets\gifs\Editar_Filtro_Repositorio.mp4)
-
-
+<iframe
+    width="560"
+    height="513" 
+    src="https://www.youtube.com/embed/B1u8INbY4FU" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
 
 ### Nível Coleção
 
@@ -229,6 +233,15 @@ Não existe diferença no processo de criação de *“filtros no nível reposit
 
 ● Para desabilitar um “filtro” clique no “ícone seletor”, ao lado dos “ícones lápis” e “lixeira”, localizado próximo ao título do “filtro”.
 
+<iframe
+    width="560"
+    height="513" 
+    src="https://www.youtube.com/embed/l7Wo48tL_8c" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
 
 
 ## Excluir Filtros
@@ -243,6 +256,15 @@ Não existe diferença no processo de criação de *“filtros no nível reposit
 
 ![Acesse o painel de controle](\_assets\gifs\Excluir_Filtro_Repositorio.mp4)
 
+<iframe
+    width="560"
+    height="513" 
+    src="https://www.youtube.com/embed/VCtoRrnRxjo" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
 ### Nível Coleção
 
 1. Na barra superior da *“coleção”* selecionada, clique em *“Filtros”***:** 
@@ -256,3 +278,12 @@ Não existe diferença no processo de criação de *“filtros no nível reposit
 > **Nota:** a *“exclusão do filtro”* implica somente na navegabilidade da visualização da *“coleção”*. Esta operação só pode ser desfeita por administradores. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/activities)[Registro de atividades](https://tainacan.github.io/tainacan-wiki/#/pt-br/activities) para saber mais. O *“filtro”* deixará de existir automaticamente caso seu respectivo *“metadado”* seja desabilitado ou excluído. 
 
 - Para *“recuperar”* um *“filtro”* excluído, basta criar o *“filtro”* novamente. 
+
+<iframe
+    width="560"
+    height="513" 
+    src="https://www.youtube.com/embed/K65AhIu8zao" title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>

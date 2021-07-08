@@ -187,7 +187,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    ​	Os termos são adicionados no campo *“Opções”*. Para adicionar mais valores, basta escrever o termo e clicar no *“Enter”***;** 
 
-   ![Acesse o painel de controle](\_assets\gifs\074.mp4)
+   <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/-UoNKi7KfBw" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
    
 
@@ -205,7 +205,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    3.Na área de *“edição do metadado”*, selecione a *“taxonomia”* desejada para o preenchimento dos valores no *“metadado”*;  
 
-   ![Acesse o painel de controle](\_assets\gifs\075.mp4)
+   <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/bDy0FQFolAs" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
    4.Escolha o tipo de entrada de informações durante o preenchimento dos valores no *“metadado”*;  
 
@@ -217,7 +217,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    Neste tipo de entrada, é oferecido ao usuário somente uma caixa de busca. Os termos podem ser explorados por meio de digitação e busca; 
 
-   ![Acesse o painel de controle](\_assets\gifs\079.mp4)
+   <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/RUaAFqM_XmE" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
    
 
@@ -225,7 +225,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    Este tipo de entrada ajuda o usuário a saber quais são os termos disponíveis para escolha em uma determinada *“Taxonomia”*. Os termos podem ser explorados em ordem alfabética ou por meio de digitação e busca; 
 
-   ![Acesse o painel de controle](\_assets\gifs\078.mp4)
+   <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/6-3nRtvMvXQ" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
    
 
@@ -259,42 +259,58 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    ![Acesse o painel de controle](\_assets\gifs\083.mp4)
 
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/z1lc9X9GMTE" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
    
-
+   
+   
    **“Composto”**: 
-
-   *“Metadados Compostos”* são aqueles cujo valor não pode ser representado de maneira isolada por um único campo. Por exemplo, um endereço residencial pode ser composto por campos de *“texto”*, *“número”* e até *“listas de seleção”*. Estes campos ou *“metadados”* internos ao composto são chamados *“Metadados Filhos”*. 
-
-   É importante diferenciar este conceito de uma *“Sessão de Metadados”*, cujo propósito é apenas de organizar dados *“agrupados”*. **Para simples separação visual, não o use**. No caso do *“metadado composto”*, é possível ter multivalores compostos, ou seja, uma lista de valores constituídos por diferentes sub-valores que se relacionam. 
-
-   Note que, ao usá-los: 
-
-   ​		Não é possível ter uma *“Taxonomia”* como *“Metadado filho”*; 
-
-   1.Um *“metadado composto”* não pode ser marcado como *“Obrigatório”* ou *“Valor Único”*. Esse atributo será marcado nos filhos. Se o *“metadado composto”,* porém, está marcado como *“Aceita múltiplos valores”*, seus filhos não poderão ser marcados como *“Obrigatório”*; 
-
-   2.Os *“metadados filhos”* não podem ser marcados como *“Multivalorados”*, e não possuem opções de visualização (*“Ver na lista”*), estas configurações correspondem ao pai; 
-
-   3.“Metadados compostos”* não estão disponíveis como opção para *“Busca Avançada”* ou *“Edição em Massa”*, apenas seus filhos.
-
-   ​		■**Configurações adicionais:** 
-
-   Logo ao se criar um *“metadado composto”*, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de *“metadados”* desejados para dentro desta área para criar filhos; 
-
-   Note que a ordenação funciona internamente entre filhos, mas, uma vez criados, não é possível promover os *“metadados”* para *“não filhos”*. 
-
-   ![Acesse o painel de controle](\_assets\gifs\084.mp4)
-
    
-
+   *“Metadados Compostos”* são aqueles cujo valor não pode ser representado de maneira isolada por um único campo. Por exemplo, um endereço residencial pode ser composto por campos de *“texto”*, *“número”* e até *“listas de seleção”*. Estes campos ou *“metadados”* internos ao composto são chamados *“Metadados Filhos”*. 
+   
+   É importante diferenciar este conceito de uma *“Sessão de Metadados”*, cujo propósito é apenas de organizar dados *“agrupados”*. **Para simples separação visual, não o use**. No caso do *“metadado composto”*, é possível ter multivalores compostos, ou seja, uma lista de valores constituídos por diferentes sub-valores que se relacionam. 
+   
+   Note que, ao usá-los: 
+   
+   ​		Não é possível ter uma *“Taxonomia”* como *“Metadado filho”*; 
+   
+   1.Um *“metadado composto”* não pode ser marcado como *“Obrigatório”* ou *“Valor Único”*. Esse atributo será marcado nos filhos. Se o *“metadado composto”,* porém, está marcado como *“Aceita múltiplos valores”*, seus filhos não poderão ser marcados como *“Obrigatório”*; 
+   
+   2.Os *“metadados filhos”* não podem ser marcados como *“Multivalorados”*, e não possuem opções de visualização (*“Ver na lista”*), estas configurações correspondem ao pai; 
+   
+   3.“Metadados compostos”* não estão disponíveis como opção para *“Busca Avançada”* ou *“Edição em Massa”*, apenas seus filhos.
+   
+   ​		■**Configurações adicionais:** 
+   
+   Logo ao se criar um *“metadado composto”*, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de *“metadados”* desejados para dentro desta área para criar filhos; 
+   
+   Note que a ordenação funciona internamente entre filhos, mas, uma vez criados, não é possível promover os *“metadados”* para *“não filhos”*. 
+   
+   ![Acesse o painel de controle](\_assets\gifs\084.mp4)
+   
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/x-iUm3pbOmQ" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
+   
    **“Usuário”**: 
-
+   
    “*Metadados”* do tipo *“Usuário”* atribuem um usuário WordPress como valor para seu preenchimento. Com ele você pode vincular usuários à *“itens”* e definir um significado para tal vínculo, em geral desejado para fins de gestão. 
-
+   
    Caso deseje que o campo seja de início preenchido com o valor do atual *“Autor do item”* (o usuário que o criou), marque a opção *“Por padrão é o autor do item”*. 
-
+   
    > **Nota:** Marcar a opção acima não faz com que itens *“já existentes”* tenham seus valores deste *“metadado”* automaticamente preenchidos. Para isso, é possível usar o método *“Copiar”* da edição em massa, passando dados para o *“metadado tipo usuário”*, vindos do atributo *“Criado por”*, que equivale ao *“autor do item”*. 
-
+   
    Atualmente o Tainacan tem nove tipos de *“metadados por padrão”*, mas novos conjuntos[ ](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type)[podem ser desenvolvidos](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type) de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. Consulte o artigo sobre o[ ](https://tainacan.github.io/tainacan-wiki/#/dev/)[Desenvolvimento do Plugin](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber mais. 
 
 #### **Atenção**: Para criar novos termos na lista de seleção, é necessário que o usuário tenha permissão para a edição do *“metadado”* em questão. O *“metadado”* de lista de seleção não permite a criação de novos termos durante o preenchimento, estes termos precisam ser configurados previamente. 
