@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "convert": "node_modules/.bin/docsify-pdf-converter"
+    }
+  }
+  
