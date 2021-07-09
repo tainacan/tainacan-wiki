@@ -169,7 +169,7 @@ Repita a ação para “adicionar novos termos”, clicando novamente em “Cria
 
 ![Acesse o painel de controle](\_assets\images\102.png)
 
-#### Atenção: um aviso será exibido para confirmar esta ação. A “exclusão da taxonomia” implica, também, na “exclusão das informações” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”. Exclua a “taxonomia” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de Atividades para saber mais.
+!>**Atenção**: um aviso será exibido para confirmar esta ação. A “exclusão da taxonomia” implica, também, na “exclusão das informações” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”. Exclua a “taxonomia” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de Atividades para saber mais.
 
 ### Excluir termos
 

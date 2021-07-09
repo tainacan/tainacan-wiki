@@ -246,15 +246,13 @@ Não existe diferença no processo de criação de *“filtros no nível reposit
 
 ## Excluir Filtros
 
-#### **Atenção:** Ao clicar no *“ícone lixeira”* o *“filtro”* é excluído imediatamente. Se você não desejar visualizar um *“filtro ativo”* momentaneamente, considere apenas desabilitar a seção de *“filtros a nível coleção”*. 
+!>**Atenção:** Ao clicar no *“ícone lixeira”* o *“filtro”* é excluído imediatamente. Se você não desejar visualizar um *“filtro ativo”* momentaneamente, considere apenas desabilitar a seção de *“filtros a nível coleção”*. 
 
 ### Nível Repositório
 
 1. Se estiver na tela inicial do Tainacan, clique em *“Filtros do Repositório”* ou, se estiver na página de *“coleções”*, na barra lateral, clique em *“Filtros”***:** 
    1. Identifique o *“filtro”* que deseja excluir; 
    2. Clique no *“ícone lixeira”* localizado próximo ao título do *“filtro”.* 
-
-![Acesse o painel de controle](\_assets\gifs\Excluir_Filtro_Repositorio.mp4)
 
 <iframe
     width="560"
@@ -270,8 +268,6 @@ Não existe diferença no processo de criação de *“filtros no nível reposit
 1. Na barra superior da *“coleção”* selecionada, clique em *“Filtros”***:** 
    1. Identifique o *“filtro”* que deseja alterar; 
    2. Clique no *“ícone lixeira”* localizado próximo ao título do *“filtro”*
-
-![Acesse o painel de controle](\_assets\gifs\Excluir_Filtro_Colecao.mp4)
 
 
 

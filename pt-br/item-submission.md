@@ -50,7 +50,7 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
 
 3. Feito isto, uma busca pelo bloco *“Formulário de Submissão de Itens”* na lista de blocos, te permitirá inserir o formulário; 
 
-   ![Acesse o painel de controle](\_assets\images\submissao.png.png)
+   ![Acesse o painel de controle](\_assets\images\submissao.png)
 
 4. De início, o bloco vem vazio, porque espera que você configure de qual *“coleção”* este formulário se refere. Ao clicar no botão *“Selecione a Coleção destino”*, o modal apresentado mostrará apenas as *“coleções”* configuradas para aceitar a submissão pública de *“itens”*, como mencionado[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção)[na sessão anterior](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção); 
 
@@ -65,8 +65,6 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
 
 5. Escolhida a *“coleção”*, o bloco será preenchido com uma *“prévia visual”* de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em *“Visualizar”* ou *“Publicar a página”*; 
 
-   ![Acesse o painel de controle](\_assets\gifs\.mp4)
-
    <iframe
        width="560"
        height="513" 
@@ -75,7 +73,7 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
        allowfullscreen>
    </iframe>
-
+   
 6. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a *“aba de rascunho”* na *“coleção”*. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan. 
 
 

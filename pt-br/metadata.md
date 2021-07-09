@@ -67,8 +67,6 @@ Novas *“coleções”* podem ser criadas também com um modelo de “*metadado
 
 4. Para “*criar um novo metadado”*, basta clicar no *“metadado”* e ele aparecerá por último na listagem do lado esquerdo. Você também pode usar o recurso de arrastar e soltar, que permite a *“ordenação do metadado”* durante sua criação. 
 
-![Acesse o painel de controle](\_assets\images\065.png)
-
 
 
 ## Criar Metadados à nível de Coleções
@@ -94,8 +92,6 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    ![Acesse o painel de controle](\_assets\images\064.png)
 
 5. Para *“criar um novo metadado”*, basta clicar no *“metadado”* e ele aparecerá por último na listagem do lado esquerdo. Você também pode usar o recurso de arrastar e soltar, que permite a *“ordenação do metadado”* durante sua criação. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados)[Tipos de metadados](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados) para saber o *“metadado”* mais adequado para cada tipo de informação; 
-
-   ![Acesse o painel de controle](\_assets\images\065.png)
 
 6. Cada *“metadado”* criado tem um conjunto de configurações e funções individuais para configuração. Abaixo, descrevemos as funções gerais que podem ser configuradas em praticamente todos os *“metadados”*. Consulte a área de metadados para aprender a usar configurações específicas (linkar);  
 
@@ -175,7 +171,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    ​	Passo: Você pode configurar quantidade a ser incrementada/decrementada ao clicar nos botões de controle durante o preenchimento do *“metadado”*. Por exemplo: ao usar o *“metadado numérico”* como *"Década"*, você pode configurar o passo para 10. No preenchimento, ao clicar nas setas, o valor será incrementado de 10 em 10. 
 
-   ![Acesse o painel de controle](\_assets\gifs\073.mp4)
+   <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/_hRrB6wVY7k" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
    
 
@@ -231,7 +227,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    5.Marque a opção *“Lista de opções sempre visível”* se você está exibindo uma lista de caixa de seleção ou entrada de rádio e deseja que, durante o preenchimento, a lista de opções esteja sempre visível. Esta opção só está disponível para a entrada do tipo *“Checkbox”;* 
 
-   ![Acesse o painel de controle](\_assets\gifs\080.png)
+   ![Acesse o painel de controle](\_assets\images\080.png)
 
    6.Se necessário, habilite *“Permitir termos novos”* para autorizar que novos termos de *“Taxonomia”* sejam criados durante o envio de *“itens”*. 
 
@@ -256,8 +252,6 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    2.Quando uma *“coleção”* é selecionada, a seção *“Metadados para busca”* permite escolher os metadados desta *“coleção”* que irão auxiliar na localização de *“itens”* durante o preenchimento deste *“metadado”*; 
 
    3.Habilite *“permitir itens repetidos”* para que um mesmo *“item”* da *“coleção relacionada”* seja atribuído como valor do *“metadado”* em diferentes *“itens”*. 
-
-   ![Acesse o painel de controle](\_assets\gifs\083.mp4)
 
    <iframe
        width="560"
@@ -292,8 +286,6 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    
    Note que a ordenação funciona internamente entre filhos, mas, uma vez criados, não é possível promover os *“metadados”* para *“não filhos”*. 
    
-   ![Acesse o painel de controle](\_assets\gifs\084.mp4)
-   
    <iframe
        width="560"
        height="513" 
@@ -313,7 +305,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    
    Atualmente o Tainacan tem nove tipos de *“metadados por padrão”*, mas novos conjuntos[ ](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type)[podem ser desenvolvidos](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type) de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. Consulte o artigo sobre o[ ](https://tainacan.github.io/tainacan-wiki/#/dev/)[Desenvolvimento do Plugin](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber mais. 
 
-#### **Atenção**: Para criar novos termos na lista de seleção, é necessário que o usuário tenha permissão para a edição do *“metadado”* em questão. O *“metadado”* de lista de seleção não permite a criação de novos termos durante o preenchimento, estes termos precisam ser configurados previamente. 
+!>**Atenção**: Para criar novos termos na lista de seleção, é necessário que o usuário tenha permissão para a edição do *“metadado”* em questão. O *“metadado”* de lista de seleção não permite a criação de novos termos durante o preenchimento, estes termos precisam ser configurados previamente. 
 
 
 
@@ -335,7 +327,7 @@ Como detalhado na seção de criação de metadados, os *“metadados”* podem 
 
    ![Acesse o painel de controle](\_assets\images\085.png) 
 
-   #### **Atenção**: As modificações em configurações de *“metadados a nível de repositório”* podem afetar dados já preenchidos e informações em itens que serão ou já foram criados em todo o repositório. 
+   !>**Atenção**: As modificações em configurações de *“metadados a nível de repositório”* podem afetar dados já preenchidos e informações em itens que serão ou já foram criados em todo o repositório. 
 
 4. Clique no *“ícone de lápis”* à direita do *“metadado”* que deseja editar;  
 
@@ -343,7 +335,7 @@ Como detalhado na seção de criação de metadados, os *“metadados”* podem 
 
 5. Ao concluir as alterações, clique em *“Salvar”* ou clique em *“Cancelar”* para abortar a missão; 
 
-   #### **Atenção**: Não é possível alterar o *“Tipo de Metadado”.* Por exemplo, alterar um *“metadado”* do tipo *“Texto”* para *“Texto Longo”*, ou *“Numérico”* para *“Data”*. 
+   !>**Atenção**: Não é possível alterar o *“Tipo de Metadado”.* Por exemplo, alterar um *“metadado”* do tipo *“Texto”* para *“Texto Longo”*, ou *“Numérico”* para *“Data”*. 
 
 
 
@@ -369,7 +361,7 @@ Como detalhado na seção de criação de metadados, os *“metadados”* podem 
 
    ![Acesse o painel de controle](\_assets\images\089.png)
 
-#### **Atenção**: Não é possível alterar o *“Tipo de Metadado”*. Por exemplo, alterar um *“metadado”* do tipo “*Texto”* para “*Texto Longo”*, ou “*Numérico”* para *“Data”*. 
+!>**Atenção**: Não é possível alterar o *“Tipo de Metadado”*. Por exemplo, alterar um *“metadado”* do tipo “*Texto”* para “*Texto Longo”*, ou “*Numérico”* para *“Data”*. 
 
 
 
@@ -393,7 +385,7 @@ Excluir *“Metadados a nível de Repositório”*:
 
    ![Acesse o painel de controle](\_assets\images\090.png)
 
-#### **Atenção**: Ao clicar no *“ícone de lixeira”*, o metadado é excluído imediatamente. Esta operação não poderá ser desfeita. A exclusão de *“metadados a nível de repositório”* afetam **todos** os dados já preenchidos e informações em *“itens”* que já foram criados em todo o repositório. Antes da exclusão do *“metadado”*, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Exclua o *“metadado”* somente se tiver certeza de que não haverá perdas graves de informação. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/activities)[Registro de atividades](https://tainacan.github.io/tainacan-wiki/#/pt-br/activities) para saber mais. 
+!>**Atenção**: Ao clicar no *“ícone de lixeira”*, o metadado é excluído imediatamente. Esta operação não poderá ser desfeita. A exclusão de *“metadados a nível de repositório”* afetam **todos** os dados já preenchidos e informações em *“itens”* que já foram criados em todo o repositório. Antes da exclusão do *“metadado”*, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Exclua o *“metadado”* somente se tiver certeza de que não haverá perdas graves de informação. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/activities)[Registro de atividades](https://tainacan.github.io/tainacan-wiki/#/pt-br/activities) para saber mais. 
 
 
 
@@ -419,11 +411,11 @@ Excluir *“Metadados a nível de Repositório”*:
 
    ![Acesse o painel de controle](\_assets\images\091.png)
 
-#### **Atenção:** Excluir *“Metadados a nível de coleção”* afeta as informações de todos os *“itens”* criados nesta *“coleção”*; 
+!>**Atenção:** Excluir *“Metadados a nível de coleção”* afeta as informações de todos os *“itens”* criados nesta *“coleção”*;  
 
-#### Na tela de edição de *“Metadados”* (a nível de repositório ou a nível de coleção), é possível visualizar os *“metadados já criados”* (ou herdados) na coluna à esquerda; 
+Na tela de edição de *“Metadados”* (a nível de repositório ou a nível de coleção), é possível visualizar os *“metadados já criados”* (ou herdados) na coluna à esquerda; 
 
-#### A exclusão do *“metadado”* implica, também, na exclusão de seus valores em todos os *“itens”* aos quais se aplica. Antes da exclusão do *“metadado”*, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Para *“desabilitar um metadado”*, basta clicar no botão ao lado da *“caneta de edição”*. 
+A exclusão do *“metadado”* implica, também, na exclusão de seus valores em todos os *“itens”* aos quais se aplica. Antes da exclusão do *“metadado”*, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Para *“desabilitar um metadado”*, basta clicar no botão ao lado da *“caneta de edição”*. 
 
 ![Acesse o painel de controle](\_assets\images\092.png)
 

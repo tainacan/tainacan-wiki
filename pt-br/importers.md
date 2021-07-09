@@ -273,11 +273,11 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 
 12. Para criar novos “metadados” na “coleção”, selecione “Adicionar mais metadados”. Consulte Metadados para saber mais sobre a criação e os “tipos de metadados” existentes;
 
-    #### Atenção: Neste processo, “metadados” do arquivo “.csv” não serão criados se não tiverem um “metadado” apontado na coleção destino.
+    !>**Atenção**: Neste processo, “metadados” do arquivo “.csv” não serão criados se não tiverem um “metadado” apontado na coleção destino.
 
-    #### Atenção: As informações de cada “metadado” em cada “item” dependem da criação de seu respectivo “metadado” neste processo.
+    !>**Atenção**: As informações de cada “metadado” em cada “item” dependem da criação de seu respectivo “metadado” neste processo.
 
-    #### Atenção: Uma vez criado, não é possível alterar o “tipo do Metadado”. Por exemplo, alterar um “metadado” do tipo “Texto” para “Texto Longo”, ou “Numérico” para “Data”.
+    !>**Atenção**: Uma vez criado, não é possível alterar o “tipo do Metadado”. Por exemplo, alterar um “metadado” do tipo “Texto” para “Texto Longo”, ou “Numérico” para “Data”.
 
     § Consulte Características gerais de metadados para saber mais.
 

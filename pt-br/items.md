@@ -186,7 +186,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
    > Nota: A “exclusão do item” implica, também, na “exclusão do documento”, “informações nos metadados” e “anexos”.
 
-   #### Atenção: Exclua o “item” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de atividades para saber mais.
+   !>**Atenção**: Exclua o “item” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de atividades para saber mais.
 
    ![Acesse o painel de controle](\_assets\images\Editar_Itens_Selecionar_Lixeira.png)
 
@@ -202,7 +202,7 @@ Quando você exclui um *“item”* de uma *“coleção”* no Tainacan, ele é
 
 2. Clique na seta localizada à esquerda do *“ícone lixeira”* de cada *“item”* que deseja restaurar. Ao restaurar um *“item”* da lixeira, ele volta para o seu status anterior, *“publicado”* ou *“privado”*. 
 
-   ![Acesse o painel de controle](\_assets\images\Restaurar_Item _da_Lixeira_botão.png)
+   ![Acesse o painel de controle](\_assets\images\Restaurar_botão.png)
 
 ### Excluir permanentemente
 
