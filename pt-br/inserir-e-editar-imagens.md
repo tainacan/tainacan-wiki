@@ -95,8 +95,6 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
    \* Última vez que as alterações realizadas foram salvas.
 
-   ![Acesse o painel de controle](_assets\gifs.mp4)
-
    <iframe
        width="560"
        height="513" 
@@ -105,6 +103,7 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
        allowfullscreen>
    </iframe>
+
 
 8. No canto inferior direito da tela clique em:
 
@@ -131,8 +130,6 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
    I. Todos os “itens” da página podem ser selecionados ao clicar em “Selecionar todos os itens da página”.
 
-   ![Acesse o painel de controle](_assets\gifs\142.mp4)
-
    <iframe
        width="560"
        height="513" 
@@ -141,7 +138,7 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
        allowfullscreen>
    </iframe>
-
+   
 5. Clique em “Ações em massa” e então em “Editar itens selecionados em sequência”;
 
    ![Acesse o painel de controle](_assets\images\143.png)
@@ -160,7 +157,14 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
    ii. Última vez que as alterações realizadas foram salvas;
 
-   ![Acesse o painel de controle](_assets\gifs\139.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/M24K-V_FmMw"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 9. No canto inferior direito da tela, clique em:
 

@@ -12,7 +12,7 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
 > Nota: O que diferencia a função “Criar Itens em Massa” da Criação da função “Adicionar Um Item” é o processo de definição do documento principal. Para a última função, o preenchimento dos “metadados” independe da existência de um documento vinculado ao “item”. Enquanto que para a primeira função, o preenchimento dos “metadados” se dá a partir do upload do conjunto dos documentos principais.
 
-#### Atenção: Por padrão, o Tainacan irá considerar o nome do arquivo como o “Título Principal” do item.
+!>**Atenção**: Por padrão, o Tainacan irá considerar o nome do arquivo como o “Título Principal” do item.
 
 1. Acesse o painel de controle do *WordPress*;
 
@@ -44,15 +44,13 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
     a. “Edição de itens em sequência” para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
 
-    b. “Editar itens em massa” para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa;
-
-    #### Atenção: Todos os valores inseridos via edição em massa são atribuídos a todos os “itens” criados em massa.
+    b. “Editar itens em massa” para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa; 
 
     c. “Cancelar” para encerrar a operação. Os arquivos de mídia que já estiverem com o upload concluído ficarão disponíveis na “Biblioteca de Mídia” do WordPress.
 
     ![Acesse o painel de controle](\_assets\images\Itens_em_massa _comandos_finais.png)
 
-    
+!>**Atenção**: Todos os valores inseridos via edição em massa são atribuídos a todos os “itens” criados em massa.
 
 ### Editar Itens criados em Massa
 
@@ -182,7 +180,7 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
   4. Clique em “Deletar permanentemente” para excluir os “itens” de forma irreversível;
 
-     ○ Atenção: Uma vez deletado permanentemente um “item”, não é possível o recuperar.
+     !>**Atenção**: Uma vez deletado permanentemente um “item”, não é possível o recuperar.
 
      ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Deletar_permanentemente.png)
 

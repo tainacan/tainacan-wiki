@@ -24,7 +24,7 @@ Ao clicar em uma “atividade”, é exibida uma janela com:
 
 ​		○ À esquerda, o quadro reúne informações antes da alteração;
 
-​		○ À direita, o quadro reúne as informações depois da alteração. e. Administradores podem reverter estas alterações clicando em
+​		○ À direita, o quadro reúne as informações depois da alteração. 
 
 
 

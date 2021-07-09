@@ -36,7 +36,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
      ![Acesse o painel de controle](\_assets\images\004.png)
 
-  5. Defina seu status entre "publicado", "privado", "rascunho" ou "lixo". O status da “coleção” define a visibilidade dos seus itens. Veja a seguir:
+  5. Defina seu status entre "publicado", "privado", ou "lixo". O status da “coleção” define a visibilidade dos seus itens. Veja a seguir:
 
      ○ “Publicado”: “coleções” definidas como “publicado”, podem ser acessadas pelo público com acesso ao site assim que criadas;
 
@@ -185,7 +185,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 5. Na “lista de coleções” exibidas, clique no “ícone de engrenagem” à direita da coleção desejada;
 
-   ![Acesse o painel de controle](\_assets\images\Recuperar_Colecao_da_ Lixeira.png)
+   ![Acesse o painel de controle](\_assets\images\recuperar_colecao.png)
 
 6. Edite a “configuração da coleção” alterando o status entre “Publicado” ou “Privado” para a remover do “Lixo”:
 

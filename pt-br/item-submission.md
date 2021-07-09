@@ -48,7 +48,7 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
 
 3. Feito isto, uma busca pelo bloco _“Formulário de Submissão de Itens”_ na lista de blocos, te permitirá inserir o formulário;
 
-   ![Acesse o painel de controle](_assets\images\submissao.png.png)
+   ![Acesse o painel de controle](\_assets\images\submissao.png)
 
 4. De início, o bloco vem vazio, porque espera que você configure de qual _“coleção”_ este formulário se refere. Ao clicar no botão _“Selecione a Coleção destino”_, o modal apresentado mostrará apenas as _“coleções”_ configuradas para aceitar a submissão pública de _“itens”_, como mencionado[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção)[na sessão anterior](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção);
 
@@ -63,8 +63,6 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
 
 5. Escolhida a _“coleção”_, o bloco será preenchido com uma _“prévia visual”_ de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em _“Visualizar”_ ou _“Publicar a página”_;
 
-   ![Acesse o painel de controle](_assets\gifs.mp4)
-
    <iframe
        width="560"
        height="513" 
@@ -73,6 +71,7 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
        allowfullscreen>
    </iframe>
+
 
 6. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a _“aba de rascunho”_ na _“coleção”_. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
 
@@ -176,7 +175,6 @@ Para proteger seu site deste tipo de ataque, recomendamos fortemente o uso de um
 
 ### Configurando o reCAPTCHA no seu site
 
-<<<<<<< HEAD
 No painel administrativo do WordPress, há um submenu do plugin Tainacan específico para isso, o "Submissão de Itens". Acessando ele, você encontrar dois campos que precisam ser preenchidos: A _chave do site_ e a _palavra secreta do site_.
 
 ![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](_assets/images/submissao-itens-captcha-1.png)
@@ -199,13 +197,6 @@ Nas configurações relacionadas ao formulário de submissão dentro do formulá
 
 Ambos os _“campos”_ são obtidos no site do reCAPTCHA, quando você cadastra seu site neste link:[ ](https://www.google.com/reCAPTCHA/admin/create)https://www.google.com/reCAPTCHA/admin/create. Não esqueça de clicar em _“Salvar alterações”_ ao concluir esta etapa.
 
-### Habilitando a Coleção para uso do reCAPTCHA
-
-Nas configurações (veja Configurando a Coleção) relacionadas ao _“formulário de submissão”_ dentro do _“formulário da coleção”_, habilite a opção que diz _“Usar a verificação reCAPTCHA no formulário de submissão”_. Feito isto, **salve a coleção**.
-
-Note que se você já havia criado um _“bloco de submissão”_ antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
-
-> > > > > > > ba7a87735fd6c540b807edab16e5caed7250e1ec
 
 ## Duvidas Frequentes
 
@@ -219,12 +210,7 @@ Não há um identificador específico que diga que "Este item veio de uma submis
 
 ### Não estou conseguindo criar termos novos pelo formulário, por quê?
 
-<<<<<<< HEAD
-Por enquanto, não é possível criar novos termos de metadados tipo taxonomia diretamente pelo formulário de submissão do item. Esta limitação existe porque Taxonomias são configurações a nível repositório e precisam de uma camada extra de segurança para que usuários externos não tragam problemas aos seus vocabulários controlados. Entretanto, a funcionalidade está aberta a discussão para desenvolvimento futuro.
-=======
 Por enquanto, não é possível criar novos termos de _“metadados tipo taxonomia”_ diretamente pelo _“formulário de submissão do item”_. Esta limitação existe porque _“Taxonomias”_ são configurações a _“nível repositório”_ e precisam de uma camada extra de segurança para que usuários externos não tragam problemas aos seus _“vocabulários controlados”_. Entretanto, a funcionalidade está aberta à discussão para desenvolvimento futuro.
-
-> > > > > > > ba7a87735fd6c540b807edab16e5caed7250e1ec
 
 ### Quero um formulário com campos não relacionados à coleção. É possível?
 
