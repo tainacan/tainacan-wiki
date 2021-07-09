@@ -1,6 +1,8 @@
 # Submissão de Itens
 
-A versão 0.17 do Tainacan traz a possibilidade de se abrirem “coleções” para “submissão pública” de itens (também referida como “auto-depósito”). Isto significa que usuários sem privilégios administrativos, ou até mesmo visitantes do site passam a poder, eles mesmos, criarem “itens” em uma “Coleção”, ampliando, assim, as possibilidades de um acervo colaborativo gerado por diversas pessoas. Por trás dos panos, a “Submissão de Itens” nada mais é do que levar o formulário de criação do item, com os metadados configurados na coleção, para uma página pública do site. Isto é feito através de um bloco gutenberg e de algumas configurações extras. Nesta página, explicamos como configurar seu formulário de “Submissão de Itens público”. Cobriremos então:
+A [versão _0.17_](/pt-br/releases#tainacan-beta-017) do Tainacan trás a possibilidade de se abrirem coleções para _submissão pública_ de itens (também referida como _auto-depósito_). Isto significa que usuários sem privilégios administrativos, ou até mesmo visitantes do site passam a poder eles mesmos criarem itens em uma Coleção, **ampliando assim as possibilidades de um acervo _colaborativo_ gerado por diversas pessoas**.
+
+Por trás dos panos, a Submissão de Itens nada mais é do que levar o [formulário de criação do item](/pt-br/items#criar-itens), com os [metadados configurados na coleção](/pt-br/metadata#tipos-de-metadados), para uma página pública do site. Isto é feito através de um [bloco gutenberg](/pt-br/gutenberg-blocks) e de algumas configurações extras. Nestas página, explicamos como configurar seu formulário de Submissão de Itens público. Cobriremos então:
 
 1. Os ajustes necessários na [configuração da coleção](#configurando-a-coleção);
 2. O processo de [criação do bloco do formulário](#criando-o-bloco-de-submissão-de-itens);
@@ -8,23 +10,21 @@ A versão 0.17 do Tainacan traz a possibilidade de se abrirem “coleções” p
 4. A proteção contra ataques ao site [usando a verificação _reCAPTCHA_](#verificação-recaptcha-no-formulário);
 5. Algumas [dúvidas frequentes](#duvidas-frequentes) sobre esta funcionalidade;
 
-
-
 ## Configurando a Coleção
 
 Na página de configuração de toda “Coleção”, há um campo que permite habilitar a “submissão de itens”.
 
 1. Acesse a “coleção” onde você pretende habilitar a “submissão de itens” e clique em "Configurações";
 
-   ![Acesse o painel de controle](\_assets\images\120.png)
+   ![Acesse o painel de controle](_assets\images\120.png)
 
 2. No canto inferior direito, habilite a função "Permitir a submissão de item";
 
-   ![Acesse o painel de controle](\_assets\images\121.png)
+   ![Acesse o painel de controle](_assets\images\121.png)
 
 3. Com este campo habilitado, esta coleção poderá ser listada para o bloco de submissão de itens, sobre o qual falaremos em breve. Ao habilitar a função, novas opções surgem, como mostrada na captura de tela a seguir:
 
-   ![Acesse o painel de controle](\_assets\images\122.png)
+   ![Acesse o painel de controle](_assets\images\122.png)
 
 “Permitir a submissão por usuários anônimos”: diz respeito a quais usuários poderão enviar este formulário. Por padrão, não é qualquer pessoa que visita o site, mas pelo menos pessoas cadastradas no sistema do seu WordPress que tem este poder. Se habilitado, mesmo pessoas que nunca logaram no site poderão enviar informações.
 
@@ -34,25 +34,23 @@ Se estiver no seu interesse abrir sua “coleção” para usuários anônimos, 
 
 “Usar a verificação reCAPTCHA no formulário de submissão”: Por fim, como em qualquer formulário na Web, é importante proteger seu site contra ataques de usuários mal intencionados. Detalhamos melhor a funcionalidade da opção “Usar a verificação reCAPTCHA no formulário de submissão” em uma sessão separada.
 
-
-
 ## Criando o Bloco de Submissão de Itens
 
 Para ter seu formulário disponível para visitantes do site, é preciso criar uma página ou post no seu “painel administrativo” do WordPress. Como explicado em maiores detalhes na nossa página sobre os Blocos Gutenberg, este é o novo “editor de conteúdo do WordPress”, no qual você poderá dar um nome a página ou mesmo incluir conteúdo para apresentar o seu formulário ao usuário, como um título e texto explicativo.
 
 1. Acesse o “painel de controle” do WordPress;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Acesse o painel de controle](_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em “Posts” (caso queira inserir o bloco em um post) ou “Páginas” (caso queira inserir o bloco em uma página);
 
-   ![Acesse o painel de controle](\_assets\images\123.png)
+   ![Acesse o painel de controle](_assets\images\123.png)
 
-3. Feito isto, uma busca pelo bloco *“Formulário de Submissão de Itens”* na lista de blocos, te permitirá inserir o formulário; 
+3. Feito isto, uma busca pelo bloco _“Formulário de Submissão de Itens”_ na lista de blocos, te permitirá inserir o formulário;
 
    ![Acesse o painel de controle](\_assets\images\submissao.png)
 
-4. De início, o bloco vem vazio, porque espera que você configure de qual *“coleção”* este formulário se refere. Ao clicar no botão *“Selecione a Coleção destino”*, o modal apresentado mostrará apenas as *“coleções”* configuradas para aceitar a submissão pública de *“itens”*, como mencionado[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção)[na sessão anterior](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção); 
+4. De início, o bloco vem vazio, porque espera que você configure de qual _“coleção”_ este formulário se refere. Ao clicar no botão _“Selecione a Coleção destino”_, o modal apresentado mostrará apenas as _“coleções”_ configuradas para aceitar a submissão pública de _“itens”_, como mencionado[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção)[na sessão anterior](https://tainacan.github.io/tainacan-wiki/#/pt-br/item-submission?id=configurando-a-coleção);
 
    <iframe
        width="560"
@@ -63,7 +61,7 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
        allowfullscreen>
    </iframe>
 
-5. Escolhida a *“coleção”*, o bloco será preenchido com uma *“prévia visual”* de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em *“Visualizar”* ou *“Publicar a página”*; 
+5. Escolhida a _“coleção”_, o bloco será preenchido com uma _“prévia visual”_ de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em _“Visualizar”_ ou _“Publicar a página”_;
 
    <iframe
        width="560"
@@ -73,16 +71,19 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
        allowfullscreen>
    </iframe>
-   
-6. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a *“aba de rascunho”* na *“coleção”*. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan. 
 
 
+6. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a _“aba de rascunho”_ na _“coleção”_. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
+
+   ![Acesse o painel de controle](_assets\gifs.mp4)
+
+7. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a _“aba de rascunho”_ na _“coleção”_. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
 
 ## Configurações Avançadas do Bloco
 
-O *“bloco de submissão”* possui algumas configurações adicionais. 
+O _“bloco de submissão”_ possui algumas configurações adicionais.
 
-1. Clique no “*bloco de submissão do item”* e depois na *“engrenagem”* que fica no canto superior direito da tela, o painel lateral direito do editor mostrará uma série de *“configurações do bloco”*; 
+1. Clique no “_bloco de submissão do item”_ e depois na _“engrenagem”_ que fica no canto superior direito da tela, o painel lateral direito do editor mostrará uma série de _“configurações do bloco”_;
 
    <iframe
        width="560"
@@ -93,19 +94,19 @@ O *“bloco de submissão”* possui algumas configurações adicionais.
        allowfullscreen>
    </iframe>
 
-2. **“Mensagem de retorno da submissão”:** Configure os campos de retorno para o usuário após o preenchimento. O primeiro deles diz respeito a mensagem que vai ser mostrada quando o *“item”* tiver sido submetido com sucesso no formulário; 
+2. **“Mensagem de retorno da submissão”:** Configure os campos de retorno para o usuário após o preenchimento. O primeiro deles diz respeito a mensagem que vai ser mostrada quando o _“item”_ tiver sido submetido com sucesso no formulário;
 
-   ![Acesse o painel de controle](\_assets\images\128.png)
+   ![Acesse o painel de controle](_assets\images\128.png)
 
-   Por padrão, esta informação aparece como na imagem abaixo: 
+   Por padrão, esta informação aparece como na imagem abaixo:
 
-   Pode ser um bom lugar para informar, por exemplo, que a submissão está sendo avaliada pela equipe administrativa e que se aprovado, o *“item”* será disponibilizado na listagem de *“itens da coleção”*. 
+   Pode ser um bom lugar para informar, por exemplo, que a submissão está sendo avaliada pela equipe administrativa e que se aprovado, o _“item”_ será disponibilizado na listagem de _“itens da coleção”_.
 
-   ### Rótulo das Sessões 
+   ### Rótulo das Sessões
 
-   Como é possível notar na prévia do bloco, o *“formulário de submissão de itens”* possui quatro grandes sessões, na seguinte ordem: 
+   Como é possível notar na prévia do bloco, o _“formulário de submissão de itens”_ possui quatro grandes sessões, na seguinte ordem:
 
-   ![Acesse o painel de controle](\_assets\images\129.png)
+   ![Acesse o painel de controle](_assets\images\129.png)
 
    1.O “Documento principal do item”, que pode ser tanto um arquivo, quanto um texto puro ou um endereço online via link URL;
 
@@ -121,7 +122,7 @@ O *“bloco de submissão”* possui algumas configurações adicionais.
 
    No painel “Entrada de Metadados”, você pode ver todos os campos que foram configurados na tela de “metadados” da configuração da “coleção”.
 
-   ![Acesse o painel de controle](\_assets\images\130.png)
+   ![Acesse o painel de controle](_assets\images\130.png)
 
    Aqui você pode esconder alguns “metadados” que não considera apropriados para aparecerem neste formulário. Por exemplo, um campo que guarde a informação se aquele “item” foi aprovado após revisão, certamente não precisa estar no formulário público. Note, porém, que se o “metadado” em questão é “obrigatório”, ele não pode ser desabilitado, já que isto impediria a submissão.
 
@@ -129,9 +130,9 @@ O *“bloco de submissão”* possui algumas configurações adicionais.
 
    Este painel agrupa todas as funcionalidades de “esconder/mostrar” os demais elementos do formulário que não os “metadados”. Usando estas opções, você pode aproximar o layout do seu formulário com o de um formulário mais simples do seu site, ao invés de se assemelhar ao complexo e rico componente encontrado no “painel administrativo” do Tainacan:
 
-   ![Acesse o painel de controle](\_assets\images\131.png)
+   ![Acesse o painel de controle](_assets\images\131.png)
 
-   ![Acesse o painel de controle](\_assets\images\132.png)
+   ![Acesse o painel de controle](_assets\images\132.png)
 
    1.“Esconder qualquer botão redondo de escolha do tipo de documento”: Escondendo os três, a sessão com o rótulo deixará de existir. Escondendo dois de três destes, o formulário deixará de exibir os botões redondos e, já exibirá de imediato, o campo para inserção do documento do único tipo restante:
 
@@ -157,13 +158,11 @@ O *“bloco de submissão”* possui algumas configurações adicionais.
 
    Por fim, é possível alterar um pouco da aparência do formulário. Embora a estética dos componentes pode variar de acordo com o “tema” usado, alguns ajustes podem ser feitos neste painel. Pode ser desejável se modificar o tamanho da fonte base (a fonte utilizada no “painel administrativo” é tipicamente menor do que a encontrada em posts e páginas) e claro, cores em geral. As cores constituem-se, no geral, de variações de cinza para mostrar linhas e texto, e duas cores primárias, que vem da interface Azul Turquesa do Tainacan. Estas são importantes para “links”, “botões”, “balões de ajuda” e “efeitos de mouse sobre itens”. Vale observar os efeitos resultantes na prévia do bloco para se ter uma ideia.
 
-   ![Acesse o painel de controle](\_assets\images\133.png)
+   ![Acesse o painel de controle](_assets\images\133.png)
 
-   ![Acesse o painel de controle](\_assets\images\134.png)
+   ![Acesse o painel de controle](_assets\images\134.png)
 
-   ![Acesse o painel de controle](\_assets\images\135.png)
-
-
+   ![Acesse o painel de controle](_assets\images\135.png)
 
 ## Verificação reCAPCHA no formulário
 
@@ -176,22 +175,27 @@ Para proteger seu site deste tipo de ataque, recomendamos fortemente o uso de um
 
 ### Configurando o reCAPTCHA no seu site
 
+No painel administrativo do WordPress, há um submenu do plugin Tainacan específico para isso, o "Submissão de Itens". Acessando ele, você encontrar dois campos que precisam ser preenchidos: A _chave do site_ e a _palavra secreta do site_.
+
+![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](_assets/images/submissao-itens-captcha-1.png)
+
+Ambos os campos são obtidos no site do reCAPTCHA, quando vc cadastra seu site neste link: [https://www.google.com/recaptcha/admin/create](https://www.google.com/recaptcha/admin/create ":ignore"). Não esqueça de clicar em "Salvar alterações" ao concluir esta etapa.
+
+### Habilitando a Coleção para uso do reCAPTCHA
+
+Nas configurações relacionadas ao formulário de submissão dentro do formulário da coleção, habilite a opção que diz "Usar a verificação reCAPTCHA no formulário de submissão". Feito isto, salve a coleção.
+
+# ?> Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
+
 1. Acesso o “Painel administrativo” do WordPress. Há um submenu do plugin Tainacan específico para isso, o “Submissão de Itens”;
 
-   ![Acesse o painel de controle](\_assets\images\136.png)
+   ![Acesse o painel de controle](_assets\images\136.png)
 
 2. Nesta página, você encontrará dois campos que precisam ser preenchidos: A “chave do site” e a “palavra secreta do site”;
 
 ![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](_assets/images/submissao-itens-captcha-1.png)
 
-Ambos os *“campos”* são obtidos no site do reCAPTCHA, quando você cadastra seu site neste link:[ ](https://www.google.com/reCAPTCHA/admin/create)https://www.google.com/reCAPTCHA/admin/create. Não esqueça de clicar em *“Salvar alterações”* ao concluir esta etapa. 
-
-### Habilitando a Coleção para uso do reCAPTCHA
-
-Nas configurações (veja Configurando a Coleção) relacionadas ao *“formulário de submissão”* dentro do *“formulário da coleção”*, habilite a opção que diz *“Usar a verificação reCAPTCHA no formulário de submissão”*. Feito isto, **salve a coleção**. 
-
-Note que se você já havia criado um *“bloco de submissão”* antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco; 
-
+Ambos os _“campos”_ são obtidos no site do reCAPTCHA, quando você cadastra seu site neste link:[ ](https://www.google.com/reCAPTCHA/admin/create)https://www.google.com/reCAPTCHA/admin/create. Não esqueça de clicar em _“Salvar alterações”_ ao concluir esta etapa.
 
 
 ## Duvidas Frequentes
@@ -206,7 +210,7 @@ Não há um identificador específico que diga que "Este item veio de uma submis
 
 ### Não estou conseguindo criar termos novos pelo formulário, por quê?
 
-Por enquanto, não é possível criar novos termos de *“metadados tipo taxonomia”* diretamente pelo *“formulário de submissão do item”*. Esta limitação existe porque *“Taxonomias”* são configurações a *“nível repositório”* e precisam de uma camada extra de segurança para que usuários externos não tragam problemas aos seus *“vocabulários controlados”*. Entretanto, a funcionalidade está aberta à discussão para desenvolvimento futuro. 
+Por enquanto, não é possível criar novos termos de _“metadados tipo taxonomia”_ diretamente pelo _“formulário de submissão do item”_. Esta limitação existe porque _“Taxonomias”_ são configurações a _“nível repositório”_ e precisam de uma camada extra de segurança para que usuários externos não tragam problemas aos seus _“vocabulários controlados”_. Entretanto, a funcionalidade está aberta à discussão para desenvolvimento futuro.
 
 ### Quero um formulário com campos não relacionados à coleção. É possível?
 
