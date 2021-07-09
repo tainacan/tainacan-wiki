@@ -4,10 +4,10 @@ module.exports = {
     pdfOptions: {
         format: 'A4',
         margin: {
-            top: '1cm',
-            left: '1.5cm',
-            bottom: '1.75cm',
-            right: '0.5cm',
+            top: '1.7cm',
+            left: '1.2cm',
+            bottom: '0.15cm',
+            right: '0.05cm',
         },
         scale: 0.9,
         preferCSSPageSize: true

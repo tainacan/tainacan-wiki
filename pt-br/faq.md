@@ -81,7 +81,7 @@ Em geral, erros de processos como importadores e exportadores são gravados em u
 
 ### Sinto que minha instalação está demorando muito para carregar os itens... tem como melhorar?
 
-Se sua coleção é pequena e simples, então é bem capaz que há algum problema ocorrendo e pode ser discutido no fórum de suporte. Já se sua base tem milhares de itens, com dezenas de metadados, então as razões para lentidões podem ter relação com o servidor ou com as configurações de busca atuais. Sugerimos uma leitura detalhada [desta página](#/optimization) que vai te guiar por algumas opções em questão de performance.
+Se sua coleção é pequena e simples, então é bem capaz que há algum problema ocorrendo e pode ser discutido no fórum de suporte. Já se sua base tem milhares de itens, com dezenas de metadados, então as razões para lentidões podem ter relação com o servidor ou com as configurações de busca atuais. Sugerimos uma leitura detalhada [desta página](/pt-br/optimization) que vai te guiar por algumas opções em questão de performance.
 
 ---
 
