@@ -38,11 +38,11 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
   5. Defina seu status entre "publicado", "privado", ou "lixo". O status da “coleção” define a visibilidade dos seus itens. Veja a seguir:
 
-     ○ “Publicado”: “coleções” definidas como “publicado”, podem ser acessadas pelo público com acesso ao site assim que criadas;
+     ○ **“Publicado”**: “coleções” definidas como “publicado”, podem ser acessadas pelo público com acesso ao site assim que criadas;
 
-     ○ “Privado”: “coleções” com o status de “privado”, aparecem apenas para seu criador e usuários registrados do seu WordPress que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários;
+     ○ **“Privado”**: “coleções” com o status de “privado”, aparecem apenas para seu criador e usuários registrados do seu WordPress que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários;
 
-     ○ “Lixo”: “coleções” no “lixo” serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: “editores”, “moderadores” e “administradores”). Consulte Permissões de Usuários para saber mais.
+     ○ **“Lixo”**: “coleções” no “lixo” serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: “editores”, “moderadores” e “administradores”). Consulte Permissões de Usuários para saber mais.
 
      ![Acesse o painel de controle](\_assets\images\005.png)
 
@@ -165,7 +165,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 
 
-### Desfazer Coleções excluídas
+### Recuperar Coleções excluídas
 
 1. Acesse o “painel de controle” do WordPress;
 
@@ -189,9 +189,9 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 6. Edite a “configuração da coleção” alterando o status entre “Publicado” ou “Privado” para a remover do “Lixo”:
 
-   ○ “Publicado”: “Coleções” definidas como “Publicado” podem ser acessadas pelo público com acesso ao site assim que criadas;
+   ○ **“Publicado”**: “Coleções” definidas como “Publicado” podem ser acessadas pelo público com acesso ao site assim que criadas;
 
-   ○ “Privado”: “Coleções Privadas” aparecem apenas para seu criador e usuários registrados do seu WordPress, que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários.
+   ○ **“Privado”**: “Coleções Privadas” aparecem apenas para seu criador e usuários registrados do seu WordPress, que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários.
 
    ![Acesse o painel de controle](\_assets\images\Alterar_status_colecao.png)
 
