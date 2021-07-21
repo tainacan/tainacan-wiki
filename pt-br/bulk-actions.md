@@ -4,9 +4,7 @@ O Tainacan permite a realização de “ações em massa”. É possível criar,
 
 ## Criar Itens em Massa
 
-A criação de “itens em massa” é diferente da “importação de itens” a partir de um arquivo “.csv”. Diferente da última, que ocorre a partir da seção de importadores do Tainacan, a
-
-criação em massa é feita diretamente do “painel administrativo da coleção”, mediante o upload dos documentos principais que irão compor a “coleção”.
+A criação de “itens em massa” é diferente da “importação de itens” a partir de um arquivo “.csv”. Diferente da última, que ocorre a partir da seção de importadores do Tainacan, a criação em massa é feita diretamente do “painel administrativo da coleção”, mediante o upload dos documentos principais que irão compor a “coleção”.
 
 > Nota: Se você possui uma base de itens estruturada e tratada em um documento de planilha, considere utilizar o “Importador CSV”.
 
@@ -36,23 +34,23 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
 6. Os arquivos selecionados serão enviados automaticamente e o progresso de upload pode ser acompanhado em tempo real;
 
-    ![Acesse o painel de controle](\_assets\images\Itens_em_massa _concluido_upload_arquivos.png)
+    ![Acesse o painel de controle](\_assets\images\Itensemmassaconcluidouploadarquivos.png)
 
-    > Nota: Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
+    > **Nota**: Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
 
 7. Quando o processo for concluído, será possível:
 
-    a. “Edição de itens em sequência” para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
+    a. **“Edição de itens em sequência**” para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
 
-    b. “Editar itens em massa” para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa; 
+    b. **“Editar itens em massa”** para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa; 
 
-    c. “Cancelar” para encerrar a operação. Os arquivos de mídia que já estiverem com o upload concluído ficarão disponíveis na “Biblioteca de Mídia” do WordPress.
+    c. **“Cancelar”** para encerrar a operação. Os arquivos de mídia que já estiverem com o upload concluído ficarão disponíveis na “Biblioteca de Mídia” do WordPress.
 
-    ![Acesse o painel de controle](\_assets\images\Itens_em_massa _comandos_finais.png)
+!>Atenção: Todos os valores inseridos via edição em massa são atribuídos a todos os “itens” criados em massa.
 
-!>**Atenção**: Todos os valores inseridos via edição em massa são atribuídos a todos os “itens” criados em massa.
+![Acesse o painel de controle](\_assets\images\Itensemmassacomandosfinais.png)
 
-### Editar Itens criados em Massa
+### Editar Itens em Massa
 
 1. Selecione a “Coleção” que contém os “itens” que deseja editar;
 
@@ -70,39 +68,41 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
   4. Selecione “Editar itens selecionados em massa”;
 
+     ![Acesse o painel de controle](\_assets\images\editaritensselecionadosemmassa.png)
+
   5. Selecione o “metadado” que deseja editar na janela exibida;
 
      ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_selecionar_metadado.png)
 
 6. Em seguida, com base nas opções e configurações do “metadado”, selecione uma ação:
 
-   ○ “Adicionar valor”: Para acrescentar um novo valor a um “metadado” com a configuração “Permitir valores múltiplos” habilitada;
+   ○ **“Adicionar valor”**: Para acrescentar um novo valor a um “metadado” com a configuração “Permitir valores múltiplos” habilitada;
 
    ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_adicionar_valor.png)
 
-   ○ “Atribuir novo valor”: Para adicionar um novo valor ao “metadado”.
+   ○ **“Atribuir novo valor”**: Para adicionar um novo valor ao “metadado”.
 
    I. Se houver valores para os “itens” selecionados, eles serão substituídos pelo novo valor;
 
    ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_atribuir_novo_valor.png)
 
-   ○ “Substituir valor”: Para alterar um valor já existente por outro;
+   ○ **“Substituir valor”**: Para alterar um valor já existente por outro;
 
    I. Será exibido um campo para selecionar o valor a ser substituído e outro campo será exibido para a inserção do novo valor.
 
    ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_substituir_valor.png)
 
-   ○ “Remover um valor”: Para remover um valor específico em um metadado com a configuração “Permitir valores múltiplos" habilitada;
+   ○ **“Remover um valor”**: Para remover um valor específico em um metadado com a configuração “Permitir valores múltiplos" habilitada;
 
    I. Um campo para selecionar o valor a ser removido será exibido à direita.
 
    ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_remover_um_valor.png)
 
-   ○ “Limpar valores”: Para remover todos os valores de um “metadado”;
+   ○ **“Limpar valores”**: Para remover todos os valores de um “metadado”;
 
    ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_limpar_valores.png)
 
-   ○ “Copiar valor”: Para fazer uma cópia dos valores a partir de um outro “metadado do item”;
+   ○ **“Copiar valor”**: Para fazer uma cópia dos valores a partir de um outro “metadado do item”;
 
    I. Será exibido um campo para selecionar o “metadado” do qual o valor será copiado. Importante ressaltar que os “tipos dos metadados” de origem e destino devem ser iguais. A tabela seguinte mostra as restrições entre as configurações dos “metadados” para que se possa realizar a cópia.
 
@@ -130,11 +130,11 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
    ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_botao_concluir.png)
 
-   > Nota: Além dos “metadados”, na “edição em massa” é possível alterar as seguintes configurações de cada item:
+   > **Nota**: Além dos “metadados”, na “edição em massa” é possível alterar as seguintes configurações de cada item:
    >
-   > § “Status”: É possível alterar essa configuração para os valores: “Publicado”, “Privado”, “Rascunho” e “Lixo”;
+   > **“Status”**: É possível alterar essa configuração para os valores: “Publicado”, “Privado”, “Rascunho” e “Lixo”;
    >
-   > § “Permitir comentários”: É possível alterar essa configuração para os valores: “Aberto” e “Fechado”.
+   > **“Permitir comentários”**: É possível alterar essa configuração para os valores: “Aberto” e “Fechado”.
 
 ### 
 
@@ -208,7 +208,7 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
 4. Selecione “Editar itens selecionados em sequência”;
 
-   ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_Editar_itens_sequencia.png)
+   ![Acesse o painel de controle](\_assets\images\editaritensselecionadosemmassa.png)
 
 5. Edite os campos desejados;
 
@@ -224,9 +224,9 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
 7. Ao concluir as alterações no “item” exibido, selecione:
 
-   ○ “Atualizar”: As alterações realizadas no “item” serão salvas e o próximo “item” é exibido para edição;
+   ○ **“Atualizar”**: As alterações realizadas no “item” serão salvas e o próximo “item” é exibido para edição;
 
-   ○ “Salvar como rascunho”: O “item” tem seu “status” alterado para rascunho.
+   ○ **“Salvar como rascunho”**: O “item” tem seu “status” alterado para rascunho.
 
    ![Acesse o painel de controle](\_assets\images\Acoes_em_massa_concluir_alteracoes.png)
 
@@ -240,10 +240,11 @@ criação em massa é feita diretamente do “painel administrativo da coleção
 
 ## Importar itens
 
-Importe vários “itens” com “metadados pré-configurados” e valores preenchidos com o Importador .csv.
+Importe vários “itens” com “metadados pré-configurados” e valores preenchidos com o [Importador .csv](https://tainacan.github.io/tainacan-wiki/#/pt-br/importers?id=importador-csv-items).
 
 ------
 
 ## Importar Taxonomias
 
-Crie taxonomias com “vocabulários controlados” e “valores hierárquicos” utilizando o Importador de Vocabulário.
+Crie taxonomias com “vocabulários controlados” e “valores hierárquicos” utilizando o [Importador de Vocabulário](https://tainacan.github.io/tainacan-wiki/#/pt-br/importers?id=importador-csv-de-vocabulários-taxonomias). 
+

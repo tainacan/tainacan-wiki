@@ -73,9 +73,11 @@ Novas *“coleções”* podem ser criadas também com um modelo de “*metadado
 
 
 
-*“Metadados”* a nível de *“coleção”* são aplicados apenas aos *“itens”* criados nesta *“coleção”*. Os metadados também são em coleções “*filhas”* desta coleção; 
+○ “Metadados” a nível de “coleção” são aplicados apenas aos “itens” criados nesta “coleção”. Os metadados também são em coleções “filhas” desta coleção; 
 
-Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/collections?id=criar-coleções)[Criar coleção](https://tainacan.github.io/tainacan-wiki/#/pt-br/collections?id=criar-coleções) para saber mais; 
+○ Crie ou escolha a “coleção” que deseja “criar novos metadados”. Consulte Criar coleção para saber mais;
+
+
 
 1. Faça login no WordPress com seu *“nome de usuário”* e *“senha”*; 
 
@@ -102,6 +104,8 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    **“Nome”**: Nome do *“Metadado”*, Por exemplo: *“Material do item”*, *“Estado de conservação”*, e etc.; 
 
    **“Descrição”**: Breve descrição, útil para descrever ou explicar como o *“metadado”* deve ser preenchido. A descrição pode ser visualizada passando o cursor por sobre o ponto de interrogação, que fica ao lado do *“metadado”*, durante o preenchimento; 
+
+   ![Acesse o painel de controle](\_assets\images\descricao_metadado.png)
 
    **“URL Semântica”**: URL da descrição semântica do *“metadado”*. Configuração opcional; 
 
@@ -185,6 +189,8 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
 
    <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/-UoNKi7KfBw" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
+   !>**Atenção**: Para criar novos termos na lista de seleção, é necessário que o usuário tenha permissão para a edição do “metadado” em questão. O “metadado” de lista de seleção não permite a criação de novos termos durante o preenchimento, estes termos precisam ser configurados previamente.
+
    
 
    **“Taxonomias”**: 
@@ -252,7 +258,7 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    2.Quando uma *“coleção”* é selecionada, a seção *“Metadados para busca”* permite escolher os metadados desta *“coleção”* que irão auxiliar na localização de *“itens”* durante o preenchimento deste *“metadado”*; 
 
    3.Habilite *“permitir itens repetidos”* para que um mesmo *“item”* da *“coleção relacionada”* seja atribuído como valor do *“metadado”* em diferentes *“itens”*. 
-
+   
    <iframe
        width="560"
        height="513" 
@@ -272,19 +278,19 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    
    Note que, ao usá-los: 
    
-   ​		Não é possível ter uma *“Taxonomia”* como *“Metadado filho”*; 
+   ● Não é possível ter uma “Taxonomia” como “Metadado filho”;
    
-   1.Um *“metadado composto”* não pode ser marcado como *“Obrigatório”* ou *“Valor Único”*. Esse atributo será marcado nos filhos. Se o *“metadado composto”,* porém, está marcado como *“Aceita múltiplos valores”*, seus filhos não poderão ser marcados como *“Obrigatório”*; 
+   ● Um “metadado composto” não pode ser marcado como “Obrigatório” ou “Valor Único”. Esse atributo será marcado nos filhos. Se o “metadado composto”, porém, está marcado como “Aceita múltiplos valores”, seus filhos não poderão ser marcados como “Obrigatório”;
    
-   2.Os *“metadados filhos”* não podem ser marcados como *“Multivalorados”*, e não possuem opções de visualização (*“Ver na lista”*), estas configurações correspondem ao pai; 
+   ● Os “metadados filhos” não podem ser marcados como “Multivalorados”, e não possuem opções de visualização (“Ver na lista”), estas configurações correspondem ao pai;
    
-   3.“Metadados compostos”* não estão disponíveis como opção para *“Busca Avançada”* ou *“Edição em Massa”*, apenas seus filhos.
+   ● “Metadados compostos” não estão disponíveis como opção para “Busca Avançada” ou “Edição em Massa”, apenas seus filhos.
    
    ​		■**Configurações adicionais:** 
    
-   Logo ao se criar um *“metadado composto”*, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de *“metadados”* desejados para dentro desta área para criar filhos; 
+   1.Logo ao se criar um *“metadado composto”*, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de *“metadados”* desejados para dentro desta área para criar filhos; 
    
-   Note que a ordenação funciona internamente entre filhos, mas, uma vez criados, não é possível promover os *“metadados”* para *“não filhos”*. 
+   2.Note que a ordenação funciona internamente entre filhos, mas, uma vez criados, não é possível promover os *“metadados”* para *“não filhos”*. 
    
    <iframe
        width="560"
@@ -299,13 +305,11 @@ Crie ou escolha a *“coleção”* que deseja “*criar* *novos metadados”*. 
    
    “*Metadados”* do tipo *“Usuário”* atribuem um usuário WordPress como valor para seu preenchimento. Com ele você pode vincular usuários à *“itens”* e definir um significado para tal vínculo, em geral desejado para fins de gestão. 
    
-   Caso deseje que o campo seja de início preenchido com o valor do atual *“Autor do item”* (o usuário que o criou), marque a opção *“Por padrão é o autor do item”*. 
+   § Caso deseje que o campo seja de início preenchido com o valor do atual “Autor do item” (o usuário que o criou), marque a opção “Por padrão é o autor do item”.
    
    > **Nota:** Marcar a opção acima não faz com que itens *“já existentes”* tenham seus valores deste *“metadado”* automaticamente preenchidos. Para isso, é possível usar o método *“Copiar”* da edição em massa, passando dados para o *“metadado tipo usuário”*, vindos do atributo *“Criado por”*, que equivale ao *“autor do item”*. 
    
    Atualmente o Tainacan tem nove tipos de *“metadados por padrão”*, mas novos conjuntos[ ](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type)[podem ser desenvolvidos](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type) de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. Consulte o artigo sobre o[ ](https://tainacan.github.io/tainacan-wiki/#/dev/)[Desenvolvimento do Plugin](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber mais. 
-
-!>**Atenção**: Para criar novos termos na lista de seleção, é necessário que o usuário tenha permissão para a edição do *“metadado”* em questão. O *“metadado”* de lista de seleção não permite a criação de novos termos durante o preenchimento, estes termos precisam ser configurados previamente. 
 
 
 
@@ -411,11 +415,7 @@ Excluir *“Metadados a nível de Repositório”*:
 
    ![Acesse o painel de controle](\_assets\images\091.png)
 
-!>**Atenção:** Excluir *“Metadados a nível de coleção”* afeta as informações de todos os *“itens”* criados nesta *“coleção”*;  
-
-Na tela de edição de *“Metadados”* (a nível de repositório ou a nível de coleção), é possível visualizar os *“metadados já criados”* (ou herdados) na coluna à esquerda; 
-
-A exclusão do *“metadado”* implica, também, na exclusão de seus valores em todos os *“itens”* aos quais se aplica. Antes da exclusão do *“metadado”*, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Para *“desabilitar um metadado”*, basta clicar no botão ao lado da *“caneta de edição”*. 
+!>**Atenção:** Excluir *“Metadados a nível de coleção”* afeta as informações de todos os *“itens”* criados nesta *“coleção”*;  Na tela de edição de *“Metadados”* (a nível de repositório ou a nível de coleção), é possível visualizar os *“metadados já criados”* (ou herdados) na coluna à esquerda; A exclusão do *“metadado”* implica, também, na exclusão de seus valores em todos os *“itens”* aos quais se aplica. Antes da exclusão do *“metadado”*, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Para *“desabilitar um metadado”*, basta clicar no botão ao lado da *“caneta de edição”*. 
 
 ![Acesse o painel de controle](\_assets\images\092.png)
 
