@@ -14,19 +14,19 @@ Ao clicar em uma “atividade”, é exibida uma janela com:
 
 ![Acesse o painel de controle](\_assets\images\103.png)
 
-​	a. “Descrição da atividade”;
+​	a. “**Descrição da atividade”**;
 
-​	b. “Data e hora das atividades”;
+​	b. **“Data e hora das atividades”**;
 
-​	c. “Autor da atividade”;
+​	c. **“Autor da atividade”**;
 
-​	d. “Duas listas”:
+​	d. **“Duas listas”**:
 
 ​		○ À esquerda, o quadro reúne informações antes da alteração;
 
 ​		○ À direita, o quadro reúne as informações depois da alteração. 
 
-
+​	e. Administradores podem reverter estas alterações clicando em
 
 ## Registro de atividades do Repositório
 
@@ -46,11 +46,11 @@ Reúne atividades como criação, edição e exclusão de “coleções”, “m
 
 4. Nesta página você pode filtrar as “atividades” por:
 
-   a. “Intervalo de datas”;
+   a. **“Intervalo de datas”**;
 
-   b. “Por usuário”;
+   b. **“Por usuário”**;
 
-   c. “Busca geral”.
+   c. **“Busca geral”**.
 
    ![Acesse o painel de controle](\_assets\images\105.png)
 
@@ -76,11 +76,11 @@ Reúne “atividades” como criação, edição e exclusão de “itens”, con
 
    ![Acesse o painel de controle](\_assets\images\107.png)
 
-   ​	a. “Intervalo de datas”;
+   ​	a. **“Intervalo de datas”**;
 
-   ​	b. “Por usuário”;
+   ​	b. **“Por usuário”**;
 
-   ​	c. “Busca geral”.
+   ​	c. **“Busca geral”**.
 
 
 
@@ -107,3 +107,9 @@ Reúne “atividades” como criação, edição e exclusão de “valores no it
 5. Nesta página você pode “filtrar as atividades” por:
 
    ![Acesse o painel de controle](\_assets\images\110.png)
+   
+   a. **“Intervalo de datas”**;
+   
+   b. **“Por usuário”**;
+   
+   c. **“Busca geral”**.
