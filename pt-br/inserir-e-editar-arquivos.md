@@ -1,14 +1,36 @@
-# Inserir e editar imagens
+# Inserir e editar arquivos
 
-Existem algumas formas de adicionar imagens aos _“itens”_ do Tainacan. Esse tipo de ação pode ser realizada individualmente, adicionando a imagem direto ao item ou primeiro à biblioteca, em sequência ou em massa. Sendo que, todas as imagens utilizadas no Tainacan se encontram alocadas na _“Biblioteca de Mídia do WordPress”_.
+Apesar de poder ser uma URL para uma fonte externa, um item no Tainacan costuma ter seu Documento configurado como um arquivo, tal como uma imagem, vídeo, áudio ou PDF, que fica armazenado no banco de dados do WordPress. Além disso, pode se ter anexos - também arquivos - que oferecem mais informações sobre este item. Nesta página cobriremos alguns processos que podem ser feitos para submissão destes arquivos, adição em massa de itens a partir de arquivos e a edição de imagens diretamente pelo painel do _WordPress_;
+
+## Entendendo o fluxo de submissão
+
+Todas os arquivos utilizados no Tainacan também podem ser visualizados na _“Biblioteca de Mídia do WordPress”_, mas existem diferenças entre o fluxo de inserção feito pela bilioteca de mídias e pelo próprio Tainacan. A imagem a seguir nos auxilia a entender um pouco o que acontece por trás dos panos:
+
+![Diferenças no fluxo de upload de arquivos](_assets/images/uploads.png)
+
+Ao se enviar uma arquivo diretamente para a _“Biblioteca de Mídia do WordPress”_, este arquivo é armazenado na estrutura de pastas de uploads do _WordPress_, seguindo um sistema de pastas como o demonstrado, onde os arquivos estão organizados por data. Esta organização pode ser alterada no próprio _WordPress_ ou por uso de plugins.
+
+?> Quando se adiciona um Documento ou Anexo para algum item do Tainacan, porém, o envio no modal de mídias que o Tainacan abre faz com que o arquivo seja armazenado em uma outra estrutura, que usa dos IDs da coleção e do item atual. Por conta disso, ao se abrir um modal de mídias a partir da tela de edição de itens do Tainacan, **só serão mostrados ali arquivos que possuem vínculo com o item e a opção de enviar novos**.
+
+Desta maneira podemos garantir por exemplo, controle de privacidade dos arquivos (que ainda pode ser melhorado como [explicado neste artigo](/pt-br/optimization#blindando-o-wordpress)). Note que os itens privados terão um início diferente: \_x\_.
+
+!> Surge desta organização o impedimento de que mais de um arquivo seja usado por dois itens, por exemplo. Isto é importante porém, pois sem esta restrição a privacidade dos mesmos não poderia ser garantida, já que um item poderia ser público e outro privado.
+
+Portanto:
+
+1. Para um arquivo ser utilizado pelo item, ele precisa ser enviado específicamente para este item.
+2. Um arquivo enviado diretamente para a _“Biblioteca de Mídia do WordPress”_ só pode ser referenciado no item através do seu link público, porém não "
+   pertencerá" ao item;
+
+É comum o desejo de se usar arquivos enviados para a biblioteca de mídias em itens porque este espaço costuma ter acesso imediato, ao se entrar no admin do WordPress. Além disto, enviar item a item vários arquivos pode ser tedioso, porém temos dois caminhos para ser resolver isso, que mencionamos mais a frente: a [adição em massa de itens a partir de arquivos](#adição-em-massa-de-arquivos) e [importação de arquivos e anexos via CSV](/pt-br/importers#importar-arquivos-e-anexos);
 
 ## Biblioteca de mídia do WordPress
 
-Todas as imagens utilizadas no Tainacan ficam armazenadas na _“Biblioteca de Mídia do WordPress”_. As imagens podem ser incorporadas diretamente à biblioteca antes de serem adicionadas a um _“item”_. As edições nas imagens só podem ser realizadas na _“Biblioteca de Mídia”_.
+Como mencionado, todos os arquivos utilizados no Tainacan ficam armazenados na _“Biblioteca de Mídia do WordPress”_, onde também podem ser feitas edições em arquivos que forem imagens.
 
 ### Inserir imagens
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Acesse o _“painel de controle”_ do _WordPress_;
 
 2. Na barra lateral esquerda, clique em _“Mídia”_ e então em _“Biblioteca”_;
 
@@ -174,6 +196,6 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
    ![Acesse o painel de controle](_assets\images\144.png)
 
-### Inserir imagem em massa
+### Adição em massa de arquivos
 
 > Consulte [Importando arquivos e anexos](/pt-br/importers#importar-arquivos-e-anexos) para aprender como inserir imagens em massa.

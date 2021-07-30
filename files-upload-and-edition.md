@@ -1,6 +1,6 @@
 ?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
-# Inserir e editar imagens
+# Inserir e editar arquivos
 
 Existem algumas formas de adicionar imagens aos itens do Tainacan. Esse tipo de ação pode ser realizada individualmente, adicionando a imagem direto ao item ou primeiro a biblioteca, em sequência ou em massa. Sendo que, todas as imagens utilizadas no tainacan se encontram alocadas na Biblioteca de mídia do WordPress.
 
