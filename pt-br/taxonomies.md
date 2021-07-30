@@ -79,15 +79,13 @@ Os *“termos”* podem ter hierarquia, o que significa que quando você procura
 
 ![Acesse o painel de controle](\_assets\images\098.png)
 
-a. “Imagem da Header”: É possível adicionar uma imagem que aparece na visualização do “termo” de uma “taxonomia”, dependendo das configurações
+a. **“Imagem da Header”**: É possível adicionar uma imagem que aparece na visualização do “termo” de uma “taxonomia”, dependendo das configurações e do tema adotado. O tema padrão do Tainacan exibe a imagem da Header na página do “termo da taxonomia”;
 
-e do tema adotado. O tema padrão do Tainacan exibe a imagem da Header na página do “termo da taxonomia”;
+b. **“Nome”**: nome do “termo” que fará parte da “taxonomia”;
 
-b. “Nome”: nome do “termo” que fará parte da “taxonomia”;
+c. **“Descrição”**: descrição do “termo” que fará parte da “taxonomia”;
 
-c. “Descrição”: descrição do “termo” que fará parte da “taxonomia”;
-
-d. “Termo pai”: determina o nível hierárquico do “termo” em relação aos demais desta mesma “taxonomia”.
+d. **“Termo pai”**: determina o nível hierárquico do “termo” em relação aos demais desta mesma “taxonomia”.
 
 3.Clique em “Salvar” para concluir a criação do “termo”.
 
@@ -169,7 +167,7 @@ Repita a ação para “adicionar novos termos”, clicando novamente em “Cria
 
 ![Acesse o painel de controle](\_assets\images\102.png)
 
-#### Atenção: um aviso será exibido para confirmar esta ação. A “exclusão da taxonomia” implica, também, na “exclusão das informações” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”. Exclua a “taxonomia” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de Atividades para saber mais.
+!>**Atenção**: um aviso será exibido para confirmar esta ação. A “exclusão da taxonomia” implica, também, na “exclusão das informações” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”. Exclua a “taxonomia” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de Atividades para saber mais.
 
 ### Excluir termos
 
@@ -189,4 +187,4 @@ Repita a ação para “adicionar novos termos”, clicando novamente em “Cria
 
 ![Acesse o painel de controle](\_assets\images\101.png)
 
-#### Atenção: um aviso será exibido para confirmar esta ação. A “exclusão do termo” implica também na “exclusão deste valor” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”.
+!>Atenção: um aviso será exibido para confirmar esta ação. A “exclusão do termo” implica também na “exclusão deste valor” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”.

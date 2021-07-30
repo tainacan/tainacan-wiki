@@ -20,7 +20,7 @@ O “Importador CSV” permite que usuários importem “itens” para uma “co
 
 O arquivo para envio deve ser um “.csv padrão”, em que cada linha abriga a informação de um “item”, e cada coluna abriga os valores para cada “metadado” em específico. Além disso, a primeira linha deve conter os “títulos” das colunas.
 
-Exemplo:
+**Exemplo:**
 
 | Coluna do Metadado 1 | Coluna do Metadado 2 | Coluna do Metadado 3 |
 | -------------------- | -------------------- | -------------------- |
@@ -43,7 +43,7 @@ Cada coluna do arquivo “.csv” deve ser mapeada para um “metadado” na “
 
 As colunas especiais que podem ser usadas são:
 
-**special_item_id** - Informa o ID do “item” no banco de dados do Tainacan:
+a. **“special_item_id”**: Informa o ID do “item” no banco de dados do Tainacan
 
 ○ O “special_item_id” de um “item” é gerado automaticamente pelo Tainacan quando o “item” é criado;
 
@@ -53,27 +53,29 @@ As colunas especiais que podem ser usadas são:
 
 ○ Para atualizar um “item” existente via importador, esta coluna deve estar no arquivo “.csv” utilizado com o id dos “itens” que desejam ser alterados preenchidos. A opção “Item Repetido”, na tela de importador de arquivos “.csv”, deve estar preenchida com “Atualizar”. Para ignorar um “item” num arquivo “.csv” durante a importação, essa opção deve estar preenchida com “Ignorar”.
 
-**special_item_status** - Informa o status do “Item”. Os valores possíveis são:
+b. **“special_item_status”**: Informa o status do “Item”. Os valores possíveis são:
 
-○ “draft” (rascunho);
+○ **“draft”** (rascunho);
 
-○ “private” (privado);
+○ **“private”** (privado);
 
-○ “publish” (público).
+○ **“publish”** (público).
 
-**special_document** - permite que o usuário informe o documento do item. Consulte Importando arquivos e anexos;
+c. **“special_document”**: permite que o usuário informe o documento do item. Consulte Importando arquivos e anexos;
 
-**special_attachments, special_attachments|REPLACE ou special_attachments|APPEND** - permite que o usuário informe os anexos. Consulte Importando arquivos e anexos;
+d. **“special_attachments, special_attachments|REPLACE, special_attachments|APPEND”**: permite que o usuário informe os anexos. 
 
-**special_comment_status** - permite que o usuário informe se os “itens” podem receber ou não comentários. Os valores possíveis são:
+> Consulte Importando arquivos e anexos;
 
-○ “open” (aberto para comentários);
+e. **“special_comment_status”**: permite que o usuário informe se os “itens” podem receber ou não comentários. Os valores possíveis são:
 
-○ “closed” (fechado para comentários).
+○ **“open”** (aberto para comentários);
 
-> Nota: Se nas configurações da “coleção” não estiver habilitada a função “Permitir comentários”, não será possível um usuário fazer comentários num “item”, por mais que ele tenha sido importado utilizando o valor “open” para esta coluna especial.
+○ **“closed”** (fechado para comentários).
 
-Exemplo:
+> **Nota**: Se nas configurações da “coleção” não estiver habilitada a função “Permitir comentários”, não será possível um usuário fazer comentários num “item”, por mais que ele tenha sido importado utilizando o valor “open” para esta coluna especial.
+
+**Exemplo**:
 
 | special_item_id | Coluna do Metadado 1 | Coluna do Metadado 2 | special_item_status | special_document                  | special_atachments                 |
 | --------------- | -------------------- | -------------------- | ------------------- | --------------------------------- | ---------------------------------- |
@@ -89,11 +91,13 @@ Use “special_document”, para definir o documento do seu “item”, e “spe
 
 Os valores para “special_document” podem ser:
 
-- url
-- file
-- text
+a. **“url”;**
 
-Exemplo:
+b. **“file”;**
+
+c. **“text”.**
+
+**Exemplo**:
 
 ```
 nome, special_document
@@ -104,7 +108,7 @@ Um texto,text:This is a sample text
 
 Os valores para “special_attachments” são apenas uma lista de arquivos. Se você deseja adicionar muitos anexos, use o caractere separador que você definiu na opção de “separador de células multivaloradas” do seu arquivo “.csv”. Nos dois casos, você pode apontar um arquivo usando uma “URL”, ou apenas o nome do arquivo. Para apontar o nome do arquivo, você deve configurar essa opção para o Tainacan localizar os arquivos no seu servidor. Você pode enviar eles diretamente (via FTP, por exemplo) e o Tainacan irá adicioná-los aos seus “itens”.
 
-Exemplo:
+**Exemplo**:
 
 ```
 nome, special_attachments
@@ -144,7 +148,7 @@ Os “tipos de metadados” suportados nativamente atualmente são:
 - `relationship` - Relacionamento: os valores devem ser a ID do item relacionado.
 - `compound([*nome do metadado*|*tipo do metadado*,...])` - Metadado composto: a lista de metadados que compõe o metadado composto deve ser informado entre os parentes utilizando a mesma sintaxe para definir metadados simples
 
-Por exemplo:
+**Por exemplo**:
 
 ```
 Nome,Assunto|taxonomy,Data de criação|date, "Avaliação|compound(Descrição|text,Pontuação|numeric)
@@ -154,7 +158,7 @@ Nome,Assunto|taxonomy,Data de criação|date, "Avaliação|compound(Descrição|
 
 Se uma das colunas do seu CSV tem valores para um “metadado de taxonomia” e esta “taxonomia” possui hierarquia, você pode informar essa hierarquia utilizando o sinal de >>.
 
-Por exemplo:
+**Por exemplo**:
 
 ```
 nome, Categoria
@@ -183,7 +187,7 @@ Depois do “tipo de metadado”, você também pode informar outras instruçõe
 - `status_private` - Status privado: metadado visível apenas para editores
 - `collection_key_yes` - Configurar valores deste metadado como único: os valores desse metadado não se repetem em itens nessa coleção.
 
-Exemplo de várias instruções combinadas:
+**Exemplo de várias instruções combinadas**:
 
 ```
 Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|collection_key_yes|status_private
@@ -213,29 +217,29 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 
 6. Selecione ou crie uma “Coleção Destino” para indicar onde os “itens” serão criados;
 
-   ​ \*.Selecionando criar uma nova coleção em branco, ao concluir a “coleção”, você será redirecionado para o “Importador” novamente.
+    \*.Selecionando criar uma nova coleção em branco, ao concluir a “coleção”, você será redirecionado para o “Importador” novamente.
 
    ![Acesse o painel de controle](_assets\images\Importador_Seleção_Colecao.png)
 
 7. Configure os campos a seguir de acordo com as configurações realizadas no seu arquivo “.csv”:
 
-   a. “Delimitador csv”: caractere que separa valores;
+   a. **“Delimitador csv”**: caractere que separa valores;
 
-   b. “Delimitador de metadado multi-valorado”: caractere que separa valores dentro de uma mesma célula;
+   b. **“Delimitador de metadado multi-valorado”**: caractere que separa valores dentro de uma mesma célula;
 
-   c. “Delimitador de texto”: caractere que delimita todos os valores dentro de uma mesma célula;
+   c. **“Delimitador de texto”**: caractere que delimita todos os valores dentro de uma mesma célula;
 
-   d. “Codificação do arquivo”: parâmetro que determina a codificação dos valores de texto do arquivo (geralmente UTF-8, garanta que o arquivo “.csv” esteja codificado conforme as opções disponíveis no importador);
+   d. **“Codificação do arquivo”**: parâmetro que determina a codificação dos valores de texto do arquivo (geralmente UTF-8, garanta que o arquivo “.csv” esteja codificado conforme as opções disponíveis no importador);
 
-   e. “Valor vazio”: expressão utilizada no arquivo “.csv” para representar “metadados” que serão limpos durante atualização de “itens” já existentes numa “coleção”. A expressão padrão é [empty value].
+   e. **“Valor vazio”**: expressão utilizada no arquivo “.csv” para representar “metadados” que serão limpos durante atualização de “itens” já existentes numa “coleção”. A expressão padrão é [empty value].
 
    ![Acesse o painel de controle](_assets\images\Importador_Parametros_Importacao.png)
 
 8. Configure estes campos de acordo com suas preferências para importação:
 
-   a. “Item repetido”: Determina o comportamento do Tainacan ao identificar “itens” idênticos no processo de importação. Selecione Atualizar para que o “item” receba os valores do arquivo “.csv” ou selecione “Ignorar” para que o “item” já existente na “coleção” não seja modificado;
+   a. **“Item repetido”**: Determina o comportamento do Tainacan ao identificar “itens” idênticos no processo de importação. Selecione Atualizar para que o “item” receba os valores do arquivo “.csv” ou selecione “Ignorar” para que o “item” já existente na “coleção” não seja modificado;
 
-   b. “Caminho para o servidor”: O Importador permite que vários “itens” sejam inseridos em uma “coleção” diretamente de um arquivo “.csv”. Consulte Importador-csv#Importando arquivos e anexos para saber como configurar seu arquivo “.csv” corretamente.
+   b. **“Caminho para o servidor”**: O Importador permite que vários “itens” sejam inseridos em uma “coleção” diretamente de um arquivo “.csv”. Consulte Importador-csv#Importando arquivos e anexos para saber como configurar seu arquivo “.csv” corretamente.
 
    I. De acordo com a documentação, aponte a URL no campo caminho para o servidor.
 
@@ -262,17 +266,17 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 
     ● Caso algum “metadado” ainda não exista na “coleção”, selecione “Criar metadado”.
 
-    ​ ○ Ou se você desejar criar todos de uma vez, clique em “Marcar todos os metadados para serem criados”.
+     ○ Ou se você desejar criar todos de uma vez, clique em “Marcar todos os metadados para serem criados”.
 
     ![Acesse o painel de controle](_assets\images\Marcar_todos_os_metadados_para_serem_criados.png)
 
 12. Para criar novos “metadados” na “coleção”, selecione “Adicionar mais metadados”. Consulte Metadados para saber mais sobre a criação e os “tipos de metadados” existentes;
 
-    #### Atenção: Neste processo, “metadados” do arquivo “.csv” não serão criados se não tiverem um “metadado” apontado na coleção destino.
+    !>**Atenção**: Neste processo, “metadados” do arquivo “.csv” não serão criados se não tiverem um “metadado” apontado na coleção destino.
 
-    #### Atenção: As informações de cada “metadado” em cada “item” dependem da criação de seu respectivo “metadado” neste processo.
+    !>**Atenção**: As informações de cada “metadado” em cada “item” dependem da criação de seu respectivo “metadado” neste processo.
 
-    #### Atenção: Uma vez criado, não é possível alterar o “tipo do Metadado”. Por exemplo, alterar um “metadado” do tipo “Texto” para “Texto Longo”, ou “Numérico” para “Data”.
+    !>**Atenção**: Uma vez criado, não é possível alterar o “tipo do Metadado”. Por exemplo, alterar um “metadado” do tipo “Texto” para “Texto Longo”, ou “Numérico” para “Data”.
 
     § Consulte Características gerais de metadados para saber mais.
 

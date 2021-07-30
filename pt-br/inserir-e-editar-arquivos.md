@@ -74,9 +74,9 @@ Como mencionado, todos os arquivos utilizados no Tainacan ficam armazenados na _
 
 As imagens podem ser inseridas diretamente ao item, sem que antes sejam adicionadas a Biblioteca de mídia. Existem três formas de realizar essa ação:
 
-1. **Inserir a imagem individualmente em cada item;**
-2. **Inserir imagens em sequência em um conjunto de itens;**
-3. **Inserir imagens em massa.**
+- **Inserir a imagem individualmente em cada item;**
+- **Inserir imagens em sequência em um conjunto de itens;**
+- **Inserir imagens em massa.**
 
 A ação de inserir imagens individualmente é indicada para os casos em que existem poucos itens em que imagens serão adicionadas. A inserção de imagens em sequência é adequada para um conjunto de itens, que pode abranger de dois até todos os itens de uma mesma página. Já a inserção de imagens em massa visa abranger uma grande quantidade de itens.
 
@@ -115,9 +115,7 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
    No _“rodapé da página”_ é exibida uma barra de progresso com as informações referentes:
 
-   \* Última vez que as alterações realizadas foram salvas.
-
-   ![Acesse o painel de controle](_assets\gifs.mp4)
+   * Última vez que as alterações realizadas foram salvas.
 
    <iframe
        width="560"
@@ -127,15 +125,14 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
        allowfullscreen>
    </iframe>
-
+   
 8. No canto inferior direito da tela clique em:
 
-   ![Acesse o painel de controle](_assets\images\141.png)
+![Acesse o painel de controle](_assets\images\141.png)
 
-   1. **“Enviar para a lixeira”**, para que o _“item”_ seja enviado para a lixeira;
-   2. **“Voltar para rascunho”**, para que o _“item”_ tenha seu _status_ alterado para _“rascunho”_;
-   3. **“Atualizar”**, para confirmar as alterações realizadas no “item”;
-   4. No rodapé da página é exibida uma barra de progresso com as informações referentes:
+- **“Enviar para a lixeira”**, para que o _“item”_ seja enviado para a lixeira;
+- **“Voltar para rascunho”**, para que o _“item”_ tenha seu _status_ alterado para _“rascunho”_;
+- **“Atualizar”**, para confirmar as alterações realizadas no “item”;
 
 ### Inserir imagem em sequência
 
@@ -153,8 +150,6 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
    I. Todos os “itens” da página podem ser selecionados ao clicar em “Selecionar todos os itens da página”.
 
-   ![Acesse o painel de controle](_assets\gifs\142.mp4)
-
    <iframe
        width="560"
        height="513" 
@@ -163,7 +158,7 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
        allowfullscreen>
    </iframe>
-
+   
 5. Clique em “Ações em massa” e então em “Editar itens selecionados em sequência”;
 
    ![Acesse o painel de controle](_assets\images\143.png)
@@ -176,13 +171,20 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
 8. Clique em “Selecionar arquivo”;
 
-   I. No “rodapé da página” é exibida uma barra de progresso com as informações referentes;
+   I. No “rodapé da página” é exibida uma barra de progresso com as informações referentes:
 
    i. Item atual e total de itens;
 
    ii. Última vez que as alterações realizadas foram salvas;
 
-   ![Acesse o painel de controle](_assets\gifs\139.mp4)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/M24K-V_FmMw"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
 9. No canto inferior direito da tela, clique em:
 

@@ -43,7 +43,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 5. Escolha o tipo de mídia que irá compor o “item”:
 
-   ● “Arquivo”: Faça o upload de um arquivo como “imagens”, “áudios”, “arquivos de texto”, “vídeos”, etc., a partir do seu computador, ou selecione a partir da “biblioteca de mídia” do WordPress. Consulte este artigo sobre a compatibilidade de arquivos do WordPress para saber mais;
+   ● **“Arquivo”**: Faça o upload de um arquivo como “imagens”, “áudios”, “arquivos de texto”, “vídeos”, etc., a partir do seu computador, ou selecione a partir da “biblioteca de mídia” do WordPress. Consulte este artigo sobre a compatibilidade de arquivos do WordPress para saber mais;
 
    <iframe
        width="560"
@@ -54,7 +54,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
        allowfullscreen>
    </iframe>
 
-   ● “Texto simples”: Um campo para inserção de texto sem formatação;
+   ● **“Texto simples”**: Um campo para inserção de texto sem formatação;
 
    <iframe
        width="560"
@@ -65,7 +65,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
        allowfullscreen>
    </iframe>
 
-   ● “URL”: Permite a incorporação de links (embed) multimídia de vários sites, como YouTube, Vimeo e etc.;
+   ● **“URL”**: Permite a incorporação de links (embed) multimídia de vários sites, como YouTube, Vimeo e etc.;
 
    <iframe
        width="560"
@@ -88,11 +88,11 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 7. Determine o status do item:
 
-   ● “Público”: O “item” poderá ser visualizado por todos;
+   ● **“Público”**: O “item” poderá ser visualizado por todos;
 
    > ○ Nota: O controle de visibilidade do “item” para o público externo é definido pelo “status da coleção”. 
 
-   ● “Privado”: O “item” fica visível apenas para editores da coleção. Consulte Permissões de Usuários para saber mais.
+   ● **“Privado”:** O “item” fica visível apenas para editores da coleção. Consulte Permissões de Usuários para saber mais.
 
    ![Acesse o painel de controle](\_assets\images\Criar_Itens_Status_item.png)
 
@@ -121,11 +121,11 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 10. Para concluir a “criação do item”, escolha entre as opções abaixo:
 
-    ● “Publicar”: O “item” será publicado na “coleção”;
+    **● “Publicar”**: O “item” será publicado na “coleção”;
 
-    ● “Salvar como rascunho”: O “item” adicionado ficará disponível apenas na seção “Rascunho” da “coleção”;
+    ● **“Salvar como rascunho”**: O “item” adicionado ficará disponível apenas na seção “Rascunho” da “coleção”;
 
-    ● “Descartar”: A criação do “item” é interrompida, e os campos preenchidos não serão salvos.
+    ● **“Descartar”**: A criação do “item” é interrompida, e os campos preenchidos não serão salvos.
 
     ![Acesse o painel de controle](\_assets\images\Criar_Itens_Descastar_Rascunho_Salvar.png)
 
@@ -157,40 +157,39 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 5. Para concluir a edição do , escolha entre as opções abaixo:
 
-   ● “Atualizar”: As alterações no “item” serão salvas;
+   ● **“Atualizar”**: As alterações no “item” serão salvas;
 
-   ● “Enviar para a lixeira”: O “item” será enviado para a lixeira;
+   ● **“Enviar para a lixeira”**: O “item” será enviado para a lixeira;
 
-   ● “Voltar para rascunho”: O “item” será transformado em “Rascunho”.
+   ● **“Voltar para rascunho”**: O “item” será transformado em “Rascunho”.
 
    ![Acesse o painel de controle](\_assets\images\Editar_itens_lixeira_rascunho_atualizar.png)
 
    
+
 ## Excluir Itens
 
-1. Acesse o painel de controle do WordPress;
+1. Acesse o painel de controle do WordPress; 
 
    ![Acesse o painel de controle](\_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+2. Na barra lateral esquerda, clique em "Tainacan”;
 
    ![Acesse o painel de controle](\_assets\images\002.png)
 
-3. Na seção “coleções”, clique na “coleção” desejada;
+3. Na seção "coleções”, clique na “coleção” desejada;
 
    ![Acesse o painel de controle](\_assets\images\Selecao_Colecao.png)
 
-4. Clique no “ícone lixeira”, localizado próximo as informações do “item” que deseja excluir:
+4. Clique no "ícone lixeira”, localizado próximo as informações do “item” que deseja excluir:
 
    ● Você pode utilizar “filtros” ou o “campo de busca” para localizar o “item”;
 
    > Nota: A “exclusão do item” implica, também, na “exclusão do documento”, “informações nos metadados” e “anexos”.
 
-   #### Atenção: Exclua o “item” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de atividades para saber mais.
+   !>**Atenção**: Exclua o “item" somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de atividades para saber mais.
 
    ![Acesse o painel de controle](\_assets\images\Editar_Itens_Selecionar_Lixeira.png)
-
-
 
 ### Restaurar itens da lixeira
 
@@ -202,7 +201,7 @@ Quando você exclui um *“item”* de uma *“coleção”* no Tainacan, ele é
 
 2. Clique na seta localizada à esquerda do *“ícone lixeira”* de cada *“item”* que deseja restaurar. Ao restaurar um *“item”* da lixeira, ele volta para o seu status anterior, *“publicado”* ou *“privado”*. 
 
-   ![Acesse o painel de controle](\_assets\images\Restaurar_Item _da_Lixeira_botão.png)
+   ![Acesse o painel de controle](\_assets\images\Restaurar_botão.png)
 
 ### Excluir permanentemente
 
@@ -217,3 +216,4 @@ Quando você exclui um *“item”* de uma *“coleção”* no Tainacan, ele é
    ![Acesse o painel de controle](\_assets\images\Deletar_Permanente_Item.png)
 
    
+
