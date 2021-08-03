@@ -1,5 +1,5 @@
 :root {
-    --base-font-size: 16px;
+    --base-font-size: 15px;
     --theme-color: #298596;
     --content-max-width: 58em;
     --base-background-color: white;
@@ -87,7 +87,7 @@ article h1 {
     padding: 0;
 }
 .app-nav ul li>p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Cover page */
@@ -171,12 +171,12 @@ section.cover img {
 }
 .sidebar ul li a,
 .sidebar ul li p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 .sidebar ul li ul a,
 .sidebar ul li ul p {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 .sidebar ul li.active > a {
@@ -524,7 +524,7 @@ img.medium-zoom-image {
 	border: none;
 	background: #4ea2ad;
 	color: white;
-	font-size: 30px;
+	font-size: 1.875rem;
 	height: 138px;
 }
 .home-panel p {
@@ -534,7 +534,7 @@ img.medium-zoom-image {
     background: none;
     border: none;
     color: white;
-    font-size: 34px;
+    font-size: 2.125rem;
     text-align: center;
     padding: 0;
 }
@@ -552,7 +552,7 @@ img.medium-zoom-image {
     border: none;
     background: transparent;
     text-align: left;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 600;
     padding: 2px 15px;
 }
