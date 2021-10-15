@@ -27,6 +27,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Roles and Capabilities](/dev/roles-capabilities.md) 
 
 ### More on Plugin Development {docsify-ignore}
+
 * [Exporting and Exposing](/dev/exporting-and-exposing.md)
 * [CSV Importer](/dev/csv-importer.md)
 * [Vocabulary Importer](/dev/vocabulary-importer.md)
@@ -34,6 +35,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [Repository Methods](/dev/repository-methods.md)
 
 ### Plugin Extension {docsify-ignore}
+
 * [Creating a new Metadata Type](/dev/creating-metadata-type.md) - A guide for creating your custom Metadata Type
 * [Creating a new Filters Type](/dev/creating-filters-type.md) - A guide for creating your custom Filters Type
 * [How to create Exporters](/dev/exporter-flow.md)
@@ -43,6 +45,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 * [The Vue Items List Component](/dev/the-vue-items-list-component.md) - Understanding the client-side rendered items list that provides all power to faceted search.
   
 ### Theme development or extension {docsify-ignore}
+
 * [Creating compatible themes](/dev/creating-compatible-themes.md) - An Introduction on how to create a theme that fully support Tainacan features
 * [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates for those that Tainacan adds to WordPress Template Hierarchy
 * [Customizing the Items List](/dev/customizing-the-items-list.md) - Tweaking the appearence of the items list
