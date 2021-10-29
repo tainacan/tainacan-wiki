@@ -32,6 +32,7 @@ Este é o tema padrão do projeto Tainacan e está disponível nos repos oficiai
   - Mostrar os anexos como um carrossel e integrar o documento nesta mesma lista;
   - Exibir um cabeçalho customizado que se assemelha ao da coleção;
   - Botão de download no Documento;
+  - Exibir uma sessão de "Itens relacionados a este";
 - Atualizações frequentes e em sincronia com novas versões do plugin Tainacan;
 - Paleta de cores customizável;
 - Cor do cabeçalho de cada coleção customizável dentro do plugin, quando o tema está ativo;
@@ -41,6 +42,31 @@ Este é o tema padrão do projeto Tainacan e está disponível nos repos oficiai
 - Suporte a barra lateral;
 
 ![Algumas telas do Tema Tainacan Interface](/_assets/gifs/themes-tainacan-interface.gif)
+
+### Blocksy
+
+O segundo tema mais recomendado que mencionamos aqui não é um tema filho, mas um popular [tema disponível no repositório WordPress](https://br.wordpress.org/themes/blocksy/ ":ignore"). Sua integração com o Tainacan é possível via um plugin, também disponibilizado no [repositório do WordPress](https://br.wordpress.org/plugins/tainacan-blocksy/ ":ignore"). Tendo ambos o plugin e o tema (ou um tema filho deste) ativado, você terá a acesso a uma série de configurações disponíveis no menu Personalizar. Nós cobrimos estas opções em mais detalhes no [post de lançamento do plugin](https://tainacan.org/blog/2021/06/14/integrando-o-tema-blocksy-com-o-tainacan/ ":ignore") e vale a pena dar uma olhada na [página oficial do tema](https://creativethemes.com/blocksy/ ":ignore"). Para mencionar alguns dos seus recursos:
+
+- Templates específicos para as listas de itens do Repositório, de Termos e configurações separadas _para cada coleção_, incluindo diversas opções como:
+  - Escolher diferentes paletas de cores;
+  - Esconder vários elementos da barra de controle da busca;
+  - Mudar o comportamento do painel de filtros, como seu tamanho e se ele começa escondido;
+  - Algumas opções extras para o layout do cabeçalho da lista;
+- Template específico para a página do item, com diversas opções, dentre elas:
+  - Mudar a orden em que Anexos, Documento e metadados são exibidos, incluindo a possibilidade de usar duas colunas: uma para documentos e anexos, outra para os metadados, ao lado;
+  - Exibir lista de metadados em mais de uma coluna;
+  - Exibir rótulo dos metadados ao lado do seus valores;
+  - Mostrar anexos como um carrossel integrados ao documento na mesma lista;
+  - Mostrar um cabeçalho customizado que usa a imagem de miniatura como banner;
+  - Botão de download no documento;
+  - Navegação de itens (próximo e anterior);
+  - Sessão de Itens Relacionados baseado em uma taxonomia de escolha ou nos "Itens relacionados a este" via metadado de relacionamento;
+  - Caixa de compartilhamento personalizável;
+- Paleta de cor muito customizável;
+- Botão de "Mais" no menu do cabeçalho quando o nuḿero de itens não cabe na tela;
+- Várias outras opções de personalização do layout disponíveis pelo tema;
+
+![Algumas telas do tema Blocksy](/_assets/gifs/themes-blocksy.gif)
 
 ### Identidade do Governo (IDG-WP)
 
