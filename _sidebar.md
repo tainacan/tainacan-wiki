@@ -36,7 +36,7 @@
   - [WordPress 3DHOP](plugin-3d-hop.md "A plugin for rendering 3D objects via 3DHOP inside Tainacan - Tainacan Wiki")
 - [For Developers](dev/README.md "Developers Session of Pages - Tainacan Wiki")
 - About Tainacan
-  - [:link:Oficial website](https://tainacan.org/ ":ignore")
+  - [:link:Official website](https://tainacan.org/ ":ignore")
   - [Releases](releases.md "Released versions - Tainacan Wiki")
   - [:link:Publications](https://pesquisa.tainacan.org/ ":ignore")
   - [Presentations](presentations.md "Slideshow presentations related to Tainacan - Tainacan Wiki")
