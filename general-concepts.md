@@ -1,53 +1,51 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+# General Concepts
 
-# Conceitos Gerais
-
-### Vídeo Tutorial: Usando o Tainacan - Conceitos gerais
+### Video Tutorial: Using Tainacan - General Concepts (Portugeuse)
 <iframe
     width="560"
     height="513" 
-    src="https://www.youtube.com/embed/fzbd36fbuII?start=52"
+    src="https://www.youtube.com/watch?v=fzbd36fbuII"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
 
-## Coleções 
+## Colletions 
 
-Uma coleção é um grupo de itens que compartilham um mesmo conjunto de metadados. Cada item enviado para seu repositório digital pertencerá a uma única coleção.
+A collection is a group of items that share the same metadata. Every item added to your digital repository will belong to a single collection.
 
-> Por exemplo: você pode ter uma coleção de "pinturas" com metadados como "Título", "Autor", "País", "Técnica", etc e outra coleção para "filmes", com "Título", "Diretor", "País", "Duração" e "Gênero"'.
+>For example: you can have a collection of "paintings" with metadata like "Title", "Painter", "Country", "Technique", etc. and another collection for "Movies" with "Title", "Director", "Country", "Duration", and "Gender".
 
-Para cada coleção você pode configurar um conjunto diferente de metadados, entretanto, eles podem compartilhar taxonomias em comum, o que significa, por exemplo, que você pode navegar por itens de um "país" e obter resultados de "pinturas" e de "filmes" nos resultados
+For each collection you can configure a different set of metadata, however they can share common taxonomies, which means, for example, that you can browse items from a “country” and get results from “paintings” and “films”. ” in the results.
 
-> [Consulte a seção taxonomias](#taxonomias)
+> [See the Taxonomies section](#taxonomies)
 
-As coleções também podem ter coleções "filhas", que vão herdar seus metadados e a partir disso podem também adicionar outros metadados para informações adicionais.
+Collections can also have “child” collections, which will inherit their metadata and from there can also add other metadata for additional information.
 
-## Itens
+## Items
 
-Itens são o verdadeiro conteúdo do repositório. A "pintura", o "filme",o "livro" e assim por diante. Estes itens são da uma coleção e possuem todos os metadados configurados à coleção a qual pertencem. 
+Items are the actual contents of the repository. The “painting”, the “film”, the “book” and so on. These items are from a collection and have all the metadata configured for the collection they belong to.
 
-> Na linguagem do WordPress, cada item é um post e seu tipo de postagem representa sua coleção. 
+> In WordPress parlance, each item is a post and your post type represents your collection.
 
-### Documento
+### Document
 
-O documento é a informação principal do item. É o objeto que os metadados se referem. O Tainacan aceita 3 tipos de documentos: 
-* **"Arquivo"**: um arquivo adicionado ao item. Pode ser uma imagem, vídeo, pdf, audio ou outro tipo arquivo suportado. 
-* **"URL"**: um link de um site com conteúdo ou arquivo externo. Estes links podem ser de um site genérico, um arquivo específico ou serviços de mídia. No caso de serviços de mídia (como o YouTube, por exemplo) o Tainacan reconhece o endereço e exibe o player apropriado usando [oEmbed](https://oembed.com/). A lista de serviços compatíveis com a conversão para "embeds" no WordPress pode ser consultada [neste link](https://codex.wordpress.org/pt-br:Incorporados).
-* **"Texto"**:  Um texto simples, armazenado diretamente no banco de dados, o usuário pode digitar ao criar ou editar um item. 
+The document is the main information of the item. It is the object that the metadata refers to. Tainacan accepts 3 types of documents: 
+* **"File"**: A file added to the item. It can be an image, video, pdf, audio or other supported file type.
+* **"URL"**: a link to a website with external content or file. These links can be to a generic website, a specific file or media services. In the case of media services (like YouTube for example) Tainacan recognizes the address and displays the appropriate player using [oEmbed](https://oembed.com/). he list of services compatible with converting to “embeds” in WordPress can be consulted [at this link](https://codex.wordpress.org/Embeds).
+* **"Text"**:  A plain text, stored directly in the database, the user can type when creating or editing an item.
 
-> O "tipo de documento" pode ser alterado após o envio do item, por exemplo: você pode enviar o item com um documento do tipo "texto" de referência e posteriormente inserir o "arquivo" ou "URL" pertencente a ele.
+> The “document type” can be changed after submitting the item. For example: you can send the item with a document of type “text” for reference and later insert the “file” or “URL” belonging to it.
 
-## Metadados
+## Metadata
 
-Os metadados são as informações referentes ao documento.
+Metadata is information about the document.
 
-Cada coleção tem um conjunto de metadados para descrever seus documentos. Isso significa que a coleção a qual o item pertence determina os metadados que ele tem.
+Each collection has a set of metadata to describe its documents. This means that the collection the item belongs to determines the metadata it has.
 
-Cada metadado tem um conjunto de configurações possíveis. É um metadado obrigatório? Seus valores são únicos para cada item (Um número de registro, por exemplo)? Ele aceita múltiplos valores (Vários autores, por exemplo)?
+Each metadata has a set of possible settings. Is metadata required? Are your values unique for each item (A registration number, for example)? Does it accept multiple values (Multiple authors, for example)?
 
-### Vídeo Tutorial: Criação de Metadados
+### Video Tutorial: Creating Metadata (Portuguese)
 <iframe
     width="560"
     height="513" 
@@ -57,91 +55,89 @@ Cada metadado tem um conjunto de configurações possíveis. É um metadado obri
     allowfullscreen>
 </iframe>
 
-> [Consulte a seção Tipos de Metadados](#tipos-de-metadados)
+> [See the Metadata Types section](#metadata-types)
 
-É possível configurar metadados a nível de repositório, que serão herdados por todas coleções no repositório. Da mesma forma, coleções configuradas como "filha" herdam todos metadados da coleção selecionada. 
+It is possible to configure repository-level metadata, which will be inherited by all collections in the repository. Likewise, collections configured as “child” inherit all metadata from the selected collection.
 
-> [Consulte a seção Coleções](#colecoes)
+> [See the Collections section](#collections)
 
->  Também é possível "importar e exportar metadados predefinidos".
+>  It is possible to configure repository-level metadata, which will be inherited by all collections in the repository. Likewise, collections configured as “child” inherit all metadata from the selected collection.
 
-### Tipos de Metadados
+### Metadata Types
 
-`Metadata Types` ou Tipos de Metadados são os objetos que representam os tipos de metadados que podem ser usados. 
+Metadata Types are objects that represent the types of metadata that can be used. 
 
-> Alguns exemplos de `Metadata Types` são "Texto", "Texto Longo", "Data", "Relacionamento", etc. 
+> Some examples of Metadata Typesare “Text”, “Long Text”, “Date”, “Relationship”, etc.
 
-Cada "tipo de metadado" possui suas próprias configurações e componentes da web que serão usados na renderização de sua interface.
+Each metadata type has its own settings and web components that will be used in rendering your interface.
 
-`Metadata Types` são tipos de metadados que podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos fornecidos com o Tainacan. 
+Metadata Types can be created via plugins and extend the default set of types provided with Tainacan.
 
-## Filtros
+## Filters
 
-Para cada coleção é possível escolher quais de seus metadados serão usados como opção de filtros para resultados em uma busca facetada na visualização da coleção.
+For each collection it is possible to choose which of its metadata will be used as a filter option for results in a faceted search in the collection view.
 
-> Filtros permitem que o usuário filtre a visualização dos itens de uma coleção.
+> Filters allow the user to filter the view of items in a collection.
 
-### Tipos de Filtros
+### Filter Types
 
-`Filter Types` ou Tipos de Filtros são diferentes tipos de interfaces para filtrar itens baseados num tipo de metadado específico nas coleções. São alguns exemplos de `Filter Types`:
+ Filter Types are different types of interfaces for filtering items based on a specific metadata type in collections.
 
-* **"input text"** - entrada de texto
-* **"datepicker"** - seleção de data
-* **"date range picker"** - seleção de intervalo de data
-* **"number range slider"** - barra de intervalo numérico
-* **"list of checkboxes"** - lista de seleção múltipla
+* **Input text** - text input
+* **Datepicker** - date picker
+* **Date range picker** - date range selection
+* **Number range slider** - numeric range slider
+* **Selectbox** - multiple selection list
 
-Cada objeto `Filter Types` possui suas próprias configurações e componentes da web que serão usados na renderização de sua interface.
+Each Filter Type object has its own settings and web components that will be used in rednering its interface.
 
-> `Filter Types` podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos de filtros do Tainacan.
+> Filter Types can be created via plug-ins and extend the standard set of Tainacan filter types.
 
-## Taxonomias
+## Taxonomies
 
-Taxonomias podem ser criadas e usadas para a classificação de itens. Exemplos de taxonomias comuns são a de Gênero, Países, etc. 
+Taxonomies can be created and used to classify items. Examples of common taxonomies are Genre, Countries, etc.
 
-> Na linguagem do WordPress, elas são taxonomias personalizadas. Consulte a [documentação do WordPress](https://codex.wordpress.org/Taxonomies/) para saber mais.
+> In WordPress parlance, they are custom taxonomies. See the [WordPress documentation to learn more](https://wordpress.org/support/article/taxonomies/).
 
-Cada taxonomia tem um conjunto de termos, por exemplo, a taxonomia "gênero" pode ter termos como "drama" e "comédia". Os termos podem ter hierarquia, o que significa que quando você procura por itens que tem termos com termos filhos (por exemplo, "Samba"), os resultados incluirão itens que tenham qualquer um dos termos filhos. (Por exemplo, "Samba de Gafieira" e "Samba Maxixe"). 
+Each taxonomy has a set of terms, for example the taxonomy “genre” might have terms like “drama” and “comedy”. Terms can be hierarchical, which means that when you search for items that have terms with child terms (eg, “Samba”), the results will include items that have any of the child terms. (For example, “Samba de Gafieira” and “Samba Maxixe”).
 
-Termos também podem ter uma descrição, um ícone ou uma imagem que o represente e também pode ser ligado a um conceito existente um uma ontologia. Os termos também podem ter sua própria URL no site, com uma página listando todos os itens relacionados a ele, inclusive de diferentes coleções, dessa forma eles se comportam como se fossem uma coleção. 
+Terms can also have a description, an icon or an image that represents them and can also be linked to an existing concept or ontology. Terms can also have their own URL on the site, with a page listing all items related to it, including from different collections, so they behave as if they were a collection.
 
->  As taxonomias podem ser compartilhadas por várias coleções. 
-> [Consulte o tópico "Tipos de Metadados" para saber como.](#tipos-de-metadados)
+>  Taxonomies can be shared across multiple collections. [See the topic “Types of Metadata” to learn how.](#tipos-de-metadados)
 
-### Vídeo Tutorial: Filtros e Taxonomias
+### Vídeo Tutorial: Filters and Taxonomies
 
 <iframe
     width="560"
     height="513" 
-    src="https://www.youtube.com/embed/y2WIzDyzKSs?start=17"
+    src="https://www.youtube.com/embed/y2WIzDyzKSs"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
 
-## Em discussão
+## Under Discussion
 
-Esta seção reúne algumas funcionalidades que estão em discussão para desenvolvimento! 
+This section gathers some features that are under discussion for development!
  
-### Tipos de Itens
+### Types of Items
 
-"Tipos de itens" possibilitam a habilidade de especializar a descrição do item com base na sua natureza. Assim, dentro da mesma coleção é possível ter itens que variam sua natureza e, portanto, têm um conjunto diferente de metadados.
+Item types enable the ability to specialize the item description based on its nature. Thus, within the same collection it is possible to have items that vary in nature and therefore have a different set of metadata.
 
-Para cada "tipo de item"', é possível escolher um grupo de metadados, da mesma maneira que se faz para uma coleção. Quando se cria um item dentro de uma coleção, ele terá todos os metadados escolhidos para esta coleção e também os metadados relacionados ao seu tipo. 
+For each item type it is possible to choose a group of metadata, in the same way as for a collection. When you create an item within a collection, it will have all the metadata chosen for that collection and also the metadata related to its type.
 
-Um "tipo de item" pode ser qualquer coisa. Por exemplo, LPs, livros e pinturas são tipos de itens distintos que podem ter metadados específicos. Mas também poderia ter conceitos abstratos, como "transações financeiras". 
+An item type can be anything. For example, LPs, books, and paintings are distinct item types that can have specific metadata. But it could also have abstract concepts such as “financial transactions”.
 
-### Área de Trabalho
+### Workspace
 
-A "área de trabalho" contém itens que ainda não fazem parte de coleções. Essa função pode ser útil para o envio de vários itens para o repositório para depois serem organizados em coleções. 
+The workspace contains items that are not yet part of collections. This function can be useful for uploading multiple items to the repository to later organize them into collections.
 
-Os itens na "área de trabalho" não são visíveis publicamente e têm apenas os metadados configurados a nível de repositório.
+Items in the “workspace” are not publicly visible and have only the metadata configured at the repository level.
 
-### Coleções Temáticas
+### Themed Collections
 
-As "coleções temáticas" são outra maneira de organizar os itens no seu repositório. Em essência, cada coleção temática é um termo dentro de uma taxonomia chamada "Coleções Temáticas", que pode conter itens de qualquer coleção, e um item pode fazer parte de várias coleções temáticas. 
+“Themed collections” are another way to organize the items in your repository. In essence, each themed collection is a term within a taxonomy called “Themed Collections”, which can contain items from any collection, and an item can be part of multiple themed collections.
 
-A lógica é a mesma dos termos em taxonomias, a única diferença é que com isso há uma outra maneira de gestão dessas coleções. 
+The logic is the same as the terms in taxonomies, the only difference is that with this there is another way of managing these collections.
 
-Outra ideia aqui é que, tendo uma "''taxonomia fixa''" chamada coleções temáticas, poderíamos ter apenas um item de menu "''Taxonomias''" ou "''Organizar por taxonomias''" que permite navegar pelos itens por taxonomia ao invés de coleções, e manipulá-los.
-
+Another idea here is that, having a “fixed taxonomy” called Thematic Collections, we could have just one menu item “Taxonomies” or “Organize by taxonomies” that allows browsing the items by taxonomy rather than collections, and manipulate them
