@@ -60,7 +60,7 @@ It is possible to configure repository-level metadata, which will be inherited b
 
 Metadata Types are objects that represent the types of metadata that can be used.
 
-> Some examples of Metadata Typesare “Text”, “Long Text”, “Date”, “Relationship”, etc.
+> Some examples of Metadata Types are “Text”, “Long Text”, “Date”, “Relationship”, etc.
 Each metadata type has its own settings and web components that will be used in rendering your interface.
 
 Metadata Types can be created via plugins and extend the default set of types provided with Tainacan.
@@ -98,7 +98,7 @@ Terms can also have a description, an icon or an image that represents them and 
 <iframe
     width="560"
     height="513"
-    src="https://www.youtube.com/embed/y2WIzDyzKSs"
+    src="https://www.youtube.com/embed/y2WIzDyzKSs?start=17"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
