@@ -109,9 +109,9 @@ Alternatively, I might also want to give you an idea of ​​what the most comm
 
 But maybe I want to show a specific set of Categories on my homepage, and leave a link for my visitors on the homepage. For this I use the Terms List Block, which allows me to manually choose which Categories to show:
 
-
 ![Using the Terms List](/pt-br/_assets/gifs/getting-started-15.gif)
 
 All these Blocks have different displays and configurations. To better understand them, it is worth reading our [documentation](/#/gutenberg-blocks).
 
 ## Exploring Deeper
+In this article you can touch a little bit of what is possible with the Tainacan, but make no mistake, this was just a peek! There are many subjects that can be addressed such as Relationship Type Metadata, Importers, Exporters, Exhibitors, Metadata Standard, Activity Control, Attachments, Document Types, etc. We hope Tainacan can help you build amazing digital repositories!
