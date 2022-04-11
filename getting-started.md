@@ -1,122 +1,117 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+# First Steps
 
-# Primeiros Passos
+Let's understand what is possible with Tainacan and how it can be used to manage digital repositories in an easy and intuitive way.
 
-Vamos entender o que é possível fazer com o Tainacan e como eu posso usá-lo para gerir meu repositório digital de maneira fácil e intuitiva.
+## What Do We want?
 
-## O que queremos?
+Let's assume that I have a collection of photos that I want to expose to the world. On my WordPress site I already have posts and pages that I created to talk about it, but now I want to set up my repository and organize it in a systematic way. It all starts with creating the collection.
 
-Consideremos que eu tenho uma coleção de fotos que eu desejo expor para o mundo. No meu site WordPress eu já tenho posts e páginas que criei para falar sobre ela, mas agora quero montar meu repositório e organizar ele de maneira sistematizada. Tudo começa com a criação da coleção.
+## Creating the 'My Photos' Collection
 
-## Criando a coleção Minhas Fotos
+In the admin page of my WordPress site, I have the Tainacan plugin installed and I can access it from the WordPress sidebar:
 
-No painel administrativo do meu site WordPress, eu já tenho o plugin instalado e posso acessar ele pela barra lateral:
+![Accessing the Tainacan admin page](/pt-br/_assets/gifs/getting-started-0.gif)
 
-![Acessando o admin do Tainacan](/pt-br/_assets/gifs/getting-started-0.gif)
+On the plugin's homepage, I can create my collection, a process that is done in the form in the image below. I've chosen a name, a description, thumbnail and header images, as well as some views that we'll test later.
 
-Na página inicial do plugin, posso criar minha coleção, processo que é feito no formulário da imagem abaixo. Escolhi um nome, uma descrição, imagens de miniatura e cabeçalho, além de alguns modos de visualização que testaremos mais tarde.
+![Creating a Collection](/pt-br/_assets/gifs/getting-started-1.gif)
 
-![Criando uma coleção](/pt-br/_assets/gifs/getting-started-1.gif)
+## Configuring the Collection's Metadata
 
-## Configurando os metadados da coleção
+By configuring the metadata, we are creating the attributes by which the items in the collection will be described. As it is a collection of photos, I am interested in some specific information:
 
-Ao configurar os metadados, estamos criando os atributos pelos quais os itens da coleção serão descritos. Se tratando de uma coleção de fotos, tenho interesse em algumas informações específicas:
+* The title of the photo;
+* The description of the photo;
+* The date the photo was taken;
+* The machine used for the photo;
+* The photo category.
 
-* O título da foto;
-* A descrição da foto;
-* A data em que a foto foi tirada;
-* A máquina usada para a foto;
-* A categoria da foto;
+When we get to the Metadata page, we see that the first two metadata already exist by default. They can be disabled or  their label changed. I can create the other metadata, using any of the available metadata types. Let's see which ones I chose:
 
-Ao entrarmos na página de metadados, vemos que os dois primeiros metadados já existem por padrão, embora eu possa desabilitá-los ou mudar o seu rótulo, se assim desejar. Mas posso criar os outros, usando algum dos tipos de metadados disponíveis. Vejamos quais escolhi:
+* **Photo Data** - *Date Type* - The date the photo was taken;
+* **Camera** - *Simple Text Type* - The name of the camera used to take the photo;
+* **Category** - *Taxonomy* - The category of the photo.
 
-* **Data da Foto** - *Tipo Data* - A data em que a foto foi tirada;
-* **Máquina Fotográfica** - *Tipo Texto simples* - O nome da máquina usada para a foto;
-* **Categoria** - *Tipo Taxonomia* - A categoria da foto;
+![Creating Metadata](/pt-br/_assets/gifs/getting-started-2.gif)
 
-![Criando metadados](/pt-br/_assets/gifs/getting-started-2.gif)
+For the Category I chose a taxonomy metadata. Why's that? Well, it is worth thinking about; what is a category? For my collection, it's a set of terms that I use to describe a photo. The terms can have hierarchical relationships, such as a mother category with subordinate daughter categories, in addition to new ones appearing according to the new photos that arrive in my collection. This definition of category fits like a glove in what we define as Taxonomies in Tainacan parlance. But to actually create this metadata, first I need to configure the specific Taxonomy.
 
-Para a Categoria escolhi um metadado tipo taxonomia. Por quê isso? Bom, cabe pensar, o que é uma categoria? Para minha coleção, é um conjunto de termos que uso para descrever uma foto, que podem ter relações hierárquicas, como categorias mães e categorias filhas, além de surgirem novas de acordo com as novas fotos que cheguem à minha coleção. Isso cai como uma luva no que definimos como Taxonomias no Tainacan. Mas para de fato criar este metadado, antes eu preciso configurar esta Taxonomia.
+## Creating Taxonomic Categories
 
-## Criando a taxonomia Categorias
+In the repository menu, on the left side, we can access the list of taxonomies and from there create a new one, called Category. After creating, I can also enter terms, which will also be categories themselves, with which I will label my photos (eg urban , nature , abstract, etc.).
 
-No menu do repositório, ao lado esquerdo, podemos acessar a lista de taxonomias e de lá criar uma nova, denominada Categoria. Após criar, posso também inserir termos, que serão as minhas categorias em si, com as quais vou rotular minhas fotos (por exemplo, *urbano*, *natureza*, *abstrato*...). 
+![Creating a taxonomy](/pt-br/_assets/gifs/getting-started-3.gif)
 
-![Criando uma taxonomia](/pt-br/_assets/gifs/getting-started-3.gif)
+Going back to the metadata settings page, I can now create my metadata that will use this taxonomy. I can also leave the “Allow new terms” option checked, so that I can easily create new terms while setting up my photos. By the way, it's time to bring them to Tainacan!
 
-Voltando à página de configurações de metadados, agora posso criar meu metadado que vai usar desta taxonomia. Posso também deixar marcada a opção de "Permitir a inserção de termos", para que eu possa criar novos termos facilmente enquanto estiver configurando minhas fotos. Aliás, está na hora de trazer elas para o Tainacan!
+![Creating taxonomic metadatum](/pt-br/_assets/gifs/getting-started-4.gif)
 
-![Criando um metadado tipo taxonomia](/pt-br/_assets/gifs/getting-started-4.gif)
+## Uploading Items to Tainacan
 
-## Subindo itens para o Tainacan
+The items in the My Photos collection are the photos themselves. One possible way to add new items/photos is to add them one by one, accessing the “Create Item” menu directly on the collection Items page. But let's assume that I already have several of them stored in a folder on my computer. I can save time by using the “Bulk add items” function:
 
-Os itens da coleção Minhas Fotos, são as fotos em si. Um caminho possível é inserirmos uma por uma, acessando o menu de "Criar Item", logo na página de itens da coleção. Mas vamos considerar que eu já tenha várias delas guardadas em uma pasta no meu computador. Posso seguir um caminho mais simples, usando a função "Adicionar itens em massa":
+![Bulk add items](/pt-br/_assets/gifs/getting-started-5.gif)
 
-![Adicionando itens em massa](/pt-br/_assets/gifs/getting-started-5.gif)
+When uploading my photos, I can either Bulk Edit or Sequence Edit. The first is for dealing with similar metadata between the photos, and the second is for looking at each item one by one. Let's start with what is similar in these photos: the Camera. As I took them all with the same camera, I will configure this information in the Mass Edit screen. Then I go to the Sequence Edition, where we can see that Tainacan has already generated a thumbnail from my photos, which can be changed in the future. My photos will be public and there are no attachments related to them, so all I have to do is fill in the metadata.
 
-Ao fazer o upload de minhas fotos, posso partir para a Edição em Massa ou para a Edição em Sequência. A primeira vale para tratarmos de metadados em comum entre as fotos, e a segunda para olharmos cada item, um por um. Vamos começar pelo que há de comum nestas fotos: a Máquina Fotográfica. Como tirei todas com a mesma câmera, vou configurar essa informação na tela de Edição em Massa. Depois, sigo para a Edição em Sequência, onde podemos ver que o Tainacan já gerou uma miniatura a partir das minhas fotos, que pode ser alterada futuramente. Minhas fotos ficarão públicas e não existem anexos relacionados à elas, portanto me resta apenas preencher os metadados. 
+### Adding Metadata
 
-### Preenchendo metadados
+Every configuration made in the metadata screen is reflected here, in the item creation step. I can put the Title and Description of the photo and a valid date for the moment the photo was taken. The Camera has been pre-configured, so there's nothing to worry about here. As for the Category, I will set it as I see fit, using the categories I created earlier. If I realize I forgot a Category, I can create a new term for the taxonomy right here, directly from the item edit form. With all the metadata filled in, we can already see how our collection turned out by returning to the collection items page:
 
-Cada configuração feita na tela de metadados se reflete aqui, na etapa de criação do item. Posso colocar o Título e Descrição da foto e uma data válida para o momento em que a foto foi tirada. A Máquina Fotográfica já foi configurada previamente, portando não há nada com o que se preocupar aqui. Já a Categoria, esta será preenchida como eu achar mais conveniente, usando as categorias que criei anteriormente. Se de repente deixei alguma prá trás, posso criar o novo termo para a taxonomia aqui mesmo, diretamente pelo formulário de edição do item. Preenchidos todos os metadados, já podemos ver como nossa coleção ficou voltando a página de itens da coleção:
+![Editing items in Sequence](/pt-br/_assets/gifs/getting-started-6.gif)
 
-![Editando itens em sequência](/pt-br/_assets/gifs/getting-started-6.gif)
+## Browsing Your Collection
 
-## Navegando em sua coleção
+And there you have it, we have a collection of photos in our Tainacan repository! Note that we can change the view order, change the list view mode and even choose which metadata to show in some cases. While I am creating a photo collection, I prefer to use the Thumbnails mode.
 
-E aí está, temos uma coleção de fotos no nosso repositório Tainacan! Note que podemos mudar a ordem de visualização, mudar o modo de visualização da lista e até 
-escolher quais metadados mostrar em alguns casos. Como estou criando uma coleção de fotos, prefiro usar o modo "Miniatura". 
+![Browsing the collection](/pt-br/_assets/gifs/getting-started-7.gif)
+We already have a simple text search and the advanced search available, but we can further customize how we filter the items in this collection using…Filters!
 
-![Navegando pela coleção](/pt-br/_assets/gifs/getting-started-7.gif)
+## Configuring Filters
 
-Logo ao lado, já temos disponíveis a busca textual simples e a busca avançada. Mas podemos customizar melhor como vamos filtrar os itens desta coleção usando... filtros!
+Each Metadata Type you choose can be filtered in different ways. On the filters page, we can create a Date filter for the Photo Date metadata, as well as a filter with a list of checkboxes for the Category metadata. This list of checkboxes is one of the most useful features, because with it we can easily explore all the categories that were used to label my photos.
 
-## Configurando filtros
+![Creating Filters](/pt-br/_assets/gifs/getting-started-8.gif)
 
-Cada tipo de metadado escolhido pode ser filtrado de maneiras diferentes. Aqui na página de filtros, podemos criar um filtro de Data para o metadado da Data da Foto, além de um filtro com uma lista de checkboxes para o metadado de Categorias. Esta lista de checkboxes é um dos mais interessantes que temos, pois com ele podemos explorar facilmente todas as categorias que foram utilizadas para rotular minhas fotos.
+Let's go to the list of items and try the filters. Notice how, when we apply one of them, a tag appears above the list of items so we can remove the filter if desired? In the case of Category, we also have a value in parentheses next to the Category label. This counter indicates how many items are currently in the collection with this category, a view we call Cards.
 
-![Criando filtros](/pt-br/_assets/gifs/getting-started-8.gif)
+![Using Filters](/pt-br/_assets/gifs/getting-started-9.gif)
 
-Vamos para a lista de itens, experimentar estes filtros. Observe como, ao aplicarmos um deles, uma tag surge acima da lista de itens, para que possamos remover o filtro se desejado. No caso das categorias, temos também um valor entre parênteses ao lado do rótulo da categoria. Este contador indica quantos itens existem na coleção no momento com esta categoria, uma visão que denominamos "Faceta".
+## Viewing Your Collection on the Web
 
-![Usando filtros](/pt-br/_assets/gifs/getting-started-9.gif)
+This all sounds pretty cool, but so far we have only worked within Tainacan admin panel, which can only be accessed by those with the correct permissions. How does Tainacan integrate with my WordPress site? Just click on the eye icon in the upper righthand corner to find out:
 
-## Enxergando sua coleção no site
+![Viewing the collection online](/pt-br/_assets/gifs/getting-started-10.gif)
 
-Tudo isso parece bem legal, mas até então estamos dentro do painel administrativo do Tainacan, que pode ser acessado apenas por quem tem permissão... e como isto se integra ao meu site *WordPress*? Basta clicarmos no ícone de olho, no canto superior direito para descobrirmos:
+The Collection is public on our website, at the address configured by default on the Collection configuration page in the slug field. Here we also see other settings come into play, such as the Header Image, Thumbnail, and Collection Description. Above the list of Items, we have a “View Modes” option, which gives us different ways to see the collection as configured on the Collection page as well. Among these, there is also a special mode that is separate, the “Presentation” mode.
 
-![Vendo a coleção no tema](/pt-br/_assets/gifs/getting-started-10.gif)
+![Presentation](/pt-br/_assets/gifs/getting-started-11.gif)
 
-A coleção está então, pública no nosso site, no endereço que está configurado por padrão lá na página de configuração da Coleção, que vimos mais atrás. Aqui também vemos outras configurações entrarem em ação, como a imagem de cabeçalho, a miniatura e descrição da coleção. Acima da lista de itens, temos uma opção de "Modos de Visualização", que nos dá diferente formas de ver a coleção conforme configurado também na página da Coleção. Dentre estes, há também um modo especial que fica separado, o modo "Apresentação". 
+Browsing through the collection, we can click on the item and see its page, where the configured metadata is visible.
 
-![Apresentação](/pt-br/_assets/gifs/getting-started-11.gif)
+![Presentation](/pt-br/_assets/gifs/getting-started-12.gif)
 
-Navegando pela coleção, podemos clicar no item e ver sua página, onde estão visíveis os metadados configurados. 
+In addition to the public page of the collection, there are other pages, pre-defined by Tainacan that may be of interest to us, and which can be placed within easy reach on the WordPress site's menu. The first of these is the Collection List, available at '/collections', which - of course - shows all my public collections. Another is the Repository Item List, accessible at ''/items', which works like a collection page, but showing public items from all of my Collections, as well as their filters. You can configure the visibility of these pages.
 
-![Apresentação](/pt-br/_assets/gifs/getting-started-12.gif)
+## Telling Stories with Gutenberg Blocks
 
-Além da página pública da coleção, existem outras páginas, pré-definidas pelo Tainacan que podem ser de interesse para nós, e que podem ser colocadas de fácil acesso no menu do site. A primeira delas é a Lista de Coleções, disponível em `/colecoes`, que - obviamente - mostra todas as minhas coleções públicas. Outra é a Lista de Itens do Repositório, acessível em `/itens`, que funciona como uma página de coleção, porém mostrando itens públicos de todas as coleções, assim como seus filtros. Você escolhe se deseja expor ou não essas páginas.
+Having dedicated pages for content created on Tainacan is great, but I might want to show Tainacan content in the middle of my blog posts or even on pages I've created, like my homepage. For this, we can use Gutenberg blocks.
 
-## Contando histórias com blocos Gutenberg
+Gutenberg is what the WordPress content editor is called since WordPress version 5.0. It is an intuitive and flexible tool for building posts with blocks. With it, I can easily insert stylized images, videos, quotes, and text with different alignments and sizes. But just like I pull my images from the media gallery, or embed videos from a YouTube link, I might want to embed items from my Tainacan Collections. This is where these blocks come in.
 
-Ter páginas dedicadas para o conteúdo criado no Tainacan é interessante, mas talvez eu queira expor conteúdo do Tainacan em meio às minhas postagens do blog ou mesmo em páginas que eu criei, como minha página inicial. Para isso, nós usamos os blocos Gutenberg.
+For example, if I want to show my list of Items in the middle of a post, I can use the Item Search Block, instead of simply putting a link to my list of items, which has a lot of information and resources that can be distracting to my audience. Let's see it in use in this post:
 
-Gutenberg é como é chamado o editor de conteúdo do WordPress desde sua versão 5.0. É uma ferramenta intuitiva e flexível para construir postagens com uma estrutura de blocos. Com ele, eu posso facilmente inserir imagens, vídeos, citações e texto estilizados com diferentes alinhamentos e tamanhos. Mas assim como eu puxo minhas imagens da galeria de mídia, ou puxo vídeos de um link no YouTube, eu posso querer puxar itens da minha coleção Tainacan. É aqui que entram estes blocos. 
+![Using blocks to find items](/pt-br/_assets/gifs/getting-started-13.gif)
 
-Por exemplo, se eu quiser mostrar, no meio de uma postagem minha lista de itens, posso usar o Bloco de Busca de Itens, ao invés de simplesmente colocar um link para a minha lista de itens, que tem muita informação e recursos que podem distrair meu leitor. Vejamos ele em uso nesta postagem:
+Alternatively, I might also want to give you an idea of ​​what the most common categories are in my collection. For that I have the Facets List Block. The Facets List Block's tag cloud gives me a clear view of that.
 
-![Usando o bloco de busca de itens](/pt-br/_assets/gifs/getting-started-13.gif)
+![Using the Facets List Block](/pt-br/_assets/gifs/getting-started-14.gif)
 
-Por outro lado, posso também querer dar uma noção de quais são as categorias mais comuns em minha coleção, e pra isso tenho o Bloco de Facetas, que com sua nuvem de tags me dá uma visão clara disso.
+But maybe I want to show a specific set of Categories on my homepage, and leave a link for my visitors on the homepage. For this I use the Terms List Block, which allows me to manually choose which Categories to show:
 
-![Usando o bloco de facetas](/pt-br/_assets/gifs/getting-started-14.gif)
+![Using the Terms List](/pt-br/_assets/gifs/getting-started-15.gif)
 
-Mas talvez eu queira mostrar um conjunto de Categorias específico na minha página inicial, e deixar um link para meus visitantes na página inicial. Para isso uso o Bloco Estático de Termos, que permite escolher à mão quais mostrar:
+All these Blocks have different displays and configurations. To better understand them, it is worth reading our [documentation](/#/gutenberg-blocks).
 
-![Usando o bloco de facetas](/pt-br/_assets/gifs/getting-started-15.gif)
-
-Todos estes blocos possuem diferentes configurações de exibição e funcionamento, para melhor entendê-los vale uma leitura em nossa documentação.
-
-## Explorando mais a fundo
-
-Neste artigo você pode tocar um poquinho do que é possível com o Tainacan, mas não se engane, esta foi apenas uma espiada! Há muitos assuntos que podem ser abordados como Metadados Tipo Relacionamento, Importadores, Exportadores, Expositores, Padrão de Metadados, Controle de Atividades, Anexos, Tipos de Documentos, etc. Esperamos que o Tainacan possa te ajudar a construir repositórios digitais incríveis!
+## Exploring Deeper
+In this article you can touch a little bit of what is possible with the Tainacan, but make no mistake, this was just a peek! There are many subjects that can be addressed such as Relationship Type Metadata, Importers, Exporters, Exhibitors, Metadata Standard, Activity Control, Attachments, Document Types, etc. We hope Tainacan can help you build amazing digital repositories!
