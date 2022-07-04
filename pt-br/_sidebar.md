@@ -40,6 +40,7 @@
   - [Versões](pt-br/releases.md "Versões Lançadas - Tainacan Wiki")
   - [:link:Publicações](https://pesquisa.tainacan.org// ":ignore")
   - [Apresentações](pt-br/presentations.md "Apresentações relacionadas ao Tainacan - Tainacan Wiki")
+  - [Vídeos](pt-br/videos.md "Vídeos educacionais sobre o Tainacan - Tainacan Wiki")
 - Comunidade & Outros
   - [:link:Fórum da Comunidade](https://tainacan.discourse.group ":ignore")
   - [Colabore com esta Wiki](pt-br/CONTRIBUTING.md "Como contribuir com a Wiki do Tainacan - Tainacan Wiki")
