@@ -20,17 +20,17 @@ On the plugin's homepage, I can create my collection, a process that is done in 
 
 By configuring the metadata, we are creating the attributes by which the items in the collection will be described. As it is a collection of photos, I am interested in some specific information:
 
-* The title of the photo;
-* The description of the photo;
-* The date the photo was taken;
-* The machine used for the photo;
-* The photo category.
+- The title of the photo;
+- The description of the photo;
+- The date the photo was taken;
+- The machine used for the photo;
+- The photo category.
 
-When we get to the Metadata page, we see that the first two metadata already exist by default. They can be disabled or  their label changed. I can create the other metadata, using any of the available metadata types. Let's see which ones I chose:
+When we get to the Metadata page, we see that the first two metadata already exist by default. They can be disabled or their label changed. I can create the other metadata, using any of the available metadata types. Let's see which ones I chose:
 
-* **Photo Data** - *Date Type* - The date the photo was taken;
-* **Camera** - *Simple Text Type* - The name of the camera used to take the photo;
-* **Category** - *Taxonomy* - The category of the photo.
+- **Photo Data** - _Date Type_ - The date the photo was taken;
+- **Camera** - _Simple Text Type_ - The name of the camera used to take the photo;
+- **Category** - _Taxonomy_ - The category of the photo.
 
 ![Creating Metadata](/pt-br/_assets/gifs/getting-started-2.gif)
 
@@ -114,4 +114,5 @@ But maybe I want to show a specific set of Categories on my homepage, and leave 
 All these Blocks have different displays and configurations. To better understand them, it is worth reading our [documentation](/#/gutenberg-blocks).
 
 ## Exploring Deeper
-In this article you can touch a little bit of what is possible with the Tainacan, but make no mistake, this was just a peek! There are many subjects that can be addressed such as Relationship Type Metadata, Importers, Exporters, Exhibitors, Metadata Standard, Activity Control, Attachments, Document Types, etc. We hope Tainacan can help you build amazing digital repositories!
+
+In this article you can touch a little bit of what is possible with the Tainacan, but make no mistake, this was just a peek! There are many subjects that can be addressed such as Relationship Type Metadata, Importers, Exporters, Exhibitors, Metadata Standard, Activity Control, Attachments, Document Types, etc. You will also find educational resources in other places beyond this Wiki, such as the links listed in our [videos page](/videos.md). We hope Tainacan can help you build amazing digital repositories!
