@@ -1,31 +1,7 @@
-?> _TODO_ Document Tainacan Hooks!
+# Hooks
 
-## Actions
+In adittion to the [WordPress core hooks](https://developer.wordpress.org/plugins/hooks/), Tainacan has its own hooks, which offer developers opportunities to **expand or alterate the behaviour os certain sections of code**. Hooks are divided into two types: [Actions](/dev/actions) and [Filters](/dev/filters). Check their documentation bellow:
 
-tainacan-insert
-
-tainacan-insert-Item_Metadata_Entity
-
-tainacan-insert-Item
-
-register_field_types
-
-tainacan-insert-'.$obj->get_post_type()
-
-tainacan-insert-Term
-
-## Filters
-
-rest_{$this->collection->get_post_type()}_collection_params
-
-tainacan-get-map-'.$this->get_name()
-
-tainacan-insert-log-message-title
-
-tainacan-set-post-status
-
-tainacan-get-post-status
-
-tainacan-status-validation
-
-
+- [Tainacan Backend Actions](/dev/actions#backend-actions)
+- [Tainacan Backend Filters](/dev/filters#backend-filters)
+- [Tainacan Frontend Filters](/dev/filters#frontend-filters)
