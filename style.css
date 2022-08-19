@@ -577,6 +577,9 @@ a.fab:hover {
     margin-top: 120px;
     font-size: 0.875rem;
     padding: 0rem 1rem 0rem 0.25rem;
+    overflow: auto;
+    max-height: calc(100vh - 120px);
+    max-width: 100%;
 }
 .page_toc ul a {
     font-weight: 400;
@@ -584,6 +587,9 @@ a.fab:hover {
 }
 .page_toc ul a:hover span {
     color: var(--theme-color, #298596);
+}
+.page_toc ul code {
+    color: var(--link-color, #284472);
 }
 .page_toc .active {
     border-left: none;
