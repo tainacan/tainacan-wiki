@@ -10,244 +10,453 @@ The Tainacan Filters can be divided in Backend, _PHP-based_ filters and Frontend
 
 ## Backend Filters
 
-### `tainacan-extract-pdf-cover`
+### tainacan-extract-pdf-cover
 
-### `tainacan-index-pdf`
+### tainacan-index-pdf
 
-### `tainacan-default-image-blurhash`
+### tainacan-default-image-blurhas
 
-### `tainacan-api-prepare-items-args`
+### tainacan-api-prepare-items-args
 
-### `tainacan-api-response-collection-meta`
+### tainacan-api-response-collection-meta
 
-### `tainacan-api-response-filter-meta`
+### tainacan-api-response-filter-meta
 
-### `tainacan-rest-response`
+### tainacan-rest-response
 
-### `tainacan-api-response-item-meta`
+### tainacan-api-response-item-meta
 
-### `tainacan-api-items-prepare-for-response`
+### tainacan-api-items-prepare-for-response
 
-### `tainacan-item-get-author-name`
+### tainacan-item-get-author-name
 
-### `tainacan-api-items-filter-arguments`
+### tainacan-api-items-filter-arguments
 
-### `tainacan-api-items-${filter_type_component}-filter-arguments`
+### tainacan-api-items-${filter_type_component}-filter-arguments
 
-### `tainacan-api-get-items-alternate`
+### tainacan-api-get-items-alternate
 
-### `tainacan-api-items-filters-response`
+### tainacan-api-items-filters-response
 
-### `tainacan-api-items-filters-arguments-response`
+### tainacan-api-items-filters-arguments-response
 
-### `tainacan-api-items-response`
+### tainacan-api-items-response
 
-### `tainacan-submission-item-data`
+### tainacan-submission-item-data
 
-### `tainacan-api-response-metadatum-meta`
+### tainacan-api-response-metadatum-meta
 
-### `tainacan-api-response-metadata-section-meta`
+### tainacan-api-response-metadata-section-meta
 
-### `tainacan-api-role-prepare-for-response`
+### tainacan-api-role-prepare-for-response
 
-### `tainacan-api-response-taxonomy-meta`
+### tainacan-api-response-taxonomy-meta
 
-### `tainacan-api-response-term-meta`
+### tainacan-api-response-term-meta
 
-### `tainacan-collection-to-string`
+### tainacan-collection-to-string
 
-### `tainacan-collection-to-array`
+### tainacan-collection-to-array
 
-### `tainacan-collection-get-attachments`
+### tainacan-collection-get-attachments
 
-### `tainacan-collection-get-author-name`
+### tainacan-collection-get-author-name
 
-### `tainacan-collection-get-thumbnail`
+### tainacan-collection-get-thumbnail
 
-### `tainacan-collection-get-header-image`
+### tainacan-collection-get-header-image
 
-### `tainacan-status-require-validation`
+### tainacan-status-require-validation
 
-### `tainacan-entity-get-property`
+### tainacan-entity-get-property
 
-### `tainacan-entity-set-property`
+### tainacan-entity-set-property
 
-### `tainacan-set-post-status`
+### tainacan-set-post-status
 
-### `tainacan-get-post-status`
+### tainacan-get-post-status
 
-### `{$hook_prefix}-to-array`
+### tainacan-collection-to-array
 
-### `tainacan-filter-to-string`
+### tainacan-taxonomy-to-array
 
-### `tainacan-filter-to-array`
+### tainacan-metadatum-to-array
 
-### `tainacan-item-metadata-get-multivalue-prefix`
+### tainacan-metadata-section-to-array
 
-### `tainacan-item-metadata-get-multivalue-suffix`
+### tainacan-filter-to-string
 
-### `tainacan-item-metadata-get-multivalue-separator`
+### tainacan-filter-to-array
 
-### `tainacan-item-metadata-to-array`
+### tainacan-item-metadata-get-multivalue-prefix
 
-### `tainacan-status-require-validation`
+### tainacan-item-metadata-get-multivalue-suffix
 
-### `tainacan-item-to-string`
+### tainacan-item-metadata-get-multivalue-separator
 
-### `tainacan-item-to-array`
+### tainacan-item-metadata-to-array
 
-### `tainacan-item-get-attachments`
+### tainacan-status-require-validation
 
-### `tainacan-item-get-author-name`
+### tainacan-item-to-string
 
-### `tainacan-item-get-thumbnail`
+### tainacan-item-to-array
 
-### `tainacan-status-require-validation`
+### tainacan-item-get-attachments
 
-### `tainacan-get-item-metadatum-as-html-(before/after)`
+### tainacan-item-get-author-name
 
-### `tainacan-get-item-metadatum-as-html-(before/after)--type-`
+### tainacan-item-get-thumbnail
 
-### `tainacan-get-item-metadatum-as-html-(before/after)--id-`
+### tainacan-status-require-validation
 
-### `tainacan-get-item-metadatum-as-html-(before/after)--index-`
+### tainacan-get-item-metadatum-as-html-(before/after)
 
-### `tainacan-get-item-metadatum-as-html-(before/after)-title`
+### tainacan-get-item-metadatum-as-html-(before/after)--type-{$metadatum-type}
 
-### `tainacan-get-item-metadatum-as-html-(before/after)-value`
+### tainacan-get-item-metadatum-as-html-(before/after)--id-{$metadatum-id}
 
-### `tainacan-item-get-document-as-html`
+### tainacan-get-item-metadatum-as-html-(before/after)--index-{$metadatum-index}
 
-### `tainacan-get-metadata-section-as-html-(before/after)`
+### tainacan-get-item-metadatum-as-html-(before/after)-title
 
-### `tainacan-get-metadata-section-as-html-(before/after)--id-`
+### tainacan-get-item-metadatum-as-html-(before/after)-value
 
-### `tainacan-get-metadata-section-as-html-(before/after)--index-`
+### tainacan-item-get-document-as-html
 
-### `tainacan-get-metadata-section-as-html-(before/after)-name`
+### tainacan-get-metadata-section-as-html-(before/after)
 
-### `tainacan-get-metadata-section-as-html-(before/after)-name--id-`
+### tainacan-get-metadata-section-as-html-(before/after)--id-{$metadata-section-id}
 
-### `tainacan-get-metadata-section-as-html-(before/after)-name--index-`
+### tainacan-get-metadata-section-as-html-(before/after)--index-{$metadata-section-index}
 
-### `tainacan-get-metadata-section-as-html-(before/after)-metadata-list`
+### tainacan-get-metadata-section-as-html-(before/after)-name
 
-### `tainacan-get-metadata-section-as-html-(before/after)-metadata-list--id-`
+### tainacan-get-metadata-section-as-html-(before/after)-name--id-{$metadata-section-id}
 
-### `tainacan-get-metadata-section-as-html-(before/after)-metadata-list--index-`
+### tainacan-get-metadata-section-as-html-(before/after)-name--index-{$metadata-section-index}
 
-### `tainacan-log-to-string`
+### tainacan-get-metadata-section-as-html-(before/after)-metadata-list
 
-### `tainacan-log-to-array`
+### tainacan-get-metadata-section-as-html-(before/after)-metadata-list--id-{$metadata-section-id}
 
-### `tainacan-log-set-title`
+### tainacan-get-metadata-section-as-html-(before/after)-metadata-list--index-{$metadata-section-index}
 
-### `tainacan-metadata-section-to-string`
+### tainacan-log-to-string
 
-### `tainacan-metadatum-to-string`
+### tainacan-log-to-array
 
-### `tainacan-taxonomy-to-string`
+### tainacan-log-set-title
 
-### `tainacan-term-to-string`
+### tainacan-metadata-section-to-string
 
-### `tainacan-term-to-array`
+### tainacan-metadatum-to-string
 
-### `tainacan-term-to-html`
+### tainacan-taxonomy-to-string
 
-### `tainacan-terms-hierarchy-html-separator`
+### tainacan-term-to-string
 
-### `the_modified_author`
+### tainacan-term-to-array
 
-### `exporter_step_length_items`
+### tainacan-term-to-html
 
-### `tainacan-exporser-type-mappers`
+### tainacan-terms-hierarchy-html-separator
 
-### `tainacan-exposer-html`
+### tainacan-the-modified-author
 
-### `tainacan-exposer-numeric-item-prefix`
+### tainacan-exporter-step-length-items
 
-### `tainacan-exposer-jsonld`
+### tainacan-exporser-type-mappers
 
-### `tainacan-exposer-head`
+### tainacan-exposer-html
 
-### `tainacan-oai-pmh-root`
+### tainacan-exposer-numeric-item-prefix
 
-### `tainacan-exposer-txt`
+### tainacan-exposer-jsonld
 
-### `tainacan-exposer-numeric-item-prefix`
+### tainacan-exposer-head
 
-### `tainacan-get-mapper-from-request`
+### tainacan-oai-pmh-root
 
-### `tainacan-oai-maxrecords`
+### tainacan-exposer-txt
 
-### `tainacan-oai-token-valid`
+### tainacan-exposer-numeric-item-prefix
 
-### `tainacan-get-map-' . $this->get_name()`
+### tainacan-get-mapper-from-request
 
-### `tainacan_fetch_args`
+### tainacan-oai-maxrecords
 
-### `tainacan-get-thumbnail-id-from-document`
+### tainacan-oai-token-valid
 
-### `tainacan_add_related_item`
+### tainacan-get-map-{$this->get_name()}
 
-### `tainacan-entity-diff`
+### tainacan-fetch-args
 
-### `tainacan-fetch-all-metadatum-values`
+### tainacan-get-thumbnail-id-from-document
 
-### `tainacan_repository_archive_template_hierarchy`
+### tainacan_add_related_item
 
-### `tainacan-get-the-document`
+### tainacan-entity-diff
 
-### `tainacan_get_the_document_raw`
+### tainacan-fetch-all-metadatum-values
 
-### `tainacan_get_the_item_document_url`
+### tainacan_repository_archive_template_hierarchy
 
-### `tainacan_get_the_document_type`
+### tainacan-get-the-document
 
-### `tainacan-get-collection-name`
+### tainacan_get_the_document_raw
 
-### `tainacan-get-collection-description`
+### tainacan_get_the_item_document_url
 
-### `tainacan-get-collection-url`
+### tainacan_get_the_document_type
 
-### `tainacan-default-view-mode-for-themes`
+### tainacan-get-collection-name
 
-### `tainacan-enabled-view-modes-for-themes`
+### tainacan-get-collection-description
 
-### `tainacan-get-term-name`
+### tainacan-get-collection-url
 
-### `tainacan-get-term-description`
+### tainacan-default-view-mode-for-themes
 
-### `tainacan-get-the-attachments`
+### tainacan-enabled-view-modes-for-themes
 
-### `tainacan-get-initials`
+### tainacan-get-term-name
 
-### `tainacan_register_web_components`
+### tainacan-get-term-description
 
-### `set_tainacan_admin_options`
+### tainacan-get-the-attachments
 
-### `tainacan-i18n`
+### tainacan-get-initials
 
-### `tainacan-admin-hooks-positions`
+### tainacan-admin-ui-options
 
-### `tainacan-admin-hooks-contexts`
+```php
+add_filter(
+    'tainacan-admin-ui-options',
+    function($strings)
+);
+```
+
+An array of Admin UI Options. Learn more about this filter in [its dedicated page](/dev/admin-ui-options.md).
+
+#### Paramethers
+
+| Name    | Type    | Description                                                                                      |
+| ------- | ------- | ------------------------------------------------------------------------------------------------ |
+| options | `array` | Admin UI options. Possible values are listed [here](/dev/admin-ui-options.md). Defaults to `[]`. |
+
+### tainacan-i18n
+
+```php
+add_filter(
+    'tainacan-admin-hooks-positions',
+    function($strings)
+);
+```
+
+An array of key-value tuples where the key is a simple key for identifying a translatable string and the value is the translated string, using `__( 'Some string here', 'tainacan' )`. This is exported as a global object to the Tainacan plugin javascript side, which then renders translations in the frontend.
+
+#### Paramethers
+
+| Name    | Type    | Description                                                                                                                                                                                        |
+| ------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| strings | `array` | Array of objects containing key an value for translatable strings. Defaults to [the array from this file](https://github.com/tainacan/tainacan/blob/master/src/views/tainacan-i18n.php ":ignore"). |
+
+### tainacan-admin-hooks-positions
+
+```php
+add_filter(
+    'tainacan-admin-hooks-positions',
+    function($positions)
+);
+```
+
+List of available forms regions where form hooks may be placed.
+
+#### Paramethers
+
+| Name      | Type    | Description                                                                                                   |
+| --------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| positions | `array` | Possible forms regions with form hooks. Defaults to `['begin-left', 'begin-right', 'end-left', 'end-right']`. |
+
+### tainacan-admin-hooks-contexts
+
+```php
+add_filter(
+    'tainacan-admin-hooks-contexts',
+    function($contexts)
+);
+```
+
+List of available forms where admin form hooks can be used.
+
+#### Paramethers
+
+| Name     | Type    | Description                                                                                                                                       |
+| -------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contexts | `array` | Possible forms to receive form hooks. Defaults to `['collection', 'metadatum', 'item', 'taxonomy', 'term', 'filter', 'role', 'metadataSection']`. |
 
 ## Frontend Filters
 
-### `tainacan_use_legacy_masonry_view_mode_cols`
+### tainacan_use_legacy_masonry_view_mode_cols
 
-### `tainacan_faceted_search_search_control_(before/after)`
+```js
+wp.hooks.addFilter(
+    'tainacan_use_legacy_masonry_view_mode_cols',
+    function(enable)
+);
+```
 
-### `tainacan_faceted_search_advanced_search_(before/after)`
+This filter allow developers to use the legacy Masonry layout, in oposition to the one introduced in Tainacan 0.19. The legacy one has more columns-per-screen an thus smaller images, using the `tainacan-media-full` size, where the new one uses less columns, using the `tainacan-large-fill` image size.
 
-### `tainacan_faceted_search_filters_(before/after)`
+#### Paramethers
 
-### `tainacan_faceted_search_filter_tags_(before/after)`
+| Name   | Type      | Description                                                          |
+| ------ | --------- | -------------------------------------------------------------------- |
+| enable | `Boolean` | Whether the legacy layout should be used or not. Defaults to `false` |
 
-### `tainacan_faceted_search_items_list_(before/after)`
+### tainacan_faceted_search_search_control\_(before/after)
 
-### `tainacan_faceted_search_pagination_(before/after)`
+```js
+wp.hooks.addFilter(
+    'tainacan_faceted_search_search_control_(before/after)',
+    function(htmlContent)
+);
+```
 
-### `tainacan_faceted_search_item_(before/after)`
+Allows insertion of html content around the search control bar (where the sorting, textual search, view mode options, etc.. are available). A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_search_control_(before/after)`.
 
-### `tainacan_item_submission_collection_${this.collectionId}_${location}_(before/after)`
+#### Paramethers
+
+| Name        | Type     | Description                             |
+| ----------- | -------- | --------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty |
+
+### tainacan_faceted_search_advanced_search\_(before/after)
+
+```js
+wp.hooks.addFilter(
+    'tainacan_faceted_search_advanced_search_(before/after)',
+    function(htmlContent)
+);
+```
+
+Allows insertion of html content around advanced search panel. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_advanced_search_(before/after)`.
+
+#### Paramethers
+
+| Name        | Type     | Description                             |
+| ----------- | -------- | --------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty |
+
+### tainacan_faceted_search_filters\_(before/after)
+
+```js
+wp.hooks.addFilter(
+    'tainacan_faceted_search_filters_(before/after)',
+    function(htmlContent)
+);
+```
+
+Allows insertion of html content around the filters panel. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_filters_(before/after)`.
+
+#### Paramethers
+
+| Name        | Type     | Description                             |
+| ----------- | -------- | --------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty |
+
+### tainacan_faceted_search_filter_tags\_(before/after)
+
+```js
+wp.hooks.addFilter(
+    'tainacan_faceted_search_filter_tags_(before/after)',
+    function(htmlContent)
+);
+```
+
+Allows insertion of html content around the filters tags, which appear above the items list when a filter is applied. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_filter_tags_(before/after)`.
+
+#### Paramethers
+
+| Name        | Type     | Description                             |
+| ----------- | -------- | --------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty |
+
+### tainacan_faceted_search_items_list\_(before/after)
+
+```js
+wp.hooks.addFilter(
+    'tainacan_faceted_search_items_list_(before/after)',
+    function(htmlContent)
+);
+```
+
+Allows insertion of html content around the items list. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_items_list_(before/after)`.
+
+#### Paramethers
+
+| Name        | Type     | Description                             |
+| ----------- | -------- | --------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty |
+
+### tainacan_faceted_search_pagination\_(before/after)
+
+```js
+wp.hooks.addFilter(
+    'tainacan_faceted_search_pagination_(before/after)',
+    function(htmlContent)
+);
+```
+
+Allows insertion of html content around the pagination region. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_pagination_(before/after)`.
+
+#### Paramethers
+
+| Name        | Type     | Description                             |
+| ----------- | -------- | --------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty |
+
+### tainacan_faceted_search_item\_(before/after)
+
+```js
+wp.hooks.addFilter(
+    'tainacan_faceted_search_item_(before/after)',
+    function(htmlContent, item)
+);
+```
+
+Allows insertion of html content around an item unit in the items list. Notice that this will take effect on several view modes. A dynamic version for specific collections is available: `tainacan_faceted_search_collection_${collectionId}_item_(before/after)`.
+
+#### Paramethers
+
+| Name        | Type     | Description                                                      |
+| ----------- | -------- | ---------------------------------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty                          |
+| item        | `Object` | Item object with several attributes, such as ID, title, url, etc |
+
+### tainacan_item_submission_collection\_${$collectionId}\_${location}\_(before/after)
+
+```js
+wp.hooks.addFilter(
+    'tainacan_item_submission_collection_${collectionId}_${location}_(before/after)',
+    function(htmlContent, entity)
+);
+```
+
+Dynamic filter which allows insertion of html content around different parts of the item submission block. The location are:
+
+- `document` - The form Document input;
+- `attachments` - The form Attachments upload field;
+- `thumbnail` - The form Thumbnail upload field;
+- `metadata` - The form Metadata list;
+- `metadata_section` - Each Metadata Section (entity = the Metadata Section);
+- `metadatum` - Each Metadatum (entity = the Metadatum);
+- `footer` - The form footer;
+
+#### Paramethers
+
+| Name        | Type     | Description                                                     |
+| ----------- | -------- | --------------------------------------------------------------- |
+| htmlContent | `String` | Html content to be added. Default empty.                        |
+| entity      | `Object` | Entity object if the entity is Metadatum or a Metadatum Section |

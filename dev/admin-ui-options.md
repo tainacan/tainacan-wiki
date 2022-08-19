@@ -17,13 +17,15 @@ function my_plugin_tainacan_admin_options($options) {
 
 	return $options;
 };
-add_filter('set_tainacan_admin_options', 'my_plugin_tainacan_admin_options');
+add_filter('tainacan-admin-ui-options', 'my_plugin_tainacan_admin_options');
 ```
 
 The same could be achieved for prototyping by accessing your admin URL like this:
 `https://<your-site.com>/wp-admin/?homeCollectionsOrderBy=name&hideTainacanHeaderAdvancedSearch=true&hideItemsListCreationDropdownImport=true&page=tainacan_admin#/collections/`
 
-Follows the complete list of available variables. Notice that some hidding elements variables can be overriden by others:
+Follows the complete list of available variables, organized by region of the UI. Notice that some hidding elements variables can be overriden by others:
+
+## Home page, Repository Section
 
 - `hideHomeRepositorySection`
   - `hideHomeThemeCollectionsButton`
@@ -34,6 +36,9 @@ Follows the complete list of available variables. Notice that some hidding eleme
   - `hideHomeImportersButton`
   - `hideHomeExportersButton`
   - `hideHomeActivitiesButton`
+
+## Home page, Collections Section
+
 - `hideHomeCollectionsSection`
   - `hideHomeCollectionsButton`
   - `hideHomeCollectionItemsButton`
@@ -46,11 +51,17 @@ Follows the complete list of available variables. Notice that some hidding eleme
   - `homeCollectionsPerPage` // Default is 9
   - `homeCollectionsOrderBy` // Default is 'modified'
   - `homeCollectionsOrder` // Default is 'desc'
+
+## Tainacan main header
+
 - `hideTainacanHeader`
   - `hideTainacanHeaderHomeButton`
   - `hideTainacanHeaderSearchInput`
   - `hideTainacanHeaderAdvancedSearch`
   - `hideTainacanHeaderProcessesPopup`
+
+## Tainacan Repository Menu
+
 - `hidePrimaryMenu`
   - `hidePrimaryMenuCompressButton`
   - `hidePrimaryMenuRepositoryButton`
@@ -63,11 +74,16 @@ Follows the complete list of available variables. Notice that some hidding eleme
   - `hidePrimaryMenuExportersButton`
   - `hidePrimaryMenuActivitiesButton`
   - `hidePrimaryMenuCapabilitiesButton`
+
+## Tainacan Context Subheader
+
 - `hideRepositorySubheader`
   - `hideRepositorySubheaderViewCollectionButton`
   - `hideRepositorySubheaderViewCollectionsButton`
   - `hideRepositorySubheaderExportButton`
 - `hideCollectionSubheader`
+
+## Items list page
 
 - `hideItemsListPageTitle`
 - `hideItemsListMultipleSelection`
@@ -89,6 +105,8 @@ Follows the complete list of available variables. Notice that some hidding eleme
 - `hideItemsListActionAreas`
 - `hideItemsListFilterCreationButton`
 
+## Item edit page
+
 - `hideItemEditionPageTitle`
 - `hideItemEditionCollectionName`
 - `hideItemEditionStatusOptions`
@@ -108,7 +126,7 @@ Follows the complete list of available variables. Notice that some hidding eleme
 - `itemEditionDocumentInsideTabs`
 - `itemEditionAttachmentInsideTabs`
 
-- `hideBulkEditionPageTitle`
+## Item single page
 
 - `hideItemSinglePageTitle`
 - `hideItemSingleCollectionName`
@@ -120,3 +138,7 @@ Follows the complete list of available variables. Notice that some hidding eleme
 - `hideItemSingleAttachments`
 - `hideItemSingleActivities`
 - `hideItemSingleExposers`
+
+## Items bulk edition page
+
+- `hideBulkEditionPageTitle`

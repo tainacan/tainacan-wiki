@@ -43,7 +43,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 - [How to create Exposers](/dev/exposers.md)
 - [Registering New Vue Components](/dev/registering-custom-vue-components.md) - Registering new Vue components that can be used by your plugin, such as metadata and filter types or extra view modes.
 - [The Vue Items List Component](/dev/the-vue-items-list-component.md) - Understanding the client-side rendered items list that provides all power to faceted search.
-- [Admin UI options](/dev/admin-ui-options.md) - Using a filter the set a series of variables that customize the Tainacan Admin panel
+- [Tweaking the Tainacan Admin UI](/dev/admin-ui-options.md) - Using a filter the set a series of variables that customize the Tainacan Admin panel
 
 ### Theme development or extension {docsify-ignore}
 
