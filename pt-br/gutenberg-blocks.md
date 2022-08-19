@@ -26,11 +26,11 @@ O Tainacan não poderia ficar de fora, e usa desta ferramenta para fornecer bloc
 
 Para usar algum dos blocos, basta editar um post ou uma página e procurar na lista de blocos disponíveis por um dos nosso blocos. São eles:
 
-- [Lista de Itens](/pt-br/blocks-items#lista-de-itens) _(estático)_;
 - [Lista de Coleções](/pt-br/blocks-collections#lista-de-coleções) _(estático)_;
 - [Lista de Termos](/pt-br/blocks-terms#lista-de-termos) _(estático)_;
 - [Lista de Itens da Coleção](/pt-br/blocks-items#lista-de-itens-da-coleção);
-- [Formulário de Submissão de Itens](/pt-br/blocks-items#formulário-de-submissão-de-itens);
+- [Galeria de Mídias do Item](/pt-br/blocks-item#galeria-de-midias-do-item);
+- [Formulário de Submissão de Itens](/pt-br/blocks-item#formulário-de-submissão-de-itens);
 - [Barra de Busca](/pt-br/blocks-items#barra-de-busca-tainacan) Tainacan;
 - [Busca Facetada](/pt-br/blocks-items#busca-facetada) - _(A Lista de Itens Completa)_;
 - [Lista de Facetas](/pt-br/blocks-facets#lista-de-facetas);

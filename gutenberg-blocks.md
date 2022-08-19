@@ -32,7 +32,8 @@ Para usar algum dos blocos, basta editar um post ou uma página e procurar na li
 - [Lista de Coleções](/blocks-collections#lista-de-coleções) _(estático)_;
 - [Lista de Termos](/blocks-terms#lista-de-termos) _(estático)_;
 - [Lista de Itens da Coleção](/blocks-items#lista-de-itens-da-coleção);
-- [Formulário de Submissão de Itens](/blocks-items#formulário-de-submissão-de-itens);
+- [Galeria de Mídias do Item](/pt-br/blocks-item#galeria-de-midias-do-item);
+- [Formulário de Submissão de Itens](/blocks-item#formulário-de-submissão-de-itens);
 - [Barra de Busca](/blocks-items#barra-de-busca-tainacan) Tainacan;
 - [Busca Facetada](/blocks-items#busca-facetada) - _(A Lista de Itens Completa)_;
 - [Lista de Facetas](/blocks-facets#lista-de-facetas);

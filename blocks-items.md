@@ -2,14 +2,12 @@
 
 # Items Blocks
 
-Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente, existem 6 blocos relacionados aos itens do Tainacan:
+Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/pt-br/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente, existem 4 blocos relacionados aos itens do Tainacan:
 
 1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) _(Dinâmico)_
 2. O [Carrossel de Itens](#carrossel-de-itens)
 3. A [Barra de Busca Tainacan](#barra-de-busca)
 4. A [Busca Facetada](#busca-facetada) _(A Lista de Itens Completa)_
-5. O [Formulário de Submissão de Itens](#formulário-de-submissão-de-itens)
-6. A [Lista de Itens](#lista-de-itens) _(Estático)_
 
 ---
 
@@ -242,39 +240,3 @@ Para além do comportamento e presença de certos elementos no bloco, é possív
 !> A Busca Facetada é um dos blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada. Isto ocorre porque ao se realizar qualquer busca a URL do site é complementada com os parâmetros que causariam conflito entre diferentes listas.
 
 ---
-
-## Formulário de Submissão de Itens
-
-Na versão 0.17 do Tainacan, um novo recurso de submissão de itens foi apresentado, que é possível graças a este bloco e algumas configurações feitas na coleção. Para entender o funcionamento dele, recomendamos a leitura da página que trata do assunto como um todo: [Submissão de Itens](/item-submission).
-
----
-
-## Lista de Itens
-
-O Bloco Lista de Itens foi o primeiro bloco disponibilizado pelo Tainacan, ainda em suas iniciais versões Beta. Nele, você seleciona manualmente quais itens deseja exibir.
-
-!> A grande desvantagem - e razão pela qual hoje não recomendamos seu uso - é que este é um **bloco estático**. Isso significa que os itens selecionados (título e imagem) serão salvos na configuração do bloco no post e não são atualizados se vc fizer alguma mudança na coleção. Suponhamos que você escolheu alguns itens, salvou seu post e alguns dias depois alterou o título ou a imagem daquele item. Ao voltar para o bloco, estas mudanças não estarão refletidas. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) ou do [Carrossel de Itens](#carrossel-de-itens) em seu lugar.
-
-### Configurações Iniciais do Bloco
-
-Para começar, escolha se seus itens serão escolhidos da lista de todos os itens do repositório ou da lista de itens de uma coleção. Em seguida, escolha os itens que serão adicionados ao bloco. Você adiciona itens através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do item inserido.
-
-Com os itens carregados, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
-
-![Configurações Iniciais do Bloco](/_assets/gifs/blocks-items-list-1.gif)
-
-### Configurações da Exibição de Itens
-
-Este bloco oferece dois modos de visualização, disponíveis na barra superior do bloco:
-
-<!-- tabs:start -->
-
-#### ** Grade de Itens **
-
-O modo padrão é a grade de itens, que mostrará as miniaturas dos itens (185px _x_ 185px), com seus títulos abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o título do item e se deseja um espaço maior entre os itens. Lembrando que quanto maior o espaçamento, menos itens cabem por linha.
-
-#### ** Lista de Itens **
-
-A lista de itens permite uma visão mais simplificada, com miniaturas menores (54px _x_ 54px) e os títulos ao lado. Neste modo, você pode escolher não mostrar a miniatura, o ideal para coleções que não possuem imagens.
-
-<!-- tabs:end -->
