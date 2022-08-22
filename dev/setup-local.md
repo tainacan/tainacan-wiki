@@ -8,10 +8,9 @@ This is the development repository for the Tainacan WordPress plugin.
 
 Overview of folders:
 
-* `docs` - This technical documentation
-* `src` - The actual plugin. Everything outside this folder is not part of the distribution package
-* `tests` - phpunit tests
-* `cypress` - integration tests
+- `docs` - This technical documentation
+- `src` - The actual plugin. Everything outside this folder is not part of the distribution package
+- `tests` - phpunit tests
 
 This repository includes all the tools needed to develop Tainacan, such as tests and other scripts to compile sass and other things.
 
@@ -21,19 +20,18 @@ Tainacan is a WordPress plugin, so you will need all the basic dependencies you 
 
 You will also need:
 
-* `Composer` to manage dependencies
-* `Sass` to compile sass into css files
-* `WP-Cli` to configure the test environment
-* `Phpunit` to run unit tests
-* `Node` to handle dependencies and build the JS application
+- `Composer` to manage dependencies
+- `Sass` to compile sass into css files
+- `WP-Cli` to configure the test environment
+- `Phpunit` to run unit tests
+- `Node` to handle dependencies and build the JS application
 
 ```
 sudo apt-get install phpunit composer ruby ruby-dev nodejs npm
 sudo gem install sass
 ```
 
-* To install WP-Cli, check [the official documentation](https://wp-cli.org/#installing).
-
+- To install WP-Cli, check [the official documentation](https://wp-cli.org/#installing).
 
 ## Setting up
 
@@ -53,9 +51,9 @@ When we want to build the plugin, we run `build.sh` that installs any dependenci
 
 In order to use it, make a copy of `build-config-sample.cfg` and name it only `build-config.cfg`. Edit and fill in your environment details:
 
-* `wp_base_dir`: The base directory for you local WordPress installation, used for development and testing. e.g `~/develop/wordpress`
-* `wp_url`: The base URL for your local WordPress installation/ e.g `http://localhost/wp`
-* `wp_plugin_dir`: The directory for your plugin build. Should be a directory inside `wp_base_dir`. e.g `~/develop/wordpress/wp-content/plugins/test-tainacan`
+- `wp_base_dir`: The base directory for you local WordPress installation, used for development and testing. e.g `~/develop/wordpress`
+- `wp_url`: The base URL for your local WordPress installation/ e.g `http://localhost/wp`
+- `wp_plugin_dir`: The directory for your plugin build. Should be a directory inside `wp_base_dir`. e.g `~/develop/wordpress/wp-content/plugins/test-tainacan`
 
 Once you are ready, you can run:
 
@@ -71,7 +69,7 @@ Tainacan uses `phpunit` to run tests for the backend and the API. This is a very
 
 To execute all the tests, simply execute the `phpunit` command from the project root folder. But first, you need to configure PHPUnit.
 
-#### Preparing PHPUnit
+### Preparing PHPUnit
 
 To run the unit tests it is necessary to create a new MySQL database for your unit tests. This database will be cleaned and restored every time you run PHPUnit.
 
@@ -80,20 +78,21 @@ Install the WordPress test library by running the script provided in the `tests/
 ```
 tests/bin/install-wp-tests.sh wordpress_test root root /path/to/wordpress-test-folder localhost latest
 ```
+
 The parameters are:
 
-* Database name
-* MySQL username
-* MySQL password
-* WordPress Test Directory*
-* MySQL host
-* WordPress version
-* Optional: skip create database
+- Database name
+- MySQL username
+- MySQL password
+- WordPress Test Directory\*
+- MySQL host
+- WordPress version
+- Optional: skip create database
 
 \* `WordPress Test Directory` will be created with 2 subfolders:
 
-* `wordpress-test` - An installation of WordPress
-* `wordpress-tests-lib` - As the name says, the WordPress Tests Library
+- `wordpress-test` - An installation of WordPress
+- `wordpress-tests-lib` - As the name says, the WordPress Tests Library
 
 Inside the `tests` folder, edit the file called `bootstrap-config-sample.php` and inform the folder where you installed your WordPress Test Library. This will be `/path/to/wordpress-test-folder/wodpress-tests-lib`. Save the file as `bootstrap-config.php`.
 
@@ -110,4 +109,3 @@ phpunit
 ```
 
 (Note that `phpunit` accepts several parameters, for example, if you want to run just a specific group of tests).
-
