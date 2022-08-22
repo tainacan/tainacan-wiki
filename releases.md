@@ -1,14 +1,66 @@
-# Releases
-
 ?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
+# Releases
+
 Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainacan. Recomendamos, especialmente enquanto estamos em Beta, utilizar sempre a versão mais recente.
+
+## Tainacan Beta 0.19
+
+### Postagem
+
+Post de lançamento: [https://tainacan.org/blog/2022/08/19/tainacan-beta-0-19---secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/](https://tainacan.org/blog/2022/08/19/tainacan-beta-0-19---secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/ ":ignore")
+
+### Resumo da Versão
+
+#### Novidades
+
+- [Seção de Metadados](/pt-br/metadata-sections.md);
+- [Bloco de Galeria de Mídias do Item](/pt-br/block-item.md#galeria-de-mídias-do-item);
+
+#### Melhorias
+
+- Refatoração da Busca Avançada;
+- Reorganização da Tela de Edição do Item;
+- Redefinição do Botão de Atualizar e Status;
+- Modo de Navegação com Foco nos Metadados;
+- Filtro de Metadados Obrigatórios;
+- Redistribuição da Tela de Configuração da Coleção;
+- Descrição e Placeholders de Metadados;
+- Relacionamento entre Itens Rascunho;
+- Filtros que Começam Desabilitados;
+- Novo Tamanho de Imagem: `tainacan-large-full`;
+- Modo de Visualização Masonry com Imagens Maiores;
+- Opção de Tamanho da Imagem nos Blocos;
+- Atualização das bibliotecas de carrossel e da galeria com zoom;
+- Substituição da biblioteca de _tooltips_;
+- Atualização da biblioteca que mostra documentos PDFs embutidos;
+- Diversas melhorias na responsividade da página de edição do item para telas pequenas;
+- Exibição do metadado composto dentro de relacionamentos;
+- Mais destaque para o campo de texto alternativo da imagem de miniatura;
+- Botão de ordenar na lista de metadados e de filtros;
+- Exibição de um rótulo indicando qual dos anexos é o documento;
+- Cabeçalho fixo nas listagens de Atividades, Processos e Permissões e
+- Várias correções de erros.
+
+#### Para Desenvolvedores
+
+- Novos _hooks_ (filtros) para o [_backend_](/dev/filters.md#backend-filters) e [_frontend_](/dev/filters.md#frontend-filters);
+- Novos _template tags_ para a seção de metadados;
+- [Configurações](/dev/admin-ui-options.md) para se alterar o Admin;
+- Form hook específico por tipos de metadados;
+- Form hook no formulário de função de usuário;
+
+### Data de Lançamento
+
+- 22 de Agosto de 2022
+
+---
 
 ## Tainacan Beta 0.18
 
 ### Postagem
 
-Post de lançamento: [https://tainacan.org/en/blog/2021/06/07/tainacan-beta-0-18-reports-new-media-gallery-and-improvements-to-the-items-list/](https://tainacan.org/en/blog/2021/06/07/tainacan-beta-0-18-reports-new-media-gallery-and-improvements-to-the-items-list/ ':ignore')
+Post de lançamento: [https://tainacan.org/en/blog/2021/06/07/tainacan-beta-0-18-reports-new-media-gallery-and-improvements-to-the-items-list/](https://tainacan.org/en/blog/2021/06/07/tainacan-beta-0-18-reports-new-media-gallery-and-improvements-to-the-items-list/ ":ignore")
 
 ### Resumo da Versão
 
