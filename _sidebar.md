@@ -14,6 +14,7 @@
   - [Collections](collections.md "What are and how to manage Collections on Tainacan - Tainacan Wiki")
   - [Items](items.md "What are and how to manage Items on Tainacan  - Tainacan Wiki")
   - [Metadata](metadata.md "What are and how to manage Metadata on Tainacan  - Tainacan Wiki")
+  - [Metadata Sections](pt-br/metadata-sections.md "What are and how to manage Metadata Sections on Tainacan  - Tainacan Wiki")
   - [Filters](filters.md "What are and how to manage Filters on Tainacan  - Tainacan Wiki")
   - [Taxonomies](taxonomies.md "What are and how to manage Taxonomies on Tainacan  - Tainacan Wiki")
   - [Activities](activities.md "What are and how to use Activities - aka Logs - on Tainacan  - Tainacan Wiki")

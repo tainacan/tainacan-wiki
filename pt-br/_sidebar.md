@@ -14,6 +14,7 @@
   - [Coleções](pt-br/collections.md "O que são e como gerenciar Coleções no Tainacan - Tainacan Wiki")
   - [Itens](pt-br/items.md "O que são e como gerenciar Itens no Tainacan  - Tainacan Wiki")
   - [Metadados](pt-br/metadata.md "O que são e como gerenciar Metadados no Tainacan  - Tainacan Wiki")
+  - [Seções de Metadados](pt-br/metadata-sections.md "O que são e como gerenciar as Seções de Metadados no Tainacan  - Tainacan Wiki")
   - [Filtros](pt-br/filters.md "O que são e como gerenciar Filtros no Tainacan  - Tainacan Wiki")
   - [Taxonomias](pt-br/taxonomies.md "O que são e como gerenciar Taxonomias no Tainacan  - Tainacan Wiki")
   - [Atividades](pt-br/activities.md "O que são e como usar Atividades - ou Logs - no Tainacan  - Tainacan Wiki")
