@@ -8,7 +8,7 @@ Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainaca
 
 ### Postagem
 
-Post de lançamento: [https://tainacan.org/blog/2022/08/19/tainacan-beta-0-19---secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/](https://tainacan.org/blog/2022/08/19/tainacan-beta-0-19---secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/ ":ignore")
+Post de lançamento: [https://tainacan.org/blog/2022/08/23/tainacan-beta-0-19-secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/](https://tainacan.org/blog/2022/08/23/tainacan-beta-0-19-secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/ ":ignore")
 
 ### Resumo da Versão
 
@@ -52,7 +52,7 @@ Post de lançamento: [https://tainacan.org/blog/2022/08/19/tainacan-beta-0-19---
 
 ### Data de Lançamento
 
-- 22 de Agosto de 2022
+- 23 de Agosto de 2022
 
 ---
 
