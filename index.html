@@ -28,20 +28,23 @@
       name: 'Tainacan Wiki',
       nameLink: {
         '/pt-br/': 'https://tainacan.github.io/tainacan-wiki/#/pt-br/',
+        '/es-mx/': 'https://tainacan.github.io/tainacan-wiki/#/es-mx/',
         '/': 'https://tainacan.github.io/tainacan-wiki/#/',
       },
       repo: 'https://github.com/tainacan/tainacan',
       logo: '/_assets/images/logo_tainacan.png',
       themeColor: '#298596',     
-      coverpage: ['/', '/pt-br/'],
-      fallbackLanguages: ['pt-br'],     
+      coverpage: ['/', '/pt-br/', '/es-mx/'],
+      fallbackLanguages: ['pt-br','es-mx'],     
       search: {
         placeholder: {
           '/pt-br/': 'Digite para buscar...',
+          '/es-mx/': 'Escribe para buscar...',
           '/': 'Type to search...'
         },  
         noData: {
           '/pt-br/': 'Nenhum resultado',
+          '/es-mx/': 'Sin resultados',
           '/': 'No Results'
         },
       },
@@ -52,10 +55,12 @@
         },
         errorText: {
           '/pt-br/': 'Erro',
+          '/es-mx/': 'Error',
           '/'      : 'Error'
         },
         successText: {
           '/pt-br/': 'Copiado',
+          '/es-mx/': 'Copiado',
           '/'      : 'Copied'
         }
       },
@@ -94,6 +99,8 @@
             function(file) {
               if (file.indexOf('pt-br') >= 0) {
                 return 'Editar no Github'
+              } else if (file.indexOf('es-mx') >= 0) {
+                return 'Editar en Github'
               } else {
                 return 'Edit on Github'
               }
@@ -104,6 +111,11 @@
               if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
                 return (
                   '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 114px;"> Modificado em: {docsify-updated} </code></div>\n\n '
+                  + html
+                );
+              } else  if (vm.route && vm.route.path && vm.route.path.includes('es-mx')) {
+                return (
+                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 114px;"> Modificado en: {docsify-updated} </code></div>\n\n '
                   + html
                 );
               } else {

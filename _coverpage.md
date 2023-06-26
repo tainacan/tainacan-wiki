@@ -12,6 +12,7 @@
 
 [Wiki in English](/#tainacan-wiki)
 [Wiki em Português](/pt-br/#wiki-do-tainacan)
+[Wiki en Español](/es-mx/#wiki-do-tainacan)
 
 <!-- background color -->
 

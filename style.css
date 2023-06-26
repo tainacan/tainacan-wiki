@@ -605,6 +605,7 @@ a.fab:hover {
 .page_toc ul a {
     font-weight: 400;
     color: #888888;
+    word-wrap: anywhere;
 }
 .page_toc ul a:hover span {
     color: var(--theme-color, #298596);

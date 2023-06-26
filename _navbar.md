@@ -3,3 +3,4 @@
 - Language
   - [English](/#tainacan-wiki)
   - [Brazilian Portuguese](/pt-br/#wiki-do-tainacan)
+  - [Mexican Spanish](/es-mx/#wiki-do-tainacan)
