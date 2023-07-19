@@ -39,3 +39,8 @@ screenshot
 build
 .env
 wiki.pdf
+
+vendor
+.phpdoc
+.gitignore
+composer.lock
