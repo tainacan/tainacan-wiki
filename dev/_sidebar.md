@@ -8,7 +8,7 @@
   - [Tainacan Hooks](/dev/hooks.md "Tainacan Hooks - Tainacan Wiki")
     - [Actions](/dev/actions.md "Tainacan PHP Actions - Tainacan Wiki")
     - [Filters](/dev/filters.md "Tainacan PHP and Javascript Filters - Tainacan Wiki")
-  - [:link: JSON API](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/blob/master/dev/openapi.json ":ignore")
+  - [:link: JSON API](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json ":ignore")
   - [Roles and Capabilities](/dev/roles-capabilities.md "Roles and Capabilities Developers Documentation - Tainacan Wiki")
 - More on Plugin Development
   - [Exporting and Exposing](/dev/exporting-and-exposing.md "Exporting and Exposing - Tainacan Wiki")
