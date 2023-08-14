@@ -1,0 +1,6 @@
+{
+    "require-dev": {
+        "pronamic/wp-documentor": "^1.3",
+        "saggre/phpdocumentor-markdown": "^0.1.3"
+    }
+}
