@@ -1,52 +1,50 @@
-# Testando Coleções
+# Coleccion de pruebas
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+## Fundamentos
 
-## O Básico
+1. Crear DOS o más colecciones
+2. Rellene sus campos, incluyendo la miniatura y la imagen de cabecera;
+3. Establezca diferentes estados para cada una, como Público y Privado, o Público (Borrador no es posible);
+4. Guarde los cambios haciendo clic en "Finalizar":
+5. Vaya a la lista de colecciones y compruebe que las colecciones están en las pestañas correctas según su estado;
+   - [x] Observe el tiempo de carga de las pantallas _Creación de colecciones_ y _Lista de colecciones_;
+   - [x] Observe el tiempo de finalización al **completar** o **guardar** colecciones;
 
-1. Crie DUAS ou mais coleções
-2. Preencha seus campos, incluindo miniatura e imagem de cabeçalho;
-3. Defina status diferentes para cada uma, como Pública e Privado, ou Pública (Rascunho não é possível);
-4. Salve as mudanças cliando em `Concluir`:
-5. Vá para a lista de coleções e cheque se as coleções estão nas abas corretas de acordo com seu status;
-   - [x] Observe o tempo de carregamento da tela de _Criação de coleção_ e _Lista de Coleções_;
-   - [x] Observe o tempo de conclusão ao **concluir** ou **salvar** as coleções;
+## La visualización de colecciones en el tema y comentarios sobre los elementos
 
-## A Visualização da Coleção no Tema e Comentários nos Itens
+1. Configure los modos de visualización de las colecciones, marque tantos como desee;
+2. Configure la opción "Permitir comentarios" para permitir la configuración de comentarios en los elementos;
+3. Guarde los cambios haciendo clic en `Finalizar`;
+4. Acceda a la página de la colección en el tema (por defecto, la lista de elementos de la colección) haciendo clic en el botón con forma de ojo situado en la esquina superior derecha;
 
-1. Configure, os modos de visualização da coleção, marque quantos que desejar;
-2. Configure a opção de "Permitir comentários" para habilitar a configuração de comentários nos itens;
-3. Salve as mudanças clicando em `Concluir`;
-4. Acesse a Página da Coleção no tema (por padrão a lista de itens da coleção), clicando no botão em formato de olho no canto superior direito;
+- [x] Compruebe que todos los elementos de la página se muestran correctamente;
+- [x] Compruebe que los modos habilitados están disponibles y que el modo marcado como predeterminado es el primero;
 
-- [x] Observe se todos elementos da página foram exibidos corretamente;
-- [x] Cheque se os modos habilitados estão disponíveis e se o modo marcado como padrão foi o primeiro;
+5. Vuelva al panel de administración y esta vez intente editar un elemento de esta colección:
 
-5. Volte ao painel administrativo e desta vez acesse tente editar um item desta coleção:
+- [x] Comprueba si existe o no la opción de cambiar los comentarios en la página de edición del elemento, según lo configurado en el paso _2_;
 
-- [x] Verifique que existe ou não a opção de alterar comentários na página de edição do item, de acordo com o configurado no passo _2_;
+7. Vuelva a la configuración de la colección y active la opción "Portada". Elige cualquier página como portada de la colección;
+8. Guarde los cambios haciendo clic en `Finalizar`;
+9. Vuelva a la página de la colección en el tema;
 
-7. Volte às configurações da coleção e habilite a opção "Página de capa". Escolha uma página qualquer como página de capa da coleção;
-8. Salve as mudanças clicando em `Concluir`;
-9. Acesse novamente a Página da Coleção no tema;
+- [x] Compruebe que la página seleccionada se ha establecido como portada de esta colección;
 
-- [x] Cheque se a página marcada foi definida como a capa página desta coleção;
+7. Vuelva a la configuración y recuerde desactivar la opción "Portada" si no desea utilizarla.
 
-7. Volte às configurações e lembre-se de desabilitar a opção "Página de capa" caso não deseje utilizá-la.
+## El _slug_ de la Colección
 
-## O _slug_ da Coleção
+1. En el formulario de edición de la colección, cambia el `slug` por uno de tus propios valores;
+2. Guarde el cambio haciendo clic en `Finalizar`;
+3. 3. Acceda a la página de la colección en el tema haciendo clic en el botón con forma de ojo de la esquina superior derecha;
 
-1. No formulário de edição da coleção, troque o `slug` por algum valor de peferência sua;
-2. Salve a mudança clicando em `Concluir`;
-3. Acesse a Página da Coleção no tema, clicando no botão em formato de olho no canto superior direito;
+- [x] ¿Está el enlace de la página escrito utilizando el `slug` configurado?
 
-- [x] O link da página está escrito usando o `slug` configurado?
+## Herencia de colecciones
 
-## Herança de Coleções
+1. Cree algunos metadatos y filtros en la colección;
+2. Ir a la configuración de otra colección y seleccionar la primera como "Colección raíz";
+3. Acceder a la página de metadatos y filtros de esta colección;
+   - [x] ¿Se han heredado los metadatos y filtros?
 
-1. Crie alguns metadados e filtros na coleção;
-2. Vá para as configurações de outra coleção e selecione a primeira como "Coleção Raiz";
-3. Acesse a página de metadados e de filtros desta coleção;
-   - [x] Os metadados e filtros foram herdados?
-
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/es-mx/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).

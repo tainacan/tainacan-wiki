@@ -1,127 +1,126 @@
 # Temas
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Uma das razões pelos quais o _WordPress_ é tão famoso e versátil é sua diversidade de [temas](https://wordpress.org/themes/ ":ignore"). São milhares de temas que podem atribuir ao seu site estilo e estrutura mais formais, chamativos ou minimalistas. A grande maioria é gratuito e está a um clique de instalação.
+Una de las razones por las que WordPress es tan famoso y versátil es su diversidad de temas. Hay miles de temas que pueden dar a tu sitio un estilo y una estructura más formales, llamativos o minimalistas. La gran mayoría son gratuitos y se instalan con un solo clic.
 
-?> **É possível usar o plugin Tainacan com qualquer tema ativado**, porém a experiência pode ser melhor com temas que oferecem compatibilidade para suas páginas.
+?> **Puede utilizar el plugin Tainacan con cualquier tema activado**, pero la experiencia puede ser mejor con temas que ofrezcan compatibilidad para sus páginas.
 
-Nesta página falamos sobre:
+En esta página hablaremos sobre:
 
-- Quais são [os temas que oferecem melhor compatibilidade](#temas-compatíveis-com-o-tainacan) para o Tainacan e,
-- [Como instalar e gerenciar temas](#gerir-temas-no-wordpress) no seu _WordPress_.
+- Cuáles son [los temas que ofrecen la mejor compatibilidad](#temas-compatibles-con-tainacan) para Tainacan y,
+- [Cómo instalar y manejar temas](#gestión-de-temas-en-wordpress) en tu _WordPress_.
 
-## Temas compatíveis com o Tainacan
+## Temas compatibles con Tainacan
 
-Além de inserir um novo campo no seu painel administrativo do _WordPress_, onde você acessa o painel administrativo do Tainacan em si, o plugin Tainacan também gera [páginas especiais](/es-mx/tainacan-pages.md) no seu site. Se o seu tema foi pensado para apresentar estas páginas, listagens de itens e coleções serão exibidas com todas as funcionalidades de navegação do acervo como a busca de itens, filtros, diferentes formas de exibição, etc. Caso contrário, estas listagens deverão ser muito próximas da maneira como o tema exibe postagens do blog.
+Además de insertar un nuevo campo en su panel de administración _WordPress_, desde donde se accede al propio panel de administración de Tainacan, el plugin Tainacan también genera [páginas especiales](/es-mx/tainacan-pages.md) en su sitio web. Si tu tema está diseñado para mostrar estas páginas, los listados de artículos y colecciones se mostrarán con todas las funciones de navegación de las colecciones, como la búsqueda de artículos, los filtros, las distintas formas de mostrarlos, etc. De lo contrario, estos listados deberían ser muy similares a la forma en que el tema muestra las entradas del blog.
 
-Desenvolver um tema compatível não é complicado e também não precisa ser feito do zero, já que muitos podem ser gerados a partir de [temas filhos](https://codex.wordpress.org/es-mx:Temas_Filhos "ingnore") de outros já existentes. Aqui na Wiki temos [uma sessão inteira](/dev/creating-compatible-themes.md) dedicada a ensinar isto para desenvolvedores.
+Desarrollar un tema compatible no es complicado y tampoco hay que hacerlo desde cero, ya que muchos pueden generarse a partir de [temas hijo](https://codex.wordpress.org/es:Temas_hijos) de otros ya existentes. Aquí en la Wiki tenemos [una sesión entera](/es-mx/dev/creating-compatible-themes.md) dedicada a enseñar esto a los desarrolladores.
 
-Atualmente existe um tema desenvolvido pela comunidade do Tainacan e publicado no [repositório oficial do WordPress](https://br.wordpress.org/themes/). Os demais estão disponíveis via GitHub. Para instalar temas, acesse o painel de instalação de temas do WordPress e siga os passos na [seção de instalação](gerir-temas-no-wordpress).
+Actualmente existe un tema desarrollado por la comunidad Tainacan y publicado en el [repositorio oficial de WordPress](https://es.wordpress.org/themes/). El resto están disponibles a través de GitHub. Para instalar temas, vaya al panel de instalación de temas de WordPress y siga los pasos de la sección de instalación.
 
-### Tainacan Interface
+### Interfaz de Tainacan
 
-Este é o tema padrão do projeto Tainacan e está disponível nos repos oficiais do Wordpress [neste link](https://br.wordpress.org/themes/tainacan-interface/). Foi desenvolvido pela mesma equipe de design que elaborou a interface administrativa do Tainacan plugin, por isso deve trazer a mesma formalidade, com uma boa legibilidade e layouts que suportam grandes quantidades de informações exibidas em uma mesma tela. Este tema é ideal para museus, galerias, bibliotecas e qualquer pessoa que tenha um repositório digital. Destacamos suas principais vantagens:
+Este es el tema por defecto del proyecto Tainacan y está disponible en los repos oficiales de Wordpress [en este enlace](https://es.wordpress.org/themes/tainacan-interface/). Ha sido desarrollado por el mismo equipo de diseño que creó la interfaz administrativa del plugin Tainacan, por lo que debería aportar la misma formalidad, con una buena legibilidad y diseños que soporten grandes cantidades de información mostrada en la misma pantalla. Este tema es ideal para museos, galerías, bibliotecas y cualquiera que tenga un repositorio digital. Destacamos sus principales ventajas:
 
-- Templates específicos para as listas de itens do Repositório, da Coleção e do Termo, com várias configurações incluindo:
-  - Sobrescrever o modo de visualização padrão para listagens de termos;
-  - Esconder diversos elementos de controle da busca;
-  - Alterar comportamento da barra de filtros, como seu tamanho ou se aparece escondida de início;
-- Template específico para a lista de coleções, com dois modos de visualização, busca textual e ordenação;
-- Template específico para a página do item, com diversas opções, entre elas:
-  - Alterar a ordem em que anexos, metadados e documento são exibidos;
-  - Exibir a lista de metadados em mais de uma coluna;
-  - Mostrar os anexos como um carrossel e integrar o documento nesta mesma lista;
-  - Exibir um cabeçalho customizado que se assemelha ao da coleção;
-  - Botão de download no Documento;
-  - Exibir uma sessão de "Itens relacionados a este";
-- Atualizações frequentes e em sincronia com novas versões do plugin Tainacan;
-- Paleta de cores customizável;
-- Cor do cabeçalho de cada coleção customizável dentro do plugin, quando o tema está ativo;
-- Novo modo de visualização "Miniatura";
-- Botões de compartilhar para Facebook, Twitter, WhatsApp e Telegram na maioria das páginas;
-- Blocos Gutenberg padrão estilizados de acordo com a identidade visual do tema;
-- Suporte a barra lateral;
+- Plantillas específicas para listas de elementos de repositorios, colecciones y términos, con varias opciones de configuración, entre las que se incluyen:
+  - Anulación del modo de visualización por defecto para los listados de términos;
+  - Ocultar varios elementos de control de la búsqueda;
+  - Cambiar el comportamiento de la barra de filtros, como su tamaño o si aparece oculta al principio;
+- Plantilla específica para la lista de colecciones, con dos modos de visualización, búsqueda por texto y clasificación;
+- Plantilla específica para la página de artículos, con varias opciones, entre ellas:
+  - Cambiar el orden en que se muestran los archivos adjuntos, los metadatos y el documento;
+  - Mostrar la lista de metadatos en más de una columna;
+  - Mostrar los archivos adjuntos en forma de carrusel e integrar el documento en esta misma lista;
+  - Mostrar una cabecera personalizada que se asemeje a la de la colección;
+  - Botón de descarga en el documento;
+  - Mostrar una sección de "Elementos relacionados";
+- Actualizaciones frecuentes sincronizadas con las nuevas versiones del plugin Tainacan;
+- Paleta de colores personalizable;
+- Color de cabecera personalizable para cada colección dentro del plugin, cuando el tema está activo;
+- Nuevo modo de visualización "Miniaturas";
+- Botones para compartir en Facebook, Twitter, WhatsApp y Telegram en la mayoría de las páginas;
+- Bloques Gutenberg estándar estilizados según la identidad visual del tema;
+- Soporte de barra lateral;
 
-![Algumas telas do Tema Tainacan Interface](/_assets/gifs/themes-tainacan-interface.gif)
+![Capturas de pantalla del tema de interfaz de Tainacan](_assets/gifs/temas-tainacan-interfaz.gif)
 
 ### Blocksy
 
-O segundo tema mais recomendado que mencionamos aqui não é um tema filho, mas um popular [tema disponível no repositório WordPress](https://br.wordpress.org/themes/blocksy/ ":ignore"). Sua integração com o Tainacan é possível via um plugin, também disponibilizado no [repositório do WordPress](https://br.wordpress.org/plugins/tainacan-blocksy/ ":ignore"). Tendo ambos o plugin e o tema (ou um tema filho deste) ativado, você terá a acesso a uma série de configurações disponíveis no menu Personalizar. Nós cobrimos estas opções em mais detalhes no [post de lançamento do plugin](https://tainacan.org/blog/2021/06/14/integrando-o-tema-blocksy-com-o-tainacan/ ":ignore") e vale a pena dar uma olhada na [página oficial do tema](https://creativethemes.com/blocksy/ ":ignore"). Para mencionar alguns dos seus recursos:
+El segundo tema más recomendado que mencionamos aquí no es un tema hijo, sino un tema popular [tema disponible en el repositorio de WordPress](https://es.wordpress.org/themes/blocksy/ ":ignore"). Su integración con Tainacan es posible a través de un plugin, también disponible en el [repositorio de WordPress](https://es.wordpress.org/plugins/tainacan-blocksy/ ":ignore"). Una vez activados tanto el plugin como el tema (o un tema hijo), tendrás acceso a una serie de ajustes disponibles en el menú Personalizar. Cubrimos estas opciones con más detalle en [el post de lanzamiento del plugin](https://tainacan.org/en/blog/2021/06/14/using-the-blocksy-theme-with-tainacan/) y merece la pena echar un vistazo a la [página oficial del tema](https://creativethemes.com/blocksy/). Por mencionar algunas de sus características:
 
-- Templates específicos para as listas de itens do Repositório, de Termos e configurações separadas _para cada coleção_, incluindo diversas opções como:
-  - Escolher diferentes paletas de cores;
-  - Esconder vários elementos da barra de controle da busca;
-  - Mudar o comportamento do painel de filtros, como seu tamanho e se ele começa escondido;
-  - Algumas opções extras para o layout do cabeçalho da lista;
-- Template específico para a página do item, com diversas opções, dentre elas:
-  - Mudar a orden em que Anexos, Documento e metadados são exibidos, incluindo a possibilidade de usar duas colunas: uma para documentos e anexos, outra para os metadados, ao lado;
-  - Exibir lista de metadados em mais de uma coluna;
-  - Exibir rótulo dos metadados ao lado do seus valores;
-  - Mostrar anexos como um carrossel integrados ao documento na mesma lista;
-  - Mostrar um cabeçalho customizado que usa a imagem de miniatura como banner;
-  - Botão de download no documento;
-  - Navegação de itens (próximo e anterior);
-  - Sessão de Itens Relacionados baseado em uma taxonomia de escolha ou nos "Itens relacionados a este" via metadado de relacionamento;
-  - Caixa de compartilhamento personalizável;
-- Paleta de cor muito customizável;
-- Botão de "Mais" no menu do cabeçalho quando o nuḿero de itens não cabe na tela;
-- Várias outras opções de personalização do layout disponíveis pelo tema;
+- Plantillas específicas para las listas de ítems del Repositorio, a partir de Términos y configuraciones independientes _para cada colección_, incluyendo diversas opciones como:
+  - Elección de diferentes paletas de colores;
+  - Ocultar varios elementos de la barra de control de búsqueda;
+  - Cambiar el comportamiento del panel de filtros, como su tamaño y si se inicia oculto;
+  - Algunas opciones adicionales para el diseño de la cabecera de la lista;
+- Plantilla específica para la página de artículos, con varias opciones, entre ellas:
+  - Cambiar el orden en que se muestran Anexos, Documento y metadatos, incluyendo la posibilidad de utilizar dos columnas: una para documentos y anexos, la otra para metadatos, junto;
+  - Mostrar la lista de metadatos en más de una columna;
+  - Mostrar etiquetas de metadatos junto a sus valores;
+  - Mostrar los archivos adjuntos como un carrusel integrado con el documento en la misma lista;
+  - Mostrar una cabecera personalizada que utilice la imagen en miniatura como banner;
+  - Botón de descarga en el documento;
+  - Navegación por artículos (siguiente y anterior);
+  - Sesión de elementos relacionados basada en una taxonomía a elegir o en "Elementos relacionados con éste" a través de metadatos de relación;
+  - Cuadro para compartir personalizable;
+- Paleta de colores muy personalizable;
+- Botón "Más" en el menú de cabecera cuando el número de artículos no cabe en la pantalla;
+- Otras opciones de personalización del diseño disponibles a través del tema;
 
-![Algumas telas do tema Blocksy](/_assets/gifs/themes-blocksy.gif)
+![Capturas de pantalla del tema Blocksy](_assets/gifs/themes-blocksy.gif)
 
-### Identidade do Governo (IDG-WP)
+### Identidad gubernamental (IDG-WP)
 
-Este tema WordPress foi desenvolvido por uma equipe de voluntários vinculados ao antigo Ministério da Cultura, com o objetivo de padronizar diversos sites WordPress utilizados pelo governo federal. Um exemplo é o próprio site da [Secretaria de Cultura](http://cultura.gov.br/ 'ignore). O [tema original](https://github.com/culturagovbr/IDG-WP ":ignore") em si não possui suporte ao Tainacan, mas com a demanda de vários museus vinculados ao Ibram para uso do mesmo, foi criado uma _fork_, uma variação do tema, em [outro repositório](https://github.com/medialab-ufg/IDG-WP ":ignore"). Infelizmente, este projeto está necessitando de mantenedores e pode apresentar alguns problemas. Destacamos suas características:
+Este tema de WordPress fue desarrollado por un equipo de voluntarios vinculados al antiguo Ministerio de Cultura, con el objetivo de estandarizar varios sitios de WordPress utilizados por el Gobierno federal. Un ejemplo es la [Secretaria de Cultura](https://www.gov.br/cultura/pt-br). El [tema original](https://github.com/culturagovbr/IDG-WP ":ignore") por sí mismo no tiene soporte para Tainacan, pero con la demanda de varios museos vinculados a Ibram para utilizarlo, se creó un _fork_, una variación sobre el tema, en [otro repositorio](https://github.com/medialab-ufg/IDG-WP ":ignore"). Desgraciadamente, este proyecto necesita mantenedores y puede presentar algunos problemas. Destacamos sus características:
 
-- Templates específicos para as listas de itens do Repositório, da Coleção e do Termo porém sem imagens de cabeçalhos;
-- Template específico para a página do item, incluindo carrossel de anexo;
-- Integração padrão com a barra de links e acessibilidade do Governo Federal;
-- Suporte à maioria dos blocos gutenberg;
-- Dois locais para menu: na barra principal e no painel escondido ao seu lado;
-- Carrossel de notícias na página inicial;
-- Customização de sessões da página inicial via plugins;
+- Plantillas específicas para las listas de artículos Repositorio, Colección y Término, pero sin imágenes de cabecera;
+- Plantilla específica para la página de artículos, incluido el carrusel de anexos;
+- Integración estándar con la barra de enlaces y accesibilidad del Gobierno Federal;
+- Compatibilidad con la mayoría de bloques gutenberg;
+- Dos ubicaciones del menú: en la barra principal y en el panel oculto junto a ella;
+- Carrusel de noticias en la página de inicio;
+- Personalización de las sesiones de la página de inicio mediante plugins;
 
-![Algumas telas do Tema IDG-WP](/_assets/gifs/themes-idg-wp.gif)
+![Capturas de pantalla del tema IDG-WP](/_assets/gifs/themes-idg-wp.gif)
 
-### Veganos (Tema Filho)
+### Veganos (Tema infantil)
 
-Criado para o projeto [Covid-19 - UnB em Ação](http://repositoriocovid19.unb.br/ ":ignore"), este é um tema filho do tema [Veganos](https://wordpress.org/themes/veganos/ ":ignore"), portanto, além de baixá-lo do seu [repositório](https://github.com/tainacan/tainacan-unb-covid-19 ":ignore") é preciso também instalar o tema pai. Sua característica mais notável é o formato "ondulado" das imagens de cabeçalho, dentre outras:
+Creado para el proyecto [Covid-19 - UnB en acción](http://repositoriocovid19.unb.br/ ":ignore"), este es un tema hijo del tema [Veganos](https://es.wordpress.org/themes/veganos/), así que además de descargarlo de su [repositorio](https://github.com/tainacan/tainacan-unb-covid-19 ":ignore") también es necesario instalar el tema padre. Su característica más destacable es el formato "ondulado" de las imágenes de cabecera, entre otras:
 
-- Templates específicos para as listas de itens do Repositório, da Coleção e do Termo incluindo imagens de cabeçalho e estilizados com algumas bordas e sombras;
-- Template específico para a página do item, com metadados listados antes do Documento e anexos;
-- Listagem de posts em formado de blocos, em uma lista de duas colunas;
-- Botões estilizados com efeito ondulado;
-- Paleta de cores customizável
-- Integração padrão com abarra de links e acessibilidade do Governo Federal;
-- Integração com a barra de menus da UnB (caso não queira usar ela, basta puxar da [branch 'not-unb'](https://github.com/tainacan/tainacan-unb-covid-19/tree/not-unb ":ignore") do GitHub);
+- Plantillas específicas para las listas de elementos Repositorio, Colección y Término, incluyendo imágenes de cabecera y estilizadas con algunos bordes y sombras;
+- Plantilla específica para la página del artículo, con metadatos listados antes del Documento y los anexos;
+- Listado de entradas en formato de bloque, en una lista de dos columnas;
+- Botones estilizados con efecto ondulado;
+- Paleta de colores personalizable
+- Integración estándar con la barra de enlaces y accesibilidad del Gobierno Federal;
+- Integración con la barra de menús del BNU (si no desea utilizarla, basta con sacarla de la barra de menús). [branch 'not-unb'](https://github.com/tainacan/tainacan-unb-covid-19/tree/not-unb ":ignore") do GitHub);
 
-![Algumas telas do Tema Veganos](/_assets/gifs/themes-veganos.gif)
+![Capturas de pantalla del tema de Veganos](/_assets/gifs/themes-veganos.gif)
 
-### Rife Free (Tema Filho)
+### Rife Free (Tema Hijo)
 
-Este é um [tema filho](https://github.com/tainacan/rife-free-child ":ignore") do popular tema [Rife Free](https://wordpress.org/themes/rife-free/ ":ignore"). Ele tem uma dependência de um plugin instalado, o [Apollo13 Framework extensions](https://apollo13themes.com/rife/free ":ignore"), mas em compensação, traz muitas opções de customização, deste o formato de páginas e posts até comportamento do cabeçalho. Outros destaques são:
+Este es un [tema hijo](https://github.com/tainacan/rife-free-child ":ignore") del popular tema [Rife Free](https://es.wordpress.org/themes/rife-free/ ":ignore"). Depende de un plugin instalado, el plugin [Apollo13 Framework extensions](https://apollo13themes.com/rife/free ":ignore"), pero ofrece muchas opciones de personalización, desde el formato de páginas y entradas hasta el comportamiento de la cabecera. Otros aspectos destacados son:
 
-- Templates específicos para as listas de itens do Repositório, da Coleção e do Termo incluindo imagens de cabeçalho;
-- Template específico para a página do item, incluindo botões de próximo e anterior, que mostra a miniatura dos mesmos;
-- Botão de scroll para o topo;
-- Paleta de cores diversa e customizável;
-- Animações e efeitos de transição;
-- Listagem de posts em formado de blocos, opcionalmente em uma lista de três colunas;
+- Plantillas específicas para las listas de elementos Repositorio, Colección y Término, incluyendo imágenes de cabecera;
+- Plantilla específica para la página de ítems, incluyendo los botones siguiente y anterior, que muestra la miniatura de los ítems;
+- Botón de desplazamiento a la parte superior;
+- Paleta de colores diversa y personalizable;
+- Animaciones y efectos de transición;
+- Listado de entradas en formato de bloque, opcionalmente en una lista de tres columnas;
 
-![Algumas telas do Tema Rife Free](/_assets/gifs/themes-rife-free.gif)
+![Capturas de pantalla del tema Rife Free](/_assets/gifs/themes-rife-free.gif)
 
-### Twenty Twenty (Tema Filho)
+### Twenty Twenty (Tema Hijo)
 
-Todo ano o WordPress lança um "tema oficial", que vem ativado por padrão em suas instalações e que costuma ter um design popular, com boa aplicação dos blocos gutenberg além de testes de acessibilidade e responsibidade. Criamos, para validar nossos testes com o plugin, um tema filho do [TwentyTweny](https://wordpress.org/themes/twentytwenty/ ":ignore"), disponível [neste link](https://github.com/tainacan/TwentyTwentyChild ":ignore").
+Cada año WordPress lanza un "tema oficial", que se activa por defecto en sus instalaciones y que suele tener un diseño popular, con buena aplicación de los bloques gutenberg así como pruebas de accesibilidad y responsiveness. Para validar nuestras pruebas con el plugin, hemos creado un tema hijo de [TwentyTweny](https://wordpress.org/themes/twentytwenty/ ":ignore"), disponible [en este enlace](https://github.com/tainacan/TwentyTwentyChild ":ignore").
 
-![Algumas telas do Tema Twenty Twenty](/_assets/gifs/themes-twentytwenty.gif)
+![Capturas de pantalla del tema Twenty Twenty](/_assets/gifs/themes-twentytwenty.gif)
 
 ---
 
-## Gerir Temas no WordPress
+## Gestión de temas en WordPress
 
-### Vídeo Tutorial: Instalação de Temas
+### Videotutorial: Instalación de temas
 
 <iframe
     width="560"
@@ -132,27 +131,28 @@ Todo ano o WordPress lança um "tema oficial", que vem ativado por padrão em su
     allowfullscreen>
 </iframe>
 
-> Veja também como instalar o [plugin do Tainacan](/es-mx/tainacan) para WordPress.
+> Vea también cómo instalar el [plugin Tainacan](/es-mx/tainacan.md) para WordPress.
 
-### Atualizar o Tema
+### Actualizar el tema
 
-1. Acesse o Painel de Controle do _WordPress_;
-2. No menu lateral esquerdo, clique em **Aparência**;
-3. Selecione o submenu **Tema**;
-4. No bloco de cada tema a mensagem "_Nova versão disponível. Atualizar agora_" é exibida sempre que uma nova versão é lançada;
-5. Clique em **Atualizar agora** para receber a última versão estável do Tema.
+1. Vaya al Panel de control de _WordPress_;
+2. En el menú lateral izquierdo, haga clic en **Apariencia**;
+3. Seleccione el submenú **Tema**;
+4. En el bloque de cada tema, aparece el mensaje "_Nueva versión disponible. Actualizar ahora_" aparece cada vez que se publica una nueva versión;
+5. Haga clic en **Actualizar ahora** para recibir la última versión estable del tema.
 
-### Alterar ou Excluir o Tema
+### Cambiar o eliminar el tema
 
-1. Acesse o Painel de Controle do _WordPress_;
-2. No menu lateral esquerdo, clique em Aparência;
-3. Selecione o submenu Tema;
-4. Para alterar o tema atual, ative outro tema de sua preferência.
-5. Para excluir o tema clique em Informações do tema no bloco do tema desejado;
-6. No canto inferior direito clique em Excluir.
+1. Vaya al Panel de control de _WordPress_;
+2. En el menú lateral izquierdo, haga clic en Apariencia;
+3. Seleccione el submenú Tema;
+4. Para cambiar el tema actual, active otro tema de su elección.
+5. Para eliminar el tema, haga clic en Información sobre el tema en el bloque del tema deseado;
+6. En la esquina inferior derecha, haga clic en Eliminar.
 
-!> **Atenção**: Para preservar as configurações e a navegabilidade dos itens e coleções, utilize temas compatíveis com as boas práticas de desenvolvimento de temas para o Tainacan.
+!> **Atención**: Para preservar la configuración y navegabilidad de los elementos y colecciones, utilice temas compatibles con las mejores prácticas de desarrollo de temas para Tainacan.
 
-!> **Atenção**: Desativar o tema do Tainacan afeta as configurações de exibição e navegabilidade em itens e coleções no repositório. Esta operação só poderá ser desfeita por administradores.
+!> **Atención**: La desactivación del tema Tainacan afecta a los ajustes de visualización y navegabilidad de los ítems y colecciones del repositorio. Esta operación sólo puede ser deshecha por los administradores.
 
-!> **Atenção**: por segurança, sempre é recomendado que seja feito o backup da instalação antes de qualquer modificação. Exclua o tema somente se tiver certeza de que não haverá perdas graves de informação. Esta operação só poderá ser revertida com a restauração de backups da instalação.
+
+!> **Atención**: Por motivos de seguridad, siempre se recomienda hacer una copia de seguridad de la instalación antes de realizar cualquier cambio. Sólo elimine el tema si está seguro de que no se producirá una pérdida grave de información. Esta operación sólo puede revertirse restaurando una copia de seguridad de la instalación.

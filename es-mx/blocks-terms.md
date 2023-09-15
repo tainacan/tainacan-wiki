@@ -1,75 +1,73 @@
-# Blocos de Termos
+# Bloques de condiciones
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Si su repositorio tiene taxonomías de varios términos, puede ser una buena idea presentarlas en la página de inicio o en un post de introducción a la colección. Para estas situaciones, merece la pena utilizar un bloque de términos. Tainacan ofrece actualmente dos de ellos:
 
-Se seu repositório possui taxonomias de múltiplos termos, pode ser uma boa ideia apresentá-los na página inicial ou em um post de introdução ao acervo. Para estas situações vale a pena usar um bloco de termos. Atualmente, o Tainacan oferece dois destes:
+1. [Carrusel de condiciones](#carrusel-de-condiciones)
+2. [Lista de condiciones](#lista-de-condiciones) _(Estático)_
 
-1. O [Carrossel de Termos](#carrossel-de-termos)
-2. A [Lista de Termos](#lista-de-termos) _(Estático)_
+No se pierda de un bloque similar:
 
-Não deixe de ver também um bloco similar:
-
-- [Lista de Facetas](/es-mx/blocks-facets#lista-de-facetas);
+- [Lista de aspectos](/es-mx/blocks-facets#lista-de-aspectos);
 
 ---
 
-## Carrossel de Termos
+## Carrusel de condiciones
 
-Para apresentar vários termos em sequência e ainda dar um ar mais "dinâmico" à sua publicação, o bloco Carrossel de Termos é ideal.
+Para presentar varios términos en secuencia y dar a su publicación un aspecto más "dinámico", el bloque Carrusel de condiciones es ideal.
 
-### Configurações Iniciais do Bloco
+### Configuraciones iniciales del bloque
 
-![Selecionando os termos no bloco](/_assets/gifs/blocks-terms-carousel-1.gif)
+![Selección de condiciones en el bloque](_assets/gifs/blocks-terms-carousel-1.gif)
 
-Para começar, escolha a Taxonomia de onde serão carregados os termos. Feito isto, escolha os termos que serão adicionados ao bloco. Você adiciona termos através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do termo inserido.
+Para empezar, elija la Taxonomía desde la que se cargarán las condiciones. Una vez hecho esto, elija los términos que se añadirán al bloque. Puede añadir términos a través del modal y eliminarlos de la propia lista haciendo clic en el botón "X" que aparece encima del término insertado.
 
-Com os termos carregadas, você pode notar que o carrossel não se move. Na verdade, ele só é ativado na versão publicada ou pré-visualização do post ou página. Aqui no editor, você verá uma lista comum com scroll. Observe que ao clicar em uma termo, o link te leva para a [Lista de Itens do Termo](/es-mx/tainacan-pages#páginas-de-itens-de-um-termo). Agora, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con las condiciones cargadas, puede que notes que el carrusel no se mueve. De hecho, sólo se activa en la versión publicada o de vista previa de la entrada o página. Aquí, en el editor, verá una lista desplazable normal. Tenga en cuenta que al hacer clic en una condición, el enlace le lleva a la sección [Lista de elementos de la condición](/es-mx/tainacan-pages#páginas-de-elementos-de-un-término). Ahora podemos realizar una serie de ajustes que estarán disponibles en el panel lateral cuando tengamos el bloque activo.
 
-### Modos de Visualização do Termo
+### Modos de visualización de términos
 
-![Vendo o carrossel em ação no tema](/_assets/gifs/blocks-terms-carousel-2.gif)
+![Ver el carrusel en acción en el tema](_assets/gifs/blocks-terms-carousel-2.gif)
 
-Por padrão o Carrossel de Termos, assim com o [Carrossel de Coleções](/es-mx/blocks-collections#carrossel-de-coleções), vai parecer bem diferente do [Carrossel de Itens](/es-mx/blocks-items#carrossel-de-itens), pois três imagens aparecem em cada unidade do carrossel. Estas imagens são de Itens, na verdade, os três primeiros itens da lista deste termo. Assim, o bloco te apresenta uma prévia de como é aquela listagem. Se ao invés da **Grade de Itens** você desejar exibir a **Imagem do Termo**, basta trocar nas configurações do bloco na barra lateral do editor.
+Por defecto, el carrusel de condiciones, así como la sección [Carrusel de colecciones](/es-mx/blocks-collections#carrusel-de-colecciones), será muy diferente de [Carrusel de elementos](/es-mx/blocks-items#carrusel-de-elementos), porque aparecen tres imágenes en cada unidad del carrusel. Estas imágenes son de elementos, de hecho, los tres primeros artículos de la lista para este término. Así, el bloque le ofrece una vista previa del aspecto de la lista. Si en lugar de la **Rejilla de artículos** quieres mostrar la  **Imagen de la condición**, sólo tienes que cambiarlo en la configuración del bloque en la barra lateral del editor.
 
-### Opções do Carrossel
+### Opciones del carrusel
 
-Como em outros blocos, você pode escolher exibir ou não o nome do termo abaixo da imagem. As demais opções disponiveis pelo carrossel estão relacionadas à sua reprodução. São elas:
+Al igual que con otros bloques, puede elegir si desea mostrar o no el nombre de la condición debajo de la imagen. Las demás opciones disponibles en el carrusel están relacionadas con su reproducción. Son las siguientes
 
-- Loop Slides - Fazer com que, ao atingir o final da lista, o carrossel volte para o início;
-- Auto Play - Reproduzir automaticamente o carrossel;
-- Intervalo de tempo entre cada troca de termo;
-- Posição das Setas: De que maneira as setas de navegação do carrossel devem estar dispostas;
+- Diapositivas en bucle - Haga que el carrusel vuelva al principio cuando llegue al final de la lista;
+- Reproducción automática - Reproduce el carrusel automáticamente;
+- Intervalo de tiempo entre cada cambio de término;
+- Posición de las flechas: Cómo deben disponerse las flechas de navegación del carrusel;
 
 <br>
 
 ---
 
-## Lista de Termos
+## Lista de condiciones
 
-Com o bloco Lista de Termos, você seleciona manualmente quais termos deseja exibir em uma lista com quebra de linha.
+Con el bloque Lista de condiciones, puede seleccionar manualmente los términos que desea mostrar en una lista con un salto de línea.
 
-!> Uma desvantagem é que este é um **bloco estático**. Isso significa que os termos selecionados (nome e imagem) serão salvos na configuração do bloco no post e não são atualizados se vc fizer alguma mudança na configuração do termo. Suponhamos que você escolheu alguns termos, salvou seu post e alguns dias depois alterou o nome ou a imagem daquele termo. Ao voltar para o bloco, estas mudanças não estarão refletidas, será preciso repetir a seleção. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco do [Carrossel de Termos](#carrossel-de-termos) em seu lugar.
+!> Una desventaja es que se trata de un **bloque estático**. Esto significa que las condiciones seleccionadas (nombre e imagen) se guardan en la configuración del bloque en la entrada y no se actualizan si realizas algún cambio en la configuración de las condiciones. Supongamos que eliges unas condiciones, guardas tu entrada y unos días después cambias el nombre o la imagen de ese término. Cuando vuelvas al bloque, estos cambios no se reflejarán y tendrás que repetir la selección. Por eso recomendamos usarlo con precaución y, si es posible, utilizar la opción [Carrusel de condiciones](#carrusel-de-condiciones) en su lugar.
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del Bloque
 
-Para começar, escolha a Taxonomia de onde serão carregados os termos. Feito isto, escolha os termos que serão adicionados ao bloco. Você adiciona termos através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do termo inserido. Ao clicar em um termo, o link te leva para a [Lista de Itens do Termo](/es-mx/tainacan-pages#páginas-de-itens-de-um-termo).
+Para empezar, elija la Taxonomía desde la que se cargarán los términos. Una vez hecho esto, elija las condiciones que se añadirán al bloque. Puede añadir términos a través del modal y eliminarlos de la propia lista haciendo clic en el botón "X" que aparece encima del término que ha introducido. Cuando haga clic en una condición, el enlace le llevará a la sección [Lista de elementos de la condición](/es-mx/tainacan-pages#páginas-de-elementos-de-una-condición).
 
-Com os itens carregadas, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con los elementos cargados, podemos realizar algunos ajustes que están disponibles en el panel lateral cuando tenemos el bloque activo.
 
-![Configurações Iniciais do Bloco](/_assets/gifs/blocks-terms-list-1.gif)
+![Ajustes iniciales del Bloque](_assets/gifs/blocks-terms-list-1.gif)
 
-### Configurações da Exibição de Termos
+### Configuración de la pantalla de condiciones
 
-Este bloco oferece dois modos de visualização, disponíveis na barra superior do bloco:
+Este bloque ofrece dos modos de visualización, disponibles en la barra superior del bloque:
 
 <!-- tabs:start -->
 
-#### ** Grade de Termos **
+#### ** Tabla de condiciones **
 
-O modo padrão é a grade de termos, que mostrará as imagens dos termos (185px _x_ 185px), com seus nomes abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o nome do termo.
+El modo por defecto es la cuadrícula de condiciones, que mostrará las imágenes con las condiciones(185px _x_ 185px), con sus nombres debajo. En este modo, puede configurar si desea mostrar o no el nombre de la condición.
 
-#### ** Lista de Termos **
+#### ** Lista de condiciones **
 
-A lista de termos permite uma visão mais simplificada, com imagens menores (54px _x_ 54px) e os nomes ao lado. Neste modo, você pode escolher não mostrar a imagem, o ideal para termos que não possuem imagens.
+La lista de condiciones permite una vista más simplificada, con imágenes más pequeñas (54px _x_ 54px) y los nombres junto a ellas. En este modo, puede optar por no mostrar la imagen, lo que resulta ideal para las condiciones que no tienen imágenes.
 
 <!-- tabs:end -->

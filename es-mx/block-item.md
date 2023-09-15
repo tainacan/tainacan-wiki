@@ -1,73 +1,72 @@
-# Blocos do Item
+# Bloques de elementos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Os blocos do item são blocos relacionados ao envio ou exibição de um único item. Atualmente, existem 2 blocos com este perfil:
+Los bloques de artículos son bloques relacionados con el envío o la visualización de un solo artículo. Actualmente hay 2 bloques con este perfil:
 
-1. A [Galeria de Mídia do Item](#galeria-de-midias-do-item)
-2. O [Formulário de Submissão de Itens](#formulário-de-submissão-de-itens)
+1. [Galería multimedia de elementos](#galería-multimedia-de-elementos)
+2. [Formulario de presentación de elementos](#formulario-de-presentación-de-elementos)
 
 ---
 
-## Galeria de Mídias do Item
+## Galería multimedia de elementos
 
-[Lançado na versão 0.19](https://tainacan.org/?p=10616 ":ignore"), este bloco busca oferecer uma maneira de se exibir as mídias do item em qualquer página ou post, da mesma maneira que estas são exibidas em uma página de item em temas que oferecem suporte ao Tainacan. É em resumo, uma galeria com o Documento principal e os Anexos do item, exibidos em um carrossel e com recursos de zoom e navegação.
+[Publicado en la versión 0.19](https://tainacan.org/?p=10616 ":ignore"), este bloque tiene como objetivo proporcionar una forma de mostrar los medios de comunicación del elemento en cualquier página o post, de la misma manera que se muestran en una página del elemento en temas que soportan Tainacan. En resumen, se trata de una galería con el documento principal y los archivos adjuntos del artículo, mostrados en un carrusel y con funciones de zoom y navegación.
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del Bloque
 
-Logo ao se inserir o bloco, é necessário selecionar qual item será mostrado. Para isso, escolha primeiro a coleção onde será procurado e em seguida o item em si. Quando selecionado, o bloco irá carregar a galeria de mídias. Para evitar que este bloco pese demais a edição, seus recursos de navegação do carrossel e de lightbox com zoom estão desabilitados no editor. Para vê-los em ação, é necessário publicar ou pré-visualizar a página.
+En cuanto inserte el bloque, deberá seleccionar qué elemento se mostrará. Para ello, elija primero la colección en la que se buscará y, a continuación, el propio elemento. Una vez seleccionado, el bloque cargará la galería multimedia. Para evitar que este bloque agobie demasiado la edición, sus funciones de navegación en carrusel y zoom lightbox están desactivadas en el editor. Para verlas en acción, es necesario publicar o previsualizar la página.
 
-![Configurando o bloco de galeria de mídias do item](/_assets/gifs/blocks-item-gallery-1.gif)
+![Configurar el bloque de la galería multimedia del elemento](/_assets/gifs/blocks-item-gallery-1.gif)
 
-### Configurações do Bloco
+### Ajustes del Bloque
 
-No painel lateral do editor de blocos, é possível ver uma série de configurações que permitem modificar a aparência e comportamento da galeria. Veja a seguir detalhes sobre algumas destas opções.
+En el panel lateral del editor de bloques, puede ver una serie de ajustes que le permiten modificar el aspecto y el comportamiento de la galería. Consulte a continuación los detalles de algunas de estas opciones.
 
-![Configurando opções do bloco de galeria de mídias do item](/_assets/gifs/blocks-item-gallery-2.gif)
+![Configuración de las opciones del bloque de la galería multimedia del elemento](/_assets/gifs/blocks-item-gallery-2.gif)
 
 <!-- tabs:start -->
 
-#### ** Origem da Mídia do Item **
+#### ** Fuente Multimedia del Elemento **
 
-Aqui é decidido se o bloco deverá mostrar o Documento, os Anexos ou os dois juntos. Desse modo, é possível ter mais de um bloco deste inserido na página caso você queira exibir estes elementos de formas diferentes.
+Aquí usted decide si el bloque debe mostrar el Documento, los Documentos Adjuntos o ambos juntos. De este modo, puede tener más de uno de estos bloques en la página si desea mostrar estos elementos de diferentes maneras.
 
-#### ** Elementos do Layout **
+#### ** Elementos de diseño **
 
-A galeria de mídias pode funcionar de diferentes modos. Se configurada para exibir somente o carrossel de miniaturas, o clique nestes abrirá o lightbox. Se configurada para exibir ambos o slider principal e o carrossel de miniaturas, então as miniaturas servirão de apoio para a navegação do slider principal, enquanto o clique neste é que abrirá o ligthbox. Caso seus arquivos sejam primariamente documentos como PDFs ou áudio e não faça sentido haver um lightbox com zoom para sua galeria, é possível desabilitar o recurso nesta seção.
+La galería multimedia puede funcionar de diferentes maneras. Si está configurada para mostrar sólo el carrusel de miniaturas, al hacer clic en éstas se abrirá la caja de luz. Si está configurada para mostrar tanto el deslizador principal como el carrusel de miniaturas, las miniaturas servirán de apoyo para navegar por el deslizador principal, mientras que al hacer clic en ellas se abrirá la caja de luz. Si tus archivos son principalmente documentos como PDFs o audio y no tiene sentido tener una caja de luz con zoom para tu galería, puedes desactivar la función en esta sección.
 
-#### ** Configurações do Slider Principal **
+#### ** Ajustes de la barra deslizante principal **
 
-Aqui podem ser configuradas:
+Aquí puede configurarse:
 
-- O tamanho das Setas de navegação do slider principal;
-- A altura máxima do slider principal (em relação ao tamanho da tela);
-- A largura máxima do slider principal (em relação ao tamanho da área onde está inserido o bloco);
-- A opção de não se mostrar o nome do arquivo no slider;
-- A opção de não se mostrar a legenda do arquivo no slider;
-- A opção de não se mostrar a descrição do arquivo no slider;
-- A exibição ou não do botão de download da mídia;
+- El tamaño de las flechas de navegación del deslizador principal;
+- La altura máxima de la barra deslizante principal (en relación con el tamaño de la pantalla);
+- La anchura máxima de la barra deslizante principal (en relación con el tamaño del área donde se inserta el bloque);
+- La opción de no mostrar el nombre del archivo en el deslizante;
+- La opción de no mostrar el subtítulo del archivo en el deslizante;
+- La opción de no mostrar la descripción del archivo en el deslizante;
+- La opción de mostrar o no el botón de descarga multimedia;
 
-#### ** Configurações do Carrossel de Miniaturas **
+#### ** Ajustes del carrusel de miniaturas **
 
-Aqui podem ser configuradas:
+Aquí puede configurarse:
 
-- A largura máxima do carrossel de miniaturas (em relação ao tamanho da área onde está inserido o bloco);
-- A largura dos items do carrossel de miniaturas;
-- A opção de não se mostrar o nome do arquivo no carrossel;
-- A opção de não se mostrar a legenda do arquivo no carrossel;
-- A opção de não se mostrar a descrição do arquivo no carrossel;
+- La anchura máxima del carrusel de miniaturas (en relación con el tamaño del área donde se inserta el bloque);
+- La anchura de los elementos del carrusel de miniaturas;
+- La opción de no mostrar el nombre del archivo en el carrusel;
+- La opción de no mostrar el subtítulo del archivo en el carrusel;
+- La opción de no mostrar la descripción del archivo en el carrusel;
 
-#### ** Configurações do Lightbox **
+#### ** Ajustes de la Lightbox **
 
-Aqui podem ser configurados:
+Aquí puede configurarse:
 
-- O padrão de cor do lightbox onde será mostrado o zoom da imagem (claro ou escuro);
-- A opção de não se mostrar o nome do arquivo no lightbox;
-- A opção de não se mostrar a legenda do arquivo no lightbox;
-- A opção de não se mostrar a descrição do arquivo no lightbox;
+- El patrón de color de la lightbox  donde se mostrará el zoom de la imagen (claro u oscuro);
+- La opción de no mostrar el nombre del archivo en la lightbox ;
+- La opción de no mostrar el título del archivo en la lightbox ;
+- La opción de no mostrar la descripción del archivo en el lightbox;
 
 <!-- tabs:end -->
 
-## Formulário de Submissão de Itens
+## Formulario de presentación de elementos
 
-Na versão 0.17 do Tainacan, um novo recurso de submissão de itens foi apresentado, que é possível graças a este bloco e algumas configurações feitas na coleção. Para entender o funcionamento dele, recomendamos a leitura da página que trata do assunto como um todo: [Submissão de Itens](/es-mx/item-submission).
+En la versión 0.17 de Tainacan, se ha introducido una nueva función de envío de elementos, que es posible gracias a este bloque y a algunos ajustes realizados en la colección. Para entender cómo funciona, recomendamos leer la página que trata el tema en su conjunto: [Presentación de elementos](/es-mx/item-submission).

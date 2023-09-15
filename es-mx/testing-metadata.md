@@ -1,34 +1,33 @@
-# Testando Metadados
+# Pruebas de metadatos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+## Fundamentos
 
-## O Básico
+1. Cree los diferentes tipos de metadatos a **nivel de colección**, en diferentes colecciones:
+1. Recuerda crear al menos un metadato de tipo _relación_, uno de tipo _taxonomía_, uno de tipo _compuesto_ y uno de tipo _usuario_;
+1. Intente marcar diferentes opciones entre los metadatos en:
 
-1. Crie os diferentes tipos de metadados a **nível de coleção**, em coleções diferentes:
-1. Lembre-se de criar pelo menos um metadado do tipo _relacionamento_, um do tipo _taxonomia_, um do tipo _composto_ e um do tipo _usuário_;
-1. Busque marcar opções diferentes entre os metadados em:
+   
+   * Estado;
+   * Mostrar en la lista;
+   * Opciones de relleno (es muy importante marcar las opciones _required_, _multiple_ o _single_ fill);
+   * Otros campos de texto;
 
-   - Status;
-   - Exibir na listagem;
-   - Opções de Preenchimento (muito importante checar as opções de preenchimento _requerido_, _multiplo_ ou _único_);
-   - Demais campos de texto;
+2. Pruebe las acciones _excluir_, _cambiar orden_, _editar metadatos_ o _desactivar_.
 
-1. Teste as ações de _exclusão_, _troca de ordem_, _edição de metadados_ ou _desabilitar_.
+- [x] Recargue la página y compruebe los cambios para confirmar que todo se ha guardado;
+- [x] Observe el tiempo de carga al crear metadatos;
+- [x] Observe el tiempo de finalización al **guardar** cada metadato;
+- [x] Ver si las **configuraciones se reflejan** en la lista de elementos y en los formularios de creación de elementos;
 
-- [x] Recarregue a página e verifique as mudanças para confirmar que tudo foi salvo;
-- [x] Observe o tempo de carregamento na criação de metadados;
-- [x] Observe o tempo de conclusão ao **salvar** cada metadado;
-- [x] Veja se as **configurações se refletem** na lista de items e nos formulários de criação de itens;
+?> _Nota 1_: Un metadato que está "desactivado" es diferente de uno que está marcado como "No mostrar en la lista". Con el primero, ni siquiera puede insertar los metadatos en el artículo. Con el segundo, sólo cambia su visibilidad en la lista de elementos.
 
-?> _Nota 1_: É diferente um metadado estar "desabilitado" de estar marcado para "Não exibir na listagem". Com o primeiro, não é possível nem mesmo inserir o metadado no item. Com o segundo, ele só muda a visibilidade na lista de itens.
+?> _Nota 2_: La ordenación de los hijos de los metadatos compuestos sólo funciona dentro de su grupo y actualmente no se permiten las taxonomías como hijos de los compuestos.
 
-?> _Nota 2_: A ordenação de filhos do metadado composto só funciona dentro de seu grupo e não são permitidos, no momento, taxonomias como filhos de compostos.
+## Nivel de repositorio
 
-## Nível Repositório
+1. Repita los pasos descritos anteriormente para algunos metadatos a nivel de repositorio;
+2. Entre en la página de metadatos de una colección;
+   - [x] Comprobar que se han heredado los metadatos;
+   - [x] Comprobar que es posible cambiar su orden cuando se accede desde la pantalla de configuración de metadatos de la colección;
 
-1. Repita os passos descritos acima para alguns metadados nível repositório;
-2. Entre na página de metadados de uma coleção;
-   - [x] Verifique se os metadados foram herdados;
-   - [x] Verifique se é possível trocar a ordem dos mesmos quando acessados na tela de configuração de metadados da coleção;
-
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/es-mx/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).

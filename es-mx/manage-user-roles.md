@@ -1,55 +1,53 @@
-# Gerenciar Funções de Usuários
+# Gestión de las funciones de los usuarios
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Desde la versión 0.15 de Tainacan, es posible configurar **roles de usuario** con respecto a [permisos de Tainacan](/es-mx/capabilities.md). Esto facilita limitar el acceso de los editores de _Tainacan_ a ciertas configuraciones o incluso dar a los _autores_ de tu sitio WordPress ciertos permisos de edición en el panel de administración de tu repositorio.
 
-Desde a versão 0.15 do Tainacan, é possível configurar as **funções de usuários** no que diz respeito [às permisssões do Tainacan](/es-mx/capabilities.md). Assim fica fácil limitar o acesso de _Editores do Tainacan_ à algumas configurações ou até mesmo dar para _Autores_ do seu site WordPress algumas permissões de edição no painel administrativo do seu repositório.
+Esta función está disponible a través del menú del plugin, al que se puede acceder desde el menú lateral del panel de administración de WordPress:
 
-Esta função está disponibilizada pelo menu do plugin, que pode ser acessado no menu lateral do painel administrativo do WordPress:
+![Pantalla de gestión de roles de usuario](_assets/images/manage-user-roles-1.png)
 
-![Tela de Gestão de Funções de Usuários](/_assets/images/manage-user-roles-1.png)
+Sólo los usuarios que tengan el permiso [Gestionar permisos de usuario](/es-mx/capabilities#repositorio-general) pueden acceder a esta pantalla.
 
-Somente usuários que possuem a permissão de [Gerenciar Permissões de Usuários](/es-mx/capabilities#repositório-em-geral) poderão acessar esta tela.
+## Permisos de WordPress vs. Permisos de Tainacan
 
-## Permissões do WordPress vs. Permissões do Tainacan
+Tenga en cuenta que además de los roles de usuario creados para Tainacan, también se enumeran los roles estándar de WordPress. No puede eliminar estos roles y el control de los permisos realizados sólo se referirá a Tainacan. Para gestionar otros permisos por rol, como "Editar entradas", "Cambiar tema", existen plugins específicos de WordPress. Aquí sólo trataremos lo que afecta a Tainacan.
 
-Note que além das funções de usuários criadas para o Tainacan, são listadas também as funções padrão do WordPress. Você não pode deletar estas funções e o controle das permissões feitas terá relação apenas com o Tainacan. Para gerir outras permissões por função, tal como a de "Editar posts", "Trocar Tema", existem plugins específicos do WordPress. Aqui, tratamos apenas do que afeta o Tainacan.
+Con esta división, tus usuarios que sólo tengan roles de Tainacan no tendrán acceso a otros permisos del sitio, lo que puede decidirse otorgando al usuario más de un rol, o asignando a los roles de WordPress permisos de Tainacan.
 
-Com esta divisão, seus usuários que possuírem apenas funções do Tainacan, não terão acesso à outras permissões do site, o que pode ser decidido concedendo ao usuário mais de uma função, ou atribuindo à funções do WordPress permissões do Tainacan.
+## Editar un rol de usuario
 
-## Editando uma Função de Usuário
+Pulsando _Editar_ en cualquiera de los roles anteriores, aparecerá la siguiente pantalla:
 
-Ao clicar em _Editar_ em qualquer uma das funções acima, a seguinte tela aparecerá:
+![Pantalla de configuración de roles de usuario en la pestaña del repositorio](_assets/images/manage-user-roles-2.png)
 
-![Tela de Configuração de uma Função de Usuário, aba Repositório](/_assets/images/manage-user-roles-2.png)
+Además del nombre, puede marcar en las casillas qué permiso está asignado a ese rol de usuario. Tenga en cuenta que, como se explica en la página [permisos](/es-mx/capabilities), algunos permisos afectan a otros. El permiso "Gestionar Tainacan", en este caso, ya otorga al rol todos los demás permisos por defecto.
 
-Além do nome, é possível marcar nas caixas qual permissão está atribuida àquela função de usuário. Note que, como explicado na [página sobre permissões](/es-mx/capabilities), algumas permissões afetam outras. A permissão "Gerenciar Tainacan", neste caso, já concede à função todas as outras permissões por padrão.
+En la pestaña "Colecciones", podemos gestionar no sólo los permisos que afectan a todas las colecciones, sino también especificar para determinadas colecciones si habrá o no un permiso para ese rol:
 
-Na aba "Coleções", podemos gerenciar não apenas permissões que afetam a todas as coleções, mas também especificar para certas coleções se haverá ou não uma permissão para aquela função:
+![Pantalla de configuración del rol de usuario en la pestaña de Colecciones](_assets/images/manage-user-roles-3.png)
 
-![Tela de Configuração de uma Função de Usuário, aba Coleções](/_assets/images/manage-user-roles-3.png)
+En este caso, cualquier permiso que esté marcado para todas las colecciones afectará al permiso del mismo nombre cuando se cambie a las colecciones específicas.
 
-Neste caso, qualquer permissão que for marcada para todas as coleções, afetará a permissão de mesmo nome ao se trocar para as coleções específicas.
-
-## Criando funções do zero, ou a partir de outras
+## Creación de funciones desde cero, o a partir de otras
 
 <div style="float: right; margin-left: 32px;">
 
-![Criando uma função de usuário a partir de outra](/_assets/images/manage-user-roles-4.png ":size=220")
+![Crear una función de usuario a partir de otra](_assets/images/manage-user-roles-4.png ":size=220")
 
 </div>
 
-Pode ser desável criar uma função de usuário nova, com permisssões bem específicas. Neste caso, basta clicar em "Nova Função" no botão do canto superior esquerdo da tela de Funções do Usuário. Isto criará uma função limpa, sem nenhum permissão algum.
+Puede ser conveniente crear un nuevo rol de usuario con permisos muy específicos. En este caso, simplemente haga clic en "Nuevo Rol" en el botón situado en la parte superior izquierda de la pantalla de Roles de Usuario. Esto creará un rol limpio, sin ningún permiso.
 
-Porém, se o que pretende-se é criar uma função com permissões muito parecidas das de um "Editor", salvas algumas exceções, um caminho mais simples pode ser feito: basta clicar na setinha para usar alguma função existente como _modelo_. A nova função agora terá as mesmas permissões que a modelo escolhida de início.
+Sin embargo, si desea crear una función con permisos muy similares a los de un "Editor", con algunas excepciones, puede tomar una ruta más simple: simplemente haga clic en la flecha para utilizar una función existente como _modelo_. La nueva función tendrá ahora los mismos permisos que el modelo que eligió al principio.
 
-## Configurando permissões específicas
+## Establecer permisos específicos
 
-O processo descrito nesta página te leva por um caminho de configuração no seguinte fluxo:
+El proceso descrito en esta página le lleva a través de una ruta de configuración en el siguiente flujo:
 
-> Função de Usuário > Permissão > Repositório > Coleção
+> Rol de Usuario > Permiso > Repositorio > Colección
 
-O que funciona bem para a maioria dos casos. Porém, podem haver situações em que se deseja remover ou adicionar uma permissão para uma função especificamente em uma coleção. Neste caso, um fluxo mais interessante seria:
+Esto funciona bien para la mayoría de los casos. Sin embargo, puede haber situaciones en las que desee eliminar o añadir un permiso para un rol específico en una colección. En este caso, un flujo más interesante sería:
 
-> Coleção > Permissão > Função de Usuário
+> Colección > Permiso > Rol de usuario
 
-Para entender como fazer isso, acesse a documentação de como [Gerenciar Permissões Específicas](/es-mx/manage-specific-capabilities.md)
+Para saber cómo hacerlo, consulte la documentación sobre cómo [Gestionar permisos específicos](/es-mx/manage-specific-capabilities.md)

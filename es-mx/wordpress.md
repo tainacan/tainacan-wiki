@@ -1,155 +1,154 @@
-# Como instalar o wordpress num servidor XAMPP (windows)
+# Como instalar wordpress en un servidor XAMPP (windows)
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Dando continuidade à instalação do servidor web na sua máquina local, agora iremos instalar o **wordpress**. Se você ainda não instalou o servidor web, [clique aqui para ver o tutorial](/es-mx/xampp#instalando-o-tainacan-em-uma-máquina-windows-local-sem-servidor).
-Para instalar o **Tainacan**, [você pode optar por ver esse tutorial](/es-mx/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
+Continuando con la instalación del servidor web en su máquina local, ahora vamos a instalar **wordpress**. Si aún no has instalado el servidor web, [haz clic aquí para ver el tutorial](/es-mx/xampp#instalando-tainacan-de-forma-local-en-una-computadora-con-windows-sin-servidor).
+Para instalar **Tainacan**, [puedes optar por ver este tutorial](/es-mx/tainacan#cómo-instalar-el-plugin-tainacan-en-wordpress).
 
-Se preferir, você pode assistir os mesmos tutoriais em vídeo:
+Si lo prefieres, puedes ver los mismos tutoriales en vídeo:
 
 - [XAMPP](https://www.youtube.com/watch?v=rznX0EZhWG4)
 - [Wordpress](https://www.youtube.com/watch?v=7v6qNHmqm0I)
 - [Tainacan](https://www.youtube.com/watch?v=qRtoNRUlVkk)
 
-## Baixando
+## Descarga
 
-Para iniciar, vamos até o link https://br.wordpress.org/download/ e vamos baixar o **wordpress** para **windows**.
+Para empezar, vaya al enlace https://es.wordpress.org/download/ y descargue **wordpress** para **windows**.
 
-![](/_assets/images/wordpress_01.png)
+![](_assets/images/wordpress_01.png)
 
-Na figura acima, clique em **Baixar o WordPress 5.2.1** para fazer o download. Ao concluir o processo, vamos iniciar a instalação descompactando o arquivo baixado.
-
-<br><br>
-
-![](/_assets/images/wordpress_02.png)
-**Descompactando**
-
-No arquivo compactado, clique com o botão direito e depois em **Extrair tudo…**. Aguarde a descompactação terminar.
+En la imagen de arriba, haz clic en **Descargar WordPress 5.2.1** para descargarlo. Una vez finalizado el proceso, iniciaremos la instalación descomprimiendo el archivo descargado.
 
 <br><br>
 
-![](/_assets/images/wordpress_03.png)
+![](_assets/images/wordpress_02.png)
+**Descomprimiendo**
 
-Abra a pasta descompactada, clique com o botão direito na pasta **wordpress** e depois em **Copiar**.
-
-<br><br>
-
-![](/_assets/images/wordpress_04.png)
-
-Agora vá para `C:/xampp/htdocs`, clique com o botão direito dentro da pasta e depois clique em **Colar**.
+En el archivo comprimido, haz clic con el botón derecho del ratón y, a continuación, haz clic en **Extraer todo...**. Espera a que termine la descompresión.
 
 <br><br>
 
-![](/_assets/images/wordpress_05.png)
+![](_assets/images/wordpress_03.png)
 
-Veja na imagem acima a pasta, já com o processo de transferência concluído.
-
-<br><br>
-
-![](/_assets/images/wordpress_06.png)
-
-Agora, para este projeto, nós iremos mudar o nome da pasta **wordpress** para **projeto_teste**. Fique à vontade para colocar o nome que achar melhor nesta pasta, de preferência o nome do projeto que você está criando.
+Abra la carpeta descomprimida, haga clic con el botón derecho en la carpeta **wordpress** y luego en **Copiar**.
 
 <br><br>
 
-## Criando um novo banco de dados
+![](_assets/images/wordpress_04.png)
 
-![](/_assets/images/wordpress_07.png)
-
-Pronto. O **wordpress** já foi renomeado e está no local certo. Agora é preciso configurá-lo. Para isso, precisamos criar um banco de dados que será utilizado por ele. Para isso, abra uma nova aba no seu navegador e digite `localhost/phpmyadmin``.
+Ahora ve a `C:/xampp/htdocs`, haz clic con el botón derecho del ratón dentro de la carpeta y luego haz clic en **Pegar**.
 
 <br><br>
 
-![](/_assets/images/wordpress_08.png)
+![](_assets/images/wordpress_05.png)
 
-Essa é a tela do **phpmyadmin**. Aqui é possível alterar os bancos de dados utilizados nos projetos contidos no **XAMPP**. Muito cuidado para não causar estragos aqui. Para criar um novo banco, clique no botão **New** (**Novo**), na lista da esquerda.
-
-<br><br>
-
-![](/_assets/images/wordpress_09.png)
-
-Nesta tela, vamos digitar o nome do banco de dados no campo **Nome da base de dados**. Para este exemplo, vamos colocar o nome **banco_teste**, mas você pode colocar o nome que quiser aqui, de preferência o nome do projeto que você está criando. Ao terminar de digitar, clique no botão **Criar**.
+Vea la imagen superior de la carpeta, con el proceso de transferencia ya completado.
 
 <br><br>
 
-![](/_assets/images/wordpress_10.png)
+![](_assets/images/wordpress_06.png)
 
-Esta tela mostra que o banco foi criado e está vazio. Repare o nome do mesmo na lista da esquerda.
-
-<br><br>
-
-## Conectando o banco ao projeto
-
-![](/_assets/images/wordpress_11.png)
-
-Agora abriremos uma nova aba, no seguinte endereço: `localhost/projeto_teste`
-Como é a primeira vez que abriremos o site, ele irá realizar as últimas configurações.
+Ahora, para este proyecto, vamos a cambiar el nombre de la carpeta **wordpress** a **test_project**. Siéntase libre de dar a esta carpeta el nombre que desee, preferiblemente el nombre del proyecto que está creando.
 
 <br><br>
 
-![](/_assets/images/wordpress_12.png)
+## Crear una nueva base de datos
 
-Como já criamos o banco de dados, nós podemos clicar em **Vamos lá!** Para dar continuidade à instalação.
+![](_assets/images/wordpress_07.png)
 
-<br><br>
-
-![](/_assets/images/wordpress_13.png)
-
-Nesta tela, você deve inserir as seguintes informações:
-
-1. O nome do **banco** que você acabou de criar;
-2. O **nome de usuário** utilizado para acessar o banco. O **Xampp** normalmente utiliza o nome de usuário **root**.
-3. A **senha** utilizada para acessar o banco. O **Xampp** normalmente deixa a senha em branco.
-4. **Servidor do banco de dados** e **Prefixo da tabela** não precisam ser alterados.
+Ya está. Wordpress ha sido renombrado y está en el lugar correcto. Ahora necesitamos configurarlo. Para ello, tenemos que crear una base de datos que va a utilizar. Para ello, abra una nueva pestaña en su navegador y escriba en `localhost/phpmyadmin`.
 
 <br><br>
 
-![](/_assets/images/wordpress_14.png)
+![](_assets/images/wordpress_08.png)
 
-No nosso caso, os dados ficaram como se vê na imagem acima. Ao final, clique no botão **Enviar**, no final da página.
-
-<br><br>
-
-![](/_assets/images/wordpress_15.png)
-
-Essa tela informa que esta parte da instalação foi concluída. Clique no botão **Instalar**, conforme imagem acima.
+Esta es la pantalla de **phpmyadmin**. Aquí puedes cambiar las bases de datos usadas en los proyectos contenidos en **XAMPP**. Ten mucho cuidado de no causar daños aquí. Para crear una nueva base de datos, pulsa el botón **New** (**Nuevo**), en la lista de la izquierda.
 
 <br><br>
 
-## Últimas informações
+![](_assets/images/wordpress_09.png)
 
-![](/_assets/images/wordpress_16.png)
-
-Se tudo der certo, esta tela surgirá. Aqui você irá definir dados como **Título do site**, **Nome de usuário** e **Senha** que serão utilizados para acessar o **Painel de Controle** (**admin**), **e-mail** do administrador do site e opção de **visibilidade** em sites como o **google**. Digite todos os campos da forma que achar melhor e em seguida, clique em **Instalar Wordpress**, no final da página.
+En esta pantalla, introduciremos el nombre de la base de datos en el campo **Nombre de la base de datos**. Para este ejemplo, utilizaremos el nombre **banco_pruebas**, pero aquí puedes utilizar el nombre que quieras, preferiblemente el nombre del proyecto que estás creando. Cuando hayas terminado de escribir, haz clic en el botón **Crear**.
 
 <br><br>
 
-![](/_assets/images/wordpress_17.png)
+![](_assets/images/wordpress_10.png)
 
-Tudo pronto. Agora o **Wordpress** está instalado. Clique em **Acessar** para visualizar o site.
-
-<br><br>
-
-## O admin
-
-![](/_assets/images/wordpress_18.png)
-
-A tela de login do **Painel de Controle** surgirá, como na imagem acima. Digite o **Nome de usuário** que escolheu e a **Senha** para poder acessar.
+Esta pantalla muestra que el banco ha sido creado y está vacío. Observe su nombre en la lista de la izquierda.
 
 <br><br>
 
-![](/_assets/images/wordpress_19.png)
+## Conectar el banco con el proyecto
 
-Este é o **Painel de Controle** do **Wordpress**. Tudo o que há no site pode ser alterado nas opções deste painel. Para visualizar o site, clique no título escolhido, no topo, à esquerda, conforme marcado na imagem acima.
+![](_assets/images/wordpress_11.png)
+
+Ahora abriremos una nueva pestaña en la siguiente dirección: `localhost/project_test`.
+Como es la primera vez que abrimos el sitio, hará los últimos ajustes.
 
 <br><br>
 
-![](/_assets/images/wordpress_20.png)
-**A home do wordpress**
+![](_assets/images/wordpress_12.png)
 
-Pronto. Nas próximas vezes, caso prefira acessar diretamente o site, basta visitar o endereço `localhost/projeto_teste` (ou o nome escolhido).
-Para acessar diretamente o **Painel de Controle**, basta visitar o endereço `localhost/projeto_teste/wp-admin` (ou o nome escolhido no lugar de **projeto_teste**)
+Como ya hemos creado la base de datos, podemos hacer clic en **¡Vamos!** para continuar con la instalación.
 
-A seguir, começaremos a instalar o plugin do [Tainacan](/es-mx/tainacan#como-instalar-o-plugin-tainacan-no-wordpress).
+<br><br>
+
+![](_assets/images/wordpress_13.png)
+
+En esta pantalla, debe introducir la siguiente información:
+
+1. El nombre del **base de datos** que acaba de crear;
+2. El **nombre de usuario** utilizado para acceder a la base de datos. **XAMPP** utiliza normalmente el nombre de usuario **root**.
+3. La **contraseña** utilizada para acceder al banco. **XAMPP** normalmente deja la contraseña en blanco.
+4. **No es necesario cambiar el servidor** de la **base de datos** ni el **prefijo de la tabla**.
+
+<br><br>
+
+![](_assets/images/wordpress_14.png)
+
+En nuestro caso, los datos son los que se muestran en la imagen superior. Al final, haz clic en el botón **Enviar** situado en la parte inferior de la página.
+
+<br><br>
+
+![](_assets/images/wordpress_15.png)
+
+Esta pantalla le informa de que esta parte de la instalación ha finalizado. Haga clic en el botón **Instalar**, como se muestra en la imagen anterior.
+
+<br><br>
+
+## Información más reciente
+
+![](_assets/images/wordpress_16.png)
+
+Si todo va bien, aparecerá esta pantalla. Aquí definirás datos como **Título del sitio**, **Nombre de usuario** y **Contraseña** que se utilizarán para acceder al **Panel de control** (**admin**), **email** del administrador del sitio y **opción de visibilidad** en sitios como **Google**. Introduzca todos los campos que considere oportunos y, a continuación, haga clic en **Instalar Wordpress** en la parte inferior de la página.
+
+<br><br>
+
+![](_assets/images/wordpress_17.png)
+
+Todo hecho. Ahora Wordpress está instalado. Haga clic en **Acceso** para ver el sitio.
+
+<br><br>
+
+## El administrador
+
+![](_assets/images/wordpress_18.png)
+
+Aparecerá la pantalla de acceso al **Panel de Control**, como en la imagen superior. Introduzca el **Nombre de usuario** que haya elegido y la **Contraseña** para iniciar sesión.
+
+<br><br>
+
+![](_assets/images/wordpress_19.png)
+
+Este es el **Panel de Control** de **Wordpress**. Todo en el sitio se puede cambiar en las opciones de este panel. Para visualizar el sitio, haga clic en el título elegido en la parte superior izquierda, como se marca en la imagen de arriba.
+
+<br><br>
+
+![](_assets/images/wordpress_20.png)
+**La página de inicio de wordpress**
+
+Eso es todo. La próxima vez, si quieres acceder directamente al sitio, sólo tienes que ir a la dirección `localhost/project_test` (o el nombre que hayas elegido).
+Para acceder directamente al **Panel de Control**, basta con visitar la dirección `localhost/project_test/wp-admin` (o el nombre elegido en lugar de **project_test**).
+
+A continuación, empezaremos a instalar [Tainacan](/es-mx/tainacan#cómo-instalar-el-plugin-tainacan-en-wordpress).
 
 <br><br>

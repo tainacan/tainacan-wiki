@@ -1,5 +1,6 @@
-- [Site oficial](https://tainacan.org ":ignore")
-- [Fórum da comunidade](https://tainacan.discourse.group ":ignore")
+- [Sitio Oficial](https://tainacan.org ":ignore")
+- [Foro de discusión](https://tainacan.discourse.group ":ignore")
 - Idiomas
   - [Inglês](/#tainacan-wiki)
   - [Português Brasileiro](/es-mx/#wiki-do-tainacan)
+  - [Español](/es-mx/#wiki-do-tainacan)

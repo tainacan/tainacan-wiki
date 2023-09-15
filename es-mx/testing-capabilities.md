@@ -1,163 +1,161 @@
-# Testando Permissões
+# Prueba de permisos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Los permisos y la gestión de roles de usuario son algunas de las características más importantes a probar en Tainacan, ya que implican cuestiones de seguridad sensibles para los repositorios. Idealmente, para llevar a cabo estas pruebas, necesitas ser un administrador de tu WordPress, con permisos para crear y cambiar diferentes usuarios de prueba.
 
-As permissões e a gestão de funções de usuários estão entre os recursos mais importantes de se testar no Tainacan, já que envolvem questões sensíveis de segurança para os repositórios. Idealmente, para se realizar estes testes, é preciso ser administrador do seu WordPress, com permissões para criar e alterar diferentes usuários de teste.
+## Lo Básico
 
-## O Básico
+1. Ve al **panel de WordPress** donde está instalada y activada tu versión de prueba del plugin Tainacan (normalmente la dirección de tu sitio web + `/wp-admin`);
+2. En la barra lateral izquierda, haz clic en **Añadir nuevo** en la sección **Usuarios**;
+3. Crea un usuario de prueba con los datos que prefieras, marcando su rol como `Suscriptor`;
+4. Cierra la sesión haciendo clic en `Salir` en la esquina superior derecha del menú de usuario;
+5. Inicia sesión con el usuario que has creado en el panel de control de Wordpress;
+6. En la barra lateral izquierda, haz clic en **Tainacan** para acceder al panel de administración de Tainacan;
+   - [x] En la página de inicio del plugin, comprueba que están inaccesibles:
+     - Los enlaces de Metadatos y Filtros a nivel de repositorio;
+     - Los enlaces de Metadatos, Filtros y Actividades a nivel de Colección;
+   - [x] Por otro lado, compruebe que están disponibles los siguientes:
+     - Los enlaces de Taxonomías, Actividades, Importadores y Exportadores a nivel de repositorio;
+     - Los enlaces a la Lista de Colecciones y a las listas de elementos de cada colección;
+7. Acceda a la Lista de Ítems de una de las Colecciones del Repositorio;
+   - [x] Comprobar si son inaccesibles:
+     - El botón de añadir nuevo Ítem;
+     - Los ítems privados;
+     - Los enlaces para editar o eliminar ítems;
+     - La opción de seleccionar y editar ítems en bloque;
+     - Los enlaces del menú de la colección a Metadatos, Actividades, Filtros y Permisos de la colección;
+   - [x] Confirme que están disponibles:
+     - Los filtros junto a la lista de elementos;
+     - Las pestañas Elementos publicados, Borrador y Papelera de reciclaje;
+     - Las opciones de control de la Búsqueda, como Ordenación y Modos de vista;
+8. Haga clic en uno de los Elementos para acceder a su página en Admin:
+   - [x] Compruebe que no hay ningún enlace para editar el elemento;
+   - [x] Compruebe que todos los datos del elemento son visibles, excepto las Actividades, que no deben aparecer;
+9. Vaya a la lista de Colecciones, disponible en el menú lateral del repositorio;
+   - [x] Compruebe que no están accesibles:
+     - El botón de añadir nueva Colección;
+     - Las colecciones privadas;
+     - Los enlaces para editar o eliminar Colecciones;
+   - [x] Confirmar que están disponibles:
+     - Las pestañas Colecciones publicadas y Papelera de reciclaje;
+     - Las opciones Ordenar y Búsqueda de texto;
+10. Vaya a la lista de Taxonomías, disponible en el menú lateral del repositorio;
 
-1. Acesse o **painel de controle do WordPress** onde a sua versão de testes do plugin Tainacan está instalada e ativada (geralmente, o endereço do seu site + `/wp-admin`);
-2. Na barra lateral esquerda, clique em **Adicionar Novo** na seção **Usuários**;
-3. Crie um usuário de teste com os dados que preferir, marcando sua função como `Assinante`;
-4. Faça _log-off_, clicando em `Sair` no canto do menu de usuário do canto superior direito;
-5. Entre com o usuário criado no painel de controle do Wordpress;
-6. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
-   - [x] Já na página inicial do plugin, verifique se estão inacessíveis:
-     - Os links de Metadados e Filtros Nível Repositório;
-     - Os links de Metadados, Filtros e Atividades Nível Coleção;
-   - [x] Veja por outro lado se estão disponíveis:
-     - Os links de Taxonomias, Atividades, Importadores e Exportadores nível repositório;
-     - Os links para a Lista de Coleções e para as listas de itens de cada coleção;
-7. Acesse a Lista de Itens uma das Coleções do Repositório;
-   - [x] Confira se estão inacessíveis:
-     - O botão de adicionar novo Item;
-     - Os items privados;
-     - Os links para editar ou deletar os itens;
-     - A opção de selecionar e editar itens em massa;
-     - Os links no menu da coleção para Metadados, Atividades, Filtros e Permissões da Coleção;
-   - [x] Confirme que estão disponíveis:
-     - Os filtros ao lado da lista de itens;
-     - As abas de Itens Publicados, Rascunho e Lixeira;
-     - As opções de controle da Busca como Ordenação e Modos de Visualização;
-8. Clique em um dos Itens para acessar sua página no Admin:
-   - [x] Confirme que não há link para editar o item;
-   - [x] Veja se todos os dados do item estão visíveis, exceto pelas Atividades, que não devem ser listadas;
-9. Vá para lista de Coleções, disponível no menu lateral do Repositório;
-   - [x] Confira se estão inacessíveis:
-     - O botão de adicionar nova Coleção;
-     - As coleções privadas;
-     - Os links para editar ou deletar as Coleções;
-   - [x] Confirme que estão disponíveis:
-     - As abas de Coleções Publicadas e Lixeira;
-     - As opções de Ordenação e Busca textual;
-10. Vá para lista de Taxonomias, disponível no menu lateral do Repositório;
+- [x] Compruebe si están inaccesibles
+  - El botón de añadir nueva Taxonomía;
+  - Las Taxonomías privadas;
+  - Los enlaces para editar o eliminar Taxonomías;
+- [x] Compruebe que están disponibles:
+  - Las pestañas Taxonomías Publicadas, Borrador y Papelera de reciclaje;
+  - Las opciones Ordenar y Búsqueda textual;
 
-- [x] Confira se estão inacessíveis:
-  - O botão de adicionar nova Taxonomia;
-  - As taxonomias privadas;
-  - Os links para editar ou deletar as Taxonomias;
-- [x] Confirme que estão disponíveis:
-  - As abas de Taxonomias Publicados, Rascunho e Lixeira;
-  - As opções de Ordenação e Busca textual;
+11. Elija una Taxonomía y haga clic sobre ella;
 
-11. Escolha uma Taxonomia e clique nela;
+- [x] Confirme que la pestaña donde se va a editar la Taxonomía no está autorizada;
+- [x] Compruebe que la pestaña que enumera los términos es accesible. Sin embargo, no debería ser posible añadir o editar términos;
 
-- [x] Confirme que a aba onde seria feita a edição da Taxonomia está sem permissão de acesso;
-- [x] Cheque se a aba que lista os termos está acessível. Porém não deve ser possível adicionar ou editar termos;
+12. Vaya a la lista de Actividades del contenedor de ficheros, disponible en el menú lateral del contenedor de ficheros;
 
-12. Vá para a lista de Atividades do Repositório, disponível no menu lateral do Repositório;
+- [x] Confirme que las Actividades no aparecen en la lista de la pestaña Actividades;
+- [x] Confirme que la pestaña Procesos no contiene ningún proceso en ejecución (no por falta de permisos, sino porque este usuario recién creado no tiene ningún proceso);
 
-- [x] Confirme que as Atividades não são listadas da aba Atividades;
-- [x] Confirme que a aba Processos não contém nenhum processo em execução (não por falta de permissão, mas porque este usuário, recém criado, não possui nenhum processo);
+## Añadir todos los permisos a un rol de usuario
 
-## Adicionando todas as permissões para uma função de usuário
+1. Inicie sesión como administrador, vaya al **panel de WordPress** donde tiene instalada y activada su versión de prueba del plugin Tainacan (normalmente la dirección de su sitio web + `/wp-admin`);
+2. En la barra lateral izquierda, haz clic en **Roles de usuario** en la sección **Tainacan**;
+3. En la lista de roles, busca el rol "Suscriptor", o cualquier otro rol al que quieras asignar/quitar permisos;
+4. Pasa el ratón por encima del rol y selecciona la opción "Editar";
+5. En la pantalla de edición de roles, marque la opción "Gestionar Tainacan";
+   - [x] Tenga en cuenta que todos los demás permisos se han marcado y no se pueden cambiar, ya que están bajo la influencia del permiso superior.
+6. Haga clic en `Guardar cambios`;
+7. Cierre la sesión pulsando en `Salir` en la esquina superior derecha del menú de usuario;
+8. Inicie sesión con un usuario de prueba que haya creado y que tenga el rol de usuario modificado en el panel de control de Wordpress;
+9. En la barra lateral izquierda, haga clic en **Tainacan** para acceder al panel de administración de Tainacan;
+   - [x] Confirma que todos los elementos y funciones de Tainacan son accesibles esta vez;
+10. Vuelva al panel de WordPress haciendo clic en el logotipo de WordPress en la esquina superior derecha;
+11. Cierre la sesión haciendo clic en "Salir" en la esquina superior derecha del menú de usuario;
 
-1. Logado como administrador, acesse o **painel de controle do WordPress** onde a sua versão de testes do plugin Tainacan está instalada e ativada (geralmente, o endereço do seu site + `/wp-admin`);
-2. Na barra lateral esquerda, clique em **Funções de Usuários** na seção **Tainacan**;
-3. Na lista de papéis, procure pelo papel "Assinante", ou qualquer outro que queira atribuir/remover permissões;
-4. Passando o mouse em cima do função, selecione a opção "Editar";
-5. Na tela de edição da função, marque a opção `Gerenciar Tainacan`;
-   - [x] Observe que todas demais permissões foram marcadas e não podem ser alteradas já que estão sobre influência da permissão maior.
-6. Clique em `Salvar Alterações`;
-7. Faça _log-off_, clicando em `Sair` no canto do menu de usuário do canto superior direito;
-8. Entre com um usuário de testes criado que possua a função de usuário alterada no painel de controle do Wordpress;
-9. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
-   - [x] Confirme que todos os elementos e funções do Tainacan estão acessíveis desta vez;
-10. Volte para o painel de controle do WordPress, clicando na logo do WordPress no canto superior direito;
-11. Faça _log-off_, clicando em `Sair` no canto do menu de usuário do canto superior direito;
+## Añadir permisos a un rol de usuario
 
-## Adicionando algumas permissões para uma função de usuário
+1. Conéctese de nuevo como administrador y acceda de nuevo a la pantalla de configuración del rol de usuario que haya elegido (_por ejemplo, Abonado_);
+2. En la pantalla de edición de roles, desmarque la opción `Administrar Tainacan`;
 
-1. Entre como administrador novamente e acesse mais uma vez a tela de configuração da função de usuário escolhida (_por exemplo, Assinante_);
-2. Na tela de edição da função, desmarque a opção `Gerenciar Tainacan`;
+- [x] Observe que todos los permisos han sido desmarcados y ahora pueden ser modificados.
 
-- [x] Observe que as permissões foram todas desmarcadas e agora podem ser alteradas.
+3. Cambie a la pestaña "Colecciones";
+4. Con el selector marcado en `Todas las colecciones`, active los siguientes permisos:
+   1. Gestionar metadatos;
+   2. Eliminar filtros;
+   3. Ver elementos privados;
+5. Cambiar el selector de una colección específica;
 
-3. Troque para a aba "Coleções";
-4. Com o seletor marcado em `Todas as Coleções`, ative as seguintes permissões:
-   1. Gerenciar Metadados;
-   2. Deletar Filtros;
-   3. Ver Itens Privados;
-5. Troque o seletor para alguma coleção específica;
+- [x] Tenga en cuenta que algunos permisos ya están marcados y no se pueden cambiar, los marcados en el nivel `Todas las colecciones`;
 
-- [x] Note que algumas permissões já estão marcadas e não podem ser alteradas, aquelas marcadas no nível de `Todas as coleções`;
+6. En esta colección, marque los siguientes permisos:
+   1. Editar elementos en bloque;
+   2. Editar elementos;
+   3. Editar artículos publicados;
+   4. Editar artículos de otros;
+   5. Borrar elementos;
+7. Haga clic en `Guardar cambios`;
+8. Cierre la sesión pulsando en `Salir` en la esquina superior derecha del menú de usuario;
+9. Inicie sesión con un usuario de prueba que haya creado y que tenga el rol de usuario modificado en el panel de control de Wordpress;
+10. En la barra lateral izquierda, haz clic en **Tainacan** para acceder al panel de administración de Tainacan;
 
-6. Nesta coleção, marque as seguintes permissões:
-   1. Editar Itens em Massa;
-   2. Editar Itens;
-   3. Editar Itens Publicados;
-   4. Editar Itens de Outros;
-   5. Deletar Itens;
-7. Clique em `Salvar Alterações`;
-8. Faça _log-off_, clicando em `Sair` no canto do menu de usuário do canto superior direito;
-9. Entre com um usuário de testes criado que possua a função de usuário alterada no painel de controle do Wordpress;
-10. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
+- [x] En la página de inicio del plugin, compruebe que son inaccesibles:
+  - Los enlaces Metadatos y Filtros a nivel de repositorio;
+  - Los enlaces de Actividades y Filtros a nivel de Colección;
+- [x] Por otro lado, compruebe que están disponibles los siguientes:
+  - Los enlaces a Taxonomías, Actividades, Importadores y Exportadores a nivel de repositorio;
+  - Los enlaces a la Lista de Colecciones y a las Listas de Elementos y Metadatos de cada colección;
 
-- [x] Já na página inicial do plugin, verifique se estão inacessíveis:
-  - Os links de Metadados e Filtros Nível Repositório;
-  - Os links de Atividades e Filtros Nível Coleção;
-- [x] Veja por outro lado se estão disponíveis:
-  - Os links de Taxonomias, Atividades, Importadores e Exportadores nível repositório;
-  - Os links para a Lista de Coleções e para as Listas de Itens e Metadados de cada coleção;
+11. Entre en la Colección definida en el paso **5**;
 
-11. Entre na Coleção definida no passo **5**;
+- [x] Compruebe si son inaccesibles:
+  - Los enlaces para eliminar elementos;
+  - Los enlaces del menú de la colección a Actividades, Filtros y Permisos de la colección;
+- [x] Confirme que están disponibles:
+  - El botón para añadir un nuevo elemento;
+  - Los enlaces para editar elementos;
+  - Los filtros junto a la lista de elementos;
+  - Las pestañas Publicado, Privado, Borrador y Papelera;
+  - Las opciones de control de búsqueda, como los modos de clasificación y visualización;
+  - La opción de seleccionar y editar elementos en bloque;
+  - Los enlaces en el menú de la colección a Metadatos de la colección;
 
-- [x] Confira se estão inacessíveis:
-  - Os links para deletar os itens;
-  - Os links no menu da coleção para Atividades, Filtros e Permissões da Coleção;
-- [x] Confirme que estão disponíveis:
-  - O botão de adicionar novo Item;
-  - Os links para editar os itens;
-  - Os filtros ao lado da lista de itens;
-  - As abas de Itens Publicados, Privados, Rascunho e Lixeira;
-  - As opções de controle da Busca como Ordenação e Modos de Visualização;
-  - A opção de selecionar e editar itens em massa;
-  - Os link no menu da coleção para Metadados da Coleção;
+12. Introduzca cualquiera de los elementos de esta colección;
 
-12. Entre em algum dos itens desta coleção;
+- [x] Confirme que existe un enlace para editar el elemento;
+- [x] Compruebe que todos los datos del elemento son visibles, excepto las Actividades, que no deben aparecer;
 
-- [x] Confirme que há link para editar o item;
-- [x] Veja se todos os dados do item estão visíveis, exceto pelas Atividades, que não devem ser listadas;
+13. Haga clic en "Editar elemento";
 
-13. Clique em "Editar Item";
+- [x] Confirme que no hay un enlace para eliminar el elemento, ya que este elemento fue creado por otro usuario;
 
-- [x] Confirme que não há link para deletar o item, já que este item foi criado por outro usuário;
+14. De vuelta en la Lista de Elementos, haga clic en Añadir Nuevo para crear un nuevo Elemento;
+15. Rellene el elemento como desee;
 
-14. Voltando à Lista de Itens, clique em Adicionar Novo para criar um novo Item;
-15. Preecha o item como desejar;
+- [x] Tenga en cuenta que como no tiene permiso para "Publicar elementos", sólo puede guardar el nuevo elemento como borrador;
 
-- [x] Note que, por não ter a permissão "Publicar Items" você só pode salvar o novo item como rascunho;
+16. Cuando haya terminado, vuelva a la Lista de Elementos;
 
-16. Ao concluir, volte para a Lista de Itens;
+- [x] Compruebe que el elemento que acaba de crear se encuentra en la pestaña borrador y no sólo puede editarse, sino también borrarse;
 
-- [x] Veja que o item que você acabou de criar está na aba rascunho e pode, além de ser editado, ser deletado;
+17. Por último, entre en la pantalla Metadatos de la colección;
 
-17. Por fim, entre na tela de Metadados da Coleção;
+- [x] Confirme que puede ordenar y editar los metadatos, pero no borrarlos;
 
-- [x] Confirme que é possível ordenar e editar os metados, porém não é possível deletá-los;
+?> Continúe describiendo la prueba.
 
-?> _TODO_ Continuar a descrever o teste.
+## Establecer permisos específicos en una colección
 
-## Configurando permissões específicas em uma coleção
+1. Inicie sesión como administrador en el panel de control de Wordpress;
+2. En la barra lateral izquierda, haz clic en **Tainacan** para acceder al panel de administración de Tainacan;
+3. Entra en la página de la colección que quieras configurar;
+4. Vaya a la página Permisos relacionados con la colección en la barra de menús de la colección;
+5. Seleccione el permiso que desea cambiar, por ejemplo "Editar elementos en bloque";
+6. Elimine o añada este permiso a un rol de usuario;
+7. Haga _log-off_ e inicie sesión con cualquier usuario del rol modificado;
 
-1. Entre como administrador no painel de controle do Wordpress;
-2. Na barra lateral esquerda, clique em **Tainacan** para acessar o painel Admin do Tainacan;
-3. Entre na página da coleção que desejar configurar;
-4. Acesse a página de Permissões Relacionadas à Coleção, na barra de menu da coleção;
-5. Selecione alguma permissão para alterar, por exemplo "Editar itens em massa";
-6. Retire ou adicione esta permissão de alguma função de usuário;
-7. Faça _log-off_ e entre com algum usuário da função alterada;
+- [x] Compruebe que el permiso ha sido modificado;
 
-- [x] Verifique se a permissão foi modificada;
-
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/es-mx/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).

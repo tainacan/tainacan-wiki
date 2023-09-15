@@ -6,108 +6,107 @@
 		height="42">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-# Registro de Atividades
+# Registro de actividades
 
-Todas as ações realizadas no Tainacan são registradas e podem ser consultadas a nível de “repositório”, “coleção” e em cada “item”.
+Todas las acciones realizadas en Tainacan quedan registradas y pueden ser consultadas a nivel de “repositorio”, “colección” y en cada “elemento”.
 
-Ao clicar em uma “atividade”, é exibida uma janela com:
+Al hacer clic en una Colección >> Actividades >> Actividad, se abre una ventana con la siguiente información:
 
-![Acesse o painel de controle](_assets\images\103.png)
+![Accede al panel de control](_assets/images/103.png)
 
-​ a. “**Descrição da atividade”**;
+​ a. “**Descripción de la actividad”**;
 
-​ b. **“Data e hora das atividades”**;
+​ b. **“Fecha y hora de la actividad”**;
 
-​ c. **“Autor da atividade”**;
+​ c. **“Autor de la actividad”**;
 
-​ d. **“Duas listas”**:
+​ d. **“Dos listas”**:
 
-​ ○ À esquerda, o quadro reúne informações antes da alteração;
+​ ○ La de la izquierda muestra la información antes del cambio;
 
-​ ○ À direita, o quadro reúne as informações depois da alteração.
+​ ○ La de la derecha muestra la información después del cambio.
 
-​ e. Administradores podem reverter estas alterações clicando em
+​ e. Los administradores pueden revertir estos cambios haciendo clic en Deshacer.
 
-## Registro de atividades do Repositório
+## Registro de actividades del repositorio
 
-Reúne atividades como criação, edição e exclusão de “coleções”, “metadados” e “filtros a nível de repositório” e “taxonomias”. Em registros de atividades a nível de repositório, processos de importação e exportação também podem ser acompanhados, e ficam registrados na aba “processos”.
+Reúne actividades como creación, edición y eliminación de "colecciones", "metadatos", "filtros” y “taxonomías”a nivel de repositorio. En los registros de actividad a nivel de repositorio también se puede dar seguimiento a los procesos de importación y exportación, los cuales se registran en la pestaña “procesos”.
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em Tainacan;
+2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
-3. Clique em “Atividades do Repositório”;
+3. Haz clic en “Actividades del repositorio”;
 
-   ![Acesse o painel de controle](_assets\images\104.png)
+   ![Accede al panel de control](_assets/images/104.png)
 
-4. Nesta página você pode filtrar as “atividades” por:
+4. En esta página puedes filtrar las “actividades” por:
 
-   a. **“Intervalo de datas”**;
+   a. **“Rango de fechas”**;
 
-   b. **“Por usuário”**;
+   b. **“Usuario”**;
 
-   c. **“Busca geral”**.
+   c. **“Búsqueda general”**.
 
-   ![Acesse o painel de controle](_assets\images\105.png)
+   ![Accede al panel de control](_assets/images/105.png)
 
-## Registro de atividades da Coleção
+## Registro de actividades de la colección
 
-Reúne “atividades” como criação, edição e exclusão de “itens”, configurações de “metadados” e “filtros a nível de coleção” e configurações da “coleção”.
+Contiene la información de actividades dentro de una colección, como crear, editar y eliminar "elementos". También muestra las actividades relacionadas con la configuración de la colección, incluidas las configuraciones de "metadatos" y "filtros”.
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em Tainacan
+2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
-3. Clique na “Coleção” que você deseja e depois em "Atividades";
+3. Haz clic en la “Colección” que quieres revisar y luego en “Actividades”;
 
-   ![Acesse o painel de controle](_assets\images\106.png)
+   ![Accede al panel de control](_assets/images/106.png)
 
-4. Nesta página você pode “filtrar as atividades” por:
+4. En esta página puedes filtrar las actividades por:
 
-   ![Acesse o painel de controle](_assets\images\107.png)
+   ![Accede al panel de control](_assets/images/107.png)
 
-   ​ a. **“Intervalo de datas”**;
+   ​ a. **“Rango de fechas”**;
 
-   ​ b. **“Por usuário”**;
+   ​ b. **“Usuario”**;
 
-   ​ c. **“Busca geral”**.
+   ​ c. **“Búsqueda general”**.
 
-## Registro de atividades do Item
+## Registro de actividades del elemento
 
-Reúne “atividades” como criação, edição e exclusão de “valores no item”.
+Contiene la información de las "actividades" relacionadas con el elemento, como crear, editar y eliminar "valores” del elemento.
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em Tainacan
+2. En la barra lateral izquierda, haz clic en Tainacan
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
-3. Clique na “Coleção” que você deseja e, depois, clique no “Item” onde você deseja checar as “atividades”;
+3. Haz clic en la "colección" que deseas y luego haz clic en el "ítem" en el que quieres verificar las "actividades";
 
-   ![Acesse o painel de controle](_assets\images\108.png)
+   ![Accede al panel de control](_assets/images/108.png)
 
-4. No “item”, clique na aba “Atividades”;
+4. En el “elemento”, haz clic en la pestaña “Actividades”;
 
-   ![Acesse o painel de controle](_assets\images\109.png)
+   ![Accede al panel de control](_assets/images/109.png)
 
-5. Nesta página você pode “filtrar as atividades” por:
+5. En esta página puedes filtrar las actividades por:
 
-   ![Acesse o painel de controle](_assets\images\110.png)
+   ![Accede al panel de control](_assets/images/110.png)
 
-   a. **“Intervalo de datas”**;
+   a. **“Rango de fechas”**;
 
-   b. **“Por usuário”**;
+   b. **“Usuario”**;
 
-   c. **“Busca geral”**.
+   c. **“Búsqueda general”**.

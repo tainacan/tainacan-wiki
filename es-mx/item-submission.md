@@ -1,58 +1,56 @@
-# Submissão de Itens
+# Envío de elementos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+La [versión _0.17_](/es-mx/releases#tainacan-beta-017) de Tainacan incorpora la posibilidad de abrir colecciones para el envío público de elementos (también denominado _autodepósito_). Esto significa que los usuarios sin privilegios administrativos, o incluso los visitantes del sitio, pueden ahora crear ellos mismos elementos en una colección, **ampliando así las posibilidades de una colección colaborativa generada por varias personas**.
 
-A [versão _0.17_](/es-mx/releases#tainacan-beta-017) do Tainacan trás a possibilidade de se abrirem coleções para _submissão pública_ de itens (também referida como _auto-depósito_). Isto significa que usuários sem privilégios administrativos, ou até mesmo visitantes do site passam a poder eles mesmos criarem itens em uma Coleção, **ampliando assim as possibilidades de um acervo _colaborativo_ gerado por diversas pessoas**.
+Tras bambalinas el envío de elementos no es más que llevar el [formulario de creación de elementos](/es-mx/items#crear-elementos), con los [metadatos configurados en la colección](/es-mx/metadata#tipos-de-metadatos), a una página pública del sitio. Esto se hace a través de un [bloque gutenberg](/es-mx/gutenberg-blocks) y alguna configuración extra. En estas páginas, explicaremos cómo configurar el formulario público de envío de artículos. Luego abordaremos:
 
-Por trás dos panos, a Submissão de Itens nada mais é do que levar o [formulário de criação do item](/es-mx/items#criar-itens), com os [metadados configurados na coleção](/es-mx/metadata#tipos-de-metadados), para uma página pública do site. Isto é feito através de um [bloco gutenberg](/es-mx/gutenberg-blocks) e de algumas configurações extras. Nestas página, explicamos como configurar seu formulário de Submissão de Itens público. Cobriremos então:
+1. Los ajustes necesarios para la [configuración de la colección](#configuración-de-la-colección);
+2. El proceso de [creación de bloque de formulario](#creación-del-bloque-de-envío-de-elementos);
+3. Algunos [ajustes avanzados](#configuración-avanzada-de-bloques) al bloque;
+4. Protección contra ataques a sitios web [usando la verificación  _reCAPTCHA_](#verificación-recaptcha-en-el-formulario);
+5. Algunas [preguntas frecuentes](#preguntas-frecuentes) sobre esta función;
 
-1. Os ajustes necessários na [configuração da coleção](#configurando-a-coleção);
-2. O processo de [criação do bloco do formulário](#criando-o-bloco-de-submissão-de-itens);
-3. Alguns [ajustes avançados](#configurações-avançadas-do-bloco) para o bloco;
-4. A proteção contra ataques ao site [usando a verificação _reCAPTCHA_](#verificação-recaptcha-no-formulário);
-5. Algumas [dúvidas frequentes](#duvidas-frequentes) sobre esta funcionalidade;
+## Configuración de la colección
 
-## Configurando a Coleção
+En la página de configuración de toda “Colección”, hay un campo que permite activar el “envío de elementos”.
 
-Na página de configuração de toda “Coleção”, há um campo que permite habilitar a “submissão de itens”.
+1. Accede a la colección en la que quieras habilitar el "envío de elementos" y pulsa en "Ajustes".
 
-1. Acesse a “coleção” onde você pretende habilitar a “submissão de itens” e clique em "Configurações";
+   ![Acceso al panel de control](_assets/images/120.png)
 
-   ![Acesse o painel de controle](_assets\images\120.png)
+2. En la esquina inferior derecha, habilita la función "Permitir envío de elementos".
 
-2. No canto inferior direito, habilite a função "Permitir a submissão de item";
+   ![Acceso al panel de control](_assets/images/121.png)
 
-   ![Acesse o painel de controle](_assets\images\121.png)
+3. Con este campo habilitado, la colección se puede incluir en el bloque de envío de elementos, del que hablaremos en breve. Al habilitar la función, aparecen nuevas opciones, como se muestra en la siguiente captura de pantalla:
 
-3. Com este campo habilitado, esta coleção poderá ser listada para o bloco de submissão de itens, sobre o qual falaremos em breve. Ao habilitar a função, novas opções surgem, como mostrada na captura de tela a seguir:
+   ![Acceso al panel de control](_assets/images/122.png)
 
-   ![Acesse o painel de controle](_assets\images\122.png)
+**“Permitir el envío por parte de usuarios anónimos”**: se refiere a qué usuarios pueden enviar este formulario. Por defecto, cualquier persona que visite el sitio, aunque no se encuentre registrada en el sistema WordPress. Si se activa, incluso las personas que nunca han iniciado sesión en el sitio podrán enviar información.
 
-**“Permitir a submissão por usuários anônimos”**: diz respeito a quais usuários poderão enviar este formulário. Por padrão, não é qualquer pessoa que visita o site, mas pelo menos pessoas cadastradas no sistema do seu WordPress que tem este poder. Se habilitado, mesmo pessoas que nunca logaram no site poderão enviar informações.
+Si te interesa abrir tu colección a usuarios anónimos, es importante comprender que los "elementos" no tendrán registro de "quién" los creó. En el sistema administrativo, el campo “Creado por” sólo contendrá la información “anónimo”. Puede ser útil, en este caso, crear un metadato que identifique al autor del envío, por ejemplo, un “Metadato de tipo Texto” llamado “Nombre de usuario”, marcado como obligatorio.
 
-Se estiver no seu interesse abrir sua “coleção” para usuários anônimos, é importante entender que os “itens” não terão registro de “quem” os criou. No sistema administrativo, o campo “Criado por” conterá apenas a informação “anônimo”. Pode ser útil, neste caso, criar um “Metadado” que identifique o **autor da submissão**, como por exemplo, um “metadado tipo Texto” chamado “Nome do usuário”, marcado como obrigatório.
+**“Estado por defecto”**: Cada elemento creado por el formulario tendrá un “Estado por defecto”. Para garantizar que los elementos puedan validarse antes de formar parte de la colección pública, se recomienda mantener su estado como "Privado" o "Borrador". La principal diferencia es que los "elementos borrador" no tienen que estar completos, por lo que no se ha realizado toda la validación de los "metadatos obligatorios", por ejemplo. Los "elementos privados" sólo los verán los usuarios registrados con permiso para ello, posiblemente los revisores de su flujo de aprobación de elementos. 
 
-**“Status padrão”**: Todo “item” criado pelo formulário, terá um “status padrão”. Para garantir que os “itens” possam ser validados antes de irem parar na coleção pública, recomenda-se manter o seu status como “Privado” ou “Rascunho”. A principal diferença é que “itens rascunho” não precisam ter sido completados, portanto nem toda validação de “metadados obrigatórios”, por exemplo, foi feita. “Itens privados” só serão vistos por usuários logados e com permissão para tal, possivelmente revisores do seu fluxo de aprovação de “itens”.
+**“Use la verificación reCAPTCHA en el formulario de envío”**: Finalmente, como con cualquier formulario en la web, es importante proteger el sitio de ataques de usuarios malintencionados. Hemos detallado más la funcionalidad de la opción "Usar la verificación reCAPTCHA en el formulario de envío" en una sección separada.
 
-**“Usar a verificação reCAPTCHA no formulário de submissão”**: Por fim, como em qualquer formulário na Web, é importante proteger seu site contra ataques de usuários mal intencionados. Detalhamos melhor a funcionalidade da opção “Usar a verificação reCAPTCHA no formulário de submissão” em uma sessão separada.
+## Creación del bloque de envío de elementos
 
-## Criando o Bloco de Submissão de Itens
+Para que tu formulario esté disponible a los visitantes del sitio, necesitas crear una página o entrada en tu "panel de administración" de WordPress. Como se explica con más detalle en nuestra página de Bloques Gutenberg, este es el nuevo "editor de contenido de WordPress" donde puedes nombrar la página o incluso incluir contenido para presentar tu formulario al usuario, como un título y un texto explicativo.
 
-Para ter seu formulário disponível para visitantes do site, é preciso criar uma página ou post no seu “painel administrativo” do WordPress. Como explicado em maiores detalhes na nossa página sobre os Blocos Gutenberg, este é o novo “editor de conteúdo do WordPress”, no qual você poderá dar um nome a página ou mesmo incluir conteúdo para apresentar o seu formulário ao usuário, como um título e texto explicativo.
+1. Accede al “panel de control” de WordPress;
 
-1. Acesse o “painel de controle” do WordPress;
+   ![Acceso al panel de control](_assets/images/050.png)
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+2. En la barra lateral izquierda, haz clic en “Entradas” (si deseas insertar el bloque en unentrada) o “Páginas” (si deseas insertar el bloque en una página);
 
-2. Na barra lateral esquerda, clique em “Posts” (caso queira inserir o bloco em um post) ou “Páginas” (caso queira inserir o bloco em uma página);
+   ![Acceso al panel de control](_assets/images/123.png)
 
-   ![Acesse o painel de controle](_assets\images\123.png)
+3. Una vez hecho esto, la búsqueda del bloque _“Formulario de envío de elementos”_ en la lista de bloques, te permitirá insertar el formulario;
 
-3. Feito isto, uma busca pelo bloco _“Formulário de Submissão de Itens”_ na lista de blocos, te permitirá inserir o formulário;
+   ![Acceso al panel de control](_assets/images/envio.png)
 
-   ![Acesse o painel de controle](_assets\images\submissao.png)
-
-4. De início, o bloco vem vazio, porque espera que você configure de qual _“coleção”_ este formulário se refere. Ao clicar no botão _“Selecione a Coleção destino”_, o modal apresentado mostrará apenas as _“coleções”_ configuradas para aceitar a submissão pública de _“itens”_, como mencionado[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/item-submission?id=configurando-a-coleção)[na sessão anterior](https://tainacan.github.io/tainacan-wiki/#/es-mx/item-submission?id=configurando-a-coleção);
+4.  Inicialmente, el bloque viene vacío, porque espera que configures qué _“recopilación”_ esta forma se refiere.. Al hacer clic en el botón _“Seleccione la Colección de destino”_,  el modal mostrado mostrará solo el _“colecciones”_ configurado para aceptar la presentación pública de _“elementos“_, como mencionado en [la sección anterior](#configuración-de-la-colección);
 
    <iframe
        width="560"
@@ -63,7 +61,7 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
        allowfullscreen>
    </iframe>
 
-5. Escolhida a _“coleção”_, o bloco será preenchido com uma _“prévia visual”_ de como ficará o formulário. Para realmente ver o formulário em ação, é preciso clicar em _“Visualizar”_ ou _“Publicar a página”_;
+5. Una vez elegida la _“colección”_, el bloque se llenará con una _“visualización previa”_ del aspecto que tendrá el formulario. Para ver realmente el formulario en acción, es necesario hacer clic en _“Vista previa”_ o _“Publicar la página”_;
 
    <iframe
        width="560"
@@ -74,13 +72,13 @@ Para ter seu formulário disponível para visitantes do site, é preciso criar u
        allowfullscreen>
    </iframe>
 
-6. Após o preenchimento dos dados, a depender da configuração da coleção, o formulário poderá ser publicado diretamente ou vai para a _“aba de rascunho”_ na _“coleção”_. Nesta aba ele pode ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
+6. Después de llenar los datos, dependiendo de la configuración de la colección, el formulario puede publicarse directamente o pasar a la pestaña _“borrador”_ de la _“colección”_. En esta pestaña se puede evaluar y configurar como público, si se aprueba, en el panel Tainacan.
 
-## Configurações Avançadas do Bloco
+## Configuración avanzada de bloques
 
-O _“bloco de submissão”_ possui algumas configurações adicionais.
+El _“bloque de envío”_ tiene algunos ajustes adicionales.
 
-Clique no “_bloco de submissão do item”_ e depois na _“engrenagem”_ que fica no canto superior direito da tela, o painel lateral direito do editor mostrará uma série de _“configurações do bloco”_;
+Haga clic en el “_loque de envío de elementos”_ y, a continuación, en el _“engranaje”_ de la esquina superior derecha de la pantalla; el panel lateral derecho del editor mostrará una serie de _“ajustes del bloque”_;
 
 <iframe
     width="560"
@@ -91,120 +89,121 @@ Clique no “_bloco de submissão do item”_ e depois na _“engrenagem”_ que
     allowfullscreen>
 </iframe>
 
-**“Mensagem de retorno da submissão”:** Configure os campos de retorno para o usuário após o preenchimento. O primeiro deles diz respeito a mensagem que vai ser mostrada quando o _“item”_ tiver sido submetido com sucesso no formulário;
+**“Mensaje de retorno de envío”:** Configure los campos de retorno para el usuario una vez completado el formulario. El primero se refiere al mensaje que se mostrará cuando el _“elemento”_ se haya enviado correctamente en el formulario.
 
-![Acesse o painel de controle](_assets\images\128.png)
+![Acceso al panel de control](_assets/images/128.png)
 
-Por padrão, esta informação aparece como na imagem abaixo:
+Por defecto, esta información aparece como en la siguiente imagen:
 
-![Acesse o painel de controle](_assets\images\form_submission.png)
+![Acceso al panel de control](_assets/images/form_enviado.png)
 
-Pode ser um bom lugar para informar, por exemplo, que a submissão está sendo avaliada pela equipe administrativa e que se aprovado, o _“item”_ será disponibilizado na listagem de _“itens da coleção”_.
+Este puede ser un buen lugar para informar, por ejemplo, que el envío se está evaluando por el equipo administrativo y que, si se aprueba, el _“elementos”_ estará disponible en el listado de _“elementos de la colección”_.
 
-### Rótulo das Sessões
+### Etiqueta de sesión
 
-Como é possível notar na prévia do bloco, o _“formulário de submissão de itens”_ possui quatro grandes sessões, na seguinte ordem:
+Como puede verse en la vista previa del bloque, el _“formulario de envío de elementos”_  tiene cuatro secciones principales, en el siguiente orden:
 
-![Acesse o painel de controle](_assets\images\129.png)
+![Acceso al panel de control](_assets/images/129.png)
 
-1. O “Documento principal do item”, que pode ser tanto um arquivo, quanto um texto puro ou um endereço online via link URL;
-2. A “Miniatura”, que representará o “item” nas listagens e que por padrão é gerada automaticamente a partir do “Documento”, mas pode ser submetida pelo usuário;
-3. A “lista de Anexos”, que pode ser de um ou mais arquivos relacionados de alguma maneira ao “item”;
-4. A “lista de Metadados”, que constitui as informações gerais do “item” e dá cara aos dados exigidos pelo formulário.
+1. El “Documento del elemento principal”, que puede ser un archivo, texto sin formato o una dirección en línea a través de un enlace URL.
+2. La “Miniatura”, , que representará al elemento en los listados y que por defecto se genera automáticamente a partir del "Documento", y puede ser enviada por el usuario.
+3. La “lista de Anexos”, que pueden ser uno o varios archivos relacionados de algún modo con el "elemento".
+4. La “lista de Metadados” que constituye la información general del "elementos" y muestra los datos requeridos por el formulario.
 
-Estes rótulos podem fazer sentido na interface administrativa do Tainacan mas, talvez você prefira usar termos que comuniquem melhor com o seu público. Por exemplo, talvez “Informações” seja mais claro que “Metadados” e “Arquivos extras” seja melhor que “Anexos”. Por isto, nesta sessão você pode alterar estes rótulos. Você também pode optar por deixá-los em branco, o que ocultará estas separações entres as sessões, dando uma noção de unidade aos campos do formulário.
+Estas etiquetas pueden tener sentido en la interfaz de administración de Tainacan, pero es posible que prefieras usar términos más amigables para tu audiencia. Por ejemplo, tal vez "Información" sea más clara que "Metadatos" y "Archivos adicionales" sea mejor que "Adjuntos". Así que en esta sección ofrece la posibilidad de cambiar estas etiquetas. También puedes optar por dejarlas en blanco, lo que ocultará estas separaciones entre las secciones, dando una sensación de unidad a los campos del formulario.
 
-### Entrada de Metadados
+### Entrada de metadatos
 
-No painel “Entrada de Metadados”, você pode ver todos os campos que foram configurados na tela de “metadados” da configuração da “coleção”.
+En el panel "Entrada de metadatos", puede ver todos los campos que se han configurado en la pantalla de "metadatos" de la configuración de la colección.
 
-![Acesse o painel de controle](_assets\images\130.png)
+![Acceso al panel de control](_assets/images/130.png)
 
-Aqui você pode esconder alguns “metadados” que não considera apropriados para aparecerem neste formulário. Por exemplo, um campo que guarde a informação se aquele “item” foi aprovado após revisão, certamente não precisa estar no formulário público. Note, porém, que se o “metadado” em questão é “obrigatório”, ele não pode ser desabilitado, já que isto impediria a submissão.
+Aquí puedes ocultar algunos metadatos que no consideres pertinente que aparezcan en este formulario. Por ejemplo, un campo que contenga la información de si ese elemento ha sido aprobado después de la revisión ciertamente no necesita estar en el formulario público. Ten en cuenta, no obstante, que si los metadatos en cuestión son "obligatorios", no pueden desactivarse, ya que ello impediría su envío.
 
-### Elementos do Formulário
+### Elementos de formulario
 
-Este painel agrupa todas as funcionalidades de “esconder/mostrar” os demais elementos do formulário que não os “metadados”. Usando estas opções, você pode aproximar o layout do seu formulário com o de um formulário mais simples do seu site, ao invés de se assemelhar ao complexo e rico componente encontrado no “painel administrativo” do Tainacan:
+Este panel agrupa todas las funcionalidades de "ocultar/mostrar" de los elementos del formulario que no sean los "metadatos". Usando estas opciones, puedes acercar el diseño de tu formulario a uno más simple en tu sitio web, en vez del complejo y rico componente que se encuentra en el "panel de administración" de Tainacan:
 
-![Acesse o painel de controle](_assets\images\131.png)
+![Acceso al panel de control](_assets/images/131.png)
 
-![Acesse o painel de controle](_assets\images\132.png)
+![Acceso al panel de control](_assets/images/132.png)
 
-1. **“Esconder qualquer botão redondo de escolha do tipo de documento”**: Escondendo os três, a sessão com o rótulo deixará de existir. Escondendo dois de três destes, o formulário deixará de exibir os botões redondos e, já exibirá de imediato, o campo para inserção do documento do único tipo restante:
+1. **“Ocultar cualquier botón redondo para elegir el tipo de documento”**: Al ocultar los tres, la sesión con la etiqueta dejará de existir. Ocultando dos de los tres, el formulario dejará de mostrar los botones redondos y mostrará inmediatamente el campo para insertar el documento del único tipo restante:
 
-   a. **“Documento tipo arquivo”**;
+   a. **“Documento de tipo archivo”**;
 
-   b. **“Documento tipo texto simples”**;
+   b. **“Tipo de documento texto plano”**;
 
-   c. **“Documento tipo URL”**;
+   c. **“Tipo de documento URL”**;
 
-2. **“Esconder a sessão Miniatura”**: útil se você deseja confiar no processo de geração automático a partir do documento ou se seus “itens” são majoritariamente textuais e não necessitam de imagem;
+2. **“Ocultar la sección de miniaturas”**: útil si optas por confiar en el proceso de generación automática del documento o si sus elementos son en su mayoría de texto y no necesitan una imagen.
 
-3. **“Esconder a sessão Anexos”**: caso seus “itens” não precisem dele;
+3. **“Ocultar la sección de Adjuntos”**: si sus elementos no lo necesitan.
 
-4. **Mostrar o botão “Permitir comentários”**: Este é o único elemento do formulário de “itens” que começa escondido por padrão. No curioso caso em que você queira que o usuário, por ele mesmo, decidir se seu “item” pode receber ou não comentários, habilite esta opção;
+4. **Mostrar el botón "Permitir comentarios"**: Este es el único elemento del formulario de elementos que inicialmente se encuentra oculto por defecto. En el raro caso que quieras que el usuario, por sí mismo, decida si su ítem puede recibir comentarios o no, habilita esta opción.
 
-5. **“Esconder os colapses dos metadados”**: Toda a lista de “metadados” tem setinhas aos lados dos nomes e linhas abaixo dos inputs, que denotam os colapses, botões que ao serem clicados escondem aquele “metadado”, para melhor aproveitamento do espaço. Se você prefere que esta funcionalidade não apareça, use esta opção. Deve ser o ideal a se fazer caso seu formulário possua poucos “metadados”;
+5. **“Ocultar detalles de metadatos”**: Toda la lista de metadatos tiene flechitas al lado de los nombres y líneas debajo de las entradas, que indica los detalles, botones que al pulsarlos ocultan esos metadatos para un mejor aprovechamiento del espacio. Si prefiere que esta característica no aparezca, utilice esta opción. Probablemente es lo ideal si su formulario tiene pocos metadatos.
 
-6. **“Esconder os botões de ajuda”**: Ao lado de todo “metadado” e das sessões do formulário, um botãozinho redondo com uma interrogação oferece para o usuário um “balão com dicas de preenchimento”. Estas dicas vem da configuração de cada “metadado”, do campo descrição. Se você considera que a informação não é necessária aqui, pode desabilitá-los com esta opção;
+6. **“Ocultar los botones de ayuda”**: Junto a todos los metadatos y las secciones del formulario, se encuentra un pequeño botón redondo con un signo de interrogación que ofrece al usuario un "globo con consejos de captura". Estas pistas provienen de la configuración de cada metadato, del campo de descripción. Si consideras que la información no es necesaria, puedes desactivarlos con esta opción.
 
-7. **“Esconder o tipo de metadado”**: Todo campo de “metadado” do formulário tem, ao lado de seu rótulo, um texto mais claro indicando o “tipo de metadado” (texto, relacionamento, número, taxonomia…). Esta informação pode não ser interessante no formulário público, por isso pode ser desabilitada aqui.
+7. **“Ocultar el tipo de metadatos”**: El campo “metadatos” de cada formulario tiene, junto a su etiqueta, un texto más claro que indica el “tipo de metadatos” (texto, relación, número, taxonomía…). Esta información puede no ser de interés en el formulario público, por lo que se puede deshabilitar aquí.
 
-### Cores e Tamanho
+### Colores y Tamaño
 
-Por fim, é possível alterar um pouco da aparência do formulário. Embora a estética dos componentes pode variar de acordo com o “tema” usado, alguns ajustes podem ser feitos neste painel. Pode ser desejável se modificar o tamanho da fonte base (a fonte utilizada no “painel administrativo” é tipicamente menor do que a encontrada em posts e páginas) e claro, cores em geral. As cores constituem-se, no geral, de variações de cinza para mostrar linhas e texto, e duas cores primárias, que vem da interface Azul Turquesa do Tainacan. Estas são importantes para “links”, “botões”, “balões de ajuda” e “efeitos de mouse sobre itens”. Vale observar os efeitos resultantes na prévia do bloco para se ter uma ideia.
+Por último, es posible cambiar parte de la apariencia del formulario. Aunque la estética de los componentes puede variar en función del "tema" utilizado, es posible realizar algunos ajustes en este panel. Puede ser conveniente cambiar el tamaño de la fuente base (la fuente utilizada en el "panel de administración" suele ser más pequeña que la que se encuentra en las entradas y páginas) y, por supuesto, los colores en general. Los colores son, básicamente, variaciones de gris para mostrar líneas y texto, y dos colores primarios, que proceden de la interfaz Azul Turquesa de Tainacan. Son importantes para los "enlaces", los "botones", los "globos de ayuda" y los "elementos sobre los que pasa el ratón". Merece la pena ver los efectos resultantes en la vista previa del bloque para hacerse una idea.
 
-![Acesse o painel de controle](_assets\images\133.png)
+![Acceso al panel de control](_assets/images/133.png)
 
-![Acesse o painel de controle](_assets\images\134.png)
+![Acceso al panel de control](_assets/images/134.png)
 
-![Acesse o painel de controle](_assets\images\135.png)
+![Acceso al panel de control](_assets/images/135.png)
 
-## Verificação reCAPCHA no formulário
+## Verificación reCAPTCHA en el formulario
 
-É muito comum, em sites que possuem “formulários” como estes, que usuários mal intencionados realizem ataques ao servidor. Uma das maneiras mais comuns de se realizar isso é fazendo uso de robôs (scripts automatizados) que submetem diversas vezes informações ao “formulário”, seja com objetivo de espalhar SPAM, seja com objetivo de sobrecarregar o servidor e, possivelmente, derrubá-lo.
+Es muy común, en sitios que tienen “formularios” como estos, que usuarios maliciosos ataquen el servidor. Una de las formas más comunes de hacer esto es mediante el uso de robots (scripts automatizados) que envían información al "formulario" varias veces, ya sea con el objetivo de difundir SPAM o para sobrecargar el servidor y posiblemente dejarlo fuera de servicio.
 
-Para proteger seu site deste tipo de ataque, recomendamos fortemente o uso de um mecanismo de verificação que consiga validar “submissões” feitas por usuários reais. Embora existam diversas soluções para isso, oferecemos integrada ao plugin aquela que consideramos uma das mais simples e eficazes, o reCAPTCHA da Google. Você provavelmente já topou com ele algum “formulário” na web, onde teve que apertar seu checkbox e realizar algum desafio para seguir a diante com a “submissão”. São dois passos para fazê-lo funcionar no seu “formulário de submissão de itens”:
+Para proteger su sitio de este tipo de ataque, recomendamos especialmente el uso de un mecanismo de verificación que pueda validar los "envíos" realizados por usuarios reales. Aunque existen varias soluciones para ello, nosotros ofrecemos integrada en el plugin la que consideramos una de las más sencillas y eficaces, el reCAPTCHA de Google. Seguro ya lo has visto en algún formulario web, en el que tenías que pulsar la casilla y realizar algún reto para seguir adelante con el envío. Se necesitan dos pasos para hacerlo funcionar en tu "formulario de envío de artículos":
 
-1. [Configurar o site](#configurando-o-recaptcha-no-seu-site) para obter a chave do reCAPTCHA;
-2. [Habilitar a coleção](#habilitando-a-coleção-para-uso-do-recaptcha) para uso do mesmo;
 
-### Configurando o reCAPTCHA no seu site
+1. [Acceso al panel de control](#configuración-de-recaptcha-en-su-sitio-web) para obtener la clave reCAPTCHA;
+2. [Acceso al panel de control](#habilitar-la-colección-para-usar-recaptcha) para el uso de los mismos;
 
-1. Acesso o “Painel administrativo” do WordPress. Há um submenu do plugin Tainacan específico para isso, o “Submissão de Itens”;
+### Configuración de reCAPTCHA en su sitio web
 
-   ![Acesse o painel de controle](_assets\images\136.png)
+1. Accede al “Panel de administración” de WordPress. Hay un submenú del plugin Tainacan específico para esto, el "Envío de elementos".
 
-2. Nesta página, você encontrará dois campos que precisam ser preenchidos: A “chave do site” e a “palavra secreta do site”;
+   ![Acceso al panel de control](_assets/images/136.png)
 
-   ![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](_assets/images/submissao-itens-captcha-1.png)
+2. En esta página, encontrará dos campos que deben completarse: la "clave del sitio" y la "palabra secreta del sitio"
 
-Ambos os “campos” são obtidos no site do reCAPTCHA, quando você cadastra seu site neste link: https://www.google.com/reCAPTCHA/admin/create. Não esqueça de clicar em “Salvar alterações” ao concluir esta etapa.
+   ![Acceso al panel de control](_assets/images/envio-elementos-captcha-1.png)
 
-### Habilitando a Coleção para uso do reCAPTCHA
+Ambos campos se obtienen en el sitio web de reCAPTCHA al registrar el sitio web en este enlace: https://www.google.com/recaptcha/admin/enterprise. No olvides hacer clic en "Guardar cambios" al completar este paso.
 
-Nas configurações relacionadas ao formulário de submissão dentro do formulário da coleção, habilite a opção que diz "Usar a verificação reCAPTCHA no formulário de submissão". Feito isto, salve a coleção.
+### Habilitar la colección para usar reCAPTCHA
 
-> Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
+En la configuración relacionada con el formulario de envío dentro del formulario de recolección, habilita la opción que dice "Usar la verificación reCAPTCHA en el formulario de envío". Una vez hecho esto, guarda la colección.
 
-## Duvidas Frequentes
+> Ten en cuenta que si ya habías creado un bloque de envío antes de realizar esta configuración, deberás eliminarlo y rehacer la inserción del bloque;
 
-### Onde configuro quais perguntas vão existir no formulário?
+## Preguntas frecuentes
 
-O formulário de submissão de itens oferecido nada mais é do que um mapeamento do formulário de edição de itens existente na sua coleção. Portanto, para configurar quais campos vão existir no mesmo, é preciso editar os metadados da sua coleção. Na página dos metadados, você poderá mexer com a ordem destes, os rótulos, descrições e particularidades tais como serem ou não obrigatórios. Mais informações [nesta página](/es-mx/metadata).
+### ¿Dónde configuro qué preguntas aparecerán en el formulario?
 
-### Como montar um fluxo de validação para as submissões?
+El formulario de envío de elementos no es más que un mapeo del formulario de edición de elementos existente en su colección. Por lo tanto, para configurar qué campos estarán en él, debe editar los metadatos de su colección. En la página de metadatos, puede cambiar el orden de los metadatos, las etiquetas, las descripciones y particularidades, como que sean obligatorios o no. Puede encontrar más información [en esta página](/es-mx/metadata).
 
-Não há um identificador específico que diga que "Este item veio de uma submissão". Por padrão itens submetidos via formulário serão enviados para a aba da lista de itens relativa ao [status configurado na coleção](#configurando-a-coleção). Esta é a maneira que você tem de assegurar que eles não se tornem públicos de imediato e possam antes ser revisados e aprovados. O que é possível é criar um metadado privado do tipo Seleção ou Taxonomia (que não apareça no formulário) e que te ajude a identificar possíveis subetapas de um fluxo de aprovações (como "Em avaliação", "Falta revisão"), antes dele ser definitivamente aprovado.
+### ¿Cómo configurar un flujo de validación para envíos?
 
-### Não estou conseguindo criar termos novos pelo formulário, por quê?
+No hay un identificador específico que diga "Este elemento proviene de una confirmación". Por defecto, los elementos enviados a través del formulario irán a la pestaña de la lista de elementos en relación con el [estado establecido en la colección](#configuración-de-la-colección). De esta forma se garantiza que no se hagan públicos inmediatamente y que puedan ser revisados y aprobados antes. Es posible, eso sí, crear un metadato privado de tipo Selección o Taxonomía (que no aparezca en el formulario) y que le ayude a identificar posibles subetapas de un flujo de aprobación (como "En revisión", "Falta revisión"), antes de que se apruebe definitivamente.
 
-Por enquanto, não é possível criar novos termos de _“metadados tipo taxonomia”_ diretamente pelo _“formulário de submissão do item”_. Esta limitação existe porque _“Taxonomias”_ são configurações a _“nível repositório”_ e precisam de uma camada extra de segurança para que usuários externos não tragam problemas aos seus _“vocabulários controlados”_. Entretanto, a funcionalidade está aberta à discussão para desenvolvimento futuro.
+### No puedo crear nuevos términos desde el formulario, ¿por qué?
 
-### Quero um formulário com campos não relacionados à coleção. É possível?
+Por ahora, no es posible crear nuevos términos de "metadatos de tipo taxonomía" directamente desde el "formulario de envío de artículos". Esta limitación existe porque las "Taxonomías" son configuraciones "a nivel de repositorio" y necesitan una capa extra de seguridad para que usuarios externos no traigan problemas a sus vocabularios controlados. No obstante, la funcionalidad está abierta a debate para un mayor desarrollo.
 
-O módulo de submissão de itens é voltado para itens de coleções Tainacan. Se você deseja obter uma informação de seu usuário e não considera esta uma informação de uma coleção em específico do seu repositório, talvez o que você precise seja um plugin de formulário para o seu site. Existem [diversos disponíveis para o WordPress](https://br.wordpress.org/plugins/search/form/ ":ignore") que podem inclusive ser inseridos na mesma página do seu bloco de submissão de itens, porém deixando claro que se tratam de informações separadas.
+### Quiero un formulario con campos no relacionados con la colección. ¿Es posible?
 
-### Já uso um plugin de reCAPTCHA. Existe alguma integração com a submissão de itens?
+El módulo de envío de ítems está orientado a los ítems de las colecciones de Tainacan. Si quieres obtener una información de tu usuario y no consideras que esa información sea de una colección concreta de tu repositorio, quizás lo que necesites es un plugin de formulario para tu sitio. Existen [varios disponibles para WordPress](https://es.wordpress.org/plugins/search/form/ ":ignore") que incluso se pueden insertar en la misma página del bloque de envío de artículos, pero dejando en claro que se trata de información separada.
 
-De fato, existem [alguns plugins que já habilitam o reCAPTCHA](https://br.wordpress.org/plugins/search/reCaptcha/ ":ignore") na maioria dos formulários do seu site. Estes plugins entretanto não se integram automaticamente no Taiancan. Porém, uma vez usando eles, você pode aproveitar a _chave do site_ e a _palavra secreta_ gerada para eles e copiar e colar nos [campos de configuração](#configurando-o-recaptcha-no-seu-site), assim todos estarão protegidos pelo menos mecanismo e você pode inclusive acompanhar estatísticas de ataques e proteções no painel administrativo do Google reCAPTCHA.
+### Ya utilizo un plugin reCAPTCHA. ¿Hay alguna integración con el envío de artículos?
+
+De hecho, hay [algunos complementos que ya habilitan reCAPTCHA](https://es.wordpress.org/plugins/search/reCaptcha/ ":ignore") en la mayoría de los formularios de su sitio. Sin embargo, estos plugins no se integran automáticamente en Taiancan. Sin embargo, una vez que los utilice, puede aprovechar la clave del sitio y la palabra secreta generada para ellos y copiar y pegar en los [campos de configuración](#configuración-de-recaptcha-en-su-sitio-web), por lo que todos estarán protegidos por el menor mecanismo e incluso puede realizar un seguimiento de las estadísticas de ataque y protecciones en el panel de administración de Google reCAPTCHA.

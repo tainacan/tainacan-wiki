@@ -6,19 +6,18 @@
 		height="40">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-# Permissões e Usuários
+# Permisos y Usuarios
 
-> Este artigo explica como as **permissões** são tratadas no Tainacan, bem como quais são as **funções dos usuários** disponíveis e o que cada uma delas pode fazer. Para versões anteriores ao Tainacan 0.15, cheque [esta documentação](/es-mx/users).
+> Este artículo explica cómo se gestionan los **permisos** en Tainacan, cuáles **roles de usuario** destán disponibles y qué puede hacer cada uno. Para versiones anteriores a Tainacan 0.15, consulta [esta documentación](/es-mx/users).
 
-O Tainacan lida com permissões de usuários de maneira simular ao [WordPress](https://codex.wordpress.org/es-mx:Pap%C3%A9is_e_Capacidades). Se você está acostumado com as funções e permissões do WordPress, você já tem meio caminho andado!
+Tainacan maneja los permisos de usuario de forma similar a [wordpress](https://codex.wordpress.org/es:Roles_y_Capacidades). Si estás acostumbrado a las funciones y permisos de WordPress, ¡ya has recorrido la mitad del camino!
 
-Uma _“permissão”_ é o que é verificado ao se fornecer acesso para um usuário à uma “_tela”_, um _“botão”,_ qualquer _“função do sistema_”. Uma _“função de usuário”_ é uma maneira de conceder um _“conjunto de permissões”_ para um usuário. Atribuir uma ou mais _“funções”_ a um usuário é algo que já pode ser feito pelo WordPress por qualquer administrador com _“permissões de editar usuários”_. Com o Tainacan, novas _“funções”_ são disponibilizadas: _“Administrador no Tainacan”_, _“Editor no Tainacan”_ e _“Autor no Tainacan”_.
+Un _“permiso”_ es lo que se comprueba al dar acceso a un usuario a una “_pantalla”_, un _“botón”,_ cualquier _“función del sistema_”. Un _“rol de usuario”_ es una forma de otorgar un _“conjunto de permisos”_ a un usuario. Asignar uno o más _“roles”_ a un usuario es algo que ya puede hacer en WordPress cualquier administrador con _“permisos de edición de usuario”_. Con Tainacan, nuevos _“roles”_ están disponibles: _“Administrador en Tainacan”_, _“Editor en Tainacan”_ y _“Autor en Tainacan”_.
 
-A seguir, detalhamos:
+Lo detallamos a continuación:
 
-1. As [Funções de Usuários do Tainacan](/es-mx/tainacan-roles.md) (e como se comparam com as padrão do WordPress)
-2. As [Permissões do Tainacan](/es-mx/capabilities.md)
-3. Como [Gerenciar Funções de Usuários](/es-mx/manage-user-roles.md)
-4. Como [Gerenciar Permissões Específicas](/es-mx/manage-specific-capabilities.md) em certas coleções
+1. Como [Roles de usuario de Tainacan](/es-mx/tainacan-roles.md) (y cómo se comparan con los valores predeterminados de WordPress)
+2. Como [Permisos de Tainacan](/es-mx/capabilities.md)
+3. Como [Administrar roles de usuario](/es-mx/manage-user-roles.md)
+4. Como [Administrar permisos específicos](/es-mx/manage-specific-capabilities.md) en ciertas colecciones

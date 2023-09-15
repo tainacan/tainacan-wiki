@@ -1,36 +1,35 @@
-# Instalação e configuração
+# Instalación y configuración
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-## Antes de baixar
+## Antes de descargar
 
-O projeto Tainacan é um plugin para WordPress. Portanto, se você quer instalar o tainacan, a primeira coisa que deve fazer é ter uma instalação de WordPress funcionando.
+El proyecto Tainacan es un plugin [complemento] para WordPress. Por lo tanto, si deseas instalar Tainacan, lo primero que debes hacer es tener una instalación de WordPress que funcione.
 
-Se você não tiver uma ou não souber como faz para criá-la, você pode começar [instalando um servidor web como o XAMPP na sua máquina](/es-mx/xampp). Em seguida, você pode [instalar e configurar o Wordpress](/es-mx/wordpress).
+Si no tienes una o no sabes cómo crear una, puedes empezar [instalando un servidor web como XAMPP](/es-mx/xampp) en tu computadora para [instalar y configurar Wordpress](/es-mx/wordpress) de forma local.
 
-Uma vez que você tenha seu WordPress configurado, você não precisa fazer download do Tainacan. Basta visitar a seção de “Plugins” no seu painel administrativo, buscar pelo Tainacan e clicar em “Instalar”. Simples assim. Caso ainda tenha dúvidas, você pode consultar o [tutorial de instalação do tainacan](/es-mx/tainacan).
+Una vez que hayas configurado tu WordPress, no necesitas descargar Tainacan. Simplemente, visita la sección "Complementos" (“Plugins”) en tu panel de administración de WordPress, busca Tainacan y haz clic en "Instalar". Así de sencillo. Si aún tienes dudas, puedes consultar el [tutorial de instalacion de Tainacan](/es-mx/tainacan).
 
-## Plugin Tainacan
+## Complemento (plugin) Tainacan 
 
-Instale o Tainacan diretamente do painel de administração do seu site em WordPress, ou faça download a partir do [repositório oficial de plugins](https://wordpress.org/plugins/tainacan). Você também pode baixar o código fonte na [página do projeto no Github](https://github.com/tainacan/tainacan).
+Instala Tainacan directamente desde el panel de administración de tu sitio de WordPress o descárgalo del [repositorio oficial de complementos](https://es.wordpress.org/plugins/tainacan/). También puedes descargar el código fuente desde la [página del proyecto en Github](https://github.com/tainacan/tainacan).
 
-Consulte o [tutorial de instalação do tainacan](/es-mx/tainacan#como-instalar-o-plugin-tainacan-no-wordpress) para ver a instalação passo a passo.
+Echa un vistazo al [tutorial de instalación de Tainacan](/es-mx/tainacan#como-instalar-el-plugin-tainacan-en-wordpress) para ver el proceso paso a paso.
 
-## Tema padrão Tainacan
+## Tema predeterminado de Tainacan 
 
-O Tainacan pode funcionar com qualquer tema de WordPress. No entanto, para garantir todas as funcionalidades que ele oferece, é preciso que você utilize um tema preparado para ele.
+Tainacan puede funcionar con cualquier tema de WordPress. Sin embargo, para asegurar toda la funcionalidad que ofrece, te recomendamos utilizar el tema preparado para ello.
 
-Instale o tema “Tainacan Interface” diretamente do painel de administração do seu site em WordPress, ou faça download a partir do [repositório oficial de plugins](https://wordpress.org/themes/tainacan-interface). Você também pode baixar o código fonte na [página do projeto no Github](https://github.com/tainacan/tainacan-theme).
+Instala el tema "Interfaz de Tainacan (Tainacan interface)" directamente desde el panel de administración de tu sitio de WordPress, o descárgalo desde el [repositorio oficial de complemento](https://es.wordpress.org/themes/tainacan-interface/). También puedes descargar el código fuente desde la [página del proyecto en Github](https://github.com/tainacan/tainacan-theme).
 
-Consulte o [tutorial de instalação do tema](/es-mx/theme#tema) para ver a instalação passo a passo.
+Consulta el [tutorial de instalación de temas](/es-mx/theme#tema) para ver la instalación paso a paso.
 
-## Downloads de desenvolvimento
+## Descargas de desarrollo 
 
-Se você quer testar a versão sobre a qual a equipe de desenvolvimento está trabalhando, com as últimas novidades e atualizações, você pode baixar essas versões de desenvolvimento.
+Si quieres probar la versión en la que está trabajando el equipo de desarrollo, con las últimas novedades y actualizaciones, puedes descargar estas versiones de desarrollo.
 
-No entanto, entenda que essas versões, como o próprio nome já diz, ainda estão em desenvolvimento. Elas não são versão estáveis e devem ser utilizadas apenas para finalidade de testes. Podem haver funcionalidades incompletas ou mesmo defeitos de funcionamento.
+Sin embargo, debes tener en cuenta que estas versiones, como su nombre lo indica, aún están en fase de desarrollo, no son versiones estables y solo deben usarse con fines de prueba. Puede haber una funcionalidad incompleta o incluso un mal funcionamiento.
 
-Dito isto, aqui estão os links para Download.
+Dicho esto, aquí están los enlaces para su descarga.
 
-- [Plugin Tainacan: versão de desenvolvimento](https://tainacan.org/wp-content/uploads/nightly-builds/tainacan-nightly.zip)
-- [Tema Tainacan: versão de desenvolvimento](https://tainacan.org/wp-content/uploads/nightly-builds/tainacan-interface-nightly.zip)
+* [Complemento Tainacan: versión de desarrollo](https://tainacan.org/wp-content/uploads/nightly-builds/tainacan-nightly.zip)  
+* [Tema Tainacan: versión de desarrollo](https://tainacan.org/wp-content/uploads/nightly-builds/tainacan-interface-nightly.zip)

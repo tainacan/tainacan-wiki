@@ -6,192 +6,189 @@
 		height="42">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 # Filtros
 
-Para cada _“coleção”_ é possível escolher quais de seus _“metadados”_ serão usados como opção de _“filtros”_ para resultados em uma busca facetada na visualização da _“coleção”_. Sendo assim, os pré-requisitos para o uso dos _“filtros”_ no repositório são:
+Para cada _"colección"_ es posible elegir cuáles de sus _"metadatos"_ se utilizarán como _"filtro"_ para los resultados de una búsqueda facetada en la vista de la _"colección"_. Los requisitos previos para el uso de _"filtros"_ en el repositorio son:
 
-- Criar[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata)_“_[_Metadados_](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata)_”_ a nível de _“repositório”_ ou de _“coleção”_;
-- Preencher os campos dos metadados de[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/items)_“_[_Itens_](https://tainacan.github.io/tainacan-wiki/#/es-mx/items)_”_;
-- E então[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/filters?id=configurar-filtros)[configurar Filtros](https://tainacan.github.io/tainacan-wiki/#/es-mx/filters?id=configurar-filtros) a nível de _“repositório”_ ou de _“coleção_
+- Crear “[_metadatos_](/es-mx/metadata.md)” a nivel de _"repositorio"_ o de _"colección"_;
+- Rellenar los campos de metadatos de los “[_elementos_](/es-mx/items)”;
+- Hecho lo anterior, se [pueden configurar filtros](/es-mx/filters.md#configurar-filtros) al nivel de _"repositorio"_ o de _"colección”_.
 
-_“Filtros”_ permitem que o usuário altere a visualização dos _“itens”_ de uma _“coleção”_ a partir dos dados do _“metadado”_ que foi configurado como um _“filtro”_.
+Los _“filtros”_ permiten al usuario cambiar la vista de los _"elementos"_ de una _"colección"_ a partir de los _“metadatos”_ que se configuraron como _"filtros"_.
 
 ---
 
-## Características gerais de Filtros
+## Características generales de los filtros
 
-- Todos os _“metadados”_ criados ou herdados pela _“coleção”_ estão disponíveis para criação do _“filtro”_;
-- _“Metadados_ _a nível de repositório”_ são representados com o _“ícone Repositório”_;
-- _“Metadados a nível de coleção”_ (ou herdados de uma coleção) são representados com o _“ícone Coleção”_;
+- Todos los _"metadatos"_ creados o heredados por la _"colección"_ están disponibles para configurarlos como _"filtros"_;
+- Los _“metadatos a nivel de repositorio”_ se representan con el _“icono de repositorio”_;
+- Los _“metadatos a nivel de colección”_ (o heredados de una colección) se representan con el _"icono de colección"_;
 
-* Por padrão, o Tainacan possui dois _“filtros”_ independentes, que podem ser habilitados na _“seção de filtros”_. São eles:
-  - **“Tipo de documento”**: É possível filtrar quais _“itens”_ possuem algum documento principal vinculado;
-  - **“Possui miniatura”**: É possível filtrar pelos _“itens”_ que possuem ou não miniatura.
+* Por defecto, Tainacan dispone de dos _"filtros"_ independientes, que se pueden habilitar en la _“sección filtros”_. Estos son:
+  - **“Tipo de documento”**: Es posible filtrar los _"elementos"_ que tienen vinculado algún documento principal;
+  - **“Tiene miniatura”**: Es posible filtrar los _"elementos"_ que tienen o no una miniatura.
 
-- Os valores preenchidos no _“metadado”_ de cada _“item”_ aparecerão como opção para seleção em cada _“filtro”_, de acordo com suas configurações de “_tipo de metadado”_ configurado;
-- Atualmente o Tainacan tem **nove tipos de metadados** por padrão, mas novos conjuntos podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. Consulte o artigo sobre o[ ](https://tainacan.github.io/tainacan-wiki/#/dev/)[Desenvolvimento do Plugin](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber mais.
+- Los valores de los _“metadados”_ de cada _"elemento"_ aparecerán como opción de selección en cada _"filtro"_, según las configuraciones del _“tipo de metadatos”_;
+- Actualmente, Tainacan cuenta con **nueve tipos de metadatos**, pero pueden desarrollarse nuevos filtros de acuerdo a las necesidades individuales de cada instalación y agregarse al núcleo de Tainacan. Ver el artículo sobre [desarrollo de plugins](/es-mx/dev/) para saber más.
 
-## Tipos de Filtros
+## Tipos de filtros
 
-Cada _“tipo de metadado”_ oferece diferentes _“tipos de filtros”_ para criação, veja as variações a seguir:
+Cada _“tipo de metadato”_ ofrece diferentes _“tipos de filtros”_, como ser verá a continuación:
 
-### Filtros disponíveis para cada Tipo de Metadado
+### Filtros disponibles para cada tipo de metadatos
 
 #### "Texto":
 
-● Lista de Seleção (selectbox);
+● Lista de selección (selectbox);
 
-● AutoCompletar (autocomplete);
+● Autocompletar (autocomplete);
 
-● Inserção de Termo (taginput);
+● Inserción de términos (taginput);
 
-● Caixas de Seleção Múltipla (checkbox).
+● Casillas de selección múltiple (casilla de verificación).
 
-#### "Texto Longo":
+#### "Texto largo":
 
-● Lista de Seleção (selectbox);
+● Lista de selección (selectbox);
 
-● AutoCompletar (autocomplete);
+● Autocompletar (autocomplete);
 
-● Inserção de Termo (taginput);
+● Inserción de términos (taginput);
 
-● Caixas de Seleção Múltipla (checkbox).
+● Casillas de selección múltiple (casilla de verificación).
 
 #### "Numérico":
 
-● Intervalo Numérico (Custom_Interval);
+● Intervalo numérico (Custom_Interval);
 
 ● Numérico;
 
-● Lista de Intervalos Numéricos.
+● Lista de intervalos numéricos.
 
-#### "Data":
+#### "Fecha":
 
-● Intervalo de Datas (Custom_Interval);
+● Intervalo de fechas (Custom_Interval);
 
-● Data
+● Fecha
 
-#### "Lista de Seleção":
+#### "Lista de selección":
 
-● Lista de Seleção (selectbox);
+● Lista de selección (selectbox);
 
-● AutoCompletar (autocomplete);
+● Autocompletar (autocomplete);
 
-● Inserção de Termo (taginput);
+● Inserción de términos (taginput);
 
-● Caixas de Seleção Múltipla (checkbox).
+● Casillas de selección múltiple (casilla de verificación).
 
-#### "Taxonomias":
+#### "Taxonomías":
 
-● Inserção de Termo (taginput);
+● Inserción de términos (taginput);
 
-● Caixas de Seleção Múltipla (checkbox)..
+● Casillas de selección múltiple (casilla de verificación).
 
-#### "Relacionamento":
+#### "Relación":
 
-● AutoCompletar (autocomplete);
+● Autocompletar (autocomplete);
 
-● Inserção de Termo (taginput);
+● Inserción de términos (taginput);
 
-● Seleção Múltipla (checkbox).
+● Selección múltiple (checkbox).
 
-#### "Usuário":
+#### "Usuario":
 
-● Inserção de Termo (taginput).
+● Inserción de términos (taginput).
 
-> Nota: Ao selecionar um _“tipo de filtro”_ para a criação, será exibida uma tela de exemplo para ilustração das características de cada tipo de entrada de valores do _“filtro”_.
+> Nota: Al seleccionar un _“tipo de filtro”_ para su creación, se mostrará una pantalla de ejemplo para ilustrar las características de cada tipo de entrada de valor del _"filtro"_.
 >
-> Nota: O _“metadado composto”_ não possui um filtro próprio. Apenas os _“metadados filhos”_ podem ter filtros configurados. Na _“seção de filtros”_, na lista de metadados disponíveis, eles podem ser identificados com a marcação _“filho de composto”_.
+> Nota: Los _“metadatos compuestos”_ no tienen filtro, solo los _"metadatos hijos"_ pueden tener filtros configurados. En la _“sección de filtros”_, en la lista de metadatos disponibles se pueden identificar con la etiqueta _“hijo del compuesto”_.
 
-## Configurar Filtros
+## Configurar filtros
 
-1. Acesse o painel de Controle do _WordPress_;
+1. Accede al Panel de Control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\Painel_Adm_WordPress.png)
+   ![Acesse o painel de controle](_assets/images/Panel_Adm_Wordpress.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_:
+2. En la barra lateral izquierda, haz clic en _“Tainacan”_:
 
-   ![Acesse o painel de controle](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acesse o painel de controle](_assets/images/Panel_Acceso_Tainacan.png)
 
-3. _“Filtros a nível de Repositório”_:
+3. Filtros a nivel de _“repositorio”_:
 
-   ○ Clique em “Filtros do Repositório” para configurar “filtros” que serão herdados por todas as “coleções”. Devem ser pensados para permitir a navegação a partir de informações globais com vocabulários objetivos. Por exemplo: “Tipo de arquivo”, “Data do registro do item”, “Estado de Conservação” e etc.).
+   ○ Haz clic en "Filtros de repositorio" para configurar los "filtros" que heredarán todas las "colecciones". Deben estar diseñados para permitir la navegación a partir de información global con vocabularios controlados. Por ejemplo: “Tipo de archivo”, “Fecha de registro del elemento”, “Estado de conservación”, etc.
 
-   ![Acesse o painel de controle](_assets\images\Acessar_Filtros_Repositorio.png)
+   ![Acesse o painel de controle](_assets/images/Acceder_Filtros_Repositorio.png)
 
-4. Crie Filtros a nível de **Coleções**.
+4. Filtros a nivel de **colecciones**.
 
-   ○ “Filtros a nível de coleção” são aplicados apenas aos “itens” criados nesta “coleção”. A visualização dos “filtros da coleção” também herda os “filtros a nível de repositório”;
+   ○ Los “filtros a nivel de colección” solo se aplican a los “elementos” creados en una “colección” determinada. La vista de “filtros de colección” también hereda los “filtros a nivel de repositorio”;
 
-   ○ Crie ou escolha a “coleção” que deseja criar novos filtros. Consulte “Criar coleção” e “Criar metadados” para saber mais.
+   ○ Crea o elige la "colección" en la que deseas crear nuevos filtros. Consulta "Crear colección" y "Crear metadatos" para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acesse o painel de controle](_assets/images/Seleccionar_coleccion_filtros.png)
 
-   I. Na barra superior da “coleção” selecionada, clique em “Filtros”;
+   I. En la barra superior de la “colección” seleccionada haz clic en “Filtros”;
 
-   ![Acesse o painel de controle](_assets\images\Acessar_Filtros_Colecao.png)
+   ![Acesse o painel de controle](_assets/images/Acceder_Filtros_Coleccion.png)
 
-   II. Para criar “filtros a nível de coleção”, é necessário que sejam criados anteriormente “metadados” na respectiva “coleção” (consulte Criar metadados) e, então, estes “metadados” estarão disponíveis para serem configurados como “filtros”.
+   II. Para crear “filtros a nivel de colección” es necesario haber creado previamente “metadatos” en la respectiva “colección” (ver Crear metadatos), y entonces estos “metadatos” estarán disponibles para ser configurados como “filtros”.
 
-5. Na tela de _“edição de Filtros”_ (a “_nível de repositório”_ ou a “_nível de coleção”_), é possível visualizar os _“metadados”_ já criados no repositório ou coleção, exibidos na lista à direita, na seção _“Metadados disponíveis”_. Nessa lista, é possível visualizar os _“tipos de metadados”_ já criados e disponíveis para criação do _“Filtro”_.
+5. En la pantalla de _“edición de filtros”_ (a _"nivel de repositorio”_ o a _"nivel de colección”_), se pueden ver los _"metadatos"_ ya creados en el repositorio o colección, que aparecen en la lista de la derecha, en la sección _“Metadatos disponibles”_. En esta lista, es posible ver los _"tipos de metadatos"_ ya creados y disponibles para la creación de _"filtros"_.
 
-## Criar Filtros
+## Crear filtros
 
-Não existe diferença no processo de criação de _“filtros no nível repositório”_ ou _“coleção”_. Entretanto, lembre-se de certificar em qual nível de acesso você deseja criar o _“filtro”_. Para saber chegar à tela de criação de _“filtro a nível repositório”_ ou a tela de configuração de _“filtro a nível coleção”_ acesse Configurar Filtros.
+No hay ninguna diferencia en el proceso de creación de _"filtros a nivel de repositorio"_ o _"filtros a nivel de colección"_. Recuerda que debes especificar el nivel de acceso (públido o privado) que tendrá el _"filtro"_.
 
-1. Escolha um _“metadado”_ na lista de _“Metadados disponíveis”_;
+1. Elige un _“metadato”_ de la lista de _“Metadatos disponibles”_;
 
-   ![Acesse o painel de controle](_assets\images\Criar_FIltro_Repositorio_Metadados_Disponiveis.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Metadatos_Disponibles.png)
 
-2. Selecione e arraste para a esquerda um _“metadado”_ para a criação do _“filtro”_:
+2. Selecciona y arrastra hacia la izquierda un _“metadato”_ para la creación del _"filtro"_:
 
-   I. Será exibida uma tela para você escolher o “tipo do filtro”. Os “tipos de filtros” variam conforme os “tipos de metadados”. Consulte os Tipos de Filtros disponíveis ou Tipos de Metadados para saber mais;
+   I. Aparecerá una pantalla para elegir el “tipo de filtro”. Los “tipos de filtros” varían en función de los “tipos de metadatos”. Consulta Tipos de filtros disponibles o Tipos de metadatos para obtener más información;
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Selecao_Tipo.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Seleccion_Tipo.png)
 
-   II. Você pode pré-visualizar como cada “filtro” será exibido na página da sua “coleção”. Para isso, passe o mouse sobre cada tipo disponível para o “metadado” selecionado, como visto na imagem anterior.
+   II. Puedes obtener una vista previa de cómo se verá cada "filtro" en la página de la "colección". Para hacerlo, pasa el ratón por encima de cada tipo disponible para los “metadatos” seleccionados, como se ve en la imagen anterior.
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Pre-visualizar_tipo.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Previsualizar.png)
 
-3. Selecione o _“tipo do filtro”_ desejado. Uma tela de configurações do _“filtro”_ irá abrir. Preencha os campos conforme desejar:
+3. Selecciona el _"tipo de filtro"_ deseado. Se abrirá una pantalla de configuración del _"filtro"_. Rellena los campos:
 
-   - Nomeie o _“filtro”_ (por padrão o _“nome do filtro”_ é igual ao seu respectivo _“metadado”_);
-   - Crie uma descrição para o _“filtro”_;
-   - Defina o _“status do filtro”_ entre:
-     - **“Público”**: o filtro aparece para todos na visualização da _“coleção”_;
-     - **“Privado”**: o filtro aparece somente para editores da _“coleção”_, na visualização da coleção a partir do _“painel administrativo”_.
+   - Asigna un nombre al _"filtro"_ (por defecto, el _"nombre del filtro"_ es igual al de su respectivo _“metadato”_);
+   - Crea una descripción para el _"filtro"_;
+   - Selecciona el _"estatus del filtro"_:
+     - **“Público”**: el filtro aparecerá para todos en la vista _"colección"_;
+     - **“Privado”**: el filtro aparece solo para los editores de la _"colección"_ en la vista de la colección desde el _"panel de administración"_.
 
-   > **Nota:** As configurações disponíveis para cada _“filtro”_ criado variam conforme o _“tipo de filtro”_ e _“tipo de metadado”_. Em caso de dúvidas, clique no _“ícone interrogação”_ para saber mais.
+   > **Nota:** Los ajustes disponibles para cada _"filtro"_ creado varían según el _“tipo de filtro”_ y el _“tipo de metadatos”_. En caso de duda, haz clic en el _"icono de signo de interrogación"_ para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Configuracoes.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Configuraciones.png)
 
-4. Clique em _“Salvar”_;
+4. Da clic en _"Guardar"_;
 
-   ![Acesse o painel de controle](_assets\images\Criar_Filtro_Salvar.png)
+   ![Acesse o painel de controle](_assets/images/Crear_Filtro_Guardar.png)
 
-5. Uma vez salvo, o _“filtro”_ criado aparecerá na barra lateral esquerda na visualização da _“coleção”_.
+5. Una vez guardado, el _"filtro"_ creado aparecerá en la barra lateral izquierda de la vista _"colección"_.
 
-## Editar Filtros
+## Editar filtros
 
-### Nível Repositório:
+### A nivel de repositorio:
 
-● Se estiver na tela inicial do Tainacan, clique em “Filtros do Repositório” ou, se estiver na página de “coleções”, na barra lateral, clique em “Filtros”:
+● Si estás en la pantalla de inicio de Tainacan, haz clic en "Filtros del repositorio" o, si estás en la página de "colecciones", en la barra lateral haz clic en "Filtros":
 
-■Identifique o _“filtro”_ que deseja alterar;
+■Haz clic en el _"icono de lápiz"_ ubicado al lado del título del _"filtro"_;
 
-■Clique no _“ícone lápis”_ localizado próximo ao título do _“filtro”_;
-
-■Altere os campos desejados;
+■Cambia los campos deseados;
 
 > · **Nota**:
 >
-> ○ Só é possível editar o “Título”, “Descrição” e “Status” de filtros existentes;
+> ○ Solo es posible editar el “Título”, la “Descripción” y el “Estatus” de los filtros existentes;
 >
-> ○ Para alterar o tipo de um “filtro” é necessário deletar o filtro existente, e criar um novo com as configurações desejadas.
+> ○ Para cambiar el tipo de un “filtro”, es necesario eliminar el filtro existente y crear uno nuevo con la configuración deseada.
 
-■Clique em _“Salvar”_.
+■Haz clic en _"Guardar"_.
 
 <iframe
     width="560"
@@ -202,31 +199,31 @@ Não existe diferença no processo de criação de _“filtros no nível reposit
     allowfullscreen>
 </iframe>
 
-### Nível Coleção
+### A nivel de colección
 
 > Nota:
 >
-> “Filtros herdados”\* (aqueles criados no nível repositório) podem ser desabilitados;
+> Los “filtros heredados” (aquellos creados a nivel de repositorio) se pueden deshabilitar;
 >
-> “Filtros desabilitados”\* não serão exibidos na visualização da coleção.
+> Los "Filtros deshabilitados" no se mostrarán en la vista de colección.
 
-● Na barra superior da “coleção” selecionada, clique em “Filtros”:
+● En la barra superior de la "colección" seleccionada, haz clic en "Filtros":
 
-■ Identifique o “filtro” que deseja alterar;
+■ Identifica el “filtro” que deseas modificar;
 
-■ Clique no “ícone lápis” localizado próximo ao título do “filtro”;
+■ Haz clic en el “icono de lápiz” ubicado junto al título del “filtro”;
 
-■ Altere os campos desejados.
+■ Modifica los campos deseados.
 
 > Nota:
 >
-> Só é possível editar o “Título”, “Descrição” e “Status” de filtros existentes;
+> Solo es posible modificar el “Título”, “Descripción” y “Estatus” de los filtros existentes;
 >
-> Para alterar o tipo de um “filtro” é necessário deletar o filtro existente, e criar um novo com as configurações desejadas.
+> Para cambiar el tipo de un “filtro” es necesario eliminar el filtro y crear uno nuevo con la configuración deseada.
 
-■ Clique em “Salvar”.
+■ Haz clic en “Guardar”.
 
-● Para desabilitar um “filtro” clique no “ícone seletor”, ao lado dos “ícones lápis” e “lixeira”, localizado próximo ao título do “filtro”.
+● Para deshabilitar un "filtro", haz clic en el "icono de selección", junto a los iconos de “lápiz" y de "papelera", ubicados junto al título del "filtro".
 
 <iframe
     width="560"
@@ -237,15 +234,15 @@ Não existe diferença no processo de criação de _“filtros no nível reposit
     allowfullscreen>
 </iframe>
 
-## Excluir Filtros
+## Eliminar filtros
 
-!>**Atenção:** Ao clicar no _“ícone lixeira”_ o _“filtro”_ é excluído imediatamente. Se você não desejar visualizar um _“filtro ativo”_ momentaneamente, considere apenas desabilitar a seção de _“filtros a nível coleção”_.
+!>**Atención:** Al hacer clic en el _"icono de papelera"_, el _"filtro"_ se elimina inmediatamente. Si no deseas ver momentáneamente un _“filtro activo”_, es mejor simplemente deshabilitarlo _"a nivel de colección"_.
 
-### Nível Repositório
+### A nivel de repositorio
 
-1. Se estiver na tela inicial do Tainacan, clique em _“Filtros do Repositório”_ ou, se estiver na página de _“coleções”_, na barra lateral, clique em \*“Filtros”**\*:**
-   1. Identifique o _“filtro”_ que deseja excluir;
-   2. Clique no _“ícone lixeira”_ localizado próximo ao título do _“filtro”._
+1. Si estás en la pantalla de inicio de Tainacan, haz clic en _“Filtros de repositorio”_ o, si estás en la página _"colecciones"_, en la barra lateral, haz clic en \*“filtros”**\*:**
+   1. Identifica el _"filtro"_ que deseas eliminar;
+   2. Haz clic en el _"icono de papelera"_ ubicado al lado del título del _"filtro"._
 
 <iframe
     width="560"
@@ -256,11 +253,11 @@ Não existe diferença no processo de criação de _“filtros no nível reposit
     allowfullscreen>
 </iframe>
 
-### Nível Coleção
+### A nivel de colección
 
-1. Na barra superior da _“coleção”_ selecionada, clique em \*“Filtros”**\*:**
-   1. Identifique o _“filtro”_ que deseja alterar;
-   2. Clique no _“ícone lixeira”_ localizado próximo ao título do _“filtro”_
+1. En la barra superior de la _"colección"_ seleccionada, haz clic en \*“Filtros”**\*:**
+   1. Identifica el _"filtro"_ que quieres modificar;
+   2. Haz clic en el _"icono de papelera"_ ubicado al lado del título del _"filtro"_
 
 <iframe
     width="560"
@@ -271,6 +268,6 @@ Não existe diferença no processo de criação de _“filtros no nível reposit
     allowfullscreen>
 </iframe>
 
-> **Nota:** a _“exclusão do filtro”_ implica somente na navegabilidade da visualização da _“coleção”_. Esta operação só pode ser desfeita por administradores. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/activities)[Registro de atividades](https://tainacan.github.io/tainacan-wiki/#/es-mx/activities) para saber mais. O _“filtro”_ deixará de existir automaticamente caso seu respectivo _“metadado”_ seja desabilitado ou excluído.
+> **Nota: **El _"borrado del filtro"_ solo afecta la navegabilidad de la visualización de la  _“colección"_. Esta operación solo la pueden deshacer los administradores. Consulta el [Registro de actividades](/es-mx/activities) para obtener más información. El _"filtro"_ dejará de existir automáticamente si se desactivan o eliminan sus respectivos _“metadatos”_.
 
-- Para _“recuperar”_ um _“filtro”_ excluído, basta criar o _“filtro”_ novamente.
+- Para _“recuperar”_ un _"filtro"_ borrado, basta con crearlo de nuevo.

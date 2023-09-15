@@ -1,281 +1,280 @@
-# Versões
+# Versiones
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Aqui apresentamos links e detalhes sobre as versões lançadas do plugin Tainacan. Recomendamos, especialmente enquanto estamos em Beta, utilizar sempre a versão mais recente.
+Aquí tienes enlaces y detalles de las últimas versiones del plugin Tainacan. Recomendamos, especialmente mientras estemos en Beta, que utilices siempre la última versión.
 
 ## Tainacan Beta 0.19
 
-### Postagem
+### Publicación
 
-Post de lançamento: [https://tainacan.org/blog/2022/08/23/tainacan-beta-0-19-secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/](https://tainacan.org/blog/2022/08/23/tainacan-beta-0-19-secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/ ":ignore")
+Publicación de lanzamiento: [https://tainacan.org/blog/2022/08/23/tainacan-beta-0-19-secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/](https://tainacan.org/blog/2022/08/23/tainacan-beta-0-19-secao-de-metadados-bloco-de-galeria-de-midia-do-item-e-muitas-muitas-melhorias/ ":ignore")
 
-### Resumo da Versão
+### Resumen de la versión
 
-#### Novidades
+#### Novedades
 
-- [Seção de Metadados](/es-mx/metadata-sections.md);
-- [Bloco de Galeria de Mídias do Item](/es-mx/block-item.md#galeria-de-mídias-do-item);
+- [Sección de metadatos](/es-mx/metadata-sections.md);
+- [Bloque de Galería de Medios del Elemento](/es-mx/block-item.md#galeria-de-mídias-do-item);
 
-#### Melhorias
+#### Mejoras
 
-- Refatoração da Busca Avançada;
-- Reorganização da Tela de Edição do Item;
-- Redefinição do Botão de Atualizar e Status;
-- Modo de Navegação com Foco nos Metadados;
-- Filtro de Metadados Obrigatórios;
-- Redistribuição da Tela de Configuração da Coleção;
-- Descrição e Placeholders de Metadados;
-- Relacionamento entre Itens Rascunho;
-- Filtros que Começam Desabilitados;
-- Novo Tamanho de Imagem: `tainacan-large-full`;
-- Modo de Visualização Masonry com Imagens Maiores;
-- Opção de Tamanho da Imagem nos Blocos;
-- Atualização das bibliotecas de carrossel e da galeria com zoom;
-- Substituição da biblioteca de _tooltips_;
-- Atualização da biblioteca que mostra documentos PDFs embutidos;
-- Diversas melhorias na responsividade da página de edição do item para telas pequenas;
-- Exibição do metadado composto dentro de relacionamentos;
-- Mais destaque para o campo de texto alternativo da imagem de miniatura;
-- Botão de ordenar na lista de metadados e de filtros;
-- Exibição de um rótulo indicando qual dos anexos é o documento;
-- Cabeçalho fixo nas listagens de Atividades, Processos e Permissões e
-- Várias correções de erros.
+- Reestructuración de la búsqueda avanzada;
+- Reorganización de la pantalla de edición de artículos;
+- Redefinición del botón de actualización y de estado;
+- Modo de navegación centrado en los metadatos;
+- Filtro obligatorio de metadatos;
+- Redistribución de la pantalla de configuración de la colección;
+- Descripción de metadatos y marcadores de posición;
+- Relación entre elementos de borrador;
+- Filtros que comienzan desactivados;
+- Nuevo tamaño de imagen: `tainacan-large-full`;
+- Modo de visualización Masonry con imágenes más grandes;
+- Opción de tamaño de imagen en bloques;
+- Bibliotecas de galería de carrusel y zoom actualizadas;
+- Sustitución de la librería _tooltips_;
+- Actualización de la biblioteca que muestra documentos PDF incrustados;
+- Varias mejoras en la capacidad de respuesta de la página de edición de elementos para pantallas pequeñas;
+- Visualización de metadatos compuestos dentro de relaciones;
+- Mayor prominencia del campo de texto alternativo de la imagen en miniatura;
+- Botón de ordenación en la lista de metadatos y filtros;
+- Visualización de una etiqueta que indica cuál de los anexos es el documento;
+- Corrección de la cabecera en las listas de Actividades, Procesos y Permisos; y
+- Corrección de varios errores.
 
-#### Para Desenvolvedores
+#### Para desarrolladores
 
-- Novos _hooks_ (filtros) para o [_backend_](/dev/filters.md#backend-filters) e [_frontend_](/dev/filters.md#frontend-filters);
-- Novos _template tags_ para a seção de metadados;
-- [Configurações](/dev/admin-ui-options.md) para se alterar o Admin;
-- Form hook específico por tipos de metadados;
-- Form hook no formulário de função de usuário;
+- Nuevos _hooks_ (filtros) para el [_backend_](/es-mx/dev/filters.md#filtros-backend) y el [_frontend_](/es-mx/dev/filters.md#filtros-frontend);
+- Nuevos _template tags_ para la sección de metadatos;
+- [Configuraciones](/es-mx/dev/admin-ui-options.md) para modificar el Admin;
+- Form _hook_ específico para tipos de metadatos;
+- Form _hook_ en el formulario de roles de usuario;
 
-### Data de Lançamento
+### Fecha de lanzamiento
 
-- 23 de Agosto de 2022
+- 23 de agosto de 2022
 
 ---
 
 ## Tainacan Beta 0.18
 
-### Postagem
+### Publicación
 
-Post de lançamento: [https://tainacan.org/blog/2021/06/07/tainacan-beta-0-18-relatorios-sobre-o-acervo-nova-galeria-de-midias-e-melhorias-na-lista-de-itens/](https://tainacan.org/blog/2021/06/07/tainacan-beta-0-18-relatorios-sobre-o-acervo-nova-galeria-de-midias-e-melhorias-na-lista-de-itens/ ":ignore")
+Publicación de lanzamiento: [https://tainacan.org/blog/2021/06/07/tainacan-beta-0-18-relatorios-sobre-o-acervo-nova-galeria-de-midias-e-melhorias-na-lista-de-itens/](https://tainacan.org/blog/2021/06/07/tainacan-beta-0-18-relatorios-sobre-o-acervo-nova-galeria-de-midias-e-melhorias-na-lista-de-itens/ ":ignore")
 
-### Resumo da Versão
+### Resumen de versión
 
-#### Novidades
+#### Novedades
 
-- Página de Relatórios do Tainacan, apresentando gráficos e informações estatísticas relativas ao acervo e a gestão do repositório;
-- Novo modal de anexos com zoom e opção de mostrar título, descrição e legenda de arquivos (para ser utilizado pelos temas);
-- Ícones por tipo de documento para items sem miniatura;
-- Carregamento progressivo de imagens com efeito blur;
-- Filtragem textual e por tipo na tela de metadados e de filtros;
-- Substituir Documento de um item via importador CSV;
-- Opção de limpar um item pelo importador CSV;
-- Opção de adicionar um link no final do bloco de submissão de itens para o item criado;
+- Página de informes de Tainacan, que muestra gráficos e información estadística relativa a la recopilación y gestión del repositorio;
+- Nuevo modo de archivos adjuntos con zoom y opción de mostrar título, descripción y subtítulo de los archivos (para ser utilizado por temas);
+- Iconos por tipo de documento para los elementos sin miniaturas;
+- Carga progresiva de imágenes con efecto de desenfoque;
+- Filtrado de texto y tipos en la pantalla de metadatos y filtros;
+- Sustitución del documento de un artículo a través del importador CSV;
+- Opción de borrar un elemento a través del importador CSV;
+- Opción de añadir un enlace al final del bloque de envío de elementos al elemento creado;
 
-#### Melhorias
+#### Mejoras
 
-- Opção de criar todos os metadados na tela de mapeamento do importador;
-- Adiciona paginação na busca do input de checkbox, tanto no filtro quanto no metadado tipo taxonomia;
-- Diversas melhorias na eficiência do importador e do exportador;
-- Melhorias na aparência da tela de metadados e exibição de mais informações relevantes sem a necessidade de se abrir para edição;
-- Coleções são criadas com comentários desabilitado, por padrão;
-- Melhorias na exibição de embeds (e resolução de conflitos com css do WordPres);
-- Melhor rótulo para status de comentários na coleção;
+- Opción de crear todos los metadatos en la pantalla de asignación del importador;
+- Añade paginación a la búsqueda de entrada de casillas, tanto en el filtro como en los metadatos de tipo taxonomía;
+- Varias mejoras en la eficacia del importador y del exportador;
+- Mejoras en la apariencia de la pantalla de metadatos y visualización de información más relevante sin necesidad de abrirla para editarla;
+- Las colecciones se crean con los comentarios desactivados por defecto;
+- Mejora de la visualización de incrustaciones (y resolución de conflictos con WordPres css);
+- Mejor etiquetado del estado de los comentarios en la colección;
 
-#### Correções de Erros
+#### Corrección de errores
 
-- Resolvemos diversos conflitos de css com bibliotecas externas;
-- Criamos um filtro para se listar páginas onde não se queira carregar o javascript e css relacionados aos blocos do Tainacan;
+- Hemos resuelto varios conflictos de css con librerías externas;
+- Hemos creado un filtro para listar las páginas en las que no se desea cargar javascript y css relacionados con los bloques de Tainacan;
 
-### Data de Lançamento
+### Fecha de lanzamiento
 
-- 07 de Junho de 2021
+- 07 de junio de 2021
 
 ---
 
 ## Tainacan Beta 0.17
 
-### Resumo da Versão
+### Resumen de versión
 
-#### Novidades
+#### Novedades
 
-- Fluxo de submissão (depósito) de itens por usuários não logados (Bloco de Submissão de Itens)
-- Filtros por tipo de Documento e Miniatura;
-- Filtro por Coleções mais inteligente (inclui facetas);
-- Modo de Visualização Lista
-- Mudar a ordem e título de anexos;
-- Tipo de metadado URL embutida (por hora via plugin);
-- Popup de aviso de erros em requisições do sistema;
-- Botão para começar entrar no modo tela cheia a partir de um item específico;
-- Opção de Barra de filtros fixa com scroll na listagem de itens (requer atualização do tema Tainacan Inferface);
+- Flujo de envío (depósito) de elementos por usuarios no registrados (Bloque de envío de elementos)
+- Filtros por tipo de documento y miniatura;
+- Filtrado más inteligente por colecciones (incluye facetas);
+- Modo de visualicación Lista
+- Cambiar el orden y el título de los archivos adjuntos;
+- Tipo de metadatos URL incrustados (por hora mediante plugin);
+- Aviso emergente de errores en las peticiones del sistema;
+- Botón para iniciar en modo de pantalla completa desde un elemento específico;
+- Corregida la opción de barra de filtros con desplazamiento en el listado de elementos (requiere actualización del tema Tainacan Inferface);
 
-#### Melhorias
+#### Mejoras
 
-- Novo input de taxonomias via checkboxes;
-- Melhorias na inserção de termos novos e existentes em metadados de taxonomia;
-- Melhorias na inserção de novos itens em metadados relacionamento;
-- Filtros começam colapsados se não possuem valores para a faceta atual;
-- Opção de direcionar links de termos para a lista de itens filtrada por certas coleções (configuração do metadado tipo taxonomia);
-- Opção para nunca exibir a miniatura se sua coleção não costuma ter imagens;
-- Seleção via SHIFT nas listagens de itens no admin.
-- Novas opções de tamanhos das miniaturas nos itens de blocos de carrosséis;
-- Temas agora podem implementar navegação item a item em suas páginas baseando-se em queries passadas ao clicar no item da lista;
-- Ajustes no modo tela cheia, incluindo modal de instruções para navegação via teclado;
-- Paginação nos expositores e exposição apenas de itens selecionados;
-- Compatibilidade com o WordPress 5.5 (incluindo algumas adaptações dos blocos aos novos recursos);
-- Descrição alternativa de miniaturas para permitir uso de tags alt (acessibilidade na listagem de itens);
+- Nueva entrada de taxonomía mediante casillas de verificación;
+- Inserción mejorada de términos nuevos y existentes en los metadatos de la taxonomía;
+- Inserción mejorada de nuevos elementos en los metadatos de relaciones;
+- Los filtros comienzan a colapsarse si no tienen valores para la faceta actual;
+- Opción de dirigir los enlaces de términos a la lista de elementos filtrados por determinadas colecciones (ajuste de metadatos de tipo taxonomía);
+- Opción de no mostrar nunca la miniatura si su colección no suele tener imágenes;
+- Selección mediante MAYÚS en los listados de artículos en la administración.
+- Nuevas opciones de tamaño de las miniaturas para los artículos en los bloques de carrusel;
+- Los temas ahora pueden implementar la navegación elemento por elemento en sus páginas basándose en las consultas pasadas al hacer clic en el elemento de la lista;
+- Ajustes en el modo de pantalla completa, incluido el modal de instrucciones para la navegación mediante teclado;
+- Paginación en las visualizaciones y visualización sólo de los elementos seleccionados;
+- Compatibilidad con WordPress 5.5 (incluyendo algunas adaptaciones de bloques a las nuevas características);
+- Descripción en miniatura alternativa para permitir el uso de etiquetas alt (accesibilidad al listar elementos);
 
-#### Correções de Erros
+#### Corrección de errores
 
-- Fazer com que a permissão `manage_collection_x` permita alterar também as configurações da coleção, não apenas seus metadados, itens, etc;
-- Erros na execução de algumas operações em massa;
-- Miniaturas de capas de PDFs com transparência agora resultam em imagens de fundo branco ao invés de preto;
-- Esconde o botão de "Selecionar todos os itens" quando apenas uma página existe;
-- Redirecionamento do bloco de busca não estava funcionando em temas que não suportam o Tainacan;
-- Evita a quebra da coleção se um tipo de metadado registrado não está mais presente;
-- Metadado numérico estava entendendo o valor 0 como "vazio";
-- Metadados herdados de uma coleção raiz estavam sendo criados na ordem reversa a da coleção raiz;
-- Inserção de metadados relacionamento via taginput estava limitado a 100 itens e removendo alguns valores quando duplicados;
-- Evita o auto-foco do modal de filtros caso este seja um painel lateral;
-- Links incorporados como Twittes e Páginas no documento tipo URL estavam com uma margem enorme abaixo deles;
-- Filtros de taxonomia herdados fazendo a requisição errada;
-- Edição em massa para alterar status gerando erros;
+- Hacer que el permiso `manage_collection_x` también permita cambiar la configuración de la colección, no sólo sus metadatos, elementos, etc;
+- Errores en la ejecución de algunas operaciones masivas;
+- Las miniaturas de portadas PDF con transparencia ahora dan como resultado imágenes de fondo blanco en lugar de negro;
+- Se oculta el botón "Seleccionar todos los elementos" cuando sólo existe una página;
+- La redirección del bloque de búsqueda no funcionaba en temas que no soportan Tainacan;
+- Evita que se rompa la colección si un tipo de metadatos registrado ya no está presente;
+- Los metadatos numéricos entendían el valor 0 como "vacío";
+- Los metadatos heredados de una colección raíz se creaban en orden inverso a la colección raíz;
+- La inserción de metadatos de relación a través de taginput se limitaba a 100 elementos y eliminaba algunos valores cuando se duplicaban;
+- Evita el autoenfoque del modal de filtro si es un panel lateral;
+- Los enlaces incrustados como Tweets y Páginas en el documento de tipo URL tenían un margen enorme debajo de ellos;
+- Filtros de taxonomía heredados que hacían la solicitud errónea;
+- Edición masiva para cambiar el estado generando errores;
 
-### Data de Lançamento
+### Fecha de lanzamiento
 
-- Meados de Novembro de 2020.
+- A mediados de noviembre de 2020.
 
 ---
 
 ## Tainacan Beta 0.16.1
 
-### Postagem
+### Publicación
 
-Post de lançamento: https://tainacan.org/blog/2020/05/28/tainacan-beta-0-16-1/
+Publicación de lanzamiento: https://tainacan.org/blog/2020/05/28/tainacan-beta-0-16-1/
 
-### Resumo da Versão
+### Resumen de versión
 
-#### Melhorias
+#### Mejoras
 
-- O Importador CSV de itens agora obedece a ordem em que os metadados são passados quando usada a opção de criar metadado automaticamente;
-- Evita fechar o painel de filtros com 'ESC' caso tenha sido escondido o botão de ocultar/mostrar filtros;
-- Carrega o JS e CSS da lista de itens apenas uma vez (devido ao bloco gutenberg busca facetada);
+- El importador de elementos CSV obedece ahora el orden en que se pasan los metadatos cuando se utiliza la opción de crear metadatos automáticamente;
+- Evita cerrar el panel de filtros con 'ESC' si se ha ocultado el botón ocultar/mostrar filtros;
+- Carga el JS y CSS de la lista de elementos sólo una vez (debido a la búsqueda facetada del bloque gutenberg);
 
-#### Correções
+#### Correcciones
 
-- A edição em massa não estava funcionando opção "Substituir valores" para taxonomias;
-- A remoção de valores em metadados multivalorados pela edição em massa removia valores errados quando o metadado era do tipo taxonomia;
-- Corretamente desabilita os logs das atividades, para os metadados, ao execucar o importador quando estão sendo incluidos novos itens;
-- A listagem de itens do termo não estava exibindo título e descrição nos modos de visualização Tabela e Fichas;
-- Erro `wp.primitives is undefined` impedia o ícone dos blocos Tainacan Gutenberg de aparecer;
-- Várias correções de tradução ou digitação em strings relacionadas aos novos recursos;
-- Ajustes de css para os filtros e cartões que possuiam alinhamento errado no Google Chrome;
+- La edición por lotes no funcionaba con la opción "Sustituir valores" para taxonomías;
+- La eliminación de valores en metadatos multivaluados mediante edición en bloque eliminaba valores erróneos cuando los metadatos eran del tipo taxonomía;
+- Se desactivan correctamente los registros de actividad de los metadatos al ejecutar el importador cuando se añaden nuevos elementos;
+- La lista de elementos de términos no mostraba el título y la descripción en los modos de visualización Tabla y Hojas;
+- El error `wp.primitives is undefined` impedía que apareciera el icono de los bloques de Tainacan Gutenberg;
+- Varias correcciones de traducción o erratas en cadenas relacionadas con las nuevas funcionalidades;
+- Ajustes CSS para filtros y tarjetas que estaban desalineados en Google Chrome;
 
-### Data de Lançamento
+### Fecha de lanzamiento
 
-28 de Maio de 2020
+28 de mayo de 2020
 
 ---
 
 ## Tainacan Beta 0.16
 
-### Postagem
+### Publicación
 
-Anúncio da Versão: https://tainacan.org/blog/2020/05/19/tainacan-beta-0-16-metadado-tipo-composto-e-usuario-bloco-da-busca-facetada-suporte-ao-wordpress-5-4/
+Anuncio de la versión: https://tainacan.org/blog/2020/05/19/tainacan-beta-0-16-metadado-tipo-composto-e-usuario-bloco-da-busca-facetada-suporte-ao-wordpress-5-4/
 
-### Resumo da Versão
+### Resumen de versión
 
-#### Novidades
+#### Novedades
 
-- **Metadados Compostos**;
-- **Bloco de Lista de Itens** (a Busca Facetada);
-- Tipo de metadado Usuário do WordPress;
-- Ação de copiar valores de metadado em massa;
-- Compatibilidade com WordPress 5.4;
-- Popup de erros no formulário de edição do item;
+- **Metadatos compuestos**
+- **Bloque de lista de elementos** (la búsqueda facetada);
+- Metadato tipo usuario de WordPress;
+- Acción para copiar valores de metadatos en bloque;
+- Compatibilidad con WordPress 5.4;
+- Ventana emergente de error en el formulario de edición de elementos;
 
-#### Melhorias
+#### Mejoras
 
-- Mudanças na interface do cabeçalho de coleção: todos os ícones agora tem rótulos e uma nova cor de fundo;
-- Melhor acessibilidade: escala de tamanho de fonte agora deverá ser mais proporcional entre todos os elementos: inputs, ícones, rótulos, etc;
-- Scroll infinito em todos os autocompletes e entrada de etiquetas;
-- Exibir não só o nome da coleção que utiliza a Taxonomia, mas também o Metadado;
-- Ao se abrir um formulário de edição de metadado ou termo, a tela automaticamente faz scroll para ele.
-- Ao se aproximar o mouse ao canto inferior da tela na lista de itens por um segundo, a barra de paginação aparece. Ao se aproximar do canto superior, caso esteja escondida, a barra de busca aparecerá. Ao se aplicar qualquer mudança na lista, automaticamente o scroll volta ao topo da barra de controle.
-- Exibe ícone de cadeado na lista de metadados e filtros quando estes são privados.
-- Formulário de Edição de Coleção melhorado: evita a configuração de páginas vazias como principal e oferece uma seleção mais inteligente dos modos de visualização.
-- Mostra a data e hora para arquivos exportados.
+- Cambios en la interfaz de la cabecera de la colección: todos los iconos tienen ahora etiquetas y un nuevo color de fondo;
+- Mejora de la accesibilidad: la escala del tamaño de la fuente es ahora más proporcional entre todos los elementos: entradas, iconos, etiquetas, etc;
+- Desplazamiento infinito en todos los autocompletados y etiquetas de entrada;
+- Mostrar no sólo el nombre de la colección utilizando la Taxonomía, sino también los metadatos;
+- Al abrir un formulario de edición de metadatos o términos, la pantalla se desplaza automáticamente hasta él.
+- Al acercar el ratón a la esquina inferior de la pantalla en la lista de elementos durante un segundo, aparece la barra de paginación. Cuando se acerque a la esquina superior, si está oculta, aparecerá la barra de búsqueda. Al aplicar cualquier cambio a la lista, el desplazamiento vuelve automáticamente a la parte superior de la barra de control.
+- Muestra un icono de candado en la lista de metadatos y filtros cuando son privados.
+- Formulario de edición de colecciones mejorado: evita establecer páginas vacías como principal y ofrece una selección más inteligente de los modos de visualización.
+- Muestra la fecha y la hora de los archivos exportados.
 
-#### Correções
+#### Correcciones
 
-- Erro com os filtros do nível repositório quando visualizados na pagina de uma coleção (em instalações com múltiplas coleções);
-- ~~Metadados criados automaticamente via importador agora seguem a ordem do arquivo fonte;~~
-- Blocos Gutenberg que estavam com erros ao se editar seu conteúdo via modal;
-- Ao mudar de página na lista de itens e retornar a página anterior, o número da página da busca não era mantido.
-- A inserção de novos termos não estava sendo bloqueada caso a configuração na taxonomia não permitisse mas a do metadado sim.
-- Correção de problemas ao carregar a lista de anexos quando o documento do item é do tipo Texto ou Link.
-- Funções de usuários criadas pelo Tainacan agora sempre começam com as permissões mínimas para se acessar o painel do WordPress.
+- Error con los filtros de nivel de repositorio cuando se ven en una página de colección (en instalaciones con varias colecciones);
+- ~~Metadatos creados automáticamente a través del importador ahora siguen el orden del archivo fuente;~~
+- Bloques Gutenberg que tenían errores al editar su contenido vía modo;
+- Al cambiar de página en la lista de elementos y volver a la página anterior, no se conservaba el número de página de búsqueda.
+- No se estaba bloqueando la inserción de nuevos términos si la configuración en la taxonomía no lo permitía, pero los metadatos sí.
+- Corrección de los problemas de carga de la lista de archivos adjuntos cuando el documento del artículo es de tipo Texto o Vínculo.
+- Los roles de usuario creados por Tainacan ahora siempre comienzan con los permisos mínimos para acceder al panel de WordPress.
 
-#### Para Desenvolvedores
+#### Para desarrolladores
 
-- A tão esperada re-organização da estrutura de arquivos do projeto, que agora deve estar mais clara para quem quiser contribuir com o código.
-- Diversas parametrizações disponíveis para desenvolvedores de Temas que desejam fazer a Lista de Itens adaptada ao seu tema, incluindo:
-  - Variáveis CSS para customização de cores, fontes e tamanhos;
-  - Variáveis do template para exibir ou esconder diversos elementos, mudar o comportamento padrão de algumas áreas como o painel de filtros;
-- Novo esquema para registrar tipos filtros e metadados terceiros, incluindo componentes vue sem precisar alterar o código core, apenas via plugins.
+- La tan esperada reorganización de la estructura de archivos del proyecto, que ahora debería ser más clara para cualquiera que quiera contribuir al código.
+- Diversas parametrizaciones disponibles para los desarrolladores de temas que deseen adaptar la Lista de elementos a su tema, entre las que se incluyen:
+  - Variables CSS para personalizar colores, fuentes y tamaños;
+  - Variables de plantilla para mostrar u ocultar diversos elementos y cambiar el comportamiento predeterminado de algunas zonas, como el panel de filtros;
+- Nuevo esquema para registrar tipos de filtros y metadatos de terceros, incluyendo componentes VUE sin tener que cambiar el código del núcleo, sólo a través de plugins.
 
-#### Data de Lançamentos
+#### Fecha de lanzamiento
 
-- 19 de Maio de 2020
+- 19 de mayo de 2020
 
 ---
 
 ## Tainacan Beta 0.15.1
 
-### Postagem
+### Publicación
 
-[Tainacan Beta 0.15.1 – Importante Correção de Erro na Criação de Taxonomias](https://tainacan.org/blog/2020/02/20/tainacan-beta-0-15-1-importante-correcao-de-erro-na-criacao-de-taxonomias/)
+[Tainacan Beta 0.15.1 – Importante corrección de errores al crear taxonomías](https://tainacan.org/blog/2020/02/20/tainacan-beta-0-15-1-importante-correcao-de-erro-na-criacao-de-taxonomias/)
 
-### Resumo da Versão
+### Resumen de versión
 
-#### Correção
+#### Corrección
 
-Correção de erro ao criar uma nova taxonomia, onde os metadados que a usam tinham seus status alterados para “rascunho automático”, o que modificava completamente sua visibilidade e funcionamento em geral.
+Corrección de un error al crear una nueva taxonomía, donde los metadatos que la utilizan tenían su estado cambiado a "borrador automático", lo que modificaba completamente su visibilidad y funcionamiento en general.
 
-#### Data de Lançamento
+#### Fecha de lanzamiento
 
-20 de Fevereiro de 2020
+20 de febrero de 2020
 
 ---
 
 ## Tainacan Beta 0.15
 
-### Postagem
+### Publicación
 
-[Tainacan Beta 0.15 – Permissões e Funções de Usuários, Melhor Performance e Edição em Massa Refatorada](https://tainacan.org/blog/2020/02/13/tainacan-beta-0-15-permissoes-e-funcoes-de-usuarios-melhor-performance-e-edicao-em-massa-refatorada/)
+[Tainacan Beta 0.15 – Permisos y roles de usuario, mejora del rendimiento y edición en lote mejorada](https://tainacan.org/blog/2020/02/13/tainacan-beta-0-15-permissoes-e-funcoes-de-usuarios-melhor-performance-e-edicao-em-massa-refatorada/)
 
-### Resumo da Versão
+### Resumen de versión
 
-#### Novidades
+#### Novedades
 
-- Novo esquema de Permissões de Usuários;
-- Telas de gestão de funções de usuários e de permissões específicas do repositório ou de coleções;
+- Nuevo esquema de permisos de usuario;
+- Pantallas para la administración de roles de usuario y permisos específicos de repositorios o colecciones;
 
-#### Melhorias
+#### Mejoras
 
-- Edição em Massa executada como processo em Plano de Fundo;
-- Maior eficiência nas requisições ao Banco de Dados;
-- Adicionadas informações ao arquivo de registro (log) para processos de edição em massa, como o total de itens processados;
-- Exibição de apenas campos especiais válidos na lista de mapeamento de metadados do importador CSV;
+- Edición por lotes ejecutada como proceso en segundo plano;
+- Mayor eficacia en las peticiones a la Base de Datos;
+- Información añadida al archivo de registro de los procesos de edición en lote, como el número total de elementos procesados;
+- Visualización únicamente de los campos especiales válidos en la lista de asignación de metadatos del importador CSV;
 
-#### Correções
+#### Correcciones
 
-- Correção da ordem de listagem do bloco de Carrossel de Termos;
-- Melhorias na segurança da API, evitando a exibição de metadados e filtros privados para usuários não logados;
+- Corrección del orden de listado del bloque Carrusel de términos;
+- Mejoras en la seguridad de la API, impidiendo la visualización de metadatos y filtros privados a usuarios no registrados;
 
-#### Data de Lançamento
+#### Fecha de lanzamiento
 
-12 de Fevereiro de 2020
+12 de febrero de 2020
