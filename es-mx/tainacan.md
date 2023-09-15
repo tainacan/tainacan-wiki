@@ -1,71 +1,69 @@
-# Como instalar o plugin Tainacan no Wordpress
+# Cómo instalar el plugin Tainacan en Wordpress
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Continuando con la instalación de **Wordpress**, ahora comenzaremos la instalación de **Tainacan**. Si aún no has instalado Wordpress, [consulta este tutorial sobre cómo instalarlo](/es-mx/wordpress.md). Si aún no tiene un servidor web en su máquina local, [vea este tutorial](#acceso-a-la-administración).
 
-Continuando a instalação do **wordpress**, agora daremos início à instalação do **Tainacan**. Se você não instalou o **wordpress** ainda, [veja este tutorial sobre como instalá-lo](/es-mx/wordpress#como-instalar-o-wordpress-no-windows). Se você ainda não tem servidor web na sua máquina local, [veja este tutorial](#acessando-o-admin).
-
-Se preferir, você pode assistir os mesmos tutoriais em vídeo:
+Si lo prefiere, puede ver los mismos tutoriales en vídeo:
 
 - [XAMPP](https://www.youtube.com/watch?v=rznX0EZhWG4)
 - [Wordpress](https://www.youtube.com/watch?v=7v6qNHmqm0I)
 - [Tainacan](https://www.youtube.com/watch?v=qRtoNRUlVkk)
 
-## Acessando o admin
+## Acceso a la administración
 
-Existem várias formas de realizar essa instalação. Este tutorial vai mostrar apenas uma delas.
+Hay varias formas de llevar a cabo esta instalación. Este tutorial le mostrará sólo una de ellas.
 
-![](/_assets/images/tainacan_01.png)
+![](_assets/images/tainacan_01.png)
 
-Para iniciar, vamos até o **Painel de Controle** do **wordpress**, o famoso **admin**. Abra uma nova aba no seu navegador e digite **localhost/projeto_teste/wp-admin** (ou o nome escolhido no lugar de **projeto_teste**). Digite seu **nome de usuário** e **senha** para acessar.
-
-<br><br>
-
-![](/_assets/images/tainacan_02.png)
-
-Esta é a tela do **admin**. Clique em **plugins**, na barra lateral da esquerda, ou em **Adicionar novo**, no submenu que irá aparecer.
+Para empezar, ve al **Panel de Control** de **Wordpress**, el famoso **admin**. Abre una nueva pestaña en tu navegador y escribe **localhost/project_test/wp-admin** (o el nombre que elijas en lugar de **project_test**). Introduce tu **nombre de usuario** y **contraseña** para iniciar sesión.
 
 <br><br>
 
-![](/_assets/images/tainacan_03.png)
+![](_assets/images/tainacan_02.png)
 
-Na tela de plugins que irá aparecer, procure o campo **Pesquisar plugins**, conforme imagem acima, e digite **tainacan**.
-
-<br><br>
-
-![](/_assets/images/tainacan_04.png)
-
-O plugin **Tainacan** irá surgir nos resultados de busca. Clique no botão **Instalar agora**, conforme imagem acima.
+Esta es la pantalla de **administrar**. Haz clic en **plugins** en la barra lateral de la izquierda, o en **Añadir nuevo** en el submenú que aparecerá.
 
 <br><br>
 
-![](/_assets/images/tainacan_05.png)
+![](_assets/images/tainacan_03.png)
 
-O texto do botão mudará para a mensagem **Instalando…**. Apenas aguarde.
-
-<br><br>
-
-![](/_assets/images/tainacan_06.png)
-
-Ao terminar de baixar o plugin e preparar a instalação do mesmo, o texto do botão mudará novamente, dessa vez para **Ativar**. Clique nele para dar continuidade ao processo.
+En la pantalla de plugins que aparecerá, busque el campo **Buscar plugins**, como se muestra en la imagen anterior, y escriba **tainacan**.
 
 <br><br>
 
-![](/_assets/images/tainacan_07.png)
+![](_assets/images/tainacan_04.png)
 
-Pronto. O **Tainacan** está ativado e agora é possível vê-lo na barra lateral da esquerda, conforme imagem acima. Clique nela para acessar o **Painel de Controle** do **plugin**.
-
-<br><br>
-
-## O Painel de Controle do Tainacan
-
-![](/_assets/images/tainacan_08.png)
-
-Esta é a tela principal do Painel de Controle do **Tainacan**. Para retornar ao Painel de Controle do **Wordpress**, clique no símbolo dele, no canto superior direito, conforme a imagem acima.
+El plugin **Tainacan** aparecerá en los resultados de la búsqueda. Haga clic en el botón **Instalar ahora**, como se muestra en la imagen anterior.
 
 <br><br>
 
-![](/_assets/images/tainacan_09.png)
+![](_assets/images/tainacan_05.png)
 
-Pronto! O **Tainacan** está instalado. Agora é só utilizar.
+El texto del botón cambiará al mensaje **Instalando...**. Espere.
+
+<br><br>
+
+![](_assets/images/tainacan_06.png)
+
+Cuando haya terminado de descargar el plugin y se disponga a instalarlo, el texto del botón volverá a cambiar, esta vez a **Activar**. Haz clic en él para continuar el proceso.
+
+<br><br>
+
+![](_assets/images/tainacan_07.png)
+
+Ya está. Tainacan ha sido activado y ya puedes verlo en la barra lateral de la izquierda, como se muestra en la imagen superior. Pulsa sobre él para acceder al **Panel de Control** del **plugin**.
+
+<br><br>
+
+## El panel de control de Tainacan
+
+![](_assets/images/tainacan_08.png)
+
+Esta es la pantalla principal del Panel de Control de **Tainacan**. Para volver al Panel de Control de **Wordpress**, haga clic en el símbolo de Wordpress en la esquina superior derecha, como se muestra en la imagen de arriba.
+
+<br><br>
+
+![](_assets/images/tainacan_09.png)
+
+Ya está. Tainacan está instalado. Ahora sólo tiene que utilizarlo.
 
 <br><br>

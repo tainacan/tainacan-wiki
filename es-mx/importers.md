@@ -1,261 +1,231 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Importadores" 
-		src="/_assets/images/icon_importers.png"
+		src="_assets/images/icon_importers.png"
 		width="40"
 		height="40">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 # Importadores
 
-Os “importadores” são os recursos que permitem otimizar o processo de criação e atualização de “itens” em “coleções” no Tainacan, ou importar um “vocabulário controlado” existente.
+Los importadores son los recursos que permiten optimizar el proceso de creación y actualización de elementos en las colecciones de Tainacan. También permiten importar “vocabularios controlados” y “taxonomías”.
 
-## Importador CSV (Items)
+<!-- tabs:start -->
 
-O “Importador CSV” permite que usuários importem “itens” para uma “coleção” diretamente de um arquivo no formato “.csv”.
+#### ** Importador CSV **
 
-> Consulte também como importar Taxonomias para criar “vocabulários controlados” ou realizar a “importação de tesauros”.
+## Importar archivo .CSV de elementos
 
-### Parâmetros do CSV
+Si bien es posible capturar manualmente la información de ítems en Tainacan, cuando ya se tiene la información, se puede importar directamente a una colección desde un archivo en formato *.csv*.
 
-O arquivo para envio deve ser um “.csv padrão”, em que cada linha abriga a informação de um “item”, e cada coluna abriga os valores para cada “metadado” em específico. Além disso, a primeira linha deve conter os “títulos” das colunas.
+> Véase también cómo [importar taxonomías](#importar-csv-de-vocabularios-taxonomías) para crear "vocabularios controlados" o realizar una "importación de tesauros".
 
-**Exemplo:**
+### Parámetros del archivo .CSV
 
-| Coluna do Metadado 1 | Coluna do Metadado 2 | Coluna do Metadado 3 |
+El archivo a enviar debe ser un *.csv estándar*, en el que cada línea contenga la información de un elemento, y cada columna contenga los valores para cada metadato específico. Además, la primera línea debe contener los títulos de las columnas.
+
+**Ejemplo:**
+
+| Columna de elementos | Columna de metadatos 1 | Columna de metadatos 2 |
 | -------------------- | -------------------- | -------------------- |
-| Valor do Metadado 1  | Valor do Metadado 2  | Valor do Metadado 3  |
-| Valor do Metadado 1  | Valor do Metadado 2  | Valor do Metadado 3  |
+| Elemento 1  | Valor de metadatos 1  | Valor de metadatos 2  |
+| Elemento 2  | Valor de metadatos 1  | Valor de metadatos 2  |
 
-Quando o usuário inicia o processo de “importação”, deve-se escolher a codificação em que o arquivo “.csv” foi salvo (geralmente está em UTF-8), o caractere de separação das colunas e o caractere de compartimento da célula. Essas opções são configuradas quando o usuário cria o arquivo “.csv”, usando um programa de edição de planilhas (como Microsoft Excel ou LibreOffice Calc, por exemplo).
+Cuando el usuario inicia el proceso de *importación*, debe elegir la codificación en la que se guardó el archivo *.csv* (generalmente se guarda en UTF-8), el carácter de separación de columnas y el carácter de compartimiento de celdas. Estas opciones se configuran cuando el usuario crea el archivo *.csv* utilizando un programa de edición de hojas de cálculo (como Microsoft Excel o LibreOffice Calc).
 
-Nessa seção, o usuário também irá informar o caractere (ou caracteres) usado para separar múltiplos valores dentro de uma única célula (recomenda-se o uso do símbolo dual pipe: “||“).
+En esta sección, el usuario también introducirá el carácter (o caracteres) utilizado para separar múltiples valores dentro de una sola celda (se recomienda utilizar el símbolo de barra doble: “||“).
 
-Depois de configurar o importador e selecionar a “coleção de destino”, o arquivo “.csv” é enviado, e o usuário tem a chance de mapear as colunas presentes no “.csv” para os “metadados” presentes na “coleção de destino”.
+Después de configurar el importador y seleccionar la "colección de destino", se envía el archivo *.csv* y el usuario tiene la posibilidad de asignar las columnas presentes en el *.csv* a los metadatos presentes en la "colección de destino".
 
-Se o “metadado” não foi criado anteriormente na “coleção”, o usuário pode criar e mapear o “metadado” nesta mesma tela, ou escolher a opção “Criar Metadado” no mapeador. Se esta opção é selecionada, o Tainacan irá automaticamente criar o “metadado” quando o importador for executado.
+Si los metadatos no fueron creados previamente en la colección, el usuario puede crear y mapear los metadatos en esta misma pantalla, o elegir la opción `Crear Metadatos` en el mapeador. Si se selecciona esta opción, Tainacan creará automáticamente los metadatos cuando se ejecute el importador.
 
-> Veja como criar metadados automaticamente na seção abaixo para aprender como dizer ao Tainacan o tipo e os atributos de metadados a serem criados.
+> **NOTA:** Consulta [cómo crear metadatos automáticamente](#crear-metadatos-automáticamente) en la sección a continuación para saber cómo decirle a Tainacan el tipo y los atributos de los metadatos que debe crear.
 
-#### Colunas Especiais
+#### Columnas Especiales
 
-Cada coluna do arquivo “.csv” deve ser mapeada para um “metadado” na “coleção de destino”. Entretanto, existem colunas especiais que podem ser usadas para configurar outros aspectos do “item”. Por exemplo, o “status do item” pode ser configurado como “público”, “rascunho” ou “privado”.
+Cada columna del archivo *.csv* debe asignarse a un metadato en la colección de destino. Sin embargo, hay columnas especiales que se pueden usar para configurar otros aspectos del elemento. Por ejemplo, el estado del elemento se puede configurar como "público", "borrador" o "privado".
 
-As colunas especiais que podem ser usadas são:
+Las columnas especiales que se pueden utilizar son:
 
-a. **“special_item_id”**: Informa o ID do “item” no banco de dados do Tainacan
+* `special_item_status` - Informa el estado del elemento**. Los valores posibles son:
+* `draft` (borrador)
+* `private` (privado)
+* `publish` (público)
+* `special_item_id` - Informa el **ID del elemento** en la base de datos de Tainacan. Esta función es útil para volver a importar elementos y permitirle decidir si desea actualizar los elementos existentes o ignorarlos y agregar nuevos elementos.
+* `special_document` - Permite al usuario adjuntar el documento del ítem (es decir, el archivo o archivos que acompañan a ese registro). Véase [Importación de archivos y adjuntos](#importar-archivos-y-adjuntos).
+*`special_attachments` - Permite al usuario adjuntar los archivos. Véase [Importación de archivos y adjuntos](#importar-archivos-y-adjuntos)
+*`special_comment_status` - Permite al usuario informar si los elementos pueden recibir comentarios o no. Los valores posibles son: "open" (abierto para comentarios) ó "closed" (cerrado para comentarios).
 
-○ O “special_item_id” de um “item” é gerado automaticamente pelo Tainacan quando o “item” é criado;
+> **Nota**: Si en los ajustes de la "colección" no está activada la función "Permitir comentarios", no será posible que un usuario haga comentarios sobre un "ítem", por más que se haya importado utilizando el valor "abierto" para esta columna especial.
 
-○ Cada “special_item_id” no Tainacan é único. Mesmo nos casos de duplicação ou clonagem de “itens”, um novo “special_item_id” é gerado;
+**Ejemplo**:
 
-○ Não é possível alterar um “special item_id” de um “item”;
-
-○ Para atualizar um “item” existente via importador, esta coluna deve estar no arquivo “.csv” utilizado com o id dos “itens” que desejam ser alterados preenchidos. A opção “Item Repetido”, na tela de importador de arquivos “.csv”, deve estar preenchida com “Atualizar”. Para ignorar um “item” num arquivo “.csv” durante a importação, essa opção deve estar preenchida com “Ignorar”.
-
-b. **“special_item_status”**: Informa o status do “Item”. Os valores possíveis são:
-
-○ **“draft”** (rascunho);
-
-○ **“private”** (privado);
-
-○ **“publish”** (público).
-
-c. **“special_document”**: permite que o usuário informe o documento do item. Consulte Importando arquivos e anexos;
-
-d. **“special_attachments, special_attachments|REPLACE, special_attachments|APPEND”**: permite que o usuário informe os anexos.
-
-> Consulte Importando arquivos e anexos;
-
-e. **“special_comment_status”**: permite que o usuário informe se os “itens” podem receber ou não comentários. Os valores possíveis são:
-
-○ **“open”** (aberto para comentários);
-
-○ **“closed”** (fechado para comentários).
-
-> **Nota**: Se nas configurações da “coleção” não estiver habilitada a função “Permitir comentários”, não será possível um usuário fazer comentários num “item”, por mais que ele tenha sido importado utilizando o valor “open” para esta coluna especial.
-
-**Exemplo**:
-
-| special_item_id | Coluna do Metadado 1 | Coluna do Metadado 2 | special_item_status | special_document                  | special_atachments                 |
+| special_item_id | Columna de Metadato 1 | Columna de Metadato 2 | special_item_status | special_document                  | special_atachments                 |
 | --------------- | -------------------- | -------------------- | ------------------- | --------------------------------- | ---------------------------------- |
-| 001             | Valor do Metadado 1  | Valor do Metadado 2  | publish             | url:http://exemplo.br/abcd        | file:http://seusite.br/anexo1.frmt |
-| 002             | Valor do Metadado 1  | Valor do Metadado 2  | draft               | file:http://seusite.br/item2.frmt | url:http://exemplo.br/abcd         |
-| 003             | Valor do Metadado 1  | Valor do Metadado 2  | private             | text:texto de exemplo             | file:http://seusite.br/anexo3.frmt |
+| 001             | Valor de Metadato 1  | Valor de Metadato 2  | publish             | url:http://exemplo.br/abcd        | file:http://seusite.br/anexo1.frmt |
+| 002             | Valor de Metadato 1  | Valor de Metadato 2  | draft               | file:http://seusite.br/item2.frmt | url:http://exemplo.br/abcd         |
+| 003             | Valor de Metadato 1  | Valor de Metadato 2  | private             | text:texto de ejemplo             | file:http://seusite.br/anexo3.frmt |
 
-#### Importar arquivos e anexos
+#### Importar archivos y adjuntos
 
-Se você também tem arquivos para importar que estão relacionados aos “itens” no seu arquivo “.csv”, você pode usar algumas colunas especiais para isso.
+Se pueden importar más archivos que están relacionados con los elementos del *archivo .csv*, usando columnas especiales.
 
-Use “special_document”, para definir o documento do seu “item”, e “special_attachments” para adicionar um ou mais anexos.
+Utiliza `special_document` para definir el archivo principal que corresponde a cada elemento y `special_attachments` para agregar uno o más archivos adjuntos.
 
-Os valores para “special_document” podem ser:
+Los valores para `special_document` pueden ser:
 
-a. **“url”;**
+* url
+* file
+* text
 
-b. **“file”;**
-
-c. **“text”.**
-
-**Exemplo**:
+Ejemplo:
 
 ```
-nome, special_document
-Uma imagem,file:http://example.com/image.jpg
-Um vídeo do youtube,url:http://youtube.com/?w=123456
-Um texto,text:This is a sample text
+nombre, special_document
+una imagen, archivo: http://example.com/image.jpg
+un video de youtube, url: http://youtube.com/?w=123456
+un texto, texto: Este es un texto de ejemplo
 ```
 
-Os valores para “special_attachments” são apenas uma lista de arquivos. Se você deseja adicionar muitos anexos, use o caractere separador que você definiu na opção de “separador de células multivaloradas” do seu arquivo “.csv”. Nos dois casos, você pode apontar um arquivo usando uma “URL”, ou apenas o nome do arquivo. Para apontar o nome do arquivo, você deve configurar essa opção para o Tainacan localizar os arquivos no seu servidor. Você pode enviar eles diretamente (via FTP, por exemplo) e o Tainacan irá adicioná-los aos seus “itens”.
+Los valores de "special_attachments" son solo una lista de archivos. Si deseas añadir muchos archivos adjuntos, utiliza el carácter separador que haya definido en la opción "separador de celdas multivalor" de tu archivo *.csv*. En ambos casos, puedes apuntar a un archivo utilizando una *URL*, o simplemente el nombre del archivo. Para apuntar al nombre del archivo, debes configurar esta opción para que Tainacan localice los archivos en el servidor. También puedes enviarlos directamente (por FTP, por ejemplo) y Tainacan los añadirá a tus elementos.
 
-**Exemplo**:
+Ejemplo:
 
 ```
-nome, special_attachments
-Uma imagem,http://example.com/image.jpg
-Várias imagens,http://example.com/image.jpg%7C%7Chttp://example.com/image2.jpg%7C%7Chttp://example.com/image3.jpg
-Imagens enviadas por FTP,myfolder/image.jpg||myfolder/image2.jpg
+Nombre, special_attachments
+Una imagen, http://example.com/image.jpg
+Múltiples imágenes: http://example.com/image.jpg%7C%7Chttp://example.com/image2.jpg%7C%7Chttp://example.com/image3.jpg
+Imágenes enviadas por FTP, micarpeta/imagen.jpg||micarpeta/imagen2.jpg
 ```
 
-O “special_attachments” possui duas variações, na presença do campo especial “special_item_id”:
+Los “special_attachments” tienen dos variaciones, en presencia del campo especial “special_item_id”:
 
-- `special_attachments|REPLACE`: substitui os anexos existentes pela lista de arquivos informados no _.csv_;
-- `special_attachments|APPEND`: opção padrão utilizada para adicionar os arquivos aos anexos do item;
+- `special_attachments|REPLACE`: reemplaza los archivos adjuntos existentes con la lista de archivos informados en el _.csv_;
+- `special_attachments|APPEND`: opción predeterminada utilizada para agregar archivos a elementos adjuntos;
 
 ---
 
-#### Criar metadados automaticamente
+#### Crear metadatos automáticamente
 
-Quando o usuário mapeia as colunas encontradas no arquivo “.csv” aos “metadados” presentes na coleção de destino, é possível selecionar a opção “Criar Metadado”, então o importador irá criar o “metadado” automaticamente durante o processamento do arquivo “.csv”.
+Cuando el usuario mapea (asigna) las columnas que se encuentran en el archivo *.csv* a los "metadatos" presentes en la colección de destino, es posible seleccionar la opción `Crear metadatos`, entonces el importador creará los metadatos automáticamente durante el procesamiento del archivo *.csv*.
 
-Por padrão, o “metadado” criado será do tipo “Texto” e “público”, mas é possível informar ao Tainacan o tipo e outras opções do “metadado” no começo do arquivo “.csv”.
+Por defecto, los metadatos creados serán de tipo `Texto` y `Público`, pero es posible informar a Tainacan el tipo y otras opciones de los metadatos al inicio del archivo *.csv*.
 
-Na primeira linha, onde você define o nome de cada coluna, é possível adicionar algumas informações que serão usadas pelo importador para criar o “metadatum_id”.
+En la primera línea, donde se define el nombre de cada columna, se puede añadir alguna información que será utilizada por el importador para crear el `metadatum_id`.
 
-Cada informação sobre o “metadado” deve ser separada pelo caractere “|“.
+Cada información sobre el metadato debe estar separada por el carácter "`|`".
 
-A primeira informação deve ser o “nome do metadado”, e na sequência o “tipo do metadado”.
+El primer dato debe ser el *nombre del metadato* y, a continuación, el *tipo de metadato*.
 
-Os “tipos de metadados” suportados nativamente atualmente são:
+Los tipos de metadatos actualmente soportados de forma nativa son:
 
-- `text` - Texto
-- `textarea` - Texto Longo
-- `taxonomy` - Taxonomia: quando esse tipo é usado, uma nova taxonomia será criada.
-- `date` - Data: os valores devem ser informados no formato YYYY-MM-DD (2018-01-01).
-- `numeric` - Numérico
-- `selectbox` - Select Box
-- `user` - Usuário
-- `relationship` - Relacionamento: os valores devem ser a ID do item relacionado.
-- `compound([*nome do metadado*|*tipo do metadado*,...])` - Metadado composto: a lista de metadados que compõe o metadado composto deve ser informado entre os parentes utilizando a mesma sintaxe para definir metadados simples
+* `text` - Texto
+* `textarea` - Texto largo
+* `taxonomy` - Taxonomía: cuando se utilice este tipo, se creará una nueva taxonomía.
+* `date` - Fecha: los valores deben ser informados en el formato AAAA-MM-DD (2018-01-01). Por lo tanto, solo se debe configurar un metadato como “fecha” si se dispone de la información completa (año, mes, día). En caso contrario, conviene más configurarlo como metadato de texto.
+* `numeric` - Numérico
+* `selectbox` - Seleccionar cuadro
+* `user` - Usuario
+* `relationship` - Relación con otro elemento de la misma colección o de una colección diferente. Los valores deben ser el ID del elemento relacionado.
+- `compound([*nome do metadado*|*tipo do metadado*,...])` - Metadatos compuestos: la lista de metadatos que componen los metadatos compuestos debe utilizar la misma sintaxis que se usa para definir metadatos simples.
 
-**Por exemplo**:
-
-```
-Nome,Assunto|taxonomy,Data de criação|date, "Avaliação|compound(Descrição|text,Pontuação|numeric)
-```
-
-#### Informações sobre o metadado de Taxonomia
-
-Se uma das colunas do seu CSV tem valores para um “metadado de taxonomia” e esta “taxonomia” possui hierarquia, você pode informar essa hierarquia utilizando o sinal de >>.
-
-**Por exemplo**:
+Por ejemplo:
 
 ```
-nome, Categoria
-Nome do item,Categoria Pai>>Categoria Filha>>Categoria Neta
+Nombre,Asunto|taxonomia,Fecha de creación|fecha, Calificación|compuesto,Descripción|texto,Puntuación|numerico
 ```
 
-> Lembrando que esta notação só irá funcionar se esta coluna for mapeada para um “metadado de Taxonomia”, ou se você estiver usando a técnica de “Criar metadados automaticamente” explicada acima, e marcando esta coluna como um “metadado de Taxonomia”.
+#### Configuración de metadatos de tipo taxonomía
 
-Também é possível utilizar o “Importador de vocabulários” e, em uma segunda etapa, importar os “itens”. Caso siga esse caminho, a hierarquia já estará montada, e no seu “.csv” de itens não será necessário representá-la completamente. Basta inserir o “Termo” do último nível. Neste caso, o exemplo acima ficaria apenas:
+Si una de las columnas del archivo CSV tiene valores para un metadato de tipo taxonomía y esta taxonomía tiene una jerarquía, la forma de expresar esta jerarquía es usando el signo `>>`.
 
-```
-nome, Categoria
-Nome do item,Categoria Neta
-```
-
-#### Instruções para Metadados
-
-Depois do “tipo de metadado”, você também pode informar outras instruções:
-
-- `multiple` - Múltiplo: para metadados que permitem múltiplos valores
-- `required` - Obrigatório: para metadados obrigatórios
-- `display_yes` - Exibir na lista: habilitar metadado na visualização.
-- `display_no` - Não exibir na lista: ocultar metadado na visualização.
-- `display_never` - Nunca exibir metadado na visualização.
-- `status_public` - Status público: metadado visível para todos
-- `status_private` - Status privado: metadado visível apenas para editores
-- `collection_key_yes` - Configurar valores deste metadado como único: os valores desse metadado não se repetem em itens nessa coleção.
-
-**Exemplo de várias instruções combinadas**:
+Por ejemplo:
 
 ```
-Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|collection_key_yes|status_private
+Nombre, categoría
+Nombre del elemento, Categoría padre>>Categoría hija>>Categoría nieta. 
+Por ejemplo, si tuviéramos una taxonomía de lugar para indicar el país, la ciudad y el municipio o alcaldía de creación de una obra, la taxonomía quedaría expresada así: País>>Ciudad>>Municipio (por ejemplo: México>>Ciudad de México>>Tlalpan)
 ```
 
-### Importar CSV para o Tainacan
+> Recuerda que esta notación solo funcionará si esta columna está asignada a un metadato de tipo **taxonomía**, o si estás utilizando la técnica **Crear metadatos automáticamente** explicada anteriormente, y esta columna está marcada como metadato de **taxonomía**.
 
-1. Acesse o painel de controle do _WordPress_;
+También es posible utilizar el “Importador de Vocabulario” y, en un segundo paso, importar los elementos. Si sigues este camino, la jerarquía ya estará ensamblada, y en tu *.csv* de elementos no será necesario representar la taxonomía completa, basta con ingresar el término del último nivel. *En este caso, el ejemplo anterior se vería así*:
 
-   ![Acesse o painel de controle](_assets\images\Painel_Adm_WordPress.png)
+```
+Nombre, categoría
+Nombre del elemento, categoría nieta
+```
 
-2. Na barra lateral esquerda, clique em Tainacan;
+#### Instrucciones para metadatos
 
-   ![Acesse o painel de controle](_assets\images\Painel_Acesso_Tainacan.png)
+Después del tipo de metadatos, también se pueden ingresar otras instrucciones:
 
-3. Acesse a seção “Importadores”;
+* `multiple` - Múltiple: para metadatos que permiten múltiples valores
+* `required` - Obligatorio: para metadatos obligatorios
+* `display_yes` - Mostrar en la lista: habilite los metadatos en la vista.
+* `display_no` - No mostrar en la lista: oculta los metadatos a la vista.
+* `display_never` - Nunca mostrar metadatos en la vista previa.
+* `status_public` - Estado público: metadatos visibles para todos
+* `status_private` - Estado privado: metadatos visibles solo para los editores
+* `collection_key_yes` - Configurar los valores de estos metadatos como únicos: los valores de estos metadatos no se repiten en los elementos de esta colección.
 
-   ![Acesse o painel de controle](_assets\images\Acesso_Importadores.png)
+### Importar CSV a Tainacan
 
-4. Na seção “Importadores Disponíveis”, selecione “CSV”;
+1. Accede al panel de control de *WordPress*;
 
-   ![Acesse o painel de controle](_assets\images\Acesso_Importador_CSV.png)
+   ![Acceso al panel de control](_assets/images/Panel_Adm_Wordpress.png)
 
-5. Faça o upload do arquivo “.csv” no campo “Arquivo Fonte”;
+2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acesse o painel de controle](_assets\images\Importador_Seleção_Arquivo_CSV.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
-6. Selecione ou crie uma “Coleção Destino” para indicar onde os “itens” serão criados;
+3. Accede a la sección **Importadores**;
 
-   \*.Selecionando criar uma nova coleção em branco, ao concluir a “coleção”, você será redirecionado para o “Importador” novamente.
+   ![Acceso al panel de control](_assets/images/Acceso_Importadores.png)
 
-   ![Acesse o painel de controle](_assets\images\Importador_Seleção_Colecao.png)
+4. En la sección **Importadores disponibles**, selecciona `CSV`;
 
-7. Configure os campos a seguir de acordo com as configurações realizadas no seu arquivo “.csv”:
+   ![Acceso al panel de control](_assets/images/Acceso_Importadores_CSV.png)
 
-   a. **“Delimitador csv”**: caractere que separa valores;
+5. Carga el archivo *.csv* en el campo archivo de origen;
 
-   b. **“Delimitador de metadado multi-valorado”**: caractere que separa valores dentro de uma mesma célula;
+   ![Acceso al panel de control](_assets/images/Importadores_Seleccionar_Archivo_CSV.png)
 
-   c. **“Delimitador de texto”**: caractere que delimita todos os valores dentro de uma mesma célula;
+6. Selecciona o crea una "Colección de destino" para indicar dónde se crearán los elementos;
 
-   d. **“Codificação do arquivo”**: parâmetro que determina a codificação dos valores de texto do arquivo (geralmente UTF-8, garanta que o arquivo “.csv” esteja codificado conforme as opções disponíveis no importador);
+   \*.Si seleccionas “crear una nueva colección en blanco”, al terminar de crear la “colección”, te dirigirá nuevamente al `Importador`.
 
-   e. **“Valor vazio”**: expressão utilizada no arquivo “.csv” para representar “metadados” que serão limpos durante atualização de “itens” já existentes numa “coleção”. A expressão padrão é [empty value].
+   ![Acceso al panel de control](_assets/images/Importadores_Seleccionar_Coleccion.png)
 
-   ![Acesse o painel de controle](_assets\images\Importador_Parametros_Importacao.png)
+7. Configure los siguientes campos de acuerdo con la configuración realizada en su archivo *.csv*:
 
-8. Configure estes campos de acordo com suas preferências para importação:
+* **Delimitador csv**: carácter que separa los valores;
+* **Delimitador de metadatos de valores múltiples**: carácter que separa valores dentro de una misma celda;
+* **Delimitador de texto**: carácter que delimita todos los valores dentro de una misma celda;
+* **Codificación del archivo**: parámetro que determina la codificación de los valores de texto en el archivo (generalmente UTF-8, en todo caso, asegúrate de que el archivo *.csv* esté codificado de acuerdo con las opciones disponibles en el importador);
+* **Valor vacío**: expresión utilizada en el archivo *.csv* para representar los metadatos que se limpiarán al actualizar los elementos ya existentes en una colección. La expresión predeterminada es [valor vacío].
 
-   a. **“Item repetido”**: Determina o comportamento do Tainacan ao identificar “itens” idênticos no processo de importação. Selecione Atualizar para que o “item” receba os valores do arquivo “.csv” ou selecione “Ignorar” para que o “item” já existente na “coleção” não seja modificado;
+   ![Acceso al panel de control](_assets/images/Importadores_Parametros_Importacion.png)
 
-   b. **“Caminho para o servidor”**: O Importador permite que vários “itens” sejam inseridos em uma “coleção” diretamente de um arquivo “.csv”. Consulte Importador-csv#Importando arquivos e anexos para saber como configurar seu arquivo “.csv” corretamente.
+8. Configura estos campos según tus preferencias para la importación:
 
-   I. De acordo com a documentação, aponte a URL no campo caminho para o servidor.
+* **Elemento repetido**: Determina el comportamiento de Tainacan al identificar elementos idénticos en el proceso de importación. Selecciona Actualizar para que el elemento reciba los valores del archivo *.csv* o selecciona Ignorar para que no se modifique el elemento que ya existe en la colección;
+* **Ruta al servidor**: El Importador permite insertar varios elementos en una colección directamente desde un archivo *.csv*. Consulta [Importador csv](#Importación-de-archivos-y-adjuntos) para obtener información sobre cómo configurar el archivo *.csv* correctamente.
 
-   ![Acesse o painel de controle](_assets\images\Importador_Parametros_Importacao.png)
+   I. Como se especifica en la documentación, apunta la URL en el campo de ruta al servidor.
 
-9. Clique em “Próximo”;
+   ![Acceso al panel de control](_assets/images/Importadores_Parametros_Importacion.png)
 
-   ![Acesse o painel de controle](_assets\images\Importador_CSV_Proximo.png)
+9. Haz clic en siguiente;
 
-10. Na tela “Mapeamento de Metadados” é possível realizar o processo de-para entre os “metadados” previamente configurados no “.csv”;
+   ![Acceso al panel de control](_assets/images/Importadores_CSV_Siguiente.png)
 
-    ![Acesse o painel de controle](_assets\images\Importador_CSV_Tela_Mapeamento.png)
+10. En la pantalla Mapeo de metadatos es posible realizar el proceso de emparejamiento entre los metadatos previamente configurados en el *.csv*;
 
-11. Selecione “metadados” identificados no “.csv” (à esquerda) e seu correspondente da “coleção destino” (à direita) no Tainacan;
+    ![Acceso al panel de control](_assets/images/Marcar_todos_los_metadatos_para_ser_creados.png)
+
+11. Selecciona los metadatos identificados en *.csv* (a la izquierda) y su correspondiente de la colección de destino (a la derecha) en Tainacan;
 
     <iframe
         width="560"
@@ -266,156 +236,156 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
         allowfullscreen>
     </iframe>
 
-    ● Caso algum “metadado” ainda não exista na “coleção”, selecione “Criar metadado”.
+    ● Si algún metadato todavía no existe en la colección, selecciona `Crear metadatos`.
 
-    ○ Ou se você desejar criar todos de uma vez, clique em “Marcar todos os metadados para serem criados”.
+    ○ Si desea crearlos todos a la vez, haz clic en `Marcar todos los metadatos` para crear.
 
-    ![Acesse o painel de controle](_assets\images\Marcar_todos_os_metadados_para_serem_criados.png)
+    ![Acceso al panel de control](_assets/images/Marcar_metadatos.png)
 
-12. Para criar novos “metadados” na “coleção”, selecione “Adicionar mais metadados”. Consulte Metadados para saber mais sobre a criação e os “tipos de metadados” existentes;
+12. Para crear nuevos metadatos en la colección, selecciona `Agregar más metadatos`. Consulta la sección `Metadatos` para obtener más información sobre la creación y los `tipos de metadatos` existentes;
 
-    !>**Atenção**: Neste processo, “metadados” do arquivo “.csv” não serão criados se não tiverem um “metadado” apontado na coleção destino.
+    !>**Atención**: En este proceso, los "metadatos" del archivo ".csv" no se crearán si no apuntan a un metadato en la colección de destino.
 
-    !>**Atenção**: As informações de cada “metadado” em cada “item” dependem da criação de seu respectivo “metadado” neste processo.
+    !>**Atención**: La información de cada “metadato” en cada “ítem” depende de la creación de sus respectivos metadatos en este proceso.
 
-    !>**Atenção**: Uma vez criado, não é possível alterar o “tipo do Metadado”. Por exemplo, alterar um “metadado” do tipo “Texto” para “Texto Longo”, ou “Numérico” para “Data”.
+    !>**Atención**: Una vez creado, no es posible cambiar el “Tipo de Metadato”. Por ejemplo, no es posible cambiar un "metadato" de tipo "Texto" a "Texto largo" o "Numérico" o a "Fecha".
 
-    § Consulte Características gerais de metadados para saber mais.
+    !>Consulta Descripción general de metadatos para obtener más información.
 
-13. Ao concluir, clique em “Executar” para iniciar o “processo de importação”;
+13. Cuando hayas terminado, haz clic en Ejecutar para iniciar el proceso de importación;
 
-    ![Acesse o painel de controle](_assets\images\Importador_CSV_Mapeamento_Executar_Importacao.png)
+    ![Acceso al panel de control](_assets/images/Importadores_CSV_Ejecutar.png)
 
-14. Você será redirecionado para a tela de “Atividades do Repositório” onde poderá acompanhar o andamento do “processo de importação”. Esta tela exibe todos os processos de importação já realizados nesta instalação, do mais recente para o mais antigo. Quando o processo for concluído, serão exibidos o “arquivo de registro” e, em caso de erros, o “arquivo de registro de erros”;
+14. Serás redirigido a la pantalla `Actividades del repositorio` donde podrás seguir el progreso del proceso de importación. Esta pantalla muestra todos los procesos de importación ya realizados en esta instalación, desde el más reciente hasta el más antiguo. Una vez finalizado el proceso, se mostrará el `archivo de registro` y, en caso de errores, el `archivo de registro de errores`;
 
-    ![Acesse o painel de controle](_assets\images\Importador_CSV_Atividades_Processos.png)
+    ![Acceso al panel de control](_assets/images/Importadores_CSV_Actividades_Procesos.png)
 
-15. Uma vez terminado com sucesso o “processo de importação”, vá para a “coleção” destino da importação e revise se os “metadados”, “itens” e “valores” estão de acordo com o esperado.
+15. Una vez que el proceso de importación se haya completado con éxito, ve a la colección de destino de la importación y verifica si los metadatos, elementos y valores son los esperados.
 
-### Importar CSV de vocabulários (Taxonomias)
+#### ** Importador de vocabularios **
 
-Este importador permite que usuários adicionem termos a uma “taxonomia”. Essa ferramenta é útil para a importação de “vocabulários controlados” para uma instalação do Tainacan.
+### Importar CSV de vocabularios (Taxonomías)
+
+Este importador permite a los usuarios agregar términos a una taxonomía. Esta herramienta es útil para importar vocabularios controlados a una instalación de Tainacan.
 
 ---
 
-#### Como configurar o CSV
+#### Cómo configurar CSV
 
-O formato de arquivo para a “importação de vocabulários” é o “.csv - comma separated values” (valores separados por vírgula).
+El formato de archivo para la importación de vocabulario es *.csv* - valores separados por comas.
 
-Para cada “termo” você pode informar o nome do termo e sua definição, por exemplo:
+Para cada término puedes ingresar el nombre del término y su definición, por ejemplo:
 
-Termo 1,Definição do termo 1
+Término 1, Definición del Término 1
 
-Termo 2,Definição do termo 2
+Término 2, Definición del Término 2
 
-Termo 3,Definição do termo 3
+Término 3, Definición del Término 3
 
-Também é possível informar a hierarquia. Para isso, deixe as células à esquerda vazias, indicando o nível de hierarquia entre estes “termos”.
+También es posible informar de la jerarquía. Para ello, deja vacías las celdas de la izquierda, indicando el nivel de jerarquía entre estos términos.
 
-A planilha deve ficar parecida com este exemplo:
+La hoja de cálculo debería parecerse a este ejemplo:
 
 |         |                      |                       |                                |
 | ------- | -------------------- | --------------------- | ------------------------------ |
-| Termo 1 | Definição do Termo 1 |                       |                                |
-| Termo 2 | Definição do Termo 2 |                       |                                |
-|         | 1 Filho do Termo 2   | Definição desse termo |                                |
-|         | 2 Filho do Termo 2   | Definição desse termo |                                |
-|         |                      | 1 Neto do Filho 2     | Definição do 1 Neto do Filho 2 |
-| Termo 3 | Definição do Termo 3 |                       |                                |
-| Termo 4 | Definição do Termo 4 |                       |                                |
+| Término 1 | Definición del término 1 |                       |                                |
+| Término 2 | Definición del término 2 |                       |                                |
+|         | 1 Primer Hijo del término 2   | Definición de este término |                                |
+|         | 2 Primer Hijo del término 2  | Definición de este término |                                |
+|         |                      | 1 Nieto del hijo 2     | Definición del nieto del 2 |
+| Término 3 | Definición del término 3 |                       |                                |
+| Término 4 | Definición del término 4 |                       |                                |
 
-Essa mesma planilha, quando salva no formato “.csv”, deve se parecer com este exemplo:
+Esa misma hoja de cálculo, cuando se guarda en formato *.csv*, debería verse como este ejemplo:
 
 ```
-Term 1,Definition of term 1,,
-
-Term 2,Definition of term 2,,
-
-,1st Child of term 2,Definition of this term,
-
-,2nd Child of term 2,Definition of this term,
-
-,,Gran child,Definition of grand child
-
-Term 3,Definition of term 3,,
-
-Term 4,Definition of term 4,,
+Término 1, Definición del término 1,
+Término 2, Definición del término 2,
+,Primer Hijo del término 2, Definición de este término,
+,Segundo Hijo del término 2, Definición de este término,
+,,Nieto, Definición del nieto
+Término 3, Definición del término 3,,
+Término 4, Definición del término 4,,
 ```
 
-#### Enviar o CSV para o Tainacan
+#### Envía el CSV a Tainacan
 
-Uma vez terminada a criação do seu arquivo “.csv” com os termos desejados, siga estes passos:
+Una vez que hayas terminado de crear el archivo *.csv* con los términos deseados, sigue estos pasos:
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\Painel_Adm_WordPress.png)
+   ![Acceso al panel de control](_assets/images/Panel_Adm_Wordpress.png)
 
-2. Na barra lateral esquerda, clique em Tainacan;
+2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acesse o painel de controle](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
-3. Acesse a seção “Importadores”;
+3. Accede a la sección **Importadores**;
 
-   ![Acesse o painel de controle](_assets\images\Acesso_Importadores.png)
+   ![Acceso al panel de control](_assets/images/Acceso_Importadores.png)
 
-4. Na seção “Importadores Disponíveis”, selecione “Vocabulário CSV”;
+4. En la sección **Importadores disponibles**, selecciona *Vocabulario CSV*;
 
-   ![Acesse o painel de controle](_assets\images\Acesso_Importador_Vocabulario_CSV.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Acceso_CSV_Vocabularios.png)
 
-5. Configure o campo “Delimitador CSV” de acordo com o caractere delimitador do seu arquivo “.csv”;
+5. Configura el campo “Delimitador CSV” de acuerdo con el carácter delimitador de tu archivo *.csv*;
 
-   ![Acesse o painel de controle](_assets\images\Importador_Vocabulario_CSV_parametros.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Vocabulario_CSV_Parametros.png)
 
-6. Selecione o arquivo “.csv” para upload;
+6. Selecciona el archivo *.csv* para cargar;
 
-   ![Acesse o painel de controle](_assets\images\Importador_Vocabulario_CSV_selecao_arquivo.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Vocabulario_CSV_Seleccionar_Archivo.png)
 
-7. Crie ou escolha a “Taxonomia” de destino. Consulte Taxonomias para saber mais;
+7. Crea o elige la *Taxonomía* de destino. Consulta Taxonomías para obtener más información;
 
-   ![Acesse o painel de controle](_assets\images\Importador_Vocabulario_CSV_selecao_taxonomia_destino.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Vocabulario_CSV_Seleccionar_Taxonomia_Destino.png)
 
-8. Clique em “Executar”;
+8. Haz clic en *Ejecutar*;
 
-   ![Acesse o painel de controle](_assets\images\Importador_Vocabulario_CSV_Executar.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Vocabulario_CSV_Ejecutar.png)
 
-9. Você será redirecionado para a tela de “Atividades do Repositório”, onde poderá acompanhar o andamento do “processo de importação”. Esta tela exibe todos os “processos de importação” já realizados nesta instalação, do mais recente para o mais antigo. Quando o processo for concluído, serão exibidos o “arquivo de registro” e, em caso de erros, o “arquivo de registro de erros;
+9. Serás redirigido a la pantalla *Actividades del repositorio*, donde podrás seguir el progreso del proceso de importación. Esta pantalla muestra todos los procesos de importación ya realizados en esta instalación, desde el más reciente hasta el más antiguo. Cuando finalice el proceso, se mostrará el archivo de registro y, en caso de errores, el archivo de registro de errores;
 
-10. Uma vez terminado com sucesso o “processo de importação do vocabulário”, vá para a seção de “Taxonomias” e revise se a “Taxonomia” e os “Termos” foram importados como o esperado.
+10. Una vez que el proceso de importación de vocabulario se complete con éxito, ve a la sección *Taxonomías* y revisa que la *Taxonomía* y los *Términos* se hayan importado como se esperaba.
 
-### Importador teste
+### Importador de prueba
 
-O “Importador teste” é uma ferramenta útil para usuários que desejam testar funcionalidades do Tainacan, seja para conhecer melhor do que ela é capaz, seja para seguir um roteiro de testes pré-lançamento. Com ele, podemos “criar coleções” com “itens”, “metadados” e “filtros” genéricos de maneira rápida.
+El Importador de prueba es una herramienta útil para los usuarios que quieran probar las características de Tainacan, ya sea para conocer mejor de lo que es capaz, o para seguir un script de prueba previo al lanzamiento. Con él, podemos *crear colecciones* con *elementos*, *metadatos* y *filtros* genéricos rápidamente.
 
-Ao contrário dos importadores de CSV, não estamos realmente “importando” dados de uma fonte externa, mas sim deixando por conta do Tainacan que crie tudo isso. Portanto, as configurações são bem simples:
+A diferencia de los importadores de CSV, en realidad no estamos importando datos de una fuente externa, sino que dejamos que Tainacan los cree todos. Así que la configuración es bastante sencilla:
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\Painel_Adm_WordPress.png)
+   ![Acceso al panel de control](_assets/images/Panel_Adm_Wordpress.png)
 
-2. Na barra lateral esquerda, clique em Tainacan;
+2. En la barra lateral izquierda, haz clic en Tainacan;
 
-   ![Acesse o painel de controle](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
-3. Acesse a seção “Importadores”;
+3. Accede a la sección *Importadores*;
 
-   ![Acesse o painel de controle](_assets\images\Acesso_Importadores.png)
+   ![Acceso al panel de control](_assets/images/Acceso_Importadores.png)
 
-4. Na seção “Importadores disponíveis”, selecione “Teste”;
+4. En la sección *Importadores disponibles*, selecciona *Prueba*;
 
-   ![Acesse o painel de controle](_assets\images\Acesso_Importador_Teste.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Acceso_Test.png)
 
-5. Preencha os primeiros campos como desejar. Se for criada uma segunda “coleção”, “metadados de relacionamento” poderão linkar seus “itens”;
+5. Rellena los primeros campos como desees. Si se crea una segunda *colección*, los *metadatos de relación* pueden vincular sus elementos;
 
-   ![Acesse o painel de controle](_assets\images\Importador_Teste_Parametros.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Test_Parametros.png)
 
-6. Se deseja importar imagens do LoremFlickr para os seus “itens”, é possível configurar dimensões específicas (“altura” x “largura”) ou deixar 0 para que elas sejam aleatórias. Você também pode definir um “termo” de busca para “filtrar” o conteúdo da imagem.
+6. Si quieres importar imágenes de LoremFlickr a tus elementos, puedes configurar dimensiones específicas (alto x ancho) o dejar 0 para que sean aleatorias. También puedes definir un *término* de búsqueda para *filtrar* el contenido de las imágenes.
 
-   a. Embora diversas, as imagens fornecidas pelo LoremFlickr possuem tamanho bem reduzido. Isso significa que mesmo não passando parâmetros elas podem vir pequenas e se comportar de maneira inesperada em alguns “modos de visualização”, caso estes esperem recortes maiores que o mínimo criado pelo “importador”
+   a. Aunque diversas, las imágenes proporcionadas por LoremFlickr son de tamaño muy pequeño. Esto significa que aunque no se definan parámetros, pueden venir pequeñas y comportarse de forma inesperada en algunos *modos de visualización*, si estos esperan recortes mayores que el mínimo creado por el *importador*.
 
-   ![Acesse o painel de controle](_assets\images\Importador_Teste_Parametros_LoremFLickr.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Test_Flickr.png)
 
-7. Realize a importação clicando em “Executar”;
+7. Realiza la importación haciendo clic en *Ejecutar*;
 
-   ![Acesse o painel de controle](_assets\images\Importador_Teste_Executar_Importacao.png)
+   ![Acceso al panel de control](_assets/images/Importadores_Test_Ejecutar.png)
 
-8. Uma vez terminado com sucesso o “processo de importação”, vá para as “coleções” criadas e revise se os “metadados”, “itens” e “valores” estão de acordo com o esperado.
+8. Una vez que el "proceso de importación se haya completado con éxito, ve a las *colecciones* creadas y verifica si los metadatos, elementos y valores son los esperados.
+
+   ![Acceso al panel de control](_assets/images/Importadores_Test_Visualizacion.png)
+
+<!-- tabs:end -->

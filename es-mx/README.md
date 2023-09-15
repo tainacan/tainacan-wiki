@@ -1,12 +1,10 @@
-# Wiki do Tainacan
+# Tainacan Wiki en español
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+**Hola y bienvenido a la Wiki!!** Este es el hogar de la documentacion para Tainacan una traduccion al español.
 
-**Olá e seja bem-vindo(a) à Wiki!** Este é o lar da documentação do Tainacan.
+> Tainacan es una plataforma de repositorio de código abierto, poderosa y flexible para _WordPress_. Administra y publica tus colecciones digitales tan fácilmente como publicar una publicación en su blog mientras tiene todas las herramientas de la plataforma de repositorio profesional disponibles.
 
-> O Tainacan é uma plataforma código aberto, poderosa e flexível de repositórios para _WordPress_. Gerencie e publique suas coleções digitais tão facilmente quanto se publica um post no seu blog, dispondo de todas as ferramentas de uma plataforma de repositórios profissional.
-
-Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, alguns links relevantes:
+Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enlaces relevantes:
 <br>
 <br>
 
@@ -15,12 +13,12 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Primeiros Passos](../_assets/images/Primeiros_passos.png ":no-zoom")](/es-mx/getting-started)
+[![Primeros Pasos](/_assets/images/Primeiros_passos.png ":no-zoom")](/es-mx/getting-started)
 
 </div>
 <div class="panel-heading">
 
-[Primeiros Passos](/es-mx/getting-started)
+[Primeros Pasos](/es-mx/getting-started)
 
 </div>
         </div>
@@ -29,12 +27,12 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Instalação](../_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/es-mx/instalacao)
+[![Instalación](/_assets/images/Instalacao_e_configuracoes.png ":no-zoom")](/es-mx/instalacao)
 
 </div>
 <div class="panel-heading">
 
-[Instalação](/es-mx/instalacao)
+[Instalación](/es-mx/instalacao)
 
 </div>
         </div>
@@ -43,12 +41,12 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Conceitos Gerais](../_assets/images/Usando_a_plataforma.png ":no-zoom")](/es-mx/general-concepts)
+[![Conceptos Generales](/_assets/images/Usando_a_plataforma.png ":no-zoom")](/es-mx/general-concepts)
 
 </div>
 <div class="panel-heading">
 
-[Conceitos Gerais](/es-mx/general-concepts)
+[Conceptos Generales](/es-mx/general-concepts)
 
 </div>
         </div>
@@ -57,16 +55,16 @@ Você pode navegar ou buscar assuntos específicos no menu lateral. A seguir, al
         <div class="panel home-panel">
 <div class="panel-body">
 
-[![Desenvolvedores](../_assets/images/Para_desenvolvedores.png ":no-zoom")](/dev/)
+[![Desarrolladores](/_assets/images/Para_desenvolvedores.png ":no-zoom")](/es-mx/dev/)
 
 </div>
 <div class="panel-heading">
 
-[Desenvolvedores](/dev/)
+[Desarrolladores](/es-mx/dev/)
 
 </div>
         </div>
     </div>
 </div>
 
-A documentação pode ser navegada pelo GitHub Pages + Docsify [aqui](https://wiki.tainacan.org ":ignore").
+Se puede acceder a la documentación origial a través de GitHub Pages + Docsify [aqui](https://wiki.tainacan.org ":ignore").

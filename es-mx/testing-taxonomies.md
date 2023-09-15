@@ -1,51 +1,49 @@
-# Testando Taxonomias
+# Comprobación de taxonomías
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+## Fundamentos
 
-## O Básico
+1. Crear una o varias taxonomías;
+2. Crear uno o más términos en cada taxonomía creada;
+3. Cargue una _Imagen de cabecera_ para al menos un término en cada taxonomía;
+4. Intente rellenar todos los campos, como **nombre**, **descripción**, etc.
+5. Cree al menos un nivel jerárquico en cada taxonomía (añadiendo términos hijos);
+6. Cambie el Estado de al menos una taxonomía después de haberla creado;
+7. Vaya a la lista de taxonomías y compruebe que están en las pestañas correctas según su estado;
 
-1. Crie uma ou mais taxonomias;
-2. Crie um ou mais termos em cada taxonomia criada;
-3. Envie uma _Imagem da Header_ em pelo menos um termo de cada taxonomia;
-4. Busque preencher todos os campos, como **nome**, **descrição**, etc.
-5. Crie pelo menos um nível hierárquico em cada taxonomia (adicionando termos filhos);
-6. Altere o Status de pelo menos uma taxonomia, após a sua criação;
-7. Vá para a lista de taxonomias e cheque se as mesmas estão nas abas corretas de acordo com seu status;
+- [x] Observe el tiempo de carga de las pantallas _Creación de taxonomías_, _Lista de términos_ y _Lista de taxonomías_.
+- [x] Observe el tiempo de finalización al **guardar** cada taxonomía;
+- [x] Observar el tiempo de finalización al **guardar** cada término;
 
-- [x] Observe o tempo de carregamento da tela de _Criação de Taxonomia_, _Lista de Termos_ e _Lista de Taxonomias_
-- [x] Observe o tempo de conclusão ao **salvar** cada taxonomia;
-- [x] Observe o tempo de conclusão ao **salvar** cada termo;
+4. Pruebe a borrar una taxonomía. Observe si se producen cambios en las demás taxonomías o en los metadatos de la taxonomía;
+5. Enumere al menos una taxonomía y un metadato y repita las operaciones anteriores con esta taxonomía;
+6. Intente relacionar la misma taxonomía con dos metadatos de la misma colección. Esto no debería ser posible.
 
-4. Teste excluir uma taxonomia. Veja se há alguma alteração nas outra taxonomias ou metadados de taxonomia;
-5. Relacione pelo menos uma taxonomia e um metadado e repita as operações acima com esta taxonomia;
-6. Tente relacionar uma mesma taxonomia a dois metadados de uma mesma coleção. Isto não deve ser possível.
+## Visualización del término en el tema
 
-## A Visualização do Termo no Tema
+1. Abra el formulario de edición de un término;
+2. Haga clic en "Ver en el tema";
+   - [x] Compruebe que la lista de elementos del término se muestra correctamente, incluyendo la imagen y la descripción introducidas;
+   - [x] Compruebe que se enumeran los elementos que pueden tener ese término etiquetado en algunos metadatos de tipo taxonomía.
 
-1. Abra o formulário de edição de algum termo;
-2. Clique em "Ver no Tema";
-   - [x] Veja se a lista de itens do termo é renderizada corretamente, incluindo a imagem e descrição passada;
-   - [x] Verifique seestão listados os itens que possam ter aquele termo marcado em algum metadado tipo taxonomia.
+## Definir un nuevo término padre
 
-## A Definição de um novo Termo Pai
+1. Abra el formulario de edición de un término, o cree uno nuevo;
+2. Active la opción "Término padre" y busque términos que puedan ser elegidos como padres;
+3. Guarde el cambio pulsando "Guardar";
+   - [x] Compruebe que su propio término no aparece entre los términos ofrecidos;
+   - [x] Si el término elegido actualmente tiene hijos, compruebe que la lista se recarga correctamente al cambiar su jerarquía;
 
-1. Abra o formulário de edição de algum termo, ou crie um novo;
-2. Habilite a opção "Termo Pai" e busque por termos que podem ser escolhidos como pai;
-3. Salve a mudança clicando em `Salvar`;
-   - [x] Cheque se dentre os termos oferecidos não foi listado o próprio termo;
-   - [x] Se o termo escolhido atual possuir filhos, verifique se a lista será recarregada corretamente ao se mudar sua hierarquia;
+## El permiso para nuevos términos
 
-## A Permissão para Termos Novos
+1. En el formulario de configuración de la taxonomía, desmarque la opción "Permitir nuevos términos";
+2. Guarde el cambio haciendo clic en `Guardar`;
+3. Vaya a una colección en la pantalla Configurar metadatos;
+   1. Cree un Metadato de tipo Taxonomía a partir de la taxonomía modificada.
+   2. Compruebe que la opción "Permitir nuevos términos" ya no existe;
+4. Vaya a la lista Elementos de la colección y cree o edite un elemento;
+   1. Añada los términos existentes a los metadatos de tipo taxonomía;
+   2. Intente añadir nuevos términos a la taxonomía desde el formulario de edición de metadatos;
+   - [x] Confirme que no es posible insertar nuevos términos en la taxonomía, ya que la configuración de Taxonomía tiene prioridad sobre la configuración de Metadatos;
+   - [x] Vuelva a cargar la página del elemento para ver si se han guardado los posibles términos.
 
-1. No formulário de configurações de uma taxonomia, desmarque a opção "Permitir Termos Novos";
-2. Salve a mudança clicando em `Salvar`;
-3. Vá para uma Coleção, na sua tela de Configurar Metadados;
-   1. Crie um Metadado do tipo Taxonomia a partir da taxonomia alterada.
-   2. Verifique que não existe mais a opção "Permitir Termos Novos";
-4. Vá a lista de Itens da Coleção e crie ou edite um item;
-   1. Adicione termos existentes ao metadado tipo taxnomia;
-   2. Tente adicionar termos novos à taxonomia a partir do formulário de edição do metadado;
-   - [x] Confirme que não é possível inserir novos termos na taxonomia, já que a configuração da Taxonomia tem prioridade sobre a do Metadado;
-   - [x] Recarregue a página do item para ver se os termos possíveis foram salvos
-
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/es-mx/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).

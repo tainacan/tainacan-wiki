@@ -1,71 +1,69 @@
-# Blocos de Facetas
+# Lista de aspectos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Los **aspectos** son una buena forma de ofrecer una vista filtrada de los elementos. En Tainacan, llamamos _facet_ a una lista de elementos filtrados por un valor de metadatos. Por ejemplo, si una colección tiene un metadato _Género Musical_, entonces los ítems en ella pueden tener valores como "Rock", "MPB", "Funk", "Rock Alternativo"... en este metadato. Si hay un metadato _Nacionalidad_, entonces los posibles valores del metadato serán probablemente "Argentino", "Brasileño", "Chileno"... Y creando un filtro para estos metadatos, podemos ver cuántos elementos tienen cada uno de estos atributos. Son aspectos de la lista de artículos_.
 
-As **Facetas** são uma boa maneira oferecer uma visão dos seus itens a partir de uma filtragem. No Tainacan, chamamos de _faceta_ uma listagem de itens que se encontra filtrada por algum valor de metadado. Por exemplo, se uma coleção tem um metadado _Gênero Musical_, então os itens da mesma podem ter neste metadado valores como "Rock", "MPB", "Funk", "Rock Alternativo"... Se existe um metadado _Nacionalidade_, então provavelmente os possíveis valores do metadado serão "Argentino", "Brasileiro", "Chileno"... E ao criarmos um filtro para estes metadados, temos a visão de quantos itens possuem cada um destes atributos. Estas são _facetas da lista de itens_.
+En el caso de los metadatos de tipo Taxonomía, esto adquiere una nueva dimensión, ya que los términos (los posibles valores de estos metadatos) tienen una imagen, una descripción y una [página especial sobre Tainacan](/es-mx/tainacan-pages#páginas-de-elementos-de-un-término), que enumera todos los artículos que tienen ese término. Con esto se puede crear el concepto de "Exposiciones" o "Colecciones virtuales", que agregan artículos de más de una colección con atributos comunes basados en una taxonomía.
 
-No caso de metadados tipo Taxonomia, isto ganha uma nova dimensão, já que os termos (os possíveis valores deste metadado) possuem imagem, descrição e uma [página especial própria no Tainacan](/es-mx/tainacan-pages#páginas-de-itens-de-um-termo), que lista todos os itens que possuem aquele termo. Com isto, pode-se criar o conceito de "Exposições" ou "Coleções Virtuais", que agregam itens de mais de uma coleção com atributos em comum a partir de uma taxonomia.
+Para mostrar este tipo de listas se utilizan los bloques de aspectos, que además del enlace a la lista filtrada, nos muestran cuántos elementos tiene esa faceta.
 
-Para exibir estes tipo de listagem, usam-se os blocos de faceta, que além do link para a listagem filtrada, nos mostram quantos itens aquela faceta possui.
+> Tenga en cuenta que los bloques de aspectos son diferentes de los [Bloques de términos](/es-mx/blocks-terms), porque no todas las facetas tienen que ser de una Taxonomía. Puedo tener una faceta que muestre, por ejemplo, elementos por un atributo de fecha _Year Created_. En este caso, los nombres de las facetas serían "1999", "2001", "2005"... Otra diferencia importante es que en los bloques de términos podemos mostrar términos que aún no tienen ningún elemento asociado. Las facetas, en cambio, muestran los que ya son utilizados por un artículo.
 
-> Observe que os Blocos de Facetas são diferentes dos [Blocos de Termos](/es-mx/blocks-terms), pois nem toda faceta precisa ser de uma Taxonomia. Posso ter uma faceta que mostra por exemplo, itens por um atributo de data _Ano de Criação_. Neste caso os nomes das facetas seriam "1999", "2001", "2005"... Outra diferença importante é que nos Blocos de Termos, podemos mostrar termos que ainda não possuem nenhum item associado a ele. Já nas facetas, mostramos aquelas que já são usadas por algum item.
+Tainacan ofrece actualmente un bloque de aspectos:
 
-Atualmente o Tainacan oferece um bloco de faceta:
-
-1. [Lista de Facetas](#lista-de-facetas)
+1. [Lista de Aspectos](#lista-de-aspectos)
 
 ---
 
-## Lista de Facetas
+## Lista de Aspectos
 
-### Configurações Iniciais do Bloco
+### Configuraciones iniciales del bloque
 
-Para começar, escolha a origem da busca por metadados. Você pode procurar tanto por metadados nível repositório quando de uma coleção específica. Feito isto, serão listados os metadados daquela fonte. Agora escolha de qual deles deverão ser carregadas as facetas relacionadas. Se a sua escolha for um metadado tipo Taxonomia, aparecerão as imagens configuradas para os termos e os links levarão para a [Lista de Itens do Termo](/es-mx/tainacan-pages#páginas-de-itens-de-um-termo). Caso contrário, não haverão imagens e os links levarão para uma versão filtrada da [Lista de Itens da Coleção](/es-mx/tainacan-pages#páginas-de-itens-de-uma-coleção) ou da [Lista de Itens do Repositório](/es-mx/tainacan-pages#página-de-items-do-repositório).
+Para empezar, elija la fuente de la búsqueda de metadatos. Puede buscar metadatos a nivel de repositorio o de una colección específica. Una vez hecho esto, se listarán los metadatos de esa fuente. Ahora elija de cuál quiere cargar los aspectos relacionados. Si su elección es un tipo de metadatos de Taxonomía, aparecerán las imágenes configuradas para los términos y los enlaces le llevarán a la sección [Lista de elementos del término](/es-mx/tainacan-pages#páginas-de-elementos-de-un-término). Caso contrario, no habrá imágenes y los enlaces llevarán a una versión filtrada del [Lista de elementos de la colección](/es-mx/tainacan-pages#páginas-de-elementos-de-una-colección)o desde la [Lista de elementos del Repositorio](/es-mx/tainacan-pages#página-de-elementos-del-repositorio).
 
-![Configurações Iniciais do Bloco](/_assets/gifs/blocks-facets-list-1.gif)
+![Configuraciones iniciales del Bloque](/_assets/gifs/blocks-facets-list-1.gif)
 
-Com as facetas carregadas, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con los aspectos cargados, podemos realizar algunos ajustes que estarán disponibles en el panel lateral cuando tengamos el bloque activo.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Configurações do Bloco Facetas](/_assets/images/blocks_facets_list_1.png ":size=200")
+![Lista de ajustes del bloque de aspectos](/_assets/images/blocks_facets_list_1.png ":size=200")
 
 </div>
 
-### Configurações do Gerais das Facetas
+### Configuración general de los aspectos
 
-Por padrão, são carregadas apenas 12 facetas no seu bloco. Para carregar mais facetas por vez, aumente o **Número Máximo de Facetas** no painel lateral. Também pode-se mostrar um **botão de "Carregar Mais Facetas"** logo abaixo da lista, que fará uma nova requisição e incrementará a lista atual (note que apesar de exibido no editor, este botão terá efeito apenas no documento publicado ou pré-visualizado). Caso queira oferecer uma busca textual simples, habilite a opção de **Mostrar Barra de Busca**.
+Por defecto, sólo se cargan 12 aspectos en el bloque. Para cargar más aspectos a la vez, aumente el parámetro **Número Máximo de Aspectos** en el panel lateral. También puede mostrar un botón **Cargar más aspectos** justo debajo de la lista, que realizará una nueva petición y se añadirá a la lista actual (tenga en cuenta que, aunque se muestre en el editor, este botón sólo tendrá efecto en el documento publicado o previsualizado). Si desea ofrecer una búsqueda textual simple, active la opción **Mostrar barra de búsqueda**.
 
 <div style="max-width: calc(100% - 240px);">
 
-![Configurando o carregamento de facetas](/_assets/gifs/blocks-facets-list-2.gif)
+![Configuración de la carga de los aspectos](/_assets/gifs/blocks-facets-list-2.gif)
 
 </div>
 
-No caso de facetas oriundas de metadados tipo Taxonomia, são carregas facetas de qualquer termo que seja valor em algum item. Pode ser desejado, porém, que só sejam mostradas facetas de termos **filhos de um termo em específico**, ou apenas termos raiz, aqueles que **não são filhos de nenhum outro termo**. Para configurar isso, pode-se selecionar o **Termo Pai** no painel lateral.
+En el caso de los aspectos de metadatos de tipo Taxonomía, se cargan los aspectos de cualquier término que sea un valor en un elemento. Sin embargo, es posible que sólo desee mostrar aspectos de términos que son **hijos de un término específico**, o sólo términos raíz, aquellos que son **no hijos de ningún otro término**. Para configurar esto, puede seleccionar el **Término Padre** en el panel lateral.
 
-### Opções de Exibição das Facetas
+### Opciones de visualización de los aspectos
 
-Este bloco oferece três modos de visualização. Para todos eles é possível habilitar ou não a opção de mostrar a contagem de itens ao lado do nome da faceta.
+Este bloque ofrece tres modos de visualización. Para todos ellos, puede activar o desactivar la opción de mostrar el recuento de elementos junto al nombre de la faceta.
 
 <!-- tabs:start -->
 
-#### ** Grade de Facetas **
+#### ** Red de aspectos **
 
-O modo padrão é a grade de facetas, que mostrará as miniaturas das facetas (185px _x_ 185px) relacionadas a termos de taxonomias, com seus nomes e número de itens abaixo. Neste modo, você pode configurar se deve ou não ser mostrado a imagem da faceta e se deseja um espaço maior entre as facetas. Lembrando que quanto maior o espaçamento, menos facetas cabem por linha.
+El modo por defecto es la red de aspectos, que mostrará miniaturas de aspectos (185px _x_ 185px) relacionadas con términos taxonómicos, con sus nombres y número de elementos debajo. En este modo, puede configurar si desea mostrar o no la imagen de el aspecto y si desea más espacio entre los aspectos. Recuerde que cuanto mayor sea el espaciado, menos aspectos cabrán por línea.
 
-![Configurando o bloco no modo grade](/_assets/gifs/blocks-facets-list-3.gif)
+![Configuración del bloque en modo cuadrícula](/_assets/gifs/blocks-facets-list-3.gif)
 
-#### ** Lista de Facetas **
+#### ** Lista de Aspectos **
 
-A lista de facetas permite uma visão mais simplificada, com miniaturas menores (54px _x_ 54px) e os nomes ao lado. Neste modo, você pode escolher não mostrar a miniatura, o ideal para facetas que não possuem imagens.
+La lista de aspectos le ofrece una vista más simplificada, con miniaturas más pequeñas (54px _x_ 54px) y los nombres junto a ellos. En este modo, puedes elegir no mostrar la miniatura, lo que es ideal para los aspectos que no tienen imágenes.
 
-![Configurando o bloco no modo lista](/_assets/gifs/blocks-facets-list-4.gif)
+![Configuración del bloque en modo lista](/_assets/gifs/blocks-facets-list-4.gif)
 
-#### ** Nuvem de Facetas **
+#### ** Nube de aspectos **
 
-Por fim, o bloco de facetas possui um modo especial, inspirado nas _nuvens de tags_ frequentemente vistas em blogs. Com ele, a lista de facetas é mostrada centralizada e cada faceta tem um tamanho de fonte ajustado segundo uma razão de quantos itens estão associados à ela. Assim, facetas com vários itens tem proporcionalmente maior destaque. Esta proporção pode ser ajustada no painel lateral ao lado, na opção **Taxa de Crescimento** das configurações da nuvem.
+Por último, el bloque de aspectos tiene un modo especial, inspirado en las _nubes de etiquetas_ que suelen verse en los blogs. Con él, la lista de aspectos se muestra centrada y cada aspecto tiene un tamaño de fuente ajustado en función de cuántos elementos estén asociados a ella. Así, los aspectos con varios elementos son proporcionalmente más prominentes. Esta proporción puede ajustarse en el panel lateral contiguo, en la opción **Tasa de crecimiento** de los ajustes de la nube.
 
-![Configurando o bloco no modo nuvem](/_assets/gifs/blocks-facets-list-5.gif)
+![Configuración del bloque en modo nube](/_assets/gifs/blocks-facets-list-5.gif)
 
 <!-- tabs:end -->

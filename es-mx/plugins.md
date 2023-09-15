@@ -1,38 +1,36 @@
 # Plugins
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Tainacan es un _plugin_ para _WordPress_, lo que significa que mejora la funcionalidad de _WordPress_ con nuevas características. Esto forma parte de la filosofía de _WordPress_ de proporcionar una solución básica importante que pueda satisfacer a la mayoría de los usuarios y, al mismo tiempo, ofrecer la posibilidad de elegir extensiones para que se adapte mejor a las distintas necesidades. Lo mismo se aplica al propio Tainacan, que intenta aportar por defecto las principales funcionalidades de gestión y visualización de colecciones digitales, dejando algunas funcionalidades extra como _plugins para el plugin_.
 
-O Tainacan é um _plugin_ para o _WordPress_, o que significa que ele incrementa as funcionalidades do _WordPress_ com novos recursos. Isto faz parte da filosofia do _WordPress_ de prover uma solução núcleo importante que possa atender a maioria dos usuários e ainda assim oferecer a possibilidade de se escolher extenções para torná-lo mais adequado a diferentes requisitos. O mesmo se aplica ao Tainacan em si, que tenta trazer as principais funcionalidades da gestão e exibição de acervos digitais por padrão, deixando algumas funcionalidades extra como _plugins para o plugin_.
+## Plugins disponibles
 
-## Plugins Disponíveis
+- [Visualizador PDF](/es-mx/plugin-pdf-exposer) (Beta) - Añade el visor de PDF, que permite ver las listas de elementos en formato PDF.
+- [Metadatos de tipo URL](/es-mx/plugin-metadata-type-url) - Añade un tipo de metadatos que acepta URL y muestra una versión incrustada o iframe de su contenido.
+- [Modos de visualización adicionales](/es-mx/plugin-extra-view-modes) - Añade varios modos de visualización alternativos a la lista de elementos.
+- [WordPress 3DHOP](/es-mx/plugin-3d-hop) (Beta) - Añade compatibilidad de documentos con modelos 3D que utilicen la función [3D HOP](http://3dhop.net/);
 
-- [Expositor PDF](/es-mx/plugin-pdf-exposer) (Beta) - Adiciona o expositor PDF, que permite visualizar listas de itens no formato PDF.
-- [Metadado Tipo URL](/es-mx/plugin-metadata-type-url) - Adiciona um tipo de metadado que aceita URLs e exibe uma versão incorporada ou em iframe do seu conteúdo.
-- [Modos de Visualização Extra](/es-mx/plugin-extra-view-modes) - Adiciona vários modos de visualização alternativos para a lista de itens.
-- [WordPress 3DHOP](/es-mx/plugin-3d-hop) (Beta) - Adiciona suporte a documentos com modelos 3D utilizando o [3D HOP](http://3dhop.net/);
+## Instalación de plugins
 
-## Instalando os plugins
+Los plugins listados arriba que ya no están en beta ahora pueden ser instalados directamente desde el panel de administración de _WordPress_. Sólo tienes que buscar "Tainacan" en la página de plugins del panel de administración de tu sitio. Los que están en fase beta, en cambio, deberán instalarse manualmente. A continuación te explicamos cómo
 
-Os plugins listados acima que não estão mais em fase beta já podem ser instalados diretamente pelo painel administrativo do _WordPress_. Basta pesquisar por "Tainacan" na página de plugins do painel administrativo do seu site. Já os que estão em beta previsam de ter sua instalação feita manualmente. Veja como a seguir
+### Instalación de un plugin desde el panel de control
 
-### Instalando um plugin pelo Painel
+Una forma visual de instalar plugins descargados es ir al panel de administración de _WordPress_, acceder a la sección Plugins y hacer clic en "Añadir nuevo". Esto te llevará a la lista de plugins y en la parte superior verás el botón "Enviar plugin" donde podrás seleccionar tu archivo `.zip`.
 
-Uma maneira visual de instalar os plugins que foram baixados é ir ao painel administrativo do _WordPress_, acessar a sessão de Plugins e clicar em "Adicionar novo". Isto te levará para a lista de plugins e no topo você verá o botão "Enviar plugin" onde você poderá selecionar seu arquivo `.zip`.
+![Instalar un plugin desde el panel de WordPress](_assets/images/plugins_1.png)
 
-![Instalando um plugin pelo painel do WordPress](../_assets/images/plugins_1.png)
+### Instalación de un plugin a través de WP-CLI
 
-### Instaling um plugin via WP-CLI
-
-Se você faz uso da [CLI do WordPress](https://wp-cli.org/#installing), as coisas ficam mais fáceis, Tudo que você precisa fazer é rodar, na seu diretório do _WordPress_:
+Si utiliza [CLI de WordPress](https://wp-cli.org/#installing), todo lo que tiene que hacer es ejecutarlo en su directorio _WordPress_:
 
 ```
 wp plugin install /CAMINHO/PARA/SEU/ARQUIVO/ZIP/nome-do-plugin.zip
 ```
 
-### Instalando um plugin diretamente do Servidor
+### Instalación de un plugin directamente desde el servidor
 
-O mesmo processo pode ser feito manualmente com acesso aos arquivos do seu servidor. Para isso, extraia seu arquivo `zip` e o mova para a pasta `wp-content/plugins`, em uma pasta com o mesmo nome do plugin.
+El mismo proceso puede realizarse manualmente con acceso a los archivos de su servidor. Para ello, extraiga su archivo `zip` y muévalo a la carpeta `wp-content/plugins`, en una carpeta con el mismo nombre que el plugin.
 
-## Ativando o plugin
+## Activación del plugin
 
-Não se esqueça que uma vez instalado o plugin, **você ainda precisa ativá-lo** na lista de plugins do painel administrativo do _WordPress_.
+No olvide que una vez instalado el plugin, **aún debe activarlo** en la lista de plugins del panel de administración de _WordPress_.

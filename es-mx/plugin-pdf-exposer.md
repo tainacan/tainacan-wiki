@@ -1,19 +1,17 @@
 # Plugin: PDF Exposer
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Este plugin añade la opción de exposición para renderizar archivos PDF que contengan información de elementos, de forma similar a un informe de archivo.
 
-This plugin adds an exposer option for rendering **PDF files** containing information from items, similar to an archival report.
+## Introducción
 
-## Introduction
+Por defecto, cada lista o elemento de Tainacan ofrece lo que llamamos _Expositores_ o _URLs alternativas_, que son formas de visualizar tus datos en un formato diferente, como nuestra propia _JSON API_, una _Tabla HTML_ básica y _archivos CSV_. Son accesibles a través del botón "Ver como..". Este plugin añade una opción de exposición adicional, que muestra un archivo PDF de la lista de elementos deseada.
 
-By default, every Tainacan list or item offers what we call _Exposers_ or _Alternative URLs_, which are ways to visualize your data in a different format, such as our own _JSON API_, a basic _HTML Table_ and _CSV files_. They are acessible via the button "View as..". This plugin adds an extra exposer option, that renders a PDF file of the desired items list.
+## Instalación
 
-## Instalation
+Descarga el [.zip](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate/archive/master.zip) archivo de [the GitHub repository](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate) y sigue las instrucciones descritas en [nuestra sección de instalación de plugins](/es-mx/plugins#instalación-de-plugins).
 
-Download the [.zip](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate/archive/master.zip) file from [the GitHub repository](https://github.com/tainacan/wp-plugin-tainacan-pdf-generate) and follow the install instructions described in [our plugins install secion](/plugins#instaling-a-plugin).
+Active nuestro plugin en la sección de plugins del panel administrativo de _WordPress_.
 
-Activate our plugin on the _WordPress_ administrative panel section for plugins.
+## Configuración
 
-## Configuration
-
-## Usage
+## Utilización

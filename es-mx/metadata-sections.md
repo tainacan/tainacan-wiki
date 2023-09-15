@@ -1,55 +1,52 @@
-# Seções de Metadados
+# Secciones de metadatos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-A partir da versão 0.19, o Tainacan conta com o recurso das **Seções de Metadados**. Elas constituem uma maneira de se organizar longas listas de metadados em agrupamentos visuais e estruturais, que dão mais poder para catalogação dos dados de um item. No painel administrativo, seções de metadadas são mostradas como painéis _colapsáveis_, mas na página pública de um item podem ser exibidas de diferentes maneiras, a depender das configurações do tema. Podem por exemplo, ser mostradas como abas, ou dando prioridade para a exibição de alguma com mais destaque visual do que a outra.
+A partir de la versión 0.19, Tainacan cuenta con el recurso **Secciones de metadatos**. Proporcionan una forma de organizar largas listas de metadatos en agrupaciones visuales y estructurales que facilitan el proceso de catalogación de los datos de un ítem o elemento. En el panel de administración, las secciones de metadatos se muestran como paneles plegables, pero en la página pública de un elemento se pueden mostrar de diferentes maneras, dependiendo de la configuración del tema. Pueden, por ejemplo, mostrarse como pestañas, o dar prioridad a alguna sección dándole más prominencia visual que a otra.
 
-Neste artigo descrevemos:
+En este artículo describimos:
 
-- As [características gerais](#características-das-seções-de-metadados) de uma seção de metadados;
-- Como [criar e editar](#criando-e-editando-seções) uma seção de metadados;
-- Como [remover uma seção](#removendo-seções) de metadados;
-- Como [visualizar a seção de metadados](#visualizando-seções-na-página-do-item) na página pública do item;
+- Las [características generales](#características-de-las-secciones-de-metadatos) de una sección de metadatos;
+- Cómo [crear y editar](#crear-y-editar-secciones) una sección de metadatos;
+- Cómo [eliminar una sección](#eliminación-de-secciones) de metadatos;
+- Cómo [ver la sección de metadatos](#visualización-de-secciones-en-la-página-del-elemento) en la página pública del artículo;
 
-Parte-se aqui do pressuposto que você já está familiarizado com o conceito e com o fluxo de edição de metadados. Caso contrário, [consulte Metadados](/es-mx/metadata.md).
+Si todavía no estás familiarizado con el concepto y el flujo de edición de metadatos, [consulta la sección Metadatos](/es-mx/metadata.md).
 
-## Características das Seções de Metadados
+## Características de las secciones de metadatos
 
-- Toda seção possui um **Nome e Descrição**, que serão exibidos na página de preenchimento do item, se forem configurados;
-- Toda coleção já possui uma seção logo que criada, a chamada **_Seção Padrão_**, cujo nome de início é "Metadados".
-- A **_seção padrão_ não pode ser removida** e também e sua privacidade está sempre atrelada à privacidade da coleção;
-- Demais **seções podem ser públicas ou privadas**, o que implica que sua privacidade implica na privacidade dos metadados que estão nela;
-- As seções podem ser desabilitadas, implicando que seus metadados não serão mostrados na hora de se exibir ou preencher itens, mesmo os dados ainda existindo;
-- As seções podem possuir um número indefinido de metadados dentro de si, e estes podem ser trocados de uma seção para outra, a qualquer momento;
-- As seções **só podem ser removidas quando não possuem metadados** dentro de si;
-- A ordem das seções também pode ser alterada;
-- **Não existem seções nas configurações de metadados nível repositório**. Quando herdados nas coleções, os metadados de repositório aparecerão na _seção padrão_. De lá podem ser ordenados para outras seções se for necessário.
+- Cada sección tiene un **Nombre** y una **Descripción**, que se mostrarán en la página de llenado de información del ítem, si están configurados;
+- Cada colección ya tiene una sección desde el momento de su creación, la llamada **Sección estándar**, cuyo nombre inicial es **“Metadatos”**. La **sección estándar no se puede eliminar** y su privacidad siempre está ligada a la privacidad de la colección. Otras secciones pueden ser públicas o privadas y este estatus se aplica también a la privacidad de los metadatos que contiene la sección.
+- Las secciones pueden desactivarse, lo que implica que sus metadatos no se mostrarán al visualizar o al capturar la información de los elementos, aunque los datos seguirán existiendo;
+- Las secciones pueden tener un número indefinido de metadatos dentro de ellas, y estos pueden intercambiarse de una sección a otra en cualquier momento;
+- Las secciones **solo pueden eliminarse cuando no contienen metadatos**;
+- El orden de las secciones puede modificarse;
+- **No hay secciones en la configuración de metadatos a nivel de repositorio**. Cuando se heredan en colecciones, los metadatos del repositorio aparecerán en la **sección estándar**. Desde allí pueden ordenarse en otras secciones si es necesario.
 
-## Criando e Editando Seções
+## Crear y editar secciones
 
-Como mencionado anteriormente, diferentemente dos metadados, a seção só existe à nível de coleção. Há também a chamada seção padrão, que já existe em toda coleção. Para se criar uma nova seção, portanto, deve-se:
+Como se mencionó anteriormente, a diferencia de los metadatos, la sección solo existe a nivel de colección. También existe la llamada sección estándar, que ya existe por defecto en cada colección. Para crear una nueva sección, debe:
 
-1. Acessar a página de configuração dos metadados de uma coleção;
-2. Abaixo da lista de "tipos de metadados disponveis" estará o botão de "Criar nova seção de metadados". Ele pode ser clicado ou arrastado e soltado para regiões entre seções.
-3. Ao se clicar, o formulário de edição de seção aparecerá, onde é necessário preencher pelo menos o Nome da seção. Os demais campos são opcionais;
-4. Com a seção criada, uma nova área que pode receber metadados estará disponível, abaixo de seu título. Para esta área podem ser levados tando novos metadados (arrastando-se tipos de metadado para ela), quanto metadados existentes, oriundos da seção padrão ou de outras já criadas.
-5. Também pode ser trocada a ordem entre seções, movendo as com o arrastar e soltar, ou usando as setas ao lado do ícone de arraste.
+1. Acceder a la página de configuración de metadatos de una colección.
+2. Debajo de la lista de "Tipos de metadatos disponibles" aparecerá el botón "Crear nueva sección de metadatos". Se puede hacer clic en él o arrastrarlo y soltarlo en las regiones entre secciones.
+3. Al hacer clic, aparecerá el formulario de edición de la sección, donde es necesario completar al menos el nombre de la Sección. Los demás campos son opcionales.
+4. Debajo del título de la sección creada, estará disponible un área nueva que puede recibir metadatos. A esta zona se pueden llevar nuevos metadatos (arrastrando dentro de la sección los tipos de metadatos que se requieran), así como metadatos ya existentes, procedentes de la sección estándar o de otras creadas previamente.
+5. El orden entre las secciones se puede cambiar moviéndolas con arrastrar y soltar, o usando las flechas que están al lado del ícono de arrastrar.
 
-## Removendo Seções
+## Eliminación de secciones
 
-A remoção de seções só pode ser feita caso esta não seja a seção padrão e não existam nenhum metadado dentro desta.
+La eliminación de secciones solo se puede hacer si esta no es la sección predeterminada y si no hay metadatos dentro de ella.
 
-1. Primeiramente, remova ou exclua os metadados existentes na seção desejada;
-2. Clique no botão de lixeira no canto direito da seção;
+1. Primero, elimina o borra los metadatos existentes en la sección deseada;
+2. Después, haz clic en el botón de la papelera situado en la esquina derecha de la sección;
 
-## Visualizando Seções na Página do Item
+## Visualización de secciones en la página del elemento
 
-No painel adminstrativo do Tainacan, as seções são vistas como divisores de maior hierarquia na lista de metadados da página do item. Na página de edição do item, estes divisores podem inclusive ser recolhidos, escondendo-se assim todos os seus metadados. Na página pública do item, porém, existem diversas formas através das quais pode-se desejar ver uma seção. Cabe aos [desenvolvedores de temas](/dev/creating-compatible-themes) implementarem estas seções, fazendo uso das [funções que carregam as seções](https://github.com/tainacan/tainacan/blob/develop/src/classes/theme-helper/template-tags.php ":ignore"). Se não houver este cuidado, os metadados serão exibidos sem separação das funções, embora ainda respeitando a ordem em que estão nas seções. Felizmente, tanto para o [Tainacan Interface](/es-mx/theme.md#tainacan-interface), quanto para o [Blocksy](/es-mx/theme.md#tainacan-interface), já foram implementadas algumas visualizações de exemplo. As demonstrações a seguir usam o tema Tainacan Interface, mas é importante saber que as seções não estão limitadas à elas:
+En el panel de administración de Tainacan, las secciones se ven como divisores de jerarquía superior en la lista de metadatos de la página del elemento. En la página de edición del elemento, estos divisores pueden incluso colapsarse, ocultando así todos sus metadatos. En la página pública del elemento, sin embargo, hay varias formas de ver una sección. Corresponde a los [desarrolladores de temas](/es-mx/dev/creating-compatible-themes) implementar estas secciones, haciendo uso de las [funciones que cargan las secciones](https://github.com/tainacan/tainacan/blob/develop/src/classes/theme-helper/template-tags.php ":ignore"). Si no se tiene este cuidado, los metadatos se mostrarán sin separar las funciones, aunque siempre respetando el orden en que se encuentran en las secciones. Afortunadamente, tanto para la [interfaz de Tainacan](/es-mx/theme.md#tainacan-interface), como para [Blocksy](/es-mx/theme.md#tainacan-interface), ya se han implementado algunas vistas de ejemplo. Las siguientes demostraciones utilizan el tema de la interfaz de Tainacan, pero es importante saber que las secciones no se limitan a este tema:
 
-1. Com o tema Tainacan Interface ativado, acesse às configurações da sua coleção.
-2. No formulário de configuração, haverá uma área cinza com as configurações do tema. Escolha lá qual layout você deseja usar para mostrar as seções. As opções são:
-   1. Padrão - Uma divisão simples com identação e uma linha separando as seções;
-   2. Abas - Cada seção fica contida em uma aba;
-   3. _Colapses_ - Cada seção fica em um painel recolhível, similar ao comportamento do editor. Vários painéis podem ser abertos de uma vez, mas apenas o primeiro está de início;
-   4. Acordeão - Igual aos _colapses_, porém somente um pode estar aberto por vez;
-3. Salve a configuração e acesse a página pública de um item no seu site com o tema ativado.
+1. Con el tema interfaz de Tainacan activado, ve a la configuración de tu colección.
+2. En el formulario de configuración, habrá un área gris con los ajustes del tema. Elige allí qué diseño desea utilizar para mostrar las secciones. Las opciones son:
+   1. Predeterminado: una división simple con sangría y una línea que separa las secciones;
+   2. Pestañas: cada sección está contenida en una pestaña;
+   3. Colapsables: cada sección está en un panel colapsable, similar a cómo se comporta en el editor. Se pueden abrir    varios paneles a la vez, pero solo el primero estará al inicio;
+   4. Acordeón: es igual a los paneles colapsables, pero solo se puede abrir uno a la vez;
+3. Guarda la configuración y accede a la página pública del elemento de su sitio con el tema activado.

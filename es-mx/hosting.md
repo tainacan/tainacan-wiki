@@ -1,48 +1,49 @@
-# Hospedagem
+# Alojamiento
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+?> Esta página está dedicada a enumerar las opciones de alojamiento que están probadas por Tainacan listas para producción y para instalaciones de WordPress. Se alienta a usuarias y usuarios de la comunidad a compartir sus experiencias.
 
-?> Esta página é dedicada a listar opções de hospedagem prontas para produção de instalações WordPress testadas com Tainacan. Usuários da comunidade são encorajados a relatar suas experiências aqui.
+Para utilizar Tainacan es necesario disponer de una instalación de WordPress en funcionamiento. Si tienes conocimientos de informática, es posible hacer esta instalación en tu propia computadora de forma local, como se [describió al inicio de esta sección](es-mx/xampp). Sin embargo, lo ideal es que tu sitio esté alojado en un servidor, una máquina que esté siempre encendida y conectada permanentemente a internet. Existen varios servicios de alojamiento en línea, muchos de ellos incluso optimizados para WordPress.
 
-Para usar o Tainacan é necessário uma instalação WordPress _no ar_. Se você tem conhecimentos em _Tecnologia da Informação_ é possível fazer esta instalação em seu próprio computador, como [descrito nessa sessão](es-mx/xampp). Porém, idealmente seu site estará hospedado em um servidor, uma máquina que fica sempre ligada e em permanente conexão com a internet. Há vários serviços diponíveis para **hospedagem online**, muitos inclusives otimizados para o WordPress.
+En esta página enumeraremos:
 
-Nesta página listaremos:
+- [Funciones y características que se esperan de un servicio de hospedaje adecuado para el uso de Tainacan](#¿qué-se-espera-de-un-alojamiento-para-tainacan);
+- [Servicios conocidos y probados por la comunidad](#servicios-de-alojamiento-de-terceros-probados);
 
-- [Recursos e características a se esperar de um serviço de hospedagem adequado para uso do Tainacan](#o-que-se-espera-de-uma-hospedagem-para-o-tainacan);
-- [Serviços conhecidos e testados pela comunidade](#serviços-de-hospedagem-terceiros-testados);
-
-## O que se espera de uma hospedagem para o Tainacan?
+## ¿Qué se espera de un alojamiento para Tainacan?
 
 ### WordPress instalado
 
-Como quesito mais essencial, sua instalação precisa incluir um [WordPress](https://br.wordpress.org/ ":ignore"), ou pelo menos precisa permitir instalar um, com acesso completo ao painel admin. Embora o Tainacan vá funcionar com qualquer versão a partir da 4.8 do WordPress, recomendamos instalações com [versão mais recente](https://br.wordpress.org/download/releases/ ":ignore") e acima da 5.0 para poder tirar proveito de todos os recursos, como os [blocos gutenberg](/es-mx/gutenberg-blocks.md). Você precisará ter permissões para instalar plugins para poder ativar o Tainacan (o que, [como mencionado aqui](/es-mx/faq.md#qual-a-diferença-entre-wpcom-e-wporg), já tira de possibilidade algumas opções gratuitas de planos como as do [WordPress.com](https://br.wordpress.com/ ":ignore"));
+Como requisito más esencial, tu instalación debe incluir un [Wordpress](https://es-mx.wordpress.org/ ":ignore"), o al menos debe permitir instalarlo, con acceso completo al panel de administración. Si bien Tainacan funcionará con cualquier versión a partir de la 4.8 de WordPress, recomendamos instalaciones con una [versión más reciente](https://es-mx.wordpress.org/download/releases/ ":ignore") y superior a la 5.0 para poder aprovechar todas las funciones, como [los bloques gutenberg](/es-mx/gutenberg-blocks.md). Necesitarás tener permisos para instalar complementos (plugins) para activar Tainacan (que, [como se menciona aquí](/es-mx/faq.md#¿cuál-es-la-diferencia-entre-wpcom-y-wporg), elimina la posibilidad de usar algunas opciones de planes gratuitos como los de [Wordpress.com](https://es.wordpress.com/ ":ignore"));
 
-#### Alguns requisitos do Servidor
+#### Algunos requisitos del servidor
 
-É bem provável que se seu plano de hospedagem inclui um WordPress instalado, estes requisitos já estejam preenchidos, mas caso você vá instalar um por conta própria, certifique-se de ter:
+Es muy probable que si tu plan de alojamiento incluye WordPress instalado, ya estén incluidos estos requisitos, pero si vas a instalar uno por tu cuenta, asegúrate de tener:
 
-- `Apache` ou `Nginx` rodando;
-- `PHP` versão de mínima 5.6;
-- Módulos do `PHP` esperados:
+- `Apache` o `Nginx` funcionando;
+- `PHP` versión 5.6 o superior;
+- Módulos `PHP` esperados:
+
   - `curl`
   - `exif`
   - `imagick`
   - `gd`
   - `zlib`
 
-Após ativado o plugin Tainacan, você pode conferir na [página "Diagnóstico do sistema"](/es-mx/optimization#diagnóstico-do-sistema) se estas informações estão atendidas. Caso o contrário, você pode contatar seu provedor de hospedagem para pedir ajuda com sua configuração.
 
-### SSL ativado
+Después de activar el complemento de Tainacan, puedes verificar en la página [“Diagnóstico del sistema”](/es-mx/optimization#diagnóstico-del-sistema) si se cumple esta información. De lo contrario, comunícate con tu proveedor de alojamiento para obtener ayuda con la configuración.
 
-### Domínio registrado
+### SSL habilitado
 
-De maneira resuminda, registrar um domínio significa ter um endereço na internet reservado, para o qual os navegadores irão apontar seu site quando as pessoas pesquisarem pela sua URL, ou link (por exemplo, `meuacervoonline.com.br`). Este é um serviço separado da hospedagem do conteúdo em si, e pode tanto ser feito por provedores específicos (como [registro.br](https://registro.br/ ":ignore") e [br.godaddy.com](https://br.godaddy.com/ ":ignore")), quanto oferecido pelo provedor de hospedagem.
+### Dominio registrado
 
-## Serviços de hospedagem terceiros testados
+En resumen, registrar un dominio significa tener una dirección de internet reservada, a la que los navegadores apuntarán su sitio web cuando las personas busquen su URL o enlace (por ejemplo, `miacervoenlinea.com.mx`).  Este es un servicio independiente del alojamiento del contenido en sí, y se contrata con proveedores específicos (como [hostinger](https://www.hostinger.mx/ ":ignore") o [godaddy](https://www.godaddy.com/es ":ignore")), según lo ofrecido por el proveedor del alojamiento.
 
-A seguir temos links de alguns serviços de hospedagens conhecidos por membros de nossa comunidade. É importante ressaltar que podem haver muitos outros e que não endossamos necessariamente uma alternativa mais que a outra.
+## Servicios de alojamiento de terceros probados
 
-| Serviço   | Link                                              | Comentários                                                                                                                                                                                                                           |
-| --------- | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Hostinger | https://www.hostinger.com.br/hospedagem-wordpress | Configuração simples. Inclui todos os módulos PHP necessários, SSL e oferece por um certo tempo dominio gratuíto.                                                                                                                     |
-| Hostgator | https://www.hostgator.com.br/                     | Configuração simples possui utilitário para instalação do wordpress. Inclui todos os módulos PHP necessários (em algumas hospedagens mais antigas faltava o módulo imagick). Boa documentação e suporte para possíveis configurações. |
+A continuación encontrarás algunos servicios de alojamiento conocidos y probados por los miembros de nuestra comunidad. Es importante tener en cuenta que puede haber muchos otros y que no necesariamente respaldamos una alternativa más que otraa.
+
+| Servicio   | Enlace                                              | Comentarios                                                                                                       |
+| --------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Hostinger | https://www.hostinger.mx/hosting-wordpress | Configuración sencilla. Incluye todos los módulos PHP necesarios, SSL y ofrece un dominio gratis por un tiempo determinado |
+| Hostgator | https://www.hostgator.mx/hosting-wordpress                     | Configuración sencilla con herramienta de instalación de WordPress. Incluye todos los módulos PHP necesarios (algunos hosts antiguos carecían del módulo imagick). Tiene buena documentación y soporte para posibles configuraciones |
+

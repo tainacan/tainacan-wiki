@@ -1,27 +1,25 @@
-# Testando Filtros
+# Filtros de pruebas
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+## Lo básico
 
-## O Básico
+1. Para poder probar los filtros en la medida de lo posible, cree al menos uno de cada tipo de metadatos en la pantalla de configuración de metadatos de la colección o del repositorio;
+2. También sugerimos crear algunos ítems con los valores de estos metadatos rellenados. ¡El [Importador de prueba](/es-mx/importers#test-importer) puede ser muy útil en este punto!
+3. Crear los diferentes tipos de filtros a **nivel de colección**, en diferentes colecciones:
+4. Recuerde crear al menos un filtro para metadatos de tipo _relación_ y otro para metadatos de tipo _taxonomía_;
+5. Intente marcar diferentes opciones de Estado entre los filtros y otros campos de texto:
+6. Pruebe las acciones _excluir_, _cambiar orden_, _editar filtros_ o _deshabilitar_.
 
-1. Para poder testar ao máximo os filtros, crie pelo menos um de cada tipo de metadado existente na tela de configuração de metadados de coleção ou de repositório;
-2. Também sugerimos criar alguns itens com valores destes metadados preenchidos. O [Importador Teste](/es-mx/importers#importador-teste) neste momento pode ser bem útil!
-3. Crie os diferentes tipos de filtros a **nível de coleção**, em coleções diferentes:
-4. Lembre-se de criar pelo menos um filtro para um metadado do tipo _relacionamento_ e um para um metadado do tipo _taxonomia_;
-5. Busque marcar opções diferentes de Status entre os filtros e demais campos de texto:
-6. Teste as ações de _exclusão_, _troca de ordem_, _edição de filtros_ ou _desabilitar_.
+- [x] Recargue la página y compruebe los cambios para asegurarse de que todo se ha guardado;
+- [x] Observe el tiempo de carga al crear filtros;
+- [x] Observe el tiempo de finalización al **guardar** cada filtro;
+- [x] Ver si las **configuraciones se reflejan** en la lista de elementos, tanto en el Tainacan Admin como en la lista de elementos de esta colección en el tema;
 
-- [x] Recarregue a página e verifique as mudanças para confirmar que tudo foi salvo;
-- [x] Observe o tempo de carregamento na criação de filtros;
-- [x] Observe o tempo de conclusão ao **salvar** cada filtro;
-- [x] Veja se as **configurações se refletem** na lista de items, tanto no Admin do Tainacan, quanto na lista de itens desta coleção no tema;
+## Nivel de repositorio
 
-## Nível Repositório
+1. Repita los pasos descritos anteriormente para algunos filtros a nivel de repositorio;
+2. Entre en la página de filtros de una colección;
+   - [x] Comprobar que se han heredado los filtros y que se ha respetado su configuración;
+   - [x] Compruebe que es posible cambiar su orden a nivel de colección;
+   - [x] Comprobar que los filtros aparecen tanto en la lista de elementos a nivel de repositorio de Tainacan Admin como en el tema, accediendo a la lista de elementos del repositorio en `/items`;
 
-1. Repita os passos descritos acima para alguns filtros nível repositório;
-2. Entre na página de filtros de uma coleção;
-   - [x] Verifique se os filtros foram herdados e se suas configurações foram respeitas;
-   - [x] Verifique se é possível trocar a ordem dos mesmos no nível da coleção;
-   - [x] Veja se os filtros aparecem tanto na lista de itens nível repositório do Admin do Tainacan quando no tema, ao acessar a lista de itens do repositório em `/itens`;
-
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/es-mx/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).

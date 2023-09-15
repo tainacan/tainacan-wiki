@@ -6,43 +6,45 @@
 		height="42">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-# Itens
+# Elementos
 
-Os “itens” são os verdadeiros conteúdos do repositório Tainacan, que são representados por pinturas, filmes, livros e, assim por diante. No Tainacan, os “itens” são organizados por “coleções” e, cada “coleção”, possui um conjunto de metadados, que são configurados conforme as características dos “itens” que irão fazer parte dela.
+Los **ítems** (llamados también “elementos”) son los contenidos reales del repositorio de Tainacan, que están representados por pinturas, películas, libros, etc. En Tainacan, los “ítems” están organizados por “colecciones” y cada **colección** tiene un conjunto de metadatos, los cuales se configuran de acuerdo a las características de los “ítems” que formarán parte de ella.
 
-> Na linguagem do WordPress, cada “item” é um “post” e, seu tipo de postagem, representa sua “coleção”
+> En la jerga de WordPress, cada “elemento” se considera como una “publicación” y el tipo de publicación representa su “colección”.
 
-O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL”), metadados e, também, eventuais documentos em anexo.
+El “elemento” es el conjunto formado por un documento (puede ser un “archivo de imagen, video o audio”, un “texto” o una “URL”), sus metadatos y cualquier documento adjunto (si lo hubiera).
 
-## Criar Itens
+<!-- tabs:start -->
 
-1. Acesse o painel de controle do _WordPress_;
+#### ** Crear **
+## Crear elementos
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+1. Accede al panel de control de _WordPress_;
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+   ![Accede al panel de control](_assets/images/050.png)
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-3. Na seção “Coleções”, clique na “coleção” desejada;
+   ![Accede al panel de control](_assets/images/052.png)
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+3. En la sección "Colecciones", haz clic en la "colección" deseada;
 
-4. Clique em “Adicionar novo(a)”, no canto superior esquerdo e, selecione a opção desejada:
+   ![Accede al panel de control](_assets/images/Seleccionar_coleccion.png)
 
-   ● Clique em “Adicionar um item” para enviar apenas um “item”;
+4. Haz clic en “Agregar nuevo” en la esquina superior izquierda y selecciona la opción deseada:
 
-   ![Acesse o painel de controle](_assets\images\Criar_Itens_Adicionar_novo.png)
+   ● Haz clic en "Agregar un elemento" para enviar solo un "elemento";
 
-   ● Clique em “Adicionar itens em massa”, para adicionar “itens” em lote. Consulte Ações em Massa para saber mais;
+   ![Accede al panel de control](_assets/images/Añadir_un_elemento.png)
 
-   ● Clique em “Importar itens”, para adicionar um grande lote de “itens”. Consulte Ações em Massa para saber mais;
+   ● Haz clic en "Agregar ítems en bloque" para agregar un conjunto de ítems. Consulta Acciones masivas para obtener más información;
 
-5. Escolha o tipo de mídia que irá compor o “item”:
+   ● Haz clic en "Importar ítems" para agregar un gran lote de "elementos" mediante la importación de un archivo en formato .csv. Consulta Acciones masivas para obtener más información;
 
-   ● **“Arquivo”**: Faça o upload de um arquivo como “imagens”, “áudios”, “arquivos de texto”, “vídeos”, etc., a partir do seu computador, ou selecione a partir da “biblioteca de mídia” do WordPress. Consulte este artigo sobre a compatibilidade de arquivos do WordPress para saber mais;
+5. Elige el tipo de soporte documental que tendrá el “ítem o elemento”:
+
+   ● **“Archivo”**: Carga archivos de  "imágenes", "audios", "archivos de texto", "videos", etc., desde tu computadora, o selecciónalo de la "biblioteca de medios" de WordPress. Consulta este artículo de compatibilidad de archivos de WordPress para obtener más información;
 
    <iframe
        width="560"
@@ -53,7 +55,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
        allowfullscreen>
    </iframe>
 
-   ● **“Texto simples”**: Um campo para inserção de texto sem formatação;
+   ● **“Texto sin formato”**: Un campo para ingresar texto sin formato;
 
    <iframe
        width="560"
@@ -64,7 +66,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
        allowfullscreen>
    </iframe>
 
-   ● **“URL”**: Permite a incorporação de links (embed) multimídia de vários sites, como YouTube, Vimeo e etc.;
+   ● **“URL”**: Permite la incorporación de enlaces multimedia (embed) de varios sitios, como YouTube, Vimeo, etc.;
 
    <iframe
        width="560"
@@ -75,39 +77,39 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
        allowfullscreen>
    </iframe>
 
-6. Defina uma miniatura para o “item”
+6. Establece una miniatura para el "elemento"
 
-   > Nota: Documentos principais nos formatos “PDF”, “imagens”, “vídeos”, “URL”, geram sua própria miniatura automaticamente.
+   > Nota: Los documentos principales en formato “PDF”, “imágenes”, “videos”y “URL” generan su propia miniatura automáticamente.
 
-   > Nota: Mesmo nestes casos, é possível alterar a miniatura normalmente.
+   > Nota: Incluso en estos casos, es posible cambiar la miniatura de forma manual.
    >
-   > i. Clique no “ícone lápis” no quadrado que ilustra a miniatura;
+   > i. Haz clic en el "icono de lápiz" en el cuadrado que ilustra la miniatura;
    >
-   > ii. Selecione o arquivo da “biblioteca de mídia” ou faça o upload a partir do seu computador.
+   > ii. Selecciona el archivo de la "biblioteca de medios" o cárgalo desde tu computadora.
 
-7. Determine o status do item:
+7. Determina el estatus del elemento:
 
-   ● **“Público”**: O “item” poderá ser visualizado por todos;
+   ● **“Público”**: El "ítem" puede ser visto por todos;
 
-   > ○ Nota: O controle de visibilidade do “item” para o público externo é definido pelo “status da coleção”.
+   > ○ Nota: El control de visibilidad del "ítem" para el público externo se define por el "estatus de la colección" (“publicada” o en estado de “borrador”).
 
-   ● **“Privado”:** O “item” fica visível apenas para editores da coleção. Consulte Permissões de Usuários para saber mais.
+   ● **“Privado”:** El "ítem" solo es visible para los editores de la colección. Consulta Permisos de usuario para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\Criar_Itens_Status_item.png)
+   ![Accede al panel de control](_assets/images/Crear_elemento_estado.png)
 
-8. Defina se o “item” poderá receber comentários;
+8. Define si el “ítem” puede recibir comentarios;
 
-   a. Só é possível, permitir ou não comentários em “itens”, se a função estiver ativada nas configurações da coleção;
+   a. Solo es posible permitir o no permitir comentarios sobre los “ítems” si la función está activada en la configuración de la colección;
 
-   b. Os comentários podem ser gerenciados na seção de comentários do “painel do WordPress”. Saiba mais na documentação do WordPress;
+   b. Los comentarios se pueden administrar en la sección de comentarios del "panel de control de WordPress". Puedes obtener más información en la documentación de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\Criar_Itens_Permitir_Comentarios.png)
+   ![Accede al panel de control](_assets/images/Añadir_elemento_permitir_comentarios.png)
 
-9. Preencha os campos disponíveis na seção de metadados:
+9. Rellena los campos disponibles en la sección de metadatos:
 
-   a. Cada “coleção” oferecerá um conjunto de metadados para preenchimento de acordo com as configurações de metadados do repositório e da “coleção”. Consulte Metadados e Coleções para saber mais;
+   a. Cada "colección" ofrecerá un conjunto de metadatos para completar de acuerdo con la configuración de metadatos del repositorio y de la "colección". Consulta Metadatos y colecciones para obtener más información;
 
-   b. Metadados configurados como “obrigatórios”, não permitirão que o “item” seja salvo como “rascunho” ou “publicado”, caso não estejam preenchidos. Consulte Metadados e Coleções para saber mais.
+   b. Los metadatos configurados como "obligatorios", no permitirán que el "ítem" se guarde como "borrador" o "publicado", si no se completan. Consulta Metadatos y colecciones para obtener más información.
 
    <iframe
        width="560"
@@ -118,94 +120,96 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
        allowfullscreen>
    </iframe>
 
-10. Para concluir a “criação do item”, escolha entre as opções abaixo:
+10. Para terminar la "creación de ítems", elige entre las siguientes opciones:
 
-    **● “Publicar”**: O “item” será publicado na “coleção”;
+    **● “Crear elemento”**: El “ítem” será agregado en la “colección”;
 
-    ● **“Salvar como rascunho”**: O “item” adicionado ficará disponível apenas na seção “Rascunho” da “coleção”;
+    ● **“Guardar como borrador”**: El “ítem” agregado solo estará disponible en la sección “Borrador” de la “colección” (visible solo para quienes tengan permisos de administración en el repositorio);
 
-    ● **“Descartar”**: A criação do “item” é interrompida, e os campos preenchidos não serão salvos.
+    ● **“Descartar”**: La creación del “ítem” se interrumpe y los campos rellenados no se guardarán.
 
-    ![Acesse o painel de controle](_assets\images\Criar_Itens_Descastar_Rascunho_Salvar.png)
+    ![Accede al panel de control](_assets/images/Añadir_elemento_guardar_descartar_borrador.png)
 
-## Editar Itens
+#### ** Editar **
+## Editar elementos
 
-1. Acesse o painel de controle do WordPress;
+1. Accede al panel de control de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+   ![Accede al panel de control](_assets/images/052.png)
 
-3. Na seção “coleções”, clique na “coleção” desejada;
+3. En la sección "colecciones", haz clic en la "colección" deseada;
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Accede al panel de control](_assets/images/Seleccionar_coleccion.png)
 
-4. Clique no “ícone lápis”, localizado próximo às informações do “item” que deseja editar:
+4. Haz clic en el "icono de lápiz" ubicado junto a la información del "ítem" que deseas editar:
 
-   ● Você pode utilizar filtros ou o campo de busca para localizar o “item”;
+   ● Puedes usar filtros o el campo de búsqueda para encontrar el "elemento";
 
-   ● Todos os campos do “item” podem ser alterados, inclusive o “documento”, “anexos” e “miniatura”;
+   ● Todos los campos del "elemento" se pueden cambiar, incluidos "documento", "archivos adjuntos" y "miniatura";
 
-   ● Os “itens” não podem ser migrados de uma “coleção” para outra
+   ● Los "elementos" no se pueden migrar de una "colección" a otra.
 
-   ![Acesse o painel de controle](_assets\images\Editar_Itens_Selecionar_Lapis.png)
+   ![Accede al panel de control](_assets/images/Editar_elemento.png)
 
-5. Para concluir a edição do , escolha entre as opções abaixo:
+5. Para terminar de editar el “ítem”, elige entre las siguientes opciones:
 
-   ● **“Atualizar”**: As alterações no “item” serão salvas;
+   ● **“Actualizar”**: Se guardarán los cambios en el "elemento";
 
-   ● **“Enviar para a lixeira”**: O “item” será enviado para a lixeira;
+   ● **“Enviar a la papelera”**: El “elemento” será enviado a la papelera;
 
-   ● **“Voltar para rascunho”**: O “item” será transformado em “Rascunho”.
+   ● **“Volver a borrador”**: El "elemento" se convertirá en "Borrador".
 
-   ![Acesse o painel de controle](_assets\images\Editar_itens_lixeira_rascunho_atualizar.png)
+   ![Accede al panel de control](_assets/images/Editar_elemento_actualizar.png)
 
-## Excluir Itens
+#### ** Eliminar **
+## Eliminar elementos
 
-1. Acesse o painel de controle do WordPress;
+1. Accede al panel de control de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em "Tainacan”;
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+   ![Accede al panel de control](_assets/images/052.png)
 
-3. Na seção "coleções”, clique na “coleção” desejada;
+3. En la sección "colecciones", haz clic en la "colección" deseada;
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Accede al panel de control](_assets/images/Seleccionar_coleccion.png)
 
-4. Clique no "ícone lixeira”, localizado próximo as informações do “item” que deseja excluir:
+4. Haz clic en el "icono de papelera" ubicado junto a la información del "ítem" que deseas eliminar. Puede usar "filtros" o el "campo de búsqueda" para ubicar el "ítem”:
 
-   ● Você pode utilizar “filtros” ou o “campo de busca” para localizar o “item”;
+   > Nota: La “eliminación de ítems” también implica la “eliminación de documentos”, “información de metadatos” y “archivos adjuntos”.
 
-   > Nota: A “exclusão do item” implica, também, na “exclusão do documento”, “informações nos metadados” e “anexos”.
+   !>**Atención**: Elimina el "ítem" solo si estás seguro de que no habrá una pérdida grave de información. Consulta Registro de actividad para obtener más información.
 
-   !>**Atenção**: Exclua o “item" somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de atividades para saber mais.
+   ![Accede al panel de control](_assets/images/Eliminar_elemento_enviar_papelera.png)
 
-   ![Acesse o painel de controle](_assets\images\Editar_Itens_Selecionar_Lixeira.png)
+### Restaurar elementos de la papelera
 
-### Restaurar itens da lixeira
+Cuando eliminas un "ítem" de una"colección" en Tainacan, se envía a la papelera de reciclaje. Sin embargo, antes de eliminar permanentemente un "ítem", puedes restaurarlo desde la papelera de reciclaje. Para recuperar elementos de la papelera de reciclaje de forma masiva, consulta la sección Acciones masivas.
 
-Quando você exclui um _“item”_ de uma _“coleção”_ no Tainacan, ele é enviado para lixeira. Contudo, antes de excluir permanentemente um _“item”_, você pode restaurá-lo da lixeira. Para recuperar itens da lixeira em massa, consulte a seção Ações em Massa.
+1. Los archivos enviados a la papelera están disponibles en la pestaña _"Papelera"_ de la colección;
 
-1. Os arquivos enviados para a lixeira estão disponíveis na aba _“Lixo”_ da coleção;
+   ![Accede al panel de control](_assets/images/Eliminar_elemento_restaurar.png)
 
-   ![Acesse o painel de controle](_assets\images\Restaurar_Item_da_Lixeira.png)
+2. Haz clic en la flecha ubicada a la izquierda del _"icono de papelera"_ de cada _"elemento"_ que quieres restaurar. Al restaurar un _"elemento"_ de la papelera de reciclaje, vuelve a su estado anterior, _"publicado"_ o _"privado"_.
 
-2. Clique na seta localizada à esquerda do _“ícone lixeira”_ de cada _“item”_ que deseja restaurar. Ao restaurar um _“item”_ da lixeira, ele volta para o seu status anterior, _“publicado”_ ou _“privado”_.
+   ![Accede al panel de control](_assets/images/Eliminar_elemento_boton_restaurar.png)
 
-   ![Acesse o painel de controle](_assets\images\Restaurar_botão.png)
+### Borrar permanentemente
 
-### Excluir permanentemente
+Cuando eliminas un _"elemento"_ de una _"colección"_ en Tainacan, se envía a la papelera de reciclaje. Sin embargo, antes de eliminarlo permanentemente, puedes restaurarlo desde la papelera de reciclaje. Para eliminar de forma masiva los _"elementos"_ que están en la papelera de reciclaje, consulta la sección Acciones masivas.
 
-Quando você exclui um _“item”_ de uma _“coleção”_ no Tainacan, ele é enviado para lixeira. Contudo, antes de excluir permanentemente um _“item”_, você pode restaurá-lo da lixeira. Para excluir permanentemente em massa _“itens”_ que estão na lixeira, consulte a seção Ações em Massa.
+1. Los archivos enviados a la papelera están disponibles en la pestaña _"Papelera" de la "colección"_;
 
-1. Os arquivos enviados para a lixeira estão disponíveis na aba _“Lixo”_ da _“coleção”_;
+   ![Accede al panel de control](_assets/images/Eliminar_elemento_restaurar.png)
 
-   ![Acesse o painel de controle](_assets\images\Deletar_Item_da_Lixeira.png)
+2. Haz clic en el _"icono de papelera"_, ubicado a la derecha de la información en el _"elemento"_. Si eliminas permanentemente un _"elemento"_, no será posible recuperarlo.
 
-2. Clique no _“ícone lixeira”_, localizado à direita das informações do _“item”_. Ao deletar permanentemente um _“item”,_ não será possível fazer sua recuperação.
-
-   ![Acesse o painel de controle](_assets\images\Deletar_Permanente_Item.png)
+   ![Accede al panel de control](_assets/images/Eliminar_elemento_permanentemente.png)
+   
+<!-- tabs:end -->

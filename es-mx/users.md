@@ -1,4 +1,4 @@
-!> Esta página diz respeito ao esquema de permissões de usuários nas versões do **Tainacan anteriores a 0.15**. Recomendamos fortemente o uso de versões mais recentes, onde a permissão de usuários funciona de acordo com [essa documentação](/es-mx/users-roles).
+> Esta página se refiere al esquema de permisos de usuario en **las versiones de Tainacan anteriores a la 0.15**. Recomendamos encarecidamente el uso de versiones más recientes, donde los permisos de usuario funcionan según [esta documentación](/es-mx/users-roles).
 
 <div style="float: right; margin-left: 1rem;">
 	<img 
@@ -8,260 +8,258 @@
 		height="40">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+# Usuarios
 
-# Usuários
+## Permisos de usuario en Tainacan
 
-## Permissões de Usuários no Tainacan
+Este artículo explica cómo se gestionan los permisos en Tainacan, así como qué roles de usuario están disponibles y qué puede hacer cada uno de ellos.
 
-Este artigo explica como as permissões são tratadas no Tainacan, bem como quais são as funções dos usuários disponíveis e o que cada uma delas pode fazer.
+Tainacan maneja los permisos de usuario de la misma manera que [WordPress](https://codex.wordpress.org/es-mx:Pap%C3%A9is_e_Capacidades). Si estás acostumbrado a los roles y permisos de WordPress, ¡estás a mitad de camino!
 
-O Tainacan lida com permissões de usuários da mesma forma que o [WordPress](https://codex.wordpress.org/es-mx:Pap%C3%A9is_e_Capacidades). Se você está acostumado com as funções e permissões do WordPress, você já tem meio caminho andado!
+Las funciones estándar de WordPress se asignan con nuevas características para trabajar con colecciones, artículos y otras operaciones específicas de Tainacan. Además, Tainacan crea nuevos roles, relacionados con los roles de WordPress, que tienen las mismas características específicas de Tainacan pero no tienen acceso al resto del panel de administración de WordPress.
 
-As funções padrão do WordPress são atribuídas com novos recursos para trabalhar com coleções, itens e outras operações específicas do Tainacan. Além disso, o Tainacan cria novas funções, relativas às funções do WordPress, que possuem os mesmos recursos específicos do Tainacan mas que não têm acesso ao restante do **painel administrativo do WordPress**.
+> Por ejemplo: el _Editor en WordPress_ puede gestionar todo dentro de Tainacan, también puede crear y publicar páginas en el sitio; en cambio, los _editores en Tainacan_ no pueden hacer esto en el sitio.
 
-> Por exemplo: o _Editor no WordPress_ pode gerenciar tudo dentro do Tainacan, eles também podem criar e publicas páginas no site; por outro lado, os _editores do Tainacan_ não podem fazer isso no site.
+Si desea cambiar los permisos para roles o usuarios específicos, o incluso crear nuevos roles, puede utilizar plugins dedicados disponibles para WordPress.
 
-Se você quiser alterar as permissões para **funções** ou usuários específicos, ou até mesmo criar novas funções, você pode usar plugins dedicados a isso disponíveis para WordPress.
+En resumen, estos son los roles y sus principales características. Puede encontrar una descripción detallada en la [siguiente sección](/es-mx/users#funciones-y-permisos).
 
-Resumidamente estas são as funções e suas principais características. Uma descrição detalhada pode ser encontrada na [próxima seção](/es-mx/users#funções-e-permissões).
-
-- **Subscriber** - _Assinante_: Não pode realizar ações dentro do Tainacan.
-- **Colaborator** - _Colaborador_: Pode criar coleções e itens mas não pode publicar.
-- **Author / Tainacan Author** - _Autor / Autor no Tainacan_: Pode criar e publicar coleções e itens, mas não pode editar itens publicados e nem editar itens de outros usuários.
-- **Editor / Tainacan Editor** - _Editor / Editor no Tainacan_: Pode criar, publicar e editar itens e coleções, inclusive de outros usuários.
-- **Administrator** - _Administrador_ - Tem poderes administrativos sobre o site, o repositório, seus itens e conteúdos, podendo inclusive habilitar e desabilitar plug-ins como o Tainacan.
+- **Suscriptor** - _Suscriptor_: No puede realizar acciones dentro de Tainacan.
+- **Colaborador** - _Colaborador_: Puede crear colecciones y elementos pero no puede publicar.
+- **Autor / Tainacan Author**: Puede crear y publicar colecciones e ítems, pero no puede editar los ítems publicados ni editar los ítems de otros usuarios.
+- **Editor / Editor en Tainacan** - _Editor / Editor en Tainacan_: Puede crear, publicar y editar ítems y colecciones, incluyendo los de otros usuarios.
+- **Administrador** - Tiene poderes administrativos sobre el sitio, el repositorio, sus ítems y contenidos, e incluso puede activar y desactivar plug-ins como Tainacan.
 
 ---
 
-## Funções e Permissões
+## Funciones y permisos
 
-Aqui você encontra a documentação detalhada de cada função e suas permissões em cada parte do Tainacan.
+Aquí encontrarás la documentación detallada de cada función y sus permisos en cada parte de Tainacan.
 
 <!-- tabs:start -->
 
-#### ** Coleções **
+#### ** Colecciones **
 
-### Coleções
+### Colecciones
 
-> Nota sobre moderadores de Coleções: **Moderadores de coleções** tem as mesmas permissões que um **editor**, mas apenas nas coleções específicas atribuídas a este usuário. Mesmo se o usuário for um **assinante**, caso seja atribuído como um **editor** de uma coleção, ele passará a ter permissões de **editor** nela.
+> Nota sobre los moderadores de colecciones: **Los moderadores de colecciones** tienen los mismos permisos que un **editor**, pero sólo sobre las colecciones específicas asignadas a ese usuario. Aunque el usuario sea un **suscriptor**, si está asignado como **editor** de una colección, tendrá permisos de **editor** sobre ella.
 
 |                            | Administrador | Editor | Autor | Colaborador |
 | -------------------------- | ------------- | ------ | ----- | ----------- |
-| Editar Coleções            | x             | x      | x     |             |
-| Deletar Coleções           | x             | x      | x     |             |
-| Publicar Coleções          | x             | x      | x     |             |
-| Editar Coleções publicadas | x             | x      | x     |             |
-| Editar outras Coleções     | x             | x      |       |             |
-| Deletar outras Coleções    | x             | x      |       |             |
-| Acessar Coleções privadas  | x             | x      |       |             |
-| Editar Coleções privadas   | x             | x      |       |             |
-| Deletar Coleções privadas  | x             | x      |       |             |
+| Editar colecciones            | x             | x      | x     |             |
+| Eliminar colecciones   | x             | x      | x     |             |
+| Publicar colecciones          | x             | x      | x     |             |
+| Editar colecciones publicadas | x             | x      | x     |             |
+| Editar otras colecciones     | x             | x      |       |             |
+| Eliminar otras colecciones    | x             | x      |       |             |
+| Acceder a colecciones privadas  | x             | x      |       |             |
+| Editar colecciones privadas   | x             | x      |       |             |
+| Eliminar colecciones privadas  | x             | x      |       |             |
 
-#### Publicar Coleções
+#### Publicar colecciones
 
-Permite publicar sua própria coleção.
+Le permite publicar su propia colección.
 
-| Nome da permissão              | Quem pode fazer                                                                  |
+| Nombre del permiso | Quién puede hacerlo                                                                  |
 | ------------------------------ | -------------------------------------------------------------------------------- |
-| `publish_tainacan-collections` | _Administradores, Editores, Editores no Tainacan, Autores e Autores no Tainacan_ |
+| `publish_tainacan-collections` | _Administradores, Editores, Editores en Tainacan, Autores y Autores en Tainacan_ |
 
-#### Editar Coleções
+#### Editar colecciones
 
-Permite criar e editar detalhes da sua própria coleção, mas não permite a sua publicação.
+Le permite crear y editar detalles de su propia colección, pero no le permite publicarla.
 
-| Nome da permissão           | Quem pode fazer                           |
+| Nombre del permiso | Quién puede hacerlo                           |
 | --------------------------- | ----------------------------------------- |
-| `edit_tainacan-collections` | _Todos, menos Assinantes e Colaboradores_ |
+| `edit_tainacan-collections` |_Todos excepto Suscriptores y Colaboradores_ |
 
 #### Editar outras Coleções
 
-Permite editar detalhes de coleções de outros usuários
+Le permite editar detalles de las colecciones de otros usuarios
 
-| Nome da permissão                  | Quem pode fazer                                    |
+| Nombre del permiso | Quién puede hacerlo                                    |
 | ---------------------------------- | -------------------------------------------------- |
-| `edit_others_tainacan-collections` | _Administradores, Editores e Editores no Tainacan_ |
+| `edit_others_tainacan-collections` | _Administradores, Editores y Editores en Tainacan_ |
 
 #### Editar Coleções publicadas
 
-Permite editar detalhes de coleções depois de publicadas
+Permite editar los detalles de la colección después de que se hayan publicado
 
-| Nome da permissão                     | Quem pode fazer                                    |
+| Nombre del permiso | Quién puede hacerlo                                    |
 | ------------------------------------- | -------------------------------------------------- |
-| `edit_published_tainacan-collections` | _Administradores, Editores e Editores no Tainacan_ |
+| `edit_published_tainacan-collections` | _Administradores, Editores y Editores en Tainacan_ |
 
-#### Editar Coleções privadas
+#### Editar colecciones privadas
 
-Permite editar detalhes de coleções marcadas como privadas.
+Le permite editar los detalles de las colecciones marcadas como privadas.
 
-| Nome da permissão                   | Quem pode fazer                                    |
+| Nombre del permiso | Quién puede hacerlo                                    |
 | ----------------------------------- | -------------------------------------------------- |
-| `edit_private_tainacan-collections` | _Administradores, Editores e Editores no Tainacan_ |
+| `edit_private_tainacan-collections` | _Administradores, Editores y Editores en Tainacan_ |
 
 #### Deletar Coleções
 
-Permite deletar suas próprias coleções.
+Le permite eliminar sus propias colecciones.
 
-| Nome da permissão             | Quem pode fazer                           |
+| Nombre del permiso | Quién puede hacerlo                           |
 | ----------------------------- | ----------------------------------------- |
-| `delete_tainacan-collections` | _Todos, menos Assinantes e Colaboradores_ |
+| `delete_tainacan-collections` | Todos excepto suscriptores y colaboradores_ |
 
-#### Deletar outras Coleções
+#### Borrar otras colecciones
 
-Permite deletar coleções de outros usuários
+Le permite eliminar las colecciones de otros usuarios
 
-| Nome da permissão                     | Quem pode fazer                                    |
+| Nombre del permiso | Quién puede hacerlo                                    |
 | ------------------------------------- | -------------------------------------------------- |
-| `delete_others_tainacan-collections`r | _Administradores, Editores e Editores no Tainacan_ |
+| `delete_others_tainacan-collections`r | _Administradores, Editores y Publicadores sobre Tainacan_ |
 
-#### Deletar Coleções publicadas
+#### Borrar colecciones publicadas
 
-Permite deletar coleções depois de publicadas:
+Permite eliminar colecciones una vez publicadas:
 
-| Nome da permissão                       | Quem pode fazer                                    |
+| Nombre del permiso | Quién puede hacerlo                                    |
 | --------------------------------------- | -------------------------------------------------- |
-| `delete_published_tainacan-collections` | _Administradores, Editores e Editores no Tainacan_ |
+| `delete_published_tainacan-collections` | _Administradores, Editores y Editores en Tainacan_ |
 
-#### Acessar Coleções privadas
+#### Acceder a colecciones privadas
 
-Permite acessar coleções marcadas como privadas:
+Permite acceder a las colecciones marcadas como privadas:
 
-| Nome da permissão                   | Quem pode fazer                                    |
+| Nombre del permiso | Quién puede hacerlo                                    |
 | ----------------------------------- | -------------------------------------------------- |
-| `read_private_tainacan-collections` | _Administradores, Editores e Editores no Tainacan_ |
+| `read_private_tainacan-collections` | _Administradores, Editores y Editores en Tainacan_ |
 
-#### Deletar Coleções privadas
+#### Borrar colecciones privadas
 
-Permite deletar coleções marcadas como privadas
+Permite eliminar colecciones marcadas como privadas
 
-| Nome da permissão                     | Quem pode fazer                                    |
+| Nombre del permiso | Quién puede hacerlo                                    |
 | ------------------------------------- | -------------------------------------------------- |
-| `delete_private_tainacan-collections` | _Administradores, Editores e Editores no Tainacan_ |
+| `delete_private_tainacan-collections` | _Administradores, Editores y Editores en Tainacan_ |
 
-#### ** Itens **
+#### ** Elementos **
 
-### Itens
+### Elementos
 
-Esta seção explica as permissões relacionadas à gestão de itens no repositório.
+Esta sección explica los permisos relacionados con la gestión de ítems en el repositorio.
 
-Para cada usuário no Tainacan estão atribuídas um conjunto de permissões para cada coleção no repositório, de acordo com sua [Função](/es-mx/users#funções-e-permissões).
+Cada usuario de Tainacan tiene asignado un conjunto de permisos para cada colección del repositorio, según su [Rol](/es-mx/users#funciones-y-permisos).
 
-As permissões são independentes para cada coleção. Portanto, dependendo do caso, um usuário pode ser Editor em uma coleção mas não ter essas mesmas permissões em uma outra coleção.
+Los permisos son independientes para cada colección. Por lo tanto, dependiendo del caso, un usuario puede ser Editor en una colección pero no tener esos mismos permisos en otra colección.
 
-Permissões para um coleção em específico podem ser atribuídas adicionando este usuário como um moderador na coleção desejada. Neste caso, o usuário terá os mesmos direitos de um Editor, mas apenas nesta coleção especificada.
+Los permisos para una colección específica se pueden asignar añadiendo a este usuario como moderador en la colección deseada. En este caso, el usuario tendrá los mismos derechos que un Editor, pero sólo en esta colección especificada.
 
-> Também é possível usar um Plug-in para WordPress e passar a controlar de forma modular as permissões de cada usuário em cada coleção.
+> También es posible utilizar un plugin de WordPress y controlar los permisos de cada usuario en cada colección de forma modular.
 
-Na descrição a seguir você encontra as características de cada permissão aplicadas para cada coleção. Cada usuário e função tem um conjunto de 10 permissões em cada coleção.
+En la siguiente descripción encontrará las características de cada permiso aplicado a cada colección. Cada usuario y rol tiene un conjunto de 10 permisos en cada colección.
 
 |                         | Administrador | Editor | Autor | Colaborador |
 | ----------------------- | ------------- | ------ | ----- | ----------- |
-| Editar Itens            | x             | x      | x     | x           |
-| Deletar Itens           | x             | x      | x     | x           |
-| Publicar Itens          | x             | x      | x     |             |
-| Editar Itens publicados | x             | x      | x     |             |
-| Editar outros Itens     | x             | x      |       |             |
-| Deletar outros Itens    | x             | x      |       |             |
-| Acessar Itens privados  | x             | x      |       |             |
-| Editar Itens privados   | x             | x      |       |             |
-| Deletar Itens privados  | x             | x      |       |             |
+| Editar elementos            | x             | x      | x     | x           |
+| Eliminar elementos           | x             | x      | x     | x           |
+| Publicar elementos          | x             | x      | x     |             |
+| Editar elementos publicados | x             | x      | x     |             |
+| Editar otros elementos     | x             | x      |       |             |
+| Eliminar otros elementos    | x             | x      |       |             |
+| Acceder a elementos privados  | x             | x      |       |             |
+| Editar elementos privados   | x             | x      |       |             |
+| Eliminar elementos privados  | x             | x      |       |             |
 
-#### Publicar Itens
+#### Publicar elementos
 
-Permite a publicação dos próprios itens.
+Le permite publicar sus propios elementos.
 
-| Nome da permissão               | Quem pode fazer                                                                 |
+| Nombre del permiso | Quién puede hacerlo                                                               |
 | ------------------------------- | ------------------------------------------------------------------------------- |
-| `publish_%collection_id%_items` | _Administradores, Editores, Editores no Tainacan Autores e Autores no Tainacan_ |
+| `publish_%collection_id%_items` | _Administradores, Editores, Editores en Tainacan Autores y Autores en Tainacan_ |
 
-#### Editar Itens
+#### Editar elementos
 
-Permite a criação e a edição dos próprios itens, mas não permite a publicação deles.
+Le permite crear y editar sus propios elementos, pero no le permite publicarlos.
 
-| Nome da permissão            | Quem pode fazer           |
+| Nombre del permiso | Quién puede hacerlo           |
 | ---------------------------- | ------------------------- |
-| `edit_%collection_id%_items` | _Todos, menos assinantes_ |
+| `edit_%collection_id%_items` | Todos excepto los suscriptores |
 
-#### Editar outros Itens
+#### Editar otros elementos
 
-Permite a edição de Itens de outros usuários
+Permite editar los elementos de otros usuarios
 
-| Nome da permissão                   | Quem pode fazer                                   |
+| Nombre del permiso | Quién puede hacerlo                                   |
 | ----------------------------------- | ------------------------------------------------- |
-| `edit*others*%collection_id%\_items | _Administradores, Editores, Editores no Tainacan_ |
+| `edit*others*%collection_id%\_items | _Administradores, Editores, Editores en Tainacan_ |
 
-#### Editar Itens publicados
+#### Editar artículos publicados
 
-Permite a edição de itens depois de publicados
+Permite editar elementos después de que hayan sido publicados
 
-| Nome da permissão                      | Quem pode fazer                                   |
+| Nombre del permiso | Quién puede hacerlo                                   |
 | -------------------------------------- | ------------------------------------------------- |
-| `edit_published_%collection_id%_items` | _Administradores, Editores, Editores no Tainacan_ |
+| `edit_published_%collection_id%_items` | _Administradores, Editores, Editores en Tainacan_ |
 
-#### Editar Itens privados
+#### Editar elementos privados
 
-Permite a edição de itens marcados como privados
+Permite editar elementos marcados como privados
 
-| Nome da permissão                    | Quem pode fazer                                 |
+| Nombre del permiso | Quién puede hacerlo                                 |
 | ------------------------------------ | ----------------------------------------------- |
-| `edit_private_%collection_id%_items` | Administradores, Editores, Editores no Tainacan |
+| `edit_private_%collection_id%_items` | _Administradores, Editores, Editores en Tainacan_ |
 
-#### Deletar Itens
+#### Editar elementos privados
 
-Permite deletar os próprios itens:
+Permite editar elementos marcados como privados
 
-| Nome da permissão              | Quem pode fazer           |
+| Nombre del permiso | Quién puede hacerlo             |
 | ------------------------------ | ------------------------- |
-| `delete_%collection_id%_items` | _Todos, menos assinantes_ |
+| `delete_%collection_id%_items` | _Todos excepto los suscriptores_ |
 
-#### Deletar outros Itens
+#### Borrar otros elementos
 
-Permite deletar itens de outros usuários.
+Le permite eliminar elementos de otros usuarios.
 
-| Nome da permissão                     | Quem pode fazer                                   |
+| Nombre del permiso | Quién puede hacerlo                                   |
 | ------------------------------------- | ------------------------------------------------- |
-| `delete_others_%collection_id%_items` | _Administradores, Editores, Editores no Tainacan_ |
+| `delete_others_%collection_id%_items` | _Administradores, Editores, Editores en Tainacan_ |
 
-#### Deletar Itens publicados
+#### Eliminar artículos publicados
 
-Permite deletar itens depois de publicados
+Le permite eliminar elementos una vez que han sido publicados
 
-| Nome da permissão                        | Quem pode fazer                                   |
+| Nombre del permiso | Quién puede hacerlo                                   |
 | ---------------------------------------- | ------------------------------------------------- |
-| `delete_published_%collection_id%_items` | _Administradores, Editores, Editores no Tainacan_ |
+| `delete_published_%collection_id%_items` | _Administradores, Editores, Editores en Tainacan_ |
 
-#### Acessar Itens privados
+#### Acceder a elementos privados
 
-Permite acessar itens marcados como privado
+Permite el acceso a elementos marcados como privados
 
-| Nome da permissão                    | Quem pode fazer                                   |
+| Nombre del permiso | Quién puede hacerlo                                   |
 | ------------------------------------ | ------------------------------------------------- |
-| `read_private_%collection_id%_items` | _Administradores, Editores, Editores no Tainacan_ |
+| `read_private_%collection_id%_items` | _Administradores, Editores, Editores en Tainacan_ |
 
-#### Deletar Itens privados
+#### Borrar elementos privados
 
-Permite deletar itens marcados como privado
+Le permite borrar elementos marcados como privados
 
-| Nome da permissão                      | Quem pode fazer                                   |
+| Nombre del permiso | Quién puede hacerlo                                   |
 | -------------------------------------- | ------------------------------------------------- |
-| `delete_private_%collection_id%_items` | _Administradores, Editores, Editores no Tainacan_ |
+| `delete_private_%collection_id%_items` | _Administradores, Editores, Editores en Tainacan_ |
 
-#### ** Taxonomias **
+#### ** Taxonomías **
 
-### Taxonomias
+### Taxonomías
 
-?> _TODO_ Documentar permissões de taxonomias
+?> _TODO_ Permisos de taxonomía de documentos
 
-#### ** Metadados **
+#### ** Metadatos **
 
-### Metadados
+### Metadatos
 
-?> _TODO_ Documentar permissões de metadados
+?> _TODO_ Permisos de metadatos del documento
 
 #### ** Filtros **
 
 ### Filtros
 
-?> _TODO_ Documentar permissões de filtros
+?> _TODO_ Permisos de filtro del documento
 
 <!-- tabs:end -->
