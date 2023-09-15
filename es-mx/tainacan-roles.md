@@ -1,36 +1,34 @@
-# Funções de Usuários do Tainacan
+# Roles de Usuario Tainacan
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Los administradores de WordPress suelen encontrar las siguientes opciones de rol de usuario por defecto:
 
-Administradores do WordPress, frequentemente encontram por padrão as seguintes opções de funções de usuários:
+- **Administrador** - El "pez gordo" del sistema, que no sólo puede cambiar cualquier contenido, sino también gestionar plugins, temas y otras configuraciones del sitio.
+- **Editor** - Usuarios con permisos de acceso y edición del contenido del sitio, como Entradas y Comentarios. También pueden subir imágenes, crear categorías y actividades similares.
+- **Autor** - Usuarios que pueden crear contenido y editar sus propias entradas.
+- **Colaborador** - Similar al Autor, pero no pueden publicar el post, esto se deja para roles más poderosos. No pueden gestionar contenido multimedia como imágenes o crear categorías.
+- **Suscriptor** - Usuarios sin poder dentro del panel de administración de WordPress, sólo ven lo que es público en el sitio. Sólo sirven para controlar a los usuarios logueados que pueden, por ejemplo, leer posts exclusivos para suscriptores.
 
-- **Administrador** - O "manda chuva" do sistema, que pode além de alterar qualquer conteúdo, gerenciar plugins, temas e outras configurações do site.
-- **Editor** - Usuários com acesso e permissão de edição para o conteúdo do site tais como Posts e Comentários. Também podem subir imagens, criar categorias e atividades similares.
-- **Autor** - Usuários que podem criar conteúdos e editar seus próprios Posts.
-- **Colaborador** - Similar ao Autor, porém não podem publicar o post, isso fica responsável para funções de maior poder. Não podem gerir conteúdos de mídia como imagens nem criar categorias.
-- **Assinante** - Usuários sem nenhum poder dentro do painel administrativo do WordPress, apenas enxergam o que é público no site. Servem apenas para se ter controle sobre usuários com login que podem, por exemplo, ler posts exclusivos para assinantes.
+Al instalar Tainacan, sin embargo, aparecen nuevas funciones de usuario. Veamos cuáles son:
 
-Ao instalar o Tainacan, porém, novas funções de usuário surgem. Vejamos a seguir quais são elas:
+- **Administrador de Tainacan** - _Administrador en Tainacan_: Tiene poderes administrativos sobre el repositorio, sus elementos y contenidos, e incluso puede configurar nuevos roles de usuario y cambiar sus permisos.
+- **Editor de Tainacan** - _Editor en Tainacan_: Puede crear, publicar y editar ítems y colecciones, incluyendo las de otros usuarios.
+- **Autor en Tainacan_: Puede crear y publicar colecciones e ítems, pero no puede editar ítems publicados ni editar ítems de otros usuarios.
 
-- **Tainacan Administrator** - _Administrador no Tainacan_: Tem poderes administrativos sobre o repositório, seus itens e conteúdos, podendo inclusive configurar novas funções de usuários e alterar suas permissões.
-- **Tainacan Editor** - _Editor no Tainacan_: Pode criar, publicar e editar itens e coleções, inclusive de outros usuários.
-- **Tainacan Author** - _Autor no Tainacan_: Pode criar e publicar coleções e itens, mas não pode editar itens publicados e nem editar itens de outros usuários.
+Tenga en cuenta que **los roles de usuario en Tainacan no otorgan ninguno de los privilegios que pueden ser necesarios para tocar el resto del contenido de WordPress**. Por tanto, es posible tener un usuario gestionando tu repositorio que no interfiera con el contenido del blog.
 
-Note que **as funções de usuário no Tainacan não garantem nenhum dos privilégios que podem ser necessários para se mexer no restante do conteúdo do WordPress**. Dessa maneira, é possível ter um usuário gestor do seu repositório que não interfira no conteúdo do blog.
+?> Lo contrario, sin embargo, depende del nivel. Mientras que el _Administrador en Tainacan_ no tiene permisos en el panel de administración de WordPress por defecto, el _Administrador de WordPress_ tiene todos los permisos que tiene el _Administrador en Tainacan_, más los suyos propios. El _Editor de WordPress_ también tiene todos los permisos que tiene el _Administrador en Tainacan_. Por otro lado, el _Autor en Tainacan_ tiene por defecto el mismo nivel de permisos que un _Suscriptor de WordPress_ en el panel de administración de WordPress.
 
-?> O contrário porém, depende do nível. Enquanto o _Administrador no Tainacan_ não tem nenhuma permissão sobre o painel administrativo do WordPress por padrão, o _Administrador do WordPress_ tem todas as permissões que o _Administrador no Tainacan_, além das suas próprias. O _Editor do WordPress_ também possui todas as permissões que o _Administrador no Tainacan_ possui. Por outro lado, o _Autor no Tainacan_ tem por padrão o mesmo nível de permissão que um _Assinante do WordPress_ no painel administrativo do WordPress.
+Vamos a entender algunas situaciones que pueden ser deseables y el mejor tipo de rol que se puede asignar a un usuario:
 
-Vamos compreender algumas situações que podem ser desejáveis e qual o melhor tipo de função que pode ser atribuída para um usuário:
+1. Si un usuario sólo debe tener permisos para crear y editar sus propios artículos en Tainacan -sin modificar los de otros usuarios- y sin tocar el contenido del blog o sitio web, su rol apropiado sería probablemente _Autor en Tainacan_;
+2. Si un usuario debe tener permisos para gestionar completamente un repositorio en Tainacan, pero no cambiar nada en el sitio WordPress, su rol debería ser _Administrador en Tainacan_;
+3. Si un usuario debe ser capaz de crear y editar elementos en Tainacan, y al mismo tiempo ser capaz de crear y moderar entradas en WordPress, su rol más apropiado sería _Editor_ (de WordPress);
+4. Si un usuario debe poder tener control sobre todo el repositorio de Tainacan, pero en WordPress sólo debe poder editar sus propios artículos, entonces éste debe ser un _Author_ (de WordPress) y su rol debe ser editado, usando [la página de configuración de roles de Tainacan](/es-mx/manage-user-roles.md), para otorgarle los permisos necesarios relacionados con Tainacan.
 
-1. Se um usuário deve ter permissões apenas para criar e editar seus itens no Tainacan - sem alterar itens de outros usuários - e sem mexer no conteúdo do blog ou site, sua função adequada provavelmente será a de _Autor no Tainacan_;
-2. Se um usuário deve ter permissões para gerenciar por completo um repositório no Tainacan, mas não alterar nada do site WordPress, sua função deverá ser a de _Administrador do Tainacan_;
-3. Se um usuário deve poder criar e editar itens no Tainacan, e ao mesmo tempo poder criar e moderar posts no WordPress, sua função mais apropriada seria de _Editor_ (do WordPress);
-4. Se um usuário deve poder ter controle sobre todo o repositório Tainacan, mas no WordPress deve poder apenas editar seus próprios itens, então este deve ser um _Autor_ (do WordPress) e sua função deve ser editada, usando [a página de configuração de funções do Tainacan](/es-mx/manage-user-roles.md), para lhe conceder as permissões necessárias relacionadas ao Tainacan.
+Los permisos en Tainacan fueron diseñados de esta manera porque no es posible, _por defecto_, cambiar qué permisos relacionados con WordPress tiene un rol de usuario. Sin embargo, esto es totalmente factible usando uno de los muchos plugins de configuración de permisos y roles que existen en WordPress ([ver algunos aquí](https://wordpress.org/plugins/search/user+roles/ ":ignore")).
 
-As permissões no Tainacan foram pensadas desta maneira porque não é possível, _por padrão_, alterar quais permissões relacionadas ao WordPress uma função de usuário tem. Porém, isso é totalmente viável com o uso de algum dos diversos plugins de configuração de permissões e funções existentes no WordPress ([vejam alguns aqui](https://wordpress.org/plugins/search/user+roles/ ":ignore")).
+Siga leyendo para saber más:
 
-A seguir, entenda melhor:
-
-- As [Permissões do Tainacan](/es-mx/capabilities.md)
-- Como [Gerenciar Funções de Usuários](/es-mx/manage-user-roles.md)
-- Como [Gerenciar Permissões Específicas](/es-mx/manage-specific-capabilities.md) em certas coleções
+- [Permisos de Tainacan](/es-mx/capabilities.md)
+- Cómo [gestionar roles de usuario](/es-mx/manage-user-roles.md)
+- Cómo [gestionar permisos específicos](/es-mx/manage-specific-capabilities.md) en determinadas colecciones

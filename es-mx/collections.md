@@ -1,217 +1,214 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Coleções" 
+		alt="Icono de Colecciones" 
 		src="_assets/images/icon_collections.png"
 		width="42"
 		height="42">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-# Coleções
+# Colecciones
 
-Uma “coleção” é um grupo de “itens” que compartilham um mesmo conjunto de metadados. Cada item enviado para seu repositório digital pertencerá a uma única “coleção”.
+Una "colección" es un grupo de "elementos" que comparten un conjunto común de metadatos. Cada elemento subido a tu repositorio digital pertenecerá a una única “colección”.
 
-> Por exemplo: você pode ter uma “coleção” de “pinturas” com metadados como “Título”, “Autor”, “País”, “Técnica”, e etc., e, outra “coleção” para “filmes”, com metadados “Título”, “Diretor”, “País”, “Duração” e “Gênero”.
+> Por ejemplo: se puede tener una “colección” de “pinturas” con metadatos como “Título”, “Autor”, “País”, “Técnica”, etc., y otra “colección” de “películas”, con metadatos “Título”, “Director”, “País”, “Duración” y “Género”.
 
-Para cada “coleção” você pode configurar um conjunto diferente de metadados, entretanto, eles podem compartilhar taxonomias em comum, o que significa, por exemplo, que você pode navegar por itens de um “País” e obter resultados de “pinturas” e de “filmes” nos resultados.
+Para cada “colección” puedes configurar un conjunto diferente de metadatos, sin embargo, pueden compartir taxonomías comunes, lo que significa, por ejemplo, que alguien puede buscar elementos de un “País” y obtener resultados de “pinturas” y de “películas” en los resultados.
 
-> Consulte a seção [Taxonomias](#taxonomias) para saber mais
+> Ver la sección [Taxonomías](/es-mx/general-concepts.md#taxonomías) para saber más.
 
-## Criar Coleções
+## Crear colecciones
 
-1. Acesse o “Painel de Controle” do WordPress;
+1. Accede al “Panel de control” de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+   ![Accede al panel de control](_assets/images/002.png)
 
-3. Clique em “criar coleção” na seção “coleções”.
+3. Haz clic en "crear colección" en la sección "colecciones".
 
-   ![Acesse o painel de controle](_assets\images\003.png)
+   ![Accede al panel de control](_assets/images/003.png)
 
-4. Nomeie a “coleção” no campo “Nome”;
+4. Nombra la "colección" en el campo "Nombre”;
 
-   ![Acesse o painel de controle](_assets\images\004.png)
+   ![Accede al panel de control](_assets/images/004.png)
 
-5. Defina seu status entre "publicado", "privado", ou "lixo". O status da “coleção” define a visibilidade dos seus itens. Veja a seguir:
+5. Establece el estado de la colección en "publicado", "privado" o "basura". El estado de "colección" define la visibilidad de sus elementos como se indica a continuación:
 
-   ○ **“Publicado”**: “coleções” definidas como “publicado”, podem ser acessadas pelo público com acesso ao site assim que criadas;
+   ○ **“Publicado”**: las “colecciones” definidas como “publicadas”, pueden ser consultadas por el público con acceso al sitio tan pronto como se crean;
 
-   ○ **“Privado”**: “coleções” com o status de “privado”, aparecem apenas para seu criador e usuários registrados do seu WordPress que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários;
+   ○ **“Privado”**: colecciones” con el estado de “privado”, solo pueden ser vistas por quien las creó y por usuarios registrados en tu WordPress que tienen configurado el permiso por defecto. Puedes definir quién puede acceder a tus "colecciones privadas" en "Permisos de usuario";
 
-   ○ **“Lixo”**: “coleções” no “lixo” serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: “editores”, “moderadores” e “administradores”). Consulte Permissões de Usuários para saber mais.
+   ○ **“Basura”**: las “colecciones” en “papelera” serán vistas por los usuarios con permiso de acceso al panel administrativo de Tainacan (por ejemplo: “editores”, “moderadores” y “administradores”). Consulta Permisos de usuario para obtener más información.
 
-   ![Acesse o painel de controle](_assets\images\005.png)
+   ![Accede al panel de control](_assets/images/005.png)
 
-6. Defina uma “miniatura” e uma “imagem do cabeçalho” com imagens que representem o conteúdo que fará parte dessa “coleção”:
+6. Define una “miniatura” y una “imagen de cabecera” con imágenes que representen el contenido que formará parte de esta “colección”:
 
-   ○ A “imagem de miniatura” representará a “coleção” em diferentes ambientes no plugin e no tema do repositório (assim como a foto de um perfil no Facebook);
+   ○ La “imagen miniatura” representará la "colección" en diferentes entornos del plugin y del tema del repositorio (igual que una foto de perfil de Facebook);
 
-   ![Acesse o painel de controle](_assets\images\006.png)
+   ![Accede al panel de control](_assets/images/006.png)
 
-   ○ A “imagem do cabeçalho”, aparece na visualização da “coleção”, dependendo das configurações e do layout adotado. O tema padrão do Tainacan exibe a “imagem do cabeçalho” na “página da coleção”.
+   ○ La “imagen de cabecera”, aparece en la vista "colección", dependiendo de la configuración y el diseño adoptado. El tema Tainacan, por defecto muestra la "imagen de cabecera" en la "página de colección".
 
-   ![Acesse o painel de controle](_assets\images\007.png)
+   ![Accede al panel de control](_assets/images/007.png)
 
-7. Habilite a página de capa e adicione a URL específica caso esteja criando uma página com layout personalizado para exibir sua “coleção”. Essa configuração é opcional;
+7. Activa la portada y añada la URL específica si está creando un diseño de página personalizado para mostrar su "colección". Esta configuración es opcional;
 
-8. Insira uma descrição sobre o conteúdo que fará parte desta “coleção”;
+8. Agrega una descripción del contenido que formará parte de esta “colección”;
 
-   ![Acesse o painel de controle](_assets\images\008.png)
+   ![Accede al panel de control](_assets/images/008.png)
 
-9. Selecione um ou mais “modos de visualização” disponíveis no tema para a navegação na visualização da “coleção”;
+9. Selecciona uno o varios "modos de vista" disponibles en el tema para navegar por la vista "Colección";
 
-   > Nota: Apenas os modos selecionados ficam disponíveis para “visualização da coleção”.
+   > Nota: Solo los modos seleccionados están disponibles para la "Vista de colección".
 
-   ![Acesse o painel de controle](_assets\images\009.png)
+   ![Accede al panel de control](_assets/images/009.png)
 
-10. Defina um “modo de visualização padrão” para sua “coleção”. Você pode selecionar entre aqueles definidos no passo 9;
+10. Elige un "modo de visualización por defecto" para tu "colección". Puedes seleccionar uno de los modos descritos en el paso 9;
 
-    ![Acesse o painel de controle](_assets\images\010.png)
+    ![Accede al panel de control](_assets/images/010.png)
 
-11. Selecione se deseja “Permitir Comentários” na “coleção”. Os comentários podem ser geridos na seção de comentários do painel do WordPress. Saiba sobre o gerenciamento de comentários na documentação do WordPress;
+11. Selecciona si deseas "Permitir comentarios" en la "colección". Los comentarios se pueden administrar en la sección de comentarios del panel de control de WordPress. Aprende sobre la gestión de comentarios en la documentación de WordPress;
 
-    ![Acesse o painel de controle](_assets\images\011.png)
+    ![Accede al panel de control](_assets/images/011.png)
 
-12. O campo “Slug” permite alterar a URL desta “coleção”. Por padrão, ela é criada a partir do nome da “coleção”, mas pode ser alterada neste campo;
+12. El campo “Slug” permite cambiar la URL de esta “colección”. Por defecto se crea a partir del nombre de la “colección”, pero se puede cambiar en este campo;
 
-    ![Acesse o painel de controle](_assets\images\063.png)
+    ![Accede al panel de control](_assets/images/012.png)
 
-13. Clique em “Salvar e ir para Metadados” para acessar a configuração de metadados desta “coleção”. Consulte Metadados para saber mais;
+13. Haz clic en “Guardar e ir a Metadatos” para acceder a la configuración de metadatos de esta “colección”. Consulta Metadatos para obtener más información;
 
-    ![Acesse o painel de controle](_assets\images\062.png)
+    ![Accede al panel de control](_assets/images/013.png)
 
-14. Ou
+14. O haz clic en "Guardar e ir a Filtros" para acceder a la configuración de filtros para esta "colección". Consulta Filtros para obtener más información;
 
-15. Clique em “Salvar e ir para Filtros” para acessar a configuração de filtros desta “coleção”. Consulte Filtros para saber mais;
+    ![Accede al panel de control](_assets/images/014.png)
 
-    ![Acesse o painel de controle](_assets\images\061.png)
+15. Haz clic en "Finalizar" para terminar de configurar esta nueva "colección".
 
-16. Clique em “Concluir” para terminar a configuração desta nova “coleção”. ![Acesse o painel de controle](_assets\images\060.png)
+    ![Accede al panel de control](_assets/images/015.png)
 
-## Editar Coleções
+## Editar colecciones
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
-3. Clique em "Ver todas as coleções";
+3. Haz clic en "Ver todas las colecciones";
 
-   ![Acesse o painel de controle](_assets\images\056.png)
+   ![Accede al panel de control](_assets/images/052.png)
 
-4. Na seção “Coleções” clique no “ícone engrenagem” à direita para editar a “coleção” desejada.
+4. En la sección "Colecciones", haz clic en el "ícono de engranaje" a la derecha para editar la "colección" deseada.
 
-   ![Acesse o painel de controle](_assets\images\058.png)
+   ![Accede al panel de control](_assets/images/053.png)
 
-## Excluir Coleções
+## Eliminar colecciones
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em _Tainacan_;
+2. En la barra lateral izquierda, haz clic en _Tainacan_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
-3. Clique em "Ver todas as coleções";
+3. Haz clic en "Ver todas las colecciones";
 
-   ![Acesse o painel de controle](_assets\images\056.png)
+   ![Accede al panel de control](_assets/images/052.png)
 
-4. Na listagem de coleções, clique no “ícone de lixeira” para excluir a coleção desejada;
+4. En la lista de colecciones, haz clic en el "icono de papelera" para eliminar la colección deseada;
 
-   ![Acesse o painel de controle](_assets\images\054.png)
+   ![Accede al panel de control](_assets/images/054.png)
 
-5. As “coleções excluídas” vão para a aba "Lixo", em "Coleções".
+5. Las "colecciones eliminadas" van a la pestaña "Papelera" en "Colecciones".
 
-   ![Acesse o painel de controle](_assets\images\055.png)
+   ![Accede al panel de control](_assets/images/055.png)
 
-### Excluir coleções em lote
+### Eliminar colecciones por lotes
 
-1. Acesse o painel de controle do _WordPress_;
+1. Accede al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Accede al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em _Tainacan_;
+2. En la barra lateral izquierda, haz clic en _Tainacan_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Accede al panel de control](_assets/images/051.png)
 
-3. Clique em “Ver todas as coleções” para acessar a lista de “coleções” do seu repositório;
+3. Haz clic en "Ver todas las colecciones" para acceder a la lista de "colecciones" en tu repositorio;
 
-   ![Acesse o painel de controle](_assets\images\Ver_todas_colecoes.png)
+   ![Accede al panel de control](_assets/images/052.png)
 
-4. Clique na caixa de seleção (localizada à esquerda das miniaturas das coleções) de cada uma que deseja excluir, ou clique em “Selecionar todas as coleções na página”;
+4. Haz clic en la casilla de verificación (ubicada a la izquierda de las miniaturas de la colección) para elegir las que desees eliminar o haz clic en "Seleccionar todas las colecciones en la página";
 
-   ● Se desejar, também é possível selecionar todas as “coleções”. Para isso, primeiro clique em “Selecionar todas as coleções na página” e então clique em “Selecionar todas”.
+   ![Accede al panel de control](_assets/images/Seleccionar_colecciones.png)
 
-   ![Acesse o painel de controle](_assets\images\Selecionar_colecoes.png)
+5. Haz clic en "Acciones en lote" y luego haz clic en "Eliminar colecciones seleccionadas"
 
-5. Clique em “Ações em massa” e, depois, clique em “Deletar Coleções selecionadas”
+   ![Accede al panel de control](_assets/images/Borrar_las_colecciones_seleccionadas.png)
 
-   ![Acesse o painel de controle](_assets\images\Deletar_colecoes_selecionadas.png)
+6. Para ver las "colecciones eliminadas" ve a la pestaña "Papelera" en "Colecciones".
 
-6. As “coleções excluídas” vão para a aba "Lixo", em "Coleções".
+   ![Accede al panel de control](_assets/images/Ver_papelera.png)
 
-   ![Acesse o painel de controle](_assets\images\055.png)
+### Recuperar colecciones eliminadas
 
-### Recuperar Coleções excluídas
+1. Accede al “panel de control” de WordPress;
 
-1. Acesse o “painel de controle” do WordPress;
+   ![Accede al panel de control](_assets/images/050.png)
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+   ![Accede al panel de control](_assets/images/051.png)
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+3. Haz clic en "Ver todas las colecciones" para acceder a la "lista de colecciones" de tu repositorio;
 
-3. Clique em “Ver todas as coleções” para acessar a “lista de coleções” do seu repositório;
+   ![Accede al panel de control](_assets/images/052.png)
 
-   ![Acesse o painel de controle](_assets\images\Ver_todas_colecoes.png)
+4. Para deshacer la eliminación de "colecciones", ve a la pestaña "Papelera";
 
-4. Para desfazer a exclusão de “coleções”, acesse a aba “Lixo”;
+   ![Accede al panel de control](_assets/images/Ver_papelera.png)
 
-   ![Acesse o painel de controle](_assets\images\Colecoes_no_lixo.png)
+5. En la "lista de colecciones" que se muestra, haz clic en el "ícono de engranaje" a la derecha de la colección deseada;
 
-5. Na “lista de coleções” exibidas, clique no “ícone de engrenagem” à direita da coleção desejada;
+   ![Accede al panel de control](_assets/images/Recuperar_coleccion.png)
 
-   ![Acesse o painel de controle](_assets\images\recuperar_colecao.png)
+6. Edita la "configuración de la colección" cambiando el estado entre "Publicado" o "Privado" para eliminarlo de la "Papelera":
 
-6. Edite a “configuração da coleção” alterando o status entre “Publicado” ou “Privado” para a remover do “Lixo”:
+   ○ **“Publicado”**: El público puede acceder a las "Colecciones" configuradas como "Publicadas" con acceso al sitio tan pronto como se crean;
 
-   ○ **“Publicado”**: “Coleções” definidas como “Publicado” podem ser acessadas pelo público com acesso ao site assim que criadas;
+   ○ **“Privado”**: Las “Colecciones privadas” solo aparecen para su creador y los usuarios registrados de su WordPress, que tienen el conjunto de permisos predeterminado. Puedes definir quién puede acceder a las "colecciones privadas" en Permisos de usuario.
 
-   ○ **“Privado”**: “Coleções Privadas” aparecem apenas para seu criador e usuários registrados do seu WordPress, que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários.
+   ![Accede al panel de control](_assets/images/Cambiar_estado_de_coleccion.png)
 
-   ![Acesse o painel de controle](_assets\images\Alterar_status_colecao.png)
+7. Haz clic en "Finalizar" para guardar el cambio.
 
-7. Clique em “Concluir” para salvar a alteração.
+   ![Accede al panel de control](_assets/images/Guardar_modificaciones.png)
 
-   ![Acesse o painel de controle](_assets\images\Salvar_modificaoes_colecao.png)
+### Eliminar colecciones de forma permanente
 
-### Excluir coleções permanentemente
+1. Accede al “panel de control” de WordPress;
 
-1. Acesse o “painel de controle” do WordPress;
+   ![Accede al panel de control](_assets/images/050.png)
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+   ![Accede al panel de control](_assets/images/051.png)
 
-   ![Acesse o painel de controle](_assets\images\002.png)
+3. Haz clic en "Ver todas las colecciones" para acceder a la "lista de colecciones" de tu repositorio;
 
-3. Clique em “Ver todas as coleções” para acessar a “lista de coleções” do seu repositório;
+   ![Accede al panel de control](_assets/images/052.png)
 
-   ![Acesse o painel de controle](_assets\images\Ver_todas_colecoes.png)
+4. Para deshacer la “eliminación de colecciones” accede a la pestaña “Papelera”;
 
-4. Para desfazer a “exclusão de coleções” acesse a aba “Lixo”;
+   ![Accede al panel de control](_assets/images/Ver_papelera.png)
 
-   ![Acesse o painel de controle](_assets\images\Colecoes_no_lixo.png)
+5. Haz clic en el "icono de papelera" junto al "icono de engranaje" y luego en "Confirmar para eliminar una colección de forma permanente".
 
-5. Clique no “ícone lixeira”, ao lado do “ícone engrenagem” e, depois, em “Confirmar para excluir permanentemente uma coleção”.
-
-   ![Acesse o painel de controle](_assets\images\Excluir_colecao_permanentemente.png)
+   ![Accede al panel de control](_assets/images/Eliminar_permanentemente.png)

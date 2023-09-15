@@ -1,56 +1,55 @@
-# Roteiro de Testes
+# Script de prueba
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Esta sessão descreve o roteiro para testes de integridade na instalação ou atualização do Plugin do Tainacan para WordPress:
+Esta sección describe el script para las pruebas de integridad al instalar o actualizar el plugin Tainacan para WordPress:
 
-## Fluxo para lançamento de versão RC _(Release Candidate)_
+## Flujo de lanzamiento de versión RC _(Release Candidate)_
 
-Estes são os procedimentos para que novas versões do plugin do Tainacan sejam validadas previamente pela comunidade, evitando o envio do plugin com a presença de bugs para o repositório do WordPress:
+Estos son los procedimientos para asegurar que las nuevas versiones del plugin Tainacan son validadas previamente por la comunidad, evitando que el plugin sea enviado al repositorio de WordPress con errores:
 
-1. Divulgar a RC na [comunidade do Tainacan](https://tainacan.discourse.group) para que sejam realizados os testes de uso;
-2. Fazer testes seguindo este [Roteiro de Testes](#roteiro-de-testes-do-plugin) a seguir;
-3. Resolver eventuais problemas encontrados e lançar uma nova versão RC _(Release Candidate)_ até os testes não apontarem problemas.
-4. A partir disso, seguir os passos para [lançar uma nova versão](/dev/release.md) para WordPress.
+1. Dar a conocer la RC en [comunidad de Tainacan](https://tainacan.discourse.group) para la realización de pruebas de uso;
+2. Realizar las pruebas siguientes [Script de prueba](#script-de-pruebas-de-tainacan) a seguir;
+3. Resolver los problemas encontrados y publicar una nueva versión RC _(Release Candidate)_ hasta que las pruebas no muestren problemas.
+4. A partir de ahí, siga los pasos para [lanzar una nueva versión](/es-mx/dev/release.md) para Wordpress.
 
-## Roteiro de Testes do Plugin
+## Script de pruebas de Tainacan
 
-Este roteiro é destinado para a realização de testes que verifiquem o funcionamento adequado das funções e a realização de processos pelo Plugin do Tainacan.
+Este script está destinado a realizar pruebas para comprobar que las funciones funcionan correctamente y que el Plugin Tainacan lleva a cabo los procesos.
 
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/es-mx/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Los problemas encontrados pueden notificarse como [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en [foro de la comunidad](https://tainacan.discourse.group ":ignore") de Tainacan. Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de Preguntas Frecuentes](/es-mx/faq#creo-que-encontré-un-error-¿qué-tengo-que-hacer).
 
-Há vários tipos de testes que podem ser feitos para cobrir o máximo de funcionalidades possíveis. Todos começam com as seguintes etapas básicas:
+Hay varios tipos de pruebas que se pueden llevar a cabo para cubrir la mayor funcionalidad posible. Todas empiezan con los siguientes pasos básicos:
 
 <div style="float: right; margin-left: 32px;">
 
-![Menu de Admin do Tainacan](/_assets/images/release-testing-1.png)
+![Menu de Admin de Tainacan](/_assets/images/release-testing-1.png)
 
 </div>
 
-1. Acesse o **painel de controle do WordPress** onde a sua versão de testes do plugin Tainacan está instalada e ativada (geralmente, o endereço do seu site + `/wp-admin`);
-2. Na barra lateral esquerda, clique em **Diagnóstico da Instalação** na seção Tainacan:
-3. Verifique se a instalação está com os requisitos recomendados para o funcionamento do _Plugin do Tainacan_.
-4. Baixe o arquivo de log no botão `Baixar Log` para **anexar estas informações** ao Relatório de Testes.
-5. Na barra lateral esquerda, clique em Tainacan:
+1. Accede al **panel de control de WordPress** donde está instalada y activada tu versión de prueba del plugin Tainacan (normalmente la dirección de tu web + `/wp-admin`).;
+2. En la barra lateral izquierda, haga clic en **Diagnóstico de la instalación** en la sección Tainacan:
+3. Compruebe que la instalación cumple los requisitos recomendados para el funcionamiento del _Plugin de Tainacan_.
+4. Descargue el archivo de registro desde el botón `Download Log` **para añadir esta información** al Informe de Pruebas.
+5. En la barra lateral izquierda, haga clic en Tainacan:
 
-- [x] Observe o tempo de carregamento da tela inicial;
-- [x] Observe se todos elementos da página foram exibidos corretamente;
-- [x] Observe novamente estes aspectos ao concluir os processos a seguir para reportar eventuais alterações substanciais no tempo de carregamento de tela ou exibição incorreta dos elementos.
+- [x] Observa el tiempo de carga de la pantalla de inicio;
+- [x] Asegúrese de que todos los elementos de la página se muestran correctamente;
+- [x] Observe de nuevo estos aspectos al completar los siguientes procesos para informar de cualquier cambio sustancial en el tiempo de carga de la pantalla o de la visualización incorrecta de elementos.
 
-Feito isto, escolha um tópico que deseja testar mais a fundo:
+Una vez hecho esto, elija un tema en el que desee profundizar:
 
 <div style="column-count: 2; column-width: 250px;">
 
-- [Coleções](/es-mx/testing-collections.md)
-- [Taxonomias](/es-mx/testing-taxonomies.md)
-- [Metadados](/es-mx/testing-metadata.md)
+- [Colecciones](/es-mx/testing-collections.md)
+- [Taxonomías](/es-mx/testing-taxonomies.md)
+- [Metadatos](/es-mx/testing-metadata.md)
 - [Filtros](/es-mx/testing-filters.md)
-- [Itens](/es-mx/testing-items.md)
-- [Busca Facetada](/es-mx/testing-search.md)
+- [Elementos](/es-mx/testing-items.md)
+- [Búsqueda facetada](/es-mx/testing-search.md)
 - [Importadores](/es-mx/testing-importers.md)
 - [Exportadores](/es-mx/testing-exporters.md)
-- [Permissões](/es-mx/testing-capabilities.md)
-- [Blocos Gutenberg](/es-mx/testing-gutenberg-blocks.md)
-- [Submissão de Itens](/es-mx/testing-item-submission.md)
+- [Envíos](/es-mx/testing-capabilities.md)
+- [Bloques de Gutenberg](/es-mx/testing-gutenberg-blocks.md)
+- [Envío de elementos](/es-mx/testing-item-submission.md)
 
 </div>

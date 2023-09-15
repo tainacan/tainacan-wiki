@@ -1,10 +1,9 @@
-# Conceitos Gerais
+# Conceptos generales
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Nesta página introduzimos alguns conceitos importantes para o uso do Tainacan no dia-a-dia. É importante dizer que os termos aqui apresentados são definidos pela equipe de pesquisa e desenvolvimento do Tainacan, mas dependo da sua área de atuação, podem ser sinônimos de outros termos conhecidos.
+En esta página presentamos algunos conceptos fundamentales para el uso cotidiano de Tainacan. Es importante decir que los términos que utilizamos fueron definidos por el equipo de investigación y desarrollo de Tainacan, pero dependiendo de tu área de especialización, pueden ser sinónimos de otros términos que conozcas.
 
-### Vídeo Tutorial: Usando o Tainacan - Conceitos gerais
+### Videotutorial: Usando Tainacan - Conceptos generales
 
 <iframe
     width="560"
@@ -15,47 +14,47 @@ Nesta página introduzimos alguns conceitos importantes para o uso do Tainacan n
     allowfullscreen>
 </iframe>
 
-## Coleções
+## Colecciones
 
-Uma coleção é um grupo de itens que compartilham um mesmo conjunto de metadados. Cada item enviado para seu repositório digital pertencerá a uma única coleção.
+Una colección es un grupo de elementos (ítems) que comparten un conjunto común de metadatos. Cada elemento cargado en el repositorio digital pertenecerá a una única colección.
 
-> Por exemplo: você pode ter uma coleção de "pinturas" com metadados como "Título", "Autor", "País", "Técnica", etc e outra coleção para "filmes", com "Título", "Diretor", "País", "Duração" e "Gênero"'.
+> Por ejemplo: puede haber una colección para "cuadros" con metadatos como "Título", "Autor", "País", "Técnica", etc. y otra colección para "películas", con metadatos como "Título", "Director", "País", "Duración" y "Género"'.
 
-Para cada coleção você pode configurar um conjunto diferente de metadados, entretanto, eles podem compartilhar taxonomias em comum, o que significa, por exemplo, que você pode navegar por itens de um "país" e obter resultados de "pinturas" e de "filmes" nos resultados
+Para cada colección se puede configurar un conjunto diferente de metadatos, sin embargo, pueden compartir taxonomías comunes, lo que significa, por ejemplo, que se pueden buscar elementos de un "país" y obtener resultados de "pinturas" y "películas" en los resultados porque ambas colecciones comparten la taxonomía “países”.
 
-> [Consulte a seção taxonomias](#taxonomias)
+> Para tener información más detallada, consulta la sección de [taxonomías](#taxonomías).
 
-As coleções também podem ter coleções "filhas", que vão herdar seus metadados e a partir disso podem também adicionar outros metadados para informações adicionais.
+Las colecciones también pueden tener colecciones "hijas", que heredarán sus metadatos y a partir de ahí también se podrán añadir otros metadatos para obtener información adicional.
 
-Veja o artigo completo sobre uso das **Coleções** [aqui](/es-mx/collections).
+Consulta el artículo completo sobre el uso de **colecciones** [aquí](/es-mx/collections).
 
-## Itens
+## Ítems o elementos
 
-Itens são o verdadeiro conteúdo do repositório. A "pintura", o "filme",o "livro" e assim por diante. Estes itens são da uma coleção e possuem todos os metadados configurados à coleção a qual pertencem.
+Los elementos son el contenido real del repositorio. El "cuadro", la "película", el "libro", etc. Estos elementos pertenecen a una colección y tienen los metadatos configurados para la colección a la que pertenecen.
 
-> Na linguagem do WordPress, cada item é um post e seu tipo de postagem representa sua coleção.
+> En el lenguaje WordPress, cada elemento o ítem es un post y el tipo de post representa la colección a la que pertenece.
 
 ### Documento
 
-O documento é a informação principal do item. É o objeto que os metadados se referem. O Tainacan aceita 3 tipos de documentos:
+El documento es la información principal del elemento. Es el objeto al que se refieren los metadatos. Tainacan acepta tres tipos de documentos:
 
-- **"Arquivo"**: um arquivo adicionado ao item. Pode ser uma imagem, vídeo, pdf, audio ou outro tipo arquivo suportado.
-- **"URL"**: um link de um site com conteúdo ou arquivo externo. Estes links podem ser de um site genérico, um arquivo específico ou serviços de mídia. No caso de serviços de mídia (como o YouTube, por exemplo) o Tainacan reconhece o endereço e exibe o player apropriado usando [oEmbed](https://oembed.com/). A lista de serviços compatíveis com a conversão para "embeds" no WordPress pode ser consultada [neste link](https://codex.wordpress.org/es-mx:Incorporados).
-- **"Texto"**: Um texto simples, armazenado diretamente no banco de dados, o usuário pode digitar ao criar ou editar um item.
+- **"Archivo"**: archivo añadido al elemento. Puede ser una imagen, vídeo, pdf, audio u otro tipo de archivo compatible.
+- **"URL"**: enlace de una página web con un contenido o archivo externo. Estos enlaces pueden ser a un sitio web genérico, a un archivo específico o a servicios multimedia. En el caso de los servicios multimedia (como YouTube, por ejemplo), Tainacan reconoce la dirección y muestra el reproductor adecuado mediante la herramienta [oEmbed](https://oembed.com/)(formato para permitir una representación incrustada de una URL en sitios de terceros). La lista de servicios compatibles con la conversión a "incrustaciones" en WordPress puede consultarse en [este enlace](https://wordpress.org/documentation/article/embeds/).
+- **"Texto"**: Un texto sencillo, almacenado directamente en la base de datos, que el usuario puede escribir al crear o editar un elemento.
 
-> O "tipo de documento" pode ser alterado após o envio do item, por exemplo: você pode enviar o item com um documento do tipo "texto" de referência e posteriormente inserir o "arquivo" ou "URL" pertencente a ele.
+> El "tipo de documento" puede modificarse una vez enviado el elemento, por ejemplo: puedes enviar el elemento con un documento de referencia de tipo "texto" e insertar posteriormente el "archivo" o la "URL" correspondiente. También puedes llenar los campos de metadatos de un elemento y posteriormente añadir los documentos.
 
-Veja o artigo completo sobre uso dos **Itens** [aqui](/es-mx/items).
+Consulta el artículo completo sobre el uso de los **documentos** [aquí](#conceptos-generales).
 
-## Metadados
+## Metadatos
 
-Os metadados são as informações referentes ao documento.
+Los metadatos son el conjunto de información que describe al elemento.
 
-Cada coleção tem um conjunto de metadados para descrever seus documentos. Isso significa que a coleção a qual o item pertence determina os metadados que ele tem.
+Cada colección dispone de un conjunto de metadatos para describir sus documentos. Esto significa que la colección a la que pertenece el elemento determina los metadatos que tiene.
 
-Cada metadado tem um conjunto de configurações possíveis. É um metadado obrigatório? Seus valores são únicos para cada item (Um número de registro, por exemplo)? Ele aceita múltiplos valores (Vários autores, por exemplo)?
+Cada metadato tiene un conjunto de configuraciones posibles: ¿Es un metadato obligatorio? ¿Sus valores son únicos para cada ítem (un número de registro, por ejemplo)? ¿Acepta valores múltiples (por ejemplo, varios autores)?
 
-### Vídeo Tutorial: Criação de Metadados
+### Videotutorial: Creación de Metadatos
 
 <iframe
     width="560"
@@ -66,64 +65,64 @@ Cada metadado tem um conjunto de configurações possíveis. É um metadado obri
     allowfullscreen>
 </iframe>
 
-> [Consulte a seção Tipos de Metadados](#tipos-de-metadados)
+> Consulta la sección [Tipos de metadatos](#tipos-de-metadatos)
 
-É possível configurar metadados a nível de repositório, que serão herdados por todas coleções no repositório. Da mesma forma, coleções configuradas como "filha" herdam todos metadados da coleção selecionada.
+Es posible configurar metadatos a nivel de repositorio, que serán heredados por todas las colecciones. Del mismo modo, las colecciones configuradas como "hijas" heredan todos los metadatos de la colección seleccionada como “padre”.
 
-> [Consulte a seção Coleções](#colecoes)
+> Consulta la sección [Colecciones](#colecciones)
 
-> Também é possível "importar e exportar metadados predefinidos".
+> También es posible "importar y exportar metadatos predefinidos”.
 
-### Tipos de Metadados
+### Tipos de Metadatos
 
-`Metadata Types` ou Tipos de Metadados são os objetos que representam os tipos de metadados que podem ser usados.
+Un paso importante para configurar las colecciones en Tainacan es elegir de qué tipo serán los metadatos. Esto se hace utilizando la función `Metadata Types`.
 
-> Alguns exemplos de `Metadata Types` são "Texto", "Texto Longo", "Data", "Relacionamento", etc.
+> Tainacan, por defecto, tiene un conjunto de `tipos de metadatos` que nos permiten elegir si los metadatos son de tipo "Texto", "Texto largo", "Fecha", “Numérico”, "Relación", etc..
 
-Cada "tipo de metadado" possui suas próprias configurações e componentes da web que serão usados na renderização de sua interface.
+Cada uno de estos tipos tiene un formato predefinido para la captura de información y también una forma de visualizarse en la interfaz. Por eso es fundamental elegir el `tipo de metadato` correcto según la información de que se trate. Una vez creado un metadato, su tipo no se puede modificar; si se requiere hacer este cambio, será necesario borrar el metadato y crearlo de nuevo.
 
-`Metadata Types` são tipos de metadados que podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos fornecidos com o Tainacan.
+Además del conjunto de tipos de metadatos que trae por defecto Tainacan, se suman algunos plug-ins, que amplían el conjunto de posibilidades (por ejemplo, el tipo de metadato “url” es un plug-in).
 
-Veja o artigo completo sobre uso dos **Metadados** [aqui](/es-mx/metadata).
+Consulta el artículo completo sobre el uso de **metadatos** [aquí](/es-mx/metadata).
 
 ## Filtros
 
-Para cada coleção é possível escolher quais de seus metadados serão usados como opção de filtros para resultados em uma busca facetada na visualização da coleção.
+Para cada colección es posible elegir cuáles de sus metadatos se utilizarán como opción de filtro para mostrar los resultados de una búsqueda facetada en la vista de la colección.
 
-> Filtros permitem que o usuário filtre a visualização dos itens de uma coleção.
+> Los filtros permiten al usuario filtrar la visualización de los elementos de una colección.
 
 ### Tipos de Filtros
 
-`Filter Types` ou Tipos de Filtros são diferentes tipos de interfaces para filtrar itens baseados num tipo de metadado específico nas coleções. São alguns exemplos de `Filter Types`:
+Los `filter types` o tipos de filtro actúan como diferentes interfaces para filtrar elementos en función de un tipo específico de metadatos en las colecciones. Algunos ejemplos de `tipos de filtro` son:
 
 - **"input text"** - entrada de texto
-- **"datepicker"** - seleção de data
-- **"date range picker"** - seleção de intervalo de data
-- **"number range slider"** - barra de intervalo numérico
-- **"list of checkboxes"** - lista de seleção múltipla
+- **"datepicker"** - selector de fechas
+- **"date range picker"** - selector de intervalos de fechas
+- **"number range slider"** - barra de rango numérico
+- **"list of checkboxes"** - lista de selección múltiple
 
-Cada objeto `Filter Types` possui suas próprias configurações e componentes da web que serão usados na renderização de sua interface.
+Cada `tipo de filtro` tiene su propia configuración y componentes web que determinarán la forma en la que se visualizan en la interfaz.
 
-> `Filter Types` podem ser criados por meio de plug-ins e estender o conjunto padrão de tipos de filtros do Tainacan.
+> Al conjunto de tipos de filtro que trae por defecto Tainacan, se suman los tipos de filtro creados mediante plug-ins, que amplían el conjunto de posibilidades.
 
-Veja o artigo completo sobre uso dos **Filtros** [aqui](/es-mx/filtros).
+Consulta el artículo completo sobre el uso de **filtros** [aqui](/es-mx/filters.md).
 
-## Taxonomias
+## Taxonomías
 
-Taxonomias podem ser criadas e usadas para a classificação de itens. Exemplos de taxonomias comuns são a de Gênero, Países, etc.
+Se pueden crear y utilizar taxonomías para clasificar los ítems del repositorio. Ejemplos de taxonomías comunes son “género”, “país”, “tipo de objeto”, “técnica”, etc.
 
-> Na linguagem do WordPress, elas são taxonomias personalizadas. Consulte a [documentação do WordPress](https://codex.wordpress.org/Taxonomies/) para saber mais.
+> En el lenguaje de WordPress, se conocen como taxonomías personalizadas. Consulta la [documentación de WordPress](https://es-mx.wordpress.org/support/article/taxonomies/) para obtener más información.
 
-Cada taxonomia tem um conjunto de termos, por exemplo, a taxonomia "gênero" pode ter termos como "drama" e "comédia". Os termos podem ter hierarquia, o que significa que quando você procura por itens que tem termos com termos filhos (por exemplo, "Samba"), os resultados incluirão itens que tenham qualquer um dos termos filhos. (Por exemplo, "Samba de Gafieira" e "Samba Maxixe").
+Cada taxonomía tiene un conjunto de términos, por ejemplo, la taxonomía "género" puede tener términos como "drama" y "comedia". Los términos pueden tener jerarquía, lo que significa que los términos más generales (términos padre) contienen términos más específicos a los que se denomina términos hijos. Por ejemplo, si el término padre es “danza” y los términos hijos son "danza ritual" y "danza escénica", cuando el usuario busque ítems de “danza”, los resultados incluirán a los elementos que tengan cualquiera de los términos hijos.
 
-Termos também podem ter uma descrição, um ícone ou uma imagem que o represente e também pode ser ligado a um conceito existente um uma ontologia. Os termos também podem ter sua própria URL no site, com uma página listando todos os itens relacionados a ele, inclusive de diferentes coleções, dessa forma eles se comportam como se fossem uma coleção.
+Los términos pueden tener una descripción, un icono o una imagen que los represente y también pueden estar vinculados a un concepto existente en una ontología. Los términos también pueden tener su propia URL en el sitio, con una página que enumere todos los ítems relacionados con ellos, incluso de diferentes colecciones, de esta forma se comportan como si fueran una colección, aunque pertenezcan a colecciones distintas.
 
-> As taxonomias podem ser compartilhadas por várias coleções.
-> [Consulte o tópico "Tipos de Metadados" para saber como.](#tipos-de-metadados)
+> Las taxonomías pueden compartirse entre colecciones.
+> Consulta el tema ["Tipos de metadatos"](#tipos-de-metadatos) para saber cómo hacerlo.
 
-Veja o artigo completo sobre uso das **Taxonomias** [aqui](/es-mx/taxonomies).
+Consulta el artículo completo sobre el uso de **taxonomías** [aquí](/es-mx/taxonomies.md).
 
-### Vídeo Tutorial: Filtros e Taxonomias
+### Videotutorial: Filtros y Taxonomías
 
 <iframe
     width="560"
@@ -134,28 +133,28 @@ Veja o artigo completo sobre uso das **Taxonomias** [aqui](/es-mx/taxonomies).
     allowfullscreen>
 </iframe>
 
-## Em discussão
+## En discusión
 
-Esta seção reúne alguns conceitos e funcionalidades que estão em discussão para desenvolvimento!
+Esta sección recoge algunos conceptos y funcionalidades que se están debatiendo para su desarrollo.
 
-### Tipos de Itens
+### Tipos de elementos
 
-"Tipos de itens" possibilitam a habilidade de especializar a descrição do item com base na sua natureza. Assim, dentro da mesma coleção é possível ter itens que variam sua natureza e, portanto, têm um conjunto diferente de metadados.
+Los "tipos de elementos" permiten hacer una descripción especializada del ítem en función de su naturaleza. Así, dentro de una misma colección es posible que haya elementos que varíen su naturaleza y, por tanto, tengan un conjunto de metadatos diferente.
 
-Para cada "tipo de item"', é possível escolher um grupo de metadados, da mesma maneira que se faz para uma coleção. Quando se cria um item dentro de uma coleção, ele terá todos os metadados escolhidos para esta coleção e também os metadados relacionados ao seu tipo.
+Para cada "tipo de elemento"', es posible elegir un grupo de metadatos, del mismo modo que se hace para una colección. Al crear un elemento dentro de una colección, tendrá todos los metadatos elegidos para esta colección y, además, los metadatos relacionados con su tipo.
 
-Um "tipo de item" pode ser qualquer coisa. Por exemplo, LPs, livros e pinturas são tipos de itens distintos que podem ter metadados específicos. Mas também poderia ter conceitos abstratos, como "transações financeiras".
+Un "tipo de elemento" puede ser cualquier cosa. Por ejemplo, los discos de vinilo, los libros y los cuadros son distintos tipos de ítems que pueden tener metadatos específicos. Pero también podrían ser conceptos abstractos, como "transacciones financieras".
 
-### Área de Trabalho
+### Área de trabajo
 
-A "área de trabalho" contém itens que ainda não fazem parte de coleções. Essa função pode ser útil para o envio de vários itens para o repositório para depois serem organizados em coleções.
+El "área de trabajo" contiene ítems que aún no forman parte de colecciones. Esta función puede ser útil para enviar varios elementos al repositorio y organizarlos posteriormente en colecciones.
 
-Os itens na "área de trabalho" não são visíveis publicamente e têm apenas os metadados configurados a nível de repositório.
+Los elementos del "área de trabajo" no son visibles públicamente y solo tienen los metadatos configurados a nivel de repositorio (metadatos heredados).
 
-### Coleções Temáticas
+### Colecciones temáticas
 
-As "coleções temáticas" são outra maneira de organizar os itens no seu repositório. Em essência, cada coleção temática é um termo dentro de uma taxonomia chamada "Coleções Temáticas", que pode conter itens de qualquer coleção, e um item pode fazer parte de várias coleções temáticas.
+Las "colecciones temáticas" son otra forma de organizar los elementos del repositorio. En esencia, cada colección temática es un término dentro de una taxonomía llamada "Colecciones temáticas", que puede contener elementos de cualquier colección, y un mismo ítem puede formar parte de varias colecciones temáticas.
 
-A lógica é a mesma dos termos em taxonomias, a única diferença é que com isso há uma outra maneira de gestão dessas coleções.
+La lógica es la misma que para los términos en las taxonomías, la única diferencia es que nos ofrece otra forma de gestionar estas colecciones.
 
-Outra ideia aqui é que, tendo uma "''taxonomia fixa''" chamada coleções temáticas, poderíamos ter apenas um item de menu "''Taxonomias''" ou "''Organizar por taxonomias''" que permite navegar pelos itens por taxonomia ao invés de coleções, e manipulá-los.
+Otra idea aquí es que al tener una "'taxonomía fija'" llamada colecciones temáticas, podríamos tener un solo elemento de menú "Taxonomías" u ''Organizar por taxonomías'' que permita navegar los elementos por taxonomía en lugar de hacerlo por colecciones, y manipularlos.

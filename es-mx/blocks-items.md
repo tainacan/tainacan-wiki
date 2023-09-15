@@ -1,244 +1,241 @@
-# Blocos de Itens
+# Bloques de elementos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Los bloques de elementos son una forma de mostrar una vista previa o lo más destacado de su colección, sin tener que exponer al usuario a toda la complejidad de la colección. [Lista de elementos con búsqueda por aspectos](/es-mx/tainacan-pages#páginas-de-elementos-de-una-colección). Actualmente, hay 4 bloques relacionados con artículos de Tainacan:
 
-Os blocos de itens são uma maneira de exibir uma prévia ou destaque de sua coleção, sem precisar expor ao usuário toda a complexidade da [Lista de Itens com a Busca Facetada](/es-mx/tainacan-pages#páginas-de-itens-de-uma-coleção). Atualmente, existem 4 blocos relacionados aos itens do Tainacan:
-
-1. A [Lista de Itens da Coleção](#lista-de-itens-da-coleção) _(Dinâmico)_
-2. O [Carrossel de Itens](#carrossel-de-itens)
-3. A [Barra de Busca Tainacan](#barra-de-busca)
-4. A [Busca Facetada](#busca-facetada) _(A Lista de Itens Completa)_
+1. [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) _(Dinámica)_
+2. [Carrusel de elementos](#carrusel-de-elementos)
+3. [Barra de búsqueda Tainacan](#barra-de-búsqueda)
+4. [Búsqueda por aspectos](#búsqueda-por-aspectos) _(Una lista de elementos completa)_
 
 ---
 
-## Lista de Itens da Coleção
+## Lista de elementos de la colección
 
-Este é um dos blocos mais mais importantes que o Tainacan oferece. Com ele você configura uma "Busca de Itens" para serem exibidos. Mas como assim uma busca? É que ao invés de selecionar itens um a um, você determina quais parâmetros irão filtrar uma listagem de itens. Por isso chamamos este bloco de lista "dinâmica" de itens, pois se novos itens forem inseridos àquela listagem, seu bloco continuará atualizado. Veja a seguir:
+Este es uno de los bloques más importantes que ofrece Tainacan. Con él configuras una "Búsqueda de elementos" para que se muestren. Pero, ¿qué se entiende por búsqueda? En lugar de seleccionar los elementos uno por uno, usted determina los parámetros que filtrarán una lista de elementos. Por eso llamamos a este bloque una lista "dinámica" de elementos, porque si se añaden nuevos elementos a esa lista, tu bloque seguirá actualizándose. Véase más abajo:
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del Bloque
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-collection-items-1.gif)
+![Seleccionar la colección en el bloque](/_assets/gifs/blocks-collection-items-1.gif)
 
-Logo ao inserir o bloco, devo configurar a minha busca. Este processo começa determinando de qual coleção em específico eu vou buscar itens. Feita esta escolha, sou apresentado à minha lista de itens, a mesma que vejo no _Painel Administrativo do Tainacan_. Os itens que eu enchergo nesta listagem serão os que vão ser buscados pelo meu bloco. Aqui posso alterar, por exemplo: **filtros, ordem de busca, quantidade de itens buscados e já aplicar uma busca textual simples**. Feito isso, estas informações serão salvas nas configurações do meu bloco e a lista será renderizada.
+En cuanto inserto el bloque, tengo que configurar mi búsqueda. Este proceso comienza determinando en qué colección concreta voy a buscar elementos. Una vez hecha esta elección, se me presenta mi lista de elementos, la misma que veo en el panel de administración de _Tainacan_. Los elementos que aparezcan en esta lista serán los que busque mi bloque. Aquí puedo cambiar, por ejemplo **filtros, orden de búsqueda, número de elementos buscados y ya aplicar una búsqueda textual simple**. Una vez hecho esto, esta información se guardará en la configuración de mi bloque y se mostrará la lista.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Configurações relacionadas ao Cabeçalho da Coleção](/_assets/images/blocks_collection_items_1.jpg ":size=200")
+![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.jpg ":size=200")
 
 </div>
 
-Com os itens carregados, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con los elementos cargados, podemos realizar una serie de ajustes que estarán disponibles en el panel lateral cuando tengamos el bloque activo.
 
-### Cabeçalho da Coleção
+### Cabecera de colección
 
-A primeira opção te permite decorar seu bloco um pouco, acrescentando ao início da lista um cabeçalho da sua coleção. Este deverá ser similar ao que você vê na página de itens, porém uma versão reduzida, com a miniatura da coleção ao meio, a imagem de cabeçalho à direita e o nome da coleção à esquerda. Você pode configurar a cor de fundo do cabeçalho, do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma.
+La primera opción le permite decorar un poco su bloque añadiendo una cabecera para su colección en la parte superior de la lista. Debería ser similar a lo que se ve en la página de elementos, pero una versión reducida, con la miniatura de la colección en el centro, la imagen de cabecera a la derecha y el nombre de la colección a la izquierda. Puede configurar el color de fondo de la cabecera, el texto y elegir si desea mostrar o no una etiqueta "Colección" antes del nombre de la colección.
 
-### Barra de Busca Tainacan
+### Barra de búsqueda Tainacan
 
-Caso você esteja oferecendo uma prévia de sua lista de itens mas não quer impedir que o usuário explore-a um pouco mais, você pode oferecer, no próprio bloco, uma barra de busca. Esta barra filtrará os itens mostrados, carregando sempre no máximo a quantidade configurada para a busca. Lembrando que os filtros que tiverem sido aplicados antes continuarão aplicados nesta listagem, assim você pode restringir o que será mostrado. A barra também te permite alternar o sentido da ordenação escolhida como _ascendente_ ou _descendente_ e mudar de página caso hajam mais itens resultantes da sua busca.
+Si ofreces una vista previa de tu lista de elementos pero no quieres impedir que el usuario siga explorándola, puedes ofrecer una barra de búsqueda en el propio bloque. Esta barra filtrará los elementos mostrados, cargando siempre como máximo la cantidad configurada para la búsqueda. Recuerde que los filtros que se hayan aplicado anteriormente seguirán aplicándose a esta lista, por lo que puede restringir lo que se muestra. La barra también le permite alternar la dirección de ordenación que haya elegido, como _ascendente_ o _descendente_, y cambiar de página si hay más elementos resultantes de su búsqueda.
 
-![Cabeçalho e Barra de Busca no Bloco](/_assets/gifs/blocks-collection-items-2.gif)
+![Cabecera de bloque y barra de búsqueda](/_assets/gifs/blocks-collection-items-2.gif)
 
-### Configurações da Exibição de Itens
+### Ajustes de visualización de elementos
 
-Por fim, é possível escolher quantos itens ao máximo serão exibidos. O padrão nas listagens Tainacan é sempre 12. Abaixo, novas configurações estão disponíveis, e elas estão diretamente relacionadas ao **modo de exibição dos itens**. Sim, nos blocos, também temos diferentes modos de visualizar a lista de itens carregada. Você pode alterar isso no próprio bloco, na barra superior. Este bloco oferece três modos:
+Por último, puede elegir cuántos elementos se mostrarán como máximo. El valor por defecto en los listados de Tainacan es siempre 12. A continuación, hay nuevos ajustes disponibles, y están directamente relacionados con el **cómo se muestran los elementos**. Sí, en los bloques también tenemos diferentes formas de visualizar la lista cargada de elementos. Esto se puede cambiar en el propio bloque, en la barra superior. Este bloque ofrece tres modos:
 
 <!-- tabs:start -->
 
-#### ** Grade de Itens **
+#### ** Rejilla de elementos **
 
-O modo padrão é a grade de itens, que mostrará as miniaturas dos itens (185px _x_ 185px), com seus títulos abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o título do item e se deseja um espaço maior entre os itens. Lembrando que quanto maior o espaçamento, menos itens cabem por linha.
+El modo por defecto es la rejilla de artículos, que mostrará las miniaturas de los artículos (185px _x_ 185px), con sus títulos debajo. En este modo, puede configurar si desea mostrar o no el título del elemento y si desea más espacio entre los elementos. Recuerde que cuanto mayor sea el espaciado, menos elementos cabrán por línea.
 
-![Configurando o bloco no modo grade](/_assets/gifs/blocks-collection-items-3.gif)
+![Configurar el bloque en modo cuadrícula](/_assets/gifs/blocks-collection-items-3.gif)
 
-#### ** Lista de Itens **
+#### ** Lista de Elementos **
 
-A lista de itens permite uma visão mais simplificada, com miniaturas menores (54px _x_ 54px) e os títulos ao lado. Neste modo, você pode escolher não mostrar a miniatura, o ideal para coleções que não possuem imagens.
+La lista de elementos permite una vista más simplificada, con miniaturas más pequeñas (54px _x_ 54px) y los títulos junto a ellas. En este modo, puedes elegir no mostrar la miniatura, lo que es ideal para colecciones que no tienen imágenes.
 
-![Configurando o bloco no modo lista](/_assets/gifs/blocks-collection-items-4.gif)
+![Configuración del bloque en modo lista](/_assets/gifs/blocks-collection-items-4.gif)
 
-#### ** Mosaico de Itens **
+#### ** Mosaico de elementos **
 
-A partir do [Tainacan 0.14 :link:](https://tainacan.org/blog/2019/11/22/tainacan-beta-0-14-e-tainacan-interface-1-6-novo-modo-mosaico-do-bloco-de-itens-e-suporte-ao-wordpress-5-3/ ":ignore"), apresentamos também o modo mosaico. Este modo possui várias configurações extras. É ideal pra quem quer fornecer uma visão mais "artística" da sua lista de coleção. A composição montada pelo mosaico é mais irregular e não se restringe de cortar as imagens para montar vários **grupos de grades de itens**. Nele, os títulos aparecem apenas ao passar o mouse sobre o item, mas eles podem ser escondidos da mesma maneira como no modo grade, assim como o espaçamento entre os itens.
+Desde [Tainacan 0.14 :link:](https://tainacan.org/blog/2019/11/22/tainacan-beta-0-14-e-tainacan-interface-1-6-novo-modo-mosaico-do-bloco-de-itens-e-suporte-ao-wordpress-5-3/ ":ignore"), también presentamos el modo mosaico. Este modo tiene varios ajustes adicionales. Es ideal para aquellos que desean ofrecer una visión más "artística" de su lista de colecciones. La composición montada por el mosaico es más irregular y no se limita a cortar las imágenes para montar varios **grupos de cuadrículas de artículos**. Los títulos sólo aparecen cuando se pasa el ratón por encima del artículo, pero pueden ocultarse del mismo modo que en el modo cuadriculado, al igual que el espaciado entre los artículos.
 
-![Configurando o bloco no modo mosaico](/_assets/gifs/blocks-collection-items-5.gif)
+![Ajustando el bloque en modo mosaico](/_assets/gifs/blocks-collection-items-5.gif)
 
-Além disso, no modo mosaico, é possível configurar os seguintes detalhes:
+También puede configurar los siguientes detalles en el modo mosaico:
 
-- A altura do bloco, via painel lateral ou redimensionando o bloco;
-- A grade usada para montar cada grupo do bloco (grades maiores significarão mais itens por grupos, portanto mais imagens menores);
-- A densidade do grupo, ou seja a quantidade de itens por coluna em cada grupo;
+- La altura del bloque, a través del panel lateral o redimensionando el bloque;
+- La cuadrícula utilizada para montar cada grupo del bloque (cuadrículas más grandes significan más elementos por grupo, por lo tanto más imágenes pequeñas);
+- La densidad del grupo, es decir, el número de elementos por columna en cada grupo;
 
-Estes detalhes impactarão em quão ladrilhado seu mosaico vai ficar. Lembre-se que quanto mais itens, mais densa ficará a composição.
+Estos detalles influirán en el tamaño del mosaico. Recuerde que cuantos más elementos, más densa será la composición.
 
-![Mais ajustes do bloco no modo mosaico](/_assets/gifs/blocks-collection-items-6.gif)
+![Más ajustes del bloque en el modo mosaico](/_assets/gifs/blocks-collection-items-6.gif)
 
-Por fim, um último detalhe: Ao cortar as imagens para encaixá-las em suas grades, o mosaico sempre centraliaza a imagem, verticalmente e horizontalmente. Talvez você não queira isso, e prefira, por exemplo, que as imagens fiquem sempre com o topo visível (suponha uma coleção com bustos de várias pessoas). Para isto, existe a opção do _Ponto focal da imagem de fundo_.
+Finalmente, un último detalle: al cortar las imágenes para encajarlas en sus cuadrículas, el mosaico siempre centra la imagen, vertical y horizontalmente. Quizá no quieras esto y prefieras, por ejemplo, que las imágenes se vean siempre en la parte superior (supongamos que tienes una colección de bustos de varias personas). Para ello, existe la opción _Punto focal de la imagen de fondo_.
 
 <!-- tabs:end -->
 
 ---
 
-## Carrossel de Itens
+## Carrusel de elementos
 
-A quebra de linha que o Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) gera pode não agradar a todos. Para apresentar vários itens em sequência e ainda dar um ar mais "dinâmico" à sua publicação, o bloco de carrossel pode ser o ideal.
+El salto de línea que la [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) puede no ser del gusto de todos. Para presentar varios artículos en secuencia y dar a su publicación un aspecto más "dinámico", el bloque carrusel puede ser ideal.
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del Bloque
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-items-carousel-1.gif)
+![Selección de la colección en el bloque](/_assets/gifs/blocks-collection-items-7.gif)
 
-Da mesma maneira como nas configurações do Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção#configurações-iniciais-do-bloco) você pode configurar uma busca para exibir seus itens no carrossel. Dessa maneira, eles dinamicamente serão buscados de acordo com certos parâmetros de busca, ordenação e filtragem que você definir. Mas neste bloco há também a possibilidade de escolher "a dedo" quais itens você deseja mostrar. Note que as opções são exclusivas. Deve-se usar uma estratégia ou a outra. No caso da seleção manual de itens, você adiciona itens através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do item inserido.
+Al igual que con los ajustes del Bloque [Lista de elementos de la colección](#lista-de-elementos-de-la-colección#ajustes-iniciales-del-bloque) puede configurar una búsqueda para mostrar sus elementos en el carrusel. De esta forma, se buscarán dinámicamente según determinados parámetros de búsqueda, ordenación y filtrado que tú definas. Pero en este bloque también existe la posibilidad de elegir "a mano" qué elementos quieres mostrar. Tenga en cuenta que las opciones son excluyentes. Tiene que utilizar una estrategia u otra. En el caso de la selección manual de elementos, añades elementos a través del modal y los eliminas en la propia lista haciendo clic en el botón "X" que aparece encima del elemento insertado.
 
-Com os itens carregados, você pode notar que o carrossel não se move. Na verdade, ele só é ativado na versão publicada ou pré-visualização do post ou página. Aqui no editor, você verá uma lista comum com scroll. Agora, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con los elementos cargados, puede observar que el carrusel no se mueve. De hecho, sólo se activa en la versión publicada o de previsualización del post o página. Aquí, en el editor, verás una lista desplazable normal y corriente. Ahora podemos realizar una serie de ajustes que están disponibles en el panel lateral cuando tenemos el bloque activo.
 
-### Cabeçalho da Coleção
+### Cabecera de la colección
 
-![Vendo o carrossel em ação no tema](/_assets/gifs/blocks-items-carousel-2.gif)
+![Ver el carrusel en acción en el tema](/_assets/gifs/blocks-collection-items-8.gif)
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Configurações do Carrossel de Items](/_assets/images/blocks_items_carousel_1.png ":size=200")
+![Lista de ajustes del carrusel de elementos](/_assets/images/blocks_items_carousel_1.png ":size=200")
 
 </div>
 
-A primeira opção te permite decorar seu bloco um pouco, acrescentando ao início da lista um cabeçalho da sua coleção. Este deverá ser similar ao que você vê na página de itens, porém uma versão reduzida, com a miniatura da coleção ao meio, a imagem de cabeçalho à direita e o nome da coleção à esquerda. Você pode configurar a cor de fundo do cabeçalho, do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma.
+La primera opción le permite decorar un poco su bloque añadiendo una cabecera para su colección en la parte superior de la lista. Debería ser similar a lo que se ve en la página de elementos, pero una versión reducida, con la miniatura de la colección en el centro, la imagen de cabecera a la derecha y el nombre de la colección a la izquierda. Puede configurar el color de fondo de la cabecera, el texto y elegir si desea mostrar o no una etiqueta "Colección" antes del nombre de la colección.
 
-### Opções do Carrossel
+### Opciones del carrusel
 
-Como em outros blocos, você pode escolher exibir ou não o título dos itens abaixo da miniatura. As demais opções disponiveis pelo carrossel estão relacionadas à sua reprodução. São elas:
+Al igual que con otros bloques, puede elegir si desea mostrar o no el título de los elementos debajo de la miniatura. Las otras opciones disponibles en el carrusel están relacionadas con la reproducción. Son las siguientes
 
-- Loop Slides - Fazer com que, ao atingir o final da lista, o carrossel volte para o início;
-- Auto Play - Reproduzir automaticamente o carrossel;
-- Intervalo de tempo entre cada troca de item;
-- Posição das Setas: De que maneira as setas de navegação do carrossel devem estar dispostas;
+- Diapositivas en bucle - Hace que el carrusel vuelva al principio cuando llega al final de la lista;
+- Reproducción automática - Reproduce el carrusel automáticamente;
+- Intervalo de tiempo entre cada cambio de elemento;
+- Posición de las flechas: Cómo deben disponerse las flechas de navegación del carrusel;
 
 <br>
 
 ---
 
-## Barra de Busca
+## Barra de búsqueda
 
-Este bloco é um pouco diferente dos anteriores. Ao invés de mostrar uma prévia da lista completa de itens, ele te leva para a lista. Pode ser pensado como um atalho para a lista, com uma busca textual. O bloco te oferece basicamente uma barra de busca para estar disponível em sua publicação. Mas o interessante é que você pode configurar esta barra de diversas maneiras.
+Este bloque es un poco diferente de los anteriores. En lugar de mostrar una vista previa de la lista completa de elementos, le lleva a la lista. Puede considerarse como un acceso directo a la lista, con una búsqueda textual. El bloque básicamente te ofrece una barra de búsqueda disponible en tu publicación. Pero lo interesante es que puedes configurar esta barra de diferentes maneras.
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del bloque
 
-Para configurar o bloco é bem simples: Basta você escolher qual será o destino da sua busca: lista de itens do repositório ou lista de itens de uma coleção específica.
+Configurar el bloque es muy sencillo: Sólo tiene que elegir el destino de su búsqueda: una lista de elementos del repositorio o una lista de elementos de una colección específica.
 
-![Selecionando a origem da busca no bloco](/_assets/gifs/blocks-search-bar-1.gif)
+![Seleccionando la fuente de búsqueda del bloque](/_assets/gifs/blocks-collection-items-9.gif)
 
-### Alinhamento da Barra
+### Alineación de Barras
 
-Logo na parte de cima do bloco, ao lado das tradicionais opções de largura e disposição do bloco, temos três opções de allinhamento, que dizem respeito ao alinhamento da barra dentro do bloco. Por padrão, a barr está centralizada, mas pode ficar alinhada à esquerda ou direita.
+Justo en la parte superior del bloque, junto a las opciones tradicionales de anchura y disposición del bloque, tenemos tres opciones de alineación, que se refieren a la alineación de la barra dentro del bloque. Por defecto, la barra está centrada, pero puede alinearse a la izquierda o a la derecha.
 
 ### Estilos de Barra
 
-Já no painel lateral, nas configurações do bloco, temos 3 estilos que podem ser aplicados.
+En el panel lateral, en los ajustes del bloque, hay 3 estilos que se pueden aplicar.
 
-- O estilo Padrão oferece uma barra simples de borda cinza e fundo branco;
-- O estilo Alternativo, começa sem borda e com um fundo claro transparente. Seu tamanho é menor no início e fica maior ao se passar o mouse sobre a barra ou com um clique. Ao ficar ativa, uma borda branca é exibida;
-- Por fim, o modesto estilo "Estiloso" começa apenas com um ícone e um botão largo arredondado, que se expande para mostrar o campo de busca;
+- El estilo Estándar ofrece una barra sencilla con un borde gris y un fondo blanco;
+- El estilo Alternativo comienza sin borde y con un fondo transparente claro. Su tamaño es menor al principio y aumenta cuando se pasa el ratón por encima de la barra o se hace clic en ella. Cuando se activa, aparece un borde blanco;
+- Por último, el modesto estilo "Elegante" comienza con sólo un icono y un gran botón redondeado, que se expande para mostrar el campo de búsqueda;
 
-![Estilos e alinhamento da barra de busca](/_assets/gifs/blocks-search-bar-2.gif)
+![Estilos y alineación de la barra de búsqueda](/_assets/gifs/blocks-collection-items-10.gif)
 
-### Opções Gerais da Barra
+### Opciones generales de la barra
 
-Escolhido o estilo, é possível determinar o quão larga a barra irá ficar em sua versão expandida (o valor é em porcentagem). Também podemos mudar o rótulo exibido na parte de dentro da barra para algo mais específico como "Digite aqui para procurar pinturas...".
+Una vez elegido el estilo, puede determinar la anchura de la barra en su versión ampliada (el valor está en porcentaje). También puede cambiar la etiqueta que aparece en el interior de la barra por algo más específico, como "Escriba aquí para buscar cuadros...".
 
-Mas não precisamos parar por aí. De maneira similar ao Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) e [Carrossel de Itens](#carrossel-de-itens), neste bloco você pode exibir um cabeçalho da coleção. Você pode configurar a altura e a cor de fundo do cabeçalho, além da cor e tamanho do texto. Note que combinando estilos e alinhamentos diferentes, a sua barra e o cabeçalho sofrerão algumas alterações:
+Pero no tenemos por qué detenernos ahí. De forma similar a los bloques [Lista de elementos de la colección](#lista-de-elementos-de-la-colección) y [Carrusel de elementos](#carrusel-de-elementos]), en este bloque puedes mostrar una cabecera de la colección. Puede definir la altura y el color de fondo de la cabecera, así como el color y el tamaño del texto. Tenga en cuenta que al combinar diferentes estilos y alineaciones, su barra y cabecera cambiarán un poco:
 
-![Configurações do Cabeçalho da Coleção](/_assets/gifs/blocks-search-bar-3.gif)
+![Configuración de la cabecera de la colección](/_assets/gifs/blocks-collection-items-11.gif)
 
-!> A Barra de Busca é um dos raros blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada.
-
+> La Barra de Búsqueda es uno de los pocos bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea una, se desactiva la opción de insertar una nueva.
 ---
 
-## Busca Facetada
+## Búsqueda por aspectos
 
-A **Busca Facetada** é o bloco mais complexo que o plugin oferece. Com ele você exibe, em qualquer pagina ou post, a Lista de Itens completa tal como é vista na [Páginas de Itens](/es-mx/tainacan-pages#as-páginas-especiais-do-tainacan) do Tainacan, incluindo aí a possibilidade de aplicar filtros, fazer a busca avançada, trocar modos de visualização e ordenação, além de paginação. É uma maneira prática de oferecer todos estes recursos em uma página caso você esteja usando um Tema que não implementou suporte para estas páginas especiais que o plugin registra, ou queria customizar bastante o restante do template. Também é uma alternativa mais versátil ao `shortcode` que antes era sugerido para renderizar esta lista. Veja a seguir:
+La **Busqueda por aspectos** es el bloque más complejo que ofrece el plugin. Con él puedes mostrar, en cualquier página o entrada, la Lista completa de Elementos tal y como se ve en la imagen [Páginas de elementos](/es-mx/tainacan-pages#las-páginas-especiales-de-tainacan) de Tainacan, incluyendo la posibilidad de aplicar filtros, búsqueda avanzada, cambiar los modos de visualización y ordenación, así como la paginación. Es una forma práctica de ofrecer todas estas funcionalidades en una sola página si estás usando un Tema que no ha implementado soporte para estas páginas especiales que registra el plugin, o quieres personalizar mucho el resto de la plantilla. También es una alternativa más versátil al `shortcode` que se sugirió anteriormente para mostrar esta lista. Véase más abajo:
 
-### Configurações Iniciais do Bloco
+### Ajustes iniciales del bloque
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-faceted-search-1.gif)
+![Selección de la colección del bloque](/_assets/gifs/blocks-collection-items-12.gif)
 
-Ao inserir o bloco, devo configurar o origem da busca. Ela pode ser a lsita de todos os itens do repositório, a lista de itens de uma coleção ou a lista de itens associados a um termo. Nos dois últimos casos, um modal oferecerá as opções disponíveis para escolha. Feita esta configuração, uma figura ilustrativa irá aparecer onde a Lista será renderizada. Esta é apenas uma demonstração porque a lista completa é muito complexa para ser exibida dentro do editor, mas você pode ver os resultados pré-visualizando a página ou publicando-a.
+Cuando inserte el bloque, tendra que configurar la fuente de la búsqueda. Puede ser la lista de todos los elementos del repositorio, la lista de elementos de una colección o la lista de elementos asociados a una condición. En los dos últimos casos, un modal ofrecerá las opciones disponibles para elegir. Una vez configurado esto, aparecerá una figura ilustrativa donde se renderizará la Lista. Esto es sólo una demostración porque la lista completa es demasiado compleja para mostrarla dentro del editor, pero puede ver los resultados previsualizando la página o publicándola.
 
-De imediato é possível que você deseje dar mais espaço para a sua lista, o que pode ser configurado ajustando o bloco para ter **Largura Completa** ou **Largura Ampla**. No painel lateral dezenas de configurações podem ser encontradas. Detalhamos estas à seguir e damos abaixo três exemplos de resultados podem ser alcançados apenas fazendo estes ajustes neste bloco:
+Es posible que inmediatamente desee dar más espacio a su lista, lo que puede configurarse estableciendo el bloque en **Ancho completo** o **Ancho amplio**. En el panel lateral encontrará docenas de opciones de configuración. Los detallamos a continuación y damos tres ejemplos de los resultados que se pueden conseguir con sólo hacer estos ajustes en este bloque:
 
 <div style="display: flex; align-items: center; justify-contents: space-evenly;">
 <div style="margin: 0 12px">
 
-![Exemplo da lista configurada 1](/_assets/images/blocks-faceted-search-2.jpg)
+![Ejemplo de la lista configurada 1](/_assets/images/blocks-faceted-search-2.jpg)
 
 </div>
 <div style="margin: 0 12px">
 
-![Exemplo da lista configurada 2](/_assets/images/blocks-faceted-search-3.jpg)
+![Ejemplo de la lista configurada 2](/_assets/images/blocks-faceted-search-3.jpg)
 
 </div>
 <div>
 
-![Exemplo da lista configurada 3](/_assets/images/blocks-faceted-search-4.jpg)
+![Ejemplo de la lista configurada 3](/_assets/images/blocks-faceted-search-4.jpg)
 
 </div>
 </div>
 
 <!-- tabs:start -->
 
-#### ** Área de Controle da Busca **
+#### ** Área de control de búsqueda **
 
-A área de controle da busca é como é chamada a barra horizontal que fica acima da região dos filtros e da lista de itens em si. Como vários controles ali disponíveis podem ser demais para o que você deseja mostrar neste bloco, a maioria das opções possibilita limitar alguns destes controles:
+El área de control de búsqueda es la barra horizontal situada encima del área de filtrado y de la propia lista de elementos. Como muchos de los controles disponibles allí pueden ser demasiados para lo que se quiere mostrar en este bloque, la mayoría de las opciones permiten limitar algunos de estos controles:
 
-- **Esconder o campo de buscar**: esta opção esconde a barra de busca textual e o link de busca avançada juntos.
-- **Esconder a busca avançada**: não mostra o link para a busca avançada.
-- **Esconder o botão de "Metadados exibidos"**: deixa oculto o botão de "Metadados Exibidos". Vale notar que este botão só está visível na lista caso o modo de visualização atual permita esta exibição, como por exemplo a Tabela e as Fichas.
-- **Esconder a região de ordenação**: esconde os _dropdowns_ relacionados ao sentido de ordenação e ao metadado pelo qual a lista é ordenada.
-- **Esconder o botão "Ordenar por"**: esconde apenas o _dropdown_ onde são listados diferentes metadados pelos quais se ordena a busca.
-- **Mostrar opções de Modos de Visualização em linha**: Ao invés de exibir um _dropdown_ com as opções dos modos de visualização, com esta configuração são exibidos apenas ícones um ao lado do outro para o usuário escolher.
-- **Mostrar o modo de visualização "Galeria" (tela cheia) junto com os demais modos de visualização**: por padrão este modo fica listado como um botão ao lado das opções de visualização. Com esta configuração esta diferenciação deixa de existir.
-- **Esconder botão "Ver como..."**: faz com que o botão "Ver como..." também chamado de botão de expositores ou links alternativos não apareça. Este botão é responsável por abrir um modal com opções de compartilhamento e acesso da lista de itens em diferentes formatos.
-- **Modo de visualização padrão forçado para listas de itens de termos ou repositório**: Diferentemente das coleções, lista de itens de termos ou do repositório possuem um modo de visualização padrão definido pelo sistema: o Mosaico. Com esta opção pode se configurar qual será o modo de visualização inicial.
-- **Modos de visualização disponíveis na lista**: Nas coleções, estas opções vem da própria configuração da coleção, e nos temos e repositório, vem do sistema. Aqui podem ser habilitados ou desabilidados por completo alguns modos de visualização para seu tema. Se apenas um modo permanecer ativo, este será o padrão e nenhum botão de selecionar modo de visualização será disponibilizado.
-- **Mostrar o botão de filtros na barra de controle**: Exibe o botão de mostrar ou esconder filtros dentro da própria barra de controle da busca.
+- **Ocultar el campo de búsqueda**: esta opción oculta conjuntamente la barra de búsqueda de texto y el enlace de búsqueda avanzada.
+- **Ocultar búsqueda avanzada**: no muestra el enlace a la búsqueda avanzada.
+- **Ocultar el botón "Metadatos visualizados "**: oculta el botón "Metadatos visualizados". Cabe señalar que este botón sólo es visible en la lista si el modo de visualización actual lo permite, como Tabla y Hojas.
+- **Ocultar región de ordenación**: oculta los _desplegables_ relacionados con la dirección de ordenación y los metadatos por los que se ordena la lista.
+- **Ocultar el botón "Ordenar por "**: basta con ocultar el _desplegable_ donde aparecen los diferentes metadatos por los que se ordena la búsqueda.
+- **Mostrar las opciones del modo de visualización en línea**: En lugar de mostrar un _desplegable_ con las opciones del modo de visualización, con este ajuste sólo se muestran iconos uno al lado del otro para que el usuario elija.
+- **Mostrar el modo de visualización "Galería" (pantalla completa) junto a los demás modos de visualización**: por defecto, este modo aparece como un botón junto a las opciones de visualización. Con este ajuste esta diferenciación ya no existe.
+- **Ocultar botón "Ver como... "**: hace que no aparezca el botón "Ver como...", también conocido como botón de visualización o enlaces alternativos. Este botón se encarga de abrir un modal con opciones para compartir y acceder a la lista de elementos en diferentes formatos.
+- **Modo de visualización por defecto forzado para listas de términos o repositorios**: A diferencia de las colecciones, las listas de términos o repositorios tienen un modo de visualización por defecto definido por el sistema: Mosaico. Con esta opción puede configurar el modo de visualización inicial.
+- **Modos de visualización disponibles en la lista**: En colecciones, estas opciones provienen de la propia configuración de la colección, y en temas y repositorios, provienen del sistema. Aquí puedes activar o desactivar completamente determinados modos de visualización para tu tema. Si sólo queda un modo activo, éste será el predeterminado y no estará disponible el botón de seleccionar modo de visualización.
+- **Mostrar el botón de filtros en la barra de control**: Muestra el botón de mostrar u ocultar filtros dentro de la propia barra de control de búsqueda.
 
-#### ** Área dos Filtros **
+#### ** Área de filtrado **
 
-A área de filtros, por padrão, é um painel lateral presente ao lado da lista de itens. Estas opções permitem alterar um pouco do seu comportamento.
+El área de filtrado, por defecto, es un panel lateral junto a la lista de elementos. Estas opciones le permiten cambiar un poco su comportamiento.
 
-- **Esconder filtros**: oculta por completo a barra, sem ter como acessá-la neste bloco.
-- **Esconder o botão "Esconder filtros"**: não oferece a opção de ocultar a barra de filtros para o usuário.
-- **Começar com filtros escondidos**: faz com que de início o painel de filtros comece escondido, mas ainda podendo ser chamado pelo botão de "Exibir/esconder filtros";
-- **Renderizar lista de filtros como uma modal**: mostra os filtros como uma modal de tela cheia ao invés de um painel lateral, sobrepondo-se a lista de itens.
+- **Ocultar filtros**: oculta completamente la barra, sin posibilidad de acceder a ella en este bloque.
+- **Ocultar el botón "Ocultar filtros "**: no ofrece al usuario la opción de ocultar la barra de filtros.
+- **Empezar con filtros ocultos**: hace que el panel de filtros empiece oculto, pero aún se puede llamar utilizando el botón "Mostrar/ocultar filtros";
+- **Mostrar la lista de filtros como un modal**: muestra los filtros como un modal a pantalla completa en lugar de un panel lateral, superponiéndose a la lista de elementos.
 
-#### ** Área de Paginação **
+#### ** Área de paginación **
 
-A paginação é essencial para não pesar a busca com listas de resultados muito grandes. Por padrão, é controlada na barra que fica abaixo da lista de itens, mostrando 12 itens por vez, à menos que configurada de maneira diferente pelo usuário.
+La paginación es esencial para evitar sobrecargar la búsqueda con listas muy largas de resultados. Por defecto, se controla en la barra situada debajo de la lista de elementos, mostrando 12 elementos a la vez, a menos que el usuario la configure de otro modo.
 
-- **Esconder a área de paginação**: esconde por completo os controles de paginação, permitindo que apenas uma página seja vista neste bloco, a inicial.
-- **Esconder botão "Itens por página"**: oculta o botão onde se seleciona quantos itens por página devem ser exibidos.
-- **Esconde o botão "Ir para a página:"**: esconde o botão que permite pular facilmente de uma página para a outra.
-- **Número padrão de itens por página**: útil especialmente se alguns dos controles acima foi escondido, aqui pode ser definida a quantidade de itens por página que é carregada, forçando o valor sobre aquele configurado pelo usuário.
+- **Ocultar el área de paginación**: oculta completamente los controles de paginación, permitiendo que en este bloque sólo se vea una página, la inicial.
+- **Ocultar botón "Elementos por página "**: oculta el botón donde se selecciona cuántos elementos por página deben mostrarse.
+- **Ocultar el botón "Ir a la página: "**: oculta el botón que permite saltar fácilmente de una página a otra.
+- **Número predeterminado de elementos por página**: útil especialmente si se han ocultado algunos de los controles anteriores, aquí se puede establecer el número de elementos por página que se carga, forzando el valor sobre el establecido por el usuario.
 
-#### ** Cores e Tamanhos **
+#### ** Colores y Tamaños **
 
-Para além do comportamento e presença de certos elementos no bloco, é possível também configurar a cor de vários componentes da interface, e outras configurações mais estéticas:
+Además del comportamiento y la presencia de determinados elementos en el bloque, también puede configurar el color de varios componentes de la interfaz y otros ajustes más estéticos:
 
-- **Tamanho base da fonte**: por padrão todos os elementos da interface são escalados a partir de uma fonte de _16px_. Nesta opção pode-se aumentar ou diminuir este valor para se melhorar a legibilidade da sua lista.
-- **Largura do painel de filtros**: O painel de filtros ocupa uma largura máxima de _20%_ da lista de itens (e mínima de _154px_). Nesta configuração pode-se alterar este valor, dando mais ou menos espaço para os filtros.
-- **Cor de fundo**: A cor de fundo da lista de itens como um todo;
-- **Cor de links e estados ativos**: Na interface, links e alguns ícones aparecem coloridos com uma cor para indicar seu estado ativo. Por padrão esta cor é o _Azul Turquesa_ do Tainacan, mas pode ser configurado por temas para outras cores. Com esta configuração você pode sobrescrever este valor;
-- **Cor de fundo de tooltips**: Em geral a cor de links é muito escura para mostrar os tooltips (os balõezinhos que possuem ficas ou resumos de conteúdo). Nesta configuração, pode ser escolhida uma cor mais clara, que sirva para esta função. Isso também afeta o botão de "Esconder Filtros".
-- **Cor de fundo dos campos**: esta é a cor que aparecerá no fundo de campos de texto e outros elementos da interface relacionados à entrada de dados. Por padrão é a mesma do plano de fundo e pode ser alterada para uma cor de maior destaque.
-- - **Cor de texto dos campos**: esta é a cor que aparecerá no conteúdo de campos de texto e outros elementos da interface relacionados à entrada de dados.
-- **Cor da borda dos campos**: a cor da borda de campos de texto, checkbox e similares.
-- **Cor dos rótulos**: a cor dos rótulos de campos na interface, tais como os nomes dos filtros.
-- **Cor dos cabeçalhos**: a cor dos cabeçalhos, ou seja, dos rótulos principais, tais como os nomes do itens e o indicador da sessão dos filtros.
-- **Cor geral de informações**: esta cor por padrão é um cinza utilizado para informações secundárias na interface. Por exemplo, os valores de metadados de menor importância e os ícones dos botões de controle da busca.
-- **Cor de fundo dos itens**: a cor de cada unidade item na lista, por padrão é a mesma da cor de fundo.
-- **Cor de fundo dos itens com o mouse em cima**: a cor de cada unidade item da lista quando o mouse está sobre ele.
-- **Cor de fundo do cabeçalho do item com o mouse em cima**: alguns itens possuem uma cor de destaque para o cabeçalho do seu modo de visualização (como o cartões, por exemplo). Nestes casos, esta será a cor que aparecerá nesta região do item com o mouse acima do mesmo.
+- **Tamaño de fuente base**: por defecto todos los elementos de la interfaz se escalan a partir de una fuente _16px_. En esta opción puede aumentar o disminuir este valor para mejorar la legibilidad de su lista.
+- **Anchura del panel de filtrado**: El panel de filtros ocupa un ancho máximo del _20%_ de la lista de elementos (y un mínimo de _154px_). En este ajuste puedes modificar este valor, dando más o menos espacio a los filtros.
+- **Color de fondo**: El color de fondo de la lista de elementos en su conjunto;
+- **Color de los enlaces y estados activos**: En la interfaz, los enlaces y algunos iconos se colorean con un color para indicar su estado activo. Por defecto este color es el _Azul Turquesa_ de Tainacan, pero puede configurarse por temas a otros colores. Con este ajuste puedes anular este valor;
+- **Color de fondo de los tooltips**: En general, el color de los enlaces es demasiado oscuro para mostrar los tooltips (las pequeñas burbujas que contienen notas adhesivas o resúmenes del contenido). En este ajuste, se puede elegir un color más claro para esta función. Esto también afecta al botón "Ocultar filtros".
+- **Color de fondo de los campos**: es el color que aparecerá en el fondo de los campos de texto y otros elementos de la interfaz relacionados con la introducción de datos. Por defecto es el mismo que el fondo y puede cambiarse a un color más destacado.
+- - **Color del texto del campo**: es el color que aparecerá en el contenido de los campos de texto y otros elementos de la interfaz relacionados con la introducción de datos.
+- **Color del borde de los campos**: es el color del borde de los campos de texto, casillas de verificación y similares.
+- **Color de las etiquetas**: es el color de las etiquetas de los campos de la interfaz, como los nombres de los filtros.
+- **Color de la cabecera**: color de las cabeceras, es decir, de las etiquetas principales, como los nombres de los elementos y el indicador de sesión de filtro.
+- **Color de la información general**: este color por defecto es un gris que se utiliza para la información secundaria en la interfaz. Por ejemplo, los valores de metadatos menos importantes y los iconos de los botones de control de búsqueda.
+- **Color de fondo de los elementos**: el color de cada unidad de elemento de la lista es el mismo que el color de fondo por defecto.
+- **Color de fondo de los elementos al pasar el ratón por encima**: el color de cada elemento de la lista al pasar el ratón por encima.
+- **Color de fondo de la cabecera del elemento al pasar el ratón por encima**: algunos elementos tienen un color de realce para la cabecera de su modo de visualización (como las tarjetas, por ejemplo). En estos casos, este será el color que aparecerá en esta región del elemento cuando el ratón se sitúe sobre él.
 
 <!-- tabs:end -->
 
-!> A Busca Facetada é um dos blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada. Isto ocorre porque ao se realizar qualquer busca a URL do site é complementada com os parâmetros que causariam conflito entre diferentes listas.
+!> La búsqueda por atributos es uno de los bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea uno, se desactiva la opción de insertar uno nuevo. Esto se debe a que al realizar cualquier búsqueda, la URL del sitio se complementa con los parámetros que causarían conflicto entre las diferentes listas.
 
 ---

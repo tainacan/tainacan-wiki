@@ -1,98 +1,96 @@
-# Permissões do Tainacan
+# Niveles de acceso a Tainacan
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Los niveles de permisos de Tainacan se dividen en dos niveles: _repositorio_ y _colecciones_. La principal diferencia es que los niveles de permisos de colección pueden referirse a todas las colecciones del repositorio o a cada colección en particular.
 
-As permissões do Tainacan são separadas em dois níveis: _repositório_ e _coleções_. A principal diferença é que permissões de coleções podem tratar de todas as coleções do repositório ou de cada coleção em específico.
-
-Algumas permissões podem garantir um acesso equivalente ao de outra permissões por serem consideradas "super permissões". Por exemplo, um usuário que possui a permissão "Gerenciar Tainacan" não precisa ter nenhuma outra permissão, já que esta lhe concedo acesso a todos os recursos. Veja suas descrições a seguir:
+Algunos niveles de permisos pueden conceder acceso equivalente a otros, ya que se consideran "superniveles". Por ejemplo, un usuario que tenga el nivel "Gerencia de Tainacan" no necesita tener ningún otro nivel, ya que éste le da acceso a todos los recursos. Vea sus descripciones a continuación:
 
 <!-- tabs:start -->
 
-### ** Nível Repositório **
+### ** Nivel de repositorio **
 
-## Repositório
+## Repositorio
 
-### Repositório em Geral
+### Repositorio General
 
-| Nome                             | Descrição                                                                 |
+| Nombre | Descripción                                                               |
 | -------------------------------- | ------------------------------------------------------------------------- |
-| Gerenciar Tainacan               | Gerenciar todos os recursos do Tainacan e todas as coleções               |
-| Gerenciar Permissões de Usuários | [Gerenciar funções de usuários e permissões](/es-mx/manage-user-roles.md) |
+| Gestión de Tainacan               | Gestionar todos los recursos y colecciones de Tainacan               |
+| Gestionar los permisos de usuario | [Gestionar las funciones y los permisos de los usuarios](/es-mx/manage-user-roles.md) |
 
-### Taxonomias
+### Taxonomías
 
-| Nome                         | Descrição                                               |
+| Nombre | Descripción                                               |
 | ---------------------------- | ------------------------------------------------------- |
-| Editar Taxonomias            | Criar e editar taxonomias e seus termos                 |
-| Deletar Taxonomias           | Deletar taxonomias e seus termos                        |
-| Editar Taxonomias de Outros  | Editar taxonomias e termos criados por outros usuários  |
-| Deletar Taxonomias de Outros | Deletar taxonomias e termos criados por outros usuários |
-| Ver Taxonomias Privadas      | Acessar taxonomias privadas e seus termos               |
+| Editar taxonomías            | Crear y editar taxonomías y sus términos                 |
+| Eliminar taxonomías           | Eliminar taxonomías y sus términos                        |
+| Editar taxonomías de otros  | Editar taxonomías y términos creados por otros usuarios  |
+| Eliminar Taxonomías de Otros | Eliminar taxonomías y sus términos |
+| Ver Taxonomias Privadas      | Acceder a taxonomías privadas y sus términos               |
 
-### Metadados
+### Metadatos
 
-| Nome                   | Descrição                                       |
+| Nombre                   | Descripción                                       |
 | ---------------------- | ----------------------------------------------- |
-| Editar Metadados       | Criar e editar metadados nível repositório      |
-| Deletar Metadados      | Deletar metadados nível repositório             |
-| Ver Metadados Privados | Acessar metadados privados no nível repositório |
+| Editar Metadatos       | Crear y editar metadatos a nivel de repositorio      |
+| Eliminar Metadatos      | Eliminar metadatos a nivel de repositorio       |
+| Ver Metadatos Privados | Acceso a metadatos privados a nivel de repositorio |
 
 ### Filtros
 
-| Nome                 | Descrição                                     |
+| Nombre                 | Descripción                                     |
 | -------------------- | --------------------------------------------- |
-| Editar Filtros       | Criar e editar filtros nível repositório      |
-| Deletar Filtros      | Deletar filtros nível repositório             |
-| Ver Filtros Privados | Acessar filtros privados no nível repositório |
+| Editar Filtros       | Crear y editar filtros a nivel de repositorio      |
+| Eliminar Filtros      | Eliminar filtros a nivel de repositorio            |
+| Ver Filtros Privados | Acceso a filtros privados a nivel de repositorio |
 
-### Atividades
+### Actividades
 
-| Nome           | Descrição                                                                                                                                     |
+| Nombre           | Descripción                                                                                                                                     |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Ver Atividades | Acessar registros de atividades e eventos do sistema. Note que atividades podem contrer informações de coleções, itens e taxonomias privadas. |
+| Ver Actividades | Acceda a los registros de actividades y a los eventos del sistema. Tenga en cuenta que las actividades pueden contener información de colecciones, artículos y taxonomías privadas. |
 
-#### ** Nível de Coleções **
+#### ** Nivel de la colección **
 
-## Coleções
+## Colecciones
 
-Permissões nível coleção existem em duas instâncias: a **geral**, que afeta todas as coleções e a **específica**, que afeta apenas uma coleção em si. Desta maneira, é possível configurar funções de usuários que possuem acesso à todas as coleções ou a apenas a algumas. Portando, todas as permisssões a seguir podem variar nestas instâncias:
+Los permisos a nivel de colección existen en dos instancias: **general**, que afecta a todas las colecciones, y **específico**, que afecta sólo a una colección. De esta forma, es posible configurar roles de usuario que tengan acceso a todas las colecciones o sólo a unas pocas. Por lo tanto, todos los permisos siguientes pueden variar en estas instancias:
 
-### Coleção
+### Colección
 
-| Nome                             | Descrição                                                                                                                                                                              |
+| Nombre | Descripción                                                                                                                                                                              |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Gerenciar Coleção                | Configurar a coleção, além de gerenciar todos os seus itens, metadados e filtros                                                                                                       |
-| Gerenciar Permissões de Usuários | Gerenciar funções de usuários e permissões no que diz respeito à esta coleção                                                                                                          |
-| Editar Itens em Massa            | Realizar operações de edição ou adição em massa em itens desta coleção. Note que sem outras permissões como "Editar item" ou "Editar Itens de Outros", esta permissão não terá efeito. |
+| Gestionar la colección                | Configurar la colección y gestionar todos sus elementos, metadatos y filtros                                                                                                       |
+| Gestionar los permisos de usuario | Gestionar las funciones y los permisos de los usuarios en relación con esta colección                                                                                                          |
+| Editar elementos de forma masiva            | Realiza operaciones masivas de edición o adición en los artículos de esta colección. Tenga en cuenta que sin otros permisos como "Editar artículo" o "Editar artículos de otros", este permiso no tendrá ningún efecto. |
 
-### Metadados
+### Metadatos
 
-| Nome                   | Descrição                                   |
+| Nombre                   | Descripción                                   |
 | ---------------------- | ------------------------------------------- |
-| Editar Metadados       | Criar e editar metadados nesta coleção      |
-| Deletar Metadados      | Deletar metadados nesta coleção             |
-| Ver Metadados Privados | Acessar metadados privados no nesta coleção |
+| Editar Metadatos       | Crear y editar metadatos en esta colección      |
+| Eliminar Metadatos      | Eliminar metadatos de esta colección             |
+| Ver Metadatos Privados | Acceda a los metadatos privados de esta colección |
 
 ### Filtros
 
-| Nome                 | Descrição                              |
+| Nombre                 | Descripción                              |
 | -------------------- | -------------------------------------- |
-| Editar Filtros       | Criar e editar filtros nesta coleção   |
-| Deletar Filtros      | Deletar filtros nesta coleção          |
-| Ver Filtros Privados | Acessar filtros privados nesta coleção |
+| Editar Filtros       | Crear y editar filtros en esta colección   |
+| Eliminar Filtros      | Eliminar filtros en esta colección          |
+| Ver Filtros Privados | Acceder a filtros privados en esta colección |
 
-### Itens
+### Elementos
 
-| Nome                     | Descrição                                               |
+| Nombre                     | Descripción                                               |
 | ------------------------ | ------------------------------------------------------- |
-| Editar Itens             | Criar e editar itens nesta coleção                      |
-| Deletar Itens            | Deletar itens nesta coleção                             |
-| Editar Itens de Outros   | Editar itens criados por outros usuários nesta coleção  |
-| Editar Itens Publicados  | Editar itens publicados nesta coleção                   |
-| Deletar Itens de Outros  | Deletar itens criados por outros usuários nesta coleção |
-| Deletar Itens Publicados | Deletar itens publicados nesta coleção                  |
-| Ver Itens Privadas       | Acessar itens privadas nesta coleção                    |
+| Editar elementos             | Crear y editar elementos en esta colección                    |
+| Eliminar elementos            | Eliminar elementos en esta colección                                |
+| Editar elementos de otros   | Editar elementos creados por otros usuarios en esta colección   |
+| Editar elementos publicados  | Editar elementos publicados en esta colección                 |
+| Eliminar elementos de otros  | Eliminar elementos creados por otros usuarios en esta colección  |
+| Eliminar elementos publicados | Eliminar elementos publicados en esta colección                  |
+| Ver elementos privados       | Acceder a elementos privados de esta colección                     |
 
 <!-- tabs:end -->
 
-Estas são as permissões relacionadas ao Tainacan. Veja [aqui](/es-mx/manage-user-roles.md) como editar as funções de usuários para que eles possam ter mais ou menos destas, e [aqui](/es-mx/manage-specific-capabilities.md) como retirar ou adicionar exceções em certas coleções.
+Estos son los permisos relacionados con Tainacan. Ver [aquí](/es-mx/manage-user-roles.md) cómo editar los roles de usuario para que puedan tener más o menos de estos, y [aquí](/es-mx/manage-specific-capabilities.md) cómo eliminar o añadir excepciones en ciertas colecciones.

@@ -1,80 +1,80 @@
-# Colabore com esta Wiki
+# Colabora con esta Wiki
 
-Se você chegou a esta página, provavelmente está pensando em contribuir com a nossa Wiki :smile: . Isto é ótimo! Como projeto de Software Livre, o Tainacan está calcado nos princípios da colaboração em diversos níveis: na **pesquisa**, no **código**, na **tradução** e também na **documentação**. Como usuário, você pode trazer contribuições valorosas para deixar nosso material mais claro e acessível.
+Si ha llegado a esta página, probablemente esté pensando en contribuir a nuestra Wiki :smile: . ¡Estupendo! Como proyecto de Software Libre, Tainacan se basa en los principios de colaboración a varios niveles: en **investigación**, en **código**, en **traducción** y también en **documentación**. Como usuario, puedes hacer valiosas contribuciones para que nuestro material sea más claro y accesible.
 
-Para colaborar, entretanto, é preciso se familiarizar um pouco com nossas ferramentas de documentação. Não se preocupe - aqui te daremos o auxílio necessário para que você possa fazer contribuições de qualidade sem dificuldades! Nesta página você vai ver:
+Para colaborar, sin embargo, tendrá que familiarizarse con nuestras herramientas de documentación. No se preocupe: aquí le daremos la ayuda que necesita para hacer contribuciones de calidad sin dificultad. En esta página verás:
 
-- [Como editar arquivos online via GitHub](#editando-arquivos-diretamente-no-github)
-- [Como funciona a sintaxe dos artigos da Wiki](#familiarizando-se-com-a-formatação-markdown)
-- [Como testar e fazer contribuições avançadas na Wiki](#contribuição-avançada-com-a-docsify)
-- [Como funciona a estrutura de arquivos da Wiki](#entendendo-a-estrutura-da-wiki)
+- [Cómo editar archivos en línea a través de GitHub](#editar-archivos-directamente-en-github)
+- [Cómo funciona la sintaxis de los artículos en la Wiki](#familiarizandose-con-el-formato-markdown)
+- [Cómo probar y hacer contribuciones avanzadas en la Wiki](#contribución-avanzada-con-Docsify)
+- [Cómo funciona la estructura de archivos Wiki](#comprender-la-estructura-de-la-wiki)
 
-## Editando arquivos diretamente no GitHub
+## Editar archivos directamente en GitHub
 
-Nossa Wiki está hospedada inteiramente no GitHub no seguinte repositório: https://github.com/tainacan/tainacan-wiki. Não é necessário ter muita experiência com Git para realizar contribuições pontuais, a própria plataforma já simplifica grande parte do processo. Por exemplo, se você viu algum erro de ortografia em um artigo, clique no botão **Edit on github** que aparece no canto superior direito da página. Você será redirecionado para o "código fonte" desta página:
+Nuestra Wiki está alojada íntegramente en GitHub, en el siguiente repositorio: https://github.com/tainacan/tainacan-wiki. No es necesario tener mucha experiencia con Git para hacer contribuciones ocasionales; la propia plataforma simplifica gran parte del proceso. Por ejemplo, si ves un error ortográfico en un artículo, haz clic en el botón **Editar en github** que aparece en la esquina superior derecha de la página. Se le redirigirá al "código fuente" de esta página:
 
-![Captura de Tela da página de edição de conteúdo no Github, onde está em destaque o botão editar, formado por uma caneta.](/_assets/images/contributing.png)
+![Captura de pantalla de la página de edición de contenidos en Github, donde aparece resaltado el botón de edición, formado por un lápiz.](_assets/images/contributing.png)
 
-Clicando no botão de editar, em formato de pincel, você poderá fazer as alterações desejadas, e ao final do formulário, explicar quais mudanças estão sendo propostas. Ao submeter uma proposta de mudança, o GitHub está, por trás dos panos, criando uma _Fork_ para você e aplicando uma _Pull-Request_.
+Haciendo clic en el botón de edición con forma de pincel, puedes hacer los cambios que quieras y, al final del formulario, explicar qué cambios se proponen. Al enviar una propuesta de cambio, GitHub está, entre bastidores, creando un _Fork_ para ustedes y aplicando un _Pull-Request_.
 
-Para contribuições mais complexas, que envolvam criar páginas, inserção de imagens, abas, vídeos, ou mesmo alterações na estrutura de navegação da Wiki, sugerimos seguir nossas [instruções para rodar a Docsify](#contribuição-avançada-com-a-docsify).
+Para contribuciones más complejas, que impliquen crear páginas, insertar imágenes, pestañas, vídeos o incluso cambios en la estructura de navegación de la Wiki, le sugerimos que siga nuestras instrucciones. [instrucciones para ejecutar Docsify](#contribución-avanzada-con-Docsify).
 
-## Familiarizando-se com a formatação markdown
+## Familiarizandose con el formato Markdown
 
-Vários sistemas colaborativos adotam determinadas convenções de formatação para tornar o trabalho dos editores mais fácil. Em nossa wiki, utilizamos a linguagem **`markdown`** para tal, mas também utlizamos alguns recursos extras. Esse sistema consiste em sintaxes e palavras-chave específicas para comunicar ao software como determinado texto deve ser exibido.
+Muchos sistemas colaborativos adoptan ciertas convenciones de formato para facilitar el trabajo de los editores. En nuestra wiki, utilizamos el lenguaje **`markdown``** para ello, pero también algunas características adicionales. Este sistema consta de sintaxis y palabras clave específicas para comunicar al software cómo debe mostrarse determinado texto.
 
-### Funcionam em qualquer lugar do texto:
+### Funcionan en cualquier parte del texto:
 
-| O que é                                     | O que você escreve                                                               | O que você vê                                                                  |
+| Qué es                                     | Lo que escribe                                                               | Lo que ve                                                                  |
 | ------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Texto em itálico, negrito ou ambos          | `*itálico*, **negrito** ou ***ambos***`                                          | _itálico_, **negrito** ou **_ambos_**                                          |
-| Texto pré-formatado                         | `Aqui vai o nome de uma função`                                                  | `Aqui vai o nome de uma função`                                                |
-| Links para páginas da wiki                  | `[Página principal](/es-mx/README.md)`                                           | [Página principal](/es-mx/README.md)                                           |
-| Links para uma seção                        | `[Editando Coleções](/es-mx/collections#criar-coleções)`                         | [Editando Coleções](/es-mx/collections#criar-coleções)                         |
-| Referência a um endereço de um website      | `https://tainacan.org`                                                           | https://tainacan.org                                                           |
-| Referência a um link com nome personalizado | `[Site Oficial do Tainacan](https://www.wikipedia.org/)`                         | [Site Oficial do Tainacan](https://www.wikipedia.org/)                         |
-| Comentários em texto                        | `<!--Este comentário não será exibido na página, somente em seu código-fonte-->` | <!--Este comentário não será exibido na página, somente em seu código-fonte--> |
+| Texto en cursiva, negrita o ambas          | `*cursiva*, **negrita** o ***ambos***`                                          | _cursiva_, **negrita** o **_ambos_**                                          |
+| Texto pre-formateado                         | `Aquí va el nombre de una función`                                                  | `Aquí va el nombre de una función`                                                |
+| Enlaces a las páginas de la wiki                  | `[Página principal](/es-mx/README.md)`                                           | [Página principal](/es-mx/README.md)                                           |
+| Enlaces a una sección                        | `[Editando colecciones](/es-mx/collections#crear-colecciones)`                         | [Editando colecciones](/es-mx/collections#crear-colecciones)                         |
+| Referencia a la dirección de un sitio web      | `https://tainacan.org`                                                           | https://tainacan.org                                                           |
+| Referencia a un enlace con un nombre personalizado | `[Sitio oficial de Tainacan](https://www.wikipedia.org/)`                         | [Sitio oficial de Tainacan](https://www.wikipedia.org/)                         |
+| Comentarios de texto                        | `<!--Este comentario no se mostrará en la página, sólo en su código fuente-->` | <!--Este comentario no se mostrará en la página, sólo en su código fuente--> |
 
-### Funcionam apenas no início das linhas:
+### Sólo funcionan al principio de las líneas:
 
-| O que é               | O que você escreve                                                                                    | O que você vê                                                                                                                                                                                                                                                                                                                                                                 |
+| Qué es               | Lo que escribe                                                                                    | Lo que ve                                                                                                                                                                                                                                                                                                                                                                 |
 | --------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Cabeçalho de Seção    | `## Nível 2`                                                                                          | <h2>Nível 2</h2>                                                                                                                                                                                                                                                                                                                                                              |
-| Cabeçalho de Seção    | `### Nível 3`                                                                                         | <h3>Nível 3</h3>                                                                                                                                                                                                                                                                                                                                                              |
-| Cabeçalho de Seção    | `#### Nível 4`                                                                                        | <h4>Nível 4</h4>                                                                                                                                                                                                                                                                                                                                                              |
-| Cabeçalho de Seção    | `##### Nível 5`                                                                                       | <h5>Nível 5</h5>                                                                                                                                                                                                                                                                                                                                                              |
-| Cabeçalho de Seção    | `###### Nível 6`                                                                                      | <h6>Nível 6</h6>                                                                                                                                                                                                                                                                                                                                                              |
-| Listas com marcadores | `* Este é um ponto`<br>`* Este é outro ponto`<br>&nbsp;&nbsp;`* Ponto dentro de um ponto`             | <ul><li>Este é um ponto</li><li>Este é outro ponto<ul><li>Ponto dentro de um ponto</li></ul></li></ul>                                                                                                                                                                                                                                                                        |
-| Listas enumeradas     | `1. Este é um ponto`<br>`2. Este é outro ponto`<br>&nbsp;&nbsp;`1. Ponto dentro de um ponto`          | <ol><li>Este é um ponto</li><li>Este é outro ponto<ol><li>Ponto dentro de um ponto</li></ol></li></ol>                                                                                                                                                                                                                                                                        |
-| Lista de checks       | `- [ ] Este é um ponto`<br>`- [x] Este é outro ponto`<br>&nbsp;&nbsp;`- [ ] Ponto dentro de um ponto` | <ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Este é um ponto</label></li><li class="task-list-item"><label><input checked disabled="" type="checkbox">Este é outro ponto</label><ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Ponto dentro de um ponto</label></li></ul></li></ul> |
-| Destaques             | `> Esta é uma observação importante.`                                                                 | <blockquote><p>Esta é uma observação importante.</p></blockquote>                                                                                                                                                                                                                                                                                                             |
-| Alertas               | `!> Esta é uma observação sensivível.`                                                                | <p class="tip">Esta é uma observação sensivível.</p>                                                                                                                                                                                                                                                                                                                          |
-| Notas                 | `?> Esta é uma observação secundária.`                                                                | <p class="warn">Esta é uma observação secundária.</p>                                                                                                                                                                                                                                                                                                                         |
+| Encabezado de sección    | `## Nivel 2`                                                                                          | <h2>Nivel 2</h2>                                                                                                                                                                                                                                                                                                                                                              |
+| Encabezado de sección    | `### Nivel 3`                                                                                         | <h3>Nivel 3</h3>                                                                                                                                                                                                                                                                                                                                                              |
+| Encabezado de sección    | `#### Nivel 4`                                                                                        | <h4>Nivel 4</h4>                                                                                                                                                                                                                                                                                                                                                              |
+| Encabezado de sección    | `##### Nivel 5`                                                                                       | <h5>Nivel 5</h5>                                                                                                                                                                                                                                                                                                                                                              |
+| Encabezado de sección    | `###### Nivel 6`                                                                                      | <h6>Nivel 6</h6>                                                                                                                                                                                                                                                                                                                                                              |
+| Listas de marcadores | `* Este es un punto `<br>`* Este es otro punto`<br>&nbsp;&nbsp;`* Punto dentro de un punto`             | <ul><li>Este es un punto</li><li>Este es otro punto<ul><li>Punto dentro de un punto</li></ul></li></ul>                                                                                                                                                                                                                                                                        |
+| Listas numeradas     | `1. Este es un punto`<br>`2. Este es otro punto`<br>&nbsp;&nbsp;`1. Puntro dentro de un punto`          | <ol><li>Este es un punto</li><li>Este es otro punto<ol><li>Punto dentro de un punto</li></ol></li></ol>                                                                                                                                                                                                                                                                        |
+| Lista de verificación       | `- [ ] Este es un punto`<br>`- [x] Este es otro punto`<br>&nbsp;&nbsp;`- [ ] Punto dentro de un punto` | <ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Este es un punto</label></li><li class="task-list-item"><label><input checked disabled="" type="checkbox">Este es otro punto</label><ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Ponto dentro de um ponto</label></li></ul></li></ul> |
+| Destacados             | `> Esta es una observación importante.`                                                                 | <blockquote><p>Esta es una observación importante.</p></blockquote>                                                                                                                                                                                                                                                                                                             |
+| Alertas               | `!> Esta es una observación delicada.`                                                                | <p class="tip">Esta es una observación delicada.</p>                                                                                                                                                                                                                                                                                                                          |
+| Notas                 | `?> Esta es una observación secundaria.`                                                                | <p class="warn">Esta es una observación secundaria.</p>                                                                                                                                                                                                                                                                                                                         |
 
-### Linhas
+### Líneas
 
-Para simples separação de sessões com uma linha, use:
+Para separar simplemente las sesiones con una línea, utilice:
 
 ```
 ------
 ```
 
-Que será renderizado como:
+Que se traducirá como:
 
 ---
 
-> Obs: deixe pelo menos uma linha em branco entre este símbolo e qualquer outro texto, caso contrário será entendido como cabeçalho.
+> Obs: deje al menos una línea en blanco entre este símbolo y cualquier otro texto, de lo contrario se entenderá como un encabezado.
 
-### Imagens
+### Imagenes
 
-| O que é                            | O que você escreve                                                    | O que você vê                                                       |
+| Qué es                            | Lo que escribe                                                    | Lo que ve                                                       |
 | ---------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| Imagem e descrição                 | `![Logo do Tainacan](../_assets/images/logo_tainacan.png)`            | ![Logo do Tainacan](../_assets/images/logo_tainacan.png)            |
-| Imagem e descrição, redimensionada | `![Logo do Tainacan](../_assets/images/logo_tainacan.png ':size=50')` | ![Logo do Tainacan](../_assets/images/logo_tainacan.png ":size=50") |
+| Imagen y descripción                 | `![Logo de Tainacan](../_assets/images/logo_tainacan.png)`            | ![Logo de Tainacan](../_assets/images/logo_tainacan.png)            |
+| Imagen y descripción, redimensionada | `![Logo de Tainacan](../_assets/images/logo_tainacan.png ':size=50')` | ![Logo de Tainacan](../_assets/images/logo_tainacan.png ":size=50") |
 
 ### Vídeos
 
-Usamos um `iframe` para incorporar mídia, que é a alternativa padrão para a maioria das plataformas online de vídeo. Por exemplo, para incorporar um vídeo do YouTube:
+Usamos un `iframe` para insertar medios, que es la alternativa estándar para la mayoría de las plataformas de vídeo en línea. Por ejemplo, para insertar un vídeo de YouTube:
 
 ```html
 <iframe
@@ -88,15 +88,15 @@ Usamos um `iframe` para incorporar mídia, que é a alternativa padrão para a m
 ></iframe>
 ```
 
-> Note que estão configurados a largura (560px), a altura (513px) e também o tempo de início do vídeo (18s).
+> Observe que se han establecido la anchura (560px), la altura (513px) y el tiempo de inicio del vídeo (18s).
 
-O resultado será como abaixo:
+El resultado será el siguiente:
 
 <iframe width="560" height="513" src="https://www.youtube.com/embed/gFJfyHRKaE0?start=18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Trechos de código
+### Fragmentos de código
 
-Para mostrar trechos de código pré-formatado, o próprio `markdown` já possibilita isso, mas também podemos acrescentar diretivas para dar destaque a algumas linguagens, basta envolver o código desejado com três crases ` ``` ` antes e depois de seu conteúdo. Se for um código em `php`, por exemplo, basta começar com ` ```php `. O resultado será como abaixo:
+Para mostrar fragmentos de código preformateados, el propio `markdown` ya lo hace posible, pero también podemos añadir directivas para resaltar determinados idiomas, simplemente rodeando el código deseado con tres comillas ` ``` ` antes y después de su contenido. Si se trata de un código en `php`, por ejemplo, simplemente empieza con ` ```php `. El resultado será el siguiente:
 
 ```php
 <?php
@@ -108,24 +108,24 @@ function foo($arg_1, $arg_2, /* ..., */ $arg_n)
 ?>
 ```
 
-### Abas
+### Pestañas
 
-Uma das coisas extras que nossa Wiki consegue fazer para além do `markdown` renderizar abas. Elas podem ser úteis para segmentar conteúdos em seções dentro de uma mesma página. Por exemplo, o código abaixo:
+Una de las cosas adicionales que nuestra Wiki puede hacer además de `markdown` mostrar pestañas. Pueden ser útiles para segmentar el contenido en secciones dentro de la misma página. Por ejemplo, el código siguiente:
 
 ```markdown
 <!-- tabs:start -->
 
-#### ** Aba 1 **
+#### ** Pestaña 1 **
 
-Conteúdo da Aba 1
+Contenido de prestaña 1
 
-#### ** Aba 2 **
+#### ** Pestaña 2 **
 
-Conteúdo da Aba 2
+Contenido de prestaña 2
 
-#### ** Aba 3 **
+#### ** Pestaña 3 **
 
-Conteúdo da Aba 3
+Contenido de prestaña 3
 
 <!-- tabs:end -->
 ```
@@ -134,156 +134,156 @@ Será renderizado como:
 
 <!-- tabs:start -->
 
-#### ** Aba 1 **
+#### ** Pestaña 1 **
 
-Conteúdo da Aba 1
+Contenido de prestaña 1
 
-#### ** Aba 2 **
+#### ** Pestaña 2 **
 
-Conteúdo da Aba 2
+Contenido de prestaña 2
 
-#### ** Aba 3 **
+#### ** Pestaña 3 **
 
-Conteúdo da Aba 3
+Contenido de prestaña 3
 
 <!-- tabs:end -->
 
-### Collapses
+### Colapsos
 
-Para esconder alguns conteúdos extensos em regiões collpsáveis, usamos a tag `HTML` `<description></description>` e `<summary></summary>`. Por exemplo:
+Para ocultar algunos contenidos largos en regiones plegables, utilizamos la etiqueta `HTML` `<description></description>` y `<summary></summary>`. Por ejemplo:
 
 ```
 <details>
-<summary>Um collapse (Clique para expandir)</summary>
+<summary>Un colapso (Haga clic para ampliar)</summary>
 
-- Conteúdo markdown aqui dentro
-- E o que mais for preciso
+- Contenido markdown aqui dentro
+- Y cualquier otra cosa que se necesite
 
 </details>
 ```
 
-Resultará em:
+El resultado será:
 
 <details>
-<summary>Um collapse (Clique para expandir)</summary>
+<summary>Un colapso (Haga clic para ampliar)</summary>
 
-- Conteúdo markdown aqui dentro
-- E o que mais for preciso
+- Contenido markdown aqui dentro
+- Y cualquier otra cosa que se necesite
 
 </details>
 
-> Note que há uma linha de espaço entre o que é código `HTML` e o que é `markdown`.
+> Observe que hay una línea de espacio entre lo que es código `HTML` y lo que es `markdown`.
 
-### Tabelas
+### Tablas
 
-A maneira de se criar tabelas é um pouco limitada em `markdown`. Segue um exemplo:
+La forma de crear tablas es algo limitada en `markdown`. He aquí un ejemplo:
 
 ```
-| Cabeçalho 1   | Cabeçalho 2   |
+| Encabezado 1   | Encabezado 2   |
 |---------------|---------------|
-| Dados 1       | Dados 2       |
-| Dados 3       | Dados 4       |
+| Datos 1       | Datos 2       |
+| Datos 3       | Datos 4       |
 ```
 
-Que gera a seguinte tabela:
+Lo que genera la siguiente tabla:
 
-| Cabeçalho 1 | Cabeçalho 2 |
+| Encabezado 1 | Encabezado 2 |
 | ----------- | ----------- |
-| Dados 1     | Dados 2     |
-| Dados 3     | Dados 4     |
+| Datos 1     | Datos 2     |
+| Datos 3     | Datos 4     |
 
-Para inserir quebras de linha dentro de tabelas `markdown`, usamos a tag `HTML` `<br>`:
+Para insertar saltos de línea en las tablas `markdown`, usamos la etiqueta `HTML` `<br>`:
 
 ```
-| Cabeçalho 1   | Cabeçalho 2        |
+| Encabezado 1   | Encabezado 2        |
 |---------------|--------------------|
-| Dados 1       | Dados 2            |
-| Dados 3       | Dados 4<br>Dados 5 |
+| Datos 1       | Datos 2            |
+| Datos 3       | Datos 4<br>Datos 5 |
 ```
 
-Que resulta na seguinte tabela:
+El resultado es la siguiente tabla:
 
-| Cabeçalho 1 | Cabeçalho 2        |
+| Encabezado 1 | Encabezado 2        |
 | ----------- | ------------------ |
-| Dados 1     | Dados 2            |
-| Dados 3     | Dados 4<br>Dados 5 |
+| Datos 1     | Datos 2            |
+| Datos 3     | Datos 4<br>Datos 5 |
 
-## Contribuição Avançada com a Docsify
+## Contribución avanzada con Docsify
 
-Tudo o que foi mostrado até o momento pode ser [editado diretamente via GitHub](#editando-arquivos-diretamente-no-github), porém fica difícil prever como irão ficar alguns recursos mais avançados, como as imagens ou as abas, que só podem ser visualizadas mesmo quando já submetidas para a Wiki. Para essas e outras contribuções mais avançadas, como mecher na estrutura de navegação, sugerimos o teste do conteúdo em sua máquina local, o que vai requerer alguns conhecimentos extras.
+Todo lo que se ha mostrado hasta ahora podría ser [editado directamente mediante GitHub](#editando-archivos-directamente-en-github), pero es difícil predecir cómo se verán algunas características más avanzadas, como las imágenes o las pestañas, que sólo pueden verse aunque ya se hayan enviado a la Wiki. Para estas y otras contribuciones más avanzadas, como modificar la estructura de navegación, le sugerimos que pruebe el contenido en su equipo local, lo que requerirá algunos conocimientos adicionales..
 
-### Preparando o ambiente
+### Preparando el ambiente
 
-Em sua máquina ter, é preciso ter instalados:
+En su máquina, necesita tener:
 
 - Git
 - NodeJS
 
-Primeiramente, faça uma _Fork_ do nosso repositório no GitHub:
+En primer lugar, haga un _Fork_ de nuestro repositorio en GitHub:
 
-![Captura de Tela da página da Wiki no Github, onde está em destaque o botão de criar Fork.](/_assets/images/contributing_2.png)
+![Captura de pantalla de la página Wiki en Github, donde aparece resaltado el botón de creación de Fork.](/_assets/images/contributing_2.png)
 
-Clone e acesse sua cópia local. Nós assumimos aqui que você já tenha realizado as [configurações inicias do Git](https://git-scm.com/book/es-mx/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git), usando uma conta criada no GitHub:
+Clone y acceda a su copia local. Suponemos que ya ha realizado la operación [configuración inicial de Git](https://git-scm.com/book/es-mx/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git), utilizando una cuenta creada en GitHub:
 
 ```
 git clone https://github.com/SEU_NOME_DE_USUARIO/tainacan-wiki
 cd tainacan-wiki
 ```
 
-O proximo comando garante que a sua _Fork_ possa ser sincronizada futuramente com atualizações vindas do repositório original da Wiki:
+El siguiente comando garantiza que su _Fork_ puede sincronizarse en el futuro con las actualizaciones del repositorio Wiki original:
 
 ```
 git remote add upstream https://github.com/tainacan/tainacan-wiki.git
 ```
 
-Agora instale globalmente a `CLI` da Docsify, nossa framework que auxilia na criação da Wiki:
+Ahora instala globalmente la `CLI' de Docsify, nuestro framework que te ayuda a crear un Wiki:
 
 ```
 npm i docsify-cli -g
 ```
 
-Tenha certeza de que está no diretório do respositóio (`cd tainacan-wiki`, ou qualquer caminho necessário) e inicie o servidor da Docsify:
+Asegúrate de que estás en el directorio de la respuesta (`cd tainacan-wiki`, o la ruta que necesites) e inicia el servidor de Docsify:
 
 ```
 docsify serve
 ```
 
-Isso instanciará um servidor local de testes, geralmente na porta `http://localhost:3000`. Ao acessar este endereço no seu navegador, você terá uma prévia de como ficará a Wiki após as edições feitas na sua cópia local. Qualquer mudança em algum arquivo dentro do repositório será refletida automaticamente neste endereço, assim que o arquivo for salvo.
+Esto instanciará un servidor de pruebas local, normalmente en el puerto `http://localhost:3000`. Accediendo a esta dirección en tu navegador, obtendrás una vista previa de cómo quedará el Wiki después de las ediciones que hayas hecho en tu copia local. Cualquier cambio en un archivo dentro del repositorio se reflejará automáticamente en esta dirección tan pronto como se guarde el archivo.
 
-### Fazendo sua primeira contribuição via Pull-Request
+### Realice su primera contribución a través de Pull-Request
 
-O procedimento acima, exceto pelo último comando, só precisa ser executado uma vez. A seguir detalhamos como propor uma mudança para algum arquivo da Wiki. Suponha que você deseja acrescentar mais informações sobre [Hospedagem](/es-mx/hosting). Este arquivo, em português, se encontra em `/es-mx/hosting.md`, como pode ser visto pelo endereço na barra do navegador.
+El procedimiento anterior, excepto el último comando, sólo debe realizarse una vez. A continuación explicaremos cómo proponer un cambio en un archivo Wiki. Supongamos que desea añadir más información sobre [Alojamiento](/es-mx/hosting). Este expediente, en portugués, puede consultarse en `/es-mx/hosting.md`, como puede verse en la dirección de la barra del navegador.
 
-Uma boa prática é começar atualizando seu repositório local com as mudanças que podem ter sido feitas no repositório oficial da wiki:
+Una buena práctica es empezar actualizando su repositorio local con los cambios que se hayan podido realizar en el repositorio wiki oficial:
 
 ```
 git fetch upstream
 git merge upstream/master
 ```
 
-Faça então as alterações que você deseja e salve o arquivo. Atualize o seu _Fork_:
+A continuación, realice los cambios que desee y guarde el archivo. Actualice su _Fork_:
 
 ```
 git add .
-git commit -m "Atualiza o conteúdo da página de hospedagem com mais opções."
+git commit -m "Actualiza el contenido de la página de alojamiento con más opciones."
 git push
 ```
 
-Você deve poder ver as alterações no seu repositório no GitHub. Vá então para o [repositório oficial da Wiki](https://github.com/tainacan/tainacan-wiki) e clique na opção "Criar Pull Request":
+Deberías poder ver los cambios en tu repositorio de GitHub. A continuación, vaya a [repositorio oficial de la Wiki](https://github.com/tainacan/tainacan-wiki) y haga clic en la opción "Crear Pull Request":
 
-![Captura de Tela da página da Wiki no Github, onde está em destaque o botão de criar Pull Request](/_assets/images/contributing_3.png)
+![Captura de pantalla de la página Wiki en Github, donde aparece resaltado el botón para crear una Pull Request.](/_assets/images/contributing_3.png)
 
-Você escolherá seu _Fork_ como origem para a _Pull Request_ e poderá escrever uma descrição resumindo suas alterações.
+Usted elegirá su _Fork_ como origen del _Pull Request_ y puedes escribir una descripción que resuma tus cambios.
 
-![Captura de Tela da página da Wiki no Github, mostrando a opção de escolher a branch de origem da Fork](/_assets/images/contributing_4.png)
+![Captura de pantalla de la página Wiki en Github, mostrando la opción de elegir la rama de código Fork](/_assets/images/contributing_4.png)
 
-Criada a requisição, é só aguardar a revisão da equipe!
+Una vez creada la solicitud, espere a que el equipo la revise.
 
-## Entendendo a estrutura da Wiki
+## Comprender la estructura de la wiki
 
-Agora que você já está capaz de colaborar e testar mudanças na nossa Wiki, está na hora de entender um pouco melhor como funciona a Docsify, responsável por transformar os arquivos `markdown` existentes em nosso repositório no site que você vê hospedado em https://tainacan.github.io/tainacan-wiki/#/es-mx/.
+Ahora que ya puedes colaborar y probar cambios en nuestro Wiki, es hora de entender un poco mejor cómo funciona Docsify, que se encarga de transformar los archivos `markdown` existentes en nuestro repositorio en el sitio que ves alojado en https://tainacan.github.io/tainacan-wiki/#/es-mx/.
 
-Observando a estrutura de arquivos do repositório, temos as seguintes páginas e arquivos, entre outros:
+Si observamos la estructura de archivos del repositorio, tenemos, entre otras, las siguientes páginas y archivos:
 
 ```
 /_assets
@@ -311,18 +311,18 @@ index.html
 style.css
 ```
 
-Vamos comentar sobre alguns:
+Comentemos algunas cosas:
 
-- **/\_assets**: é a pasta onde guardamos imagens e demais arquivos de mídia. Ela existirá em níveis mais internos da Wiki para guardar arquivos relativos àquele escopo;
-- **/dev**: é a pasta que guarda a parte da Wiki relativa a documentação para desenvolvedores. Esta separação ajuda a organizar um pouco o conteúdo extenso da Wiki. No futuro, podem ser criadas outras pastas específicas para uma parte da Wiki, desde que ajustadas as referências paras os arquivos que ficam nela;
-- **/es-mx**: é a pasta onde está guardada a documentação da Wiki traduzida para Português Brasileiro. Observe que quase todos os arquivos e pastas do resto da Wiki estão replicadas aqui. Quando não há uma versão traduzida para um arquivo dentro desta pasta, o usuário será redirecionado para o arquivo correspondente na pasta raiz;
-- **CONTRIBUTING.md**: Instruções para quem deseja colaborar com a Wiki. Você está lendo a versão traduzida deste arquivo, que está em `/es-mx/CONTRIBUTING.md`;
-- **README.md**: Página Inicial da Wiki, que é carregada ao se acessar `/`. Usamos o nome README para que o GitHub também reconheça este arquivo como o de apresentação. A versão traduzida está em `/es-mx/README.md` e é carregada ao se acessar `/es-mx`. Internamente às pastas `/dev`, também há uma versão deste arquivo, que será a Página Inicial da sessão de Desenvolvedores;
-- **\_coverpage.md**: Página de capa, que é carregada acima da página inicial;
-- **\_navbar.md**: Barra superior da Wiki, atualmente contém link para o site oficial e um dropdown para escolher a linguagem do site. Esta é uma página especial que é renderizada pela Docsify, transformando sublistas, por exemplo, em dropdowns;
-- **\_sidebar.md**: Lista de links que são exibidos na barra lateral. Observe que há uma dessas na pasta `/es-mx` com seu conteúdo traduzido, mas também há versões nas pastas `/dev` e `/dev/es-mx`. Isso garante que ao navegar em arquivos da sessão de desenvolvedores, seja mostrada uma lista de links dedicada para o assunto.
-- **collections.md**: Um exemplo de uma das várias páginas comuns que existem na Wiki. Estas páginas costumam ter sua própria hierarquia definida pelos cabeçalhos de sessão, que são exibidos também na barra lateral quando se entra nela;
-- **index.html**: Arquivo usadado para configurar a Docsify, plugins e imports. Não recomendamos alterações aqui, há menos que saiba o que está fazendo!
-- **style.css**: Folha de estilos CSS do site, que customiza a aparência da Wiki.
+- **/\_assets**: es la carpeta donde almacenamos imágenes y otros archivos multimedia. Existirá en más niveles internos de la Wiki para almacenar archivos relacionados con ese ámbito;
+- **/dev**: es la carpeta que contiene la parte de la Wiki relativa a la documentación para desarrolladores. Esta separación ayuda a organizar el extenso contenido de la Wiki. En el futuro se podrán crear otras carpetas específicas para una parte de la Wiki, siempre que se ajusten las referencias a los archivos que contienen;
+- **/es-mx**: es la carpeta donde se almacena la documentación de la Wiki traducida al portugués de Brasil. Tenga en cuenta que casi todos los archivos y carpetas en el resto de la Wiki se replican aquí. Cuando no haya una versión traducida de un archivo dentro de esta carpeta, el usuario será redirigido al archivo correspondiente en la carpeta raíz;
+- **CONTRIBUTING.md**: Instrucciones para quienes deseen colaborar con la Wiki. Está leyendo la versión traducida de este archivo, que se encuentra en `/es-mx/CONTRIBUTING.md`;
+- **README.md**: Página de inicio del wiki, que se carga accediendo a `/`. Utilizamos el nombre README para que GitHub también reconozca este archivo como el archivo de presentación. La versión traducida está en `/es-mx/README.md` y se carga accediendo a `/es-mx`. Dentro de las carpetas `/dev` también hay una versión de este archivo, que será la página de inicio de la sesión de desarrolladores;
+- **\_coverpage.md**: Página de portada, que se carga encima de la página de inicio;
+- **\_navbar.md**: Barra superior de la Wiki, que actualmente contiene un enlace al sitio oficial y un desplegable para elegir el idioma del sitio. Se trata de una página especial que es renderizada por Docsify, convirtiendo las sublistas, por ejemplo, en desplegables;
+- **\_sidebar.md**: Lista de enlaces que se muestran en la barra lateral. Tenga en cuenta que hay uno de ellos en la carpeta `/es-mx` con su contenido traducido, pero también hay versiones en las carpetas `/dev` y `/dev/es-mx`. De este modo, al navegar por los archivos en la sesión de desarrollador, se muestra una lista de enlaces dedicada al tema.
+- **collections.md**: Un ejemplo de una de las muchas páginas comunes que existen en Wiki. Estas páginas suelen tener su propia jerarquía definida por las cabeceras de sesión, que también se muestran en la barra lateral al entrar en ella;
+- **index.html**: Archivo utilizado para configurar Docsify, plugins e importaciones. ¡No recomendamos hacer cambios aquí a menos que sepas lo que estás haciendo!
+- **style.css**: La hoja de estilos CSS del sitio, que personaliza la apariencia del Wiki.
 
-Encorajamos fortemente a exploração desta estrutura e de alterações pelo servidor de testes locais da Docsify para se familiarizar com os conceitos. Para mais detalhes, consulte a [documentação da Docsify](https://docsify.js.org/).
+Le recomendamos encarecidamente que explore esta estructura y los cambios a través del servidor de pruebas local de Docsify para familiarizarse con los conceptos. Para más detalles, consulte la página [documentación de Docsify](https://docsify.js.org/).

@@ -1,249 +1,248 @@
-# Ações em Massa
+# Acciones conjuntas
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-O Tainacan permite a realização de “ações em massa”. É possível criar, editar, importar e deletar itens em massa com poucos cliques.
+Tainacan permite realizar "acciones conjuntas". Es posible crear, editar, importar y eliminar elementos de forma masiva con solo unos pocos clics.
 
-## Criar Itens em Massa
+## Crear elementos en lotes
 
-A criação de “itens em massa” é diferente da “importação de itens” a partir de um arquivo “.csv”. Diferente da última, que ocorre a partir da seção de importadores do Tainacan, a criação em massa é feita diretamente do “painel administrativo da coleção”, mediante o upload dos documentos principais que irão compor a “coleção”.
+Crear elementos conjuntos es diferente que “importar elementos” desde un archivo *.csv*. A diferencia ésta última función, que se ejecuta desde la sección de importadores de Tainacan, la creación conjunta se realiza directamente desde el panel administrativo de Colecciones, mediante la carga de los principales documentos que conformarán la colección.
 
-> Nota: Se você possui uma base de itens estruturada e tratada em um documento de planilha, considere utilizar o “Importador CSV”.
+> Nota: Si tiene una base de elementos estructurados y manejados en un documento de hoja de cálculo, considere usar el `Importador de CSV`.
 
-> Nota: O que diferencia a função “Criar Itens em Massa” da Criação da função “Adicionar Um Item” é o processo de definição do documento principal. Para a última função, o preenchimento dos “metadados” independe da existência de um documento vinculado ao “item”. Enquanto que para a primeira função, o preenchimento dos “metadados” se dá a partir do upload do conjunto dos documentos principais.
+> Nota:  La diferencia entre las funciones "Crear elementos conjuntos" y "Agregar un elemento" es el proceso de definición del documento principal. Por último, la creación de los metadatos no depende de la existencia de un documento vinculado al elemento. Mientras que para la primera función, el llenado de los metadatos se realiza desde la carga del conjunto de documentos originales.
 
-!>**Atenção**: Por padrão, o Tainacan irá considerar o nome do arquivo como o “Título Principal” do item.
+!>**Atención**: Por defecto, Tainacan considerará el nombre del archivo como el “Título Principal” del elemento.
 
-1. Acesse o painel de controle do _WordPress_;
+1. Acceso al panel de control de _WordPress_;
 
-   ![Acesse o painel de controle](_assets\images\Painel_Adm_WordPress.png)
+   ![Acceso al panel de control](_assets/images/Panel_Adm_Wordpress.png)
 
-2. Na barra lateral esquerda, clique em Tainacan;
+2. En la barra lateral izquierda, haz clic en Tainacan.
 
-   ![Acesse o painel de controle](_assets\images\Painel_Acesso_Tainacan.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
-3. Selecione a “Coleção” que deseja para a criação dos “itens”;
+3. Selecciona la “Colección” en la que quieras crear de dos elementos.
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acceso al panel de control](_assets/images/Seleccionar_Coleccion1.png)
 
-4. Clique em “Adicionar novo” e selecione a opção “Adicionar itens em massa”;
+4. Pulsa `Agregar nuevo` y selecciona la opción `Añadir elementos en lote`.
 
-   ![Acesse o painel de controle](_assets\images\Adicionar_novo_Itens_Massa.png)
+   ![Acceso al panel de control](_assets/images/Agregar_elementos_en_lote.png)
 
-5. Clique ou arraste a mídia dos “itens” que deseja criar para o campo de “Envio de documentos”;
+5. Pulsa o arrastra al interior del recuadro los dos elementos que deseas crear para el campo de “Envio de documentos”.
 
-   ![Acesse o painel de controle](_assets\images\Itens_em_masas_Envio_arquivos.png)
+   ![Acceso al panel de control](_assets/images/Agregar_elementos_en_lote_seleccionar_archivo.png)
 
-6. Os arquivos selecionados serão enviados automaticamente e o progresso de upload pode ser acompanhado em tempo real;
+6. Los archivos seleccionados se cargarán automáticamente y el progreso de carga se podrá seguir en tiempo real.
 
-   ![Acesse o painel de controle](_assets\images\Itensemmassaconcluidouploadarquivos.png)
+   ![Acceso al panel de control](_assets/images/Agregar_elementos_proceso_completado.png)
 
-   > **Nota**: Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
+   > **Nota**: Se pueden agregar nuevos archivos multimedia en cualquier momento en esta misma pantalla durante el proceso de envío de documentos.
 
-7. Quando o processo for concluído, será possível:
+7. Al finalizar el proceso será posible:
 
-   a. **“Edição de itens em sequência**” para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
+   a. **“Editar elementos en secuencia**” para editar cada soporte individualmente en secuencia. Consulta el apartado: Editar elementos en secuencia.
 
-   b. **“Editar itens em massa”** para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa;
+   b. **“Editar elementos conjuntos”** para editar información común a todos los archivos enviados en esta operación. Consulta el apartado: Editar elementos conjuntos.
 
-   c. **“Cancelar”** para encerrar a operação. Os arquivos de mídia que já estiverem com o upload concluído ficarão disponíveis na “Biblioteca de Mídia” do WordPress.
+   c. **“Cancelar”** para finalizar una operación. Los archivos multimedia que ya están cargados estarán disponibles en la "Biblioteca multimedia" de WordPress.
 
-!>Atenção: Todos os valores inseridos via edição em massa são atribuídos a todos os “itens” criados em massa.
+!>Atención: Todos los valores insertados a través de la edición conjunta se asignan a todos los elementos creados de manera conjunta.
 
-![Acesse o painel de controle](_assets\images\Itensemmassacomandosfinais.png)
+![Acceso al panel de control](_assets/images/Agregar_elementos_comandos_finales.png)
 
-### Editar Itens em Massa
+### Editar elementos en lotes
 
-1. Selecione a “Coleção” que contém os “itens” que deseja editar;
+1. Selecciona la “Colección” que contenga los elementos que quieras editar.
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acceso al panel de control](_assets/images/Seleccionar_Coleccion1.png)
 
-2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos itens) de cada um que deseja editar, ou clique em “Selecionar todos os itens na página”;
+2. Haz clic en el cuadro de selección (ubicado a la izquierda de las miniaturas de los elementos) para cada uno que desee editar, o pulsa en `Seleccionar todos los elementos de la página`;
 
-   ● Se desejar, também é possível selecionar todos os itens da coleção. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
+   ● También puedes seleccionar todos los elementos de la colección. Para eso, primero da clic en `Seleccionar todos los elementos de la página` y luego en `Seleccionar todos`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_Massa_Editar_Itens_selecao.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_seleccionar.png)
 
-3. À direita, clique em “Ações para seleção”;
+3. A la derecha, haz clic en `Acciones para la selección`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_Acoes_para_selecao.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_acciones.png)
 
-4. Selecione “Editar itens selecionados em massa”;
+4. Selecciona `Edición en lotes de los elementos seleccionados`.
 
-   ![Acesse o painel de controle](_assets\images\editaritensselecionadosemmassa.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_edicion.png)
 
-5. Selecione o “metadado” que deseja editar na janela exibida;
+5. Elige los metadatos que quieras editar en la ventana que se muestra.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_selecionar_metadado.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_seleccionar_metadato.png)
 
-6. Em seguida, com base nas opções e configurações do “metadado”, selecione uma ação:
+6. Luego, según las opciones y configuraciones del metadato, selecciona una acción:
 
-   ○ **“Adicionar valor”**: Para acrescentar um novo valor a um “metadado” com a configuração “Permitir valores múltiplos” habilitada;
+   ○ **“Añadir valor”**: Para agregar un nuevo valor a un metadato con la configuración `Permitir valores múltiples` habilitada.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_adicionar_valor.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_anadir_valor.png)
 
-   ○ **“Atribuir novo valor”**: Para adicionar um novo valor ao “metadado”.
+   ○ **“Establecer nuevo valor”**: Para dar un nuevo valor al metadato.
 
-   I. Se houver valores para os “itens” selecionados, eles serão substituídos pelo novo valor;
+   I. Si existen valores para los elementos seleccionados, se sustituirán por el nuevo valor.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_atribuir_novo_valor.png)
+   ![Acesse o painel de controle](_assets/images/Editar_elementos_en_lote_establecer_nuevo_valor.png)
 
-   ○ **“Substituir valor”**: Para alterar um valor já existente por outro;
+   ○ **“Reemplazar valor”**: Para cambiar un valor existente por otro.
 
-   I. Será exibido um campo para selecionar o valor a ser substituído e outro campo será exibido para a inserção do novo valor.
+   I. Aparecerá un campo para seleccionar el valor a sustituir y otro campo para introducir un nuevo valor.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_substituir_valor.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_establecer_sustituir_valor.png)
 
-   ○ **“Remover um valor”**: Para remover um valor específico em um metadado com a configuração “Permitir valores múltiplos" habilitada;
+   ○ **“Remover un valor”**: PPara eliminar un valor específico en un metadato con una configuración `Permitir valores múltiples` habilitada.
 
-   I. Um campo para selecionar o valor a ser removido será exibido à direita.
+   I. Se mostrará a la derecha un campo para seleccionar el valor a eliminar.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_remover_um_valor.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_establecer_eliminar_valor.png)
 
-   ○ **“Limpar valores”**: Para remover todos os valores de um “metadado”;
+   ○ **“Vaciar valores”**: Para eliminar todos los valores de un metadato.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_limpar_valores.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_establecer_vaciar_valor.png)
 
-   ○ **“Copiar valor”**: Para fazer uma cópia dos valores a partir de um outro “metadado do item”;
+   ○ **“Copiar valor”**: Aparecerá un campo para seleccionar los metadatos de los que se copiará el valor. 
 
-   I. Será exibido um campo para selecionar o “metadado” do qual o valor será copiado. Importante ressaltar que os “tipos dos metadados” de origem e destino devem ser iguais. A tabela seguinte mostra as restrições entre as configurações dos “metadados” para que se possa realizar a cópia.
+   I. Es importante tener en cuenta que los tipos de metadatos de origen y destino deben ser iguales. La siguiente tabla muestra las restricciones entre los ajustes de metadatos para realizar una copia.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_copiar_valor.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_copiar_valores.png)
 
-   | Metadado destino                  | Metadado origem                   | É possível copiar |
+   | Metadato destino                  | Metadato origen                   | ¿Es posible copiar? |
    | --------------------------------- | --------------------------------- | ----------------- |
-   | Simples                           | Simples                           | Sim               |
-   | Múltiplo                          | Simples                           | Sim               |
-   | Simples                           | Múltiplo                          | Não               |
-   | Múltiplo                          | Múltiplo                          | Sim               |
-   | Qualquer                          | Composto                          | Não               |
-   | Simples                           | Filho Simples (metadado composto) | Sim               |
-   | Múltiplo                          | Filho Simples (metadado composto) | Sim               |
-   | Filho Simples (metadado composto) | Simples                           | Não               |
-   | Filho Simples (metadado composto) | Múltiplo                          | Não               |
+   | simple                           | simple                           | Si               |
+   | múltiple                          | simple                           | Si               |
+   | simple                           | múltiple                          | No               |
+   | múltiple                          | múltiple                          | Si               |
+   | cualquiera                          | compuesto                          | No               |
+   | simple                           | hijos simples (metadato compuesto) | Si               |
+   | múltiple                          | hijos simples (metadato compuesto) | Si               |
+   | hijos simples (metadato compuesto) | simple                           | No               |
+   | hijos simples (metadato compuesto) | múltiple                          | No               |
 
-7. Ao concluir a configuração das alterações desejadas, clique no botão de “play” à direita para executar a ação;
+7. Al terminar de configurar los cambios deseados, pulsa el botón de la derecha `reproducir`, para ejecutar la acción.
 
-   ● Ou clique no “ícone de cancelar” para cancelar a ação;
+   ● O da clic en el icono de cancelación para cancelar la acción.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_botao_play.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_boton_aplicar.png)
 
-8. Clique em “Concluir” quando concluir as ações desejadas.
+8. Pulsa en `Finalizar` cuando completes las acciones deseadas.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_botao_concluir.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_finalizar.png)
 
-   > **Nota**: Além dos “metadados”, na “edição em massa” é possível alterar as seguintes configurações de cada item:
+   > **Nota**: Además de los metadatos, en la edición conjunta es posible cambiar las siguientes configuraciones para cada elemento:
    >
-   > **“Status”**: É possível alterar essa configuração para os valores: “Publicado”, “Privado”, “Rascunho” e “Lixo”;
+   > **“Status”**: ​​Es posible cambiar esta configuración a los valores: “Publicado”, “Privado”, “Borrador” y “Papelera”;
    >
-   > **“Permitir comentários”**: É possível alterar essa configuração para os valores: “Aberto” e “Fechado”.
+   > **“Permitir comentarios”**: Es posible cambiar esta configuración a los valores: “Abierto” y “Cerrado”
 
 ###
 
 ---
 
-## Excluir Itens em Massa
+## Eliminar elementos en lotes
 
-1. Selecione a “Coleção” que contém os “itens” que deseja excluir;
+1. Selecciona la “Colección” que contenga los elementos que quieres eliminar.
 
-   ![Acesse o painel de controle](_assets\images\Selecao_Colecao.png)
+   ![Acceso al panel de control](_assets/images/Seleccionar_Coleccion1.png)
 
-2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos itens) de cada um que deseja excluir ou clique em “Selecionar todos os itens na página”;
+2. Haz clic en el cuadro de selección (situado a la izquierda de las miniaturas de los elementos) de cada uno que desee eliminar, o marca el recuadro `Seleccionar todos los elementos de la página`.
 
-   ● Se desejar, também é possível selecionar todos os “itens da coleção”. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
+   ● También es posible seleccionar todos los elementos de la colección. Para ello, primero pulsa “Seleccionar todos los elementos de la página” y luego `Seleccionar todos`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_Massa_Editar_Itens_selecao.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_seleccionar.png)
 
-3. À direita, clique em “Ações para seleção”;
+3. A la derecha, haz clic en `Acciones para la selección`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_Acoes_para_selecao.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_acciones.png)
 
-4. Selecione “Enviar para lixeira” para excluir os “itens” selecionados;
+4. Elige `Enviar a la papelera` para eliminar los elementos seleccionados.
 
-   ○ Uma janela de confirmação será exibida, clique em “Continuar” para confirmar a operação.
+   ○ Aparecerá una ventana de confirmación, pulsa en `Continuar` para confirmar la operación.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_enviar_lixeira.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_lote_acciones_enviar_a_papelera.png)
 
-### Excluir Permanentemente ou restaurar Itens em Massa da Lixeira
+### Eliminar Permanentemente o Recuperar Elementos Conjuntos de la Papelera de Reciclaje
 
-1. Os arquivos enviados para a lixeira estão disponíveis na aba “Lixo” da “coleção”;
+1. Los archivos enviados a una papelera de reciclaje están disponibles en la pestaña `Papelera` de la "Colección".
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_itens_no_lixo.png)
+   ![Acceso al panel de control](_assets/images/Acciones_para_la_seleccion_papelera.png)
 
-2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos itens) de cada um que deseja deletar permanentemente ou clique em “Selecionar todos os itens na página”;
+2. Haz clic en el cuadro de selección (situado a la izquierda de las miniaturas de los elementos) de cada uno que quieras eliminar permanentemente o pulsa `Seleccionar todos los ítems en la página`;
 
-   ○ Se desejar, também é possível selecionar todos os “itens” que estão na lixeira. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
+   ○ También puedes seleccionar todos los elementos que están en la papelera. Para hacerlo, primero pulsa `Seleccionar todos los elementos de la página` y luego `Seleccionar todos`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_selecao_itens_lixeira.png)
+   ![Acceso al panel de control](_assets/images/Acciones_para_la_seleccion_papelera_elementos.png)
 
-3. À direita, clique em “Ações para seleção”;
+3. A la derecha, pulsa `Acciones para la selección`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_Lixeira_Acoes_para_selecao.png)
+   ![Acceso al panel de control](_assets/images/Acciones_para_la_seleccion_papelera_acciones.png)
 
-4. Clique em “Deletar permanentemente” para excluir os “itens” de forma irreversível;
+4. Haz clic en `Eliminar permanentemente` para borrar los elementos de forma irreversible.
 
-   !>**Atenção**: Uma vez deletado permanentemente um “item”, não é possível o recuperar.
+   !>**Atención**: una vez que un elemento se ha eliminado de forma permanente, no se puede recuperar.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_Deletar_permanentemente.png)
+   ![Acceso al panel de control](_assets/images/Acciones_para_la_seleccion_borrar_definitivamente.png)
 
-5. Ou clique em “Restaurar do Lixo”, para restaurar os “itens” selecionados para a coleção.
+5. Haga clic en `Recuperar del basurero`, para restaurar los elementos seleccionados de una colección.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_Restaurar_do_Lixo.png)
+   ![Acceso al panel de control](_assets/images/Acciones_para_la_seleccion_restaurar.png)
 
 ---
 
-## Editar Itens em Sequencia
+## Editar elementos en secuencia
 
-1. Selecione a “Coleção” que deseja para a edição dos “itens”;
+1. Selecciona la “Colección” en la que quieras editar dos elementos.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_itens_no_lixo.png)
+   ![Acceso al panel de control](_assets/images/Seleccionar_Coleccion1.png)
 
-2. Clique na “caixa de seleção” (localizada à esquerda das miniaturas dos “itens”) de cada um que deseja editar ou clique em “Selecionar todos os itens na página”;
+2. Haz clic en el cuadro de selección (situado a la izquierda de las miniaturas de los elementos) de cada uno de los que quieras editar, o pulsa `Seleccionar todos los elementos de la página`.
 
-   ● Se desejar, também é possível selecionar todos os “itens da coleção”. Para isso, primeiro clique em “Selecionar todos os itens na página” e então clique em “Selecionar todos”.
+   ● También puedes seleccionar todos los elementos de la colección. Para hacerlo, primero da clic en `Seleccionar todos los elementos de la página` y, a continuación, en `Seleccionar todo`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_selecao_itens.png)
+   ![Acceso al panel de control](_assets/images/Acciones_para_la_seleccion_papelera_acciones_flecha.png)
 
-3. À direita, clique em “Ações para seleção”;
+3. A la derecha, pulsa `Acciones para la selección`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_Acoes_para_selecao.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones.png)
 
-4. Selecione “Editar itens selecionados em sequência”;
+4. Elige `Editar los elementos seleccionados en secuencia`.
 
-   ![Acesse o painel de controle](_assets\images\editaritensselecionadosemmassa.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones_editar.png)
 
-5. Edite os campos desejados;
+5. Edita los campos que desees.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_editar_metadados.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones_editar_metadatos.png)
 
-6. No “rodapé da página” é exibida uma barra de progresso com as informações:
+6. En el pie de página se muestra una barra de progreso con la siguiente información:
 
-   ○ “Item” atual e total de “itens”;
+   ○ "Elemento" actual y total de "elementos";
 
-   ○ Última vez que as alterações realizadas foram salvas;
+   ○ Última modificación guardada.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_barra_progresso.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones_progreso.png)
 
-7. Ao concluir as alterações no “item” exibido, selecione:
+7. Al terminar los cambios en el elemento que se muestra, selecciona:
 
-   ○ **“Atualizar”**: As alterações realizadas no “item” serão salvas e o próximo “item” é exibido para edição;
+   ○ **“Actualizar”**: Los cambios realizados en el elemento se guardarán y se mostrará el siguiente elemento para su edición.
 
-   ○ **“Salvar como rascunho”**: O “item” tem seu “status” alterado para rascunho.
+   ○ **“Guardar como borrador”**: El elemento cambia su estado a borrador.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_concluir_alteracoes.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones_finalizar_modificaciones.png)
 
-8. Quando chegar no último “item” clique em “Atualizar” e depois “Concluir”.
+8. Al llegar al último elemento haz clic en `Actualizar` y luego en `Finalizar`.
 
-   ![Acesse o painel de controle](_assets\images\Acoes_em_massa_atualizar_concluir.png)
+   ![Acceso al panel de control](_assets/images/Editar_elementos_en_secuencia_acciones_actualizar_finalizar.png)
 
-   > Nota: Por padrão, ao iniciar a edição em sequência, os “metadados do item” aparecem colapsados. Para expandir os “metadados” e visualizar os valores preenchidos de cada “item” existem dois caminhos: clicar em “Expandir todos” ou “clicar em um metadado por vez”.
+   > Nota: De forma predeterminada, cuando se inicia la edición en secuencia, los metadatos del elemento aparecen colapsados. Para expandirlos y ver los valores de cada uno hay dos maneras: pulsar en `Expandir todo` o en un metadato a la vez.
 
-## Importar itens
+## Importar elementos
 
-Importe vários “itens” com “metadados pré-configurados” e valores preenchidos com o [Importador .csv](https://tainacan.github.io/tainacan-wiki/#/es-mx/importers?id=importador-csv-items).
+Importa varios elementos con metadatos preconfigurados y valores predefinidos con el [Importador .csv](/es-mx/importers.md#importar-archivo-csv-de-elementos).
 
 ---
 
 ## Importar Taxonomias
 
-Crie taxonomias com “vocabulários controlados” e “valores hierárquicos” utilizando o [Importador de Vocabulário](https://tainacan.github.io/tainacan-wiki/#/es-mx/importers?id=importador-csv-de-vocabulários-taxonomias).
+Crea taxonomías con vocabularios controlados y valores jerárquicos utilizando el [Importador de Vocabulario](/es-mx/importers.md#importar-csv-de-vocabularios-taxonomías).

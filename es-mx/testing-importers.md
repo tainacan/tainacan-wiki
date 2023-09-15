@@ -1,57 +1,55 @@
-# Testando Importadores
+# Pruebas de los Importadores
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Existen varios importadores para Tainacan, incluyendo algunos que pueden ser creados por desarrolladores como plugins. En esta documentación, nos ocuparemos del que consideramos más utilizado, [importador CSV](/es-mx/importers.md#importer-csv-items).
 
-Há diversos importadores para o Tainacan, incluindo alguns que podem ser criados por desenvolvedores como plugins. Nesta documentação, trataremos daquele que consideramos o mais usado, o [Importador CSV](/es-mx/importers.md#importador-csv-items).
+## Lo básico
 
-## O Básico
+1. Vaya a la página Importadores, accesible desde el menú del repositorio;
+2. Seleccione el Importador CSV;
+3. Elija un archivo CSV para probarlo. Es importante que su archivo cubra algunos de los casos de importación más comunes. Si no tienes ninguno a mano, puedes utilizar uno [de estos aquí](http://oficinas.tainacan.org/ ":ignorar");
+4. Rellene el formulario, seleccionando una Colección de destino y cargando el archivo CSV;
+5. Haga clic en "Siguiente";
+   - [x] Al entrar en la pantalla de mapeo, compruebe que las columnas se han separado correctamente según su separador configurado en la página anterior.
+   - [x] Compruebe que los metadatos existentes para esta colección están disponibles en los selectores de mapeo.
+6. Rellene la asignación de metadatos. Si su colección aún no tiene metadatos configurados, [deje que el importador los cree](#creating-metadata-in-the-mapping). Si ya está configurada, realice las correspondencias adecuadas para cada tipo;
+   - [x] Confirmar que cada vez que los metadatos se asocian a una columna del mapeador, dejan de estar disponibles en los otros selectores;
+7. Haga clic en `Run` para ejecutar el importador;
+   - [x] Confirme que si no ha asignado ninguna columna al "Título principal de metadatos" de la colección, recibirá una alerta sugiriéndole que lo haga;
+   - [x] Cuando haya terminado de ejecutar el importador, compruebe los registros (Archivos de registro) en la página Procesos para ver que no ha habido alertas;
+   - [x] Confirme que los tipos de metadatos se han mapeado correctamente, que las imágenes se han cargado y que se han creado nuevos términos si hay metadatos para Taxonomías que estaban vacíos;
 
-1. Vá para a página de Importadores, acessível pelo menu do repositório;
-2. Selecione o Importador CSV;
-3. Escolha um arquivo CSV para testar. É importante que seu arquivo cubra alguns dos casos mais comuns da importação. Se você não tiver um em mãos, pode utilizar algum [destes aqui](http://oficinas.tainacan.org/ ":ignore");
-4. Preencha o formulário, selecionando uma Coleção destino e subindo o arquivo CSV;
-5. Clique em `Próximo`;
-   - [x] Ao entrar na Tela de Mapeamento, verifique se as coluna foram devidamente separadas de acordo com seu separador configurado na página anterior.
-   - [x] Cheque se estão disponíveisos metadados existentes nesta coleção nos seletores do mapeamento.
-6. Preencha o mapeamento dos metadados. Caso sua coleção ainda não tenha metadados configurados, [deixe o importador criá-los](#criando-metadados-no-mapeamento). Se já estiver configurada, faça os mapeamentos adequados para cada tipo;
-   - [x] Confirme que, cada vez que um metadado é associado à uma coluna do mapeador, ele deixa de estar disponível nos outros seletores;
-7. Clique em `Executar` para rodar o importador;
-   - [x] Confirme que, se você não tiver mapeado nenhuma coluna para o "Metadado principal Título" da Coleção, você receberá um alerta sugerindo que isso seja feito;
-   - [x] Ao concluir a execução do importador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta;
-   - [x] Confirme que os tipos de metadados foram mapeados corretamente, que as imagens foram carregadas e que novos termos foram criados caso haja metadados de Taxonomias que estavam vazias;
+## Sustitución de artículos
 
-## Substituindo Itens
+1. Vaya a la colección donde se realizó la importación anterior;
+2. Haga clic en el botón `Exportar' en la esquina superior derecha de la pantalla de la colección;
+3. Exporte la colección en formato CSV;
+4. Utilizando un editor de su elección, cambie el contenido de algunas de las líneas del archivo CSV exportado. Puedes cambiar los metadatos de los elementos e incluso eliminar algunas líneas si quieres agilizar el proceso;
+5. Vaya a la página Importadores, accesible desde el menú del repositorio;
+6. Seleccione el Importador CSV;
+7. Utilice la misma colección como destino y cargue el archivo CSV modificado;
+8. No olvide dejar seleccionada la opción "Repetir elemento" del formulario en `Actualizar`;
+9. Haga clic en `Siguiente`;
+10. En la pantalla de asignación de metadatos, mantenga las mismas columnas que se utilizaron para los metadatos en la importación anterior;
 
-1. Vá para a coleção onde foi feita a importação anterior;
-2. Clique no botão de `Exportar`, localizado no canto superior direito da tela da coleção;
-3. Exporte a coleção como CSV;
-4. Com um editor de sua preferência, altere o conteúdo de algumas linhas do arquivo CSV exportado. Você pode alterar metadados dos itens e até remover algumas linhas se desejar fazer seu processo mais rápido;
-5. Vá para a página de Importadores, acessível pelo menu do repositório;
-6. Selecione o Importador CSV;
-7. Use a mesma coleção como destino e faça o upload do arquivo CSV que foi alterado;
-8. Não se esqueça de deixar a opção "Item Repetido" no formulário selecionada em `Atualizar`;
-9. Clique em `Próximo`;
-10. Na tela de Mapeamento dos Metadados, mantenha as mesmas colunas que foram usadas para os metadados na importação anterior;
+- [x] Compruebe que se ha detectado el campo especial `special_item_id`.
 
-- [x] Cheque se o campo especial `special_item_id` foi detectado.
+11. Haga clic en "Ejecutar" para ejecutar el importador;
+    - [x] Cuando haya terminado de ejecutar el importador, compruebe los registros (Log Files) en la página Processes para asegurarse de que no se han producido alertas;
+    - [x] Confirme que los elementos que tenían líneas modificadas se actualizaron en el proceso de importación;
 
-11. Clique em `Executar` para rodar o importador;
-    - [x] Ao concluir a execução do importador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta;
-    - [x] Confirme que os itens que tiveram linhas alteradas foram atualizados no processo de importação;
+## Creación de metadatos en el mapeo
 
-## Criando Metadados no Mapeamento
+1. Vaya a la página Importadores, accesible desde el menú del repositorio;
+2. Seleccione el Importador CSV;
+3. Elija un archivo CSV para probarlo. En este caso, lo ideal es que tenga **configuraciones relacionadas con metadatos con [campos especiales](/es-mx/importers#columnas-especiales)**. [En esta página](http://oficinas.tainacan.org/) puede encontrar un ejemplo en el último enlace, pero también le sugerimos que cree sus propias configuraciones basándose en la [documentación del importador](/es-mx/importers#crear-metadatos-automáticamente).
+4. Rellena el formulario, seleccionando una **Colección que aún no tenga metadatos configurados** y subiendo el archivo CSV;
+5. Haga clic en `Siguiente`;
+6. En el mapeo, permita que el importador cree los metadatos;
+7. Aproveche la oportunidad de crear un metadato de prueba directamente en esta pantalla haciendo clic en la opción "Crear metadatos" situada debajo de la lista de correspondencias;
+   - [x] Compruebe, cuando haya terminado de crear los metadatos, que están disponibles en los selectores de mapeo;.
+8. Elija un metadato para mapear utilizando sus metadatos recién creados, en lugar de permitir que el importador los cree;
+9. Haga clic en "Ejecutar" para ejecutar el importador;
+   - [x] Cuando haya terminado de ejecutar el importador, compruebe los registros (Log Files) en la página Processes para asegurarse de que no se han producido alertas;
+- [x] Verifique que los tipos de metadatos se han creado correctamente, incluidos sus ajustes como "Permitir valores múltiples", "Estado" y "Permitir inserción de nuevos términos";
 
-1. Vá para a página de Importadores, acessível pelo menu do repositório;
-2. Selecione o Importador CSV;
-3. Escolha um arquivo CSV para testar. Neste caso, é ideal que ele possua **configurações relacionadas aos metadados com os [campos especiais](/es-mx/importers#colunas-especiais)**. [Nesta página](http://oficinas.tainacan.org/) você pode encontrar um exemplo no último link, mas sugerimos também criar suas próprias configurações baseando-se na [documentação do importador](/es-mx/importers#criar-metadados-automaticamente).
-4. Preencha o formulário, selecionando uma **Coleção que ainda não possua metadados configurados** e subindo o arquivo CSV;
-5. Clique em `Próximo`;
-6. No mapeamento, permita que o importador crie os metadados;
-7. Aproveite para criar um único metadado de teste a diretamente nesta tela, clicando na opção `Criar Metadado` abaixo da lista de mapeamentos;
-   - [x] Verifique, ao concluir o processo de criar o metadado que o mesmo está disponível nos seletores do mapeamento;.
-8. Escolha um metadado para mapear usando o seu metadado recém-criado, ao invés de permitir que o importador crie;
-9. Clique em `Executar` para rodar o importador;
-   - [x] Ao concluir a execução do importador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta;
-   - [x] Confirme que os tipos de metadados foram criados corretamente, incluindo suas configurações como "Permitir valores múltiplos", "Status" e "Permitir inserção de novos termos";
-
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/es-mx/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-¿qué-tengo-que-hacer).

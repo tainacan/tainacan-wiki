@@ -1,204 +1,203 @@
-# Otimização
+# Optimización
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+## Directrices de optimización de Tainacan
 
-## Orientações para otimização do Tainacan
+Esta página reúne consejos y configuraciones para **optimizar el rendimiento** de Tainacan en el servidor.
 
-Esta página reúne dicas e configurações para **otimizar a performance** do Tainacan em seu servidor.
-
-Algumas coisas podem ser feitas diretamente pelo painel administrativo do **WordPress**, e outras ações podem envolver edição de _arquivos de configuração e acesso a configurações no seu servidor_, também pode ser necessário conhecimento técnico mais avançado ou contato com o administrador do servidor da instalação.
+Algunas cosas se pueden hacer directamente desde el panel de administración de **WordPress**, y otras acciones pueden implicar la edición de archivos de configuración y el acceso a la configuración de tu servidor. También pueden ser necesarios conocimientos técnicos más avanzados o ponerse en contacto con el administrador del servidor de la instalación.
 
 ---
 
-## Diagnóstico do Sistema
+## Diagnóstico del sistema
 
-A partir da versão [0.8](https://wordpress.org/plugins/tainacan/%7C) do plugin do Tainacan para _WordPress_ foi implementada uma seção para a realização automática de um _diagnóstico_ da sua instalação.
+A partir de la versión [0.8](https://wordpress.org/plugins/tainacan/%7C) del plugin Tainacan para WordPress se implementó una sección para realizar automáticamente un diagnóstico de la instalación.
 
-1. Acesse o _painel administrativo_ do WordPress;
-2. No menu lateral esquerdo, **passe** o _mouse_ sobre Tainacan;
-3. Selecione o submenu **Diagnóstico do Sistema**;
+1. Accede al panel de administración de WordPress;
+2. En el menú lateral izquierdo, pasa el ratón sobre el icono de Tainacan;
+3. Selecciona el submenú **Diagnóstico del sistema**;
 
-Esta tela exibe as seguintes informações:
+Esta pantalla muestra la siguiente información:
 
-- **Versão do WordPress**: Retorna informações sobre a sua versão _instalada_ do **WordPress** em comparação com a versão mais recente disponível.
-- **Versão PHP**: Retorna informações sobre a sua versão _instalada_ do **PHP** em comparação com a versão mais recente disponível.
-- **Versão da base de dados**: Retorna informações sobre a sua versão _instalada_ do **Banco de Dados** em comparação com a versão mais recente disponível.
-- **Módulos PHP**: Retorna informações sobre os módulos obrigatórios e recomendados para o funcionamento adequado do Tainacan.
-- **Tempo máximo de execução do PHP**: Retorna o _valor atual_ e o _recomendado_ para a execução de processos.
-- **Estrutura de Links Permanentes**: Retorna se a estrutura de _Links Permanentes_ está **habilitada** ou não.
-- **Pasta de Upload**: Retorna se a _pasta para envio de mídia_ está **gravável** ou não.
-- **Tamanho máximo do upload de arquivos**: Retorna o **tamanho máximo** de arquivos permitido para _upload_ na instalação.
-- **Cron**: Retorna a **existência** ou _ausência_ de **tarefas agendadas** de _backup_ da instalação.
+- **Versión de WordPress**: Brinda información sobre la versión de WordPress instalada en comparación con la última versión disponible.
+- **Versión de PHP**: Brinda información sobre la versión de **PHP** instalada en comparación con la última versión disponible.
+- **Versión de la base de datos**: Brinda información sobre la versión de la **Base de datos** instalada en comparación con la última versión disponible.
+- **Módulos PHP**: Muestra información sobre los módulos obligatorios y recomendados para el correcto funcionamiento de Tainacan.
+- **Tiempo máximo de ejecución de PHP**: Muestra el valor actual y el recomendado para ejecutar procesos.
+- **Estructura de los enlaces permanentes**: Muestra si la estructura de Enlaces Permanentes está **habilitada** o no.
+- **Carpeta de subida**: Muestra si la carpeta para subir archivos tiene permisos de escritura o no.
+- **Tamaño máximo de carga de archivos**: Muestra el **tamaño máximo** de archivos que se pueden subir en la instalación.
+- **Cron**: Indica si hay **tareas programadas** para realizar respaldos de la instalación.
 
-Os resultados são acompanhados de um pequeno retorno visual (▇) à esquerda em que as cores indicam:
+Los resultados van acompañados de un pequeño feedback visual (▇) a la izquierda en el que los colores indican:
 
-- <span style="color: #a23939">▇</span> - Parâmetro **incorreto** para funcionamento adequado;
-- <span style="color: #e69810">▇</span> - Parâmetro **parcialmente suficiente**, com ajustes possíveis;
-- <span style="color: #25a189">▇</span> - Parâmetro **adequado**!
+- <span style="color: #a23939">▇</span> - Parámetro **incorrecto** para un buen funcionamiento;
+- <span style="color: #e69810">▇</span> - Parámetro **parcialmente suficiente**, con posibilidad de ajustes;
+- <span style="color: #25a189">▇</span> - ¡Parámetro **adecuado**!
 
-Em caso de dúvidas ou sugestões inscreva-se na [comunidade do Tainacan](https://tainacan.discourse.group)!
+Si tienes preguntas o sugerencias, ¡suscríbete a la [comunidad Tainacan](https://tainacan.discourse.group)!
 
-### Permissões do Módulo Imagick (Não está gerando miniaturas a partir de arquivos PDF)
+### Permisos del módulo Imagick (sin generar miniaturas a partir de archivos PDF)
 
-O módulo Imagick é utilizado para extrair a primeira página de arquivos PDFs enviados ao servidor para gerar miniaturas automáticas. Se ele não estiver presente, o Diagnóstico de Sistema irá avisar.
+El módulo Imagick se utiliza para extraer la primera página de los archivos PDF cargados en el servidor para generar miniaturas automáticas. Si no está presente, el Diagnóstico del sistema te avisará.
 
-Contudo, devido a mudanças recentes no pacote Imagick, em alguns casos ele vem configurado para não ter permissão para abrir e ler arquivos PDF.
+Sin embargo, debido a cambios recientes en el paquete Imagick, en algunos casos está configurado para no permitir abrir ni leer archivos PDF.
 
 Para resolver isso é preciso:
 
-No arquivo `/etc/ImageMagick-6/policy.xml` (ou `/etc/ImageMagick/policy.xml`) Encontre a seguinte linja:
+Para resolver esto, hay que localizar el archivo `/etc/ImageMagick-6/policy.xml` (o `/etc/ImageMagick/policy.xml`) y buscar la siguiente línea:
 
 ```
 <policy domain="coder" rights="none" pattern="PDF" />
 ```
 
-E mude para ficar assim:
+Y hay que cambiarla para que quede así:
 
 ```
 <policy domain="coder" rights="read|write" pattern="PDF" />
 ```
 
-Em seguida, reinicie seu servidor web.
+A continuación, debes reiniciar el servidor web.
 
 ---
 
-## Orientações para performance
+## Recomendaciones para un buen desempeño
 
-### Reduza o número de metadados exibidos por padrão na listagem
+### Reducir el número de metadatos mostrados por defecto en el listado
 
-Se a sua listagem de itens estiver lenta, especialmente na visão “tabela”, reduza o número de metadados exibidos por padrão na listagem. Quanto menos metadados forem exibidos na listagem, mais rápida ela será.
+Si la carga de la lista de elementos (ítems) es lenta, especialmente en la vista de "tabla", reduce la cantidad de metadatos que se muestran de forma predeterminada. Cuantos menos metadatos se muestren en la lista, más rápida será.
 
-Para fazer isso, acesse a página de configuração dos metadados de sua coleção, edite os metadados, procure a opção “Exibir na listagem” e marque “não exibir por padrão”. Esta opção ainda permitirá que os usuários escolham visualizar este metadado na listagem, se quiserem, mas removerá ele da listagem por padrão, acelerando o carregamento para os visitantes.
+Para ello, ve a la página de configuración de metadatos de la colección, edita los metadatos, busca la opción “Mostrar en el listado” y marca “no mostrar por defecto”. Esta opción seguirá permitiendo a los usuarios elegir ver estos metadatos en el listado si lo desean, pero los eliminará del listado por defecto, acelerando la carga para los visitantes a tu sitio.
 
-### Limite o número máximo de itens em uma listagem
+### Limitar el número máximo de artículos en un listado
 
-Por padrão, o Tainacan tem um limite de 96 itens por página em qualquer listagem ou requisição à API. Faça alguns testes e verifique se esse número é adequado para o seu servidor.
+Por defecto, Tainacan tiene un límite de 96 elementos por página en cualquier listado o petición API. Ejecuta algunas pruebas y verifica si este número es adecuado para tu servidor.
 
-Caso este número seja muito alto e as requisições forem muito lentas, você pode diminuí-lo para garantir uma boa experiência de uso.
+Si este número es demasiado alto y las peticiones son demasiado lentas, puedes reducirlo para garantizar una buena experiencia de usuario.
 
-Da mesma forma, caso seu servidor seja mais potente, você pode aumentar esse número e oferecer listagens mais completas. Isto é especialmente útil para os links que são gerados para visitantes acessarem a coleção em outros formatos, como CSV. Quanto maior o número de itens por páginas, menos páginas eles terão que acessar para recuperar todos os itens de uma coleção.
+Del mismo modo, si tu servidor es más potente, puedes aumentar este número y ofrecer listados más completos. Esto es especialmente útil en el caso de los enlaces que se generan para que los visitantes accedan a la colección en otros formatos, como CSV. Cuanto mayor sea el número de elementos por página, a menos páginas tendrán que acceder para recuperar todos los elementos de una colección.
 
-Para mudar essa configuração, adicione a seguinte linha no seu arquivo `wp-config.php`:
+Para cambiar esta configuración, agrega la siguiente línea al archivo `wp-config.php`:
 
 ```php
 define(‘TAINACAN_API_MAX_ITEMS_PER_PAGE’, 96);
 ```
 
-Substituindo 96 pelo número de sua preferência.
+Sustituye 96 por el número que prefieras.
 
-### Melhorando a velocidade da busca textual
+### Mejorar la velocidad de búsqueda de texto
 
-Para coleções pequenas, as configurações padrão do tainacan devem funcionar bem e a busca geral por palavras chave pode ser eficiente. No entanto, para coleções um pouco maiores, esta busca, que procura por um termo em todos os metadados de um item, pode ser bastante ineficiente.
+Para colecciones pequeñas, la configuración predeterminada de Tainacan debería funcionar bien y la búsqueda general por palabras clave puede ser eficiente. Sin embargo, para colecciones un poco más grandes, esta búsqueda, que busca un término en todos los metadatos de un elemento, puede ser bastante ineficiente.
 
-Para este gargalo há uma solução ideal e uma paliativa.
+Para este cuello de botella existe una solución ideal y otra provisional.
 
-A solução ideal é integrar o WordPress a um servidor de buscas, chamado Elastic Search. A instalação e configuração do Elastic Search está fora do escopo, pelo menos por enquanto, desta documentação, mas, uma vez que você tenha um servidor desses rodando, basta instalar o plugin ElasticPress. (Esta integração ainda está em fase experimental mas com excelentes resultados. Assim que estiver mais madura escreveremos uma documentação específica. Enquanto isso, seria muito bom receber relatos das tentativas).
+La solución ideal es integrar WordPress con un servidor de búsqueda llamado Elastic Search. La instalación y configuración de Elastic Search está fuera del alcance de esta documentación, pero una vez que tengas dicho servidor en ejecución, simplemente instala el complemento ElasticPress. (Esta integración aún está en fase experimental pero con excelentes resultados. En cuanto esté más madura escribiremos una documentación específica. Mientras tanto, sería muy útil para nosotros recibir informes si has estado haciendo pruebas con Elastic Search).
 
-A solução paliativa é restringir a busca ao funcionamento padrão do WordPress, que procura os termos apenas no título e descrição dos itens. Apesar de muito menos abrangente, ela é muito mais rápida.
+La solución provisional consiste en restringir la búsqueda al funcionamiento estándar de WordPress, que busca términos solo en el título y la descripción de los elementos. Aunque esta búsqueda es menos completa, es mucho más rápida.
 
-Para fazer isso, adicione a seguinte linha no seu arquivo `wp-config.php`:
+Para hacer esto, agrega la siguiente línea al archivo `wp-config.php`:
 
 ```php
 define('TAINACAN_DISABLE_DEFAULT_SEARCH_ENGINE', true);
 ```
 
-Mais informações na documentação para desenvolvedores da [engine de busca](/dev/search-engine).
+Puedes encontrar más información sobre [el motor de búsqueda](es-mx/dev/search-engine.md) en la documentación para desarrolladores.
 
-### Ajustando facetas
+### Ajuste de las facetas de búsqueda
 
-Por padrão, os valores carregados para as facetas irão sempre considerar a busca atual que você está fazendo. Isso significa que, a medida que filtros forem selecionados, as facetas serão recarregadas e trarão apenas os valores que ainda irão trazer itens nos resultados. Dessa maneira, a medida em que o usuário vai fazendo filtros, as opções nas facetas vão reduzindo, criando um “funil” de busca.
+De forma predeterminada, los valores cargados en las facetas de búsqueda siempre tendrán en cuenta la búsqueda actual que se esté ejecutando. Esto significa que, a medida que se van seleccionando filtros, las facetas se irán sumando y solo arrojarán en los resultados los valores que coincidan con todos los filtros. De esta forma, a medida que el usuario vaya eligiendo filtros, las opciones en las facetas se irán reduciendo, creando un “embudo” de búsqueda.
 
-Caso este comportamento não seja adequado para você, é possível configurar o tainacan para sempre exibir todos os valores possíveis em uma faceta, desconsiderando a busca atual. (em alguns casos, isto também pode melhorar a performance).
+Si este comportamiento no te parece adecuado, es posible configurar Tainacan para que siempre muestre todos los valores posibles en una faceta, sin tener en cuenta la búsqueda actual (en algunos casos, esto también puede mejorar el rendimiento).
 
-Para fazer isso, adicione a seguinte linha no seu arquivo `wp-config.php`:
+Para hacer esto, agrega la siguiente línea al archivo `wp-config.php`:
 
 ```php
 define('TAINACAN_FACETS_DISABLE_FILTER_ITEMS', true);
 ```
 
-### Melhorando a velocidade de carregamento das facetas
+### Mejorar la velocidad de carga de las facetas
 
-Muitas facetas, ou filtros, também podem piorar a experiência de uso de seu site dependendo do tamanho da sua coleção e da capacidade do seu servidor.
+Muchas facetas, o filtros, también pueden empeorar la experiencia de usuario dependiendo del tamaño de tu colección y de la capacidad de tu servidor.
 
-Se o carregamento das suas facetas estiver lento, o mais adequado é olhar as orientações da seção “Ajustes nas configurações do servidor” desta página.
+Si tus facetas se cargan con lentitud, lo mejor es que consultes las directrices de la sección "Ajustar la configuración del servidor" de esta página.
 
-Caso você não tenha acesso ou condições de modificar as configurações do servidor, aqui vão algumas alternativas:
+Si no tienes acceso para modificar la configuración del servidor, aquí hay algunas alternativas:
 
-1. Considere diminuir o número de facetas, mantendo apenas as essenciais. Caso algumas facetas sejam essenciais para o trabalho de gestão, mas dispensáveis para a navegação do público em geral, marque estas como “visível apenas por editores”. Desta maneira, você irá melhorar a experiência do seu visitante.
-2. Desative a contagem de itens por faceta. Para fazer isso, adicione a seguinte linha no seu arquivo `wp-config.php`:
+1. Considera disminuir el número de facetas, conservando solo las esenciales. Si algunas facetas son esenciales para el trabajo de gestión, pero prescindibles para la navegación del público en general, márcalas como "visibles solo para los editores". De esta forma, mejorarás la experiencia de tus visitantes.
+2. Desactiva el recuento de elementos por faceta. Para hacer esto, agrega la siguiente línea al archivo `wp-config.php`:
 
 ```php
 define('TAINACAN_FACETS_DISABLE_COUNT_ITEMS', true);
 ```
 
-Mais informações sobre facetas na documentação para desenvolvedores [da busca facetada](/dev/faceted-search).
+Encontrarás más información sobre las facetas en la sección [búsqueda facetada](es-mx/dev/faceted-search) de la documentación para desarrolladores.
 
 ---
 
-## Ajustes nas configurações do servidor
+## Ajustes a la configuración del servidor
 
-Os ajustes presentes nesta seção dizem respeito a configuração do seu servidor Apache. O modo de acesso e a forma de fazer estas configurações podem variar bastante dependendo do servidor ou serviço de hospedagem utilizado. Em alguns serviços de hospedagem, possivelmente você não terá acesso a todas essas opções.
+Los ajustes que se proponen en esta sección se refieren a la configuración de un servidor Apache. El modo de acceso y la forma de realizar estas configuraciones puede variar mucho dependiendo del servidor o servicio de alojamiento (hosting) utilizado. Con algunos servicios de alojamiento, es posible que no tengas acceso a todas estas opciones.
 
-Para saber exatamente como fazer cada uma dessas configurações, consulte a documentação do servidor utilizado, o administrador de sistemas responsável ou o suporte técnico de sua hospedagem. As diretivas recomendadas aqui tomam como base um servidor com as seguintes configurações:
+Para saber exactamente cómo hacer cada uno de estos ajustes, consulta la documentación del servidor utilizado, al administrador responsable de sistemas o al soporte técnico de tu hosting. Las directivas recomendadas aquí se basan en un servidor con las siguientes configuraciones:
 
-- Processador: Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz, 4 cores;
-- Sistema operacional: Ubuntu Linux 16.04.1;
-- Memória real e virtual: 16 GB e 2 GB;
-- Kernel e CPU: Linux 4.4.0-72-generic on x86_64
-- Versão do Apache: 2.4
+- Procesador: Intel(R) Xeon(R) CPU E5-2609 0 a 2,40 GHz, 4 núcleos;
+- Sistema operativo: Ubuntu Linux 16.04.1;
+- Memoria real y virtual: 16 GB y 2 GB;
+- Kernel y CPU: Linux 4.4.0-72-genérico en x86_64
+- Versión de apache: 2.4
 
-### Aumente o _timeout_ do seu servidor
+### Aumenta el tiempo de espera de tu servidor
 
-Por padrão, grande parte dos servidores está configurado com um timeout de `30 segundos`. Isso significa que qualquer requisição que demore mais do que 30 segundos para concluir será cancelada.
+De forma predeterminada, la mayoría de los servidores están configurados con un tiempo de espera de `30 segundos`. Esto significa que se cancelará cualquier solicitud que tarde más de 30 segundos en completarse.
 
-No geral, este tempo é suficiente, porém ele pode ser um gargalo em algumas operações específicas, como algumas de exportação e importação e de edição em massa de itens.
+En general, este tiempo es suficiente, pero puede ser un cuello de botella en algunas operaciones específicas, como algunas operaciones de exportación e importación y edición masiva de artículos.
 
-Por segurança, aumente este valor para algo em torno de `200` a `300 segundos`.
+Para estar seguro, aumenta este valor para que esté entre `200` y `300 segundos`.
 
-### Configure o _KeepAlive_
+### Configurar _KeepAlive_
 
-Esta diretiva se definida como `on`, permite conexões persistentes ao apache. Para um melhor desempenho, é recomendado definir esta opção como `on` e permitir que mais de uma solicitação por conexão.
+Esta directiva, si está `activada`, permite conexiones persistentes con Apache. Para un mejor rendimiento, se recomienda `activar` esta opción y permitir más de una solicitud por conexión.
 
-MaxKeepAliveRequests: Esta diretiva é usada para definir o número de solicitações permitido por conexão quando a opção KeepAlive acima é definido como `on`. Defina esta opção como `0` para indicar um número ilimitado.
+MaxKeepAliveRequests: esta directiva se usa para establecer la cantidad de solicitudes permitidas por conexión cuando la opción KeepAlive está `activada`. Establezca esta opción en `0` para indicar un número ilimitado.
 
-KeepAliveTimeout: Esta diretiva é usada para definir quanto tempo, em segundos, o apache irá esperar por um posterior pedido antes de fechar a conexão. O valor `10` é uma boa média a ser utilizada.
+KeepAliveTimeout: esta directiva se usa para definir cuánto tiempo, en segundos, Apache esperará una petición posterior antes de cerrar la conexión. El valor `10` es un buen promedio para usar.
 
-### Configure o _MPM Prefork_
+### Configurar _MPM Prefork_
 
-Em algumas páginas do Tainacan, especialmente na listagem de itens, são realizadas muitas requisições simultâneas ao servidor. Para melhorar o desempenho nessas situações, é recomendável que você configure o módulo MPM Prefork do servidor Apache.
+En algunas páginas de Tainacan, especialmente en el listado de artículos, se hacen muchas peticiones simultáneas al servidor. Para mejorar el rendimiento en estas situaciones, se recomienda configurar el módulo MPM Prefork del servidor Apache.
 
-Para a conceitualização de cada diretiva de configuração apresentada abaixo recomenda-se a leitura do artigo [1](https://elias.praciano.com/2015/12/como-configurar-o-modulo-mpm-prefork-para-melhorar-a-performance-do-servidor-web-apache/) que explica todos os aspectos envolidos e para a determinação da configuração mais adequada para o seu ambiente recomenda-se a leitura do artigo [2](https://www.woktron.com/secure/knowledgebase/133/How-to-optimize-Apache-performance.html) que traz uma abordagem simples e objetiva para a determinação dessas configurações.
+Para la conceptualización de cada directiva de configuración presentada a continuación, se recomienda leer [este artículo](https://elias.praciano.com/2015/12/como-configurar-o-modulo-mpm-prefork-para-melhorar-a-performance-do-servidor-web-apache/) que explica todos los detalles y es útil para determinar la configuración más adecuada para el entorno de tu servidor. También recomendamos [este artículo](https://www.woktron.com/secure/knowledgebase/133/How-to-optimize-Apache-performance.html) que propone un abordaje simple y objetivo para la determinación de estas configuraciones.
 
-Segue abaixo as configurações recomendadas que devem ser realizadas no arquivo `/etc/apache2/mods-availave/mpm_prefork.conf`:
+A continuación se detallan las configuraciones recomendadas que se deben realizar en el archivo `/etc/apache2/mods-availave/mpm_prefork.conf`:
 
-- **StartServers**: definir o valor para `4`.
-- **MaxClients**: definir o valor para `256`.
-- **MinSpareServers**: definir o valor para `15`.
-- **MaxSpareServer**: definir o valor para `30`.
-- **MaxRequestsPerChild**: definir o valor para `5`.
-- **MaxRequestWorkers**: definir o valor para `250`.
+- **StartServers**: establezca el valor en `4`.
+- **MaxClients**: establezca el valor en `256`.
+- **MinSpareServers**: establezca el valor en `15`.
+- **MaxSpareServer**: establezca el valor en `30`.
+- **MaxRequestsPerChild**: establezca el valor en `5`.
+- **MaxRequestWorkers**: establezca el valor en `250`.
 
-Realizadas tais configurações outro aspecto importante é blindar a instalação Wordpress na qual o plugin e tema do Tainacan serão executados. A próxima seção trata desse aspecto.
+Una vez realizados estos ajustes, otro aspecto importante es blindar la instalación de WordPress en la que se ejecutará el complemento y el tema de Tainacan. La siguiente sección aborda este tema.
 
 ---
 
-## Blindando o Wordpress
+## Blindando Wordpress
 
-O primeiro passo é configurar as permissões dos arquivos e diretórios da instalação corretamente. Isso pode feito por meio dos seguintes comandos que:
+El primer paso es configurar correctamente los permisos de los archivos y directorios de la instalación. 
+Esto se puede hacer usando los siguientes comandos:
 
-Para diretórios:
+Para los directorios:
 
 ```shell
 find /caminho/para/a/pasta/do/wordpress/ -type d -exec chmod 755 {} \;
 ```
 
-Para arquivos:
+Para los archivos:
 
 ```shell
 find /caminho/para/a/pasta/do/wordpress/ -type f -exec chmod 644 {} \;
 ```
 
-Uma outra medida de proteção que pode ser adicionada nas partes onde os scripts geralmente não devem ser acessados por nenhum usuário. Uma forma de fazer isso é usar `mod_rewrite` para bloquear os scripts no arquivo `.htaccess`.
+Otra medida de protección que se puede añadir es bloquear los scripts que no deben ser accedidos por ningún usuario. Una forma de hacerlo es usar `mod_rewrite` para bloquear scripts en el archivo `.htaccess`.
 
 ```directive
 RewriteEngine On
@@ -210,7 +209,7 @@ RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
 RewriteRule ^wp-includes/theme-compat/ - [F,L]
 ```
 
-O bloqueio do acesso ao arquivo `wp-config.php` por meio do `.htaccess` é outra medida interessante. Para isso basta inserir o seguinte código no arquivo `.htaccess` da instalação Wordpress:
+Bloquear el acceso al archivo `wp-config.php` a través de `.htaccess` es otra medida interesante. Para ello basta con insertar el siguiente código en el archivo `.htaccess` de la instalación de WordPress:
 
 ```php
 <files wp-config.php>
@@ -222,7 +221,8 @@ deny from all
 </files>
 ```
 
-Desabilitar a listagem de arquivos e o acesso direto a arquivos _.php_ no diretório de uploads. Isso pode ser feito pela inclusão de um arquivo `.htaccess` dentro do diretório `/wp-content/uploads` da instalação Wordpress com o seguinte conteúdo:
+También se puede deshabilitar el listado de archivos y el acceso directo a archivos.php en el directorio uploads. Esto se puede hacer incluyendo un archivo `.htaccess` dentro del directorio `/wp-content/uploads` de la instalación de WordPress con el siguiente contenido:
+
 
 ```php
 Options -Indexes
@@ -236,14 +236,15 @@ Require all denied
 
 ### Wordfence
 
-Fechando as recomendações de segurança recomenda-se a instalação, ativação e configuração do plugin [Wordfence](https://wordpress.org/plugins/wordfence/) que possui uma gama de recursos que objetivam proteger a instalação Wordpress do mais diversos tipos de ataques e exploração de vulnerabildades.
+Para concluir esta sección, recomendamos la instalación, activación y configuración del plugin [Wordfence](https://es.wordpress.org/plugins/wordfence/) que cuenta con una serie de funcionalidades destinadas a proteger la instalación de Wordpress de diversos tipos de ataques y explotación de vulnerabilidades.
 
-O plugin e a sua documentação podem ser acessados [aqui](https://wordpress.org/plugins/wordfence/).
+Puedes acceder al complemento (plugin) y a su documentación [aquí](https://es.wordpress.org/plugins/wordfence/).
 
-## Cache
+## Caché
 
-Existem diversos plugins de cache para o WordPress que podem acelerar bastante o carregamento das páginas para seus visitantes.
+Existen varios plugins de caché para WordPress que pueden acelerar enormemente la carga de páginas para quienes visiten tu sitio.
 
-Existe um cuidado que precisa ser tomado quando for utilizar um plugin de cache. Como o Tainacan utiliza "nonces", que são códigos de segurança para verificar a intenção do usuário de realizar determinadas ações, é preciso configurar o cache para não durar mais do que 12 horas. Esses códigos duram esse tempo e, se o cache durar mais do que 12 horas, possivelmente você irá visitar o site com um código expirado e terá problemas de permissão.
+Hay una precaución que debe tomarse cuando se utiliza un plugin de caché. Dado que Tainacan utiliza "nonces", que son códigos de seguridad para verificar la intención del usuario al realizar ciertas acciones, es necesario configurar la caché para que no dure más de 12 horas. Estos códigos duran ese tiempo y si la caché dura más de 12 horas, es posible que visites el sitio con un código caducado y tengas problemas de permisos.
 
-Se quiser mais detalhes sobre isso, veja [estes](https://medium.com/myatus/wordpress-caching-and-nonce-lifespan-bb357d984da9) [artigos](https://joshpress.net/wordpress-nonces-and-wordpress-caching/).
+Si desea más detalles al respecto, consulta [estos](https://medium.com/myatus/wordpress-caching-and-nonce-lifespan-bb357d984da9) [artículos](https://joshpress.net/wordpress-nonces-and-wordpress-caching/).
+

@@ -1,17 +1,15 @@
 # Plugin: WordPress 3D HOP (Beta)
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Añade soporte para documentos con modelos 3D utilizando [3D HOP](http://3dhop.net/).
 
-Adiciona suporte a documentos com modelos 3D utilizando o [3D HOP](http://3dhop.net/).
+## Introducción
 
-## Introduction
+3DHOP (3D Heritage Online Presenter) es un software gratuito para crear presentaciones web interactivas de objetos 3D en alta resolución. Puede ver algunos ejemplos en [http://3dhop.net/demo.php](http://3dhop.net/demo.php). Con este plugin, WordPress es capaz de incrustar estas presentaciones en cualquier página o entrada, y Tainacan es capaz de aceptar documentos con archivos en este formato.
 
-3DHOP (3D Heritage Online Presenter) é um software livre para criação de apresentações web interativas de objetos 3D em alta resolução. Alguns exemplos podem ser visto em [http://3dhop.net/demo.php](http://3dhop.net/demo.php). Com este plugin, WordPress é capaz de incorporar essas apresentações em qualquer página ou post, e o Tainacan é capaz de aceitar documentos com arquivos neste formato.
+## Descarga
 
-## Download
+Descargar el archivo [.zip](https://github.com/tainacan/wordpress-3dhop/archive/master.zip) del [repositorio Github](https://github.com/tainacan/wordpress-3dhop) y siga las instrucciones de [la página plugins](/es-mx/plugins#instalación-de-plugins) para instalarlo.
 
-Baize o [.zip](https://github.com/tainacan/wordpress-3dhop/archive/master.zip) do [repositório Github](https://github.com/tainacan/wordpress-3dhop) e siga as instruções na [página de plugins](/plugins#instaling-a-plugin) para instalá-lo.
+## Configuración
 
-## Configuration
-
-## Usage
+## Uso

@@ -1,132 +1,131 @@
-# Perguntas
+# Preguntas frecuentes
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Hemos enumerado y respondido las preguntas más frecuentes de nuestra comunidad
 
-Listamos e respondemos as perguntas mais frequentes feitas pela nossa comunidade:
+> ¡Para unirte a la comunidad de Tainacan [regístrate aquí](https://tainacan.discourse.group ":ignore")!
 
-> Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!
+Saltar a una sección específica:
 
-Pule pra alguma sessão específica:
-
-- [O Tainacan](#o-tainacan)
-- [Suporte](#erros-e-suporte)
-- [Instalação e Hospedagem](#instalação-e-hospedagem)
-- [Menus, Páginas e Blocos](#menus-páginas-e-blocos)
+- [Sobre Tainacan](#Sobre-Tainacan)
+- [Soporte](#Errores-y-soporte)
+- [Instalación y alojamiento](#Instalación-y-alojamiento)
+- [Menús, páginas y bloques](#Menús-Páginas-y-Bloques)
 
 ---
 
-## O Tainacan
+## Sobre Tainacan
 
-### O que significa Tainacan?
+### ¿Qué significa Tainacan?
 
-O nome _Tainacan_ faz alusão à lenda indígena do deus das constelações, trazendo a percepção da dimensão do espaço e de suas múltiplas possibilidades de conexões.
+El nombre Tainacan alude a la leyenda indígena del dios de las constelaciones y hace referencia a la percepción de la dimensión del espacio y sus múltiples posibilidades de conexiones.
 
-O software livre Tainacan é desenvolvido a partir de resultados de pesquisas científicas e da experiência com a implementação em instituições parceiras, sendo uma ferramenta flexível e poderosa para WordPress, que permite a gestão e a publicação de coleções digitais com a mesma facilidade de se publicar posts em blogs, mas mantendo todos os requisitos de uma plataforma profissional para repositórios.
+El software libre Tainacan se desarrolla con base en los resultados de investigaciones científicas y de las experiencias de implementación en instituciones con las que hemos colaborado. Se trata de una herramienta flexible y poderosa para WordPress, que permite la gestión y publicación de colecciones digitales con la misma facilidad con la que se publican posts en blogs, pero manteniendo todos los requisitos de una plataforma profesional para repositorios.
 
-### Quem desenvolve o Tainacan?
+### ¿Quién desarrolla Tainacan?
 
-Somos uma rede de pesquisadores e desenvolvedores que une o conhecimento científico e a implementação de soluções tecnológicas em instituições culturais.
+Somos una red de investigadores y desarrolladores que une el conocimiento científico y la implementación de soluciones tecnológicas en instituciones culturales.
 
-Atualmente nossa rede reúne pesquisadores da Universidade de Brasília (UnB), Universidade Federal de Goiás (UFG) e Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT) e também nossa desenvolvedores e usuários da nossa comunidade do Tainacan [(inscreva-se aqui)](https://tainacan.discourse.group).
+Actualmente, nuestra red reúne a investigadoras e investigadores de la Universidad de Brasilia (UnB), la Universidad Federal de Goiás (UFG) y el Instituto Brasileño de Información en Ciencia y Tecnología (IBICT), así como a nuestro equipo de desarrollo y a las personas usuarias de nuestra comunidad de Tainacan. [(Puedes registrarte aquí)](https://tainacan.discourse.group).
 
-### Por que o Tainacan é um software livre?
+### ¿Por qué Tainacan es software libre?
 
-Seu objetivo principal é ajudar instituições culturais a organizarem, publicarem e difundirem suas coleções. Ele também pode ser usado para construção de repositórios individuais ou coletivos, para qualquer finalidade, e opera de forma integrada à plataforma WordPress.
+Porque su principal objetivo es ayudar a las instituciones culturales a organizar, publicar y difundir sus colecciones. También se puede utilizar para construir repositorios individuales o colectivos con cualquier propósito, y funciona perfectamente con la plataforma WordPress.
 
 ---
 
-## Erros e Suporte
+## Errores y soporte
 
-### Acho que encontrei um erro. Como devo proceder?
+### Creo que encontré un error. ¿Qué tengo que hacer?
 
-Estamos sempre a disposição no [fórum de discussão do Tainacan](https://tainacan.discourse.group), onde podem ser iniciadas conversas e no [github do projeto](https://github.com/tainacan/tainacan), onde podem ser reportadas _issues_ mais técnicas. Caso você comece uma conversa na lista, recomendamos dar sempre o máximo de detalhes para que possa ajudar a identificar o que está ocorrendo. Algumas sugestões, são:
+Siempre estamos disponibles en el [foro de discusión de Tainacan](https://tainacan.discourse.group ":ignore"), donde se pueden iniciar conversaciones, y en el [proyecto en GitHub](https://github.com/tainacan/tainacan ":ignore"), donde se pueden plantear cuestiones más técnicas. Si inicias una conversación, te recomendamos que siempre brindes la mayor cantidad de detalles posible para que podamos ayudar a identificar lo que está sucediendo. Algunas sugerencias son:
 
-- Descrever passo a passo o que está sendo feito, o que ocorre e o que era esperado;
-- Verificar e se possível nos mandar as informações da [Página de Diagnóstico do Sistema](/es-mx/optimization?id=diagnóstico-do-sistema);
-- Caso possua acesso ao servidor, nos mandar os Logs - [Veja como aqui](#como-acho-os-logs-do-meu-servidor);
-- Nos mandar informações de rede e console no navegador - [Veja como aqui](#como-vejo-erros-de-rede-ou-no-console-do-navegador);
-- Se possuir links para testes, melhor ainda!
+- Describir paso a paso lo que se está haciendo, lo que ocurre y lo que se esperaba;
+- Consultar y, si es posible, enviarnos la información de la [página de diagnóstico del sistema](/es-mx/optimization#diagnóstico-del-sistema);
+- Si tienes acceso al servidor, envíanos los registros - [aquí puedes ver cómo hacerlo](#¿cómo-encuentro-los-registros-de-errores-de-mi-servidor);
+- Envíanos información de red y consola en el navegador - [aquí puedes ver como hacerlo](#¿cómo-veo-los-errores-de-la-consola-de-red-o-del-navegador);
+- Si tienes enlaces de prueba, ¡aún mejor!
 
-#### Como acho os logs de erro do meu servidor?
+#### ¿Cómo encuentro los registros de errores de mi servidor?
 
-Alguns erros gerados no banco de dados ou operações do lado do servidor podem ser identificados acessando seus logs. Se você tem acesso ao servidor, enviar estes logs para os desenvolvedores pode ser de ajuda. A localização deles varia de instalação. Em servidores _apache_, é comum encontrar logs nestes caminhos:
+Algunos errores generados en la base de datos o en las operaciones del lado del servidor se pueden identificar accediendo a sus registros. Si tienes acceso al servidor, enviar estos registros a los desarrolladores podría ser de ayuda. Su ubicación varía según la instalación. En servidores apache, es común encontrar los registros en estas rutas:
 
 - `/var/log/apache2/error.log`;
 - `/var/log/apache/error.log`;
 
-#### Como vejo erros de rede ou no console do navegador?
+#### ¿Cómo veo los errores de la consola de red o del navegador?
 
-Alguns erros podem ser reportados no navegador ao invés do servidor. Isso acontece em situações onde a tela fica presa em algum estado de carregamento infinito, por exemplo. Nesta situação, pode ser útil aos desenvolvedores, saber informações do painel de `rede` ou do `console` do seu navegador, que fazem parte do painel desenvolvedor.
+Algunos errores pueden informarse en el navegador en lugar del servidor. Esto sucede en situaciones en las que la pantalla se atasca en algún estado de carga infinito, por ejemplo. En esta situación, puede ser útil para los desarrolladores conocer información del panel de red o de la consola de su navegador, que forman parte del panel del desarrollador.
 
-- No Firefox, acesse o painel de Redes com o atalho <kbd>CTRL</kbd><kbd>SHIFT (&#8679;)</kbd><kbd>E</kbd> e o Console com o atalho <kbd>CTRL</kbd><kbd>SHIFT (&#8679;)</kbd><kbd>K</kbd>. Outra opção é clicar com o botão direito na página, ir na opção "Inspecionar" e de lá procurar as abas de Rede e de Console;
-- No Google Chrome, acesse o painel de desenvolvedor com o atalho <kbd>CTRL</kbd><kbd>SHIFT (&#8679;)</kbd><kbd>I</kbd> ou clicando com o botão direito na página e indo em "Inspecionar". De lá procure as abas de Rede e de Console.
+- En Firefox, accede al panel de Redes con el atajo <kbd>CTRL</kbd><kbd>SHIFT (&#8679;)</kbd><kbd>E</kbd> y a la Consola con el atajo <kbd>CTRL</kbd><kbd>SHIFT (&#8679;)</kbd><kbd>K</kbd>. Otra opción es hacer clic derecho en la página, ir a la opción “Inspeccionar” y desde allí buscar las pestañas Red y Consola;
+- En Google Chrome, accede al panel de desarrollador con el atajo <kbd>CTRL</kbd><kbd>SHIFT (&#8679;)</kbd><kbd>I</kbd> o haciendo clic derecho en la página y yendo a “Inspeccionar”. Desde allí, busca las pestañas Red y Consola.
 
-Na **aba de console**, erros em geral são listados com destaque, em vermelho. Na **aba de rede**, haverá sempre uma lista de várias requisições. Aquelas que podem ter problema em geral são apresentadas em vermelho ou com códigos `404`, `401`, `500`, logo de início. Às vezes, pode ser necessário clicar em uma requisição desta lista para se saber mais informações, como a resposta da mesma. Saber destas informações podem ajudar o desenvolvedor a identificar o problema. Se possível, faça uma captura de tela mostrando o conteúdo destas telas, incluindo informações escondidas por scroll. Se é um erro que acontece logo ao se entrar na página ou se clicar em algum botão, tente repetir a ação com esta tela aberta, para se ter certeza de que foi registrada ali.
+En la **pestaña de la consola**, los errores en general aparecen destacados en rojo. En la **pestaña de red**, siempre habrá una lista de varias solicitudes. Los que pueden tener un problema en general aparecen en rojo o con los códigos 404, 401, 500, justo al principio. A veces, puede ser necesario hacer clic en una solicitud de esta lista para obtener más información, así como su respuesta. Conocer esta información puede ayudar al desarrollador a identificar el problema. Si es posible, haz una captura de pantalla que muestre el contenido de estas pantallas, incluida la información oculta al desplazarse. Si se trata de un error que se produce justo al entrar en la página o al pulsar un botón, prueba a repetir la acción con esta pantalla abierta, para asegurarte de que se ha registrado allí.
 
-### Estou recebendo erros 404 ou páginas em branco ao acessar minha coleção no site...
+### Recibo errores 404 o páginas en blanco cuando accedo a mi colección en el sitio web.
 
-Em algumas situações particulares como ao fazer uma migração de site, iniciar uma instalação nova ou atualizar um plugin, pode surgir a necessidade de se atualizar a estrutura de _permalinks_ (links permanentes) do WordPress. Os _permalinks_ são os endereços como nomes específicos que são passados na URL do seu site WordPress para acessar um conteúdo. Se ao tentar acessar uma coleção que já existia previamente, ou se algumas das [requisições feitas pelo seu site](#como-vejo-erros-de-rede-ou-no-console-do-navegador) estão retornando 404 mesmo com conexão à internet, é possível que seu site precise de remontar a lista de _permalinks_ dele. Este erro é difícil de ser detectado (por isso não conseguimos reportá-lo bem no [Diagnóstico do Sistema](/es-mx/optimization?id=diagnóstico-do-sistema)) mas felizmente é muito simples de ser resolvido!
+En algunas situaciones particulares, como al realizar una migración del sitio, iniciar una nueva instalación o actualizar un plugin, puede surgir la necesidad de actualizar la estructura de permalinks (enlaces permanentes) de WordPress. Los permalinks son las direcciones o nombres específicos de las URL de tu sitio WordPress que permiten acceder a un contenido. Si al intentar acceder a una colección que ya existía o si algunas de las [peticiones realizadas por tu sitio](#¿cómo-encuentro-los-registros-de-errores-de-mi-servidor) devuelven 404, incluso con conexión a internet, es posible que tu sitio necesite recomponer su lista de permalinks. Este error es difícil de detectar (por eso por lo general no aparece en [Diagnóstico del sistema](/es-mx/optimization#diagnóstico-del-sistema)) pero, afortunadamente, ¡es muy sencillo de solucionar!
 
-Basta fazer o seguinte: Acesse o painel administrativo do WordPress e vá para o menu lateral em **"Configurações" -> "Links Permanentes"**. Lá, tenha certeza de que a opção marcada é a de **Nome do Post** ou pelo menos de **Estrutura Customizada** que tenha valor _/%postname%/_. Verificado isso, clique em **Salvar alterações** (é importante clicar mesmo que as configurações não tenham sido alteradas). Recarregue o site e veja se consegue acessar o conteúdo em questão.
+Haz lo siguiente: accede al panel de administración de WordPress y ve al menú lateral en **"Configuración" -> "Enlaces permanentes"**. Allí, asegúrate de que la opción seleccionada sea **Post Name** o al menos **Custom Structure** (estructura personalizada) que tiene el valor _/%postname%/_. Después de comprobar esto, haz clic en **Guardar cambios** (es importante hacer clic aunque no se haya modificado la configuración). Vuelve a cargar el sitio y comprueba si puedes acceder al contenido en cuestión.
 
-### Não estou conseguindo fazer upload de arquivos. O que faço?
+### No puedo cargar archivos. ¿Qué hago?
 
-Cheque na [Página de Diagnóstico do Sistema](/es-mx/optimization?id=diagnóstico-do-sistema) se a pasta de `uploads` do seu servidor está com permissões de escrita. Caso não esteja, é preciso corrigir isso, atribuindo permissões de leitura e escrita para o usuário de acesso ao servidor (geralmente o `www-data`).
+Comprueba en la [Página de diagnóstico del sistema](/es-mx/optimization#diagnóstico-del-sistema) si la carpeta uploads de tu servidor tiene permisos de escritura. Si no es así, debes corregirlo asignando permisos de lectura y escritura para el usuario que accede al servidor (normalmente `www-data`).
 
-Caso mesmo assim não funcione, entre em contato na lista para analisarmos. Você consegue subir arquivos para o WordPress mas não consegue para o Tainacan? Qual formato do arquivo que está tentando subir? São algumas informações que podem ajudar a começarmos.
+Si sigue sin funcionar, ponte en contacto con nosotros para que podamos analizarlo. ¿Se pueden subir archivos a WordPress pero no a Tainacan? ¿Qué formato de archivo estás intentando cargar? Esta es información que puede ayudarnos a entender el problema.
 
-Outras questões à respeito podem ser encontradas [aqui](/optimization#blindando-o-wordpress).
+[Aquí](/es-mx/optimization#blindando-wordpress) se pueden encontrar otras preguntas relacionadas con este tema.
 
-### Ocorreu algum erro no processo de importação ou exportação de itens. O que fazer?
+### Ocurrió un error en el proceso de importación o exportación de artículos. ¿Qué hacer?
 
-Em geral, erros de processos como importadores e exportadores são gravados em um arquivo de log que pode ser acessado pela própria interface administrativa do Tainacan. Na lista de Processos, abra o processo que deu erro e baixe o arquivo de log. Envie este para ser analisado por quem puder ajudar.
+En general, los errores en procesos como los importadores y exportadores se registran en un archivo de registro al que se puede acceder a través de la interfaz administrativa de Tainacan. En la lista de procesos, abre el proceso que dio error y descarga el archivo de registro. Puede ser útil enviar este archivo a alguna persona que pueda ayudarte a entender dónde está el error.
 
-### Sinto que minha instalação está demorando muito para carregar os itens... tem como melhorar?
+### Creo que mi instalación tarda demasiado en cargar los elementos. ¿Se puede mejorar?
 
-Se sua coleção é pequena e simples, então é bem capaz que há algum problema ocorrendo e pode ser discutido no fórum de suporte. Já se sua base tem milhares de itens, com dezenas de metadados, então as razões para lentidões podem ter relação com o servidor ou com as configurações de busca atuais. Sugerimos uma leitura detalhada [desta página](#/optimization) que vai te guiar por algumas opções em questão de performance.
-
----
-
-## Instalação e Hospedagem
-
-### Qual a diferença entre wp.com e wp.org?
-
-O wp.com ou [wordpress.com](https://br.wordpress.com ":ignore") é uma plataforma de hospedagem, entre as várias existentes que oferecem instalações e servidores prontos com o WordPress. O wp.org, ou [wordpress.org](https://br.wordpress.org ":ignore") é o site oficial do software livre WordPress, de onde se encontram informações de instalação, a documentação, links da comunidade, eventos... e entre estas coisas também opções de hospedagem. Mas seu objetivo principal é fornecer a ferramenta que pode ser usada por qualquer um para construir sites em qualquer serviço de hospedagem.
-
-### Posso usar o Tainacan no meu blog do wordpress.com?
-
-Sim! Mas infelizmente o [plano gratuito](https://br.wordpress.com/pricing/ ":ignore") do _wordpress.com_ não te permitirá instalar plugins. Para isso você precisa usar um plano pago que eles oferecem. Lembre-se que esta não é a única maneira nem opção de se hospedar sites WordPress!
-
-### É possível instalar o Tainacan no meu próprio computador?
-
-Sim. Mas é bom deixar claro, **o Tainacan é um plugin para uma plataforma de sites**. Sua função não é bem a de um programa que você abre e fecha! Instalações _locais_ - como chamamos quando você configura em seu próprio computador - são úteis para desenvolvedores que querem contribuir ou apenas para quem quer fazer testes antes de mandar para um servidor, onde de fato o site ficará hospedado na web e online 24 horas por dia. Para configurar uma instalação do WordPress pronta para o Tainacan, dê uma olhada em [nossos tutoriais de instalação](/es-mx/instalacao)!
-
-### Então, quais opções tenho para hospedar meu repositório?
-
-Boa pergunta! Discutimos isso em mais detalhes na nossa página de [Hospedagem](/es-mx/hosting).
+Si tu colección es pequeña y sencilla, entonces es muy probable que haya algún problema y se puede discutir en el foro de soporte. Si tu base de datos tiene miles de artículos, con docenas de metadatos, entonces las razones de la ralentización pueden tener que ver con el servidor o con la configuración de búsqueda actual. Te sugerimos una lectura detallada de [esta página](/es-mx/optimization) que te guiará a través de algunas opciones sobre problemas de rendimiento.
 
 ---
 
-## Menus, Páginas e Blocos
+## Instalación y alojamiento
 
-### É possível inserir itens do Tainacan em postagens no WordPress?
+### ¿Cuál es la diferencia entre wp.com y wp.org?
 
-Sim, é possível! Para adicionar itens do Tainacan em uma postagem do WordPress (a partir da versão 5.0) crie um [bloco Gutenberg do Tainacan](/es-mx/gutenberg-blocks) pelo editor de texto. Ao inserir um bloco, pode-se pesquisar por Tainacan que será possível ver quais tipos de blocos do Tainacan existem.
+wp.com o [wordpress.com](https://wordpress.com ":ignore") es una de las varias plataformas de alojamiento que ofrecen instalaciones y servidores preparados con WordPress. En cambio, [wordpress.org](https://es-mx.wordpress.org/ ":ignore") es el sitio oficial del software libre WordPress, donde puedes encontrar información de instalación, documentación, enlaces a la comunidad, eventos y, entre estas cosas, también opciones de alojamiento. Pero su principal objetivo es proporcionar la herramienta que puede ser utilizada por cualquier persona para construir sitios en cualquier servicio de alojamiento.
 
-### Como vejo a lista de coleções no tema?
+### ¿Puedo usar Tainacan en mi blog wordpress.com?
 
-A lista de coleções é uma das [Páginas Especiais](/es-mx/tainacan-pages) que o Tainacan insere. Basta adicionar `/colecoes` ou `collections` à URL do seu site.
+Sí, pero lamentablemente el [plan gratuito](https://wordpress.com/es/pricing/ ":ignore") de wordpress.com no permite instalar plug-ins. Para eso, tienes que utilizar un plan de pago. Recuerda que esta no es la única forma u opción de alojar sitios de WordPress.
 
-### Como coloco a lista de coleções no menu do meu site?
+### ¿Es posible instalar Tainacan en mi propia computadora?
 
-Basta ir na barra superior em **Personalizar** > **Menus** > **Selecionar o Menu Principal** > **Adicionar Itens**. Dalí, além de outros links customizados, você pode escolher **"Repositório de Coleções"** para mostrar sua lista de coleções ou selecionar qualquer outra coleção ou termo de taxonomia.
+Sí, pero es bueno dejar claro que **Tainacan es un plug-in para una plataforma web**. En realidad, su función no es la de un programa que se abre y se cierra en una computadora. Las instalaciones locales -como las llamamos cuando las configuras en tu propio ordenador- son útiles para los desarrolladores que quieren contribuir o simplemente para quienes quieren hacer algunas pruebas antes de enviarlas a un servidor donde el sitio estará alojado en la web y en línea las 24 horas del día. Para configurar una instalación de WordPress preparada para Tainacan, echa un vistazo a [nuestros tutoriales de instalación](/es-mx/instalacao).
 
-### Como posso fazer a página inicial do meu site ser a lista de coleções?
+### Entonces, ¿qué opciones tengo para alojar mi repositorio?
 
-Por padrão, a página inicial do seu site será a lista de posts do seu blog. Para configurar uma página inicial customizada, deve-se ir no menu superior em **Personalizar** > **Configurações da página inicial** > **Uma página estática** e escolher a página. Entretanto, por ser uma [página especial](/es-mx/tainacan-pages) criada pelo plugin, a página padrão da lista de coleções não está listada como opção. A solução é criar uma página e listar as suas coleções nela, usando algum dos [Blocos de Coleções](/es-mx/blocks-collections.md).
+¡Buena pregunta! Hablamos de ello con más detalle en nuestra página sobre [alojamiento](/es-mx/hosting).
 
-### E se eu quiser que outras pessoas colaborem com meu acervo?
+---
 
-Como administrador do seu site, é possível cadastrar novos usuário com diferentes [papéis e permissões](/es-mx/users-roles) para editar seu acervo. Se no entanto você quer que possam ser inseridos itens sem o cadastro de novos usuários no sistema, pode criar um [Formulário de Submissão de itens](/es-mx/item-submission) público, para receber contribuições externas diretas no seu repositório.
+## Menús, Páginas y Bloques
 
-> Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!
+### ¿Es posible insertar elementos de Tainacan en las publicaciones de WordPress?
+
+¡Sí, es posible! Para añadir elementos de Tainacan a una publicación de WordPress (a partir de la versión 5.0) crea un [bloque de Gutenberg](/es-mx/gutenberg-blocks) desde el editor de texto. Al insertar un bloque, puedes buscar Tainacan y podrás ver qué tipos de bloques de Tainacan existen.
+
+### ¿Cómo veo la lista de colecciones en el tema?
+
+La lista de colecciones es una de las [Páginas especiales](/es-mx/tainacan-pages) que inserta Tainacan. Solo tienes que añadir `colecciones` a la URL de tu sitio web.
+
+### ¿Cómo coloco la lista de colecciones en el menú de mi sitio web?
+
+Tienes que ir a la barra superior en **Personalizar** > **Menús** > **Seleccionar menú principal** > **Añadir elementos**. Desde ahí, además de otros enlaces personalizados, puedes elegir "Repositorio de colecciones" para mostrar tu lista de colecciones o seleccionar cualquier otra colección o cualquier término de una taxonomía.
+
+### ¿Cómo puedo hacer que la página de inicio de mi sitio sea la lista de colecciones?
+
+Por defecto, la página de inicio de tu sitio será la lista de las entradas de tu blog. Para configurar una página de inicio personalizada, debes ir al menú superior en **Personalizar** > **Configuración de la página estática** y elegir la página. Sin embargo, al tratarse de una [página especial](/es-mx/tainacan-pages) creada por el plug-in, la página de lista de colecciones no aparece por defecto como opción. La solución es crear una página y listar sus colecciones en ella, utilizando cualquiera de los [bloques de colección](/es-mx/blocks-collections.md).
+
+### ¿Qué pasa si quiero que otras personas colaboren con mi colección?
+
+Como administrador de tu sitio, puedes registrar nuevos usuarios con diferentes [funciones y permisos](/es-mx/users-roles) para editar tu colección. Sin embargo, si deseas que se inserten elementos sin registrar nuevos usuarios en el sistema, puedes crear un [Formulario de envío](/es-mx/item-submission) público, para recibir contribuciones externas directas en tu repositorio.
+
+> Si quieres formar parte de la comunidad de Tainacan, ¡[suscríbete aquí](https://tainacan.discourse.group)!#Preguntas Frecuentes
+

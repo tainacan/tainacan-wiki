@@ -1,121 +1,120 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Exportadores" 
+		alt="Icono de Exportadores" 
 		src="_assets/images/icon_exporters.png"
 		width="40"
 		height="40">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 # Exportadores
 
-Com o Tainacan é possível exportar suas coleções ou suas Taxonomias (Vocabulário Controlado) em um arquivo de planilha CSV.
+Con Tainacan, puedes exportar tanto las colecciones como las Taxonomías (Vocabularios Controlados) en un archivo de hoja de cálculo CSV.
 
-## Exportar sua coleção para um arquivo CSV
+## Exporta tu colección a un archivo CSV
 
-1. Acesse o painel de _Controle do WordPress_:
+1. Inicia sesión en el panel de control de _WordPress_:
 
-   ![Acesse o painel de controle](_assets\images\exportador_01.png)
+   ![Acceso al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda clique em Tainacan:
+2. En la barra lateral izquierda, haz clic en Tainacan.
 
-   ![Selecione Tainacan](_assets\images\exportador_02.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
-3. Clique em "Exportadores":
+3. Haz clic en `Exportadores`.
 
-   ![Selecione Exportador](_assets\images\exportador_03.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_Acceso.png)
 
-4. Escolha a opção "CSV":
+4. Selecciona la opción *CSV*. 
 
-   ![Selecione CSV](_assets\images\exportador_04.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_CSV.png)
 
-5. Nesta página você pode configurar os seguintes parâmetros do CSV:
+5. En esta página puedes configurar los siguientes parámetros CSV:
 
-   ![Configurando CSV](_assets\images\exportador_05.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_CSV_Parametros.png)
 
-   a. **“Delimitador CSV”**: O caractere usado para separar cada coluna no seu “CSV”. (por ex. , ou ;);
+   a. **“Delimitador CSV”**: Especifica el caracter utilizado para separar cada columna en el archivo *CSV* (por ejemplo , o ;);
 
-   b. **“Delimitador de metadado multi-valorado”**: O caractere utilizado para separar cada valor dentro de uma célula de múltiplos valores (por ex. | |). Note que o “metadado” destino precisa aceitar múltiplos valores;
+   b. **“Delimitador de metadato con valores múltiples”**: Especifica el caracter utilizado para separar cada valor dentro de una celda con múltiples valores (por ejemplo ||) Toma en cuenta que el metadato de destino debe aceptar múltiples valores.
 
-   c. **“Delimitador de texto”**: O caractere que delimita o conteúdo de cada célula no seu CSV (por ex. ");
+   c. **“Delimitador de texto”**: Especifica el caracter que delimita el contenido de cada celda en el CSV.
 
-   d. **“Coleção de origem”**: a coleção que você deseja importar;
+   d. **“Colección de origen”**: El nombre de la colección que deseas importar.
 
-   e. **“Mapeamento”**: o Tainacan permite que você mapeie seus “metadados” para o padrão “Dublin-Core”. Nesta opção você define se os “metadados” mapeados previamente devem vir com os marcadores do padrão;
+   e. **“Mapeo”**: Tainacan te permite mapear (emparejar) los metadatos al estándar Dublin-Core. En esta opción tu defines si los metadatos mapeados previamente deben venir con la nomenclatura del estándar.
 
-   f. **“Envie-me um e-mail quando concluído”**: Este processo pode levar algum tempo. Marque esta opção para receber um e-mail quando o processo estiver completo. Você também pode acompanhar o “status do processo” visitando “Atividades Página”.
+   f. **“Envíame un correo cuando el proceso esté finalizado”**: El proceso de exportación puede tardar algún tiempo. Marca esta opción si quieres recibir un correo electrónico cuando el proceso haya finalizado. También puedes dar seguimiento al "estado del proceso" visitando la `Página de actividad del repositorio`.
 
-6. Após realizar as configurações, clique em Executar. Você será redirecionado para a tela de **Atividades do Repositório** onde poderá acompanhar o andamento do _processo de importação_. Esta tela exibe todos os processos de importação já realizados nesta instalação, do mais recente para o mais antigo. Quando o processo for concluído, serão exibidos o **arquivo de registro** e, em caso de erros, o **arquivo de registro de erros**.
+6. Después de realizar los ajustes, haz clic en Ejecutar. Serás redirigido a la pantalla **Actividad del repositorio** donde podrás seguir el progreso del _proceso de importación_. Esta pantalla muestra todos los procesos de importación ya realizados en esta instalación, del más reciente al más antiguo. Una vez finalizado el proceso, se mostrará el **archivo de registro** y, en caso de errores, el **archivo de registro de errores**.
 
-   ![Atividades do Repositório](_assets\images\exportador_06.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_CSV_Informacion.png)
 
-   a. **“Tipo de ação”**: nome da ação em execução ou executado, neste caso "CSV Exportador";
+   a. **“Tipo de acción”**: nombre de la acción que se está ejecutando o ya se ejecutó, en este caso *CSV Exporter*.
 
-   b. **“Progresso”**: porcentagem concluída da ação;
+   b. **“Progreso”**: porcentaje de avance de la acción.
 
-   c. **“Enfileirado em”**: data em que a ação entrou na fila;
+   c. **“En la fila”**: fecha en la que la acción entró en la fila de acciones por ejecutar.
 
-   d. **“Coleção de destino”**: coleção que está sendo exportada;
+   d. **“Colección de destino”**: colección que se está exportando.
 
-   e. **“Exportado por”**: usuário responsável pela exportação;
+   e. **“Exportado por”**: usuaria o usuario responsable de la exportación.
 
-   f. **“Arquivo de registro”**: acesso ao arquivo de registro da exportação;
+   f. **“Archivo de registro”**: acceso al archivo de registro de la exportación.
 
-   g. **“Última atualização”**: data da última atualização do processo de exportação.
+   g. **“Última actualización”**: fecha de la última actualización del proceso de exportación.
 
-   h. **“Download”**: quando o processo chega ao fim, o sistema disponibiliza o arquivo em “csv” para download, bastando clicar no link.
+   h. **“Descargar”**: cuando el proceso llega a su fin, el sistema pone a disposición el fichero en "csv" para su descarga, simplemente haciendo clic sobre el enlace.
 
-7. No final do processo, clique no link "Download" para baixar o arquivo:
+7. Al final del proceso, haz clic en el enlace `Descargar` para descargar el archivo. 
 
-   ![Download](_assets\images\exportador_07.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_CSV_Descarga.png)
 
-## Exportação de vocabulários controlados
+## Exportación de vocabularios controlados
 
-1. Acesse o “painel de controle” do WordPress;
+1. Accede al panel de control de WordPress;
 
-   ![Acesse o painel de controle](_assets\images\exportador_01.png)
+   ![Acceso al panel de control](_assets/images/050.png)
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+2. En la barra lateral izquierda, haz clic en *Tainacan*;
 
-   ![Selecione Tainacan](_assets\images\exportador_02.png)
+   ![Acceso al panel de control](_assets/images/Panel_Acceso_Tainacan.png)
 
-3. Clique em "Exportadores";
+3. Haz clic en *Exportadores*.
 
-   ![Selecione Exportador](_assets\images\exportador_03.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_Acceso.png)
 
-4. Escolha a opção "Vocabulary CSV";
+4. Elige la opción *Vocabulario CSV*.
 
-   ![Selecione Exportador](_assets\images\exportador_116.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_Vocabulario_CSV.png)
 
-5. Nesta página você pode configurar os seguintes parâmetros do “CSV”:
+5. En esta página puedes configurar los siguientes parámetros *CSV*.
 
-   ![Selecione Exportador](_assets\images\exportador_117.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_Vocabulario_CSV_Parametros.png)
 
-   a. **“Delimitador CSV”**: O caractere usado para separar cada coluna no seu “CSV” (por ex. , ou ;);
+   a. **“Delimitador CSV”**: El carácter utilizado para separar cada columna en el *CSV* (por ejemplo , o ;);
 
-   b. **“Taxonomia de origem”**: a “Taxonomia” que você deseja exportar;
+   b. **“Taxonomía de origen”**: la "Taxonomía" que deseas exportar.
 
-   c. **“Envie-me um e-mail quando concluído”**: Este processo pode levar algum tempo. Marque esta opção para receber um e-mail quando o “processo” estiver completo. Você também pode acompanhar o “status do processo” visitando as “Atividades do Repositório”.
+   c. **“Envíame un correo cuando el proceso esté finalizado”**: El proceso de exportación puede tardar algún tiempo. Marca esta opción si quieres recibir un correo electrónico cuando el proceso haya finalizado. También puedes dar seguimiento al estado del proceso visitando la `Página de actividad del repositorio`.
 
-6. Após realizar a configuração dos parâmetros, clique em "Executar". Você será redirecionado para a tela de “Atividades do Repositório” onde poderá acompanhar o andamento do “processo de importação”. Esta tela exibe todos os “processos de importação” já realizados nesta instalação, do mais recente para o mais antigo. Quando o “processo” for concluído, serão exibidos o “arquivo de registro” e, em caso de erros, o “arquivo de registro de erros”;
+6. Una vez configurados los parámetros, da clic en `Ejecutar`. Serás redirigido a la pantalla `Actividades del repositorio` donde podrás seguir el progreso del `proceso de importación`. Esta pantalla muestra todos los procesos de importación ya realizados en esta instalación, del más reciente al más antiguo. Una vez concluido el proceso, se mostrará el archivo de registro (fichero log) y, en caso de errores, el archivo de registro de errores
 
-   ![Selecione Exportador](_assets\images\exportador_118.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_Vocabulario_CSV_Informacion.png)
 
-   a. **“Tipo de ação”**: nome da ação em execução ou executado, neste caso "Vocabulary CSV Exportador";
+   a. **“Tipo de acción”**: nombre de la acción en ejecución o ejecutada, en este caso `Exportador CSV de Vocabulario`.
 
-   b. **“Progresso"**: porcentagem concluída da ação;
+   b. **“Progreso"**: porcentaje de avance de la acción.
 
-   c. **“Enfileirado em”**: data em que a ação entrou na fila;
+   c. **“En la fila”**: fecha en la que la acción entró en la fila de acciones por ejecutar.
 
-   d. **“Taxonomia de destino”**: “Taxonomia” que está sendo exportada;
+   d. **“Taxonomía de destino”**: taxonomía que se está exportando.
 
-   e. **“Arquivo de registro”**: acesso ao arquivo de registro da exportação;
+   e. **“Archivo de registro (log file)”**: acceso al archivo de registro de la exportación.
 
-   f. **“Última atualização”**: data da última atualização do “processo de exportação”;
+   f. **“Última actualización”**: fecha de la última actualización del proceso de exportación.
 
-   g. **“Download”**: quando o processo chega ao fim, o sistema disponibiliza o arquivo em “csv” para download, bastando clicar no link.
+   g. **“Descarga”**:  cuando el proceso llega a su fin, el sistema pone a disposición el fichero en *csv* para su descarga, simplemente haciendo clic sobre el enlace.
 
-7. No final do processo, clique no link "Download" para baixar o arquivo.
+7. Al final del proceso, hagz clic en el enlace `Descargar` para descargar el archivo. 
 
-   ![Selecione Exportador](_assets\images\exportador_119.png)
+   ![Acceso al panel de control](_assets/images/Exportadores_Vocabulario_CSV_Descarga.png)

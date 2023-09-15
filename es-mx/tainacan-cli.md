@@ -1,12 +1,11 @@
-# Tainacan CLI
+# CLI: interfaz de línea de comandos de Tainacan
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-O WP-CLI (https://wp-cli.org/) é a interface de linha de comando para WordPress. Você pode atualizar plugins, configurar instalações e muito mais, sem usar um navegador web.
+El WP-CLI (https://wp-cli.org/) es la interfaz de línea de comandos para WordPress. Desde esta interfaz puedes actualizar complementos, configurar instalaciones y mucho más sin usar un navegador web.
 
-## WP-CLI Commands
+## Comandos WP-CLI
 
-Os seguintes comandos para o WP-CLI são suportados pelo Tainacan:
+Los siguientes comandos para WP-CLI son compatibles con Tainacan:
 
 ```
     wp tainacan garbage-collector
@@ -16,92 +15,92 @@ Os seguintes comandos para o WP-CLI são suportados pelo Tainacan:
     wp tainacan control-metadata
 ```
 
-### wp tainacan garbage-collector
+### wp tainacan garbage-collector (recolector de basura)
 
-Remover entidades e arquivos não utilizados pela instalação do Tainacan
+Sirve para eliminar entidades y archivos no utilizados por la instalación de Tainacan
 
-#### OPTIONS:
+#### OPCIONES:
 
-| options            | description                                                                                                                                                                                                                                                              |
+| opciones            | descripción                                                                                                                                                                                                                                                              |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| --run              | Por padrão, este comando apenas emite um relatório, mas não elimina nada. Se quiser realmente apagar o lixo, passe --run                                                                                                                                                 |
-| --deep             | Abordagem mais agresiva para encontrar lixo. Em alguns casos, poder apagar algo relacionado com outras partes do site. Atualmente, o modo deep apaga todos os anexos com os IDs de post não encontrados, independentemente de terem sido carregados pelo tainacan ou não |
-| --skip-attachments | Ignorar anexos não utilizados                                                                                                                                                                                                                                            |
-| --skip-items       | Ignorar itens não utilizados                                                                                                                                                                                                                                             |
-| --skip-taxonomies  | Ignorar taxonomias não utilizados                                                                                                                                                                                                                                        |
-| --skip-metadata    | Ignorar metadados não utilizados                                                                                                                                                                                                                                         |
-| --skip-transients  | Ignorar tainacan transients                                                                                                                                                                                                                                              |
-| --yes              | Confirmar as operações antes da execução                                                                                                                                                                                                                                 |
+| --run              | De forma predeterminada, este comando solo emite un informe, pero no elimina nada. Si realmente quieres borrar la basura, ejecuta –run                                                                                                                                                 |
+| --deep             | Enfoque más agresivo para encontrar basura. En algunos casos, puede eliminar basura relacionada con otras partes del sitio. El modo profundo elimina todos los archivos adjuntos con IDs de posts no encontrados, independientemente de si fueron subidos por Tainacan o no |
+| --skip-attachments | Ignorar archivos adjuntos no utilizados                                                                                                                                                                                                                                   |
+| --skip-items       | Ignorar elementos no utilizados                                                                                                                                                                                                                                             |
+| --skip-taxonomies  | Ignorar taxonomías no utilizadas                                                                                                                                                                                                                                        |
+| --skip-metadata    | Ignorar metadatos no utilizados                                                                                                                                                                                                                                         |
+| --skip-transients  | Ignorar variables transitorias en Tainacan                                                                                                                                                                                                                                              |
+| --yes              | Confirmar las operaciones antes de la ejecución                                                                                                                                                                                                                                |
 
-Exemplo:
+Ejemplo:
 
 ```
 wp tainacan garbage-collector --run --deep --yes
 ```
 
-### wp tainacan move-attachments-to-items-folder
+### wp tainacan move-attachments-to-items-folder (mover-adjuntos-a-carpeta-de-elementos)
 
-Move os documentos e anexos dos itens para uma estrutura de directório usando: `$collection_id/$item_id`.
-Isto serve apenas para actualizar a estrutura das intalações feitas antes da versão 0.11 de Tainacan, quando esta estrutura foi implementada.
+Sirve para mover los documentos y archivos adjuntos de elementos a una estructura de directorios usando: `$collection_id/$item_id`.
+Esto es solo para actualizar la estructura de las instalaciones realizadas antes de la versión 0.11 de Tainacan, cuando se implementó esta estructura.
 
-#### OPTIONS:
+#### OPCIONES:
 
-| options   | description                                                   |
+| opciones   | descrición                                                   |
 | --------- | ------------------------------------------------------------- |
-| --dry-run | Procure os anexos mas não os mova, apenas mostre um relatório |
+| --dry-run | Explora los archivos adjuntos, pero no los mueve, solo muestra un informe |
 
-Exemplo:
+Ejemplo:
 
 ```
 wp tainacan index-content --collection=all
 ```
 
-### wp tainacan collection list
+### wp tainacan collection list (lista de colecciones wp tainacan)
 
-Mostrar uma lista de coleções
+Muestra una lista de las colecciones
 
-### wp tainacan collection clean
+### wp tainacan collection clean (remover elementos de una colección)
 
-remover itens de coleção específica.
+Elimina elementos de una colección específica.
 
-#### OPTIONS:
+#### OPCIONES:
 
-| options         | description                                                             |
+| opciones         | descripción                                                             |
 | --------------- | ----------------------------------------------------------------------- |
-| <collection_id> | especifica a coleção que terá seus itens removidos.                     |
-| --permanently   | excluir permanentemente os itens, ignorando a lixeira.                  |
-| --dry-run       | contar o total do itens que serão removido, apenas mostra um relatório. |
+| <collection_id> | Especifica la colección de la que se eliminarán sus elementos.                     |
+| --permanently   | Excluir permanentemente los elementos sin pasar por la papelera de reciclaje.                  |
+| --dry-run       | Cuenta el total de elementos que se eliminarán y muestra un informe. |
 
-Exemplo:
+Ejemplo:
 
 ```
 wp tainacan collection clean 1201 --permanently
 ```
 
-### wp tainacan index-content
+### wp tainacan index-content (indexar los contenidos)
 
-indexar o conteúdo do documento dos itens
+Sirve para recalcular los valores de los metadatos de control
 
-#### OPTIONS:
+#### OPCIONES:
 
-| options              | description                                                                                                                         |
+| opciones              | descripción                                                                                                                        |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| --collection=<value> | <value> ID da coleção na qual o conteúdo do documento dos itens será indexado, ou "all" para que todas as coleções sejam indexadas. |
-| --dry-run            | Contar o total de itens que serão indexados, apenas mostra um relatório.                                                            |
+| --collection=<value> | <value> ID de la colección en la que se indexará el contenido (es decir, los elementos). Se puede usar "all" para indexar el contenido de todas las colecciones. |
+| --dry-run            | Cuenta el total de elementos que se indexarán y muestra un informe.                                                            |
 
-### wp tainacan control-metadata
+### wp tainacan control-metadata (control de metadatos)
 
-recalcular os valores dos metadados de controle
+Sirve para recalcular los valores de los metadatos de control
 
-#### OPTIONS:
+#### OPCIONES:
 
-| options                                 | description                                                                                                 |
+| opciones                                 | descripción                                                                                                 |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| --collection=<value>                    | <value> ID da coleção na qual os metadados de controle serão recalculados, ou 'all' para todas as coleções. |
-| --dry-run                               | Contar o total de itens que terão os metadados de controle recalculados, apenas mostra um relatório.        |
-| --recreate-control-metadata-definitions | recriar as definições dos metadados de controle                                                             |
+| --collection=<value>                    | <value> ID de la colección en la que se volverán a calcular los metadatos de control, usa “all” para elegir todas las colecciones. |
+| --dry-run                               | Cuenta el número total de elementos que tendrán los metadatos de control recalculados y muestra un informe.        |
+| --recreate-control-metadata-definitions | Recrea las definiciones de metadatos de control                                                             |
 
-Exemplo:
+Ejemplo:
 
 ```
 wp tainacan control-metadata --collection=all --recreate-control-metadata-definitions

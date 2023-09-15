@@ -1,17 +1,16 @@
 # Vídeos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Existem alguns materiais pela web criados por parceiros ou por usuários que recomendamos caso você tenha interesse em conhecer mais sobre o uso do Tainacan.
+Existen algunos materiales en la web creados por socios o usuarios que te recomendamos si estás interesado en aprender más sobre el uso de Tainacan.
 
-## Tutoriais pela equipe do WebMuseu.org
+## Tutoriales por el equipo de WebMuseu.org
 
 https://webmuseu.org/recursos/usabilidade-tutorial-tainacan/
 
-## Tutoriais pela equipe do IBRAM
+## Tutoriales por el equipo del IBRAM
 
 https://www.gov.br/museus/es-mx/assuntos/noticias/ibram-lanca-videos-tutoriais-sobre-o-tainacan
 
-## Webinários canal do YouTube do Tainacan
+## Webinarios en el canal de YouTube de Tainacan
 
 https://www.youtube.com/c/Tainacan/videos

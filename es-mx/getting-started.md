@@ -1,122 +1,120 @@
-# Primeiros Passos
+# Primeros pasos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Vamos entender o que é possível fazer com o Tainacan e como eu posso usá-lo para gerir meu repositório digital de maneira fácil e intuitiva.
+Comprendamos qué es posible hacer con Tainacan y cómo puedo usarlo para crear y administrar mi repositorio digital de una manera fácil e intuitiva.
 
-## O que queremos?
+## ¿Qué queremos hacer?
 
-Consideremos que eu tenho uma coleção de fotos que eu desejo expor para o mundo. No meu site WordPress eu já tenho posts e páginas que criei para falar sobre ela, mas agora quero montar meu repositório e organizar ele de maneira sistematizada. Tudo começa com a criação da coleção.
+Digamos que tengo una colección de fotos que quiero exponer al mundo. En mi sitio de WordPress ya tengo publicaciones y páginas que creé para hablar sobre eso, pero ahora quiero configurar mi repositorio y organizarlo de manera sistemática. El primer paso es crear la colección.
 
-## Criando a coleção Minhas Fotos
+## Creación de la colección “Mis fotos”
 
-No painel administrativo do meu site WordPress, eu já tenho o plugin instalado e posso acessar ele pela barra lateral:
+En el panel de administración de mi sitio de WordPress, ya tengo instalado el complemento (plug-in) Tainacan y puedo acceder a él desde la barra lateral:
 
-![Acessando o admin do Tainacan](/_assets/gifs/getting-started-0.gif)
+![Ingresando como administrador en Tainacan](_assets/gifs/getting-started-0.gif)
 
-Na página inicial do plugin, posso criar minha coleção, processo que é feito no formulário da imagem abaixo. Escolhi um nome, uma descrição, imagens de miniatura e cabeçalho, além de alguns modos de visualização que testaremos mais tarde.
+En la página de inicio del complemento, puedo crear mi colección, proceso que se realiza en el formulario de la imagen a continuación. Elegí un nombre, una descripción, imágenes en miniatura y de encabezado, y algunos modos de vista previa que probaremos más adelante.
 
-![Criando uma coleção](/_assets/gifs/getting-started-1.gif)
+![Creando una colección](_assets/gifs/getting-started-1.gif)
 
-## Configurando os metadados da coleção
+## Configuración de metadatos de la colección
 
-Ao configurar os metadados, estamos criando os atributos pelos quais os itens da coleção serão descritos. Se tratando de uma coleção de fotos, tenho interesse em algumas informações específicas:
+Una vez creada la colección, el siguiente paso es configurar los metadatos. Lo que estamos haciendo es crear los atributos mediante los cuales se describirán los elementos de la colección. Si es una colección de fotos, me interesa la siguiente información específica:
 
-- O título da foto;
-- A descrição da foto;
-- A data em que a foto foi tirada;
-- A máquina usada para a foto;
-- A categoria da foto;
+- El título de la foto;
+- La descripción de la foto;
+- La fecha en que se tomó la foto;
+- La máquina utilizada para tomar la foto;
+- Una categoría de fotos;
 
-Ao entrarmos na página de metadados, vemos que os dois primeiros metadados já existem por padrão, embora eu possa desabilitá-los ou mudar o seu rótulo, se assim desejar. Mas posso criar os outros, usando algum dos tipos de metadados disponíveis. Vejamos quais escolhi:
+Cuando entramos en la página de metadatos, vemos que los dos primeros metadatos ya existen por defecto, aunque puedo deshabilitarlos o cambiar su etiqueta si lo deseo. Pero puedo crear los demás usando cualquiera de los tipos de metadatos disponibles.  En este caso, elijo:
 
-- **Data da Foto** - _Tipo Data_ - A data em que a foto foi tirada;
-- **Máquina Fotográfica** - _Tipo Texto simples_ - O nome da máquina usada para a foto;
-- **Categoria** - _Tipo Taxonomia_ - A categoria da foto;
+- **Fecha de la foto** - _Tipo de fecha_ - La fecha en que se tomó la foto;
+- **Máquina fotográfica** - _Tipo Texto simple_ - El nombre de la máquina utilizada para la foto;
+- **Categoría** - _Tipo de taxonomía_ - Una categoría de fotos;
 
-![Criando metadados](/_assets/gifs/getting-started-2.gif)
+![Creación de metadatos](_assets/gifs/getting-started-2.gif)
 
-Para a Categoria escolhi um metadado tipo taxonomia. Por quê isso? Bom, cabe pensar, o que é uma categoria? Para minha coleção, é um conjunto de termos que uso para descrever uma foto, que podem ter relações hierárquicas, como categorias mães e categorias filhas, além de surgirem novas de acordo com as novas fotos que cheguem à minha coleção. Isso cai como uma luva no que definimos como Taxonomias no Tainacan. Mas para de fato criar este metadado, antes eu preciso configurar esta Taxonomia.
+Para la “Categoría” elegí un metadato de tipo taxonomía. ¿Por qué? Bueno, vale la pena pensar, ¿qué es una categoría? Para mi colección, es un conjunto de términos que utilizo para describir una foto; estos términos pueden tener relaciones jerárquicas, como categorías principales y categorías secundarias, además de que aparecen nuevos según las nuevas fotos que llegan a mi colección. Esto encaja como anillo al dedo en lo que definimos como Taxonomías en Tainacan. Pero para crear un metadato de tipo “Taxonomía”, primero necesito configurarla como se explica a continuaciónPara la “Categoría” elegí un metadato de tipo taxonomía. ¿Por qué? Bueno, vale la pena pensar, ¿qué es una categoría? Para mi colección, es un conjunto de términos que utilizo para describir una foto; estos términos pueden tener relaciones jerárquicas, como categorías principales y categorías secundarias, además de que aparecen nuevos según las nuevas fotos que llegan a mi colección. Esto encaja como anillo al dedo en lo que definimos como Taxonomías en Tainacan. Pero para crear un metadato de tipo “Taxonomía”, primero necesito configurarla como se explica a continuación.
 
-## Criando a taxonomia Categorias
+## Creación de la taxonomía de Categorías
 
-No menu do repositório, ao lado esquerdo, podemos acessar a lista de taxonomias e de lá criar uma nova, denominada Categoria. Após criar, posso também inserir termos, que serão as minhas categorias em si, com as quais vou rotular minhas fotos (por exemplo, _urbano_, _natureza_, _abstrato_...).
+En el menú del repositorio, en el lado izquierdo, podemos acceder a la lista de taxonomías y desde allí crear una nueva, llamada “Categoría”. Una vez creado, también puedo ingresar términos, que serán mis propias categorías, con las que etiquetaré mis fotos (por ejemplo, _urbano_, _naturaleza_, _resumen_…).
 
-![Criando uma taxonomia](/_assets/gifs/getting-started-3.gif)
+![Creación de una taxonomía](_assets/gifs/getting-started-3.gif)
 
-Voltando à página de configurações de metadados, agora posso criar meu metadado que vai usar desta taxonomia. Posso também deixar marcada a opção de "Permitir a inserção de termos", para que eu possa criar novos termos facilmente enquanto estiver configurando minhas fotos. Aliás, está na hora de trazer elas para o Tainacan!
+Volviendo a la página de configuración de metadatos, ahora puedo crear los metadatos que usarán esta taxonomía. También puedo dejar marcada la opción "Permitir la inserción de términos", para que pueda crear fácilmente nuevos términos mientras describo mis fotos. Por cierto, ¡es hora de traerlas a Tainacan!
 
-![Criando um metadado tipo taxonomia](/_assets/gifs/getting-started-4.gif)
+![Creación de un metadato tipo taxonomía](_assets/gifs/getting-started-4.gif)
 
-## Subindo itens para o Tainacan
+## Subir los elementos a Tainacan
 
-Os itens da coleção Minhas Fotos, são as fotos em si. Um caminho possível é inserirmos uma por uma, acessando o menu de "Criar Item", logo na página de itens da coleção. Mas vamos considerar que eu já tenha várias delas guardadas em uma pasta no meu computador. Posso seguir um caminho mais simples, usando a função "Adicionar itens em massa":
+Los elementos de la colección “Mis fotos” son las propias fotos. Una forma posible es subirlas una por una, accediendo al menú “Añadir nuevo(a)”, justo en la página de elementos de la colección. Pero supongamos que ya tengo varios de ellos guardados en una carpeta en mi computadora, entonces puedo seguir una ruta más simple, usando la función "Añadir elementos en lote":
 
-![Adicionando itens em massa](/_assets/gifs/getting-started-5.gif)
+![Agregar elementos en lote](_assets/gifs/getting-started-5.gif)
 
-Ao fazer o upload de minhas fotos, posso partir para a Edição em Massa ou para a Edição em Sequência. A primeira vale para tratarmos de metadados em comum entre as fotos, e a segunda para olharmos cada item, um por um. Vamos começar pelo que há de comum nestas fotos: a Máquina Fotográfica. Como tirei todas com a mesma câmera, vou configurar essa informação na tela de Edição em Massa. Depois, sigo para a Edição em Sequência, onde podemos ver que o Tainacan já gerou uma miniatura a partir das minhas fotos, que pode ser alterada futuramente. Minhas fotos ficarão públicas e não existem anexos relacionados à elas, portanto me resta apenas preencher os metadados.
+Al subir mis fotos, puedo optar por la Edición en lote o por la Edición en secuencia. La primera sirve para tratar los metadatos comunes entre todas las fotos y la segunda para examinar cada elemento, uno por uno. Empecemos por lo que tienen en común estas fotos: la cámara. Como las tomé todas con la misma cámara, estableceré esta información en la pantalla de Edición en masa. Luego paso a Edición en secuencia, donde podemos ver que Tainacan ya ha generado una miniatura a partir de mis fotos, que se puede cambiar en el futuro. Mis fotos serán públicas y no hay archivos adjuntos relacionados con ellas, así que solo tengo que rellenar los metadatos.
 
-### Preenchendo metadados
+### Captura de metadatos
 
-Cada configuração feita na tela de metadados se reflete aqui, na etapa de criação do item. Posso colocar o Título e Descrição da foto e uma data válida para o momento em que a foto foi tirada. A Máquina Fotográfica já foi configurada previamente, portando não há nada com o que se preocupar aqui. Já a Categoria, esta será preenchida como eu achar mais conveniente, usando as categorias que criei anteriormente. Se de repente deixei alguma prá trás, posso criar o novo termo para a taxonomia aqui mesmo, diretamente pelo formulário de edição do item. Preenchidos todos os metadados, já podemos ver como nossa coleção ficou voltando a página de itens da coleção:
+Cada configuración realizada en la pantalla de metadatos se refleja aquí, en el paso de creación del elemento. Puedo poner el Título y la Descripción de la foto y una fecha válida que indique cuándo se tomó la foto. La cámara ya se configuró de antemano, por lo que no hay nada de qué preocuparse aquí. En cuanto a la Categoría, se completará como mejor me parezca, usando las categorías que creé anteriormente. Si he olvidado alguna categoría, puedo crear el nuevo término para la taxonomía aquí mismo, directamente desde el formulario de edición del elemento. Después de rellenar todos los metadatos, podemos ver el aspecto de nuestra colección volviendo a la página de elementos de la colección:
 
-![Editando itens em sequência](/_assets/gifs/getting-started-6.gif)
+![Editar elementos en secuencia](_assets/gifs/getting-started-6.gif)
 
-## Navegando em sua coleção
+## Navegando por tu colección
 
-E aí está, temos uma coleção de fotos no nosso repositório Tainacan! Note que podemos mudar a ordem de visualização, mudar o modo de visualização da lista e até
-escolher quais metadados mostrar em alguns casos. Como estou criando uma coleção de fotos, prefiro usar o modo "Miniatura".
+Y ya está, ¡tenemos una colección de fotos en nuestro repositorio de Tainacan! Toma en cuenta que podemos cambiar el orden de visualización, cambiar el modo de vista de lista e incluso elegir qué metadatos mostrar en algunos casos. Como estoy creando una colección de fotos, prefiero utilizar el modo "Miniatura" para la visualización.
 
-![Navegando pela coleção](/_assets/gifs/getting-started-7.gif)
+![Navegando por tu colección](_assets/gifs/getting-started-7.gif)
 
-Logo ao lado, já temos disponíveis a busca textual simples e a busca avançada. Mas podemos customizar melhor como vamos filtrar os itens desta coleção usando... filtros!
+Del lado izquierdo de la pantalla ya tenemos disponible la búsqueda textual simple y la búsqueda avanzada. Pero podemos personalizar aún más la forma cómo filtraremos los elementos de esta colección usando... ¡filtros!
 
-## Configurando filtros
+## Configurar filtros
 
-Cada tipo de metadado escolhido pode ser filtrado de maneiras diferentes. Aqui na página de filtros, podemos criar um filtro de Data para o metadado da Data da Foto, além de um filtro com uma lista de checkboxes para o metadado de Categorias. Esta lista de checkboxes é um dos mais interessantes que temos, pois com ele podemos explorar facilmente todas as categorias que foram utilizadas para rotular minhas fotos.
+Cada tipo de metadatos elegido puede filtrarse de distintas maneras. Aquí, en la página de filtros, podemos crear un filtro de Fecha para los metadatos de Fecha de la foto, así como un filtro con una lista de casillas de verificación para los metadatos de Categorías. Esta lista de casillas de verificación es una de las más interesantes que tenemos, porque con ella podemos explorar fácilmente todas las categorías que se utilizaron para etiquetar mis fotos.
 
-![Criando filtros](/_assets/gifs/getting-started-8.gif)
+![Creación de filtros](_assets/gifs/getting-started-8.gif)
 
-Vamos para a lista de itens, experimentar estes filtros. Observe como, ao aplicarmos um deles, uma tag surge acima da lista de itens, para que possamos remover o filtro se desejado. No caso das categorias, temos também um valor entre parênteses ao lado do rótulo da categoria. Este contador indica quantos itens existem na coleção no momento com esta categoria, uma visão que denominamos "Faceta".
+Vayamos a la lista de elementos para probar estos filtros. Observa cómo, cuando aplicamos uno de ellos, aparece una etiqueta encima de la lista de elementos, para que podamos eliminar el filtro si lo deseamos. En el caso de las categorías, también tenemos un valor entre paréntesis junto a la etiqueta de la categoría. Este contador indica cuántos elementos existen actualmente en la colección con esta categoría, una vista que llamamos "Faceta".
 
-![Usando filtros](/_assets/gifs/getting-started-9.gif)
+![Usando filtros](_assets/gifs/getting-started-9.gif)
 
-## Enxergando sua coleção no site
+## Visualización de tu colección en el sitio web
 
-Tudo isso parece bem legal, mas até então estamos dentro do painel administrativo do Tainacan, que pode ser acessado apenas por quem tem permissão... e como isto se integra ao meu site _WordPress_? Basta clicarmos no ícone de olho, no canto superior direito para descobrirmos:
+Todo esto suena muy bien, pero hasta ahora estamos dentro del panel de administración de Tainacan, al que solo pueden acceder aquellos con permiso... ¿y cómo se integra esto con mi sitio web de _WordPress_? Basta con hacer clic en el icono del ojo de la esquina superior derecha para averiguarlo:
 
-![Vendo a coleção no tema](/_assets/gifs/getting-started-10.gif)
+![Visualización de la colección en el tema](_assets/gifs/getting-started-10.gif)
 
-A coleção está então, pública no nosso site, no endereço que está configurado por padrão lá na página de configuração da Coleção, que vimos mais atrás. Aqui também vemos outras configurações entrarem em ação, como a imagem de cabeçalho, a miniatura e descrição da coleção. Acima da lista de itens, temos uma opção de "Modos de Visualização", que nos dá diferente formas de ver a coleção conforme configurado também na página da Coleção. Dentre estes, há também um modo especial que fica separado, o modo "Apresentação".
+Ahora la colección es pública en nuestro sitio web, en la dirección que está configurada por defecto allí en la página de Configuración de la colección, que vimos anteriormente. Aquí también entran en juego otros ajustes, como la imagen de cabecera, la miniatura y la descripción de la colección. Encima de la lista de elementos, tenemos la opción "Modos de visualización", que nos ofrece distintas formas de ver la colección, tal y como se configura también en la página Colección. Entre ellos, también hay un modo especial que está separado, el modo "Presentación".
 
-![Apresentação](/_assets/gifs/getting-started-11.gif)
+![Presentación](_assets/gifs/getting-started-11.gif)
 
-Navegando pela coleção, podemos clicar no item e ver sua página, onde estão visíveis os metadados configurados.
+Navegando por la colección, podemos hacer clic en el elemento y ver su página, donde están visibles los metadatos configurados.
 
-![Apresentação](/_assets/gifs/getting-started-12.gif)
+![Presentación](_assets/gifs/getting-started-12.gif)
 
-Além da página pública da coleção, existem outras páginas, pré-definidas pelo Tainacan que podem ser de interesse para nós, e que podem ser colocadas de fácil acesso no menu do site. A primeira delas é a Lista de Coleções, disponível em `/colecoes`, que - obviamente - mostra todas as minhas coleções públicas. Outra é a Lista de Itens do Repositório, acessível em `/itens`, que funciona como uma página de coleção, porém mostrando itens públicos de todas as coleções, assim como seus filtros. Você escolhe se deseja expor ou não essas páginas.
+Además de la página pública de la colección, existen otras páginas, predefinidas por Tainacan, que pueden ser de nuestro interés, y que pueden colocarse fácilmente accesibles en el menú del sitio web. La primera es la Lista de colecciones, disponible en /collections, que -obviamente- muestra todas mis colecciones públicas. Otra es la Lista de elementos del repositorio, accesible en /items, que funciona como una página de colección, pero muestra los elementos públicos de todas las colecciones, así como sus filtros. Tú eliges si mostrar o no estas páginas.
 
-## Contando histórias com blocos Gutenberg
+## Contar historias con bloques de Gutenberg
 
-Ter páginas dedicadas para o conteúdo criado no Tainacan é interessante, mas talvez eu queira expor conteúdo do Tainacan em meio às minhas postagens do blog ou mesmo em páginas que eu criei, como minha página inicial. Para isso, nós usamos os blocos Gutenberg.
+Tener páginas dedicadas para el contenido creado en Tainacan es interesante, pero quizás quiera exponer el contenido de Tainacan en medio de las entradas de mi blog o incluso en páginas creadas por mí, como mi página de inicio. Para ello, utilizamos los bloques de Gutenberg.
 
-Gutenberg é como é chamado o editor de conteúdo do WordPress desde sua versão 5.0. É uma ferramenta intuitiva e flexível para construir postagens com uma estrutura de blocos. Com ele, eu posso facilmente inserir imagens, vídeos, citações e texto estilizados com diferentes alinhamentos e tamanhos. Mas assim como eu puxo minhas imagens da galeria de mídia, ou puxo vídeos de um link no YouTube, eu posso querer puxar itens da minha coleção Tainacan. É aqui que entram estes blocos.
+Gutenberg es como se llama al editor de contenidos de WordPress desde la versión 5.0. Es una herramienta intuitiva y flexible para construir publicaciones con estructura de bloques. Con él, puedo insertar fácilmente imágenes estilizadas, videos, citas y texto con diferentes alineaciones y tamaños. Pero así como puedo publicar imágenes de la galería de medios o insertar videos de un enlace de YouTube, es posible que quiera publicar elementos de mi colección de Tainacan. Aquí es donde entran en juego estos bloques.
 
-Por exemplo, se eu quiser mostrar, no meio de uma postagem minha lista de itens, posso usar o Bloco de Busca de Itens, ao invés de simplesmente colocar um link para a minha lista de itens, que tem muita informação e recursos que podem distrair meu leitor. Vejamos ele em uso nesta postagem:
+Por ejemplo, si quiero mostrar, en medio de un post mi lista de artículos, puedo utilizar el Bloque de Búsqueda de Artículos, en lugar de simplemente poner un enlace a mi lista de artículos, que tiene mucha información y características que pueden distraer al lector. Veámoslo en uso en este post:
 
-![Usando o bloco de busca de itens](/_assets/gifs/getting-started-13.gif)
+![Usando el bloque de búsqueda de artículos](_assets/gifs/getting-started-13.gif)
 
-Por outro lado, posso também querer dar uma noção de quais são as categorias mais comuns em minha coleção, e pra isso tenho o Bloco de Facetas, que com sua nuvem de tags me dá uma visão clara disso.
+Por otro lado, también puedo querer dar una idea de cuáles son las categorías más comunes de mi colección, y para eso tengo el bloque Facetas (Facet Block), que con su nube de etiquetas me da una visión clara de ello.
 
-![Usando o bloco de facetas](/_assets/gifs/getting-started-14.gif)
+![Usando el bloque de facetas](_assets/gifs/getting-started-14.gif)
 
-Mas talvez eu queira mostrar um conjunto de Categorias específico na minha página inicial, e deixar um link para meus visitantes na página inicial. Para isso uso o Bloco Estático de Termos, que permite escolher à mão quais mostrar:
+Pero tal vez quiera mostrar un conjunto específico de Categorías en mi página de inicio y dejar un enlace para mis visitantes en la página de inicio. Para esto utilizo el Bloque de términos estáticos, que me permite elegir a mano cuáles mostrar:
 
-![Usando o bloco de facetas](/_assets/gifs/getting-started-15.gif)
+![Usando el bloque de facetas](_assets/gifs/getting-started-15.gif)
 
-Todos estes blocos possuem diferentes configurações de exibição e funcionamento, para melhor entendê-los vale uma leitura em nossa [documentação](/es-mx/gutenberg-blocks.md).
+Todos estos bloques tienen diferentes configuraciones de visualización y funcionamiento, para entenderlos mejor vale la pena leer nuestra [documentación](/es-mx/gutenberg-blocks.md).
 
-## Explorando mais a fundo
+## Explorando más a fondo
 
-Neste artigo você pode tocar um poquinho do que é possível com o Tainacan, mas não se engane, esta foi apenas uma espiada! Há muitos assuntos que podem ser abordados como [Metadados Tipo Relacionamento](/es-mx/metadata.md#tipos-de-metadados), [Importadores](/es-mx/importers.md), [Exportadores](/es-mx/exporters.md), Expositores, Padrão de Metadados, [Controle de Atividades](/es-mx/activities.md),[Anexos](/es-mx/inserir-e-editar-arquivos), Tipos de Documentos, etc. Você também encontrará materiais educacionais em outros lugares além desta Wiki, como nos links listados em nossa [página de vídeos](/es-mx/videos.md). Esperamos que o Tainacan possa te ajudar a construir repositórios digitais incríveis!
+En este artículo te hemos mostrado algunas de las cosas que es posible hacer con Tainacan, pero no te equivoques, ¡esto fue solo un vistazo! Hay muchos otros temas que se pueden abordar como [Metadados de tipo relación](/es-mx/metadata.md#tipos-de-metadatos), [Importadores](/es-mx/importers.md), [Exportadores](/es-mx/exporters.md), Expositores, Estándar de metadatos, [Control de actividades](/es-mx/activities.md), [Archivos adjuntos](/es-mx/inserir-e-editar-arquivos), Tipos de Documentos, etc. También encontrarás materiales educativos en otros lugares además de esta Wiki, como los enlaces que figuran en nuestra [página de videos](/es-mx/videos.md). ¡Esperamos que Tainacan te ayude a crear repositorios digitales increíbles!

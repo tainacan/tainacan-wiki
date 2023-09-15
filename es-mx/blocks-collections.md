@@ -1,71 +1,69 @@
-# Blocos de Coleções
+# Bloques de colección
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+Si su repositorio tiene varias colecciones, puede ser una buena idea presentarlas en la página de inicio o en un post de introducción a la colección. Para estas situaciones, merece la pena utilizar un bloque de colección. Tainacan ofrece actualmente dos de ellos:
 
-Se seu repositório possui múltiplas coleções, pode ser uma boa ideia apresentá-las na página inicial ou em um post de introdução ao acervo. Para estas situações vale a pena usar um bloco de coleção. Atualmente, o Tainacan oferece dois destes:
-
-1. O [Carrossel de Coleções](#carrossel-de-coleções)
-2. A [Lista de Coleções](#lista-de-coleções) _(Estático)_
+1. El [carrusel de colecciones](#carrusel-de-colecciones)
+2. La [lista de colecciones](#lista-de-colecciones) _(Estático)_
 
 ---
 
-## Carrossel de Coleções
+## Carrusel de colecciones
 
-Para apresentar várias coleções em sequência e ainda dar um ar mais "dinâmico" à sua publicação, o bloco Carrossel de Coleções é ideal.
+Para presentar varias colecciones en secuencia y dar a su publicación un aspecto más "dinámico", el bloque Carrusel de colecciones es ideal.
 
-### Configurações Iniciais do Bloco
+### Configuraciones iniciales de los bloques
 
-![Selecionando as coleções no bloco](/_assets/gifs/blocks-collections-carousel-1.gif)
+![Selección de las colecciones del bloque](_assets/gifs/blocks-terms-carousel-1.gif)
 
-Para começar, escolha as coleções que serão adicionadas ao bloco. Você adiciona coleções através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima da coleção inserida.
+Para empezar, elija las colecciones que se añadirán al bloque. Las colecciones se añaden a través del modal y se eliminan de la propia lista haciendo clic en el botón "X" que aparece encima de la colección insertada.
 
-Com as coleções carregadas, você pode notar que o carrossel não se move. Na verdade, ele só é ativado na versão publicada ou pré-visualização do post ou página. Aqui no editor, você verá uma lista comum com scroll. Observe que ao clicar em uma coleção, o link te leva para a [Lista de Itens da Coleção](/es-mx/tainacan-pages#páginas-de-itens-de-uma-coleção) ou para sua página especial configurada. Agora, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con las colecciones cargadas, puede que notes que el carrusel no se mueve. De hecho, sólo se activa en la versión publicada o de vista previa de la entrada o página. Aquí, en el editor, verás una lista desplazable normal y corriente. Tenga en cuenta que cuando hace clic en una colección, el enlace le lleva a la sección [Lista de objetos de la colección](/es-mx/tainacan-pages#página-de-elementos-del-repositorio) o a su página especialmente configurada. Ahora podemos realizar una serie de ajustes que están disponibles en el panel lateral cuando tenemos el bloque activo.
 
-### Modos de Visualização da Coleção
+### Modos de visualización de la colección
 
-![Vendo o carrossel em ação no tema](/_assets/gifs/blocks-collections-carousel-2.gif)
+![Ver el carrusel en acción en el tema](_assets/gifs/blocks-terms-carousel-2.gif)
 
-Por padrão o Carrossel de Coleções vai parecer bem diferente do [Carrossel de Itens](/es-mx/blocks-items#carrossel-de-itens), pois três imagens aparecem em cada unidade do carrossel. Estas imagens são de Itens, na verdade, os três primeiros itens da coleção. Assim, o bloco te apresenta uma prévia de como é aquela coleção. Se ao invés da **Grade de Itens** você desejar exibir a **Miniatura da Coleção**, basta trocar nas configurações do bloco na barra lateral do editor.
+Por defecto, el carrusel de colecciones tendrá un aspecto muy diferente al del [Carrusel de elementos](/es-mx/blocks-items#carrossel-de-itens), porque en cada unidad del carrusel aparecen tres imágenes. Estas imágenes son de artículos, en realidad los tres primeros artículos de la colección. Así, el bloque le ofrece una vista previa del aspecto de la colección. Si en lugar de la **rejilla de artículos** quieres mostrar la **miniatura de la colección**, sólo tienes que cambiarlo en la configuración del bloque en la barra lateral del editor.
 
-### Opções do Carrossel
+### Opciones del carrusel
 
-Como em outros blocos, você pode escolher exibir ou não o nome da coleção abaixo da miniatura. As demais opções disponiveis pelo carrossel estão relacionadas à sua reprodução. São elas:
+Al igual que con otros bloques, puede elegir si desea mostrar o no el nombre de la colección debajo de la miniatura. Las otras opciones disponibles en el carrusel están relacionadas con la reproducción. Son las siguientes:
 
-- Loop Slides - Fazer com que, ao atingir o final da lista, o carrossel volte para o início;
-- Auto Play - Reproduzir automaticamente o carrossel;
-- Intervalo de tempo entre cada troca de coleção;
-- Posição das Setas: De que maneira as setas de navegação do carrossel devem estar dispostas;
+- Diapositivas en bucle - Haga que el carrusel vuelva al principio cuando llegue al final de la lista;
+- Reproducción automática - Reproduce automáticamente el carrusel;
+- Intervalo de tiempo entre cada cambio de colección;
+- Posición de las flechas: Cómo deben disponerse las flechas de navegación del carrusel;
 
 <br>
 
 ---
 
-## Lista de Coleções
+## Lista de colecciones
 
-Com o bloco Lista de Coleções, você seleciona manualmente quais itens deseja exibir em uma lista com quebra de linha.
+Con el bloque Lista de colecciones, puede seleccionar manualmente los elementos que desea mostrar en una lista con un salto de línea.
 
-!> Uma desvantagem é que este é um **bloco estático**. Isso significa que as coleções selecionadas (nome e imagem) serão salvas na configuração do bloco no post e não são atualizadas se vc fizer alguma mudança na coleção. Suponhamos que você escolheu algumas coleções, salvou seu post e alguns dias depois alterou o nome ou a imagem daquela coleção. Ao voltar para o bloco, estas mudanças não estarão refletidas, será preciso repetir a configuração. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco do [Carrossel de Coleções](#carrossel-de-coleções) em seu lugar.
+!> Una desventaja es que se trata de un **bloque estático**. Esto significa que las colecciones seleccionadas (nombre e imagen) se guardan en la configuración del bloque en el post y no se actualizan si realizas algún cambio en la colección. Supongamos que eliges algunas colecciones, guardas tu entrada y unos días después cambias el nombre o la imagen de esa colección. Cuando vuelvas al bloque, estos cambios no se reflejarán y tendrás que repetir la configuración. Por eso recomendamos usarlo con precaución y, si es posible, utilizar la opción [Carrusel de colecciones](#carrusel-de-colecciones) en su lugar.
 
-### Configurações Iniciais do Bloco
+### Configuraciones iniciales del bloque
 
-Para começar, escolha as coleções que serão adicionados ao bloco. Você adiciona coleções através do modal e as remove na própria lista, clicando no botão com "X" que aparece acima da coleção inserida. Ao clicar em uma coleção, o link te leva para a [Lista de Itens da Coleção](/es-mx/tainacan-pages#páginas-de-itens-de-uma-coleção) ou para sua página especial configurada.
+Para empezar, elija las colecciones que se añadirán al bloque. Las colecciones se añaden a través del modal y se eliminan de la propia lista haciendo clic en el botón "X" que aparece encima de la colección insertada. Cuando haga clic en una colección, el enlace le llevará a la sección [Lista de elementos de la colección](/es-mx/tainacan-pages#páginas-de-elementos-de-una-colección) o a su página especialmente configurada.
 
-Com as coleções carregadas, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
+Con las colecciones cargadas, podemos realizar algunos ajustes que están disponibles en el panel lateral cuando tenemos el bloque activo.
 
-![Configurações Iniciais do Bloco](/_assets/gifs/blocks-collections-list-1.gif)
+![Configuraciones iniciales del bloque](_assets/gifs/blocks-collection-items-1.gif)
 
-### Configurações da Exibição de Coleções
+### Configuraciones de visualización de la colección
 
-Este bloco oferece dois modos de visualização, disponíveis na barra superior do bloco:
+Este bloque ofrece dos modos de visualización, disponibles en la barra superior del bloque:
 
 <!-- tabs:start -->
 
-#### ** Grade de Coleções **
+#### ** Rejilla de la colección **
 
-O modo padrão é a grade de coleções, que mostrará as miniaturas das coleções (185px _x_ 185px), com seus nomes abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o nome da coleção e se deseja um espaço maior entre elas. Lembrando que quanto maior o espaçamento, menos coleções cabem por linha.
+El modo por defecto es la rejilla de colecciones, que mostrará miniaturas de las colecciones (185px _x_ 185px), con sus nombres debajo. En este modo, puedes configurar si quieres mostrar o no el nombre de la colección y si quieres más espacio entre ellas. Recuerde que cuanto mayor sea el espacio, menos colecciones cabrán por línea.
 
-#### ** Lista de Coleções **
+#### ** Lista de colecciones **
 
-A lista de coleções permite uma visão mais simplificada, com miniaturas menores (54px _x_ 54px) e os nomes ao lado. Neste modo, você pode escolher não mostrar a miniatura, o ideal para coleções que não possuem imagens.
+La lista de colecciones le ofrece una vista más simplificada, con miniaturas más pequeñas (54px _x_ 54px) y los nombres junto a ellas. En este modo, puedes elegir no mostrar la miniatura, lo que resulta ideal para las colecciones que no tienen imágenes.
 
 <!-- tabs:end -->

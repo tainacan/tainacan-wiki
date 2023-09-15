@@ -6,186 +6,191 @@
 		height="42">
 </div>
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-# Taxonomias
+# Taxonomías
 
-_“Taxonomias”_ podem ser criadas e usadas para a classificação de _“itens”_. Elas funcionam como _“vocabulários controlados”_ que vão auxiliar tanto na entrada dos dados, quanto na sua recuperação precisa.
+Las _“Taxonomías”_ son un tipo de metadato que funciona dentro de Tainacan como _“vocabularios controlados”_ que se utilizan para la clasificación de _"elementos"_ y ayudan tanto en la captura de datos como en su correcta recuperación.
 
-> Na linguagem do WordPress, elas são _“taxonomias personalizadas”_. Consulte a[ ](https://codex.wordpress.org/es-mx:Taxonomias)[documentação do WordPress](https://codex.wordpress.org/es-mx:Taxonomias) para saber mais.
+> En el lenguaje de WordPress, se habla de _“taxonomías personalizadas”_. Consulta la [documentación de WordPress](https://codex.wordpress.org/es:Taxonom%C3%ADas#Qu.C3.A9_es_una_taxonom.C3.ADa.3F) para saber más.
 
-Cada _“taxonomia”_ tem um conjunto de _“termos”_. Por exemplo, a _“taxonomia gênero”_ pode ter “_termos”_ como _“drama”_ e _“comédia”_.
+En Tainacan se pueden crear _“taxonomías simples”_ (se componen de una lista simple de términos) y _“taxonomías con jerarquía”_. Un ejemplo de una _“taxonomía simple”_ puede ser un metadato titulado _“género dramático”_ cuyos _“términos hijos”_ sean _"drama"_, _"comedia"_ y _“tragedia”_. Por su parte, un metadato como _“lugar de origen”_ podría configurarse como una taxonomía con tres niveles jerárquicos: _“País”_ (término padre), _“Estado o Provincia”_ (término hijo) y _“Municipio”_ (término nieto).
 
-Os _“termos”_ podem ter hierarquia, o que significa que quando você procura por _“itens”_ que tem termos com _“termos filhos”_ (por exemplo, “_Samba”_), os resultados incluirão _“itens”_ que tenham qualquer um dos _“termos filhos”_. Por exemplo, “_Samba de Gafieira”_ e “_Samba Maxixe”_.
+Cuando un usuario busque elementos que tengan _“términos hijos”_ (por ejemplo, _“Danza”_), los resultados incluirán _“elementos”_ que tengan cualquiera de los _“términos hijos”_. Por ejemplo, _“Danza ritual”_, _“Danza clásica”_ y _“Danza contemporánea”_.
 
-_“Termos”_ podem ter uma _“descrição”_, um _“ícone”_, ou uma _“imagem”_ que o represente, e também podem ser ligados a um conceito existente em uma ontologia. Os _“termos”_ possuem sua própria _“URL”_ no site, com uma página listando todos os _“itens”_ relacionados a ele, inclusive de diferentes _“coleções”_, dessa forma eles se comportam como se fossem uma _“coleção”_.
+Los _"términos"_ pueden tener una _"descripción"_, un _"icono"_ o una _"imagen"_ que los represente, y también puede vincularse a un concepto existente en una ontología. Los _"términos"_ tienen su propia _"URL"_ en el sitio web, con una página que enumera todos los _"elementos"_ relacionados con él, incluso si pertenecen a diferentes _"colecciones"_, por lo que se comportan como si fueran una _"recopilación"_ de todos los elementos que comparten un mismo término.
 
-> As _“taxonomias”_ podem ser compartilhadas por várias _“coleções”_ no repositório.
+> Las _"taxonomías"_ pueden ser compartidas por varias _"colecciones"_ del repositorio.
 
-> As _“taxonomias”_ devem ser configuradas em um _“metadado”_ para sua inserção nas _“coleções”_. Consulte o tópico[ ](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata?id=criar-metadados)[Criar Metadados](https://tainacan.github.io/tainacan-wiki/#/es-mx/metadata?id=criar-metadados) para saber como.
+> Las _"taxonomías"_ son un _“tipo de metadato”_ que se puede incluir las _"colecciones"_. Ver el tema [Crear Metadatos](es-mx/metadata.md#crear-metadatos) para saber cómo.
 
-####
 
-## Criar Taxonomias
+<!-- tabs:start -->
 
-1. Acesse o painel de controle do WordPress;
+### ** Crear **
+## Crear Taxonomías
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+1. Accede al panel de control de WordPress;
 
-2. Na barra lateral esquerda, clique em Tainacan;
+   ![Accede al panel de control](_assets/images/050.png)
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+2. En la barra lateral izquierda, haz clic en Tainacan;
 
-3. Clique em _“Taxonomias”;_
+   ![Accede al panel de control](_assets/images/051.png)
 
-   ![Acesse o painel de controle](_assets\images\093.png)
+3. Da clic en _“Taxonomías”;_
 
-4. Clique em _“Nova Taxonomia”_;
+   ![Accede al panel de control](_assets/images/093.png)
 
-   ![Acesse o painel de controle](_assets\images\094.png)
+4. Da clic en _“Nueva taxonomía”_;
 
-5. Na aba _“Taxonomia”_ preencha os campos desejados:
+   ![Accede al panel de control](_assets/images/094.png)
 
-   ![Acesse o painel de controle](_assets\images\095.png)
+5. En la pestaña _“Taxonomía”_ llena los campos deseados:
 
-   a) **“Nome”**: nome da _“taxonomia”_;
+   ![Accede al panel de control](_assets/images/095.png)
 
-   b)**“Descrição”**: descrição da _“taxonomia”_;
+   a) **“Nombre”**: nombre de la _“taxonomía”_;
 
-   c)**“Slug”**: O campo _“slug”_ permite alterar o final da _“URL”_ da _“taxonomia”_. Por padrão, ela é criada a partir do nome da _“taxonomia”_, mas pode ser editada neste campo;
+   b)**“Descripción”**: descripción de la _“taxonomía”_;
 
-   d)**“Permitir Termos Novos”**: permite que novos termos sejam adicionados à _“taxonomia”_ durante o envio de _“itens”_;
+   c)**“Slug”**: el **slug** es el texto que se encuentra detrás de la extensión de dominio de una URL y que indica de forma específica un lugar determinado de una página; es la parte editable del dominio Por defecto, se crea a partir del nombre de la _“taxonomía”_, pero se puede editar en este campo (lo ideal de un slug es que sea un texto corto, directo y descriptivo. Favorece el posicionamiento SEO si se optimiza bien);
 
-   e)**“Status”**: configuração de _“privacidade da taxonomia”_, nos valores:
+   d)**“Permitir nuevos términos”**: si se selecciona esta función, permite añadir nuevos términos a la _“taxonomía”_ a medida que se va realizando la catalogación de los _"elementos"_. Si no se selecciona, quien realice la captura no podrá agregar términos, solo podrá elegir algun de los términos ya creados;
 
-   ​ i. **“Publicado”**: A _“taxonomia”_ pode ser visualizada pelos visitantes do repositório;
+   e)**“Estatus”**: permite configurar la _“privacidad de taxonomía”_. Se tiene que elegir uno de los siguientes valores:
 
-   ​ ii. **“Privado”**: A _“taxonomia”_ pode ser visualizada somente por editores do repositório;
+   ​ i. **“Publicada”**: La _“taxonomía”_ puede ser vista por los visitantes del repositorio;
 
-   ​ iii. **“Rascunho”**: A _“taxonomia”_ pode ser visualizada somente pelo seu autor;
+   ​ ii. **“Privada”**: La _“taxonomía”_ solo puede ser vista por los editores del repositorio;
 
-   ​ iv.**“Lixo”**: A _“taxonomia”_, e seus _“termos”_, não serão mais aplicados aos seus _“itens”_ e poderão ser deletados permanentemente;
+   ​ iii. **“Borrador”**: La _“taxonomía”_ solo puede ser vista por su autor o autora;
 
-   ​ v.**“Habilitado para tipos de post”\*\***:\*_ permite habilitar esta _“Taxonomia”\* para outros tipos de Posts no WordPress.
+   ​ iv.**“Papelera”**: La _“taxonomía”_, y sus "términos", ya no se aplicarán a su _"elementos"_ y podrán ser eliminados permanentemente;
 
-6. Em seguida, clique na aba “Termos” e clique em “Criar Novo Termo”
+   ​ v.**“Habilitado para tipos de post”\*\***:\*_ Permite habilitar esta _“taxonomía”\* para otros tipos de entradas en WordPress.
 
-   ![Acesse o painel de controle](_assets\images\096.png)
+6. Después de llenar esta información, haz clic en la pestaña _"Términos"_ y después en _"Crear nuevo término"_.
 
-### Criar Termos
+   ![Accede al panel de control](_assets/images/096.png)
 
-1.Clique em “Criar Novo Termo”;
+### Crear términos
 
-![Acesse o painel de controle](_assets\images\097.png)
+1.Haz clic en "Crear nuevo término";
 
-2.Preencha os campos a seguir de acordo com cada “termo” a ser criado:
+![Accede al panel de control](_assets/images/097.png)
 
-![Acesse o painel de controle](_assets\images\098.png)
+2.Llena los siguientes campos:
 
-a. **“Imagem da Header”**: É possível adicionar uma imagem que aparece na visualização do “termo” de uma “taxonomia”, dependendo das configurações e do tema adotado. O tema padrão do Tainacan exibe a imagem da Header na página do “termo da taxonomia”;
+![Accede al panel de control](_assets/images/098.png)
 
-b. **“Nome”**: nome do “termo” que fará parte da “taxonomia”;
+a. **“Imagen de cabecera”**: es posible agregar una imagen que aparezca en la vista "término" de una "taxonomía", según la configuración y el tema adoptado. El tema predeterminado de Tainacan muestra la imagen de encabezado en la página de “término de taxonomía”;
 
-c. **“Descrição”**: descrição do “termo” que fará parte da “taxonomia”;
+b. **“Nombre”**: el nombre del “término” que formará parte de la “taxonomía”;
 
-d. **“Termo pai”**: determina o nível hierárquico do “termo” em relação aos demais desta mesma “taxonomia”.
+c. **“Descripción”**: la descripción del “término” que formará parte de la “taxonomía”;
 
-3.Clique em “Salvar” para concluir a criação do “termo”.
+d. **“Término padre”**: determina el nivel jerárquico del “término” en relación con los demás de la misma “taxonomía”.
 
-Repita a ação para “adicionar novos termos”, clicando novamente em “Criar Novo Termo”. “Taxonomias” também podem ser criadas a partir do “importador de vocabulário”. Consulte Importador de Vocabulário para saber mais.
+3.Haz clic en "Guardar" para terminar de crear el "término".
 
-## Editar taxonomias
+Hay que repetir la acción de “agregar nuevos términos” por cada término que se desee agregar. También se pueden crear “Taxonomías” desde el “importador de vocabularios”. Consulte Importadores para obtener más información.
 
-1. Acesse o “painel de controle” do WordPress;
+### ** Editar **
+## Editar taxonomías
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+1. Accede al “panel de control” de WordPress;
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+   ![Accede al panel de control](_assets/images/050.png)
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-3. Clique em “Taxonomias”;
+   ![Accede al panel de control](_assets/images/051.png)
 
-   ![Acesse o painel de controle](_assets\images\093.png)
+3. Haz clic en “Taxonomías”;
 
-4. Clique na “taxonomia” desejada na “lista de taxonomias”:
+   ![Accede al panel de control](_assets/images/093.png)
 
-​ a. Altere os campos desejados na “aba taxonomia”;
+4. Haz clic en la “taxonomía” deseada en la “lista de taxonomías”:
 
-​ b. Na “aba termos” é possível “adicionar”, “editar” ou “excluir” termos desta “taxonomia”.
+​ a. Modifica los campos deseados en la "pestaña de taxonomía";
 
-### Editar termos
+​ b. En la “pestaña de términos” es posible “agregar”, “editar” o “eliminar” términos en esta “taxonomía”.
 
-1.Acesse o “painel de controle” do WordPress;
+### Editar términos
 
-![Acesse o painel de controle](_assets\images\050.png)
+1.Accede al “panel de control” de WordPress;
 
-2.Na barra lateral esquerda, clique em “Tainacan”;
+![Accede al panel de control](_assets/images/050.png)
 
-![Acesse o painel de controle](_assets\images\051.png)
+2.En la barra lateral izquierda, haz clic en “Tainacan”;
 
-3.Clique em “Taxonomias”;
+![Accede al panel de control](_assets/images/051.png)
 
-![Acesse o painel de controle](_assets\images\093.png)
+3.Haz clic en “Taxonomías”;
 
-4.Clique na “taxonomia” desejada na “lista de taxonomias”;
+![Accede al panel de control](_assets/images/093.png)
 
-5.Clique na aba “Termos”;
+4.Haz clic en la “taxonomía” deseada en la “lista de taxonomías”;
 
-![Acesse o painel de controle](_assets\images\096.png)
+5.Haz clic en la pestaña "Términos";
 
-6.Na “lista de termos”, selecione o desejado para edição e clique no “ícone de Lápis” à direita para abrir os campos de edição deste “termo”;
+![Accede al panel de control](_assets/images/096.png)
 
-![Acesse o painel de controle](_assets\images\099.png)
+6.En la "lista de términos", selecciona el que quieres editar y haz clic en el "icono de lápiz" a la derecha para abrir los campos de edición para este "término";
 
-7.Altere os campos desejados;
+![Accede al panel de control](_assets/images/099.png)
 
-![Acesse o painel de controle](_assets\images\099.png)
+7.Haz modificaciones en los campos deseados;
 
-8.Clique em:
+![Accede al panel de control](_assets/images/100.png)
 
-​ a. “Cancelar”, para cancelar a edição do “termo”;
+8.Haz clic en:
 
-​ b. “Visualizar termo”, para visualizar o “termo” no tema;
+​ a. “Cancelar”, para cancelar la edición del “término”;
 
-​ c. “Salvar” para concluir a edição do termo.
+​ b. “Ver término”, para visualizar el “término” en el tema;
 
-## Excluir taxonomias
+​ c. “Guardar” para concluir la edición del término.
 
-1. Acesse o “painel de controle” do WordPress;
+### ** Eliminar **
+## Eliminar taxonomías
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+1. Accede al “panel de control” de WordPress;
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+   ![Accede al panel de control](_assets/images/050.png)
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+2. En la barra lateral izquierda, haz clic en “Tainacan”;
 
-3. Clique em “Taxonomias”;
+   ![Accede al panel de control](_assets/images/051.png)
 
-   ![Acesse o painel de controle](_assets\images\093.png)
+3. Haz clic en “Taxonomías”;
 
-4. Clique no “ícone lixeira” à direita na “taxonomia” que você deseja apagar;
+   ![Accede al panel de control](_assets/images/093.png)
 
-![Acesse o painel de controle](_assets\images\102.png)
+4. Haz clic en el "icono de papelera" a la derecha de la "taxonomía" que deseas eliminar;
 
-!>**Atenção**: um aviso será exibido para confirmar esta ação. A “exclusão da taxonomia” implica, também, na “exclusão das informações” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”. Exclua a “taxonomia” somente se tiver certeza de que não haverá perdas graves de informação. Consulte Registro de Atividades para saber mais.
+![Accede al panel de control](_assets/images/102.png)
 
-### Excluir termos
+!>**Atención**: Aparecerá un mensaje para confirmar esta acción. La “eliminación de taxonomía” implica también la “eliminación de información” en “metadatos”, “ítems” y “colecciones” que utilizan esta “taxonomía”. Elimina la "taxonomía" solo si estás seguro de que no habrá una pérdida grave de información. Consulta Registro de actividad para obtener más información.
 
-1.Acesse o “painel de controle” do WordPress;
+### Eliminar términos
 
-![Acesse o painel de controle](_assets\images\050.png)
+1.Accede al “panel de control” de WordPress;
 
-2.Na barra lateral esquerda, clique em “Tainacan”;
+![Accede al panel de control](_assets/images/050.png)
 
-![Acesse o painel de controle](_assets\images\051.png)
+2.En la barra lateral izquierda, haz clic en “Tainacan”;
 
-3.Clique em “Taxonomias”;
+![Accede al panel de control](_assets/images/051.png)
 
-![Acesse o painel de controle](_assets\images\093.png)
+3.Haz clic en “Taxonomías”;
 
-4.Clique no “ícone lixeira” à direita no “termo” que você deseja apagar;
+![Accede al panel de control](_assets/images/093.png)
 
-![Acesse o painel de controle](_assets\images\101.png)
+4.Haz clic en el "icono de papelera" a la derecha del "término" que deseas eliminar;
 
-!>Atenção: um aviso será exibido para confirmar esta ação. A “exclusão do termo” implica também na “exclusão deste valor” em “metadados”, “itens” e “coleções” que usam esta “taxonomia”.
+![Accede al panel de control](_assets/images/101.png)
+
+!>Atención: se mostrará un aviso para confirmar esta acción. La “exclusión del término” también implica la “exclusión de este valor” en “metadatos”, “ítems” y “colecciones” que utilicen esta “taxonomía”.
+
+<!-- tabs:end -->

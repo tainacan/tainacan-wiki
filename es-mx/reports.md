@@ -1,150 +1,151 @@
-# Relatórios
+# Informes
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
-Apresentada na _versão 0.18_, a **página de relatórios** ou **painel de relatórios**, é o módulo do Tainacan responsável por apresentar estatísticas e dados do repositório através de gráficos. Esta ferramenta coloca na mão do gestor do acervo visualizações ricas para se compreender melhor a distribuição dos dados, tanto no sentido de conhecer melhor as informações exibidas ao público, quanto no sentido de auxiliar o trabalho de gerenciamento para compreender onde é necessário maior esforço para tratamento e amadurecimento da qualidade destes dados.
+Presentado en la versión 0.18, la página de informes o panel de informes, es el módulo de Tainacan encargado de presentar estadísticas y datos del repositorio a través de gráficos. Esta herramienta pone a disposición del gestor del repositorio ricas visualizaciones para comprender mejor la distribución de los datos, tanto en el sentido de conocer mejor la información que se muestra al público, como en el de ayudar a la labor de gestión para comprender dónde es necesario un mayor esfuerzo de tratamiento y maduración de la calidad de estos datos.
 
-Nesta página explicitamos cada elemento presente neste painel.
+En esta página explicamos cada elemento presente en este panel.
 
 <div style="float: left; margin-right: 32px; margin-top: 24px;">
 
-![Captura de Tela do submenu do WordPress onde está o Painel de Relatórios do Tainacan](_assets/images/reports_0.png)
+![Informes en Tainacan](_assets/images/informes_0.png)
 
 </div>
 
-## Tela dos Relatórios
+## Pantalla de informes
 
-A tela dos relatórios do Tainacan é o espaço onde se pode ter acesso ao painel de visualizações geradas pela API dos relatórios. Está acessível no submenu do plugin Tainacan, sob o rótulo de "Relatórios".
+La pantalla de informes de Tainacan es el espacio donde se accede al panel de visualizaciones generadas por la API de informes. Es accesible en el submenú del plugin Tainacan, bajo la etiqueta "Informes".
 
-Logo que se acessa o painel, são carregadas as estatísticas gerais do Repositório, e uma caixa de seleção permite que se escolha entre a visão dos relatórios do Repositório como um todo, ou de alguma das coleções existentes no acervo.
+Nada más acceder al panel, se cargan las estadísticas generales del Depósito, y un cuadro de selección permite elegir entre la visualización de los informes para el conjunto del Depósito, o para cualquiera de las colecciones de los fondos.
 
-Logo abaixo desta caixa de seleção, pode ser vista uma barra de legenda, que auxilia na compreensão da iconografia utilizada por alguns blocos do painel:
+Justo debajo de este cuadro de selección puede verse una barra de subtítulos, la cual ayuda a comprender la iconografía utilizada por algunos de los bloques del panel:
 
-![Captura de Tela do Cabeçalho do painel de relatórios do Tainacan](_assets/images/reports_1.png)
 
-Como já apontado por esta barra de legenda, a maioria dos gráficos possui um recurso de _exportação_, que permite a visualização do gráfico externamente no formato de imagem, vetor, ou planilha de dados CSV, o que facilita a incorporação dos gráficos em relatórios feitos fora da plataforma Tainacan.
+![Informes en Tainacan Pantalla de informes](_assets/images/informes_1.png)
+
+Como se observa en esta barra de subtítulos, la mayoría de los gráficos disponen de una función de exportación que permite visualizar el gráfico externamente en formato de imagen, vectorial o de hoja de cálculo CSV, lo que facilita la incorporación de los gráficos a informes realizados fuera de la plataforma Tainacan.
 
 <div style="float: right; margin-left: 32px; margin-top: 24px; margin-bottom: -6px;">
 
-![Captura de Tela da informação da data em que o relatório foi gerado, incluindo botão de recarregar](_assets/images/reports_16.png)
+![Informes en Tainacan Informe generado](_assets/images/informes_16.png)
 
 </div>
 
-## Re-gerando relatórios
+## Regeneración de informes
 
-Para garantir uma boa performance sem pesar o servidor, os relatórios são gerados e guardam as informações por uma semana.
+Para garantizar un buen rendimiento sin sobrecargar el servidor, se generan informes y la información se almacena durante una semana.
 
-?> Isto significa que se visitada esta página num certo dia, os dados apresentados nos próximos 7 dias serão os mesmos, mesmo que alterações tenham sido feitas no repositório.
+?> Esto significa que si visita esta página en un día determinado, los datos que se mostrarán durante los próximos 7 días serán los mismos, incluso si se han realizado cambios en el repositorio.
 
-Para ver a data de quando o relatório foi gerado, basta passar o mouse por cima de cada bloco, que a informação estará no canto inferior esquerdo, como na imagem ao lado.
+Para ver la fecha en que se generó el informe, basta con pasar el ratón por encima de cada bloque, y la información aparecerá en la esquina inferior izquierda, como en la imagen de al lado.
 
-Caso seja desejada uma atualização forçada com os dados mais recentes, é preciso clicar no botão de recarregar que aparece ao lado desta data.
+Si desea una actualización forzada con los datos más recientes, haga clic en el botón de recarga que aparece junto a esta fecha.
 
-## Blocos de Sumarização
+## Bloques de resumen
 
-O painel tem início com os chamados blocos de sumarização, que ao invés de gráficos trazem os números totais do acervo. No nível repositório, são listados totais de Coleções, Itens e Taxonomias, estratificados por seu status. No nível coleção, o total de Itens e Metadados daquela Coleção.
+El panel comienza con los llamados bloques de resumen, que en lugar de gráficos muestran los números totales de la colección. A nivel de repositorio se enlistan los totales de Colecciones, Elementos y Taxonomías, estratificados por su estado. A nivel de colección, el total de elementos y metadatos de esa colección.
 
-![Captura de Tela dos Blocos de sumarização no nível repositório](_assets/images/reports_2.png)
+![Informes en Tainacan Bloques de resumen 1](_assets/images/informes_2.png)
 
 <div style="max-width: 60%; margin: 0 auto;">
 
-![Captura de Tela dos Blocos de sumarização no nível coleção](_assets/images/reports_3.png)
+![Informes en Tainacan Bloques de resumen 2](_assets/images/informes_3.png)
 
 </div>
 
-Uma observação a ser feita é que no nível repositório, além dos status, os itens também apresentam as informações de _**Visibilidade** (Acesso aberto / Acesso restrito)_. Esta informação combina o status da Coleção com o do Item, já que itens de _status público_ não estarão disponíveis ao público caso a Coleção esteja _privada_.
+Una observación a realizar es que a nivel de repositorio, además de los estados, los elementos también presentan la información de _**Visibilidad** (Acceso Abierto / Acceso Restringido)_. Esta información combina el estatus de la Colección con el de Elementos, ya que los elementos con estatus público no estarán disponibles al público si la colección es _privada_.
 
-## Total de Itens por Coleção
+## Total de elementos por colección
 
-O primeiro gráfico apresentado no relatório é um gráfico de barras empilhadas verticais. No eixo Y, mostra o total de itens, e no eixo X, cada coleção do repositório. Com sua ordenação por maior quantidade de itens, da esquerda para a direita, fica fácil visualizar quais coleções tem maior quantitativo de itens no acervo. No canto lateral direito do gráfico, a legenda que aponta qual o status dos itens nas frações coloridas das barras, também serve como um filtro, já que clicando em uma das barras, os dados deste status somem e vê-se apenas os restantes.
+El primer gráfico que se muestra en el informe es un diagrama de barras verticales. En el eje Y, muestra el número total de artículos, y en el eje X, cada colección del repositorio. Con su disposición por mayor cantidad de ítems, de izquierda a derecha, es fácil ver qué colecciones tienen más elementos en la colección. En la esquina derecha del gráfico, la leyenda que indica el estado de los ítems en las fracciones coloreadas de las barras sirve también como filtro, ya que al pulsar sobre una de las barras, desaparecen los datos de ese estado y sólo se ven los elementos restantes.
 
-![Captura de Tela do Bloco do gráfico de Total de Itens por Coleção](_assets/images/reports_4.png)
+![Informes en Tainacan Total de elementos por coleccion](_assets/images/informes_4.png)
 
-## Uso de Termos por Taxonomia
+## Uso de términos por taxonomía
 
-O gráfico seguinte também é um gráfico de barras empilhadas verticais. No eixo Y, mostra o total de termos, e no eixo X, cada taxonomia do repositório. É apresentado não só o total de termos em cada taxonomia, mas também quais destes termos estão sendo utilizados em pelo menos algum item do repositório, através da legenda que filtra as seções empilhadas de "Termos em uso" e "Termos sem uso". Isto já fornece de antemão uma noção de quais taxonomias possuem um vocabulário mais relevante para o acervo, do ponto de vista quantitativo.
+El siguiente gráfico es también un diagrama de barras verticales. El eje Y muestra el número total de términos, y el eje X cada taxonomía del repositorio. No sólo se muestra el número total de términos de cada taxonomía, sino también cuáles de estos términos se están utilizando en al menos algún elemento del repositorio, a través de la leyenda que filtra las secciones apiladas de "Términos en uso" y "Términos no en uso". Esto proporciona, de antemano, una noción de qué taxonomías tienen un vocabulario más relevante para la colección, desde un punto de vista cuantitativo.
 
-![Captura de Tela do Bloco do gráfico de Uso de Termos por Taxonomia](_assets/images/reports_5.png)
+![Informes en Tainacan Uso de términos por taxonomía](_assets/images/informes_5.png)
 
-## Total de Itens por Termo de Taxonomia
+## Total de elementos por término de taxonomía
 
-O terceiro gráfico exibido na tela de repositório é um gráfico de barras vertical onde o eixo X novamente apresenta o total de itens, porém no eixo Y estão agora termos de uma taxonomia. É uma visão do quanto cada termo de cada taxonomia é usado, porém, apenas uma é escolhida por vez, através da caixa de seleção existente acima do gráfico.
+El tercer gráfico que se muestra en la pantalla del repositorio es un gráfico de barras verticales donde el eje X nuevamente muestra el total de elementos, mientras que el eje Y aparecen ahora términos de una taxonomía. Esta es una vista de cuánto se utiliza cada término de cada taxonomía, sin embargo, sólo uno se elige a la vez a través de la casilla de verificación por encima del gráfico.
 
-![Captura de Tela do Bloco do gráfico de Total de Itens por Termo de Taxonomia](_assets/images/reports_6.png)
+![Informes en Tainacan Total de elementos por término de taxonomía](_assets/images/informes_6.png)
 
-!> Por ter o potencial de listar uma quantidade de dados considerável (algumas taxonomias em repositórios possuem mais de 300 termos), **este é um gráfico paginado**. Isto quer dizer que por vez, são exibidos um padrão de **56 termos no máximo**. Este foi o valor escolhido para permitir uma leitura mínima dos dados no eixo horizontal e não pesar demais a memória do navegador que precisa processar estas informações para montar a visualização. Como a requisição feita para a API vem ordenada, pode-se ter garantia de que, os termos mostrados na primeira página, terão mais itens que nas seguintes. Ainda assim, além de navegar pelas páginas é possível alterar a quantidade de itens por página, porém sujeito ao risco de se travar o navegador!
+!> Dado que tiene el potencial de enumerar una cantidad considerable de datos (algunas taxonomías de repositorios tienen más de 300 términos), **se trata de un gráfico paginado**. Esto significa que se muestra un patrón máximo de **56 términos a la vez**. Este valor se eligió para permitir una lectura mínima de datos en el eje horizontal y no sobrecargar la memoria del navegador que necesita procesar esta información para configurar la visualización. Como la petición realizada a la API está ordenada, se puede garantizar que los términos mostrados en la primera página tendrán más elementos que en las siguientes. Aun así, además de navegar por las páginas, es posible modificar el número de elementos por página, ¡a riesgo de que el navegador se bloquee!
 
 <div style="max-width: 60%; margin: 0 auto;">
 
-![Captura de Tela do Detalhe da paginação do bloco de Total de Itens por Termo de Taxonomia](_assets/images/reports_7.png)
+![Informes en Tainacan Total de elementos por término de taxonomía Gráfico](_assets/images/informes_7.png)
 
 </div>
 
-Este gráfico fornece uma importante visão de como os itens estão distribuídos no uso de termos em uma taxonomia. Uma importante observação é que aqui são listados **os termos sem discriminação hierárquica**, ou seja, termos pais e seus termos filhos estão no mesmo nível, caso existam. Mais a seguir apresentaremos [um gráfico](#total-de-itens-por-metadado-tipo-taxonomia-na-coleção) que lida com estas informações.
+Este gráfico ofrece una visión importante de cómo se distribuyen los elementos en el uso de los términos en una taxonomía. Una observación importante es que aquí los **términos se enumeran sin discriminación jerárquica**, es decir, los términos padres y sus términos hijos, , si los hay, se encuentran en el mismo nivel. A continuación se presenta un [gráfico](#total-de-elementos-por-tipo-de-taxonomía-de-metadatos-en-la-colección) con esta información.
 
-## Total de Atividades por Usuário
+## Actividades totales por usuario
 
-Ao final da tela dos relatórios, estão os gráficos relacionados à atividade e gestão do acervo. O primeiro é um gráfico de barras empilhadas horizontal, onde no eixo Y estão listados os usuários do sistema e no eixo X, o total de atividades feitas por este usuário. Este total pode ser filtrado através da legenda que agrupa diferentes tipos de atividade.
+Al final de la pantalla de informes, se encuentran gráficos relacionados con la actividad y gestión de la colección. El primero es un gráfico de barras horizontales, donde los usuarios del sistema se enumeran en el eje Y y el total de actividades realizadas por este usuario en el eje X. Este total se puede filtrar a través de la leyenda que agrupa diferentes tipos de actividad.
 
 <div style="max-width: 80%; margin: 0 auto;">
 
-![Captura de Tela do Bloco do gráfico de Total de Atividades por Usuário](_assets/images/reports_8.png)
+![Informes en Tainacan Actividades totales por usuario](_assets/images/informes_8.png)
 
 </div>
 
-## Atividades Diárias por Ano e Usuários
+## Actividades diarias por año y usuarios
 
-Neste gráfico, também são visualizadas a quantidade de atividades por usuário, porém com as atividades distribuídas no eixo X, que contém os últimos 365 dias. O primeiro gráfico mostra a soma total de atividades de todos os usuários e abaixo do mesmo estão os gráficos dos demais usuários, ordenados por aqueles com maior total neste ano.
+En este gráfico también se visualiza la cantidad de actividades por usuario, pero con las actividades distribuidas en el eje X, que contiene los últimos 365 días. El primer gráfico muestra la suma total de actividades de todos los usuarios, y debajo están los gráficos de los demás usuarios ordenados por los que tienen el total más alto en este año.
 
-![Captura de Tela do Bloco dos gráficos de atividades diários por ano e usuários](_assets/images/reports_9.png)
+![Informes en Tainacan Actividades Diarias por Año y Usuarios](_assets/images/informes_9.png)
 
-Com esta visualização, é possível observar facilmente os períodos de maior atividade no repositório, bem como quando e quão ativos foram os usuários na gestão do acervo.
+Con esta visualización, es posible observar fácilmente los períodos de mayor actividad en el repositorio, así como cuándo y qué tan activos estuvieron los usuarios en el manejo de la colección.
 
-## Tipos de Metadados da Coleção
+## Tipos de metadatos de colección
 
-No primeiro gráfico do painel de relatórios de uma coleção, está um gráfico de barras vertical que mostra o total de cada tipo de metadado utilizado na coleção. Este gráfico possui dois modos: pode ser visto como um gráfico circular caso seja preferido, clicando-se no ícone ao lado do título do gráfico.
+El primer gráfico que aparece en el panel de informes de una colección, de barras verticales, muestra el total de cada tipo de metadatos utilizados en la colección. Este gráfico también puede verse en formato circular, si se prefiere, haciendo clic en el icono situado junto al título del gráfico.
 
 <div style="display: flex; align-items: center; justify-contents: space-evenly;">
 <div style="margin: 0 12px">
 
-![Captura de Tela do Bloco dos tipos de Metadados da Coleção](_assets/images/reports_10.png)
+![Informes en Tainacan Tipos de metadatos por coleccion](_assets/images/informes_10.png)
 
 </div>
 <div style="margin: 0 12px">
 
-![Captura de Tela do Bloco dos tipos de Metadados da Coleção em Gráfico Circular](_assets/images/reports_11.png)
+![Informes en Tainacan Tipos de metadatos por coleccion Gráfico](_assets/images/informes_11.png)
 
 </div>
 </div>
 
-## Distribuição de Preenchimento de Metadados na Coleção
+## Avances del llenado de metadatos en la colección
 
 <div style="float: right; margin-left: 32px; margin-top: 24px;">
 
-![Captura de Tela do Bloco de Distribuição de Preenchimento de Metadados na Coleção](_assets/images/reports_12.png)
+![Informes en Tainacan Distribucion del llenado de metadatos](_assets/images/informes_12.png)
 
 </div>
 
-Logo ao lado está um dos gráficos mais relevantes do painel de relatórios da coleção.
+Aquí se encuentra uno de los gráficos más relevantes en el panel de informes de la colección.
 
-> Com este gráfico de barras horizontal, é possível visualizar facilmente quais os metadados da coleção que estão com valores preenchidos nos itens.
+> Con este gráfico de barras horizontales, puedes ver fácilmente qué metadatos de una colección tienen valores en los elementos.
 
-O eixo Y lista cada metadado existente enquanto o eixo X mostra em porcentagem o total de itens onde foi colocado algum valor. Este gráfico pode ser interpretado como um conjunto de barras de progresso, a partir das quais se sabe que informações precisam ser providenciadas ainda para garantir que a documentação do acervo esteja completa.
+El eje Y enumera cada metadato existente, mientras que el eje X muestra en porcentaje el número total de elementos donde se colocó algún valor. Este gráfico se puede interpretar como un conjunto de barras de progreso, a partir de las cuales se sabe qué información queda por aportar para que la documentación de la colección esté completa.
 
-Por não ser possível ainda (devido a limitações da biblioteca de gráficos) implementar as opções de Zoom em gráficos de barras horizontais como este, este gráfico pode gerar um scroll vertical, caso a quantidade de metadados existentes gere muitas barras no eixo y. Por isso, foi tomada a decisão de uma altura mínima que as barras devem ter, para que seja possível a leitura dos rótulos com o espaço disponível em tela.
+Como aún no es posible implementar opciones de Zoom en gráficos de barras horizontales de este tipo (debido a las limitaciones de la biblioteca de gráficos), este gráfico puede generar un desplazamiento vertical si la cantidad de metadatos existentes genera demasiadas barras en el eje Y. Por este motivo, se ha decidido una altura mínima que deben tener las barras, de forma que sea posible leer las etiquetas con el espacio de pantalla disponible.
 
-## Total de Itens por Metadado Tipo Taxonomia na Coleção
 
-Por fim, no painel de relatórios da coleção, há um gráfico similar ao de ["Total de Itens por Termo de Taxonomia"](#total-de-itens-por-termo-de-taxonomia), presente no painel do repositório. Este gráfico mostra quantos itens possuem um determinado termo como valor de um metadado tipo taxonomia. Havendo mais de um metadado tipo taxonomia na coleção, é possível trocar na caixa de seleção ao lado do título do gráfico. Observa-se então no eixo Y, o total de itens e no eixo X, os termos desta taxonomia. Assim como no gráfico citado anteriormente, este gráfico oferece uma paginação para quantidades grandes de termos.
+## Total de elementos por tipo de taxonomía de metadatos en la colección
 
-![Captura de Tela do Bloco de Total de Itens por Metadado Tipo Taxonomia na Coleção](_assets/images/reports_13.png)
+Por último, en el panel de informes de la colección, hay un gráfico similar al de ["Artículos totales por término de taxonomía"](#total-de-elementos-por-término-de-taxonomía), presente en el panel del repositorio. Este gráfico muestra cuántos elementos tienen un término determinado como valor de un metadato de tipo taxonomía. Si hay más de un metadato de tipo taxonomía en la colección, es posible cambiar en el cuadro de selección situado junto al título del gráfico. El eje Y muestra el número total de artículos y el eje X los términos de esta taxonomía. Como en el gráfico mencionado anteriormente, este gráfico ofrece una paginación para grandes cantidades de términos.
 
-Há uma diferença importante do gráfico nível repositório porém, já que **neste é possível navegar na hierarquia destes termos**.
+![Informes en Tainacan Total de elementos por tipo de taxonomía de metadatos en la colección](_assets/images/informes_13.png)
 
-> Por padrão, são carregados apenas totais de itens por termos "raiz", ou seja, termos que não são filhos de nenhum outro termo. Se algum destes termos possuir filhos, ao se passar o mouse sobre ele, será informado que os possui, e pode-se então clicar na barra para carregar ao lado, um novo gráfico, com o total de itens por termos filhos deste. A mesma rotina pode ser feita clicando-se em termos filhos que possuam filhos. Neste caso, o gráfico com os filhos ocupará o espaço do gráfico com dos pais, e o gráfico com os termos netos ocupará seu espaço. Para se ver apenas o primeiro gráfico com um maior espaço (caso não haja, por exemplo, nenhum termo filho a ser carregado) pode-se clicar no botão com uma seta para a direita, localizada entre os dois painéis, que faz com que o gráfico ocupe toda a largura disponível.
+Sin embargo, hay una diferencia importante con el gráfico a nivel de repositorio, ya que **en éste es posible navegar por la jerarquía de estos términos**.
 
-![Captura de Tela de Termos filhos carregados no bloco de Total de Itens por Metadado Tipo Taxonomia na Coleção](_assets/images/reports_14.png)
+> Por defecto, sólo se cargan los elementos totales de los términos "raíz", es decir, los términos que no son hijos de ningún otro término. Si alguno de estos tiene hijos, al pasar el ratón por encima de él, se informará de que tiene hijos y se podrá cargar junto a él un nuevo gráfico con el total de ítems por término hijo. El mismo procedimiento se puede realizar pulsando sobre los términos hijos que, a su vez, tengan hijos. En este caso, el gráfico con los hijos ocupará el espacio del gráfico padre, y el gráfico con los términos nietos ocupará su espacio. Para ver sólo el primer gráfico con un espacio mayor (si no hay, por ejemplo, términos hijos que cargar), se puede hacer clic en el botón con una flecha hacia la derecha, situado entre los dos paneles, para que el gráfico ocupe todo el ancho disponible.
 
-Por fim, este bloco também oferece uma visualização em gráfico _alternativo_. **Ao invés do gráfico de barras, pode-se ver os dados em um mapa de árvore (_treemap_)**. Nesta visualização, a área do retângulo diz respeito ao total de itens com todos os termos carregados. Cada retângulo interno corresponde aos dados aninhados do total de item por aquele termo. Esta visualização fornece uma visão particular das facetas da coleção.
+![Informes en Tainacan Total de elementos por tipo de taxonomía de metadatos en la colección Terminos hijos](_assets/images/informes_14.png)
 
-![Captura de Tela do Gráfico de Árvore para o Total de Itens por Metadado Tipo Taxonomia na Coleção](_assets/images/reports_15.png)
+Finalmente, este bloque también ofrece una visualización gráfica _alternativa_. **En lugar del gráfico de barras puede ver los datos en un mapa de árbol (_treemap_)**. En esta vista, el área del rectángulo se refiere al número total de artículos con todos los términos cargados. Cada rectángulo interior corresponde a los datos anidados del total de artículos por ese término. Esta visualización proporciona una visión particular de las facetas de la colección.
+
+![Informes en Tainacan Total de elementos por tipo de taxonomía de metadatos en la colección Visualizacion grafica](_assets/images/informes_15.png)

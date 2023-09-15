@@ -1,18 +1,16 @@
-# Gerenciar Permissões Específicas
+# Administrar permisos específicos
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+A partir de la versión 0.15 de Tainacan, cuando accedes al Panel de Administración de Tainacan, puedes acceder a la pantalla de configuración de Permisos, tanto a nivel de repositorio como a nivel de colección:
 
-A partir da versão 0.15 do Tainacan, ao acessar o Painel Administrativo do Tainacan, é possível acessar, tanto a nível repositório, quanto a nível de uma coleção, a tela de configuração de Permisssões:
+![Pantalla de permisos relacionados con una colección](_assets/images/manage-specific-capabilities-1.png)
 
-![Tela de permissões relacionadas a uma coleção.](/_assets/images/manage-specific-capabilities-1.png)
+Esta pantalla lista todos los permisos que tienen algo que ver con ese repositorio o colección. También puede filtrar la lista por roles de usuario que tengan ese permiso.
 
-Nesta tela, estão listadas todas as permissões que de alguma maneira tem haver com aquele repositório ou com aquela coleção. Pode-se também filtrar a lista por funções de usuário que possuam aquela permissão.
+Al editar un permiso, puedes ver qué roles lo tienen. Los roles están separados en dos grupos:
 
-Editando uma permissão, pode-se ver quais funções a possuem. As funções são separadas em dois grupos:
+- **Roles heredados** son aquellos que no tienen específicamente este permiso, pero tienen otro permiso, de mayor importancia, que afecta a este permiso. Por ejemplo, los Administradores suelen tener el permiso "Gestionar Tainacan", que les exime de tener configurado cualquier otro permiso, ya que este permiso garantiza el acceso a todos los demás. Para eliminar este tipo de permiso, es necesario desmarcar primero el permiso más importante, y luego configurar cuáles son los específicos que deben tener.
+- **Funciones asociadas** son aquellas que pueden o no estar asociadas a este permiso.
 
-- **Funções herdadas** são aquelas que não possuem especificamente esta permissão, porém possuem uma outra permissão, de importância maior, que afeta esta permissão. Por exemplo, Administradores costumam ter a permissão "Gerenciar Tainacan", que os dispensa de te qualquer outra permissão configurada, já que esta permissão garante o acesso de todas as outras. Para remover este tipo de permissão, é preciso desmarcar a permissão de maior peso primeiro, para depois configurar quais específicas devem ter.
-- **Funções associadas** são as que de fato podem ser associadas ou não para esta permissão.
+![Edición de funciones asociadas a un permiso específico.](_assets/images/manage-specific-capabilities-2.png)
 
-![Editando papéis associados a uma permissão específica.](/_assets/images/manage-specific-capabilities-2.png)
-
-Para ter acesso à estas telas, é preciso que o usuário tenha uma função com a permissão [Gerenciar Permissões de Usuários](/es-mx/capabilities#repositório-em-geral) ou [Gerenciar Permissões de Usuários da Coleção](/es-mx/capabilities#coleção)
+Para acceder a estas pantallas, el usuario debe tener un rol con el permiso [Gestionar permisos de usuario](/es-mx/capabilities#repositorio-general) o [Gestionar los permisos de los usuarios de la colección](/es-mx/capabilities#colección)

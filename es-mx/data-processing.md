@@ -1,5 +1,3 @@
-# Processamento de Dados e Acervos
+# Procesamiento de datos y cobros
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
-
-?> _TODO_ Esta página ainda não foi documentada.
+?> _TODO_ Esta página aún no ha sido documentada.
