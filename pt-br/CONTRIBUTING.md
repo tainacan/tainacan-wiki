@@ -148,13 +148,13 @@ Conteúdo da Aba 3
 Para esconder alguns conteúdos extensos em regiões collpsáveis, usamos a tag `HTML` `<description></description>` e `<summary></summary>`. Por exemplo:
 
 ```
-<details>
+<description>
 <summary>Um collapse (Clique para expandir)</summary>
 
 - Conteúdo markdown aqui dentro
 - E o que mais for preciso
 
-</details>
+</description>
 ```
 
 Resultará em:
