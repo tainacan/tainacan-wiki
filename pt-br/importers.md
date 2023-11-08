@@ -178,13 +178,13 @@ Nome do item,Categoria Neta
 
 Depois do tipo de metadado, você também pode informar outras instruções:
 
-* `multiple` - Múltiplo: para metadados que permitem múltiplos valores
-* `required` - Obrigatório: para metadados obrigatórios
-* `display_yes` - Exibir na lista: habilitar metadado na visualização.
-* `display_no` - Não exibir na lista: ocultar metadado na visualização.
-* `display_never` - Nunca exibir metadado na visualização.
-* `status_public` - Status público: metadado visível para todos
-* `status_private` - Status privado: metadado visível apenas para editores
+* `multiple` - Múltiplo: para metadados que permitem múltiplos valores;
+* `required` - Obrigatório: para metadados obrigatórios;
+* `display_yes` - Exibir na lista: habilitar metadado na visualização;
+* `display_no` - Não exibir na lista: ocultar metadado na visualização;
+* `display_never` - Nunca exibir metadado na visualização;
+* `status_public` - Status público: metadado visível para todos;
+* `status_private` - Status privado: metadado visível apenas para editores;
 * `collection_key_yes` - Configurar valores deste metadado como único: os valores desse metadado não se repetem em itens nessa coleção.
 
 Exemplo de várias instruções combinadas:
@@ -202,7 +202,7 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 5. Configure os campos a seguir de acordo com as configurações realizadas no seu aquivo *.csv*:
   * **Delimitador csv**: caractere que separa valores;
   * **Delimitador de metadado multi-valorado**: caractere que separa valores dentro de uma mesma célula;
-  * **Delimitador de texto**: caractere que delimita todos os valores dentro de uma mesma célula
+  * **Delimitador de texto**: caractere que delimita todos os valores dentro de uma mesma célula;
   * **Codificação do arquivo**: parâmetro que determina a codificação dos valores de texto do aquivo. (Geralmente **UTF-8**, garanta que o arquivo *.csv* esteja codificado conforme as opções disponíveis no importador).
 6. Configure estes campos de acordo com suas preferências para importação:
   * **Item repetido**: Determina o comportamento do Tainacan ao identificar itens idênticos no processo de importação. Selecione Atualizar para que o item receba os  valores do arquivo .csv ou seleciona Ignorar para que o item já existente na coleção não seja modificado.
