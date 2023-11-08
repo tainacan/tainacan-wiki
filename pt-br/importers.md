@@ -178,13 +178,13 @@ Nome do item,Categoria Neta
 
 Depois do “tipo de metadado”, você também pode informar outras instruções:
 
-- `multiple` - Múltiplo: para metadados que permitem múltiplos valores
-- `required` - Obrigatório: para metadados obrigatórios
-- `display_yes` - Exibir na lista: habilitar metadado na visualização.
-- `display_no` - Não exibir na lista: ocultar metadado na visualização.
-- `display_never` - Nunca exibir metadado na visualização.
-- `status_public` - Status público: metadado visível para todos
-- `status_private` - Status privado: metadado visível apenas para editores
+- `multiple` - Múltiplo: para metadados que permitem múltiplos valores;
+- `required` - Obrigatório: para metadados obrigatórios;
+- `display_yes` - Exibir na lista: habilitar metadado na visualização;
+- `display_no` - Não exibir na lista: ocultar metadado na visualização;
+- `display_never` - Nunca exibir metadado na visualização;
+- `status_public` - Status público: metadado visível para todos;
+- `status_private` - Status privado: metadado visível apenas para editores;
 - `collection_key_yes` - Configurar valores deste metadado como único: os valores desse metadado não se repetem em itens nessa coleção.
 
 **Exemplo de várias instruções combinadas**:
@@ -406,9 +406,9 @@ Ao contrário dos importadores de CSV, não estamos realmente “importando” d
 
    ![Acesse o painel de controle](_assets\images\Importador_Teste_Parametros.png)
 
-6. Se deseja importar imagens do LoremFlickr para os seus “itens”, é possível configurar dimensões específicas (“altura” x “largura”) ou deixar 0 para que elas sejam aleatórias. Você também pode definir um “termo” de busca para “filtrar” o conteúdo da imagem.
+6. Se deseja importar imagens do LoremFlickr para os seus “itens”, é possível configurar dimensões específicas (“altura” x “largura”) ou deixar 0 para que elas sejam aleatórias. Você também pode definir um “termo” de busca para “filtrar” o conteúdo da imagem;
 
-   a. Embora diversas, as imagens fornecidas pelo LoremFlickr possuem tamanho bem reduzido. Isso significa que mesmo não passando parâmetros elas podem vir pequenas e se comportar de maneira inesperada em alguns “modos de visualização”, caso estes esperem recortes maiores que o mínimo criado pelo “importador”
+   a. Embora diversas, as imagens fornecidas pelo LoremFlickr possuem tamanho bem reduzido. Isso significa que mesmo não passando parâmetros elas podem vir pequenas e se comportar de maneira inesperada em alguns “modos de visualização”, caso estes esperem recortes maiores que o mínimo criado pelo “importador”.
 
    ![Acesse o painel de controle](_assets\images\Importador_Teste_Parametros_LoremFLickr.png)
 
