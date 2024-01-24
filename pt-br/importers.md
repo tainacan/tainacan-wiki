@@ -101,8 +101,8 @@ c. **“text”.**
 
 ```
 nome, special_document
-Uma imagem,file:http://example.com/image.jpg
-Um vídeo do youtube,url:http://youtube.com/?w=123456
+Um arquivo, Uma imagem, Um áudio, file:http://example.com/image.jpg | file:http://example.com/doc.pdf
+Um vídeo do youtube, Um objeto externo, url:http://youtube.com/?w=123456
 Um texto,text:This is a sample text
 ```
 
