@@ -184,12 +184,12 @@ So the Item Metadata Entity constructor gets two entities: an item and a metadat
 
 ```php
 // Considering $item is an existing Item Entity an $metadatum an existing Field Entity
-$itemMetadada = new \Tainacan\Entities\ItemMetadataEntity($item, $metadatum);
+$itemMetadata = new \Tainacan\Entities\Item_Metadata_Entity($item, $metadatum);
 
 $itemMetadata->set_value('Red');
 
 if ($itemMetadata->validate()) {
-	$ItemMetadataRepo = \Tainacan\Repositories\ItemMetadata::get_instance();
+	$ItemMetadataRepo = \Tainacan\Repositories\Item_Metadata::get_instance();
 	$ItemMetadata = $ItemMetadataRepo->insert($ItemMetadata);
 } else {
 	$errors = $ItemMetadata->get_errors();
@@ -210,9 +210,9 @@ TODO: document the validation chains
 
 All validations validate the property with the validation declared in the get_map() method of the repository.
 
-Validate item -> call ItemMetadata->validate() for each metadatum
+Validate item -> call Item_Metadata->validate() for each metadatum
 
-Validate ItemMetadata -> call $metadatumType->validate() for the Field type of the metadatum.
+Validate Item_Metadata -> call $metadatumType->validate() for the Field type of the metadatum.
 
 Validate Field -> call validate_options() of the Field type
 
