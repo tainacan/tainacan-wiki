@@ -30,7 +30,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 - [Key Concepts](/dev/key-concepts.md) - First things first. Let's understand what is what in Tainacan.
 - [Tainacan Internals](/dev/internal-api.md) - Reference on Tainacan main classes and how to use them.
 - [Tainacan Hooks](/dev/hooks.md) - Expand or modify different sections of code without modifying the plugin, using Actions and Filters, both in backend and frontend.
-- [Tainacan API](https://tainacan.org/api-docs/ ":ignore") - A Rest JSON API which you can use to get content from a Tainacan database.
+- [Tainacan API](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json ":ignore") - A Rest JSON API which you can use to get content from a Tainacan database.
 - [Roles and Capabilities](/dev/roles-capabilities.md) - Basic information about data privacy and access levels in Tainacan.
 
 </div>

@@ -30,7 +30,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 - [Conceptos clave](/es-mx/dev/key-concepts.md) - Lo primero es lo primero. Entendamos qué es qué en Tainacan.
 - [Interiores de Tainacan](/es-mx/dev/internal-api.md) - Referencia sobre las principales clases de Tainacan y cómo utilizarlas.
 - [Ganchos de Tainacan](/es-mx/dev/hooks.md) - Amplíe o modifique diferentes secciones de código sin modificar el plugin, utilizando Acciones y Filtros, tanto en el backend como en el frontend.
-- [API de Tainacan](https://tainacan.org/api-docs/ ":ignore") - Una API Rest JSON que puede utilizar para obtener contenido de una base de datos Tainacan.
+- [API de Tainacan](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json ":ignore") - Una API Rest JSON que puede utilizar para obtener contenido de una base de datos Tainacan.
 - [Roles y capacidades](/es-mx/dev/roles-capabilities.md) - Información básica sobre privacidad de datos y niveles de acceso en Tainacan.
 
 </div>

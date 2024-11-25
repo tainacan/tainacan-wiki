@@ -6,7 +6,7 @@
 	* [Key Concepts](/dev/key-concepts.md)
 	* [Internal API](/dev/internal-api.md)
 	* [Tainacan Hooks](/dev/hooks.md)
-	* [JSON API :link:](https://tainacan.org/api-docs/ ':ignore')
+	* [JSON API :link:](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json ':ignore')
 	* [Permissions](/dev/permissions.md) 
 * Plugin development and extension 
 	* [Creating a Metadata Type](/dev/creating-metadata-type.md)
