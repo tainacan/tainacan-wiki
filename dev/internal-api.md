@@ -155,7 +155,7 @@ if ($collection->validate()) {
 	// Lets update something
 	$insertedCollection->set_description('new description');
 	if ($insertedCollection->validate()) {
-		$insertedCollection = $collectionsRepo->insert($insertedCollection);
+		$insertedCollection = $collectionsRepo->update($insertedCollection);
 		echo 'I still have the same ID! ' . $insertedCollection->get_id();
 	} else {
 		$errors = $insertedCollection->get_errors();
@@ -274,7 +274,7 @@ if ($collection->can_edit()) {
 	
 	if ($collection->validate()) {
 		
-		$collection = $collectionsRepo->insert($collection);
+		$collection = $collectionsRepo->update($collection);
 		
 	} else {
 		$validationErrors = $collection->get_errors();
