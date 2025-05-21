@@ -2,11 +2,10 @@
 
 ## Dependencias
 
-- [Docker](https://www.docker.com/).
-- [Docker Compose](https://docs.docker.com/compose/).
+* [Docker](https://www.docker.com/).
+* [Docker Compose](https://docs.docker.com/compose/).
 
 ## Notas Importantes
-
 
 ### Atención a los Puertos Utilizados por Docker
 
@@ -14,12 +13,11 @@ Si ya tienes una instalación previa de WordPress o servicios como Apache, MySQL
 
 Por defecto, Docker utiliza los siguientes puertos:
 
-- **80** (HTTP);
-- **443** (HTTPS);
-- **3306** (MySQL/MariaDB).
+* **80** (HTTP);
+* **443** (HTTPS);
+* **3306** (MySQL/MariaDB).
 
 Asegúrate de que estos servicios estén **detenidos temporalmente** o, si prefieres mantenerlos activos, **modifica los puertos expuestos** en el archivo `docker-compose.yml`, como se indicará en los próximos pasos.
-
 
 ## Repositorio
 
@@ -56,23 +54,21 @@ php:
   ports:
 ```
 
-
 ## Ejecución de Docker
 
-Ejecute el siguiente comando para ver las opciones disponibles:
+Ejecuta el siguiente comando para ver las opciones disponibles:
 
 ```bash
 ./dev.sh --help
 ```
 
-Luego, ejecute el siguiente comando para iniciar la configuración de Compose:
+Luego, ejecuta el siguiente comando para iniciar la configuración de Compose:
 
 ```bash
 ./dev.sh --start
 ```
 
-
-**Una vez finalizado, presione `Ctrl + C` en la terminal para detener la ejecución de Compose. Luego, detenga Compose con el siguiente comando:**
+**Una vez finalizado, presiona `Ctrl + C` en la terminal para detener la ejecución de Compose. Luego, detén Compose con el siguiente comando:**
 
 ```bash
 ./dev.sh --stop
@@ -80,11 +76,11 @@ Luego, ejecute el siguiente comando para iniciar la configuración de Compose:
 
 ## Configuración de WordPress
 
-Después de eso, verifique si el directorio `tainacan-docker/volumes/www/html/public/` contiene la instalación de WordPress (si no está vacío, la instalación fue exitosa).
+Después de eso, verifica si el directorio `tainacan-docker/volumes/www/html/public/` contiene la instalación de WordPress (si no está vacío, la instalación fue exitosa).
 
-Luego, edite el archivo `wp-config.php`. Es probable que la variable `DB_PASSWORD` esté vacía; coloque "tainacan" entre las comillas simples.
+Luego, edita el archivo `wp-config.php`. Es probable que la variable `DB_PASSWORD` esté vacía; coloca "tainacan" entre las comillas simples.
 
-También asegúrese de que las otras variables de conexión a la base de datos (`DB_USER` y `DB_NAME`) estén correctamente configuradas con "tainacan". Debería verse de la siguiente manera:
+También asegúrate de que las otras variables de conexión a la base de datos (`DB_USER` y `DB_NAME`) estén correctamente configuradas con "tainacan". Debería verse de la siguiente manera:
 
 ```php
 define( 'DB_PASSWORD', 'tainacan' );
