@@ -131,3 +131,40 @@ Ya que editaste el archivo, desde tainacan-docker, corre de nuevo:
 Dale tiempo a que se levante todo (otra vez, paciencia).
 
 Después, entra a:  [Localhost](http://localhost/). Si te sale la pantalla de configuración de WordPress, ¡chido! Todo salió bien.
+
+Si no funcionó... pues ni modo. Pídele ayuda a tus cuates o borra todo e inténtalo de nuevo. También checa si no hay pedos con los puertos, así:
+
+Abre otra terminal y corre:
+ bash
+    docker ps
+
+
+Deberían aparecer tres contenedores: tainacan_fpm_apache, tainacan_db y tainacan_build. Todos deben decir "Up".
+
+El tainacan_fpm_apache usa los puertos 80:80 y 443:443
+
+El tainacan_db usa el puerto 3306
+
+El tainacan_build no ocupa puertos
+
+Otra opción es usar el Docker Desktop (pa' los que les gusta lo gráfico).
+
+También puedes ver los errores con:
+
+
+``` bash
+    ./dev.sh --error-logs
+```
+
+## Pa' terminar
+Si todo salió bien, configura WordPress con tus datos.
+
+Ve a Ajustes > Enlaces permanentes y selecciona "Nombre de entrada".
+
+Dale clic en Guardar.
+
+En la sección de Plugins, ya debe aparecer Tainacan. Actívalo.
+
+Ahora verás "Tainacan" en el menú. Crea una colección y mete un item.
+
+Si en el paso 5 no salen errores, ¡todo quedó listo!
