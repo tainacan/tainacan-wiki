@@ -85,3 +85,49 @@ También asegúrate de que las otras variables de conexión a la base de datos (
 ```php
 define( 'DB_PASSWORD', 'tainacan' );
 ```
+
+## Clonando los repositorios de Tainacan
+
+Métete a la carpeta tainacan-docker/volumes/src/ y clona el repositorio del Plugin y del Tema de Tainacan con:
+
+(En nuestro caso, usaremos el fork del repositorio, pero dejaremos el tema del original. A menos que también queramos meter mano ahí)
+
+``` bash
+    git clone https://github.com/Tainacan-GCES-2025-1/tainacan.git
+    git clone https://github.com/tainacan/tainacan-theme.git
+```
+
+Ahora, entra a la carpeta del plugin que acabas de clonar (¡no te vayas a meter en la del tema por error!), y corre:
+
+``` bash
+    ./build.sh
+```
+
+Espérate un rato mientras se hace el build (sí, va a tardar un poco).
+
+Luego, edita otra vez el archivo docker-compose.yml que está en tainacan-docker/. Cambia la línea que habías puesto antes a "true". Que quede así:
+
+Fragmento de docker-compose.yml:
+
+
+``` yml
+    php:
+      container_name: tainacan_fpm_apache
+      image: tainacan/php:8.3-fpm-apache
+      environment:
+        SITE_URL: http://localhost
+        APACHE_DOCUMENT_ROOT: "/var/www/html/public"
+        SKIP_WP_INSTALL: "true"
+      ports:
+```
+
+Ya que editaste el archivo, desde tainacan-docker, corre de nuevo:
+
+
+``` bash
+    ./dev.sh --start
+```
+
+Dale tiempo a que se levante todo (otra vez, paciencia).
+
+Después, entra a:  [Localhost](http://localhost/). Si te sale la pantalla de configuración de WordPress, ¡chido! Todo salió bien.
