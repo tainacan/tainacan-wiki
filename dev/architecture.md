@@ -220,9 +220,120 @@ Tainacan features a flexible structure for data import and export. Operations ar
 
 ---
 
-## 7. Frontend - Admin and Public Theme 
+## 7. Frontend Architecture
 
-<!-- Esta seção será preenchida com as entregas do Grupo 2. Ela deve conter: -->
+The Tainacan frontend is a Vue.js 3 application that provides an interface for managing digital repositories. It is implemented as a Single Page Application (SPA) using Vue.js 3, with routing managed by Vue Router and state management via Vuex. It communicates with the backend through Tainacan's REST API.
+
+As a SPA, Tainacan loads only a single initial HTML page and then dynamically updates the content as the user navigates, without reloading the entire page. This provides a smoother and faster user experience.
+
+This document presents the routing and data flow flowchart of Tainacan's Single Page Application (SPA), showing how initialization, routing, and data flow between components occur.
+
+![Initialization and Routing Flowchart](_assets/images/initialization_routing_front.png)
+
+
+### 7.1 File Locations
+
+The frontend files are primarily located in:
+
+- `/src/views/admin/` – Main administrative interface
+- `/src/views/gutenberg-blocks/` – Blocks for the WordPress Gutenberg editor
+
+### 7.2 Main Components
+
+#### 7.2.1 Main Page
+
+The main component of the application is `src/views/admin/admin.vue`. It initializes the Vue app and defines the main layout, including:
+
+- Side navigation menu
+- Header
+- Main content area
+- Route management
+
+#### 7.2.2 Routing System
+
+The routing system is defined in `src/views/admin/js/router.js`. It uses Vue Router to manage navigation between different screens of the application.
+
+Main route groups:
+
+**Repository-level pages**:
+   - `/home` – Home page
+   - `/collections` – List of collections
+   - `/items` – Repository items list
+   - `/metadata` – Repository metadata
+   - `/filters` – Repository filters
+   - `/taxonomies` – Taxonomies
+   - `/activities` – Repository activities
+   - `/capabilities` – Repository permissions
+   - `/importers` – Import tools
+   - `/exporters` – Export tools
+
+
+### 7.3 Organization
+
+The application's pages are organized and located in:
+
+- `/src/views/admin/pages/home-page.vue` – Home page
+- `/src/views/admin/pages/lists/` – List pages (collections, items, etc.)
+- `/src/views/admin/pages/singles/` – Detail pages (collection, item, etc.)
+
+Reusable components are located in `/src/views/admin/components/`, organized by functionality:
+
+- `/navigation/` – Navigation components (menus, breadcrumbs, etc.)
+- `/edition/` – Editing forms
+- `/search/` – Search and filtering components
+- `/other/` – Miscellaneous components
+
+### 7.4 State Management
+
+Tainacan uses Vuex for centralized state management. The main state modules include:
+
+- **Collection**: State related to the current collection
+- **Item**: State related to the current item
+- **Search**: State related to search and filtering
+- **Filter**: State related to available filters
+- **Metadata**: State related to available metadata
+
+### 7.5 Backend Communication
+
+Communication with the backend is done via HTTP requests to Tainacan's REST API. The main service classes include:
+
+- **CollectionService**: Communication with collection endpoints
+- **ItemService**: Communication with item endpoints
+- **MetadataService**: Communication with metadata endpoints
+- **FilterService**: Communication with filter endpoints
+- **TaxonomyService**: Communication with taxonomy endpoints
+
+Example API communication:
+
+```javascript
+import { useCollectionService } from '@/admin/js/service/collection-service';
+
+const collectionService = useCollectionService();
+
+// Fetch a collection
+collectionService.fetchCollection(collectionId)
+    .then(response => {
+        console.log('Collection:', response.data);
+    })
+    .catch(error => {
+        console.error('Error fetching collection:', error);
+    });
+```
+
+### 7.6 Faceted Search
+
+One of Tainacan’s most important features is its faceted search system, which acts as an advanced filtering mechanism that makes exploring the digital collection much more intuitive and efficient. It allows combining multiple filters at once, progressively refining results.
+
+#### 7.6.1 Implementation
+
+In Tainacan, faceted search is implemented through an interface with **interactive filter panels**, offering control types like checkboxes, text fields, and date selectors, adapted to the data type being filtered. **Real-time filters** update results instantly as the user adjusts them, without needing to reload the page, while **visual counters** show how many items match each selection, helping users understand the collection’s distribution. The system also supports **nested filters**, where selecting one filter affects the options available in others, and offers **URL persistence**, saving search parameters in the URL.
+
+On the frontend, the faceted search system is implemented with:
+
+- **UI Components**: Each filter type (text, number, date, taxonomy, etc.) has specific Vue.js components located at `/src/views/admin/components/search/filters/`
+- **State Management**: The search state is managed by Vuex, allowing different components to react to filter changes
+- **API Communication**: Filtered queries are sent to the REST API, which returns the corresponding results
+- **Dynamic URL Updates**: Search parameters are synced with the URL, enabling navigation and sharing of specific searches
 
 ---
 
