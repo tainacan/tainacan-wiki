@@ -95,7 +95,7 @@ Métete a la carpeta tainacan-docker/volumes/src/ y clona el repositorio del Plu
 
 
 ```bash
-git clone https://github.com/your-username-or-organization/tainacan.git
+git clone https://github.com/nombre-usuario-o-organización/tainacan.git
 ```
 Luego, clona el repositorio del tema Tainacan:
 
