@@ -58,6 +58,38 @@ The complete REST API specification with all endpoints, parameters, and examples
 
 📄 [API Endpoints Table](table-endpoints.md)
 
+### 2.3 Specific REST Controllers
+
+The Tainacan REST API is structured through specialized PHP controllers, each responsible for a resource. They extend a base class called `REST_Controller` and define their own endpoints. Examples:
+
+* `REST_Collections_Controller`: Manages collections (`/collections`)
+* `REST_Items_Controller`: Manages items (`/items`)
+* `REST_Exposers_Controller`: Manages export formats (`/exposers`)
+* `REST_Background_Processes_Controller`: Monitors asynchronous processes (`/bg-processes`)
+* `REST_BulkEdit_Controller`: Handles bulk editing of items (`/collection/{id}/bulk-edit`)
+
+### 2.4 Authentication
+
+Authentication in Tainacan's REST API follows WordPress standards. In authenticated environments (such as the admin panel), session cookies are used. For external applications, it's recommended to use plugins like [JWT Authentication for WP REST API](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/) for token-based authentication.
+
+### 2.5 API Usage Example
+
+List items from collection with ID 1:
+
+```bash
+curl -X GET "https://yourdomain.com/wp-json/tainacan/v2/collections/1/items"
+```
+
+### 2.6 Main REST API Control Files
+
+| PHP File                                      | Main Function                                          |
+| --------------------------------------------- | ------------------------------------------------------ |
+| `class-tainacan-rest-controller.php`          | Base class for all REST controllers in Tainacan        |
+| `tainacan-rest-creator.php`                   | Responsible for instantiating all REST API controllers |
+| `class-tainacan-rest-bulkedit-controller.php` | Manages bulk editing of items                          |
+| `class-tainacan-rest-exposers-controller.php` | Manages the system's exposers (exporters)              |
+| `class-tainacan-rest-facets-controller.php`   | Manages search facets in collections                   |
+
 ---
 
 ## 3. Frontend ⇄ Backend ⇄ Database Integration
@@ -116,9 +148,13 @@ Tainacan's data architecture is based on WordPress infrastructure, using and ext
 * **WordPress Functions**: `wp_insert_post()`, `get_post_meta()`, `update_post_meta()`, `wp_insert_term()`, etc.
 * **Direct Access**: `$wpdb->insert()`, `$wpdb->get_results()` in custom tables like `wp_tnc_bg_process`.
 
-### 4.6 API REST Control
+### 4.6 REST API Control
 
 All database interaction is mediated by the REST API, which applies business rules, validation, and data transformation before persistence.
+
+### 4.7 WordPress Database Access
+
+Database access is performed using native functions (`wp_insert_post()`, `get_post_meta()`), and in more complex scenarios, direct access via `$wpdb`. The use of repositories encapsulates this access, promoting reuse and testability.
 
 ---
 
@@ -126,7 +162,7 @@ All database interaction is mediated by the REST API, which applies business rul
 
 Tainacan features a flexible structure for data import and export. Operations are performed through sessions and executed asynchronously.
 
-📄 [Tainacan Import and Export]( tainacan-Import-Export.md)
+📄 [Tainacan Import and Export](tainacan-Import-Export.md)
 
 ### 5.1 Import
 
@@ -184,10 +220,9 @@ Tainacan features a flexible structure for data import and export. Operations ar
 
 ---
 
-<! -- 7. Frontend - Admin and Public Theme (Under Construction)  -->
+## 7. Frontend - Admin and Public Theme 
 
-<! -- Esta seção será preenchida com as entregas do Grupo 2. Ela deve conter: -->
-
+<!-- Esta seção será preenchida com as entregas do Grupo 2. Ela deve conter: -->
 
 ---
 
@@ -197,3 +232,10 @@ Tainacan features a flexible structure for data import and export. Operations ar
 * 💻 **Source Code**: [https://github.com/tainacan/tainacan](https://github.com/tainacan/tainacan)
 * 💬 **Community Forum**: [https://tainacan.discourse.group/](https://tainacan.discourse.group/)
 * ✉️ **Mailing List**: [https://groups.google.com/g/tainacan](https://groups.google.com/g/tainacan)
+
+
+
+
+
+
+
