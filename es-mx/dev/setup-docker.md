@@ -92,9 +92,15 @@ Métete a la carpeta tainacan-docker/volumes/src/ y clona el repositorio del Plu
 
 (En nuestro caso, usaremos el fork del repositorio, pero dejaremos el tema del original. A menos que también queramos meter mano ahí)
 
-``` bash
-    git clone https://github.com/Tainacan-GCES-2025-1/tainacan.git
-    git clone https://github.com/tainacan/tainacan-theme.git
+
+
+```bash
+git clone https://github.com/your-username-or-organization/tainacan.git
+```
+Luego, clona el repositorio del tema Tainacan:
+
+```bash
+git clone https://github.com/tainacan/tainacan-theme.git
 ```
 
 Ahora, entra a la carpeta del plugin que acabas de clonar (¡no te vayas a meter en la del tema por error!), y corre:
@@ -105,9 +111,9 @@ Ahora, entra a la carpeta del plugin que acabas de clonar (¡no te vayas a meter
 
 Espérate un rato mientras se hace el build (sí, va a tardar un poco).
 
-Luego, edita otra vez el archivo docker-compose.yml que está en tainacan-docker/. Cambia la línea que habías puesto antes a "true". Que quede así:
+Luego, edita otra vez el archivo `docker-compose.yml` que está en `tainacan-docker/`. Cambia la línea que habías puesto antes a "true". Que quede así:
 
-Fragmento de docker-compose.yml:
+Fragmento de `docker-compose.yml`:
 
 
 ``` yml
@@ -135,17 +141,19 @@ Después, entra a:  [Localhost](http://localhost/). Si te sale la pantalla de co
 Si no funcionó... pues ni modo. Pídele ayuda a tus cuates o borra todo e inténtalo de nuevo. También checa si no hay pedos con los puertos, así:
 
 Abre otra terminal y corre:
- bash
+
+``` bash
     docker ps
+```
 
 
-Deberían aparecer tres contenedores: tainacan_fpm_apache, tainacan_db y tainacan_build. Todos deben decir "Up".
+Deberían aparecer tres contenedores: `tainacan_fpm_apache`, `tainacan_db` y `tainacan_build`. Todos deben decir "Up".
 
-El tainacan_fpm_apache usa los puertos 80:80 y 443:443
+El `tainacan_fpm_apache` usa los puertos 80:80 y 443:443
 
-El tainacan_db usa el puerto 3306
+El `tainacan_db` usa el puerto 3306
 
-El tainacan_build no ocupa puertos
+El `tainacan_build` no ocupa puertos
 
 Otra opción es usar el Docker Desktop (pa' los que les gusta lo gráfico).
 
@@ -157,14 +165,13 @@ También puedes ver los errores con:
 ```
 
 ## Pa' terminar
-Si todo salió bien, configura WordPress con tus datos.
+Asumiendo que todo salió bien, configura WordPress con los ajustes que prefieras.
 
-Ve a Ajustes > Enlaces permanentes y selecciona "Nombre de entrada".
+Ve a la configuración de WordPress en la barra lateral, específicamente a la pestaña de **Enlaces permanentes**, y cambia la opción a **Nombre de la entrada**.
+Haz clic en Guardar cambios.
 
-Dale clic en Guardar.
+Ve a la sección de **Plugins** en la barra lateral; Tainacan ya debería aparecer en la lista. Actívalo.
 
-En la sección de Plugins, ya debe aparecer Tainacan. Actívalo.
+**Tainacan** ahora debería aparecer en la barra lateral de WordPress. Haz clic en él, luego crea una nueva colección y agrega un ítem.
 
-Ahora verás "Tainacan" en el menú. Crea una colección y mete un item.
-
-Si en el paso 5 no salen errores, ¡todo quedó listo!
+Si este último paso no mostró ningún error, la instalación fue exitosa.
