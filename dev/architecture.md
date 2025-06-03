@@ -56,7 +56,7 @@ Tainacan's REST API provides a comprehensive set of endpoints for managing the s
 
 The complete REST API specification with all endpoints, parameters, and examples is available at:
 
-📄 [API Endpoints Table](table-endpoints.md)
+📄 [API Endpoints Table](/dev/table-endpoints.md)
 
 ### 2.3 Specific REST Controllers
 
@@ -162,7 +162,7 @@ Database access is performed using native functions (`wp_insert_post()`, `get_po
 
 Tainacan features a flexible structure for data import and export. Operations are performed through sessions and executed asynchronously.
 
-📄 [Tainacan Import and Export](tainacan-Import-Export.md)
+📄 [Tainacan Import and Export](/dev/tainacan-Import-Export.md)
 
 ### 5.1 Import
 
