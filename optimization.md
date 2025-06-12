@@ -63,140 +63,140 @@ Finally, don't forget to restart your web server.
 
 ------
 
-## Orientações para performance
+## Performance Guidelines
 
-### Reduza o número de metadados exibidos por padrão na listagem
+### Reduce the number of metadata displayed by default in the listing
 
-Se a sua listagem de itens estiver lenta, especialmente na visão “tabela”, reduza o número de metadados exibidos por padrão na listagem. Quanto menos metadados forem exibidos na listagem, mais rápida ela será.
+If your item listing is slow, especially in the "table" view, reduce the number of metadata displayed by default in the listing. The fewer metadata displayed in the listing, the faster it will be.
 
-Para fazer isso, acesse a página de configuração dos metadados de sua coleção, edite os metadados, procure a opção “Exibir na listagem” e marque “não exibir por padrão”. Esta opção ainda permitirá que os usuários escolham visualizar este metadado na listagem, se quiserem, mas removerá ele da listagem por padrão, acelerando o carregamento para os visitantes.
+To do this, access the metadata configuration page of your collection, edit the metadata, look for the option "Display in listing" and mark "do not display by default." This option will still allow users to choose to view this metadata in the listing if they want, but it will remove it from the default listing, speeding up loading for visitors.
 
-### Limite o número máximo de itens em uma listagem
+### Limit the maximum number of items in a listing
 
-Por padrão, o Tainacan tem um limite de 96 itens por página em qualquer listagem ou requisição à API. Faça alguns testes e verifique se esse número é adequado para o seu servidor.
+By default, Tainacan has a limit of 96 items per page in any listing or API request. Perform some tests and verify if this number is suitable for your server.
 
-Caso este número seja muito alto e as requisições forem muito lentas, você pode diminuí-lo para garantir uma boa experiência de uso.
+If this number is too high and requests are very slow, you can reduce it to ensure a good user experience.
 
-Da mesma forma, caso seu servidor seja mais potente, você pode aumentar esse número e oferecer listagens mais completas. Isto é especialmente útil para os links que são gerados para visitantes acessarem a coleção em outros formatos, como CSV. Quanto maior o número de itens por páginas, menos páginas eles terão que acessar para recuperar todos os itens de uma coleção.
+Similarly, if your server is more powerful, you can increase this number and offer more comprehensive listings. This is especially useful for links generated for visitors to access the collection in other formats, such as CSV. The larger the number of items per page, the fewer pages they will need to access to retrieve all items in a collection.
 
-Para mudar essa configuração, adicione a seguinte linha no seu arquivo `wp-config.php`:
+To change this configuration, add the following line to your `wp-config.php` file:
 
 ```php
-define(‘TAINACAN_API_MAX_ITEMS_PER_PAGE’, 96);
+define('TAINACAN_API_MAX_ITEMS_PER_PAGE', 96);
 ```
 
-Substituindo 96 pelo número de sua preferência.
+Replace 96 with the number of your preference.
 
-### Melhorando a velocidade da busca textual
+### Improving the speed of textual search
 
-Para coleções pequenas, as configurações padrão do tainacan devem funcionar bem e a busca geral por palavras chave pode ser eficiente. No entanto, para coleções um pouco maiores, esta busca, que procura por um termo em todos os metadados de um item, pode ser bastante ineficiente.
+For small collections, Tainacan's default settings should work well, and the general keyword search can be efficient. However, for slightly larger collections, this search, which looks for a term in all metadata of an item, can be quite inefficient.
 
-Para este gargalo há uma solução ideal e uma paliativa.
+For this bottleneck, there is an ideal solution and a workaround.
 
-A solução ideal é integrar o WordPress a um servidor de buscas, chamado Elastic Search. A instalação e configuração do Elastic Search está fora do escopo, pelo menos por enquanto, desta documentação, mas, uma vez que você tenha um servidor desses rodando, basta instalar o plugin ElasticPress. (Esta integração ainda está em fase experimental mas com excelentes resultados. Assim que estiver mais madura escreveremos uma documentação específica. Enquanto isso, seria muito bom receber relatos das tentativas).
+The ideal solution is to integrate WordPress with a search server called Elastic Search. The installation and configuration of Elastic Search are outside the scope, at least for now, of this documentation, but once you have such a server running, simply install the ElasticPress plugin. (This integration is still in an experimental phase but with excellent results. As it matures, we will write specific documentation. Meanwhile, it would be great to receive reports of attempts).
 
-A solução paliativa é restringir a busca ao funcionamento padrão do WordPress, que procura os termos apenas no título e descrição dos itens. Apesar de muito menos abrangente, ela é muito mais rápida.
+The workaround is to restrict the search to WordPress's default functionality, which looks for terms only in the title and description of items. Although much less comprehensive, it is much faster.
 
-Para fazer isso, adicione a seguinte linha no seu arquivo `wp-config.php`:
+To do this, add the following line to your `wp-config.php` file:
 
 ```php
 define('TAINACAN_DISABLE_DEFAULT_SEARCH_ENGINE', true);
 ```
 
-Mais informações na documentação para desenvolvedores da [engine de busca](/dev/search-engine).
+More information in the developer documentation for the [search engine](/dev/search-engine).
 
-### Ajustando facetas
+### Adjusting facets
 
-Por padrão, os valores carregados para as facetas irão sempre considerar a busca atual que você está fazendo. Isso significa que, a medida que filtros forem selecionados, as facetas serão recarregadas e trarão apenas os valores que ainda irão trazer itens nos resultados. Dessa maneira, a medida em que o usuário vai fazendo filtros, as opções nas facetas vão reduzindo, criando um “funil” de busca.
+By default, the values loaded for facets will always consider the current search you are performing. This means that as filters are selected, the facets will reload and bring only the values that will still return items in the results. Thus, as the user applies filters, the options in the facets will reduce, creating a "search funnel."
 
-Caso este comportamento não seja adequado para você, é possível configurar o tainacan para sempre exibir todos os valores possíveis em uma faceta, desconsiderando a busca atual. (em alguns casos, isto também pode melhorar a performance).
+If this behavior is not suitable for you, it is possible to configure Tainacan to always display all possible values in a facet, disregarding the current search. (In some cases, this can also improve performance).
 
-Para fazer isso, adicione a seguinte linha no seu arquivo `wp-config.php`:
+To do this, add the following line to your `wp-config.php` file:
 
 ```php
 define('TAINACAN_FACETS_DISABLE_FILTER_ITEMS', true); 
 ```
 
-### Melhorando a velocidade de carregamento das facetas
+### Improving the loading speed of facets
 
-Muitas facetas, ou filtros, também podem piorar a experiência de uso de seu site dependendo do tamanho da sua coleção e da capacidade do seu servidor.
+Many facets or filters can also worsen the user experience of your site depending on the size of your collection and the capacity of your server.
 
-Se o carregamento das suas facetas estiver lento, o mais adequado é olhar as orientações da seção “Ajustes nas configurações do servidor” desta página.
+If the loading of your facets is slow, the most appropriate action is to look at the guidelines in the "Server Configuration Adjustments" section of this page.
 
-Caso você não tenha acesso ou condições de modificar as configurações do servidor, aqui vão algumas alternativas:
+If you do not have access or the ability to modify server settings, here are some alternatives:
 
-1. Considere diminuir o número de facetas, mantendo apenas as essenciais. Caso algumas facetas sejam essenciais para o trabalho de gestão, mas dispensáveis para a navegação do público em geral, marque estas como “visível apenas por editores”. Desta maneira, você irá melhorar a experiência do seu visitante.
-2. Desative a contagem de itens por faceta. Para fazer isso, adicione a seguinte linha no seu arquivo `wp-config.php`:
+1. Consider reducing the number of facets, keeping only the essential ones. If some facets are essential for management work but dispensable for general public navigation, mark these as "visible only to editors." This way, you will improve the visitor's experience.
+2. Disable the item count per facet. To do this, add the following line to your `wp-config.php` file:
 ```php
 define('TAINACAN_FACETS_DISABLE_COUNT_ITEMS', true);
 ```
 
-Mais informações sobre facetas na documentação para desenvolvedores [da busca facetada](/dev/faceted-search).
+More information about facets in the developer documentation for [faceted search](/dev/faceted-search).
 
 ------
 
-## Ajustes nas configurações do servidor
+## Server Configuration Adjustments
 
-Os ajustes presentes nesta seção dizem respeito a configuração do seu servidor Apache. O modo de acesso e a forma de fazer estas configurações podem variar bastante dependendo do servidor ou serviço de hospedagem utilizado. Em alguns serviços de hospedagem, possivelmente você não terá acesso a todas essas opções.
+The adjustments in this section concern the configuration of your Apache server. The mode of access and the way to make these configurations can vary greatly depending on the server or hosting service used. In some hosting services, you may not have access to all these options.
 
-Para saber exatamente como fazer cada uma dessas configurações, consulte a documentação do servidor utilizado, o administrador de sistemas responsável ou o suporte técnico de sua hospedagem. As diretivas recomendadas aqui tomam como base um servidor com as seguintes configurações:
+To know exactly how to make each of these configurations, consult the documentation of the server used, the system administrator responsible, or the technical support of your hosting service. The recommended directives here are based on a server with the following configurations:
 
-* Processador: Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz, 4 cores;
-* Sistema operacional: Ubuntu Linux 16.04.1;
-* Memória real e virtual: 16 GB e 2 GB;
-* Kernel e CPU: Linux 4.4.0-72-generic on x86_64
-* Versão do Apache: 2.4
+* Processor: Intel(R) Xeon(R) CPU E5-2609 0 @ 2.40GHz, 4 cores;
+* Operating system: Ubuntu Linux 16.04.1;
+* Real and virtual memory: 16 GB and 2 GB;
+* Kernel and CPU: Linux 4.4.0-72-generic on x86_64
+* Apache version: 2.4
 
-### Aumente o *timeout* do seu servidor
+### Increase your server's *timeout*
 
-Por padrão, grande parte dos servidores está configurado com um timeout de `30 segundos`. Isso significa que qualquer requisição que demore mais do que 30 segundos para concluir será cancelada.
+By default, most servers are configured with a timeout of `30 seconds`. This means that any request that takes longer than 30 seconds to complete will be canceled.
 
-No geral, este tempo é suficiente, porém ele pode ser um gargalo em algumas operações específicas, como algumas de exportação e importação e de edição em massa de itens.
+In general, this time is sufficient, but it can be a bottleneck in some specific operations, such as some export and import operations and bulk editing of items.
 
-Por segurança, aumente este valor para algo em torno de `200` a `300 segundos`.
+For safety, increase this value to something around `200` to `300 seconds`.
 
-### Configure o *KeepAlive*
+### Configure *KeepAlive*
 
-Esta diretiva se definida como `on`, permite conexões persistentes ao apache. Para um melhor desempenho, é recomendado definir esta opção como `on` e permitir que mais de uma solicitação por conexão.
+This directive, if set to `on`, allows persistent connections to Apache. For better performance, it is recommended to set this option to `on` and allow more than one request per connection.
 
-MaxKeepAliveRequests: Esta diretiva é usada para definir o número de solicitações permitido por conexão quando a opção KeepAlive acima é definido como `on`. Defina esta opção como `0` para indicar um número ilimitado.
+MaxKeepAliveRequests: This directive is used to define the number of requests allowed per connection when the KeepAlive option above is set to `on`. Set this option to `0` to indicate an unlimited number.
 
-KeepAliveTimeout: Esta diretiva é usada para definir quanto tempo, em segundos, o apache irá esperar por um posterior pedido antes de fechar a conexão. O valor `10` é uma boa média a ser utilizada.
+KeepAliveTimeout: This directive is used to define how long, in seconds, Apache will wait for a subsequent request before closing the connection. The value `10` is a good average to use.
 
-### Configure o *MPM Prefork*
+### Configure *MPM Prefork*
 
-Em algumas páginas do Tainacan, especialmente na listagem de itens, são realizadas muitas requisições simultâneas ao servidor. Para melhorar o desempenho nessas situações, é recomendável que você configure o módulo MPM Prefork do servidor Apache.
+On some Tainacan pages, especially in the item listing, many simultaneous requests are made to the server. To improve performance in these situations, it is recommended that you configure the Apache server's MPM Prefork module.
 
-Para a conceitualização de cada diretiva de configuração apresentada abaixo recomenda-se a leitura do artigo [1](https://elias.praciano.com/2015/12/como-configurar-o-modulo-mpm-prefork-para-melhorar-a-performance-do-servidor-web-apache/) que explica todos os aspectos envolidos e para a determinação da configuração mais adequada para o seu ambiente recomenda-se a leitura do artigo [2](https://www.woktron.com/secure/knowledgebase/133/How-to-optimize-Apache-performance.html) que traz uma abordagem simples e objetiva para a determinação dessas configurações.
+For the conceptualization of each configuration directive presented below, it is recommended to read article [1](https://elias.praciano.com/2015/12/como-configurar-o-modulo-mpm-prefork-para-melhorar-a-performance-do-servidor-web-apache/) which explains all the aspects involved, and for determining the most suitable configuration for your environment, it is recommended to read article [2](https://www.woktron.com/secure/knowledgebase/133/How-to-optimize-Apache-performance.html) which provides a simple and objective approach to determining these configurations.
 
-Segue abaixo as configurações recomendadas que devem ser realizadas no arquivo `/etc/apache2/mods-availave/mpm_prefork.conf`:
+Below are the recommended configurations that should be made in the `/etc/apache2/mods-available/mpm_prefork.conf` file:
 
-* **StartServers**: definir o valor para `4`.
-* **MaxClients**: definir o valor para `256`.
-* **MinSpareServers**: definir o valor para `15`.
-* **MaxSpareServer**: definir o valor para `30`.
-* **MaxRequestsPerChild**: definir o valor para `5`.
-* **MaxRequestWorkers**: definir o valor para `250`.
+* **StartServers**: set the value to `4`.
+* **MaxClients**: set the value to `256`.
+* **MinSpareServers**: set the value to `15`.
+* **MaxSpareServer**: set the value to `30`.
+* **MaxRequestsPerChild**: set the value to `5`.
+* **MaxRequestWorkers**: set the value to `250`.
 
-Realizadas tais configurações outro aspecto importante é blindar a instalação Wordpress na qual o plugin e tema do Tainacan serão executados. A próxima seção trata desse aspecto. 
+After making these configurations, another important aspect is securing the WordPress installation where the Tainacan plugin and theme will be executed. The next section addresses this aspect.
 
 -----
 
-## Blindando o Wordpress
+## Securing WordPress
 
-O primeiro passo é configurar as permissões dos arquivos e diretórios da instalação corretamente. Isso pode feito por meio dos seguintes comandos que:
+The first step is to correctly configure the permissions of the files and directories of the installation. This can be done using the following commands:
 
-Para diretórios: 
+For directories:
 ```shell
-find /caminho/para/a/pasta/do/wordpress/ -type d -exec chmod 755 {} \;
+find /path/to/wordpress/folder/ -type d -exec chmod 755 {} \;
 ```
 
-Para arquivos: 
+For files:
 ```shell
-find /caminho/para/a/pasta/do/wordpress/ -type f -exec chmod 644 {} \;
+find /path/to/wordpress/folder/ -type f -exec chmod 644 {} \;
 ```
 
-Uma outra medida de proteção que pode ser adicionada nas partes onde os scripts geralmente não devem ser acessados por nenhum usuário. Uma forma de fazer isso é usar `mod_rewrite` para bloquear os scripts no arquivo `.htaccess`.
+Another protection measure that can be added is to block scripts in parts where they generally should not be accessed by any user. One way to do this is to use `mod_rewrite` to block scripts in the `.htaccess` file.
 
 ```directive
 RewriteEngine On
@@ -208,7 +208,7 @@ RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
 RewriteRule ^wp-includes/theme-compat/ - [F,L]
 ```
 
-O bloqueio do acesso ao arquivo `wp-config.php` por meio do `.htaccess` é outra medida interessante. Para isso basta inserir o seguinte código no arquivo `.htaccess` da instalação Wordpress:
+Blocking access to the `wp-config.php` file via `.htaccess` is another interesting measure. To do this, simply insert the following code into the `.htaccess` file of the WordPress installation:
 
 ```php
 <files wp-config.php>
@@ -220,7 +220,7 @@ deny from all
 </files>
 ```
 
-Desabilitar a listagem de arquivos e o acesso direto a arquivos *.php* no diretório de uploads. Isso pode ser feito pela inclusão de um arquivo `.htaccess` dentro do diretório `/wp-content/uploads` da instalação Wordpress com o seguinte conteúdo:
+Disable file listing and direct access to *.php* files in the uploads directory. This can be done by including a `.htaccess` file inside the `/wp-content/uploads` directory of the WordPress installation with the following content:
 
 ```php
 Options -Indexes
@@ -234,9 +234,9 @@ Require all denied
 
 ### Wordfence
 
-Fechando as recomendações de segurança recomenda-se a instalação, ativação e configuração do plugin [Wordfence](https://wordpress.org/plugins/wordfence/) que possui uma gama de recursos que objetivam proteger a instalação Wordpress do mais diversos tipos de ataques e exploração de vulnerabildades.
+Closing the security recommendations, it is recommended to install, activate, and configure the plugin [Wordfence](https://wordpress.org/plugins/wordfence/) which has a range of features aimed at protecting the WordPress installation from various types of attacks and vulnerability exploitation.
 
-O plugin e a sua documentação podem ser acessados [aqui](https://wordpress.org/plugins/wordfence/). 
+The plugin and its documentation can be accessed [here](https://wordpress.org/plugins/wordfence/).
 
 ## Cache
 
