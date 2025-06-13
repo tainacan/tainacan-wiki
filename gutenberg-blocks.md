@@ -1,10 +1,10 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
-
 # Gutenberg Blocks
 
-## O que é esse tal Gutenberg?
+---
 
-No final de 2018, o WordPress 5.0 apresentou ao mundo seu novo editor de Posts e Páginas, apelidado de Gutenberg:
+## What is this "Gutenberg" thing?
+
+In late 2018, WordPress 5.0 introduced its new Post and Page editor to the world, nicknamed Gutenberg:
 
 <div style="text-align: center; font-size: 1.5rem;">
 
@@ -12,100 +12,102 @@ No final de 2018, o WordPress 5.0 apresentou ao mundo seu novo editor de Posts e
 
 </div>
 
-Focado em fornecer uma maneira dinâmica e visual para a editoração de conteúdo. Neste editor, todos os elementos de uma página, desde os mais simples parágrafos até a mais complexa galeria de imagens, são denominados **"Blocos"**. Com ele, fica fácil construir um post de lançamento de uma coleção, usando de imagens com diferentes alinhamentos, colunas, grades de texto, mapas, títulos ou botões mais chamativos. Além disso, [são diversos os plugins existentes](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para o WordPress que te oferecem novos blocos ricos e atraentes.
+It's focused on providing a dynamic and visual way to edit content. In this editor, all elements of a page, from the simplest paragraphs to the most complex image gallery, are called "**Blocks**". With it, it becomes easy to build a collection launch post, using images with different alignments, columns, text grids, maps, titles, or more eye-catching buttons. In addition, [there are various existing plugins](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") for WordPress that offer you new rich and attractive blocks.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Blocos Gutenberg do Tainacan](/_assets/images/gutenberg-blocks-list.jpg ":size=450")
+![List of Tainacan Gutenberg Blocks](/_assets/images/gutenberg-blocks-list.jpg ":size=450")
 
 </div>
 
-## Os Blocos Tainacan
+## Tainacan Blocks
 
-O Tainacan não poderia ficar de fora, e usa desta ferramenta para fornecer blocos dedicados ao conteúdo gerado no seu repositório.
+Tainacan couldn't be left out and uses this tool to provide blocks dedicated to content generated in your repository.
 
-> Combinando os blocos Gutenberg com seu conteúdo Tainacan, fica simples criar narrativas, contar histórias e apresentar o seu acervo digital de maneira acessível ao mundo.
+> By combining Gutenberg blocks with your Tainacan content, it becomes simple to create narratives, tell stories, and present your digital collection in an accessible way to the world.
 
-Para usar algum dos blocos, basta editar um post ou uma página e procurar na lista de blocos disponíveis por um dos nosso blocos. São eles:
+To use any of the blocks, simply edit a post or page and look for one of our blocks in the list of available blocks. They are:
 
-- [Lista de Itens](/blocks-items#lista-de-itens) _(estático)_;
-- [Lista de Coleções](/blocks-collections#lista-de-coleções) _(estático)_;
-- [Lista de Termos](/blocks-terms#lista-de-termos) _(estático)_;
-- [Lista de Itens da Coleção](/blocks-items#lista-de-itens-da-coleção);
-- [Galeria de Mídias do Item](/pt-br/blocks-item#galeria-de-midias-do-item);
-- [Formulário de Submissão de Itens](/blocks-item#formulário-de-submissão-de-itens);
-- [Barra de Busca](/blocks-items#barra-de-busca-tainacan) Tainacan;
-- [Busca Facetada](/blocks-items#busca-facetada) - _(A Lista de Itens Completa)_;
-- [Lista de Facetas](/blocks-facets#lista-de-facetas);
-- [Carrossel de Itens](/blocks-items#carrossel-de-itens);
-- [Carrossel de Coleções](/blocks-collections#carrossel-de-coleções);
-- [Carrossel de Termos](/blocks-terms#carrossel-de-termos);
+- [Items List](/blocks-items#lista-de-itens) _(static)_;
+- [Collections List](/blocks-collections#lista-de-coleções) _(static)_;
+- [Terms List](/blocks-terms#lista-de-termos) _(static)_;
+- [Collection Items List](/blocks-items#lista-de-itens-da-coleção);
+- [Item Media Gallery](/pt-br/blocks-item#galeria-de-midias-do-item);
+- [Item Submission Form](/blocks-item#formulário-de-submissão-de-itens);
+- [Tainacan Search Bar](/blocks-items#barra-de-busca-tainacan);
+- [Faceted Search](/blocks-items#busca-facetada) - _(The Complete Items List)_;
+- [Facets List](/blocks-facets#lista-de-facetas);
+- [Items Carousel](/blocks-items#carrossel-de-itens);
+- [Collections Carousel](/blocks-collections#carrossel-de-coleções);
+- [Terms Carousel](/blocks-terms#carrossel-de-termos);
 
-## Alguns conceitos importantes
+---
 
-Antes de começar a explorar os blocos do Tainacan, porém, talvez caiba entender alguns conceitos gerais. A figura abaixo mostra as sessões relacionadas ao seu bloco quando inserido no editor:
+## Some Important Concepts
 
-![Sessões relacionadas ao bloco no editor](/pt-br/_assets/images/gutenberg-blocks-sections.jpg)
+Before you start exploring Tainacan blocks, however, it might be useful to understand some general concepts. The figure below shows the sessions related to your block when inserted in the editor:
 
-1. É a barra superior do seu bloco. Nela costumam ficar configurações como o modo de visualização, alinhamento do bloco, além de opções de deletar, inserir blocos antes ou depois e criar um grupo de blocos;
-2. É a região do conteúdo do bloco em si. Quando ativos - ou seja, clicados, em foco - os blocos do Tainacan em geral possuem uma região em cinza com a principal configuração a ser feita (geralmente escolher uma fonte dos dados mostrados, como uma coleção). Esta região não aparece na versão final do post, o que pode ser observado ao se mover o foco pra fora do bloco;
-3. É a barra lateral do editor onde, além das configurações do documento, estão as opções do bloco atualmente ativo. Nela ficam diversos tipos de opções relacionadas ao bloco. Todos os blocos possuem ao final desta sessão uma configuração avançada que permite atribuir classes aos blocos, o que pode ser usado para fazer customizações avançadas com CSS.
+![Sessions related to the block in the editor](/pt-br/_assets/images/gutenberg-blocks-sections.jpg)
+
+1. This is the top bar of your block. It usually contains settings such as the display mode, block alignment, as well as options to delete, insert blocks before or after, and create a block group;
+2. This is the content area of the block itself. When active — that is, clicked, in focus — Tainacan blocks generally have a gray area with the main configuration to be made (usually choosing a data source, such as a collection). This area does not appear in the final version of the post, which can be observed by moving the focus away from the block;
+3. This is the editor's sidebar where, in addition to document settings, the options for the currently active block are located. It contains various types of block-related options. All blocks have an advanced setting at the end of this session that allows assigning classes to blocks, which can be used for advanced CSS customizations.
 
 <div style="float: right; margin-left: 32px;">
 
-![Lista de Possíveis Alinhamentos de Bloco](/_assets/images/gutenberg-blocks-alignments.png ":size=250")
+![List of Possible Block Alignments](/_assets/images/gutenberg-blocks-alignments.png ":size=250")
 
 </div>
 
-### Alinhamentos de Bloco
+### Block Alignments
 
-Das configurações mencionadas acima cabe comentar sobre os **alinhamentos de bloco**. Alguns blocos (não só os do Tainacan) oferecem um ou mais dos alinhamentos da figura ao lado.
+Among the settings mentioned above, it's worth commenting on **block alignments**. Some blocks (not just Tainacan's) offer one or more of the alignments shown in the figure on the side.
 
-No geral, um bloco está de início com a configuração "Centralizar" por padrão. Ao se selecionar "Alinhar à esquerda" ou Alinhar à direita", o editor jogará o bloco para aquele lado, usando as opções `float` do CSS. Isso pode funcionar bem caso haja texto fluído ao lado do bloco, **mas também pode deixar seu bloco com pouco espaço**, cabe testar e pré-visualizar o documento para se ter certeza se fica adequado!
+In general, a block starts with the "Center" setting by default. When you select "Align left" or "Align right", the editor will push the block to that side, using CSS `float` options. This can work well if there is text flowing next to the block, **but it can also leaveyour block with little space**, it's worth testing and previewing the document to make sure it's suitable!
 
-Já as duas opções de "Largura ampla" e "Largura completa" são úteis para temas que oferecem templates com margem larga e que pode ser extrapolada. A figura a seguir demonstra isso:
+The "Wide width" and "Full width" options are useful for themes that offer templates with wide margins that can be extended. The following figure demonstrates this:
 
-![Lista de Possíveis Alinhamentos de Bloco](/pt-br/_assets/images/gutenberg-wide-alignment.jpg)
+![List of Possible Block Alignments](/pt-br/_assets/images/gutenberg-wide-alignment.jpg)
 
-O tema (_Tainacan Interface_) possui uma margem lateral que limita a largura do post à 1400px. Além disso, dentro do próprio post há uma margem interna que reduz ainda mais a largura do corpo de texto. Usando a "Largura ampla" no [Bloco de Carrossel de Itens](#carrossel-de-itens) acima, extrapolamos um pouco a margem do corpo de texto, para dar destaque à ele. Mas podemos ir mais longe. Usando a "Largura completa", fazemos com que o [Bloco de Itens da Coleção](#lista-de-itens-da-coleção) logo abaixo, ocupe toda a largura disponível, vazando as margens do post. Este recurso é bastante utilizado para se apresentar destaques visuais na sua página, ou para compor cabeçalhos customizados.
+The theme (Tainacan Interface) has a side margin that limits the post width to 1400px. In addition, within the post itself there is an internal margin that further reduces the width of the text body. Using "Wide width" in the [Items Carousel Block](#carrossel-de-itens) above, we extend the text body margin a bit, to give it prominence. But we can go further. Using "Full width", we make the [Collection Items Block](#lista-de-itens-da-coleção) just below, occupy the entire available width, overflowing the post margins. This feature is widely used to present visual highlights on your page, or to compose custom headers.
 
-### Templates de Página
+### Page Templates
 
-Alguns temas oferecem um recurso do WordPress denominado **"Templates de Página"**. São modos de se oferecer diferentes _layouts_ de páginas para um usuário. Por exemplo, pode-se preferir uma página com a barra lateral ao lado, ou sem margem nenhuma. Esta configuração pode ser feita na **Barra Lateral do Editor**, na **Aba Documento**, em geral está entre as últimas opções.
+Some themes offer a WordPress feature called **"Page Templates"**. These are ways to offer different page layouts to a user. For example, you might prefer a page with a sidebar next to it, or with no margins at all. This setting can be made in the **Editor Sidebar**, on the **Document Tab**, usually among the last options.
 
-O _Tainacan Interface_ oferece atualmente 3 templates:
+The _Tainacan Interface_ currently offers 3 templates:
 
 - `Default`;
 - `Landing`;
 - `Landing with Breadcrumb`;
 
-Se você já criou alguma página com ele então já conhece o template `Default`. Este é modelo usadado para páginas e posts e possui sempre, na seguinte ordem:
+If you have already created a page with it, then you already know the `Default` template. This is the model used for pages and posts and always has, in the following order:
 
-1. O menu do site;
-2. A barra de navegação auxiliar (também conhecida como breadcrumb ou migalha de pão);
-3. O banner de cabeçalho, com o nome do repositório;
-4. A sessão de cabeçalho da Página, que inclui o título e botões de compartilhar;
-5. O conteúdo interno da página - Esta é a parte que é criada via Editor de Blocos, o Gutenberg;
-6. O rodapé do site;
+1. The site menu;
+2. The auxiliary navigation bar (also known as breadcrumb);
+3. The header banner, with the repository name;
+4. The Page header section, which includes the title and share buttons;
+5. The internal content of the page - This is the part created via the Block Editor, Gutenberg;
+6. The site footer;
 
-Estes elementos podem ser indesejados em algumas situações. Suponhamos que você queira montar uma versão customizada da página inicial do seu repositório. Neste caso, é possível utilizar o template `Landing`, que da lista acime exibe apenas os itens **1**, **5** e **6**. Já o template `Landing with Breadcrumb` adiciona o item **2** à esta lista:
+These elements may be undesirable in some situations. Suppose you want to create a customized version of your repository's homepage. In this case, you can use the `Landing` template, which from the list above displays only items **1**, **5**, and **6**. The `Landing with Breadcrumb` template adds item **2** to this list:
 
-![Exemplos de usos dos templates](/pt-br/_assets/gifs/gutenberg_page_templates.gif)
+![Examples of template uses](/pt-br/_gifs/gutenberg_page_templates.gif)
 
-### WYSIWYG ou as Diferenças entre Editor e a Página
+### WYSIWYG or the Differences Between Editor and Page
 
-Idealmente, a experiência de edição deveria ser, como chamamos na computação, **"WYSIWYG"** sigla em inglês para "O que você vê é o que você tem". Em outras palavras, o que é visto no editor de blocos deveria ser equivalente ao que terá na página publicada. Isso é verdade para 99% dos casos, mas vale ressaltar algumas exceções.
+Ideally, the editing experience should be, as we call it in computing, "**WYSIWYG**" which stands for "What You See Is What You Get". In other words, what is seen in the block editor should be equivalent to what will be on the published page. This is true for 99% of cases, but it's worth highlighting some exceptions.
 
-Primeiramente, esta simetria entre editor e página depende muito do quão bom foi o suporte oferecido pelo Tema para isto. Em alguns temas, até mesmo a fonte vista no editor será diferente da vista na página. No _Tainacan Interface_ tentamos aplicar o máximo de estilização possível, mas nem tudo sai perfeito. Um exemplo disso são **os alinhamentos e margens**. No editor, existem margens extras entre os elementos, que fazem parte dos blocos. Estas margens são importantes para permitir o manejo dos blocos, mas ao visualizarmos a página, as mesmas não estarão lá. Ao usarmos os alinhamentos "Largura ampla" e "Largura completa" podemos achar que cabem X itens em uma linha só da página, mas ao visualizarmos, vemos que há mais espaço, pois no editor, temos **a Barra Lateral do Editor e do próprio Painel Administrativo do WordPress que tomam espaço da tela**. Para se eliminar um pouco este efeito, pode-se usar o editor em Tela Cheia. Por fim, **as cores observadas em elementos como Títulos, Linhas e Links, serão sempre o padrão do tema** no editor (o "Azul Turquesa"), mas ao visualizar no site, estas terão sido substituídas pela cor que foi personalizada para o Tema.
+Firstly, this symmetry between editor and page depends a lot on how good the Theme's support for this was. In some themes, even the font seen in the editor will be different from the one seen on the page. In _Tainacan Interface_ we try to apply as much styling as possible, but not everything turns out perfect. An example of this are **alignments and margins**. In the editor, there are extra margins between elements, which are part of the blocks. These margins are important to allow block handling, but when we view the page, they will not be there. When using "Wide width" and "Full width" alignments, we might think that X items fit on a single line of the page, but when we view it, we see that there is more space, because in the editor, we have **the Editor Sidebar and the WordPress Admin Panel itself that take up screen space**. To eliminate this effect a bit, you can use the editor in Full Screen. Finally, **the colors observed in elements like Titles, Lines, and Links, will always be the theme's default** in the editor (the "Turquoise Blue"), but when viewed on the site, these will have been replaced by the color that was customized for the Theme.
 
-### Novos Blocos
+### New Blocks
 
-Não tenha medo de procurar por [outros blocos](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para instalar e testar em suas publicações.
+Don't be afraid to look for [other blocks](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") to install and test in your publications.
 
-!> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia!
+> It is important to say, however, that with each new block, you create a dependency for your site. If one day you uninstall this block, those posts that used them will have their content lost or at least disfigured. So use sparingly!
 
-Eis aqui exemplos de blocos extras que gostamos:
+Here are examples of extra blocks we like:
 
 - [Grids - Layout Builder for WordPress](https://wordpress.org/plugins/grids/ ":ignore")
 
-Outra observação importante é que, ao mudar de tema, seus blocos poderão ter uma aparência bem diferente. Ainda é muito recente a chegada do Gutenberg e nem todos os temas oferecem um bom suporte aos seus recursos (como o alinhamento "Largura ampla", por exemplo). Nossos blocos devem funcionar bem nos temas em geral, mas podem haver diferenças de espaçamento, fonte e alinhamentos dependendo dos estilos de página.
+Another important observation is that, when changing themes, your blocks may look quite different. Gutenberg's arrival is still very recent and not all themes offer good support for its features (such as "Wide width" alignment, for example). Our blocks should work well in themes in general, but there may be differences in spacing, font, and alignments depending on the page styles.
