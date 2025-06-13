@@ -1,8 +1,8 @@
 # Technical Architecture
 
-This document consolidates the technical architecture of Tainacan, detailing its structure as a WordPress plugin and its service-oriented architecture. The adopted approach is based on modularity, extensibility, and integration with native WordPress technologies, promoting interoperability and ease of maintenance.
+This document consolidates the technical architecture of Tainacan, detailing its structure as a WordPress plugin.
 
-The topics cover everything from the internal workings of the plugin (entities, repositories, controllers, and business logic), through the public REST API and its features, to the modeling and manipulation of data in the relational database. Solutions for data import/export, asynchronous processes, development workflow, and DevOps practices that ensure the project's quality and continuity are also described.
+The topics cover everything from the internal workings of the plugin (entities, repositories, controllers, and business logic), through the public REST API and its features, to the modeling and manipulation of data in the relational database. Solutions for data import/export and asynchronous process are also described.
 
 ---
 
@@ -94,6 +94,8 @@ curl -X GET "https://yourdomain.com/wp-json/tainacan/v2/collections/1/items"
 
 ## 3. Frontend ⇄ Backend ⇄ Database Integration
 
+Tainacan Admin panel is mostly coded as a Single Page Application, where all the data fetching and manipulation is done via REST API. Similar fetching cycles also occur inside Gutenberg Blocks, such as the Faceted Search and the Item Submission Form.
+
 ### 3.1 Request Cycle
 
 1. The frontend (Vue.js SPA) sends HTTP requests via `Axios`.
@@ -106,7 +108,7 @@ curl -X GET "https://yourdomain.com/wp-json/tainacan/v2/collections/1/items"
 
 ## 4. Data Architecture
 
-Tainacan's data architecture is based on WordPress infrastructure, using and extending its relational model. The system incorporates Custom Post Types, Custom Taxonomies, Metadata, and additional tables for asynchronous operations.
+Tainacan's data architecture is based on WordPress infrastructure, using and extending its relational model. The system incorporates Custom Post Types, Custom Taxonomies, Custom Post Meta, and additional tables for asynchronous operations.
 
 ### 4.1 Storage Structure
 
@@ -292,33 +294,6 @@ Tainacan uses Vuex for centralized state management. The main state modules incl
 - **Search**: State related to search and filtering
 - **Filter**: State related to available filters
 - **Metadata**: State related to available metadata
-
-### 7.5 Backend Communication
-
-Communication with the backend is done via HTTP requests to Tainacan's REST API. The main service classes include:
-
-- **CollectionService**: Communication with collection endpoints
-- **ItemService**: Communication with item endpoints
-- **MetadataService**: Communication with metadata endpoints
-- **FilterService**: Communication with filter endpoints
-- **TaxonomyService**: Communication with taxonomy endpoints
-
-Example API communication:
-
-```javascript
-import { useCollectionService } from '@/admin/js/service/collection-service';
-
-const collectionService = useCollectionService();
-
-// Fetch a collection
-collectionService.fetchCollection(collectionId)
-    .then(response => {
-        console.log('Collection:', response.data);
-    })
-    .catch(error => {
-        console.error('Error fetching collection:', error);
-    });
-```
 
 ### 7.6 Faceted Search
 
