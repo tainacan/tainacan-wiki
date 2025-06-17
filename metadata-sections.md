@@ -10,7 +10,7 @@ In this article, we describe:
 - How to [remove a section](#removendo-seções) of metadata;
 - How to [view the metadata section](#visualizando-seções-na-página-do-item) on the public page of the item;
 
-Here, it is assumed that you are already familiar with the concept and the metadata editing flow. Otherwise, [consult Metadata](/pt-br/metadata.md).
+Here, it is assumed that you are already familiar with the concept and the metadata editing flow. Otherwise, [consult Metadata](metadata.md).
 
 ## Characteristics of Metadata Sections
 

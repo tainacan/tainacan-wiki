@@ -39,8 +39,8 @@ An item will always belong to a specific collection, and during its submission, 
 3. In the **Collections** section, click on the desired collection;
 4. Click on `add new` in the upper left corner.
   * Click on `add an item` to submit a single item.
-  * Or click on `add items in bulk` to add items in batches. (See [Bulk Actions](/pt-br/bulk-edition) to learn more).
-  * Or click on `import items` to add a large batch of items (See [Bulk Actions](/pt-br/bulk-edition) to learn more).
+  * Or click on `add items in bulk` to add items in batches. (See [Bulk Actions](bulk-actions) to learn more).
+  * Or click on `import items` to add a large batch of items (See [Bulk Actions](bulk-actions) to learn more).
 5. Choose the type of media that will compose the Item:
   * **File**: upload multimedia files such as *Images*, *Audio*, *Text Files*, *Videos*, etc. (See [this article](https://imasters.com.br/back-end/como-incorporar-arquivos-de-audio-e-video-no-wordpress) about WordPress file compatibility).
     * Select the file from the *media library* or upload it from your computer.
@@ -48,7 +48,7 @@ An item will always belong to a specific collection, and during its submission, 
   * **URL**: allows embedding multimedia links (*embed*) from various sites (such as *YouTube*, *Vimeo*, etc.).
 6. Determine the item's privacy in the visibility options:
   * **Visible to everyone**: the item will be visible to everyone (depending on the privacy parameters of the collection).
-  * **Visible only to editors**: visible only to collection editors. (See [User Permissions](/pt-br/users) to learn more).
+  * **Visible only to editors**: visible only to collection editors. (See [User Permissions](users) to learn more).
 7. Define a thumbnail for the item:
   1. Click on the **pencil** icon in the square illustrating the thumbnail.
   2. Select the file from the *media library* or upload it from your computer:
@@ -57,8 +57,8 @@ An item will always belong to a specific collection, and during its submission, 
 8. Define whether the item can receive comments:
   * Comments can be managed in the *WordPress control panel* comments section (learn more in the [WordPress documentation](https://codex.wordpress.org/pt-br:Painel_Coment%C3%A1rios)).
 9. Fill in the available fields in the metadata section:
-  1. Each collection will offer a set of metadata for completion according to the repository and collection metadata settings (See [Metadata](/pt-br/metadata) and [Collections](/pt-br/collections) to learn more).
-  2. Metadata configured as **mandatory** will not allow the item to be saved as *draft* or *published* if they are not filled in. (See [Metadata](/pt-br/metadata) and [Collections](/pt-br/collections) to learn more).
+  1. Each collection will offer a set of metadata for completion according to the repository and collection metadata settings (See [Metadata](metadata) and [Collections](collections) to learn more).
+  2. Metadata configured as **mandatory** will not allow the item to be saved as *draft* or *published* if they are not filled in. (See [Metadata](metadata) and [Collections](collections) to learn more).
 10. To complete the creation of the item, choose:
   * `Save as Draft`: The item will not be published in the collection but will be saved in the collection as **Draft**.
   * `Publish`: The item will be published in the collection.
@@ -89,8 +89,8 @@ An item will always belong to a specific collection, and during its submission, 
 3. In the **Collections** section, click on the desired collection;
 4. In the items list, click on the trash icon to the right of the item you want to delete;
 
-  !> **Attention**: deleting the item also implies deleting the document, metadata information, and attachments. This operation can only be undone by administrators. (See [Activity Log](/pt-br/activities) to learn more).
+  !> **Attention**: deleting the item also implies deleting the document, metadata information, and attachments. This operation can only be undone by administrators. (See [Activity Log](activities) to learn more).
 
-  !> **Attention**: Delete the item only if you are sure there will be no significant loss of information (See [Activity Log](/pt-br/activities) to learn more).
+  !> **Attention**: Delete the item only if you are sure there will be no significant loss of information (See [Activity Log](activities) to learn more).
 
 <!-- tabs:end -->

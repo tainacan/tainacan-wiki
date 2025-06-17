@@ -121,7 +121,7 @@ In the settings related to the submission form within the collection form, enabl
 
 ### Where do I configure which questions will exist in the form?
 
-The item submission form offered is nothing more than a mapping of the existing item editing form in your collection. Therefore, to configure which fields will exist in it, you need to edit the metadata of your collection. On the metadata page, you can adjust their order, labels, descriptions, and particularities such as whether they are mandatory or not. More information [on this page](/pt-br/metadata).
+The item submission form offered is nothing more than a mapping of the existing item editing form in your collection. Therefore, to configure which fields will exist in it, you need to edit the metadata of your collection. On the metadata page, you can adjust their order, labels, descriptions, and particularities such as whether they are mandatory or not. More information [on this page](metadata).
 
 ### How do I set up a validation workflow for submissions?
 

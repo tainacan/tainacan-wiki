@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+
 
 <div style="float: right; margin-left: 1rem;">
 	<img 
@@ -31,33 +31,33 @@ Collections can also have **child collections**, which will inherit their metada
   1. Name the collection in the **Name** field;
   2. Define its status as **public**, **private**, **draft**, or **trash**. 
     * **Public**: Collections defined as public will be visible as soon as they are created. 
-    * **Draft**: *Draft* collections will be visible to users with permission to access the Tainacan administrative panel (e.g., editors, moderators, and administrators). (See [User Permissions](/pt-br/users) to learn more). 
+    * **Draft**: *Draft* collections will be visible to users with permission to access the Tainacan administrative panel (e.g., editors, moderators, and administrators). (See [User Permissions](users) to learn more). 
     * **Private**: *Private* collections will only be visible to their creator and moderators of this collection. 
-    * **Trash**: Collections in *trash* will be visible to users with permission to access the Tainacan administrative panel (e.g., *editors*, *moderators*, and *administrators*). (See [User Permissions](/pt-br/users) to learn more). 
+    * **Trash**: Collections in *trash* will be visible to users with permission to access the Tainacan administrative panel (e.g., *editors*, *moderators*, and *administrators*). (See [User Permissions](users) to learn more). 
   3. Define a thumbnail and a header image with images that represent the content that will be part of this collection. 
     * The **thumbnail image** will represent the collection in different environments in the plugin and repository theme (similar to a profile picture on *Facebook*).
     * The **header image**, or header, appears in the collection view, depending on the settings and layout adopted. The default *Tainacan* theme displays the *header* image on the collection page.  
   4. Enable the cover page and add the specific URL if you are creating a page with a custom layout to display your collection.
 4. Enter a description about the content that will be part of this collection.
   5. Select one or more visualization modes (available in the theme) for navigation in the collection view. 
-  6. Choose a root collection to inherit metadata from another collection. (See [Metadata](/pt-br/metadada) to learn more). 
+  6. Choose a root collection to inherit metadata from another collection. (See [Metadata](metadata) to learn more). 
   7. Select whether or not to **Allow Comments** in the collection; comments can be managed in the WordPress comments section (learn more in the [WordPress documentation](https://codex.wordpress.org/pt-br:Painel_Coment%C3%A1rios)). 
   8. In the **Moderators** field, you can add other users for new assignments in this specific collection:
-    * To add moderators, type at least the first three letters of the user and select from the list. (See [User Permissions](/pt-br/users) to learn more).  
+    * To add moderators, type at least the first three letters of the user and select from the list. (See [User Permissions](users) to learn more).  
   9. The **slug** field allows you to change the end of the URL for this collection. By default, it is created based on the Collection Name but can be changed in this field. 
 5. Click on one of the options below (the collection will be created with the privacy parameters defined in **Status**):
-  10. Click on `Save and go to Metadata` to access the metadata configuration for this collection. (See [Metadata](/pt-br/metadada) to learn more). 
+  10. Click on `Save and go to Metadata` to access the metadata configuration for this collection. (See [Metadata](metadata) to learn more). 
   11. or
-  12. Click on `Save and go to Filters` to access the filter configuration for this collection. (See [Filters](/pt-br/filters) to learn more); 
+  12. Click on `Save and go to Filters` to access the filter configuration for this collection. (See [Filters](filters) to learn more); 
   13. Click on `Finish` to complete the configuration of this new collection.
 
 New collections can also be created with a predefined metadata model or imported from external sources.
 Collections created with predefined metadata have a set of metadata pre-established during their creation and can be managed in the same way as other collections. 
 > Since version 0.6 of the plugin, there is an option to create collections with a metadata set based on the **Dublin Core** model.
 
-> New metadata sets can be developed according to the individual needs of each installation and/or added to Tainacan (See [Plugin Development](/pt-br/dev/) to learn more about Tainacan development).
+> New metadata sets can be developed according to the individual needs of each installation and/or added to Tainacan (See [Plugin Development](dev/) to learn more about Tainacan development).
 
-See the [Bulk Actions](/pt-br/bulk-edition) and [Tainacan Importers](/pt-br/importers) sections to learn more about creating items and terms in bulk.
+See the [Bulk Actions](bulk-actions) and [Tainacan Importers](importers) sections to learn more about creating items and terms in bulk.
 
 #### ** Edit **
 ## Edit Collections
@@ -77,10 +77,10 @@ See the [Bulk Actions](/pt-br/bulk-edition) and [Tainacan Importers](/pt-br/impo
 2. In the list of displayed collections, click on the *gear icon* to the right of the desired collection;
   1. Edit the collection by changing the *status* to **public**, **private**, or **draft**; 
     * **Public**: Collections defined as public will be visible as soon as they are created; 
-    * **Draft**: *Draft* collections will be visible to users with permission to access the Tainacan administrative panel (e.g., editors, moderators, and administrators). (See [User Permissions](/pt-br/users) to learn more). 
+    * **Draft**: *Draft* collections will be visible to users with permission to access the Tainacan administrative panel (e.g., editors, moderators, and administrators). (See [User Permissions](users) to learn more). 
     * **Private**: Private collections will only be visible to their creator and moderators of this collection. 
 3. In the collections list of the **Trash** tab, it is also possible to permanently delete the collection. 
 
-!> **Attention**: Deleting the collection also implies deleting its items, metadata, and information from this collection. This operation can only be undone by administrators. (See [Activity Log](/pt-br/activities) to learn more). Delete the collection only if you are sure there will be no significant loss of information. (See [Activity Log](/pt-br/activities) to learn more).
+!> **Attention**: Deleting the collection also implies deleting its items, metadata, and information from this collection. This operation can only be undone by administrators. (See [Activity Log](activities) to learn more). Delete the collection only if you are sure there will be no significant loss of information. (See [Activity Log](activities) to learn more).
 
 <!-- tabs:end -->

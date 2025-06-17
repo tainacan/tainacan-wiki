@@ -24,9 +24,9 @@ In this article, we describe:
 
 In other articles, you can also find relevant information such as:
 
-- How to organize long lists of metadata with the [Metadata Sections](/pt-br/metadata-sections.md) feature;
-- How to edit multiple metadata at once with [Bulk Actions](/pt-br/bulk-actions.md);
-- It is also possible to import and export _“predefined metadata”_. [Consulte Importadores](/pt-br/importers.md);
+- How to organize long lists of metadata with the [Metadata Sections](metadata-sections.md) feature;
+- How to edit multiple metadata at once with [Bulk Actions](bulk-actions.md);
+- It is also possible to import and export _“predefined metadata”_. [Consulte Importadores](importers.md);
 
 ---
 
@@ -244,7 +244,7 @@ _“Relationship metadata”_ allow you to connect items from the same collectio
 
 _“Composite metadata”_ are those whose value cannot be represented in isolation by a single field. For example, a residential address can be composed of _“text”_, _“number”_ fields, and even _“selection lists”_. These fields or internal _“child metadata”_ of the composite are called _“Child Metadata”_.
 
-It is important to differentiate this concept from a [_“Metadata Section”_](/pt-br/metadata-sections.md), whose purpose is only to organize _“grouped”_ data. **For simple visual separation, do not use it**. In the case of _“composite metadata”_, it is possible to have composite multivalues, that is, a list of values constituted by different sub-values that relate to each other.
+It is important to differentiate this concept from a [_“Metadata Section”_](metadata-sections.md), whose purpose is only to organize _“grouped”_ data. **For simple visual separation, do not use it**. In the case of _“composite metadata”_, it is possible to have composite multivalues, that is, a list of values constituted by different sub-values that relate to each other.
 
 Note that, when using them:
 
@@ -353,7 +353,7 @@ Delete _“Repository-level Metadata”_:
 
    ![Access the control panel](/pt-br/_assets\images\090.png)
 
-!>**Attention**: When clicking on the _“trash icon”_, the metadata is immediately deleted. This operation cannot be undone. Deleting _“repository-level metadata”_ affects **all** already filled data and information in _“items”_ that have already been created throughout the repository. Before deleting the _“metadata”_, it is recommended that it be only disabled (until there is certainty that the deletion will not result in loss of information). Delete the _“metadata”_ only if you are sure that there will be no serious loss of information. See [Activity log](/pt-br/activities) to learn more.
+!>**Attention**: When clicking on the _“trash icon”_, the metadata is immediately deleted. This operation cannot be undone. Deleting _“repository-level metadata”_ affects **all** already filled data and information in _“items”_ that have already been created throughout the repository. Before deleting the _“metadata”_, it is recommended that it be only disabled (until there is certainty that the deletion will not result in loss of information). Delete the _“metadata”_ only if you are sure that there will be no serious loss of information. See [Activity log](activities) to learn more.
 
 ### Delete Metadata at the Collection Level
 
