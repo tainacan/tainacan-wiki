@@ -13,7 +13,8 @@ Tainacan is developed as a WordPress plugin, leveraging its native structure and
 * **Entities**: Representations of business objects (collections, items, metadata, etc.).
 * **Repositories**: Responsible for abstracting access to the database.
 * **Controllers**: Handle requests received via the REST API.
-* **Business Services**: Encapsulate specific rules and transformations.
+
+There are other parts of the code that leverage functionality related to consuming and manipulating data but these three are the most relevant.
 
 ### 1.1 Main Entities and Repositories
 
@@ -49,7 +50,6 @@ Tainacan's REST API provides a comprehensive set of endpoints for managing the s
 * CRUD for collections, items, metadata, filters, taxonomies
 * Bulk operations and editing of multiple items
 * Import/export sessions
-* Asynchronous processing
 * Faceted search and facet retrieval
 
 ### 2.2 Detailed Documentation
