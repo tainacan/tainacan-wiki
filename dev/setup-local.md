@@ -1,4 +1,4 @@
-# Setting up your local environment
+# Seting up your local enviroment
 
 This document will run you through setting up your local environment and running the tests. If you haven't done it yet, please have a look at [key concepts](key-concepts.md) so you can have a better understanding of the project.
 
@@ -14,98 +14,89 @@ Overview of folders:
 
 This repository includes all the tools needed to develop Tainacan, such as tests and other scripts to compile sass and other things.
 
-## Before you start
+## Updating pakages and installing requirements
+sudo apt update
 
-Tainacan is a WordPress plugin, so you will need all the basic dependencies you usually have to run a WordPress site, such as PHP and MySQL.
+sudo apt install -y php php-mysql php-mysqli phpunit composer ruby ruby-dev nodejs npm mysql-server apache2 libapache2-mod-php unzip curl wget
 
-You will also need:
-
-- `Composer` to manage dependencies
-- `Sass` to compile sass into css files
-- `WP-Cli` to configure the test environment
-- `Phpunit` to run unit tests
-- `Node` to handle dependencies and build the JS application
-
-```
-sudo apt-get install phpunit composer ruby ruby-dev nodejs npm
 sudo gem install sass
-```
 
-- To install WP-Cli, check [the official documentation](https://wp-cli.org/#installing).
+## Verify if you have those requirements
+php -v
 
-## Setting up
+mysql --version
 
-First of all, clone this repository.
+## If not, install them with:
+ sudo apt install php
 
-Note that you can NOT clone it directly in the WordPress `plugins` directory. Clone it in a folder of its own and configure your build to point to your local WordPress `plugins` folder.
+ sudo apt install mysql-server
 
-```
-git clone git@git.github.com:tainacan/tainacan.git
-```
+## Install WP-CLI
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 
-Set up a WordPress installation. This could be a dedicated installation to develop Tainacan or you can use an existing instance you have. It is up to you, but you will need one, both for developing and manually testing, as well to run automated integration tests.
+chmod +x wp-cli.phar
 
-## Build
+sudo mv wp-cli.phar /usr/local/bin/wp
 
-When we want to build the plugin, we run `build.sh` that installs any dependencies, compiles all the assets (sass and js) and moves the files to the plugin directory. This compiled version of the plugin is the one added to the official WordPress Plugin repository.
+## Test if WP-CLI was installed correctly
+wp --info
 
-In order to use it, make a copy of `build-config-sample.cfg` and name it only `build-config.cfg`. Edit and fill in your environment details:
+## Crete diretpry and install WordPress
+mkdir -p ~/meu-site
 
-- `wp_base_dir`: The base directory for you local WordPress installation, used for development and testing. e.g `~/develop/wordpress`
-- `wp_url`: The base URL for your local WordPress installation/ e.g `http://localhost/wp`
-- `wp_plugin_dir`: The directory for your plugin build. Should be a directory inside `wp_base_dir`. e.g `~/develop/wordpress/wp-content/plugins/test-tainacan`
+cd ~/meu-site
 
-Once you are ready, you can run:
+wp core download
 
-```
+## Create a root user on MySQL
+sudo mysql -u root -p
+
+You are going to need to assing a password to your root user
+
+### On MySQL prompt create your database and user for WordPress:
+ CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ 
+ CREATE USER 'wpuser'@'localhost' IDENTIFIED WITH mysql_native_password BY '<YOUR PASSWORD>';
+ 
+ GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost';
+ 
+ FLUSH PRIVILEGES;
+ 
+ EXIT;
+
+## Setting up WordPress config
+wp config create --dbname=wordpress --dbuser=wpuser --dbpass=SUA_SENHA
+
+## Clone the Tinacan repository on github
+Go to [Tainacan repository](https://github.com/Tainacan-GCES-2025-1/tainacan) and clone it
+
+## Rename and edit build-config.cfg file on your repository clone
+mv build-config-sample.cfg build-config.cfg
+
+nano build-config.cfg
+
+## your build-config.cfg should look like this:
+wp_base_dir=~/meu-site
+
+wp_url=http://localhost/wordpress
+
+wp_plugin_dir=~/meu-site/wp-content/plugins/tainacan
+
+## Install JS dependencies
+npm install
+
+## Configure Apache
+sudo rm /var/www/html/index.html
+
+sudo cp -r ~/meu-site/* /var/www/html/
+
+sudo chown -R www-data:www-data /var/www/html/
+
+sudo chmod -R 755 /var/www/html/
+
+sudo ufw allow 'Apache'
+
+sudo systemctl restart apache2
+
+## Run build.sh
 ./build.sh
-```
-
-While developing, you might want to run `build-watch.sh`. This script will watch your development folder for changes and automatically build the plugin so you don't have to do it manually every time you modify a file.
-
-## Tests
-
-Tainacan uses `phpunit` to run tests for the backend and the API. This is a very important part of the development process! Never commit anything before running all the tests to make sure you did not break anything. If you are developing a new feature, you must write tests for it. If you are fixing a bug, you should first write a test that reproduces the bug and then make it pass.
-
-To execute all the tests, simply execute the `phpunit` command from the project root folder. But first, you need to configure PHPUnit.
-
-### Preparing PHPUnit
-
-To run the unit tests it is necessary to create a new MySQL database for your unit tests. This database will be cleaned and restored every time you run PHPUnit.
-
-Install the WordPress test library by running the script provided in the `tests/bin` folder, by running the following command:
-
-```
-tests/bin/install-wp-tests.sh wordpress_test root root /path/to/wordpress-test-folder localhost latest
-```
-
-The parameters are:
-
-- Database name
-- MySQL username
-- MySQL password
-- WordPress Test Directory\*
-- MySQL host
-- WordPress version
-- Optional: skip create database
-
-\* `WordPress Test Directory` will be created with 2 subfolders:
-
-- `wordpress-test` - An installation of WordPress
-- `wordpress-tests-lib` - As the name says, the WordPress Tests Library
-
-Inside the `tests` folder, edit the file called `bootstrap-config-sample.php` and inform the folder where you installed your WordPress Test Library. This will be `/path/to/wordpress-test-folder/wodpress-tests-lib`. Save the file as `bootstrap-config.php`.
-
-Note that the installation script will create a config file in the destination folder with your database credentials. If you have to change it, you will need to edit it there.
-
-You only need to do all this once, and now you are ready to run tests.
-
-#### Running tests
-
-Simply type this command from the project root folder:
-
-```
-phpunit
-```
-
-(Note that `phpunit` accepts several parameters, for example, if you want to run just a specific group of tests).
