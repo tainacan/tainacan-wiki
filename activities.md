@@ -1,54 +1,52 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
-
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Atividades" 
+		alt="Activities Icon" 
 		src="_assets/images/icon_logs.png"
 		width="42"
 		height="42">
 </div>
 
-# Registro de Atividades
+# Activity Log
 
-Todas ações realizadas no repositório são registradas: a criação, edição e exclusão de coleções, metadados, itens e taxonomias.
+All actions performed in the repository are recorded: the creation, editing and deletion of collections, metadata, items and taxonomies.
 
-Ao clicar em uma atividade, é exibida uma janela com:
+When you click on an activity, a window appears with:
 
-* Descrição da atividade
-* Data e hora da atividades
-* Autor da atividade
-* Duas listas:
-  * À esquerda o quadro reúne informações **antes** da alteração
-  * À direita o quadro reúne as informações **depois** da alteração
-* Administradores podem reverter estas alterações clicando em 
+* Activity description  
+* Date and time of the activity  
+* Activity author  
+* Two lists:
+  * On the left, a panel gathers information **before** the change  
+  * On the right, a panel gathers information **after** the change  
+* Administrators can revert these changes by clicking on  
 
-?> _TODO_ Completar onde administradores devem ir para reverter alterações
+?> _TODO_ Complete where administrators should go to revert changes
 
-As atividades são registradas e podem ser consultadas e revertidas a nível de repositório, coleção e em cada item.
+Activities are recorded and can be queried and reversed at the repository, collection and item level.
 
-## Repositório:
+## Repository:
 
-Reúne atividades como criação, edição e exclusão de: coleções, metadados e filtros a nível de repositório e taxonomias. Em registros de atividades a nível de repositório processos de importação e exportação também podem ser acompanhados e ficam registrados na aba processos.
+It gathers activities such as creation, editing and deletion of: collections, metadata and filters at repository and taxonomies level. In repository-level activity logs, import and export processes can also be tracked and are recorded in the processes tab.
 
-1. Acesse o painel de controle do *WordPress*
-2. Na barra lateral esquerda, clique em Tainacan
-3. Clique em **Atividades do Repositório**
+1. Access the *WordPress* dashboard  
+2. In the left sidebar, click on Tainacan  
+3. Click on **Repository Activities**
 
-## Coleção:
+## Collection:
 
-Reúne atividades como criação, edição e exclusão de itens, configurações de metadados e filtros a nível de coleção e configurações da coleção.
+It encompasses activities such as creating, editing, and deleting items, setting metadata and filters at the collection level, and collection settings.
 
-1. Acesse o painel de controle do *WordPress*
-2. Na barra lateral esquerda, clique em Tainacan
-3. Clique na coleção desejada na seção **Coleções**
-4. Clique no ícone de **registro de atividades** à direita, na barra superior cinza.
+1. Access the *WordPress* control panel
+2. In the left sidebar, click Tainacan
+3. Click on the desired collection in the **Collections** section
+4. Click on the **activity log** icon on the right, in the gray top bar.
 
 ## Item
 
-Reúne atividades como criação, edição e exclusão de valores no item.
+It includes activities such as creating, editing and deleting values ​​in the item.
 
-1. Acesse o painel de controle do *WordPress*
-2. Na barra lateral esquerda, clique em Tainacan
-3. Clique na coleção desejada na seção **Coleções**
-4. Clique no item desejado
-5. Em seguida, clique no aba de **Atividades** à direita.
+1. Access the *WordPress* dashboard  
+2. In the left sidebar, click on Tainacan  
+3. Click on the desired collection in the **Collections** section  
+4. Click on the desired item  
+5. Then, click on the **Activities** tab on the right

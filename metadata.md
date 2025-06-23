@@ -1,235 +1,235 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Metadados" 
+		alt="Metadata Icon" 
 		src="/_assets/images/icon_metadata.png"
 		width="42"
 		height="42">
 </div>
 
-# Metadados
+# Metadata
 
-No Tainacan, os _“itens”_ são organizados por meio de _“coleções”_ e, cada _“coleção”_, pode ter _“metadados”_ específicos ou compartilhar _“metadados”_ entre si. Os _“metadados”_ são usados para descrever os _“itens”_, visando sua recuperação.
+In Tainacan, _“items”_ are organized through _“collections”_, and each _“collection”_ can have specific _“metadata”_ or share _“metadata”_ among themselves. _“Metadata”_ are used to describe _“items”_, aiming at their retrieval.
 
-> Os _“metadados”_ definem as características, parâmetros e especificidades das informações que serão inseridas junto com o documento digital durante o envio de _“itens”_ para as _“coleções”_. É similar, por exemplo, às configurações dos campos que farão parte de um “_formulário”_, ou aos campos de uma “_ficha museológica”_.
+> _“Metadata”_ define the characteristics, parameters, and specificities of the information that will be inserted along with the digital document during the submission of _“items”_ to the _“collections”_. It is similar, for example, to the configuration of fields that will be part of a “_form”_, or the fields of a “_museum record”_.
 
-Cada _“metadado”_ tem um conjunto de configurações possíveis: É um _“metadado obrigatório”_? Seus _“valores”_ são _únicos_ para cada _“item”_ (número de registro, por exemplo)? Ele aceita _“múltiplos valores”_ (vários autores, por exemplo)?
+Each _“metadata”_ has a set of possible configurations: Is it _“mandatory metadata”_? Are its _“values”_ _unique_ for each _“item”_ (registration number, for example)? Does it accept _“multiple values”_ (multiple authors, for example)?
 
-Neste artigo, descrevemos:
+In this article, we describe:
 
-- As [características gerais dos metadados](#características-gerais-de-metadados), presentes em todos os tipos;
-- Como criar metadados, seja à [nível repositório](#criar-metadados) ou [nível coleção](#criar-metadados-à-nível-de-coleções);
-- Os [tipos de metadados](#tipos-de-metadados) e suas particularidades;
-- Como [editar metadados](#editar-metadados) existentes;
-- Como [excluir metadados](#excluir-metadados);
+- The [general characteristics of metadata](#características-gerais-de-metadados), present in all types;
+- How to create metadata, either at the [repository level](#criar-metadados) or [collection level](#criar-metadados-à-nível-de-coleções);
+- The [types of metadata](#tipos-de-metadados) and their particularities;
+- How to [edit existing metadata](#editar-metadados);
+- How to [delete metadata](#excluir-metadados);
 
-Em outros artigos, você também pode ver informações relevantes como:
+In other articles, you can also find relevant information such as:
 
-- Como organizar listas longas de metadados com o recurso das [Seções de Metadados](/pt-br/metadata-sections.md);
-- Como editar vários metadados de uma vez com as [Ações em Massa](/pt-br/bulk-actions.md);
-- Também é possível importar e exportar _“metadados predefinidos”_. [Consulte Importadores](/pt-br/importers.md);
+- How to organize long lists of metadata with the [Metadata Sections](metadata-sections.md) feature;
+- How to edit multiple metadata at once with [Bulk Actions](bulk-actions.md);
+- It is also possible to import and export _“predefined metadata”_. [Consulte Importadores](importers.md);
 
 ---
 
-## Características gerais de metadados
+## General characteristics of metadata
 
-- Por padrão, todas as _“coleções”_ possuem os _“metadados”_ de _“Título”_ e _“Descrição”_, que não podem ser excluídos, mas, podem ser _“editados”_ ou _“desabilitados”_. Estes _“metadados”_ são usados em algumas listagens dentro do Tainacan para representar o _“item”_;
-- _“Metadados herdados”_ podem ser “_habilitados”_ ou “_desabilitados”_, o que implica na sua existência para o preenchimento durante o envio de um novo _“item”_ e, também, na sua ausência (com seus respectivos dados) durante a visualização de _“coleções”_ e dos _“itens”_;
-- **_“Metadados a nível de repositório”_ são herdados por todas as _“coleções”_** no repositório, assinalados com “_herdado_” à frente do nome;
-- Não é possível alterar o _“Tipo do Metadado”_. Por exemplo, alterar um _“metadado”_ do tipo “_Texto”_ para “_Texto Longo”_, ou “_Numérico”_ para “_Data”_, após sua criação;
-- _“Metadados”_ que não foram herdados do repositório podem ser excluídos, e apresentam um _“ícone de lixeira”_ à frente. Consulte [Excluir metadados](#excluir-metadados) para saber mais.
+- By default, all _“collections”_ have the _“Title”_ and _“Description”_ _“metadata”_, which cannot be deleted but can be _“edited”_ or _“disabled”_. These _“metadata”_ are used in some listings within Tainacan to represent the _“item”_;
+- _“Inherited metadata”_ can be “_enabled”_ or “_disabled”_, which implies their existence for completion during the submission of a new _“item”_ and also their absence (with their respective data) during the visualization of _“collections”_ and _“items”_;
+- **_“Repository-level metadata”_ are inherited by all _“collections”_** in the repository, marked with “_inherited_” next to the name;
+- It is not possible to change the _“Metadata Type”_. For example, changing _“metadata”_ from type “_Text”_ to “_Long Text”_, or “_Numeric”_ to “_Date”_, after its creation;
+- _“Metadata”_ that were not inherited from the repository can be deleted and display a _“trash icon”_ next to them. See [Delete metadata](#excluir-metadados) to learn more.
 
-O Tainacan não possui um _“modelo de metadados padrão”_, e sim diferentes _“tipos de metadados”_ que podem ser escolhidos para atender as necessidades do usuário durante a montagem de seu acervo digital. A escolha correta do _“tipo de metadado”_ vai ajudar na hora do preenchimento das informações e, consequentemente, na recuperação mais precisa dos _“itens”_.
+Tainacan does not have a _“standard metadata model”_, but rather different _“types of metadata”_ that can be chosen to meet the user's needs when building their digital collection. Choosing the correct _“metadata type”_ will help when filling in the information and, consequently, in the more precise retrieval of _“items”_.
 
-Os _“metadados”_ podem ser criados de forma automática durante a importação de dados em massa, ou manualmente durante a criação da _“coleção”_ pelo _“painel administrativo”_.
+_“Metadata”_ can be created automatically during bulk data import or manually during the creation of the _“collection”_ via the _“administrative panel”_.
 
-## Criar Metadados
+## Create Metadata
 
-Os _“metadados”_ podem ser criados manualmente no nível do _“repositório”_ ou da _“coleção”_. Os _“metadados”_ criados no nível de _“repositório”_ são herdados por todas as _“coleções”_.
+_“Metadata”_ can be created manually at the _“repository”_ or _“collection”_ level. _“Metadata”_ created at the _“repository”_ level are inherited by all _“collections”_.
 
-_“Metadados”_ a nível de _“Repositório”_ devem ser pensados para permitir a inserção de informações globais, ou seja, comuns a pelo menos grande parte do repositório. Por exemplo: _“Número de Registro”, “Tipo de arquivo”, “Data do registro do item”, “Estado de Conservação”_ e etc.
+_“Repository-level metadata”_ should be designed to allow the insertion of global information, that is, common to at least a large part of the repository. For example: _“Registration Number”, “File Type”, “Item Registration Date”, “Conservation Status”_, etc.
 
-Novas _“coleções”_ podem ser criadas também com um modelo de “_metadados predefinido_” ou importadas por fontes externas. _“Coleções”_ criadas com _“metadados predefinidos”_ contam com um conjunto de _“metadados preestabelecidos”_ durante sua criação, e podem ser geridas da mesma maneira que outras _“coleções”_.
+New _“collections”_ can also be created with a model of “_predefined metadata_” or imported from external sources. _“Collections”_ created with _“predefined metadata”_ have a set of _“pre-established metadata”_ during their creation and can be managed in the same way as other _“collections”_.
 
-​Desde a versão 0.6 do plugin, existe a opção para a criação de _“coleções”_ com um conjunto de _“metadados”_ a partir do modelo _“Dublin Core”_.
+Since version 0.6 of the plugin, there is an option to create _“collections”_ with a set of _“metadata”_ based on the _“Dublin Core”_ model.
 
-​Novos conjuntos de _“metadados”_ podem ser desenvolvidos de acordo com a necessidade individual de cada instalação, e/ou adicionados ao Tainacan. Consulte [Desenvolvimento do Plugin](/dev/) para saber mais sobre o desenvolvimento do Tainacan.
+New sets of _“metadata”_ can be developed according to the individual needs of each installation and/or added to Tainacan. See [Desenvolvimento do Plugin](/dev/) to learn more about Tainacan development.
 
-1. Faça login no WordPress com seu _“nome de usuário”_ e _“senha”_;
+1. Log in to WordPress with your _“username”_ and _“password”_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Access the control panel](_assets\images\050.png)
 
-2. No _“painel administrativo”_, clique em _“Tainacan”_;
+2. In the _“administrative panel”_, click on _“Tainacan”_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Access the control panel](_assets\images\051.png)
 
-3. Clique em _“Metadados do Repositório”_;
+3. Click on _“Repository Metadata”_;
 
-   ![Acesse o painel de controle](_assets\images\070.png)
+   ![Access the control panel](_assets\images\070.png)
 
-4. Para “_criar um novo metadado”_, basta clicar no _“metadado”_ e ele aparecerá por último na listagem do lado esquerdo. Você também pode usar o recurso de arrastar e soltar, que permite a _“ordenação do metadado”_ durante sua criação.
+4. To “_create new metadata”_, simply click on the _“metadata”_, and it will appear last in the listing on the left side. You can also use the drag-and-drop feature, which allows _“metadata ordering”_ during its creation.
 
-## Criar Metadados à nível de Coleções
+## Create Metadata at the Collection Level
 
-- “Metadados” a nível de “coleção” são aplicados apenas aos “itens” criados nesta “coleção”. Os metadados também são em coleções “filhas” desta coleção;
-- Crie ou escolha a “coleção” que deseja “criar novos metadados”. Consulte Criar coleção para saber mais;
+- Metadata at the collection level is applied only to the items created in that collection. The metadata is also applied to child collections of that collection;
+- Create or choose the collection where you want to create new metadata. See Create collection to learn more;
 
-1. Faça login no WordPress com seu _“nome de usuário”_ e _“senha”_;
+1. Log in to WordPress with your _“username”_ and _“password”_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Access the control panel](_assets\images\050.png)
 
-2. No _“painel administrativo”_ clique em _“Tainacan”;_
+2. In the _“administrative panel”_ click on _“Tainacan”;_
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Access the control panel](_assets\images\051.png)
 
-3. Crie uma _“coleção”_ como apresentado no tópico "_Criar Coleções_";
+3. Create a _“collection”_ as presented in the "_Create Collections_" topic;
 
-4. Acesse a _“coleção”_ criada e clique em _“Metadados”;_
+4. Access the created _“collection”_ and click on _“Metadata”;_
 
-   ![Acesse o painel de controle](_assets\images\064.png)
+   ![Access the control panel](_assets\images\064.png)
 
-5. Para _“criar um novo metadado”_, basta clicar no _“metadado”_ e ele aparecerá por último na listagem do lado esquerdo. Você também pode usar o recurso de arrastar e soltar, que permite a _“ordenação do metadado”_ durante sua criação. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados)[Tipos de metadados](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados) para saber o _“metadado”_ mais adequado para cada tipo de informação;
+5. To _“create new metadata”_, simply click on the _“metadata”_, and it will appear last in the listing on the left side. You can also use the drag-and-drop feature, which allows _“metadata ordering”_ during its creation. See[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados)[Types of metadata](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados) to find out the most suitable _“metadata”_ for each type of information;
 
-6. Cada _“metadado”_ criado tem um conjunto de configurações e funções individuais para configuração. Abaixo, descrevemos as funções gerais que podem ser configuradas em praticamente todos os _“metadados”_. Consulte a área de metadados para aprender a usar configurações específicas (linkar);
+6. Each _“metadata”_ created has a set of individual configuration and function options. Below, we describe the general functions that can be configured in practically all _“metadata”_. See the metadata area to learn how to use specific settings (linkar);
 
-   ![Acesse o painel de controle](_assets\images\071.png)
+   ![Access the control panel](_assets\images\071.png)
 
-   **“Nome”**: Nome do _“Metadado”_, Por exemplo: _“Material do item”_, _“Estado de conservação”_, e etc.;
+   **“Name”**: Name of the _“Metadata”_, For example: _“Item Material”_, _“Conservation Status”_, etc.;
 
-   **“Descrição”**: Breve descrição, útil para descrever ou explicar como o _“metadado”_ deve ser preenchido. A descrição pode ser visualizada passando o cursor por sobre o ponto de interrogação, que fica ao lado do _“metadado”_, durante o preenchimento;
+   **“Description”**: Brief description, useful to describe or explain how the _“metadata”_ should be filled. The description can be viewed by hovering the cursor over the question mark icon, which is next to the _“metadata”_, during filling;
 
-   ![Acesse o painel de controle](_assets\images\descricao_metadado.png)
+   ![Access the control panel](_assets\images\descricao_metadado.png)
 
-   **“Placeholder (espaço reservado)”**: Campo usado por _metadados_ com campo de texto para dar uma curta instrução de preenchimento. Por exemplo: _"Digite aqui o nome completo..."_.
+   **“Placeholder (reserved space)”**: Field used by _metadata_ with text field to give a short filling instruction. For example: _"Type the full name here..."_.
 
-   **“Status”**: Determina o nível de privacidade do _“metadado”_, ou seja, para informações sensíveis que não devem ficar disponíveis aos visitantes ou para um papel específico. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/users)[Permissões de Usuários](https://tainacan.github.io/tainacan-wiki/#/pt-br/users) para saber mais detalhes;
+   **“Status”**: Determines the privacy level of the _“metadata”_, that is, for sensitive information that should not be available to visitors or for a specific role. See[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/users)[User Permissions](https://tainacan.github.io/tainacan-wiki/#/pt-br/users) for more details;
 
-   ​ ■ “Visível para todos”: São exibidos junto com o “item”, a depender do nível de privacidade deste “item” e a “coleção” a qual pertence;
+   ​ ■ “Visible to all”: Are displayed together with the “item”, depending on the privacy level of this “item” and the “collection” to which it belongs;
 
-   ​ ■ “Visível apenas para editores”: São exibidos apenas para administradores, editores e moderadores da _“coleção”_. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/users)[Permissões de Usuários](https://tainacan.github.io/tainacan-wiki/#/pt-br/users) para saber mais detalhes.
+   ​ ■ “Visible only to editors”: Are displayed only to administrators, editors, and moderators of the _“collection”_. See[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/users)[User Permissions](https://tainacan.github.io/tainacan-wiki/#/pt-br/users) for more details.
 
-   **“Exibir na Listagem”**: Determina se o _“metadado”_ é apresentado por padrão na visualização dos itens:
+   **“Display in Listing”**: Determines whether the _“metadata”_ is presented by default in the item visualization:
 
-   ​ ■ “Exibir por padrão”: O “metadado” é exibido por padrão na página de visualização da “coleção” (dependendo do tipo de visualização) e, na pré-visualização do “item”;
+   ​ ■ “Display by default”: The “metadata” is displayed by default on the “collection” visualization page (depending on the type of visualization), and in the preview of the “item”;
 
-   ​ ■ “Não exibir por padrão”: O “metadado” não é exibido por padrão na visualização da “coleção”, mas, pode ser selecionado para exibição pelo usuário (dependendo do tipo de visualização), e exibido na pré-visualização do “item”;
+   ​ ■ “Do not display by default”: The “metadata” is not displayed by default in the “collection” visualization, but can be selected for display by the user (depending on the type of visualization), and displayed in the preview of the “item”;
 
-   ​ ■ “Nunca exibir”: O “metadado” não é exibido na visualização da “coleção” e, também não aparece como opção para seleção na página de visualização da “coleção”. O _“metadado”_ continua visível na visualização do _“item”_, altere o _“status do metadado”_ para mudar seu nível de privacidade.
+   ​ ■ “Never display”: The “metadata” is not displayed in the “collection” visualization and is also not available as an option for selection on the “collection” visualization page. The _“metadata”_ remains visible in the _“item”_ visualization, change the _“metadata status”_ to change its privacy level.
 
-   **“Opções de preenchimento”**:
+   **“Filling options”**:
 
-   ​ ■ “Obrigatório”: Determina se o preenchimento do “metadado” é obrigatório. Isso implica no envio do “item”, que não é permitido caso o campo de preenchimento deste “metadado” esteja vazio;
+   ​ ■ “Mandatory”: Determines whether filling in the “metadata” is mandatory. This implies the submission of the “item”, which is not allowed if the filling field of this “metadata” is empty;
 
-   ​ ■ “Único ou Múltiplo”: Determina se o “metadado” permite a inserção de um único valor ou múltiplos valores, como, por exemplo, “metadados” sobre “Cor”, “Material” e etc;
+   ​ ■ “Unique or Multiple”: Determines whether the “metadata” allows the insertion of a single value or multiple values, such as, for example, “metadata” about “Color”, “Material”, etc;
 
-   ​ ■ “Valor Único”: Determina que o valor inserido no “metadado” não se repete em outros “itens” no repositório (para “metadados” criados a nível de repositório) ou na mesma “coleção” (para “metadados” criados a nível de “coleção”).
+   ​ ■ “Unique Value”: Determines that the value inserted in the “metadata” does not repeat in other “items” in the repository (for “metadata” created at the repository level) or in the same “collection” (for “metadata” created at the collection level).
 
-   **“URL Semântica”**: URL da descrição semântica do _“metadado”_. Configuração opcional;
+   **“Semantic URL”**: URL of the semantic description of the _“metadata”_. Optional configuration;
 
-   Dependendo do _“tipo de metadado”_, também existem opções específicas a serem configuradas. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados)[Tipos de metadados](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados) para mais detalhes.
+   Depending on the _“metadata type”_, there are also specific options to be configured. See[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados)[Types of metadata](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados) for more details.
 
-7. Após preencher e configurar o _“metadado”_, clique em _“Salvar”_, ou clique em _“Cancelar”_ para abortar a missão. Uma vez salvo, o _“metadado”_ criado aparecerá como um campo a ser preenchido durante o envio e a edição de novos _“itens”_.
+7. After filling in and configuring the _“metadata”_, click on _“Save”_, or click on _“Cancel”_ to abort the mission. Once saved, the created _“metadata”_ will appear as a field to be filled in during the submission and editing of new _“items”_.
 
-## Tipos de Metadados
+## Types of Metadata
 
-A seguir, descrevemos cada um dos _“tipos de metadados”_ disponíveis e suas configurações.
+Below, we describe each of the available _“metadata types”_ and their configurations.
 
-### Texto simples
+### Simple text
 
-Para _“metadados”_ de textos curtos e livres. Não permite a inserção de parágrafos;
+For _“metadata”_ of short and free texts. Does not allow the insertion of paragraphs;
 
-![Acesse o painel de controle](_assets\images\066.png)
+![Access the control panel](_assets\images\066.png)
 
-### Área de Texto
+### Text Area
 
-Para _“metadados”_ de textos curtos e livres. Permite a inserção de parágrafos;
+For _“metadata”_ of short and free texts. Allows the insertion of paragraphs;
 
-![Acesse o painel de controle](_assets\images\067.png)
+![Access the control panel](_assets\images\067.png)
 
-### Data
+### Date
 
-Para _“metadados”_ de datas completas no formato _“DD/MM/AAAA”_. Caso não tenha a data completa, sugerimos escolher outros campos para a inserção de datas, tais como _“numérico”_ e _“texto curto”_. Este _“metadado”_ permite a recuperação de _“itens”_ por intervalos de tempo em dois tipos de filtros. Acesse Filtros disponíveis para cada Tipo de Metadado para saber mais;
+For _“metadata”_ of complete dates in the _“DD/MM/YYYY”_ format. If you do not have the complete date, we suggest choosing other fields for date insertion, such as _“numeric”_ and _“short text”_. This _“metadata”_ allows the retrieval of _“items”_ by time intervals in two types of filters. Access Filters available for each Metadata Type to learn more;
 
-![Acesse o painel de controle](_assets\images\076.png)
+![Access the control panel](_assets\images\076.png)
 
-### Numérico
+### Numeric
 
-Para _“metadados”_ que contenham apenas números. Este tipo de _“metadado”_ permite a recuperação de _“itens”_ por intervalos. Acesse Filtros disponíveis para cada Tipo de Metadado para saber mais;
+For _“metadata”_ that contain only numbers. This type of _“metadata”_ allows the retrieval of _“items”_ by intervals. Access Filters available for each Metadata Type to learn more;
 
-​■**Configurações adicionais**
+​■**Additional settings**
 
-​Passo: Você pode configurar quantidade a ser incrementada/decrementada ao clicar nos botões de controle durante o preenchimento do _“metadado”_. Por exemplo: ao usar o _“metadado numérico”_ como _"Década"_, você pode configurar o passo para 10. No preenchimento, ao clicar nas setas, o valor será incrementado de 10 em 10.
+​Step: You can configure the amount to be incremented/decremented when clicking the control buttons during the filling of the _“metadata”_. For example: when using the _“numeric metadata”_ as _"Decade"_, you can set the step to 10. In filling, when clicking on the arrows, the value will be incremented by 10.
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/_hRrB6wVY7k" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-### Lista de seleção
+### Selection list
 
-Para _“metadados”_ que possuem um pequeno conjunto de termos controlados. Diferentemente da _“taxonomia”_, os termos não viram link na página do _“item”_ e não possuem uma página própria;
+For _“metadata”_ that have a small set of controlled terms. Unlike _“taxonomy”_, the terms do not become links on the _“item”_ page and do not have their own page;
 
-​■**Configurações adicionais**:
+​■**Additional settings**:
 
-​Os termos são adicionados no campo _“Opções”_. Para adicionar mais valores, basta escrever o termo e clicar no \*“Enter”**\*;**
+​The terms are added in the _“Options”_ field. To add more values, just type the term and click on the \*“Enter”**\*;**
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/-UoNKi7KfBw" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-!>**Atenção**: Para criar novos termos na lista de seleção, é necessário que o usuário tenha permissão para a edição do “metadado” em questão. O “metadado” de lista de seleção não permite a criação de novos termos durante o preenchimento, estes termos precisam ser configurados previamente.
+!>**Attention**: To create new terms in the selection list, the user must have permission to edit the metadata in question. The selection list "metadata" does not allow the creation of new terms during filling; these terms need to be configured beforehand.
 
-### Taxonomias
+### Taxonomies
 
-“\*Metadados do tipo Taxonomia**\*”** usam uma _“taxonomia”_ criada previamente. Este tipo de _“metadado”_ é especialmente útil para informações estruturadas a partir de um _“vocabulário controlado”_, permitindo inclusive a hierarquização de termos. Abaixo, apresentamos os passos para configurar um metadado do tipo _“Taxonomia”_.
+“\*Taxonomy type metadata**\*”** use a _“taxonomy”_ created beforehand. This type of _“metadata”_ is especially useful for structured information from a _“controlled vocabulary”_, allowing even the hierarchization of terms. Below, we present the steps to configure a metadata of the _“Taxonomy”_ type.
 
-​■**Configurações adicionais:**
+​■**Additional settings:**
 
-​Como informado acima, é necessário criar primeiro uma _“Taxonomia”_. Esta será usada durante o processo de criação de um _“Metadado de Taxonomia”_:
+​As mentioned above, it is necessary to first create a _“Taxonomy”_. This will be used during the creation process of a _“Taxonomy Metadata”_:
 
-1.Crie uma _“taxonomia”_. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/taxonomies?id=criar-taxonomias)[Criar Taxonomias](https://tainacan.github.io/tainacan-wiki/#/pt-br/taxonomies?id=criar-taxonomias) para conhecer mais;
+1.Create a _“taxonomy”_. See[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/taxonomies?id=criar-taxonomias)[Create Taxonomies](https://tainacan.github.io/tainacan-wiki/#/pt-br/taxonomies?id=criar-taxonomias) to learn more;
 
-2.Crie um _“metadado”_ do tipo _“Taxonomia”_. Consulte Criar Metadados para saber mais;
+2.Create a _“metadata”_ of the _“Taxonomy”_ type. See Create Metadata to learn more;
 
-3.Na área de _“edição do metadado”_, selecione a _“taxonomia”_ desejada para o preenchimento dos valores no _“metadado”_;
+3.In the _“metadata editing area”_, select the desired _“taxonomy”_ for filling in the values in the _“metadata”_;
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/bDy0FQFolAs" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-4.Escolha o tipo de entrada de informações durante o preenchimento dos valores no _“metadado”_;
+4.Choose the type of information entry during the filling of the values in the _“metadata”_;
 
-![Acesse o painel de controle](_assets\images\077.png)
+![Access the control panel](_assets\images\077.png)
 
-​■**Entrada do tipo** **“Tag input”**:
+​■**Entry of the type** **“Tag input”**:
 
-Neste tipo de entrada, é oferecido ao usuário somente uma caixa de busca. Os termos podem ser explorados por meio de digitação e busca;
+In this type of entry, the user is offered only a search box. The terms can be explored by typing and searching;
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/RUaAFqM_XmE" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-■**Entrada do tipo** **"Checkbox”:**
+■**Entry of the type** **"Checkbox”:**
 
-Este tipo de entrada ajuda o usuário a saber quais são os termos disponíveis para escolha em uma determinada _“Taxonomia”_. Os termos podem ser explorados em ordem alfabética ou por meio de digitação e busca;
+This type of entry helps the user to know which terms are available for selection in a given _“Taxonomy”_. The terms can be explored in alphabetical order or by typing and searching;
 
 <iframe    width="560"    height="513"     src="https://www.youtube.com/embed/6-3nRtvMvXQ" title="YouTube video player"    frameborder="0"    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen></iframe>
 
-5.Marque a opção _“Lista de opções sempre visível”_ se você está exibindo uma lista de caixa de seleção ou entrada de rádio e deseja que, durante o preenchimento, a lista de opções esteja sempre visível. Esta opção só está disponível para a entrada do tipo _“Checkbox”;_
+5.Check the _“Options list always visible”_ option if you are displaying a checkbox or radio button list and want the options list to be always visible during filling. This option is only available for the _“Checkbox”_ type entry;
 
-![Acesse o painel de controle](_assets\images\080.png)
+![Access the control panel](_assets\images\080.png)
 
-6.Se necessário, habilite _“Permitir termos novos”_ para autorizar que novos termos de _“Taxonomia”_ sejam criados durante o envio de _“itens”_.
+6.If necessary, enable _“Allow new terms”_ to authorize the creation of new _“Taxonomy”_ terms during the submission of _“items”_.
 
-![Acesse o painel de controle](_assets\images\081.png)
+![Access the control panel](_assets\images\081.png)
 
-■**“Link filtrado para a coleção”**
+■**“Filtered link to the collection”**
 
-Os termos de _“Taxonomia”_ se transformam em itens na página do _“Item”_. Isto dá ao usuário a possibilidade de visitar uma faceta ou recorte do acervo. Por exemplo: em uma ficha de uma moeda de ouro, ao clicar no link referente ao termo _"ouro"_ o visitante terá acesso a todos os _“itens”_ que foram classificados com o mesmo material. Como uma _“Taxonomia”_ pode ser compartilhada entre diferentes _“coleções”_ no Tainacan, você pode configurar se o link do _“item”_ vai dar acesso a itens de outras coleções ou somente da coleção em que o item está inserido.
+The terms of _“Taxonomy”_ become items on the _“Item”_ page. This gives the user the possibility to visit a facet or cut of the collection. For example: in a record of a gold coin, when clicking on the link referring to the term _"gold"_, the visitor will have access to all _“items”_ that have been classified with the same material. As a _“Taxonomy”_ can be shared among different _“collections”_ in Tainacan, you can configure whether the _“item”_ link will give access to items from other collections or only from the collection in which the item is inserted.
 
-![Acesse o painel de controle](_assets\images\082.png)
+![Access the control panel](_assets\images\082.png)
 
-### Relacionamento
+### Relationship
 
-_“Metadados de Relacionamento”_ permitem fazer a conexão entre itens de uma mesma coleção ou entre itens de coleções distintas, ou seja, atribuem um item de uma coleção como valor para seu preenchimento;
+_“Relationship metadata”_ allow you to connect items from the same collection or between items from different collections, that is, assign an item from one collection as a value for its filling;
 
-​■**“Configurações adicionais”**
+​■**“Additional settings”**
 
-1.Selecione a _“coleção relacionada”_ para apontar a origem da lista de _“itens”_ no preenchimento do _“metadado”_;
+1.Select the _“related collection”_ to point to the source of the _“items”_ list in the filling of the _“metadata”_;
 
-2.Quando uma _“coleção”_ é selecionada, a seção _“Metadados para busca”_ permite escolher os metadados desta _“coleção”_ que irão auxiliar na localização de _“itens”_ durante o preenchimento deste _“metadado”_;
+2.When a _“collection”_ is selected, the _“Search Metadata”_ section allows you to choose the metadata of this _“collection”_ that will assist in locating _“items”_ during the filling of this _“metadata”_;
 
-3.Habilite _“permitir itens repetidos”_ para que um mesmo _“item”_ da _“coleção relacionada”_ seja atribuído como valor do _“metadado”_ em diferentes _“itens”_.
+3.Enable _“allow repeated items”_ so that the same _“item”_ from the _“related collection”_ can be assigned as the value of the _“metadata”_ in different _“items”_.
 
 <iframe
       width="560"
@@ -240,27 +240,27 @@ _“Metadados de Relacionamento”_ permitem fazer a conexão entre itens de uma
       allowfullscreen>
 </iframe>
 
-### Composto
+### Composite
 
-_“Metadados Compostos”_ são aqueles cujo valor não pode ser representado de maneira isolada por um único campo. Por exemplo, um endereço residencial pode ser composto por campos de _“texto”_, _“número”_ e até _“listas de seleção”_. Estes campos ou _“metadados”_ internos ao composto são chamados _“Metadados Filhos”_.
+_“Composite metadata”_ are those whose value cannot be represented in isolation by a single field. For example, a residential address can be composed of _“text”_, _“number”_ fields, and even _“selection lists”_. These fields or internal _“child metadata”_ of the composite are called _“Child Metadata”_.
 
-É importante diferenciar este conceito de uma [_“Sessão de Metadados”_](/pt-br/metadata-sections.md), cujo propósito é apenas de organizar dados _“agrupados”_. **Para simples separação visual, não o use**. No caso do _“metadado composto”_, é possível ter multivalores compostos, ou seja, uma lista de valores constituídos por diferentes sub-valores que se relacionam.
+It is important to differentiate this concept from a [_“Metadata Section”_](metadata-sections.md), whose purpose is only to organize _“grouped”_ data. **For simple visual separation, do not use it**. In the case of _“composite metadata”_, it is possible to have composite multivalues, that is, a list of values constituted by different sub-values that relate to each other.
 
-Note que, ao usá-los:
+Note that, when using them:
 
-● Não é possível ter uma “Taxonomia” como “Metadado filho”;
+● It is not possible to have a “Taxonomy” as a “Child Metadata”;
 
-● Um “metadado composto” não pode ser marcado como “Obrigatório” ou “Valor Único”. Esse atributo será marcado nos filhos. Se o “metadado composto”, porém, está marcado como “Aceita múltiplos valores”, seus filhos não poderão ser marcados como “Obrigatório”;
+● A “composite metadata” cannot be marked as “Mandatory” or “Unique Value”. This attribute will be marked in the children. If the “composite metadata”, however, is marked as “Accepts multiple values”, its children cannot be marked as “Mandatory”;
 
-● Os “metadados filhos” não podem ser marcados como “Multivalorados”, e não possuem opções de visualização (“Ver na lista”), estas configurações correspondem ao pai;
+● The “child metadata” cannot be marked as “Multivalued”, and do not have visualization options (“View in list”), these settings correspond to the parent;
 
-● “Metadados compostos” não estão disponíveis como opção para “Busca Avançada” ou “Edição em Massa”, apenas seus filhos.
+● “Composite metadata” are not available as an option for “Advanced Search” or “Bulk Editing”, only their children.
 
-​■**Configurações adicionais:**
+​■**Additional settings:**
 
-1.Logo ao se criar um _“metadado composto”_, uma área de criação dos filhos é formada abaixo de seu formulário. Arraste os tipos de _“metadados”_ desejados para dentro desta área para criar filhos;
+1.As soon as you create a _“composite metadata”_, an area for creating children is formed below its form. Drag the desired _“metadata types”_ into this area to create children;
 
-2.Note que a ordenação funciona internamente entre filhos, mas, uma vez criados, não é possível promover os _“metadados”_ para _“não filhos”_.
+2.Note that the ordering works internally among children, but once created, it is not possible to promote the _“metadata”_ to _“non-children”_.
 
 <iframe
       width="560"
@@ -271,112 +271,112 @@ Note que, ao usá-los:
       allowfullscreen>
 </iframe>
 
-### Usuário
+### User
 
-“_Metadados”_ do tipo _“Usuário”_ atribuem um usuário WordPress como valor para seu preenchimento. Com ele você pode vincular usuários à _“itens”_ e definir um significado para tal vínculo, em geral desejado para fins de gestão.
+“_Metadata”_ of the _“User”_ type assign a WordPress user as a value for their filling. With it, you can link users to _“items”_ and define a meaning for such a link, generally desired for management purposes.
 
-§ Caso deseje que o campo seja de início preenchido com o valor do atual “Autor do item” (o usuário que o criou), marque a opção “Por padrão é o autor do item”.
+§ If you want the field to be initially filled with the value of the current “Item Author” (the user who created it), check the option “By default, it is the item author”.
 
-> **Nota:** Marcar a opção acima não faz com que itens _“já existentes”_ tenham seus valores deste _“metadado”_ automaticamente preenchidos. Para isso, é possível usar o método _“Copiar”_ da edição em massa, passando dados para o _“metadado tipo usuário”_, vindos do atributo _“Criado por”_, que equivale ao _“autor do item”_.
+> **Note:** Checking the above option does not make _“already existing”_ items have their values of this _“user type metadata”_ automatically filled. For this, you can use the _“Copy”_ method in bulk editing, passing data to the _“user type metadata”_, coming from the _“Created by”_ attribute, which is equivalent to the _“item author”_.
 
-Atualmente o Tainacan tem nove tipos de _“metadados por padrão”_, mas novos conjuntos[ ](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type)[podem ser desenvolvidos](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type) de acordo com a necessidade individual de cada instalação e/ou adicionados ao core do Tainacan. Consulte o artigo sobre o[ ](https://tainacan.github.io/tainacan-wiki/#/dev/)[Desenvolvimento do Plugin](https://tainacan.github.io/tainacan-wiki/#/dev/) para saber mais.
+Currently, Tainacan has nine types of _“metadata by default”_, but new sets[ ](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type)[can be developed](https://tainacan.github.io/tainacan-wiki/#/dev/creating-metadata-type) according to the individual needs of each installation and/or added to the core of Tainacan. See the article on [Development of the Plugin](https://tainacan.github.io/tainacan-wiki/#/dev/) to learn more.
 
-## Editar Metadados
+## Edit Metadata
 
-Como detalhado na seção de criação de metadados, os _“metadados”_ podem ser criados tanto no _“nível de repositório”_ (serão herdados por todas as coleções), quanto no nível de uma determinada _“coleção”_. Por isso, os _“metadados”_ podem ser editados nestes dois níveis.
+As detailed in the metadata creation section, _“metadata”_ can be created both at the _“repository level”_ (will be inherited by all collections) and at the level of a specific _“collection”_. Therefore, _“metadata”_ can be edited at these two levels.
 
-### Edição no Nível do repositório
+### Editing at the Repository Level
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Access the _“control panel”_ of WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Access the control panel](/pt-br/_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. In the left sidebar, click on _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Access the control panel](/pt-br/_assets\images\051.png)
 
-3. Clique em _"Metadados de Repositório"_ (metadados que são herdados por todas as coleções);
+3. Click on _"Repository Metadata"_ (metadata that are inherited by all collections);
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\085.png)
+   ![Access the control panel](/pt-br/_assets\images\085.png)
 
-   !>**Atenção**: As modificações em configurações de _“metadados a nível de repositório”_ podem afetar dados já preenchidos e informações em itens que serão ou já foram criados em todo o repositório.
+   !>**Attention**: Changes to _“repository-level metadata”_ settings can affect data that has already been filled and information in items that will be or have already been created throughout the repository.
 
-4. Clique no _“ícone de lápis”_ à direita do _“metadado”_ que deseja editar;
+4. Click on the _“pencil icon”_ to the right of the _“metadata”_ you want to edit;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\086.png)
+   ![Access the control panel](/pt-br/_assets\images\086.png)
 
-5. Ao concluir as alterações, clique em _“Salvar”_ ou clique em _“Cancelar”_ para abortar a missão;
+5. When you finish the changes, click on _“Save”_ or click on _“Cancel”_ to abort the mission;
 
-   !>**Atenção**: Não é possível alterar o _“Tipo de Metadado”._ Por exemplo, alterar um _“metadado”_ do tipo _“Texto”_ para _“Texto Longo”_, ou _“Numérico”_ para _“Data”_.
+   !>**Attention**: It is not possible to change the _“Metadata Type”_. For example, changing _“metadata”_ from type _“Text”_ to _“Long Text”_, or _“Numeric”_ to _“Date”_.
 
-### Edição no nível da coleção
+### Editing at the Collection Level
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Access the _“control panel”_ of WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Access the control panel](/pt-br/_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. In the left sidebar, click on _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Access the control panel](/pt-br/_assets\images\051.png)
 
-3. Clique na _“coleção”_ que você deseja editar;
+3. Click on the _“collection”_ you want to edit;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\087.png)
+   ![Access the control panel](/pt-br/_assets\images\087.png)
 
-4. Clique em _“metadados”_;
+4. Click on _“metadata”_;
 
-![Acesse o painel de controle](/pt-br/_assets\images\088.png)
+![Access the control panel](/pt-br/_assets\images\088.png)
 
-5. Clique no _“ícone lápis”_ para editar o _“metadado”;_
+5. Click on the _“pencil icon”_ to edit the _“metadata”;_
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\089.png)
+   ![Access the control panel](/pt-br/_assets\images\089.png)
 
-!>**Atenção**: Não é possível alterar o _“Tipo de Metadado”_. Por exemplo, alterar um _“metadado”_ do tipo “_Texto”_ para “_Texto Longo”_, ou “_Numérico”_ para _“Data”_.
+!>**Attention**: It is not possible to change the _“Metadata Type”_. For example, changing _“metadata”_ from type “_Text”_ to “_Long Text”_, or “_Numeric”_ to _“Date”_.
 
-## Excluir Metadados
+## Delete Metadata
 
-Excluir _“Metadados a nível de Repositório”_:
+Delete _“Repository-level Metadata”_:
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Access the _“control panel”_ of WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Access the control panel](/pt-br/_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. In the left sidebar, click on _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Access the control panel](/pt-br/_assets\images\051.png)
 
-3. Clique em _"Metadados de Repositório"_ (metadados que são herdados por todas as coleções);
+3. Click on _"Repository Metadata"_ (metadata that are inherited by all collections);
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\085.png)
+   ![Access the control panel](/pt-br/_assets\images\085.png)
 
-4. Clique no “_ícone de lixeira”_ à direita do _“metadado”_ que deseja excluir;
+4. Click on the “_trash icon_” to the right of the _“metadata”_ you want to delete;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\090.png)
+   ![Access the control panel](/pt-br/_assets\images\090.png)
 
-!>**Atenção**: Ao clicar no _“ícone de lixeira”_, o metadado é excluído imediatamente. Esta operação não poderá ser desfeita. A exclusão de _“metadados a nível de repositório”_ afetam **todos** os dados já preenchidos e informações em _“itens”_ que já foram criados em todo o repositório. Antes da exclusão do _“metadado”_, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Exclua o _“metadado”_ somente se tiver certeza de que não haverá perdas graves de informação. Consulte [Registro de atividades](/pt-br/activities) para saber mais.
+!>**Attention**: When clicking on the _“trash icon”_, the metadata is immediately deleted. This operation cannot be undone. Deleting _“repository-level metadata”_ affects **all** already filled data and information in _“items”_ that have already been created throughout the repository. Before deleting the _“metadata”_, it is recommended that it be only disabled (until there is certainty that the deletion will not result in loss of information). Delete the _“metadata”_ only if you are sure that there will be no serious loss of information. See [Activity log](activities) to learn more.
 
-### Excluir Metadados a nível de _“Coleções”_
+### Delete Metadata at the Collection Level
 
-1. Acesse o _“painel de controle”_ do WordPress;
+1. Access the _“control panel”_ of WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Access the control panel](/pt-br/_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em _“Tainacan”_;
+2. In the left sidebar, click on _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Access the control panel](/pt-br/_assets\images\051.png)
 
-3. Clique na _“coleção”_ que você deseja editar;
+3. Click on the _“collection”_ you want to edit;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\087.png)
+   ![Access the control panel](/pt-br/_assets\images\087.png)
 
-4. Clique em _“metadados”;_
+4. Click on _“metadata”;_
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\088.png)
+   ![Access the control panel](/pt-br/_assets\images\088.png)
 
-5. Clique no _“ícone lixeira”_ para excluir o _“metadado”_;
+5. Click on the _“trash icon”_ to delete the _“metadata”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\091.png)
+   ![Access the control panel](/pt-br/_assets\images\091.png)
 
-!>**Atenção:** Excluir _“Metadados a nível de coleção”_ afeta as informações de todos os _“itens”_ criados nesta _“coleção”_; Na tela de edição de _“Metadados”_ (a nível de repositório ou a nível de coleção), é possível visualizar os _“metadados já criados”_ (ou herdados) na coluna à esquerda; A exclusão do _“metadado”_ implica, também, na exclusão de seus valores em todos os _“itens”_ aos quais se aplica. Antes da exclusão do _“metadado”_, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Para _“desabilitar um metadado”_, basta clicar no botão ao lado da _“caneta de edição”_.
+!>**Attention:** Deleting _“Metadata at the collection level”_ affects the information of all _“items”_ created in this _“collection”_; In the metadata editing screen (repository level or collection level), it is possible to view the _“metadata already created”_ (or inherited) in the left column; Deleting the _“metadata”_ also implies deleting its values in all _“items”_ to which it applies. Before deleting the _“metadata”_, it is recommended that it be only disabled (until there is certainty that the deletion will not result in loss of information). To _“disable a metadata”_, just click on the button next to the _“edit pencil”_.
 
-![Acesse o painel de controle](/pt-br/_assets\images\092.png)
+![Access the control panel](/pt-br/_assets\images\092.png)
