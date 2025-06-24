@@ -1,60 +1,62 @@
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Ver no Tema" 
-		src="/pt-br/_assets/images/icon_see.png"
+		alt="See in Theme Icon" 
+		src="/en/_assets/images/icon_see.png"
 		width="42"
 		height="42">
 </div>
 
-# Páginas do Tainacan
+# Tainacan Pages
 
-Com o plugin Tainacan ativado em seu WordPress, algumas páginas especiais passam a ser criadas pelo próprio plugin. São elas:
+With the Tainacan plugin activated in your WordPress site, a set of special pages is automatically created. These are:
 
-* Página de Coleções `/colecoes`;
-* Página de todos os Items do Repositório `/itens`;
-* Páginas de Itens de uma Coleção de slug *nome-da-colecao* `/nome-da-colecao`;
-* Páginas de Itens com algum metadado Taxonomia de slug *nome-da-taxonomia* que tenham um Termo de slug *nome-do-termo* `/nome-da-taxonomia/nome-do-termo`;
+* **Collections Page** (`/collections`)
+* **All Items Page** (`/items`)
+* **Items Page of a Specific Collection** (`/collection-name`)
+* **Items Page of a Specific Taxonomy Term** (`/taxonomy-name/term-name`)
 
-A medida que você cria Coleções, Itens e Termos, automaticamente já poderá ter acesso no seu site nestes endereços. Em geral, no painel administrativo do Tainacan, você encontra links para estas páginas em botões com ícones de olho (como o que se encontra no topo direito desta página). Para além disso, também é possível configurar suas *próprias páginas* apresentando suas coleções ou explicando algo sobre seu repositório. São dois caminhos diferentes, mas que estão à sua disposição graças à **integração do Tainacan com o WordPress**. Saiba mais a seguir:
+As soon as you create Collections, Items, and Terms, these pages become available and accessible on your site. In general, within the Tainacan admin panel, you’ll find links to these pages via buttons with an eye icon (like the one in the top right of this page). In addition, you can also create *custom pages* to present your collections or add more information about your repository. These are two different approaches available thanks to the **integration between Tainacan and WordPress**. Learn more below:
 
-* [Páginas Especiais Geradas pelo Tainacan](#as-páginas-especiais-do-Tainacan)
-* [Criando suas Próprias páginas com Blocos Gutenberg](/pt-br/gutenberg-blocks)
+* [Special Pages Created by Tainacan](#special-pages-created-by-tainacan)
+* [Creating Your Own Pages with Gutenberg Blocks](/en/gutenberg-blocks)
 
-## As páginas Especiais do Tainacan
+## Special Pages Created by Tainacan
 
-![Conjunto de captura de telas exemplificando as páginas especiais do Tainacan, no  tema Tainacan Interface](/_assets/images/paginas_especiais_tainacan.png)
+![Screenshot showing examples of the special pages created by Tainacan, using the Tainacan Interface theme](/_assets/images/paginas_especiais_tainacan.png)
 
-### Página de Coleções
+### Collections Page
 
-`/colecoes` ou `/collections`, caso sua instalação esteja em inglês.
+`/collections` or `/colecoes` (if your site is in Portuguese)
 
-Disponível no seu site a partir do momento em que é criada uma coleção, esta página lista suas coleções com opções de ordenação, busca, paginação e visualização em tabela ou cartões. É uma boa maneira de prover ao público uma visão sistemática de quais coleções existem no seu repositório.
+Available on your site as soon as you create a collection, this page lists all available collections, offering ordering, search, pagination, and table or card-style displays. It’s a great way to give the public a structured and easy-to-navigate view of the collections available in your repository.
 
-### Página de Items do Repositório
+### All Items Page
 
-`/itens` ou `/items`, caso sua instalação esteja em inglês.
+`/items` or `/itens` (if your site is in Portuguese)
 
-Disponível no seu site a partir do momento em que algum item é criado em qualquer coleção, esta página lista **todos os itens de todos as coleções do repositório**. Ela apresentará alguns modos de visualização padrão, opções de ordenação pelos metadados nível repositório e a listagem de todos os filtros de todas as coleções, além de um filtro de coleções. Embora seja poderoso o acesso à todos os itens, *recomendamos seu uso com cautela*. A filtragem por um metadado específico de uma coleção, por exemplo, esconderá da lista os itens que não possuem aquele metadado, o que pode ser confuso para quem não conhece a organização do seu repositório.
+Available as soon as any item is created within any collection, this page lists **all items across all collections** in your repository. It provides several viewing modes, ordering options based on global metadata, and displays all available filters across every collection, plus an additional filter for collections. 
 
-### Páginas de Itens de uma Coleção
+Although this page gives access to every item, it **should be used with caution**. For example, filtering by a specific collection’s metadata may hide certain results, which can be confusing for users unfamiliar with your repository’s structure.
 
-`/nome-da-colecao`
+### Specific Collection Item Pages
 
-Esta é em geral a página mais importante de uma instalação Tainacan. Nela você tem acesso à busca facetada de itens dentro de uma coleção. Destacamos os recursos disponíveis:
+`/collection-name`
 
-* Cabeçalho da Coleção (cuja imagem, cor e descrição são configuráveis no formulário de edição de coleção);
-* Filtros (os mesmos disponíveis no painel administrativo, deste que estejam públicos);
-* Busca Textual Simples e Busca Avançada;
-* Ordenação ascendente ou descrescente por todos os metadados públicos;
-* Modos de visualização incluindo o modo Tela Cheia (são habilitados ou desabilitados também no formulário de edição da coleção);
-* Modal de URLs relacionadas, provendo acesso à mesma lista em diferentes formatos como JSON, HTML, CSV, PDF (caso [o plugin](/pt-br/plugin-pdf-exposer) esteja instalado) e com a possibilidade de se realizar mapeamentos;
+This is generally the most important page in any Tainacan installation. Here, you can browse and search within a specific collection. Its available features include:
 
-Observe que a lista de itens é então a página de uma coleção em si. Se você clicar em uma coleção na *Lista de Coleções* do site ela irá para esta lista. Porém, você pode preferir ter uma [página customizada de apresentação](/pt-br/gutenberg-blocks), por exemplo, para só então redirecionar para sua lista de itens. Isto pode ser modificado também no formulário de configuração da sua coleção, na opção "Página de Capa".
+* A **Collection Header** (with a customizable image, color, and description defined in the collection’s settings);
+* **Filters** (those available in the admin panel, as long as they’re set to public);
+* **Simple Text Search** and **Advanced Search**;
+* **Ascending or Descending Ordering** across all public metadata fields;
+* Multiple **Viewing Modes**, including a **Fullscreen Mode** (which can be enabled or disabled in the collection’s settings);
+* A **Related Links Modal**, allowing access to the listing in different formats like JSON, HTML, CSV, or PDF (if the [PDF Exposer plugin](/en/plugin-pdf-exposer) is installed), and making data mapping possible.
 
-### Páginas de Itens de um Termo
+Keep in mind that this item listing page is the actual page of the collection. When a user clicks a specific collection from the site’s *Collections List*, this is the page that will be shown. However, you can also create a [custom presentation page](/en/gutenberg-blocks) and configure it as the entry point for your collection, before directing the visitor to the item listing. This can be set in the **Collection Settings**, under the **Cover Page** option.
 
-`/nome-da-taxonomia/nome-do-termo`
+### Specific Term Item Pages
 
-Similar à lista de itens de uma coleção, esta página mostra todos os itens que possuem algum metadado tipo taxonomia e que tenham neste metadado um termo específico. A principal diferença da lista da coleção é que o cabeçalho terá a imagem e descrição do termo, configurável no seu formulário de edição.
+`/taxonomy-name/term-name`
 
-Esta página é uma excelente maneira de trazer o conceito de "Exposições" multi-coleção para o seu repositório. Por exemplo, se você tiver uma coleção de pinturas e uma coleção de arquitetura com diferentes metadados, mas tiver em ambos um metadado da Taxonomia **Movimento artístico**, você pode ver todos os itens do termo **Movimento renascentista** em um só lugar, agregando aí itens das duas coleções. 
+Similar to a specific collection page, this page lists all items that have a taxonomy-type metadata associated with a specific term. Its main difference is that its header displays the term’s image and description (configurable in the term’s edit settings).
+
+This page is ideal for creating the concept of “multi-collection exhibitions” within your repository. For example, if you have a Paintings collection and an Architecture collection that utilize different metadata fields, but both use an **Art Movement** taxonomy, you can display all items classified as the **Renaissance Movement** in one place, aggregating works from both collections.
