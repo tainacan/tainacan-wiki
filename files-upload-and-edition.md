@@ -1,132 +1,107 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+?> ADICIONAR O CAMINHO
 
-# Inserir e editar arquivos
+# Inserting and Editing Files
 
-Existem algumas formas de adicionar imagens aos itens do Tainacan. Esse tipo de ação pode ser realizada individualmente, adicionando a imagem direto ao item ou primeiro a biblioteca, em sequência ou em massa. Sendo que, todas as imagens utilizadas no tainacan se encontram alocadas na Biblioteca de mídia do WordPress.
+There are a few ways to add images to Tainacan items. This action can be performed individually — adding the image directly to the item — or first to the media library, one by one, in sequence, or in bulk. All images used in Tainacan are stored in the WordPress Media Library.
 
-## Biblioteca de mídia do WordPress
+## WordPress Media Library
 
-Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídia do _WordPress_. As imagens podem ser incorporadas diretamente a biblioteca antes de serem adicionadas a um item. As edições nas imagens só podem ser realizadas na Biblioteca de mídia.
+All images used in Tainacan are stored in the _WordPress_ Media Library. Images can be added to the library first, before attaching them to an item. Editing images can only be done in the Media Library.
 
-### Inserir imagens
+### Inserting Images
 
-1. Acesse o painel de controle do _WordPress_;
+1. Go to the _WordPress_ Dashboard;
+2. In the left sidebar, click `Media` and then `Library`;
+3. In the Media Library screen, click `Add New` in the top left corner;
+4. Drag or select the image you want to add.
 
-2. Na barra lateral esquerda clique em `Mídia` e então em `Biblioteca`;
+![Insert image into the library](pt-br/_assets/gifs/inserindo-imagens-biblioteca.gif)
 
-3. Na tela da Biblioteca de mídia clique em `Adicionar nova` no canto superior esquerdo;
+### Editing Images
 
-4. Arraste ou selecione a imagem que se deseja adicionar.
+1. Go to the _WordPress_ Dashboard;
+2. In the left sidebar, click `Media` and then `Library`;
+3. Select the image you want to edit;
+4. Click `Edit Image`;
+5. Perform the desired edits:
+   - Crop;
+   - Rotate Left;
+   - Rotate Right;
+   - Flip Vertically;
+   - Flip Horizontally;
+   - Resize Image;
+   - Cropping.
 
-   ![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-biblioteca.gif)
-
-### Editar imagens
-
-1. Acesse o painel de controle do _WordPress_;
-
-2. Na barra lateral esquerda clique em `Mídia` e então em `Biblioteca`;
-
-3. Selecione a imagem que deseja editar;
-
-4. Clique em `Editar imagem`;
-
-5. Realize as edições desejadas:
-
-   - Recortar;
-   - Rotacionar para a esquerda;
-   - Rotacionar para a direita;
-   - Virar na vertical;
-   - Virar na horizontal;
-   - Redimensionar a imagem;
-   - Recorte da imagem.
-
-![Inserir imagen na biblioteca](pt-br/_assets/gifs/editando-imagens-biblioteca.gif)
+![Edit images in the library](pt-br/_assets/gifs/editando-imagens-biblioteca.gif)
 
 ---
 
-## Inserir imagem ao item
+## Inserting an Image into an Item
 
-As imagens podem ser inseridas diretamente ao item, sem que antes sejam adicionadas a Biblioteca de mídia. Existem três formas de realizar essa ação:
+Images can be added directly to an item, even if they're not added to the Media Library first. There are three ways to do this:
 
-1. Inserir a imagem individualmente em cada item;
-2. Inserir imagens em sequência em um conjunto de itens;
-3. Inserir imagens em massa.
+1. Insert an image individually into each item;
+2. Insert images sequentially across a set of items;
+3. Insert images in bulk.
 
-A ação de inserir imagens individualmente é indicada para os casos em que existem poucos itens em que imagens serão adicionadas. A inserção de imagens em sequência é adequada para um conjunto de itens, que pode abranger de dois até todos os itens de uma mesma página. Já a inserção de imagens em massa visa abranger uma grande quantidade de itens.
+Individual insertion is recommended when only a few items require images. Inserting images sequentially works best for a set of items — from a couple to all items on a page. Bulk insertion is ideal for adding images across a large number of items.
 
-### Inserir imagem individualmente
+### Inserting an Image Individually
 
-1. Acesse o painel de controle do _WordPress_;
+1. Go to the _WordPress_ Dashboard;
+2. In the left sidebar, click `Tainacan`;
+3. Select a collection;
+4. Choose the desired item;
+5. Click `Edit Item`;
+6. Click `File`;
+7. Choose an image already in the Media Library or upload one from your computer;
+8. Click `Select File`;
 
-2. Na barra lateral esquerda clique em `Tainacan`;
+   1. At the bottom of the page, a progress bar will display relevant information:
+      ```
+      * The last time changes were saved.
+      ```
 
-3. Selecione uma coleção;
+9. At the bottom right of the screen, click:
+   1. `Move to Trash` to send the item to the trash;
+   2. `Revert to Draft` to set the item status to **draft**;
+   3. `Update` to confirm changes made;
 
-4. Selecione o item desejado;
+![Insert image individually](pt-br/_assets/gifs/inserindo-imagens-individualmente.gif)
 
-5. Clique em `Editar item`;
+### Inserting Images in Sequence
 
-6. Clique em `Arquivo`;
+1. Go to the _WordPress_ Dashboard;
+2. In the left sidebar, click `Tainacan`;
+3. Select a collection;
+4. Check the boxes for the items you want to edit;
 
-7. Selecione uma imagem que já se encontra na Biblioteca de mídia ou envie uma imagem do seu computador;
+   - [ ] All items on the page can be selected by clicking `Select All Items on Page`.
 
-8. Clique em `Selecionar arquivo`;
+5. Click `Bulk Actions` and then `Edit Selected Items in Sequence`;
+6. Click `File`;
+7. Choose an image already in the Media Library or upload one from your computer;
+8. Click `Select File`;
 
-   1. No rodapé da página é exibida uma barra de progresso com as informações referentes:
+   1. At the bottom of the page, a progress bar will display relevant information:
+      - Current item and total items;
+      - The last time changes were saved;
 
-   ```
-   * Última vez que as alterações realizadas foram salvas.
-   ```
+9. At the bottom right of the screen, click:
+   1. `Move to Trash` to send the current item to the trash;
+   2. `Revert to Draft` to set the current item status to **draft**;
+   3. `Update` to confirm changes made;
 
-9. No canto inferior direito da tela clique em:
-   1. `Enviar para a lixeira` para que o item seja enviado para a lixeira;
-   2. `Voltar pra rascunho` para que o item tenha seu _status_ alterado para **rascunho**;
-   3. `Atualizar` para confirmar as alterações realizadas no item;
+10. Click `Next` or `Previous` to move to the next item or return to the previous one;
 
-![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-individualmente.gif)
+11. When you’ve finished editing all items, click in the bottom right:
+    1. `Complete` to save and finish editing all items;
+    2. `Update` to confirm changes made to the current item;
+    3. `Save as Draft` to set the current item status to **draft**;
+    4. `Previous` to return to the previous item.
 
-### Inserir imagem em sequência
+![Insert images in sequence](pt-br/_assets/gifs/inserindo-imagens-em-sequencia.gif)
 
-1. Acesse o painel de controle do _WordPress_;
+### Bulk Image Insertion
 
-2. Na barra lateral esquerda clique em `Tainacan`;
-
-3. Selecione uma coleção;
-
-4. Clique nas caixas de seleção dos itens que deseja editar;
-
-   - [ ] Todos os itens da página podem ser selecionados ao clicar em `Selecionar todos os itens da página`.
-
-5. Clique em `Ações em massa` e então em `Editar itens selecionados em sequência`;
-
-6. Clique em `Arquivo`;
-
-7. Selecione uma imagem que já se encontra na Biblioteca de mídia ou envie uma imagem do seu computador;
-
-8. Clique em `Selecionar arquivo`;
-
-   1. No rodapé da página é exibida uma barra de progresso com as informações referentes:
-
-   - Item atual e total de itens;
-   - Última vez que as alterações realizadas foram salvas;
-
-9. No canto inferior direito da tela clique em:
-
-   1. `Enviar para a lixeira` para que o item exibido seja enviado para a lixeira;
-   2. `Voltar pra rascunho` para que o item exibido tenha seu _status_ alterado para **rascunho**;
-   3. `Atualizar` para confirmar as alterações realizadas no item;
-
-10. Clique em `Próximo` ou `Anterior` para editar o próximo item ou voltar ao anterior;
-
-11. Quando todos os itens forem editados no canto inferior direito da tela clique em:
-
-    1. `Concluir` para concluir e salvar as edições realizadas em todos os itens;
-    2. `Atualizar` para confirmar as alterações realizadas no item exibido;
-    3. `Salvar como rascunho` para que o item exibido tenha seu _status_ alterado para **rascunho**;
-    4. `Anterior` para voltar ao item anterior.
-
-![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-em-sequencia.gif)
-
-### Inserir imagem em massa
-
-> Consulte [Importando arquivos e anexos](/pt-br/importers#importar-arquivos-e-anexos) para aprender como inserir imagens em massa.
+> See [Importing files and attachments](/en/importers#importing-files-and-attachments) to learn how to insert images in bulk.
