@@ -16,7 +16,7 @@ Tainacan is developed as a WordPress plugin, leveraging its native structure and
 There are other parts of the code that leverage functionality related to consuming and manipulating data but these three are the most relevant.
 
 ### 1.1 Main Entities and Repositories
-
+                                                
 | Entity                             | Repository                                   | Code Location                                                |
 | ---------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
 | Collection (`tainacan-collection`) | `Tainacan\Repositories\Collections`          | `class-tainacan-collections.php`                             |
