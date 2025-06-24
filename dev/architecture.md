@@ -77,7 +77,7 @@ Authentication in Tainacan's REST API follows WordPress standards. In authentica
 List items from collection with ID 1:
 
 ```bash
-curl -X GET "https://yourdomain.com/wp-json/tainacan/v2/collections/1/items"
+curl -X GET "https://yourdomain.com/wp-json/tainacan/v2/collection/1/items"
 ```
 
 ### 2.6 Main REST API Control Files
