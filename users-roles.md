@@ -1,5 +1,3 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
-
 <div style="float: right; margin-left: 1rem;">
 	<img 
 		alt="Ícone de Usuários" 
@@ -12,13 +10,13 @@
 
 > This page explains how **capabilities** are handled on Tainacan, as well as which are the available **user roles** and what each of them can do. For Tainacan versions previous to 0.15, check [this documentation](users).
 
-O Tainacan lida com permissões de usuários de maneira simular ao [WordPress](https://codex.wordpress.org/pt-br:Pap%C3%A9is_e_Capacidades). Se você está acostumado com as funções e permissões do WordPress, você já tem meio caminho andado!
+Tainacan handles user permissions similarly to [WordPress](https://codex.wordpress.org/pt-br:Pap%C3%A9is_e_Capacidades). If you are familiar with WordPress roles and permissions, you are already halfway there!
 
-Uma **permissão** é o que é verificado ao se fornecer acesso para um usuário à uma tela, um botão, qualquer função do sistema. Uma **função de usuário** é uma maneira de conceder um conjunto de permissões para um usuário. Atribuir uma ou mais funções a um usuário é algo que já pode ser feito o WordPress por qualquer administrador com permissões de editar usuários. Com o Tainacan, novas funções são disponibilizadas: *Administrador no Tainacan*, *Editor no Tainacan* e *Autor no Tainacan*.
+A **permission** is what is checked when granting a user access to a screen, a button, or any system function. A **user role** is a way to grant a set of permissions to a user. Assigning one or more roles to a user can already be done in WordPress by any administrator with user editing permissions. With Tainacan, new roles are available: *Tainacan Administrator*, *Tainacan Editor*, and *Tainacan Author*.
 
-A seguir, detalhamos:
+Below we detail:
 
-1. As [Funções de Usuários do Tainacan](/tainacan-roles.md) (e como se comparam com as padrão do WordPress)
-2. As [Permissões do Tainacan](/capabilities.md)
-3. Como [Gerenciar Funções de Usuários](/manage-user-roles.md)
-4. Como [Gerenciar Permissões Específicas](/manage-specific-capabilities.md) em certas coleções
+1. The [Tainacan User Roles](/tainacan-roles.md) (and how they compare with the default WordPress roles)
+2. The [Tainacan Permissions](/capabilities.md)
+3. How to [Manage User Roles](/manage-user-roles.md)
+4. How to [Manage Specific Permissions](/manage-specific-capabilities.md) for certain collections
