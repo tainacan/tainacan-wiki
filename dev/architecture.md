@@ -16,15 +16,18 @@ Tainacan is developed as a WordPress plugin, leveraging its native structure and
 There are other parts of the code that leverage functionality related to consuming and manipulating data but these three are the most relevant.
 
 ### 1.1 Main Entities and Repositories
-                                                
-| Entity                             | Repository                                   | Code Location                                                |
-| ---------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
-| Collection (`tainacan-collection`) | `Tainacan\Repositories\Collections`          | `class-tainacan-collections.php`                             |
-| Item (`tainacan-item`)             | `Tainacan\Repositories\Items`                | `class-tainacan-items.php`                                   |
-| Metadatum (`tainacan-metadatum`)   | `Tainacan\Repositories\Metadata`             | `class-tainacan-metadata.php`                                |
-| Metadata Section                   | `Tainacan\Repositories\Metadata_Sections`    | `class-tainacan-metadata-sections.php`                       |
-| Filter                             | `Tainacan\Repositories\Filters`              | `class-tainacan-filters.php`                                 |
-| Taxonomy / Term                    | `Tainacan\Repositories\Taxonomies` / `Terms` | `class-tainacan-taxonomies.php` / `class-tainacan-terms.php` |
+
+The following table shows the main entities of the system, their corresponding repositories, and the location of implementation files. Each entity has a dedicated repository that manages its persistence and retrieval operations.
+
+| Entity                             | Repository                                | Code Location                            |
+| ---------------------------------- | ----------------------------------------- | ---------------------------------------- |
+| Collection (`tainacan-collection`) | `Tainacan\Repositories\Collections`       | `class-tainacan-collections.php`         |
+| Item (`tainacan-item`)             | `Tainacan\Repositories\Items`             | `class-tainacan-items.php`               |
+| Metadatum (`tainacan-metadatum`)   | `Tainacan\Repositories\Metadata`          | `class-tainacan-metadata.php`            |
+| Metadata Section                   | `Tainacan\Repositories\Metadata_Sections` | `class-tainacan-metadata-sections.php`   |
+| Filter                             | `Tainacan\Repositories\Filters`           | `class-tainacan-filters.php`             |
+| Taxonomy                           | `Tainacan\Repositories\Taxonomies`        | `class-tainacan-taxonomies.php`          |
+| Term                               | `Tainacan\Repositories\Terms`             | `class-tainacan-terms.php`               |
 
 ### 1.2 Detailed Code Locations for Entities
 
