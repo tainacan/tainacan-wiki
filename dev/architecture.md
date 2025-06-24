@@ -70,7 +70,7 @@ The Tainacan REST API is structured through specialized PHP controllers, each re
 
 ### 2.4 Authentication
 
-Authentication in Tainacan's REST API follows WordPress standards. In authenticated environments (such as the admin panel), session cookies are used. For external applications, it's recommended to use plugins like [JWT Authentication for WP REST API](https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/) for token-based authentication.
+Authentication in Tainacan's REST API follows WordPress standards. In authenticated environments (such as the admin panel), session cookies are used. For external applications, it's recommended to use WordPress [REST API authentication methods](https://developer.wordpress.org/rest-api/using-the-rest-api/authentication/#basic-authentication-with-application-passwords).
 
 ### 2.5 API Usage Example
 
