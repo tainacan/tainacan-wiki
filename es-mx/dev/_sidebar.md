@@ -3,7 +3,6 @@
 
 - Fundamentos del desarrollo
   - [Configuración local](es-mx/dev/setup-local.md "Configuración local para el desarrollo de Tainacan - Tainacan Wiki")
-  - [Configuración Docker](es-mx/dev/setup-docker.md "Configuración Docker para el desarrollo de Tainacan - Tainacan Wiki")
   - [Conceptos clave](es-mx/dev/key-concepts.md "Conceptos clave relacionados con el desarrollo de Tainacan - Tainacan Wiki")
   - [API interna](es-mx/dev/internal-api.md "API interna de Tainacan - Tainacan Wiki")
   - [Tainacan Hooks](es-mx/dev/hooks.md "Tainacan Hooks - Tainacan Wiki")
