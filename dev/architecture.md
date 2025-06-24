@@ -56,7 +56,7 @@ Tainacan's REST API provides a comprehensive set of endpoints for managing the s
 
 The complete REST API specification with all endpoints, parameters, and examples is available at:
 
-📄 [API Endpoints Table](/dev/table-endpoints.md)
+📄 [REST API Docs](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json#tag/items)
 
 ### 2.3 Specific REST Controllers
 
