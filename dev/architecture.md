@@ -177,7 +177,7 @@ Tainacan features a flexible structure for data import and export. Operations ar
 
 * Exporters: CSV, JSON, JSON-LD, XML, HTML, OAI-PMH, Dublin Core
 * Customizable sessions
-* Base class: `class-tainacan-exposer.php`
+* Base class: `class-tainacan-exporter.php`
 * Asynchronous execution with access to logs/results via endpoint
 * Manager: `class-tainacan-exporter-handler.php`
 
