@@ -64,7 +64,7 @@ The Tainacan REST API is structured through specialized PHP controllers, each re
 
 * `REST_Collections_Controller`: Manages collections (`/collections`)
 * `REST_Items_Controller`: Manages items (`/items`)
-* `REST_Exposers_Controller`: Manages export formats (`/exposers`)
+* `REST_Exposers_Controller`: Manages exposers formats (`/exposers`)
 * `REST_Background_Processes_Controller`: Monitors asynchronous processes (`/bg-processes`)
 * `REST_BulkEdit_Controller`: Handles bulk editing of items (`/collection/{id}/bulk-edit`)
 
