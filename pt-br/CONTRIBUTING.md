@@ -154,7 +154,7 @@ Para esconder alguns conteúdos extensos em regiões collpsáveis, usamos a tag 
 - Conteúdo markdown aqui dentro
 - E o que mais for preciso
 
-</description>
+</details>
 ```
 
 Resultará em:
