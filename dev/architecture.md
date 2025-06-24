@@ -115,10 +115,9 @@ Tainacan's data architecture is based on WordPress infrastructure, using and ext
 | Component                    | WordPress Table(s)             | Technical Notes                |
 | ---------------------------- | ------------------------------ | ------------------------------ |
 | Collections, Items, Metadata | `wp_posts`                     | Identified by `post_type`      |
-| Additional Attributes        | `wp_postmeta`, `wp_termmeta`   | Key-value pairs for extra data |
-| Taxonomies and Terms         | `wp_terms`, `wp_term_taxonomy` | Used for categorization        |
-| Relationships                | `wp_term_relationships`        | Links between items and terms  |
-| Background Processes         | `wp_tnc_bg_process`            | Import, export, indexing, etc. |
+| Metadata and Term values        | `wp_postmeta`, `wp_termmeta`   | Key-value pairs for extra data |
+| Taxonomies and Terms         | `wp_terms`, `wp_term_taxonomy`,  `wp_term_relationships`  | Used for categorization        |
+| Background Processes         | `wp_tnc_bg_process`            | Import, export, bulk edition etc. |
 
 ### 4.2 Core Entities
 
