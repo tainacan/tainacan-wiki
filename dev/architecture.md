@@ -4,7 +4,6 @@ This document consolidates the technical architecture of Tainacan, detailing its
 
 The topics cover everything from the internal workings of the plugin (entities, repositories, controllers, and business logic), through the public REST API and its features, to the modeling and manipulation of data in the relational database. Solutions for data import/export and asynchronous process are also described.
 
----
 
 ## 1. Backend of the Tainacan Plugin
 
@@ -39,7 +38,7 @@ There are other parts of the code that leverage functionality related to consumi
 | Taxonomy         | `src/classes/entities/class-tainacan-taxonomy.php`         |
 | Term             | `src/classes/entities/class-tainacan-term.php`             |
 
----
+
 
 ## 2. REST API
 
@@ -80,18 +79,6 @@ List items from collection with ID 1:
 curl -X GET "https://yourdomain.com/wp-json/tainacan/v2/collection/1/items"
 ```
 
-### 2.6 Main REST API Control Files
-
-| PHP File                                      | Main Function                                          |
-| --------------------------------------------- | ------------------------------------------------------ |
-| `class-tainacan-rest-controller.php`          | Base class for all REST controllers in Tainacan        |
-| `tainacan-rest-creator.php`                   | Responsible for instantiating all REST API controllers |
-| `class-tainacan-rest-bulkedit-controller.php` | Manages bulk editing of items                          |
-| `class-tainacan-rest-exposers-controller.php` | Manages the system's exposers (exporters)              |
-| `class-tainacan-rest-facets-controller.php`   | Manages search facets in collections                   |
-
----
-
 ## 3. Frontend ⇄ Backend ⇄ Database Integration
 
 Tainacan Admin panel is mostly coded as a Single Page Application, where all the data fetching and manipulation is done via REST API. Similar fetching cycles also occur inside Gutenberg Blocks, such as the Faceted Search and the Item Submission Form.
@@ -104,7 +91,6 @@ Tainacan Admin panel is mostly coded as a Single Page Application, where all the
 4. Repositories handle persistence.
 5. The formatted JSON response is returned to the frontend.
 
----
 
 ## 4. Data Architecture
 
@@ -119,55 +105,44 @@ Tainacan's data architecture is based on WordPress infrastructure, using and ext
 | Taxonomies and Terms         | `wp_terms`, `wp_term_taxonomy`,  `wp_term_relationships`  | Used for categorization        |
 | Background Processes         | `wp_tnc_bg_process`            | Import, export, bulk edition etc. |
 
-### 4.2 Core Entities
 
-* **Collection**: Structure that organizes items and defines metadata.
-* **Item**: Descriptive unit of the repository.
-* **Metadatum**: Configurable field with various types.
-* **Taxonomy & Term**: Hierarchical or relational categories.
-* **Metadata Section**: Groups of metadata fields.
-* **Filter**: Components for refining and searching.
-* **Background Process**: Long-running and non-blocking operations.
-
-### 4.3 Additional Important Entities
-
-* **Private Files**: Restricted files linked to items, with custom access control.
-* **Media / Attachment**: Multimedia files associated with items and collections.
-* **Role / Capability**: WordPress-based access control, extended by Tainacan.
-* **Term Relationship**: Associations between terms and items.
-* **Metadata Type**: Defines the behavior and type of metadata.
-
-### 4.4 Domain Relationships
+### 4.2 Domain Relationships
 
 * A collection contains multiple metadata and sections.
 * An item belongs to a single collection and may be classified by terms from different taxonomies.
 * Taxonomy-type metadata acts as a bridge to terms.
 * Users have differentiated permissions via WordPress roles and capabilities.
 
-### 4.5 Data Handling
+# 4.3 Data Handling and WordPress Database Access
 
-* **WordPress Functions**: `wp_insert_post()`, `get_post_meta()`, `update_post_meta()`, `wp_insert_term()`, etc.
-* **Direct Access**: `$wpdb->insert()`, `$wpdb->get_results()` in custom tables like `wp_tnc_bg_process`.
+Data manipulation in the Tainacan plugin is performed using a combination of native WordPress functions and direct database access when needed.
 
-### 4.6 REST API Control
+### WordPress Native Functions
 
-All database interaction is mediated by the REST API, which applies business rules, validation, and data transformation before persistence.
+For most standard operations, Tainacan relies on WordPress native functions such as:
 
-### 4.7 WordPress Database Access
+- `wp_insert_post()`
+- `get_post_meta()`
+- `update_post_meta()`
+- `wp_insert_term()`
+- Among others.
 
-Database access is performed using native functions (`wp_insert_post()`, `get_post_meta()`), and in more complex scenarios, direct access via `$wpdb`. The use of repositories encapsulates this access, promoting reuse and testability.
+These functions ensure compatibility with the WordPress ecosystem and benefit from built-in features like caching and hooks.
 
----
+### Direct Database Access with `$wpdb`
+
+For more complex scenarios or when dealing with custom database tables (e.g., background processes), Tainacan uses direct SQL access via the `$wpdb` object:
+
+- Example tables: `wp_tnc_bg_process`, `wp_tnc_log`
+- Example methods: `$wpdb->insert()`, `$wpdb->get_results()`, `$wpdb->query()`
 
 ## 5. Import and Export System
 
 Tainacan features a flexible structure for data import and export. Operations are performed through sessions and executed asynchronously.
 
-📄 [Tainacan Import and Export](/dev/tainacan-Import-Export.md)
-
 ### 5.1 Import
 
-* Available importers: CSV, OAI-PMH, YouTube, JSON, etc.
+* Available importers: CSV, Flickr, YouTube, etc.
 * Sessions created via `/importers/session`
 * File upload, metadata mapping, background execution
 * Base class: `class-tainacan-importer.php`
@@ -175,53 +150,14 @@ Tainacan features a flexible structure for data import and export. Operations ar
 
 ### 5.2 Export
 
-* Exporters: CSV, JSON, JSON-LD, XML, HTML, OAI-PMH, Dublin Core
+* Exporters: CSV, Vocabulary CSV.
 * Customizable sessions
 * Base class: `class-tainacan-exporter.php`
 * Asynchronous execution with access to logs/results via endpoint
 * Manager: `class-tainacan-exporter-handler.php`
 
----
 
-## 6. DevOps and Quality
-
-### 6.1 Development Workflow
-
-* **Version Control**: GitHub with GitFlow (`develop`, `feature/*`, `release/*`)
-* **CI/CD**: GitHub Actions
-
-  * Unit testing
-  * Linting
-  * Frontend build and packaging
-
-### 6.2 Dependencies
-
-* **PHP**: Composer
-* **JavaScript**: npm, Webpack
-
-### 6.3 Testing
-
-* PHPUnit for critical PHP unit tests
-* REST API integration tests
-* Automated and manual testing in Vue.js interface
-* Static analysis and linters
-
-### 6.4 Security
-
-* Input/output escaping and sanitization
-* Use of nonces for sensitive actions
-* Permission control via roles and capabilities
-* Frequent updates
-
-### 6.5 Continuous Deployment and Versioning
-
-* Releases with semantic versioning (MAJOR.MINOR.PATCH)
-* Production-optimized builds
-* Automated publishing to WordPress.org and GitHub Releases
-
----
-
-## 7. Frontend Architecture
+## 6. Frontend Architecture
 
 The Tainacan frontend is a Vue.js 3 application that provides an interface for managing digital repositories. It is implemented as a Single Page Application (SPA) using Vue.js 3, with routing managed by Vue Router and state management via Vuex. It communicates with the backend through Tainacan's REST API.
 
@@ -232,16 +168,16 @@ This document presents the routing and data flow flowchart of Tainacan's Single 
 ![Initialization and Routing Flowchart](_assets/images/initialization_routing_front.png)
 
 
-### 7.1 File Locations
+### 6.1 File Locations
 
 The frontend files are primarily located in:
 
 - `/src/views/admin/` – Main administrative interface
 - `/src/views/gutenberg-blocks/` – Blocks for the WordPress Gutenberg editor
 
-### 7.2 Main Components
+### 6.2 Main Components
 
-#### 7.2.1 Main Page
+#### 6.2.1 Main Page
 
 The main component of the application is `src/views/admin/admin.vue`. It initializes the Vue app and defines the main layout, including:
 
@@ -250,7 +186,7 @@ The main component of the application is `src/views/admin/admin.vue`. It initial
 - Main content area
 - Route management
 
-#### 7.2.2 Routing System
+#### 6.2.2 Routing System
 
 The routing system is defined in `src/views/admin/js/router.js`. It uses Vue Router to manage navigation between different screens of the application.
 
@@ -269,7 +205,7 @@ Main route groups:
    - `/exporters` – Export tools
 
 
-### 7.3 Organization
+### 6.3 Organization
 
 The application's pages are organized and located in:
 
@@ -284,7 +220,7 @@ Reusable components are located in `/src/views/admin/components/`, organized by 
 - `/search/` – Search and filtering components
 - `/other/` – Miscellaneous components
 
-### 7.4 State Management
+### 6.4 State Management
 
 Tainacan uses Vuex for centralized state management. The main state modules include:
 
@@ -295,7 +231,7 @@ Tainacan uses Vuex for centralized state management. The main state modules incl
 - **Metadata**: State related to available metadata
 
 
-## 8. References and Contribution
+## 7. References and Contribution
 
 * 📚 **Official Wiki**: [https://tainacan.github.io/tainacan-wiki/](https://tainacan.github.io/tainacan-wiki/)
 * 💻 **Source Code**: [https://github.com/tainacan/tainacan](https://github.com/tainacan/tainacan)
