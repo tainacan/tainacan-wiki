@@ -180,7 +180,7 @@ Tainacan features a flexible structure for data import and export. Operations ar
 * Customizable sessions
 * Base class: `class-tainacan-exposer.php`
 * Asynchronous execution with access to logs/results via endpoint
-* Manager: `class-tainacan-exposers-handler.php`
+* Manager: `class-tainacan-exporter-handler.php`
 
 ---
 
