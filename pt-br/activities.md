@@ -12,7 +12,7 @@ Todas as ações realizadas no Tainacan são registradas e podem ser consultadas
 
 Ao clicar em uma “atividade”, é exibida uma janela com:
 
-![Acesse o painel de controle](\_assets\images\103.png)
+![Acesse o painel de controle](_assets\images\103.png)
 
 ​	a. “**Descrição da atividade”**;
 
@@ -34,15 +34,15 @@ Reúne atividades como criação, edição e exclusão de “coleções”, “m
 
 1. Acesse o painel de controle do *WordPress*;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Acesse o painel de controle](_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em Tainacan;
 
-   ![Acesse o painel de controle](\_assets\images\051.png)
+   ![Acesse o painel de controle](_assets\images\051.png)
 
 3. Clique em “Atividades do Repositório”;
 
-   ![Acesse o painel de controle](\_assets\images\104.png)
+   ![Acesse o painel de controle](_assets\images\104.png)
 
 4. Nesta página você pode filtrar as “atividades” por:
 
@@ -52,7 +52,7 @@ Reúne atividades como criação, edição e exclusão de “coleções”, “m
 
    c. **“Busca geral”**.
 
-   ![Acesse o painel de controle](\_assets\images\105.png)
+   ![Acesse o painel de controle](_assets\images\105.png)
 
    
 
@@ -62,19 +62,19 @@ Reúne “atividades” como criação, edição e exclusão de “itens”, con
 
 1. Acesse o painel de controle do *WordPress*;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Acesse o painel de controle](_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em Tainacan
 
-   ![Acesse o painel de controle](\_assets\images\051.png)
+   ![Acesse o painel de controle](_assets\images\051.png)
 
 3. Clique na “Coleção” que você deseja e depois em "Atividades";
 
-   ![Acesse o painel de controle](\_assets\images\106.png)
+   ![Acesse o painel de controle](_assets\images\106.png)
 
 4. Nesta página você pode “filtrar as atividades” por:
 
-   ![Acesse o painel de controle](\_assets\images\107.png)
+   ![Acesse o painel de controle](_assets\images\107.png)
 
    ​	a. **“Intervalo de datas”**;
 
@@ -90,23 +90,23 @@ Reúne “atividades” como criação, edição e exclusão de “valores no it
 
 1. Acesse o painel de controle do *WordPress*;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Acesse o painel de controle](_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em Tainacan
 
-   ![Acesse o painel de controle](\_assets\images\051.png)
+   ![Acesse o painel de controle](_assets\images\051.png)
 
 3. Clique na “Coleção” que você deseja e, depois, clique no “Item” onde você deseja checar as “atividades”;
 
-   ![Acesse o painel de controle](\_assets\images\108.png)
+   ![Acesse o painel de controle](_assets\images\108.png)
 
 4. No “item”, clique na aba “Atividades”;
 
-   ![Acesse o painel de controle](\_assets\images\109.png)
+   ![Acesse o painel de controle](_assets\images\109.png)
 
 5. Nesta página você pode “filtrar as atividades” por:
 
-   ![Acesse o painel de controle](\_assets\images\110.png)
+   ![Acesse o painel de controle](_assets\images\110.png)
    
    a. **“Intervalo de datas”**;
    
