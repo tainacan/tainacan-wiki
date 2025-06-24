@@ -226,7 +226,7 @@ Tainacan features a flexible structure for data import and export. Operations ar
 
 The Tainacan frontend is a Vue.js 3 application that provides an interface for managing digital repositories. It is implemented as a Single Page Application (SPA) using Vue.js 3, with routing managed by Vue Router and state management via Vuex. It communicates with the backend through Tainacan's REST API.
 
-As a SPA, Tainacan loads only a single initial HTML page and then dynamically updates the content as the user navigates, without reloading the entire page. This provides a smoother and faster user experience.
+As a SPA, Tainacan loads only a single initial HTML page and then dynamically updates the content as the user navigates, without reloading the entire page. This provides a smoother and faster user experience. A key feature of the frontend is the faceted search, which allows users to intuitively explore the collection by combining multiple filters using interactive components that update results in real-time. It is implemented through an interface with **interactive filter panels**, offering control types like checkboxes, text fields, and date selectors, adapted to the data type being filtered.
 
 This document presents the routing and data flow flowchart of Tainacan's Single Page Application (SPA), showing how initialization, routing, and data flow between components occur.
 
@@ -295,22 +295,6 @@ Tainacan uses Vuex for centralized state management. The main state modules incl
 - **Filter**: State related to available filters
 - **Metadata**: State related to available metadata
 
-### 7.6 Faceted Search
-
-One of Tainacan’s most important features is its faceted search system, which acts as an advanced filtering mechanism that makes exploring the digital collection much more intuitive and efficient. It allows combining multiple filters at once, progressively refining results.
-
-#### 7.6.1 Implementation
-
-In Tainacan, faceted search is implemented through an interface with **interactive filter panels**, offering control types like checkboxes, text fields, and date selectors, adapted to the data type being filtered. **Real-time filters** update results instantly as the user adjusts them, without needing to reload the page, while **visual counters** show how many items match each selection, helping users understand the collection’s distribution. The system also supports **nested filters**, where selecting one filter affects the options available in others, and offers **URL persistence**, saving search parameters in the URL.
-
-On the frontend, the faceted search system is implemented with:
-
-- **UI Components**: Each filter type (text, number, date, taxonomy, etc.) has specific Vue.js components located at `/src/views/admin/components/search/filters/`
-- **State Management**: The search state is managed by Vuex, allowing different components to react to filter changes
-- **API Communication**: Filtered queries are sent to the REST API, which returns the corresponding results
-- **Dynamic URL Updates**: Search parameters are synced with the URL, enabling navigation and sharing of specific searches
-
----
 
 ## 8. References and Contribution
 
