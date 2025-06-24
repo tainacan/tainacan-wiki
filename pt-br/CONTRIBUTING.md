@@ -145,7 +145,7 @@ Conteúdo da Aba 3
 
 ### Collapses 
 
-Para esconder alguns conteúdos extensos em regiões collpsáveis, usamos a tag `HTML` `<description></description>` e `<summary></summary>`. Por exemplo:
+Para esconder alguns conteúdos extensos em regiões collpsáveis, usamos a tag `HTML` `<details></details>` e `<summary></summary>`. Por exemplo:
 
 ```
 <details>
