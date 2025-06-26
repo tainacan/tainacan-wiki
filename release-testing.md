@@ -1,117 +1,54 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+# Testing Guide
 
-# Roteiro de Testes
+This section describes the guide for integrity testing in the installation or update of the Tainacan Plugin for WordPress:
 
-Este artigo descreve o roteiro para testes de integridade na instalação ou atualização do Plugin do Tainacan para WordPress:
+## Flow for RC version release _(Release Candidate)_
 
-## Fluxo para lançamento de versão RC _(Release Candidate)_
+These are the procedures for new versions of the Tainacan plugin to be previously validated by the community, avoiding sending the plugin with bugs to the WordPress repository:
 
-Este fluxo pretende estabelecer procedimentos para que novas versões do plugin do Tainacan sejam validadas previamente pela comunidade, evitando o envio do plugin com a presença de bugs para o repositório do WordPress.
+1. Disseminate the RC in the [Tainacan community](https://tainacan.discourse.group) so that usage tests can be performed;
+2. Perform tests following this [Plugin Testing Guide](#plugin-testing-guide) below;
+3. Resolve any problems found and release a new RC version _(Release Candidate)_ until the tests don't point to problems.
+4. From there, follow the steps to [release a new version](/dev/release.md) for WordPress.
 
-1. Divulgar a RC na [comunidade do Tainacan](https://tainacan.discourse.group) para que sejam realizados os testes de uso;
-2. Fazer testes seguindo este Roteiro de Testes;
-3. Resolver eventuais problemas encontrados e lançar uma nova versão RC _(Release Candidate)_ até os testes não apontarem problemas.
-4. A partir disso, seguir os passos para [lançar uma nova versão](/pt-br/dev/release.md) para WordPress.
+## Plugin Testing Guide
 
-## Roteiro de Testes do Plugin
+This guide is intended for performing tests that verify the proper functioning of functions and the execution of processes by the Tainacan Plugin.
 
-Este roteiro é destinado para a realização de testes que verifiquem o funcionamento adequado das funções e a realização de processos pelo Plugin do Tainacan.
+?> Problems found can be reported as [issue on GitHub](https://github.com/tainacan/tainacan/issues ":ignore") or to the [community forum](https://tainacan.discourse.group ":ignore") of Tainacan. Some common errors such as pages not loading can be better described using [suggestions from the FAQ page](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
 
-> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [fórum da comunidade](https://tainacan.discourse.group) do Tainacan.
+There are several types of tests that can be done to cover as many functionalities as possible. All start with the following basic steps:
 
-1. Acesse o endereço onde a versão _RC_ do Tainacan está instalada;
-2. Acesse o **painel de controle do WordPress**;
-3. Verifique os _níveis de permissão do seu usuário_ (para os testes, recomenda-se **Administrador** ou **Editor**)
-4. Na barra lateral esquerda, clique em **Diagnóstico da Instalação** na seção Tainacan:
-5. Verifique se a instalação está com os requisitos recomendados para o funcionamento do _Plugin do Tainacan_.
-6. Baixe o arquivo de log no botão `Baixar Log` para **anexar estas informações** ao Relatório de Testes.
-7. Na barra lateral esquerda, clique em Tainacan:
+<div style="float: right; margin-left: 32px;">
 
-- Observe o tempo de carregamento da tela inicial;
-- Observe se todos elementos da página foram exibidos corretamente;
-  - Observe novamente estes aspectos ao concluir os processos a seguir para reportar eventuais alterações substanciais no tempo de carregamento de tela ou exibição incorreta dos elementos.
+![Tainacan Admin Menu](/_assets/images/release-testing-1.png)
 
-### Coleções
+</div>
 
-1. Crie DUAS ou mais coleções
-2. Preencha seus campos, incluindo miniatura e imagem da Header;
-3. Defina status diferentes para cada uma, como Pública e Privado, ou Pública e Rascunho;
-4. Conclua ou clique em `Salve e ir para Metadados`;
+1. Access the **WordPress control panel** where your test version of the Tainacan plugin is installed and activated (usually, your site address + `/wp-admin`);
+2. In the left sidebar, click on **Installation Diagnosis** in the Tainacan section:
+3. Check if the installation has the recommended requirements for the _Tainacan Plugin_ to function.
+4. Download the log file from the `Download Log` button to **attach this information** to the Test Report.
+5. In the left sidebar, click on Tainacan:
 
-- Observe o tempo de carregamento da tela de _Criação de coleção_;
-- Observe se todos elementos da página foram exibidos corretamente;
-- Observe o tempo de conclusão ao **concluir** ou **salvar** as coleções;
+- [x] Observe the loading time of the initial screen;
+- [x] Observe if all page elements were displayed correctly;
+- [x] Observe these aspects again when completing the following processes to report any substantial changes in screen loading time or incorrect display of elements.
 
-### Taxonomias
+Once this is done, choose a topic you want to test more thoroughly:
 
-1. Crie uma ou mais taxonomias;
-2. Crie um ou mais termos em cada taxonomia criada;
-3. Envie uma _Imagem da Header_ em pelo menos um item de cada taxonomia;
-4. Busque preencher todos os campos, como **nome**, **descrição**, etc.
-5. Crie pelo menos um nível hierárquico em cada taxonomia;
+<div style="column-count: 2; column-width: 250px;">
 
-- Observe o tempo de carregamento da tela de _Criação de Taxonomia_;
-- Observe se todos elementos da página foram exibidos corretamente;
-- Observe o tempo de conclusão ao **salvar** cada taxonomia;
-- Observe o tempo de conclusão ao **salvar** cada termo;
+- [Collections](/pt-br/testing-collections.md)
+- [Taxonomies](/pt-br/testing-taxonomies.md)
+- [Metadata](/pt-br/testing-metadata.md)
+- [Filters](/pt-br/testing-filters.md)
+- [Items](/pt-br/testing-items.md)
+- [Faceted Search](/pt-br/testing-search.md)
+- [Importers](/pt-br/testing-importers.md)
+- [Exporters](/pt-br/testing-exporters.md)
+- [Permissions](/pt-br/testing-capabilities.md)
+- [Gutenberg Blocks](/pt-br/testing-gutenberg-blocks.md)
+- [Item Submission](/pt-br/testing-item-submission.md)
 
-### Metadados
-
-1. Crie os diferentes tipos de metadados a **nível de repositório**:
-1. Lembre-se de criar metadado do tipo _taxonomia_;
-1. Busque marcar opções diferentes entre os metadados em:
-
-   - Status;
-   - Exibir na listagem;
-   - Opções de Preenchimento;
-   - Demais campos de texto;
-
-1. Crie alguns metadados também a **nível de coleção**, em cada coleção:
-1. Lembre-se de criar metadado do tipo _relacionamento_;
-1. Busque marcar opções diferentes entre os metadados em:
-
-   - Status;
-   - Exibir na listagem;
-   - Opções de Preenchimento;
-   - Demais campos de texto;
-
-1. Teste as ações de _exclusão_ ou _edição de metadados_.
-
-- Observe o tempo de carregamento na criação de metadados;
-- Observe se todos elementos da página foram exibidos corretamente;
-- Observe o tempo de conclusão ao **salvar** cada metadado;
-
-### Itens
-
-1. Abra uma coleção;
-2. Adicione um Item;
-3. Crie itens com diferentes tipos de documento;
-4. Edite a miniatura de diferentes itens;
-5. Edite e adicione anexos em diferentes itens;
-6. Preencha os campos de metadados;
-7. Teste o _não preenchimento_ de metadados marcados como obrigatório;
-8. Teste o preenchimento de campos de metadados do tipo taxonomia, e a criação de novos termos;
-9. Após criar itens em uma _primeira coleção_, teste o preenchimento de metadados do tipo relacionamento em _outra coleção_.
-
-- Observe o tempo de carregamento ao abrir as coleções;
-- Observe o tempo de carregamento ao criar itens;
-- Observe se todos elementos da página da coleção foram exibidos corretamente;
-- Observe se todos elementos da página da criação de item foram exibidos corretamente;
-- Observe se todos metadados a nível de repositório e da colação foram exibidos corretamente para preenchimento, na página da criação de item;
-- Observe se eventuais dicas de preenchimento, configuradas em determinados metadados, estão exibidas corretamente
-- Observe se o aviso de **preenchimento de metadados obrigatórios** funciona corretamente, ao **salvar** ou **publicar** cada item;
-- Observe o tempo de conclusão ao **salvar** ou **publicar** cada item;
-
-### Importadores
-
-?> _TODO_ Implementar este roteiro de testes
-
-### Processos
-
-?> _TODO_ Implementar este roteiro de testes
-
-### Atividades
-
-?> _TODO_ Implementar este roteiro de testes
-
-> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [fórum da comunidade](https://tainacan.discourse.group) do Tainacan.
+</div>
