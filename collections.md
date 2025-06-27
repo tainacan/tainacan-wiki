@@ -1,86 +1,86 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+
 
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Coleções" 
+		alt="Collections Icon" 
 		src="_assets/images/icon_collections.png"
 		width="42"
 		height="42">
 </div>
 
-# Coleções
+# Collections
 
-Uma "coleção" é um grupo de itens que compartilham um mesmo conjunto de metadados. Cada item enviado para seu repositório digital pertencerá a uma única coleção.
+A "collection" is a group of items that share the same set of metadata. Each item sent to your digital repository will belong to a single collection.
 
-> Por exemplo: você pode ter uma coleção de *"pinturas"* com metadados como *"Título"*, "Autor", *"País"*, *"Técnica"*, etc. e outra coleção para *"filmes"*, com *"Título"*, *"Diretor"*, *"País"*, *"Duração"* e *"Gênero"*.
+> For example: you can have a collection of *"paintings"* with metadata such as *"Title"*, *"Author"*, *"Country"*, *"Technique"*, etc., and another collection for *"movies"*, with *"Title"*, *"Director"*, *"Country"*, *"Duration"*, and *"Genre"*.
 
-Para cada coleção você pode configurar um conjunto diferente de metadados, entretanto, eles podem compartilhar taxonomias em comum, o que significa, por exemplo, que você pode navegar por itens de um *"país"* e obter resultados de *"pinturas"* e de *"filmes"* nos resultados.
+For each collection, you can configure a different set of metadata; however, they can share common taxonomies, which means, for example, that you can navigate through items from a *"country"* and get results for both *"paintings"* and *"movies"*.
 
-> Consulte a seção [Taxonomias](#taxonomias) para saber mais
+> See the section [Taxonomies](#taxonomias) to learn more.
 
-As coleções também podem ter coleções **filhas**, que vão herdar seus metadados e a partir disso podem também é possível adicionar outros metadados ao seu conjunto.
+Collections can also have **child collections**, which will inherit their metadata, and additional metadata can be added to their set.
 
 <!-- tabs:start -->
 
-#### ** Criar **
+#### ** Create **
 
-## Criar Coleções
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em "Tainacan";
-3. Clique em `Criar Coleção` na seção **Coleções**;  
-  1. Nomeie a coleção no campo **Nome**;
-  2. Defina seu status entre **público**, **privado**, **rascunho** ou **lixo**. 
-    * **Público**: Coleções definidas como públicas serão visualizadas assim que criadas. 
-    * **Rascunho**: Coleções *rascunho* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: editores, moderadores e administradores). (Consulte [Permissões de Usuários](/pt-br/users) para saber mais). 
-    * **Privado**: Coleções *privadas* aparecem apenas para seu criador e moderadores desta coleção. 
-    * **Lixo**: Coleções no *lixo* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: *editores*, *moderadores* e *administradores*). (Consulte [Permissões de Usuários](/pt-br/users) para saber mais). 
-  3. Defina uma miniatura e uma imagem da *header* com imagens que representem o conteúdo que fará parte dessa coleção. 
-    * A **imagem de miniatura** representará a coleção em diferentes ambientes no plugin e no tema do repositório (assim como uma foto de perfil no *Facebook*)
-    * A **imagem da header**, ou cabeçalho, aparece na visualização da coleção, dependendo das configurações e do layout adotado. o tema padrão do *Tainacan* exibe a imagem da *header* na página da coleção.  
-  4. Habilite a página de capa e adicione a URL específica caso esteja criando uma página com layout personalizado para exibir sua coleção.
-4. Insira uma descrição sobre o conteúdo que fará parte desta coleção
-  5. Selecione um ou mais modos de visualização (disponíveis no tema) para a navegação na visualização da coleção. 
-  6. Escolha uma coleção raiz para herdar metadados de outra coleção.  (Consulte [Metadados](/pt-br/metadada) para saber mais) 
-  7. Selecione se deseja ou não **Permitir Comentários** na coleção, os comentários podem ser geridos na seção de comentários do painel do WordPress (saiba mais na [documentação do WordPress](https://codex.wordpress.org/pt-br:Painel_Coment%C3%A1rios). 
-  8. No campo **Moderadores** é possível adicionar outros usuários para novas atribuições nesta coleção em específico:
-    * para adicionar moderadores digite ao menos as três primeiras letras do usuário e selecione na lista.  (Consulte [Permissões de Usuários](/pt-br/users) para saber mais)  
-  9. O campo **slug** permite alterar o final da URL desta coleção. Por padrão ela é criada a partir do Nome da Coleção, mas pode ser alterada neste campo. 
-5. Clique em uma das opções abaixo: (a coleção será criada com os parâmetros de privacidade definidos em **Status**).
-  10. Clique em `Salvar e ir para Metadados` para acessar a configuração de metadados desta coleção. (Consulte [Metadados](/pt-br/metadada) para saber mais) 
-  11. ou
-  12. Clique em `Salvar e ir para Filtros` para acessar a configuração de filtros desta coleção. (Consulte [Filtros](/pt-br/filters) para saber mais); 
-  13. Clique em `Concluir` para terminar a configuração desta nova coleção.
+## Create Collections
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on "Tainacan";
+3. Click on `Create Collection` in the **Collections** section;  
+  1. Name the collection in the **Name** field;
+  2. Define its status as **public**, **private**, **draft**, or **trash**. 
+    * **Public**: Collections defined as public will be visible as soon as they are created. 
+    * **Draft**: *Draft* collections will be visible to users with permission to access the Tainacan administrative panel (e.g., editors, moderators, and administrators). (See [User Permissions](users) to learn more). 
+    * **Private**: *Private* collections will only be visible to their creator and moderators of this collection. 
+    * **Trash**: Collections in *trash* will be visible to users with permission to access the Tainacan administrative panel (e.g., *editors*, *moderators*, and *administrators*). (See [User Permissions](users) to learn more). 
+  3. Define a thumbnail and a header image with images that represent the content that will be part of this collection. 
+    * The **thumbnail image** will represent the collection in different environments in the plugin and repository theme (similar to a profile picture on *Facebook*).
+    * The **header image**, or header, appears in the collection view, depending on the settings and layout adopted. The default *Tainacan* theme displays the *header* image on the collection page.  
+  4. Enable the cover page and add the specific URL if you are creating a page with a custom layout to display your collection.
+4. Enter a description about the content that will be part of this collection.
+  5. Select one or more visualization modes (available in the theme) for navigation in the collection view. 
+  6. Choose a root collection to inherit metadata from another collection. (See [Metadata](metadata) to learn more). 
+  7. Select whether or not to **Allow Comments** in the collection; comments can be managed in the WordPress comments section (learn more in the [WordPress documentation](https://codex.wordpress.org/pt-br:Painel_Coment%C3%A1rios)). 
+  8. In the **Moderators** field, you can add other users for new assignments in this specific collection:
+    * To add moderators, type at least the first three letters of the user and select from the list. (See [User Permissions](users) to learn more).  
+  9. The **slug** field allows you to change the end of the URL for this collection. By default, it is created based on the Collection Name but can be changed in this field. 
+5. Click on one of the options below (the collection will be created with the privacy parameters defined in **Status**):
+  10. Click on `Save and go to Metadata` to access the metadata configuration for this collection. (See [Metadata](metadata) to learn more). 
+  11. or
+  12. Click on `Save and go to Filters` to access the filter configuration for this collection. (See [Filters](filters) to learn more); 
+  13. Click on `Finish` to complete the configuration of this new collection.
 
-Novas coleções podem ser criadas também com um modelo de metadados pré-definido ou importadas por fontes externas.
-Coleções criadas com metadados pré-definidos contam com um conjunto de metadados pré-estabelecidos durante sua criação, e podem ser geridas da mesma maneira que outras coleções. 
-> Desde a versão 0.6 do plugin existe a opção para a criação de coleções com um conjunto de metadados a partir do modelo **Dublin Core**.
+New collections can also be created with a predefined metadata model or imported from external sources.
+Collections created with predefined metadata have a set of metadata pre-established during their creation and can be managed in the same way as other collections. 
+> Since version 0.6 of the plugin, there is an option to create collections with a metadata set based on the **Dublin Core** model.
 
-> Novos conjuntos de metadados podem ser desenvolvidos de acordo com a necessidade individual de cada instalação e/ou adicionados ao Tainacan (Consulte [Desenvolvimento do Plugin](/pt-br/dev/) para saber mais sobre o desenvolvimento do Tainacan)
+> New metadata sets can be developed according to the individual needs of each installation and/or added to Tainacan (See [Plugin Development](dev/) to learn more about Tainacan development).
 
-Consulte a seção de [Ações em Massa](/pt-br/bulk-edition) e de [Importadores do Tainacan](/pt-br/importers) para saber mais sobre a criação itens e termos em massa.
+See the [Bulk Actions](bulk-actions) and [Tainacan Importers](importers) sections to learn more about creating items and terms in bulk.
 
-#### ** Editar **
-## Editar Coleções
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em *Tainacan*;
-3. Na seção **Coleções** clique na engrenagem à direita para editar a coleção desejada.
+#### ** Edit **
+## Edit Collections
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on *Tainacan*;
+3. In the **Collections** section, click on the gear icon to the right to edit the desired collection.
 
-#### ** Excluir **
-## Excluir Coleções
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em *Tainacan*;
-3. Na listagem de coleções, clique no *ícone de lixeira* para excluir a coleção desejada;
-  * As coleções excluídas vão para a aba **Lixo**, em coleções.
+#### ** Delete **
+## Delete Collections
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on *Tainacan*;
+3. In the collections list, click on the *trash icon* to delete the desired collection;
+  * Deleted collections go to the **Trash** tab in collections.
 
-### Desfazer Coleções excluídas
-1. Para desfazer a exclusão de **coleções** acesse a aba **Lixo**;
-2. Na lista de coleções exibidas, clique na *engrenagem* à direita da coleção desejada;
-  1. Edite a coleção alterando o *status* entre **público**, **privado**ou **rascunho**; 
-    * **Público**: Coleções definidas como públicas serão visualizadas assim que criadas; 
-    * **Rascunho**: Coleções *rascunho* serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: editores, moderadores e administradores). (Consulte [Permissões de Usuários](/pt-br/users) para saber mais) 
-    * **Privado**: Coleções privadas aparecem apenas para seu criador e moderadores desta coleção. 
-3. Na listagem de coleções da aba **Lixo" também é possível excluir a coleção permanentemente. 
+### Undo Deleted Collections
+1. To undo the deletion of **collections**, access the **Trash** tab;
+2. In the list of displayed collections, click on the *gear icon* to the right of the desired collection;
+  1. Edit the collection by changing the *status* to **public**, **private**, or **draft**; 
+    * **Public**: Collections defined as public will be visible as soon as they are created; 
+    * **Draft**: *Draft* collections will be visible to users with permission to access the Tainacan administrative panel (e.g., editors, moderators, and administrators). (See [User Permissions](users) to learn more). 
+    * **Private**: Private collections will only be visible to their creator and moderators of this collection. 
+3. In the collections list of the **Trash** tab, it is also possible to permanently delete the collection. 
 
-!> **Atenção**: a exclusão da coleção implica também na exclusão de seus itens, metadados e informações desta coleção. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de atividades](/pt-br/activities) para saber mais). Exclua a coleção somente se tiver certeza de que não haverá perdas graves de informação. (Consulte [Registro de atividades](/pt-br/activities) para saber mais)
+!> **Attention**: Deleting the collection also implies deleting its items, metadata, and information from this collection. This operation can only be undone by administrators. (See [Activity Log](activities) to learn more). Delete the collection only if you are sure there will be no significant loss of information. (See [Activity Log](activities) to learn more).
 
 <!-- tabs:end -->

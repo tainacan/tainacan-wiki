@@ -2,28 +2,28 @@
 
 <div style="float: right; margin-left: 1rem;">
 	<img 
-		alt="Ícone de Itens" 
+		alt="Items Icon" 
 		src="_assets/images/icon_items.png"
 		width="42"
 		height="42">
 </div>
 
-# Itens
+# Items
 
-Os **itens** são o verdadeiro conteúdo do repositório. A *pintura*, o *filme*, o *livro* e assim por diante. Estes itens são da uma coleção e possuem todos os metadados configurados à **coleção** a qual pertencem.
+**Items** are the actual content of the repository. The *painting*, the *movie*, the *book*, and so on. These items belong to a collection and have all the metadata configured for the **collection** to which they belong.
 
-> Na linguagem do *WordPress*, cada item é um **post** e seu tipo de postagem representa sua **coleção**.
+> In *WordPress* terminology, each item is a **post**, and its post type represents its **collection**.
 
-O **Item** é o conjunto de um documento (*mídia*, *texto* ou *URL*), seus metadados e também eventuais documentos em anexo.
+The **Item** is the combination of a document (*media*, *text*, or *URL*), its metadata, and any attached documents.
 
-Um item sempre pertencerá a uma determinada coleção e, durante seu envio serão preenchidos os metadados herdados pelo repositório ou coleção acima e também os metadados configurados na coleção a qual irá pertencer.
+An item will always belong to a specific collection, and during its submission, the metadata inherited from the repository or parent collection will be filled in, along with the metadata configured for the collection it will belong to.
 
 <!-- tabs:start -->
 
-#### ** Criar **
-## Criar Itens
+#### ** Create **
+## Create Items
 
-### Vídeo Tutorial: Criação de Itens
+### Video Tutorial: Creating Items
 
 <iframe
     width="560"
@@ -34,63 +34,63 @@ Um item sempre pertencerá a uma determinada coleção e, durante seu envio ser�
     allowfullscreen>
 </iframe>
 
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Na seção **Coleções**, clique na coleção desejada;
-4. Clique em `adicionar novo` no canto superior esquerdo.
-  * Clique em `adicionar um item` para enviar apenas um item
-  * Ou clique em `adicionar itens em massa` para adicionar itens em lote. (Consulte [Ações em Massa](/pt-br/bulk-edition) para saber mais)
-  * Ou clique em `importar itens` para adicionar um grande lote de itens (Consulte [Ações em Massa](/pt-br/bulk-edition) para saber mais)
-5. Escolha o tipo de mídia que irá compor o Item:
-  * **Arquivo**: faça o upload de arquivos multimídia como *Imagens*, *Áudios*, *Arquivos de Texto*, *Vídeos*, etc. (Consulte [este artigo](https://imasters.com.br/back-end/como-incorporar-arquivos-de-audio-e-video-no-wordpress) sobre a compatibilidade de arquivos do WordPress)
-    * Selecione o arquivo da *biblioteca de mídia* ou faça o *Upload* a partir do seu computador;
-  * **Texto simples**: Um campo para inserção de texto sem formatação;
-  * **URL**: permite a incorporação de links (*embed*) multimídia de vários sites (como *YouTube*, *Vimeo*, etc.);
-6. Determine a privacidade do item nas opções de visibilidade:
-  * **Visível para todos**: o item será visualizado por todos (A depender dos parâmetros de privacidade da coleção);
-  * **Visível apenas para editores**: visível apenas para editores da coleção. (Consulte [Permissões de Usuários](/pt-br/users) para saber mais);
-7. Defina uma miniatura para o item;
-  1. Clique no ícone **lápis** no quadrado que ilustra a miniatura;
-  2. Selecione o arquivo da *biblioteca de mídia* ou faça o *Upload* a partir do seu computador:
-    * Alguns tipos de documento como arquivos em *.pdf*, imagens, vídeos, URLs, etc. geram sua própria miniatura automaticamente.
-    * Mesmo nestes casos é possível alterar a miniatura normalmente.
-8. Defina se o item poderá receber comentários:
-  * Os comentários podem ser geridos na seção de comentários do *painel do WordPress* (saiba mais na [documentação do WordPress](https://codex.wordpress.org/pt-br:Painel_Coment%C3%A1rios)).
-9. Preencha os campos disponíveis na seção de metadados:
-  1. Cada coleção oferecerá um conjunto de metadados para preenchimento de acordo com as configurações de metadados do repositório e da coleção (Consulte [Metadados](/pt-br/metadata) e [Coleções](/pt-br/collections) para saber mais) .
-  2. Metadados configurados como **obrigatórios** não permitirão que o item seja salvo como *rascunho* ou *publicado* caso não estejam preenchidos. (Consulte [Metadados](/pt-br/metadata) e [Coleções](/pt-br/collections) para saber mais)
-10. Para concluir a criação do item escolha:
-  * `Salvar como Rascunho`: O item não será publicado na coleção, mas ficará salvo na coleção como **Rascunho**.
-  * `Publicar`: O item será publicado na coleção.
-  * `Descartar`: para cancelar a criação do item.
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on Tainacan;
+3. In the **Collections** section, click on the desired collection;
+4. Click on `add new` in the upper left corner.
+  * Click on `add an item` to submit a single item.
+  * Or click on `add items in bulk` to add items in batches. (See [Bulk Actions](bulk-actions) to learn more).
+  * Or click on `import items` to add a large batch of items (See [Bulk Actions](bulk-actions) to learn more).
+5. Choose the type of media that will compose the Item:
+  * **File**: upload multimedia files such as *Images*, *Audio*, *Text Files*, *Videos*, etc. (See [this article](https://imasters.com.br/back-end/como-incorporar-arquivos-de-audio-e-video-no-wordpress) about WordPress file compatibility).
+    * Select the file from the *media library* or upload it from your computer.
+  * **Plain text**: A field for inserting unformatted text.
+  * **URL**: allows embedding multimedia links (*embed*) from various sites (such as *YouTube*, *Vimeo*, etc.).
+6. Determine the item's privacy in the visibility options:
+  * **Visible to everyone**: the item will be visible to everyone (depending on the privacy parameters of the collection).
+  * **Visible only to editors**: visible only to collection editors. (See [User Permissions](users) to learn more).
+7. Define a thumbnail for the item:
+  1. Click on the **pencil** icon in the square illustrating the thumbnail.
+  2. Select the file from the *media library* or upload it from your computer:
+    * Some document types, such as *.pdf* files, images, videos, URLs, etc., automatically generate their own thumbnail.
+    * Even in these cases, the thumbnail can be changed normally.
+8. Define whether the item can receive comments:
+  * Comments can be managed in the *WordPress control panel* comments section (learn more in the [WordPress documentation](https://codex.wordpress.org/pt-br:Painel_Coment%C3%A1rios)).
+9. Fill in the available fields in the metadata section:
+  1. Each collection will offer a set of metadata for completion according to the repository and collection metadata settings (See [Metadata](metadata) and [Collections](collections) to learn more).
+  2. Metadata configured as **mandatory** will not allow the item to be saved as *draft* or *published* if they are not filled in. (See [Metadata](metadata) and [Collections](collections) to learn more).
+10. To complete the creation of the item, choose:
+  * `Save as Draft`: The item will not be published in the collection but will be saved in the collection as **Draft**.
+  * `Publish`: The item will be published in the collection.
+  * `Discard`: to cancel the creation of the item.
 
-#### ** Editar **
-## Editar Itens
+#### ** Edit **
+## Edit Items
 
-1. Acesse o painel de controle do WordPress;
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Na seção **coleções**, clique na na coleção desejada;
-4. Na listagem de **itens** selecione o item que deseja editar;
-5. O item será exibido junto com suas respectivas informações:
-6. Selecione `Editar Item` para modificar suas informações;
-  * Ou selecione `Ver Item` para visualizar o item no tema do seu site;
-7. Todos parâmetros do **Item** podem ser alterados, inclusive o tipo de documento que o compõe.
-  * Itens **não** podem ser migrados de uma coleção para outra.
-8. Para concluir a edição do item escolha:
-  * `Enviar para a lixeira`: para excluir o item e suas informações;
-  * `Voltar para rascunho`: para transformar o item em um rascunho;
-  * `Atualizar`: para salvar as alterações.
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on Tainacan;
+3. In the **Collections** section, click on the desired collection;
+4. In the **items** list, select the item you want to edit;
+5. The item will be displayed along with its respective information:
+6. Select `Edit Item` to modify its information;
+  * Or select `View Item` to view the item in your site's theme;
+7. All **Item** parameters can be changed, including the type of document that composes it.
+  * Items **cannot** be migrated from one collection to another.
+8. To complete the item editing, choose:
+  * `Send to trash`: to delete the item and its information;
+  * `Revert to draft`: to turn the item into a draft;
+  * `Update`: to save the changes.
 
-#### ** Excluir **
-## Excluir Itens
+#### ** Delete **
+## Delete Items
 
-1. Acesse o painel de controle do *WordPress*
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Na seção de **Coleções**, clique na na coleção desejada;
-4. Na listagem de itens clique no ícone de lixeira à direita do item que deseja excluir;    
+1. Access the *WordPress* control panel;
+2. In the left sidebar, click on Tainacan;
+3. In the **Collections** section, click on the desired collection;
+4. In the items list, click on the trash icon to the right of the item you want to delete;
 
-  !> **Atenção**: a exclusão do item implica também na exclusão do documento, informações nos metadados e anexos. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de atividades para](/pt-br/activities) para saber mais)
+  !> **Attention**: deleting the item also implies deleting the document, metadata information, and attachments. This operation can only be undone by administrators. (See [Activity Log](activities) to learn more).
 
-  !> Atenção: Exclua o item somente se tiver certeza de que não haverá perdas graves de informação (Consulte [Registro de atividades para](/pt-br/activities) saber mais).
+  !> **Attention**: Delete the item only if you are sure there will be no significant loss of information (See [Activity Log](activities) to learn more).
 
 <!-- tabs:end -->

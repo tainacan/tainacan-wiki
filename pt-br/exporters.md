@@ -135,8 +135,3 @@ Com o Tainacan é possível exportar suas coleções ou suas Taxonomias (Vocabul
 7. No final do processo, clique no link "Download" para baixar o arquivo.
 
    ![Selecione Exportador](\_assets\images\exportador_119.png)
-
-
-
-
-

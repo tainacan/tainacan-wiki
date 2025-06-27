@@ -1,32 +1,31 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+# Bulk Actions
 
-# Ações em Massa
+## Create Bulk Actions
 
-## Criar Itens em Massa
+1. Access the *WordPress* dashboard;  
+2. In the left sidebar, click on Tainacan;  
+3. Select the **Collection** in which you want to create items;  
+4. Click on `Add New`;  
+5. Select the `Add Items in Bulk` option;  
+6. Click or drag the media files you want to create into the **Document upload** field;  
+7. The selected files will be uploaded automatically, and the upload progress can be tracked in real time.
 
-1. Acesse o painel de controle do *WordPress*;
-2. Na barra lateral esquerda, clique em Tainacan;
-3. Selecione a **Coleção** que deseja para a criação dos itens;
-4. Clique em `Adicionar Novo`;
-5. Selecione a opção `Adicionar Itens em Massa`;
-6. Clique ou arraste a mídia dos itens que deseja criar para o campo de **Envio de documentos**;
-7. Os arquivos selecionados serão enviados automaticamente e o progresso de upload pode ser acompanhado em tempo real.
+    > New media files can be added at any time on this same screen during the document upload process;
 
-    > Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
+8. Once the upload is complete, you will be able to:
+   1. Select `Edit items in sequence` to individually edit each media file one after another. See Edit Items in Sequence;  
+   2. `Edit items in bulk` to apply shared information to all files uploaded in this operation. See Edit Items in Bulk;  
+   3. `Cancel` to end the operation. Media files that have already completed uploading will remain available in your installation's Media Library.
 
-8. Quando o processo for concluído, será possível:
-  1. Selecionar `Edição de itens em sequência` para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
-  2. `Editar itens em massa` para editar informações comuns a todos arquivos enviados nessa operação. Consulte Editar Itens em Massa; 
-  3. `Cancelar` para encerrar a operação. Os arquivos de mídia que já estiverem com o upload concluído ficarão disponíveis na Biblioteca de mídia da sua instalação.
 
-### Editar Itens criados em Massa
+### Edit Items Created in Bulk
 
-1. Na tela **Editar Itens em massa** as configurações e os valores de metadados inseridos são atribuídos a todos os itens da seleção.
-2. Após concluir o preenchimento dos campos desejados, selecione:
-  1. `Enviar para a lixeira` para enviar o conjunto de itens para a lixeira;
-  2. Selecione `Edição de itens em sequência` para editar cada mídia individualmente em sequência;
+1. On the **Edit Items in Bulk** screen, the settings and metadata values entered will be applied to all selected items.  
+2. After filling in the desired fields, choose one of the following options:
+   1. `Send to trash` to move the set of items to the trash;  
+   2. Select `Edit items in sequence` to individually edit each media file one after another;
 
-### Vídeo Tutorial: Criar Itens em Massa
+### Video Tutorial: Create Items in Bulk(Video in portuguese)
 <iframe
     width="560"
     height="513" 
@@ -38,77 +37,76 @@
 
 -----
 
-## Editar Itens em Massa
+## Bulk Edit Items
 
-1. Selecione a Coleção que deseja para a edição dos itens;
-2. Clique nas caixa de seleção dos itens que deseja editar ou clique em **Selecionar todos os itens na página**
-  * Se desejar, também é possível **Selecionar todos** itens da coleção;
+1. Select the Collection where you want to edit the items;  
+2. Click the checkboxes of the items you want to edit or click **Select all items on this page**  
+  * If desired, you can also **Select all** items in the collection;
 
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+  !> **Attention**: It is likely that the **Select all items** option is not available. This is a setting controlled by the site administrator.
 
-3. À direita clique em `Ações em massa`
-4. Selecione `Editar itens selecionados em massa`
-5. Selecione o metadado que deseja editar na janela exibida;
-6. Em seguida, com base nas opções e configurações do metadado, selecione uma ação:
-  1. `Atribuir um novo valor`, para adicionar um novo valor ao metadado;
-  2. `Remover valor`, para remover um valor já existente;
-    * Um campo para selecionar o valor a ser removido será exibido à direita.
-  3. `Substituir valor` para alterar um valor já existente por outro;
-    * Será exibido um campo para selecionar o valor a ser substituído e outro campo será exibido para a inserção do novo valor.
-7. Ao concluir a configuração das alterações desejadas, clique no botão de **play** à direita para executar a ação;
-  * Ou clique no ícone de cancelar para **cancelar** a ação;
-8. Clique em `Concluir` quando concluir as ações desejadas.
-
------
-
-## Excluir Itens em Massa
-
-1. Selecione a **Coleção** que deseja para a edição dos itens;
-2. Clique nas caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`;
-  * Se desejar, também é possível `Selecionar todos` itens da coleção;
-  
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
-
-3. À direita clique em Ações em massa
-4. Selecione `Enviar para lixeira` para excluir os itens selecionados;
-    * Uma janela de confirmação será exibida, clique em `Continuar` para confirmar a operação;
-
-### Excluir Permanentemente ou restaurar Itens em Massa
-
-1. Os arquivos enviados para a lixeira estão disponíveis na aba **Lixo** da coleção;
-2. Clique na caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`;
-    * Se desejar, também é possível `Selecionar todos` itens da coleção;
-  
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
-
-3. À direita clique em Ações em massa
-  1. Clique em `Deletar permanentemente` para **excluir os itens de forma irreversível**;
-  2. Ou clique em `Remover da lixeira`, para restaurar os itens selecionados para a coleção.
+3. On the right, click `Bulk Actions`  
+4. Select `Bulk Edit Selected Items`  
+5. Choose the metadata you want to edit in the displayed window;  
+6. Then, based on the metadata options and settings, select an action:  
+  1. `Assign a new value`, to add a new value to the metadata;  
+  2. `Remove value`, to remove an existing value;  
+    * A field to select the value to be removed will appear on the right.  
+  3. `Replace value`, to change an existing value to another;  
+    * A field will appear to select the value to be replaced and another field to enter the new value.  
+7. When finished configuring the desired changes, click the **play** button on the right to execute the action;  
+  * Or click the cancel icon to **cancel** the action;  
+8. Click `Finish` when you have completed the desired actions.
 
 -----
 
-## Editar Itens em Sequencia
+## Bulk Delete Items
 
-1. Selecione a **Coleção** que deseja para a edição dos itens;
-2. Clique nas caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`
-  * Se desejar, também é possível `Selecionar todos itens` da coleção;
+1. Select the **Collection** where you want to edit the items;  
+2. Click the checkboxes of the items you want to edit or click `Select all items on this page`;  
+  * If desired, you can also `Select all` items in the collection;  
   
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+  !> **Attention**: The **Select all items** option is likely not available. This is a setting controlled by the site administrator.
 
-3. À direita clique em `Ações em massa`
-4. Selecione `Editar itens selecionados em sequência`
-5. Edite os campos desejados;
-  1. No rodapé da página é exibida uma barra de progresso com as informações:
-    * Item atual e total de itens;
-    * Última vez que as alterações realizadas foram salvas;
-6. Ao concluir as alterações no item exibido, selecione:
-  2. `Enviar para a lixeira` para que o item exibido seja enviado para a lixeira; 
-  3. `Voltar pra rascunho` para que o item exibido tenha seu *status* alterado para **rascunho**;
-  4. `Atualizar` para confirmar as alterações realizadas no item;
-7. Clique em `Próximo` ou `Anterior` quando concluir as ações desejadas no item atual e seguir a edição de itens em sequência.
+3. On the right, click Bulk Actions  
+4. Select `Move to trash` to delete the selected items;  
+    * A confirmation window will appear, click `Continue` to confirm the operation;
 
+### Permanently Delete or Restore Bulk Items
 
-### Vídeo Tutorial: Editar Itens em Sequência
+1. Files sent to trash are available in the **Trash** tab of the collection;  
+2. Click the checkboxes of the items you want to edit or click `Select all items on this page`;  
+    * If desired, you can also `Select all` items in the collection;  
+  
+  !> **Attention**: The **Select all items** option is likely not available. This is a setting controlled by the site administrator.
+
+3. On the right, click Bulk Actions  
+  1. Click `Delete permanently` to **irreversibly delete the items**;  
+  2. Or click `Remove from trash` to restore the selected items to the collection.
+
+-----
+
+## Edit Items in Sequence
+
+1. Select the **Collection** where you want to edit the items;  
+2. Click the checkboxes of the items you want to edit or click `Select all items on this page`  
+  * If desired, you can also `Select all` items in the collection;  
+  
+  !> **Attention**: The **Select all items** option is likely not available. This is a setting controlled by the site administrator.
+
+3. On the right, click `Bulk Actions`  
+4. Select `Edit selected items in sequence`  
+5. Edit the desired fields;  
+  1. At the bottom of the page, a progress bar is displayed with the following information:  
+    * Current item and total number of items;  
+    * Last time the changes were saved;  
+6. After finishing the edits on the displayed item, select:  
+  1. `Send to trash` to move the displayed item to the trash;  
+  2. `Move to draft` to change the status of the displayed item to **draft**;  
+  3. `Update` to confirm the changes made to the item;  
+7. Click `Next` or `Previous` when you finish the desired actions on the current item and want to continue editing items in sequence.
+
+### Video Tutorial: Edit Items in Sequence (Video in portuguese)
 
 <iframe
     width="560"
@@ -121,11 +119,11 @@
 
 -----
 
-## Importar Itens
+## Import Items
 
-Importe vários itens com metadados pré-configurados e valores preenchidos com o [Importador .csv](/pt-br/importers#importador-csv-items).
+Import multiple items with pre-configured metadata and filled values using the [CSV Importer](/importers.md#csv-importer-items).
 
-### Vídeo Tutorial: Importação de Itens
+### Video Tutorial: Importing Items (Video in portuguese)
 
 <iframe
     width="560"
@@ -138,11 +136,12 @@ Importe vários itens com metadados pré-configurados e valores preenchidos com 
 
 -----
 
-## Importar Taxonomias
+## Import Taxonomies
 
-Crie taxonomias com vocabulários controlados e valores hierárquicos utilizando o [Importador de Vocabulário](/pt-br/importers#importador-csv-de-vocabulários-taxonomias).
+Create taxonomies with controlled vocabularies and hierarchical values using the [Vocabulary Importer](/pt-br/importers#importador-csv-de-vocabulários-taxonomias).
 
-### Vídeo Tutorial: Importação de Termos e Taxonomias
+### Video Tutorial: Importing Terms and Taxonomies (Video in Portuguese)
+
 
 <iframe
     width="560"
