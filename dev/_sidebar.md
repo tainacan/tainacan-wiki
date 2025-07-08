@@ -3,6 +3,7 @@
 
 - Development Basics
   - [Setup Local](/dev/setup-local.md "Local Setup for Tainacan Development - Tainacan Wiki")
+  - [Setup Docker](/dev/setup-docker.md "Docker Setup for Tainacan Development - Tainacan Wiki")
   - [Key Concepts](/dev/key-concepts.md "Key Concepts related to Tainacan Development - Tainacan Wiki")
   - [Internal API](/dev/internal-api.md "Tainacan Internal API - Tainacan Wiki")
   - [Tainacan Hooks](/dev/hooks.md "Tainacan Hooks - Tainacan Wiki")
