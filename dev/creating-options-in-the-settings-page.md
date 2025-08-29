@@ -19,11 +19,7 @@ To understand deeply how WordPress handles option registration and settings fiel
 - [register_setting()](https://developer.wordpress.org/reference/functions/register_setting/)
 - [add_settings_field()](https://developer.wordpress.org/reference/functions/add_settings_field/)
 
-> **Important: All options registered via `create_tainacan_setting()` are automatically prefixed with `'tainacan_option_'` in the database.** 
-> This means:
-> - If you register an option with `'id' => 'my_setting'`
-> - The actual database option, stored in `wp_options` table will be named `'tainacan_option_my_setting'`
-> - You must use the full prefixed name when calling `get_option()`, `update_option()`, etc.
+?> These are general purpose options, that usually must be available accross the plugin or even the entire website, which is why they are stored using WordPress Options API. However you may be interested on storing extra data binded to some of the Tainacan entities, such as collections, items, metadata, etc. In that case, read the [Admin Form Hook](/dev/admin-form-hooks.md) documentation to see how you can add fields to each of their Admin fields.
 
 ## Basic Usage
 
@@ -310,14 +306,18 @@ $tainacan_settings->create_tainacan_setting([
 
 ### Get Option Value
 
-**Remember: All Tainacan options are prefixed with `'tainacan_option_'` in the database!**
+> **Important: All options registered via `create_tainacan_setting()` are automatically prefixed with `'tainacan_option_'` in the database.** 
+> This means:
+> - If you register an option with `'id' => 'my_setting'`
+> - The actual database option, stored in `wp_options` table will be named `'tainacan_option_my_setting'`
+> - You must use the full prefixed name when calling `get_option()`, `update_option()`, etc.
 
 ```php
 // Get the option value (note the prefix!)
 $api_endpoint = get_option('tainacan_option_custom_api_endpoint', 'default_value');
 
 // Get with default fallback
-$max_items = get_option('tainacan_option_max_items_per_page', 20);
+$max_collections = get_option('tainacan_option_max_collections_per_page', 20);
 
 // Get array option
 $enabled_features = get_option('tainacan_option_enabled_features', []);
