@@ -51,6 +51,9 @@ This is a non-exhaustive list of the most important topics you should look into:
 
 <div class="two-columns-list">
 
+- [Using Admin Form Hooks](/dev/admin-form-hooks.md) - Insert extra options to entities forms such as collection items and taxonomy forms
+- [Creating options in the Settings Page](/dev/creating-options-in-the-settings-page.md) - A guide for registering and displaying options inside the Tainacan Settings Page
+- [Creating Tainacan Admin Pages](/dev/creating-tainacan-admin-pages.md) - A guide for creating your own Pages inside the Tainacan Admin
 - [Creating a new Metadata Type](/dev/creating-metadata-type.md) - A guide for creating your custom Metadata Type
 - [Creating a new Filters Type](/dev/creating-filters-type.md) - A guide for creating your custom Filters Type
 - How to create [Exporters](/dev/exporter-flow.md), [Importers](/dev/importer-flow.md) and [Exposers](/dev/exposers.md)
@@ -67,7 +70,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 - [Creating compatible themes](/dev/creating-compatible-themes.md) - An Introduction on how to create a theme that fully support Tainacan features
 - [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates for those that Tainacan adds to WordPress Template Hierarchy
 - [Customizing the Items List](/dev/customizing-the-items-list.md) - Tweaking the appearence of the items list
-- [Creating Extra View Modes](/dev/extra-view-modes) - How to create Extra View Modes that will be avaialble for displaying items list
+- [Creating Extra View Modes](/dev/extra-view-modes.md) - How to create Extra View Modes that will be avaialble for displaying items list
 - [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) - Details to offer better support to the latest content block editor
 
 </div>

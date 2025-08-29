@@ -19,6 +19,9 @@
   - [Importer Flow](/dev/importer-flow.md "Importer Flow on Tainacan - Tainacan Wiki")
     - [Repository Methods](/dev/repository-methods.md "Tainacan Repository Methods - Tainacan Wiki")
 - Plugin Extension
+  - [Using Admin Form Hooks](/dev/admin-form-hooks.md "Using Admin Form Hooks - Tainacan Wiki")
+  - [Creating options in the Settings Page](/dev/creating-options-in-the-settings-page.md "Creating options in the Settings Page - Tainacan Wiki")
+  - [Creating Tainacan Admin Pages](/dev/creating-tainacan-admin-pages.md "Creating Tainacan Admin Pages - Tainacan Wiki")
   - [Creating a Metadata Type](/dev/creating-metadata-type.md "How to Create a new Metadata Type - Tainacan Wiki")
   - [Creating a Filter Type](/dev/creating-filters-type.md "How to Create a new Filters Type - Tainacan Wiki")
   - [Registering New Vue Components](/dev/registering-custom-vue-components.md "How to register new Vue Components to use in your plugins - Tainacan Wiki")
