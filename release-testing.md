@@ -31,7 +31,7 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 - Observe se todos elementos da página foram exibidos corretamente;
   - Observe novamente estes aspectos ao concluir os processos a seguir para reportar eventuais alterações substanciais no tempo de carregamento de tela ou exibição incorreta dos elementos.
 
-### Coleções
+### Coleções <!-- {docsify-ignore} -->
 
 1. Crie DUAS ou mais coleções
 2. Preencha seus campos, incluindo miniatura e imagem da Header;
@@ -42,7 +42,7 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 - Observe se todos elementos da página foram exibidos corretamente;
 - Observe o tempo de conclusão ao **concluir** ou **salvar** as coleções;
 
-### Taxonomias
+### Taxonomias <!-- {docsify-ignore} -->
 
 1. Crie uma ou mais taxonomias;
 2. Crie um ou mais termos em cada taxonomia criada;
@@ -55,7 +55,7 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 - Observe o tempo de conclusão ao **salvar** cada taxonomia;
 - Observe o tempo de conclusão ao **salvar** cada termo;
 
-### Metadados
+### Metadados <!-- {docsify-ignore} -->
 
 1. Crie os diferentes tipos de metadados a **nível de repositório**:
 1. Lembre-se de criar metadado do tipo _taxonomia_;
@@ -81,7 +81,7 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 - Observe se todos elementos da página foram exibidos corretamente;
 - Observe o tempo de conclusão ao **salvar** cada metadado;
 
-### Itens
+### Itens <!-- {docsify-ignore} -->
 
 1. Abra uma coleção;
 2. Adicione um Item;
@@ -102,15 +102,15 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 - Observe se o aviso de **preenchimento de metadados obrigatórios** funciona corretamente, ao **salvar** ou **publicar** cada item;
 - Observe o tempo de conclusão ao **salvar** ou **publicar** cada item;
 
-### Importadores
+### Importadores <!-- {docsify-ignore} -->
 
 ?> _TODO_ Implementar este roteiro de testes
 
-### Processos
+### Processos <!-- {docsify-ignore} -->
 
 ?> _TODO_ Implementar este roteiro de testes
 
-### Atividades
+### Atividades <!-- {docsify-ignore} -->
 
 ?> _TODO_ Implementar este roteiro de testes
 

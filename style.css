@@ -631,8 +631,11 @@ a.fab:hover {
 }
 .page_toc ul a {
     font-weight: 400;
-    color: #888888;
+    color: #bdbdbd;
     word-wrap: anywhere;
+}
+.page_toc:hover ul a {
+    color: #7e7e7e;
 }
 .page_toc ul a:hover span {
     color: var(--theme-color, #187181);
