@@ -2,5 +2,5 @@
 - [Foro de discusión](https://tainacan.discourse.group ":ignore")
 - Idiomas
   - [Inglês](/#tainacan-wiki)
-  - [Português Brasileiro](/es-mx/#wiki-do-tainacan)
-  - [Español](/es-mx/#wiki-do-tainacan)
+  - [Português Brasileiro](/pt-br/#wiki-do-tainacan)
+  - [Español](/es-mx/#wiki-de-tainacan)

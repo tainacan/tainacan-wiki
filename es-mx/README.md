@@ -1,4 +1,4 @@
-# Tainacan Wiki en español
+# Wiki de Tainacan
 
 **Hola y bienvenido a la Wiki!!** Este es el hogar de la documentacion para Tainacan una traduccion al español.
 
