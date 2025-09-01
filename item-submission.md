@@ -1,6 +1,6 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
-
 # Items Submission
+
+?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 A [versão _0.17_](/pt-br/releases#tainacan-beta-017) do Tainacan trás a possibilidade de se abrirem coleções para _submissão pública_ de itens (também referida como _auto-depósito_). Isto significa que usuários sem privilégios administrativos, ou até mesmo visitantes do site passam a poder eles mesmos criarem itens em uma Coleção, **ampliando assim as possibilidades de um acervo _colaborativo_ gerado por diversas pessoas**.
 
