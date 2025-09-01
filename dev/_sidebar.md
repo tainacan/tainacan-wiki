@@ -27,6 +27,7 @@
   - [Registering New Vue Components](/dev/registering-custom-vue-components.md "How to register new Vue Components to use in your plugins - Tainacan Wiki")
   - [The Vue Items List Component](/dev/the-vue-items-list-component.md "The Vue Items List Component rendered by Tainacan - Tainacan Wiki")
   - [Tweaking the Admin UI](/dev/admin-ui-options.md "How to use Tainacan Admin UI options to tweak its interface - Tainacan Wiki")
+  - [Using React Selection Components](/dev/react-selection-modules "Use Tainacan React components to offer an advanced items selection flow in a plugins - Tainacan Wiki")
 - Theme development and extension
   - [Creating Compatible Themes](/dev/creating-compatible-themes.md "How to create themes fully compatible with Tainacan - Tainacan Wiki")
   - [Custom Templates](/dev/custom-templates.md "How to use custom templates for theme compatibility with Tainacan - Tainacan Wiki")

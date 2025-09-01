@@ -57,9 +57,10 @@ This is a non-exhaustive list of the most important topics you should look into:
 - [Creating a new Metadata Type](/dev/creating-metadata-type.md) - A guide for creating your custom Metadata Type
 - [Creating a new Filters Type](/dev/creating-filters-type.md) - A guide for creating your custom Filters Type
 - How to create [Exporters](/dev/exporter-flow.md), [Importers](/dev/importer-flow.md) and [Exposers](/dev/exposers.md)
-- [Registering New Vue Components](/dev/registering-custom-vue-components.md) - Registering new Vue components that can be used by your plugin, such as metadata and filter types or extra view modes.
-- [The Vue Items List Component](/dev/the-vue-items-list-component.md) - The clientside rendered items list that provides all power to faceted search.
-- [Tweaking the Tainacan Admin UI](/dev/admin-ui-options.md) - Using a filter to set variables for customizing the Tainacan Admin panel.
+- [Registering New Vue Components](/dev/registering-custom-vue-components.md) - Registering new Vue components that can be used by your plugin, such as metadata and filter types or extra view modes
+- [The Vue Items List Component](/dev/the-vue-items-list-component.md) - The clientside rendered items list that provides all power to faceted search
+- [Tweaking the Tainacan Admin UI](/dev/admin-ui-options.md) - Using a filter to set variables for customizing the Tainacan Admin panel
+- [Using React Selection Components](/dev/react-selection-modules) - Use our React selection components in your plugin to offer an advanced items selection flow
 
 </div>
 
