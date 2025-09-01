@@ -31,12 +31,6 @@
     --heading-h2-margin: 2rem 0 1rem 0;
     --heading-h3-margin: 1.875rem 0 0 0;
     --heading-h4-margin: 1.75rem 0 0 0;
-    --sidebar-toggle-background: #e6f6f8;
-    --sidebar-toggle-icon-color: #187181; 
-    --sidebar-toggle-border-color: transparent;
-    --sidebar-toggle-offset-top: calc(45px - (var(--sidebar-toggle-height) / 2));
-    --sidebar-nav-link-font-weight--hover: unset;
-    --sidebar-nav-indent: 10px;
     --link-color: #284472;
     --emoji-size: 1.125rem;
     --code-font-size: 0.85rem;
@@ -195,7 +189,7 @@ section.cover img {
 }
 .sidebar ul li ul a,
 .sidebar ul li ul p {
-    font-size: 0.875rem;
+    font-size: 0.813rem;
     font-weight: 400;
 }
 .sidebar ul li.active > a {
