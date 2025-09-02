@@ -1,3 +1,5 @@
+# tainacan_get_the_metadata_sections
+
 
 Render the item metadata sections as a HTML string.
 

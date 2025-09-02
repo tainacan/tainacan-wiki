@@ -1,3 +1,5 @@
+# XML_Error
+
 
 Generate an XML response when a request cannot be finished
 

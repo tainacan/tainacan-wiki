@@ -1,3 +1,5 @@
+# tainacan_blocks_register_block
+
 
 Registers a 'generic' Tainacan Block, according to the TAINACAN_BLOCKs array
 

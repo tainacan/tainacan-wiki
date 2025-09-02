@@ -1,3 +1,5 @@
+# tainacan_the_faceted_search
+
 
 Outputs the div used by Vue to render the Items List with a powerful faceted search
 

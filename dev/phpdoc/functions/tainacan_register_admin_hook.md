@@ -1,3 +1,5 @@
+# tainacan_register_admin_hook
+
 
 ***
 

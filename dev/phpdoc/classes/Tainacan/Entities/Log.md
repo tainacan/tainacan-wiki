@@ -1,3 +1,5 @@
+# Log
+
 
 Represents entity Log
 

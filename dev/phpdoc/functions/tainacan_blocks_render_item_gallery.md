@@ -1,3 +1,5 @@
+# tainacan_blocks_render_item_gallery
+
 
 Renders the content of the item gallery block
 using Tainacan template functions that create

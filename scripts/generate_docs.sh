@@ -33,6 +33,24 @@ php ./vendor/phpdocumentor/bin/phpDocumentor.phar \
     --ignore="*.min.js" \
     --ignore="*.min.css"
 
+# Add titles to generated documentation files
+echo "Adding titles to documentation files..."
+# Add titles to class files
+find /src/tainacan-wiki/dev/phpdoc/classes -name "*.md" -type f -exec bash -c '
+    filename=$(basename "$1" .md)
+    # Extract class name from filename (handle namespaced classes)
+    classname=$(echo "$filename" | sed "s/.*\\\\.//")
+    # Add title at the beginning of the file
+    sed -i "1i# $classname\n" "$1"
+' _ {} \;
+
+# Add titles to function files
+find /src/tainacan-wiki/dev/phpdoc/functions -name "*.md" -type f -exec bash -c '
+    filename=$(basename "$1" .md)
+    # Add title at the beginning of the file
+    sed -i "1i# $filename\n" "$1"
+' _ {} \;
+
 # Fix links in generated documentation to work with GitHub Pages/Docsify
 echo "Fixing documentation links for GitHub Pages..."
 find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|\./functions/|/dev/phpdoc/functions/|g' {} \;

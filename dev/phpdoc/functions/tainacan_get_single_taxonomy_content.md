@@ -1,3 +1,5 @@
+# tainacan_get_single_taxonomy_content
+
 
 Render the taxonomy single template HTML string.
 
