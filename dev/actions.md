@@ -25,6 +25,7 @@ Source: [class-tainacan-exposers-handler.php](https://github.com/tainacan/tainac
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-importers`
 
 
@@ -32,6 +33,7 @@ Source: [class-tainacan-importer-handler.php](https://github.com/tainacan/tainac
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-exporters`
 
 
@@ -43,6 +45,7 @@ Source: [class-tainacan-exporter-handler.php](https://github.com/tainacan/tainac
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-generic_process`
 
 
@@ -50,6 +53,7 @@ Source: [class-tainacan-generic-handler.php](https://github.com/tainacan/tainaca
 
 ---------------------------------
 <br>
+
 ## `tainacan-api-collection-created`
 
 *Receive a JSON with the structure of a Collection and return, in case of success insert
@@ -65,6 +69,7 @@ Source: [class-tainacan-rest-collections-controller.php](https://github.com/tain
 
 ---------------------------------
 <br>
+
 ## `tainacan-api-item-updated`
 
 
@@ -77,6 +82,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 
 ---------------------------------
 <br>
+
 ## `tainacan-api-item-duplicated`
 
 
@@ -89,6 +95,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 
 ---------------------------------
 <br>
+
 ## `tainacan-submission-item-finish`
 
 *Represents the Items REST Controller*
@@ -103,6 +110,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 
 ---------------------------------
 <br>
+
 ## `tainacan-bulk-edit-set-status`
 
 *Sets the status to all items in the current group*
@@ -119,6 +127,7 @@ Source: [class-tainacan-bulk-edit.php](https://github.com/tainacan/tainacan/blob
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert`
 
 
@@ -130,6 +139,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert-term`
 
 
@@ -141,6 +151,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-insert`
 
 
@@ -152,6 +163,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-insert-term`
 
 
@@ -163,6 +175,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-delete`
 
 
@@ -175,6 +188,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-delete-term`
 
 
@@ -187,6 +201,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-deleted`
 
 
@@ -199,6 +214,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-deleted-term`
 
 
@@ -211,6 +227,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `register_filter_types`
 
 *fetch all registered filter type classes*
@@ -224,6 +241,7 @@ Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/m
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert`
 
 
@@ -235,6 +253,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert-Item_Metadata_Entity`
 
 
@@ -246,6 +265,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-insert`
 
 
@@ -257,6 +277,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-insert-Item_Metadata_Entity`
 
 
@@ -268,6 +289,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-delete`
 
 
@@ -280,6 +302,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-delete-Item_Metadata_Entity`
 
 
@@ -292,6 +315,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-deleted`
 
 
@@ -304,6 +328,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-deleted-Item_Metadata_Entity`
 
 
@@ -316,6 +341,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `register_metadata_types`
 
 *fetch all registered metadatum type classes*
@@ -329,6 +355,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 
 ---------------------------------
 <br>
+
 ## `tainacan-taxonomy-removed-from-collection`
 
 *Triggers hooks when saving a Taxonomy Metadatum, indicating wich taxonomy was added or removed from a collection.*
@@ -346,6 +373,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 
 ---------------------------------
 <br>
+
 ## `tainacan-taxonomy-added-to-collection`
 
 *Triggers hooks when saving a Taxonomy Metadatum, indicating wich taxonomy was added or removed from a collection.*
@@ -363,6 +391,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 
 ---------------------------------
 <br>
+
 ## `tainacan-taxonomy-removed-from-collection`
 
 *Class Metadata*
@@ -377,6 +406,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert`
 
 
@@ -388,6 +418,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert-{$obj_post_type}`
 
 
@@ -399,6 +430,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert-{$obj_post_type}`
 
 
@@ -410,6 +442,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-insert`
 
 
@@ -423,6 +456,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-insert-{$obj_post_type}`
 
 
@@ -434,6 +468,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-delete`
 
 
@@ -446,6 +481,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-delete-{$post_type}`
 
 
@@ -458,6 +494,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-deleted`
 
 
@@ -470,6 +507,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-deleted-{$post_type}`
 
 
@@ -482,6 +520,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 
 ---------------------------------
 <br>
+
 ## `tainacan-upload-folder-renamed`
 
 *When an item or collection is saved, it checks if the satus was changed and
@@ -498,6 +537,7 @@ Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-upload-folder-renamed`
 
 *Rename all folders from items after a bulk edit operation move their statuses*
@@ -514,6 +554,7 @@ Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/
 
 ---------------------------------
 <br>
+
 ## `tainacan-pre-insert-attachment`
 
 *Insert an attachment from an URL address.*
@@ -529,6 +570,7 @@ Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-post-insert-attachment`
 
 *Insert an attachment from an URL address.*
@@ -544,6 +586,7 @@ Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-mappers`
 
 
@@ -555,6 +598,7 @@ Source: [class-tainacan-mappers-handler.php](https://github.com/tainacan/tainaca
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-vuejs-component`
 
 *Class Components_Hooks*
@@ -568,6 +612,7 @@ Source: [class-tainacan-component-hooks.php](https://github.com/tainacan/tainaca
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-admin-hooks`
 
 
@@ -575,6 +620,7 @@ Source: [class-tainacan-admin-hooks.php](https://github.com/tainacan/tainacan/bl
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-vuejs-plugin`
 
 *Class Plugins_Hooks*
@@ -588,6 +634,7 @@ Source: [class-tainacan-plugin-hooks.php](https://github.com/tainacan/tainacan/b
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-filter-type`
 
 *Class FilterTypeHelper*
@@ -601,6 +648,7 @@ Source: [class-tainacan-filter-type-helper.php](https://github.com/tainacan/tain
 
 ---------------------------------
 <br>
+
 ## `tainacan-register-metadata-type`
 
 *Class MetadataTypeHelper*
@@ -614,6 +662,7 @@ Source: [class-tainacan-metadata-type-helper.php](https://github.com/tainacan/ta
 
 ---------------------------------
 <br>
+
 ## `tainacan-enqueue-admin-scripts`
 
 
@@ -621,6 +670,7 @@ Source: [class-tainacan-admin.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-enqueue-roles-scripts`
 
 
@@ -628,6 +678,7 @@ Source: [class-tainacan-roles.php](https://github.com/tainacan/tainacan/blob/mas
 
 ---------------------------------
 <br>
+
 ## `tainacan-dashboard-before-cards`
 
 
@@ -635,6 +686,7 @@ Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/da
 
 ---------------------------------
 <br>
+
 ## `tainacan-dashboard-after-cards`
 
 
@@ -642,5 +694,6 @@ Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/da
 
 ---------------------------------
 <br>
+
 <p align="center"><a href="https://github.com/pronamic/wp-documentor"><img src="https://cdn.jsdelivr.net/gh/pronamic/wp-documentor@main/logos/pronamic-wp-documentor.svgo-min.svg" alt="Pronamic WordPress Documentor" width="32" height="32"></a><br><em>Generated by <a href="https://github.com/pronamic/wp-documentor">Pronamic WordPress Documentor</a> <code>1.2.0</code></em><p>
 
