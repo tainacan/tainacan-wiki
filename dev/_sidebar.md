@@ -10,6 +10,7 @@
     - [Filters](/dev/filters.md 'Tainacan PHP and Javascript Filters - Tainacan Wiki')
   - [Architecture](/dev/architecture.md 'technical architecture of Tainacan')
   - [:link: JSON API](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json ':ignore')
+  - [Code Reference](/dev/phpdoc/Home.md 'PHP Code Reference listing Classes and functions - Tainacan Wiki')
   - [Roles and Capabilities](/dev/roles-capabilities.md 'Roles and Capabilities Developers Documentation - Tainacan Wiki')
 - More on Plugin Development
   - [Exporting and Exposing](/dev/exporting-and-exposing.md 'Exporting and Exposing - Tainacan Wiki')

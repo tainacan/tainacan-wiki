@@ -28,7 +28,7 @@ This is a non-exhaustive list of the most important topics you should look into:
 
 - [Setting up local environment](/dev/setup-local.md) - If you want to contribute to Tainacan core, you must set up your local environment. Alternatively, you can use our [Docker repository](https://github.com/tainacan/tainacan-docker ":ignore"). **If you want to develop themes or plugins, you don't need this**.
 - [Key Concepts](/dev/key-concepts.md) - First things first. Let's understand what is what in Tainacan.
-- [Tainacan Internals](/dev/internal-api.md) - Reference on Tainacan main classes and how to use them.
+- [Tainacan Internals](/dev/internal-api.md) - Reference on Tainacan main classes and how to use them. If you need more details, check our [Code Reference](/dev/phpdoc/Home) extracted from source code.
 - [Tainacan Hooks](/dev/hooks.md) - Expand or modify different sections of code without modifying the plugin, using Actions and Filters, both in backend and frontend.
 - [Tainacan API](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json ":ignore") - A Rest JSON API which you can use to get content from a Tainacan database.
 - [Roles and Capabilities](/dev/roles-capabilities.md) - Basic information about data privacy and access levels in Tainacan.
