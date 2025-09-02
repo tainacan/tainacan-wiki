@@ -1,38 +1,18 @@
-***
-
-# URL
 
 Class TainacanMetadatumType
 
-
+***
 
 * Full name: `\Tainacan\Metadata_Types\URL`
-* Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type.md)
-
-
-
+* Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
 ## Methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -44,17 +24,6 @@ allow i18n from messages
 public get_form_labels(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_value_as_html
@@ -65,22 +34,11 @@ Get the value as a HTML string with links
 public get_value_as_html(\Tainacan\Entities\Item_Metadata_Entity $item_metadata): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |  |
-
-
-
-
+| Parameter        | Type                                        | Description |
+|------------------|---------------------------------------------|-------------|
+| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |             |
 
 ***
 
@@ -92,22 +50,11 @@ Get the a single value as a HTML string with links
 public get_single_value_as_html(mixed $value): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -119,22 +66,11 @@ Get the value as a HTML string with links
 public get_value_as_string(\Tainacan\Entities\Item_Metadata_Entity $item_metadata): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |  |
-
-
-
-
+| Parameter        | Type                                        | Description |
+|------------------|---------------------------------------------|-------------|
+| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |             |
 
 ***
 
@@ -146,533 +82,247 @@ Checks if the value passed is a valid URL or markdown link
 public validate(\Tainacan\Entities\Item_Metadata_Entity $item_metadata): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |  |
-
-
-
-
+| Parameter        | Type                                        | Description |
+|------------------|---------------------------------------------|-------------|
+| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |             |
 
 ***
 
-
 ## Inherited methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### validate
-
-
 
 ```php
 public validate(\Tainacan\Entities\Item_Metadata_Entity $item_metadata): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |  |
-
-
-
-
+| Parameter        | Type                                        | Description |
+|------------------|---------------------------------------------|-------------|
+| `$item_metadata` | **\Tainacan\Entities\Item_Metadata_Entity** |             |
 
 ***
 
 ### get_related_mapped_prop
 
-
-
 ```php
 public get_related_mapped_prop(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_related_mapped_prop
 
-
-
 ```php
 public set_related_mapped_prop(mixed $related_mapped_prop): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$related_mapped_prop` | **mixed** |  |
-
-
-
-
+| Parameter              | Type      | Description |
+|------------------------|-----------|-------------|
+| `$related_mapped_prop` | **mixed** |             |
 
 ***
 
 ### get_validation_errors
 
-
-
 ```php
 public get_validation_errors(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_primitive_type
 
-
-
 ```php
 public get_primitive_type(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_primitive_type
 
-
-
 ```php
 public set_primitive_type(mixed $primitive_type): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$primitive_type` | **mixed** |  |
-
-
-
-
+| Parameter         | Type      | Description |
+|-------------------|-----------|-------------|
+| `$primitive_type` | **mixed** |             |
 
 ***
 
 ### get_errors
 
-
-
 ```php
 public get_errors(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_component
 
-
-
 ```php
 public get_component(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_component
 
-
-
 ```php
 public set_component(mixed $component): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$component` | **mixed** |  |
-
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$component` | **mixed** |             |
 
 ***
 
 ### get_form_component
 
-
-
 ```php
 public get_form_component(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_form_component
 
-
-
 ```php
 public set_form_component(mixed $form_component): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$form_component` | **mixed** |  |
-
-
-
-
+| Parameter         | Type      | Description |
+|-------------------|-----------|-------------|
+| `$form_component` | **mixed** |             |
 
 ***
 
 ### get_preview_template
 
-
-
 ```php
 public get_preview_template(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_preview_template
 
-
-
 ```php
 public set_preview_template(mixed $preview_template): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$preview_template` | **mixed** |  |
-
-
-
-
+| Parameter           | Type      | Description |
+|---------------------|-----------|-------------|
+| `$preview_template` | **mixed** |             |
 
 ***
 
 ### get_name
 
-
-
 ```php
 public get_name(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_name
 
-
-
 ```php
 public set_name(mixed $name): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$name`   | **mixed** |             |
 
 ***
 
 ### get_description
 
-
-
 ```php
 public get_description(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_description
 
-
-
 ```php
 public set_description(mixed $description): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$description` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$description` | **mixed** |             |
 
 ***
 
 ### add_error
 
-
-
 ```php
 public add_error(mixed $msg): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$msg` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$msg`    | **mixed** |             |
 
 ***
 
 ### set_options
 
-
-
 ```php
 public set_options(mixed $options): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **mixed** |             |
 
 ***
 
 ### set_default_options
 
-
-
 ```php
 public set_default_options(array $options): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **array** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **array** |             |
 
 ***
 
@@ -685,20 +335,9 @@ that were not set yet.
 public get_options(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Metadatum type options
-
-
-
 
 ***
 
@@ -712,24 +351,15 @@ public get_option(string $key): mixed
 
 Checks if option exist or if it have a default value. Otherwise return an empty string
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | the desired option |
-
+| Parameter | Type       | Description        |
+|-----------|------------|--------------------|
+| `$key`    | **string** | the desired option |
 
 **Return Value:**
 
 the option value, the default value or an empty string
-
-
-
 
 ***
 
@@ -743,18 +373,9 @@ public get_options_as_html(): string
 
 Checks if at least one option exists, otherwise return an empty string
 
-
-
-
-
-
-
 **Return Value:**
 
 An html content with labels and values for the options or an empty string
-
-
-
 
 ***
 
@@ -766,17 +387,6 @@ allow i18n from messages
 public get_form_labels(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### form
@@ -786,17 +396,6 @@ generate the metadata for this metadatum type
 ```php
 public form(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -810,168 +409,81 @@ public validate_options(\Tainacan\Entities\Metadatum $metadatum): true|array
 
 This method should be declared by each metadatum type sub classes
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter    | Type                             | Description                                   |
+|--------------|----------------------------------|-----------------------------------------------|
 | `$metadatum` | **\Tainacan\Entities\Metadatum** | The metadatum object that is beeing validated |
-
 
 **Return Value:**
 
 True if optinos are valid. If invalid, returns an array where keys are the metadatum keys and values are error messages.
 
-
-
-
 ***
 
 ### get_core
-
-
 
 ```php
 public get_core(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_core
-
-
 
 ```php
 public set_core(mixed $core): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$core` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$core`   | **mixed** |             |
 
 ***
 
 ### get_repository
 
-
-
 ```php
 public get_repository(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_repository
 
-
-
 ```php
 public set_repository(mixed $repository): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$repository` | **mixed** |  |
-
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$repository` | **mixed** |             |
 
 ***
 
 ### get_sortable
 
-
-
 ```php
 public get_sortable(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_sortable
 
-
-
 ```php
 public set_sortable(mixed $sortable): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$sortable` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$sortable` | **mixed** |             |
 
 ***
 
@@ -983,71 +495,31 @@ Gets a slug based on the class name to represent the metadata type
 public get_slug(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### _toArray
-
-
 
 ```php
 public _toArray(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### make_clickable_links
-
-
 
 ```php
 public static make_clickable_links(mixed $text): string
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$text` | **mixed** |  |
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$text`   | **mixed** |             |
 
 **Return Value:**
 
 Texts with url's transformed in html tag <a>
 
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

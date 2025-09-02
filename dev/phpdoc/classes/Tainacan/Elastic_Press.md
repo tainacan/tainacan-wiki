@@ -1,6 +1,3 @@
-***
-
-# Elastic_Press
 
 Class Elastic_Press
 
@@ -9,12 +6,11 @@ This class implements the integration of Tainacan with ElasticPress, a WordPress
 https://github.com/10up/ElasticPress
 https://www.elasticpress.io/
 
+***
+
 * Full name: `\Tainacan\Elastic_Press`
 
-
-
 ## Properties
-
 
 ### last_aggregations
 
@@ -23,11 +19,6 @@ Stores the last aggregations result
 ```php
 public array $last_aggregations
 ```
-
-
-
-
-
 
 ***
 
@@ -39,11 +30,6 @@ Stores the facets configuration
 public array $facets
 ```
 
-
-
-
-
-
 ***
 
 ### aggregation_type
@@ -53,11 +39,6 @@ Defines the type of aggregation being performed
 ```php
 private string $aggregation_type
 ```
-
-
-
-
-
 
 ***
 
@@ -69,15 +50,11 @@ Singleton instance
 private static \Tainacan\Elastic_Press $instance
 ```
 
-
-
 * This property is **static**.
-
 
 ***
 
 ## Methods
-
 
 ### get_instance
 
@@ -87,17 +64,7 @@ Get singleton instance
 public static get_instance(): \Tainacan\Elastic_Press
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
 
 ### __construct
@@ -108,22 +75,11 @@ Constructor
 protected __construct(bool $ajax_query = false): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter     | Type     | Description                   |
+|---------------|----------|-------------------------------|
 | `$ajax_query` | **bool** | Whether this is an AJAX query |
-
-
-
-
 
 ***
 
@@ -135,17 +91,6 @@ Check if ElasticPress is active
 public is_active(): bool
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### init
@@ -155,17 +100,6 @@ Initialize the integration
 ```php
 public init(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -177,19 +111,11 @@ Define which meta keys should be indexed
 public prepare_meta_allowed_keys(array $allowed_keys): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter       | Type      | Description             |
+|-----------------|-----------|-------------------------|
 | `$allowed_keys` | **array** | Previously allowed keys |
-
 
 **Return Value:**
 
@@ -202,9 +128,6 @@ Should we instead look at the post being indexed and return only the metadata fo
 apply_filters( 'ep_prepare_meta_allowed_protected_keys', $keys, $post )
 https://10up.github.io/ElasticPress/ep_prepare_meta_allowed_protected_keys.html
 
-
-
-
 ***
 
 ### modify_formatted_args
@@ -215,26 +138,15 @@ Modify the formatted arguments for elasticsearch query
 public modify_formatted_args(array $formatted_args): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter         | Type      | Description                                     |
+|-------------------|-----------|-------------------------------------------------|
 | `$formatted_args` | **array** | The arguments already formatted by ElasticPress |
-
 
 **Return Value:**
 
 Modified arguments
-
-
-
 
 ***
 
@@ -246,26 +158,15 @@ Configure the mapping for Elasticsearch
 public elasticpress_config_mapping(array $mapping): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter  | Type      | Description                   |
+|------------|-----------|-------------------------------|
 | `$mapping` | **array** | Current mapping configuration |
-
 
 **Return Value:**
 
 Modified mapping
-
-
-
 
 ***
 
@@ -277,27 +178,16 @@ Modify post arguments before syncing to Elasticsearch
 public ep_post_sync_args(array $post_args, int $post_id): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter    | Type      | Description    |
+|--------------|-----------|----------------|
 | `$post_args` | **array** | Post arguments |
-| `$post_id` | **int** | Post ID |
-
+| `$post_id`   | **int**   | Post ID        |
 
 **Return Value:**
 
 Modified post arguments
-
-
-
 
 ***
 
@@ -309,27 +199,16 @@ Filter arguments for Tainacan queries
 public filter_args(array $args, string $type): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **array** | The original arguments |
-| `$type` | **string** | The query type (items, taxonomies, etc) |
-
+| Parameter | Type       | Description                             |
+|-----------|------------|-----------------------------------------|
+| `$args`   | **array**  | The original arguments                  |
+| `$type`   | **string** | The query type (items, taxonomies, etc) |
 
 **Return Value:**
 
 Modified arguments
-
-
-
 
 ***
 
@@ -341,26 +220,15 @@ Add Tainacan-specific arguments for items queries
 private add_items_args(array $args): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **array** | Original arguments |
-
+| Parameter | Type      | Description        |
+|-----------|-----------|--------------------|
+| `$args`   | **array** | Original arguments |
 
 **Return Value:**
 
 Modified arguments
-
-
-
 
 ***
 
@@ -372,27 +240,16 @@ Prepare the elasticsearch request with aggregations for items or facets
 public prepare_request(array $formatted_args, array $args): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter         | Type      | Description                         |
+|-------------------|-----------|-------------------------------------|
 | `$formatted_args` | **array** | Arguments formatted by ElasticPress |
-| `$args` | **array** | Original WP_Query arguments |
-
+| `$args`           | **array** | Original WP_Query arguments         |
 
 **Return Value:**
 
 Modified arguments
-
-
-
 
 ***
 
@@ -404,26 +261,15 @@ Format elasticsearch aggregations response according to aggregation type
 public format_aggregations(array $aggregations): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter       | Type      | Description                              |
+|-----------------|-----------|------------------------------------------|
 | `$aggregations` | **array** | Aggregations from elasticsearch response |
-
 
 **Return Value:**
 
 Formatted aggregations
-
-
-
 
 ***
 
@@ -435,28 +281,17 @@ Fetch all values for a metadata
 public fetch_all_metadatum_values(mixed $return, \Tainacan\Entities\Metadatum $metadatum, array $args): array|null
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$return` | **mixed** | Default return value |
-| `$metadatum` | **\Tainacan\Entities\Metadatum** | The metadatum object |
-| `$args` | **array** | Arguments for the query |
-
+| Parameter    | Type                             | Description             |
+|--------------|----------------------------------|-------------------------|
+| `$return`    | **mixed**                        | Default return value    |
+| `$metadatum` | **\Tainacan\Entities\Metadatum** | The metadatum object    |
+| `$args`      | **array**                        | Arguments for the query |
 
 **Return Value:**
 
 The metadatum values
-
-
-
 
 ***
 
@@ -468,26 +303,15 @@ Prepare the elasticsearch request for items with aggregations for each filter
 private prepare_request_for_items(array $formatted_args): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter         | Type      | Description                         |
+|-------------------|-----------|-------------------------------------|
 | `$formatted_args` | **array** | Arguments formatted by ElasticPress |
-
 
 **Return Value:**
 
 Modified arguments with aggregations
-
-
-
 
 ***
 
@@ -499,26 +323,15 @@ Prepare the elasticsearch request for a single facet
 private prepare_request_for_facet(array $formatted_args): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter         | Type      | Description                         |
+|-------------------|-----------|-------------------------------------|
 | `$formatted_args` | **array** | Arguments formatted by ElasticPress |
-
 
 **Return Value:**
 
 Modified arguments with aggregations
-
-
-
 
 ***
 
@@ -530,26 +343,15 @@ Format elasticsearch aggregations for items request
 private format_aggregations_items(array $aggregations): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter       | Type      | Description                              |
+|-----------------|-----------|------------------------------------------|
 | `$aggregations` | **array** | Aggregations from elasticsearch response |
-
 
 **Return Value:**
 
 Formatted aggregations
-
-
-
 
 ***
 
@@ -561,29 +363,14 @@ Format elasticsearch aggregations for facet request
 private format_aggregations_facet(array $aggregations): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter       | Type      | Description                              |
+|-----------------|-----------|------------------------------------------|
 | `$aggregations` | **array** | Aggregations from elasticsearch response |
-
 
 **Return Value:**
 
 Formatted aggregations
 
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

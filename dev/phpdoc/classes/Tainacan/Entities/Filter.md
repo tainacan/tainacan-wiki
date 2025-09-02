@@ -1,181 +1,98 @@
-***
-
-# Filter
 
 Represents the entity Filter
 
-
+***
 
 * Full name: `\Tainacan\Entities\Filter`
-* Parent class: [`\Tainacan\Entities\Entity`](./Entity.md)
-
-
+* Parent class: [`\Tainacan\Entities\Entity`](./Entity)
 
 ## Properties
 
-
 ### name
-
-
 
 ```php
 protected $name
 ```
 
-
-
-
-
-
 ***
 
 ### description
-
-
 
 ```php
 protected $description
 ```
 
-
-
-
-
-
 ***
 
 ### order
-
-
 
 ```php
 protected $order
 ```
 
-
-
-
-
-
 ***
 
 ### metadatum
-
-
 
 ```php
 protected $metadatum
 ```
 
-
-
-
-
-
 ***
 
 ### metadatum_id
-
-
 
 ```php
 protected $metadatum_id
 ```
 
-
-
-
-
-
 ***
 
 ### max_options
-
-
 
 ```php
 protected $max_options
 ```
 
-
-
-
-
-
 ***
 
 ### filter_type
-
-
 
 ```php
 protected $filter_type
 ```
 
-
-
-
-
-
 ***
 
 ### filter_type_options
-
-
 
 ```php
 protected $filter_type_options
 ```
 
-
-
-
-
-
 ***
 
 ### begin_with_filter_collapsed
-
-
 
 ```php
 protected $begin_with_filter_collapsed
 ```
 
-
-
-
-
-
 ***
 
 ### display_in_repository_level_lists
-
-
 
 ```php
 protected $display_in_repository_level_lists
 ```
 
-
-
-
-
-
 ***
 
 ### description_bellow_name
 
-
-
 ```php
 protected $description_bellow_name
 ```
-
-
-
-
-
 
 ***
 
@@ -187,25 +104,15 @@ The WordPress post_type for store this class if is needed, false otherwise
 public static string $post_type
 ```
 
-
-
 * This property is **static**.
-
 
 ***
 
 ### enabled_for_collection
 
-
-
 ```php
 public $enabled_for_collection
 ```
-
-
-
-
-
 
 ***
 
@@ -217,63 +124,31 @@ The repository of that entity
 protected string $repository
 ```
 
-
-
-
-
 **See Also:**
 
-* \Tainacan\Entities\Entity::repository - 
+* \Tainacan\Entities\Entity::repository
 
 ***
 
 ## Methods
 
-
 ### __toString
-
-
 
 ```php
 public __toString(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### _toArray
-
-
 
 ```php
 public _toArray(): array
 ```
 
-
-
-
-
-
-
-
-
-
-
 **Throws:**
 
-- [`Exception`](../../Exception.md)
-
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -285,58 +160,21 @@ Return the filter name
 public get_name(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_description
-
-
 
 ```php
 public get_description(): mixed|null
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_placeholder
 
-
-
 ```php
 public get_placeholder(): mixed|null
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -348,17 +186,6 @@ Return the filter order type
 public get_order(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_max_options
@@ -368,17 +195,6 @@ Return max number of options to be showed
 ```php
 public get_max_options(): mixed|null
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -390,22 +206,11 @@ Set max number of options to be showed
 public set_max_options(mixed $max_options): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$max_options` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$max_options` | **mixed** |             |
 
 ***
 
@@ -417,20 +222,9 @@ Return the metadatum ID
 public get_metadatum_id(): int
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Metadatum ID
-
-
-
 
 ***
 
@@ -442,21 +236,9 @@ Return the metadatum object
 public get_metadatum(): \Tainacan\Entities\Metadatum|null
 ```
 
-
-
-
-
-
-
-
-
-
-
 **Throws:**
 
-- [`Exception`](../../Exception.md)
-
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -468,20 +250,9 @@ Return the an object child of \Tainacan\Filter_Types\Filter_Type with options
 public get_filter_type_object(): \Tainacan\Filter_Types\Filter_Type
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 The filter type class with filled options
-
-
-
 
 ***
 
@@ -493,20 +264,9 @@ Return the class name for the filter type
 public get_filter_type(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 The
-
-
-
 
 ***
 
@@ -518,20 +278,9 @@ Return the actual options for the current filter type
 public get_filter_type_options(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Configurations for the filter type object
-
-
-
 
 ***
 
@@ -543,17 +292,6 @@ Return 'yes' or 'no' to the option of begining the filter collapsed
 public get_begin_with_filter_collapsed(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_display_in_repository_level_lists
@@ -563,17 +301,6 @@ Return 'yes' or 'no' to the option of display in repository level lists
 ```php
 public get_display_in_repository_level_lists(): string
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -585,17 +312,6 @@ Return the filter description_bellow_name
 public get_description_bellow_name(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_name
@@ -606,22 +322,11 @@ Define the filter name
 public set_name(mixed $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -633,22 +338,11 @@ Define the filter order type
 public set_order(mixed $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -660,22 +354,11 @@ Define the filter description
 public set_description(mixed $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -687,22 +370,11 @@ Define the filter placeholder
 public set_placeholder(mixed $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -714,22 +386,11 @@ Define the filter metadatum passing an object
 public set_metadatum(\Tainacan\Entities\Metadatum $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **\Tainacan\Entities\Metadatum** |  |
-
-
-
-
+| Parameter | Type                             | Description |
+|-----------|----------------------------------|-------------|
+| `$value`  | **\Tainacan\Entities\Metadatum** |             |
 
 ***
 
@@ -741,22 +402,11 @@ Define the filter metadatum passing an ID
 public set_metadatum_id(int $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **int** | the metadatum ID |
-
-
-
-
+| Parameter | Type    | Description      |
+|-----------|---------|------------------|
+| `$value`  | **int** | the metadatum ID |
 
 ***
 
@@ -768,22 +418,11 @@ Save the filter type class name
 public set_filter_type(string|\Tainacan\Filter_Types\Filter_Type $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **string&#124;\Tainacan\Filter_Types\Filter_Type** | The name of the class or the instance |
-
-
-
-
+| Parameter | Type                                           | Description                           |
+|-----------|------------------------------------------------|---------------------------------------|
+| `$value`  | **string\|\Tainacan\Filter_Types\Filter_Type** | The name of the class or the instance |
 
 ***
 
@@ -795,22 +434,11 @@ Tells if filter should begin collapsed, not loading facets
 public set_begin_with_filter_collapsed(string $begin_with_filter_collapsed): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$begin_with_filter_collapsed` | **string** |  |
-
-
-
-
+| Parameter                      | Type       | Description |
+|--------------------------------|------------|-------------|
+| `$begin_with_filter_collapsed` | **string** |             |
 
 ***
 
@@ -822,22 +450,11 @@ Tells if filter should appear in repository level lists, even belonging to a col
 public set_display_in_repository_level_lists(string $display_in_repository_level_lists): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$display_in_repository_level_lists` | **string** |  |
-
-
-
-
+| Parameter                            | Type       | Description |
+|--------------------------------------|------------|-------------|
+| `$display_in_repository_level_lists` | **string** |             |
 
 ***
 
@@ -851,41 +468,19 @@ public get_enabled_for_collection(): mixed
 
 Used by the API to tell front end when a metadatum is disabled
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_enabled_for_collection
-
-
 
 ```php
 public set_enabled_for_collection(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -897,22 +492,11 @@ Set filter description_bellow_name
 public set_description_bellow_name(mixed $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -926,23 +510,13 @@ public validate(): bool
 
 Also validates the metadatum, calling the validate_options callback of the Metadatum Type
 
-
-
-
-
-
-
 **Return Value:**
 
 valid or not
 
-
-
 **Throws:**
 
-- [`Exception`](../../Exception.md)
-
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -954,28 +528,15 @@ Set Filter type options
 public set_filter_type_options(mixed $value): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
-
 ## Inherited methods
-
 
 ### __construct
 
@@ -989,73 +550,37 @@ If ID or WP Post is passed, it retrieves the object from the database
 
 Attention: If the ID or Post provided do not match the Entity post type, an Exception will be thrown
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$which` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$which`  | **mixed** |             |
 
 **Throws:**
 
-- [`Exception`](../../Exception.md)
-
-
+- [`Exception`](../../Exception)
 
 ***
 
 ### get_repository
 
-
-
 ```php
 public get_repository(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_date_i18n
 
-
-
 ```php
 public get_date_i18n(mixed $date): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$date` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$date`   | **mixed** |             |
 
 ***
 
@@ -1067,26 +592,15 @@ return the value for a mapped property
 public get_mapped_property(string $prop): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of property |
-
+| Parameter | Type       | Description    |
+|-----------|------------|----------------|
+| `$prop`   | **string** | id of property |
 
 **Return Value:**
 
 property value
-
-
-
 
 ***
 
@@ -1101,21 +615,12 @@ protected set_mapped_property(string $prop, mixed $value): mixed
 This is a protected method. If you want to set an entity prop
 using the prop name dynamically, use the set() method
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property |
-| `$value` | **mixed** | the value to be setted |
-
-
-
-
+| Parameter | Type       | Description            |
+|-----------|------------|------------------------|
+| `$prop`   | **string** | id of the property     |
+| `$value`  | **mixed**  | the value to be setted |
 
 ***
 
@@ -1127,27 +632,16 @@ set the value property
 public set(string $prop, mixed $value): null|mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property |
-| `$value` | **mixed** | the value to be setted |
-
+| Parameter | Type       | Description            |
+|-----------|------------|------------------------|
+| `$prop`   | **string** | id of the property     |
+| `$value`  | **mixed**  | the value to be setted |
 
 **Return Value:**
 
 Null on failure, the value that was set on success
-
-
-
 
 ***
 
@@ -1159,26 +653,15 @@ get the value property
 public get(string $prop): null|mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property |
-
+| Parameter | Type       | Description        |
+|-----------|------------|--------------------|
+| `$prop`   | **string** | id of the property |
 
 **Return Value:**
 
 Null on failure, the value that was set on success
-
-
-
 
 ***
 
@@ -1190,22 +673,11 @@ set the status of the entity
 public set_status(string $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **string** |  |
-
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$value`  | **string** |             |
 
 ***
 
@@ -1219,15 +691,6 @@ public validate(): bool
 
 If Entity is not valid, validation error messages are available via get_errors() method
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### validate_prop
@@ -1238,106 +701,45 @@ Validate a single property
 public validate_prop(string $prop): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property to be validate |
-
-
-
-
+| Parameter | Type       | Description                       |
+|-----------|------------|-----------------------------------|
+| `$prop`   | **string** | id of the property to be validate |
 
 ***
 
 ### get_errors
 
-
-
 ```php
 public get_errors(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_post_type
 
-
-
 ```php
 public static get_post_type(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
 
 ### get_capability_type
-
-
 
 ```php
 public static get_capability_type(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
 
 ### get_status
 
-
-
 ```php
 public get_status(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1351,15 +753,6 @@ public get_db_identifier(): string
 
 This identifier is used to register the entity on database, ex.: post_type
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_id
@@ -1370,44 +763,20 @@ Get the entity ID
 public get_id(): int
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### add_error
-
-
 
 ```php
 public add_error(mixed $type, mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$type` | **mixed** |  |
-| `$message` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$type`    | **mixed** |             |
+| `$message` | **mixed** |             |
 
 ***
 
@@ -1419,127 +788,51 @@ Clear the errors array
 public reset_errors(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_validated
-
-
 
 ```php
 public get_validated(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_validated
-
-
 
 ```php
 protected set_validated(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### set_as_valid
 
-
-
 ```php
 protected set_as_valid(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _toArray
 
-
-
 ```php
 public _toArray(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _toJson
 
-
-
 ```php
 public _toJson(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1551,22 +844,11 @@ Return if user can read this entity
 public can_read(int|\WP_User $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User** |  |
-
-
-
-
+| Parameter | Type              | Description |
+|-----------|-------------------|-------------|
+| `$user`   | **int\|\WP_User** |             |
 
 ***
 
@@ -1578,22 +860,11 @@ Return if user can edit this entity
 public can_edit(int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
-
-
-
-
+| Parameter | Type                    | Description                                              |
+|-----------|-------------------------|----------------------------------------------------------|
+| `$user`   | **int\|\WP_User\|null** | the user for capability check, null for the current user |
 
 ***
 
@@ -1605,22 +876,11 @@ Return if user can delete this entity
 public can_delete(int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
-
-
-
-
+| Parameter | Type                    | Description                                              |
+|-----------|-------------------------|----------------------------------------------------------|
+| `$user`   | **int\|\WP_User\|null** | the user for capability check, null for the current user |
 
 ***
 
@@ -1632,22 +892,11 @@ Return if user can publish this entity
 public can_publish(int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
-
-
-
-
+| Parameter | Type                    | Description                                              |
+|-----------|-------------------------|----------------------------------------------------------|
+| `$user`   | **int\|\WP_User\|null** | the user for capability check, null for the current user |
 
 ***
 
@@ -1659,20 +908,9 @@ Get the capabilities list for the post type of the entity
 public get_capabilities(): object
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Object with all the capabilities as member variables.
-
-
-
 
 ***
 
@@ -1684,47 +922,23 @@ Compare this entity props with self old values or with $which other entity
 public diff(\Tainacan\Entities\Entity|int|\WP_Post $which): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$which` | **\Tainacan\Entities\Entity&#124;int&#124;\WP_Post** | default ($which = 0) to self compare with stored entity |
-
-
-
-
+| Parameter | Type                                         | Description                                             |
+|-----------|----------------------------------------------|---------------------------------------------------------|
+| `$which`  | **\Tainacan\Entities\Entity\|int\|\WP_Post** | default ($which = 0) to self compare with stored entity |
 
 ***
 
 ### get_collection_id
 
-
-
 ```php
 public get_collection_id(): int
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 collection item ID
-
-
-
 
 ***
 
@@ -1736,20 +950,9 @@ Return Collection from relation
 public get_collection(): \Tainacan\Entities\Collection|null
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Return Collection or null on errors
-
-
-
 
 ***
 
@@ -1761,22 +964,11 @@ Set collection ID
 public set_collection_id(int $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **int** |  |
-
-
-
-
+| Parameter | Type    | Description |
+|-----------|---------|-------------|
+| `$value`  | **int** |             |
 
 ***
 
@@ -1788,25 +980,10 @@ set collection object and id
 public set_collection(\Tainacan\Entities\Collection $collection): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-
-
-
-
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
 
 ***
-
-
-***
-> Automatically generated on 2025-09-02

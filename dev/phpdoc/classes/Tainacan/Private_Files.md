@@ -1,112 +1,59 @@
-***
-
-# Private_Files
 
 Class withe helpful methods to handle media in Tainacan
 
-
+***
 
 * Full name: `\Tainacan\Private_Files`
 
-
-
 ## Properties
 
-
 ### dir_separator
-
-
 
 ```php
 public $dir_separator
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
 
-
 ### init
-
-
 
 ```php
 protected init(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### pre_tainacan_upload
-
-
 
 ```php
 public pre_tainacan_upload(mixed $blob, mixed $filename, mixed $post_id): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$blob` | **mixed** |  |
-| `$filename` | **mixed** |  |
-| `$post_id` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$blob`     | **mixed** |             |
+| `$filename` | **mixed** |             |
+| `$post_id`  | **mixed** |             |
 
 ***
 
 ### post_tainacan_upload
 
-
-
 ```php
 public post_tainacan_upload(mixed $attach_id, mixed $attach_data, mixed $post_id): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attach_id` | **mixed** |  |
-| `$attach_data` | **mixed** |  |
-| `$post_id` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$attach_id`   | **mixed** |             |
+| `$attach_data` | **mixed** |             |
+| `$post_id`     | **mixed** |             |
 
 ***
 
@@ -118,22 +65,11 @@ Adds a filter to the upload_dir hook when uploading a new file
 public pre_upload(mixed $file): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$file` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$file`   | **mixed** |             |
 
 ***
 
@@ -145,22 +81,11 @@ Removes a filter to the upload_dir hook after uploading a new file
 public post_upload(mixed $fileinfo): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$fileinfo` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$fileinfo` | **mixed** |             |
 
 ***
 
@@ -173,20 +98,9 @@ attachments and documents for items will be uploaded
 public get_items_uploads_folder(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 The folder name
-
-
-
 
 ***
 
@@ -199,20 +113,9 @@ attachments and documents for private items or collections
 public get_private_folder_prefix(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 The folder prefix
-
-
-
 
 ***
 
@@ -231,20 +134,11 @@ ex: * tainacan-items/$collection_id/$item_id
 It also add a prefix in the folder name of private items or collections:
 tainacan-items/$collection_id/_x_$item_id ($item_id is a private item)
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$path` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$path`   | **mixed** |             |
 
 ***
 
@@ -260,15 +154,6 @@ When looking for a file that does not exists, it checks for relative prefixed fo
 If it finds the file, it then checks to see if current user have permission to see this file, based on
 the permission he/she have to read the related item.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### image_get_intermediate_size
@@ -280,24 +165,13 @@ private uploads folder prefix from the attachments URLs
 public image_get_intermediate_size(mixed $data, mixed $post_id, mixed $size): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **mixed** |  |
-| `$post_id` | **mixed** |  |
-| `$size` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$data`    | **mixed** |             |
+| `$post_id` | **mixed** |             |
+| `$size`    | **mixed** |             |
 
 ***
 
@@ -310,23 +184,12 @@ private uploads folder prefix from the attachments URLs
 public wp_get_attachment_url(mixed $url, mixed $post_id): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$url` | **mixed** |  |
-| `$post_id` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$url`     | **mixed** |             |
+| `$post_id` | **mixed** |             |
 
 ***
 
@@ -340,22 +203,11 @@ private folder prefix
 public update_item_and_collection(mixed $obj): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$obj` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$obj`    | **mixed** |             |
 
 ***
 
@@ -369,23 +221,14 @@ public bulk_edit(mixed $status, mixed $group, mixed $select_query, mixed $query)
 
 TODO: In the upcoming bulk edit refactor this must be handled as there are performance issues
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$status` | **mixed** |  |
-| `$group` | **mixed** |  |
-| `$select_query` | **mixed** |  |
-| `$query` | **mixed** |  |
-
-
-
-
+| Parameter       | Type      | Description |
+|-----------------|-----------|-------------|
+| `$status`       | **mixed** |             |
+| `$group`        | **mixed** |             |
+| `$select_query` | **mixed** |             |
+| `$query`        | **mixed** |             |
 
 ***
 
@@ -400,62 +243,23 @@ public static add_htaccess_rules(): mixed
 This function is used as callback for the register_activation_hook
 
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
-
 
 ## Inherited methods
 
-
 ### get_instance
-
-
 
 ```php
 public static get_instance(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
 
 ### __construct
-
-
 
 ```php
 private __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

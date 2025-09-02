@@ -1,99 +1,49 @@
+
 ***
-
-# Cli_Collection
-
-
-
-
 
 * Full name: `\Tainacan\Cli_Collection`
 
-
-
 ## Properties
 
-
 ### collection_repository
-
-
 
 ```php
 private $collection_repository
 ```
 
-
-
-
-
-
 ***
 
 ### items_repository
-
-
 
 ```php
 private $items_repository
 ```
 
-
-
-
-
-
 ***
 
 ### result_count
-
-
 
 ```php
 private $result_count
 ```
 
-
-
-
-
-
 ***
 
 ### dry_run
-
-
 
 ```php
 private $dry_run
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -116,15 +66,6 @@ wp tainacan collection list
 | 1177 | Livros            |
 | 1157 | autores           |
 +------+-------------------+
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -151,84 +92,45 @@ public clean(mixed $args, mixed $assoc_args): mixed
 wp tainacan collection clean 1201 --permanently
 
 cleaning collection items
-100% [============================================================================================] 0:00 / 0:00
+100%% [============================================================================================] 0:00 / 0:00
 Success:
 10 items removed
 23 attachments removed
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **mixed** |  |
-| `$assoc_args` | **mixed** |  |
-
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$args`       | **mixed** |             |
+| `$assoc_args` | **mixed** |             |
 
 ***
 
 ### delete_item
 
-
-
 ```php
 private delete_item(mixed $item, mixed $permanently = false): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-| `$permanently` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$item`        | **mixed** |             |
+| `$permanently` | **mixed** |             |
 
 ***
 
 ### delete_attachments
 
-
-
 ```php
 private delete_attachments(mixed $item): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$item`   | **mixed** |             |
 
 ***
-
-
-***
-> Automatically generated on 2025-09-02

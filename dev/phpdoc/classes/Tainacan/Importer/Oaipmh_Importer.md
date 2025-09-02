@@ -1,18 +1,10 @@
+
 ***
 
-# Oaipmh_Importer
-
-
-
-
-
 * Full name: `\Tainacan\Importer\Oaipmh_Importer`
-* Parent class: [`\Tainacan\Importer\Importer`](./Importer.md)
-
-
+* Parent class: [`\Tainacan\Importer\Importer`](./Importer)
 
 ## Properties
-
 
 ### steps
 
@@ -28,193 +20,105 @@ that process items for the collections in the collections array.
 Child classes may declare as many steps as they want and can keep this default step to use
 this method for import the items. But it is optional.
 
-
-
-
 ***
 
 ### NAME_FOR_SETS
-
-
 
 ```php
 protected $NAME_FOR_SETS
 ```
 
-
-
-
-
-
 ***
 
 ### tainacan_api_address
-
-
 
 ```php
 protected $tainacan_api_address
 ```
 
-
-
-
-
-
 ***
 
 ### wordpress_api_address
-
-
 
 ```php
 protected $wordpress_api_address
 ```
 
-
-
-
-
-
 ***
 
 ### actual_collection
-
-
 
 ```php
 protected $actual_collection
 ```
 
-
-
-
-
-
 ***
 
 ### has_sets
-
-
 
 ```php
 protected $has_sets
 ```
 
-
-
-
-
-
 ***
 
 ### items_per_page
-
-
 
 ```php
 protected $items_per_page
 ```
 
-
-
-
-
-
 ***
 
 ### col_repo
-
-
 
 ```php
 private $col_repo
 ```
 
-
-
-
-
-
 ***
 
 ### items_repo
-
-
 
 ```php
 private $items_repo
 ```
 
-
-
-
-
-
 ***
 
 ### metadata_repo
-
-
 
 ```php
 private $metadata_repo
 ```
 
-
-
-
-
-
 ***
 
 ### item_metadata_repo
-
-
 
 ```php
 private $item_metadata_repo
 ```
 
-
-
-
-
-
 ***
 
 ### tax_repo
-
-
 
 ```php
 private $tax_repo
 ```
 
-
-
-
-
-
 ***
 
 ### term_repo
-
-
 
 ```php
 private $term_repo
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
-
 
 ### __construct
 
@@ -224,22 +128,11 @@ tainacan old importer construct
 public __construct(mixed $attributes = array()): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attributes` | **mixed** |  |
-
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$attributes` | **mixed** |             |
 
 ***
 
@@ -251,23 +144,12 @@ Method implemented by child importer class to proccess each item
 public process_item(mixed $index, mixed $collection_id): int
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$index` | **mixed** |  |
-| `$collection_id` | **mixed** |  |
-
-
-
-
+| Parameter        | Type      | Description |
+|------------------|-----------|-------------|
+| `$index`         | **mixed** |             |
+| `$collection_id` | **mixed** |             |
 
 ***
 
@@ -279,17 +161,6 @@ create all collections and its metadata
 public create_collections(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### insert
@@ -300,58 +171,35 @@ insert processed item from source to Tainacan
 public insert(array $processed_item, \Tainacan\Importer\integet $collection_index): \Tainacan\Entities\Item
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$processed_item` | **array** | Associative array with metadatum source&#039;s as index with<br />its value or values |
-| `$collection_index` | **\Tainacan\Importer\integet** | The index in the $this-&gt;collections array of the collection the item is beeing inserted into |
-
+| Parameter           | Type                           | Description                                                                                  |
+|---------------------|--------------------------------|----------------------------------------------------------------------------------------------|
+| `$processed_item`   | **array**                      | Associative array with metadatum source's as index with
+its value or values                  |
+| `$collection_index` | **\Tainacan\Importer\integet** | The index in the $this->collections array of the collection the item is beeing inserted into |
 
 **Return Value:**
 
 Item inserted
 
-
-
-
 ***
 
 ### get_identifier
-
-
 
 ```php
 protected get_identifier(\SimpleXMLElement $metadata): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadata` | **\SimpleXMLElement** |  |
-
+| Parameter   | Type                  | Description |
+|-------------|-----------------------|-------------|
+| `$metadata` | **\SimpleXMLElement** |             |
 
 **Return Value:**
 
 O identifier
-
-
-
 
 ***
 
@@ -363,22 +211,11 @@ Method implemented by the child importer class to return the number of items to 
 public get_total_items_from_source(mixed $setSpec): int
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$setSpec` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$setSpec` | **mixed** |             |
 
 ***
 
@@ -390,55 +227,30 @@ create the collection in tainacan
 protected create_collection(mixed $setSpec, mixed $setName): \Tainacan\Entities\Collection
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$setSpec` | **mixed** |  |
-| `$setName` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$setSpec` | **mixed** |             |
+| `$setName` | **mixed** |             |
 
 ***
 
 ### create_collection_metadata
 
-
-
 ```php
 protected create_collection_metadata(mixed $collection_object): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection_object` | **mixed** |  |
-
-
-
+| Parameter            | Type      | Description |
+|----------------------|-----------|-------------|
+| `$collection_object` | **mixed** |             |
 
 **Throws:**
 
-- [`ErrorException`](../../ErrorException.md)
-
-
+- [`ErrorException`](../../ErrorException)
 
 ***
 
@@ -450,17 +262,6 @@ return all taxonomies from tainacan old
 protected fetch_collections(): array
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### decode_request
@@ -471,23 +272,12 @@ decode request from wp_remote
 protected decode_request(mixed $result, mixed $url): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$result` | **mixed** |  |
-| `$url` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$result` | **mixed** |             |
+| `$url`    | **mixed** |             |
 
 ***
 
@@ -499,132 +289,68 @@ executes the request
 protected requester(mixed $link): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$link` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$link`   | **mixed** |             |
 
 ***
 
 ### createTerms
 
-
-
 ```php
 public createTerms(mixed $taxonomy_father, mixed $name, mixed $slug): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$taxonomy_father` | **mixed** |  |
-| `$name` | **mixed** |  |
-| `$slug` | **mixed** |  |
-
-
-
-
+| Parameter          | Type      | Description |
+|--------------------|-----------|-------------|
+| `$taxonomy_father` | **mixed** |             |
+| `$name`            | **mixed** |             |
+| `$slug`            | **mixed** |             |
 
 ***
 
 ### create_set_metadata
 
-
-
 ```php
 public create_set_metadata(mixed $collection_id, mixed $taxonomy_id): bool|int
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection_id` | **mixed** |  |
-| `$taxonomy_id` | **mixed** |  |
-
-
-
+| Parameter        | Type      | Description |
+|------------------|-----------|-------------|
+| `$collection_id` | **mixed** |             |
+| `$taxonomy_id`   | **mixed** |             |
 
 **Throws:**
 
-- [`Exception`](../../Exception.md)
-
-
+- [`Exception`](../../Exception)
 
 ***
 
 ### getRepoName
 
-
-
 ```php
 public getRepoName(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### hasCompleteSize
 
-
-
 ```php
 public hasCompleteSize(mixed $attributes): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attributes` | **mixed** |  |
-
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$attributes` | **mixed** |             |
 
 ***
 
@@ -649,15 +375,6 @@ The value must be from 0 to 100
 
 If a negative value is passed, it is assumed that the progress is unknown
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### options_form
@@ -668,95 +385,43 @@ Method implemented by child importer to return the HTML of the Options Form to b
 public options_form(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
-
 
 ## Inherited methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(mixed $attributess = array()): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attributess` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$attributess` | **mixed** |             |
 
 ***
 
 ### _to_Array
 
-
-
 ```php
 public _to_Array(mixed $short = false): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$short` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$short`  | **mixed** |             |
 
 ***
 
 ### get_id
 
-
-
 ```php
 public get_id(): string
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -768,335 +433,155 @@ Set URL
 public set_url(mixed $url): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$url` | **mixed** | string |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$url`    | **mixed** | string      |
 
 ***
 
 ### get_url
 
-
-
 ```php
 public get_url(): string
 ```
-
-
-
-
-
-
-
-
 
 **Return Value:**
 
 or bool
 
-
-
-
 ***
 
 ### get_current_step
-
-
 
 ```php
 public get_current_step(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_current_step
-
-
 
 ```php
 public set_current_step(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_in_step_count
 
-
-
 ```php
 public get_in_step_count(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_in_step_count
 
-
-
 ```php
 public set_in_step_count(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_current_collection
 
-
-
 ```php
 public get_current_collection(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_current_collection
 
-
-
 ```php
 public set_current_collection(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_current_collection_item
 
-
-
 ```php
 public get_current_collection_item(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_current_collection_item
 
-
-
 ```php
 public set_current_collection_item(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_tmp_file
 
-
-
 ```php
 public get_tmp_file(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_tmp_file
 
-
-
 ```php
 public set_tmp_file(mixed $filepath): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$filepath` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$filepath` | **mixed** |             |
 
 ***
 
 ### get_collections
 
-
-
 ```php
 public get_collections(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_collections
 
-
-
 ```php
 public set_collections(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -1109,20 +594,9 @@ that were not set yet.
 public get_options(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Importer options
-
-
-
 
 ***
 
@@ -1134,22 +608,11 @@ Set the options array
 public set_options(array $options): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **array** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **array** |             |
 
 ***
 
@@ -1163,137 +626,63 @@ protected set_default_options(array $options): mixed
 
 Must be called from the __construct method of the child importer class to set default values.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **array** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **array** |             |
 
 ***
 
 ### set_steps
 
-
-
 ```php
 public set_steps(mixed $steps): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$steps` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$steps`  | **mixed** |             |
 
 ***
 
 ### get_steps
 
-
-
 ```php
 public get_steps(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_log
 
-
-
 ```php
 public get_log(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_error_log
 
-
-
 ```php
 public get_error_log(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### add_file
 
-
-
 ```php
 public add_file(mixed $file): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$file` | **mixed** | File to be managed by importer |
-
-
-
-
+| Parameter | Type      | Description                    |
+|-----------|-----------|--------------------------------|
+| `$file`   | **mixed** | File to be managed by importer |
 
 ***
 
@@ -1305,103 +694,53 @@ log the actions from importer
 public add_log(mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$message` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$message` | **mixed** |             |
 
 ***
 
 ### add_error_log
 
-
-
 ```php
 public add_error_log(mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$message` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$message` | **mixed** |             |
 
 ***
 
 ### add_collection
 
-
-
 ```php
 public add_collection(array $collection): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **array** |  |
-
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$collection` | **array** |             |
 
 ***
 
 ### remove_collection
 
-
-
 ```php
 public remove_collection(mixed $col_id): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$col_id` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$col_id` | **mixed** |             |
 
 ***
 
@@ -1413,22 +752,11 @@ get the content form url and creates a file
 public fetch_from_remote(mixed $url): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$url` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$url`    | **mixed** |             |
 
 ***
 
@@ -1442,24 +770,15 @@ public get_option(string $key): mixed
 
 Checks if option exist or if it have a default value. Otherwise return an empty string
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | the desired option |
-
+| Parameter | Type       | Description        |
+|-----------|------------|--------------------|
+| `$key`    | **string** | the desired option |
 
 **Return Value:**
 
 the option value, the default value or an empty string
-
-
-
 
 ***
 
@@ -1473,24 +792,15 @@ public add_import_method(string $method): bool
 
 Current possible methods are file and url
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
 | `$method` | **string** | file or url |
-
 
 **Return Value:**
 
 true for success, false if method does not exist
-
-
-
 
 ***
 
@@ -1504,127 +814,66 @@ public remove_import_method(string $method): bool
 
 Current possible methods are file and url
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
 | `$method` | **string** | file or url |
-
 
 **Return Value:**
 
 true for success, false if method does not exist
 
-
-
-
 ***
 
 ### add_transient
-
-
 
 ```php
 public add_transient(mixed $key, mixed $data): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$data` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
+| `$data`   | **mixed** |             |
 
 ***
 
 ### delete_transient
 
-
-
 ```php
 public delete_transient(mixed $key): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 ***
 
 ### get_transient
 
-
-
 ```php
 public get_transient(mixed $key): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 ***
 
 ### is_finished
 
-
-
 ```php
 public is_finished(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1636,17 +885,6 @@ Cancel Scheduled abortion at the end of run()
 protected cancel_abort(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### abort
@@ -1657,17 +895,6 @@ Schedule importer abortion at the end of run()
 protected abort(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_abort
@@ -1677,17 +904,6 @@ Return whether importer should abort execution or not
 ```php
 public get_abort(): bool
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1704,15 +920,6 @@ It automatically gets the attribute progress_label from the current step running
 
 Importers may change this label whenever they want
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_progress_value
@@ -1736,15 +943,6 @@ The value must be from 0 to 100
 
 If a negative value is passed, it is assumed that the progress is unknown
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_current_step_total
@@ -1760,20 +958,11 @@ The "total" attribute of a step indicates the number of iterations this step wil
 The iteration is counted using $this->in_step_count attribute, and comparing the two values gives us
 the current progress of the process.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -1790,21 +979,12 @@ The "total" attribute of a step indicates the number of iterations this step wil
 The iteration is counted using $this->in_step_count attribute, and comparing the two values gives us
 the current progress of the process.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$step` | **mixed** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$step`   | **mixed** |             |
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -1819,18 +999,9 @@ public get_source_metadata(): array
 
 Used when $manual_mapping is set to true, to build the mapping interface
 
-
-
-
-
-
-
 **Return Value:**
 
 $metadata_source the metadata from the source
-
-
-
 
 ***
 
@@ -1842,20 +1013,13 @@ get values for a single item
 public process_item(mixed $index, mixed $collection_id): array
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$index` | **mixed** |  |
-| `$collection_id` | **mixed** |  |
-
+| Parameter        | Type      | Description |
+|------------------|-----------|-------------|
+| `$index`         | **mixed** |             |
+| `$collection_id` | **mixed** |             |
 
 **Return Value:**
 
@@ -1863,9 +1027,6 @@ with metadatum_source's as the index and values for the
 item
 
 Ex: [ 'Metadatum1' => 'value1', 'Metadatum2' => [ 'value2','value3' ]
-
-
-
 
 ***
 
@@ -1879,15 +1040,6 @@ public get_source_number_of_items(): int
 
 Used to build the progress bar
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### options_form
@@ -1897,17 +1049,6 @@ Method implemented by child importer to return the HTML of the Options Form to b
 ```php
 public options_form(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1920,17 +1061,6 @@ short description of what happened. May contain HTML code and links
 public get_output(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### process_collections
@@ -1941,79 +1071,29 @@ process an item from the collections queue
 public process_collections(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### next_item
-
-
 
 ```php
 protected next_item(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### next_collection
-
-
 
 ```php
 protected next_collection(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### next_step
 
-
-
 ```php
 protected next_step(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -2025,27 +1105,17 @@ insert processed item from source to Tainacan
 public insert(array $processed_item, \Tainacan\Importer\integet $collection_index): \Tainacan\Entities\Item
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$processed_item` | **array** | Associative array with metadatum source&#039;s as index with<br />its value or values |
-| `$collection_index` | **\Tainacan\Importer\integet** | The index in the $this-&gt;collections array of the collection the item is beeing inserted into |
-
+| Parameter           | Type                           | Description                                                                                  |
+|---------------------|--------------------------------|----------------------------------------------------------------------------------------------|
+| `$processed_item`   | **array**                      | Associative array with metadatum source's as index with
+its value or values                  |
+| `$collection_index` | **\Tainacan\Importer\integet** | The index in the $this->collections array of the collection the item is beeing inserted into |
 
 **Return Value:**
 
 Item inserted
-
-
-
 
 ***
 
@@ -2057,23 +1127,12 @@ allow importers executes process after item is insertes
 public after_inserted_item(array $insertedItem, int $collection_index): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$insertedItem` | **array** | Associative array with inserted item |
-| `$collection_index` | **int** | The index in the $this-&gt;collections array of the collection the item is beeing inserted into |
-
-
-
-
+| Parameter           | Type      | Description                                                                                  |
+|---------------------|-----------|----------------------------------------------------------------------------------------------|
+| `$insertedItem`     | **array** | Associative array with inserted item                                                         |
+| `$collection_index` | **int**   | The index in the $this->collections array of the collection the item is beeing inserted into |
 
 ***
 
@@ -2085,53 +1144,24 @@ runs one iteration
 public run(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### create_new_metadata
-
-
 
 ```php
 public create_new_metadata(mixed $metadata_description, mixed $collection_id, mixed $parent_id = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadata_description` | **mixed** |  |
-| `$collection_id` | **mixed** |  |
-| `$parent_id` | **mixed** |  |
-
-
-
+| Parameter               | Type      | Description |
+|-------------------------|-----------|-------------|
+| `$metadata_description` | **mixed** |             |
+| `$collection_id`        | **mixed** |             |
+| `$parent_id`            | **mixed** |             |
 
 **Throws:**
 
-- [`Exception`](../../Exception.md)
-
-
+- [`Exception`](../../Exception)
 
 ***
-
-
-***
-> Automatically generated on 2025-09-02

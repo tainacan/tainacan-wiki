@@ -40,13 +40,13 @@ echo "Generating WordPress hooks documentation..."
 if [ ! -f "/src/tainacan-wiki/scripts/templates/actions.php" ]; then
     echo "Warning: Actions template not found at /src/tainacan-wiki/scripts/templates/actions.php"
 else
-    ./vendor/bin/wp-documentor parse /src/tainacan --template=/src/tainacan-wiki/scripts/templates/actions.php --output=/src/tainacan-wiki/dev/actions.md --format=markdown
+    ./vendor/bin/wp-documentor parse /src/tainacan --template=/src/tainacan-wiki/scripts/templates/actions.php --exclude="vendor" --exclude="tests" --output=/src/tainacan-wiki/dev/actions.md --format=markdown
 fi
 
 if [ ! -f "/src/tainacan-wiki/scripts/templates/filters.php" ]; then
     echo "Warning: Filters template not found at /src/tainacan-wiki/scripts/templates/filters.php"
 else
-    ./vendor/bin/wp-documentor parse /src/tainacan --template=/src/tainacan-wiki/scripts/templates/filters.php --output=/src/tainacan-wiki/dev/filters.md --format=markdown
+    ./vendor/bin/wp-documentor parse /src/tainacan --template=/src/tainacan-wiki/scripts/templates/filters.php --exclude="vendor" --exclude="tests"  --output=/src/tainacan-wiki/dev/filters.md --format=markdown
 fi
 
 

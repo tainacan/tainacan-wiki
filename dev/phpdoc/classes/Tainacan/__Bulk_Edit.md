@@ -1,30 +1,17 @@
-***
-
-# __Bulk_Edit
 
 Bulk_Edit class handles bulk item edition
 
-
+***
 
 * Full name: `\Tainacan\__Bulk_Edit`
 
-
-
 ## Properties
 
-
 ### meta_key
-
-
 
 ```php
 private $meta_key
 ```
-
-
-
-
-
 
 ***
 
@@ -36,15 +23,9 @@ The ID of the current bulk edition group.
 private string $id
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
-
 
 ### __construct
 
@@ -67,25 +48,17 @@ When initializing using methods 1 or 2, controllers should then call the get_id(
 
 Note: if the ID paramater is passed, other paramaters will be ignored.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$params` | **array** | {<br /><br />Initialization paramaters |
+| Parameter | Type      | Description                  |
+|-----------|-----------|------------------------------|
+| `$params` | **array** | {
 
-
-
+Initialization paramaters |
 
 **Throws:**
 
-- [`Exception`](../Exception.md)
-
-
+- [`Exception`](../Exception)
 
 ***
 
@@ -99,21 +72,12 @@ public add_fields_to_query(mixed $fields, mixed $wp_query): mixed
 
 Must be public because it is registered as a filter callback
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$fields` | **mixed** |  |
-| `$wp_query` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$fields`   | **mixed** |             |
+| `$wp_query` | **mixed** |             |
 
 ***
 
@@ -125,20 +89,9 @@ Get the current group ID
 public get_id(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 the group ID
-
-
-
 
 ***
 
@@ -150,20 +103,9 @@ return the number of items selected in the current bulk group
 public count_posts(): int
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 number of items in the group
-
-
-
 
 ***
 
@@ -175,101 +117,51 @@ Gets the id of the item in a given position inside the group
 public get_item_id_by_index(int $index): int|bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$index` | **int** | THe position of the index to search for. From 1 to the length of the group |
-
+| Parameter | Type    | Description                                                                |
+|-----------|---------|----------------------------------------------------------------------------|
+| `$index`  | **int** | THe position of the index to search for. From 1 to the length of the group |
 
 **Return Value:**
 
 Returns the ID of the item or false if the index is out of range
 
-
-
-
 ***
 
 ### save_options
-
-
 
 ```php
 public save_options(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_options
 
-
-
 ```php
 public get_options(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _build_select
 
-
-
 ```php
 private _build_select(mixed $fields): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$fields` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$fields` | **mixed** |             |
 
 ***
 
@@ -281,22 +173,11 @@ Sets the status to all items in the current group
 public set_status(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -309,23 +190,12 @@ Must be used with a multiple metadatum
 public add_value(\Tainacan\Entities\Metadatum $metadatum, mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
+| `$value`     | **mixed**                        |             |
 
 ***
 
@@ -340,21 +210,12 @@ public set_value(\Tainacan\Entities\Metadatum $metadatum, mixed $value): mixed
 If metadatum is multiple, it will delete all values item may have for this metadatum and then add
 this value
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
+| `$value`     | **mixed**                        |             |
 
 ***
 
@@ -368,21 +229,12 @@ public remove_value(\Tainacan\Entities\Metadatum $metadatum, mixed $value): mixe
 
 Must be used with multiple metadatum that are not set as required
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
+| `$value`     | **mixed**                        |             |
 
 ***
 
@@ -394,87 +246,37 @@ Relplaces a value from one metadata with another value in all items in current g
 public replace_value(\Tainacan\Entities\Metadatum $metadatum, mixed $new_value, mixed $old_value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$new_value` | **mixed** |  |
-| `$old_value` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
+| `$new_value` | **mixed**                        |             |
+| `$old_value` | **mixed**                        |             |
 
 ***
 
 ### trash_items
 
-
-
 ```php
 public trash_items(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### untrash_items
 
-
-
 ```php
 public untrash_items(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### delete_items
 
-
-
 ```php
 public delete_items(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -488,21 +290,12 @@ private _add_value(\Tainacan\Entities\Metadatum $metadatum, mixed $value): mixed
 
 This method adds value to the database directly, any check or validation must be done beforehand
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
+| `$value`     | **mixed**                        |             |
 
 ***
 
@@ -516,21 +309,12 @@ private _remove_value(\Tainacan\Entities\Metadatum $metadatum, mixed $value): mi
 
 This method removes value from the database directly, any check or validation must be done beforehand
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
+| `$value`     | **mixed**                        |             |
 
 ***
 
@@ -548,22 +332,13 @@ TODO: Possible refactor: This method is almost identical to the _add_value metho
 the same thing as calling _add_value() and _remove_value() one after another. The only difference is that it does both checks before doing anything to the DB
 and a small change to the insert queries (marked below)
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$newvalue` | **mixed** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
+| `$newvalue`  | **mixed**                        |             |
+| `$value`     | **mixed**                        |             |
 
 ***
 
@@ -577,23 +352,10 @@ private _remove_values(\Tainacan\Entities\Metadatum $metadatum): mixed
 
 This method removes value from the database directly, any check or validation must be done beforehand
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
 
 ***
-
-
-***
-> Automatically generated on 2025-09-02

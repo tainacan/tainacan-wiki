@@ -1,18 +1,10 @@
+
 ***
-
-# Generic_Process
-
-
-
-
 
 * Full name: `\Tainacan\GenericProcess\Generic_Process`
 * This class is an **Abstract class**
 
-
-
 ## Properties
-
 
 ### id
 
@@ -24,9 +16,6 @@ protected \Tainacan\GenericProcess\identifier $id
 
 When creating a new process session via API, an id is returned and used to access this
 process instance
-
-
-
 
 ***
 
@@ -43,9 +32,6 @@ By default, there is only one step, and the callback is the main_process method
 Child classes may declare as many steps as they want and can keep this default step to use
 this method for process. But it is optional.
 
-
-
-
 ***
 
 ### transients
@@ -60,9 +46,6 @@ Add and remove transient data using add_transient() and delete_transient() metho
 
 Transients can be strings, numbers or arrays. Avoid storing objects.
 
-
-
-
 ***
 
 ### abort
@@ -73,70 +56,37 @@ Whether to abort process execution.
 protected bool $abort
 ```
 
-
-
-
-
-
 ***
 
 ### current_step
-
-
 
 ```php
 protected $current_step
 ```
 
-
-
-
-
-
 ***
 
 ### in_step_count
-
-
 
 ```php
 protected $in_step_count
 ```
 
-
-
-
-
-
 ***
 
 ### log
-
-
 
 ```php
 protected $log
 ```
 
-
-
-
-
-
 ***
 
 ### error_log
 
-
-
 ```php
 protected $error_log
 ```
-
-
-
-
-
 
 ***
 
@@ -150,454 +100,216 @@ protected array $array_attributes
 
 This property needs to be overwritten.
 
-
-
-
 ***
 
 ## Methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(mixed $attributess = array()): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attributess` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$attributess` | **mixed** |             |
 
 ***
 
 ### get_id
 
-
-
 ```php
 public get_id(): string
 ```
-
-
-
-
-
-
-
-
 
 **Return Value:**
 
 the process unique id
 
-
-
-
 ***
 
 ### get_current_step
-
-
 
 ```php
 public get_current_step(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_current_step
-
-
 
 ```php
 public set_current_step(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_in_step_count
 
-
-
 ```php
 public get_in_step_count(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_in_step_count
 
-
-
 ```php
 public set_in_step_count(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### set_steps
 
-
-
 ```php
 public set_steps(mixed $steps): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$steps` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$steps`  | **mixed** |             |
 
 ***
 
 ### get_steps
 
-
-
 ```php
 public get_steps(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_transients
 
-
-
 ```php
 protected get_transients(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_transients
 
-
-
 ```php
 protected set_transients(array $data): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **array** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$data`   | **array** |             |
 
 ***
 
 ### add_transient
 
-
-
 ```php
 public add_transient(mixed $key, mixed $data): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$data` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
+| `$data`   | **mixed** |             |
 
 ***
 
 ### delete_transient
 
-
-
 ```php
 public delete_transient(mixed $key): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 ***
 
 ### get_transient
 
-
-
 ```php
 public get_transient(mixed $key): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 ***
 
 ### get_log
 
-
-
 ```php
 public get_log(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_error_log
 
-
-
 ```php
 public get_error_log(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### add_log
 
-
-
 ```php
 public add_log(mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$message` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$message` | **mixed** |             |
 
 ***
 
 ### add_error_log
 
-
-
 ```php
 public add_error_log(mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$message` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$message` | **mixed** |             |
 
 ***
 
 ### is_finished
 
-
-
 ```php
 public is_finished(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -609,17 +321,6 @@ Cancel Scheduled abortion at the end of run()
 protected cancel_abort(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### abort
@@ -630,17 +331,6 @@ Schedule importer abortion at the end of run()
 protected abort(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_abort
@@ -650,17 +340,6 @@ Return whether importer should abort execution or not
 ```php
 public get_abort(): bool
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -674,15 +353,6 @@ public get_progress_label(): string
 ```
 
 It automatically gets the attribute progress_label from the current step running.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -704,15 +374,6 @@ The value must be from 0 to 100
 
 If a negative value is passed, it is assumed that the progress is unknown
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_current_step_total
@@ -728,20 +389,11 @@ The "total" attribute of a step indicates the number of iterations this step wil
 The iteration is counted using $this->in_step_count attribute, and comparing the two values gives us
 the current progress of the process.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -758,90 +410,42 @@ The "total" attribute of a step indicates the number of iterations this step wil
 The iteration is counted using $this->in_step_count attribute, and comparing the two values gives us
 the current progress of the process.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$step` | **mixed** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$step`   | **mixed** |             |
+| `$value`  | **mixed** |             |
 
 ***
 
 ### next_step
 
-
-
 ```php
 protected next_step(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _to_Array
 
-
-
 ```php
 public _to_Array(mixed $short = false): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$short` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$short`  | **mixed** |             |
 
 ***
 
 ### finished
 
-
-
 ```php
 public finished(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -853,19 +457,4 @@ runs one iteration
 public run(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

@@ -1,19 +1,15 @@
-***
-
-# Background_Importer
 
 Abstract Tainacan\Background_Process class.
 
 Uses modified version of https://github.com/A5hleyRich/wp-background-processing
 to handle DB updates in the background.
 
+***
+
 * Full name: `\Tainacan\Background_Importer`
-* Parent class: [`\Tainacan\Background_Process`](./Background_Process.md)
-
-
+* Parent class: [`\Tainacan\Background_Process`](./Background_Process)
 
 ## Properties
-
 
 ### action
 
@@ -23,30 +19,17 @@ Action
 protected string $action
 ```
 
-
-
-
-
-
 ***
 
 ### finish_status
-
-
 
 ```php
 private int $finish_status
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
-
 
 ### __construct
 
@@ -56,43 +39,19 @@ Initiate new background process
 public __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_finish_status
-
-
 
 ```php
 private set_finish_status(mixed $status): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$status` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$status` | **mixed** |             |
 
 ***
 
@@ -109,26 +68,15 @@ queue item. Return the modified item for further processing
 in the next pass through. Or, return false to remove the
 item from the queue.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$batch` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$batch`  | **mixed** |             |
 
 ***
 
-
 ## Inherited methods
-
 
 ### __construct
 
@@ -137,17 +85,6 @@ Initiate new background process
 ```php
 public __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -159,22 +96,11 @@ Set data used during the request
 public data(array $data): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **array** | Data. |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$data`   | **array** | Data.       |
 
 ***
 
@@ -186,17 +112,6 @@ Dispatch
 public dispatch(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_query_args
@@ -206,17 +121,6 @@ Get query args
 ```php
 protected get_query_args(): array
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -228,17 +132,6 @@ Get query URL
 protected get_query_url(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_post_args
@@ -248,17 +141,6 @@ Get post args
 ```php
 protected get_post_args(): array
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -272,15 +154,6 @@ public maybe_handle(): mixed
 
 Checks whether data exists within the queue and that
 the process is not already running.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -298,15 +171,6 @@ within server memory and time limit constraints.
 Tainacan comments: This is where we changed the mos from otiginal class.
 Each batch is a single array of data. There is no queue inside a batch.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### push_to_queue
@@ -317,22 +181,11 @@ Push to queue
 public push_to_queue(mixed $data): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **mixed** | Data. |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$data`   | **mixed** | Data.       |
 
 ***
 
@@ -344,22 +197,11 @@ Save queue
 public save(mixed $priority = 10): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$priority` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$priority` | **mixed** |             |
 
 ***
 
@@ -371,23 +213,12 @@ Update queue
 public update(string $key, array|object $batch): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
-| `$batch` | **array&#124;object** | Data. |
-
-
-
-
+| Parameter | Type              | Description |
+|-----------|-------------------|-------------|
+| `$key`    | **string**        | Key.        |
+| `$batch`  | **array\|object** | Data.       |
 
 ***
 
@@ -399,22 +230,11 @@ Delete queue
 public delete(string $key): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
-
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$key`    | **string** | Key.        |
 
 ***
 
@@ -429,20 +249,11 @@ protected generate_key(int $length = 64): string
 Generates a unique key based on microtime. Queue items are
 given a unique key so that they can be merged upon save.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$length` | **int** | Length. |
-
-
-
-
+| Parameter | Type    | Description |
+|-----------|---------|-------------|
+| `$length` | **int** | Length.     |
 
 ***
 
@@ -453,17 +264,6 @@ Is queue empty
 ```php
 protected is_queue_empty(): bool
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -477,15 +277,6 @@ protected is_process_running(): mixed
 
 Check whether the current process is already running
 in a background process.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -501,15 +292,6 @@ Lock the process so that multiple instances can't run simultaneously.
 Override if applicable, but the duration should be greater than that
 defined in the time_exceeded() method.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### unlock_process
@@ -522,15 +304,6 @@ protected unlock_process(): $this
 
 Unlock the process so that other instances can spawn.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_batch
@@ -541,20 +314,9 @@ Get batch
 protected get_batch(): \Tainacan\stdClass
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Return the first batch from the queue
-
-
-
 
 ***
 
@@ -566,17 +328,8 @@ Memory exceeded
 protected memory_exceeded(): bool
 ```
 
-Ensures the batch process never exceeds 90%
+Ensures the batch process never exceeds 90%%
 of the maximum WordPress memory.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -587,17 +340,6 @@ Get memory limit
 ```php
 protected get_memory_limit(): int
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -612,15 +354,6 @@ protected time_exceeded(): bool
 Ensures the batch never exceeds a sensible time limit.
 A timeout limit of 30s is common on shared hosting.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### complete
@@ -634,15 +367,6 @@ protected complete(): mixed
 Override if applicable, but ensure that the below actions are
 performed, or, call parent::complete().
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### schedule_cron_healthcheck
@@ -653,22 +377,11 @@ Schedule cron healthcheck
 public schedule_cron_healthcheck(mixed $schedules): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$schedules` | **mixed** | Schedules. |
-
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$schedules` | **mixed** | Schedules.  |
 
 ***
 
@@ -683,15 +396,6 @@ public handle_cron_healthcheck(): mixed
 Restart the background process if not already running
 and data exists in the queue.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### handle_cron_healthcheck_check
@@ -704,15 +408,6 @@ public handle_cron_healthcheck_check(): mixed
 
 If there is an open process, not running, and not scheduled. schedule it.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### schedule_event
@@ -723,17 +418,6 @@ Schedule event
 protected schedule_event(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### clear_scheduled_event
@@ -743,17 +427,6 @@ Clear scheduled event
 ```php
 protected clear_scheduled_event(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -766,15 +439,6 @@ public cancel_process(): mixed
 ```
 
 Stop processing queue items, clear cronjob and delete batch.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -791,20 +455,12 @@ queue item. Return the modified item for further processing
 in the next pass through. Or, return false to remove the
 item from the queue.
 
-
 * This method is **abstract**.
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** | Queue item to iterate over. |
-
-
-
-
+| Parameter | Type      | Description                 |
+|-----------|-----------|-----------------------------|
+| `$item`   | **mixed** | Queue item to iterate over. |
 
 ***
 
@@ -816,43 +472,19 @@ desperate method to help debug bg processes
 public debug(mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$message` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$message` | **mixed** |             |
 
 ***
 
 ### get_id
 
-
-
 ```php
 public get_id(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -868,15 +500,6 @@ Override this method to set a name to the process
 
 Default "Background Process"
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_name
@@ -887,22 +510,11 @@ Set name
 public set_name(mixed $name): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$name`   | **mixed** |             |
 
 ***
 
@@ -914,22 +526,11 @@ Set batch as running
 public open(string $key): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
-
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$key`    | **string** | Key.        |
 
 ***
 
@@ -938,26 +539,15 @@ public open(string $key): $this
 Mark a process as done
 
 ```php
-public close(string $key, mixed $status = &#039;finished&#039;): $this
+public close(string $key, mixed $status = 'finished'): $this
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
-| `$status` | **mixed** |  |
-
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$key`    | **string** | Key.        |
+| `$status` | **mixed**  |             |
 
 ***
 
@@ -969,26 +559,15 @@ Get batch by key ID
 protected get_batch_by_key(mixed $key): \Tainacan\stdClass
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 **Return Value:**
 
 Return the batch
-
-
-
 
 ***
 
@@ -999,17 +578,6 @@ Delete all batches.
 ```php
 public delete_all_batches(): \Tainacan\WC_Background_Process
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1023,15 +591,6 @@ public kill_process(): mixed
 
 Stop processing queue items, clear cronjob and delete all batches.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### write_log_to_file
@@ -1039,86 +598,45 @@ Stop processing queue items, clear cronjob and delete all batches.
 LOG
 
 ```php
-protected write_log_to_file(mixed $key, array $log, mixed $type = &#039;&#039;): mixed
+protected write_log_to_file(mixed $key, array $log, mixed $type = ''): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$log` | **array** |  |
-| `$type` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
+| `$log`    | **array** |             |
+| `$type`   | **mixed** |             |
 
 ***
 
 ### write_log
 
-
-
 ```php
 protected write_log(mixed $key, mixed $log): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$log` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
+| `$log`    | **mixed** |             |
 
 ***
 
 ### write_error_log
 
-
-
 ```php
 protected write_error_log(mixed $key, mixed $log): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$log` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
+| `$log`    | **mixed** |             |
 
 ***
-
-
-***
-> Automatically generated on 2025-09-02

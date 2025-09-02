@@ -1,18 +1,12 @@
-***
-
-# Xml
 
 Generate a Csv formated response
 
-
+***
 
 * Full name: `\Tainacan\Exposers\Xml`
-* Parent class: [`\Tainacan\Exposers\Exposer`](./Exposer.md)
-
-
+* Parent class: [`\Tainacan\Exposers\Exposer`](./Exposer)
 
 ## Properties
-
 
 ### extension
 
@@ -22,48 +16,29 @@ Generate a Csv formated response
 protected string $extension
 ```
 
-
-
-
-
 **See Also:**
 
-* \Tainacan\Exposers\Types\Type::extension - 
+* \Tainacan\Exposers\Types\Type::extension
 
 ***
 
 ### slug
 
-
-
 ```php
 public $slug
 ```
-
-
-
-
-
 
 ***
 
 ### name
 
-
-
 ```php
 public $name
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
-
 
 ### rest_request_after_callbacks
 
@@ -73,28 +48,17 @@ Change response after api callbacks
 public rest_request_after_callbacks(mixed $response, mixed $handler, mixed $request): \WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$response` | **mixed** |  |
-| `$handler` | **mixed** |  |
-| `$request` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$response` | **mixed** |             |
+| `$handler`  | **mixed** |             |
+| `$request`  | **mixed** |             |
 
 **See Also:**
 
-* \Tainacan\Exposers\Types\Type::rest_request_after_callbacks() - 
+* \Tainacan\Exposers\Types\Type::rest_request_after_callbacks()
 
 ***
 
@@ -106,30 +70,17 @@ Convert Array to Xml
 protected array_to_xml(array $data, \SimpleXMLElement $xml_data, mixed $namespace = null): \SimpleXMLElement
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **array** |  |
-| `$xml_data` | **\SimpleXMLElement** |  |
-| `$namespace` | **mixed** |  |
-
-
-
-
+| Parameter    | Type                  | Description |
+|--------------|-----------------------|-------------|
+| `$data`      | **array**             |             |
+| `$xml_data`  | **\SimpleXMLElement** |             |
+| `$namespace` | **mixed**             |             |
 
 ***
 
-
 ## Inherited methods
-
 
 ### set_name
 
@@ -141,20 +92,11 @@ protected set_name(mixed $name): string
 
 Must be implemented by Exposer class
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$name`   | **mixed** |             |
 
 ***
 
@@ -166,22 +108,11 @@ Sets i18n exposer description
 protected set_description(mixed $description): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$description` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$description` | **mixed** |             |
 
 ***
 
@@ -193,20 +124,9 @@ Gets the exposer name
 public get_name(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 exposer name
-
-
-
 
 ***
 
@@ -218,20 +138,9 @@ Gets the exposer description
 public get_description(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 exposer description
-
-
-
 
 ***
 
@@ -243,17 +152,6 @@ return exposer object as an array
 public _toArray(): array
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### rest_request_after_callbacks
@@ -264,24 +162,14 @@ Change response after api callbacks
 public rest_request_after_callbacks(\WP_REST_Response $response, \WP_REST_Server $handler, \WP_REST_Request $request): \WP_REST_Response
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$response` | **\WP_REST_Response** |  |
-| `$handler` | **\WP_REST_Server** |  |
-| `$request` | **\WP_REST_Request** |  |
-
-
-
-
+| Parameter   | Type                  | Description |
+|-------------|-----------------------|-------------|
+| `$response` | **\WP_REST_Response** |             |
+| `$handler`  | **\WP_REST_Server**   |             |
+| `$request`  | **\WP_REST_Request**  |             |
 
 ***
 
@@ -293,23 +181,8 @@ Return list of supported mappers for this type
 public get_mappers(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 List of mappers
 
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

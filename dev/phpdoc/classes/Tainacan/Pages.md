@@ -1,18 +1,12 @@
-***
-
-# Pages
 
 Pages is an abstract base class for all Tainacan admin pages.
 
-
+***
 
 * Full name: `\Tainacan\Pages`
 * This class is an **Abstract class**
 
-
-
 ## Properties
-
 
 ### tainacan_root_menu_slug
 
@@ -21,11 +15,6 @@ $tainacan_root_menu_slug is the root menu slug for all Tainacan admin pages.
 ```php
 public string $tainacan_root_menu_slug
 ```
-
-
-
-
-
 
 ***
 
@@ -37,15 +26,9 @@ $tainacan_other_links_slug is the menu slug for the "Others" menu collapse
 public string $tainacan_other_links_slug
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
-
 
 ### get_page_slug
 
@@ -55,17 +38,7 @@ This method must be implemented, providing a page_slug (page's ID or Slug), used
 protected get_page_slug(): string
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
-
-
-
-
 ***
 
 ### __construct
@@ -75,17 +48,6 @@ Class constructor, never called directly but used to invoke the init method.
 ```php
 protected __construct(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -98,15 +60,6 @@ public init(): void
 ```
 
 Registers user meta, check admin menu collapse state and add links to the admin menu.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -121,15 +74,6 @@ public load_page(): void
 In a child class, when registering a page with add_submenu_page, the $page_suffix is returned and can be
 used to load the page's assets. This guarantees that the body class and the assets are only loaded when the
 user visits the respective page.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -146,15 +90,6 @@ $this->tainacan_root_menu_slug. A child slug then should be defined so that chil
 (see class-tainacan-admin for an example). If the page is to be listed in the "Others" menu collapse, the
 parent should be $this->tainacan_other_links_slug.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### admin_enqueue_css
@@ -165,17 +100,6 @@ enqueue the page's CSS using wp_enqueue_script()
 ```php
 public admin_enqueue_css(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -189,17 +113,6 @@ as most pages will use this typography
 public admin_enqueue_fonts(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### admin_enqueue_js
@@ -210,17 +123,6 @@ enqueue the page's JS using wp_enqueue_script()
 ```php
 public admin_enqueue_js(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -236,20 +138,11 @@ By default, it adds the class 'tainacan-pages-container', responsible to style t
 the Tainacan admin pages. If overriden, this class should possibly be added to the returned string if
 a sidemenu is desired.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$classes` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$classes` | **mixed** |             |
 
 ***
 
@@ -264,15 +157,6 @@ public get_admin_js_user_data(): mixed
 The navigation script, which is enqueued to all admin pages, uses this object to check user capabilities and tweak
 user prefs.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_admin_js_localization_params
@@ -283,17 +167,6 @@ bridge between PHP and JS. Not every page needs it but they can call it to add t
 ```php
 public get_admin_js_localization_params(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -307,15 +180,6 @@ public register_user_meta(): void
 
 The tainacan_prefs holds several user defined options such as perpage and orderby preferences.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### render_page_content
@@ -326,17 +190,7 @@ render_page_content defines the inner content of the page. It is called from the
 public render_page_content(): void
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
-
-
-
-
 ***
 
 ### render_page
@@ -348,15 +202,6 @@ public render_page(): void
 ```
 
 Usually this function is to be passed as a callback to the add_submenu_page function, in each child class.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -372,15 +217,6 @@ Internally, it loops through the submenu global variable to render the menu item
 All submenu registered with the $tainacan_root_menu_slug are considered root links.
 They may or may not contain links and submenu items of their slug are rendered as ul/li tags.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### render_breadcrumbs
@@ -390,17 +226,6 @@ render_breadcrumbs creates the breadrcumbs for the Tainacan admin pages.
 ```php
 public render_breadcrumbs(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -412,17 +237,6 @@ Renders buttons for minimizing and collapsing the menu.
 public render_navigation_menu_toggler_buttons(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### remove_admin_notices
@@ -432,17 +246,6 @@ remove_admin_notices removes all admin notices from the admin_notices and all_ad
 ```php
 public remove_admin_notices(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -455,17 +258,6 @@ based on his/her role.
 public admin_init_ui_options(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### admin_add_screen_options
@@ -477,29 +269,16 @@ to insert fullscreen mode toggle button.
 public admin_add_screen_options(mixed $current, mixed $screen): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$current` | **mixed** |  |
-| `$screen` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$current` | **mixed** |             |
+| `$screen`  | **mixed** |             |
 
 ***
 
-
 ## Inherited methods
-
 
 ### get_available_admin_ui_options
 
@@ -509,85 +288,44 @@ Lists a translatable and grouped version of the available admin ui options
 public get_available_admin_ui_options(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 of available admin ui options
-
-
-
 
 ***
 
 ### has_admin_ui_option
 
-
-
 ```php
 public has_admin_ui_option(mixed $option): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$option` | **mixed** |  |
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$option` | **mixed** |             |
 
 **Return Value:**
 
 option value for the given setting
 
-
-
-
 ***
 
 ### get_svg_icon
-
-
 
 ```php
 public get_svg_icon(mixed $icon_slug): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$icon_slug` | **mixed** |  |
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$icon_slug` | **mixed** |             |
 
 **Return Value:**
 
 icon_slug with that points to the icon file
 
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

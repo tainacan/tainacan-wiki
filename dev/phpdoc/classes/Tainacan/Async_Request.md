@@ -1,18 +1,12 @@
-***
-
-# Async_Request
 
 Abstract Async_Request class.
 
-
+***
 
 * Full name: `\Tainacan\Async_Request`
 * This class is an **Abstract class**
 
-
-
 ## Properties
-
 
 ### prefix
 
@@ -23,9 +17,6 @@ protected string $prefix
 ```
 
 (default value: 'wp')
-
-
-
 
 ***
 
@@ -39,9 +30,6 @@ protected string $action
 
 (default value: 'async_request')
 
-
-
-
 ***
 
 ### identifier
@@ -51,11 +39,6 @@ Identifier
 ```php
 protected mixed $identifier
 ```
-
-
-
-
-
 
 ***
 
@@ -69,13 +52,9 @@ protected array $data
 
 (default value: array())
 
-
-
-
 ***
 
 ## Methods
-
 
 ### __construct
 
@@ -84,17 +63,6 @@ Initiate new async request
 ```php
 public __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -106,22 +74,11 @@ Set data used during the request
 public data(array $data): $this
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **array** | Data. |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$data`   | **array** | Data.       |
 
 ***
 
@@ -133,17 +90,6 @@ Dispatch the async request
 public dispatch(): array|\Tainacan\WP_Error
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_query_args
@@ -153,17 +99,6 @@ Get query args
 ```php
 protected get_query_args(): array
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -175,17 +110,6 @@ Get query URL
 protected get_query_url(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_post_args
@@ -195,17 +119,6 @@ Get post args
 ```php
 protected get_post_args(): array
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -218,15 +131,6 @@ public maybe_handle(): mixed
 ```
 
 Check for correct nonce and pass to handler.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -241,17 +145,5 @@ protected handle(): mixed
 Override this method to perform any actions required
 during the async request.
 
-
 * This method is **abstract**.
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

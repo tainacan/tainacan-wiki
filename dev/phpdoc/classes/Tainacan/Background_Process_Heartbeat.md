@@ -1,37 +1,15 @@
+
 ***
-
-# Background_Process_Heartbeat
-
-
-
-
 
 * Full name: `\Tainacan\Background_Process_Heartbeat`
 
-
-
-
 ## Methods
 
-
 ### init
-
-
 
 ```php
 private init(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -45,70 +23,30 @@ public bg_process_feedback(array $response, array $data): mixed
 
 Processes data received via a Heartbeat request, and returns additional data to pass back to the front end.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter   | Type      | Description                                        |
+|-------------|-----------|----------------------------------------------------|
 | `$response` | **array** | Heartbeat response data to pass back to front end. |
-| `$data` | **array** | Data received from the front end (unslashed). |
-
-
-
-
+| `$data`     | **array** | Data received from the front end (unslashed).      |
 
 ***
 
-
 ## Inherited methods
 
-
 ### get_instance
-
-
 
 ```php
 public static get_instance(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
 
 ### __construct
-
-
 
 ```php
 private __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

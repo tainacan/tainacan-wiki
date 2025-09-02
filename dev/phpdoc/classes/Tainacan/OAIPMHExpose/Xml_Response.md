@@ -1,51 +1,32 @@
-***
-
-# Xml_Response
 
 Generate an XML response to a request if no error has occured
 
 This is the class to further develop to suits a publication need
 
+***
+
 * Full name: `\Tainacan\OAIPMHExpose\Xml_Response`
-* Parent class: [`\Tainacan\OAIPMHExpose\Xml_Create`](./Xml_Create.md)
-
-
+* Parent class: [`\Tainacan\OAIPMHExpose\Xml_Create`](./Xml_Create)
 
 ## Properties
 
-
 ### verbNode
-
-
 
 ```php
 public $verbNode
 ```
 
-
-
-
-
-
 ***
 
 ### verb
-
-
 
 ```php
 protected $verb
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
-
 
 ### __construct
 
@@ -55,22 +36,13 @@ Constructs an Xml_Create object.
 public __construct(mixed $par_array): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$par_array` | **mixed** | Type: array.<br />  Array of request parameters for creating an ANDS_XML object.<br />\see create_request. |
-
-
-
-
+| Parameter    | Type      | Description                                                                                      |
+|--------------|-----------|--------------------------------------------------------------------------------------------------|
+| `$par_array` | **mixed** | Type: array.
+  Array of request parameters for creating an ANDS_XML object.
+\see create_request. |
 
 ***
 
@@ -89,21 +61,12 @@ Different verbs can have different required child nodes.
 \param $nodeName Type: string. The name of appending node.
 \param $value Type: string. The content of appending node.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$nodeName` | **mixed** |  |
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$nodeName` | **mixed** |             |
+| `$value`    | **mixed** |             |
 
 ***
 
@@ -114,17 +77,6 @@ Create an empty \<record\> node. Other nodes will be appended to it later.
 ```php
 public create_record(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -143,24 +95,15 @@ public create_header(mixed $identifier, mixed $timestamp, mixed $ands_class, mix
 In normal cases, $add_to_node is the \<record\> node created previously. When it is null, the newly created header node is attatched to $this->verbNode.
 Otherwise it will be attatched to the desired node defined in $add_to_node.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$identifier` | **mixed** |  |
-| `$timestamp` | **mixed** |  |
-| `$ands_class` | **mixed** |  |
-| `$add_to_node` | **mixed** |  |
-| `$is_deleted` | **mixed** |  |
-
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$identifier`  | **mixed** |             |
+| `$timestamp`   | **mixed** |             |
+| `$ands_class`  | **mixed** |             |
+| `$add_to_node` | **mixed** |             |
+| `$is_deleted`  | **mixed** |             |
 
 ***
 
@@ -174,20 +117,11 @@ public create_metadata(mixed $mom_record_node): mixed
 
 \param $mom_record_node DOMElement. A node acts as the parent node.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$mom_record_node` | **mixed** |  |
-
-
-
-
+| Parameter          | Type      | Description |
+|--------------------|-----------|-------------|
+| `$mom_record_node` | **mixed** |             |
 
 ***
 
@@ -204,29 +138,18 @@ public create_resumpToken(mixed $token, mixed $expirationdatetime, mixed $num_ro
 \param $num_rows Type: integer. Number of records retrieved.
 \param $cursor Type: string. Cursor can be used for database to retrieve next time.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$token` | **mixed** |  |
-| `$expirationdatetime` | **mixed** |  |
-| `$num_rows` | **mixed** |  |
-| `$cursor` | **mixed** |  |
-
-
-
-
+| Parameter             | Type      | Description |
+|-----------------------|-----------|-------------|
+| `$token`              | **mixed** |             |
+| `$expirationdatetime` | **mixed** |             |
+| `$num_rows`           | **mixed** |             |
+| `$cursor`             | **mixed** |             |
 
 ***
 
-
 ## Inherited methods
-
 
 ### __construct
 
@@ -236,22 +159,13 @@ Constructs an Xml_Create object.
 public __construct(mixed $par_array): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$par_array` | **mixed** | Type: array.<br />  Array of request parameters for creating an ANDS_XML object.<br />\see create_request. |
-
-
-
-
+| Parameter    | Type      | Description                                                                                      |
+|--------------|-----------|--------------------------------------------------------------------------------------------------|
+| `$par_array` | **mixed** | Type: array.
+  Array of request parameters for creating an ANDS_XML object.
+\see create_request. |
 
 ***
 
@@ -260,33 +174,25 @@ public __construct(mixed $par_array): mixed
 Add a child node to a parent node on a XML Doc: a worker function.
 
 ```php
-public addChild(mixed $mom_node, mixed $name, mixed $value = &#039;&#039;): \Tainacan\OAIPMHExpose\DOMElement
+public addChild(mixed $mom_node, mixed $name, mixed $value = ''): \Tainacan\OAIPMHExpose\DOMElement
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$mom_node` | **mixed** | <br />Type: DOMNode. The target node. |
-| `$name` | **mixed** | <br />Type: string. The name of child nade is being added |
-| `$value` | **mixed** | <br />Type: string. Text for the adding node if it is a text node. |
-
+| Parameter   | Type      | Description                                                   |
+|-------------|-----------|---------------------------------------------------------------|
+| `$mom_node` | **mixed** | 
+Type: DOMNode. The target node.                              |
+| `$name`     | **mixed** | 
+Type: string. The name of child nade is being added          |
+| `$value`    | **mixed** | 
+Type: string. Text for the adding node if it is a text node. |
 
 **Return Value:**
 
 $added_node
 The newly created node, can be used for further expansion.
 If no further expansion is expected, return value can be igored.
-
-
-
 
 ***
 
@@ -295,33 +201,25 @@ If no further expansion is expected, return value can be igored.
 Add a child node to a parent node on a XML Doc: a worker function.
 
 ```php
-public addChildDC(mixed $mom_node, mixed $name, mixed $value = &#039;&#039;): \Tainacan\OAIPMHExpose\DOMElement
+public addChildDC(mixed $mom_node, mixed $name, mixed $value = ''): \Tainacan\OAIPMHExpose\DOMElement
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$mom_node` | **mixed** | <br />Type: DOMNode. The target node. |
-| `$name` | **mixed** | <br />Type: string. The name of child nade is being added |
-| `$value` | **mixed** | <br />Type: string. Text for the adding node if it is a text node. |
-
+| Parameter   | Type      | Description                                                   |
+|-------------|-----------|---------------------------------------------------------------|
+| `$mom_node` | **mixed** | 
+Type: DOMNode. The target node.                              |
+| `$name`     | **mixed** | 
+Type: string. The name of child nade is being added          |
+| `$value`    | **mixed** | 
+Type: string. Text for the adding node if it is a text node. |
 
 **Return Value:**
 
 $added_node
 The newly created node, can be used for further expansion.
 If no further expansion is expected, return value can be igored.
-
-
-
 
 ***
 
@@ -333,22 +231,13 @@ Create an OAI request node.
 public create_request(mixed $par_array): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$par_array` | **mixed** | Type: array<br />  The attributes of a request node. They describe the verb of the request and other associated parameters used in the request.<br />Keys of the array define attributes, and values are their content. |
-
-
-
-
+| Parameter    | Type      | Description                                                                                                                                                                                                   |
+|--------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `$par_array` | **mixed** | Type: array
+  The attributes of a request node. They describe the verb of the request and other associated parameters used in the request.
+Keys of the array define attributes, and values are their content. |
 
 ***
 
@@ -360,19 +249,4 @@ Display a doc in a readable, well-formatted way for display or saving
 public display(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

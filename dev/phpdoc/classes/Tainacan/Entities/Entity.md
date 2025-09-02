@@ -1,17 +1,11 @@
-***
-
-# Entity
 
 Entity Super class
 
-
+***
 
 * Full name: `\Tainacan\Entities\Entity`
 
-
-
 ## Properties
-
 
 ### repository
 
@@ -20,11 +14,6 @@ The repository of that entity
 ```php
 protected \Tainacan\Repositories\Repository $repository
 ```
-
-
-
-
-
 
 ***
 
@@ -36,11 +25,6 @@ Array of errors, for example, register validations errors
 private array $errors
 ```
 
-
-
-
-
-
 ***
 
 ### post_type
@@ -51,10 +35,7 @@ The WordPress post_type for store this class if is needed, false otherwise
 protected static string $post_type
 ```
 
-
-
 * This property is **static**.
-
 
 ***
 
@@ -66,10 +47,7 @@ The WordPress capability for the entity post type. Default is to be equal to $po
 protected static string $capability_type
 ```
 
-
-
 * This property is **static**.
-
 
 ***
 
@@ -80,11 +58,6 @@ Store the WordPress post object
 ```php
 public \WP_Post $WP_Post
 ```
-
-
-
-
-
 
 ***
 
@@ -97,9 +70,6 @@ private bool $validated
 ```
 
 Entities MUST be validated before attempt to save
-
-
-
 
 ***
 
@@ -127,13 +97,9 @@ public object $cap
 - edit_private_posts - Controls whether private objects can be edited.
 - edit_published_posts - Controls whether published objects can be edited.
 
-
-
-
 ***
 
 ## Methods
-
 
 ### __construct
 
@@ -147,73 +113,37 @@ If ID or WP Post is passed, it retrieves the object from the database
 
 Attention: If the ID or Post provided do not match the Entity post type, an Exception will be thrown
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$which` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$which`  | **mixed** |             |
 
 **Throws:**
 
-- [`Exception`](../../Exception.md)
-
-
+- [`Exception`](../../Exception)
 
 ***
 
 ### get_repository
 
-
-
 ```php
 public get_repository(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_date_i18n
 
-
-
 ```php
 public get_date_i18n(mixed $date): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$date` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$date`   | **mixed** |             |
 
 ***
 
@@ -225,26 +155,15 @@ return the value for a mapped property
 public get_mapped_property(string $prop): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of property |
-
+| Parameter | Type       | Description    |
+|-----------|------------|----------------|
+| `$prop`   | **string** | id of property |
 
 **Return Value:**
 
 property value
-
-
-
 
 ***
 
@@ -259,21 +178,12 @@ protected set_mapped_property(string $prop, mixed $value): mixed
 This is a protected method. If you want to set an entity prop
 using the prop name dynamically, use the set() method
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property |
-| `$value` | **mixed** | the value to be setted |
-
-
-
-
+| Parameter | Type       | Description            |
+|-----------|------------|------------------------|
+| `$prop`   | **string** | id of the property     |
+| `$value`  | **mixed**  | the value to be setted |
 
 ***
 
@@ -285,27 +195,16 @@ set the value property
 public set(string $prop, mixed $value): null|mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property |
-| `$value` | **mixed** | the value to be setted |
-
+| Parameter | Type       | Description            |
+|-----------|------------|------------------------|
+| `$prop`   | **string** | id of the property     |
+| `$value`  | **mixed**  | the value to be setted |
 
 **Return Value:**
 
 Null on failure, the value that was set on success
-
-
-
 
 ***
 
@@ -317,26 +216,15 @@ get the value property
 public get(string $prop): null|mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property |
-
+| Parameter | Type       | Description        |
+|-----------|------------|--------------------|
+| `$prop`   | **string** | id of the property |
 
 **Return Value:**
 
 Null on failure, the value that was set on success
-
-
-
 
 ***
 
@@ -348,22 +236,11 @@ set the status of the entity
 public set_status(string $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **string** |  |
-
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$value`  | **string** |             |
 
 ***
 
@@ -377,15 +254,6 @@ public validate(): bool
 
 If Entity is not valid, validation error messages are available via get_errors() method
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### validate_prop
@@ -396,106 +264,45 @@ Validate a single property
 public validate_prop(string $prop): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$prop` | **string** | id of the property to be validate |
-
-
-
-
+| Parameter | Type       | Description                       |
+|-----------|------------|-----------------------------------|
+| `$prop`   | **string** | id of the property to be validate |
 
 ***
 
 ### get_errors
 
-
-
 ```php
 public get_errors(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_post_type
 
-
-
 ```php
 public static get_post_type(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
 
 ### get_capability_type
-
-
 
 ```php
 public static get_capability_type(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
 
 ### get_status
 
-
-
 ```php
 public get_status(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -509,15 +316,6 @@ public get_db_identifier(): string
 
 This identifier is used to register the entity on database, ex.: post_type
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_id
@@ -528,44 +326,20 @@ Get the entity ID
 public get_id(): int
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### add_error
-
-
 
 ```php
 public add_error(mixed $type, mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$type` | **mixed** |  |
-| `$message` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$type`    | **mixed** |             |
+| `$message` | **mixed** |             |
 
 ***
 
@@ -577,127 +351,51 @@ Clear the errors array
 public reset_errors(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_validated
-
-
 
 ```php
 public get_validated(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_validated
-
-
 
 ```php
 protected set_validated(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### set_as_valid
 
-
-
 ```php
 protected set_as_valid(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _toArray
 
-
-
 ```php
 public _toArray(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _toJson
 
-
-
 ```php
 public _toJson(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -709,22 +407,11 @@ Return if user can read this entity
 public can_read(int|\WP_User $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User** |  |
-
-
-
-
+| Parameter | Type              | Description |
+|-----------|-------------------|-------------|
+| `$user`   | **int\|\WP_User** |             |
 
 ***
 
@@ -736,22 +423,11 @@ Return if user can edit this entity
 public can_edit(int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
-
-
-
-
+| Parameter | Type                    | Description                                              |
+|-----------|-------------------------|----------------------------------------------------------|
+| `$user`   | **int\|\WP_User\|null** | the user for capability check, null for the current user |
 
 ***
 
@@ -763,22 +439,11 @@ Return if user can delete this entity
 public can_delete(int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
-
-
-
-
+| Parameter | Type                    | Description                                              |
+|-----------|-------------------------|----------------------------------------------------------|
+| `$user`   | **int\|\WP_User\|null** | the user for capability check, null for the current user |
 
 ***
 
@@ -790,22 +455,11 @@ Return if user can publish this entity
 public can_publish(int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
-
-
-
-
+| Parameter | Type                    | Description                                              |
+|-----------|-------------------------|----------------------------------------------------------|
+| `$user`   | **int\|\WP_User\|null** | the user for capability check, null for the current user |
 
 ***
 
@@ -817,20 +471,9 @@ Get the capabilities list for the post type of the entity
 public get_capabilities(): object
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Object with all the capabilities as member variables.
-
-
-
 
 ***
 
@@ -842,25 +485,10 @@ Compare this entity props with self old values or with $which other entity
 public diff(\Tainacan\Entities\Entity|int|\WP_Post $which): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$which` | **\Tainacan\Entities\Entity&#124;int&#124;\WP_Post** | default ($which = 0) to self compare with stored entity |
-
-
-
-
+| Parameter | Type                                         | Description                                             |
+|-----------|----------------------------------------------|---------------------------------------------------------|
+| `$which`  | **\Tainacan\Entities\Entity\|int\|\WP_Post** | default ($which = 0) to self compare with stored entity |
 
 ***
-
-
-***
-> Automatically generated on 2025-09-02

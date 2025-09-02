@@ -1,19 +1,12 @@
-***
-
-# Settings
 
 Pages is an abstract base class for all Tainacan admin pages.
 
-
+***
 
 * Full name: `\Tainacan\Settings`
-* Parent class: [`\Tainacan\Pages`](./Pages.md)
-
-
-
+* Parent class: [`\Tainacan\Pages`](./Pages)
 
 ## Methods
-
 
 ### get_page_slug
 
@@ -22,17 +15,6 @@ This method must be implemented, providing a page_slug (page's ID or Slug), used
 ```php
 protected get_page_slug(): string
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -45,15 +27,6 @@ public init(): void
 ```
 
 Registers user meta, check admin menu collapse state and add links to the admin menu.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -70,15 +43,6 @@ $this->tainacan_root_menu_slug. A child slug then should be defined so that chil
 (see class-tainacan-admin for an example). If the page is to be listed in the "Others" menu collapse, the
 parent should be $this->tainacan_other_links_slug.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### admin_enqueue_css
@@ -90,17 +54,6 @@ enqueue the page's CSS using wp_enqueue_script()
 public admin_enqueue_css(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### render_page_content
@@ -111,37 +64,13 @@ render_page_content defines the inner content of the page. It is called from the
 public render_page_content(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### settings_init
 
-
-
 ```php
 public settings_init(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -156,20 +85,30 @@ public create_tainacan_setting(array $args): mixed
 This function registers a new setting field and its associated options in the Tainacan settings page.
 It acts as a wrapper for WordPress functions add_settings_field and register_setting.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **array** | {<br />    An array of arguments for creating the setting.<br /><br />    @type string   $id                The ID or &#039;slug&#039; of the setting. Will be concatenated with &#039;tainacan_option_&#039;.<br />    @type string   $title             The title of the setting, that will appear on the left side of the form.<br />    @type callable $callback          The callback function for rendering the setting field. Default is &#039;default_field_callback&#039;.<br />    @type string   $page              The settings page where the field will be displayed. Default is &#039;tainacan_settings&#039;.<br />    @type string   $section           The section of the settings page where the field will be displayed.<br />    @type string   $class             The CSS class for the setting field. Will be added to the &lt;tr&gt; tag tha contains the field.<br />    @type string   $type              The type of the setting. Valid values are &#039;string&#039;, &#039;boolean&#039;, &#039;integer&#039;, &#039;number&#039;, &#039;array&#039;, and &#039;object&#039;. Default is &#039;string&#039;.<br />    @type string   $input_type        The input type for the setting field. Valid values are &#039;text&#039;, &#039;checkbox&#039;, &#039;radio&#039;, &#039;select&#039;, &#039;textarea&#039;, &#039;email&#039;, &#039;url&#039;, &#039;number&#039;, &#039;password&#039;, &#039;hidden&#039;, &#039;color&#039;, &#039;date&#039;, &#039;datetime-local&#039;, &#039;month&#039;, &#039;range&#039;, &#039;search&#039;, &#039;tel&#039;, &#039;time&#039;, &#039;week&#039;. Default is &#039;text&#039;.<br />    @type string   $input_attrs       Additional attributes for the input field markup. May be used for passsing, for example, min and max values.<br />    @type bool     $input_disabled    Whether the input field is disabled. Default is false.<br />    @type string   $input_inner_html  Inner HTML content for the input field. May be used for setting select &lt;option&gt; elements.<br />    @type string   $description       Description of the setting, used for help.<br />    @type callable $sanitize_callback The callback function for sanitizing the setting value. Default is &#039;sanitize_text_field&#039;.<br />    @type mixed    $default           The default value of the setting. Will be passed to get_option() if the setting is not set.<br />    @type string   $label             The label for the setting field.<br />    @type mixed    $forced_value      A value that overrides the setting value.<br />} |
+| Parameter | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-----------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `$args`   | **array** | {
+    An array of arguments for creating the setting.
 
-
-
-
+    @type string   $id                The ID or 'slug' of the setting. Will be concatenated with 'tainacan_option_'.
+    @type string   $title             The title of the setting, that will appear on the left side of the form.
+    @type callable $callback          The callback function for rendering the setting field. Default is 'default_field_callback'.
+    @type string   $page              The settings page where the field will be displayed. Default is 'tainacan_settings'.
+    @type string   $section           The section of the settings page where the field will be displayed.
+    @type string   $class             The CSS class for the setting field. Will be added to the <tr> tag tha contains the field.
+    @type string   $type              The type of the setting. Valid values are 'string', 'boolean', 'integer', 'number', 'array', and 'object'. Default is 'string'.
+    @type string   $input_type        The input type for the setting field. Valid values are 'text', 'checkbox', 'radio', 'select', 'textarea', 'email', 'url', 'number', 'password', 'hidden', 'color', 'date', 'datetime-local', 'month', 'range', 'search', 'tel', 'time', 'week'. Default is 'text'.
+    @type string   $input_attrs       Additional attributes for the input field markup. May be used for passsing, for example, min and max values.
+    @type bool     $input_disabled    Whether the input field is disabled. Default is false.
+    @type string   $input_inner_html  Inner HTML content for the input field. May be used for setting select <option> elements.
+    @type string   $description       Description of the setting, used for help.
+    @type callable $sanitize_callback The callback function for sanitizing the setting value. Default is 'sanitize_text_field'.
+    @type mixed    $default           The default value of the setting. Will be passed to get_option() if the setting is not set.
+    @type string   $label             The label for the setting field.
+    @type mixed    $forced_value      A value that overrides the setting value.
+} |
 
 ***
 
@@ -181,22 +120,11 @@ Callback wrapper to allow receiving args in the callback function.
 public tainacan_settings_field_callback(mixed $args): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$args`   | **mixed** |             |
 
 ***
 
@@ -210,152 +138,63 @@ public default_field_callback(mixed $args): mixed
 
 Renders a basic input field with a description.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **mixed** |  |
-
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$args`   | **mixed** |             |
 
 ***
 
 ### search_and_performance_section_description
 
-
-
 ```php
 public search_and_performance_section_description(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### theme_templates_section_description
 
-
-
 ```php
 public theme_templates_section_description(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### items_list_defaults_section_description
 
-
-
 ```php
 public items_list_defaults_section_description(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### print_section_info
 
-
-
 ```php
 public print_section_info(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### tnc_option_recaptch_site_key
 
-
-
 ```php
 public tnc_option_recaptch_site_key(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### tnc_option_recaptch_secret_key
 
-
-
 ```php
 public tnc_option_recaptch_secret_key(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
-
 ## Inherited methods
-
 
 ### get_available_admin_ui_options
 
@@ -365,82 +204,45 @@ Lists a translatable and grouped version of the available admin ui options
 public get_available_admin_ui_options(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 of available admin ui options
-
-
-
 
 ***
 
 ### has_admin_ui_option
 
-
-
 ```php
 public has_admin_ui_option(mixed $option): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$option` | **mixed** |  |
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$option` | **mixed** |             |
 
 **Return Value:**
 
 option value for the given setting
 
-
-
-
 ***
 
 ### get_svg_icon
-
-
 
 ```php
 public get_svg_icon(mixed $icon_slug): string
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$icon_slug` | **mixed** |  |
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$icon_slug` | **mixed** |             |
 
 **Return Value:**
 
 icon_slug with that points to the icon file
-
-
-
 
 ***
 
@@ -452,37 +254,14 @@ This method must be implemented, providing a page_slug (page's ID or Slug), used
 protected get_page_slug(): string
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
-
-
-
-
 ***
 
 ### __construct
 
-
-
 ```php
 private __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -495,15 +274,6 @@ public init(): void
 ```
 
 Registers user meta, check admin menu collapse state and add links to the admin menu.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -519,15 +289,6 @@ In a child class, when registering a page with add_submenu_page, the $page_suffi
 used to load the page's assets. This guarantees that the body class and the assets are only loaded when the
 user visits the respective page.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### add_admin_menu
@@ -543,15 +304,6 @@ $this->tainacan_root_menu_slug. A child slug then should be defined so that chil
 (see class-tainacan-admin for an example). If the page is to be listed in the "Others" menu collapse, the
 parent should be $this->tainacan_other_links_slug.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### admin_enqueue_css
@@ -562,17 +314,6 @@ enqueue the page's CSS using wp_enqueue_script()
 ```php
 public admin_enqueue_css(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -586,17 +327,6 @@ as most pages will use this typography
 public admin_enqueue_fonts(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### admin_enqueue_js
@@ -607,17 +337,6 @@ enqueue the page's JS using wp_enqueue_script()
 ```php
 public admin_enqueue_js(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -633,20 +352,11 @@ By default, it adds the class 'tainacan-pages-container', responsible to style t
 the Tainacan admin pages. If overriden, this class should possibly be added to the returned string if
 a sidemenu is desired.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$classes` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$classes` | **mixed** |             |
 
 ***
 
@@ -661,15 +371,6 @@ public get_admin_js_user_data(): mixed
 The navigation script, which is enqueued to all admin pages, uses this object to check user capabilities and tweak
 user prefs.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_admin_js_localization_params
@@ -680,17 +381,6 @@ bridge between PHP and JS. Not every page needs it but they can call it to add t
 ```php
 public get_admin_js_localization_params(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -704,15 +394,6 @@ public register_user_meta(): void
 
 The tainacan_prefs holds several user defined options such as perpage and orderby preferences.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### render_page_content
@@ -723,17 +404,7 @@ render_page_content defines the inner content of the page. It is called from the
 public render_page_content(): void
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
-
-
-
-
 ***
 
 ### render_page
@@ -745,15 +416,6 @@ public render_page(): void
 ```
 
 Usually this function is to be passed as a callback to the add_submenu_page function, in each child class.
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -769,15 +431,6 @@ Internally, it loops through the submenu global variable to render the menu item
 All submenu registered with the $tainacan_root_menu_slug are considered root links.
 They may or may not contain links and submenu items of their slug are rendered as ul/li tags.
 
-
-
-
-
-
-
-
-
-
 ***
 
 ### render_breadcrumbs
@@ -787,17 +440,6 @@ render_breadcrumbs creates the breadrcumbs for the Tainacan admin pages.
 ```php
 public render_breadcrumbs(): void
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -809,17 +451,6 @@ Renders buttons for minimizing and collapsing the menu.
 public render_navigation_menu_toggler_buttons(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### remove_admin_notices
@@ -829,17 +460,6 @@ remove_admin_notices removes all admin notices from the admin_notices and all_ad
 ```php
 public remove_admin_notices(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -852,17 +472,6 @@ based on his/her role.
 public admin_init_ui_options(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### admin_add_screen_options
@@ -874,47 +483,20 @@ to insert fullscreen mode toggle button.
 public admin_add_screen_options(mixed $current, mixed $screen): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$current` | **mixed** |  |
-| `$screen` | **mixed** |  |
-
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$current` | **mixed** |             |
+| `$screen`  | **mixed** |             |
 
 ***
 
 ### get_instance
 
-
-
 ```php
 public static get_instance(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated on 2025-09-02

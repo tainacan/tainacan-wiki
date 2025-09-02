@@ -2,18 +2,6 @@
 
 ## Actions
 
-### `activate_substr()/src/tainacan.php`
-
-
-Source: [/src/tainacan/tests/bootstrap.php](tests/bootstrap.php), [line 26](tests/bootstrap.php#L26-L26)
-
-### `rest_api_init`
-
-*Basic test case for api calls*
-
-
-Source: [/src/tainacan/tests/tainacan-unit-api-test-case.php](tests/tainacan-unit-api-test-case.php), [line 5](tests/tainacan-unit-api-test-case.php#L5-L37)
-
 ### `tainacan-register-exposers`
 
 *Load exposers classes*
