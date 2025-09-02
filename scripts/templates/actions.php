@@ -23,7 +23,7 @@ echo '# Tainacan Actions', $eol;
 
 echo $eol;
 
-echo 'WordPress actions are hooks that allow you to execute custom code at specific points during the WordPress lifecycle. In Tainacan, actions enable developers to extend or modify plugin behavior without altering core files. To use an action, attach your custom function to a specific hook using the add_action() function:', $eol, $eol;
+echo 'WordPress actions are hooks that allow you to execute custom code at specific points during the WordPress lifecycle. In Tainacan, actions enable developers to extend or modify plugin behavior without altering core files. To use an action, attach your custom function to a specific hook using the `add_action()` function:', $eol, $eol;
 
 echo '```php', $eol;
 echo "add_action( 'tainacan-some-action', 'your_callback_function', 10, 2 );", $eol;

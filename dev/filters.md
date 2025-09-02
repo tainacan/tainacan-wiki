@@ -1,6 +1,6 @@
 # Tainacan Filters
 
-WordPress filters are hooks that allow you to modify data at specific points during the WordPress lifecycle. In Tainacan, filters enable developers to extend or modify plugin behavior without altering core files. To use a filter, attach your custom function to a specific hook using the add_filter() function:
+WordPress filters are hooks that allow you to modify data at specific points during the WordPress lifecycle. In Tainacan, filters enable developers to extend or modify plugin behavior without altering core files. To use a filter, attach your custom function to a specific hook using the `add_filter()` function:
 
 ```php
 add_filter( 'tainacan-some-filter', 'your_callback_function', 10, 2 );
@@ -12,7 +12,7 @@ function your_callback_function( $arg1, $arg2 ) {
 Refer to the list below for available Tainacan filters and their usage.
 
 
-### `tainacan-exposer-numeric-item-prefix`
+## `tainacan-exposer-numeric-item-prefix`
 
 **Arguments**
 
@@ -23,7 +23,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-xml.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-xml.php), [line 59](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-xml.php#L59-L59)
 
-### `tainacan-exporser-type-mappers`
+---------------------------------
+## `tainacan-exporser-type-mappers`
 
 *Return list of supported mappers for this type*
 
@@ -36,7 +37,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-exposer.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-exposer.php), [line 83](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-exposer.php#L83-L88)
 
-### `tainacan-exposer-txt`
+---------------------------------
+## `tainacan-exposer-txt`
 
 **Arguments**
 
@@ -46,7 +48,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-txt.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-txt.php), [line 25](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-txt.php#L25-L25)
 
-### `tainacan-exposer-numeric-item-prefix`
+---------------------------------
+## `tainacan-exposer-numeric-item-prefix`
 
 **Arguments**
 
@@ -57,7 +60,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-txt.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-txt.php), [line 39](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-txt.php#L39-L39)
 
-### `tainacan-exposer-html`
+---------------------------------
+## `tainacan-exposer-html`
 
 *{@inheritDoc}*
 
@@ -69,7 +73,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-html.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-html.php), [line 23](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-html.php#L23-L85)
 
-### `tainacan-exposer-numeric-item-prefix`
+---------------------------------
+## `tainacan-exposer-numeric-item-prefix`
 
 **Arguments**
 
@@ -80,7 +85,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-html.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-html.php), [line 102](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-html.php#L102-L102)
 
-### `tainacan-exposer-jsonld`
+---------------------------------
+## `tainacan-exposer-jsonld`
 
 **Arguments**
 
@@ -90,7 +96,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-json-ld.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-json-ld.php), [line 47](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-json-ld.php#L47-L47)
 
-### `tainacan-exposer-head`
+---------------------------------
+## `tainacan-exposer-head`
 
 **Arguments**
 
@@ -107,7 +114,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-oai-pmh.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-oai-pmh.php), [line 25](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-oai-pmh.php#L25-L33)
 
-### `tainacan-oai-pmh-namespace`
+---------------------------------
+## `tainacan-oai-pmh-namespace`
 
 *{@inheritDoc}*
 
@@ -119,7 +127,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-oai-pmh.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-oai-pmh.php), [line 18](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-oai-pmh.php#L18-L34)
 
-### `tainacan-oai-pmh-root`
+---------------------------------
+## `tainacan-oai-pmh-root`
 
 **Arguments**
 
@@ -129,7 +138,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-oai-pmh.php](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-oai-pmh.php), [line 35](https://github.com/tainacan/tainacan/blob/master/src/classes/exposers/class-tainacan-oai-pmh.php#L35-L35)
 
-### `tainacan_single_item_content`
+---------------------------------
+## `tainacan_single_item_content`
 
 *A basic content for a Tainacan Single page content.*
 
@@ -145,7 +155,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 752](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L752-L784)
 
-### `tainacan_repository_archive_template_hierarchy`
+---------------------------------
+## `tainacan_repository_archive_template_hierarchy`
 
 *Class Tainacan\Theme_Helper*
 
@@ -159,7 +170,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L972)
 
-### `tainacan-default-view-mode-for-themes`
+---------------------------------
+## `tainacan-default-view-mode-for-themes`
 
 *Get the default view mode which can be tweaked in the settings page.*
 
@@ -171,7 +183,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 1080](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L1080-L1086)
 
-### `tainacan-enabled-view-modes-for-themes`
+---------------------------------
+## `tainacan-enabled-view-modes-for-themes`
 
 *Get the enabled view modes which can be tweaked in the settings page.*
 
@@ -183,7 +196,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 1089](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L1089-L1107)
 
-### `tainacan-default-order-for-themes`
+---------------------------------
+## `tainacan-default-order-for-themes`
 
 *Get the default order for items lists, which can be tweaked in the settings page.*
 
@@ -195,7 +209,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 1110](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L1110-L1116)
 
-### `tainacan-default-orderby-for-themes`
+---------------------------------
+## `tainacan-default-orderby-for-themes`
 
 *Get the default order by for items lists, which can be tweaked in the settings page.*
 
@@ -207,7 +222,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 1119](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L1119-L1125)
 
-### `tainacan-swiper-main-options`
+---------------------------------
+## `tainacan-swiper-main-options`
 
 *Returns an item gallery, containing document,
 attachments and other information in a slider, carousel and lightbox*
@@ -222,7 +238,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 1849](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L1849-L2145)
 
-### `tainacan-swiper-thumbs-options`
+---------------------------------
+## `tainacan-swiper-thumbs-options`
 
 *Returns an item gallery, containing document,
 attachments and other information in a slider, carousel and lightbox*
@@ -237,7 +254,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 1849](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L1849-L2166)
 
-### `get_tainacan_item_gallery`
+---------------------------------
+## `get_tainacan_item_gallery`
 
 *Filters the Media Component HTML*
 
@@ -250,7 +268,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2180](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2180-L2205)
 
-### `tainacan-swiper-main-options`
+---------------------------------
+## `tainacan-swiper-main-options`
 
 *Returns an items gallery, displaying a list of items in a slider, carousel and lightbox*
 
@@ -264,7 +283,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2208](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2208-L2459)
 
-### `tainacan-swiper-thumbs-options`
+---------------------------------
+## `tainacan-swiper-thumbs-options`
 
 *Returns an items gallery, displaying a list of items in a slider, carousel and lightbox*
 
@@ -278,7 +298,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2208](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2208-L2480)
 
-### `get_tainacan_items_gallery`
+---------------------------------
+## `get_tainacan_items_gallery`
 
 *Filters the Media Component HTML*
 
@@ -291,7 +312,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2494](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2494-L2519)
 
-### `tainacan-get-item-metadatum-as-html-before`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -311,7 +333,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2730)
 
-### `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -331,7 +354,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2731)
 
-### `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -351,7 +375,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2732)
 
-### `tainacan-get-item-metadatum-as-html-before-title`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before-title`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -371,7 +396,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2739)
 
-### `tainacan-get-item-metadatum-as-html-after-title`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after-title`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -391,7 +417,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2741)
 
-### `tainacan-get-item-metadatum-as-html-before-value`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before-value`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -411,7 +438,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2746)
 
-### `tainacan-get-item-metadatum-as-html-after-value`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after-value`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -431,7 +459,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2748)
 
-### `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -451,7 +480,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2756)
 
-### `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -471,7 +501,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2757)
 
-### `tainacan-get-item-metadatum-as-html-after`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after`
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -491,7 +522,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 2634](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L2634-L2758)
 
-### `tainacan-get-metadata-section-as-html-before`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before`
 
 *Class Tainacan\Theme_Helper*
 
@@ -506,7 +538,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2930)
 
-### `tainacan-get-metadata-section-as-html-before--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before--id-{$section_id}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -521,7 +554,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2931)
 
-### `tainacan-get-metadata-section-as-html-before--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before--index-{$section_index}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -536,7 +570,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2933)
 
-### `tainacan-get-metadata-section-as-html-before-name`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-name`
 
 *Class Tainacan\Theme_Helper*
 
@@ -551,7 +586,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2948)
 
-### `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -566,7 +602,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2949)
 
-### `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -581,7 +618,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2951)
 
-### `tainacan-get-metadata-section-as-html-after-name`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-name`
 
 *Class Tainacan\Theme_Helper*
 
@@ -596,7 +634,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2958)
 
-### `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -611,7 +650,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2959)
 
-### `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -626,7 +666,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2961)
 
-### `tainacan-get-metadata-section-as-html-before-metadata-list`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-metadata-list`
 
 *Class Tainacan\Theme_Helper*
 
@@ -641,7 +682,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2980)
 
-### `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -656,7 +698,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2981)
 
-### `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -671,7 +714,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L2983)
 
-### `tainacan-get-metadata-section-as-html-after-metadata-list`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-metadata-list`
 
 *Class Tainacan\Theme_Helper*
 
@@ -686,7 +730,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L3012)
 
-### `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -701,7 +746,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L3013)
 
-### `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -716,7 +762,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L3015)
 
-### `tainacan-get-metadata-section-as-html-after--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after--index-{$section_index}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -731,7 +778,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L3026)
 
-### `tainacan-get-metadata-section-as-html-after--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after--id-{$section_id}`
 
 *Class Tainacan\Theme_Helper*
 
@@ -746,7 +794,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L3028)
 
-### `tainacan-get-metadata-section-as-html-after`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after`
 
 *Class Tainacan\Theme_Helper*
 
@@ -761,7 +810,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L9-L3029)
 
-### `tainacan-default-taxonomy-terms-order`
+---------------------------------
+## `tainacan-default-taxonomy-terms-order`
 
 **Arguments**
 
@@ -771,7 +821,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 3196](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L3196-L3196)
 
-### `tainacan-default-taxonomy-terms-orderby`
+---------------------------------
+## `tainacan-default-taxonomy-terms-orderby`
 
 **Arguments**
 
@@ -781,7 +832,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 3197](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L3197-L3197)
 
-### `tainacan-default-taxonomy-terms-perpage`
+---------------------------------
+## `tainacan-default-taxonomy-terms-perpage`
 
 **Arguments**
 
@@ -791,7 +843,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php), [line 3199](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/class-tainacan-theme-helper.php#L3199-L3199)
 
-### `tainacan-get-the-document`
+---------------------------------
+## `tainacan-get-the-document`
 
 *To be used inside The Loop*
 
@@ -806,7 +859,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 75](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L75-L91)
 
-### `tainacan_get_the_document_raw`
+---------------------------------
+## `tainacan_get_the_document_raw`
 
 *To be used inside The Loop*
 
@@ -821,7 +875,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 94](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L94-L109)
 
-### `tainacan_get_the_item_document_url`
+---------------------------------
+## `tainacan_get_the_item_document_url`
 
 **Arguments**
 
@@ -832,7 +887,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 118](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L118-L118)
 
-### `tainacan_get_the_document_type`
+---------------------------------
+## `tainacan_get_the_document_type`
 
 **Arguments**
 
@@ -843,7 +899,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 127](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L127-L127)
 
-### `tainacan-get-collection-name`
+---------------------------------
+## `tainacan-get-collection-name`
 
 *When visiting a collection archive or single, returns the collection name*
 
@@ -856,7 +913,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 216](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L216-L227)
 
-### `tainacan-get-collection-description`
+---------------------------------
+## `tainacan-get-collection-description`
 
 *When visiting a collection archive or single, returns the collection description with clickable links*
 
@@ -869,7 +927,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 252](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L252-L267)
 
-### `tainacan-get-collection-url`
+---------------------------------
+## `tainacan-get-collection-url`
 
 *When visiting a collection archive or single, returns the collection url link*
 
@@ -882,7 +941,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 630](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L630-L642)
 
-### `tainacan-get-term-name`
+---------------------------------
+## `tainacan-get-term-name`
 
 *When visiting a taxonomy archive, returns the term name*
 
@@ -895,7 +955,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 761](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L761-L772)
 
-### `tainacan-get-term-description`
+---------------------------------
+## `tainacan-get-term-description`
 
 *When visiting a taxonomy archive, returns the term description*
 
@@ -908,7 +969,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 784](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L784-L800)
 
-### `tainacan-get-the-attachments`
+---------------------------------
+## `tainacan-get-the-attachments`
 
 *To be used inside The Loop*
 
@@ -923,7 +985,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 815](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L815-L830)
 
-### `tainacan-get-initials`
+---------------------------------
+## `tainacan-get-initials`
 
 *Gets the initials from a name.*
 
@@ -939,7 +1002,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 920](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L920-L957)
 
-### `tainacan-get-the-mime-type-icon`
+---------------------------------
+## `tainacan-get-the-mime-type-icon`
 
 *Filter the image source for the empty thumbnail placeholder.*
 
@@ -953,7 +1017,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 1042](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L1042-L1050)
 
-### `tainacan_single_taxonomy_terms_query`
+---------------------------------
+## `tainacan_single_taxonomy_terms_query`
 
 *Render the taxonomy single template HTML string.*
 
@@ -970,7 +1035,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 1264](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L1264-L1412)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 **Arguments**
 
@@ -980,7 +1046,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 1424](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L1424-L1424)
 
-### `tainacan_get_single_taxonomy_content`
+---------------------------------
+## `tainacan_get_single_taxonomy_content`
 
 *Render the taxonomy single template HTML string.*
 
@@ -997,7 +1064,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 1264](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L1264-L1577)
 
-### `tainacan_get_taxonomies_orderby`
+---------------------------------
+## `tainacan_get_taxonomies_orderby`
 
 **Arguments**
 
@@ -1007,7 +1075,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 1641](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L1641-L1641)
 
-### `tainacan_get_taxonomies_search`
+---------------------------------
+## `tainacan_get_taxonomies_search`
 
 **Arguments**
 
@@ -1017,7 +1086,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 1698](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L1698-L1698)
 
-### `tainacan_get_taxonomies_pagination`
+---------------------------------
+## `tainacan_get_taxonomies_pagination`
 
 **Arguments**
 
@@ -1027,7 +1097,8 @@ Argument | Type | Description
 
 Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php), [line 1733](https://github.com/tainacan/tainacan/blob/master/src/classes/theme-helper/template-tags.php#L1733-L1733)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 **Arguments**
 
@@ -1037,7 +1108,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-elastic-press-lte-4.7.2.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press-lte-4.7.2.php), [line 756](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press-lte-4.7.2.php#L756-L756)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 **Arguments**
 
@@ -1047,7 +1119,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-elastic-press-lte-4.7.2.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press-lte-4.7.2.php), [line 837](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press-lte-4.7.2.php#L837-L837)
 
-### `{$this->identifier}_queue_lock_time`
+---------------------------------
+## `{$this->identifier}_queue_lock_time`
 
 *Lock process*
 
@@ -1063,7 +1136,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-background-process-base.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php), [line 263](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php#L263-L275)
 
-### `{$this->identifier}_memory_exceeded`
+---------------------------------
+## `{$this->identifier}_memory_exceeded`
 
 *Memory exceeded*
 
@@ -1078,7 +1152,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-background-process-base.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php), [line 383](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php#L383-L400)
 
-### `{$this->identifier}_default_time_limit`
+---------------------------------
+## `{$this->identifier}_default_time_limit`
 
 **Arguments**
 
@@ -1088,7 +1163,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-background-process-base.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php), [line 433](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php#L433-L433)
 
-### `{$this->identifier}_time_exceeded`
+---------------------------------
+## `{$this->identifier}_time_exceeded`
 
 *Time exceeded.*
 
@@ -1103,7 +1179,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-background-process-base.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php), [line 424](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php#L424-L440)
 
-### `{$this->identifier}_cron_interval`
+---------------------------------
+## `{$this->identifier}_cron_interval`
 
 *Schedule cron healthcheck*
 
@@ -1115,7 +1192,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-background-process-base.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php), [line 454](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php#L454-L462)
 
-### `{$this->identifier}_cron_interval`
+---------------------------------
+## `{$this->identifier}_cron_interval`
 
 *Schedule cron healthcheck*
 
@@ -1127,7 +1205,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-background-process-base.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php), [line 454](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-background-process-base.php#L454-L465)
 
-### `tainacan-exporter-step-length-items`
+---------------------------------
+## `tainacan-exporter-step-length-items`
 
 **Arguments**
 
@@ -1138,7 +1217,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-exporter.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/exporter/class-tainacan-exporter.php), [line 261](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/exporter/class-tainacan-exporter.php#L261-L261)
 
-### `tainacan-the-modified-author`
+---------------------------------
+## `tainacan-the-modified-author`
 
 **Arguments**
 
@@ -1148,7 +1228,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-exporter-handler-cell.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/exporter/traits/class-tainacan-exporter-handler-cell.php), [line 87](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/exporter/traits/class-tainacan-exporter-handler-cell.php#L87-L87)
 
-### `https_local_ssl_verify`
+---------------------------------
+## `https_local_ssl_verify`
 
 **Arguments**
 
@@ -1158,7 +1239,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-async-request.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-async-request.php), [line 130](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/class-tainacan-async-request.php#L130-L130)
 
-### `tainacan-api-response-metadatum-meta`
+---------------------------------
+## `tainacan-api-response-metadatum-meta`
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1175,7 +1257,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-metadata-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-metadata-controller.php), [line 341](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-metadata-controller.php#L341-L348)
 
-### `tainacan-api-response-metadata-section-meta`
+---------------------------------
+## `tainacan-api-response-metadata-section-meta`
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1192,7 +1275,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-metadata-sections-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-metadata-sections-controller.php), [line 190](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-metadata-sections-controller.php#L190-L197)
 
-### `tainacan-api-response-metadatum-meta`
+---------------------------------
+## `tainacan-api-response-metadatum-meta`
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1209,7 +1293,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-metadata-sections-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-metadata-sections-controller.php), [line 243](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-metadata-sections-controller.php#L243-L250)
 
-### `tainacan-api-response-term-meta`
+---------------------------------
+## `tainacan-api-response-term-meta`
 
 *Use this filter to add additional term_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1226,7 +1311,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-terms-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-terms-controller.php), [line 553](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-terms-controller.php#L553-L560)
 
-### `tainacan-rest-response`
+---------------------------------
+## `tainacan-rest-response`
 
 **Arguments**
 
@@ -1237,7 +1323,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-item-metadata-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-item-metadata-controller.php), [line 182](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-item-metadata-controller.php#L182-L182)
 
-### `tainacan-rest-response`
+---------------------------------
+## `tainacan-rest-response`
 
 **Arguments**
 
@@ -1248,7 +1335,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-item-metadata-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-item-metadata-controller.php), [line 208](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-item-metadata-controller.php#L208-L208)
 
-### `tainacan-api-response-collection-meta`
+---------------------------------
+## `tainacan-api-response-collection-meta`
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1265,7 +1353,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-collections-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-collections-controller.php), [line 419](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-collections-controller.php#L419-L426)
 
-### `tainacan-api-response-item-meta`
+---------------------------------
+## `tainacan-api-response-item-meta`
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1282,7 +1371,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 261](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L261-L268)
 
-### `tainacan-api-items-prepare-for-response`
+---------------------------------
+## `tainacan-api-items-prepare-for-response`
 
 **Arguments**
 
@@ -1294,7 +1384,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 252](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L252-L356)
 
-### `tainacan-rest-response`
+---------------------------------
+## `tainacan-rest-response`
 
 **Arguments**
 
@@ -1305,7 +1396,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 383](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L383-L383)
 
-### `the_content`
+---------------------------------
+## `the_content`
 
 **Arguments**
 
@@ -1315,7 +1407,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 432](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L432-L432)
 
-### `tainacan-rest-response`
+---------------------------------
+## `tainacan-rest-response`
 
 **Arguments**
 
@@ -1326,7 +1419,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 448](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L448-L448)
 
-### `tainacan-item-get-author-name`
+---------------------------------
+## `tainacan-item-get-author-name`
 
 **Arguments**
 
@@ -1336,7 +1430,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 593](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L593-L593)
 
-### `{$filter_name}`
+---------------------------------
+## `{$filter_name}`
 
 **Arguments**
 
@@ -1346,7 +1441,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 457](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L457-L617)
 
-### `tainacan-api-get-items-alternate`
+---------------------------------
+## `tainacan-api-get-items-alternate`
 
 *allow plugins to hijack the process.*
 
@@ -1361,7 +1457,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 648](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L648-L653)
 
-### `tainacan-api-items-filters-response`
+---------------------------------
+## `tainacan-api-items-filters-response`
 
 **Arguments**
 
@@ -1372,7 +1469,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 634](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L634-L703)
 
-### `tainacan-api-items-filters-arguments-response`
+---------------------------------
+## `tainacan-api-items-filters-arguments-response`
 
 **Arguments**
 
@@ -1383,7 +1481,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 634](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L634-L704)
 
-### `tainacan-api-items-response`
+---------------------------------
+## `tainacan-api-items-response`
 
 **Arguments**
 
@@ -1394,7 +1493,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 634](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L634-L769)
 
-### `tainacan-submission-item-data`
+---------------------------------
+## `tainacan-submission-item-data`
 
 *Represents the Items REST Controller*
 
@@ -1407,7 +1507,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 11](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L11-L1241)
 
-### `tainacan-api-response-taxonomy-meta`
+---------------------------------
+## `tainacan-api-response-taxonomy-meta`
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1424,7 +1525,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-taxonomies-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-taxonomies-controller.php), [line 186](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-taxonomies-controller.php#L186-L193)
 
-### `tainacan-api-role-prepare-for-response`
+---------------------------------
+## `tainacan-api-role-prepare-for-response`
 
 **Arguments**
 
@@ -1435,7 +1537,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-roles-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-roles-controller.php), [line 381](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-roles-controller.php#L381-L397)
 
-### `tainacan-api-response-filter-meta`
+---------------------------------
+## `tainacan-api-response-filter-meta`
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1452,7 +1555,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-filters-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-filters-controller.php), [line 337](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-filters-controller.php#L337-L344)
 
-### `tainacan-api-prepare-items-args`
+---------------------------------
+## `tainacan-api-prepare-items-args`
 
 **Arguments**
 
@@ -1463,7 +1567,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-rest-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/class-tainacan-rest-controller.php), [line 59](https://github.com/tainacan/tainacan/blob/master/src/classes/api/class-tainacan-rest-controller.php#L59-L154)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 **Arguments**
 
@@ -1473,7 +1578,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-elastic-press.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press.php), [line 982](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press.php#L982-L982)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 **Arguments**
 
@@ -1483,7 +1589,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-elastic-press.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press.php), [line 1123](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-elastic-press.php#L1123-L1123)
 
-### `tainacan-log-to-string`
+---------------------------------
+## `tainacan-log-to-string`
 
 *Represents entity Log*
 
@@ -1496,7 +1603,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-log.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-log.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-log.php#L7-L44)
 
-### `tainacan-log-to-array`
+---------------------------------
+## `tainacan-log-to-array`
 
 **Arguments**
 
@@ -1507,7 +1615,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-log.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-log.php), [line 47](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-log.php#L47-L55)
 
-### `tainacan-log-set-title`
+---------------------------------
+## `tainacan-log-set-title`
 
 **Arguments**
 
@@ -1517,7 +1626,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-log.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-log.php), [line 181](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-log.php#L181-L181)
 
-### `tainacan-item-to-string`
+---------------------------------
+## `tainacan-item-to-string`
 
 *Represents the Entity Item*
 
@@ -1530,7 +1640,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L7-L51)
 
-### `tainacan-item-to-array`
+---------------------------------
+## `tainacan-item-to-array`
 
 *Represents the Entity Item*
 
@@ -1543,7 +1654,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L7-L63)
 
-### `tainacan-item-get-attachments`
+---------------------------------
+## `tainacan-item-get-attachments`
 
 **Arguments**
 
@@ -1555,7 +1667,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 80](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L80-L108)
 
-### `tainacan-item-get-author-name`
+---------------------------------
+## `tainacan-item-get-author-name`
 
 **Arguments**
 
@@ -1566,7 +1679,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 113](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L113-L118)
 
-### `tainacan-item-get-author-login`
+---------------------------------
+## `tainacan-item-get-author-login`
 
 **Arguments**
 
@@ -1577,7 +1691,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 121](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L121-L126)
 
-### `tainacan-item-get-thumbnail`
+---------------------------------
+## `tainacan-item-get-thumbnail`
 
 *Gets the thumbnail list of files*
 
@@ -1592,7 +1707,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 129](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L129-L150)
 
-### `comments_open`
+---------------------------------
+## `comments_open`
 
 **Arguments**
 
@@ -1603,7 +1719,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 329](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L329-L329)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -1613,7 +1730,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 491](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L491-L496)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -1623,7 +1741,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 537](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L537-L542)
 
-### `tainacan-get-item-metadatum-as-html-filter-args`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-filter-args`
 
 *Filter the arguments passed to the get_item_metadatum_as_html function*
 
@@ -1636,7 +1755,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 801](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L801-L806)
 
-### `tainacan-get-item-metadatum-as-html-before`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1653,7 +1773,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L828)
 
-### `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1670,7 +1791,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L829)
 
-### `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1687,7 +1809,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L830)
 
-### `tainacan-get-item-metadatum-as-html-before--index-{$metadatum_index}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before--index-{$metadatum_index}`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1704,7 +1827,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L832)
 
-### `tainacan-get-item-metadatum-as-html-before-title`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before-title`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1721,7 +1845,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L840)
 
-### `tainacan-get-item-metadatum-as-html-after-title`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after-title`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1738,7 +1863,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L849)
 
-### `tainacan-get-item-metadatum-as-html-before-value`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-before-value`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1755,7 +1881,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L854)
 
-### `tainacan-get-item-metadatum-as-html-after-value`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after-value`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1772,7 +1899,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L856)
 
-### `tainacan-get-item-metadatum-as-html-after--index-{$metadatum_index}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after--index-{$metadatum_index}`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1789,7 +1917,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L863)
 
-### `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1806,7 +1935,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L867)
 
-### `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1823,7 +1953,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L868)
 
-### `tainacan-get-item-metadatum-as-html-after`
+---------------------------------
+## `tainacan-get-item-metadatum-as-html-after`
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1840,7 +1971,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 750](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L750-L869)
 
-### `tainacan-item-get-document-as-html`
+---------------------------------
+## `tainacan-item-get-document-as-html`
 
 *Gets the document as a html. May be a text, link, iframe, image, audio.*
 
@@ -1856,7 +1988,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 879](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L879-L926)
 
-### `tainacan-item-get-attachment-as-html`
+---------------------------------
+## `tainacan-item-get-attachment-as-html`
 
 *Gets the attachment as a html. May be an iframe, image, audio.*
 
@@ -1872,7 +2005,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 929](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L929-L959)
 
-### `tainacan-get-metadata-section-as-html-filter-args`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-filter-args`
 
 *Filter the arguments passed to the get_metadata_section_as_html function*
 
@@ -1885,7 +2019,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1267](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1267-L1272)
 
-### `tainacan-get-metadata-section-as-html-before`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -1902,7 +2037,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1290)
 
-### `tainacan-get-metadata-section-as-html-before--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before--id-{$section_id}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -1919,7 +2055,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1291)
 
-### `tainacan-get-metadata-section-as-html-before--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before--index-{$section_index}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -1936,7 +2073,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1293)
 
-### `tainacan-get-metadata-section-as-html-before-name`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-name`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -1953,7 +2091,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1308)
 
-### `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -1970,7 +2109,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1309)
 
-### `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -1987,7 +2127,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1311)
 
-### `tainacan-get-metadata-section-as-html-after-name`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-name`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2004,7 +2145,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1318)
 
-### `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2021,7 +2163,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1319)
 
-### `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2038,7 +2181,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1321)
 
-### `tainacan-get-metadata-section-as-html-before-metadata-list`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-metadata-list`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2055,7 +2199,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1340)
 
-### `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2072,7 +2217,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1341)
 
-### `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2089,7 +2235,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1343)
 
-### `tainacan-get-metadata-section-as-html-after-metadata-list`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-metadata-list`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2106,7 +2253,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1375)
 
-### `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2123,7 +2271,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1376)
 
-### `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2140,7 +2289,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1378)
 
-### `tainacan-get-metadata-section-as-html-after--index-{$section_index}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after--index-{$section_index}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2157,7 +2307,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1389)
 
-### `tainacan-get-metadata-section-as-html-after--id-{$section_id}`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after--id-{$section_id}`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2174,7 +2325,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1391)
 
-### `tainacan-get-metadata-section-as-html-after`
+---------------------------------
+## `tainacan-get-metadata-section-as-html-after`
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2191,7 +2343,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item.php#L1173-L1392)
 
-### `tainacan-item-metadata-get-multivalue-prefix`
+---------------------------------
+## `tainacan-item-metadata-get-multivalue-prefix`
 
 *Gets the string used before each value when concatenating multiple values
 to display item metadata value as html or string*
@@ -2205,7 +2358,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php), [line 68](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php#L68-L87)
 
-### `tainacan-item-metadata-get-multivalue-suffix`
+---------------------------------
+## `tainacan-item-metadata-get-multivalue-suffix`
 
 *Gets the string used after each value when concatenating multiple values
 to display item metadata value as html or string*
@@ -2219,7 +2373,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php), [line 90](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php#L90-L109)
 
-### `tainacan-item-metadata-get-multivalue-separator`
+---------------------------------
+## `tainacan-item-metadata-get-multivalue-separator`
 
 *Gets the string used in between each value when concatenating multiple values
 to display item metadata value as html or string*
@@ -2233,7 +2388,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php), [line 112](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php#L112-L131)
 
-### `tainacan-item-metadata-get-value-as-html`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html`
 
 *Filter the item metadatum value as HTML*
 
@@ -2246,7 +2402,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php), [line 178](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php#L178-L186)
 
-### `tainacan-item-metadata-get-value-as-string`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-string`
 
 *Filter the item metadatum value as string*
 
@@ -2259,7 +2416,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php), [line 205](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php#L205-L213)
 
-### `tainacan-item-metadata-to-array`
+---------------------------------
+## `tainacan-item-metadata-to-array`
 
 *Convert the object to an Array*
 
@@ -2272,7 +2430,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php), [line 295](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php#L295-L323)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -2282,7 +2441,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php), [line 497](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-item-metadata-entity.php#L497-L497)
 
-### `tainacan-taxonomy-to-string`
+---------------------------------
+## `tainacan-taxonomy-to-string`
 
 *Represents the Entity Taxonomy*
 
@@ -2295,7 +2455,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-taxonomy.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-taxonomy.php#L7-L49)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -2305,7 +2466,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-taxonomy.php), [line 257](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-taxonomy.php#L257-L262)
 
-### `tainacan-entity-get-property`
+---------------------------------
+## `tainacan-entity-get-property`
 
 *return the value for a mapped property*
 
@@ -2319,7 +2481,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php), [line 160](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php#L160-L174)
 
-### `tainacan-entity-set-property`
+---------------------------------
+## `tainacan-entity-set-property`
 
 *set the value of a mapped property*
 
@@ -2336,7 +2499,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php), [line 177](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php#L177-L188)
 
-### `tainacan-set-post-status`
+---------------------------------
+## `tainacan-set-post-status`
 
 *set the status of the entity*
 
@@ -2348,7 +2512,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php), [line 227](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php#L227-L232)
 
-### `tainacan-get-post-status`
+---------------------------------
+## `tainacan-get-post-status`
 
 *Entity Super class*
 
@@ -2360,7 +2525,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php#L7-L321)
 
-### `{$hook_prefix}-to-array`
+---------------------------------
+## `{$hook_prefix}-to-array`
 
 *Entity Super class*
 
@@ -2373,7 +2539,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-entity.php#L7-L381)
 
-### `tainacan-metadata-section-to-string`
+---------------------------------
+## `tainacan-metadata-section-to-string`
 
 *Represents the Entity Metadatum*
 
@@ -2386,7 +2553,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata-section.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-metadata-section.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-metadata-section.php#L7-L35)
 
-### `tainacan-term-to-string`
+---------------------------------
+## `tainacan-term-to-string`
 
 *Represents the Entity Term*
 
@@ -2399,7 +2567,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php#L7-L57)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 **Arguments**
 
@@ -2409,7 +2578,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php), [line 65](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php#L65-L65)
 
-### `tainacan-term-to-array`
+---------------------------------
+## `tainacan-term-to-array`
 
 *Represents the Entity Term*
 
@@ -2422,7 +2592,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php#L7-L78)
 
-### `tainacan-term-get-thumbnail`
+---------------------------------
+## `tainacan-term-get-thumbnail`
 
 *Gets the thumbnail*
 
@@ -2437,7 +2608,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php), [line 166](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php#L166-L187)
 
-### `tainacan-term-to-html`
+---------------------------------
+## `tainacan-term-to-html`
 
 *Represents the Entity Term*
 
@@ -2450,7 +2622,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-term.php#L7-L304)
 
-### `tainacan-collection-to-string`
+---------------------------------
+## `tainacan-collection-to-string`
 
 *Class that represents the Collection entity*
 
@@ -2463,7 +2636,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php#L7-L87)
 
-### `tainacan-collection-to-array`
+---------------------------------
+## `tainacan-collection-to-array`
 
 *Class that represents the Collection entity*
 
@@ -2476,7 +2650,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php#L7-L100)
 
-### `tainacan-collection-get-attachments`
+---------------------------------
+## `tainacan-collection-get-attachments`
 
 **Arguments**
 
@@ -2488,7 +2663,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php), [line 224](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php#L224-L247)
 
-### `tainacan-collection-get-author-name`
+---------------------------------
+## `tainacan-collection-get-author-name`
 
 **Arguments**
 
@@ -2499,7 +2675,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php), [line 250](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php#L250-L255)
 
-### `tainacan-collection-get-thumbnail`
+---------------------------------
+## `tainacan-collection-get-thumbnail`
 
 **Arguments**
 
@@ -2510,7 +2687,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php), [line 258](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php#L258-L271)
 
-### `tainacan-collection-get-header-image`
+---------------------------------
+## `tainacan-collection-get-header-image`
 
 **Arguments**
 
@@ -2521,7 +2699,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php), [line 274](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php#L274-L279)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -2531,7 +2710,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php), [line 1173](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-collection.php#L1173-L1178)
 
-### `tainacan-filter-to-string`
+---------------------------------
+## `tainacan-filter-to-string`
 
 *Represents the entity Filter*
 
@@ -2544,7 +2724,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-filter.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-filter.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-filter.php#L7-L37)
 
-### `tainacan-filter-to-array`
+---------------------------------
+## `tainacan-filter-to-array`
 
 **Arguments**
 
@@ -2555,7 +2736,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-filter.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-filter.php), [line 40](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-filter.php#L40-L61)
 
-### `tainacan-metadatum-to-string`
+---------------------------------
+## `tainacan-metadatum-to-string`
 
 *Represents the Entity Metadatum*
 
@@ -2568,7 +2750,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadatum.php](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-metadatum.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/entities/class-tainacan-metadatum.php#L7-L53)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 *Class Tainacan_Terms*
 
@@ -2588,7 +2771,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 11](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L11-L89)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 *{@inheritDoc}*
 
@@ -2636,7 +2820,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collections.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-collections.php), [line 24](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-collections.php#L24-L493)
 
-### `tainacan-fetch-args`
+---------------------------------
+## `tainacan-fetch-args`
 
 *fetch collection based on ID or WP_Query args*
 
@@ -2657,7 +2842,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-collections.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-collections.php), [line 577](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-collections.php#L577-L621)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 *{@inheritDoc}*
 
@@ -2679,7 +2865,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata-sections.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata-sections.php), [line 22](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata-sections.php#L22-L89)
 
-### `tainacan-fetch-args`
+---------------------------------
+## `tainacan-fetch-args`
 
 *fetch metadata section based on ID or WP_Query args*
 
@@ -2700,7 +2887,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata-sections.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata-sections.php), [line 174](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata-sections.php#L174-L211)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 **Arguments**
 
@@ -2710,7 +2898,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php), [line 28](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php#L28-L158)
 
-### `tainacan-fetch-args`
+---------------------------------
+## `tainacan-fetch-args`
 
 *fetch items based on ID or WP_Query args*
 
@@ -2734,7 +2923,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php), [line 232](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php#L232-L369)
 
-### `tainacan-get-thumbnail-id-from-document`
+---------------------------------
+## `tainacan-get-thumbnail-id-from-document`
 
 *Hook to get thumbnail from document*
 
@@ -2747,7 +2937,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php), [line 515](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php#L515-L518)
 
-### `tainacan_add_related_item`
+---------------------------------
+## `tainacan_add_related_item`
 
 **Arguments**
 
@@ -2757,7 +2948,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php), [line 667](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-items.php#L667-L667)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 *Implement a Logs system*
 
@@ -2796,7 +2988,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php#L10-L135)
 
-### `tainacan-fetch-args`
+---------------------------------
+## `tainacan-fetch-args`
 
 *fetch logs based on ID or WP_Query args*
 
@@ -2817,7 +3010,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php), [line 183](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php#L183-L222)
 
-### `tainacan-entity-diff`
+---------------------------------
+## `tainacan-entity-diff`
 
 *Compare two repository entities and sets the current_diff property to be used in the insert hook*
 
@@ -2831,7 +3025,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php), [line 375](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php#L375-L442)
 
-### `tainacan-entity-diff`
+---------------------------------
+## `tainacan-entity-diff`
 
 *Implement a Logs system*
 
@@ -2845,7 +3040,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-logs.php#L10-L469)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 **Arguments**
 
@@ -2885,7 +3081,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php), [line 24](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php#L24-L122)
 
-### `tainacan-fetch-args`
+---------------------------------
+## `tainacan-fetch-args`
 
 *fetch filter based on ID or WP_Query args*
 
@@ -2906,7 +3103,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php), [line 219](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php#L219-L258)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 *Class Tainacan_Taxonomies*
 
@@ -2938,7 +3136,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-taxonomies.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-taxonomies.php), [line 11](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-taxonomies.php#L11-L87)
 
-### `tainacan-fetch-args`
+---------------------------------
+## `tainacan-fetch-args`
 
 *fetch taxonomies based on ID or WP_Query args*
 
@@ -2959,7 +3158,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-taxonomies.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-taxonomies.php), [line 158](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-taxonomies.php#L158-L199)
 
-### `tainacan-get-map-{$entity}`
+---------------------------------
+## `tainacan-get-map-{$entity}`
 
 *{@inheritDoc}*
 
@@ -3043,7 +3243,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 38](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L38-L224)
 
-### `tainacan-fetch-args`
+---------------------------------
+## `tainacan-fetch-args`
 
 *fetch metadatum based on ID or WP_Query args*
 
@@ -3064,7 +3265,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 318](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L318-L367)
 
-### `tainacan-fetch-all-metadatum-values`
+---------------------------------
+## `tainacan-fetch-all-metadatum-values`
 
 *Return all possible values for a metadatum*
 
@@ -3083,7 +3285,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 1141](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L1141-L1232)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 **Arguments**
 
@@ -3093,7 +3296,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 1382](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L1382-L1382)
 
-### `tainacan-item-get-author-name`
+---------------------------------
+## `tainacan-item-get-author-name`
 
 *Return all possible values for a metadatum*
 
@@ -3110,7 +3314,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 1141](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L1141-L1472)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3120,7 +3325,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 127](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L127-L127)
 
-### `tainacan-oai-maxrecords`
+---------------------------------
+## `tainacan-oai-maxrecords`
 
 **Arguments**
 
@@ -3130,7 +3336,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-oaipmh-expose.php](https://github.com/tainacan/tainacan/blob/master/src/classes/oaipmh/class-tainacan-oaipmh-expose.php), [line 79](https://github.com/tainacan/tainacan/blob/master/src/classes/oaipmh/class-tainacan-oaipmh-expose.php#L79-L79)
 
-### `tainacan-oai-token-valid`
+---------------------------------
+## `tainacan-oai-token-valid`
 
 **Arguments**
 
@@ -3140,7 +3347,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-oaipmh-expose.php](https://github.com/tainacan/tainacan/blob/master/src/classes/oaipmh/class-tainacan-oaipmh-expose.php), [line 82](https://github.com/tainacan/tainacan/blob/master/src/classes/oaipmh/class-tainacan-oaipmh-expose.php#L82-L82)
 
-### `tainacan-extract-pdf-cover`
+---------------------------------
+## `tainacan-extract-pdf-cover`
 
 *Extract an image from the first page of a pdf file*
 
@@ -3153,7 +3361,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php), [line 228](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php#L228-L235)
 
-### `tainacan-index-pdf`
+---------------------------------
+## `tainacan-index-pdf`
 
 *Class withe helpful methods to handle media in Tainacan*
 
@@ -3167,7 +3376,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php#L7-L300)
 
-### `tainacan-default-image-blurhash`
+---------------------------------
+## `tainacan-default-image-blurhash`
 
 *Class withe helpful methods to handle media in Tainacan*
 
@@ -3179,7 +3389,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php), [line 7](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php#L7-L387)
 
-### `tainacan-get-mapper-from-request`
+---------------------------------
+## `tainacan-get-mapper-from-request`
 
 *Check if there is a mapper*
 
@@ -3192,7 +3403,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-mappers-handler.php](https://github.com/tainacan/tainacan/blob/master/src/classes/mappers/class-tainacan-mappers-handler.php), [line 139](https://github.com/tainacan/tainacan/blob/master/src/classes/mappers/class-tainacan-mappers-handler.php#L139-L165)
 
-### `tainacan-available-admin-ui-options`
+---------------------------------
+## `tainacan-available-admin-ui-options`
 
 *Lists a translatable and grouped version of the available admin ui options*
 
@@ -3204,7 +3416,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-admin-ui-options.php](https://github.com/tainacan/tainacan/blob/master/src/classes/traits/class-tainacan-admin-ui-options.php), [line 15](https://github.com/tainacan/tainacan/blob/master/src/classes/traits/class-tainacan-admin-ui-options.php#L15-L178)
 
-### `tainacan-svg-icons-folder-path`
+---------------------------------
+## `tainacan-svg-icons-folder-path`
 
 **Arguments**
 
@@ -3214,7 +3427,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-svg-icon.php](https://github.com/tainacan/tainacan/blob/master/src/classes/traits/class-tainacan-svg-icon.php), [line 13](https://github.com/tainacan/tainacan/blob/master/src/classes/traits/class-tainacan-svg-icon.php#L13-L22)
 
-### `tainacan-admin-hooks-positions`
+---------------------------------
+## `tainacan-admin-hooks-positions`
 
 **Arguments**
 
@@ -3224,7 +3438,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-admin-hooks.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/classes/hooks/class-tainacan-admin-hooks.php), [line 19](https://github.com/tainacan/tainacan/blob/master/src/views/admin/classes/hooks/class-tainacan-admin-hooks.php#L19-L19)
 
-### `tainacan-admin-hooks-contexts`
+---------------------------------
+## `tainacan-admin-hooks-contexts`
 
 **Arguments**
 
@@ -3234,7 +3449,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-admin-hooks.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/classes/hooks/class-tainacan-admin-hooks.php), [line 23](https://github.com/tainacan/tainacan/blob/master/src/views/admin/classes/hooks/class-tainacan-admin-hooks.php#L23-L23)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3244,7 +3460,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-numerics-intersection.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/numerics-intersection/class-tainacan-numerics-intersection.php), [line 87](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/numerics-intersection/class-tainacan-numerics-intersection.php#L87-L87)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3254,7 +3471,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-date.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/date/class-tainacan-date.php), [line 82](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/date/class-tainacan-date.php#L82-L82)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3264,7 +3482,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-numeric.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/numeric/class-tainacan-numeric.php), [line 94](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/numeric/class-tainacan-numeric.php#L94-L94)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3274,7 +3493,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-dates-intersection.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/dates-intersection/class-tainacan-dates-intersection.php), [line 76](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/filter-types/dates-intersection/class-tainacan-dates-intersection.php#L76-L76)
 
-### `tainacan-item-metadata-get-value-as-html--type-compound`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-compound`
 
 *Filter the HTML representation of the value of a compound metadatum*
 
@@ -3287,7 +3507,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php), [line 243](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php#L243-L251)
 
-### `tainacan-item-metadata-get-value-as-string--type-compound`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-string--type-compound`
 
 *Filter the STRING representation of the value of a compound metadatum*
 
@@ -3300,7 +3521,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php), [line 286](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php#L286-L294)
 
-### `tainacan-get-child-item-metadatum-as-html-before-label`
+---------------------------------
+## `tainacan-get-child-item-metadatum-as-html-before-label`
 
 *Class TainacanMetadatumType*
 
@@ -3313,7 +3535,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php#L10-L306)
 
-### `tainacan-get-child-item-metadatum-as-html-after-label`
+---------------------------------
+## `tainacan-get-child-item-metadatum-as-html-after-label`
 
 *Class TainacanMetadatumType*
 
@@ -3326,7 +3549,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php#L10-L307)
 
-### `tainacan-get-child-item-metadatum-as-html-before-value`
+---------------------------------
+## `tainacan-get-child-item-metadatum-as-html-before-value`
 
 *Class TainacanMetadatumType*
 
@@ -3339,7 +3563,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php#L10-L311)
 
-### `tainacan-get-child-item-metadatum-as-html-after-value`
+---------------------------------
+## `tainacan-get-child-item-metadatum-as-html-after-value`
 
 *Class TainacanMetadatumType*
 
@@ -3352,7 +3577,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/compound/class-tainacan-compound.php#L10-L312)
 
-### `tainacan-item-metadata-get-value-as-html--type-date`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-date`
 
 *Filter the HTML representation of the value of a date metadatum*
 
@@ -3365,7 +3591,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-date.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/date/class-tainacan-date.php), [line 102](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/date/class-tainacan-date.php#L102-L110)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3375,7 +3602,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-user.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/user/class-tainacan-user.php), [line 139](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/user/class-tainacan-user.php#L139-L139)
 
-### `tainacan-item-get-author-name`
+---------------------------------
+## `tainacan-item-get-author-name`
 
 *Get the value as a HTML string*
 
@@ -3388,7 +3616,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-user.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/user/class-tainacan-user.php), [line 149](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/user/class-tainacan-user.php#L149-L165)
 
-### `tainacan-item-metadata-get-value-as-html--type-user`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-user`
 
 *Filter the HTML representation of the value of a user metadatum*
 
@@ -3401,7 +3630,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-user.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/user/class-tainacan-user.php), [line 171](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/user/class-tainacan-user.php#L171-L179)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3411,7 +3641,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-core-title.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/core-title/class-tainacan-core-title.php), [line 74](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/core-title/class-tainacan-core-title.php#L74-L74)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3421,7 +3652,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php), [line 232](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php#L232-L232)
 
-### `tainacan-item-metadata-get-value-as-html--type-taxonomy`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-taxonomy`
 
 *Filter the HTML representation of the value of a taxonomy metadatum*
 
@@ -3434,7 +3666,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php), [line 400](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php#L400-L408)
 
-### `tainacan-terms-hierarchy-html-separator`
+---------------------------------
+## `tainacan-terms-hierarchy-html-separator`
 
 *Class TainacanMetadatumType*
 
@@ -3446,7 +3679,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php), [line 11](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/taxonomy/class-tainacan-taxonomy.php#L11-L425)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3456,7 +3690,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-control.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/control/class-tainacan-control.php), [line 100](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/control/class-tainacan-control.php#L100-L100)
 
-### `tainacan-item-metadata-get-value-as-html--type-control`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-control`
 
 *Filter the HTML representation of the value of a control metadatum*
 
@@ -3469,7 +3704,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-control.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/control/class-tainacan-control.php), [line 171](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/control/class-tainacan-control.php#L171-L179)
 
-### `tainacan-item-metadata-get-value-as-string--type-control`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-string--type-control`
 
 *Filter the STRING representation of the value of a control metadatum*
 
@@ -3482,7 +3718,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-control.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/control/class-tainacan-control.php), [line 219](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/control/class-tainacan-control.php#L219-L227)
 
-### `tainacan-item-metadata-get-value-as-string--type-geocoordinate`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-string--type-geocoordinate`
 
 *Filter the STRING representation of the value of a geocoordinate metadatum*
 
@@ -3495,7 +3732,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-geocoordinate.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/geocoordinate/class-tainacan-geocoordinate.php), [line 131](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/geocoordinate/class-tainacan-geocoordinate.php#L131-L139)
 
-### `tainacan-item-metadata-get-value-as-html--type-geocoordinate`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-geocoordinate`
 
 *Filter the HTML representation of the value of a geocoordinate metadatum*
 
@@ -3508,7 +3746,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-geocoordinate.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/geocoordinate/class-tainacan-geocoordinate.php), [line 214](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/geocoordinate/class-tainacan-geocoordinate.php#L214-L222)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3518,7 +3757,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-geocoordinate.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/geocoordinate/class-tainacan-geocoordinate.php), [line 234](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/geocoordinate/class-tainacan-geocoordinate.php#L234-L234)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3528,7 +3768,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-relationship.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php), [line 164](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php#L164-L164)
 
-### `tainacan-item-metadata-get-value-as-html--type-relationship`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-relationship`
 
 *Filter the HTML representation of the value of a relationship metadatum*
 
@@ -3541,7 +3782,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-relationship.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php), [line 251](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php#L251-L259)
 
-### `tainacan-item-metadata-relationship-get-item-thumbnail`
+---------------------------------
+## `tainacan-item-metadata-relationship-get-item-thumbnail`
 
 *Filter the image size of the thumbnail to be displayed*
 
@@ -3553,7 +3795,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-relationship.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php), [line 333](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/relationship/class-tainacan-relationship.php#L333-L340)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3563,7 +3806,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-core-description.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/core-description/class-tainacan-core-description.php), [line 75](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/core-description/class-tainacan-core-description.php#L75-L75)
 
-### `tainacan-item-metadata-get-value-as-html--type-description`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-description`
 
 *Filter the HTML representation of the value of a core description metadatum*
 
@@ -3576,7 +3820,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-core-description.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/core-description/class-tainacan-core-description.php), [line 116](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/core-description/class-tainacan-core-description.php#L116-L124)
 
-### `tainacan-item-metadata-get-value-as-html--type-textarea`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-textarea`
 
 *Filter the HTML representation of the value of a textarea metadatum*
 
@@ -3589,7 +3834,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-textarea.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/textarea/class-tainacan-textarea.php), [line 80](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/textarea/class-tainacan-textarea.php#L80-L88)
 
-### `tainacan-item-metadata-get-value-as-html--type-url`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-url`
 
 *Filter the HTML representation of the value of a url metadatum*
 
@@ -3602,7 +3848,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-url.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/url/class-tainacan-url.php), [line 102](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/url/class-tainacan-url.php#L102-L110)
 
-### `tainacan-item-metadata-get-value-as-string--type-url`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-string--type-url`
 
 *Filter the STRING representation of the value of a url metadatum*
 
@@ -3615,7 +3862,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-url.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/url/class-tainacan-url.php), [line 212](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/url/class-tainacan-url.php#L212-L220)
 
-### `tainacan-item-metadata-get-value-as-html--type-text`
+---------------------------------
+## `tainacan-item-metadata-get-value-as-html--type-text`
 
 *Filter the HTML representation of the value of a text metadatum*
 
@@ -3628,7 +3876,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-text.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/text/class-tainacan-text.php), [line 82](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/text/class-tainacan-text.php#L82-L90)
 
-### `tainacan-status-require-validation`
+---------------------------------
+## `tainacan-status-require-validation`
 
 **Arguments**
 
@@ -3638,7 +3887,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-selectbox.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/selectbox/class-tainacan-selectbox.php), [line 54](https://github.com/tainacan/tainacan/blob/master/src/views/admin/components/metadata-types/selectbox/class-tainacan-selectbox.php#L54-L54)
 
-### `editable_slug`
+---------------------------------
+## `editable_slug`
 
 *This filter is documented in wp-admin/edit-tag-form.php*
 
@@ -3651,7 +3901,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-admin.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/class-tainacan-admin.php), [line 363](https://github.com/tainacan/tainacan/blob/master/src/views/admin/class-tainacan-admin.php#L363-L364)
 
-### `editable_slug`
+---------------------------------
+## `editable_slug`
 
 **Arguments**
 
@@ -3662,7 +3913,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-admin.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/class-tainacan-admin.php), [line 371](https://github.com/tainacan/tainacan/blob/master/src/views/admin/class-tainacan-admin.php#L371-L371)
 
-### `tainacan-dashboard-logo`
+---------------------------------
+## `tainacan-dashboard-logo`
 
 **Arguments**
 
@@ -3672,7 +3924,8 @@ Argument | Type | Description
 
 Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php#L10-L10)
 
-### `tainacan-dashboard-welcome-message`
+---------------------------------
+## `tainacan-dashboard-welcome-message`
 
 **Arguments**
 
@@ -3682,7 +3935,8 @@ Argument | Type | Description
 
 Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php), [line 20](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php#L20-L20)
 
-### `tainacan-dashboard-cards`
+---------------------------------
+## `tainacan-dashboard-cards`
 
 *Use this filter to add or remove dashboard cards.*
 
@@ -3703,7 +3957,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-dashboard.php](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/class-tainacan-dashboard.php), [line 222](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/class-tainacan-dashboard.php#L222-L233)
 
-### `tainacan_dashboard_news_feed`
+---------------------------------
+## `tainacan_dashboard_news_feed`
 
 *Creates the display code for the news card,
 featuring RSS feed from Tainacan website*
@@ -3716,7 +3971,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-dashboard.php](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/class-tainacan-dashboard.php), [line 556](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/class-tainacan-dashboard.php#L556-L564)
 
-### `tainacan-admin-extra-request-options`
+---------------------------------
+## `tainacan-admin-extra-request-options`
 
 *get_admin_js_localization_params is used to build the JS tainacan_plugin global object that serves as a
 bridge between PHP and JS. Not every page needs it but they can call it to add their own data to the object.*
@@ -3729,7 +3985,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-pages.php](https://github.com/tainacan/tainacan/blob/master/src/views/class-tainacan-pages.php), [line 208](https://github.com/tainacan/tainacan/blob/master/src/views/class-tainacan-pages.php#L208-L327)
 
-### `tainacan_admin_breadcrumbs`
+---------------------------------
+## `tainacan_admin_breadcrumbs`
 
 *Allows external plugins to add breadcrumbs to the Tainacan admin pages.*
 
@@ -3741,7 +3998,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-pages.php](https://github.com/tainacan/tainacan/blob/master/src/views/class-tainacan-pages.php), [line 576](https://github.com/tainacan/tainacan/blob/master/src/views/class-tainacan-pages.php#L576-L579)
 
-### `tainacan-admin-ui-options`
+---------------------------------
+## `tainacan-admin-ui-options`
 
 *admin_init_ui_options is a filter that sets the admin UI options for the current user,
 based on his/her role.*
@@ -3754,7 +4012,8 @@ Argument | Type | Description
 
 Source: [class-tainacan-pages.php](https://github.com/tainacan/tainacan/blob/master/src/views/class-tainacan-pages.php), [line 658](https://github.com/tainacan/tainacan/blob/master/src/views/class-tainacan-pages.php#L658-L687)
 
-### `tainacan-i18n`
+---------------------------------
+## `tainacan-i18n`
 
 **Arguments**
 
@@ -4937,6 +5196,7 @@ Argument | Type | Description
 
 Source: [tainacan-i18n.php](https://github.com/tainacan/tainacan/blob/master/src/views/tainacan-i18n.php), [line 5](https://github.com/tainacan/tainacan/blob/master/src/views/tainacan-i18n.php#L5-L1199)
 
+---------------------------------
 
 <p align="center"><a href="https://github.com/pronamic/wp-documentor"><img src="https://cdn.jsdelivr.net/gh/pronamic/wp-documentor@main/logos/pronamic-wp-documentor.svgo-min.svg" alt="Pronamic WordPress Documentor" width="32" height="32"></a><br><em>Generated by <a href="https://github.com/pronamic/wp-documentor">Pronamic WordPress Documentor</a> <code>1.2.0</code></em><p>
 

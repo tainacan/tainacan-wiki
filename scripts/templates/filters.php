@@ -23,7 +23,7 @@ echo '# Tainacan Filters', $eol;
 
 echo $eol;
 
-echo 'WordPress filters are hooks that allow you to modify data at specific points during the WordPress lifecycle. In Tainacan, filters enable developers to extend or modify plugin behavior without altering core files. To use a filter, attach your custom function to a specific hook using the add_filter() function:', $eol, $eol;
+echo 'WordPress filters are hooks that allow you to modify data at specific points during the WordPress lifecycle. In Tainacan, filters enable developers to extend or modify plugin behavior without altering core files. To use a filter, attach your custom function to a specific hook using the `add_filter()` function:', $eol, $eol;
 
 echo '```php', $eol;
 echo "add_filter( 'tainacan-some-filter', 'your_callback_function', 10, 2 );", $eol;
