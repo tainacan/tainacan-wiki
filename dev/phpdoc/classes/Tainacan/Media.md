@@ -13,36 +13,6 @@ Class withe helpful methods to handle media in Tainacan
 ## Properties
 
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
-### file_handle
-
-
-
-```php
-private static $file_handle
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ### file_name
 
 
@@ -73,6 +43,21 @@ private $attachment_html_url_base
 
 ***
 
+### content_index_meta
+
+
+
+```php
+public static $content_index_meta
+```
+
+
+
+* This property is **static**.
+
+
+***
+
 ### THROW_EXCPTION_ON_FATAL_ERROR
 
 
@@ -91,17 +76,18 @@ private $THROW_EXCPTION_ON_FATAL_ERROR
 ## Methods
 
 
-### get_instance
+### init
 
 
 
 ```php
-public static get_instance(): mixed
+protected init(): mixed
 ```
 
 
 
-* This method is **static**.
+
+
 
 
 
@@ -111,12 +97,12 @@ public static get_instance(): mixed
 
 ***
 
-### __construct
+### add_image_sizes
 
 
 
 ```php
-protected __construct(): mixed
+public add_image_sizes(): mixed
 ```
 
 
@@ -124,6 +110,34 @@ protected __construct(): mixed
 
 
 
+
+
+
+
+
+
+***
+
+### add_image_sizes_to_admin
+
+
+
+```php
+public add_image_sizes_to_admin(mixed $sizes): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$sizes` | **mixed** |  |
 
 
 
@@ -149,6 +163,7 @@ public add_attachment_page_rewrite_rule(): mixed
 
 
 
+
 ***
 
 ### add_css
@@ -158,6 +173,7 @@ public add_attachment_page_rewrite_rule(): mixed
 ```php
 public add_css(): mixed
 ```
+
 
 
 
@@ -195,6 +211,7 @@ public attachment_page_add_var(mixed $vars): mixed
 
 
 
+
 ***
 
 ### flush_buffers
@@ -210,6 +227,34 @@ private flush_buffers(): mixed
 
 
 
+
+
+
+
+
+
+***
+
+### get_file_name_from_url
+
+
+
+```php
+private get_file_name_from_url(mixed $url): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$url` | **mixed** |  |
 
 
 
@@ -246,6 +291,7 @@ Attachment ID. False on failure
 
 
 
+
 ***
 
 ### insert_attachment_from_file
@@ -277,6 +323,7 @@ Attachment ID. False on failure
 
 
 
+
 ***
 
 ### save_remote_file
@@ -284,7 +331,7 @@ Attachment ID. False on failure
 Avoid memory overflow problems with large files (Exceeded maximum memory limit of PHP)
 
 ```php
-public save_remote_file( $url): string
+public save_remote_file(mixed $url): string
 ```
 
 
@@ -298,12 +345,13 @@ public save_remote_file( $url): string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$url` | **** |  |
+| `$url` | **mixed** |  |
 
 
 **Return Value:**
 
 the file path
+
 
 
 
@@ -339,6 +387,7 @@ Attachment ID. False on failure
 
 
 
+
 ***
 
 ### get_mime_content_type
@@ -366,6 +415,7 @@ public get_mime_content_type(string $filename): string
 **Return Value:**
 
 mime type           @see \mime_content_type()
+
 
 
 
@@ -399,6 +449,7 @@ bitstream of the image in jpg format
 
 
 
+
 ***
 
 ### shutdown_function
@@ -408,6 +459,7 @@ bitstream of the image in jpg format
 ```php
 public shutdown_function(): mixed
 ```
+
 
 
 
@@ -446,6 +498,7 @@ public index_pdf_content(mixed $file, mixed $item_id): mixed
 
 
 
+
 ***
 
 ### get_attachment_html_url
@@ -472,6 +525,7 @@ public get_attachment_html_url(mixed $attachment_id): mixed
 
 
 
+
 ***
 
 ### attachment_page
@@ -492,6 +546,7 @@ public attachment_page(): mixed
 
 
 
+
 ***
 
 ### get_default_image_blurhash
@@ -501,6 +556,7 @@ public attachment_page(): mixed
 ```php
 public get_default_image_blurhash(): mixed
 ```
+
 
 
 
@@ -540,8 +596,55 @@ public get_image_blurhash(mixed $file_path, mixed $width, mixed $height): mixed
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

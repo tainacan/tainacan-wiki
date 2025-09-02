@@ -13,21 +13,6 @@ Class Components_Hooks
 ## Properties
 
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ### registered_component
 
 Stores external component type available to be used in Tainacan
@@ -46,46 +31,6 @@ private $registered_component
 ## Methods
 
 
-### get_instance
-
-
-
-```php
-public static get_instance(): mixed
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
-
-```php
-private __construct(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
 ### init
 
 
@@ -93,6 +38,7 @@ private __construct(): mixed
 ```php
 private init(): mixed
 ```
+
 
 
 
@@ -113,6 +59,7 @@ private init(): mixed
 ```php
 public register_component(): mixed
 ```
+
 
 
 
@@ -152,6 +99,7 @@ public register_vuejs_component(string $handle, string $script_path, array|strin
 
 
 
+
 ***
 
 ### get_registered_component
@@ -173,6 +121,7 @@ public get_registered_component(): array
 **Return Value:**
 
 The list of registered component
+
 
 
 
@@ -206,8 +155,55 @@ The component definition or false if it is not found
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

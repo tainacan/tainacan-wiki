@@ -13,21 +13,6 @@
 ## Properties
 
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ### aspect_ratios
 
 
@@ -46,33 +31,14 @@ private static $aspect_ratios
 ## Methods
 
 
-### get_instance
+### init
 
 
 
 ```php
-public static get_instance(): mixed
+protected init(): mixed
 ```
 
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
-
-```php
-protected __construct(): mixed
-```
 
 
 
@@ -113,6 +79,7 @@ public filter_video_embed(mixed $video, mixed $attr, mixed $url, mixed $rawattr)
 
 
 
+
 ***
 
 ### filter_audio_embed
@@ -142,6 +109,7 @@ public filter_audio_embed(mixed $audio, mixed $attr, mixed $url, mixed $rawattr)
 
 
 
+
 ***
 
 ### pdf_embed_handler
@@ -167,6 +135,7 @@ public pdf_embed_handler(mixed $matches, mixed $attr, mixed $url, mixed $rawattr
 | `$attr` | **mixed** |  |
 | `$url` | **mixed** |  |
 | `$rawattr` | **mixed** |  |
+
 
 
 
@@ -201,6 +170,7 @@ The thumbnail URL or null on failure
 
 
 
+
 ***
 
 ### oembed_get_thumbnail_filter
@@ -229,6 +199,7 @@ public oembed_get_thumbnail_filter(mixed $return, mixed $data, mixed $url): mixe
 
 
 
+
 ***
 
 ### add_css
@@ -238,6 +209,7 @@ Responsiveness
 ```php
 public add_css(): mixed
 ```
+
 
 
 
@@ -276,8 +248,55 @@ Check their source code for more details: /packages/block-library/src/embed/util
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

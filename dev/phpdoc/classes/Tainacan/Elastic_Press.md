@@ -2,9 +2,12 @@
 
 # Elastic_Press
 
+Class Elastic_Press
 
+This class implements the integration of Tainacan with ElasticPress, a WordPress plugin that connects your WordPress installation with Elastic Search
 
-
+https://github.com/10up/ElasticPress
+https://www.elasticpress.io/
 
 * Full name: `\Tainacan\Elastic_Press`
 
@@ -15,10 +18,10 @@
 
 ### last_aggregations
 
-
+Stores the last aggregations result
 
 ```php
-public $last_aggregations
+public array $last_aggregations
 ```
 
 
@@ -30,10 +33,10 @@ public $last_aggregations
 
 ### facets
 
-
+Stores the facets configuration
 
 ```php
-public $facets
+public array $facets
 ```
 
 
@@ -45,10 +48,10 @@ public $facets
 
 ### aggregation_type
 
-
+Defines the type of aggregation being performed
 
 ```php
-private $aggregation_type
+private string $aggregation_type
 ```
 
 
@@ -60,10 +63,10 @@ private $aggregation_type
 
 ### instance
 
-
+Singleton instance
 
 ```php
-private static $instance
+private static \Tainacan\Elastic_Press $instance
 ```
 
 
@@ -78,10 +81,10 @@ private static $instance
 
 ### get_instance
 
-
+Get singleton instance
 
 ```php
-public static get_instance(): mixed
+public static get_instance(): \Tainacan\Elastic_Press
 ```
 
 
@@ -94,14 +97,15 @@ public static get_instance(): mixed
 
 
 
+
 ***
 
 ### __construct
 
-
+Constructor
 
 ```php
-protected __construct(mixed $ajax_query = false): mixed
+protected __construct(bool $ajax_query = false): mixed
 ```
 
 
@@ -115,7 +119,8 @@ protected __construct(mixed $ajax_query = false): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$ajax_query` | **mixed** |  |
+| `$ajax_query` | **bool** | Whether this is an AJAX query |
+
 
 
 
@@ -124,11 +129,12 @@ protected __construct(mixed $ajax_query = false): mixed
 
 ### is_active
 
-
+Check if ElasticPress is active
 
 ```php
-public is_active(): mixed
+public is_active(): bool
 ```
+
 
 
 
@@ -144,7 +150,7 @@ public is_active(): mixed
 
 ### init
 
-
+Initialize the integration
 
 ```php
 public init(): mixed
@@ -160,14 +166,15 @@ public init(): mixed
 
 
 
+
 ***
 
-### elasticpress_config_mapping
+### prepare_meta_allowed_keys
 
-
+Define which meta keys should be indexed
 
 ```php
-public elasticpress_config_mapping(mixed $mapping): mixed
+public prepare_meta_allowed_keys(array $allowed_keys): array
 ```
 
 
@@ -181,7 +188,81 @@ public elasticpress_config_mapping(mixed $mapping): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$mapping` | **mixed** |  |
+| `$allowed_keys` | **array** | Previously allowed keys |
+
+
+**Return Value:**
+
+Modified allowed keys
+
+The function should return the meta_keys that will be indexed by ElasticPress.
+Currently, we are retrieving the list of all metadata IDs for all collections, but this behavior might not be ideal.
+Should we instead look at the post being indexed and return only the metadata for the collection it belongs to?
+
+apply_filters( 'ep_prepare_meta_allowed_protected_keys', $keys, $post )
+https://10up.github.io/ElasticPress/ep_prepare_meta_allowed_protected_keys.html
+
+
+
+
+***
+
+### modify_formatted_args
+
+Modify the formatted arguments for elasticsearch query
+
+```php
+public modify_formatted_args(array $formatted_args): array
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$formatted_args` | **array** | The arguments already formatted by ElasticPress |
+
+
+**Return Value:**
+
+Modified arguments
+
+
+
+
+***
+
+### elasticpress_config_mapping
+
+Configure the mapping for Elasticsearch
+
+```php
+public elasticpress_config_mapping(array $mapping): array
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$mapping` | **array** | Current mapping configuration |
+
+
+**Return Value:**
+
+Modified mapping
 
 
 
@@ -190,10 +271,10 @@ public elasticpress_config_mapping(mixed $mapping): mixed
 
 ### ep_post_sync_args
 
-
+Modify post arguments before syncing to Elasticsearch
 
 ```php
-public ep_post_sync_args(mixed $post_args, mixed $post_id): mixed
+public ep_post_sync_args(array $post_args, int $post_id): array
 ```
 
 
@@ -207,8 +288,13 @@ public ep_post_sync_args(mixed $post_args, mixed $post_id): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$post_args` | **mixed** |  |
-| `$post_id` | **mixed** |  |
+| `$post_args` | **array** | Post arguments |
+| `$post_id` | **int** | Post ID |
+
+
+**Return Value:**
+
+Modified post arguments
 
 
 
@@ -217,10 +303,10 @@ public ep_post_sync_args(mixed $post_args, mixed $post_id): mixed
 
 ### filter_args
 
-
+Filter arguments for Tainacan queries
 
 ```php
-public filter_args(mixed $args, mixed $type): mixed
+public filter_args(array $args, string $type): array
 ```
 
 
@@ -234,8 +320,13 @@ public filter_args(mixed $args, mixed $type): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$args` | **mixed** |  |
-| `$type` | **mixed** |  |
+| `$args` | **array** | The original arguments |
+| `$type` | **string** | The query type (items, taxonomies, etc) |
+
+
+**Return Value:**
+
+Modified arguments
 
 
 
@@ -244,10 +335,10 @@ public filter_args(mixed $args, mixed $type): mixed
 
 ### add_items_args
 
-
+Add Tainacan-specific arguments for items queries
 
 ```php
-private add_items_args(mixed $args): mixed
+private add_items_args(array $args): array
 ```
 
 
@@ -261,7 +352,12 @@ private add_items_args(mixed $args): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$args` | **mixed** |  |
+| `$args` | **array** | Original arguments |
+
+
+**Return Value:**
+
+Modified arguments
 
 
 
@@ -270,10 +366,10 @@ private add_items_args(mixed $args): mixed
 
 ### prepare_request
 
-Create a formatted array of args to send to elasticpress containing the aggregations for items or for one single facet depending on the request
+Prepare the elasticsearch request with aggregations for items or facets
 
 ```php
-public prepare_request(\Array $formatted_args, mixed $args): \Array
+public prepare_request(array $formatted_args, array $args): array
 ```
 
 
@@ -287,13 +383,14 @@ public prepare_request(\Array $formatted_args, mixed $args): \Array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$formatted_args` | **\Array** | initial array generated by plugin elasticpress |
-| `$args` | **mixed** |  |
+| `$formatted_args` | **array** | Arguments formatted by ElasticPress |
+| `$args` | **array** | Original WP_Query arguments |
 
 
 **Return Value:**
 
-with formatted array of args.
+Modified arguments
+
 
 
 
@@ -301,10 +398,10 @@ with formatted array of args.
 
 ### format_aggregations
 
-Formats the response from Elastic Search to Tainacan API format
+Format elasticsearch aggregations response according to aggregation type
 
 ```php
-public format_aggregations(mixed $aggregations): mixed
+public format_aggregations(array $aggregations): array
 ```
 
 
@@ -318,7 +415,12 @@ public format_aggregations(mixed $aggregations): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$aggregations` | **mixed** |  |
+| `$aggregations` | **array** | Aggregations from elasticsearch response |
+
+
+**Return Value:**
+
+Formatted aggregations
 
 
 
@@ -327,10 +429,10 @@ public format_aggregations(mixed $aggregations): mixed
 
 ### fetch_all_metadatum_values
 
-
+Fetch all values for a metadata
 
 ```php
-public fetch_all_metadatum_values(mixed $return, mixed $metadatum, mixed $args): mixed
+public fetch_all_metadatum_values(mixed $return, \Tainacan\Entities\Metadatum $metadatum, array $args): array|null
 ```
 
 
@@ -344,9 +446,14 @@ public fetch_all_metadatum_values(mixed $return, mixed $metadatum, mixed $args):
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$return` | **mixed** |  |
-| `$metadatum` | **mixed** |  |
-| `$args` | **mixed** |  |
+| `$return` | **mixed** | Default return value |
+| `$metadatum` | **\Tainacan\Entities\Metadatum** | The metadatum object |
+| `$args` | **array** | Arguments for the query |
+
+
+**Return Value:**
+
+The metadatum values
 
 
 
@@ -355,71 +462,13 @@ public fetch_all_metadatum_values(mixed $return, mixed $metadatum, mixed $args):
 
 ### prepare_request_for_items
 
-Prepare the request to fetch items with information about all facets
-Used by the /items API endpoint
-WIll add all the facets (filters) for the current collection
+Prepare the elasticsearch request for items with aggregations for each filter
 
 ```php
-private prepare_request_for_items(mixed $formatted_args): mixed
+private prepare_request_for_items(array $formatted_args): array
 ```
 
-JSON exemple:
 
-{
-  "from" : 0,
-  "size" : 12,
-  "sort" : [ { "post_date" : { "order" : "desc" } } ],
-  "query" : { "match_all":{ "boost":1 } },
-  "post_filter" : {
-    "bool" : {
-      "must" : [
-         { "term" : { "post_type.raw" : "tnc_col_6_item" } },
-         { "term" : { "post_status":"publish" } }
-      ]
-    }
-  },
-  "aggs" : {
-    "872.taxonomy.tnc_tax_5" : {
-      "filter" : {
-         "bool" : {
-            "must" : [
-               { "term" : { "post_type.raw":"tnc_col_6_item" } },
-               { "term" : { "post_status":"publish" } }
-            ]
-         }
-      },
-      "aggs":{
-         "872.taxonomy.tnc_tax_5":{
-            "terms":{
-               "size":"4",
-               "script":{
-                  "lang":"painless",
-                  "source":"def c= ['']; for(term in params._source.terms.tnc_tax_5) { if(term.parent==0) { c.add(term.term_id); }} return c;"
-               }
-            }
-         }
-      }
-    },
-    "1026.meta.14" : {
-      "filter":{
-         "bool":{
-            "must":[
-               { "term" : { "post_type.raw":"tnc_col_6_item" } },
-               { "term" : { "post_status":"publish" } }
-            ]
-         }
-      },
-      "aggs":{
-         "1026.meta.14":{
-            "terms":{
-              "size":"4",
-              "field":"meta.14.raw"
-            }
-         }
-      }
-    }
-  }
-}
 
 
 
@@ -430,7 +479,12 @@ JSON exemple:
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$formatted_args` | **mixed** |  |
+| `$formatted_args` | **array** | Arguments formatted by ElasticPress |
+
+
+**Return Value:**
+
+Modified arguments with aggregations
 
 
 
@@ -439,45 +493,13 @@ JSON exemple:
 
 ### prepare_request_for_facet
 
-Prepare the request to get information about one facet (facets API endpoint)
+Prepare the elasticsearch request for a single facet
 
 ```php
-private prepare_request_for_facet(mixed $formatted_args): mixed
+private prepare_request_for_facet(array $formatted_args): array
 ```
 
-JSON exemple:
 
-{
-  "from":0,
-  "size":0,
-  "sort":[{"post_date":{"order":"desc"}}],
-  "query":{
-    "bool":{
-      "must":[
-        {"term":{"post_type.raw":"tnc_col_6_item"}},
-        {"term":{"post_status":"publish"}}
-      ]
-    }
-  },
-  "aggs":{
-    "872.taxonomy.tnc_tax_5":{
-      "composite" : {
-        "size": 2,
-        "after" : { "tnc_tax_5" : "2" },
-        "sources" : [
-          { "tnc_tax_5": {
-            "terms": {
-              "script":{
-                 "lang":"painless",
-                 "source":"def c= ['']; for(term in params._source.terms.tnc_tax_5) { if(term.parent==0) { c.add(term.term_id); }} return c;"
-              }
-            }
-          } }
-        ]
-      }
-    }
-  }
-}
 
 
 
@@ -488,7 +510,12 @@ JSON exemple:
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$formatted_args` | **mixed** |  |
+| `$formatted_args` | **array** | Arguments formatted by ElasticPress |
+
+
+**Return Value:**
+
+Modified arguments with aggregations
 
 
 
@@ -497,10 +524,10 @@ JSON exemple:
 
 ### format_aggregations_items
 
-Format ES aggregation response for items request
+Format elasticsearch aggregations for items request
 
 ```php
-private format_aggregations_items(mixed $aggregations): mixed
+private format_aggregations_items(array $aggregations): array
 ```
 
 
@@ -514,7 +541,12 @@ private format_aggregations_items(mixed $aggregations): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$aggregations` | **mixed** |  |
+| `$aggregations` | **array** | Aggregations from elasticsearch response |
+
+
+**Return Value:**
+
+Formatted aggregations
 
 
 
@@ -523,10 +555,10 @@ private format_aggregations_items(mixed $aggregations): mixed
 
 ### format_aggregations_facet
 
-Format ES aggregation response for one facet request
+Format elasticsearch aggregations for facet request
 
 ```php
-private format_aggregations_facet(mixed $aggregations): mixed
+private format_aggregations_facet(array $aggregations): array
 ```
 
 
@@ -540,7 +572,12 @@ private format_aggregations_facet(mixed $aggregations): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$aggregations` | **mixed** |  |
+| `$aggregations` | **array** | Aggregations from elasticsearch response |
+
+
+**Return Value:**
+
+Formatted aggregations
 
 
 
@@ -549,4 +586,4 @@ private format_aggregations_facet(mixed $aggregations): mixed
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

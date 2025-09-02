@@ -36,7 +36,7 @@ public $doc
 Constructs an Xml_Create object.
 
 ```php
-public __construct( $par_array): mixed
+public __construct(mixed $par_array): mixed
 ```
 
 
@@ -50,7 +50,8 @@ public __construct( $par_array): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$par_array` | **** | Type: array.<br />  Array of request parameters for creating an ANDS_XML object.<br />\see create_request. |
+| `$par_array` | **mixed** | Type: array.<br />  Array of request parameters for creating an ANDS_XML object.<br />\see create_request. |
+
 
 
 
@@ -62,7 +63,7 @@ public __construct( $par_array): mixed
 Add a child node to a parent node on a XML Doc: a worker function.
 
 ```php
-public addChild( $mom_node,  $name,  $value = &#039;&#039;): \Tainacan\OAIPMHExpose\DOMElement
+public addChild(mixed $mom_node, mixed $name, mixed $value = &#039;&#039;): \Tainacan\OAIPMHExpose\DOMElement
 ```
 
 
@@ -76,9 +77,9 @@ public addChild( $mom_node,  $name,  $value = &#039;&#039;): \Tainacan\OAIPMHExp
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$mom_node` | **** | Type: DOMNode. The target node. |
-| `$name` | **** | Type: string. The name of child nade is being added |
-| `$value` | **** | Type: string. Text for the adding node if it is a text node. |
+| `$mom_node` | **mixed** | <br />Type: DOMNode. The target node. |
+| `$name` | **mixed** | <br />Type: string. The name of child nade is being added |
+| `$value` | **mixed** | <br />Type: string. Text for the adding node if it is a text node. |
 
 
 **Return Value:**
@@ -86,6 +87,7 @@ public addChild( $mom_node,  $name,  $value = &#039;&#039;): \Tainacan\OAIPMHExp
 $added_node
 The newly created node, can be used for further expansion.
 If no further expansion is expected, return value can be igored.
+
 
 
 
@@ -96,7 +98,7 @@ If no further expansion is expected, return value can be igored.
 Add a child node to a parent node on a XML Doc: a worker function.
 
 ```php
-public addChildDC( $mom_node,  $name,  $value = &#039;&#039;): \Tainacan\OAIPMHExpose\DOMElement
+public addChildDC(mixed $mom_node, mixed $name, mixed $value = &#039;&#039;): \Tainacan\OAIPMHExpose\DOMElement
 ```
 
 
@@ -110,9 +112,9 @@ public addChildDC( $mom_node,  $name,  $value = &#039;&#039;): \Tainacan\OAIPMHE
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$mom_node` | **** | Type: DOMNode. The target node. |
-| `$name` | **** | Type: string. The name of child nade is being added |
-| `$value` | **** | Type: string. Text for the adding node if it is a text node. |
+| `$mom_node` | **mixed** | <br />Type: DOMNode. The target node. |
+| `$name` | **mixed** | <br />Type: string. The name of child nade is being added |
+| `$value` | **mixed** | <br />Type: string. Text for the adding node if it is a text node. |
 
 
 **Return Value:**
@@ -123,6 +125,7 @@ If no further expansion is expected, return value can be igored.
 
 
 
+
 ***
 
 ### create_request
@@ -130,7 +133,7 @@ If no further expansion is expected, return value can be igored.
 Create an OAI request node.
 
 ```php
-public create_request( $par_array): mixed
+public create_request(mixed $par_array): mixed
 ```
 
 
@@ -144,7 +147,8 @@ public create_request( $par_array): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$par_array` | **** | Type: array<br />  The attributes of a request node. They describe the verb of the request and other associated parameters used in the request.<br />Keys of the array define attributes, and values are their content. |
+| `$par_array` | **mixed** | Type: array<br />  The attributes of a request node. They describe the verb of the request and other associated parameters used in the request.<br />Keys of the array define attributes, and values are their content. |
+
 
 
 
@@ -169,8 +173,9 @@ public display(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

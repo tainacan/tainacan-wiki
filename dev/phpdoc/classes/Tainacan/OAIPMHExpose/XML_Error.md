@@ -40,8 +40,9 @@ public __construct(mixed $par_array, mixed $error_array): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

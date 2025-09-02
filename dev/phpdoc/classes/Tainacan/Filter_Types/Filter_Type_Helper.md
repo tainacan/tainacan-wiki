@@ -13,21 +13,6 @@ Class FilterTypeHelper
 ## Properties
 
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ### registered_filter_type
 
 Stores external filter type available to be used in Tainacan
@@ -61,46 +46,6 @@ private $Tainacan_Filters
 ## Methods
 
 
-### get_instance
-
-
-
-```php
-public static get_instance(): mixed
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
-
-```php
-private __construct(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
 ### init
 
 
@@ -108,6 +53,7 @@ private __construct(): mixed
 ```php
 private init(): mixed
 ```
+
 
 
 
@@ -128,6 +74,7 @@ private init(): mixed
 ```php
 public register_filter_type_compoment(): mixed
 ```
+
 
 
 
@@ -168,6 +115,7 @@ public register_filter_type(string $handle, mixed $class_name, mixed $script_pat
 
 
 
+
 ***
 
 ### get_registered_filter_type
@@ -189,6 +137,7 @@ public get_registered_filter_type(): array
 **Return Value:**
 
 The list of registered filter type
+
 
 
 
@@ -222,8 +171,55 @@ The filter type definition or false if it is not found
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

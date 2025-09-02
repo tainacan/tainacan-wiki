@@ -116,6 +116,7 @@ Must be implemented by Exposer class
 
 
 
+
 ***
 
 ### set_description
@@ -138,6 +139,7 @@ protected set_description(mixed $description): string
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$description` | **mixed** |  |
+
 
 
 
@@ -166,6 +168,7 @@ exposer name
 
 
 
+
 ***
 
 ### get_description
@@ -190,6 +193,7 @@ exposer description
 
 
 
+
 ***
 
 ### _toArray
@@ -199,6 +203,7 @@ return exposer object as an array
 ```php
 public _toArray(): array
 ```
+
 
 
 
@@ -238,6 +243,7 @@ public rest_request_after_callbacks(\WP_REST_Response $response, \WP_REST_Server
 
 
 
+
 ***
 
 ### get_mappers
@@ -262,8 +268,9 @@ List of mappers
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

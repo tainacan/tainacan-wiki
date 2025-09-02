@@ -2,7 +2,7 @@
 
 # MetadataTypeControlHelper
 
-Class TainacanMetadatumType
+
 
 
 
@@ -49,6 +49,7 @@ private __construct(): mixed
 
 
 
+
 ***
 
 ### get_instance
@@ -62,6 +63,7 @@ public static get_instance(): mixed
 
 
 * This method is **static**.
+
 
 
 
@@ -95,8 +97,9 @@ public static update_control_metadatum(mixed $item): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

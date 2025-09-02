@@ -65,6 +65,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### init_objects
@@ -85,6 +86,7 @@ public init_objects(): mixed
 
 
 
+
 ***
 
 ### register_routes
@@ -94,6 +96,7 @@ public init_objects(): mixed
 ```php
 public register_routes(): mixed
 ```
+
 
 
 
@@ -132,6 +135,7 @@ public prepare_item_for_response(mixed $item, \WP_REST_Request $request): array|
 
 
 
+
 ***
 
 ### get_metadata_taxonomy_in_collection
@@ -156,6 +160,7 @@ public get_metadata_taxonomy_in_collection(mixed $taxonomy_id, mixed $collection
 | `$taxonomy_id` | **mixed** |  |
 | `$collection_id` | **mixed** |  |
 | `$collection_parent_id` | **mixed** |  |
+
 
 
 
@@ -186,6 +191,7 @@ public prepare_item_for_database(\WP_REST_Request $request): object|void|\WP_Err
 
 
 
+
 ***
 
 ### get_item
@@ -208,6 +214,7 @@ public get_item(\WP_REST_Request $request): \WP_Error|\WP_REST_Response
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **\WP_REST_Request** |  |
+
 
 
 
@@ -238,6 +245,7 @@ public get_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 
 
 
+
 ***
 
 ### delete_item
@@ -260,6 +268,7 @@ public delete_item(\WP_REST_Request $request): \WP_Error|\WP_REST_Response
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **\WP_REST_Request** |  |
+
 
 
 
@@ -290,6 +299,7 @@ public delete_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 
 
 
+
 ***
 
 ### get_items
@@ -316,6 +326,12 @@ public get_items(\WP_REST_Request $request): \WP_Error|\WP_REST_Response
 
 
 
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
+
+
+
 ***
 
 ### get_items_permissions_check
@@ -338,6 +354,7 @@ public get_items_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **\WP_REST_Request** |  |
+
 
 
 
@@ -368,6 +385,7 @@ public create_item(\WP_REST_Request $request): \WP_Error|\WP_REST_Response
 
 
 
+
 ***
 
 ### create_item_permissions_check
@@ -390,6 +408,7 @@ public create_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **\WP_REST_Request** |  |
+
 
 
 
@@ -420,6 +439,7 @@ public update_item(\WP_REST_Request $request): \WP_Error|\WP_REST_Response
 
 
 
+
 ***
 
 ### update_item_permissions_check
@@ -442,6 +462,7 @@ public update_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **\WP_REST_Request** |  |
+
 
 
 
@@ -472,6 +493,7 @@ public get_endpoint_args_for_item_schema(string $method = null): array|mixed
 
 
 
+
 ***
 
 ### get_wp_query_params
@@ -492,6 +514,7 @@ public get_wp_query_params(): array
 
 
 
+
 ***
 
 ### get_schema
@@ -501,6 +524,7 @@ public get_wp_query_params(): array
 ```php
 public get_schema(): mixed
 ```
+
 
 
 
@@ -536,6 +560,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### filter_object_by_attributes
@@ -543,7 +568,7 @@ public __construct(): mixed
 
 
 ```php
-protected filter_object_by_attributes( $object,  $attributes): array
+protected filter_object_by_attributes(mixed $object, mixed $attributes): array
 ```
 
 
@@ -557,8 +582,9 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$attributes` | **** |  |
+| `$object` | **mixed** |  |
+| `$attributes` | **mixed** |  |
+
 
 
 
@@ -570,7 +596,7 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 
 ```php
-protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\Entity
+protected prepare_item_for_updating(mixed $object, mixed $new_values): \Tainacan\Entities\Entity
 ```
 
 
@@ -584,8 +610,9 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$new_values` | **** |  |
+| `$object` | **mixed** |  |
+| `$new_values` | **mixed** |  |
+
 
 
 
@@ -597,7 +624,7 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 
 ```php
-protected prepare_filters( $request): array
+protected prepare_filters(mixed $request): array
 ```
 
 
@@ -611,8 +638,14 @@ protected prepare_filters( $request): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$request` | **** |  |
+| `$request` | **mixed** |  |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
 
 
 
@@ -642,14 +675,15 @@ public add_support_to_tax_query_like(mixed $args): mixed
 
 
 
+
 ***
 
-### prepare_meta
+### sanitize_value
 
 
 
 ```php
-private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
+protected sanitize_value(mixed $value): mixed
 ```
 
 
@@ -663,11 +697,8 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$mapped` | **** |  |
-| `$request` | **** |  |
-| `$query` | **** |  |
-| `$mapped_v` | **** |  |
-| `$args` | **** |  |
+| `$value` | **mixed** |  |
+
 
 
 
@@ -679,7 +710,7 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 
 ```php
-protected contains_array( $array,  $query): bool
+protected contains_array(mixed $array, mixed $query): bool
 ```
 
 
@@ -693,8 +724,9 @@ protected contains_array( $array,  $query): bool
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$array` | **** |  |
-| `$query` | **** |  |
+| `$array` | **mixed** |  |
+| `$query` | **mixed** |  |
+
 
 
 
@@ -708,6 +740,7 @@ Return the fetch_only param
 ```php
 public get_fetch_only_param(): array|void
 ```
+
 
 
 
@@ -739,6 +772,7 @@ public get_wp_query_params(): array|void
 
 
 
+
 ***
 
 ### get_meta_queries_params
@@ -748,6 +782,7 @@ Return the common meta, date and tax queries params
 ```php
 protected get_meta_queries_params(): array
 ```
+
 
 
 
@@ -785,6 +820,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 
 
 
+
 ***
 
 ### get_permissions_schema
@@ -794,6 +830,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 ```php
 public get_permissions_schema(): mixed
 ```
+
 
 
 
@@ -825,6 +862,7 @@ public get_base_properties_schema(): mixed
 
 
 
+
 ***
 
 ### get_schema
@@ -839,6 +877,7 @@ protected get_schema(): mixed
 
 
 * This method is **abstract**.
+
 
 
 
@@ -865,8 +904,9 @@ public get_list_schema(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

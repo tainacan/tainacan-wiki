@@ -111,36 +111,6 @@ public $prefixes
 
 ***
 
-### metadata
-
-array of supported metadata, false for not validade the list format:
-['slug'] => [
-    'URI' => 'http://...',          // URI of the metadatum description
-    'label' => 'Label',             // Label to show on UI
-    'metadata_type' => 'date',         // Tainacan recomended metadatum type, default text
-    'core_metadatum' => false   // if have a core tainacan metadatum, what?
-['date' => [
-    	'URI' => 'http://purl.org/dc/elements/1.1/date',
- 	'label' => 'Date',
-     'metadata_type' => 'date'
- ],
- 'description' => [
- 	'URI' => 'http://purl.org/dc/elements/1.1/description',
- 	'label' => 'Description',
-     'core_metadatum' => true
- ]]
-
-```php
-public array $metadata
-```
-
-
-
-
-
-
-***
-
 ### XML_namespace
 
 
@@ -171,6 +141,29 @@ public $XML_append_root
 
 ***
 
+## Methods
+
+
+### __construct
+
+END: XML especial case *
+
+```php
+public __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
 
 
 ## Inherited methods
@@ -183,6 +176,7 @@ public $XML_append_root
 ```php
 public _toArray(): mixed
 ```
+
 
 
 
@@ -224,8 +218,30 @@ The semantic URL for this metadata. Empty string in case of failure
 
 
 
+
+***
+
+### __construct
+
+
+
+```php
+public __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

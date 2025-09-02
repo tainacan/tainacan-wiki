@@ -188,6 +188,7 @@ public __toString(): mixed
 
 
 
+
 ***
 
 ### get_id
@@ -197,6 +198,7 @@ Get the entity ID
 ```php
 public get_id(): int
 ```
+
 
 
 
@@ -228,6 +230,7 @@ public get_name(): string
 
 
 
+
 ***
 
 ### get_slug
@@ -237,6 +240,7 @@ Get metadata section slug
 ```php
 public get_slug(): string
 ```
+
 
 
 
@@ -268,6 +272,7 @@ public get_description(): string
 
 
 
+
 ***
 
 ### get_description_bellow_name
@@ -277,6 +282,7 @@ Return the metadatum description_bellow_name
 ```php
 public get_description_bellow_name(): string
 ```
+
 
 
 
@@ -314,6 +320,7 @@ public get_metadata_object_list(mixed $args = []): mixed
 
 
 
+
 ***
 
 ### get_is_conditional_section
@@ -338,6 +345,7 @@ public get_is_conditional_section(): string
 
 
 
+
 ***
 
 ### get_conditional_section_rules
@@ -358,6 +366,7 @@ public get_conditional_section_rules(): array|object
 
 
 
+
 ***
 
 ### is_conditional_section
@@ -367,6 +376,7 @@ Checks if section is conditional
 ```php
 public is_conditional_section(): bool
 ```
+
 
 
 
@@ -404,6 +414,7 @@ public set_name(mixed $value): void
 
 
 
+
 ***
 
 ### set_slug
@@ -434,6 +445,7 @@ to make it unique (e.g slug-1, slug-2)
 
 
 
+
 ***
 
 ### set_description
@@ -456,6 +468,7 @@ public set_description(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -486,6 +499,7 @@ public set_description_bellow_name(mixed $value): void
 
 
 
+
 ***
 
 ### set_is_conditional_section
@@ -508,6 +522,7 @@ public set_is_conditional_section(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -538,6 +553,7 @@ public set_conditional_section_rules(mixed $value): void
 
 
 
+
 ***
 
 ### get_enabled_for_collection
@@ -549,6 +565,7 @@ public get_enabled_for_collection(): mixed
 ```
 
 Used by the API to tell front end when a metadatum section is disabled
+
 
 
 
@@ -584,6 +601,7 @@ public set_enabled_for_collection(mixed $value): mixed
 
 
 
+
 ***
 
 ### validate
@@ -608,111 +626,17 @@ valid or not
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 
 ## Inherited methods
 
-
-### get_collection_id
-
-
-
-```php
-public get_collection_id(): int
-```
-
-
-
-
-
-
-
-
-
-**Return Value:**
-
-collection item ID
-
-
-
-***
-
-### get_collection
-
-Return Collection from relation
-
-```php
-public get_collection(): \Tainacan\Entities\Collection|null
-```
-
-
-
-
-
-
-
-
-
-**Return Value:**
-
-Return Collection or null on errors
-
-
-
-***
-
-### set_collection_id
-
-Set collection ID
-
-```php
-public set_collection_id(int $value): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **int** |  |
-
-
-
-
-***
-
-### set_collection
-
-set collection object and id
-
-```php
-public set_collection(\Tainacan\Entities\Collection $collection): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-
-
-
-
-***
 
 ### __construct
 
@@ -740,6 +664,12 @@ Attention: If the ID or Post provided do not match the Entity post type, an Exce
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### get_repository
@@ -760,6 +690,7 @@ public get_repository(): mixed
 
 
 
+
 ***
 
 ### get_date_i18n
@@ -767,7 +698,7 @@ public get_repository(): mixed
 
 
 ```php
-public get_date_i18n( $date): string
+public get_date_i18n(mixed $date): string
 ```
 
 
@@ -781,7 +712,8 @@ public get_date_i18n( $date): string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$date` | **** |  |
+| `$date` | **mixed** |  |
+
 
 
 
@@ -816,6 +748,7 @@ property value
 
 
 
+
 ***
 
 ### set_mapped_property
@@ -840,6 +773,7 @@ using the prop name dynamically, use the set() method
 |-----------|------|-------------|
 | `$prop` | **string** | id of the property |
 | `$value` | **mixed** | the value to be setted |
+
 
 
 
@@ -875,6 +809,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### get
@@ -905,6 +840,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### set_status
@@ -931,6 +867,7 @@ public set_status(string $value): mixed
 
 
 
+
 ***
 
 ### validate
@@ -942,6 +879,7 @@ public validate(): bool
 ```
 
 If Entity is not valid, validation error messages are available via get_errors() method
+
 
 
 
@@ -977,6 +915,7 @@ public validate_prop(string $prop): bool
 
 
 
+
 ***
 
 ### get_errors
@@ -986,6 +925,7 @@ public validate_prop(string $prop): bool
 ```php
 public get_errors(): mixed
 ```
+
 
 
 
@@ -1017,6 +957,7 @@ public static get_post_type(): mixed
 
 
 
+
 ***
 
 ### get_capability_type
@@ -1037,6 +978,7 @@ public static get_capability_type(): mixed
 
 
 
+
 ***
 
 ### get_status
@@ -1046,6 +988,7 @@ public static get_capability_type(): mixed
 ```php
 public get_status(): mixed
 ```
+
 
 
 
@@ -1077,6 +1020,7 @@ This identifier is used to register the entity on database, ex.: post_type
 
 
 
+
 ***
 
 ### get_id
@@ -1086,6 +1030,7 @@ Get the entity ID
 ```php
 public get_id(): int
 ```
+
 
 
 
@@ -1124,6 +1069,7 @@ public add_error(mixed $type, mixed $message): mixed
 
 
 
+
 ***
 
 ### reset_errors
@@ -1144,6 +1090,7 @@ public reset_errors(): mixed
 
 
 
+
 ***
 
 ### get_validated
@@ -1153,6 +1100,7 @@ public reset_errors(): mixed
 ```php
 public get_validated(): mixed
 ```
+
 
 
 
@@ -1190,6 +1138,7 @@ protected set_validated(mixed $value): mixed
 
 
 
+
 ***
 
 ### set_as_valid
@@ -1199,6 +1148,7 @@ protected set_validated(mixed $value): mixed
 ```php
 protected set_as_valid(): mixed
 ```
+
 
 
 
@@ -1230,6 +1180,7 @@ public _toArray(): mixed
 
 
 
+
 ***
 
 ### _toJson
@@ -1239,6 +1190,7 @@ public _toArray(): mixed
 ```php
 public _toJson(): mixed
 ```
+
 
 
 
@@ -1276,6 +1228,7 @@ public can_read(int|\WP_User $user = null): bool
 
 
 
+
 ***
 
 ### can_edit
@@ -1298,6 +1251,7 @@ public can_edit(int|\WP_User|null $user = null): bool
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
+
 
 
 
@@ -1328,6 +1282,7 @@ public can_delete(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### can_publish
@@ -1354,6 +1309,7 @@ public can_publish(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### get_capabilities
@@ -1375,6 +1331,7 @@ public get_capabilities(): object
 **Return Value:**
 
 Object with all the capabilities as member variables.
+
 
 
 
@@ -1404,8 +1361,113 @@ public diff(\Tainacan\Entities\Entity|int|\WP_Post $which): array
 
 
 
+
+***
+
+### get_collection_id
+
+
+
+```php
+public get_collection_id(): int
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+collection item ID
+
+
+
+
+***
+
+### get_collection
+
+Return Collection from relation
+
+```php
+public get_collection(): \Tainacan\Entities\Collection|null
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+Return Collection or null on errors
+
+
+
+
+***
+
+### set_collection_id
+
+Set collection ID
+
+```php
+public set_collection_id(int $value): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **int** |  |
+
+
+
+
+
+***
+
+### set_collection
+
+set collection object and id
+
+```php
+public set_collection(\Tainacan\Entities\Collection $collection): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |  |
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -63,6 +63,7 @@ public __invoke(mixed $args, mixed $assoc_args): mixed
 
 
 
+
 ***
 
 ### get_orphan_items_query
@@ -85,6 +86,7 @@ private get_orphan_items_query(mixed $select = &#039;ID&#039;): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$select` | **mixed** |  |
+
 
 
 
@@ -116,6 +118,7 @@ private delete_items(mixed $dry_run = false, mixed $deep = false): mixed
 
 
 
+
 ***
 
 ### get_orphan_attachments_count
@@ -125,6 +128,7 @@ private delete_items(mixed $dry_run = false, mixed $deep = false): mixed
 ```php
 private get_orphan_attachments_count(): mixed
 ```
+
 
 
 
@@ -163,6 +167,7 @@ private delete_attachments(mixed $dry_run = false, mixed $deep = false): mixed
 
 
 
+
 ***
 
 ### filesize_formatted
@@ -185,6 +190,7 @@ private filesize_formatted(mixed $size): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$size` | **mixed** |  |
+
 
 
 
@@ -216,6 +222,7 @@ private delete_terms_taxonomies(mixed $dry_run = false, mixed $deep = false): mi
 
 
 
+
 ***
 
 ### delete_metadata
@@ -239,6 +246,7 @@ private delete_metadata(mixed $dry_run = false, mixed $deep = false): mixed
 |-----------|------|-------------|
 | `$dry_run` | **mixed** |  |
 | `$deep` | **mixed** |  |
+
 
 
 
@@ -269,8 +277,9 @@ private delete_transients(mixed $dry_run): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

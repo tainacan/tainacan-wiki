@@ -13,21 +13,6 @@ Class withe helpful methods to handle media in Tainacan
 ## Properties
 
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ### dir_separator
 
 
@@ -46,33 +31,14 @@ public $dir_separator
 ## Methods
 
 
-### get_instance
+### init
 
 
 
 ```php
-public static get_instance(): mixed
+protected init(): mixed
 ```
 
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
-
-```php
-protected __construct(): mixed
-```
 
 
 
@@ -112,6 +78,7 @@ public pre_tainacan_upload(mixed $blob, mixed $filename, mixed $post_id): mixed
 
 
 
+
 ***
 
 ### post_tainacan_upload
@@ -136,6 +103,7 @@ public post_tainacan_upload(mixed $attach_id, mixed $attach_data, mixed $post_id
 | `$attach_id` | **mixed** |  |
 | `$attach_data` | **mixed** |  |
 | `$post_id` | **mixed** |  |
+
 
 
 
@@ -166,6 +134,7 @@ public pre_upload(mixed $file): mixed
 
 
 
+
 ***
 
 ### post_upload
@@ -188,6 +157,7 @@ public post_upload(mixed $fileinfo): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$fileinfo` | **mixed** |  |
+
 
 
 
@@ -217,6 +187,7 @@ The folder name
 
 
 
+
 ***
 
 ### get_private_folder_prefix
@@ -239,6 +210,7 @@ public get_private_folder_prefix(): string
 **Return Value:**
 
 The folder prefix
+
 
 
 
@@ -273,6 +245,7 @@ tainacan-items/$collection_id/_x_$item_id ($item_id is a private item)
 
 
 
+
 ***
 
 ### template_redirect
@@ -286,6 +259,7 @@ public template_redirect(): mixed
 When looking for a file that does not exists, it checks for relative prefixed folders.
 If it finds the file, it then checks to see if current user have permission to see this file, based on
 the permission he/she have to read the related item.
+
 
 
 
@@ -324,6 +298,7 @@ public image_get_intermediate_size(mixed $data, mixed $post_id, mixed $size): mi
 
 
 
+
 ***
 
 ### wp_get_attachment_url
@@ -352,6 +327,7 @@ public wp_get_attachment_url(mixed $url, mixed $post_id): mixed
 
 
 
+
 ***
 
 ### update_item_and_collection
@@ -376,6 +352,7 @@ public update_item_and_collection(mixed $obj): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$obj` | **mixed** |  |
+
 
 
 
@@ -409,8 +386,76 @@ TODO: In the upcoming bulk edit refactor this must be handled as there are perfo
 
 
 
+
+***
+
+### add_htaccess_rules
+
+Function to add rules to [upload_dir]/tainacan/.htaccess
+
+```php
+public static add_htaccess_rules(): mixed
+```
+
+This function is used as callback for the register_activation_hook
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

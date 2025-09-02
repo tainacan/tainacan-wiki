@@ -14,27 +14,12 @@ Represents the Background Processes REST Controller
 ## Properties
 
 
-### collections_repository
+### table
 
-
-
-```php
-private $collections_repository
-```
-
-
-
-
-
-
-***
-
-### collection
-
-
+table
 
 ```php
-private $collection
+private string $table
 ```
 
 
@@ -54,6 +39,7 @@ private $collection
 ```php
 protected get_schema(): mixed
 ```
+
 
 
 
@@ -85,6 +71,7 @@ Define the namespace, rest base and instantiate your attributes.
 
 
 
+
 ***
 
 ### register_routes
@@ -94,6 +81,7 @@ Register the BG Processes route and their endpoints
 ```php
 public register_routes(): mixed
 ```
+
 
 
 
@@ -131,6 +119,12 @@ public bg_processes_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 
 
 
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
+
+
+
 ***
 
 ### get_items
@@ -157,6 +151,7 @@ public get_items(mixed $request): mixed
 
 
 
+
 ***
 
 ### get_item
@@ -179,6 +174,7 @@ public get_item(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -210,6 +206,7 @@ public prepare_item_for_response(mixed $item, mixed $request): mixed
 
 
 
+
 ***
 
 ### update_item
@@ -236,6 +233,7 @@ public update_item(mixed $request): mixed
 
 
 
+
 ***
 
 ### delete_item
@@ -258,6 +256,7 @@ public delete_item(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -290,6 +289,34 @@ public get_log_url(mixed $id, mixed $action, mixed $type = &#039;&#039;): mixed
 
 
 
+
+***
+
+### get_file
+
+
+
+```php
+public get_file(mixed $request): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$request` | **mixed** |  |
+
+
+
+
+
 ***
 
 
@@ -314,6 +341,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### filter_object_by_attributes
@@ -321,7 +349,7 @@ public __construct(): mixed
 
 
 ```php
-protected filter_object_by_attributes( $object,  $attributes): array
+protected filter_object_by_attributes(mixed $object, mixed $attributes): array
 ```
 
 
@@ -335,8 +363,9 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$attributes` | **** |  |
+| `$object` | **mixed** |  |
+| `$attributes` | **mixed** |  |
+
 
 
 
@@ -348,7 +377,7 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 
 ```php
-protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\Entity
+protected prepare_item_for_updating(mixed $object, mixed $new_values): \Tainacan\Entities\Entity
 ```
 
 
@@ -362,8 +391,9 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$new_values` | **** |  |
+| `$object` | **mixed** |  |
+| `$new_values` | **mixed** |  |
+
 
 
 
@@ -375,7 +405,7 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 
 ```php
-protected prepare_filters( $request): array
+protected prepare_filters(mixed $request): array
 ```
 
 
@@ -389,8 +419,14 @@ protected prepare_filters( $request): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$request` | **** |  |
+| `$request` | **mixed** |  |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
 
 
 
@@ -420,14 +456,15 @@ public add_support_to_tax_query_like(mixed $args): mixed
 
 
 
+
 ***
 
-### prepare_meta
+### sanitize_value
 
 
 
 ```php
-private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
+protected sanitize_value(mixed $value): mixed
 ```
 
 
@@ -441,11 +478,8 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$mapped` | **** |  |
-| `$request` | **** |  |
-| `$query` | **** |  |
-| `$mapped_v` | **** |  |
-| `$args` | **** |  |
+| `$value` | **mixed** |  |
+
 
 
 
@@ -457,7 +491,7 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 
 ```php
-protected contains_array( $array,  $query): bool
+protected contains_array(mixed $array, mixed $query): bool
 ```
 
 
@@ -471,8 +505,9 @@ protected contains_array( $array,  $query): bool
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$array` | **** |  |
-| `$query` | **** |  |
+| `$array` | **mixed** |  |
+| `$query` | **mixed** |  |
+
 
 
 
@@ -486,6 +521,7 @@ Return the fetch_only param
 ```php
 public get_fetch_only_param(): array|void
 ```
+
 
 
 
@@ -517,6 +553,7 @@ public get_wp_query_params(): array|void
 
 
 
+
 ***
 
 ### get_meta_queries_params
@@ -526,6 +563,7 @@ Return the common meta, date and tax queries params
 ```php
 protected get_meta_queries_params(): array
 ```
+
 
 
 
@@ -563,6 +601,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 
 
 
+
 ***
 
 ### get_permissions_schema
@@ -572,6 +611,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 ```php
 public get_permissions_schema(): mixed
 ```
+
 
 
 
@@ -603,6 +643,7 @@ public get_base_properties_schema(): mixed
 
 
 
+
 ***
 
 ### get_schema
@@ -617,6 +658,7 @@ protected get_schema(): mixed
 
 
 * This method is **abstract**.
+
 
 
 
@@ -643,8 +685,9 @@ public get_list_schema(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

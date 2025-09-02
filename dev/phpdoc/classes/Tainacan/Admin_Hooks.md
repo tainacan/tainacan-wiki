@@ -28,71 +28,38 @@ private $registered_hooks
 
 ***
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ## Methods
 
-
-### get_instance
-
-
-
-```php
-public static get_instance(): mixed
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
-
-```php
-private __construct(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
 
 ### init
 
 
 
 ```php
-public init(): mixed
+private init(): mixed
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### register_hooks
+
+
+
+```php
+public register_hooks(): mixed
+```
+
 
 
 
@@ -124,6 +91,7 @@ public get_available_positions(): mixed
 
 
 
+
 ***
 
 ### get_available_contexts
@@ -144,6 +112,7 @@ public get_available_contexts(): mixed
 
 
 
+
 ***
 
 ### get_registered_hooks
@@ -153,6 +122,7 @@ public get_available_contexts(): mixed
 ```php
 public get_registered_hooks(): mixed
 ```
+
 
 
 
@@ -193,8 +163,55 @@ public register(string $context, callable $callback, string $position = &#039;en
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -2,9 +2,10 @@
 
 # Background_Importer
 
-Tainacan_Background_Process class.
+Abstract Tainacan\Background_Process class.
 
-
+Uses modified version of https://github.com/A5hleyRich/wp-background-processing
+to handle DB updates in the background.
 
 * Full name: `\Tainacan\Background_Importer`
 * Parent class: [`\Tainacan\Background_Process`](./Background_Process.md)
@@ -65,6 +66,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### set_finish_status
@@ -72,7 +74,7 @@ public __construct(): mixed
 
 
 ```php
-private set_finish_status( $status): mixed
+private set_finish_status(mixed $status): mixed
 ```
 
 
@@ -86,7 +88,8 @@ private set_finish_status( $status): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$status` | **** |  |
+| `$status` | **mixed** |  |
+
 
 
 
@@ -95,13 +98,16 @@ private set_finish_status( $status): mixed
 
 ### task
 
-
+Task
 
 ```php
 public task(mixed $batch): mixed
 ```
 
-
+Override this method to perform any actions required on each
+queue item. Return the modified item for further processing
+in the next pass through. Or, return false to remove the
+item from the queue.
 
 
 
@@ -117,6 +123,7 @@ public task(mixed $batch): mixed
 
 
 
+
 ***
 
 
@@ -125,7 +132,7 @@ public task(mixed $batch): mixed
 
 ### __construct
 
-Initiate new async request
+Initiate new background process
 
 ```php
 public __construct(): mixed
@@ -141,56 +148,15 @@ public __construct(): mixed
 
 
 
-***
-
-### get_id
-
-
-
-```php
-public get_id(): mixed
-```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
-### get_name
+### data
 
-Gets the name of the process.
-
-```php
-public get_name(): string
-```
-
-Override this method to set a name to the process
-
-Default "Background Process"
-
-
-
-
-
-
-
-
-
-***
-
-### set_name
-
-Set name
+Set data used during the request
 
 ```php
-public set_name(mixed $name): $this
+public data(array $data): $this
 ```
 
 
@@ -204,146 +170,22 @@ public set_name(mixed $name): $this
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$name` | **mixed** |  |
-
-
-
-
-***
-
-### save
-
-Save queue
-
-```php
-public save(): $this
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### update
-
-Update queue
-
-```php
-public update(string $key, array $data): $this
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
 | `$data` | **array** | Data. |
 
 
 
 
-***
-
-### open
-
-Set batch as running
-
-```php
-public open(string $key): $this
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
-
-
-
 
 ***
 
-### close
+### dispatch
 
-Mark a process as done
-
-```php
-public close(string $key, mixed $status = &#039;finished&#039;): $this
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
-| `$status` | **mixed** |  |
-
-
-
-
-***
-
-### delete
-
-Delete queue
+Dispatch
 
 ```php
-public delete(string $key): $this
+public dispatch(): void
 ```
 
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | Key. |
-
-
-
-
-***
-
-### is_queue_empty
-
-Is queue empty
-
-```php
-protected is_queue_empty(): bool
-```
 
 
 
@@ -357,12 +199,12 @@ protected is_queue_empty(): bool
 
 ***
 
-### get_batch
+### get_query_args
 
-Get batch
+Get query args
 
 ```php
-protected get_batch(): \stdClass
+protected get_query_args(): array
 ```
 
 
@@ -373,9 +215,70 @@ protected get_batch(): \stdClass
 
 
 
-**Return Value:**
 
-Return the first batch from the queue
+
+
+***
+
+### get_query_url
+
+Get query URL
+
+```php
+protected get_query_url(): string
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_post_args
+
+Get post args
+
+```php
+protected get_post_args(): array
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### maybe_handle
+
+Maybe process queue
+
+```php
+public maybe_handle(): mixed
+```
+
+Checks whether data exists within the queue and that
+the process is not already running.
+
+
+
+
+
+
+
 
 
 
@@ -389,202 +292,11 @@ Handle
 protected handle(): mixed
 ```
 
-Override this method to perform any actions required
-during the async request.
-
-
-* This method is **abstract**.
-
-
-
-
-
-
-***
-
-### delete_all_batches
-
-Delete all batches.
-
-```php
-public delete_all_batches(): \Tainacan\WC_Background_Process
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### kill_process
-
-Kill process.
-
-```php
-public kill_process(): mixed
-```
-
-Stop processing queue items, clear cronjob and delete all batches.
-
-
-
-
-
-
-
-
-
-***
-
-### write_log_to_file
-
-LOG
-
-```php
-protected write_log_to_file(mixed $key, array $log, mixed $type = &#039;&#039;): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$log` | **array** |  |
-| `$type` | **mixed** |  |
-
-
-
-
-***
-
-### write_log
-
-
-
-```php
-protected write_log(mixed $key, mixed $log): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$log` | **mixed** |  |
-
-
-
-
-***
-
-### write_error_log
-
-
-
-```php
-protected write_error_log(mixed $key, mixed $log): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$log` | **mixed** |  |
-
-
-
-
-***
-
-### recursive_stingify_log_array
-
-
-
-```php
-private recursive_stingify_log_array(array $log, mixed $break = true): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$log` | **array** |  |
-| `$break` | **mixed** |  |
-
-
-
-
-***
-
-### has_errors
-
-
-
-```php
-private has_errors(mixed $key): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
-
-***
-
-### dispatch
-
-Dispatch the async request
-
-```php
-public dispatch(): array|\WP_Error
-```
-
+Pass each queue item to the task handler, while remaining
+within server memory and time limit constraints.
+
+Tainacan comments: This is where we changed the mos from otiginal class.
+Each batch is a single array of data. There is no queue inside a batch.
 
 
 
@@ -621,6 +333,89 @@ public push_to_queue(mixed $data): $this
 
 
 
+
+***
+
+### save
+
+Save queue
+
+```php
+public save(mixed $priority = 10): $this
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$priority` | **mixed** |  |
+
+
+
+
+
+***
+
+### update
+
+Update queue
+
+```php
+public update(string $key, array|object $batch): $this
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **string** | Key. |
+| `$batch` | **array&#124;object** | Data. |
+
+
+
+
+
+***
+
+### delete
+
+Delete queue
+
+```php
+public delete(string $key): $this
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **string** | Key. |
+
+
+
+
+
 ***
 
 ### generate_key
@@ -648,17 +443,19 @@ given a unique key so that they can be merged upon save.
 
 
 
+
 ***
 
-### maybe_handle
+### is_queue_empty
 
-Maybe handle
+Is queue empty
 
 ```php
-public maybe_handle(): mixed
+protected is_queue_empty(): bool
 ```
 
-Check for correct nonce and pass to handler.
+
+
 
 
 
@@ -680,6 +477,7 @@ protected is_process_running(): mixed
 
 Check whether the current process is already running
 in a background process.
+
 
 
 
@@ -711,6 +509,7 @@ defined in the time_exceeded() method.
 
 
 
+
 ***
 
 ### unlock_process
@@ -727,6 +526,32 @@ Unlock the process so that other instances can spawn.
 
 
 
+
+
+
+
+
+***
+
+### get_batch
+
+Get batch
+
+```php
+protected get_batch(): \Tainacan\stdClass
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+Return the first batch from the queue
 
 
 
@@ -752,6 +577,7 @@ of the maximum WordPress memory.
 
 
 
+
 ***
 
 ### get_memory_limit
@@ -761,6 +587,7 @@ Get memory limit
 ```php
 protected get_memory_limit(): int
 ```
+
 
 
 
@@ -793,6 +620,7 @@ A timeout limit of 30s is common on shared hosting.
 
 
 
+
 ***
 
 ### complete
@@ -805,6 +633,7 @@ protected complete(): mixed
 
 Override if applicable, but ensure that the below actions are
 performed, or, call parent::complete().
+
 
 
 
@@ -840,6 +669,7 @@ public schedule_cron_healthcheck(mixed $schedules): mixed
 
 
 
+
 ***
 
 ### handle_cron_healthcheck
@@ -852,6 +682,7 @@ public handle_cron_healthcheck(): mixed
 
 Restart the background process if not already running
 and data exists in the queue.
+
 
 
 
@@ -881,6 +712,7 @@ If there is an open process, not running, and not scheduled. schedule it.
 
 
 
+
 ***
 
 ### schedule_event
@@ -890,6 +722,7 @@ Schedule event
 ```php
 protected schedule_event(): mixed
 ```
+
 
 
 
@@ -921,6 +754,7 @@ protected clear_scheduled_event(): mixed
 
 
 
+
 ***
 
 ### cancel_process
@@ -932,6 +766,7 @@ public cancel_process(): mixed
 ```
 
 Stop processing queue items, clear cronjob and delete batch.
+
 
 
 
@@ -970,6 +805,7 @@ item from the queue.
 
 
 
+
 ***
 
 ### debug
@@ -996,14 +832,59 @@ public debug(mixed $message): mixed
 
 
 
+
 ***
 
-### data
+### get_id
 
-Set data used during the request
+
 
 ```php
-public data(array $data): $this
+public get_id(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_name
+
+Gets the name of the process.
+
+```php
+public get_name(): string
+```
+
+Override this method to set a name to the process
+
+Default "Background Process"
+
+
+
+
+
+
+
+
+
+
+***
+
+### set_name
+
+Set name
+
+```php
+public set_name(mixed $name): $this
 ```
 
 
@@ -1017,19 +898,106 @@ public data(array $data): $this
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$data` | **array** | Data. |
+| `$name` | **mixed** |  |
+
 
 
 
 
 ***
 
-### get_query_args
+### open
 
-Get query args
+Set batch as running
 
 ```php
-protected get_query_args(): array
+public open(string $key): $this
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **string** | Key. |
+
+
+
+
+
+***
+
+### close
+
+Mark a process as done
+
+```php
+public close(string $key, mixed $status = &#039;finished&#039;): $this
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **string** | Key. |
+| `$status` | **mixed** |  |
+
+
+
+
+
+***
+
+### get_batch_by_key
+
+Get batch by key ID
+
+```php
+protected get_batch_by_key(mixed $key): \Tainacan\stdClass
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **mixed** |  |
+
+
+**Return Value:**
+
+Return the batch
+
+
+
+
+***
+
+### delete_all_batches
+
+Delete all batches.
+
+```php
+public delete_all_batches(): \Tainacan\WC_Background_Process
 ```
 
 
@@ -1042,14 +1010,36 @@ protected get_query_args(): array
 
 
 
+
 ***
 
-### get_query_url
+### kill_process
 
-Get query URL
+Kill process.
 
 ```php
-protected get_query_url(): string
+public kill_process(): mixed
+```
+
+Stop processing queue items, clear cronjob and delete all batches.
+
+
+
+
+
+
+
+
+
+
+***
+
+### write_log_to_file
+
+LOG
+
+```php
+protected write_log_to_file(mixed $key, array $log, mixed $type = &#039;&#039;): mixed
 ```
 
 
@@ -1059,17 +1049,26 @@ protected get_query_url(): string
 
 
 
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **mixed** |  |
+| `$log` | **array** |  |
+| `$type` | **mixed** |  |
+
+
 
 
 
 ***
 
-### get_post_args
+### write_log
 
-Get post args
+
 
 ```php
-protected get_post_args(): array
+protected write_log(mixed $key, mixed $log): mixed
 ```
 
 
@@ -1079,6 +1078,42 @@ protected get_post_args(): array
 
 
 
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **mixed** |  |
+| `$log` | **mixed** |  |
+
+
+
+
+
+***
+
+### write_error_log
+
+
+
+```php
+protected write_error_log(mixed $key, mixed $log): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$key` | **mixed** |  |
+| `$log` | **mixed** |  |
+
+
 
 
 
@@ -1086,4 +1121,4 @@ protected get_post_args(): array
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

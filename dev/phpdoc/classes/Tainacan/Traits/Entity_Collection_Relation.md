@@ -10,6 +10,23 @@ Defines Collection and Items relation
 
 
 
+## Properties
+
+
+### collection
+
+
+
+```php
+protected $collection
+```
+
+
+
+
+
+
+***
 
 ## Methods
 
@@ -33,6 +50,7 @@ public get_collection_id(): int
 **Return Value:**
 
 collection item ID
+
 
 
 
@@ -60,6 +78,7 @@ Return Collection or null on errors
 
 
 
+
 ***
 
 ### set_collection_id
@@ -82,6 +101,7 @@ public set_collection_id(int $value): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **int** |  |
+
 
 
 
@@ -112,8 +132,9 @@ public set_collection(\Tainacan\Entities\Collection $collection): mixed
 
 
 
+
 ***
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02
 

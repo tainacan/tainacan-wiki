@@ -32,6 +32,7 @@ protected init(): mixed
 
 
 
+
 ***
 
 ### format_filter_arguments
@@ -54,6 +55,7 @@ public format_filter_arguments(mixed $filter_arguments): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$filter_arguments` | **mixed** |  |
+
 
 
 
@@ -82,6 +84,7 @@ public static get_instance(): mixed
 
 
 
+
 ***
 
 ### __construct
@@ -102,8 +105,9 @@ private __construct(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

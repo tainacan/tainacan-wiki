@@ -13,6 +13,21 @@
 ## Properties
 
 
+### bg_process
+
+bg_process
+
+```php
+protected \Tainacan\Background_Generic_Process $bg_process
+```
+
+
+
+
+
+
+***
+
 ### registered_process
 
 
@@ -31,13 +46,14 @@ private $registered_process
 ## Methods
 
 
-### __construct
+### init
 
 
 
 ```php
-public __construct(): mixed
+private init(): mixed
 ```
+
 
 
 
@@ -51,13 +67,14 @@ public __construct(): mixed
 
 ***
 
-### init
+### register_generic_processes
 
 
 
 ```php
-public init(): mixed
+public register_generic_processes(): mixed
 ```
+
 
 
 
@@ -95,6 +112,7 @@ public register_generic_process(array $process): mixed
 
 
 
+
 ***
 
 ### add_to_queue
@@ -102,7 +120,7 @@ public register_generic_process(array $process): mixed
 
 
 ```php
-public add_to_queue(\Tainacan\GenericBackgroundProcess\Generic_Process $process_object): mixed
+public add_to_queue(\Tainacan\GenericProcess\Generic_Process $process_object): mixed
 ```
 
 
@@ -116,7 +134,8 @@ public add_to_queue(\Tainacan\GenericBackgroundProcess\Generic_Process $process_
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$process_object` | **\Tainacan\GenericBackgroundProcess\Generic_Process** |  |
+| `$process_object` | **\Tainacan\GenericProcess\Generic_Process** |  |
+
 
 
 
@@ -147,6 +166,7 @@ public unregister_generic_process(mixed $slug): mixed
 
 
 
+
 ***
 
 ### get_registered_generic_process
@@ -156,6 +176,7 @@ public unregister_generic_process(mixed $slug): mixed
 ```php
 public get_registered_generic_process(): mixed
 ```
+
 
 
 
@@ -193,6 +214,7 @@ public get_generic_process(mixed $slug): mixed
 
 
 
+
 ***
 
 ### get_generic_process_by_object
@@ -200,7 +222,7 @@ public get_generic_process(mixed $slug): mixed
 
 
 ```php
-public get_generic_process_by_object(\Tainacan\GenericBackgroundProcess\Generic_Process $process_object): mixed
+public get_generic_process_by_object(\Tainacan\GenericProcess\Generic_Process $process_object): mixed
 ```
 
 
@@ -214,7 +236,8 @@ public get_generic_process_by_object(\Tainacan\GenericBackgroundProcess\Generic_
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$process_object` | **\Tainacan\GenericBackgroundProcess\Generic_Process** |  |
+| `$process_object` | **\Tainacan\GenericProcess\Generic_Process** |  |
+
 
 
 
@@ -245,6 +268,7 @@ public initialize_generic_process(mixed $slug): mixed
 
 
 
+
 ***
 
 ### save_process_instance
@@ -252,7 +276,7 @@ public initialize_generic_process(mixed $slug): mixed
 Save process instance to the database
 
 ```php
-public save_process_instance(\Tainacan\Tainacan\GenericBackgroundProcess\Generic_Process $process): void
+public save_process_instance(\Tainacan\Tainacan\GenericProcess\Generic_Process $process): void
 ```
 
 
@@ -266,7 +290,8 @@ public save_process_instance(\Tainacan\Tainacan\GenericBackgroundProcess\Generic
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$process` | **\Tainacan\Tainacan\GenericBackgroundProcess\Generic_Process** | The process object |
+| `$process` | **\Tainacan\Tainacan\GenericProcess\Generic_Process** | The process object |
+
 
 
 
@@ -278,7 +303,7 @@ public save_process_instance(\Tainacan\Tainacan\GenericBackgroundProcess\Generic
 Retrieves an Process instance from the database based on its session_id
 
 ```php
-public get_process_instance_by_session_id(string $session_id): \Tainacan\Tainacan\GenericBackgroundProcess\Generic_Process|false
+public get_process_instance_by_session_id(string $session_id): \Tainacan\Tainacan\GenericProcess\Generic_Process|false
 ```
 
 
@@ -301,6 +326,7 @@ The Process object, if found. False otherwise
 
 
 
+
 ***
 
 ### delete_process_instance
@@ -308,7 +334,7 @@ The Process object, if found. False otherwise
 Deletes this process instance from the database
 
 ```php
-public delete_process_instance(\Tainacan\Tainacan\GenericBackgroundProcess\Generic_Process $process): bool
+public delete_process_instance(\Tainacan\Tainacan\GenericProcess\Generic_Process $process): bool
 ```
 
 
@@ -322,7 +348,7 @@ public delete_process_instance(\Tainacan\Tainacan\GenericBackgroundProcess\Gener
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$process` | **\Tainacan\Tainacan\GenericBackgroundProcess\Generic_Process** | The Process object |
+| `$process` | **\Tainacan\Tainacan\GenericProcess\Generic_Process** | The Process object |
 
 
 **Return Value:**
@@ -331,8 +357,55 @@ True, if process is successfully deleted. False on failure.
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -13,7 +13,7 @@
 
 | Constant | Visibility | Type | Value |
 |:---------|:-----------|:-----|:------|
-|`MAPPER_CLASS_PREFIX`|public| |&#039;Tainacan\\Mappers\\&#039;|
+|`MAPPER_CLASS_PREFIX`|public| |&#039;Tainacan\Mappers\\&#039;|
 |`MAPPER_PARAM`|public| |&#039;mapper&#039;|
 
 ## Properties
@@ -70,6 +70,7 @@ public static get_instance(): mixed
 
 
 
+
 ***
 
 ### __construct
@@ -79,6 +80,7 @@ public static get_instance(): mixed
 ```php
 public __construct(): mixed
 ```
+
 
 
 
@@ -110,6 +112,7 @@ public init(): mixed
 
 
 
+
 ***
 
 ### register_mapper
@@ -117,7 +120,7 @@ public init(): mixed
 register mappers class
 
 ```php
-public register_mapper( $class_name): mixed
+public register_mapper(mixed $class_name): mixed
 ```
 
 
@@ -131,7 +134,8 @@ public register_mapper( $class_name): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the object instance |
+| `$class_name` | **mixed** | string &amp;#124; object The class name or the object instance |
+
 
 
 
@@ -143,7 +147,7 @@ public register_mapper( $class_name): mixed
 unregister mappers class
 
 ```php
-public unregister_mapper( $class_name): mixed
+public unregister_mapper(mixed $class_name): mixed
 ```
 
 
@@ -157,7 +161,8 @@ public unregister_mapper( $class_name): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the object instance |
+| `$class_name` | **mixed** | string &amp;#124; object The class name or the object instance |
+
 
 
 
@@ -188,6 +193,7 @@ public get_mappers(string $output = ARRAY_N): mixed
 
 
 
+
 ***
 
 ### get_mapper
@@ -214,6 +220,7 @@ public get_mapper(mixed $slug): mixed
 
 
 
+
 ***
 
 ### mappers_i18n
@@ -236,6 +243,7 @@ public mappers_i18n(array $i18n_strings): array
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$i18n_strings` | **array** |  |
+
 
 
 
@@ -270,6 +278,7 @@ false
 
 
 
+
 ***
 
 ### map_metadatum
@@ -293,6 +302,7 @@ protected map_metadatum(array $item_arr, \Tainacan\Mappers\Mapper $mapper): arra
 |-----------|------|-------------|
 | `$item_arr` | **array** |  |
 | `$mapper` | **\Tainacan\Mappers\Mapper** |  |
+
 
 
 
@@ -325,6 +335,7 @@ protected map(array $item_arr, \Tainacan\Mappers\Mapper $mapper, \WP_REST_Reques
 
 
 
+
 ***
 
 ### mapper_exists
@@ -351,6 +362,7 @@ public mapper_exists(string $mapper): bool
 
 
 
+
 ***
 
 ### check_class_name
@@ -358,7 +370,7 @@ public mapper_exists(string $mapper): bool
 Return namespaced class name
 
 ```php
-public check_class_name(string $class_name, bool $root = false, string $prefix = &#039;Tainacan\Mapper\&#039;): string
+public check_class_name(string $class_name, bool $root = false, string $prefix = &#039;TainacanMapper\&#039;): string
 ```
 
 
@@ -375,6 +387,7 @@ public check_class_name(string $class_name, bool $root = false, string $prefix =
 | `$class_name` | **string** |  |
 | `$root` | **bool** |  |
 | `$prefix` | **string** |  |
+
 
 
 
@@ -402,6 +415,7 @@ public create_mapped_collection(array $collection, \WP_REST_Request $request): m
 |-----------|------|-------------|
 | `$collection` | **array** | collection passed by the collections API endpoint |
 | `$request` | **\WP_REST_Request** |  |
+
 
 
 
@@ -434,8 +448,9 @@ public filter_item_api_response(mixed $item_arr, mixed $item, mixed $request): m
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

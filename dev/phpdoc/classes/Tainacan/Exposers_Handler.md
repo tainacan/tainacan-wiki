@@ -84,6 +84,7 @@ public static get_instance(): mixed
 
 
 
+
 ***
 
 ### __construct
@@ -93,6 +94,7 @@ public static get_instance(): mixed
 ```php
 public __construct(): mixed
 ```
+
 
 
 
@@ -124,6 +126,7 @@ public init(): mixed
 
 
 
+
 ***
 
 ### register_exposer
@@ -131,7 +134,7 @@ public init(): mixed
 register exposers type
 
 ```php
-public register_exposer( $class_name): mixed
+public register_exposer(mixed $class_name): mixed
 ```
 
 
@@ -145,7 +148,8 @@ public register_exposer( $class_name): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the instance |
+| `$class_name` | **mixed** | string &amp;#124; object The class name or the instance |
+
 
 
 
@@ -157,7 +161,7 @@ public register_exposer( $class_name): mixed
 unregister exposers type
 
 ```php
-public unregister_exposer( $class_name): mixed
+public unregister_exposer(mixed $class_name): mixed
 ```
 
 
@@ -171,7 +175,8 @@ public unregister_exposer( $class_name): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the instance |
+| `$class_name` | **mixed** | string &amp;#124; object The class name or the instance |
+
 
 
 
@@ -183,7 +188,7 @@ public unregister_exposer( $class_name): mixed
 Return namespaced class name
 
 ```php
-public check_class_name(string $class_name, bool $root = false, string $prefix = &#039;Tainacan\Exposer\&#039;): string
+public check_class_name(string $class_name, bool $root = false, string $prefix = &#039;TainacanExposer\&#039;): string
 ```
 
 
@@ -200,6 +205,7 @@ public check_class_name(string $class_name, bool $root = false, string $prefix =
 | `$class_name` | **string** |  |
 | `$root` | **bool** |  |
 | `$prefix` | **string** |  |
+
 
 
 
@@ -230,6 +236,7 @@ public is_tainacan_request(\WP_REST_Request $request): bool
 
 
 
+
 ***
 
 ### request_has_url_param
@@ -252,6 +259,7 @@ public static request_has_url_param(\WP_REST_Request $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **\WP_REST_Request** |  |
+
 
 
 
@@ -284,6 +292,7 @@ public rest_request_after_callbacks(\WP_REST_Response $response, \WP_REST_Server
 
 
 
+
 ***
 
 ### exposer_exists
@@ -306,6 +315,7 @@ public exposer_exists(string $exposer): bool
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$exposer` | **string** |  |
+
 
 
 
@@ -340,6 +350,7 @@ false
 
 
 
+
 ***
 
 ### get_exposers
@@ -367,6 +378,7 @@ public get_exposers(string $output = ARRAY_N): array
 **Return Value:**
 
 of slug or array of \Tainacan\Exposers\Exposer
+
 
 
 
@@ -398,6 +410,7 @@ If it does not, return 404
 
 
 
+
 ***
 
 ### get_exposer_urls
@@ -424,8 +437,9 @@ public static get_exposer_urls(string $base_url = &#039;&#039;): string|string[]
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

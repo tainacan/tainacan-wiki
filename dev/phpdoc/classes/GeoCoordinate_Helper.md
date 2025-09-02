@@ -64,6 +64,7 @@ public init(): mixed
 
 
 
+
 ***
 
 ### init_filters
@@ -73,6 +74,7 @@ public init(): mixed
 ```php
 public init_filters(): mixed
 ```
+
 
 
 
@@ -111,6 +113,7 @@ public posts_join(mixed $join, mixed $wp_query): mixed
 
 
 
+
 ***
 
 ### posts_where
@@ -134,6 +137,7 @@ public posts_where(mixed $where, mixed $wp_query): mixed
 |-----------|------|-------------|
 | `$where` | **mixed** |  |
 | `$wp_query` | **mixed** |  |
+
 
 
 
@@ -162,6 +166,7 @@ public static get_instance(): mixed
 
 
 
+
 ***
 
 ### __construct
@@ -182,8 +187,9 @@ private __construct(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -200,6 +200,7 @@ public _toArray(): mixed
 
 
 
+
 ***
 
 ### get_url
@@ -230,8 +231,30 @@ The semantic URL for this metadata. Empty string in case of failure
 
 
 
+
+***
+
+### __construct
+
+
+
+```php
+public __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

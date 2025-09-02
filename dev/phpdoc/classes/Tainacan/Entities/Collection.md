@@ -404,6 +404,36 @@ protected $allow_comments
 
 ***
 
+### allow_item_author_editing
+
+
+
+```php
+protected $allow_item_author_editing
+```
+
+
+
+
+
+
+***
+
+### allow_item_slug_editing
+
+
+
+```php
+protected $allow_item_slug_editing
+```
+
+
+
+
+
+
+***
+
 ### allows_submission
 
 
@@ -470,6 +500,186 @@ protected $submission_default_status
 
 ```php
 protected $submission_use_recaptcha
+```
+
+
+
+
+
+
+***
+
+### item_enabled_document_types
+
+
+
+```php
+protected $item_enabled_document_types
+```
+
+
+
+
+
+
+***
+
+### item_publication_label
+
+
+
+```php
+protected $item_publication_label
+```
+
+
+
+
+
+
+***
+
+### item_document_label
+
+
+
+```php
+protected $item_document_label
+```
+
+
+
+
+
+
+***
+
+### item_thumbnail_label
+
+
+
+```php
+protected $item_thumbnail_label
+```
+
+
+
+
+
+
+***
+
+### item_enable_thubmnail
+
+
+
+```php
+protected $item_enable_thubmnail
+```
+
+
+
+
+
+
+***
+
+### item_attachment_label
+
+
+
+```php
+protected $item_attachment_label
+```
+
+
+
+
+
+
+***
+
+### item_enable_attachments
+
+
+
+```php
+protected $item_enable_attachments
+```
+
+
+
+
+
+
+***
+
+### item_enable_metadata_focus_mode
+
+
+
+```php
+protected $item_enable_metadata_focus_mode
+```
+
+
+
+
+
+
+***
+
+### item_enable_metadata_required_filter
+
+
+
+```php
+protected $item_enable_metadata_required_filter
+```
+
+
+
+
+
+
+***
+
+### item_enable_metadata_searchbar
+
+
+
+```php
+protected $item_enable_metadata_searchbar
+```
+
+
+
+
+
+
+***
+
+### item_enable_metadata_collapses
+
+
+
+```php
+protected $item_enable_metadata_collapses
+```
+
+
+
+
+
+
+***
+
+### item_enable_metadata_enumeration
+
+
+
+```php
+protected $item_enable_metadata_enumeration
 ```
 
 
@@ -566,6 +776,7 @@ public __toString(): mixed
 
 
 
+
 ***
 
 ### _toArray
@@ -575,6 +786,7 @@ public __toString(): mixed
 ```php
 public _toArray(): mixed
 ```
+
 
 
 
@@ -599,6 +811,7 @@ public register_collection_item_post_type(): \WP_Post_Type|\WP_Error
 Each collection is a post type, and each item inside a collection is a post of this post type
 
 This method register the post type for a collection, so that items can be created.
+
 
 
 
@@ -633,6 +846,7 @@ Object with all the capabilities as member variables.
 
 
 
+
 ***
 
 ### get_capabilities
@@ -654,6 +868,7 @@ public get_capabilities(): object
 **Return Value:**
 
 Object with all the capabilities as member variables.
+
 
 
 
@@ -683,6 +898,7 @@ public get_attachments(null $exclude = null): array
 
 
 
+
 ***
 
 ### get_author_name
@@ -692,6 +908,7 @@ public get_attachments(null $exclude = null): array
 ```php
 public get_author_name(): string
 ```
+
 
 
 
@@ -723,6 +940,7 @@ public get_thumbnail(): array
 
 
 
+
 ***
 
 ### get_header_image
@@ -743,6 +961,7 @@ public get_header_image(): false|string
 
 
 
+
 ***
 
 ### set__thumbnail_id
@@ -750,7 +969,7 @@ public get_header_image(): false|string
 
 
 ```php
-public set__thumbnail_id( $id): mixed
+public set__thumbnail_id(mixed $id): mixed
 ```
 
 
@@ -764,7 +983,8 @@ public set__thumbnail_id( $id): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$id` | **** |  |
+| `$id` | **mixed** |  |
+
 
 
 
@@ -778,6 +998,7 @@ public set__thumbnail_id( $id): mixed
 ```php
 public get__thumbnail_id(): int|string
 ```
+
 
 
 
@@ -809,6 +1030,7 @@ public get_modification_date(): mixed|null
 
 
 
+
 ***
 
 ### get_creation_date
@@ -818,6 +1040,7 @@ public get_modification_date(): mixed|null
 ```php
 public get_creation_date(): mixed|null
 ```
+
 
 
 
@@ -849,6 +1072,7 @@ public get_author_id(): mixed|null
 
 
 
+
 ***
 
 ### get_url
@@ -858,6 +1082,7 @@ public get_author_id(): mixed|null
 ```php
 public get_url(): mixed|null
 ```
+
 
 
 
@@ -889,6 +1114,7 @@ public get_name(): string
 
 
 
+
 ***
 
 ### get_slug
@@ -898,6 +1124,7 @@ Get collection slug
 ```php
 public get_slug(): string
 ```
+
 
 
 
@@ -929,6 +1156,7 @@ public get_order(): int
 
 
 
+
 ***
 
 ### get_parent
@@ -938,6 +1166,7 @@ Get collection parent ID
 ```php
 public get_parent(): int
 ```
+
 
 
 
@@ -969,6 +1198,7 @@ public get_description(): string
 
 
 
+
 ***
 
 ### get_default_order
@@ -978,6 +1208,7 @@ Get collection default order
 ```php
 public get_default_order(): string
 ```
+
 
 
 
@@ -1009,6 +1240,7 @@ public get_default_orderby(): string
 
 
 
+
 ***
 
 ### get_default_displayed_metadata
@@ -1018,6 +1250,7 @@ Get collection columns option
 ```php
 public get_default_displayed_metadata(): string
 ```
+
 
 
 
@@ -1049,6 +1282,7 @@ public get_default_view_mode(): string
 
 
 
+
 ***
 
 ### get_enabled_view_modes
@@ -1069,6 +1303,7 @@ public get_enabled_view_modes(): string
 
 
 
+
 ***
 
 ### get_metadata_order
@@ -1076,7 +1311,7 @@ public get_enabled_view_modes(): string
 Get collection metadata ordination
 
 ```php
-public get_metadata_order(): object
+public get_metadata_order(): object|string
 ```
 
 
@@ -1087,9 +1322,6 @@ public get_metadata_order(): object
 
 
 
-**Return Value:**
-
-| string
 
 
 
@@ -1100,7 +1332,7 @@ public get_metadata_order(): object
 Get collection metadata section ordination
 
 ```php
-public get_metadata_section_order(): array
+public get_metadata_section_order(): array|object|string
 ```
 
 
@@ -1111,9 +1343,6 @@ public get_metadata_section_order(): array
 
 
 
-**Return Value:**
-
-| Object | string
 
 
 
@@ -1126,6 +1355,7 @@ Get enable cover page attribute
 ```php
 public get_enable_cover_page(): string
 ```
+
 
 
 
@@ -1157,6 +1387,7 @@ public get_header_image_id(): string
 
 
 
+
 ***
 
 ### is_cover_page_enabled
@@ -1166,6 +1397,7 @@ Return true if enabled cover page is set to yes
 ```php
 public is_cover_page_enabled(): bool
 ```
+
 
 
 
@@ -1197,6 +1429,7 @@ public get_cover_page_id(): string
 
 
 
+
 ***
 
 ### get_filters_order
@@ -1206,6 +1439,7 @@ Get collection filters ordination
 ```php
 public get_filters_order(): string
 ```
+
 
 
 
@@ -1237,6 +1471,7 @@ This identifier is used to register the collection post type and never changes, 
 
 
 
+
 ***
 
 ### get_metadata
@@ -1253,6 +1488,13 @@ Returns an array of \Entity\Metadatum objects, representing all the metadatum of
 
 
 
+
+
+
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
 
 
 
@@ -1279,6 +1521,13 @@ Returns an array of \Entity\Filter objects, representing all the filters of the 
 
 
 
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 **See Also:**
 
 *  - \Tainacan\Repositories\Filters->fetch()
@@ -1292,6 +1541,7 @@ Get the two core metadata of the collection (title and description)
 ```php
 public get_core_metadata(): mixed
 ```
+
 
 
 
@@ -1327,6 +1577,7 @@ The Core Title Metadatum
 
 
 
+
 ***
 
 ### get_core_description_metadatum
@@ -1348,6 +1599,7 @@ public get_core_description_metadatum(): \Tainacan\Entities\Metadatum
 **Return Value:**
 
 The Core Description Metadatum
+
 
 
 
@@ -1375,6 +1627,7 @@ public get_comment_status(): string
 
 
 
+
 ***
 
 ### get_allow_comments
@@ -1384,6 +1637,49 @@ Checks if comments are allowed for the current Collection Items.
 ```php
 public get_allow_comments(): bool
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_allow_item_slug_editing
+
+Checks if changing the item slug is allowed for the current Collection Items.
+
+```php
+public get_allow_item_slug_editing(): bool
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_allow_item_author_editing
+
+Checks if changing the item authorship is allowed for the current Collection Items.
+
+```php
+public get_allow_item_author_editing(): bool
+```
+
 
 
 
@@ -1419,6 +1715,7 @@ public get_submission_anonymous_user(): string
 
 
 
+
 ***
 
 ### get_submission_default_status
@@ -1428,6 +1725,7 @@ Get default submission status
 ```php
 public get_submission_default_status(): string
 ```
+
 
 
 
@@ -1463,6 +1761,7 @@ public get_allows_submission(): string
 
 
 
+
 ***
 
 ### get_hide_items_thumbnail_on_lists
@@ -1472,6 +1771,7 @@ Get the state of $hide_items_thumbnail_on_lists to decide if it should always di
 ```php
 public get_hide_items_thumbnail_on_lists(): string
 ```
+
 
 
 
@@ -1507,6 +1807,7 @@ public get_submission_use_recaptcha(): string
 
 
 
+
 ***
 
 ### get_default_metadata_section_properties
@@ -1523,6 +1824,307 @@ public get_default_metadata_section_properties(): void
 
 
 
+
+
+
+
+
+***
+
+### get_item_enabled_document_types
+
+Get the enabled document types for this collection.
+
+```php
+public get_item_enabled_document_types(): array
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+The enabled document types.
+
+
+
+
+***
+
+### get_item_publication_label
+
+Get the label for the section in this collection.
+
+```php
+public get_item_publication_label(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+The label for the publishing section.
+
+
+
+
+***
+
+### get_item_document_label
+
+Get the label for the document section in this collection.
+
+```php
+public get_item_document_label(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+The label for the section.
+
+
+
+
+***
+
+### get_item_thumbnail_label
+
+Get the label for the thumbnail section in this collection.
+
+```php
+public get_item_thumbnail_label(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+The label for the thumbnail section.
+
+
+
+
+***
+
+### get_item_enable_thumbnail
+
+Check if thumbnail are enabled for this collection.
+
+```php
+public get_item_enable_thumbnail(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+'yes' if thumbnail are enabled, 'no' otherwise.
+
+
+
+
+***
+
+### get_item_attachment_label
+
+Get the label for the attachment section in this collection.
+
+```php
+public get_item_attachment_label(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+The label for the attachment section.
+
+
+
+
+***
+
+### get_item_enable_attachments
+
+Check if attachments are enabled for this collection.
+
+```php
+public get_item_enable_attachments(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+'yes' if attachments are enabled, 'no' otherwise.
+
+
+
+
+***
+
+### get_item_enable_metadata_focus_mode
+
+Check if metadata focus mode is enabled for this collection.
+
+```php
+public get_item_enable_metadata_focus_mode(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+'yes' if metadata focus mode is enabled, 'no' otherwise.
+
+
+
+
+***
+
+### get_item_enable_metadata_required_filter
+
+Check if metadata required filter is enabled for this collection.
+
+```php
+public get_item_enable_metadata_required_filter(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+'yes' if metadata required filter is enabled, 'no' otherwise.
+
+
+
+
+***
+
+### get_item_enable_metadata_searchbar
+
+Check if metadata search bar is enabled for this collection.
+
+```php
+public get_item_enable_metadata_searchbar(): string
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+'yes' if metadata search bar is enabled, 'no' otherwise.
+
+
+
+
+***
+
+### get_item_enable_metadata_collapses
+
+Check if metadata collapses are enabled for this collection.
+
+```php
+public get_item_enable_metadata_collapses(): bool
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+'yes' if metadata collapses are enabled, 'no' otherwise.
+
+
+
+
+***
+
+### get_item_enable_metadata_enumeration
+
+Check if metadata and metadata section should be enumerated in the edition form.
+
+```php
+public get_item_enable_metadata_enumeration(): bool
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+'yes' if metadata are enumerated, 'no' otherwise.
 
 
 
@@ -1549,6 +2151,7 @@ public set_name(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1583,6 +2186,7 @@ to make it unique (e.g slug-1, slug-2)
 
 
 
+
 ***
 
 ### set_order
@@ -1605,6 +2209,7 @@ public set_order(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1635,6 +2240,7 @@ public set_parent(mixed $value): void
 
 
 
+
 ***
 
 ### set_description
@@ -1657,6 +2263,7 @@ public set_description(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1687,6 +2294,7 @@ public set_default_order(mixed $value): void
 
 
 
+
 ***
 
 ### set_default_orderby
@@ -1709,6 +2317,7 @@ public set_default_orderby(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1739,6 +2348,7 @@ public set_default_displayed_metadata(array $value): void
 
 
 
+
 ***
 
 ### set_default_view_mode
@@ -1761,6 +2371,7 @@ public set_default_view_mode(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1791,6 +2402,7 @@ public set_enabled_view_modes(mixed $value): void
 
 
 
+
 ***
 
 ### set_metadata_order
@@ -1813,6 +2425,7 @@ public set_metadata_order(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1843,6 +2456,7 @@ public set_metadata_section_order(mixed $value): void
 
 
 
+
 ***
 
 ### set_filters_order
@@ -1865,6 +2479,7 @@ public set_filters_order(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1895,6 +2510,7 @@ public set_enable_cover_page(mixed $value): void
 
 
 
+
 ***
 
 ### set_cover_page_id
@@ -1917,6 +2533,7 @@ public set_cover_page_id(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1947,6 +2564,7 @@ public set_header_image_id(mixed $value): void
 
 
 
+
 ***
 
 ### set_comment_status
@@ -1954,7 +2572,7 @@ public set_header_image_id(mixed $value): void
 Sets if comments are allowed for the current Collection.
 
 ```php
-public set_comment_status( $value): mixed
+public set_comment_status(mixed $value): mixed
 ```
 
 
@@ -1968,7 +2586,8 @@ public set_comment_status( $value): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$value` | **** | string &quot;open&quot;&amp;#124;&quot;closed&quot; |
+| `$value` | **mixed** | string &quot;open&quot;&amp;#124;&quot;closed&quot; |
+
 
 
 
@@ -1980,7 +2599,7 @@ public set_comment_status( $value): mixed
 Sets if comments are allowed for the current Collection Items.
 
 ```php
-public set_allow_comments( $value): mixed
+public set_allow_comments(mixed $value): mixed
 ```
 
 
@@ -1994,7 +2613,62 @@ public set_allow_comments( $value): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$value` | **** | bool |
+| `$value` | **mixed** | bool |
+
+
+
+
+
+***
+
+### set_allow_item_author_editing
+
+Sets if changind the author is allowed for the current Collection Items.
+
+```php
+public set_allow_item_author_editing(mixed $value): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **mixed** | bool |
+
+
+
+
+
+***
+
+### set_allow_item_slug_editing
+
+Sets if changind the item url is allowed for the current Collection Items.
+
+```php
+public set_allow_item_slug_editing(mixed $value): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **mixed** | bool |
+
 
 
 
@@ -2025,6 +2699,7 @@ public set_submission_anonymous_user(mixed $value): void
 
 
 
+
 ***
 
 ### set_submission_default_status
@@ -2047,6 +2722,7 @@ public set_submission_default_status(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -2077,6 +2753,7 @@ public set_allows_submission(mixed $value): void
 
 
 
+
 ***
 
 ### set_hide_items_thumbnail_on_lists
@@ -2099,6 +2776,7 @@ public set_hide_items_thumbnail_on_lists(string $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **string** |  |
+
 
 
 
@@ -2129,6 +2807,7 @@ public set_submission_use_recaptcha(mixed $value): void
 
 
 
+
 ***
 
 ### set_default_metadata_section_properties
@@ -2155,6 +2834,331 @@ public set_default_metadata_section_properties(mixed $value): void
 
 
 
+
+***
+
+### set_item_enabled_document_types
+
+Set the enabled document types for this collection.
+
+```php
+public set_item_enabled_document_types(array $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **array** | The enabled document types. |
+
+
+
+
+
+***
+
+### set_item_publication_label
+
+Set the label for the item publication section in this collection.
+
+```php
+public set_item_publication_label(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | The label for the publication section. |
+
+
+
+
+
+***
+
+### set_item_document_label
+
+Set the label for the document section in this collection.
+
+```php
+public set_item_document_label(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | The label for the document section. |
+
+
+
+
+
+***
+
+### set_item_thumbnail_label
+
+Set the label for the thumbnail section in this collection.
+
+```php
+public set_item_thumbnail_label(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | The label for the thumbnail section. |
+
+
+
+
+
+***
+
+### set_item_enable_thumbnail
+
+Enable or disable thumbnail for this collection.
+
+```php
+public set_item_enable_thumbnail(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | &#039;yes&#039; to enable thumbnail, &#039;no&#039; to disable. |
+
+
+
+
+
+***
+
+### set_item_attachment_label
+
+Set the label for the attachment section in this collection.
+
+```php
+public set_item_attachment_label(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | The label for the attachment section. |
+
+
+
+
+
+***
+
+### set_item_enable_attachments
+
+Enable or disable attachments for this collection.
+
+```php
+public set_item_enable_attachments(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | &#039;yes&#039; to enable attachments, &#039;no&#039; to disable. |
+
+
+
+
+
+***
+
+### set_item_enable_metadata_focus_mode
+
+Enable or disable metadata focus mode for this collection.
+
+```php
+public set_item_enable_metadata_focus_mode(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | &#039;yes&#039; to enable metadata focus mode, &#039;no&#039; to disable. |
+
+
+
+
+
+***
+
+### set_item_enable_metadata_required_filter
+
+Enable or disable metadata required filter for this collection.
+
+```php
+public set_item_enable_metadata_required_filter(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | &#039;yes&#039; to enable metadata required filter, &#039;no&#039; to disable. |
+
+
+
+
+
+***
+
+### set_item_enable_metadata_searchbar
+
+Enable or disable metadata search bar for this collection.
+
+```php
+public set_item_enable_metadata_searchbar(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | &#039;yes&#039; to enable metadata search bar, &#039;no&#039; to disable. |
+
+
+
+
+
+***
+
+### set_item_enable_metadata_collapses
+
+Enable or disable metadata collapses for this collection.
+
+```php
+public set_item_enable_metadata_collapses(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | &#039;yes&#039; to enable metadata collapses, &#039;no&#039; to disable. |
+
+
+
+
+
+***
+
+### set_item_enable_metadata_enumeration
+
+Enable or disable metadata and metadata sections enumeration for the item edition form this collection.
+
+```php
+public set_item_enable_metadata_enumeration(string $value): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **string** | &#039;yes&#039; to enable metadata enumeration, &#039;no&#039; to disable. |
+
+
+
+
+
 ***
 
 ### validate
@@ -2164,6 +3168,7 @@ Validate Collection
 ```php
 public validate(): bool
 ```
+
 
 
 
@@ -2207,6 +3212,7 @@ $collection->user_can('read_private_items');
 
 
 
+
 ***
 
 
@@ -2239,6 +3245,12 @@ Attention: If the ID or Post provided do not match the Entity post type, an Exce
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### get_repository
@@ -2259,6 +3271,7 @@ public get_repository(): mixed
 
 
 
+
 ***
 
 ### get_date_i18n
@@ -2266,7 +3279,7 @@ public get_repository(): mixed
 
 
 ```php
-public get_date_i18n( $date): string
+public get_date_i18n(mixed $date): string
 ```
 
 
@@ -2280,7 +3293,8 @@ public get_date_i18n( $date): string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$date` | **** |  |
+| `$date` | **mixed** |  |
+
 
 
 
@@ -2315,6 +3329,7 @@ property value
 
 
 
+
 ***
 
 ### set_mapped_property
@@ -2339,6 +3354,7 @@ using the prop name dynamically, use the set() method
 |-----------|------|-------------|
 | `$prop` | **string** | id of the property |
 | `$value` | **mixed** | the value to be setted |
+
 
 
 
@@ -2374,6 +3390,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### get
@@ -2404,6 +3421,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### set_status
@@ -2430,6 +3448,7 @@ public set_status(string $value): mixed
 
 
 
+
 ***
 
 ### validate
@@ -2441,6 +3460,7 @@ public validate(): bool
 ```
 
 If Entity is not valid, validation error messages are available via get_errors() method
+
 
 
 
@@ -2476,6 +3496,7 @@ public validate_prop(string $prop): bool
 
 
 
+
 ***
 
 ### get_errors
@@ -2485,6 +3506,7 @@ public validate_prop(string $prop): bool
 ```php
 public get_errors(): mixed
 ```
+
 
 
 
@@ -2516,6 +3538,7 @@ public static get_post_type(): mixed
 
 
 
+
 ***
 
 ### get_capability_type
@@ -2536,6 +3559,7 @@ public static get_capability_type(): mixed
 
 
 
+
 ***
 
 ### get_status
@@ -2545,6 +3569,7 @@ public static get_capability_type(): mixed
 ```php
 public get_status(): mixed
 ```
+
 
 
 
@@ -2576,6 +3601,7 @@ This identifier is used to register the entity on database, ex.: post_type
 
 
 
+
 ***
 
 ### get_id
@@ -2585,6 +3611,7 @@ Get the entity ID
 ```php
 public get_id(): int
 ```
+
 
 
 
@@ -2623,6 +3650,7 @@ public add_error(mixed $type, mixed $message): mixed
 
 
 
+
 ***
 
 ### reset_errors
@@ -2643,6 +3671,7 @@ public reset_errors(): mixed
 
 
 
+
 ***
 
 ### get_validated
@@ -2652,6 +3681,7 @@ public reset_errors(): mixed
 ```php
 public get_validated(): mixed
 ```
+
 
 
 
@@ -2689,6 +3719,7 @@ protected set_validated(mixed $value): mixed
 
 
 
+
 ***
 
 ### set_as_valid
@@ -2698,6 +3729,7 @@ protected set_validated(mixed $value): mixed
 ```php
 protected set_as_valid(): mixed
 ```
+
 
 
 
@@ -2729,6 +3761,7 @@ public _toArray(): mixed
 
 
 
+
 ***
 
 ### _toJson
@@ -2738,6 +3771,7 @@ public _toArray(): mixed
 ```php
 public _toJson(): mixed
 ```
+
 
 
 
@@ -2775,6 +3809,7 @@ public can_read(int|\WP_User $user = null): bool
 
 
 
+
 ***
 
 ### can_edit
@@ -2797,6 +3832,7 @@ public can_edit(int|\WP_User|null $user = null): bool
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
+
 
 
 
@@ -2827,6 +3863,7 @@ public can_delete(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### can_publish
@@ -2853,6 +3890,7 @@ public can_publish(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### get_capabilities
@@ -2874,6 +3912,7 @@ public get_capabilities(): object
 **Return Value:**
 
 Object with all the capabilities as member variables.
+
 
 
 
@@ -2903,8 +3942,9 @@ public diff(\Tainacan\Entities\Entity|int|\WP_Post $which): array
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

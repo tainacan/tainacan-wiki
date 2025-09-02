@@ -94,6 +94,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### __invoke
@@ -145,6 +146,7 @@ Success:
 
 
 
+
 ***
 
 ### recalculate_items_for_all_collections
@@ -154,6 +156,7 @@ Success:
 ```php
 private recalculate_items_for_all_collections(): mixed
 ```
+
 
 
 
@@ -191,6 +194,7 @@ private recalculate_items(mixed $collection_id): mixed
 
 
 
+
 ***
 
 ### recreate_control_metadata_collection_definitions
@@ -200,6 +204,7 @@ private recalculate_items(mixed $collection_id): mixed
 ```php
 private recreate_control_metadata_collection_definitions(): mixed
 ```
+
 
 
 
@@ -237,8 +242,9 @@ private perform_item_recalculation(mixed $item): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -2,9 +2,17 @@
 
 # Search_Engine
 
+This class implements the default Tainacan Search engine.
+
+It replaces the default WordPress behavior, which is search only in the title and content of posts, and searches every item metadata.
+
+This is a very basic and non-performatic approach. For better results, you should try other WordPress plugins for this task. We recommend integration with Elastic Search
 
 
-
+This class is a modification of the class found in the Search Everything plugin. All credits to the authors
+http://wordpress.org/plugins/search-everything/
+Author: Sovrn, zemanta
+Author URI: http://www.sovrn.com
 
 * Full name: `\Tainacan\Search_Engine`
 
@@ -160,6 +168,7 @@ public __construct(mixed $ajax_query = false): mixed
 
 
 
+
 ***
 
 ### search_hooks
@@ -169,6 +178,7 @@ public __construct(mixed $ajax_query = false): mixed
 ```php
 public search_hooks(): mixed
 ```
+
 
 
 
@@ -200,6 +210,7 @@ public get_search_terms(): mixed
 
 
 
+
 ***
 
 ### init_tainacan_search_vars
@@ -209,6 +220,7 @@ public get_search_terms(): mixed
 ```php
 public init_tainacan_search_vars(): mixed
 ```
+
 
 
 
@@ -240,6 +252,7 @@ public get_where_to_title_and_content(): mixed
 
 
 
+
 ***
 
 ### get_where_to_term_taxonomies
@@ -260,6 +273,7 @@ public get_where_to_term_taxonomies(): mixed
 
 
 
+
 ***
 
 ### get_where_to_metadatas
@@ -269,6 +283,7 @@ public get_where_to_term_taxonomies(): mixed
 ```php
 public get_where_to_metadatas(): mixed
 ```
+
 
 
 
@@ -307,6 +322,7 @@ public search_where(mixed $where, mixed $wp_query): mixed
 
 
 
+
 ***
 
 ### distinct
@@ -329,6 +345,7 @@ public distinct(mixed $query): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$query` | **mixed** |  |
+
 
 
 
@@ -359,8 +376,9 @@ public relationships_join(mixed $join): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

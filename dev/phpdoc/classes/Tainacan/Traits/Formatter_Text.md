@@ -19,12 +19,12 @@ Class for formatter texts
 
 
 ```php
-public make_clickable_links(mixed $text): string
+public static make_clickable_links(mixed $text): string
 ```
 
 
 
-
+* This method is **static**.
 
 
 
@@ -42,8 +42,9 @@ Texts with url's transformed in html tag <a>
 
 
 
+
 ***
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02
 

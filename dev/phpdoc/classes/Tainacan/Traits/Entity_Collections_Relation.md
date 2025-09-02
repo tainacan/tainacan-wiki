@@ -32,6 +32,7 @@ public get_collections_ids(): mixed
 
 
 
+
 ***
 
 ### get_collections
@@ -41,6 +42,7 @@ public get_collections_ids(): mixed
 ```php
 public get_collections(): mixed
 ```
+
 
 
 
@@ -78,6 +80,7 @@ public set_collections_ids(array $value): mixed
 
 
 
+
 ***
 
 ### set_collections
@@ -100,6 +103,7 @@ public set_collections(array $collections): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$collections` | **array** |  |
+
 
 
 
@@ -130,6 +134,7 @@ public add_collection_id(mixed $new_collection_id): mixed
 
 
 
+
 ***
 
 ### remove_collection_id
@@ -156,8 +161,9 @@ public remove_collection_id(mixed $collection_id): mixed
 
 
 
+
 ***
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02
 

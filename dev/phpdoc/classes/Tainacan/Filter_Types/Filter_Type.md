@@ -109,7 +109,7 @@ private string $script
 The name of the web component used by the Form
 
 ```php
-private bool $form_component
+private bool|string $form_component
 ```
 
 
@@ -136,10 +136,25 @@ private string $preview_template
 
 ### use_max_options
 
-
+Defines if the filter type should use the max options
 
 ```php
 protected $use_max_options
+```
+
+
+
+
+
+
+***
+
+### use_input_placeholder
+
+Defines if the filter type should provide a placeholder for the input field
+
+```php
+protected $use_input_placeholder
 ```
 
 
@@ -170,6 +185,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### form
@@ -179,6 +195,7 @@ generate the metadata for this metadatum type
 ```php
 public form(): mixed
 ```
+
 
 
 
@@ -216,6 +233,7 @@ public set_name(string $name): mixed
 
 
 
+
 ***
 
 ### get_name
@@ -225,6 +243,7 @@ public set_name(string $name): mixed
 ```php
 public get_name(): string
 ```
+
 
 
 
@@ -260,6 +279,7 @@ Supported types by the filter
 
 
 
+
 ***
 
 ### set_supported_types
@@ -286,6 +306,7 @@ public set_supported_types(array $supported_types): mixed
 
 
 
+
 ***
 
 ### get_component
@@ -295,6 +316,7 @@ public set_supported_types(array $supported_types): mixed
 ```php
 public get_component(): mixed
 ```
+
 
 
 
@@ -332,6 +354,7 @@ public set_preview_template(string $preview_template): mixed
 
 
 
+
 ***
 
 ### get_preview_template
@@ -341,6 +364,7 @@ public set_preview_template(string $preview_template): mixed
 ```php
 public get_preview_template(): string
 ```
+
 
 
 
@@ -372,6 +396,7 @@ public _toArray(): array
 
 
 
+
 ***
 
 ### set_options
@@ -379,7 +404,7 @@ public _toArray(): array
 
 
 ```php
-public set_options( $options): mixed
+public set_options(mixed $options): mixed
 ```
 
 
@@ -393,7 +418,8 @@ public set_options( $options): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$options` | **** |  |
+| `$options` | **mixed** |  |
+
 
 
 
@@ -420,6 +446,7 @@ public set_default_options(array $options): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$options` | **array** |  |
+
 
 
 
@@ -454,6 +481,12 @@ True if options are valid. If invalid, returns an array where keys are the metad
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### set_component
@@ -476,6 +509,7 @@ public set_component(mixed $component): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$component` | **mixed** |  |
+
 
 
 
@@ -506,6 +540,7 @@ public set_script(string $script): mixed
 
 
 
+
 ***
 
 ### get_options
@@ -528,6 +563,7 @@ public get_options(): array
 **Return Value:**
 
 Filter type options
+
 
 
 
@@ -557,6 +593,7 @@ public set_use_max_options(mixed $use_max_options): mixed
 
 
 
+
 ***
 
 ### get_use_max_options
@@ -566,6 +603,55 @@ public set_use_max_options(mixed $use_max_options): mixed
 ```php
 public get_use_max_options(): mixed
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### set_use_input_placeholder
+
+
+
+```php
+public set_use_input_placeholder(mixed $use_input_placeholder): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$use_input_placeholder` | **mixed** |  |
+
+
+
+
+
+***
+
+### get_use_input_placeholder
+
+
+
+```php
+public get_use_input_placeholder(): mixed
+```
+
 
 
 
@@ -607,6 +693,7 @@ the option value, the default value or an empty string
 
 
 
+
 ***
 
 ### get_form_labels
@@ -616,6 +703,7 @@ allow i18n from messages
 ```php
 public get_form_labels(): mixed
 ```
+
 
 
 
@@ -647,6 +735,7 @@ public get_form_component(): string
 
 
 
+
 ***
 
 ### get_script
@@ -667,6 +756,7 @@ public get_script(): string
 
 
 
+
 ***
 
 ### set_form_component
@@ -674,7 +764,7 @@ public get_script(): string
 
 
 ```php
-public set_form_component( $form_component): mixed
+public set_form_component(mixed $form_component): mixed
 ```
 
 
@@ -688,7 +778,8 @@ public set_form_component( $form_component): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$form_component` | **** | The web component that will render the filter options form |
+| `$form_component` | **mixed** | The web component that will render the filter options form |
+
 
 
 
@@ -713,8 +804,9 @@ public get_filter_type(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

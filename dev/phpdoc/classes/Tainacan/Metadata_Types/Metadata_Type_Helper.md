@@ -13,21 +13,6 @@ Class MetadataTypeHelper
 ## Properties
 
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ### registered_metadata_type
 
 Stores external metadata type available to be used in Tainacan
@@ -61,46 +46,6 @@ private $Tainacan_Metadata
 ## Methods
 
 
-### get_instance
-
-
-
-```php
-public static get_instance(): mixed
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
-
-```php
-private __construct(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
 ### init
 
 
@@ -108,6 +53,7 @@ private __construct(): mixed
 ```php
 private init(): mixed
 ```
+
 
 
 
@@ -128,6 +74,7 @@ private init(): mixed
 ```php
 public register_metadata_type_component(): mixed
 ```
+
 
 
 
@@ -168,6 +115,7 @@ public register_metadata_type(string $handle, mixed $class_name, mixed $script_p
 
 
 
+
 ***
 
 ### get_registered_metadata_type
@@ -189,6 +137,7 @@ public get_registered_metadata_type(): array
 **Return Value:**
 
 The list of registered metadata type
+
 
 
 
@@ -222,8 +171,55 @@ The metadata type definition or false if it is not found
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

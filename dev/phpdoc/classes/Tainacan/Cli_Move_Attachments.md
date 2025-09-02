@@ -79,6 +79,7 @@ See (URL to docs) for more information
 
 
 
+
 ***
 
 ### is_item_attachment
@@ -101,6 +102,7 @@ private is_item_attachment(mixed $att): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$att` | **mixed** |  |
+
 
 
 
@@ -131,6 +133,7 @@ private is_document(mixed $attachment_id): mixed
 
 
 
+
 ***
 
 ### get_collection
@@ -157,8 +160,9 @@ private get_collection(mixed $id): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

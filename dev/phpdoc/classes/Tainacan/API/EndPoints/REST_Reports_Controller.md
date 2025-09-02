@@ -95,6 +95,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### init_objects
@@ -104,6 +105,7 @@ public __construct(): mixed
 ```php
 public init_objects(): mixed
 ```
+
 
 
 
@@ -135,6 +137,12 @@ public register_routes(): mixed
 
 
 
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
+
+
+
 ***
 
 ### reports_permissions_check
@@ -157,6 +165,7 @@ public reports_permissions_check(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -187,6 +196,7 @@ public get_collections(mixed $request): mixed
 
 
 
+
 ***
 
 ### get_summary
@@ -209,6 +219,7 @@ public get_summary(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -239,6 +250,7 @@ public get_taxonomies_list(mixed $request): mixed
 
 
 
+
 ***
 
 ### get_taxonomy
@@ -261,6 +273,7 @@ public get_taxonomy(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -291,6 +304,7 @@ public get_metadata(mixed $request): mixed
 
 
 
+
 ***
 
 ### get_stats_collection_metadata
@@ -313,6 +327,7 @@ public get_stats_collection_metadata(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -344,6 +359,7 @@ private query_item_metadata_distribution(mixed $meta_ids, mixed $collection_post
 
 
 
+
 ***
 
 ### query_count_used_taxononomies
@@ -353,6 +369,7 @@ private query_item_metadata_distribution(mixed $meta_ids, mixed $collection_post
 ```php
 private query_count_used_taxononomies(): mixed
 ```
+
 
 
 
@@ -390,6 +407,7 @@ public get_activities(mixed $request): mixed
 
 
 
+
 ***
 
 ### get_activities_general
@@ -413,6 +431,7 @@ private get_activities_general(mixed $collection_id = false, mixed $interval = f
 |-----------|------|-------------|
 | `$collection_id` | **mixed** |  |
 | `$interval` | **mixed** |  |
+
 
 
 
@@ -444,6 +463,7 @@ private get_activities_general_by_user(mixed $collection_id = false, mixed $inte
 
 
 
+
 ***
 
 ### get_activities_users
@@ -466,6 +486,7 @@ private get_activities_users(mixed $collection_id = false): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$collection_id` | **mixed** |  |
+
 
 
 
@@ -497,6 +518,7 @@ private get_cache_object(mixed $key, mixed $request): mixed
 
 
 
+
 ***
 
 ### set_cache_object
@@ -520,6 +542,7 @@ private set_cache_object(mixed $key, mixed $data): mixed
 |-----------|------|-------------|
 | `$key` | **mixed** |  |
 | `$data` | **mixed** |  |
+
 
 
 
@@ -550,6 +573,28 @@ public get_endpoint_args_for_item_schema(string $method = null): array|mixed
 
 
 
+
+***
+
+### get_metadata_schema
+
+
+
+```php
+public get_metadata_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 ### get_collection_schema
@@ -559,6 +604,91 @@ public get_endpoint_args_for_item_schema(string $method = null): array|mixed
 ```php
 public get_collection_schema(): mixed
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_collection_metadatum_schema
+
+
+
+```php
+public get_collection_metadatum_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_collection_summary_schema
+
+
+
+```php
+public get_collection_summary_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_taxonomy_schema
+
+
+
+```php
+public get_taxonomy_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_taxonomy_terms_schema
+
+
+
+```php
+public get_taxonomy_terms_schema(): mixed
+```
+
 
 
 
@@ -590,6 +720,28 @@ public get_summary_schema(): mixed
 
 
 
+
+***
+
+### get_activities_schema
+
+
+
+```php
+public get_activities_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 ### get_schema
@@ -599,6 +751,7 @@ public get_summary_schema(): mixed
 ```php
 public get_schema(): mixed
 ```
+
 
 
 
@@ -634,6 +787,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### filter_object_by_attributes
@@ -641,7 +795,7 @@ public __construct(): mixed
 
 
 ```php
-protected filter_object_by_attributes( $object,  $attributes): array
+protected filter_object_by_attributes(mixed $object, mixed $attributes): array
 ```
 
 
@@ -655,8 +809,9 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$attributes` | **** |  |
+| `$object` | **mixed** |  |
+| `$attributes` | **mixed** |  |
+
 
 
 
@@ -668,7 +823,7 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 
 ```php
-protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\Entity
+protected prepare_item_for_updating(mixed $object, mixed $new_values): \Tainacan\Entities\Entity
 ```
 
 
@@ -682,8 +837,9 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$new_values` | **** |  |
+| `$object` | **mixed** |  |
+| `$new_values` | **mixed** |  |
+
 
 
 
@@ -695,7 +851,7 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 
 ```php
-protected prepare_filters( $request): array
+protected prepare_filters(mixed $request): array
 ```
 
 
@@ -709,8 +865,14 @@ protected prepare_filters( $request): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$request` | **** |  |
+| `$request` | **mixed** |  |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
 
 
 
@@ -740,14 +902,15 @@ public add_support_to_tax_query_like(mixed $args): mixed
 
 
 
+
 ***
 
-### prepare_meta
+### sanitize_value
 
 
 
 ```php
-private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
+protected sanitize_value(mixed $value): mixed
 ```
 
 
@@ -761,11 +924,8 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$mapped` | **** |  |
-| `$request` | **** |  |
-| `$query` | **** |  |
-| `$mapped_v` | **** |  |
-| `$args` | **** |  |
+| `$value` | **mixed** |  |
+
 
 
 
@@ -777,7 +937,7 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 
 ```php
-protected contains_array( $array,  $query): bool
+protected contains_array(mixed $array, mixed $query): bool
 ```
 
 
@@ -791,8 +951,9 @@ protected contains_array( $array,  $query): bool
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$array` | **** |  |
-| `$query` | **** |  |
+| `$array` | **mixed** |  |
+| `$query` | **mixed** |  |
+
 
 
 
@@ -806,6 +967,7 @@ Return the fetch_only param
 ```php
 public get_fetch_only_param(): array|void
 ```
+
 
 
 
@@ -837,6 +999,7 @@ public get_wp_query_params(): array|void
 
 
 
+
 ***
 
 ### get_meta_queries_params
@@ -846,6 +1009,7 @@ Return the common meta, date and tax queries params
 ```php
 protected get_meta_queries_params(): array
 ```
+
 
 
 
@@ -883,6 +1047,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 
 
 
+
 ***
 
 ### get_permissions_schema
@@ -892,6 +1057,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 ```php
 public get_permissions_schema(): mixed
 ```
+
 
 
 
@@ -923,6 +1089,7 @@ public get_base_properties_schema(): mixed
 
 
 
+
 ***
 
 ### get_schema
@@ -937,6 +1104,7 @@ protected get_schema(): mixed
 
 
 * This method is **abstract**.
+
 
 
 
@@ -963,8 +1131,9 @@ public get_list_schema(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

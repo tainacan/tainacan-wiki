@@ -179,6 +179,7 @@ public __toString(): mixed
 
 
 
+
 ***
 
 ### tainacan_register_taxonomy
@@ -188,6 +189,7 @@ Register the taxonomy
 ```php
 public tainacan_register_taxonomy(): bool
 ```
+
 
 
 
@@ -223,6 +225,7 @@ Object with all the capabilities as member variables.
 
 
 
+
 ***
 
 ### get_name
@@ -232,6 +235,7 @@ Return the name
 ```php
 public get_name(): string
 ```
+
 
 
 
@@ -263,6 +267,7 @@ public get_description(): string
 
 
 
+
 ***
 
 ### get_allow_insert
@@ -272,6 +277,7 @@ Return true if allow insert or false if not allow insert
 ```php
 public get_allow_insert(): bool
 ```
+
 
 
 
@@ -303,6 +309,7 @@ public get_hierarchical(): bool
 
 
 
+
 ***
 
 ### get_slug
@@ -312,6 +319,7 @@ Return the slug
 ```php
 public get_slug(): string
 ```
+
 
 
 
@@ -343,6 +351,7 @@ public get_enabled_post_types(): array
 
 
 
+
 ***
 
 ### get_db_identifier
@@ -352,6 +361,7 @@ Return the DB ID
 ```php
 public get_db_identifier(): bool|string
 ```
+
 
 
 
@@ -389,6 +399,7 @@ public set_name(mixed $value): mixed
 
 
 
+
 ***
 
 ### set_slug
@@ -411,6 +422,7 @@ public set_slug(mixed $value): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -441,6 +453,7 @@ public set_description(mixed $value): mixed
 
 
 
+
 ***
 
 ### set_allow_insert
@@ -463,6 +476,7 @@ public set_allow_insert(mixed $value): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -493,6 +507,7 @@ public set_hierarchical(mixed $value): mixed
 
 
 
+
 ***
 
 ### set_enabled_post_types
@@ -519,6 +534,7 @@ public set_enabled_post_types(array $value): mixed
 
 
 
+
 ***
 
 ### validate
@@ -528,6 +544,7 @@ Validate Taxonomy
 ```php
 public validate(): bool
 ```
+
 
 
 
@@ -562,7 +579,7 @@ public term_exists(string $term_name, int|null $parent = null, bool $return_term
 |-----------|------|-------------|
 | `$term_name` | **string** | The term name |
 | `$parent` | **int&#124;null** | The ID of the parent term to look for children or null to look for terms in any hierarchical position. Default is null |
-| `$return_term` | **bool** | wether to return the term object if it exists. default is to false |
+| `$return_term` | **bool** | whether to return the term object if it exists. default is to false |
 
 
 **Return Value:**
@@ -571,155 +588,12 @@ return boolean indicating if term exists. If $return_term is true and term exist
 
 
 
+
 ***
 
 
 ## Inherited methods
 
-
-### get_collections_ids
-
-
-
-```php
-public get_collections_ids(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### get_collections
-
-
-
-```php
-public get_collections(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### set_collections_ids
-
-
-
-```php
-public set_collections_ids(array $value): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **array** |  |
-
-
-
-
-***
-
-### set_collections
-
-
-
-```php
-public set_collections(array $collections): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collections` | **array** |  |
-
-
-
-
-***
-
-### add_collection_id
-
-
-
-```php
-public add_collection_id(mixed $new_collection_id): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$new_collection_id` | **mixed** |  |
-
-
-
-
-***
-
-### remove_collection_id
-
-
-
-```php
-public remove_collection_id(mixed $collection_id): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection_id` | **mixed** |  |
-
-
-
-
-***
 
 ### __construct
 
@@ -747,6 +621,12 @@ Attention: If the ID or Post provided do not match the Entity post type, an Exce
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### get_repository
@@ -767,6 +647,7 @@ public get_repository(): mixed
 
 
 
+
 ***
 
 ### get_date_i18n
@@ -774,7 +655,7 @@ public get_repository(): mixed
 
 
 ```php
-public get_date_i18n( $date): string
+public get_date_i18n(mixed $date): string
 ```
 
 
@@ -788,7 +669,8 @@ public get_date_i18n( $date): string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$date` | **** |  |
+| `$date` | **mixed** |  |
+
 
 
 
@@ -823,6 +705,7 @@ property value
 
 
 
+
 ***
 
 ### set_mapped_property
@@ -847,6 +730,7 @@ using the prop name dynamically, use the set() method
 |-----------|------|-------------|
 | `$prop` | **string** | id of the property |
 | `$value` | **mixed** | the value to be setted |
+
 
 
 
@@ -882,6 +766,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### get
@@ -912,6 +797,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### set_status
@@ -938,6 +824,7 @@ public set_status(string $value): mixed
 
 
 
+
 ***
 
 ### validate
@@ -949,6 +836,7 @@ public validate(): bool
 ```
 
 If Entity is not valid, validation error messages are available via get_errors() method
+
 
 
 
@@ -984,6 +872,7 @@ public validate_prop(string $prop): bool
 
 
 
+
 ***
 
 ### get_errors
@@ -993,6 +882,7 @@ public validate_prop(string $prop): bool
 ```php
 public get_errors(): mixed
 ```
+
 
 
 
@@ -1024,6 +914,7 @@ public static get_post_type(): mixed
 
 
 
+
 ***
 
 ### get_capability_type
@@ -1044,6 +935,7 @@ public static get_capability_type(): mixed
 
 
 
+
 ***
 
 ### get_status
@@ -1053,6 +945,7 @@ public static get_capability_type(): mixed
 ```php
 public get_status(): mixed
 ```
+
 
 
 
@@ -1084,6 +977,7 @@ This identifier is used to register the entity on database, ex.: post_type
 
 
 
+
 ***
 
 ### get_id
@@ -1093,6 +987,7 @@ Get the entity ID
 ```php
 public get_id(): int
 ```
+
 
 
 
@@ -1131,6 +1026,7 @@ public add_error(mixed $type, mixed $message): mixed
 
 
 
+
 ***
 
 ### reset_errors
@@ -1151,6 +1047,7 @@ public reset_errors(): mixed
 
 
 
+
 ***
 
 ### get_validated
@@ -1160,6 +1057,7 @@ public reset_errors(): mixed
 ```php
 public get_validated(): mixed
 ```
+
 
 
 
@@ -1197,6 +1095,7 @@ protected set_validated(mixed $value): mixed
 
 
 
+
 ***
 
 ### set_as_valid
@@ -1206,6 +1105,7 @@ protected set_validated(mixed $value): mixed
 ```php
 protected set_as_valid(): mixed
 ```
+
 
 
 
@@ -1237,6 +1137,7 @@ public _toArray(): mixed
 
 
 
+
 ***
 
 ### _toJson
@@ -1246,6 +1147,7 @@ public _toArray(): mixed
 ```php
 public _toJson(): mixed
 ```
+
 
 
 
@@ -1283,6 +1185,7 @@ public can_read(int|\WP_User $user = null): bool
 
 
 
+
 ***
 
 ### can_edit
@@ -1305,6 +1208,7 @@ public can_edit(int|\WP_User|null $user = null): bool
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
+
 
 
 
@@ -1335,6 +1239,7 @@ public can_delete(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### can_publish
@@ -1361,6 +1266,7 @@ public can_publish(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### get_capabilities
@@ -1382,6 +1288,7 @@ public get_capabilities(): object
 **Return Value:**
 
 Object with all the capabilities as member variables.
+
 
 
 
@@ -1411,8 +1318,159 @@ public diff(\Tainacan\Entities\Entity|int|\WP_Post $which): array
 
 
 
+
+***
+
+### get_collections_ids
+
+
+
+```php
+public get_collections_ids(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_collections
+
+
+
+```php
+public get_collections(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### set_collections_ids
+
+
+
+```php
+public set_collections_ids(array $value): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **array** |  |
+
+
+
+
+
+***
+
+### set_collections
+
+
+
+```php
+public set_collections(array $collections): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$collections` | **array** |  |
+
+
+
+
+
+***
+
+### add_collection_id
+
+
+
+```php
+public add_collection_id(mixed $new_collection_id): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$new_collection_id` | **mixed** |  |
+
+
+
+
+
+***
+
+### remove_collection_id
+
+
+
+```php
+public remove_collection_id(mixed $collection_id): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$collection_id` | **mixed** |  |
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

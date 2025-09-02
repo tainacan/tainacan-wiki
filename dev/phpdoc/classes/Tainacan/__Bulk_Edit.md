@@ -81,6 +81,12 @@ Note: if the ID paramater is passed, other paramaters will be ignored.
 
 
 
+**Throws:**
+
+- [`Exception`](../Exception.md)
+
+
+
 ***
 
 ### add_fields_to_query
@@ -104,6 +110,7 @@ Must be public because it is registered as a filter callback
 |-----------|------|-------------|
 | `$fields` | **mixed** |  |
 | `$wp_query` | **mixed** |  |
+
 
 
 
@@ -132,6 +139,7 @@ the group ID
 
 
 
+
 ***
 
 ### count_posts
@@ -153,6 +161,7 @@ public count_posts(): int
 **Return Value:**
 
 number of items in the group
+
 
 
 
@@ -186,6 +195,7 @@ Returns the ID of the item or false if the index is out of range
 
 
 
+
 ***
 
 ### save_options
@@ -212,6 +222,7 @@ public save_options(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_options
@@ -221,6 +232,7 @@ public save_options(mixed $value): mixed
 ```php
 public get_options(): mixed
 ```
+
 
 
 
@@ -258,6 +270,7 @@ private _build_select(mixed $fields): mixed
 
 
 
+
 ***
 
 ### set_status
@@ -280,6 +293,7 @@ public set_status(mixed $value): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -312,6 +326,7 @@ public add_value(\Tainacan\Entities\Metadatum $metadatum, mixed $value): mixed
 
 
 
+
 ***
 
 ### set_value
@@ -340,6 +355,7 @@ this value
 
 
 
+
 ***
 
 ### remove_value
@@ -363,6 +379,7 @@ Must be used with multiple metadatum that are not set as required
 |-----------|------|-------------|
 | `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
 | `$value` | **mixed** |  |
+
 
 
 
@@ -395,6 +412,7 @@ public replace_value(\Tainacan\Entities\Metadatum $metadatum, mixed $new_value, 
 
 
 
+
 ***
 
 ### trash_items
@@ -404,6 +422,7 @@ public replace_value(\Tainacan\Entities\Metadatum $metadatum, mixed $new_value, 
 ```php
 public trash_items(): mixed
 ```
+
 
 
 
@@ -435,6 +454,7 @@ public untrash_items(): mixed
 
 
 
+
 ***
 
 ### delete_items
@@ -444,6 +464,7 @@ public untrash_items(): mixed
 ```php
 public delete_items(): mixed
 ```
+
 
 
 
@@ -482,6 +503,7 @@ This method adds value to the database directly, any check or validation must be
 
 
 
+
 ***
 
 ### _remove_value
@@ -505,6 +527,7 @@ This method removes value from the database directly, any check or validation mu
 |-----------|------|-------------|
 | `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
 | `$value` | **mixed** |  |
+
 
 
 
@@ -541,6 +564,7 @@ and a small change to the insert queries (marked below)
 
 
 
+
 ***
 
 ### _remove_values
@@ -567,8 +591,9 @@ This method removes value from the database directly, any check or validation mu
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

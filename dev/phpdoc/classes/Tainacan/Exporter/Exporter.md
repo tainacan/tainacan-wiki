@@ -209,7 +209,7 @@ protected array $transients
 
 Add and remove transient data using add_transient() and delete_transient() methods
 
-Transitens can be strings, numbers or arrays. Avoid storing objects.
+Transients can be strings, numbers or arrays. Avoid storing objects.
 
 
 
@@ -218,7 +218,7 @@ Transitens can be strings, numbers or arrays. Avoid storing objects.
 
 ### abort
 
-Wether to abort importer/exporter execution.
+Whether to abort importer/exporter execution.
 
 ```php
 protected bool $abort
@@ -364,6 +364,7 @@ public __construct(mixed $attributess = array()): mixed
 
 
 
+
 ***
 
 ### add_collection
@@ -390,6 +391,7 @@ public add_collection(array $collection): mixed
 
 
 
+
 ***
 
 ### remove_collection
@@ -412,6 +414,7 @@ public remove_collection(mixed $col_id): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$col_id` | **mixed** |  |
+
 
 
 
@@ -443,6 +446,7 @@ public update_collection(mixed $index, mixed $collection_definition): mixed
 
 
 
+
 ***
 
 ### update_current_collection
@@ -469,6 +473,7 @@ public update_current_collection(mixed $collection_definition): mixed
 
 
 
+
 ***
 
 ### next_item
@@ -478,6 +483,7 @@ public update_current_collection(mixed $collection_definition): mixed
 ```php
 public next_item(): mixed
 ```
+
 
 
 
@@ -509,6 +515,7 @@ public next_collection(): mixed
 
 
 
+
 ***
 
 ### get_id
@@ -529,6 +536,7 @@ public get_id(): string
 
 
 
+
 ***
 
 ### get_current_step
@@ -538,6 +546,7 @@ public get_id(): string
 ```php
 public get_current_step(): mixed
 ```
+
 
 
 
@@ -575,6 +584,7 @@ public set_current_step(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_in_step_count
@@ -584,6 +594,7 @@ public set_current_step(mixed $value): mixed
 ```php
 public get_in_step_count(): mixed
 ```
+
 
 
 
@@ -621,6 +632,7 @@ public set_in_step_count(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_current_collection
@@ -630,6 +642,7 @@ public set_in_step_count(mixed $value): mixed
 ```php
 public get_current_collection(): mixed
 ```
+
 
 
 
@@ -667,6 +680,7 @@ public set_current_collection(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_current_collection_item
@@ -687,6 +701,7 @@ public get_current_collection_item(): mixed
 
 
 
+
 ***
 
 ### get_step_length_items
@@ -696,6 +711,7 @@ public get_current_collection_item(): mixed
 ```php
 public get_step_length_items(): mixed
 ```
+
 
 
 
@@ -733,6 +749,7 @@ public set_current_collection_item(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_collections
@@ -742,6 +759,7 @@ public set_current_collection_item(mixed $value): mixed
 ```php
 public get_collections(): mixed
 ```
+
 
 
 
@@ -779,6 +797,7 @@ public set_collections(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_current_collection_object
@@ -788,6 +807,7 @@ public set_collections(mixed $value): mixed
 ```php
 public get_current_collection_object(): mixed
 ```
+
 
 
 
@@ -824,6 +844,7 @@ import/export options
 
 
 
+
 ***
 
 ### set_options
@@ -846,6 +867,7 @@ public set_options(array $options): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$options` | **array** |  |
+
 
 
 
@@ -880,6 +902,7 @@ the option value, the default value or an empty string
 
 
 
+
 ***
 
 ### set_default_options
@@ -902,6 +925,7 @@ Must be called from the __construct method of the child import/export class to s
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$options` | **array** |  |
+
 
 
 
@@ -932,6 +956,7 @@ public set_steps(mixed $steps): mixed
 
 
 
+
 ***
 
 ### get_steps
@@ -952,6 +977,7 @@ public get_steps(): mixed
 
 
 
+
 ***
 
 ### get_transients
@@ -961,6 +987,7 @@ public get_steps(): mixed
 ```php
 protected get_transients(): mixed
 ```
+
 
 
 
@@ -998,6 +1025,7 @@ protected set_transients(array $data): mixed
 
 
 
+
 ***
 
 ### add_transient
@@ -1021,6 +1049,7 @@ public add_transient(mixed $key, mixed $data): mixed
 |-----------|------|-------------|
 | `$key` | **mixed** |  |
 | `$data` | **mixed** |  |
+
 
 
 
@@ -1051,6 +1080,7 @@ public delete_transient(mixed $key): mixed
 
 
 
+
 ***
 
 ### get_transient
@@ -1077,6 +1107,7 @@ public get_transient(mixed $key): mixed
 
 
 
+
 ***
 
 ### get_log
@@ -1097,6 +1128,7 @@ public get_log(): mixed
 
 
 
+
 ***
 
 ### get_error_log
@@ -1106,6 +1138,7 @@ public get_log(): mixed
 ```php
 public get_error_log(): mixed
 ```
+
 
 
 
@@ -1143,6 +1176,7 @@ public add_log(mixed $message): mixed
 
 
 
+
 ***
 
 ### add_error_log
@@ -1169,6 +1203,7 @@ public add_error_log(mixed $message): mixed
 
 
 
+
 ***
 
 ### is_finished
@@ -1178,6 +1213,7 @@ public add_error_log(mixed $message): mixed
 ```php
 public is_finished(): mixed
 ```
+
 
 
 
@@ -1209,6 +1245,7 @@ protected cancel_abort(): void
 
 
 
+
 ***
 
 ### abort
@@ -1229,15 +1266,17 @@ protected abort(): void
 
 
 
+
 ***
 
 ### get_abort
 
-Return wether importer should abort execution or not
+Return whether importer should abort execution or not
 
 ```php
 public get_abort(): bool
 ```
+
 
 
 
@@ -1263,6 +1302,7 @@ public get_progress_label(): string
 It automatically gets the attribute progress_label from the current step running.
 
 Importers/Exporters may change this label whenever they want
+
 
 
 
@@ -1303,6 +1343,7 @@ If a negative value is passed, it is assumed that the progress is unknown
 
 
 
+
 ***
 
 ### set_current_step_total
@@ -1328,6 +1369,7 @@ the current progress of the process.
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1362,6 +1404,7 @@ the current progress of the process.
 
 
 
+
 ***
 
 ### next_step
@@ -1371,6 +1414,7 @@ the current progress of the process.
 ```php
 protected next_step(): mixed
 ```
+
 
 
 
@@ -1408,6 +1452,7 @@ public _to_Array(mixed $short = false): mixed
 
 
 
+
 ***
 
 ### get_current_mapper
@@ -1417,6 +1462,7 @@ Gets the current mapper object, if one was chosen by the user, false Otherwise
 ```php
 public get_current_mapper(): mixed
 ```
+
 
 
 
@@ -1448,6 +1494,7 @@ public options_form(): mixed
 
 
 
+
 ***
 
 ### process_collections
@@ -1458,6 +1505,7 @@ process an item from the collections queue
 ```php
 public process_collections(): mixed
 ```
+
 
 
 
@@ -1496,6 +1544,7 @@ public process_item(mixed $item, mixed $metadata): mixed
 
 
 
+
 ***
 
 ### process_header
@@ -1523,6 +1572,7 @@ private process_header(mixed $current_collection_item, mixed $collection_definit
 
 
 
+
 ***
 
 ### output_header
@@ -1532,6 +1582,7 @@ private process_header(mixed $current_collection_item, mixed $collection_definit
 ```php
 public output_header(): mixed
 ```
+
 
 
 
@@ -1570,6 +1621,7 @@ private process_footer(mixed $current_collection_item, mixed $collection_definit
 
 
 
+
 ***
 
 ### output_footer
@@ -1579,6 +1631,7 @@ private process_footer(mixed $current_collection_item, mixed $collection_definit
 ```php
 public output_footer(): mixed
 ```
+
 
 
 
@@ -1617,6 +1670,7 @@ private get_items(mixed $index, mixed $collection_definition): mixed
 
 
 
+
 ***
 
 ### map_item_metadata
@@ -1641,6 +1695,7 @@ Note that if one of the metadata is not mapped, this array item will be null
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$item` | **\Tainacan\Entities\Item** |  |
+
 
 
 
@@ -1671,6 +1726,7 @@ public add_new_file(mixed $key): mixed
 
 
 
+
 ***
 
 ### append_to_file
@@ -1694,6 +1750,7 @@ public append_to_file(string $key, string $data): mixed
 |-----------|------|-------------|
 | `$key` | **string** | The file identifier. (it is the name of the file, with extension, and will be prefixed with the process ID) |
 | `$data` | **string** | The content to be appended to the file |
+
 
 
 
@@ -1726,6 +1783,7 @@ public set_accepted_mapping_methods(string $method, string $default_mapping = &#
 
 
 
+
 ***
 
 ### set_mapping_selected
@@ -1752,6 +1810,7 @@ public set_mapping_selected(mixed $mapping_selected): mixed
 
 
 
+
 ***
 
 ### get_mapping_selected
@@ -1761,6 +1820,7 @@ public set_mapping_selected(mixed $mapping_selected): mixed
 ```php
 public get_mapping_selected(): mixed
 ```
+
 
 
 
@@ -1798,6 +1858,7 @@ public set_send_email(mixed $email): mixed
 
 
 
+
 ***
 
 ### get_send_email
@@ -1807,6 +1868,7 @@ public set_send_email(mixed $email): mixed
 ```php
 public get_send_email(): mixed
 ```
+
 
 
 
@@ -1838,6 +1900,7 @@ public get_output(): mixed
 
 
 
+
 ***
 
 ### finished
@@ -1847,6 +1910,7 @@ public get_output(): mixed
 ```php
 public finished(): mixed
 ```
+
 
 
 
@@ -1878,6 +1942,7 @@ public begin_exporter(): mixed
 
 
 
+
 ***
 
 ### end_exporter
@@ -1887,6 +1952,7 @@ public begin_exporter(): mixed
 ```php
 public end_exporter(): mixed
 ```
+
 
 
 
@@ -1924,6 +1990,7 @@ private set_output_files(mixed $output_files): mixed
 
 
 
+
 ***
 
 ### get_output_files
@@ -1933,6 +2000,7 @@ private set_output_files(mixed $output_files): mixed
 ```php
 protected get_output_files(): mixed
 ```
+
 
 
 
@@ -1964,8 +2032,9 @@ public run(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script must be run inside the Docker container where the Tainacan plugin is installed
+# please call it from the root of the wiki repository and have Tainacan source files in the same
+# directory as the wiki repository
+
 # Check if we're running inside Docker container
 if [ ! -d "/src" ]; then
     echo "Error: This script must be run inside the Docker container"
@@ -18,7 +22,16 @@ wget -P ./vendor/phpdocumentor/bin/ https://phpdoc.org/phpDocumentor.phar
 
 # Generate phpDocumentor documentation
 echo "Generating phpDocumentor documentation..."
-php ./vendor/phpdocumentor/bin/phpDocumentor.phar -d /src/tainacan/src -t /src/tainacan-wiki/dev/phpdoc --template="./vendor/saggre/phpdocumentor-markdown/themes/markdown"
+# Scan /src/tainacan/src but exclude vendor directory and other unnecessary files
+php ./vendor/phpdocumentor/bin/phpDocumentor.phar \
+    -d /src/tainacan/src \
+    -t /src/tainacan-wiki/dev/phpdoc \
+    --template="./vendor/saggre/phpdocumentor-markdown/themes/markdown" \
+    --ignore="vendor/" \
+    --ignore="node_modules/" \
+    --ignore="tests/" \
+    --ignore="*.min.js" \
+    --ignore="*.min.css"
 
 # Generate WordPress hooks documentation
 echo "Generating WordPress hooks documentation..."

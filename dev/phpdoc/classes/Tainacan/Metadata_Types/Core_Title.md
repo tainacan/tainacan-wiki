@@ -33,6 +33,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### get_form_labels
@@ -53,6 +54,7 @@ public get_form_labels(): mixed
 
 
 
+
 ***
 
 ### form
@@ -62,6 +64,7 @@ generate the metadata for this metadatum type
 ```php
 public form(): mixed
 ```
+
 
 
 
@@ -119,6 +122,7 @@ return $item->validate_prop('title');
 
 
 
+
 ***
 
 
@@ -132,6 +136,7 @@ return $item->validate_prop('title');
 ```php
 public __construct(): mixed
 ```
+
 
 
 
@@ -169,6 +174,7 @@ public validate(\Tainacan\Entities\Item_Metadata_Entity $item_metadata): mixed
 
 
 
+
 ***
 
 ### get_related_mapped_prop
@@ -178,6 +184,7 @@ public validate(\Tainacan\Entities\Item_Metadata_Entity $item_metadata): mixed
 ```php
 public get_related_mapped_prop(): mixed
 ```
+
 
 
 
@@ -215,6 +222,7 @@ public set_related_mapped_prop(mixed $related_mapped_prop): mixed
 
 
 
+
 ***
 
 ### get_validation_errors
@@ -235,6 +243,7 @@ public get_validation_errors(): mixed
 
 
 
+
 ***
 
 ### get_primitive_type
@@ -244,6 +253,7 @@ public get_validation_errors(): mixed
 ```php
 public get_primitive_type(): mixed
 ```
+
 
 
 
@@ -281,6 +291,7 @@ public set_primitive_type(mixed $primitive_type): mixed
 
 
 
+
 ***
 
 ### get_errors
@@ -301,6 +312,7 @@ public get_errors(): mixed
 
 
 
+
 ***
 
 ### get_component
@@ -310,6 +322,7 @@ public get_errors(): mixed
 ```php
 public get_component(): mixed
 ```
+
 
 
 
@@ -347,6 +360,7 @@ public set_component(mixed $component): mixed
 
 
 
+
 ***
 
 ### get_form_component
@@ -356,6 +370,7 @@ public set_component(mixed $component): mixed
 ```php
 public get_form_component(): mixed
 ```
+
 
 
 
@@ -393,6 +408,7 @@ public set_form_component(mixed $form_component): mixed
 
 
 
+
 ***
 
 ### get_preview_template
@@ -402,6 +418,7 @@ public set_form_component(mixed $form_component): mixed
 ```php
 public get_preview_template(): mixed
 ```
+
 
 
 
@@ -439,6 +456,7 @@ public set_preview_template(mixed $preview_template): mixed
 
 
 
+
 ***
 
 ### get_name
@@ -448,6 +466,7 @@ public set_preview_template(mixed $preview_template): mixed
 ```php
 public get_name(): mixed
 ```
+
 
 
 
@@ -485,6 +504,7 @@ public set_name(mixed $name): mixed
 
 
 
+
 ***
 
 ### get_description
@@ -494,6 +514,7 @@ public set_name(mixed $name): mixed
 ```php
 public get_description(): mixed
 ```
+
 
 
 
@@ -531,6 +552,7 @@ public set_description(mixed $description): mixed
 
 
 
+
 ***
 
 ### add_error
@@ -557,6 +579,7 @@ public add_error(mixed $msg): mixed
 
 
 
+
 ***
 
 ### set_options
@@ -564,7 +587,7 @@ public add_error(mixed $msg): mixed
 
 
 ```php
-public set_options( $options): mixed
+public set_options(mixed $options): mixed
 ```
 
 
@@ -578,7 +601,8 @@ public set_options( $options): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$options` | **** |  |
+| `$options` | **mixed** |  |
+
 
 
 
@@ -609,6 +633,7 @@ public set_default_options(array $options): mixed
 
 
 
+
 ***
 
 ### get_options
@@ -631,6 +656,7 @@ public get_options(): array
 **Return Value:**
 
 Metadatum type options
+
 
 
 
@@ -664,6 +690,7 @@ the option value, the default value or an empty string
 
 
 
+
 ***
 
 ### get_options_as_html
@@ -688,6 +715,7 @@ An html content with labels and values for the options or an empty string
 
 
 
+
 ***
 
 ### get_form_labels
@@ -708,6 +736,7 @@ public get_form_labels(): mixed
 
 
 
+
 ***
 
 ### form
@@ -717,6 +746,7 @@ generate the metadata for this metadatum type
 ```php
 public form(): mixed
 ```
+
 
 
 
@@ -758,6 +788,7 @@ True if optinos are valid. If invalid, returns an array where keys are the metad
 
 
 
+
 ***
 
 ### get_core
@@ -767,6 +798,7 @@ True if optinos are valid. If invalid, returns an array where keys are the metad
 ```php
 public get_core(): mixed
 ```
+
 
 
 
@@ -804,6 +836,7 @@ public set_core(mixed $core): mixed
 
 
 
+
 ***
 
 ### get_repository
@@ -813,6 +846,7 @@ public set_core(mixed $core): mixed
 ```php
 public get_repository(): mixed
 ```
+
 
 
 
@@ -850,6 +884,7 @@ public set_repository(mixed $repository): mixed
 
 
 
+
 ***
 
 ### get_sortable
@@ -859,6 +894,7 @@ public set_repository(mixed $repository): mixed
 ```php
 public get_sortable(): mixed
 ```
+
 
 
 
@@ -896,6 +932,7 @@ public set_sortable(mixed $sortable): mixed
 
 
 
+
 ***
 
 ### get_slug
@@ -905,6 +942,7 @@ Gets a slug based on the class name to represent the metadata type
 ```php
 public get_slug(): mixed
 ```
+
 
 
 
@@ -936,8 +974,9 @@ public _toArray(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -2,7 +2,8 @@
 
 # Roles
 
-
+This file contains the Tainacan Roles class, which manages the roles and capabilities
+used in the Tainacan plugin.
 
 
 
@@ -12,21 +13,6 @@
 
 ## Properties
 
-
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
 
 ### capabilities
 
@@ -43,20 +29,66 @@ private $capabilities
 
 ***
 
-## Methods
-
-
-### get_instance
+### meta_caps
 
 
 
 ```php
-public static get_instance(): mixed
+private $meta_caps
 ```
 
 
 
-* This method is **static**.
+
+
+
+***
+
+### meta_section_caps
+
+
+
+```php
+private $meta_section_caps
+```
+
+
+
+
+
+
+***
+
+### filters_caps
+
+
+
+```php
+private $filters_caps
+```
+
+
+
+
+
+
+***
+
+## Methods
+
+
+### init
+
+
+
+```php
+private init(): mixed
+```
+
+
+
+
+
 
 
 
@@ -66,13 +98,14 @@ public static get_instance(): mixed
 
 ***
 
-### __construct
+### populate_tainacan_capabilities
 
 
 
 ```php
-private __construct(): mixed
+public populate_tainacan_capabilities(): mixed
 ```
+
 
 
 
@@ -108,6 +141,7 @@ Tainacan roles
 
 
 
+
 ***
 
 ### translate_user_roles
@@ -137,6 +171,8 @@ using translate_user_role() function.
 
 
 
+
+
 **See Also:**
 
 * https://wordpress.stackexchange.com/questions/141551/how-to-auto-translate-custom-user-roles - 
@@ -150,6 +186,7 @@ using translate_user_role() function.
 ```php
 public get_all_caps(): mixed
 ```
+
 
 
 
@@ -181,6 +218,7 @@ public get_collection_caps(): mixed
 
 
 
+
 ***
 
 ### get_repository_caps
@@ -190,6 +228,7 @@ public get_collection_caps(): mixed
 ```php
 public get_repository_caps(): mixed
 ```
+
 
 
 
@@ -221,6 +260,7 @@ public get_all_caps_slugs(): mixed
 
 
 
+
 ***
 
 ### get_collection_caps_slugs
@@ -230,6 +270,7 @@ public get_all_caps_slugs(): mixed
 ```php
 public get_collection_caps_slugs(): mixed
 ```
+
 
 
 
@@ -261,6 +302,7 @@ public get_repository_caps_slugs(): mixed
 
 
 
+
 ***
 
 ### init_default_roles
@@ -270,6 +312,7 @@ public get_repository_caps_slugs(): mixed
 ```php
 public init_default_roles(): mixed
 ```
+
 
 
 
@@ -312,6 +355,7 @@ Capability slug as in the keys of $this->capabilities
 
 
 
+
 ***
 
 ### user_has_cap_filter
@@ -341,6 +385,7 @@ public user_has_cap_filter(mixed $allcaps, mixed $caps, mixed $args, mixed $user
 
 
 
+
 ***
 
 ### add_dependencies
@@ -364,6 +409,7 @@ public add_dependencies(mixed $role, mixed $cap): mixed
 |-----------|------|-------------|
 | `$role` | **mixed** |  |
 | `$cap` | **mixed** |  |
+
 
 
 
@@ -397,8 +443,55 @@ public map_meta_cap(mixed $caps, mixed $cap, mixed $user_id, mixed $args): mixed
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

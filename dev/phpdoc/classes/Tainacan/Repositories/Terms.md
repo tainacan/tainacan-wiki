@@ -29,51 +29,17 @@ public $entities_type
 
 ***
 
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ## Methods
 
 
-### get_instance
+### init
 
 
 
 ```php
-public static get_instance(): mixed
+protected init(): mixed
 ```
 
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-Register hooks
-
-```php
-protected __construct(): mixed
-```
 
 
 
@@ -131,6 +97,7 @@ properties map array, format like:
 
 
 
+
 ***
 
 ### get_default_properties
@@ -153,6 +120,7 @@ public get_default_properties(mixed $map): array
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$map` | **mixed** |  |
+
 
 
 
@@ -180,6 +148,12 @@ public insert(\Tainacan\Entities\Entity $term): \Tainacan\Entities\Entity|\Taina
 |-----------|------|-------------|
 | `$term` | **\Tainacan\Entities\Entity** |  |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
 
 
 
@@ -211,6 +185,7 @@ public get_mapped_property(mixed $entity, mixed $prop): mixed
 **Return Value:**
 
 property value
+
 
 
 
@@ -249,6 +224,7 @@ of Entities\Term objects || Entities\Term
 
 
 
+
 ***
 
 ### update
@@ -272,6 +248,7 @@ public update(mixed $object, mixed $args = null): mixed
 |-----------|------|-------------|
 | `$object` | **mixed** |  |
 | `$args` | **mixed** |  |
+
 
 
 
@@ -303,6 +280,7 @@ public delete_child_terms(\Tainacan\Entities\Term $parentTerm, bool $permanent =
 
 
 
+
 ***
 
 ### delete
@@ -326,6 +304,7 @@ public delete(\Tainacan\Entities\Term $term, bool $permanent = true): bool|int|m
 |-----------|------|-------------|
 | `$term` | **\Tainacan\Entities\Term** |  |
 | `$permanent` | **bool** | this parameter is not used by Terms repository. Delete is always permanent |
+
 
 
 
@@ -354,12 +333,13 @@ public term_exists(string $searched_term, mixed $taxonomy, int $parent = null, b
 | `$searched_term` | **string** | The term name (string) or term_id (integer). If term id is passed, parent is not considered. |
 | `$taxonomy` | **mixed** | The taxonomy ID, slug or Entity. |
 | `$parent` | **int** | The ID of the parent term to look for children or null to look for terms in any hierarchical position. Default is null |
-| `$return_term` | **bool** | wether to return the term object if it exists. default is to false |
+| `$return_term` | **bool** | whether to return the term object if it exists. default is to false |
 
 
 **Return Value:**
 
 return boolean indicating if term exists. If $return_term is true and term exists, return WP_Term object
+
 
 
 
@@ -372,6 +352,7 @@ return boolean indicating if term exists. If $return_term is true and term exist
 ```php
 public register_post_type(): mixed
 ```
+
 
 
 
@@ -410,6 +391,12 @@ public can_edit(\Tainacan\Entities\Entity $term, int|\WP_User|null $user = null)
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### can_read
@@ -434,6 +421,12 @@ public can_read(\Tainacan\Entities\Entity $term, int|\WP_User|null $user = null)
 | `$term` | **\Tainacan\Entities\Entity** |  |
 | `$user` | **int&#124;\WP_User&#124;null** | default is null for the current user |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
 
 
 
@@ -464,6 +457,12 @@ public can_delete(mixed $term, int|\WP_User|null $user = null): bool
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### can_publish
@@ -491,6 +490,12 @@ public can_publish(\Tainacan\Entities\Entity $term, int|\WP_User|null $user = nu
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 
@@ -504,6 +509,7 @@ Disable creation of logs while inerting and updating entities
 ```php
 public disable_logs(): mixed
 ```
+
 
 
 
@@ -536,6 +542,7 @@ public enable_logs(): mixed
 
 
 
+
 ***
 
 ### get_enabled_logs
@@ -556,15 +563,17 @@ public get_enabled_logs(): mixed
 
 
 
+
 ***
 
 ### __construct
 
-Register hooks
+
 
 ```php
-protected __construct(): mixed
+private __construct(): mixed
 ```
+
 
 
 
@@ -585,6 +594,7 @@ protected __construct(): mixed
 ```php
 public init_objects(): mixed
 ```
+
 
 
 
@@ -642,6 +652,7 @@ properties map array, format like:
 
 
 
+
 ***
 
 ### get_map
@@ -651,6 +662,7 @@ properties map array, format like:
 ```php
 public get_map(): mixed
 ```
+
 
 
 
@@ -686,6 +698,7 @@ The repository name
 
 
 
+
 ***
 
 ### insert
@@ -693,7 +706,7 @@ The repository name
 
 
 ```php
-public insert(\Tainacan\Entities\Entity $obj): \Tainacan\Entities\Entity
+public insert(\Tainacan\Entities\Entity $obj): \Tainacan\Entities\Entity|bool
 ```
 
 
@@ -710,9 +723,11 @@ public insert(\Tainacan\Entities\Entity $obj): \Tainacan\Entities\Entity
 | `$obj` | **\Tainacan\Entities\Entity** |  |
 
 
-**Return Value:**
 
-| bool
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
 
 
 
@@ -723,7 +738,7 @@ public insert(\Tainacan\Entities\Entity $obj): \Tainacan\Entities\Entity
 Insert object property stored as postmeta into the database
 
 ```php
-public insert_metadata(\Tainacan\Entities $obj, string $prop,  $diffs): null|false
+public insert_metadata(\Tainacan\Entities $obj, string $prop, mixed $diffs): null|false
 ```
 
 
@@ -739,12 +754,13 @@ public insert_metadata(\Tainacan\Entities $obj, string $prop,  $diffs): null|fal
 |-----------|------|-------------|
 | `$obj` | **\Tainacan\Entities** | The entity object |
 | `$prop` | **string** | the property name, as declared in the map of the repository |
-| `$diffs` | **** |  |
+| `$diffs` | **mixed** |  |
 
 
 **Return Value:**
 
 on error
+
 
 
 
@@ -774,6 +790,7 @@ public maybe_add_slashes(mixed $value): mixed
 
 
 
+
 ***
 
 ### fetch_output
@@ -799,6 +816,7 @@ OBJECT - return an Array of Tainacan\Entities
 |-----------|------|-------------|
 | `$WP_Query` | **\WP_Query** |  |
 | `$output` | **string** | `WP_Query` for a single WP_Query object or `OBJECT` for an array of Tainacan\Entities |
+
 
 
 
@@ -849,6 +867,7 @@ $args new $args array with mapped properties
 
 
 
+
 ***
 
 ### get_default_properties
@@ -871,6 +890,7 @@ public get_default_properties(array $map): array
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$map` | **array** |  |
+
 
 
 
@@ -906,6 +926,7 @@ property value
 
 
 
+
 ***
 
 ### get_collections_db_identifiers
@@ -919,6 +940,7 @@ public static get_collections_db_identifiers(): array[]
 
 
 * This method is **static**.
+
 
 
 
@@ -949,6 +971,12 @@ public static get_entity_by_post(int|\WP_Post $post): \Tainacan\Entities\Entity|
 |-----------|------|-------------|
 | `$post` | **int&#124;\WP_Post** | &amp;#124;Entity |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
 
 
 
@@ -983,6 +1011,12 @@ the entity for post_type, with data if $post is given or false
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### get_repository
@@ -1010,6 +1044,7 @@ public static get_repository(\Tainacan\Entities\Entity $entity): \Tainacan\Repos
 **Return Value:**
 
 return the entity Repository or false
+
 
 
 
@@ -1043,6 +1078,7 @@ The entity or false if none was found
 
 
 
+
 ***
 
 ### trash
@@ -1070,6 +1106,7 @@ public trash(\Tainacan\Entities\Entity $entity): mixed|\Tainacan\Entities\Entity
 **Return Value:**
 
 @see https://developer.wordpress.org/reference/functions/wp_delete_post/
+
 
 
 
@@ -1104,6 +1141,7 @@ public delete(\Tainacan\Entities\Entity $entity, bool $permanent = true): mixed|
 
 
 
+
 ***
 
 ### fetch
@@ -1111,7 +1149,7 @@ public delete(\Tainacan\Entities\Entity $entity, bool $permanent = true): mixed|
 
 
 ```php
-public fetch( $args, mixed $output = null): mixed
+public fetch(mixed $args, mixed $output = null): mixed
 ```
 
 
@@ -1125,8 +1163,9 @@ public fetch( $args, mixed $output = null): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$args` | **** |  |
+| `$args` | **mixed** |  |
 | `$output` | **mixed** |  |
+
 
 
 
@@ -1138,7 +1177,7 @@ public fetch( $args, mixed $output = null): mixed
 
 
 ```php
-public update( $object, mixed $new_values = null): mixed
+public update(mixed $object, mixed $new_values = null): mixed
 ```
 
 
@@ -1152,8 +1191,9 @@ public update( $object, mixed $new_values = null): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
+| `$object` | **mixed** |  |
 | `$new_values` | **mixed** |  |
+
 
 
 
@@ -1172,6 +1212,7 @@ public register_post_type(): mixed
 
 
 * This method is **abstract**.
+
 
 
 
@@ -1205,6 +1246,12 @@ public can_edit(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = nul
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### can_read
@@ -1229,6 +1276,12 @@ public can_read(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = nul
 | `$entity` | **\Tainacan\Entities\Entity** |  |
 | `$user` | **int&#124;\WP_User&#124;null** | default is null for the current user |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
 
 
 
@@ -1259,6 +1312,12 @@ public can_delete(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = n
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### can_publish
@@ -1286,6 +1345,12 @@ public can_publish(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = 
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### unique_multidimensional_array
@@ -1293,7 +1358,7 @@ public can_publish(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = 
 Removes duplicates from multidimensional array
 
 ```php
-public unique_multidimensional_array( $array,  $key): array
+public unique_multidimensional_array(mixed $array, mixed $key): array
 ```
 
 
@@ -1307,36 +1372,9 @@ public unique_multidimensional_array( $array,  $key): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$array` | **** |  |
-| `$key` | **** |  |
+| `$array` | **mixed** |  |
+| `$key` | **mixed** |  |
 
-
-
-
-***
-
-### insert_thumbnail
-
-Inserts or update thumbnail for items and collections and return an array
-with old thumbnail and new thumbnail
-
-```php
-private insert_thumbnail( $obj,  $diffs): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$obj` | **** |  |
-| `$diffs` | **** |  |
 
 
 
@@ -1372,6 +1410,7 @@ Array of IDs
 
 
 
+
 ***
 
 ### get_capabilities
@@ -1393,6 +1432,7 @@ public get_capabilities(): object
 **Return Value:**
 
 Object with all the capabilities as member variables.
+
 
 
 
@@ -1422,8 +1462,30 @@ protected sanitize_value(mixed $content): mixed
 
 
 
+
+***
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

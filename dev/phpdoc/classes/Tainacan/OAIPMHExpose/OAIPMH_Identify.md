@@ -38,7 +38,7 @@ protected $working_node
 
 
 ```php
-public identify( $data): mixed
+public identify(mixed $data): mixed
 ```
 
 
@@ -52,7 +52,8 @@ public identify( $data): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$data` | **** |  |
+| `$data` | **mixed** |  |
+
 
 
 
@@ -81,6 +82,7 @@ public config(): mixed
 
 
 
+
 ***
 
 ### is_valid_uri
@@ -88,7 +90,7 @@ public config(): mixed
 
 
 ```php
-public is_valid_uri( $url): bool
+public is_valid_uri(mixed $url): bool
 ```
 
 
@@ -102,7 +104,8 @@ public is_valid_uri( $url): bool
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$url` | **** |  |
+| `$url` | **mixed** |  |
+
 
 
 
@@ -114,7 +117,7 @@ public is_valid_uri( $url): bool
 
 
 ```php
-public is_valid_attrb( $attrb): false|int
+public is_valid_attrb(mixed $attrb): false|int
 ```
 
 
@@ -128,7 +131,8 @@ public is_valid_attrb( $attrb): false|int
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$attrb` | **** |  |
+| `$attrb` | **mixed** |  |
+
 
 
 
@@ -140,7 +144,7 @@ public is_valid_attrb( $attrb): false|int
 
 
 ```php
-public formatDatestamp( $datestamp): false|string
+public formatDatestamp(mixed $datestamp): false|string
 ```
 
 
@@ -154,7 +158,8 @@ public formatDatestamp( $datestamp): false|string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$datestamp` | **** |  |
+| `$datestamp` | **mixed** |  |
+
 
 
 
@@ -166,7 +171,7 @@ public formatDatestamp( $datestamp): false|string
 
 
 ```php
-public checkDateFormat( $date): bool|false|string
+public checkDateFormat(mixed $date): bool|false|string
 ```
 
 
@@ -180,7 +185,8 @@ public checkDateFormat( $date): bool|false|string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$date` | **** |  |
+| `$date` | **mixed** |  |
+
 
 
 
@@ -205,6 +211,7 @@ public prepare_set_names(): array
 
 
 
+
 ***
 
 ### oai_exit
@@ -212,7 +219,7 @@ public prepare_set_names(): array
 
 
 ```php
-public oai_exit( $args,  $errors): mixed
+public oai_exit(mixed $args, mixed $errors): mixed
 ```
 
 
@@ -226,8 +233,9 @@ public oai_exit( $args,  $errors): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$args` | **** |  |
-| `$errors` | **** |  |
+| `$args` | **mixed** |  |
+| `$errors` | **mixed** |  |
+
 
 
 
@@ -252,6 +260,7 @@ protected create_token_dir(): bool|string
 
 
 
+
 ***
 
 ### get_token
@@ -261,6 +270,7 @@ Generate a string based on the current Unix timestamp in microseconds for creati
 ```php
 public get_token(): mixed
 ```
+
 
 
 
@@ -303,6 +313,7 @@ Called by listrecords.php.
 
 
 
+
 ***
 
 ### readResumToken
@@ -325,6 +336,7 @@ public readResumToken(mixed $resumptionToken): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$resumptionToken` | **mixed** |  |
+
 
 
 
@@ -357,6 +369,7 @@ public oai_error(mixed $code, mixed $argument = &#039;&#039;, mixed $value = &#0
 
 
 
+
 ***
 
 ### get_metadata_formats
@@ -383,8 +396,9 @@ public get_metadata_formats(int $item_id = null): bool
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

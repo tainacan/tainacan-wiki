@@ -13,6 +13,21 @@
 ## Properties
 
 
+### bg_importer
+
+bg_importer
+
+```php
+protected \Tainacan\Background_Importer $bg_importer
+```
+
+
+
+
+
+
+***
+
 ### registered_importers
 
 
@@ -31,33 +46,14 @@ private $registered_importers
 ## Methods
 
 
-### __construct
-
-
-
-```php
-public __construct(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
 ### init
 
 
 
 ```php
-public init(): mixed
+private init(): mixed
 ```
+
 
 
 
@@ -71,13 +67,14 @@ public init(): mixed
 
 ***
 
-### enqueue_scripts
+### register_importers
 
 
 
 ```php
-public enqueue_scripts(): mixed
+public register_importers(): mixed
 ```
+
 
 
 
@@ -115,6 +112,7 @@ public add_to_queue(\Tainacan\Importer\Importer $importer_object): mixed
 
 
 
+
 ***
 
 ### register_importer
@@ -136,7 +134,8 @@ public register_importer(array $importer): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$importer` | **array** | {<br />Required. Array or string of arguments describing the importer<br /><br />@type string $nameThe name of the importer. e.g. &#039;Example Importer&#039;<br />@type string $slugA unique slug for the importer. e.g. &#039;This is an example importer description&#039;<br />@type string $descriptionThe importer description. e.g. &#039;example-importer&#039;<br />@type string $class_nameThe Importer Class. e.g. &#039;\Tainacan\Importer\Test_Importer&#039;<br />@type bool $manual_mappingWether Tainacan must present the user with an interface to manually map<br />the metadata from the source to the target collection.<br /><br />If set to true, Importer Class must implement the method<br />get_source_metadata() to return the metadatum found in the source.<br /><br />Note that this will only work when importing items to one single collection.<br /><br />@type bool $manual_collectionWether Tainacan will let the user choose a destination collection.<br /><br />If set to true, the API endpoints will handle Collection creation and will assign it to<br />the importer object using add_collection() method.<br /><br />Otherwise, the child importer class must create the collections and add them to the collections property also<br />using add_collection() |
+| `$importer` | **array** | {<br />Required. Array or string of arguments describing the importer<br /><br />@type string $nameThe name of the importer. e.g. &#039;Example Importer&#039;<br />@type string $slugA unique slug for the importer. e.g. &#039;This is an example importer description&#039;<br />@type string $descriptionThe importer description. e.g. &#039;example-importer&#039;<br />@type string $class_nameThe Importer Class. e.g. &#039;\Tainacan\Importer\Test_Importer&#039;<br />@type bool $manual_mappingWhether Tainacan must present the user with an interface to manually map<br />the metadata from the source to the target collection.<br /><br />If set to true, Importer Class must implement the method<br />get_source_metadata() to return the metadatum found in the source.<br /><br />Note that this will only work when importing items to one single collection.<br /><br />@type bool $manual_collectionWhether Tainacan will let the user choose a destination collection.<br /><br />If set to true, the API endpoints will handle Collection creation and will assign it to<br />the importer object using add_collection() method.<br /><br />Otherwise, the child importer class must create the collections and add them to the collections property also<br />using add_collection() |
+
 
 
 
@@ -167,6 +166,7 @@ public unregister_importer(mixed $importer_slug): mixed
 
 
 
+
 ***
 
 ### get_registered_importers
@@ -176,6 +176,7 @@ public unregister_importer(mixed $importer_slug): mixed
 ```php
 public get_registered_importers(): mixed
 ```
+
 
 
 
@@ -213,6 +214,7 @@ public get_importer(mixed $importer_slug): mixed
 
 
 
+
 ***
 
 ### get_importer_by_object
@@ -235,6 +237,7 @@ public get_importer_by_object(\Tainacan\Importer\Importer $importer_object): mix
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$importer_object` | **\Tainacan\Importer\Importer** |  |
+
 
 
 
@@ -265,6 +268,7 @@ public initialize_importer(mixed $importer_slug): mixed
 
 
 
+
 ***
 
 ### save_importer_instance
@@ -287,6 +291,7 @@ public save_importer_instance(\Tainacan\Tainacan\Importer\Importer $importer): v
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$importer` | **\Tainacan\Tainacan\Importer\Importer** | The Importer object |
+
 
 
 
@@ -321,6 +326,7 @@ The Importer object, if found. False otherwise
 
 
 
+
 ***
 
 ### delete_importer_instance
@@ -351,8 +357,55 @@ True, if importer is successfully deleted. False on failure.
 
 
 
+
+***
+
+
+## Inherited methods
+
+
+### get_instance
+
+
+
+```php
+public static get_instance(): mixed
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### __construct
+
+
+
+```php
+private __construct(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

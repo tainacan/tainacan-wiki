@@ -47,26 +47,6 @@ private $collections_repository
 ## Methods
 
 
-### get_schema
-
-
-
-```php
-protected get_schema(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
 ### __construct
 
 REST_Controller constructor.
@@ -74,6 +54,7 @@ REST_Controller constructor.
 ```php
 public __construct(): mixed
 ```
+
 
 
 
@@ -105,6 +86,7 @@ public init_objects(): mixed
 
 
 
+
 ***
 
 ### register_routes
@@ -122,6 +104,12 @@ public register_routes(): mixed
 
 
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
 
 
 
@@ -147,6 +135,7 @@ public bulk_edit_permissions_check(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -177,6 +166,7 @@ public create_item(mixed $request): mixed
 
 
 
+
 ***
 
 ### set_status
@@ -199,6 +189,7 @@ public set_status(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -229,6 +220,7 @@ public trash_items(mixed $request): mixed
 
 
 
+
 ***
 
 ### untrash_items
@@ -251,6 +243,7 @@ public untrash_items(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -281,6 +274,7 @@ public delete_items(mixed $request): mixed
 
 
 
+
 ***
 
 ### add_value
@@ -303,6 +297,7 @@ public add_value(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -333,6 +328,7 @@ public set_value(mixed $request): mixed
 
 
 
+
 ***
 
 ### clear_value
@@ -355,6 +351,7 @@ public clear_value(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -385,6 +382,7 @@ public remove_value(mixed $request): mixed
 
 
 
+
 ***
 
 ### copy_value
@@ -407,6 +405,7 @@ public copy_value(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -437,6 +436,7 @@ public replace_value(mixed $request): mixed
 
 
 
+
 ***
 
 ### set_comment_status
@@ -459,6 +459,34 @@ public set_comment_status(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
+
+
+
+
+***
+
+### set_author_id
+
+
+
+```php
+public set_author_id(mixed $request): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$request` | **mixed** |  |
+
 
 
 
@@ -489,6 +517,7 @@ public get_item(mixed $request): mixed
 
 
 
+
 ***
 
 ### prepare_item_for_response
@@ -512,6 +541,7 @@ public prepare_item_for_response(mixed $bulk_object, mixed $request): mixed
 |-----------|------|-------------|
 | `$bulk_object` | **mixed** |  |
 | `$request` | **mixed** |  |
+
 
 
 
@@ -544,6 +574,7 @@ private generic_action(mixed $method, mixed $request, mixed $keys = [&#039;value
 
 
 
+
 ***
 
 ### get_item_in_sequence
@@ -566,6 +597,7 @@ public get_item_in_sequence(mixed $request): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$request` | **mixed** |  |
+
 
 
 
@@ -596,6 +628,139 @@ public get_create_params(null $object_name = null): array|void
 
 
 
+
+***
+
+### get_sequence_params
+
+
+
+```php
+public get_sequence_params(): array|mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_actions_params
+
+
+
+```php
+public get_actions_params(mixed $action = null): array|mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$action` | **mixed** |  |
+
+
+
+
+
+***
+
+### get_actions_schema
+
+
+
+```php
+public get_actions_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_bulk_schema
+
+
+
+```php
+public get_bulk_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_sequence_schema
+
+
+
+```php
+public get_sequence_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_schema
+
+
+
+```php
+public get_schema(): mixed
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ***
 
 
@@ -620,6 +785,7 @@ public __construct(): mixed
 
 
 
+
 ***
 
 ### filter_object_by_attributes
@@ -627,7 +793,7 @@ public __construct(): mixed
 
 
 ```php
-protected filter_object_by_attributes( $object,  $attributes): array
+protected filter_object_by_attributes(mixed $object, mixed $attributes): array
 ```
 
 
@@ -641,8 +807,9 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$attributes` | **** |  |
+| `$object` | **mixed** |  |
+| `$attributes` | **mixed** |  |
+
 
 
 
@@ -654,7 +821,7 @@ protected filter_object_by_attributes( $object,  $attributes): array
 
 
 ```php
-protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\Entity
+protected prepare_item_for_updating(mixed $object, mixed $new_values): \Tainacan\Entities\Entity
 ```
 
 
@@ -668,8 +835,9 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$object` | **** |  |
-| `$new_values` | **** |  |
+| `$object` | **mixed** |  |
+| `$new_values` | **mixed** |  |
+
 
 
 
@@ -681,7 +849,7 @@ protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\
 
 
 ```php
-protected prepare_filters( $request): array
+protected prepare_filters(mixed $request): array
 ```
 
 
@@ -695,8 +863,14 @@ protected prepare_filters( $request): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$request` | **** |  |
+| `$request` | **mixed** |  |
 
+
+
+
+**Throws:**
+
+- [`Exception`](../../../Exception.md)
 
 
 
@@ -726,14 +900,15 @@ public add_support_to_tax_query_like(mixed $args): mixed
 
 
 
+
 ***
 
-### prepare_meta
+### sanitize_value
 
 
 
 ```php
-private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
+protected sanitize_value(mixed $value): mixed
 ```
 
 
@@ -747,11 +922,8 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$mapped` | **** |  |
-| `$request` | **** |  |
-| `$query` | **** |  |
-| `$mapped_v` | **** |  |
-| `$args` | **** |  |
+| `$value` | **mixed** |  |
+
 
 
 
@@ -763,7 +935,7 @@ private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
 
 
 ```php
-protected contains_array( $array,  $query): bool
+protected contains_array(mixed $array, mixed $query): bool
 ```
 
 
@@ -777,8 +949,9 @@ protected contains_array( $array,  $query): bool
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$array` | **** |  |
-| `$query` | **** |  |
+| `$array` | **mixed** |  |
+| `$query` | **mixed** |  |
+
 
 
 
@@ -792,6 +965,7 @@ Return the fetch_only param
 ```php
 public get_fetch_only_param(): array|void
 ```
+
 
 
 
@@ -823,6 +997,7 @@ public get_wp_query_params(): array|void
 
 
 
+
 ***
 
 ### get_meta_queries_params
@@ -832,6 +1007,7 @@ Return the common meta, date and tax queries params
 ```php
 protected get_meta_queries_params(): array
 ```
+
 
 
 
@@ -869,6 +1045,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 
 
 
+
 ***
 
 ### get_permissions_schema
@@ -878,6 +1055,7 @@ public get_repository_schema(\Tainacan\Repositories\Repository $repository): mix
 ```php
 public get_permissions_schema(): mixed
 ```
+
 
 
 
@@ -909,6 +1087,7 @@ public get_base_properties_schema(): mixed
 
 
 
+
 ***
 
 ### get_schema
@@ -923,6 +1102,7 @@ protected get_schema(): mixed
 
 
 * This method is **abstract**.
+
 
 
 
@@ -949,8 +1129,9 @@ public get_list_schema(): mixed
 
 
 
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

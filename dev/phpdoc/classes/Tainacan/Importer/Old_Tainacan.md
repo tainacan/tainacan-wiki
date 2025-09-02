@@ -14,6 +14,96 @@
 ## Properties
 
 
+### tax_repo
+
+
+
+```php
+protected $tax_repo
+```
+
+
+
+
+
+
+***
+
+### col_repo
+
+
+
+```php
+protected $col_repo
+```
+
+
+
+
+
+
+***
+
+### items_repo
+
+
+
+```php
+protected $items_repo
+```
+
+
+
+
+
+
+***
+
+### metadata_repo
+
+
+
+```php
+protected $metadata_repo
+```
+
+
+
+
+
+
+***
+
+### term_repo
+
+
+
+```php
+protected $term_repo
+```
+
+
+
+
+
+
+***
+
+### item_metadata_repo
+
+
+
+```php
+protected $item_metadata_repo
+```
+
+
+
+
+
+
+***
+
 ### steps
 
 Declares what are the steps the importer will run, in the right order.
@@ -105,6 +195,7 @@ public __construct(mixed $attributes = array()): mixed
 
 
 
+
 ***
 
 ### create_taxonomies
@@ -115,6 +206,7 @@ next create the terms
 ```php
 public create_taxonomies(): mixed
 ```
+
 
 
 
@@ -146,6 +238,7 @@ public create_repo_metadata(): mixed
 
 
 
+
 ***
 
 ### create_collections
@@ -166,6 +259,7 @@ public create_collections(): mixed
 
 
 
+
 ***
 
 ### link_relationships
@@ -175,6 +269,7 @@ Method responsible for links all relationships metadata
 ```php
 public link_relationships(): int
 ```
+
 
 
 
@@ -213,6 +308,7 @@ public process_item(mixed $index, mixed $collection_id): int
 
 
 
+
 ***
 
 ### insert
@@ -244,6 +340,7 @@ Item inserted
 
 
 
+
 ***
 
 ### add_item_metadata
@@ -268,6 +365,7 @@ public add_item_metadata(mixed $item, mixed $metadata_old, mixed $collection_id)
 | `$item` | **mixed** |  |
 | `$metadata_old` | **mixed** |  |
 | `$collection_id` | **mixed** |  |
+
 
 
 
@@ -298,6 +396,7 @@ public get_total_items_from_source(mixed $collection_id): int
 
 
 
+
 ***
 
 ### get_all_items
@@ -320,6 +419,7 @@ public get_all_items(mixed $collection_id): int
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$collection_id` | **mixed** |  |
+
 
 
 
@@ -351,6 +451,7 @@ protected decode_request(mixed $result, mixed $url): mixed
 
 
 
+
 ***
 
 ### fetch_collections
@@ -360,6 +461,7 @@ return all taxonomies from tainacan old
 ```php
 protected fetch_collections(): array
 ```
+
 
 
 
@@ -391,6 +493,7 @@ protected get_taxonomies(): array
 
 
 
+
 ***
 
 ### get_repo_metadata
@@ -411,6 +514,7 @@ protected get_repo_metadata(): array
 
 
 
+
 ***
 
 ### get_collection_metadata
@@ -418,7 +522,7 @@ protected get_repo_metadata(): array
 return all metadata from collection
 
 ```php
-protected get_collection_metadata( $collection_id): array
+protected get_collection_metadata(mixed $collection_id): array
 ```
 
 
@@ -432,7 +536,8 @@ protected get_collection_metadata( $collection_id): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$collection_id` | **** |  |
+| `$collection_id` | **mixed** |  |
+
 
 
 
@@ -463,6 +568,7 @@ protected requester(mixed $link): mixed
 
 
 
+
 ***
 
 ### add_all_terms
@@ -487,6 +593,7 @@ protected add_all_terms(\Tainacan\Entities\Taxonomy $taxonomy_father, array $chi
 | `$taxonomy_father` | **\Tainacan\Entities\Taxonomy** |  |
 | `$children` | **array** | Array of taxonomies from tainacan old |
 | `$term_father` | **mixed** |  |
+
 
 
 
@@ -522,6 +629,7 @@ $metadatum_id
 
 
 
+
 ***
 
 ### create_collection
@@ -549,6 +657,7 @@ protected create_collection(mixed $node_collection): int
 **Return Value:**
 
 $metadatum_id
+
 
 
 
@@ -582,6 +691,7 @@ the class name
 
 
 
+
 ***
 
 ### insert_files
@@ -589,7 +699,7 @@ the class name
 create attachments, document and thumb from old
 
 ```php
-private insert_files(string $node_old, mixed $item): string
+private insert_files(object $node_old, mixed $item): string
 ```
 
 
@@ -603,13 +713,14 @@ private insert_files(string $node_old, mixed $item): string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$node_old` | **string** |  |
+| `$node_old` | **object** |  |
 | `$item` | **mixed** |  |
 
 
 **Return Value:**
 
 the class name
+
 
 
 
@@ -643,6 +754,7 @@ public __construct(mixed $attributess = array()): mixed
 
 
 
+
 ***
 
 ### _to_Array
@@ -669,6 +781,7 @@ public _to_Array(mixed $short = false): mixed
 
 
 
+
 ***
 
 ### get_id
@@ -689,6 +802,7 @@ public get_id(): string
 
 
 
+
 ***
 
 ### set_url
@@ -696,7 +810,7 @@ public get_id(): string
 Set URL
 
 ```php
-public set_url( $url): bool
+public set_url(mixed $url): bool
 ```
 
 
@@ -710,7 +824,8 @@ public set_url( $url): bool
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$url` | **** | string |
+| `$url` | **mixed** | string |
+
 
 
 
@@ -739,6 +854,7 @@ or bool
 
 
 
+
 ***
 
 ### get_current_step
@@ -748,6 +864,7 @@ or bool
 ```php
 public get_current_step(): mixed
 ```
+
 
 
 
@@ -785,6 +902,7 @@ public set_current_step(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_in_step_count
@@ -794,6 +912,7 @@ public set_current_step(mixed $value): mixed
 ```php
 public get_in_step_count(): mixed
 ```
+
 
 
 
@@ -831,6 +950,7 @@ public set_in_step_count(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_current_collection
@@ -840,6 +960,7 @@ public set_in_step_count(mixed $value): mixed
 ```php
 public get_current_collection(): mixed
 ```
+
 
 
 
@@ -877,6 +998,7 @@ public set_current_collection(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_current_collection_item
@@ -886,6 +1008,7 @@ public set_current_collection(mixed $value): mixed
 ```php
 public get_current_collection_item(): mixed
 ```
+
 
 
 
@@ -923,6 +1046,7 @@ public set_current_collection_item(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_tmp_file
@@ -932,6 +1056,7 @@ public set_current_collection_item(mixed $value): mixed
 ```php
 public get_tmp_file(): mixed
 ```
+
 
 
 
@@ -969,6 +1094,7 @@ public set_tmp_file(mixed $filepath): mixed
 
 
 
+
 ***
 
 ### get_collections
@@ -978,6 +1104,7 @@ public set_tmp_file(mixed $filepath): mixed
 ```php
 public get_collections(): mixed
 ```
+
 
 
 
@@ -1015,6 +1142,7 @@ public set_collections(mixed $value): mixed
 
 
 
+
 ***
 
 ### get_options
@@ -1040,6 +1168,7 @@ Importer options
 
 
 
+
 ***
 
 ### set_options
@@ -1062,6 +1191,7 @@ public set_options(array $options): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$options` | **array** |  |
+
 
 
 
@@ -1092,6 +1222,7 @@ Must be called from the __construct method of the child importer class to set de
 
 
 
+
 ***
 
 ### set_steps
@@ -1118,6 +1249,7 @@ public set_steps(mixed $steps): mixed
 
 
 
+
 ***
 
 ### get_steps
@@ -1138,51 +1270,6 @@ public get_steps(): mixed
 
 
 
-***
-
-### get_transients
-
-
-
-```php
-private get_transients(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### set_transients
-
-
-
-```php
-private set_transients(array $data): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **array** |  |
-
-
-
 
 ***
 
@@ -1193,6 +1280,7 @@ private set_transients(array $data): mixed
 ```php
 public get_log(): mixed
 ```
+
 
 
 
@@ -1224,6 +1312,7 @@ public get_error_log(): mixed
 
 
 
+
 ***
 
 ### add_file
@@ -1231,7 +1320,7 @@ public get_error_log(): mixed
 
 
 ```php
-public add_file( $file): bool
+public add_file(mixed $file): bool
 ```
 
 
@@ -1245,7 +1334,8 @@ public add_file( $file): bool
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$file` | **** | File to be managed by importer |
+| `$file` | **mixed** | File to be managed by importer |
+
 
 
 
@@ -1276,6 +1366,7 @@ public add_log(mixed $message): mixed
 
 
 
+
 ***
 
 ### add_error_log
@@ -1298,6 +1389,7 @@ public add_error_log(mixed $message): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$message` | **mixed** |  |
+
 
 
 
@@ -1328,6 +1420,7 @@ public add_collection(array $collection): mixed
 
 
 
+
 ***
 
 ### remove_collection
@@ -1354,35 +1447,6 @@ public remove_collection(mixed $col_id): mixed
 
 
 
-***
-
-### upload_file
-
-internal function to upload the file
-
-```php
-private upload_file(mixed $file_array): array
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$file_array` | **mixed** |  |
-
-
-**Return Value:**
-
-$response
-
-
 
 ***
 
@@ -1391,7 +1455,7 @@ $response
 get the content form url and creates a file
 
 ```php
-public fetch_from_remote( $url): array
+public fetch_from_remote(mixed $url): array
 ```
 
 
@@ -1405,7 +1469,8 @@ public fetch_from_remote( $url): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$url` | **** |  |
+| `$url` | **mixed** |  |
+
 
 
 
@@ -1440,6 +1505,7 @@ the option value, the default value or an empty string
 
 
 
+
 ***
 
 ### add_import_method
@@ -1467,6 +1533,7 @@ Current possible methods are file and url
 **Return Value:**
 
 true for success, false if method does not exist
+
 
 
 
@@ -1500,6 +1567,7 @@ true for success, false if method does not exist
 
 
 
+
 ***
 
 ### add_transient
@@ -1523,6 +1591,7 @@ public add_transient(mixed $key, mixed $data): mixed
 |-----------|------|-------------|
 | `$key` | **mixed** |  |
 | `$data` | **mixed** |  |
+
 
 
 
@@ -1553,6 +1622,7 @@ public delete_transient(mixed $key): mixed
 
 
 
+
 ***
 
 ### get_transient
@@ -1579,6 +1649,7 @@ public get_transient(mixed $key): mixed
 
 
 
+
 ***
 
 ### is_finished
@@ -1588,6 +1659,7 @@ public get_transient(mixed $key): mixed
 ```php
 public is_finished(): mixed
 ```
+
 
 
 
@@ -1619,6 +1691,7 @@ protected cancel_abort(): void
 
 
 
+
 ***
 
 ### abort
@@ -1639,15 +1712,17 @@ protected abort(): void
 
 
 
+
 ***
 
 ### get_abort
 
-Return wether importer should abort execution or not
+Return whether importer should abort execution or not
 
 ```php
 public get_abort(): bool
 ```
+
 
 
 
@@ -1673,6 +1748,7 @@ public get_progress_label(): string
 It automatically gets the attribute progress_label from the current step running.
 
 Importers may change this label whenever they want
+
 
 
 
@@ -1713,6 +1789,7 @@ If a negative value is passed, it is assumed that the progress is unknown
 
 
 
+
 ***
 
 ### set_current_step_total
@@ -1738,6 +1815,7 @@ the current progress of the process.
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1772,6 +1850,7 @@ the current progress of the process.
 
 
 
+
 ***
 
 ### get_source_metadata
@@ -1797,6 +1876,7 @@ $metadata_source the metadata from the source
 
 
 
+
 ***
 
 ### process_item
@@ -1804,7 +1884,7 @@ $metadata_source the metadata from the source
 get values for a single item
 
 ```php
-public process_item( $index, mixed $collection_id): array
+public process_item(mixed $index, mixed $collection_id): array
 ```
 
 
@@ -1818,7 +1898,7 @@ public process_item( $index, mixed $collection_id): array
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$index` | **** |  |
+| `$index` | **mixed** |  |
 | `$collection_id` | **mixed** |  |
 
 
@@ -1828,6 +1908,7 @@ with metadatum_source's as the index and values for the
 item
 
 Ex: [ 'Metadatum1' => 'value1', 'Metadatum2' => [ 'value2','value3' ]
+
 
 
 
@@ -1851,6 +1932,7 @@ Used to build the progress bar
 
 
 
+
 ***
 
 ### options_form
@@ -1860,6 +1942,7 @@ Method implemented by child importer to return the HTML of the Options Form to b
 ```php
 public options_form(): mixed
 ```
+
 
 
 
@@ -1892,6 +1975,7 @@ public get_output(): string
 
 
 
+
 ***
 
 ### process_collections
@@ -1901,6 +1985,7 @@ process an item from the collections queue
 ```php
 public process_collections(): mixed
 ```
+
 
 
 
@@ -1932,6 +2017,7 @@ protected next_item(): mixed
 
 
 
+
 ***
 
 ### next_collection
@@ -1952,6 +2038,7 @@ protected next_collection(): mixed
 
 
 
+
 ***
 
 ### next_step
@@ -1961,6 +2048,7 @@ protected next_collection(): mixed
 ```php
 protected next_step(): mixed
 ```
+
 
 
 
@@ -2003,6 +2091,7 @@ Item inserted
 
 
 
+
 ***
 
 ### after_inserted_item
@@ -2030,6 +2119,7 @@ public after_inserted_item(array $insertedItem, int $collection_index): mixed
 
 
 
+
 ***
 
 ### run
@@ -2050,6 +2140,7 @@ public run(): mixed
 
 
 
+
 ***
 
 ### create_new_metadata
@@ -2057,7 +2148,7 @@ public run(): mixed
 
 
 ```php
-public create_new_metadata( $metadata_description,  $collection_id, mixed $parent_id = null): bool
+public create_new_metadata(mixed $metadata_description, mixed $collection_id, mixed $parent_id = null): bool
 ```
 
 
@@ -2071,15 +2162,21 @@ public create_new_metadata( $metadata_description,  $collection_id, mixed $paren
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$metadata_description` | **** |  |
-| `$collection_id` | **** |  |
+| `$metadata_description` | **mixed** |  |
+| `$collection_id` | **mixed** |  |
 | `$parent_id` | **mixed** |  |
 
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02

@@ -149,6 +149,21 @@ protected $id
 
 ***
 
+### slug
+
+
+
+```php
+protected $slug
+```
+
+
+
+
+
+
+***
+
 ### title
 
 
@@ -314,6 +329,7 @@ public __construct(mixed $which): mixed
 
 
 
+
 ***
 
 ### __toString
@@ -323,6 +339,7 @@ public __construct(mixed $which): mixed
 ```php
 public __toString(): mixed
 ```
+
 
 
 
@@ -354,6 +371,7 @@ public _toArray(): mixed
 
 
 
+
 ***
 
 ### set_terms
@@ -361,7 +379,7 @@ public _toArray(): mixed
 
 
 ```php
-public set_terms( $value): mixed
+public set_terms(mixed $value): mixed
 ```
 
 
@@ -375,7 +393,8 @@ public set_terms( $value): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$value` | **** |  |
+| `$value` | **mixed** |  |
+
 
 
 
@@ -389,6 +408,7 @@ public set_terms( $value): mixed
 ```php
 public get_terms(): mixed|null
 ```
+
 
 
 
@@ -426,6 +446,7 @@ public get_attachments(null $exclude = null): array
 
 
 
+
 ***
 
 ### get_author_name
@@ -435,6 +456,28 @@ public get_attachments(null $exclude = null): array
 ```php
 public get_author_name(): string
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_author_login
+
+
+
+```php
+public get_author_login(): string
+```
+
 
 
 
@@ -457,6 +500,8 @@ public get_thumbnail(): array
 ```
 
 Each size is represented as an array in the format returned by
+
+
 
 
 
@@ -489,6 +534,7 @@ public get_thumbnail_blurhash(): mixed
 
 
 
+
 ***
 
 ### set__thumbnail_id
@@ -496,7 +542,7 @@ public get_thumbnail_blurhash(): mixed
 
 
 ```php
-public set__thumbnail_id( $id): mixed
+public set__thumbnail_id(mixed $id): mixed
 ```
 
 
@@ -510,7 +556,8 @@ public set__thumbnail_id( $id): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$id` | **** |  |
+| `$id` | **mixed** |  |
+
 
 
 
@@ -524,6 +571,7 @@ public set__thumbnail_id( $id): mixed
 ```php
 public get__thumbnail_id(): int|string
 ```
+
 
 
 
@@ -555,6 +603,7 @@ public get_modification_date(): mixed|null
 
 
 
+
 ***
 
 ### get_creation_date
@@ -564,6 +613,7 @@ public get_modification_date(): mixed|null
 ```php
 public get_creation_date(): mixed|null
 ```
+
 
 
 
@@ -595,6 +645,7 @@ public get_author_id(): mixed|null
 
 
 
+
 ***
 
 ### get_url
@@ -604,6 +655,7 @@ public get_author_id(): mixed|null
 ```php
 public get_url(): mixed|null
 ```
+
 
 
 
@@ -635,6 +687,7 @@ public get_id(): int
 
 
 
+
 ***
 
 ### get_title
@@ -644,6 +697,28 @@ Return the item title
 ```php
 public get_title(): string
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### get_slug
+
+Get item slug
+
+```php
+public get_slug(): string
+```
+
 
 
 
@@ -675,6 +750,7 @@ public get_order(): string
 
 
 
+
 ***
 
 ### get_parent
@@ -684,6 +760,7 @@ Return the parent ID
 ```php
 public get_parent(): int
 ```
+
 
 
 
@@ -715,6 +792,7 @@ public get_description(): string
 
 
 
+
 ***
 
 ### get_document_type
@@ -724,6 +802,7 @@ Return the item document type
 ```php
 public get_document_type(): string
 ```
+
 
 
 
@@ -755,6 +834,7 @@ public get_document_options(): string
 
 
 
+
 ***
 
 ### get_document_mimetype
@@ -764,6 +844,7 @@ Return the document mimetype
 ```php
 public get_document_mimetype(): string
 ```
+
 
 
 
@@ -795,6 +876,7 @@ public get_document(): string
 
 
 
+
 ***
 
 ### get_db_identifier
@@ -804,6 +886,8 @@ Get entity DB identifier
 ```php
 public get_db_identifier(): string
 ```
+
+
 
 
 
@@ -842,6 +926,8 @@ public get_capabilities(): object
 Object with all the capabilities as member variables.
 
 
+
+
 **See Also:**
 
 * \Tainacan\Entities\Entity::get_capabilities() - 
@@ -870,6 +956,7 @@ public get_comment_status(): string
 
 
 
+
 ***
 
 ### set_title
@@ -892,6 +979,38 @@ public set_title(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
+
+
+
+
+***
+
+### set_slug
+
+Set the item slug
+
+```php
+public set_slug(mixed $value): void
+```
+
+If you dont set the item slug, it will be set automatically based on the name and
+following WordPress default behavior of creating slugs for posts.
+
+If you set the slug for an existing one, WordPress will append a number at the end of in order
+to make it unique (e.g slug-1, slug-2)
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **mixed** |  |
+
 
 
 
@@ -922,6 +1041,7 @@ public set_order(mixed $value): void
 
 
 
+
 ***
 
 ### set_creation_date
@@ -944,6 +1064,7 @@ public set_creation_date(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -974,6 +1095,7 @@ public set_parent(mixed $value): void
 
 
 
+
 ***
 
 ### set_document_type
@@ -996,6 +1118,7 @@ public set_document_type(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
 
 
 
@@ -1026,6 +1149,7 @@ public set_document_options(mixed $value): void
 
 
 
+
 ***
 
 ### set_document
@@ -1052,6 +1176,7 @@ public set_document(mixed $value): void
 
 
 
+
 ***
 
 ### set_description
@@ -1074,6 +1199,34 @@ public set_description(mixed $value): void
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$value` | **mixed** |  |
+
+
+
+
+
+***
+
+### set_author_id
+
+Define the author id
+
+```php
+public set_author_id(mixed $author_id): void
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$author_id` | **mixed** |  |
+
 
 
 
@@ -1110,6 +1263,7 @@ Array of ItemMetadata objects
 
 
 
+
 ***
 
 ### set_cap
@@ -1130,6 +1284,7 @@ protected set_cap(): mixed
 
 
 
+
 ***
 
 ### set_comment_status
@@ -1137,7 +1292,7 @@ protected set_cap(): mixed
 Sets if comments are allowed for the current Item.
 
 ```php
-public set_comment_status( $value): mixed
+public set_comment_status(mixed $value): mixed
 ```
 
 
@@ -1151,7 +1306,8 @@ public set_comment_status( $value): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$value` | **** | string &quot;open&quot;&amp;#124;&quot;closed&quot; |
+| `$value` | **mixed** | string &quot;open&quot;&amp;#124;&quot;closed&quot; |
+
 
 
 
@@ -1165,6 +1321,8 @@ Validate the class values/properties, to be used before insert/save/update
 ```php
 public validate(): bool
 ```
+
+
 
 
 
@@ -1198,6 +1356,8 @@ public validate_core_metadata(): mixed
 
 
 
+
+
 **See Also:**
 
 * \Tainacan\Entities\Entity::validate() - 
@@ -1211,6 +1371,7 @@ public validate_core_metadata(): mixed
 ```php
 public _toHtml(): mixed
 ```
+
 
 
 
@@ -1246,12 +1407,18 @@ it returns all metadata
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />   @type mixed $metadataMetadatum object, ID or slug to retrieve only one metadatum. empty returns all metadata<br /><br />    @type array $metadata__inArray of metadata IDs or Slugs to be retrieved. Default none<br /><br />    @type array $metadata__not_inArray of metadata IDs (slugs not accepted) to excluded. Default none<br /><br />    @type bool $exclude_titleExclude the Core Title Metadata from result. Default false<br /><br />    @type bool $exclude_descriptionExclude the Core Description Metadata from result. Default false<br /><br />    @type bool $exclude_coreExclude Core Metadata (title and description) from result. Default false<br /><br />    @type bool        $hide_empty                Wether to hide or not metadata the item has no value to<br />                                                 Default: true<br />    @type string      $empty_value_message       Message string to display if $hide_empty is false and there is not metadata value.<br />                                                 Default: &#039;&#039;<br />    @type bool        $display_slug_as_class     Show metadata slug as a class in the div before the metadata block<br />                                                 Default: false<br />    @type string      $before                    String to be added before each metadata block<br />                                                 Default &#039;&lt;div class=&quot;metadata-type-$type&quot;&gt;&#039; where $type is the metadata type slug<br />    @type string      $after                String to be added after each metadata block<br />                                                 Default &#039;&lt;/div&gt;&#039;<br />    @type string      $before_title              String to be added before each metadata title<br />                                                 Default &#039;&lt;h3&gt;&#039;<br />    @type string      $after_title               String to be added after each metadata title<br />                                                 Default &#039;&lt;/h3&gt;&#039;<br />    @type string      $before_value              String to be added before each metadata value<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_value               String to be added after each metadata value<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />} |
+| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />   @type mixed $metadataMetadatum object, ID or slug to retrieve only one metadatum. empty returns all metadata<br /><br />    @type array $metadata__inArray of metadata IDs or Slugs to be retrieved. Default none<br /><br />    @type array $metadata__not_inArray of metadata IDs (slugs not accepted) to excluded. Default none<br /><br />    @type bool $exclude_titleExclude the Core Title Metadata from result. Default false<br /><br />    @type bool $exclude_descriptionExclude the Core Description Metadata from result. Default false<br /><br />    @type bool $exclude_coreExclude Core Metadata (title and description) from result. Default false<br /><br />    @type bool        $hide_empty                Whether to hide or not metadata the item has no value to<br />                                                 Default: true<br />    @type string      $empty_value_message       Message string to display if $hide_empty is false and there is not metadata value.<br />                                                 Default: &#039;&#039;<br />    @type bool        $display_slug_as_class     Show metadata slug as a class in the div before the metadata block<br />                                                 Default: false<br />    @type string      $before                    String to be added before each metadata block<br />                                                 Default &#039;&lt;div class=&quot;metadata-type-$type&quot;&gt;&#039; where $type is the metadata type slug<br />    @type string      $after                String to be added after each metadata block<br />                                                 Default &#039;&lt;/div&gt;&#039;<br />    @type string      $before_title              String to be added before each metadata title<br />                                                 Default &#039;&lt;h3&gt;&#039;<br />    @type string      $after_title               String to be added after each metadata title<br />                                                 Default &#039;&lt;/h3&gt;&#039;<br />    @type string      $before_value              String to be added before each metadata value<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_value               String to be added after each metadata value<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />} |
 
 
 **Return Value:**
 
 The HTML output
+
+
+
+**Throws:**
+
+- [`Exception`](../../Exception.md)
 
 
 
@@ -1279,13 +1446,14 @@ This function expects a $item_metadatum object. For a more generic approach, che
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$item_metadatum` | **object** | The Item Metadatum object |
-| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />    @type bool        $hide_empty                Wether to hide or not metadata the item has no value to<br />                                                 Default: true<br />    @type string      $empty_value_message       Message string to display if $hide_empty is false and there is not metadata value.<br />                                                 Default: &#039;&#039;<br />    @type bool        $display_slug_as_class     Show metadata slug as a class in the div before the metadata block<br />                                                 Default: false<br />    @type string      $before                    String to be added before each metadata block<br />                                                 Default &#039;&lt;div class=&quot;metadata-type-$type&quot;&gt;&#039; where $type is the metadata type slug<br />    @type string      $after                String to be added after each metadata block<br />                                                 Default &#039;&lt;/div&gt;&#039;<br />    @type string      $before_title              String to be added before each metadata title<br />                                                 Default &#039;&lt;h3&gt;&#039;<br />    @type string      $after_title               String to be added after each metadata title<br />                                                 Default &#039;&lt;/h3&gt;&#039;<br />    @type string      $before_value              String to be added before each metadata value<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_value               String to be added after each metadata value<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />} |
+| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />    @type bool        $hide_empty                Whether to hide or not metadata the item has no value to<br />                                                 Default: true<br />    @type string      $empty_value_message       Message string to display if $hide_empty is false and there is not metadata value.<br />                                                 Default: &#039;&#039;<br />    @type bool        $display_slug_as_class     Show metadata slug as a class in the div before the metadata block<br />                                                 Default: false<br />    @type string      $before                    String to be added before each metadata block<br />                                                 Default &#039;&lt;div class=&quot;metadata-type-$type&quot;&gt;&#039; where $type is the metadata type slug<br />    @type string      $after                String to be added after each metadata block<br />                                                 Default &#039;&lt;/div&gt;&#039;<br />    @type string      $before_title              String to be added before each metadata title<br />                                                 Default &#039;&lt;h3&gt;&#039;<br />    @type string      $after_title               String to be added after each metadata title<br />                                                 Default &#039;&lt;/h3&gt;&#039;<br />    @type string      $before_value              String to be added before each metadata value<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_value               String to be added after each metadata value<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />} |
 | `$metadatum_index` | **mixed** |  |
 
 
 **Return Value:**
 
 The HTML output
+
 
 
 
@@ -1311,6 +1479,7 @@ public get_document_as_html(mixed $img_size = &#039;large&#039;): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$img_size` | **mixed** |  |
+
 
 
 
@@ -1342,6 +1511,7 @@ public get_attachment_as_html(mixed $attachment, mixed $img_size = &#039;large&#
 
 
 
+
 ***
 
 ### get_edit_url
@@ -1362,6 +1532,7 @@ public get_edit_url(): mixed
 
 
 
+
 ***
 
 ### get_document_download_url
@@ -1371,6 +1542,7 @@ Gets the Document url of this item
 ```php
 public get_document_download_url(): mixed
 ```
+
 
 
 
@@ -1408,6 +1580,7 @@ public get_related_items(mixed $args = []): array
 
 
 
+
 ***
 
 ### get_metadata_sections_as_html
@@ -1432,12 +1605,13 @@ it returns all metadata section
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />   @type mixed $metadata_sectionMetadatum object, ID or slug to retrieve only one metadatum. empty returns all metadata_sections<br /><br />    @type array $metadata_sections__inArray of metadata_sections IDs or Slugs to be retrieved. Default none<br /><br />    @type array $metadata_sections__not_inArray of metadata_sections IDs (slugs not accepted) to excluded. Default none<br /><br />    @type bool $hide_nameDo not display the Metadata Section name. Default false<br /><br />    @type bool $hide_descriptionDo not display the Metadata Section description. Default true<br /><br />    @type bool        $hide_empty                Wether to hide or not metadata sections if there are no metadata list or they are empty<br />                                                 Default: true<br />    @type string      $empty_metadata_list_message Message string to display if $hide_empty is false and there is not metadata section metadata list.<br />                                                 Default: &#039;&#039;<br />    @type string      $before                    String to be added before each metadata section block<br />                                                 Default &#039;&lt;section class=&quot;metadata-section-slug-$slug&quot; id=&quot;$id&quot;&gt;&#039;<br />    @type string      $after                String to be added after each metadata section block<br />                                                 Default &#039;&lt;/section&gt;&#039;<br />    @type string      $before_name              String to be added before each metadata section name<br />                                                 Default &#039;&lt;h2 id=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_name               String to be added after each metadata section name<br />                                                 Default &#039;&lt;/h2&gt;&#039;<br />   @type string      $before_description            String to be added before each metadata section description<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_description             String to be added after each metadata section description<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />    @type string      $before_metadata_list      String to be added before each metadata section inner metadata list<br />                                                 Default &#039;&lt;div class=&quot;metadata-section__metadata-list&quot; aria-labelledby=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_metadata_list       String to be added after each metadata section inner metadata list<br />                                                 Default &#039;&lt;/div&gt;&#039;<br />   @type array$metadata_list_argsArguments to be passed to the get_metadata_as_html function when calling section metadata<br />} |
+| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />   @type mixed $metadata_sectionMetadatum object, ID or slug to retrieve only one metadatum. empty returns all metadata_sections<br /><br />    @type array $metadata_sections__inArray of metadata_sections IDs or Slugs to be retrieved. Default none<br /><br />    @type array $metadata_sections__not_inArray of metadata_sections IDs (slugs not accepted) to excluded. Default none<br /><br />    @type bool $hide_nameDo not display the Metadata Section name. Default false<br /><br />    @type bool $hide_descriptionDo not display the Metadata Section description. Default true<br /><br />    @type bool        $hide_empty                Whether to hide or not metadata sections if there are no metadata list or they are empty<br />                                                 Default: true<br />    @type string      $empty_metadata_list_message Message string to display if $hide_empty is false and there is not metadata section metadata list.<br />                                                 Default: &#039;&#039;<br />    @type string      $before                    String to be added before each metadata section block<br />                                                 Default &#039;&lt;section class=&quot;metadata-section-slug-$slug&quot; id=&quot;$id&quot;&gt;&#039;<br />    @type string      $after                String to be added after each metadata section block<br />                                                 Default &#039;&lt;/section&gt;&#039;<br />    @type string      $before_name              String to be added before each metadata section name<br />                                                 Default &#039;&lt;h2 id=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_name               String to be added after each metadata section name<br />                                                 Default &#039;&lt;/h2&gt;&#039;<br />   @type string      $before_description            String to be added before each metadata section description<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_description             String to be added after each metadata section description<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />    @type string      $before_metadata_list      String to be added before each metadata section inner metadata list<br />                                                 Default &#039;&lt;div class=&quot;metadata-section__metadata-list&quot; aria-labelledby=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_metadata_list       String to be added after each metadata section inner metadata list<br />                                                 Default &#039;&lt;/div&gt;&#039;<br />   @type array$metadata_list_argsArguments to be passed to the get_metadata_as_html function when calling section metadata<br />} |
 
 
 **Return Value:**
 
 The HTML output
+
 
 
 
@@ -1465,7 +1639,7 @@ This function expects a $metadata_section object. For a more generic approach, c
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$metadata_section` | **\Tainacan\Entities\Metadata_Section** | The Metadata Section object |
-| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />    @type bool $hide_nameDo not display the Metadata Section name. Default false<br /><br />    @type bool $hide_descriptionDo not display the Metadata Section description. Default true<br /><br />    @type bool        $hide_empty                Wether to hide or not metadata sections if there are no metadata list or they are empty<br />                                                 Default: true<br />    @type string      $empty_metadata_list_message Message string to display if $hide_empty is false and there is not metadata section metadata list.<br />                                                 Default: &#039;&#039;<br />    @type string      $before                    String to be added before each metadata section block<br />                                                 Default &#039;&lt;section class=&quot;metadata-section-slug-$slug&quot; id=&quot;$id&quot;&gt;&#039;<br />    @type string      $after                String to be added after each metadata section block<br />                                                 Default &#039;&lt;/section&gt;&#039;<br />    @type string      $before_name              String to be added before each metadata section name<br />                                                 Default &#039;&lt;h2 id=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_name               String to be added after each metadata section name<br />                                                 Default &#039;&lt;/h2&gt;&#039;<br />   @type string      $before_description            String to be added before each metadata section description<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_description             String to be added after each metadata section description<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />    @type string      $before_metadata_list      String to be added before each metadata section inner metadata list<br />                                                 Default &#039;&lt;div class=&quot;metadata-section__metadata-list&quot; aria-labelledby=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_metadata_list       String to be added after each metadata section inner metadata list<br />                                                 Default &#039;&lt;/div&gt;&#039;<br /><br />   @type array$metadata_list_argsArguments to be passed to the get_metadata_as_html function when calling section metadata<br />} |
+| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />    @type bool $hide_nameDo not display the Metadata Section name. Default false<br /><br />    @type bool $hide_descriptionDo not display the Metadata Section description. Default true<br /><br />    @type bool        $hide_empty                Whether to hide or not metadata sections if there are no metadata list or they are empty<br />                                                 Default: true<br />    @type string      $empty_metadata_list_message Message string to display if $hide_empty is false and there is not metadata section metadata list.<br />                                                 Default: &#039;&#039;<br />    @type string      $before                    String to be added before each metadata section block<br />                                                 Default &#039;&lt;section class=&quot;metadata-section-slug-$slug&quot; id=&quot;$id&quot;&gt;&#039;<br />    @type string      $after                String to be added after each metadata section block<br />                                                 Default &#039;&lt;/section&gt;&#039;<br />    @type string      $before_name              String to be added before each metadata section name<br />                                                 Default &#039;&lt;h2 id=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_name               String to be added after each metadata section name<br />                                                 Default &#039;&lt;/h2&gt;&#039;<br />   @type string      $before_description            String to be added before each metadata section description<br />                                                 Default &#039;&lt;p&gt;&#039;<br />    @type string      $after_description             String to be added after each metadata section description<br />                                                 Default &#039;&lt;/p&gt;&#039;<br />    @type string      $before_metadata_list      String to be added before each metadata section inner metadata list<br />                                                 Default &#039;&lt;div class=&quot;metadata-section__metadata-list&quot; aria-labelledby=&quot;metadata-section-$slug&quot;&gt;&#039;<br />    @type string      $after_metadata_list       String to be added after each metadata section inner metadata list<br />                                                 Default &#039;&lt;/div&gt;&#039;<br /><br />   @type array$metadata_list_argsArguments to be passed to the get_metadata_as_html function when calling section metadata<br />} |
 | `$section_index` | **int** | The Metadata Section index, if passed from an array |
 
 
@@ -1475,111 +1649,12 @@ The HTML output
 
 
 
+
 ***
 
 
 ## Inherited methods
 
-
-### get_collection_id
-
-
-
-```php
-public get_collection_id(): int
-```
-
-
-
-
-
-
-
-
-
-**Return Value:**
-
-collection item ID
-
-
-
-***
-
-### get_collection
-
-Return Collection from relation
-
-```php
-public get_collection(): \Tainacan\Entities\Collection|null
-```
-
-
-
-
-
-
-
-
-
-**Return Value:**
-
-Return Collection or null on errors
-
-
-
-***
-
-### set_collection_id
-
-Set collection ID
-
-```php
-public set_collection_id(int $value): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **int** |  |
-
-
-
-
-***
-
-### set_collection
-
-set collection object and id
-
-```php
-public set_collection(\Tainacan\Entities\Collection $collection): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-
-
-
-
-***
 
 ### __construct
 
@@ -1607,6 +1682,12 @@ Attention: If the ID or Post provided do not match the Entity post type, an Exce
 
 
 
+**Throws:**
+
+- [`Exception`](../../Exception.md)
+
+
+
 ***
 
 ### get_repository
@@ -1627,6 +1708,7 @@ public get_repository(): mixed
 
 
 
+
 ***
 
 ### get_date_i18n
@@ -1634,7 +1716,7 @@ public get_repository(): mixed
 
 
 ```php
-public get_date_i18n( $date): string
+public get_date_i18n(mixed $date): string
 ```
 
 
@@ -1648,7 +1730,8 @@ public get_date_i18n( $date): string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$date` | **** |  |
+| `$date` | **mixed** |  |
+
 
 
 
@@ -1683,6 +1766,7 @@ property value
 
 
 
+
 ***
 
 ### set_mapped_property
@@ -1707,6 +1791,7 @@ using the prop name dynamically, use the set() method
 |-----------|------|-------------|
 | `$prop` | **string** | id of the property |
 | `$value` | **mixed** | the value to be setted |
+
 
 
 
@@ -1742,6 +1827,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### get
@@ -1772,6 +1858,7 @@ Null on failure, the value that was set on success
 
 
 
+
 ***
 
 ### set_status
@@ -1798,6 +1885,7 @@ public set_status(string $value): mixed
 
 
 
+
 ***
 
 ### validate
@@ -1809,6 +1897,7 @@ public validate(): bool
 ```
 
 If Entity is not valid, validation error messages are available via get_errors() method
+
 
 
 
@@ -1844,6 +1933,7 @@ public validate_prop(string $prop): bool
 
 
 
+
 ***
 
 ### get_errors
@@ -1853,6 +1943,7 @@ public validate_prop(string $prop): bool
 ```php
 public get_errors(): mixed
 ```
+
 
 
 
@@ -1884,6 +1975,7 @@ public static get_post_type(): mixed
 
 
 
+
 ***
 
 ### get_capability_type
@@ -1904,6 +1996,7 @@ public static get_capability_type(): mixed
 
 
 
+
 ***
 
 ### get_status
@@ -1913,6 +2006,7 @@ public static get_capability_type(): mixed
 ```php
 public get_status(): mixed
 ```
+
 
 
 
@@ -1944,6 +2038,7 @@ This identifier is used to register the entity on database, ex.: post_type
 
 
 
+
 ***
 
 ### get_id
@@ -1953,6 +2048,7 @@ Get the entity ID
 ```php
 public get_id(): int
 ```
+
 
 
 
@@ -1991,6 +2087,7 @@ public add_error(mixed $type, mixed $message): mixed
 
 
 
+
 ***
 
 ### reset_errors
@@ -2011,6 +2108,7 @@ public reset_errors(): mixed
 
 
 
+
 ***
 
 ### get_validated
@@ -2020,6 +2118,7 @@ public reset_errors(): mixed
 ```php
 public get_validated(): mixed
 ```
+
 
 
 
@@ -2057,6 +2156,7 @@ protected set_validated(mixed $value): mixed
 
 
 
+
 ***
 
 ### set_as_valid
@@ -2066,6 +2166,7 @@ protected set_validated(mixed $value): mixed
 ```php
 protected set_as_valid(): mixed
 ```
+
 
 
 
@@ -2097,6 +2198,7 @@ public _toArray(): mixed
 
 
 
+
 ***
 
 ### _toJson
@@ -2106,6 +2208,7 @@ public _toArray(): mixed
 ```php
 public _toJson(): mixed
 ```
+
 
 
 
@@ -2143,6 +2246,7 @@ public can_read(int|\WP_User $user = null): bool
 
 
 
+
 ***
 
 ### can_edit
@@ -2165,6 +2269,7 @@ public can_edit(int|\WP_User|null $user = null): bool
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$user` | **int&#124;\WP_User&#124;null** | the user for capability check, null for the current user |
+
 
 
 
@@ -2195,6 +2300,7 @@ public can_delete(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### can_publish
@@ -2221,6 +2327,7 @@ public can_publish(int|\WP_User|null $user = null): bool
 
 
 
+
 ***
 
 ### get_capabilities
@@ -2242,6 +2349,7 @@ public get_capabilities(): object
 **Return Value:**
 
 Object with all the capabilities as member variables.
+
 
 
 
@@ -2271,8 +2379,113 @@ public diff(\Tainacan\Entities\Entity|int|\WP_Post $which): array
 
 
 
+
+***
+
+### get_collection_id
+
+
+
+```php
+public get_collection_id(): int
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+collection item ID
+
+
+
+
+***
+
+### get_collection
+
+Return Collection from relation
+
+```php
+public get_collection(): \Tainacan\Entities\Collection|null
+```
+
+
+
+
+
+
+
+
+
+**Return Value:**
+
+Return Collection or null on errors
+
+
+
+
+***
+
+### set_collection_id
+
+Set collection ID
+
+```php
+public set_collection_id(int $value): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$value` | **int** |  |
+
+
+
+
+
+***
+
+### set_collection
+
+set collection object and id
+
+```php
+public set_collection(\Tainacan\Entities\Collection $collection): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |  |
+
+
+
+
+
 ***
 
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+> Automatically generated on 2025-09-02
