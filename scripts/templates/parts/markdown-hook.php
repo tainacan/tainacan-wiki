@@ -88,22 +88,31 @@ if ( null !== $changelog && \count( $changelog ) > 0 ) {
 	echo $eol;
 }
 
+// Generate GitHub links instead of local file links
+$file_path = $hook->get_file()->getPathname();
+$relative_path = $documentor->relative( $hook->get_file() );
+
+// Convert local path to GitHub path
+// Remove the local path prefix and keep only the relative path from src/
+$github_path = $relative_path;
+if (strpos($github_path, 'src/') === 0) {
+	$github_path = substr($github_path, 4); // Remove 'src/' prefix
+}
+
+$github_file_url = 'https://github.com/tainacan/tainacan/blob/master/src/' . $github_path;
+$github_line_url = $github_file_url . '#L' . $hook->get_start_line() . '-L' . $hook->get_end_line();
+
 printf(
 	'Source: %s, %s',
 	\sprintf(
 		'[%s](%s)',
-		$hook->get_file()->getPathname(),
-		$documentor->relative( $hook->get_file() )
+		basename($file_path),
+		$github_file_url
 	),
 	\sprintf(
 		'[line %s](%s)',
 		$hook->get_start_line(),
-		\sprintf(
-			'%s#L%d-L%d',
-			$documentor->relative( $hook->get_file() ),
-			$hook->get_start_line(),
-			$hook->get_end_line()
-		)
+		$github_line_url
 	)
 );
 

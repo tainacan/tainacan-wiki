@@ -19,11 +19,20 @@ $actions = $documentor->get_actions();
 
 $eol = "\n";
 
-echo '# Hooks', $eol;
+echo '# Tainacan Actions', $eol;
 
 echo $eol;
 
-echo '## Actions', $eol;
+echo 'WordPress actions are hooks that allow you to execute custom code at specific points during the WordPress lifecycle. In Tainacan, actions enable developers to extend or modify plugin behavior without altering core files. To use an action, attach your custom function to a specific hook using the add_action() function:', $eol, $eol;
+
+echo '```php', $eol;
+echo "add_action( 'tainacan-some-action', 'your_callback_function', 10, 2 );", $eol;
+echo 'function your_callback_function( $arg1, $arg2 ) {', $eol;
+echo '    // Your custom code here', $eol;
+echo '}', $eol;
+echo '```', $eol, $eol;
+
+echo 'Refer to the list below for available Tainacan actions and their usage.', $eol, $eol;
 
 echo $eol;
 
