@@ -33,6 +33,19 @@ php ./vendor/phpdocumentor/bin/phpDocumentor.phar \
     --ignore="*.min.js" \
     --ignore="*.min.css"
 
+# Fix links in generated documentation to work with GitHub Pages/Docsify
+echo "Fixing documentation links for GitHub Pages..."
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|\./functions/|/dev/phpdoc/functions/|g' {} \;
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|\./classes/|/dev/phpdoc/classes/|g' {} \;
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|\./namespaces/|/dev/phpdoc/namespaces/|g' {} \;
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|\./packages/|/dev/phpdoc/packages/|g' {} \;
+
+# Add .md extension to links that don't have it
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|/dev/phpdoc/functions/\([^)]*\))|/dev/phpdoc/functions/\1.md)|g' {} \;
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|/dev/phpdoc/classes/\([^)]*\))|/dev/phpdoc/classes/\1.md)|g' {} \;
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|/dev/phpdoc/namespaces/\([^)]*\))|/dev/phpdoc/namespaces/\1.md)|g' {} \;
+find /src/tainacan-wiki/dev/phpdoc -name "*.md" -type f -exec sed -i 's|/dev/phpdoc/packages/\([^)]*\))|/dev/phpdoc/packages/\1.md)|g' {} \;
+
 # Generate WordPress hooks documentation
 echo "Generating WordPress hooks documentation..."
 
