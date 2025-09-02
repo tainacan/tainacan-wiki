@@ -8,7 +8,7 @@
  * @package   Pronamic\WordPress\Documentor
  */
 
-echo '## `', $hook->get_tag()->get_name(), '`', $eol;
+echo '## `', $hook->get_tag()->get_name(), '` <!-- {docsify-ignore} -->', $eol;
 echo $eol;
 
 $summary = $hook->get_summary();

@@ -12,7 +12,7 @@ function your_callback_function( $arg1, $arg2 ) {
 Refer to the list below for available Tainacan actions and their usage.
 
 
-## `tainacan-register-exposers`
+## `tainacan-register-exposers` <!-- {docsify-ignore} -->
 
 *Load exposers classes*
 
@@ -26,7 +26,7 @@ Source: [class-tainacan-exposers-handler.php](https://github.com/tainacan/tainac
 ---------------------------------
 <br>
 
-## `tainacan-register-importers`
+## `tainacan-register-importers` <!-- {docsify-ignore} -->
 
 
 Source: [class-tainacan-importer-handler.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/importer/class-tainacan-importer-handler.php), [line 92](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/importer/class-tainacan-importer-handler.php#L92-L92)
@@ -34,7 +34,7 @@ Source: [class-tainacan-importer-handler.php](https://github.com/tainacan/tainac
 ---------------------------------
 <br>
 
-## `tainacan-register-exporters`
+## `tainacan-register-exporters` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -46,7 +46,7 @@ Source: [class-tainacan-exporter-handler.php](https://github.com/tainacan/tainac
 ---------------------------------
 <br>
 
-## `tainacan-register-generic_process`
+## `tainacan-register-generic_process` <!-- {docsify-ignore} -->
 
 
 Source: [class-tainacan-generic-handler.php](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/generic-process/class-tainacan-generic-handler.php), [line 34](https://github.com/tainacan/tainacan/blob/master/src/classes/background-process/generic-process/class-tainacan-generic-handler.php#L34-L34)
@@ -54,7 +54,7 @@ Source: [class-tainacan-generic-handler.php](https://github.com/tainacan/tainaca
 ---------------------------------
 <br>
 
-## `tainacan-api-collection-created`
+## `tainacan-api-collection-created` <!-- {docsify-ignore} -->
 
 *Receive a JSON with the structure of a Collection and return, in case of success insert
 a Collection object in JSON*
@@ -70,7 +70,7 @@ Source: [class-tainacan-rest-collections-controller.php](https://github.com/tain
 ---------------------------------
 <br>
 
-## `tainacan-api-item-updated`
+## `tainacan-api-item-updated` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -83,7 +83,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-item-duplicated`
+## `tainacan-api-item-duplicated` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -96,7 +96,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-submission-item-finish`
+## `tainacan-submission-item-finish` <!-- {docsify-ignore} -->
 
 *Represents the Items REST Controller*
 
@@ -111,7 +111,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-bulk-edit-set-status`
+## `tainacan-bulk-edit-set-status` <!-- {docsify-ignore} -->
 
 *Sets the status to all items in the current group*
 
@@ -128,7 +128,7 @@ Source: [class-tainacan-bulk-edit.php](https://github.com/tainacan/tainacan/blob
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert`
+## `tainacan-pre-insert` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -140,7 +140,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert-term`
+## `tainacan-pre-insert-term` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -152,7 +152,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-insert`
+## `tainacan-insert` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -164,7 +164,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-insert-term`
+## `tainacan-insert-term` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -176,7 +176,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-pre-delete`
+## `tainacan-pre-delete` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -189,7 +189,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-pre-delete-term`
+## `tainacan-pre-delete-term` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -202,7 +202,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-deleted`
+## `tainacan-deleted` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -215,7 +215,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-deleted-term`
+## `tainacan-deleted-term` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -228,7 +228,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `register_filter_types`
+## `register_filter_types` <!-- {docsify-ignore} -->
 
 *fetch all registered filter type classes*
 
@@ -242,7 +242,7 @@ Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert`
+## `tainacan-pre-insert` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -254,7 +254,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert-Item_Metadata_Entity`
+## `tainacan-pre-insert-Item_Metadata_Entity` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -266,7 +266,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-insert`
+## `tainacan-insert` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -278,7 +278,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-insert-Item_Metadata_Entity`
+## `tainacan-insert-Item_Metadata_Entity` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -290,7 +290,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-pre-delete`
+## `tainacan-pre-delete` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -303,7 +303,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-pre-delete-Item_Metadata_Entity`
+## `tainacan-pre-delete-Item_Metadata_Entity` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -316,7 +316,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-deleted`
+## `tainacan-deleted` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -329,7 +329,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-deleted-Item_Metadata_Entity`
+## `tainacan-deleted-Item_Metadata_Entity` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -342,7 +342,7 @@ Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `register_metadata_types`
+## `register_metadata_types` <!-- {docsify-ignore} -->
 
 *fetch all registered metadatum type classes*
 
@@ -356,7 +356,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-taxonomy-removed-from-collection`
+## `tainacan-taxonomy-removed-from-collection` <!-- {docsify-ignore} -->
 
 *Triggers hooks when saving a Taxonomy Metadatum, indicating wich taxonomy was added or removed from a collection.*
 
@@ -374,7 +374,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-taxonomy-added-to-collection`
+## `tainacan-taxonomy-added-to-collection` <!-- {docsify-ignore} -->
 
 *Triggers hooks when saving a Taxonomy Metadatum, indicating wich taxonomy was added or removed from a collection.*
 
@@ -392,7 +392,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-taxonomy-removed-from-collection`
+## `tainacan-taxonomy-removed-from-collection` <!-- {docsify-ignore} -->
 
 *Class Metadata*
 
@@ -407,7 +407,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert`
+## `tainacan-pre-insert` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -419,7 +419,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert-{$obj_post_type}`
+## `tainacan-pre-insert-{$obj_post_type}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -431,7 +431,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert-{$obj_post_type}`
+## `tainacan-pre-insert-{$obj_post_type}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -443,7 +443,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-insert`
+## `tainacan-insert` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -457,7 +457,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-insert-{$obj_post_type}`
+## `tainacan-insert-{$obj_post_type}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -469,7 +469,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-pre-delete`
+## `tainacan-pre-delete` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -482,7 +482,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-pre-delete-{$post_type}`
+## `tainacan-pre-delete-{$post_type}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -495,7 +495,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-deleted`
+## `tainacan-deleted` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -508,7 +508,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-deleted-{$post_type}`
+## `tainacan-deleted-{$post_type}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -521,7 +521,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-upload-folder-renamed`
+## `tainacan-upload-folder-renamed` <!-- {docsify-ignore} -->
 
 *When an item or collection is saved, it checks if the satus was changed and
 if the items upload directory mus be renamed to add or remove the
@@ -538,7 +538,7 @@ Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-upload-folder-renamed`
+## `tainacan-upload-folder-renamed` <!-- {docsify-ignore} -->
 
 *Rename all folders from items after a bulk edit operation move their statuses*
 
@@ -555,7 +555,7 @@ Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-pre-insert-attachment`
+## `tainacan-pre-insert-attachment` <!-- {docsify-ignore} -->
 
 *Insert an attachment from an URL address.*
 
@@ -571,7 +571,7 @@ Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-post-insert-attachment`
+## `tainacan-post-insert-attachment` <!-- {docsify-ignore} -->
 
 *Insert an attachment from an URL address.*
 
@@ -587,7 +587,7 @@ Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-register-mappers`
+## `tainacan-register-mappers` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -599,7 +599,7 @@ Source: [class-tainacan-mappers-handler.php](https://github.com/tainacan/tainaca
 ---------------------------------
 <br>
 
-## `tainacan-register-vuejs-component`
+## `tainacan-register-vuejs-component` <!-- {docsify-ignore} -->
 
 *Class Components_Hooks*
 
@@ -613,7 +613,7 @@ Source: [class-tainacan-component-hooks.php](https://github.com/tainacan/tainaca
 ---------------------------------
 <br>
 
-## `tainacan-register-admin-hooks`
+## `tainacan-register-admin-hooks` <!-- {docsify-ignore} -->
 
 
 Source: [class-tainacan-admin-hooks.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/classes/hooks/class-tainacan-admin-hooks.php), [line 15](https://github.com/tainacan/tainacan/blob/master/src/views/admin/classes/hooks/class-tainacan-admin-hooks.php#L15-L15)
@@ -621,7 +621,7 @@ Source: [class-tainacan-admin-hooks.php](https://github.com/tainacan/tainacan/bl
 ---------------------------------
 <br>
 
-## `tainacan-register-vuejs-plugin`
+## `tainacan-register-vuejs-plugin` <!-- {docsify-ignore} -->
 
 *Class Plugins_Hooks*
 
@@ -635,7 +635,7 @@ Source: [class-tainacan-plugin-hooks.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-register-filter-type`
+## `tainacan-register-filter-type` <!-- {docsify-ignore} -->
 
 *Class FilterTypeHelper*
 
@@ -649,7 +649,7 @@ Source: [class-tainacan-filter-type-helper.php](https://github.com/tainacan/tain
 ---------------------------------
 <br>
 
-## `tainacan-register-metadata-type`
+## `tainacan-register-metadata-type` <!-- {docsify-ignore} -->
 
 *Class MetadataTypeHelper*
 
@@ -663,7 +663,7 @@ Source: [class-tainacan-metadata-type-helper.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-enqueue-admin-scripts`
+## `tainacan-enqueue-admin-scripts` <!-- {docsify-ignore} -->
 
 
 Source: [class-tainacan-admin.php](https://github.com/tainacan/tainacan/blob/master/src/views/admin/class-tainacan-admin.php), [line 287](https://github.com/tainacan/tainacan/blob/master/src/views/admin/class-tainacan-admin.php#L287-L287)
@@ -671,7 +671,7 @@ Source: [class-tainacan-admin.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-enqueue-roles-scripts`
+## `tainacan-enqueue-roles-scripts` <!-- {docsify-ignore} -->
 
 
 Source: [class-tainacan-roles.php](https://github.com/tainacan/tainacan/blob/master/src/views/roles/class-tainacan-roles.php), [line 54](https://github.com/tainacan/tainacan/blob/master/src/views/roles/class-tainacan-roles.php#L54-L54)
@@ -679,7 +679,7 @@ Source: [class-tainacan-roles.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-dashboard-before-cards`
+## `tainacan-dashboard-before-cards` <!-- {docsify-ignore} -->
 
 
 Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php), [line 27](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php#L27-L27)
@@ -687,7 +687,7 @@ Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/da
 ---------------------------------
 <br>
 
-## `tainacan-dashboard-after-cards`
+## `tainacan-dashboard-after-cards` <!-- {docsify-ignore} -->
 
 
 Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php), [line 40](https://github.com/tainacan/tainacan/blob/master/src/views/dashboard/page.php#L40-L40)

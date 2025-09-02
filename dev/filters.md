@@ -12,7 +12,7 @@ function your_callback_function( $arg1, $arg2 ) {
 Refer to the list below for available Tainacan filters and their usage.
 
 
-## `tainacan-exposer-numeric-item-prefix`
+## `tainacan-exposer-numeric-item-prefix` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -25,7 +25,7 @@ Source: [class-tainacan-xml.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-exporser-type-mappers`
+## `tainacan-exporser-type-mappers` <!-- {docsify-ignore} -->
 
 *Return list of supported mappers for this type*
 
@@ -40,7 +40,7 @@ Source: [class-tainacan-exposer.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-exposer-txt`
+## `tainacan-exposer-txt` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -52,7 +52,7 @@ Source: [class-tainacan-txt.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-exposer-numeric-item-prefix`
+## `tainacan-exposer-numeric-item-prefix` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -65,7 +65,7 @@ Source: [class-tainacan-txt.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-exposer-html`
+## `tainacan-exposer-html` <!-- {docsify-ignore} -->
 
 *{@inheritDoc}*
 
@@ -79,7 +79,7 @@ Source: [class-tainacan-html.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-exposer-numeric-item-prefix`
+## `tainacan-exposer-numeric-item-prefix` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -92,7 +92,7 @@ Source: [class-tainacan-html.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-exposer-jsonld`
+## `tainacan-exposer-jsonld` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -104,7 +104,7 @@ Source: [class-tainacan-json-ld.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-exposer-head`
+## `tainacan-exposer-head` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -123,7 +123,7 @@ Source: [class-tainacan-oai-pmh.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-oai-pmh-namespace`
+## `tainacan-oai-pmh-namespace` <!-- {docsify-ignore} -->
 
 *{@inheritDoc}*
 
@@ -137,7 +137,7 @@ Source: [class-tainacan-oai-pmh.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-oai-pmh-root`
+## `tainacan-oai-pmh-root` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -149,7 +149,7 @@ Source: [class-tainacan-oai-pmh.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan_single_item_content`
+## `tainacan_single_item_content` <!-- {docsify-ignore} -->
 
 *A basic content for a Tainacan Single page content.*
 
@@ -167,7 +167,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan_repository_archive_template_hierarchy`
+## `tainacan_repository_archive_template_hierarchy` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -183,7 +183,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-default-view-mode-for-themes`
+## `tainacan-default-view-mode-for-themes` <!-- {docsify-ignore} -->
 
 *Get the default view mode which can be tweaked in the settings page.*
 
@@ -197,7 +197,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-enabled-view-modes-for-themes`
+## `tainacan-enabled-view-modes-for-themes` <!-- {docsify-ignore} -->
 
 *Get the enabled view modes which can be tweaked in the settings page.*
 
@@ -211,7 +211,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-default-order-for-themes`
+## `tainacan-default-order-for-themes` <!-- {docsify-ignore} -->
 
 *Get the default order for items lists, which can be tweaked in the settings page.*
 
@@ -225,7 +225,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-default-orderby-for-themes`
+## `tainacan-default-orderby-for-themes` <!-- {docsify-ignore} -->
 
 *Get the default order by for items lists, which can be tweaked in the settings page.*
 
@@ -239,7 +239,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-swiper-main-options`
+## `tainacan-swiper-main-options` <!-- {docsify-ignore} -->
 
 *Returns an item gallery, containing document,
 attachments and other information in a slider, carousel and lightbox*
@@ -256,7 +256,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-swiper-thumbs-options`
+## `tainacan-swiper-thumbs-options` <!-- {docsify-ignore} -->
 
 *Returns an item gallery, containing document,
 attachments and other information in a slider, carousel and lightbox*
@@ -273,7 +273,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `get_tainacan_item_gallery`
+## `get_tainacan_item_gallery` <!-- {docsify-ignore} -->
 
 *Filters the Media Component HTML*
 
@@ -288,7 +288,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-swiper-main-options`
+## `tainacan-swiper-main-options` <!-- {docsify-ignore} -->
 
 *Returns an items gallery, displaying a list of items in a slider, carousel and lightbox*
 
@@ -304,7 +304,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-swiper-thumbs-options`
+## `tainacan-swiper-thumbs-options` <!-- {docsify-ignore} -->
 
 *Returns an items gallery, displaying a list of items in a slider, carousel and lightbox*
 
@@ -320,7 +320,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `get_tainacan_items_gallery`
+## `get_tainacan_items_gallery` <!-- {docsify-ignore} -->
 
 *Filters the Media Component HTML*
 
@@ -335,7 +335,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before`
+## `tainacan-get-item-metadatum-as-html-before` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -357,7 +357,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}`
+## `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -379,7 +379,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}`
+## `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -401,7 +401,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before-title`
+## `tainacan-get-item-metadatum-as-html-before-title` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -423,7 +423,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after-title`
+## `tainacan-get-item-metadatum-as-html-after-title` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -445,7 +445,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before-value`
+## `tainacan-get-item-metadatum-as-html-before-value` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -467,7 +467,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after-value`
+## `tainacan-get-item-metadatum-as-html-after-value` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -489,7 +489,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}`
+## `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -511,7 +511,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}`
+## `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -533,7 +533,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after`
+## `tainacan-get-item-metadatum-as-html-after` <!-- {docsify-ignore} -->
 
 *To be used inside Gutenberg editor side preview of template blocks*
 
@@ -555,7 +555,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before`
+## `tainacan-get-metadata-section-as-html-before` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -572,7 +572,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-before--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -589,7 +589,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-before--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -606,7 +606,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-name`
+## `tainacan-get-metadata-section-as-html-before-name` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -623,7 +623,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -640,7 +640,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -657,7 +657,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-name`
+## `tainacan-get-metadata-section-as-html-after-name` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -674,7 +674,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -691,7 +691,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -708,7 +708,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-metadata-list`
+## `tainacan-get-metadata-section-as-html-before-metadata-list` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -725,7 +725,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -742,7 +742,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -759,7 +759,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-metadata-list`
+## `tainacan-get-metadata-section-as-html-after-metadata-list` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -776,7 +776,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -793,7 +793,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -810,7 +810,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-after--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -827,7 +827,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-after--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -844,7 +844,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after`
+## `tainacan-get-metadata-section-as-html-after` <!-- {docsify-ignore} -->
 
 *Class Tainacan\Theme_Helper*
 
@@ -861,7 +861,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-default-taxonomy-terms-order`
+## `tainacan-default-taxonomy-terms-order` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -873,7 +873,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-default-taxonomy-terms-orderby`
+## `tainacan-default-taxonomy-terms-orderby` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -885,7 +885,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-default-taxonomy-terms-perpage`
+## `tainacan-default-taxonomy-terms-perpage` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -897,7 +897,7 @@ Source: [class-tainacan-theme-helper.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-get-the-document`
+## `tainacan-get-the-document` <!-- {docsify-ignore} -->
 
 *To be used inside The Loop*
 
@@ -914,7 +914,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_get_the_document_raw`
+## `tainacan_get_the_document_raw` <!-- {docsify-ignore} -->
 
 *To be used inside The Loop*
 
@@ -931,7 +931,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_get_the_item_document_url`
+## `tainacan_get_the_item_document_url` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -944,7 +944,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_get_the_document_type`
+## `tainacan_get_the_document_type` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -957,7 +957,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-collection-name`
+## `tainacan-get-collection-name` <!-- {docsify-ignore} -->
 
 *When visiting a collection archive or single, returns the collection name*
 
@@ -972,7 +972,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-collection-description`
+## `tainacan-get-collection-description` <!-- {docsify-ignore} -->
 
 *When visiting a collection archive or single, returns the collection description with clickable links*
 
@@ -987,7 +987,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-collection-url`
+## `tainacan-get-collection-url` <!-- {docsify-ignore} -->
 
 *When visiting a collection archive or single, returns the collection url link*
 
@@ -1002,7 +1002,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-term-name`
+## `tainacan-get-term-name` <!-- {docsify-ignore} -->
 
 *When visiting a taxonomy archive, returns the term name*
 
@@ -1017,7 +1017,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-term-description`
+## `tainacan-get-term-description` <!-- {docsify-ignore} -->
 
 *When visiting a taxonomy archive, returns the term description*
 
@@ -1032,7 +1032,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-the-attachments`
+## `tainacan-get-the-attachments` <!-- {docsify-ignore} -->
 
 *To be used inside The Loop*
 
@@ -1049,7 +1049,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-initials`
+## `tainacan-get-initials` <!-- {docsify-ignore} -->
 
 *Gets the initials from a name.*
 
@@ -1067,7 +1067,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-get-the-mime-type-icon`
+## `tainacan-get-the-mime-type-icon` <!-- {docsify-ignore} -->
 
 *Filter the image source for the empty thumbnail placeholder.*
 
@@ -1083,7 +1083,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_single_taxonomy_terms_query`
+## `tainacan_single_taxonomy_terms_query` <!-- {docsify-ignore} -->
 
 *Render the taxonomy single template HTML string.*
 
@@ -1102,7 +1102,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1114,7 +1114,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_get_single_taxonomy_content`
+## `tainacan_get_single_taxonomy_content` <!-- {docsify-ignore} -->
 
 *Render the taxonomy single template HTML string.*
 
@@ -1133,7 +1133,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_get_taxonomies_orderby`
+## `tainacan_get_taxonomies_orderby` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1145,7 +1145,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_get_taxonomies_search`
+## `tainacan_get_taxonomies_search` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1157,7 +1157,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan_get_taxonomies_pagination`
+## `tainacan_get_taxonomies_pagination` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1169,7 +1169,7 @@ Source: [template-tags.php](https://github.com/tainacan/tainacan/blob/master/src
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1181,7 +1181,7 @@ Source: [class-tainacan-elastic-press-lte-4.7.2.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1193,7 +1193,7 @@ Source: [class-tainacan-elastic-press-lte-4.7.2.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `{$this->identifier}_queue_lock_time`
+## `{$this->identifier}_queue_lock_time` <!-- {docsify-ignore} -->
 
 *Lock process*
 
@@ -1211,7 +1211,7 @@ Source: [class-tainacan-background-process-base.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `{$this->identifier}_memory_exceeded`
+## `{$this->identifier}_memory_exceeded` <!-- {docsify-ignore} -->
 
 *Memory exceeded*
 
@@ -1228,7 +1228,7 @@ Source: [class-tainacan-background-process-base.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `{$this->identifier}_default_time_limit`
+## `{$this->identifier}_default_time_limit` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1240,7 +1240,7 @@ Source: [class-tainacan-background-process-base.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `{$this->identifier}_time_exceeded`
+## `{$this->identifier}_time_exceeded` <!-- {docsify-ignore} -->
 
 *Time exceeded.*
 
@@ -1257,7 +1257,7 @@ Source: [class-tainacan-background-process-base.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `{$this->identifier}_cron_interval`
+## `{$this->identifier}_cron_interval` <!-- {docsify-ignore} -->
 
 *Schedule cron healthcheck*
 
@@ -1271,7 +1271,7 @@ Source: [class-tainacan-background-process-base.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `{$this->identifier}_cron_interval`
+## `{$this->identifier}_cron_interval` <!-- {docsify-ignore} -->
 
 *Schedule cron healthcheck*
 
@@ -1285,7 +1285,7 @@ Source: [class-tainacan-background-process-base.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `tainacan-exporter-step-length-items`
+## `tainacan-exporter-step-length-items` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1298,7 +1298,7 @@ Source: [class-tainacan-exporter.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-the-modified-author`
+## `tainacan-the-modified-author` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1310,7 +1310,7 @@ Source: [class-tainacan-exporter-handler-cell.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `https_local_ssl_verify`
+## `https_local_ssl_verify` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1322,7 +1322,7 @@ Source: [class-tainacan-async-request.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-api-response-metadatum-meta`
+## `tainacan-api-response-metadatum-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1341,7 +1341,7 @@ Source: [class-tainacan-rest-metadata-controller.php](https://github.com/tainaca
 ---------------------------------
 <br>
 
-## `tainacan-api-response-metadata-section-meta`
+## `tainacan-api-response-metadata-section-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1360,7 +1360,7 @@ Source: [class-tainacan-rest-metadata-sections-controller.php](https://github.co
 ---------------------------------
 <br>
 
-## `tainacan-api-response-metadatum-meta`
+## `tainacan-api-response-metadatum-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1379,7 +1379,7 @@ Source: [class-tainacan-rest-metadata-sections-controller.php](https://github.co
 ---------------------------------
 <br>
 
-## `tainacan-api-response-term-meta`
+## `tainacan-api-response-term-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional term_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1398,7 +1398,7 @@ Source: [class-tainacan-rest-terms-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-rest-response`
+## `tainacan-rest-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1411,7 +1411,7 @@ Source: [class-tainacan-rest-item-metadata-controller.php](https://github.com/ta
 ---------------------------------
 <br>
 
-## `tainacan-rest-response`
+## `tainacan-rest-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1424,7 +1424,7 @@ Source: [class-tainacan-rest-item-metadata-controller.php](https://github.com/ta
 ---------------------------------
 <br>
 
-## `tainacan-api-response-collection-meta`
+## `tainacan-api-response-collection-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1443,7 +1443,7 @@ Source: [class-tainacan-rest-collections-controller.php](https://github.com/tain
 ---------------------------------
 <br>
 
-## `tainacan-api-response-item-meta`
+## `tainacan-api-response-item-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1462,7 +1462,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-items-prepare-for-response`
+## `tainacan-api-items-prepare-for-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1476,7 +1476,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-rest-response`
+## `tainacan-rest-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1489,7 +1489,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `the_content`
+## `the_content` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1501,7 +1501,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-rest-response`
+## `tainacan-rest-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1514,7 +1514,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-item-get-author-name`
+## `tainacan-item-get-author-name` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1526,7 +1526,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `{$filter_name}`
+## `{$filter_name}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1538,7 +1538,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-get-items-alternate`
+## `tainacan-api-get-items-alternate` <!-- {docsify-ignore} -->
 
 *allow plugins to hijack the process.*
 
@@ -1555,7 +1555,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-items-filters-response`
+## `tainacan-api-items-filters-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1568,7 +1568,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-items-filters-arguments-response`
+## `tainacan-api-items-filters-arguments-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1581,7 +1581,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-items-response`
+## `tainacan-api-items-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1594,7 +1594,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-submission-item-data`
+## `tainacan-submission-item-data` <!-- {docsify-ignore} -->
 
 *Represents the Items REST Controller*
 
@@ -1609,7 +1609,7 @@ Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-response-taxonomy-meta`
+## `tainacan-api-response-taxonomy-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1628,7 +1628,7 @@ Source: [class-tainacan-rest-taxonomies-controller.php](https://github.com/taina
 ---------------------------------
 <br>
 
-## `tainacan-api-role-prepare-for-response`
+## `tainacan-api-role-prepare-for-response` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1641,7 +1641,7 @@ Source: [class-tainacan-rest-roles-controller.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-api-response-filter-meta`
+## `tainacan-api-response-filter-meta` <!-- {docsify-ignore} -->
 
 *Use this filter to add additional post_meta to the api response
 Use the $request object to get the context of the request and other variables
@@ -1660,7 +1660,7 @@ Source: [class-tainacan-rest-filters-controller.php](https://github.com/tainacan
 ---------------------------------
 <br>
 
-## `tainacan-api-prepare-items-args`
+## `tainacan-api-prepare-items-args` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1673,7 +1673,7 @@ Source: [class-tainacan-rest-controller.php](https://github.com/tainacan/tainaca
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1685,7 +1685,7 @@ Source: [class-tainacan-elastic-press.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1697,7 +1697,7 @@ Source: [class-tainacan-elastic-press.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-log-to-string`
+## `tainacan-log-to-string` <!-- {docsify-ignore} -->
 
 *Represents entity Log*
 
@@ -1712,7 +1712,7 @@ Source: [class-tainacan-log.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-log-to-array`
+## `tainacan-log-to-array` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1725,7 +1725,7 @@ Source: [class-tainacan-log.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-log-set-title`
+## `tainacan-log-set-title` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1737,7 +1737,7 @@ Source: [class-tainacan-log.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-item-to-string`
+## `tainacan-item-to-string` <!-- {docsify-ignore} -->
 
 *Represents the Entity Item*
 
@@ -1752,7 +1752,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-to-array`
+## `tainacan-item-to-array` <!-- {docsify-ignore} -->
 
 *Represents the Entity Item*
 
@@ -1767,7 +1767,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-get-attachments`
+## `tainacan-item-get-attachments` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1781,7 +1781,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-get-author-name`
+## `tainacan-item-get-author-name` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1794,7 +1794,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-get-author-login`
+## `tainacan-item-get-author-login` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1807,7 +1807,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-get-thumbnail`
+## `tainacan-item-get-thumbnail` <!-- {docsify-ignore} -->
 
 *Gets the thumbnail list of files*
 
@@ -1824,7 +1824,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `comments_open`
+## `comments_open` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1837,7 +1837,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1849,7 +1849,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -1861,7 +1861,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-filter-args`
+## `tainacan-get-item-metadatum-as-html-filter-args` <!-- {docsify-ignore} -->
 
 *Filter the arguments passed to the get_item_metadatum_as_html function*
 
@@ -1876,7 +1876,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before`
+## `tainacan-get-item-metadatum-as-html-before` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1895,7 +1895,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}`
+## `tainacan-get-item-metadatum-as-html-before--type-{$metadata_type}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1914,7 +1914,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}`
+## `tainacan-get-item-metadatum-as-html-before--id-{$metadatum_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1933,7 +1933,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before--index-{$metadatum_index}`
+## `tainacan-get-item-metadatum-as-html-before--index-{$metadatum_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1952,7 +1952,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before-title`
+## `tainacan-get-item-metadatum-as-html-before-title` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1971,7 +1971,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after-title`
+## `tainacan-get-item-metadatum-as-html-after-title` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -1990,7 +1990,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-before-value`
+## `tainacan-get-item-metadatum-as-html-before-value` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -2009,7 +2009,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after-value`
+## `tainacan-get-item-metadatum-as-html-after-value` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -2028,7 +2028,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after--index-{$metadatum_index}`
+## `tainacan-get-item-metadatum-as-html-after--index-{$metadatum_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -2047,7 +2047,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}`
+## `tainacan-get-item-metadatum-as-html-after--id-{$metadatum_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -2066,7 +2066,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}`
+## `tainacan-get-item-metadatum-as-html-after--type-{$metadata_type}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -2085,7 +2085,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-item-metadatum-as-html-after`
+## `tainacan-get-item-metadatum-as-html-after` <!-- {docsify-ignore} -->
 
 *Return a single item metadata as a HTML string to be used as output.*
 
@@ -2104,7 +2104,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-get-document-as-html`
+## `tainacan-item-get-document-as-html` <!-- {docsify-ignore} -->
 
 *Gets the document as a html. May be a text, link, iframe, image, audio.*
 
@@ -2122,7 +2122,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-get-attachment-as-html`
+## `tainacan-item-get-attachment-as-html` <!-- {docsify-ignore} -->
 
 *Gets the attachment as a html. May be an iframe, image, audio.*
 
@@ -2140,7 +2140,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-filter-args`
+## `tainacan-get-metadata-section-as-html-filter-args` <!-- {docsify-ignore} -->
 
 *Filter the arguments passed to the get_metadata_section_as_html function*
 
@@ -2155,7 +2155,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before`
+## `tainacan-get-metadata-section-as-html-before` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2174,7 +2174,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-before--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2193,7 +2193,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-before--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2212,7 +2212,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-name`
+## `tainacan-get-metadata-section-as-html-before-name` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2231,7 +2231,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-before-name--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2250,7 +2250,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-before-name--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2269,7 +2269,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-name`
+## `tainacan-get-metadata-section-as-html-after-name` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2288,7 +2288,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-after-name--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2307,7 +2307,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-after-name--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2326,7 +2326,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-metadata-list`
+## `tainacan-get-metadata-section-as-html-before-metadata-list` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2345,7 +2345,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-before-metadata-list--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2364,7 +2364,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-before-metadata-list--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2383,7 +2383,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-metadata-list`
+## `tainacan-get-metadata-section-as-html-after-metadata-list` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2402,7 +2402,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-after-metadata-list--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2421,7 +2421,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-after-metadata-list--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2440,7 +2440,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after--index-{$section_index}`
+## `tainacan-get-metadata-section-as-html-after--index-{$section_index}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2459,7 +2459,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after--id-{$section_id}`
+## `tainacan-get-metadata-section-as-html-after--id-{$section_id}` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2478,7 +2478,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-metadata-section-as-html-after`
+## `tainacan-get-metadata-section-as-html-after` <!-- {docsify-ignore} -->
 
 *Return a single item metadata section as a HTML string to be used as output.*
 
@@ -2497,7 +2497,7 @@ Source: [class-tainacan-item.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-multivalue-prefix`
+## `tainacan-item-metadata-get-multivalue-prefix` <!-- {docsify-ignore} -->
 
 *Gets the string used before each value when concatenating multiple values
 to display item metadata value as html or string*
@@ -2513,7 +2513,7 @@ Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-multivalue-suffix`
+## `tainacan-item-metadata-get-multivalue-suffix` <!-- {docsify-ignore} -->
 
 *Gets the string used after each value when concatenating multiple values
 to display item metadata value as html or string*
@@ -2529,7 +2529,7 @@ Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-multivalue-separator`
+## `tainacan-item-metadata-get-multivalue-separator` <!-- {docsify-ignore} -->
 
 *Gets the string used in between each value when concatenating multiple values
 to display item metadata value as html or string*
@@ -2545,7 +2545,7 @@ Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html`
+## `tainacan-item-metadata-get-value-as-html` <!-- {docsify-ignore} -->
 
 *Filter the item metadatum value as HTML*
 
@@ -2560,7 +2560,7 @@ Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-string`
+## `tainacan-item-metadata-get-value-as-string` <!-- {docsify-ignore} -->
 
 *Filter the item metadatum value as string*
 
@@ -2575,7 +2575,7 @@ Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-to-array`
+## `tainacan-item-metadata-to-array` <!-- {docsify-ignore} -->
 
 *Convert the object to an Array*
 
@@ -2590,7 +2590,7 @@ Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2602,7 +2602,7 @@ Source: [class-tainacan-item-metadata-entity.php](https://github.com/tainacan/ta
 ---------------------------------
 <br>
 
-## `tainacan-taxonomy-to-string`
+## `tainacan-taxonomy-to-string` <!-- {docsify-ignore} -->
 
 *Represents the Entity Taxonomy*
 
@@ -2617,7 +2617,7 @@ Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2629,7 +2629,7 @@ Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-entity-get-property`
+## `tainacan-entity-get-property` <!-- {docsify-ignore} -->
 
 *return the value for a mapped property*
 
@@ -2645,7 +2645,7 @@ Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/ma
 ---------------------------------
 <br>
 
-## `tainacan-entity-set-property`
+## `tainacan-entity-set-property` <!-- {docsify-ignore} -->
 
 *set the value of a mapped property*
 
@@ -2664,7 +2664,7 @@ Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/ma
 ---------------------------------
 <br>
 
-## `tainacan-set-post-status`
+## `tainacan-set-post-status` <!-- {docsify-ignore} -->
 
 *set the status of the entity*
 
@@ -2678,7 +2678,7 @@ Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/ma
 ---------------------------------
 <br>
 
-## `tainacan-get-post-status`
+## `tainacan-get-post-status` <!-- {docsify-ignore} -->
 
 *Entity Super class*
 
@@ -2692,7 +2692,7 @@ Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/ma
 ---------------------------------
 <br>
 
-## `{$hook_prefix}-to-array`
+## `{$hook_prefix}-to-array` <!-- {docsify-ignore} -->
 
 *Entity Super class*
 
@@ -2707,7 +2707,7 @@ Source: [class-tainacan-entity.php](https://github.com/tainacan/tainacan/blob/ma
 ---------------------------------
 <br>
 
-## `tainacan-metadata-section-to-string`
+## `tainacan-metadata-section-to-string` <!-- {docsify-ignore} -->
 
 *Represents the Entity Metadatum*
 
@@ -2722,7 +2722,7 @@ Source: [class-tainacan-metadata-section.php](https://github.com/tainacan/tainac
 ---------------------------------
 <br>
 
-## `tainacan-term-to-string`
+## `tainacan-term-to-string` <!-- {docsify-ignore} -->
 
 *Represents the Entity Term*
 
@@ -2737,7 +2737,7 @@ Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2749,7 +2749,7 @@ Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-term-to-array`
+## `tainacan-term-to-array` <!-- {docsify-ignore} -->
 
 *Represents the Entity Term*
 
@@ -2764,7 +2764,7 @@ Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-term-get-thumbnail`
+## `tainacan-term-get-thumbnail` <!-- {docsify-ignore} -->
 
 *Gets the thumbnail*
 
@@ -2781,7 +2781,7 @@ Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-term-to-html`
+## `tainacan-term-to-html` <!-- {docsify-ignore} -->
 
 *Represents the Entity Term*
 
@@ -2796,7 +2796,7 @@ Source: [class-tainacan-term.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-collection-to-string`
+## `tainacan-collection-to-string` <!-- {docsify-ignore} -->
 
 *Class that represents the Collection entity*
 
@@ -2811,7 +2811,7 @@ Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-collection-to-array`
+## `tainacan-collection-to-array` <!-- {docsify-ignore} -->
 
 *Class that represents the Collection entity*
 
@@ -2826,7 +2826,7 @@ Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-collection-get-attachments`
+## `tainacan-collection-get-attachments` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2840,7 +2840,7 @@ Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-collection-get-author-name`
+## `tainacan-collection-get-author-name` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2853,7 +2853,7 @@ Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-collection-get-thumbnail`
+## `tainacan-collection-get-thumbnail` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2866,7 +2866,7 @@ Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-collection-get-header-image`
+## `tainacan-collection-get-header-image` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2879,7 +2879,7 @@ Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2891,7 +2891,7 @@ Source: [class-tainacan-collection.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-filter-to-string`
+## `tainacan-filter-to-string` <!-- {docsify-ignore} -->
 
 *Represents the entity Filter*
 
@@ -2906,7 +2906,7 @@ Source: [class-tainacan-filter.php](https://github.com/tainacan/tainacan/blob/ma
 ---------------------------------
 <br>
 
-## `tainacan-filter-to-array`
+## `tainacan-filter-to-array` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -2919,7 +2919,7 @@ Source: [class-tainacan-filter.php](https://github.com/tainacan/tainacan/blob/ma
 ---------------------------------
 <br>
 
-## `tainacan-metadatum-to-string`
+## `tainacan-metadatum-to-string` <!-- {docsify-ignore} -->
 
 *Represents the Entity Metadatum*
 
@@ -2934,7 +2934,7 @@ Source: [class-tainacan-metadatum.php](https://github.com/tainacan/tainacan/blob
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 *Class Tainacan_Terms*
 
@@ -2956,7 +2956,7 @@ Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 *{@inheritDoc}*
 
@@ -3006,7 +3006,7 @@ Source: [class-tainacan-collections.php](https://github.com/tainacan/tainacan/bl
 ---------------------------------
 <br>
 
-## `tainacan-fetch-args`
+## `tainacan-fetch-args` <!-- {docsify-ignore} -->
 
 *fetch collection based on ID or WP_Query args*
 
@@ -3029,7 +3029,7 @@ Source: [class-tainacan-collections.php](https://github.com/tainacan/tainacan/bl
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 *{@inheritDoc}*
 
@@ -3053,7 +3053,7 @@ Source: [class-tainacan-metadata-sections.php](https://github.com/tainacan/taina
 ---------------------------------
 <br>
 
-## `tainacan-fetch-args`
+## `tainacan-fetch-args` <!-- {docsify-ignore} -->
 
 *fetch metadata section based on ID or WP_Query args*
 
@@ -3076,7 +3076,7 @@ Source: [class-tainacan-metadata-sections.php](https://github.com/tainacan/taina
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3088,7 +3088,7 @@ Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-fetch-args`
+## `tainacan-fetch-args` <!-- {docsify-ignore} -->
 
 *fetch items based on ID or WP_Query args*
 
@@ -3114,7 +3114,7 @@ Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-get-thumbnail-id-from-document`
+## `tainacan-get-thumbnail-id-from-document` <!-- {docsify-ignore} -->
 
 *Hook to get thumbnail from document*
 
@@ -3129,7 +3129,7 @@ Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan_add_related_item`
+## `tainacan_add_related_item` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3141,7 +3141,7 @@ Source: [class-tainacan-items.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 *Implement a Logs system*
 
@@ -3182,7 +3182,7 @@ Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-fetch-args`
+## `tainacan-fetch-args` <!-- {docsify-ignore} -->
 
 *fetch logs based on ID or WP_Query args*
 
@@ -3205,7 +3205,7 @@ Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-entity-diff`
+## `tainacan-entity-diff` <!-- {docsify-ignore} -->
 
 *Compare two repository entities and sets the current_diff property to be used in the insert hook*
 
@@ -3221,7 +3221,7 @@ Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-entity-diff`
+## `tainacan-entity-diff` <!-- {docsify-ignore} -->
 
 *Implement a Logs system*
 
@@ -3237,7 +3237,7 @@ Source: [class-tainacan-logs.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3279,7 +3279,7 @@ Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-fetch-args`
+## `tainacan-fetch-args` <!-- {docsify-ignore} -->
 
 *fetch filter based on ID or WP_Query args*
 
@@ -3302,7 +3302,7 @@ Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 *Class Tainacan_Taxonomies*
 
@@ -3336,7 +3336,7 @@ Source: [class-tainacan-taxonomies.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-fetch-args`
+## `tainacan-fetch-args` <!-- {docsify-ignore} -->
 
 *fetch taxonomies based on ID or WP_Query args*
 
@@ -3359,7 +3359,7 @@ Source: [class-tainacan-taxonomies.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-get-map-{$entity}`
+## `tainacan-get-map-{$entity}` <!-- {docsify-ignore} -->
 
 *{@inheritDoc}*
 
@@ -3445,7 +3445,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-fetch-args`
+## `tainacan-fetch-args` <!-- {docsify-ignore} -->
 
 *fetch metadatum based on ID or WP_Query args*
 
@@ -3468,7 +3468,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-fetch-all-metadatum-values`
+## `tainacan-fetch-all-metadatum-values` <!-- {docsify-ignore} -->
 
 *Return all possible values for a metadatum*
 
@@ -3489,7 +3489,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3501,7 +3501,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-item-get-author-name`
+## `tainacan-item-get-author-name` <!-- {docsify-ignore} -->
 
 *Return all possible values for a metadatum*
 
@@ -3520,7 +3520,7 @@ Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3532,7 +3532,7 @@ Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-oai-maxrecords`
+## `tainacan-oai-maxrecords` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3544,7 +3544,7 @@ Source: [class-tainacan-oaipmh-expose.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-oai-token-valid`
+## `tainacan-oai-token-valid` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3556,7 +3556,7 @@ Source: [class-tainacan-oaipmh-expose.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-extract-pdf-cover`
+## `tainacan-extract-pdf-cover` <!-- {docsify-ignore} -->
 
 *Extract an image from the first page of a pdf file*
 
@@ -3571,7 +3571,7 @@ Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-index-pdf`
+## `tainacan-index-pdf` <!-- {docsify-ignore} -->
 
 *Class withe helpful methods to handle media in Tainacan*
 
@@ -3587,7 +3587,7 @@ Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-default-image-blurhash`
+## `tainacan-default-image-blurhash` <!-- {docsify-ignore} -->
 
 *Class withe helpful methods to handle media in Tainacan*
 
@@ -3601,7 +3601,7 @@ Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-get-mapper-from-request`
+## `tainacan-get-mapper-from-request` <!-- {docsify-ignore} -->
 
 *Check if there is a mapper*
 
@@ -3616,7 +3616,7 @@ Source: [class-tainacan-mappers-handler.php](https://github.com/tainacan/tainaca
 ---------------------------------
 <br>
 
-## `tainacan-available-admin-ui-options`
+## `tainacan-available-admin-ui-options` <!-- {docsify-ignore} -->
 
 *Lists a translatable and grouped version of the available admin ui options*
 
@@ -3630,7 +3630,7 @@ Source: [class-tainacan-admin-ui-options.php](https://github.com/tainacan/tainac
 ---------------------------------
 <br>
 
-## `tainacan-svg-icons-folder-path`
+## `tainacan-svg-icons-folder-path` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3642,7 +3642,7 @@ Source: [class-tainacan-svg-icon.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-admin-hooks-positions`
+## `tainacan-admin-hooks-positions` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3654,7 +3654,7 @@ Source: [class-tainacan-admin-hooks.php](https://github.com/tainacan/tainacan/bl
 ---------------------------------
 <br>
 
-## `tainacan-admin-hooks-contexts`
+## `tainacan-admin-hooks-contexts` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3666,7 +3666,7 @@ Source: [class-tainacan-admin-hooks.php](https://github.com/tainacan/tainacan/bl
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3678,7 +3678,7 @@ Source: [class-tainacan-numerics-intersection.php](https://github.com/tainacan/t
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3690,7 +3690,7 @@ Source: [class-tainacan-date.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3702,7 +3702,7 @@ Source: [class-tainacan-numeric.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3714,7 +3714,7 @@ Source: [class-tainacan-dates-intersection.php](https://github.com/tainacan/tain
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-compound`
+## `tainacan-item-metadata-get-value-as-html--type-compound` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a compound metadatum*
 
@@ -3729,7 +3729,7 @@ Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-string--type-compound`
+## `tainacan-item-metadata-get-value-as-string--type-compound` <!-- {docsify-ignore} -->
 
 *Filter the STRING representation of the value of a compound metadatum*
 
@@ -3744,7 +3744,7 @@ Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-get-child-item-metadatum-as-html-before-label`
+## `tainacan-get-child-item-metadatum-as-html-before-label` <!-- {docsify-ignore} -->
 
 *Class TainacanMetadatumType*
 
@@ -3759,7 +3759,7 @@ Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-get-child-item-metadatum-as-html-after-label`
+## `tainacan-get-child-item-metadatum-as-html-after-label` <!-- {docsify-ignore} -->
 
 *Class TainacanMetadatumType*
 
@@ -3774,7 +3774,7 @@ Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-get-child-item-metadatum-as-html-before-value`
+## `tainacan-get-child-item-metadatum-as-html-before-value` <!-- {docsify-ignore} -->
 
 *Class TainacanMetadatumType*
 
@@ -3789,7 +3789,7 @@ Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-get-child-item-metadatum-as-html-after-value`
+## `tainacan-get-child-item-metadatum-as-html-after-value` <!-- {docsify-ignore} -->
 
 *Class TainacanMetadatumType*
 
@@ -3804,7 +3804,7 @@ Source: [class-tainacan-compound.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-date`
+## `tainacan-item-metadata-get-value-as-html--type-date` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a date metadatum*
 
@@ -3819,7 +3819,7 @@ Source: [class-tainacan-date.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3831,7 +3831,7 @@ Source: [class-tainacan-user.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-get-author-name`
+## `tainacan-item-get-author-name` <!-- {docsify-ignore} -->
 
 *Get the value as a HTML string*
 
@@ -3846,7 +3846,7 @@ Source: [class-tainacan-user.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-user`
+## `tainacan-item-metadata-get-value-as-html--type-user` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a user metadatum*
 
@@ -3861,7 +3861,7 @@ Source: [class-tainacan-user.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3873,7 +3873,7 @@ Source: [class-tainacan-core-title.php](https://github.com/tainacan/tainacan/blo
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3885,7 +3885,7 @@ Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-taxonomy`
+## `tainacan-item-metadata-get-value-as-html--type-taxonomy` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a taxonomy metadatum*
 
@@ -3900,7 +3900,7 @@ Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-terms-hierarchy-html-separator`
+## `tainacan-terms-hierarchy-html-separator` <!-- {docsify-ignore} -->
 
 *Class TainacanMetadatumType*
 
@@ -3914,7 +3914,7 @@ Source: [class-tainacan-taxonomy.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3926,7 +3926,7 @@ Source: [class-tainacan-control.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-control`
+## `tainacan-item-metadata-get-value-as-html--type-control` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a control metadatum*
 
@@ -3941,7 +3941,7 @@ Source: [class-tainacan-control.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-string--type-control`
+## `tainacan-item-metadata-get-value-as-string--type-control` <!-- {docsify-ignore} -->
 
 *Filter the STRING representation of the value of a control metadatum*
 
@@ -3956,7 +3956,7 @@ Source: [class-tainacan-control.php](https://github.com/tainacan/tainacan/blob/m
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-string--type-geocoordinate`
+## `tainacan-item-metadata-get-value-as-string--type-geocoordinate` <!-- {docsify-ignore} -->
 
 *Filter the STRING representation of the value of a geocoordinate metadatum*
 
@@ -3971,7 +3971,7 @@ Source: [class-tainacan-geocoordinate.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-geocoordinate`
+## `tainacan-item-metadata-get-value-as-html--type-geocoordinate` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a geocoordinate metadatum*
 
@@ -3986,7 +3986,7 @@ Source: [class-tainacan-geocoordinate.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -3998,7 +3998,7 @@ Source: [class-tainacan-geocoordinate.php](https://github.com/tainacan/tainacan/
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -4010,7 +4010,7 @@ Source: [class-tainacan-relationship.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-relationship`
+## `tainacan-item-metadata-get-value-as-html--type-relationship` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a relationship metadatum*
 
@@ -4025,7 +4025,7 @@ Source: [class-tainacan-relationship.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-relationship-get-item-thumbnail`
+## `tainacan-item-metadata-relationship-get-item-thumbnail` <!-- {docsify-ignore} -->
 
 *Filter the image size of the thumbnail to be displayed*
 
@@ -4039,7 +4039,7 @@ Source: [class-tainacan-relationship.php](https://github.com/tainacan/tainacan/b
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -4051,7 +4051,7 @@ Source: [class-tainacan-core-description.php](https://github.com/tainacan/tainac
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-description`
+## `tainacan-item-metadata-get-value-as-html--type-description` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a core description metadatum*
 
@@ -4066,7 +4066,7 @@ Source: [class-tainacan-core-description.php](https://github.com/tainacan/tainac
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-textarea`
+## `tainacan-item-metadata-get-value-as-html--type-textarea` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a textarea metadatum*
 
@@ -4081,7 +4081,7 @@ Source: [class-tainacan-textarea.php](https://github.com/tainacan/tainacan/blob/
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-url`
+## `tainacan-item-metadata-get-value-as-html--type-url` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a url metadatum*
 
@@ -4096,7 +4096,7 @@ Source: [class-tainacan-url.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-string--type-url`
+## `tainacan-item-metadata-get-value-as-string--type-url` <!-- {docsify-ignore} -->
 
 *Filter the STRING representation of the value of a url metadatum*
 
@@ -4111,7 +4111,7 @@ Source: [class-tainacan-url.php](https://github.com/tainacan/tainacan/blob/maste
 ---------------------------------
 <br>
 
-## `tainacan-item-metadata-get-value-as-html--type-text`
+## `tainacan-item-metadata-get-value-as-html--type-text` <!-- {docsify-ignore} -->
 
 *Filter the HTML representation of the value of a text metadatum*
 
@@ -4126,7 +4126,7 @@ Source: [class-tainacan-text.php](https://github.com/tainacan/tainacan/blob/mast
 ---------------------------------
 <br>
 
-## `tainacan-status-require-validation`
+## `tainacan-status-require-validation` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -4138,7 +4138,7 @@ Source: [class-tainacan-selectbox.php](https://github.com/tainacan/tainacan/blob
 ---------------------------------
 <br>
 
-## `editable_slug`
+## `editable_slug` <!-- {docsify-ignore} -->
 
 *This filter is documented in wp-admin/edit-tag-form.php*
 
@@ -4153,7 +4153,7 @@ Source: [class-tainacan-admin.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `editable_slug`
+## `editable_slug` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -4166,7 +4166,7 @@ Source: [class-tainacan-admin.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-dashboard-logo`
+## `tainacan-dashboard-logo` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -4178,7 +4178,7 @@ Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/da
 ---------------------------------
 <br>
 
-## `tainacan-dashboard-welcome-message`
+## `tainacan-dashboard-welcome-message` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
@@ -4190,7 +4190,7 @@ Source: [page.php](https://github.com/tainacan/tainacan/blob/master/src/views/da
 ---------------------------------
 <br>
 
-## `tainacan-dashboard-cards`
+## `tainacan-dashboard-cards` <!-- {docsify-ignore} -->
 
 *Use this filter to add or remove dashboard cards.*
 
@@ -4213,7 +4213,7 @@ Source: [class-tainacan-dashboard.php](https://github.com/tainacan/tainacan/blob
 ---------------------------------
 <br>
 
-## `tainacan_dashboard_news_feed`
+## `tainacan_dashboard_news_feed` <!-- {docsify-ignore} -->
 
 *Creates the display code for the news card,
 featuring RSS feed from Tainacan website*
@@ -4228,7 +4228,7 @@ Source: [class-tainacan-dashboard.php](https://github.com/tainacan/tainacan/blob
 ---------------------------------
 <br>
 
-## `tainacan-admin-extra-request-options`
+## `tainacan-admin-extra-request-options` <!-- {docsify-ignore} -->
 
 *get_admin_js_localization_params is used to build the JS tainacan_plugin global object that serves as a
 bridge between PHP and JS. Not every page needs it but they can call it to add their own data to the object.*
@@ -4243,7 +4243,7 @@ Source: [class-tainacan-pages.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan_admin_breadcrumbs`
+## `tainacan_admin_breadcrumbs` <!-- {docsify-ignore} -->
 
 *Allows external plugins to add breadcrumbs to the Tainacan admin pages.*
 
@@ -4257,7 +4257,7 @@ Source: [class-tainacan-pages.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-admin-ui-options`
+## `tainacan-admin-ui-options` <!-- {docsify-ignore} -->
 
 *admin_init_ui_options is a filter that sets the admin UI options for the current user,
 based on his/her role.*
@@ -4272,7 +4272,7 @@ Source: [class-tainacan-pages.php](https://github.com/tainacan/tainacan/blob/mas
 ---------------------------------
 <br>
 
-## `tainacan-i18n`
+## `tainacan-i18n` <!-- {docsify-ignore} -->
 
 
 Argument | Type | Description
