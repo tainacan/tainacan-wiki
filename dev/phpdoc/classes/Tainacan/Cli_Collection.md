@@ -1,6 +1,11 @@
 # Cli_Collection
 
 
+Handles WP-CLI commands for Tainacan collections.
+
+Provides command-line interface for managing collections including
+listing, removing items, and other collection operations.
+
 ***
 
 * Full name: `\Tainacan\Cli_Collection`
@@ -9,32 +14,40 @@
 
 ### collection_repository
 
+Collection repository instance.
+
 ```php
-private $collection_repository
+private \Tainacan\Repositories\Collections $collection_repository
 ```
 
 ***
 
 ### items_repository
 
+Items repository instance.
+
 ```php
-private $items_repository
+private \Tainacan\Repositories\Items $items_repository
 ```
 
 ***
 
 ### result_count
 
+Result count for operations.
+
 ```php
-private $result_count
+private array $result_count
 ```
 
 ***
 
 ### dry_run
 
+Whether to perform a dry run without making changes.
+
 ```php
-private $dry_run
+private bool $dry_run
 ```
 
 ***
@@ -43,19 +56,25 @@ private $dry_run
 
 ### __construct
 
+Constructor for the Cli_Collection class.
+
 ```php
 public __construct(): mixed
 ```
+
+Initializes repository instances and result counters.
 
 ***
 
 ### list
 
-Show a list of collections.
+Shows a list of all collections.
 
 ```php
-public list(): mixed
+public list(): void
 ```
+
+Displays a table with collection IDs and titles.
 
 ## EXAMPLES
 

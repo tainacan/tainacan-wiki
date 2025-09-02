@@ -1,7 +1,10 @@
 # Terms
 
 
-Class Tainacan_Terms
+Repository for managing Tainacan taxonomy terms.
+
+Handles all database operations for taxonomy terms including creation,
+updates, deletion, and querying with proper validation and logging.
 
 ***
 
@@ -12,8 +15,10 @@ Class Tainacan_Terms
 
 ### entities_type
 
+The entity type this repository manages.
+
 ```php
-public $entities_type
+public string $entities_type
 ```
 
 ***
@@ -310,32 +315,35 @@ public can_publish(\Tainacan\Entities\Entity $term, int|\WP_User|null $user = nu
 
 ### disable_logs
 
-Disable creation of logs while inerting and updating entities
+Disables creation of logs while inserting and updating entities.
 
 ```php
-public disable_logs(): mixed
+public disable_logs(): void
 ```
 
 ***
 
 ### enable_logs
 
-Enable creation of logs while inserting and updating entities
-if it was disabled
+Enables creation of logs while inserting and updating entities.
 
 ```php
-public enable_logs(): mixed
+public enable_logs(): void
 ```
 
 ***
 
 ### get_enabled_logs
 
-Get if creation of logs while inserting and updating entities are enable
+Gets whether creation of logs while inserting and updating entities is enabled.
 
 ```php
-public get_enabled_logs(): mixed
+public get_enabled_logs(): bool
 ```
+
+**Return Value:**
+
+True if logging is enabled, false otherwise.
 
 ***
 

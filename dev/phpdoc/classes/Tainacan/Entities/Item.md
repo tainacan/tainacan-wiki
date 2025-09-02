@@ -1,7 +1,10 @@
 # Item
 
 
-Represents the Entity Item
+Represents a Tainacan Item entity.
+
+Items are the main content entities in Tainacan, containing
+metadata values, attachments, and relationships within collections.
 
 ***
 
@@ -156,7 +159,7 @@ protected $collection_id
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository

@@ -1,17 +1,14 @@
 # Search_Engine
 
 
-This class implements the default Tainacan Search engine.
+Implements the default Tainacan search engine.
 
-It replaces the default WordPress behavior, which is search only in the title and content of posts, and searches every item metadata.
+Replaces the default WordPress search behavior to search through item metadata
+in addition to titles and content. This is a basic implementation that can be
+disabled in favor of more performant solutions like Elasticsearch.
 
-This is a very basic and non-performatic approach. For better results, you should try other WordPress plugins for this task. We recommend integration with Elastic Search
-
-
-This class is a modification of the class found in the Search Everything plugin. All credits to the authors
-http://wordpress.org/plugins/search-everything/
-Author: Sovrn, zemanta
-Author URI: http://www.sovrn.com
+This class is based on the Search Everything plugin by Sovrn, zemanta.
+Original plugin: http://wordpress.org/plugins/search-everything/
 
 ***
 
@@ -21,64 +18,80 @@ Author URI: http://www.sovrn.com
 
 ### logging
 
+Whether to enable logging for search operations.
+
 ```php
-public $logging
+public bool $logging
 ```
 
 ***
 
 ### options
 
+Search engine options.
+
 ```php
-public $options
+public array $options
 ```
 
 ***
 
 ### ajax_request
 
+Whether this is an AJAX request.
+
 ```php
-public $ajax_request
+public bool $ajax_request
 ```
 
 ***
 
 ### query_instance
 
+Current query instance.
+
 ```php
-private $query_instance
+private \WP_Query $query_instance
 ```
 
 ***
 
 ### taxonomies
 
+Taxonomies to search in.
+
 ```php
-private $taxonomies
+private array $taxonomies
 ```
 
 ***
 
 ### relationships
 
+Relationships to search in.
+
 ```php
-private $relationships
+private array $relationships
 ```
 
 ***
 
 ### is_tainacan_search
 
+Whether this is a Tainacan-specific search.
+
 ```php
-private $is_tainacan_search
+private bool $is_tainacan_search
 ```
 
 ***
 
 ### is_inner_query
 
+Whether this is an inner query.
+
 ```php
-private $is_inner_query
+private bool $is_inner_query
 ```
 
 ***
@@ -87,22 +100,26 @@ private $is_inner_query
 
 ### __construct
 
+Constructor for the Search_Engine class.
+
 ```php
-public __construct(mixed $ajax_query = false): mixed
+public __construct(bool $ajax_query = false): mixed
 ```
 
 **Parameters:**
 
-| Parameter     | Type      | Description |
-|---------------|-----------|-------------|
-| `$ajax_query` | **mixed** |             |
+| Parameter     | Type     | Description                    |
+|---------------|----------|--------------------------------|
+| `$ajax_query` | **bool** | Whether this is an AJAX query. |
 
 ***
 
 ### search_hooks
 
+Sets up WordPress hooks for search functionality.
+
 ```php
-public search_hooks(): mixed
+public search_hooks(): void
 ```
 
 ***

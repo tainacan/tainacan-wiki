@@ -65,7 +65,7 @@ Argument | Type | Description
 `$response` |  | 
 `$request` | `\WP_REST_Request` | 
 
-Source: [class-tainacan-rest-collections-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-collections-controller.php), [line 466](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-collections-controller.php#L466-L496)
+Source: [class-tainacan-rest-collections-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-collections-controller.php), [line 469](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-collections-controller.php#L469-L499)
 
 ---------------------------------
 <br>
@@ -78,7 +78,7 @@ Argument | Type | Description
 `$updated_item` |  | 
 `$attributes` |  | 
 
-Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 975](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L975-L999)
+Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 978](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L978-L1002)
 
 ---------------------------------
 <br>
@@ -91,14 +91,17 @@ Argument | Type | Description
 `$item` |  | 
 `$new_item` |  | 
 
-Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 1039](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L1039-L1131)
+Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 1042](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L1042-L1134)
 
 ---------------------------------
 <br>
 
 ## `tainacan-submission-item-finish` <!-- {docsify-ignore} -->
 
-*Represents the Items REST Controller*
+*REST API controller for managing Tainacan items.*
+
+Handles all REST API endpoints for item operations including
+creation, updates, deletion, and querying of items within collections.
 
 
 Argument | Type | Description
@@ -106,7 +109,13 @@ Argument | Type | Description
 `$item` |  | 
 `$request` |  | 
 
-Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 11](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L11-L1457)
+**Changelog**
+
+Version | Description
+------- | -----------
+`1.0.0` | 
+
+Source: [class-tainacan-rest-items-controller.php](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php), [line 11](https://github.com/tainacan/tainacan/blob/master/src/classes/api/endpoints/class-tainacan-rest-items-controller.php#L11-L1460)
 
 ---------------------------------
 <br>
@@ -135,7 +144,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$term` | `\Tainacan\Entities\Entity` | 
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 100](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L100-L112)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 105](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L105-L117)
 
 ---------------------------------
 <br>
@@ -147,7 +156,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$term` | `\Tainacan\Entities\Entity` | 
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 100](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L100-L113)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 105](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L105-L118)
 
 ---------------------------------
 <br>
@@ -159,7 +168,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$new_entity` |  | 
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 100](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L100-L160)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 105](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L105-L165)
 
 ---------------------------------
 <br>
@@ -171,7 +180,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$new_entity` |  | 
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 100](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L100-L161)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 105](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L105-L166)
 
 ---------------------------------
 <br>
@@ -184,7 +193,7 @@ Argument | Type | Description
 `$deleted` |  | 
 `$permanent` | `bool` | this parameter is not used by Terms repository. Delete is always permanent
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 269](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L269-L280)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 274](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L274-L285)
 
 ---------------------------------
 <br>
@@ -197,7 +206,7 @@ Argument | Type | Description
 `$deleted` |  | 
 `$permanent` | `bool` | this parameter is not used by Terms repository. Delete is always permanent
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 269](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L269-L281)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 274](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L274-L286)
 
 ---------------------------------
 <br>
@@ -210,7 +219,7 @@ Argument | Type | Description
 `$deleted` |  | 
 `$permanent` | `bool` | this parameter is not used by Terms repository. Delete is always permanent
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 269](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L269-L286)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 274](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L274-L291)
 
 ---------------------------------
 <br>
@@ -223,7 +232,7 @@ Argument | Type | Description
 `$deleted` |  | 
 `$permanent` | `bool` | this parameter is not used by Terms repository. Delete is always permanent
 
-Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 269](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L269-L287)
+Source: [class-tainacan-terms.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php), [line 274](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-terms.php#L274-L292)
 
 ---------------------------------
 <br>
@@ -237,7 +246,7 @@ CLASS (default) - returns the Class name of of filter types registered
 NAME - return an Array of the names of filter types registered
 
 
-Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php), [line 298](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php#L298-L312)
+Source: [class-tainacan-filters.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php), [line 306](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-filters.php#L306-L320)
 
 ---------------------------------
 <br>
@@ -249,7 +258,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` | `\Tainacan\Entities\Item_Metadata_Entity` | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 18](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L18-L31)
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 26](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L26-L39)
 
 ---------------------------------
 <br>
@@ -261,7 +270,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` | `\Tainacan\Entities\Item_Metadata_Entity` | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 18](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L18-L32)
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 26](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L26-L40)
 
 ---------------------------------
 <br>
@@ -273,7 +282,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` | `\Tainacan\Entities\Item_Metadata_Entity` | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 18](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L18-L110)
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 26](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L26-L118)
 
 ---------------------------------
 <br>
@@ -285,59 +294,103 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` | `\Tainacan\Entities\Item_Metadata_Entity` | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 18](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L18-L111)
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 26](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L26-L119)
 
 ---------------------------------
 <br>
 
 ## `tainacan-pre-delete` <!-- {docsify-ignore} -->
 
+*Repository for managing Tainacan item metadata.*
+
+Handles all database operations for item metadata including creation,
+updates, deletion, and querying with proper validation and logging.
+
 
 Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` |  | 
 `true` |  | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 261](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L261-L261)
+**Changelog**
+
+Version | Description
+------- | -----------
+`1.0.0` | 
+
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L9-L269)
 
 ---------------------------------
 <br>
 
 ## `tainacan-pre-delete-Item_Metadata_Entity` <!-- {docsify-ignore} -->
 
+*Repository for managing Tainacan item metadata.*
+
+Handles all database operations for item metadata including creation,
+updates, deletion, and querying with proper validation and logging.
+
 
 Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` |  | 
 `true` |  | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 262](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L262-L262)
+**Changelog**
+
+Version | Description
+------- | -----------
+`1.0.0` | 
+
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L9-L270)
 
 ---------------------------------
 <br>
 
 ## `tainacan-deleted` <!-- {docsify-ignore} -->
 
+*Repository for managing Tainacan item metadata.*
+
+Handles all database operations for item metadata including creation,
+updates, deletion, and querying with proper validation and logging.
+
 
 Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` |  | 
 `true` |  | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 275](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L275-L275)
+**Changelog**
+
+Version | Description
+------- | -----------
+`1.0.0` | 
+
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L9-L283)
 
 ---------------------------------
 <br>
 
 ## `tainacan-deleted-Item_Metadata_Entity` <!-- {docsify-ignore} -->
 
+*Repository for managing Tainacan item metadata.*
+
+Handles all database operations for item metadata including creation,
+updates, deletion, and querying with proper validation and logging.
+
 
 Argument | Type | Description
 -------- | ---- | -----------
 `$item_metadata` |  | 
 `true` |  | 
 
-Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 276](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L276-L276)
+**Changelog**
+
+Version | Description
+------- | -----------
+`1.0.0` | 
+
+Source: [class-tainacan-item-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php), [line 9](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-item-metadata.php#L9-L284)
 
 ---------------------------------
 <br>
@@ -351,7 +404,7 @@ CLASS (default) - returns the Class name of of metadatum types registered
 NAME - return an Array of the names of metadatum types registered
 
 
-Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 770](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L770-L784)
+Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 775](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L775-L789)
 
 ---------------------------------
 <br>
@@ -369,7 +422,7 @@ Argument | Type | Description
 `$this->current_taxonomy` |  | 
 `$collection` |  | 
 
-Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 1628](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L1628-L1650)
+Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 1633](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L1633-L1655)
 
 ---------------------------------
 <br>
@@ -387,14 +440,17 @@ Argument | Type | Description
 `$new_tax` |  | 
 `$collection` |  | 
 
-Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 1628](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L1628-L1654)
+Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 1633](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L1633-L1659)
 
 ---------------------------------
 <br>
 
 ## `tainacan-taxonomy-removed-from-collection` <!-- {docsify-ignore} -->
 
-*Class Metadata*
+*Repository for managing Tainacan metadata definitions.*
+
+Handles all database operations for metadata including creation,
+updates, deletion, and querying with proper validation and logging.
 
 
 Argument | Type | Description
@@ -402,7 +458,13 @@ Argument | Type | Description
 `$removed_tax` |  | 
 `$collection` |  | 
 
-Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L10-L1705)
+**Changelog**
+
+Version | Description
+------- | -----------
+`1.0.0` | 
+
+Source: [class-tainacan-metadata.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php), [line 10](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-metadata.php#L10-L1710)
 
 ---------------------------------
 <br>
@@ -414,7 +476,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$obj` | `\Tainacan\Entities\Entity` | 
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 116](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L116-L135)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 154](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L154-L173)
 
 ---------------------------------
 <br>
@@ -426,7 +488,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$obj` | `\Tainacan\Entities\Entity` | 
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 116](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L116-L138)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 154](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L154-L176)
 
 ---------------------------------
 <br>
@@ -438,7 +500,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$obj` | `\Tainacan\Entities\Entity` | 
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 116](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L116-L171)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 154](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L154-L209)
 
 ---------------------------------
 <br>
@@ -452,7 +514,7 @@ Argument | Type | Description
 `$diffs` |  | 
 `$is_update` |  | 
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 116](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L116-L200)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 154](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L154-L238)
 
 ---------------------------------
 <br>
@@ -464,7 +526,7 @@ Argument | Type | Description
 -------- | ---- | -----------
 `$obj` | `\Tainacan\Entities\Entity` | 
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 116](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L116-L202)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 154](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L154-L240)
 
 ---------------------------------
 <br>
@@ -477,7 +539,7 @@ Argument | Type | Description
 `$entity` | `\Tainacan\Entities\Entity` | 
 `$permanent` | `bool` | If false, sendo to trash, if true, permanently delete. Default true
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 632](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L632-L641)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 670](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L670-L679)
 
 ---------------------------------
 <br>
@@ -490,7 +552,7 @@ Argument | Type | Description
 `$entity` | `\Tainacan\Entities\Entity` | 
 `$permanent` | `bool` | If false, sendo to trash, if true, permanently delete. Default true
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 632](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L632-L642)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 670](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L670-L680)
 
 ---------------------------------
 <br>
@@ -503,7 +565,7 @@ Argument | Type | Description
 `$entity` | `\Tainacan\Entities\Entity` | 
 `$permanent` | `bool` | If false, sendo to trash, if true, permanently delete. Default true
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 632](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L632-L654)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 670](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L670-L692)
 
 ---------------------------------
 <br>
@@ -516,7 +578,7 @@ Argument | Type | Description
 `$entity` | `\Tainacan\Entities\Entity` | 
 `$permanent` | `bool` | If false, sendo to trash, if true, permanently delete. Default true
 
-Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 632](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L632-L655)
+Source: [class-tainacan-repository.php](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php), [line 670](https://github.com/tainacan/tainacan/blob/master/src/classes/repositories/class-tainacan-repository.php#L670-L693)
 
 ---------------------------------
 <br>
@@ -533,7 +595,7 @@ Argument | Type | Description
 `$full_path_check` |  | 
 `$full_path` |  | 
 
-Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php), [line 276](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php#L276-L327)
+Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php), [line 318](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php#L318-L369)
 
 ---------------------------------
 <br>
@@ -550,7 +612,7 @@ Argument | Type | Description
 `$found[0]` |  | 
 `$target` |  | 
 
-Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php), [line 335](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php#L335-L366)
+Source: [class-tainacan-private-files.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php), [line 377](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-private-files.php#L377-L408)
 
 ---------------------------------
 <br>
@@ -566,7 +628,7 @@ Argument | Type | Description
 `$filename` | `string` | The filename that will be created
 `$post_id` | `int` | (optional) the post this attachement should be attached to. empty for none
 
-Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php), [line 151](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php#L151-L161)
+Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php), [line 209](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php#L209-L219)
 
 ---------------------------------
 <br>
@@ -582,7 +644,7 @@ Argument | Type | Description
 `$attach_data` |  | 
 `$post_id` | `int` | (optional) the post this attachement should be attached to. empty for none
 
-Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php), [line 151](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php#L151-L205)
+Source: [class-tainacan-media.php](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php), [line 209](https://github.com/tainacan/tainacan/blob/master/src/classes/class-tainacan-media.php#L209-L263)
 
 ---------------------------------
 <br>

@@ -1,7 +1,10 @@
 # Background_Process_Base
 
 
-Abstract Tainacan\Background_Process_Base class.
+Abstract base class for background processes in Tainacan.
+
+Extends Async_Request to provide background processing capabilities
+for long-running tasks like imports, exports, and bulk operations.
 
 ***
 
@@ -13,31 +16,27 @@ Abstract Tainacan\Background_Process_Base class.
 
 ### action
 
-Action
+Action name for background processes.
 
 ```php
 protected string $action
 ```
 
-(default value: 'background_process')
-
 ***
 
 ### start_time
 
-Start time of current process.
+Start time of the current process.
 
 ```php
 protected int $start_time
 ```
 
-(default value: 0)
-
 ***
 
 ### cron_hook_identifier
 
-Cron_hook_identifier
+Cron hook identifier for scheduling.
 
 ```php
 protected mixed $cron_hook_identifier
@@ -47,7 +46,7 @@ protected mixed $cron_hook_identifier
 
 ### cron_interval_identifier
 
-Cron_interval_identifier
+Cron interval identifier for scheduling.
 
 ```php
 protected mixed $cron_interval_identifier
@@ -448,11 +447,13 @@ public debug(mixed $message): mixed
 
 ### __construct
 
-Initiate new async request
+Constructor for the Async_Request class.
 
 ```php
 public __construct(): mixed
 ```
+
+Initializes the async request with a unique identifier.
 
 ***
 

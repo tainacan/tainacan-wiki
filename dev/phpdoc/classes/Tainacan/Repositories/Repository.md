@@ -1,6 +1,11 @@
 # Repository
 
 
+Abstract base class for all Tainacan repositories.
+
+Provides common functionality for data access and manipulation
+including logging, validation, and entity management.
+
 ***
 
 * Full name: `\Tainacan\Repositories\Repository`
@@ -10,27 +15,29 @@
 
 ### entities_type
 
+The entity type this repository manages.
+
 ```php
-public $entities_type
+public string $entities_type
 ```
 
 ***
 
 ### use_logs
 
-If set to false, no logs will be generated upon insertion or update
+Whether to generate logs for insertions and updates.
 
 ```php
 protected bool $use_logs
 ```
 
-use enable_logs() and disable_logs() to set the values
+Use enable_logs() and disable_logs() to control this setting.
 
 ***
 
 ### logs_repository
 
-Instance of Repository Logs
+Instance of the logs repository.
 
 ```php
 protected \Tainacan\Repositories\Logs $logs_repository
@@ -40,8 +47,10 @@ protected \Tainacan\Repositories\Logs $logs_repository
 
 ### map
 
+Internal mapping cache.
+
 ```php
-private $map
+private array $map
 ```
 
 ***
@@ -50,32 +59,35 @@ private $map
 
 ### disable_logs
 
-Disable creation of logs while inerting and updating entities
+Disables creation of logs while inserting and updating entities.
 
 ```php
-public disable_logs(): mixed
+public disable_logs(): void
 ```
 
 ***
 
 ### enable_logs
 
-Enable creation of logs while inserting and updating entities
-if it was disabled
+Enables creation of logs while inserting and updating entities.
 
 ```php
-public enable_logs(): mixed
+public enable_logs(): void
 ```
 
 ***
 
 ### get_enabled_logs
 
-Get if creation of logs while inserting and updating entities are enable
+Gets whether creation of logs while inserting and updating entities is enabled.
 
 ```php
-public get_enabled_logs(): mixed
+public get_enabled_logs(): bool
 ```
+
+**Return Value:**
+
+True if logging is enabled, false otherwise.
 
 ***
 

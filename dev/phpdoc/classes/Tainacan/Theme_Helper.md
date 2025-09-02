@@ -1,9 +1,10 @@
 # Theme_Helper
 
 
-Class Tainacan\Theme_Helper
+Theme helper class for Tainacan.
 
-This class provides helper methods for Tainacan themes, including template overrides,
+Provides theme integration functionality including template overrides,
+view modes, template tags, and theme compatibility features.
 
 ***
 

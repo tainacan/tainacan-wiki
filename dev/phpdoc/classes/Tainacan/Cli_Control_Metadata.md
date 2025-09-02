@@ -1,6 +1,11 @@
 # Cli_Control_Metadata
 
 
+Handles WP-CLI commands for Tainacan control metadata operations.
+
+Provides command-line interface for managing control metadata including
+recalculation of metadata values and metadata validation operations.
+
 ***
 
 * Full name: `\Tainacan\Cli_Control_Metadata`

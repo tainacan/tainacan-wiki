@@ -1,7 +1,10 @@
 # Private_Files
 
 
-Class withe helpful methods to handle media in Tainacan
+Handles private file management for Tainacan.
+
+Provides methods for managing private file uploads, access control,
+and file organization within Tainacan collections and items.
 
 ***
 
@@ -11,8 +14,10 @@ Class withe helpful methods to handle media in Tainacan
 
 ### dir_separator
 
+Directory separator for file paths.
+
 ```php
-public $dir_separator
+public string $dir_separator
 ```
 
 ***
@@ -21,41 +26,50 @@ public $dir_separator
 
 ### init
 
+Initializes the private files functionality.
+
 ```php
-protected init(): mixed
+protected init(): void
 ```
+
+Sets up WordPress hooks for file upload handling, access control,
+and template redirection for private files.
 
 ***
 
 ### pre_tainacan_upload
 
+Handles pre-upload processing for Tainacan attachments.
+
 ```php
-public pre_tainacan_upload(mixed $blob, mixed $filename, mixed $post_id): mixed
+public pre_tainacan_upload(mixed $blob, string $filename, int $post_id): void
 ```
 
 **Parameters:**
 
-| Parameter   | Type      | Description |
-|-------------|-----------|-------------|
-| `$blob`     | **mixed** |             |
-| `$filename` | **mixed** |             |
-| `$post_id`  | **mixed** |             |
+| Parameter   | Type       | Description    |
+|-------------|------------|----------------|
+| `$blob`     | **mixed**  | The file data. |
+| `$filename` | **string** | The filename.  |
+| `$post_id`  | **int**    | The post ID.   |
 
 ***
 
 ### post_tainacan_upload
 
+Handles post-upload processing for Tainacan attachments.
+
 ```php
-public post_tainacan_upload(mixed $attach_id, mixed $attach_data, mixed $post_id): mixed
+public post_tainacan_upload(int $attach_id, array $attach_data, int $post_id): void
 ```
 
 **Parameters:**
 
-| Parameter      | Type      | Description |
-|----------------|-----------|-------------|
-| `$attach_id`   | **mixed** |             |
-| `$attach_data` | **mixed** |             |
-| `$post_id`     | **mixed** |             |
+| Parameter      | Type      | Description          |
+|----------------|-----------|----------------------|
+| `$attach_id`   | **int**   | The attachment ID.   |
+| `$attach_data` | **array** | The attachment data. |
+| `$post_id`     | **int**   | The post ID.         |
 
 ***
 

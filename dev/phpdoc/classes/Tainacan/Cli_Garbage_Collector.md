@@ -1,6 +1,11 @@
 # Cli_Garbage_Collector
 
 
+Handles WP-CLI commands for Tainacan garbage collection operations.
+
+Provides command-line interface for cleaning up unused files, orphaned
+database entries, and maintaining Tainacan installation health.
+
 ***
 
 * Full name: `\Tainacan\Cli_Garbage_Collector`

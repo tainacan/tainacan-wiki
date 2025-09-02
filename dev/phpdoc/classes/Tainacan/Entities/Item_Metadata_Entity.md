@@ -1,7 +1,10 @@
 # Item_Metadata_Entity
 
 
-Represents the Item Metadatum Entity
+Represents a Tainacan Item Metadata Entity.
+
+Represents the relationship between items and their metadata values,
+storing the actual data content for specific metadata fields.
 
 ***
 
@@ -12,11 +15,13 @@ Represents the Item Metadatum Entity
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
-protected static string $post_type
+protected static string|false $post_type
 ```
+
+Set to false if not using WordPress post types.
 
 * This property is **static**.
 
@@ -24,7 +29,7 @@ protected static string $post_type
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository

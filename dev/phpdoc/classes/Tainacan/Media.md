@@ -1,7 +1,10 @@
 # Media
 
 
-Class withe helpful methods to handle media in Tainacan
+Handles media functionality for Tainacan.
+
+Provides methods for managing images, attachments, and media-related features
+including custom image sizes, attachment pages, and content indexing.
 
 ***
 
@@ -11,8 +14,10 @@ Class withe helpful methods to handle media in Tainacan
 
 ### file_name
 
+Current file name being processed.
+
 ```php
-private static $file_name
+private static string|null $file_name
 ```
 
 * This property is **static**.
@@ -21,16 +26,20 @@ private static $file_name
 
 ### attachment_html_url_base
 
+Base URL slug for attachment HTML pages.
+
 ```php
-private $attachment_html_url_base
+private string $attachment_html_url_base
 ```
 
 ***
 
 ### content_index_meta
 
+Meta key for document content indexing.
+
 ```php
-public static $content_index_meta
+public static string $content_index_meta
 ```
 
 * This property is **static**.
@@ -49,38 +58,52 @@ private $THROW_EXCPTION_ON_FATAL_ERROR
 
 ### init
 
+Initializes the media functionality.
+
 ```php
-protected init(): mixed
+protected init(): void
 ```
+
+Sets up rewrite rules, query vars, and image sizes for Tainacan media handling.
 
 ***
 
 ### add_image_sizes
 
+Registers custom image sizes for Tainacan.
+
 ```php
-public add_image_sizes(): mixed
+public add_image_sizes(): void
 ```
 
 ***
 
 ### add_image_sizes_to_admin
 
+Adds custom image sizes to the admin interface.
+
 ```php
-public add_image_sizes_to_admin(mixed $sizes): mixed
+public add_image_sizes_to_admin(array $sizes): array
 ```
 
 **Parameters:**
 
-| Parameter | Type      | Description |
-|-----------|-----------|-------------|
-| `$sizes`  | **mixed** |             |
+| Parameter | Type      | Description                  |
+|-----------|-----------|------------------------------|
+| `$sizes`  | **array** | Existing image size options. |
+
+**Return Value:**
+
+Modified image size options.
 
 ***
 
 ### add_attachment_page_rewrite_rule
 
+Adds rewrite rule for attachment HTML pages.
+
 ```php
-public add_attachment_page_rewrite_rule(): mixed
+public add_attachment_page_rewrite_rule(): void
 ```
 
 ***

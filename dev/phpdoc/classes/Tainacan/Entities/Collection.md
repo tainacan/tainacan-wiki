@@ -1,7 +1,10 @@
 # Collection
 
 
-Class that represents the Collection entity
+Represents a Tainacan Collection entity.
+
+Collections are the main organizational units in Tainacan, containing
+items and their associated metadata, filters, and display settings.
 
 ***
 
@@ -372,7 +375,7 @@ protected $item_enable_metadata_enumeration
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
 public static string $post_type
@@ -388,7 +391,7 @@ public static string $post_type
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository

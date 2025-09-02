@@ -1,6 +1,11 @@
 # Cli_Move_Attachments
 
 
+Handles WP-CLI commands for Tainacan attachment migration operations.
+
+Provides command-line interface for migrating attachments to the new
+directory structure introduced in Tainacan version 0.11.
+
 ***
 
 * Full name: `\Tainacan\Cli_Move_Attachments`

@@ -1,7 +1,10 @@
 # Metadatum
 
 
-Represents the Entity Metadatum
+Represents a Tainacan Metadatum entity.
+
+Metadata definitions that specify the structure and validation
+rules for item metadata within collections.
 
 ***
 
@@ -148,11 +151,13 @@ public $enabled_for_collection
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
-public static string $post_type
+public static string|false $post_type
 ```
+
+Set to false if not using WordPress post types.
 
 * This property is **static**.
 
@@ -160,7 +165,7 @@ public static string $post_type
 
 ### capability_type
 
-The WordPress capability for the entity post type. Default is to be equal to $post_type
+The WordPress capability type for this entity.
 
 ```php
 protected static string $capability_type
@@ -176,7 +181,7 @@ protected static string $capability_type
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository

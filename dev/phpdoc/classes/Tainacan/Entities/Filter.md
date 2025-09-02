@@ -1,7 +1,10 @@
 # Filter
 
 
-Represents the entity Filter
+Represents a Tainacan Filter entity.
+
+Filters define search and filtering capabilities for collections,
+allowing users to narrow down item results based on metadata criteria.
 
 ***
 
@@ -100,11 +103,13 @@ protected $description_bellow_name
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
-public static string $post_type
+public static string|false $post_type
 ```
+
+Set to false if not using WordPress post types.
 
 * This property is **static**.
 
@@ -120,7 +125,7 @@ public $enabled_for_collection
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository

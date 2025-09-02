@@ -1,6 +1,11 @@
 # Collections
 
 
+Repository for managing Tainacan collections.
+
+Handles all database operations for collections including creation,
+updates, deletion, and querying with proper validation and logging.
+
 ***
 
 * Full name: `\Tainacan\Repositories\Collections`
@@ -10,32 +15,40 @@
 
 ### entities_type
 
+The entity type this repository manages.
+
 ```php
-public $entities_type
+public string $entities_type
 ```
 
 ***
 
 ### old_collection
 
+Stores the old collection state for comparison during updates.
+
 ```php
-private $old_collection
+private \Tainacan\Entities\Collection $old_collection
 ```
 
 ***
 
 ### old_core_title
 
+Stores the old core title for comparison during updates.
+
 ```php
-private $old_core_title
+private string $old_core_title
 ```
 
 ***
 
 ### old_core_description
 
+Stores the old core description for comparison during updates.
+
 ```php
-private $old_core_description
+private string $old_core_description
 ```
 
 ***
@@ -44,8 +57,10 @@ private $old_core_description
 
 ### init
 
+Initializes the collections repository.
+
 ```php
-protected init(): mixed
+protected init(): void
 ```
 
 ***
@@ -272,32 +287,35 @@ public handle_parent_order_clone(\Tainacan\Entities\Collection& $collection): vo
 
 ### disable_logs
 
-Disable creation of logs while inerting and updating entities
+Disables creation of logs while inserting and updating entities.
 
 ```php
-public disable_logs(): mixed
+public disable_logs(): void
 ```
 
 ***
 
 ### enable_logs
 
-Enable creation of logs while inserting and updating entities
-if it was disabled
+Enables creation of logs while inserting and updating entities.
 
 ```php
-public enable_logs(): mixed
+public enable_logs(): void
 ```
 
 ***
 
 ### get_enabled_logs
 
-Get if creation of logs while inserting and updating entities are enable
+Gets whether creation of logs while inserting and updating entities is enabled.
 
 ```php
-public get_enabled_logs(): mixed
+public get_enabled_logs(): bool
 ```
+
+**Return Value:**
+
+True if logging is enabled, false otherwise.
 
 ***
 

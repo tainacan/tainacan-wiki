@@ -1,8 +1,10 @@
 # Roles
 
 
-This file contains the Tainacan Roles class, which manages the roles and capabilities
-used in the Tainacan plugin.
+Manages roles and capabilities for the Tainacan plugin.
+
+Handles the creation, management, and enforcement of custom roles and capabilities
+specific to Tainacan functionality, including collection and item permissions.
 
 ***
 
@@ -12,32 +14,40 @@ used in the Tainacan plugin.
 
 ### capabilities
 
+Array of Tainacan capabilities.
+
 ```php
-private $capabilities
+private array $capabilities
 ```
 
 ***
 
 ### meta_caps
 
+Metadata capabilities.
+
 ```php
-private $meta_caps
+private array $meta_caps
 ```
 
 ***
 
 ### meta_section_caps
 
+Metadata section capabilities.
+
 ```php
-private $meta_section_caps
+private array $meta_section_caps
 ```
 
 ***
 
 ### filters_caps
 
+Filter capabilities.
+
 ```php
-private $filters_caps
+private array $filters_caps
 ```
 
 ***
@@ -46,17 +56,26 @@ private $filters_caps
 
 ### init
 
+Initializes the roles and capabilities system.
+
 ```php
-private init(): mixed
+private init(): void
 ```
+
+Sets up WordPress hooks for capability management and user role translation.
 
 ***
 
 ### populate_tainacan_capabilities
 
+Populates the Tainacan capabilities array.
+
 ```php
-public populate_tainacan_capabilities(): mixed
+public populate_tainacan_capabilities(): void
 ```
+
+Defines all custom capabilities used by Tainacan for managing
+collections, items, metadata, and other features.
 
 ***
 

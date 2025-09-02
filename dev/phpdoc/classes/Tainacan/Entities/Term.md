@@ -1,7 +1,10 @@
 # Term
 
 
-Represents the Entity Term
+Represents a Tainacan Term entity.
+
+Terms are individual entries within taxonomies, representing
+specific categories or classifications for organizing items.
 
 ***
 
@@ -76,11 +79,13 @@ protected $taxonomy
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
-public static string $post_type
+public static string|false $post_type
 ```
+
+Set to false if not using WordPress post types.
 
 * This property is **static**.
 
@@ -88,7 +93,7 @@ public static string $post_type
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository

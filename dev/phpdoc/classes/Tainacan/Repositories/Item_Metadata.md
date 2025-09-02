@@ -1,6 +1,11 @@
 # Item_Metadata
 
 
+Repository for managing Tainacan item metadata.
+
+Handles all database operations for item metadata including creation,
+updates, deletion, and querying with proper validation and logging.
+
 ***
 
 * Full name: `\Tainacan\Repositories\Item_Metadata`
@@ -10,8 +15,10 @@
 
 ### entities_type
 
+The entity type this repository manages.
+
 ```php
-public $entities_type
+public string $entities_type
 ```
 
 ***
@@ -323,32 +330,35 @@ public suggest(\Tainacan\Entities\Item_Metadata_Entity $item_metadata): \Tainaca
 
 ### disable_logs
 
-Disable creation of logs while inerting and updating entities
+Disables creation of logs while inserting and updating entities.
 
 ```php
-public disable_logs(): mixed
+public disable_logs(): void
 ```
 
 ***
 
 ### enable_logs
 
-Enable creation of logs while inserting and updating entities
-if it was disabled
+Enables creation of logs while inserting and updating entities.
 
 ```php
-public enable_logs(): mixed
+public enable_logs(): void
 ```
 
 ***
 
 ### get_enabled_logs
 
-Get if creation of logs while inserting and updating entities are enable
+Gets whether creation of logs while inserting and updating entities is enabled.
 
 ```php
-public get_enabled_logs(): mixed
+public get_enabled_logs(): bool
 ```
+
+**Return Value:**
+
+True if logging is enabled, false otherwise.
 
 ***
 

@@ -1,6 +1,11 @@
 # Cli
 
 
+Handles WP-CLI command registration for Tainacan.
+
+Registers all available Tainacan WP-CLI commands including
+garbage collection, attachment management, and collection operations.
+
 ***
 
 * Full name: `\Tainacan\Cli`
@@ -9,16 +14,22 @@
 
 ### init
 
+Initializes the CLI functionality.
+
 ```php
-private init(): mixed
+private init(): void
 ```
+
+Sets up WP-CLI command registration after WordPress loads.
 
 ***
 
 ### add_commands
 
+Registers all Tainacan WP-CLI commands.
+
 ```php
-public add_commands(): mixed
+public add_commands(): void
 ```
 
 ***

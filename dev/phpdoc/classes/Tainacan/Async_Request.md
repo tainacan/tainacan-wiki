@@ -1,7 +1,10 @@
 # Async_Request
 
 
-Abstract Async_Request class.
+Abstract base class for asynchronous requests.
+
+Provides the foundation for handling asynchronous HTTP requests
+in WordPress, typically used for background processing tasks.
 
 ***
 
@@ -12,31 +15,27 @@ Abstract Async_Request class.
 
 ### prefix
 
-Prefix
+Request prefix for identifying the async request.
 
 ```php
 protected string $prefix
 ```
 
-(default value: 'wp')
-
 ***
 
 ### action
 
-Action
+Action name for the async request.
 
 ```php
 protected string $action
 ```
 
-(default value: 'async_request')
-
 ***
 
 ### identifier
 
-Identifier
+Unique identifier for this request.
 
 ```php
 protected mixed $identifier
@@ -46,13 +45,11 @@ protected mixed $identifier
 
 ### data
 
-Data
+Data to be sent with the async request.
 
 ```php
 protected array $data
 ```
-
-(default value: array())
 
 ***
 
@@ -60,11 +57,13 @@ protected array $data
 
 ### __construct
 
-Initiate new async request
+Constructor for the Async_Request class.
 
 ```php
 public __construct(): mixed
 ```
+
+Initializes the async request with a unique identifier.
 
 ***
 

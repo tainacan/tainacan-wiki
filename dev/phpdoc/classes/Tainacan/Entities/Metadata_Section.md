@@ -1,7 +1,10 @@
 # Metadata_Section
 
 
-Represents the Entity Metadatum
+Represents a Tainacan Metadata Section entity.
+
+Metadata sections organize metadata fields into logical groups
+within collections, improving the user interface and organization.
 
 ***
 
@@ -12,11 +15,13 @@ Represents the Entity Metadatum
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
-public static string $post_type
+public static string|false $post_type
 ```
+
+Set to false if not using WordPress post types.
 
 * This property is **static**.
 
@@ -82,7 +87,7 @@ protected $conditional_section_rules
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository

@@ -1,6 +1,11 @@
 # REST_Oaipmh_Expose_Controller
 
 
+REST API controller for managing Tainacan OAI-PMH exposure.
+
+Handles all REST API endpoints for OAI-PMH protocol operations including
+metadata harvesting, repository configuration, and OAI-PMH compliance.
+
 ***
 
 * Full name: `\Tainacan\API\EndPoints\REST_Oaipmh_Expose_Controller`
@@ -10,7 +15,7 @@
 
 ### __construct
 
-REST_Facets_Controller constructor.
+REST_Oaipmh_Expose_Controller constructor.
 
 ```php
 public __construct(): mixed
@@ -88,41 +93,55 @@ public get_schema(): mixed
 
 ### __construct
 
-REST_Controller constructor.
+Constructor for the REST_Controller class.
 
 ```php
 public __construct(): mixed
 ```
 
+Sets up the namespace and registers routes and filters.
+
 ***
 
 ### filter_object_by_attributes
 
+Filters an object by specified attributes.
+
 ```php
-protected filter_object_by_attributes(mixed $object, mixed $attributes): array
+protected filter_object_by_attributes(mixed $object, string|array $attributes): array
 ```
 
 **Parameters:**
 
-| Parameter     | Type      | Description |
-|---------------|-----------|-------------|
-| `$object`     | **mixed** |             |
-| `$attributes` | **mixed** |             |
+| Parameter     | Type              | Description                                       |
+|---------------|-------------------|---------------------------------------------------|
+| `$object`     | **mixed**         | The object to filter.                             |
+| `$attributes` | **string\|array** | The attributes to include in the filtered result. |
+
+**Return Value:**
+
+Filtered object data.
 
 ***
 
 ### prepare_item_for_updating
 
+Prepares an item for updating with new values.
+
 ```php
-protected prepare_item_for_updating(mixed $object, mixed $new_values): \Tainacan\Entities\Entity
+protected prepare_item_for_updating(mixed $object, array $new_values): \Tainacan\Entities\Entity
 ```
 
 **Parameters:**
 
-| Parameter     | Type      | Description |
-|---------------|-----------|-------------|
-| `$object`     | **mixed** |             |
-| `$new_values` | **mixed** |             |
+| Parameter     | Type      | Description                      |
+|---------------|-----------|----------------------------------|
+| `$object`     | **mixed** | The object to update.            |
+| `$new_values` | **array** | New values to set on the object. |
+
+**Return Value:**
+
+The updated entity.
 
 ***
 

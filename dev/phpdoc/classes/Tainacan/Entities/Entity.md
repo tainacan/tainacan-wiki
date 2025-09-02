@@ -1,7 +1,10 @@
 # Entity
 
 
-Entity Super class
+Abstract base class for all Tainacan entities.
+
+Provides common functionality for all Tainacan entities including
+validation, error handling, and WordPress post type integration.
 
 ***
 
@@ -11,7 +14,7 @@ Entity Super class
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected \Tainacan\Repositories\Repository $repository
@@ -21,7 +24,7 @@ protected \Tainacan\Repositories\Repository $repository
 
 ### errors
 
-Array of errors, for example, register validations errors
+Array of validation and other errors.
 
 ```php
 private array $errors
@@ -31,11 +34,13 @@ private array $errors
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
-protected static string $post_type
+protected static string|false $post_type
 ```
+
+Set to false if not using WordPress post types.
 
 * This property is **static**.
 
@@ -43,11 +48,13 @@ protected static string $post_type
 
 ### capability_type
 
-The WordPress capability for the entity post type. Default is to be equal to $post_type
+The WordPress capability type for this entity.
 
 ```php
-protected static string $capability_type
+protected static string|false $capability_type
 ```
+
+Defaults to the same value as $post_type.
 
 * This property is **static**.
 
@@ -55,7 +62,7 @@ protected static string $capability_type
 
 ### WP_Post
 
-Store the WordPress post object
+The WordPress post object associated with this entity.
 
 ```php
 public \WP_Post $WP_Post
@@ -65,13 +72,13 @@ public \WP_Post $WP_Post
 
 ### validated
 
-Indicates whether an entity was validated, calling the validate() method
+Indicates whether this entity has been validated.
 
 ```php
 private bool $validated
 ```
 
-Entities MUST be validated before attempt to save
+Entities MUST be validated before attempting to save.
 
 ***
 

@@ -1,7 +1,10 @@
 # Taxonomy
 
 
-Represents the Entity Taxonomy
+Represents a Tainacan Taxonomy entity.
+
+Taxonomies define hierarchical classification systems for organizing
+and categorizing items within Tainacan collections.
 
 ***
 
@@ -52,7 +55,7 @@ protected $slug
 
 ### post_type
 
-The WordPress post_type for store this class if is needed, false otherwise
+The WordPress post type for storing this entity.
 
 ```php
 public static string $post_type
@@ -68,7 +71,7 @@ public static string $post_type
 
 ### capability_type
 
-The WordPress capability for the entity post type. Default is to be equal to $post_type
+The WordPress capability type for this entity.
 
 ```php
 protected static string $capability_type
@@ -84,7 +87,7 @@ protected static string $capability_type
 
 ### repository
 
-The repository of that entity
+The repository instance for this entity.
 
 ```php
 protected string $repository
