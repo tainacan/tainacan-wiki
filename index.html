@@ -86,12 +86,6 @@
         headings: 'h2, h3, h4, h5, h6',
         title:  '',
       },
-      customPageTitle: {
-          prefix:     false,      // [optional] title prefix. default: false eg: prefix: "Application"
-          suffix:     false,      // [optional] title suffix. default: false eg: suffix: "v1.0.0"
-          seprator:   '|',        // [optional] seprator for title eg: title->   prefix | title | suffix
-          debug:      false,      // [optional] should debug
-      },
       plugins: [
           EditOnGithubPlugin.create(
             'https://github.com/tainacan/tainacan-wiki/blob/master/',
@@ -132,47 +126,6 @@
   <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
-  <script>
-    "use strict";
-    const customPageTitleOptions={
-      prefix:false,
-      suffix:false,
-      seprator:"|",
-      debug:false
-    };
-    function customPageTitle(hook,vm){
-      hook.beforeEach(
-        (function(content){})
-      );
-      hook.doneEach(
-        (function(){
-          var _title=document.title;
-          debug("customPageTitleOptions: "+customPageTitleOptions);
-          debug("page title [before]: "+document.title);
-          if(customPageTitleOptions.prefix!=""||customPageTitleOptions.prefix!=false){
-            _title=customPageTitleOptions.prefix+" "+customPageTitleOptions.seprator+" "+_title;
-            debug("new title [prefix]:"+_title)
-          }
-          if(customPageTitleOptions.suffix!=""||customPageTitleOptions.suffix!=false){
-            _title=_title+" "+customPageTitleOptions.seprator+" "+customPageTitleOptions.suffix;
-            debug("new title [suffix]:"+_title)
-          }
-          document.title=_title
-        })
-      )
-    }
-    function debug(msg){
-      if(customPageTitleOptions.debug)
-        console.log(msg)
-    }
-    function error(msg){
-      if(customPageTitleOptions.debug)
-        console.error(msg)
-    }
-    window.$docsify.customPageTitle=Object.assign(customPageTitleOptions,window.$docsify.customPageTitle);
-    window.$docsify.plugins=[].concat(customPageTitle,window.$docsify.plugins);
-  </script>
-  <!-- <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script> -->
   <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//unpkg.com/docsify-copy-code"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
