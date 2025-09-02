@@ -28,7 +28,7 @@ if ( ! empty( $description ) ) {
 $arguments = $hook->get_arguments();
 
 if ( \count( $arguments ) > 0 ) {
-	echo '**Arguments**', $eol;
+	// echo '**Arguments**', $eol;
 
 	echo $eol;
 
@@ -119,4 +119,6 @@ printf(
 echo $eol;
 echo $eol;
 echo '---------------------------------';
+echo $eol;
+echo '<br>';
 echo $eol;
