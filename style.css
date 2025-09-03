@@ -1,12 +1,12 @@
 :root {
-    --base-font-size: 16px;
+    --font-size: 16px;
     --theme-color: #187181;
+    --color-text: #454647;
     --content-max-width: 60em;
-    --base-background-color: white;
-    --base-font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    --font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
     --strong-color: inherit;
     --cover-background-color: white;  
-    --cover-background-image: radial-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(at 70% 60%, #d9eced 0%, rgba(217, 236, 237, 0) 90%), radial-gradient(at 30% 30%, #e6f6f8 0%, rgba(230, 246, 248, 0) 60%), radial-gradient(at left bottom, #d9eced 0%, rgba(204, 227, 242, 0) 70%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #e6f6f8 100%), linear-gradient(to right, #f6f6f6 0%, #f2f2f2 35%, #d9eced 65%, #e6f6f8 100%);
+    --cover-bg-overlay: radial-gradient(rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), radial-gradient(at 70% 60%, #d9eced 0%, rgba(217, 236, 237, 0) 90%), radial-gradient(at 30% 30%, #e6f6f8 0%, rgba(230, 246, 248, 0) 60%), radial-gradient(at left bottom, #d9eced 0%, rgba(204, 227, 242, 0) 70%), linear-gradient(135deg, rgba(18, 46, 119, 0) 0%, rgba(18, 46, 119, 0) 75%, #e6f6f8 100%), linear-gradient(to right, #f6f6f6 0%, #f2f2f2 35%, #d9eced 65%, #e6f6f8 100%);
     --cover-heading-color: #062a57;
     --cover-heading-font-size-max: 1rem;
     --cover-blockquote-font-size: 1.0rem;
@@ -49,19 +49,36 @@
     --notice-before-border-radius: 4px;
     --sidebar-toggle-border-radius: 0 8px 8px 0;
     --toc-width: 300px;
+    --heading-font-weight: 500;
+    --sidebar-link-spacing: 0.25em;
+    --button-border-radius: 6px;
+    --modular-scale: 1.2;
+    --font-size-xxxl: calc(var(--font-size-xxl) * var(--modular-scale) * 1.2);
+    --font-weight: 400;
+    --sidebar-group-title-font-weight: 500;
+    --sidebar-toggle-height: 42px; 
 }
 
 /* Body, typography and containers */
-@media screen and (max-width: 1300px) {
-    :root {
-        --base-font-size: 15px;
+@media screen and (max-width: 1590px) {
+    :root:has(.content > aside.nav:not(:empty)) {
+        --content-max-width: 45em;
     }
 }
-body { 
-    color: #454647;
+@media screen and (max-width: 1300px) {
+    :root {
+        --font-size: 15px;
+        --content-max-width: 60em;
+        --content-margin-inline: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    :root {
+        --content-margin-inline: 0.5rem;
+    }
 }
 .markdown-section {
-    padding-top: 5px;
+    flex: unset;
 }
 @media screen and (max-width: 1300px) {
     .markdown-section {
@@ -75,9 +92,13 @@ article h1 {
     break-inside: auto;
     page-break-before: always;
     --base-line-height: 1.25;
+    --heading-font-weight: 300;
 }
 .content > aside.nav:empty {
     display: none;
+}
+.secondary:is(a.button, button[type], input.button, input:is([type="button"], [type="reset"], [type="submit"])) {
+    border-width: 1px;
 }
 
 /* Github corner link*/
@@ -99,21 +120,13 @@ article h1 {
     border-color: #898d8f !important;
 }
 
-/* Navbar menu */
-.app-nav li ul {
-    border-radius: 0;
-    padding: 0;
-}
-.app-nav ul li>p {
-    font-size: 1rem;
-}
-
 /* Cover page */
 section.cover {
     border-bottom: 4px solid #187181;
 }
 section.cover .cover-main h1 {
     margin: 1.75rem 0 2.5rem;
+    font-weight: 300;
 }
 section.cover .cover-main ul {
     margin: 3.5rem auto;
@@ -131,10 +144,6 @@ section.cover img {
 }
 
 /* Headings */
-.app-nav:not(:empty) ~ main .markdown-section {
-    padding-top: 6rem;
-}
-
 .markdown-section h1 {
     margin-bottom: 2rem;
 }
@@ -214,6 +223,9 @@ section.cover img {
 /* BLOCKQUOTE */
 .content .markdown-section blockquote p {
     font-weight: 400;
+}
+.docsify-copy-code-button {
+    color: white !important;
 }
 
 /* MEDIUM IMAGES PLUGIN */

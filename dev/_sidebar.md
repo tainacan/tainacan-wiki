@@ -1,4 +1,4 @@
-- [:arrow_left: Back to Wiki Home](/#tainacan-wiki 'Go to Tainacan Wiki home page')
+- [Back to Wiki Home](/README#tainacan-wiki 'Go to Tainacan Wiki home page')
 - [Developer's Documentation](/dev/ 'Developers Documentation for Tainacan Plugin - Tainacan Wiki')
 
 - Development Basics

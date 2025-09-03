@@ -187,12 +187,12 @@ Realizadas tais configurações outro aspecto importante é blindar a instalaç�
 O primeiro passo é configurar as permissões dos arquivos e diretórios da instalação corretamente. Isso pode feito por meio dos seguintes comandos que:
 
 Para diretórios: 
-```shell
+```terminal
 find /caminho/para/a/pasta/do/wordpress/ -type d -exec chmod 755 {} \;
 ```
 
 Para arquivos: 
-```shell
+```terminal
 find /caminho/para/a/pasta/do/wordpress/ -type f -exec chmod 644 {} \;
 ```
 

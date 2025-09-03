@@ -3,7 +3,7 @@
     "convert": "node_modules/.bin/docsify-pdf-converter"
   },
   "dependencies": {
-    "docsify-cli": "^4.4.4",
+    "docsify-cli": "^5.0.0-rc",
     "update": "^0.7.4"
   }
 }

@@ -30,12 +30,8 @@
   - [Páginas do Tainacan](pt-br/tainacan-pages.md 'As Páginas geradas pelo plugin Tainacan - Tainacan Wiki')
   - [Temas Compatíveis](pt-br/theme.md 'Os temas que oferecem suporte ao Tainacan')
   - [Blocos Gutenberg](pt-br/gutenberg-blocks.md 'Os Blocos Gutenberg do Tainacan - Tainacan Wiki')
+- [Wiki de Desenvolvedores](dev/README.md 'Sessão de Páginas para Desenvolvedores - Tainacan Wiki')
 - [Plugins](pt-br/plugins.md 'Plugins para complementar as funcionalidades do Tainacan - Tainacan Wiki')
-  - [Expor em PDF](pt-br/plugin-pdf-exposer.md 'O plugin de Expositor em PDF para o Tainacan - Tainacan Wiki')
-  - [Tipo de Metadado URL](pt-br/plugin-metadata-type-url.md 'Um plugin que registra um tipo de metadado para exibir e prever links de URLs - Tainacan Wiki')
-  - [Modos de Visualização Extras](pt-br/plugin-extra-view-modes.md 'Um plugin de modos de visualização extras para o Tainacan - Tainacan Wiki')
-  - [WordPress 3DHOP](pt-br/plugin-3d-hop.md 'Um plugin para renderizar objetos 3D via 3DHOP no Tainacan - Tainacan Wiki')
-- [Para Desenvolvedores](dev/README.md 'Sessão de Páginas para Desenvolvedores - Tainacan Wiki')
 - Sobre o Tainacan
   - [:link:Site Oficial](https://tainacan.org/ ':ignore')
   - [Versões](pt-br/releases.md 'Versões Lançadas - Tainacan Wiki')
