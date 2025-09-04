@@ -18,7 +18,7 @@ This section contains options that may impact your server's response time and pe
 - **Note**: This setting can be overridden by the `TAINACAN_API_MAX_ITEMS_PER_PAGE` constant
 
 **PDF content**
-- **Description**: When enabled, Tainacan will try to index textual content from PDF files in search results. The indexing happens when the item is updated and it depends on certain server settings to work well
+- **Description**: When enabled, Tainacan will try to index textual content from PDF files in search results. The indexing happens when the item is updated and it depends on certain server settings to work well. To know more about PDF indexing, check [this page](./indexing-pdf.md).
 - **Default**: Disabled
 - **Impact**: Increases search accuracy but also server load
 - **Note**: This setting can be overridden by the `TAINACAN_INDEX_PDF_CONTENT` constant

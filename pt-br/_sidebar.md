@@ -25,7 +25,6 @@
   - [Relatórios](pt-br/reports.md 'Conheça a página de relatórios que gera estatísticas e gráficos sobre o repositório e coleções - Tainacan Wiki')
   - [Configurações](pt-br/settings-page.md 'Uma visão detalhada da Página de Configurações do Plugin. - Tainacan Wiki')
   - [Permissões e Usuários](pt-br/users-roles.md 'Gerenciando Permissões e Funções de Usuários no Tainacan - Tainacan Wiki')
-  - [Buscando dentro de PDFs](pt-br/indexar-pdf.md 'Realizando buscas dentro de PDFs via Tainacan - Tainacan Wiki')
   - [Inserir e editar arquivos](pt-br/inserir-e-editar-arquivos.md 'Inserção e edição de arquivos - Tainacan Wiki')
 - Páginas, Temas e Blocos
   - [Páginas do Tainacan](pt-br/tainacan-pages.md 'As Páginas geradas pelo plugin Tainacan - Tainacan Wiki')
