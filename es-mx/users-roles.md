@@ -21,3 +21,4 @@ Lo detallamos a continuación:
 2. Como [Permisos de Tainacan](/es-mx/capabilities.md)
 3. Como [Administrar roles de usuario](/es-mx/manage-user-roles.md)
 4. Como [Administrar permisos específicos](/es-mx/manage-specific-capabilities.md) en ciertas colecciones
+5. Como [Cambiar aspectos de la apariencia del panel de administración](/es-mx/admin-appearance.md) por função de usuário

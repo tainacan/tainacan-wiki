@@ -20,3 +20,4 @@ A seguir, detalhamos:
 2. As [Permissões do Tainacan](/pt-br/capabilities.md)
 3. Como [Gerenciar Funções de Usuários](/pt-br/manage-user-roles.md)
 4. Como [Gerenciar Permissões Específicas](/pt-br/manage-specific-capabilities.md) em certas coleções
+5. Como [Alterar aspectos da aparência do admin](/pt-br/admin-appearance.md) por função de usuário
