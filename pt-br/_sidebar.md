@@ -23,6 +23,7 @@
   - [Ações em Massa](pt-br/bulk-actions.md 'Aplicando ações em Massa no Tainacan - Tainacan Wiki')
   - [Submissão de itens](pt-br/item-submission.md 'Usando o recurso de Submissão de Itens para permitir contribuições públicas para a Coleção - Tainacan Wiki')
   - [Relatórios](pt-br/reports.md 'Conheça a página de relatórios que gera estatísticas e gráficos sobre o repositório e coleções - Tainacan Wiki')
+  - [Configurações](pt-br/settings-page.md 'Uma visão detalhada da Página de Configurações do Plugin. - Tainacan Wiki')
   - [Permissões e Usuários](pt-br/users-roles.md 'Gerenciando Permissões e Funções de Usuários no Tainacan - Tainacan Wiki')
   - [Buscando dentro de PDFs](pt-br/indexar-pdf.md 'Realizando buscas dentro de PDFs via Tainacan - Tainacan Wiki')
   - [Inserir e editar arquivos](pt-br/inserir-e-editar-arquivos.md 'Inserção e edição de arquivos - Tainacan Wiki')
