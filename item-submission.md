@@ -107,7 +107,7 @@ Para proteger seu site deste tipo de ataque, recomendamos fortemente o uso de um
 
 ### Configurando o reCAPTCHA no seu site
 
-No painel administrativo do WordPress, há um submenu do plugin Tainacan específico para isso, o "Submissão de Itens". Acessando ele, você encontrar dois campos que precisam ser preenchidos: A _chave do site_ e a _palavra secreta do site_.
+No painel administrativo do Tainacan, vá em "Outros" -> "Configurações" e procure a seção "Formulário de Submissão de Itens com reCAPTCHA". Acessando ele, você encontrar dois campos que precisam ser preenchidos: A _chave do site_ e a _palavra secreta do site_.
 
 ![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](pt-br/_assets/images/submissao-itens-captcha-1.png)
 
