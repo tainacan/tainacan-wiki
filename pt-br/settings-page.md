@@ -6,6 +6,7 @@ The Plugin Settings Page was introduced in version `1.0.0` to offer users powerf
 
 ![Screenshot of the plugin settings page](./../_assets/images/settings-page-1.png)
 
+Estas são opções que afetam todo o plugin e todos os usuários. Você também pode estar procurando por [configurações de aparência do administrador por função do usuário](pt-br/admin-appearance.md), [configurações no nível da coleção](pt-br/collections.md) ou até mesmo [configurações específicas do tema](pt-br/theme.md) que seu tema pode oferecer.
 
 ## 1. Search and Performance
 

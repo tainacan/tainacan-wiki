@@ -4,6 +4,7 @@ The Plugin Settings Page was introduced in version `1.0.0` to offer users powerf
 
 ![Screenshot of the plugin settings page](./_assets/images/settings-page-1.png)
 
+?> These are options that affect the entire plugin and affect all users. You may also be looking for [per-user-role Admin Appearance settings](admin-appearance.md), [Collection-level settings](collections.md) or even [theme-specific settings](theme.md) that your theme may offer.
 
 ## 1. Search and Performance
 
