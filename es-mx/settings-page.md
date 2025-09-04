@@ -2,7 +2,7 @@
 
 ?> _TODO_ Esta página está en Inglés. Si puedes, ¡ayúdanos a traducirla al Español!
 
-The Plugin Settings Page was introduced in version `1.0.0` to offer users powerful configurations over the plugin's default behavior. You can access it via "Tainacan Admin" -> "Other" -> "Settings". Some of these options were already available previously via PHP constants that had to be defined in servers file such as `wp-config.php`. In this document will cover each of the available options by section. 
+The Plugin Settings Page was introduced in version `1.0.0` to offer users powerful configurations over the plugin's default behavior. If you are an Administrator or have the `manage_options` capability, you can access it via "Tainacan Admin" -> "Other" -> "Settings". Some of these options were already available previously via PHP constants that had to be defined in servers file such as `wp-config.php`. In this document will cover each of the available options by section. 
 
 ![Screenshot of the plugin settings page](./../_assets/images/settings-page-1.png)
 
@@ -126,4 +126,6 @@ This section allows you to configure Google reCAPTCHA for increased security whe
 - **Purpose**: Used for server-side reCAPTCHA validation
 - **Note**: Required for reCAPTCHA functionality
 
+## Extra settings
 
+If you are using other plugins or theme, it may be the case that you see extra settings in this page. That is because developers can register options via Tainaca Settings Page API. To learn about how that works, read the [developer documentation](dev/creating-options-in-the-settings-page.md).
