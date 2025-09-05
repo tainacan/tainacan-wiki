@@ -1,6 +1,7 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
-
 # Blocos do Item
+
+> [!NOTE] 
+> **Note** This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 Os blocos do item são blocos relacionados ao envio ou exibição de um único item. Atualmente, existem 2 blocos com este perfil:
 
