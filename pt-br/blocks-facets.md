@@ -26,11 +26,7 @@ Para começar, escolha a origem da busca por metadados. Você pode procurar tant
 
 Com as facetas carregadas, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Configurações do Bloco Facetas](/_assets/images/blocks_facets_list_1.png ':size=200')
-
-</div>
+![Lista de Configurações do Bloco Facetas](/_assets/images/blocks_facets_list_1.png ':size=200 :class=alignright')
 
 ### Configurações do Gerais das Facetas
 

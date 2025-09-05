@@ -40,11 +40,7 @@ Escolhida a coleção, o bloco será preenchido com uma "prévia visual" de como
 
 O formulário preenchido no exemplo acima gerou um novo item privado na coleção, que pode então ser avaliado e configurado como público, caso aprovado, no painel do Tainacan.
 
-<div style="float: right; margin-left: 32px;">
-
-![Opções do bloco de submissão](pt-br/_assets/gifs/bloco_submissão_de_itens_3.gif)
-
-</div>
+![Opções do bloco de submissão](pt-br/_assets/gifs/bloco_submissão_de_itens_3.gif ':class=alignright')
 
 ## Configurações Avançadas do Bloco
 

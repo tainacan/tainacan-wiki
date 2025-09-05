@@ -72,7 +72,6 @@ This is a non-exhaustive list of the most important topics you should look into:
 - [Tainacan Custom templates](/dev/custom-templates.md) - Custom templates for those that Tainacan adds to WordPress Template Hierarchy
 - [Customizing the Items List](/dev/customizing-the-items-list.md) - Tweaking the appearence of the items list
 - [Creating Extra View Modes](/dev/extra-view-modes.md) - How to create Extra View Modes that will be avaialble for displaying items list
-- [Theme Gutenberg Support](/dev/theme-gutenberg-support.md) - Details to offer better support to the latest content block editor
 
 </div>
 

@@ -19,11 +19,7 @@ Este é um dos blocos mais mais importantes que o Tainacan oferece. Com ele voc�
 
 Logo ao inserir o bloco, devo configurar a minha busca. Este processo começa determinando de qual coleção em específico eu vou buscar itens. Feita esta escolha, sou apresentado à minha lista de itens, a mesma que vejo no _Painel Administrativo do Tainacan_. Os itens que eu enchergo nesta listagem serão os que vão ser buscados pelo meu bloco. Aqui posso alterar, por exemplo: **filtros, ordem de busca, quantidade de itens buscados e já aplicar uma busca textual simples**. Feito isso, estas informações serão salvas nas configurações do meu bloco e a lista será renderizada.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Configurações relacionadas ao Cabeçalho da Coleção](/_assets/images/blocks_collection_items_1.jpg ":size=200")
-
-</div>
+![Lista de Configurações relacionadas ao Cabeçalho da Coleção](/_assets/images/blocks_collection_items_1.jpg ':size=200 :class=alignright')
 
 Com os itens carregados, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
 
@@ -93,11 +89,7 @@ Com os itens carregados, você pode notar que o carrossel não se move. Na verda
 
 ![Vendo o carrossel em ação no tema](/_assets/gifs/blocks-items-carousel-2.gif)
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Configurações do Carrossel de Items](/_assets/images/blocks_items_carousel_1.png ":size=200")
-
-</div>
+![Lista de Configurações do Carrossel de Items](/_assets/images/blocks_items_carousel_1.png ':size=200 :class=alignright')
 
 A primeira opção te permite decorar seu bloco um pouco, acrescentando ao início da lista um cabeçalho da sua coleção. Este deverá ser similar ao que você vê na página de itens, porém uma versão reduzida, com a miniatura da coleção ao meio, a imagem de cabeçalho à direita e o nome da coleção à esquerda. Você pode configurar a cor de fundo do cabeçalho, do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma.
 

@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Metadados" 
-		src="/_assets/images/icon_metadata.png"
-		width="42"
-		height="42">
-</div>
-
-
 # Metadatos
 
 En Tainacan, los _"elementos"_ se organizan a través de _"colecciones"_ y cada _"colección"_, puede tener _"metadatos"_ específicos o compartir _"metadatos"_ entre sí.  Los "metadatos" se utilizan para describir los _"elementos"_ con vistas a la recuperación.

@@ -42,4 +42,3 @@ Pero hay mucho más que se puede hacer. Así que si usted está interesado en co
 - [Creando plantillas personalizadas](/es-mx/dev/custom-templates.md) a una de las [páginas de Tainacan](/es-mx/tainacan-pages.md);
 - [Adaptación del componente Vue Items List](/es-mx/dev/the-vue-items-list-component.md);
 - [Registrando Modos de Vista Extra personalizados](/es-mx/dev/extra-view-modes.md);
-- [Añadir soporte al último Editor de Bloques](/es-mx/dev/theme-gutenberg-support.md) - Características Gutenberg;

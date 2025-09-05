@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Filtros" 
-		src="_assets/images/icon_filters.png"
-		width="42"
-		height="42">
-</div>
-
 # Filters
 
 For each collection you can choose which of your metadata will be used as a filter option for results in a faceted search in the collection view.

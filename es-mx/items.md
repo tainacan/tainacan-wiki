@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Itens" 
-		src="/_assets/images/icon_items.png"
-		width="42"
-		height="42">
-</div>
-
-
 # Elementos
 
 Los **ítems** (llamados también “elementos”) son los contenidos reales del repositorio de Tainacan, que están representados por pinturas, películas, libros, etc. En Tainacan, los “ítems” están organizados por “colecciones” y cada **colección** tiene un conjunto de metadatos, los cuales se configuran de acuerdo a las características de los “ítems” que formarán parte de ella.

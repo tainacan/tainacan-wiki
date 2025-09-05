@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Taxonomias" 
-		src="_assets/images/icon_taxonomies.png"
-		width="42"
-		height="42">
-</div>
-
-
 # Taxonomías
 
 Las _“Taxonomías”_ son un tipo de metadato que funciona dentro de Tainacan como _“vocabularios controlados”_ que se utilizan para la clasificación de _"elementos"_ y ayudan tanto en la captura de datos como en su correcta recuperación.

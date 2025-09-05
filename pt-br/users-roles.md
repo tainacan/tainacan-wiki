@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Usuários" 
-		src="_assets/images/icon_users.png"
-		width="40"
-		height="40">
-</div>
-
 # Permissões e Usuários
 
 > Este artigo explica como as **permissões** são tratadas no Tainacan, bem como quais são as **funções dos usuários** disponíveis e o que cada uma delas pode fazer. Para versões anteriores ao Tainacan 0.15, cheque [esta documentação](/pt-br/users).

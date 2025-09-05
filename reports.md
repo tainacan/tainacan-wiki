@@ -6,11 +6,7 @@ Apresentada na _versão 0.18_, a **página de relatórios** ou **painel de relat
 
 Nesta página explicitamos cada elemento presente neste painel.
 
-<div style="float: left; margin-right: 32px; margin-top: 24px;">
-
-![Captura de Tela do submenu do WordPress onde está o Painel de Relatórios do Tainacan](pt-br/_assets/images/reports_0.png)
-
-</div>
+![Captura de Tela do submenu do WordPress onde está o Painel de Relatórios do Tainacan](pt-br/_assets/images/reports_0.png ':class=alignright')
 
 ## Tela dos Relatórios
 
@@ -20,13 +16,13 @@ Logo que se acessa o painel, são carregadas as estatísticas gerais do Reposit�
 
 Logo abaixo desta caixa de seleção, pode ser vista uma barra de legenda, que auxilia na compreensão da iconografia utilizada por alguns blocos do painel:
 
-![Captura de Tela do Cabeçalho do painel de relatórios do Tainacan](pt-br/_assets/images/reports_1.png)
+![Captura de Tela do Cabeçalho do painel de relatórios do Tainacan](pt-br/_assets/images/reports_1.png ':class=alignwide')
 
 Como já apontado por esta barra de legenda, a maioria dos gráficos possui um recurso de _exportação_, que permite a visualização do gráfico externamente no formato de imagem, vetor, ou planilha de dados CSV, o que facilita a incorporação dos gráficos em relatórios feitos fora da plataforma Tainacan.
 
-<div style="float: right; margin-left: 32px; margin-top: 24px; margin-bottom: -6px;">
+<div style="margin-top: 32px;">
 
-![Captura de Tela da informação da data em que o relatório foi gerado, incluindo botão de recarregar](pt-br/_assets/images/reports_16.png)
+![Captura de Tela da informação da data em que o relatório foi gerado, incluindo botão de recarregar](pt-br/_assets/images/reports_16.png ':class=alignright')
 
 </div>
 
@@ -44,11 +40,11 @@ Caso seja desejada uma atualização forçada com os dados mais recentes, é pre
 
 O painel tem início com os chamados blocos de sumarização, que ao invés de gráficos trazem os números totais do acervo. No nível repositório, são listados totais de Coleções, Itens e Taxonomias, estratificados por seu status. No nível coleção, o total de Itens e Metadados daquela Coleção.
 
-![Captura de Tela dos Blocos de sumarização no nível repositório](pt-br/_assets/images/reports_2.png)
+![Captura de Tela dos Blocos de sumarização no nível repositório](pt-br/_assets/images/reports_2.png ':class=alignwide')
 
 <div style="max-width: 60%; margin: 0 auto;">
 
-![Captura de Tela dos Blocos de sumarização no nível coleção](pt-br/_assets/images/reports_3.png)
+![Captura de Tela dos Blocos de sumarização no nível coleção](pt-br/_assets/images/reports_3.png ':class=alignwide')
 
 </div>
 
@@ -58,25 +54,25 @@ Uma observação a ser feita é que no nível repositório, além dos status, os
 
 O primeiro gráfico apresentado no relatório é um gráfico de barras empilhadas verticais. No eixo Y, mostra o total de itens, e no eixo X, cada coleção do repositório. Com sua ordenação por maior quantidade de itens, da esquerda para a direita, fica fácil visualizar quais coleções tem maior quantitativo de itens no acervo. No canto lateral direito do gráfico, a legenda que aponta qual o status dos itens nas frações coloridas das barras, também serve como um filtro, já que clicando em uma das barras, os dados deste status somem e vê-se apenas os restantes.
 
-![Captura de Tela do Bloco do gráfico de Total de Itens por Coleção](pt-br/_assets/images/reports_4.png)
+![Captura de Tela do Bloco do gráfico de Total de Itens por Coleção](pt-br/_assets/images/reports_4.png ':class=alignwide')
 
 ## Uso de Termos por Taxonomia
 
 O gráfico seguinte também é um gráfico de barras empilhadas verticais. No eixo Y, mostra o total de termos, e no eixo X, cada taxonomia do repositório. É apresentado não só o total de termos em cada taxonomia, mas também quais destes termos estão sendo utilizados em pelo menos algum item do repositório, através da legenda que filtra as seções empilhadas de "Termos em uso" e "Termos sem uso". Isto já fornece de antemão uma noção de quais taxonomias possuem um vocabulário mais relevante para o acervo, do ponto de vista quantitativo.
 
-![Captura de Tela do Bloco do gráfico de Uso de Termos por Taxonomia](pt-br/_assets/images/reports_5.png)
+![Captura de Tela do Bloco do gráfico de Uso de Termos por Taxonomia](pt-br/_assets/images/reports_5.png ':class=alignwide')
 
 ## Total de Itens por Termo de Taxonomia
 
 O terceiro gráfico exibido na tela de repositório é um gráfico de barras vertical onde o eixo X novamente apresenta o total de itens, porém no eixo Y estão agora termos de uma taxonomia. É uma visão do quanto cada termo de cada taxonomia é usado, porém, apenas uma é escolhida por vez, através da caixa de seleção existente acima do gráfico.
 
-![Captura de Tela do Bloco do gráfico de Total de Itens por Termo de Taxonomia](pt-br/_assets/images/reports_6.png)
+![Captura de Tela do Bloco do gráfico de Total de Itens por Termo de Taxonomia](pt-br/_assets/images/reports_6.png ':class=alignwide')
 
 !> Por ter o potencial de listar uma quantidade de dados considerável (algumas taxonomias em repositórios possuem mais de 300 termos), **este é um gráfico paginado**. Isto quer dizer que por vez, são exibidos um padrão de **56 termos no máximo**. Este foi o valor escolhido para permitir uma leitura mínima dos dados no eixo horizontal e não pesar demais a memória do navegador que precisa processar estas informações para montar a visualização. Como a requisição feita para a API vem ordenada, pode-se ter garantia de que, os termos mostrados na primeira página, terão mais itens que nas seguintes. Ainda assim, além de navegar pelas páginas é possível alterar a quantidade de itens por página, porém sujeito ao risco de se travar o navegador!
 
 <div style="max-width: 60%; margin: 0 auto;">
 
-![Captura de Tela do Detalhe da paginação do bloco de Total de Itens por Termo de Taxonomia](pt-br/_assets/images/reports_7.png)
+![Captura de Tela do Detalhe da paginação do bloco de Total de Itens por Termo de Taxonomia](pt-br/_assets/images/reports_7.png ':class=alignwide')
 
 </div>
 
@@ -119,9 +115,9 @@ No primeiro gráfico do painel de relatórios de uma coleção, está um gráfic
 
 ## Distribuição de Preenchimento de Metadados na Coleção
 
-<div style="float: right; margin-left: 32px; margin-top: 24px;">
+<div style="margin-top: 24px;">
 
-![Captura de Tela do Bloco de Distribuição de Preenchimento de Metadados na Coleção](pt-br/_assets/images/reports_12.png)
+![Captura de Tela do Bloco de Distribuição de Preenchimento de Metadados na Coleção](pt-br/_assets/images/reports_12.png ':class=alignright')
 
 </div>
 
@@ -137,14 +133,14 @@ Por não ser possível ainda (devido a limitações da biblioteca de gráficos) 
 
 Por fim, no painel de relatórios da coleção, há um gráfico similar ao de ["Total de Itens por Termo de Taxonomia"](#total-de-itens-por-termo-de-taxonomia), presente no painel do repositório. Este gráfico mostra quantos itens possuem um determinado termo como valor de um metadado tipo taxonomia. Havendo mais de um metadado tipo taxonomia na coleção, é possível trocar na caixa de seleção ao lado do título do gráfico. Observa-se então no eixo Y, o total de itens e no eixo X, os termos desta taxonomia. Assim como no gráfico citado anteriormente, este gráfico oferece uma paginação para quantidades grandes de termos.
 
-![Captura de Tela do Bloco de Total de Itens por Metadado Tipo Taxonomia na Coleção](pt-br/_assets/images/reports_13.png)
+![Captura de Tela do Bloco de Total de Itens por Metadado Tipo Taxonomia na Coleção](pt-br/_assets/images/reports_13.png ':class=alignwide')
 
 Há uma diferença importante do gráfico nível repositório porém, já que **neste é possível navegar na hierarquia destes termos**.
 
 > Por padrão, são carregados apenas totais de itens por termos "raiz", ou seja, termos que não são filhos de nenhum outro termo. Se algum destes termos possuir filhos, ao se passar o mouse sobre ele, será informado que os possui, e pode-se então clicar na barra para carregar ao lado, um novo gráfico, com o total de itens por termos filhos deste. A mesma rotina pode ser feita clicando-se em termos filhos que possuam filhos. Neste caso, o gráfico com os filhos ocupará o espaço do gráfico com dos pais, e o gráfico com os termos netos ocupará seu espaço. Para se ver apenas o primeiro gráfico com um maior espaço (caso não haja, por exemplo, nenhum termo filho a ser carregado) pode-se clicar no botão com uma seta para a direita, localizada entre os dois painéis, que faz com que o gráfico ocupe toda a largura disponível.
 
-![Captura de Tela de Termos filhos carregados no bloco de Total de Itens por Metadado Tipo Taxonomia na Coleção](pt-br/_assets/images/reports_14.png)
+![Captura de Tela de Termos filhos carregados no bloco de Total de Itens por Metadado Tipo Taxonomia na Coleção](pt-br/_assets/images/reports_14.png ':class=alignwide')
 
 Por fim, este bloco também oferece uma visualização em gráfico _alternativo_. **Ao invés do gráfico de barras, pode-se ver os dados em um mapa de árvore (_treemap_)**. Nesta visualização, a área do retângulo diz respeito ao total de itens com todos os termos carregados. Cada retângulo interno corresponde aos dados aninhados do total de item por aquele termo. Esta visualização fornece uma visão particular das facetas da coleção.
 
-![Captura de Tela do Gráfico de Árvore para o Total de Itens por Metadado Tipo Taxonomia na Coleção](pt-br/_assets/images/reports_15.png)
+![Captura de Tela do Gráfico de Árvore para o Total de Itens por Metadado Tipo Taxonomia na Coleção](pt-br/_assets/images/reports_15.png ':class=alignwide')

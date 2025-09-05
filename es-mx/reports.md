@@ -24,9 +24,9 @@ Justo debajo de este cuadro de selección puede verse una barra de subtítulos, 
 
 Como se observa en esta barra de subtítulos, la mayoría de los gráficos disponen de una función de exportación que permite visualizar el gráfico externamente en formato de imagen, vectorial o de hoja de cálculo CSV, lo que facilita la incorporación de los gráficos a informes realizados fuera de la plataforma Tainacan.
 
-<div style="float: right; margin-left: 32px; margin-top: 24px; margin-bottom: -6px;">
+<div style="margin-top: 24px; margin-bottom: -6px;">
 
-![Informes en Tainacan Informe generado](_assets/images/informes_16.png)
+![Informes en Tainacan Informe generado](_assets/images/informes_16.png ':class=alignright')
 
 </div>
 
@@ -119,9 +119,9 @@ El primer gráfico que aparece en el panel de informes de una colección, de bar
 
 ## Avances del llenado de metadatos en la colección
 
-<div style="float: right; margin-left: 32px; margin-top: 24px;">
+<div style="margin-top: 24px;">
 
-![Informes en Tainacan Distribucion del llenado de metadatos](_assets/images/informes_12.png)
+![Informes en Tainacan Distribucion del llenado de metadatos](_assets/images/informes_12.png ':class=alignright')
 
 </div>
 

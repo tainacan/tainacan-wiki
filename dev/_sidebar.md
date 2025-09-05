@@ -34,7 +34,6 @@
   - [Custom Templates](/dev/custom-templates.md 'How to use custom templates for theme compatibility with Tainacan - Tainacan Wiki')
   - [Customizing the Items List](/dev/customizing-the-items-list.md 'How to better customize Tainacan items list on a theme - Tainacan Wiki')
   - [Extra View Modes](/dev/extra-view-modes.md 'How to create extra custom view modes for Tainacan items list - Tainacan Wiki')
-  - [Theme Gutenberg Support](/dev/theme-gutenberg-support.md 'How to offer better Gutenberg support on your theme - Tainacan Wiki')
 - Configuration and performance
   - [Faceted Search](/dev/faceted-search.md 'Tweaks for better Faceted Search performance - Tainacan Wiki')
   - [Search Engine](/dev/search-engine.md 'Configuration for better Search Engine performance - Tainacan Wiki')

@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img
-		alt="View in Theme Icon"
-		src="/_assets/images/icon_see.png"
-		width="42"
-		height="42">
-</div>
-
 # Tainacan Pages
 
 With the Tainacan plugin activated in your WordPress, some special pages are created by the plugin itself. These are:
@@ -24,7 +16,7 @@ As you create Collections, Items, and Terms, you will automatically have access 
 
 ## Tainacan's Special Pages
 
-![Set of screenshots exemplifying Tainacan's special pages](/pt-br/_assets/images/paginas_especiais_tainacan.png)
+![Set of screenshots exemplifying Tainacan's special pages](/pt-br/_assets/images/paginas_especiais_tainacan.png ':class=alignwide')
 
 ### Collections Page
 

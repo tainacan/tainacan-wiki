@@ -6,7 +6,7 @@ Apesar de poder ser uma URL para uma fonte externa, um item no Tainacan costuma 
 
 Todas os arquivos utilizados no Tainacan também podem ser visualizados na _“Biblioteca de Mídia do WordPress”_, mas existem diferenças entre o fluxo de inserção feito pela bilioteca de mídias e pelo próprio Tainacan. A imagem a seguir nos auxilia a entender um pouco o que acontece por trás dos panos:
 
-![Diferenças no fluxo de upload de arquivos](_assets/images/uploads.png)
+![Diferenças no fluxo de upload de arquivos](_assets/images/uploads.png  ':class=alignwide')
 
 Ao se enviar uma arquivo diretamente para a _“Biblioteca de Mídia do WordPress”_, este arquivo é armazenado na estrutura de pastas de uploads do _WordPress_, seguindo um sistema de pastas como o demonstrado, onde os arquivos estão organizados por data. Esta organização pode ser alterada no próprio _WordPress_ ou por uso de plugins.
 

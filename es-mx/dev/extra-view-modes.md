@@ -120,13 +120,7 @@ La función `tainacan_register_view_mode` es parte del plugin de Tainacan. Su pr
 
 El parámetro `type` es uno de los más relevantes aquí. Cuando se pasa una plantilla, se debe proporcionar la ruta del archivo.
 
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Enabled Metadata Dropdown.png" 
-		src="/dev/_assets/images/Enabled_Metadata_Dropdown.png"
-		width="300"
-		height="256">
-</div>
+![Enabled Metadata Dropdown](/_assets/images/Enabled_Metadata_Dropdown.png ':class=alignright')
 
 Los modos de vista como Cards y Grid no permiten a los usuarios elegir qué metadatos deben mostrarse, sino que deciden que sólo algunos sean visibles. Para este tipo de modo de vista, se utiliza el parámetro `dynamic_metadata` como `false`.
 

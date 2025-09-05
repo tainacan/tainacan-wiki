@@ -19,11 +19,7 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 
 Há vários tipos de testes que podem ser feitos para cobrir o máximo de funcionalidades possíveis. Todos começam com as seguintes etapas básicas:
 
-<div style="float: right; margin-left: 32px;">
-
-![Menu de Admin do Tainacan](/_assets/images/release-testing-1.png)
-
-</div>
+![Menu de Admin do Tainacan](/_assets/images/release-testing-1.png ':class=alignright')
 
 1. Acesse o **painel de controle do WordPress** onde a sua versão de testes do plugin Tainacan está instalada e ativada (geralmente, o endereço do seu site + `/wp-admin`);
 2. Na barra lateral esquerda, clique em **Diagnóstico da Instalação** na seção Tainacan:

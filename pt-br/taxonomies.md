@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Taxonomias" 
-		src="_assets/images/icon_taxonomies.png"
-		width="42"
-		height="42">
-</div>
-
 # Taxonomias
 
 *“Taxonomias”* podem ser criadas e usadas para a classificação de *“itens”*. Elas funcionam como *“vocabulários controlados”* que vão auxiliar tanto na entrada dos dados, quanto na sua recuperação precisa. 

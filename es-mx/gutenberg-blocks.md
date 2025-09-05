@@ -13,11 +13,7 @@ A finales de 2018, WordPress 5.0 presentó al mundo su nuevo editor de Posts y P
 
 Centrado en ofrecer una forma dinámica y visual de editar contenidos. En este editor, todos los elementos de una página, desde los párrafos más sencillos hasta la galería de imágenes más compleja, se denominan **"Bloques "**. Con él, es fácil construir un post de lanzamiento para una colección, utilizando imágenes con diferentes alineaciones, columnas, cuadrículas de texto, mapas, títulos o botones más llamativos. Además, [existen muchos plugins](https://es.wordpress.org/plugins/browse/blocks/ ":ignore") para WordPress que ofrecen nuevos bloques ricos y atractivos.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de bloques de Tainacan Gutenberg](_assets/images/lista-bloques-de-gutenberg.png ":size=450")
-
-</div>
+![Lista de bloques de Tainacan Gutenberg](_assets/images/lista-bloques-de-gutenberg.png ':size=350 :class=alignright')
 
 ## Los bloques de Tainacan
 
@@ -49,11 +45,7 @@ Antes de empezar a explorar los bloques de Tainacan, sin embargo, es posible que
 2. Es el área de contenido del propio bloque. Cuando están activos, es decir, cuando se hace clic sobre ellos, los bloques de Tainacan suelen tener una zona gris con la configuración principal que debe realizarse (elige una fuente para los datos mostrados, como una colección). Esta región no aparece en la versión final del post, que puede verse alejando el foco del bloque;
 3. Esta es la barra lateral del editor donde, además de la configuración del documento, están las opciones del bloque activo en ese momento. Aquí encontrará todo tipo de opciones relacionadas con el bloque. Al final de esta sección, todos los bloques tienen una opción avanzada que permite asignar clases a los bloques, que pueden utilizarse para realizar personalizaciones avanzadas con CSS.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Posibles Alineaciones del bloque](_assets/images/gutenberg-blocks-alignments.png ":size=250")
-
-</div>
+![Lista de Posibles Alineaciones del bloque](_assets/images/gutenberg-blocks-alignments.png ':size=250 :class=alignright')
 
 ### Alineaciones del bloque
 

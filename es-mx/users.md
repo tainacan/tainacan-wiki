@@ -1,13 +1,5 @@
 > Esta página se refiere al esquema de permisos de usuario en **las versiones de Tainacan anteriores a la 0.15**. Recomendamos encarecidamente el uso de versiones más recientes, donde los permisos de usuario funcionan según [esta documentación](/es-mx/users-roles).
 
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Usuários" 
-		src="_assets/images/icon_users.png"
-		width="40"
-		height="40">
-</div>
-
 # Usuarios
 
 ## Permisos de usuario en Tainacan

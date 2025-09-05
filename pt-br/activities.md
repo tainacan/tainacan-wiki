@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Atividades" 
-		src="_assets/images/icon_logs.png"
-		width="42"
-		height="42">
-</div>
-
 # Registro de Atividades
 
 Todas as ações realizadas no Tainacan são registradas e podem ser consultadas a nível de “repositório”, “coleção” e em cada “item”.

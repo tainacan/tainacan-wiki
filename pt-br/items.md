@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Itens" 
-		src="/_assets/images/icon_items.png"
-		width="42"
-		height="42">
-</div>
-
 # Itens
 
 Os **“itens”** são os verdadeiros conteúdos do repositório Tainacan, que são representados por pinturas, filmes, livros e, assim por diante. No Tainacan, os “itens” são organizados por **“coleções”** e, cada “coleção”, possui um conjunto de metadados, que são configurados conforme as características dos “itens” que irão fazer parte dela.

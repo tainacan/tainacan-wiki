@@ -6,7 +6,7 @@ Desde a versão 0.15 do Tainacan, é possível configurar as **funções de usu�
 
 Esta função está disponibilizada pelo menu do plugin, que pode ser acessado no menu lateral do painel administrativo do WordPress:
 
-![Tela de Gestão de Funções de Usuários](/_assets/images/manage-user-roles-1.png)
+![Tela de Gestão de Funções de Usuários](pt-br/_assets/images/manage-user-roles-1.png)
 
 Somente usuários que possuem a permissão de [Gerenciar Permissões de Usuários](capabilities#repositório-em-geral) poderão acessar esta tela.
 
@@ -20,24 +20,20 @@ Com esta divisão, seus usuários que possuírem apenas funções do Tainacan, n
 
 Ao clicar em *Editar* em qualquer uma das funções acima, a seguinte tela aparecerá:
 
-![Tela de Configuração de uma Função de Usuário, aba Repositório](/_assets/images/manage-user-roles-2.png)
+![Tela de Configuração de uma Função de Usuário, aba Repositório](pt-br/_assets/images/manage-user-roles-2.png)
 
 Além do nome, é possível marcar nas caixas qual permissão está atribuida àquela função de usuário. Note que, como explicado na [página sobre permissões](capabilities), algumas permissões afetam outras. A permissão "Gerenciar Tainacan", neste caso, já concede à função todas as outras permissões por padrão.
 
 Na aba "Coleções", podemos gerenciar não apenas permissões que afetam a todas as coleções, mas também especificar para certas coleções se haverá ou não uma permissão para aquela função:
 
-![Tela de Configuração de uma Função de Usuário, aba Coleções](/_assets/images/manage-user-roles-3.png)
+![Tela de Configuração de uma Função de Usuário, aba Coleções](pt-br/_assets/images/manage-user-roles-3.png)
 
 Neste caso, qualquer permissão que for marcada para todas as coleções, afetará a permissão de mesmo nome ao se trocar para as coleções específicas.
 
 
 ## Criando funções do zero, ou a partir de outras
 
-<div style="float: right; margin-left: 32px;">
-
-![Criando uma função de usuário a partir de outra](/_assets/images/manage-user-roles-4.png ':size=220')
-
-</div>
+![Criando uma função de usuário a partir de outra](pt-br/_assets/images/manage-user-roles-4.png ':size=220 :class=alignright')
 
 Pode ser desável criar uma função de usuário nova, com permisssões bem específicas. Neste caso, basta clicar em "Nova Função" no botão do canto superior esquerdo da tela de Funções do Usuário. Isto criará uma função limpa, sem nenhum permissão algum. 
 

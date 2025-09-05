@@ -20,11 +20,7 @@ Este script está destinado a realizar pruebas para comprobar que las funciones 
 
 Hay varios tipos de pruebas que se pueden llevar a cabo para cubrir la mayor funcionalidad posible. Todas empiezan con los siguientes pasos básicos:
 
-<div style="float: right; margin-left: 32px;">
-
-![Menu de Admin de Tainacan](/_assets/images/release-testing-1.png)
-
-</div>
+![Menu de Admin de Tainacan](/_assets/images/release-testing-1.png ':class=alignright')
 
 1. Accede al **panel de control de WordPress** donde está instalada y activada tu versión de prueba del plugin Tainacan (normalmente la dirección de tu web + `/wp-admin`).;
 2. En la barra lateral izquierda, haga clic en **Diagnóstico de la instalación** en la sección Tainacan:

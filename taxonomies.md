@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Taxonomias" 
-		src="_assets/images/icon_taxonomies.png"
-		width="42"
-		height="42">
-</div>
-
 # Taxonomies
 
 *Taxonomies* can be created and used for item classification. Examples of common taxonomies are *Gender*, *Countries*, etc.

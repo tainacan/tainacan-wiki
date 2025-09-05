@@ -22,9 +22,9 @@ Logo abaixo desta caixa de seleção, pode ser vista uma barra de legenda, que a
 
 Como já apontado por esta barra de legenda, a maioria dos gráficos possui um recurso de _exportação_, que permite a visualização do gráfico externamente no formato de imagem, vetor, ou planilha de dados CSV, o que facilita a incorporação dos gráficos em relatórios feitos fora da plataforma Tainacan.
 
-<div style="float: right; margin-left: 32px; margin-top: 24px; margin-bottom: -6px;">
+<div style="margin-top: 24px; margin-bottom: -6px;">
 
-![Captura de Tela da informação da data em que o relatório foi gerado, incluindo botão de recarregar](_assets/images/reports_16.png)
+![Captura de Tela da informação da data em que o relatório foi gerado, incluindo botão de recarregar](_assets/images/reports_16.png ':class=alignright')
 
 </div>
 
@@ -117,9 +117,9 @@ No primeiro gráfico do painel de relatórios de uma coleção, está um gráfic
 
 ## Distribuição de Preenchimento de Metadados na Coleção
 
-<div style="float: right; margin-left: 32px; margin-top: 24px;">
+<div style="margin-top: 24px;">
 
-![Captura de Tela do Bloco de Distribuição de Preenchimento de Metadados na Coleção](_assets/images/reports_12.png)
+![Captura de Tela do Bloco de Distribuição de Preenchimento de Metadados na Coleção](_assets/images/reports_12.png ':class=alignright')
 
 </div>
 

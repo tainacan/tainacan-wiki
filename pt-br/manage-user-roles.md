@@ -31,11 +31,7 @@ Neste caso, qualquer permissão que for marcada para todas as coleções, afetar
 
 ## Criando funções do zero, ou a partir de outras
 
-<div style="float: right; margin-left: 32px;">
-
-![Criando uma função de usuário a partir de outra](/_assets/images/manage-user-roles-4.png ':size=220')
-
-</div>
+![Criando uma função de usuário a partir de outra](/_assets/images/manage-user-roles-4.png ':size=220 :class=alignright')
 
 Pode ser desável criar uma função de usuário nova, com permisssões bem específicas. Neste caso, basta clicar em "Nova Função" no botão do canto superior esquerdo da tela de Funções do Usuário. Isto criará uma função limpa, sem nenhum permissão algum. 
 

@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Filtros" 
-		src="_assets/images/icon_filters.png"
-		width="42"
-		height="42">
-</div>
-
-
 # Filtros
 
 Para cada _"colección"_ es posible elegir cuáles de sus _"metadatos"_ se utilizarán como _"filtro"_ para los resultados de una búsqueda facetada en la vista de la _"colección"_. Los requisitos previos para el uso de _"filtros"_ en el repositorio son:

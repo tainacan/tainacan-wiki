@@ -29,7 +29,6 @@
   - [Plantillas personalizadas](es-mx/dev/custom-templates.md 'Cómo utilizar plantillas personalizadas para que el tema sea compatible con Tainacan - Tainacan Wiki')
   - [Personalizar la lista de elementos](es-mx/dev/customizing-the-items-list.md 'Cómo personalizar mejor la lista de artículos de Tainacan en un tema - Tainacan Wiki')
   - [Modos de visualización adicionales](es-mx/dev/extra-view-modes.md 'Cómo crear modos de visualización personalizados adicionales para la lista de artículos de Tainacan - Tainacan Wiki')
-  - [Soporte Gutenberg para temas](es-mx/dev/theme-gutenberg-support.md 'Cómo ofrecer una mejor compatibilidad con Gutenberg en tu tema - Tainacan Wiki')
 - Configuración y rendimiento
   - [Búsqueda facetada](es-mx/dev/faceted-search.md 'Ajustes para mejorar el rendimiento de la búsqueda por facetas - Tainacan Wiki')
   - [Motor de búsqueda](es-mx/dev/search-engine.md 'Configuración para mejorar el rendimiento del motor de búsqueda - Tainacan Wiki')

@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Importadores" 
-		src="_assets/images/icon_importers.png"
-		width="40"
-		height="40">
-</div>
-
 # Importers
 
 ?> _TODO_ Add introduction before listing importers.

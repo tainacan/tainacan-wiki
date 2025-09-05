@@ -68,7 +68,6 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 - [Plantillas personalizadas de Tainacan](/es-mx/dev/custom-templates.md) - Plantillas personalizadas para las que Tainacan añade a la jerarquía de plantillas de WordPress
 - [Personalización de la lista de artículos](/es-mx/dev/customizing-the-items-list.md) - Modificar el aspecto de la lista de artículos
 - [Creación de modos de vista adicionales](/es-mx/dev/extra-view-modes) - Cómo crear modos de vista adicionales para mostrar la lista de elementos
-- [Soporte Gutenberg para temas](/es-mx/dev/theme-gutenberg-support.md) - Detalles para ofrecer una mejor compatibilidad con el último editor de bloques de contenido
 
 </div>
 

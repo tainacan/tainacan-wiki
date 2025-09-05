@@ -4,7 +4,7 @@
 
 The Plugin Settings Page was introduced in version `1.0.0` to offer users powerful configurations over the plugin's default behavior. If you are an Administrator or have the `manage_options` capability, you can access it via "Tainacan Admin" -> "Other" -> "Settings". Some of these options were already available previously via PHP constants that had to be defined in servers file such as `wp-config.php`. In this document will cover each of the available options by section. 
 
-![Screenshot of the plugin settings page](./../_assets/images/settings-page-1.png)
+![Screenshot of the plugin settings page](./../_assets/images/settings-page-1.png ':class=alignwide')
 
 ?> Estas son opciones que afectan a todo el plugin y a todos los usuarios. También puede que estés buscando [configuración de apariencia del administrador por rol de usuario](es-mx/admin-appearance.md), [configuración a nivel de colección](es-mx/collections.md) o incluso [configuración específica del tema](es-mx/theme.md) que tu tema puede ofrecer.
 

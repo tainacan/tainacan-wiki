@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Importadores" 
-		src="_assets/images/icon_importers.png"
-		width="40"
-		height="40">
-</div>
-
-
 # Importadores
 
 Los importadores son los recursos que permiten optimizar el proceso de creación y actualización de elementos en las colecciones de Tainacan. También permiten importar “vocabularios controlados” y “taxonomías”.

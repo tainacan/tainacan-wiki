@@ -30,11 +30,7 @@ En este caso, cualquier permiso que esté marcado para todas las colecciones afe
 
 ## Creación de funciones desde cero, o a partir de otras
 
-<div style="float: right; margin-left: 32px;">
-
-![Crear una función de usuario a partir de otra](_assets/images/manage-user-roles-4.png ":size=220")
-
-</div>
+![Crear una función de usuario a partir de otra](_assets/images/manage-user-roles-4.png ':size=220 :class=alignright')
 
 Puede ser conveniente crear un nuevo rol de usuario con permisos muy específicos. En este caso, simplemente haga clic en "Nuevo Rol" en el botón situado en la parte superior izquierda de la pantalla de Roles de Usuario. Esto creará un rol limpio, sin ningún permiso.
 

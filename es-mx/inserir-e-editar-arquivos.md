@@ -7,7 +7,7 @@ Aunque puede ser una URL para una fuente externa, un elemento en Tainacan suele 
 
 Todos los archivos utilizados en Tainacan pueden verse también en la "Mediateca de WordPress", pero existen diferencias entre el flujo de inserción realizado por la mediateca y por el propio Tainacan. La siguiente imagen nos ayuda a entender lo que ocurre entre bastidores:
 
-![Diferenças no fluxo de upload de arquivos](_assets/images/uploads.png)
+![Diferenças no fluxo de upload de arquivos](pt-br/_assets/images/uploads.png  ':class=alignwide')
 
 Cuando se sube un archivo directamente a la "Mediateca de WordPress", éste se almacena en la estructura de carpetas de subida de WordPress, siguiendo un sistema de carpetas como el que se muestra, donde los archivos se organizan por fecha. Esta organización puede modificarse en el propio WordPress o mediante plugins.
 

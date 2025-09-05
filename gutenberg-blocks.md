@@ -14,11 +14,7 @@ In late 2018, WordPress 5.0 introduced its new Post and Page editor to the world
 
 It's focused on providing a dynamic and visual way to edit content. In this editor, all elements of a page, from the simplest paragraphs to the most complex image gallery, are called "**Blocks**". With it, it becomes easy to build a collection launch post, using images with different alignments, columns, text grids, maps, titles, or more eye-catching buttons. In addition, [there are various existing plugins](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") for WordPress that offer you new rich and attractive blocks.
 
-<div style="float: right; margin-left: 32px;">
-
-![List of Tainacan Gutenberg Blocks](/_assets/images/gutenberg-blocks-list.jpg ":size=450")
-
-</div>
+![List of Tainacan Gutenberg Blocks](pt-br/_assets/images/gutenberg-blocks-list.jpg ':size=450 :class=alignright')
 
 ## Tainacan Blocks
 
@@ -53,11 +49,7 @@ Before you start exploring Tainacan blocks, however, it might be useful to under
 2. This is the content area of the block itself. When active — that is, clicked, in focus — Tainacan blocks generally have a gray area with the main configuration to be made (usually choosing a data source, such as a collection). This area does not appear in the final version of the post, which can be observed by moving the focus away from the block;
 3. This is the editor's sidebar where, in addition to document settings, the options for the currently active block are located. It contains various types of block-related options. All blocks have an advanced setting at the end of this session that allows assigning classes to blocks, which can be used for advanced CSS customizations.
 
-<div style="float: right; margin-left: 32px;">
-
-![List of Possible Block Alignments](/_assets/images/gutenberg-blocks-alignments.png ":size=250")
-
-</div>
+![List of Possible Block Alignments](pt-br/_assets/images/gutenberg-blocks-alignments.png ':size=250 :class=alignright')
 
 ### Block Alignments
 
@@ -92,7 +84,7 @@ If you have already created a page with it, then you already know the `Default` 
 
 These elements may be undesirable in some situations. Suppose you want to create a customized version of your repository's homepage. In this case, you can use the `Landing` template, which from the list above displays only items **1**, **5**, and **6**. The `Landing with Breadcrumb` template adds item **2** to this list:
 
-![Examples of template uses](/pt-br/_gifs/gutenberg_page_templates.gif)
+![Examples of template uses](pt-br/_assets/gifs/gutenberg_page_templates.gif)
 
 ### WYSIWYG or the Differences Between Editor and Page
 
