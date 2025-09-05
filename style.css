@@ -38,6 +38,7 @@
     --code-inline-background: #f2f2f2;
     --blockquote-font-size: 0.95rem;
     --blockquote-em-font-style: italic;
+    --blockquote-bg: #f6f6f6;
     --notice-important-border-color: #a06522;
     --notice-important-background: #fff7ee;
     --notice-tip-border-color: #44638e;
@@ -341,7 +342,7 @@ img.medium-zoom-image {
 .content .markdown-section .content .markdown-section ul:not(.task-list)>li:before {
 	content: '\25a0';
 	padding-right: 0.75rem;
-	color: #062a57;
+	color: #187181;
 }
 .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li:before, 
 .content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li:before,
@@ -361,7 +362,7 @@ img.medium-zoom-image {
 .content .markdown-section .content .markdown-section ol li ul:not(.task-list) li ul:not(.task-list) li:before {
 	content: '\23fa';
 	padding-right: 0.75rem;
-	color: #187181;
+	color: #062a57;
 }
 .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before, 
 .content .markdown-section .content .markdown-section ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li ul:not(.task-list) li:before,
@@ -382,7 +383,7 @@ img.medium-zoom-image {
 .content .markdown-section .content .markdown-section ol li ul:not(.task-list) li ol li ul:not(.task-list) li:before {
 	content: '\1f786';
 	padding-right: 0.75rem;
-	color: #187181;
+	color: #062a57;
 }
 
 /* OL LI special style */
