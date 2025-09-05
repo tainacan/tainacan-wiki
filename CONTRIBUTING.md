@@ -55,6 +55,7 @@ Vários sistemas colaborativos adotam determinadas convenções de formatação 
 | Alertas                 | `> [!WARNING] **Aviso**: Esta é uma observação sensivível.` | <div class="callout warning"><p><strong>Aviso</strong> Esta é uma observação sensivível.</p></div>              |
 | Notas                   | `> [!NOTE] **Nota**: Esta é uma observação secundária.` | <div class="callout note"><p><strong>Nota</strong>: Esta é uma observação secundária.</p></div>  |
 | Dicas                   | `> [!TIP] **Dica**: Esta é uma observação útil.` | <div class="callout tip"><p><strong>Dica</strong>: Esta é uma observação útil.</p></div>  |
+| Importante                   | `> [!IMPORTANT] **Importante**: Esta é uma observação legal.` | <div class="callout important"><p><strong>Importante</strong>: Esta é uma observação legal.</p></div>  |
 | Perigo                   | `> [!CAUTION] **Perigo**: Esta é uma observação tensa.` | <div class="callout caution"><p><strong>Perigo</strong>: Esta é uma observação tensa.</p></div>  |
 
 ### Linhas

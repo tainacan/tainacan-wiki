@@ -2,7 +2,7 @@
 
 Listamos e respondemos as perguntas mais frequentes feitas pela nossa comunidade:
 
-> Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!
+> [!IMPORTANT] Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!
 
 Pule pra alguma sessão específica:
 
@@ -127,4 +127,4 @@ Por padrão, a página inicial do seu site será a lista de posts do seu blog. P
 
 Como administrador do seu site, é possível cadastrar novos usuário com diferentes [papéis e permissões](/pt-br/users-roles) para editar seu acervo. Se no entanto você quer que possam ser inseridos itens sem o cadastro de novos usuários no sistema, pode criar um [Formulário de Submissão de itens](/pt-br/item-submission) público, para receber contribuições externas diretas no seu repositório.
 
-> Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!
+> [!IMPORTANT] Para participar da comunidade do Tainacan [inscreva-se aqui](https://tainacan.discourse.group)!

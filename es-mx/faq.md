@@ -2,7 +2,7 @@
 
 Hemos enumerado y respondido las preguntas más frecuentes de nuestra comunidad
 
-> ¡Para unirte a la comunidad de Tainacan [regístrate aquí](https://tainacan.discourse.group ":ignore")!
+> [!IMPORTANT] ¡Para unirte a la comunidad de Tainacan [regístrate aquí](https://tainacan.discourse.group ":ignore")!
 
 Saltar a una sección específica:
 
@@ -127,5 +127,5 @@ Por defecto, la página de inicio de tu sitio será la lista de las entradas de 
 
 Como administrador de tu sitio, puedes registrar nuevos usuarios con diferentes [funciones y permisos](/es-mx/users-roles) para editar tu colección. Sin embargo, si deseas que se inserten elementos sin registrar nuevos usuarios en el sistema, puedes crear un [Formulario de envío](/es-mx/item-submission) público, para recibir contribuciones externas directas en tu repositorio.
 
-> Si quieres formar parte de la comunidad de Tainacan, ¡[suscríbete aquí](https://tainacan.discourse.group)!#Preguntas Frecuentes
+> [!IMPORTANT] Si quieres formar parte de la comunidad de Tainacan, ¡[suscríbete aquí](https://tainacan.discourse.group)!#Preguntas Frecuentes
 

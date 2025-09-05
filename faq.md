@@ -2,7 +2,7 @@
 
 We list and answer the most frequently asked questions by our community:
 
-> To participate in the Tainacan community [register here](https://tainacan.discourse.group ":ignore")!
+> [!IMPORTANT] To participate in the Tainacan community [register here](https://tainacan.discourse.group ":ignore")!
 
 Skip to an specific section:
 
@@ -127,4 +127,4 @@ By default, your website homepage will be the list of posts to your blog. To set
 
 As your site administrator, you can register new users with different [roles and permissions](/users-roles) to edit your collection. If, however, you want items to be submited without new users being registered in the system, you can create a public [Item Submission Form](/item-submission), to receive direct external contributions in your repository.
 
-> To join the Tainacan community [sign up here](https://tainacan.discourse.group)!
+> [!IMPORTANT] To join the Tainacan community [sign up here](https://tainacan.discourse.group)!

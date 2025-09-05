@@ -51,6 +51,8 @@ Muchos sistemas colaborativos adoptan ciertas convenciones de formato para facil
 | Alertas                 | `> [!WARNING] **Advertencia**: Esta es una observación delicada.` | <div class="callout warning"><p><strong>Advertencia</strong> Esta es una observación delicada.</p></div>              |
 | Notas                   | `> [!NOTE] **Nota**: Esta es una observación secundaria.` | <div class="callout note"><p><strong>Nota</strong>: Esta es una observación secundaria.</p></div>  |
 | Consejos                   | `> [!TIP] **Consejo**: Esta es una observación útil.` | <div class="callout tip"><p><strong>Consejo</strong>: Esta es una observación útil.</p></div>  |
+
+| Importante                   | `> [!IMPORTANT] **Importante**: EEsta es una observación legal.` | <div class="callout important"><p><strong>Importante</strong>: Esta es una observación legal.</p></div>  |
 | Peligro                   | `> [!CAUTION] **Peligro**: Esta es una observación grave.` | <div class="callout caution"><p><strong>Peligro</strong>: Esta es una observación grave.</p></div>  |                                                                                                                                                |
 
 ### Líneas
