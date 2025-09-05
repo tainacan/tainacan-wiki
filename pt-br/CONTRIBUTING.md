@@ -48,8 +48,10 @@ Vários sistemas colaborativos adotam determinadas convenções de formatação 
 | Listas enumeradas       | `1. Este é um ponto`<br>`2. Este é outro ponto`<br>&nbsp;&nbsp;`1. Ponto dentro de um ponto` | <ol><li>Este é um ponto</li><li>Este é outro  ponto<ol><li>Ponto dentro de um ponto</li></ol></li></ol> |
 | Lista de checks         | `- [ ] Este é um ponto`<br>`- [x] Este é outro ponto`<br>&nbsp;&nbsp;`- [ ] Ponto dentro de um ponto` | <ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Este é um ponto</label></li><li class="task-list-item"><label><input checked disabled="" type="checkbox">Este é outro ponto</label><ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Ponto dentro de um ponto</label></li></ul></li></ul> |
 | Destaques               | `> Esta é uma observação importante.`  | <blockquote><p>Esta é uma observação importante.</p></blockquote> |
-| Alertas                 | `!> Esta é uma observação sensivível.` | <p class="tip">Esta é uma observação sensivível.</p>              |
-| Notas                   | `?> Esta é uma observação secundária.` | <p class="warn">Esta é uma observação secundária.</p>             |
+| Alertas                 | `> [!WARNING] **Aviso**: Esta é uma observação sensivível.` | <div class="callout warning"><p><strong>Aviso</strong> Esta é uma observação sensivível.</p></div>              |
+| Notas                   | `> [!NOTE] **Nota**: Esta é uma observação secundária.` | <div class="callout note"><p><strong>Nota</strong>: Esta é uma observação secundária.</p></div>  |
+| Dicas                   | `> [!TIP] **Dica**: Esta é uma observação útil.` | <div class="callout tip"><p><strong>Dica</strong>: Esta é uma observação útil.</p></div>  |
+| Perigo                   | `> [!CAUTION] **Perigo**: Esta é uma observação tensa.` | <div class="callout caution"><p><strong>Perigo</strong>: Esta é uma observação tensa.</p></div>  |
 
 ### Linhas
 
@@ -71,6 +73,11 @@ Que será renderizado como:
 | Imagem e descrição      | `![Logo do Tainacan](../_assets/images/logo_tainacan.png)` | ![Logo do Tainacan](../_assets/images/logo_tainacan.png) |
 | Imagem e descrição, redimensionada | `![Logo do Tainacan](../_assets/images/logo_tainacan.png ':size=50')` | ![Logo do Tainacan](../_assets/images/logo_tainacan.png ':size=50') |
 
+Da mesma forma como você passa `:size=50` entre aspas simples, você também pode passsar uma classe CSS. Nós temos três classes CSS:
+- `:class=alignwide`: aumenta a largura da imagem para vazar um pouco dos limites do conteúdo da página;
+- `:class=alignright`: permite que o texto corra pelo lado esquerdo da imagem;
+- `:class=alignleft`: permite que o texto corra pelo lado direito da imagem;
+
 ### Vídeos
 
 Usamos um `iframe` para incorporar mídia, que é a alternativa padrão para a maioria das plataformas online de vídeo. Por exemplo, para incorporar um vídeo do YouTube:
@@ -83,7 +90,7 @@ Usamos um `iframe` para incorporar mídia, que é a alternativa padrão para a m
     frameborder="0" allow="accelerometer; 
     autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 ```
-> Note que estão configurados a largura (560px), a altura (513px) e também o tempo de início do vídeo (18s).
+> [!NOTE] Note que estão configurados a largura (560px), a altura (513px) e também o tempo de início do vídeo (18s).
 
 O resultado será como abaixo:
 
@@ -166,7 +173,7 @@ Resultará em:
 
 </details>
 
-> Note que há uma linha de espaço entre o que é código `HTML` e o que é `markdown`.
+> [!NOTE] Note que há uma linha de espaço entre o que é código `HTML` e o que é `markdown`.
 
 ### Tabelas
 

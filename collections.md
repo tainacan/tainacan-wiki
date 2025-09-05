@@ -1,4 +1,6 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE]
+> [!NOTE]
+This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Coleções
 
@@ -8,7 +10,7 @@ Uma "coleção" é um grupo de itens que compartilham um mesmo conjunto de metad
 
 Para cada coleção você pode configurar um conjunto diferente de metadados, entretanto, eles podem compartilhar taxonomias em comum, o que significa, por exemplo, que você pode navegar por itens de um *"país"* e obter resultados de *"pinturas"* e de *"filmes"* nos resultados.
 
-> Consulte a seção [Taxonomias](#taxonomias) para saber mais
+> [!TIP] Consulte a seção [Taxonomias](#taxonomias) para saber mais.
 
 As coleções também podem ter coleções **filhas**, que vão herdar seus metadados e a partir disso podem também é possível adicionar outros metadados ao seu conjunto.
 
@@ -73,6 +75,7 @@ Consulte a seção de [Ações em Massa](/pt-br/bulk-edition) e de [Importadores
     * **Privado**: Coleções privadas aparecem apenas para seu criador e moderadores desta coleção. 
 3. Na listagem de coleções da aba **Lixo" também é possível excluir a coleção permanentemente. 
 
-!> **Atenção**: a exclusão da coleção implica também na exclusão de seus itens, metadados e informações desta coleção. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de atividades](/pt-br/activities) para saber mais). Exclua a coleção somente se tiver certeza de que não haverá perdas graves de informação. (Consulte [Registro de atividades](/pt-br/activities) para saber mais)
+> [!WARNING]
+> **Atenção**: a exclusão da coleção implica também na exclusão de seus itens, metadados e informações desta coleção. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de atividades](/pt-br/activities) para saber mais). Exclua a coleção somente se tiver certeza de que não haverá perdas graves de informação. (Consulte [Registro de atividades](/pt-br/activities) para saber mais)
 
 <!-- tabs:end -->

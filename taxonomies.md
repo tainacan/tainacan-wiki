@@ -80,7 +80,8 @@ Taxonomies can also be created from the vocabulary importer. See [Vocabulary Imp
 3. Click on **Taxonomies**
 4. Click on the **link** icon to the right on the desired taxonomy
    
-  !> Attention: a warning will be displayed to confirm this action. The exclusion of taxonomy also implies the exclusion of information in metadata, items and collections that use this taxonomy. This operation can only be undone by administrators. (See [Activity Register](/activities) for more information). Delete the taxonomy only if you are sure that there will be no serious loss of information. (See [Activity Register](/activities) to learn more)
+  > [!WARNING]
+> Attention: a warning will be displayed to confirm this action. The exclusion of taxonomy also implies the exclusion of information in metadata, items and collections that use this taxonomy. This operation can only be undone by administrators. (See [Activity Register](/activities) for more information). Delete the taxonomy only if you are sure that there will be no serious loss of information. (See [Activity Register](/activities) to learn more)
 
 ### Exclude Terms
 
@@ -92,6 +93,7 @@ Taxonomies can also be created from the vocabulary importer. See [Vocabulary Imp
   1. In the list of terms, select the desired one for exclusion:
   2. Click the **Trash** icon on the right to delete the item
     
-  !> Attention: a warning will be displayed to confirm this action. The exclusion of the term also implies the exclusion of this value in metadata, items and collections that use this taxonomy. This operation can only be undone by administrators. (See [Activity Register](/activities) for more information). Delete the term only if you are sure that there will be no serious loss of information. (See [Activity Register](/activities) to learn more)
+  > [!WARNING]
+> Attention: a warning will be displayed to confirm this action. The exclusion of the term also implies the exclusion of this value in metadata, items and collections that use this taxonomy. This operation can only be undone by administrators. (See [Activity Register](/activities) for more information). Delete the term only if you are sure that there will be no serious loss of information. (See [Activity Register](/activities) to learn more)
 
 <!-- tabs:end -->

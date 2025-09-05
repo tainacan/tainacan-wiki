@@ -185,7 +185,7 @@ Ambos os “campos” são obtidos no site do reCAPTCHA, quando você cadastra s
 
 Nas configurações relacionadas ao formulário de submissão dentro do formulário da coleção, habilite a opção que diz "Usar a verificação reCAPTCHA no formulário de submissão". Feito isto, salve a coleção.
 
-> Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
+> [!NOTE] Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
 
 
 

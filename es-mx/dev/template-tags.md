@@ -4,7 +4,8 @@ Al igual que WordPress tiene sus [Template Tags](https://developer.wordpress.org
 
 En esta documentación, verá una lista técnica de nuestras Etiquetas de Plantilla más importantes. Algunos de ellos tienen su uso mejor demostrado en el [Theme Development and Extension](/es-mx/dev/#desarrollo-o-ampliación-de-temas) y otros también puede valer la pena comprobar ejemplos de código de [nuestros temas compatibles](/es-mx/theme).
 
-?> _TODO_ Enumere aquí las etiquetas de plantilla en lugar de enlazar a GitHub;
+> [!NOTE]
+> Enumere aquí las etiquetas de plantilla en lugar de enlazar a GitHub;
 
 Estamos trabajando en esta página. Mientras tanto, puede consultar ambas páginas en el código fuente, que debería tener todo lo que necesita:
 

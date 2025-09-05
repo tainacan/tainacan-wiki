@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE] This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Registro de Atividades
 
@@ -14,7 +14,8 @@ Ao clicar em uma atividade, é exibida uma janela com:
   * À direita o quadro reúne as informações **depois** da alteração
 * Administradores podem reverter estas alterações clicando em 
 
-?> _TODO_ Completar onde administradores devem ir para reverter alterações
+> [!NOTE]
+> Completar onde administradores devem ir para reverter alterações
 
 As atividades são registradas e podem ser consultadas e revertidas a nível de repositório, coleção e em cada item.
 

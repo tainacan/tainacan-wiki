@@ -138,7 +138,8 @@ Mas não precisamos parar por aí. De maneira similar ao Bloco [Lista de Itens d
 
 ![Configurações do Cabeçalho da Coleção](/_assets/gifs/blocks-search-bar-3.gif)
 
-!> A Barra de Busca é um dos raros blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada.
+> [!WARNING]
+> A Barra de Busca é um dos raros blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada.
 
 ---
 
@@ -229,6 +230,7 @@ Para além do comportamento e presença de certos elementos no bloco, é possív
 
 <!-- tabs:end -->
 
-!> A Busca Facetada é um dos blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada. Isto ocorre porque ao se realizar qualquer busca a URL do site é complementada com os parâmetros que causariam conflito entre diferentes listas.
+> [!WARNING]
+> A Busca Facetada é um dos blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada. Isto ocorre porque ao se realizar qualquer busca a URL do site é complementada com os parâmetros que causariam conflito entre diferentes listas.
 
 ---

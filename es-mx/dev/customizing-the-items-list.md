@@ -115,7 +115,8 @@ Además, puedes usar variables css para sobreescribir las propias variables CSS 
 
 ```
 
-?> Si desea ver un enfoque más "visual" de estas variables en juego, consulte el [Bloque de búsqueda por aspectos](/es-mx/blocks-items#busqueda-por-aspectos) que permite ajustar la mayoría de ellas en el control de configuración del bloque.
+> [!NOTE]
+> Si desea ver un enfoque más "visual" de estas variables en juego, consulte el [Bloque de búsqueda por aspectos](/es-mx/blocks-items#busqueda-por-aspectos) que permite ajustar la mayoría de ellas en el control de configuración del bloque.
 
 ## Personalización más avanzada
 

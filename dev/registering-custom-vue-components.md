@@ -83,7 +83,8 @@ window.tainacan_extra_components["some-tainacan-plugin-component"] = SomeTainaca
 
 Thanks to the routine seen before the `<some-tainacan-plugin-component>` component shall be available. 
 
-!> Warning: You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
+> [!WARNING]
+> Warning: You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
 
 The good news is that, as the component is registered in the same *Vue Instance* of all the Tainacan bundle, any other globally registered plugin or component will be available. That means that, inside your *SomeTainacanPluginComponent* you have access to all of [Buefy](https://buefy.org/ ':ignore') components, to plugins such as [VTooltip](https://akryum.github.io/v-tooltip/#/ ':ignore'), [VueMasonry](https://github.com/paulcollett/vue-masonry-css ':ignore') and [VueDraggable](https://github.com/SortableJS/Vue.Draggable ':ignore'). You can even use some of our utility plugins made for Tainacan, such as the [UserPrefsPlugin](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/js/utilities.js#L126 ':ignore'), which exposes methos for getting and setting user preferences ]]][UserCapabilitiesPlugin](https://github.com/tainacan/tainacan/blob/develop/src/views/admin/js/utilities.js#L346 ':ignore'), which helps us check user capabilities.
 

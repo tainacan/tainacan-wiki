@@ -34,7 +34,8 @@ Como se observa en esta barra de subtítulos, la mayoría de los gráficos dispo
 
 Para garantizar un buen rendimiento sin sobrecargar el servidor, se generan informes y la información se almacena durante una semana.
 
-?> Esto significa que si visita esta página en un día determinado, los datos que se mostrarán durante los próximos 7 días serán los mismos, incluso si se han realizado cambios en el repositorio.
+> [!NOTE]
+> Esto significa que si visita esta página en un día determinado, los datos que se mostrarán durante los próximos 7 días serán los mismos, incluso si se han realizado cambios en el repositorio.
 
 Para ver la fecha en que se generó el informe, basta con pasar el ratón por encima de cada bloque, y la información aparecerá en la esquina inferior izquierda, como en la imagen de al lado.
 
@@ -72,7 +73,8 @@ El tercer gráfico que se muestra en la pantalla del repositorio es un gráfico 
 
 ![Informes en Tainacan Total de elementos por término de taxonomía](_assets/images/informes_6.png)
 
-!> Dado que tiene el potencial de enumerar una cantidad considerable de datos (algunas taxonomías de repositorios tienen más de 300 términos), **se trata de un gráfico paginado**. Esto significa que se muestra un patrón máximo de **56 términos a la vez**. Este valor se eligió para permitir una lectura mínima de datos en el eje horizontal y no sobrecargar la memoria del navegador que necesita procesar esta información para configurar la visualización. Como la petición realizada a la API está ordenada, se puede garantizar que los términos mostrados en la primera página tendrán más elementos que en las siguientes. Aun así, además de navegar por las páginas, es posible modificar el número de elementos por página, ¡a riesgo de que el navegador se bloquee!
+> [!WARNING]
+> Dado que tiene el potencial de enumerar una cantidad considerable de datos (algunas taxonomías de repositorios tienen más de 300 términos), **se trata de un gráfico paginado**. Esto significa que se muestra un patrón máximo de **56 términos a la vez**. Este valor se eligió para permitir una lectura mínima de datos en el eje horizontal y no sobrecargar la memoria del navegador que necesita procesar esta información para configurar la visualización. Como la petición realizada a la API está ordenada, se puede garantizar que los términos mostrados en la primera página tendrán más elementos que en las siguientes. Aun así, además de navegar por las páginas, es posible modificar el número de elementos por página, ¡a riesgo de que el navegador se bloquee!
 
 <div style="max-width: 60%; margin: 0 auto;">
 

@@ -197,7 +197,7 @@ if ($itemMetadata->validate()) {
 
 ```
 
-> Note: "Multiple" Metadata, which can have more than one value for the same item, works the same way, with the difference that its value is an array of values and not just one single value. 
+> [!NOTE] Note: "Multiple" Metadata, which can have more than one value for the same item, works the same way, with the difference that its value is an array of values and not just one single value. 
 
 If you want to iterate over all metadata of an item or a collection, there are 2 useful methods you can use. The metadata repository has a `fetch_by_collection()` method that will fetch all metadata from a given collection and return them in the right order.
 

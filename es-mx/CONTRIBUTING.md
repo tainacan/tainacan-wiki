@@ -48,8 +48,10 @@ Muchos sistemas colaborativos adoptan ciertas convenciones de formato para facil
 | Listas numeradas     | `1. Este es un punto`<br>`2. Este es otro punto`<br>&nbsp;&nbsp;`1. Puntro dentro de un punto`          | <ol><li>Este es un punto</li><li>Este es otro punto<ol><li>Punto dentro de un punto</li></ol></li></ol>                                                                                                                                                                                                                                                                        |
 | Lista de verificación       | `- [ ] Este es un punto`<br>`- [x] Este es otro punto`<br>&nbsp;&nbsp;`- [ ] Punto dentro de un punto` | <ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Este es un punto</label></li><li class="task-list-item"><label><input checked disabled="" type="checkbox">Este es otro punto</label><ul class="task-list"><li class="task-list-item"><label><input disabled="" type="checkbox">Ponto dentro de um ponto</label></li></ul></li></ul> |
 | Destacados             | `> Esta es una observación importante.`                                                                 | <blockquote><p>Esta es una observación importante.</p></blockquote>                                                                                                                                                                                                                                                                                                             |
-| Alertas               | `!> Esta es una observación delicada.`                                                                | <p class="tip">Esta es una observación delicada.</p>                                                                                                                                                                                                                                                                                                                          |
-| Notas                 | `?> Esta es una observación secundaria.`                                                                | <p class="warn">Esta es una observación secundaria.</p>                                                                                                                                                                                                                                                                                                                         |
+| Alertas                 | `> [!WARNING] **Advertencia**: Esta es una observación delicada.` | <div class="callout warning"><p><strong>Advertencia</strong> Esta es una observación delicada.</p></div>              |
+| Notas                   | `> [!NOTE] **Nota**: Esta es una observación secundaria.` | <div class="callout note"><p><strong>Nota</strong>: Esta es una observación secundaria.</p></div>  |
+| Consejos                   | `> [!TIP] **Consejo**: Esta es una observación útil.` | <div class="callout tip"><p><strong>Consejo</strong>: Esta es una observación útil.</p></div>  |
+| Peligro                   | `> [!CAUTION] **Peligro**: Esta es una observación grave.` | <div class="callout caution"><p><strong>Peligro</strong>: Esta es una observación grave.</p></div>  |                                                                                                                                                |
 
 ### Líneas
 
@@ -72,6 +74,11 @@ Que se traducirá como:
 | Imagen y descripción                 | `![Logo de Tainacan](../_assets/images/logo_tainacan.png)`            | ![Logo de Tainacan](../_assets/images/logo_tainacan.png)            |
 | Imagen y descripción, redimensionada | `![Logo de Tainacan](../_assets/images/logo_tainacan.png ':size=50')` | ![Logo de Tainacan](../_assets/images/logo_tainacan.png ":size=50") |
 
+Del mismo modo que se pasa `:size=50` entre comillas simples, también se puede pasar una clase CSS. Tenemos tres clases CSS:
+- `:class=alignwide`: aumenta el ancho de la imagen para que sobresalga un poco de los límites del contenido de la página;
+- `:class=alignright`: permite que el texto se alinee a la izquierda de la imagen;
+- `:class=alignleft`: permite que el texto se alinee a la derecha de la imagen;
+
 ### Vídeos
 
 Usamos un `iframe` para insertar medios, que es la alternativa estándar para la mayoría de las plataformas de vídeo en línea. Por ejemplo, para insertar un vídeo de YouTube:
@@ -88,7 +95,7 @@ Usamos un `iframe` para insertar medios, que es la alternativa estándar para la
 ></iframe>
 ```
 
-> Observe que se han establecido la anchura (560px), la altura (513px) y el tiempo de inicio del vídeo (18s).
+> [!NOTE] Observe que se han establecido la anchura (560px), la altura (513px) y el tiempo de inicio del vídeo (18s).
 
 El resultado será el siguiente:
 
@@ -172,7 +179,7 @@ El resultado será:
 
 </details>
 
-> Observe que hay una línea de espacio entre lo que es código `HTML` y lo que es `markdown`.
+> [!NOTE] Observe que hay una línea de espacio entre lo que es código `HTML` y lo que es `markdown`.
 
 ### Tablas
 

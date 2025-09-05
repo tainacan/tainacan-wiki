@@ -11,11 +11,13 @@ Todos los archivos utilizados en Tainacan pueden verse también en la "Mediateca
 
 Cuando se sube un archivo directamente a la "Mediateca de WordPress", éste se almacena en la estructura de carpetas de subida de WordPress, siguiendo un sistema de carpetas como el que se muestra, donde los archivos se organizan por fecha. Esta organización puede modificarse en el propio WordPress o mediante plugins.
 
-?> Sin embargo, cuando se añade un Documento o Adjunto a un ítem de Tainacan, al enviarlo en el    modal multimedia que abre Tainacan, el archivo se almacena en otra estructura que utiliza los IDs de la colección y del elemento actual. Debido a esto, al abrir un modal multimedia desde la pantalla de edición de los elementos de Tainacan, **sólo se mostrarán allí los archivos relacionados con el elemento y la opción de enviar nuevos.**.
+> [!NOTE]
+> Sin embargo, cuando se añade un Documento o Adjunto a un ítem de Tainacan, al enviarlo en el    modal multimedia que abre Tainacan, el archivo se almacena en otra estructura que utiliza los IDs de la colección y del elemento actual. Debido a esto, al abrir un modal multimedia desde la pantalla de edición de los elementos de Tainacan, **sólo se mostrarán allí los archivos relacionados con el elemento y la opción de enviar nuevos.**.
 
 De esta forma podemos garantizar, por ejemplo, el control de la privacidad de los archivos (que aún puede mejorarse [como se explica en este artículo](/es-mx/optimization#blindando-wordpress)). Toma en cuenta que los elementos privados tendrán un comienzo diferente: \_x\_.
 
-!> Esta organización impide, por ejemplo, que dos elementos utilicen más de un archivo. Sin embargo, esto es importante porque sin dicha restricción no se podría garantizar su privacidad, ya que un elemento podría ser público y otro privado.
+> [!WARNING]
+> Esta organización impide, por ejemplo, que dos elementos utilicen más de un archivo. Sin embargo, esto es importante porque sin dicha restricción no se podría garantizar su privacidad, ya que un elemento podría ser público y otro privado.
 
 Por lo tanto:
 

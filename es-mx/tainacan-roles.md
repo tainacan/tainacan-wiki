@@ -16,7 +16,8 @@ Al instalar Tainacan, sin embargo, aparecen nuevas funciones de usuario. Veamos 
 
 Tenga en cuenta que **los roles de usuario en Tainacan no otorgan ninguno de los privilegios que pueden ser necesarios para tocar el resto del contenido de WordPress**. Por tanto, es posible tener un usuario gestionando tu repositorio que no interfiera con el contenido del blog.
 
-?> Lo contrario, sin embargo, depende del nivel. Mientras que el _Administrador en Tainacan_ no tiene permisos en el panel de administración de WordPress por defecto, el _Administrador de WordPress_ tiene todos los permisos que tiene el _Administrador en Tainacan_, más los suyos propios. El _Editor de WordPress_ también tiene todos los permisos que tiene el _Administrador en Tainacan_. Por otro lado, el _Autor en Tainacan_ tiene por defecto el mismo nivel de permisos que un _Suscriptor de WordPress_ en el panel de administración de WordPress.
+> [!NOTE]
+> Lo contrario, sin embargo, depende del nivel. Mientras que el _Administrador en Tainacan_ no tiene permisos en el panel de administración de WordPress por defecto, el _Administrador de WordPress_ tiene todos los permisos que tiene el _Administrador en Tainacan_, más los suyos propios. El _Editor de WordPress_ también tiene todos los permisos que tiene el _Administrador en Tainacan_. Por otro lado, el _Autor en Tainacan_ tiene por defecto el mismo nivel de permisos que un _Suscriptor de WordPress_ en el panel de administración de WordPress.
 
 Vamos a entender algunas situaciones que pueden ser deseables y el mejor tipo de rol que se puede asignar a un usuario:
 

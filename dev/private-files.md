@@ -25,7 +25,8 @@ A special `.htaccess` rule will block access to any URL that has a folder starti
 
 Every time you edit an item or a collection, or even bulk edit items, the folders will be renamed accordingly.
 
-!> For now, thumbnails are not considered private files and remain in the default WordPress upload folder.
+> [!WARNING]
+> For now, thumbnails are not considered private files and remain in the default WordPress upload folder.
 
 ## Protecting folders
 
@@ -46,7 +47,8 @@ The base folder for items attachments can be changed setting the `TAINACAN_ITEMS
 
 The prefix for private folders can be changed setting the `TAINACAN_PRIVATE_FOLDER_PREFIX` constant in `wp-config.php`. The default value is `_x_`.
 
-!> These constants must be set in a fresh install. If they are changed after there are uploads, all the links to the existing files will break.
+> [!WARNING]
+> These constants must be set in a fresh install. If they are changed after there are uploads, all the links to the existing files will break.
 
 
 ## Moving attachments from versions before 0.11
@@ -59,7 +61,8 @@ If you want to move old files to the new structure there is a Command-Line comma
 wp tainacan move-attachments-to-items-folder
 ```
 
-!> Make a backup of your site before running this and check if everything is in place afterward, if they are not, recover your backup.
+> [!WARNING]
+> Make a backup of your site before running this and check if everything is in place afterward, if they are not, recover your backup.
 
 It is a good idea to do a dry run before just to check if the command runs till the end and have an idea of the files that will be affected:
 

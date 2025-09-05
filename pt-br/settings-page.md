@@ -1,6 +1,7 @@
 # Settings Page
 
-?> _TODO_ Esta página está em Inglês. Se você puder, ajude-nos a traduzir para Português!
+> [!NOTE]
+> Esta página está em Inglês. Se você puder, ajude-nos a traduzir para Português!
 
 The Plugin Settings Page was introduced in version `1.0.0` to offer users powerful configurations over the plugin's default behavior. If you are an Administrator or have the `manage_options` capability, you can access it via "Tainacan Admin" -> "Other" -> "Settings". Some of these options were already available previously via PHP constants that had to be defined in servers file such as `wp-config.php`. In this document will cover each of the available options by section. 
 

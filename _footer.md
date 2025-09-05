@@ -1,4 +1,4 @@
-<div style='opacity: 0.75; border-top: 1px dashed #9f9f9f;'>
+<div style='opacity: 0.75; border-top: 1px dashed #9f9f9f; padding: 1rem 0;'>
 
 Esta documentação foi produzida com o apoio da [Fundação Nacional de Artes](https://www.funarte.gov.br/) e do [Instituto Brasileiro de Museus](https://www.gov.br/museus/pt-br).
 

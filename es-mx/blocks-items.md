@@ -228,6 +228,7 @@ Además del comportamiento y la presencia de determinados elementos en el bloque
 
 <!-- tabs:end -->
 
-!> La búsqueda por atributos es uno de los bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea uno, se desactiva la opción de insertar uno nuevo. Esto se debe a que al realizar cualquier búsqueda, la URL del sitio se complementa con los parámetros que causarían conflicto entre las diferentes listas.
+> [!WARNING]
+> La búsqueda por atributos es uno de los bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea uno, se desactiva la opción de insertar uno nuevo. Esto se debe a que al realizar cualquier búsqueda, la URL del sitio se complementa con los parámetros que causarían conflicto entre las diferentes listas.
 
 ---

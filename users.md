@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE] This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Usuários
 
@@ -240,18 +240,21 @@ Permite deletar itens marcados como privado
 
 ### Taxonomias
 
-?> _TODO_ Documentar permissões de taxonomias
+> [!NOTE]
+> Documentar permissões de taxonomias
 
 #### ** Metadados **
 
 ### Metadados
 
-?> _TODO_ Documentar permissões de metadados
+> [!NOTE]
+> Documentar permissões de metadados
 
 #### ** Filtros **
 
 ### Filtros
 
-?> _TODO_ Documentar permissões de filtros
+> [!NOTE]
+> Documentar permissões de filtros
 
 <!-- tabs:end -->

@@ -6,7 +6,7 @@ Os “importadores” são os recursos que permitem otimizar o processo de cria�
 
 O “Importador CSV” permite que usuários importem “itens” para uma “coleção” diretamente de um arquivo no formato “.csv”.
 
-> Consulte também como importar Taxonomias para criar “vocabulários controlados” ou realizar a “importação de tesauros”.
+> [!TIP] Consulte também como importar Taxonomias para criar “vocabulários controlados” ou realizar a “importação de tesauros”.
 
 ### Parâmetros do CSV
 
@@ -57,7 +57,7 @@ c. **“special_document”**: permite que o usuário informe o documento do ite
 
 d. **“special_attachments, special_attachments|REPLACE, special_attachments|APPEND”**: permite que o usuário informe os anexos. 
 
-> Consulte Importando arquivos e anexos;
+> [!TIP] Consulte Importando arquivos e anexos;
 
 e. **“special_comment_status”**: permite que o usuário informe se os “itens” podem receber ou não comentários. Os valores possíveis são:
 

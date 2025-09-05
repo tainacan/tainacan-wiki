@@ -16,7 +16,8 @@ Estos son los procedimientos para asegurar que las nuevas versiones del plugin T
 
 Este script está destinado a realizar pruebas para comprobar que las funciones funcionan correctamente y que el Plugin Tainacan lleva a cabo los procesos.
 
-?> Los problemas encontrados pueden notificarse como [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en [foro de la comunidad](https://tainacan.discourse.group ":ignore") de Tainacan. Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de Preguntas Frecuentes](/es-mx/faq#creo-que-encontré-un-error-¿qué-tengo-que-hacer).
+> [!NOTE]
+> Los problemas encontrados pueden notificarse como [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en [foro de la comunidad](https://tainacan.discourse.group ":ignore") de Tainacan. Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de Preguntas Frecuentes](/es-mx/faq#creo-que-encontré-un-error-¿qué-tengo-que-hacer).
 
 Hay varios tipos de pruebas que se pueden llevar a cabo para cubrir la mayor funcionalidad posible. Todas empiezan con los siguientes pasos básicos:
 

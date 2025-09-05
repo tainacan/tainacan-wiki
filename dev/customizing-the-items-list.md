@@ -115,7 +115,8 @@ Besides that, you can use css variables to override Tainacan's own CSS variables
 
 ```
 
-?> If you want to see a more "visual" approach of these variables in play, check the [Faceted Search Block](/blocks-items#busca-facetada) which allows tweaking most of them on the block settings control.
+> [!NOTE]
+> If you want to see a more "visual" approach of these variables in play, check the [Faceted Search Block](/blocks-items#busca-facetada) which allows tweaking most of them on the block settings control.
 
 ## Further customization
 

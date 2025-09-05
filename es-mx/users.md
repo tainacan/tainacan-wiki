@@ -240,18 +240,21 @@ Le permite borrar elementos marcados como privados
 
 ### Taxonomías
 
-?> _TODO_ Permisos de taxonomía de documentos
+> [!NOTE]
+> Permisos de taxonomía de documentos
 
 #### ** Metadatos **
 
 ### Metadatos
 
-?> _TODO_ Permisos de metadatos del documento
+> [!NOTE]
+> Permisos de metadatos del documento
 
 #### ** Filtros **
 
 ### Filtros
 
-?> _TODO_ Permisos de filtro del documento
+> [!NOTE]
+> Permisos de filtro del documento
 
 <!-- tabs:end -->

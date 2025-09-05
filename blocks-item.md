@@ -18,13 +18,13 @@ Os blocos do item são blocos relacionados ao envio ou exibição de um único i
 
 Logo ao se inserir o bloco, é necessário selecionar qual item será mostrado. Para isso, escolha primeiro a coleção onde será procurado e em seguida o item em si. Quando selecionado, o bloco irá carregar a galeria de mídias. Para evitar que este bloco pese demais a edição, seus recursos de navegação do carrossel e de lightbox com zoom estão desabilitados no editor. Para vê-los em ação, é necessário publicar ou pré-visualizar a página.
 
-![Configurando o bloco de galeria de mídias do item](/_assets/gifs/blocks-item-gallery-1.gif)
+![Configurando o bloco de galeria de mídias do item](pt-br/_assets/gifs/blocks-item-gallery-1.gif)
 
 ### Configurações do Bloco
 
 No painel lateral do editor de blocos, é possível ver uma série de configurações que permitem modificar a aparência e comportamento da galeria. Veja a seguir detalhes sobre algumas destas opções.
 
-![Configurando opções do bloco de galeria de mídias do item](/_assets/gifs/blocks-item-gallery-2.gif)
+![Configurando opções do bloco de galeria de mídias do item](pt-br/_assets/gifs/blocks-item-gallery-2.gif)
 
 <!-- tabs:start -->
 

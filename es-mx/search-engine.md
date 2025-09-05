@@ -1,6 +1,7 @@
 # Mecanismo de Busca
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+> [!NOTE]
+> Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
 
 Em adição à [busca facetada](faceted-search.md), que permite os usuários filtrar itens por metadados específicos,o Tainacan ainda permite uma busca textual livre.
 

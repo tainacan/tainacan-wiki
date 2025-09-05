@@ -6,7 +6,7 @@ Uma “coleção” é um grupo de “itens” que compartilham um mesmo conjunt
 
 Para cada “coleção” você pode configurar um conjunto diferente de metadados, entretanto, eles podem compartilhar taxonomias em comum, o que significa, por exemplo, que você pode navegar por itens de um “País” e obter resultados de “pinturas” e de “filmes” nos resultados.
 
-> Consulte a seção [Taxonomias](#taxonomias) para saber mais
+> [!TIP] Consulte a seção [Taxonomias](#taxonomias) para saber mais
 
 
 

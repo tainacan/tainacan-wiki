@@ -1,6 +1,7 @@
 # Alojamiento
 
-?> Esta página está dedicada a enumerar las opciones de alojamiento que están probadas por Tainacan listas para producción y para instalaciones de WordPress. Se alienta a usuarias y usuarios de la comunidad a compartir sus experiencias.
+> [!NOTE]
+> Esta página está dedicada a enumerar las opciones de alojamiento que están probadas por Tainacan listas para producción y para instalaciones de WordPress. Se alienta a usuarias y usuarios de la comunidad a compartir sus experiencias.
 
 Para utilizar Tainacan es necesario disponer de una instalación de WordPress en funcionamiento. Si tienes conocimientos de informática, es posible hacer esta instalación en tu propia computadora de forma local, como se [describió al inicio de esta sección](es-mx/xampp). Sin embargo, lo ideal es que tu sitio esté alojado en un servidor, una máquina que esté siempre encendida y conectada permanentemente a internet. Existen varios servicios de alojamiento en línea, muchos de ellos incluso optimizados para WordPress.
 

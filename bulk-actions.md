@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE] This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Ações em Massa
 
@@ -12,7 +12,7 @@
 6. Clique ou arraste a mídia dos itens que deseja criar para o campo de **Envio de documentos**;
 7. Os arquivos selecionados serão enviados automaticamente e o progresso de upload pode ser acompanhado em tempo real.
 
-    > Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
+    > [!TIP] Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
 
 8. Quando o processo for concluído, será possível:
   1. Selecionar `Edição de itens em sequência` para editar cada mídia individualmente em sequência. Consulte Editar Itens em Sequência;
@@ -44,7 +44,8 @@
 2. Clique nas caixa de seleção dos itens que deseja editar ou clique em **Selecionar todos os itens na página**
   * Se desejar, também é possível **Selecionar todos** itens da coleção;
 
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+  > [!WARNING]
+  > **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
 
 3. À direita clique em `Ações em massa`
 4. Selecione `Editar itens selecionados em massa`
@@ -67,7 +68,8 @@
 2. Clique nas caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`;
   * Se desejar, também é possível `Selecionar todos` itens da coleção;
   
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+  > [!WARNING]
+  > **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
 
 3. À direita clique em Ações em massa
 4. Selecione `Enviar para lixeira` para excluir os itens selecionados;
@@ -79,7 +81,8 @@
 2. Clique na caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`;
     * Se desejar, também é possível `Selecionar todos` itens da coleção;
   
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+  > [!WARNING]
+  > **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
 
 3. À direita clique em Ações em massa
   1. Clique em `Deletar permanentemente` para **excluir os itens de forma irreversível**;
@@ -93,7 +96,8 @@
 2. Clique nas caixa de seleção dos itens que deseja editar ou clique em `Selecionar todos os itens na página`
   * Se desejar, também é possível `Selecionar todos itens` da coleção;
   
-  !> **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
+  > [!WARNING]
+  > **Atenção**: É provavel que a opção e **Selecionar todos os itens** não esteja disponível. Isto é uma configuração que é feita pelo administrador do site. 
 
 3. À direita clique em `Ações em massa`
 4. Selecione `Editar itens selecionados em sequência`

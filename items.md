@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE] This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Itens
 
@@ -81,8 +81,9 @@ Um item sempre pertencerá a uma determinada coleção e, durante seu envio ser�
 3. Na seção de **Coleções**, clique na na coleção desejada;
 4. Na listagem de itens clique no ícone de lixeira à direita do item que deseja excluir;    
 
-  !> **Atenção**: a exclusão do item implica também na exclusão do documento, informações nos metadados e anexos. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de atividades para](/pt-br/activities) para saber mais)
-
-  !> Atenção: Exclua o item somente se tiver certeza de que não haverá perdas graves de informação (Consulte [Registro de atividades para](/pt-br/activities) saber mais).
+  > [!WARNING]
+  > **Atenção**: a exclusão do item implica também na exclusão do documento, informações nos metadados e anexos. Esta operação só poderá ser desfeita por administradores. (Consulte [Registro de atividades para](/pt-br/activities) para saber mais).
+  >
+  > **Atenção**: Exclua o item somente se tiver certeza de que não haverá perdas graves de informação (Consulte [Registro de atividades para](/pt-br/activities) saber mais).
 
 <!-- tabs:end -->

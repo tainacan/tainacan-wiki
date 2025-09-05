@@ -144,7 +144,8 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
 
 - [x] Confirme que é possível ordenar e editar os metados, porém não é possível deletá-los;
 
-?> _TODO_ Continuar a descrever o teste.
+> [!NOTE]
+> Continuar a descrever o teste.
 
 ## Configurando permissões específicas em uma coleção
 
@@ -158,4 +159,5 @@ As permissões e a gestão de funções de usuários estão entre os recursos ma
 
 - [x] Verifique se a permissão foi modificada;
 
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+> [!NOTE]
+> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).

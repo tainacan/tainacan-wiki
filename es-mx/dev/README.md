@@ -22,7 +22,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 ## Recursos para el desarrollo
 
-### Fundamentos del desarrollo {docsify-ignore}
+### Fundamentos del desarrollo <!-- {docsify-ignore} -->
 
 <div class="two-columns-list">
 
@@ -35,7 +35,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 </div>
 
-### Más sobre el desarrollo de plugins {docsify-ignore}
+### Más sobre el desarrollo de plugins <!-- {docsify-ignore} -->
 
 <div class="three-columns-list">
 
@@ -47,7 +47,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 </div>
 
-### Extensión de Plugin {docsify-ignore}
+### Extensión de Plugin <!-- {docsify-ignore} -->
 
 <div class="two-columns-list">
 
@@ -60,7 +60,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 </div>
 
-### Desarrollo o ampliación de temas {docsify-ignore}
+### Desarrollo o ampliación de temas <!-- {docsify-ignore} -->
 
 <div class="two-columns-list">
 
@@ -71,7 +71,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 </div>
 
-### Configuración y rendimiento {docsify-ignore}
+### Configuración y rendimiento <!-- {docsify-ignore} -->
 
 <div class="three-columns-list">
 

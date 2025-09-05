@@ -25,7 +25,8 @@ Aquí describimos el proceso para crear un plugin de este tipo. Existen dos estr
 
 El último es más complejo, pero también te da más opciones de personalización e interacción.
 
-!> El siguiente contenido puede entenderse mejor utilizando el código fuente de dos **proyectos de ejemplo que hemos puesto a su disposición [aquí](https://github.com/tainacan/tainacan-extra-view-mode-sample ":ignore")**.
+> [!WARNING]
+> El siguiente contenido puede entenderse mejor utilizando el código fuente de dos **proyectos de ejemplo que hemos puesto a su disposición [aquí](https://github.com/tainacan/tainacan-extra-view-mode-sample ":ignore")**.
 
 ### Estrategia de plantillas
 
@@ -98,7 +99,8 @@ function tainacan_extra_viewmode_template_demo_enqueue_styles() {
 
 ?>
 
-?> /* End of file */
+> [!NOTE]
+> /* End of file */
 ```
 
 La función `tainacan_register_view_mode` es parte del plugin de Tainacan. Su primer parámetro es un _slug_ único que se utilizará para identificar tu modo de vista. Luego sigue un array de parámetros:

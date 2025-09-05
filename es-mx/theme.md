@@ -3,7 +3,8 @@
 
 Una de las razones por las que WordPress es tan famoso y versátil es su diversidad de temas. Hay miles de temas que pueden dar a tu sitio un estilo y una estructura más formales, llamativos o minimalistas. La gran mayoría son gratuitos y se instalan con un solo clic.
 
-?> **Puede utilizar el plugin Tainacan con cualquier tema activado**, pero la experiencia puede ser mejor con temas que ofrezcan compatibilidad para sus páginas.
+> [!NOTE]
+> **Puede utilizar el plugin Tainacan con cualquier tema activado**, pero la experiencia puede ser mejor con temas que ofrezcan compatibilidad para sus páginas.
 
 En esta página hablaremos sobre:
 
@@ -150,9 +151,12 @@ Cada año WordPress lanza un "tema oficial", que se activa por defecto en sus in
 5. Para eliminar el tema, haga clic en Información sobre el tema en el bloque del tema deseado;
 6. En la esquina inferior derecha, haga clic en Eliminar.
 
-!> **Atención**: Para preservar la configuración y navegabilidad de los elementos y colecciones, utilice temas compatibles con las mejores prácticas de desarrollo de temas para Tainacan.
+> [!WARNING]
+> **Atención**: Para preservar la configuración y navegabilidad de los elementos y colecciones, utilice temas compatibles con las mejores prácticas de desarrollo de temas para Tainacan.
 
-!> **Atención**: La desactivación del tema Tainacan afecta a los ajustes de visualización y navegabilidad de los ítems y colecciones del repositorio. Esta operación sólo puede ser deshecha por los administradores.
+> [!WARNING]
+> **Atención**: La desactivación del tema Tainacan afecta a los ajustes de visualización y navegabilidad de los ítems y colecciones del repositorio. Esta operación sólo puede ser deshecha por los administradores.
 
 
-!> **Atención**: Por motivos de seguridad, siempre se recomienda hacer una copia de seguridad de la instalación antes de realizar cualquier cambio. Sólo elimine el tema si está seguro de que no se producirá una pérdida grave de información. Esta operación sólo puede revertirse restaurando una copia de seguridad de la instalación.
+> [!WARNING]
+> **Atención**: Por motivos de seguridad, siempre se recomienda hacer una copia de seguridad de la instalación antes de realizar cualquier cambio. Sólo elimine el tema si está seguro de que no se producirá una pérdida grave de información. Esta operación sólo puede revertirse restaurando una copia de seguridad de la instalación.

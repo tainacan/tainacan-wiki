@@ -42,7 +42,8 @@ Al igual que con otros bloques, puede elegir si desea mostrar o no el nombre de 
 
 Con el bloque Lista de colecciones, puede seleccionar manualmente los elementos que desea mostrar en una lista con un salto de línea.
 
-!> Una desventaja es que se trata de un **bloque estático**. Esto significa que las colecciones seleccionadas (nombre e imagen) se guardan en la configuración del bloque en el post y no se actualizan si realizas algún cambio en la colección. Supongamos que eliges algunas colecciones, guardas tu entrada y unos días después cambias el nombre o la imagen de esa colección. Cuando vuelvas al bloque, estos cambios no se reflejarán y tendrás que repetir la configuración. Por eso recomendamos usarlo con precaución y, si es posible, utilizar la opción [Carrusel de colecciones](#carrusel-de-colecciones) en su lugar.
+> [!WARNING]
+> Una desventaja es que se trata de un **bloque estático**. Esto significa que las colecciones seleccionadas (nombre e imagen) se guardan en la configuración del bloque en el post y no se actualizan si realizas algún cambio en la colección. Supongamos que eliges algunas colecciones, guardas tu entrada y unos días después cambias el nombre o la imagen de esa colección. Cuando vuelvas al bloque, estos cambios no se reflejarán y tendrás que repetir la configuración. Por eso recomendamos usarlo con precaución y, si es posible, utilizar la opción [Carrusel de colecciones](#carrusel-de-colecciones) en su lugar.
 
 ### Configuraciones iniciales del bloque
 

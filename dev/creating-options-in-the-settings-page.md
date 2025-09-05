@@ -19,7 +19,8 @@ To understand deeply how WordPress handles option registration and settings fiel
 - [register_setting()](https://developer.wordpress.org/reference/functions/register_setting/)
 - [add_settings_field()](https://developer.wordpress.org/reference/functions/add_settings_field/)
 
-?> These are general purpose options, that usually must be available accross the plugin or even the entire website, which is why they are stored using WordPress Options API. However you may be interested on storing extra data binded to some of the Tainacan entities, such as collections, items, metadata, etc. In that case, read the [Admin Form Hook](/dev/admin-form-hooks.md) documentation to see how you can add fields to each of their Admin fields.
+> [!NOTE]
+> These are general purpose options, that usually must be available accross the plugin or even the entire website, which is why they are stored using WordPress Options API. However you may be interested on storing extra data binded to some of the Tainacan entities, such as collections, items, metadata, etc. In that case, read the [Admin Form Hook](/dev/admin-form-hooks.md) documentation to see how you can add fields to each of their Admin fields.
 
 ## Basic Usage
 
@@ -86,7 +87,7 @@ function your_plugin_settings_init() {
     ]);
 }
 ```
-> Notice that `type` refers to the data type and `input_type` is the HTML element type. More on this [here](#available-setting-types).
+> [!NOTE] Notice that `type` refers to the data type and `input_type` is the HTML element type. More on this [here](#available-setting-types).
 
 ### Step 4: Add Section Description (Optional)
 

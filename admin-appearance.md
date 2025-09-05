@@ -6,7 +6,8 @@ Since Tainacan `1.0.0` Administrators or user with the `tnc_rep_edit_users` capa
 
 As explained in our [Roles and Capabilities](./manage-user-roles.md) page, you can edit a User Role by accessing Tainacan Admin menu -> "Others" -> "User Roles". From the Roles list, you select to edit the desired role. The options stored in the "Repository" and "Collection" tabs have a more strict control on the access and modifiability of certain Tainacan data, however there are certain cases where you'll want to tweak things in a more aesthetic way.
 
-?> **For example**: an *Author* may have no capabilities to edit any Taxonomy, however he/she/they can see the Taxonomies in the Admin UI. Because they are able to select terms for related metadata. Tainacan takes care of disabling the editing functionality itself (for example, *hiding edit buttons*) but it won't hide the Taxonomies page from the Admin, because the user is allowed to see Taxonomies there, at lease those that are public. *This is the kind of situation where you may want to hide this option from an appearance perspective: **to clear the UI***.  
+> [!NOTE]
+> **For example**: an *Author* may have no capabilities to edit any Taxonomy, however he/she/they can see the Taxonomies in the Admin UI. Because they are able to select terms for related metadata. Tainacan takes care of disabling the editing functionality itself (for example, *hiding edit buttons*) but it won't hide the Taxonomies page from the Admin, because the user is allowed to see Taxonomies there, at lease those that are public. *This is the kind of situation where you may want to hide this option from an appearance perspective: **to clear the UI***.  
 
 ## Available options
 
@@ -125,7 +126,8 @@ Here is an example of how far you can get with customizations as the ones mentio
 
 ![Screenshot of the item edit form with the Admin Appearance tweaked to a tabbed layout with cleaner menus](./_assets/images/admin-appearance-2.png)
 
-!> As much powerful as these settings are, we advice to use it carefully. For starters, as we mentioned, some options conflict with each other or with existing controls (collection-level settings, user-role-level capabilities), which may put you into confusing situations. Also deviating from the original UI for some users and not for others may implicate in having to educate users in different ways according to their profile. The navigation features are specially risky because they affect how part of the browsing flow was originally planned in the Admin. Some of the options above are even a bit experimental, which means we may consider changing it in the future. 
+> [!WARNING]
+> As much powerful as these settings are, we advice to use it carefully. For starters, as we mentioned, some options conflict with each other or with existing controls (collection-level settings, user-role-level capabilities), which may put you into confusing situations. Also deviating from the original UI for some users and not for others may implicate in having to educate users in different ways according to their profile. The navigation features are specially risky because they affect how part of the browsing flow was originally planned in the Admin. Some of the options above are even a bit experimental, which means we may consider changing it in the future. 
 
 ## Overridden options
 

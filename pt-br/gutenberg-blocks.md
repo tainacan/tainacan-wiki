@@ -91,7 +91,8 @@ Primeiramente, esta simetria entre editor e página depende muito do quão bom f
 
 Não tenha medo de procurar por [outros blocos](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para instalar e testar em suas publicações.
 
-!> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia!
+> [!WARNING]
+> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia!
 
 Eis aqui exemplos de blocos extras que gostamos:
 

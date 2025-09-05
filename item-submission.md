@@ -1,6 +1,8 @@
 # Items Submission
 
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+> [!NOTE]
+> [!NOTE]
+This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 A [versão _0.17_](/pt-br/releases#tainacan-beta-017) do Tainacan trás a possibilidade de se abrirem coleções para _submissão pública_ de itens (também referida como _auto-depósito_). Isto significa que usuários sem privilégios administrativos, ou até mesmo visitantes do site passam a poder eles mesmos criarem itens em uma Coleção, **ampliando assim as possibilidades de um acervo _colaborativo_ gerado por diversas pessoas**.
 
@@ -20,7 +22,8 @@ Na página de configuração de toda Coleção, há um campo que permite habilit
 
 Com este campo habilitado, esta coleção poderá ser listada para [o bloco de submissão de itens](#criando-o-bloco-de-submissão-de-itens), sobre o qual falaremos em breve. O campo seguinte, **"Permitir a submissão por usuários anônimos"**, diz respeito a quais usuários poderão enviar este formulário. Por padrão, não é qualquer pessoa que visita o site, mas pelo menos pessoas cadastradas no sistema do seu WordPress que tem este poder. Se habilitado, mesmo pessoas que nunca logaram no site poderão enviar informações.
 
-?> Se estiver no seu interesse abrir sua coleção para usuários anônimos, é importante entender que os itens não terão registro de _"quem"_ os criou. No sistema administrativo, o campo _"Criado por"_ conterá apenas a informação _"anônimo"_. Pode ser útil, neste caso, criar um Metadado que identifique o **autor da submissão**, como por exemplo, um metadado tipo Texto chamado "Nome do usuário" marcado como obrigatório.
+> [!NOTE]
+> Se estiver no seu interesse abrir sua coleção para usuários anônimos, é importante entender que os itens não terão registro de _"quem"_ os criou. No sistema administrativo, o campo _"Criado por"_ conterá apenas a informação _"anônimo"_. Pode ser útil, neste caso, criar um Metadado que identifique o **autor da submissão**, como por exemplo, um metadado tipo Texto chamado "Nome do usuário" marcado como obrigatório.
 
 Todo item criado pelo formulário, terá um **status padrão**. Para garantir que os itens possam ser validados antes de irem parar na coleçã pública, recomenda-se manter o seu status como "Privado" ou "Racunho". A principal diferença é que itens rascunho não precisam ter sido completados, portanto nem toda validação de metadados obrigatórios, por exemplo, foi feita. Itens privados só serão vistos por usuários logados e com permissão para tal, possivelmente revisores do seu fluxo de aprovação de itens.
 
@@ -113,7 +116,8 @@ Ambos os campos são obtidos no site do reCAPTCHA, quando vc cadastra seu site n
 
 Nas configurações relacionadas ao formulário de submissão dentro do formulário da coleção, habilite a opção que diz "Usar a verificação reCAPTCHA no formulário de submissão". Feito isto, salve a coleção.
 
-?> Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
+> [!NOTE]
+> [!NOTE] Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
 
 ## Duvidas Frequentes
 

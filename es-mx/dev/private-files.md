@@ -25,7 +25,8 @@ Una regla especial `.htaccess` bloqueará el acceso a cualquier URL que tenga un
 
 Cada vez que edite un elemento o una colección, o incluso edite elementos de forma masiva, las carpetas se renombrarán en consecuencia.
 
-!> Por ahora, las miniaturas no se consideran archivos privados y permanecen en la carpeta de subida por defecto de WordPress.
+> [!WARNING]
+> Por ahora, las miniaturas no se consideran archivos privados y permanecen en la carpeta de subida por defecto de WordPress.
 
 ## Protección de carpetas
 
@@ -46,7 +47,8 @@ La carpeta base para los items adjuntos puede ser cambiada configurando la const
 
 El prefijo para las carpetas privadas se puede cambiar estableciendo la constante `TAINACAN_PRIVATE_FOLDER_PREFIX` en `wp-config.php`. El valor por defecto es `_x_`.
 
-!> Estas constantes deben establecerse en una instalación nueva. Si se cambian después de que haya subidas, todos los enlaces a los archivos existentes se romperán.
+> [!WARNING]
+> Estas constantes deben establecerse en una instalación nueva. Si se cambian después de que haya subidas, todos los enlaces a los archivos existentes se romperán.
 
 
 ## Trasladar archivos adjuntos desde versiones anteriores a la 0.11
@@ -59,7 +61,8 @@ Si desea mover los archivos antiguos a la nueva estructura hay un comando de lí
 wp tainacan move-attachments-to-items-folder
 ```
 
-!> Haga una copia de seguridad de su sitio antes de ejecutar esto y compruebe si todo está en su sitio después, si no lo están, recupere su copia de seguridad.
+> [!WARNING]
+> Haga una copia de seguridad de su sitio antes de ejecutar esto y compruebe si todo está en su sitio después, si no lo están, recupere su copia de seguridad.
 
 Es una buena idea hacer una ejecución en seco antes sólo para comprobar si el comando se ejecuta hasta el final y tener una idea de los archivos que se verán afectados:
 

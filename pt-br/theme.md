@@ -2,7 +2,8 @@
 
 Uma das razões pelos quais o _WordPress_ é tão famoso e versátil é sua diversidade de [temas](https://wordpress.org/themes/ ":ignore"). São milhares de temas que podem atribuir ao seu site estilo e estrutura mais formais, chamativos ou minimalistas. A grande maioria é gratuito e está a um clique de instalação.
 
-?> **É possível usar o plugin Tainacan com qualquer tema ativado**, porém a experiência pode ser melhor com temas que oferecem compatibilidade para suas páginas.
+> [!NOTE]
+> **É possível usar o plugin Tainacan com qualquer tema ativado**, porém a experiência pode ser melhor com temas que oferecem compatibilidade para suas páginas.
 
 Nesta página falamos sobre:
 
@@ -149,8 +150,11 @@ Todo ano o WordPress lança um "tema oficial", que vem ativado por padrão em su
 5. Para excluir o tema clique em Informações do tema no bloco do tema desejado;
 6. No canto inferior direito clique em Excluir.
 
-!> **Atenção**: Para preservar as configurações e a navegabilidade dos itens e coleções, utilize temas compatíveis com as boas práticas de desenvolvimento de temas para o Tainacan.
+> [!WARNING]
+> **Atenção**: Para preservar as configurações e a navegabilidade dos itens e coleções, utilize temas compatíveis com as boas práticas de desenvolvimento de temas para o Tainacan.
 
-!> **Atenção**: Desativar o tema do Tainacan afeta as configurações de exibição e navegabilidade em itens e coleções no repositório. Esta operação só poderá ser desfeita por administradores.
+> [!WARNING]
+> **Atenção**: Desativar o tema do Tainacan afeta as configurações de exibição e navegabilidade em itens e coleções no repositório. Esta operação só poderá ser desfeita por administradores.
 
-!> **Atenção**: por segurança, sempre é recomendado que seja feito o backup da instalação antes de qualquer modificação. Exclua o tema somente se tiver certeza de que não haverá perdas graves de informação. Esta operação só poderá ser revertida com a restauração de backups da instalação.
+> [!WARNING]
+> **Atenção**: por segurança, sempre é recomendado que seja feito o backup da instalação antes de qualquer modificação. Exclua o tema somente se tiver certeza de que não haverá perdas graves de informação. Esta operação só poderá ser revertida com a restauração de backups da instalação.

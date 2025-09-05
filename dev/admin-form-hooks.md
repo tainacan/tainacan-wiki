@@ -8,7 +8,8 @@
 
 Admin Form Hooks are a powerful tool for extenders who want to add functionality to *Tainacan entities*.
 
-?> You may find a similar concept, the [Settings options](/dev/creating-options-in-the-settings-page.md), which are a way to add options in the Settings Page using WordPress Options API. That will create and store options available for the entire plugin, actually even for the entire site.
+> [!NOTE]
+> You may find a similar concept, the [Settings options](/dev/creating-options-in-the-settings-page.md), which are a way to add options in the Settings Page using WordPress Options API. That will create and store options available for the entire plugin, actually even for the entire site.
 
 But when we talk about **Tainacan Admin Form Hooks**, we're dealing with storing data bind to one of *Tainacan entities*, that is storing new information about Collections, Taxonomies, Items, etc. The data will be available via the REST API of each entity and will be editable via their respective forms inside the Tainacan Admin panel, in a special gray box.
 
@@ -127,7 +128,8 @@ When you add a header to the Admin Form Hook it makes clear to the user that tho
 
 On the other hand, using [Bulma](https://bulma.io/) classes such as  `field`, `control` and `input` you make your form feel more native to the Tainacan Admin UI.
 
-?> One not such obvious thing to notice is that we're not defining the value of the `<input>` element. This is because **we have no access to the Collection object at this context**. This is merely an HTML template that will be passed to the Tainacan Admin Vue component, which will render this HTML and populate with the correct values based on the field `name` attribute.
+> [!NOTE]
+> One not such obvious thing to notice is that we're not defining the value of the `<input>` element. This is because **we have no access to the Collection object at this context**. This is merely an HTML template that will be passed to the Tainacan Admin Vue component, which will render this HTML and populate with the correct values based on the field `name` attribute.
 
 ### Step 4: Save Your Custom Data
 
@@ -151,7 +153,8 @@ public function save_data($object) {
 ```
 You can decide where do you want to save the data. The most common approach is to use the `'tainacan-insert-tainacan-<entity-name>'` action to store the data as a `post_meta`. Despite the name, that action runs every time you create and update the entity. This is also where you may wish to perform some sanitization of the received value before passing it to the third parameter of `update_post_meta`. To learn more about WordPress Post Meta, take a look at [this article](https://developer.wordpress.org/plugins/metadata/managing-post-metadata/).
 
-?> One example of a situation where you won't use `post_meta` is in the User Role form. As there is no standard table to store custom data about Roles you may define a `wp_option` with an array that contains a list of roles and store the new fields for your current saved role there. 
+> [!NOTE]
+> One example of a situation where you won't use `post_meta` is in the User Role form. As there is no standard table to store custom data about Roles you may define a `wp_option` with an array that contains a list of roles and store the new fields for your current saved role there. 
 
 ### Step 5: Expose Data Through REST API
 
@@ -298,7 +301,8 @@ public function register_hook() {
 ```
 To be sure of which fields are available, you should take a look at the API response of the desired entity.
 
-!> Multiple conditionals are only available on Tainacan version >= `1.0.0`.
+> [!WARNING]
+> Multiple conditionals are only available on Tainacan version >= `1.0.0`.
 
 ### Custom Styling
 

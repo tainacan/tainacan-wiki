@@ -1,4 +1,6 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+> [!NOTE]
+> [!NOTE]
+This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 # Roteiro de Testes
 
@@ -104,14 +106,17 @@ Este roteiro é destinado para a realização de testes que verifiquem o funcion
 
 ### Importadores <!-- {docsify-ignore} -->
 
-?> _TODO_ Implementar este roteiro de testes
+> [!NOTE]
+> Implementar este roteiro de testes
 
 ### Processos <!-- {docsify-ignore} -->
 
-?> _TODO_ Implementar este roteiro de testes
+> [!NOTE]
+> Implementar este roteiro de testes
 
 ### Atividades <!-- {docsify-ignore} -->
 
-?> _TODO_ Implementar este roteiro de testes
+> [!NOTE]
+> Implementar este roteiro de testes
 
 > Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues) ou para o [fórum da comunidade](https://tainacan.discourse.group) do Tainacan.

@@ -36,7 +36,7 @@ A criação de “itens em massa” é diferente da “importação de itens” 
 
     ![Acesse o painel de controle](\_assets\images\Itensemmassaconcluidouploadarquivos.png)
 
-    > **Nota**: Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
+    > [!TIP] Novos arquivos de mídia podem ser adicionados a qualquer momento nesta mesma tela durante o processo de envio de documentos;
 
 7. Quando o processo for concluído, será possível:
 

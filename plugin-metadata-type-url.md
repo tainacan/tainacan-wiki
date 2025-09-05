@@ -16,7 +16,8 @@ Go to your collection or repository Metadata page. In the "Available Metadata Ty
 
 ![Screenshot of the metadata settings screen](/_assets/images/plugins_metadata_type_url_screenshot-1.png)
 
-?> Even using "Force iframe", it may be possible that the URL that you are trying to link does not allow embedding via iframe. This is a setting enabled by site authors and can not be ignored.
+> [!NOTE]
+> Even using "Force iframe", it may be possible that the URL that you are trying to link does not allow embedding via iframe. This is a setting enabled by site authors and can not be ignored.
 
 With the metadata set and ready to go, create a new item and insert URL values there. You can click the preview button while in item edition form, or access the item page to see it rendered.
 

@@ -1,4 +1,5 @@
-!> Esta página diz respeito ao esquema de permissões de usuários nas versões do **Tainacan anteriores a 0.15**. Recomendamos fortemente o uso de versões mais recentes, onde a permissão de usuários funciona de acordo com [essa documentação](/pt-br/users-roles).
+> [!WARNING]
+> Esta página diz respeito ao esquema de permissões de usuários nas versões do **Tainacan anteriores a 0.15**. Recomendamos fortemente o uso de versões mais recentes, onde a permissão de usuários funciona de acordo com [essa documentação](/pt-br/users-roles).
 
 # Usuários
 
@@ -240,18 +241,21 @@ Permite deletar itens marcados como privado
 
 ### Taxonomias
 
-?> _TODO_ Documentar permissões de taxonomias
+> [!NOTE]
+> Documentar permissões de taxonomias
 
 #### ** Metadados **
 
 ### Metadados
 
-?> _TODO_ Documentar permissões de metadados
+> [!NOTE]
+> Documentar permissões de metadados
 
 #### ** Filtros **
 
 ### Filtros
 
-?> _TODO_ Documentar permissões de filtros
+> [!NOTE]
+> Documentar permissões de filtros
 
 <!-- tabs:end -->

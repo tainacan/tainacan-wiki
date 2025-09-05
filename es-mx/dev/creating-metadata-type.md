@@ -240,7 +240,8 @@ window.tainacan_extra_components["tainacan-metadata-type-custom"] =
 
 La primera y la última línea son un paso importante para registrar componentes personalizados en el paquete JS del plugin.
 
-!> DEBES mantener el nombre `window.tainacan_extra_components`, ya que es el que usa el plugin para cargar los componentes personalizados, y ten cuidado de no sobreescribirlo completamente. Otros plugins pueden haber registrado sus componentes allí también.
+> [!WARNING]
+> DEBES mantener el nombre `window.tainacan_extra_components`, ya que es el que usa el plugin para cargar los componentes personalizados, y ten cuidado de no sobreescribirlo completamente. Otros plugins pueden haber registrado sus componentes allí también.
 
 El `slug` pasado al array en la última línea es el mismo usado por el método _set_component_ previamente en nuestro [proceso de registro](#registering-your-metadata-type).
 
@@ -453,7 +454,8 @@ module.exports = {
 };
 ```
 
-!> Observa que el bundle generado (`metadata-type.bundle.js`) tiene un nombre diferente al del archivo fuente (`metadata-type.js`) y está dentro de una carpeta `build`, como se define en el [archivo de configuración del Webpack](#basic-webpackconfigjs-example). Esto significa que tendrá que actualizar su archivo [PHP de registro](#registering-your-metadata-type) mencionado anteriormente para proporcionar la `metadata_script_url` adecuada.
+> [!WARNING]
+> Observa que el bundle generado (`metadata-type.bundle.js`) tiene un nombre diferente al del archivo fuente (`metadata-type.js`) y está dentro de una carpeta `build`, como se define en el [archivo de configuración del Webpack](#basic-webpackconfigjs-example). Esto significa que tendrá que actualizar su archivo [PHP de registro](#registering-your-metadata-type) mencionado anteriormente para proporcionar la `metadata_script_url` adecuada.
 
 ### Tu archivo .vue
 
