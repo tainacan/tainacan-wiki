@@ -1,7 +1,6 @@
 # Improve this Wiki
 
 > [!NOTE]
-> [!NOTE]
 This page is currently in *Brazilian Portuguese*. If you can, please help us translate to *English*.
 
 Se você chegou a esta página, provavelmente está pensando em contribuir com a nossa Wiki :smile: . Isto é ótimo! Como projeto de Software Livre, o Tainacan está calcado nos princípios da colaboração em diversos níveis: na **pesquisa**, no **código**, na **tradução** e também na **documentação**. Como usuário, você pode trazer contribuições valorosas para deixar nosso material mais claro e acessível. 

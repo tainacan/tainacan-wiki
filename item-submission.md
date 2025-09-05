@@ -1,7 +1,6 @@
 # Items Submission
 
 > [!NOTE]
-> [!NOTE]
 This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 A [versão _0.17_](/pt-br/releases#tainacan-beta-017) do Tainacan trás a possibilidade de se abrirem coleções para _submissão pública_ de itens (também referida como _auto-depósito_). Isto significa que usuários sem privilégios administrativos, ou até mesmo visitantes do site passam a poder eles mesmos criarem itens em uma Coleção, **ampliando assim as possibilidades de um acervo _colaborativo_ gerado por diversas pessoas**.
@@ -116,7 +115,6 @@ Ambos os campos são obtidos no site do reCAPTCHA, quando vc cadastra seu site n
 
 Nas configurações relacionadas ao formulário de submissão dentro do formulário da coleção, habilite a opção que diz "Usar a verificação reCAPTCHA no formulário de submissão". Feito isto, salve a coleção.
 
-> [!NOTE]
 > [!NOTE] Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
 
 ## Duvidas Frequentes

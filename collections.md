@@ -1,5 +1,4 @@
 > [!NOTE]
-> [!NOTE]
 This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Coleções
