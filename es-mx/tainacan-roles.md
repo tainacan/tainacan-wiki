@@ -33,3 +33,4 @@ Siga leyendo para saber más:
 - [Permisos de Tainacan](/es-mx/capabilities.md)
 - Cómo [gestionar roles de usuario](/es-mx/manage-user-roles.md)
 - Cómo [gestionar permisos específicos](/es-mx/manage-specific-capabilities.md) en determinadas colecciones
+- Cómo [cambiar aspectos de la apariencia del administrador](/ex-mx/admin-appearance.md) por función de usuario
