@@ -1,137 +1,134 @@
-# Admin Appearance
+# Aparência do Admin
+
+Desde o Tainacan `1.0.0`, Administradores ou usuários com a permissão `tnc_rep_edit_users` podem personalizar certos aspectos da Aparência do Admin do Tainacan de forma avançada *por função de usuário*. Isso significa principalmente ocultar elementos, controlar certas funcionalidades padrão (como a presença do menu Admin do WordPress) e cartões do painel.
+
+![Captura de tela do formulário de edição de função de usuário, com a página de c](../_assets/images/admin-appearance-1.png)
+
+Como explicado em nossa página [Funções e Permissões](pt-br/manage-user-roles.md), você pode editar uma Função de Usuário acessando o menu Admin Tainacan -> "Outros" -> "Funções de Usuário". Na lista de Funções, você seleciona para editar a função desejada. As opções armazenadas nas abas "Repositório" e "Coleção" têm um controle mais rigoroso sobre o acesso e modificabilidade de certos dados do Tainacan, no entanto há certos casos onde você desejará ajustar as coisas de uma forma mais estética.
 
 > [!NOTE]
-> Esta página está em Inglês. Se você puder, ajude-nos a traduzir para Português!
+> **Por exemplo**: um *Autor* pode não ter permissões para editar nenhuma Taxonomia, no entanto ele/ela pode ver as Taxonomias na interface do Admin. Porque eles são capazes de selecionar termos para metadados relacionados. O Tainacan cuida de desabilitar a funcionalidade de edição em si (por exemplo, *ocultando botões de edição*) mas não ocultará a página de Taxonomias do Administrador, porque o usuário tem permissão para ver Taxonomias lá, pelo menos aquelas que são públicas. *Este é o tipo de situação onde você pode querer ocultar esta opção de uma perspectiva de aparência: **para limpar a interface***.  
 
-Since Tainacan `1.0.0` Administrators or user with the `tnc_rep_edit_users` capability can style certain aspects of the Tainacan Admin Appearance in an advanced *per-user-role* basis. This means mostly hiding elements, controlling certain default features (such as the presence of the WordPress Admin menu) and dashboard cards.
+## Opções disponíveis
 
-![Screenshot of the user edit role form, with the Admin Appearance page](../_assets/images/admin-appearance-1.png)
+Aqui está uma visão geral do tipo de opções que você encontrará:
 
-As explained in our [Roles and Capabilities](./manage-user-roles.md) page, you can edit a User Role by accessing Tainacan Admin menu -> "Others" -> "User Roles". From the Roles list, you select to edit the desired role. The options stored in the "Repository" and "Collection" tabs have a more strict control on the access and modifiability of certain Tainacan data, however there are certain cases where you'll want to tweak things in a more aesthetic way.
+### Navegação
 
-> [!NOTE]
-> **For example**: an *Author* may have no capabilities to edit any Taxonomy, however he/she/they can see the Taxonomies in the Admin UI. Because they are able to select terms for related metadata. Tainacan takes care of disabling the editing functionality itself (for example, *hiding edit buttons*) but it won't hide the Taxonomies page from the Admin, because the user is allowed to see Taxonomies there, at lease those that are public. *This is the kind of situation where you may want to hide this option from an appearance perspective: **to clear the UI***.  
+Opções relacionadas à navegação geral do plugin, como menu lateral e modo de tela cheia. Lembre-se de que algumas opções aqui podem sobrescrever umas às outras e que são aplicadas apenas quando você salva o formulário.
 
-## Available options
-
-Here is an overview of the kind of options that you'll find there:
-
-### Navigation
-
-Options related to the overall plugin navigation such as sidemenu and fullscreen mode. Remember that some options here might override each other and that they are applied only when you save the form.
-
- - **Force Tainacan to always overlap WordPress admin menu and sidebar** - This means that no "Screen options" button will appear at the top of the Admin pages and the user will start with this "fullscreen" version of the plugin pages, like it used to be in versions before `1.0.0`.
- - **Hide breadcrumbs**
- - **Hide WordPress shortcut button** - This locks the user in the plugin interface, making it harder to navigate back to the WordPress admin. It may be desired if your used has no business in the remaining WordPress UI.
- - **Hide site shortcut button**
- - **Hide fullscreen toggler button** - This only hides the screen option to "Hide the WordPress Admin" but does not change it's currently selected state. 
- - **Hide menu collapser button** - This is the button at the bottom left corner which is used to shrink the sidemenu.
- - **Hide entire navigation side menu** - To be used in very strict and radical cases where you'll want to lock user in a navigation flow based only in breadcrumbs and internal links.
- - **Hide home button in side menu** - Hides the link to Dashboard. Notice that the Logo still links to it.
- - **Hide "Repository" menu button in side menu** - This hides the "Repository" menu collapser only, promoting its inner content to first-level menus. If you want to its content, you'll have to disable one by one.
- - **Hide `something` button in repository submenu** - Removes access to a certain repository-level page.
- - **Hide "Collections" menu button in side menu** - Differently to the "Repository" one, this also hides the inner content. That is due to their dynamic nature. It may be desired only in rare situations where a user is responsible only for managing administrative aspects of the repository instead of the main content, which is usually inside the collections.
- - **Hide collections list button in collections submenu**
- - **Hide "All items" button in collections submenu** - Hides the Repository-level access to all items across collections. 
- - **Hide "My items" button in collections submenu** - Hides the filtered version of the Repository-level items list where only items created by the current user are shown. 
- - **Hide collection name in current collection submenu** - When a collection is selected, its menu options appear above the collection name in the sidemenu. This option allows to hide it.
- - **Hide "All items" button in current collection submenu** - Hide the default link to the Collection-level items list. If this is hidden and the "My items" remain visible, the second will be the default page to there items editing flow shall return.
- - **Hide "My items" button in current collection submenu** - Hides the filtered version of the Collection-level items list where only items created by the current user are shown. 
- - **Hide settings button in current collection submenu**
- - **Hide `something` button in current collection submenu** - Removes access to a certain collection-level page.
- - **Hide external site links for item, collection, taxonomies and other public pages** - This removes the buttons that are usually present at the top right bottom of the page in certain pages such as collection, taxonomy, item, etc, that link to the public-side version of that entity in the site.
- - **Hide "Other" menu button in side menu** - This removes only the "Other" collapse, promoting its inner content to first-level menus. To hide its content you must disable them individually.
- - **Hide "Settings" button in side menu**
- - **Hide "Roles" button in side menu**
- - **Hide "System Check" button in side menu** 
+ - **Forçar o Tainacan a sempre sobrepor o menu e barra lateral do WordPress** - Isso significa que nenhum botão "Opções de tela" aparecerá no topo das páginas do Admin e o usuário começará com este layout "tela cheia" das páginas do plugin, como costumava ser nas versões anteriores ao `1.0.0`.
+ - **Ocultar navegação de migalhas de pão, (os breadrcumbs)**
+ - **Ocultar botão de atalho do WordPress** - Isso bloqueia o usuário na interface do plugin, tornando mais difícil navegar de volta para o admini do WordPress. Pode ser desejado se seu usuário não tem negócios no restante da interface do WordPress.
+ - **Ocultar botão de atalho do site**
+ - **Ocultar botão alternador de tela cheia** - Isso apenas oculta a opção de tela para "Ocultar o Admini do WordPress" mas não muda seu estado atualmente selecionado.
+ - **Ocultar botão de recolher menu** - Este é o botão no canto inferior esquerdo que é usado para encolher o menu lateral.
+ - **Ocultar menu lateral de navegação inteiro** - Para ser usado em casos muito rigorosos e radicais onde você desejará bloquear o usuário em um fluxo de navegação baseado apenas em migalhas de pão e links internos.
+ - **Ocultar botão inicial no menu lateral** - Oculta o link para o Dashbooard. Observe que a Logo do Tainacan ainda leva para ele.
+ - **Ocultar botão de menu "Repositório" no menu lateral** - Isso oculta apenas o recolhedor do menu "Repositório", promovendo seu conteúdo interno para menus de primeiro nível. Se você quiser ocultar seu conteúdo, terá que desabilitar um por um.
+ - **Ocultar botão `algo` no submenu do repositório** - Remove o acesso a uma determinada página de nível de repositório.
+ - **Ocultar botão de menu "Coleções" no menu lateral** - Diferentemente do "Repositório", isso também oculta o conteúdo interno. Isso é devido à sua natureza dinâmica. Pode ser desejado apenas em situações raras onde um usuário é responsável apenas por gerenciar aspectos administrativos do repositório em vez do conteúdo principal, que geralmente está dentro das coleções.
+ - **Ocultar botão de lista de coleções no submenu de coleções**
+ - **Ocultar botão "Todos os itens" no submenu de coleções** - Oculta o acesso de nível de Repositório a todos os itens entre coleções.
+ - **Ocultar botão "Meus itens" no submenu de coleções** - Oculta a versão filtrada da lista de itens de nível de Repositório onde apenas itens criados pelo usuário atual são mostrados.
+ - **Ocultar nome da coleção no submenu da coleção atual** - Quando uma coleção é selecionada, suas opções de menu aparecem acima do nome da coleção no menu lateral. Esta opção permite ocultá-lo.
+ - **Ocultar botão "Todos os itens" no submenu da coleção atual** - Oculta o link padrão para a lista de itens de nível de Coleção. Se isso estiver oculto e os "Meus itens" permanecerem visíveis, o segundo será a página padrão para onde o fluxo de edição de itens deve retornar.
+ - **Ocultar botão "Meus itens" no submenu da coleção atual** - Oculta a versão filtrada da lista de itens de nível de Coleção onde apenas itens criados pelo usuário atual são mostrados.
+ - **Ocultar botão de configurações no submenu da coleção atual**
+ - **Ocultar botão `algo` no submenu da coleção atual** - Remove o acesso a uma determinada página de nível de coleção.
+ - **Ocultar links externos do site para item, coleção, taxonomias e outras páginas públicas** - Isso remove os botões que geralmente estão presentes no canto superior direito da página em certas páginas como coleção, taxonomia, item, etc, que levam para a versão pública dessa entidade no site.
+ - **Ocultar botão de menu "Outros" no menu lateral** - Isso remove apenas o recolhedor "Outros", promovendo seu conteúdo interno para menus de primeiro nível. Para ocultar seu conteúdo você deve desabilitá-los individualmente.
+ - **Ocultar botão "Configurações" no menu lateral**
+ - **Ocultar botão "Funções" no menu lateral**
+ - **Ocultar botão "Verificação do Sistema" no menu lateral** 
 
 ### Dashboard
 
-Options related to the Dashboard page and its cards. Notice that each user may still hide the cards that remain in the screen.
+Opções relacionadas à página do Dashboard (Painel Inicial) e seus cartões. Observe que cada usuário ainda pode ocultar os cartões que permanecem na tela.
 
-- **Disable dashboard cards sorting**
-- **Hide repository card**
-- **Hide repository card `something` button** - Use it to hide links that you don't like from the Repository card.
-- **Show repository card `something` button** - Use it to enable links that you would like to have in the Repository card.
-- **Hide collections card**
-- **Hide collections card `something` button** - Use it to hide links that you don't like from the Collections card.
-- **Hide collection cards**
-- **Show only collections that user can edit items** - This will load only Collection cards for which the user can edit items. By default any collection that the user can see is shown.
-- **Show only collections authored by the user** - This will load only Collection cards for which the user is author.
-- **Hide collection cards `something` button** - Use it to hide links that you don't like from a single Collection card.
-- **Show collection cards `something` button** - Use it to enable links that you would like to have in a single Collection card.
-- **Hide info card**
-- **Hide info card `something` button** - Use it to hide links that you don't like from the Info card.
-- **Show info card <<somthing>> button** - Use it to show links that you would like to have int the Info card.
-- **Hide news card**
+- **Desabilitar ordenação de cartões do painel**
+- **Ocultar cartão do repositório**
+- **Ocultar botão `algo` do cartão do repositório** - Use para ocultar links que você não gosta do cartão do Repositório.
+- **Mostrar botão `algo` do cartão do repositório** - Use para habilitar links que você gostaria de ter no cartão do Repositório.
+- **Ocultar cartão de coleções**
+- **Ocultar botão `algo` do cartão de coleções** - Use para ocultar links que você não gosta do cartão de Coleções.
+- **Ocultar cartões de coleção**
+- **Mostrar apenas coleções que o usuário pode editar itens** - Isso carregará apenas cartões de Coleção para os quais o usuário pode editar itens. Por padrão, qualquer coleção que o usuário pode ver é mostrada.
+- **Mostrar apenas coleções criadas pelo usuário** - Isso carregará apenas cartões de Coleção para os quais o usuário é autor.
+- **Ocultar botão `algo` dos cartões de coleção** - Use para ocultar links que você não gosta de um cartão de Coleção.
+- **Mostrar botão `algo` dos cartões de coleção** - Use para habilitar links que você gostaria de ter em um cartão de Coleção.
+- **Ocultar cartão de informações**
+- **Ocultar botão `algo` do cartão de informações** - Use para ocultar links que você não gosta do cartão de Informações.
+- **Mostrar botão `algo` do cartão de informações** - Use para mostrar links que você gostaria de ter no cartão de Informações.
+- **Ocultar cartão de notícias**
 
-### Items list
+### Lista de itens
 
-Options related to the admin pages that display the faceted search with items list. These settings can make the page less polluted and hide options that can cause server load like bulk editions.
+Opções relacionadas às páginas do administrador que exibem a busca facetada com lista de itens. Essas configurações podem tornar a página menos poluída e ocultar opções que podem causar carga no servidor como edições em massa.
 
-- **Hide page title**
-- **Hide bulk actions button**
-- **Hide multiple item selection**
-- **Hide individual item selection**
-- **Hide "View as..." button**
-- **Hide view mode selector button**
-- **Hide displayed metadata dropdown**
-- **Hide advanced search**
-- **Hide status tabs**
-- **Hide total items in status tabs**
-- **Hide bulk add button in creation dropdown**
-- **Hide import button in creation dropdown**
-- **Hide right-click context menu**
-- **Hide create filters button**
-- **Hide "Go to page" button**
-- **Hide "Items per page" button**
+- **Ocultar título da página**
+- **Ocultar botão de ações em massa**
+- **Ocultar seleção múltipla de itens**
+- **Ocultar seleção individual de itens**
+- **Ocultar botão "Ver como..."**
+- **Ocultar botão seletor de modo de visualização**
+- **Ocultar dropdown de metadados exibidos**
+- **Ocultar busca avançada**
+- **Ocultar abas de status**
+- **Ocultar total de itens nas abas de status**
+- **Ocultar botão de adição em massa no dropdown de criação**
+- **Ocultar botão de importação no dropdown de criação**
+- **Ocultar menu de contexto do clique direito**
+- **Ocultar botão de criar filtros**
+- **Ocultar botão "Ir para página"**
+- **Ocultar botão "Itens por página"**
 
-### Item editing page
+### Página de edição de item
 
-Options related to the item edition form. Some of this settings may also be achieved via collection settings, but doing here will override any option. While some options clear the UI, others change it to a tabbed layout.
+Opções relacionadas ao formulário de edição de item. Algumas dessas configurações também podem ser alcançadas via configurações de coleção, mas fazer aqui sobrescreverá qualquer opção. Enquanto algumas opções limpam a interface, outras a mudam para um layout com abas.
 
-- **Hide page title**
-- **Show publication section inside tabs**
-- **Show document entry inside tabs**
-- **Show attachments inside tabs**
-- **Hide publication section**
-- **Hide status options**
-- **Hide publish status option**
-- **Hide private status option**
-- **Hide pending status option**
-- **Hide comments option**
-- **Hide document entry completely**
-- **Hide file type document entry**
-- **Hide text type document entry**
-- **Hide URL type document entry**
-- **Hide thumbnail**
-- **Hide attachments**
-- **Show status option in footer dropdown** - This puts the status selector back to a place where it used to be in previous versions, mixed with the "Finish" button as a dropdown.
-- **Allow item creation modal inside another modal (experimental)**
+- **Ocultar título da página**
+- **Mostrar seção de publicação dentro de abas**
+- **Mostrar entrada de documento dentro de abas**
+- **Mostrar anexos dentro de abas**
+- **Ocultar seção de publicação**
+- **Ocultar opções de status**
+- **Ocultar opção de status publicado**
+- **Ocultar opção de status privado**
+- **Ocultar opção de status pendente**
+- **Ocultar opção de comentários**
+- **Ocultar entrada de documento completamente**
+- **Ocultar entrada de documento tipo arquivo**
+- **Ocultar entrada de documento tipo texto**
+- **Ocultar entrada de documento tipo URL**
+- **Ocultar miniatura**
+- **Ocultar anexos**
+- **Mostrar opção de status no dropdown do rodapé** - Isso coloca o seletor de status de volta a um lugar onde costumava estar nas versões anteriores, misturado com o botão "Finalizar" como um dropdown.
+- **Permitir modal de criação de item dentro de outro modal (experimental)**
 
-### Item page
+### Página de item
 
-Options related to the item page inside the admin. Most of this exist to make a mirror to the Item editing page choices, as this is the page that you see inside the Admin when you are visiting, but not editing an item.
+Opções relacionadas à página de item dentro do administrador. A maioria disso existe para fazer um espelho das escolhas da página de edição de item, pois esta é a página que você vê dentro do Administrador quando está visitando, mas não editando um item.
 
-- **Hide page title**
-- **Hide status**
-- **Hide visibility status**
-- **Hide comments condition**
-- **Hide document**
-- **Hide thumbnail**
-- **Hide attachments**
-- **Hide activities**
-- **Hide "View as..." button**
+- **Ocultar título da página**
+- **Ocultar status**
+- **Ocultar status de visibilidade**
+- **Ocultar condição de comentários**
+- **Ocultar documento**
+- **Ocultar miniatura**
+- **Ocultar anexos**
+- **Ocultar atividades**
+- **Ocultar botão "Ver como..."**
 
-## Possible outcomes
+## Possíveis resultados
 
-Here is an example of how far you can get with customizations as the ones mentioned above:
+Aqui está um exemplo de quão longe você pode chegar com personalizações como as mencionadas acima:
 
-![Screenshot of the item edit form with the Admin Appearance tweaked to a tabbed layout with cleaner menus](../_assets/images/admin-appearance-2.png)
+![Captura de tela do formulário de edição de item com a Aparência do Administrador ajustada para um layout com abas e menus mais limpos](../_assets/images/admin-appearance-2.png)
 
 > [!WARNING]
-> As much powerful as these settings are, we advice to use it carefully. For starters, as we mentioned, some options conflict with each other or with existing controls (collection-level settings, user-role-level capabilities), which may put you into confusing situations. Also deviating from the original UI for some users and not for others may implicate in having to educate users in different ways according to their profile. The navigation features are specially risky because they affect how part of the browsing flow was originally planned in the Admin. Some of the options above are even a bit experimental, which means we may consider changing it in the future. 
+> Por mais poderosas que essas configurações sejam, aconselhamos usá-las com cuidado. Para começar, como mencionamos, algumas opções conflitam umas com as outras ou com controles existentes (configurações de nível de coleção, capacidades de nível de função de usuário), o que pode colocá-lo em situações confusas. Também desviar da interface original para alguns usuários e não para outros pode implicar em ter que educar usuários de maneiras diferentes de acordo com seu perfil. Os recursos de navegação são especialmente arriscados porque afetam como parte do fluxo de navegação foi originalmente planejado no Administrador. Algumas das opções acima são até um pouco experimentais, o que significa que podemos considerar mudá-las no futuro.
 
-## Overridden options
+## Opções sobrescritas
 
-All of the options listed here may be overridden by a plugin or theme if it's developer implemented one of our filters. To learn and understand how this works, read [our developers documentation](/dev/admin-ui-options.md).
+Todas as opções listadas aqui podem ser sobrescritas por um plugin ou tema se seu desenvolvedor implementou um de nossos filtros. Para aprender e entender como isso funciona, leia [nossa documentação para desenvolvedores](/dev/admin-ui-options.md).

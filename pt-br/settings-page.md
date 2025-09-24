@@ -44,7 +44,7 @@ Esta seção contém opções que podem impactar o tempo de resposta e performan
 
 ## 2. Modelos Padrão do Tema
 
-Esta seção contém opções relacionadas à [compatibilidade com temas](./theme.md). Se seu tema não implementa suas próprias versões dos [modelos do Tainacan](./tainacan-pages.md), você pode habilitar algumas opções que sobrescreverão os modelos padrão do WordPress. Tenha em mente que o plugin não sabe nada sobre as classes, tamanhos de container e estética do seu tema, então ele faz um esforço para ser genérico enquanto ainda oferece as funcionalidades esperadas nessas páginas. Personalização extra pode exigir pelo menos algum conhecimento de CSS.
+Esta seção contém opções relacionadas à [compatibilidade com temas](pt-br/theme.md). Se seu tema não implementa suas próprias versões dos [modelos do Tainacan](pt-br/tainacan-pages.md), você pode habilitar algumas opções que sobrescreverão os modelos padrão do WordPress. Tenha em mente que o plugin não sabe nada sobre as classes, tamanhos de container e estética do seu tema, então ele faz um esforço para ser genérico enquanto ainda oferece as funcionalidades esperadas nessas páginas. Personalizações extras podem exigir pelo menos algum conhecimento de CSS.
 
 ### Configurações Disponíveis:
 
