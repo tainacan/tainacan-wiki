@@ -25,4 +25,25 @@ add_filter('tainacan-admin-ui-options', 'my_plugin_tainacan_admin_options');
 The same could be achieved for prototyping by accessing your admin URL like this:
 `https://<your-site.com>/wp-admin/?forceFullscreenAdminMode=true&itemEditionPublicationSectionInsideTabs=true&showOnlyCollectionCardsThatUserCanEdit=true&page=tainacan_admin#/collections/`
 
+If you want to add and extra option and expose it via UI, so that it can be defined in the [User Role Editing Form](admin-appearance.md), you can use the `tainacan-available-admin-ui-options` filter:
+
+```php
+/*
+ * Insert and extra myAdminUIOption option inside the User Role Editing form.
+ */ 
+function my_plugin_tainacan_available_admin_options($tainacan_available_admin_ui_options) {
+    $tainacan_available_admin_ui_options['navigation']['items']['myAdminUIOption'] = __('My Admin UI Option', 'my-plugin-slug');
+    return $tainacan_available_admin_ui_options;
+}
+add_filter('tainacan-available-admin-ui-options', 'my_plugin_tainacan_available_admin_options');
+```
+
+Notice that the key-value option will be the `slug`-`label` of the option, no value is defined here, since the default is `false` for every option. We're also inserting the option inside the navigation section. You can define new sections by giving them a slug (the array key) and an object with `label`, `description` and of course, an array of `items`.
+
+Later if you want to consume this new option you can call, from inside any page that inherits `\Tainacan\Pages`:
+
+```php
+$this->has_admin_ui_option('myAdminUIOption')
+```
+
 You can read about an explanation of the available options in the [Admin appearance page](admin-appearance.md). For a complete list of their IDs, check the code reference of the [Admin_UI_Options class](/dev/phpdoc/classes/Tainacan/Traits/Admin_UI_Options.md).
