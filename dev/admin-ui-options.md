@@ -38,7 +38,7 @@ function my_plugin_tainacan_available_admin_options($tainacan_available_admin_ui
 add_filter('tainacan-available-admin-ui-options', 'my_plugin_tainacan_available_admin_options');
 ```
 
-Notice that the key-value option will be the `slug`-`label` of the option, no value is defined here, since the default is `false` for every option. We're also inserting the option inside the navigation section. You can define new sections by giving them a slug (the array key) and an object with `label`, `description` and of course, an array of `items`.
+Notice that the `key => value` option will be the `slug => label` of the option, no value is defined here, since the default is `false` for every option. We're also inserting the option inside the navigation section. You can define new sections by giving them a slug (the array key) and an object with `label`, `description` and of course, an array of `items`.
 
 Later if you want to consume this new option you can call, from inside any page that inherits `\Tainacan\Pages`:
 
