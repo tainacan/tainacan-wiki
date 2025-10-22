@@ -11,8 +11,6 @@ Para cada coleção você pode configurar um conjunto diferente de metadados, en
 
 > [!TIP] Consulte a seção [Taxonomias](#taxonomias) para saber mais.
 
-As coleções também podem ter coleções **filhas**, que vão herdar seus metadados e a partir disso podem também é possível adicionar outros metadados ao seu conjunto.
-
 <!-- tabs:start -->
 
 #### ** Criar **
