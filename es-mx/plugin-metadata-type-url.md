@@ -16,7 +16,8 @@ Vaya a la página de Metadatos de su colección o repositorio. En la sección "T
 
 ![Captura de pantalla de la página de configuración de metadatos](_assets/images/plugins_metadata_type_url_screenshot-1.png)
 
-?> Aunque utilices la opción "Forzar el uso de iframe", es posible que la URL que estés utilizando no permita incrustar contenido mediante iframe. Se trata de una configuración habilitada por los autores del sitio que no puede ignorarse.
+> [!NOTE]
+> Aunque utilices la opción "Forzar el uso de iframe", es posible que la URL que estés utilizando no permita incrustar contenido mediante iframe. Se trata de una configuración habilitada por los autores del sitio que no puede ignorarse.
 
 Con los metadatos configurados y listos, cree un nuevo elemento e inserte los valores de la URL en él. Puedes previsualizarlo con un botón mientras estás en el formulario de edición del elemento, o ir a la página del elemento para ver la previsualización.
 

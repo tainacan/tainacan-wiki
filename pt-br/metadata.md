@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Metadados" 
-		src="/_assets/images/icon_metadata.png"
-		width="42"
-		height="42">
-</div>
-
 # Metadados
 
 No Tainacan, os _“itens”_ são organizados por meio de _“coleções”_ e, cada _“coleção”_, pode ter _“metadados”_ específicos ou compartilhar _“metadados”_ entre si. Os _“metadados”_ são usados para descrever os _“itens”_, visando sua recuperação.

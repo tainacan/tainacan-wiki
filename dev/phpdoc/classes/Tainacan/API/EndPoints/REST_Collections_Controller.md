@@ -1,66 +1,43 @@
-***
-
 # REST_Collections_Controller
 
-Represents the Collections REST Controller
 
+REST API controller for managing Tainacan collections.
 
+Handles all REST API endpoints for collection operations including
+creation, updates, deletion, and querying of collections.
+
+***
 
 * Full name: `\Tainacan\API\EndPoints\REST_Collections_Controller`
-* Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller.md)
-
-
+* Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
 ## Properties
 
-
 ### collections_repository
-
-
 
 ```php
 private $collections_repository
 ```
 
-
-
-
-
-
 ***
 
 ### collection
-
-
 
 ```php
 private $collection
 ```
 
-
-
-
-
-
 ***
 
 ### items_repository
-
-
 
 ```php
 private $items_repository
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
-
 
 ### __construct
 
@@ -72,14 +49,6 @@ public __construct(): mixed
 
 Define the namespace, rest base and instantiate your attributes.
 
-
-
-
-
-
-
-
-
 ***
 
 ### init_objects
@@ -89,16 +58,6 @@ Initialize objects after post_type register
 ```php
 public init_objects(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -110,16 +69,6 @@ Register the collections route and their endpoints
 public register_routes(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_items
@@ -130,21 +79,15 @@ Return a array of Collections objects in JSON
 public get_items(\WP_REST_Request $request): \WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
@@ -156,48 +99,40 @@ Return a Collection object in JSON
 public get_item(\WP_REST_Request $request): \WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
 ### get_preview_image_items
 
-
-
 ```php
 private get_preview_image_items(\Tainacan\Entities\Collection $collection, mixed $amount): array
 ```
 
+**Parameters:**
 
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
+| `$amount`     | **mixed**                         |             |
 
+***
 
+### get_collection_taxonomies
 
-
-
+```php
+public get_collection_taxonomies(\Tainacan\Entities\Collection $collection): array
+```
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-| `$amount` | **mixed** |  |
-
-
-
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
 
 ***
 
@@ -209,74 +144,48 @@ Receive a \WP_Query or a Collection object and return both in JSON
 public prepare_item_for_response(mixed $item, \WP_REST_Request $request): mixed|string|void|\WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$item`    | **mixed**            |             |
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
 ### get_items_permissions_check
 
-
-
 ```php
 public get_items_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
 ### get_item_permissions_check
 
-
-
 ```php
 public get_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
@@ -289,21 +198,11 @@ a Collection object in JSON
 public create_item(\WP_REST_Request $request): array|\WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -315,21 +214,15 @@ Verify if current has permission to create a item
 public create_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
@@ -341,21 +234,11 @@ Prepare collection for insertion on database
 public prepare_item_for_database(\WP_REST_Request $request): object|\Tainacan\Entities\Collection|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -367,21 +250,11 @@ Delete a collection
 public delete_item(\WP_REST_Request $request): string|\WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -393,21 +266,15 @@ Verify if current user has permission to delete a collection
 public delete_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
@@ -419,21 +286,11 @@ Update a collection
 public update_item(\WP_REST_Request $request): string|\WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -445,77 +302,47 @@ Verify if current user has permission to update a item
 public update_item_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
 ### validate_filters_metadata_order
 
-
-
 ```php
 public validate_filters_metadata_order(mixed $value, mixed $request, mixed $param): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-| `$request` | **mixed** |  |
-| `$param` | **mixed** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$value`   | **mixed** |             |
+| `$request` | **mixed** |             |
+| `$param`   | **mixed** |             |
 
 ***
 
 ### validate_metadata_section_order
 
-
-
 ```php
 public validate_metadata_section_order(mixed $value, mixed $request, mixed $param): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-| `$request` | **mixed** |  |
-| `$param` | **mixed** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$value`   | **mixed** |             |
+| `$request` | **mixed** |             |
+| `$param`   | **mixed** |             |
 
 ***
 
@@ -527,21 +354,11 @@ Update a collection metadata order
 public update_metadata_order(\WP_REST_Request $request): string|\WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -553,21 +370,11 @@ Update a collection metadata section order
 public update_metadata_section_order(\WP_REST_Request $request): string|\WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -579,21 +386,15 @@ Verify if current user has permission to update metadata order
 public update_metadata_order_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
@@ -605,21 +406,15 @@ Verify if current user has permission to update metadata section order
 public update_metadata_section_order_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
@@ -631,21 +426,11 @@ Update a collection metadata order
 public update_filters_order(\WP_REST_Request $request): string|\WP_Error|\WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -657,282 +442,170 @@ Verify if current user has permission to update metadata order
 public update_filters_order_permissions_check(\WP_REST_Request $request): bool|\WP_Error
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
 ### get_endpoint_args_for_item_schema
 
-
-
 ```php
 public get_endpoint_args_for_item_schema(string $method = null): array|mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$method` | **string** |  |
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$method` | **string** |             |
 
 ***
 
 ### get_endpoint_arg_for_schema
 
-
-
 ```php
 public get_endpoint_arg_for_schema(mixed $name, mixed $properties = [], mixed $repository = null): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **mixed** |  |
-| `$properties` | **mixed** |  |
-| `$repository` | **mixed** |  |
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$name`       | **mixed** |             |
+| `$properties` | **mixed** |             |
+| `$repository` | **mixed** |             |
 
 ***
 
 ### get_schema
 
-
-
 ```php
 public get_schema(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
-
 
 ## Inherited methods
 
-
 ### __construct
 
-REST_Controller constructor.
+Constructor for the REST_Controller class.
 
 ```php
 public __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
+Sets up the namespace and registers routes and filters.
 
 ***
 
 ### filter_object_by_attributes
 
-
+Filters an object by specified attributes.
 
 ```php
-protected filter_object_by_attributes( $object,  $attributes): array
+protected filter_object_by_attributes(mixed $object, string|array $attributes): array
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$object` | **** |  |
-| `$attributes` | **** |  |
+| Parameter     | Type              | Description                                       |
+|---------------|-------------------|---------------------------------------------------|
+| `$object`     | **mixed**         | The object to filter.                             |
+| `$attributes` | **string\|array** | The attributes to include in the filtered result. |
 
+**Return Value:**
 
-
+Filtered object data.
 
 ***
 
 ### prepare_item_for_updating
 
-
+Prepares an item for updating with new values.
 
 ```php
-protected prepare_item_for_updating( $object,  $new_values): \Tainacan\Entities\Entity
+protected prepare_item_for_updating(mixed $object, array $new_values): \Tainacan\Entities\Entity
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$object` | **** |  |
-| `$new_values` | **** |  |
+| Parameter     | Type      | Description                      |
+|---------------|-----------|----------------------------------|
+| `$object`     | **mixed** | The object to update.            |
+| `$new_values` | **array** | New values to set on the object. |
 
+**Return Value:**
 
-
+The updated entity.
 
 ***
 
 ### prepare_filters
 
-
-
 ```php
-protected prepare_filters( $request): array
+protected prepare_filters(mixed $request): array
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **** |  |
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$request` | **mixed** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../../Exception)
 
 ***
 
 ### add_support_to_tax_query_like
 
-
-
 ```php
 public add_support_to_tax_query_like(mixed $args): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$args`   | **mixed** |             |
 
 ***
 
-### prepare_meta
-
-
+### sanitize_value
 
 ```php
-private prepare_meta( $mapped,  $request,  $query,  $mapped_v,  $args): mixed
+protected sanitize_value(mixed $value): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$mapped` | **** |  |
-| `$request` | **** |  |
-| `$query` | **** |  |
-| `$mapped_v` | **** |  |
-| `$args` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### contains_array
 
-
-
 ```php
-protected contains_array( $array,  $query): bool
+protected contains_array(mixed $array, mixed $query): bool
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$array` | **** |  |
-| `$query` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$array`  | **mixed** |             |
+| `$query`  | **mixed** |             |
 
 ***
 
@@ -944,16 +617,6 @@ Return the fetch_only param
 public get_fetch_only_param(): array|void
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_wp_query_params
@@ -963,16 +626,6 @@ Return the common params
 ```php
 public get_wp_query_params(): array|void
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -984,124 +637,51 @@ Return the common meta, date and tax queries params
 protected get_meta_queries_params(): array
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_repository_schema
-
-
 
 ```php
 public get_repository_schema(\Tainacan\Repositories\Repository $repository): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$repository` | **\Tainacan\Repositories\Repository** |  |
-
-
-
+| Parameter     | Type                                  | Description |
+|---------------|---------------------------------------|-------------|
+| `$repository` | **\Tainacan\Repositories\Repository** |             |
 
 ***
 
 ### get_permissions_schema
 
-
-
 ```php
 public get_permissions_schema(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_base_properties_schema
 
-
-
 ```php
 public get_base_properties_schema(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_schema
 
-
-
 ```php
 protected get_schema(): mixed
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
-
-
-
 ***
 
 ### get_list_schema
-
-
 
 ```php
 public get_list_schema(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

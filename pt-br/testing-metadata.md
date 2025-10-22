@@ -19,9 +19,11 @@
 - [x] Observe o tempo de conclusão ao **salvar** cada metadado;
 - [x] Veja se as **configurações se refletem** na lista de items e nos formulários de criação de itens;
 
-?> _Nota 1_: É diferente um metadado estar "desabilitado" de estar marcado para "Não exibir na listagem". Com o primeiro, não é possível nem mesmo inserir o metadado no item. Com o segundo, ele só muda a visibilidade na lista de itens.
+> [!NOTE]
+> _Nota 1_: É diferente um metadado estar "desabilitado" de estar marcado para "Não exibir na listagem". Com o primeiro, não é possível nem mesmo inserir o metadado no item. Com o segundo, ele só muda a visibilidade na lista de itens.
 
-?> _Nota 2_: A ordenação de filhos do metadado composto só funciona dentro de seu grupo e não são permitidos, no momento, taxonomias como filhos de compostos.
+> [!NOTE]
+> _Nota 2_: A ordenação de filhos do metadado composto só funciona dentro de seu grupo e não são permitidos, no momento, taxonomias como filhos de compostos.
 
 ## Nível Repositório
 
@@ -30,4 +32,5 @@
    - [x] Verifique se os metadados foram herdados;
    - [x] Verifique se é possível trocar a ordem dos mesmos quando acessados na tela de configuração de metadados da coleção;
 
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+> [!NOTE]
+> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).

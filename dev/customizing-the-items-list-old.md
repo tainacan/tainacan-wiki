@@ -1,6 +1,7 @@
 # Customizing the Items List (previous to 0.16)
 
-?> WARNING: this page was made before 0.16 release, which means it is outdated. For the latest content on how to customize the items list, please visit [this page](/dev/customizing-the-items-list).
+> [!NOTE]
+> WARNING: this page was made before 0.16 release, which means it is outdated. For the latest content on how to customize the items list, please visit [this page](/dev/customizing-the-items-list).
 
 A lot can be done for adding Tainacan support to your theme using the template hierarchy logic mentioned in the section [Custom Templates](/dev/custom-templates.md). While this might be enough you may be interested in tweaking a bit more of the appearance of the most complex page that Tainacan offers to you: **The Items List Page**. Check the example bellow, of the child theme of [TwentyTwenty](https://wordpress.org/themes/twentytwenty/ ":ignore") that implemented a basic `archive-items.php`:
 

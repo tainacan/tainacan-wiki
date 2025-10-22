@@ -2,7 +2,8 @@
 
 One of the reasons why _WordPress_ is so famous and versatile is its diversity of [themes](https://wordpress.org/themes/ ":ignore"). There are thousands of themes that you can attribute to your site style and structure more formal, appealing or minimalist. The vast majority are free and one click away from installation.
 
-?> **It is possible to use the Tainacan plugin with any activated theme**, but the experience can be better with themes that offer compatibility for your pages.
+> [!NOTE]
+> **It is possible to use the Tainacan plugin with any activated theme**, but the experience can be better with themes that offer compatibility for your pages.
 
 On this page we talk about:
 
@@ -149,8 +150,11 @@ Every year WordPress releases an "official theme", which is activated by default
 5. To delete the theme click on theme information in the desired theme block
 6. In the lower right corner click `Delete`
 
-!> **Warning**: To preserve the settings and navigability of items and collections, use themes compatible with good development practices for Tainacan.
+> [!WARNING]
+> **Warning**: To preserve the settings and navigability of items and collections, use themes compatible with good development practices for Tainacan.
 
-!> **Warning**: Disabling the Tainacan theme affects the display and navigability settings for items and collections in the repository. This operation can only be undone by administrators.
+> [!WARNING]
+> **Warning**: Disabling the Tainacan theme affects the display and navigability settings for items and collections in the repository. This operation can only be undone by administrators.
 
-!> **Warning**: For safety, it is always recommended to backup the installation before any modification. Delete the subject only if you are sure that there will be no serious loss of information. This operation can only be reversed by restoring backups of the installation.
+> [!WARNING]
+> **Warning**: For safety, it is always recommended to backup the installation before any modification. Delete the subject only if you are sure that there will be no serious loss of information. This operation can only be reversed by restoring backups of the installation.

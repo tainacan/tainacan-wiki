@@ -4,7 +4,8 @@ Just as WordPress has its [Template Tags](https://developer.wordpress.org/themes
 
 In this documentation, you will see a technical list of our most important Template Tags. Some of them have their usage better demonstrated in the [Theme Development and Extension](/dev/#theme-development-or-extension) and others may also be worth checking code examples from [our compatible themes](/theme).
 
-?> _TODO_ List the Template Tags here instead of linking to GitHub;
+> [!NOTE]
+> List the Template Tags here instead of linking to GitHub;
 
 We are working on this page. Meanwhile, you can check both of this pages in the source code, which should have all you need:
 

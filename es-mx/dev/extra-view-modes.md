@@ -25,7 +25,8 @@ Aquí describimos el proceso para crear un plugin de este tipo. Existen dos estr
 
 El último es más complejo, pero también te da más opciones de personalización e interacción.
 
-!> El siguiente contenido puede entenderse mejor utilizando el código fuente de dos **proyectos de ejemplo que hemos puesto a su disposición [aquí](https://github.com/tainacan/tainacan-extra-view-mode-sample ":ignore")**.
+> [!WARNING]
+> El siguiente contenido puede entenderse mejor utilizando el código fuente de dos **proyectos de ejemplo que hemos puesto a su disposición [aquí](https://github.com/tainacan/tainacan-extra-view-mode-sample ":ignore")**.
 
 ### Estrategia de plantillas
 
@@ -98,7 +99,8 @@ function tainacan_extra_viewmode_template_demo_enqueue_styles() {
 
 ?>
 
-?> /* End of file */
+> [!NOTE]
+> /* End of file */
 ```
 
 La función `tainacan_register_view_mode` es parte del plugin de Tainacan. Su primer parámetro es un _slug_ único que se utilizará para identificar tu modo de vista. Luego sigue un array de parámetros:
@@ -120,13 +122,7 @@ La función `tainacan_register_view_mode` es parte del plugin de Tainacan. Su pr
 
 El parámetro `type` es uno de los más relevantes aquí. Cuando se pasa una plantilla, se debe proporcionar la ruta del archivo.
 
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Enabled Metadata Dropdown.png" 
-		src="/dev/_assets/images/Enabled_Metadata_Dropdown.png"
-		width="300"
-		height="256">
-</div>
+![Enabled Metadata Dropdown](/_assets/images/Enabled_Metadata_Dropdown.png ':class=alignright')
 
 Los modos de vista como Cards y Grid no permiten a los usuarios elegir qué metadatos deben mostrarse, sino que deciden que sólo algunos sean visibles. Para este tipo de modo de vista, se utiliza el parámetro `dynamic_metadata` como `false`.
 

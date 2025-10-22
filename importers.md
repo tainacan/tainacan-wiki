@@ -1,14 +1,7 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Importadores" 
-		src="_assets/images/icon_importers.png"
-		width="40"
-		height="40">
-</div>
-
 # Importers
 
-?> _TODO_ Add introduction before listing importers.
+> [!NOTE]
+> Add introduction before listing importers.
 
 
 <!-- tabs:start -->
@@ -211,11 +204,14 @@ Nome,subject|taxonomy|multiple|required,registration number|numeric|required|col
   2. If the metadata does not yet exist in the collection, select **"Create metadata "**.
   3. To create new metadata in the collection, select `Add more metadata`; (See [Metadata](metadata) to learn more about the creation and types of existing metadata)
   
-  !> **Attention**: In this process, metadata from the *.csv* file will not be created if they do not have a metadata pointed in the target collection.
+  > [!WARNING]
+> **Attention**: In this process, metadata from the *.csv* file will not be created if they do not have a metadata pointed in the target collection.
   
-  !> **Attention**: The information of each metadata in each item depends on the creation of its respective metadata in this process.
+  > [!WARNING]
+> **Attention**: The information of each metadata in each item depends on the creation of its respective metadata in this process.
   
-  !> **Attention**: Once created, it is not possible to change the Metadata type. (For example, change a Metadata type Text to Long Text, or Numeric to Date).
+  > [!WARNING]
+> **Attention**: Once created, it is not possible to change the Metadata type. (For example, change a Metadata type Text to Long Text, or Numeric to Date).
     * See [General metadata characteristics](metadata#general-metadata-characteristics) for more information.
 11.  When finished, click 'Run' to start the **import process**
 12. You will be redirected to the **Repository Activities** screen where you can follow the progress of the *import process*. This screen displays all the import processes already performed in this installation, from the most recent to the oldest.  When the process is completed, the **log file** will be displayed and, in case of errors, the **error file**.

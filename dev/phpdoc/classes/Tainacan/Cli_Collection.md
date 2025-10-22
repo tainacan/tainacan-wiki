@@ -1,108 +1,80 @@
-***
-
 # Cli_Collection
 
 
+Handles WP-CLI commands for Tainacan collections.
 
+Provides command-line interface for managing collections including
+listing, removing items, and other collection operations.
 
+***
 
 * Full name: `\Tainacan\Cli_Collection`
 
-
-
 ## Properties
-
 
 ### collection_repository
 
-
+Collection repository instance.
 
 ```php
-private $collection_repository
+private \Tainacan\Repositories\Collections $collection_repository
 ```
-
-
-
-
-
 
 ***
 
 ### items_repository
 
-
+Items repository instance.
 
 ```php
-private $items_repository
+private \Tainacan\Repositories\Items $items_repository
 ```
-
-
-
-
-
 
 ***
 
 ### result_count
 
-
+Result count for operations.
 
 ```php
-private $result_count
+private array $result_count
 ```
-
-
-
-
-
 
 ***
 
 ### dry_run
 
-
+Whether to perform a dry run without making changes.
 
 ```php
-private $dry_run
+private bool $dry_run
 ```
-
-
-
-
-
 
 ***
 
 ## Methods
 
-
 ### __construct
 
-
+Constructor for the Cli_Collection class.
 
 ```php
 public __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
+Initializes repository instances and result counters.
 
 ***
 
 ### list
 
-Show a list of collections.
+Shows a list of all collections.
 
 ```php
-public list(): mixed
+public list(): void
 ```
+
+Displays a table with collection IDs and titles.
 
 ## EXAMPLES
 
@@ -115,14 +87,6 @@ wp tainacan collection list
 | 1177 | Livros            |
 | 1157 | autores           |
 +------+-------------------+
-
-
-
-
-
-
-
-
 
 ***
 
@@ -149,81 +113,45 @@ public clean(mixed $args, mixed $assoc_args): mixed
 wp tainacan collection clean 1201 --permanently
 
 cleaning collection items
-100% [============================================================================================] 0:00 / 0:00
+100%% [============================================================================================] 0:00 / 0:00
 Success:
 10 items removed
 23 attachments removed
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **mixed** |  |
-| `$assoc_args` | **mixed** |  |
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$args`       | **mixed** |             |
+| `$assoc_args` | **mixed** |             |
 
 ***
 
 ### delete_item
 
-
-
 ```php
 private delete_item(mixed $item, mixed $permanently = false): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-| `$permanently` | **mixed** |  |
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$item`        | **mixed** |             |
+| `$permanently` | **mixed** |             |
 
 ***
 
 ### delete_attachments
 
-
-
 ```php
 private delete_attachments(mixed $item): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$item`   | **mixed** |             |
 
 ***
-
-
-***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

@@ -35,4 +35,5 @@ Para probar la búsqueda facetada de artículos, necesita una colección con una
    - [x] Comprobar que al aplicar la casilla de verificación "Mostrar sólo metadatos", se eliminan de la lista resultante los metadatos que no han sido marcados para su visualización;
 4. Repita los pasos descritos anteriormente tanto para la lista de elementos del Admin como para la lista de elementos del tema.
 
-?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).
+> [!NOTE]
+> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).

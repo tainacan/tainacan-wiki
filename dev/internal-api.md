@@ -155,7 +155,7 @@ if ($collection->validate()) {
 	// Lets update something
 	$insertedCollection->set_description('new description');
 	if ($insertedCollection->validate()) {
-		$insertedCollection = $collectionsRepo->insert($insertedCollection);
+		$insertedCollection = $collectionsRepo->update($insertedCollection);
 		echo 'I still have the same ID! ' . $insertedCollection->get_id();
 	} else {
 		$errors = $insertedCollection->get_errors();
@@ -184,12 +184,12 @@ So the Item Metadata Entity constructor gets two entities: an item and a metadat
 
 ```php
 // Considering $item is an existing Item Entity an $metadatum an existing Field Entity
-$itemMetadada = new \Tainacan\Entities\ItemMetadataEntity($item, $metadatum);
+$itemMetadata = new \Tainacan\Entities\Item_Metadata_Entity($item, $metadatum);
 
 $itemMetadata->set_value('Red');
 
 if ($itemMetadata->validate()) {
-	$ItemMetadataRepo = \Tainacan\Repositories\ItemMetadata::get_instance();
+	$ItemMetadataRepo = \Tainacan\Repositories\Item_Metadata::get_instance();
 	$ItemMetadata = $ItemMetadataRepo->insert($ItemMetadata);
 } else {
 	$errors = $ItemMetadata->get_errors();
@@ -197,7 +197,7 @@ if ($itemMetadata->validate()) {
 
 ```
 
-> Note: "Multiple" Metadata, which can have more than one value for the same item, works the same way, with the difference that its value is an array of values and not just one single value. 
+> [!NOTE] Note: "Multiple" Metadata, which can have more than one value for the same item, works the same way, with the difference that its value is an array of values and not just one single value. 
 
 If you want to iterate over all metadata of an item or a collection, there are 2 useful methods you can use. The metadata repository has a `fetch_by_collection()` method that will fetch all metadata from a given collection and return them in the right order.
 
@@ -210,9 +210,9 @@ TODO: document the validation chains
 
 All validations validate the property with the validation declared in the get_map() method of the repository.
 
-Validate item -> call ItemMetadata->validate() for each metadatum
+Validate item -> call Item_Metadata->validate() for each metadatum
 
-Validate ItemMetadata -> call $metadatumType->validate() for the Field type of the metadatum.
+Validate Item_Metadata -> call $metadatumType->validate() for the Field type of the metadatum.
 
 Validate Field -> call validate_options() of the Field type
 
@@ -274,7 +274,7 @@ if ($collection->can_edit()) {
 	
 	if ($collection->validate()) {
 		
-		$collection = $collectionsRepo->insert($collection);
+		$collection = $collectionsRepo->update($collection);
 		
 	} else {
 		$validationErrors = $collection->get_errors();

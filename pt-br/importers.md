@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Importadores" 
-		src="/_assets/images/icon_importers.png"
-		width="40"
-		height="40">
-</div>
-
 # Importadores
 
 Os “importadores” são os recursos que permitem otimizar o processo de criação e atualização de “itens” em “coleções” no Tainacan, ou importar um “vocabulário controlado” existente.
@@ -14,7 +6,7 @@ Os “importadores” são os recursos que permitem otimizar o processo de cria�
 
 O “Importador CSV” permite que usuários importem “itens” para uma “coleção” diretamente de um arquivo no formato “.csv”.
 
-> Consulte também como importar Taxonomias para criar “vocabulários controlados” ou realizar a “importação de tesauros”.
+> [!TIP] Consulte também como importar Taxonomias para criar “vocabulários controlados” ou realizar a “importação de tesauros”.
 
 ### Parâmetros do CSV
 
@@ -65,7 +57,7 @@ c. **“special_document”**: permite que o usuário informe o documento do ite
 
 d. **“special_attachments, special_attachments|REPLACE, special_attachments|APPEND”**: permite que o usuário informe os anexos. 
 
-> Consulte Importando arquivos e anexos;
+> [!TIP] Consulte Importando arquivos e anexos;
 
 e. **“special_comment_status”**: permite que o usuário informe se os “itens” podem receber ou não comentários. Os valores possíveis são:
 
@@ -101,8 +93,8 @@ c. **“text”.**
 
 ```
 nome, special_document
-Uma imagem,file:http://example.com/image.jpg
-Um vídeo do youtube,url:http://youtube.com/?w=123456
+Um arquivo, Uma imagem, Um áudio, file:http://example.com/image.jpg | file:http://example.com/doc.pdf
+Um vídeo do youtube, Um objeto externo, url:http://youtube.com/?w=123456
 Um texto,text:This is a sample text
 ```
 
@@ -178,13 +170,13 @@ Nome do item,Categoria Neta
 
 Depois do “tipo de metadado”, você também pode informar outras instruções:
 
-- `multiple` - Múltiplo: para metadados que permitem múltiplos valores
-- `required` - Obrigatório: para metadados obrigatórios
-- `display_yes` - Exibir na lista: habilitar metadado na visualização.
-- `display_no` - Não exibir na lista: ocultar metadado na visualização.
-- `display_never` - Nunca exibir metadado na visualização.
-- `status_public` - Status público: metadado visível para todos
-- `status_private` - Status privado: metadado visível apenas para editores
+- `multiple` - Múltiplo: para metadados que permitem múltiplos valores;
+- `required` - Obrigatório: para metadados obrigatórios;
+- `display_yes` - Exibir na lista: habilitar metadado na visualização;
+- `display_no` - Não exibir na lista: ocultar metadado na visualização;
+- `display_never` - Nunca exibir metadado na visualização;
+- `status_public` - Status público: metadado visível para todos;
+- `status_private` - Status privado: metadado visível apenas para editores;
 - `collection_key_yes` - Configurar valores deste metadado como único: os valores desse metadado não se repetem em itens nessa coleção.
 
 **Exemplo de várias instruções combinadas**:
@@ -406,9 +398,9 @@ Ao contrário dos importadores de CSV, não estamos realmente “importando” d
 
    ![Acesse o painel de controle](_assets\images\Importador_Teste_Parametros.png)
 
-6. Se deseja importar imagens do LoremFlickr para os seus “itens”, é possível configurar dimensões específicas (“altura” x “largura”) ou deixar 0 para que elas sejam aleatórias. Você também pode definir um “termo” de busca para “filtrar” o conteúdo da imagem.
+6. Se deseja importar imagens do LoremFlickr para os seus “itens”, é possível configurar dimensões específicas (“altura” x “largura”) ou deixar 0 para que elas sejam aleatórias. Você também pode definir um “termo” de busca para “filtrar” o conteúdo da imagem;
 
-   a. Embora diversas, as imagens fornecidas pelo LoremFlickr possuem tamanho bem reduzido. Isso significa que mesmo não passando parâmetros elas podem vir pequenas e se comportar de maneira inesperada em alguns “modos de visualização”, caso estes esperem recortes maiores que o mínimo criado pelo “importador”
+   a. Embora diversas, as imagens fornecidas pelo LoremFlickr possuem tamanho bem reduzido. Isso significa que mesmo não passando parâmetros elas podem vir pequenas e se comportar de maneira inesperada em alguns “modos de visualização”, caso estes esperem recortes maiores que o mínimo criado pelo “importador”.
 
    ![Acesse o painel de controle](_assets\images\Importador_Teste_Parametros_LoremFLickr.png)
 

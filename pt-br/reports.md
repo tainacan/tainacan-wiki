@@ -22,9 +22,9 @@ Logo abaixo desta caixa de seleção, pode ser vista uma barra de legenda, que a
 
 Como já apontado por esta barra de legenda, a maioria dos gráficos possui um recurso de _exportação_, que permite a visualização do gráfico externamente no formato de imagem, vetor, ou planilha de dados CSV, o que facilita a incorporação dos gráficos em relatórios feitos fora da plataforma Tainacan.
 
-<div style="float: right; margin-left: 32px; margin-top: 24px; margin-bottom: -6px;">
+<div style="margin-top: 24px; margin-bottom: -6px;">
 
-![Captura de Tela da informação da data em que o relatório foi gerado, incluindo botão de recarregar](_assets/images/reports_16.png)
+![Captura de Tela da informação da data em que o relatório foi gerado, incluindo botão de recarregar](_assets/images/reports_16.png ':class=alignright')
 
 </div>
 
@@ -32,7 +32,8 @@ Como já apontado por esta barra de legenda, a maioria dos gráficos possui um r
 
 Para garantir uma boa performance sem pesar o servidor, os relatórios são gerados e guardam as informações por uma semana.
 
-?> Isto significa que se visitada esta página num certo dia, os dados apresentados nos próximos 7 dias serão os mesmos, mesmo que alterações tenham sido feitas no repositório.
+> [!NOTE]
+> Isto significa que se visitada esta página num certo dia, os dados apresentados nos próximos 7 dias serão os mesmos, mesmo que alterações tenham sido feitas no repositório.
 
 Para ver a data de quando o relatório foi gerado, basta passar o mouse por cima de cada bloco, que a informação estará no canto inferior esquerdo, como na imagem ao lado.
 
@@ -70,7 +71,8 @@ O terceiro gráfico exibido na tela de repositório é um gráfico de barras ver
 
 ![Captura de Tela do Bloco do gráfico de Total de Itens por Termo de Taxonomia](_assets/images/reports_6.png)
 
-!> Por ter o potencial de listar uma quantidade de dados considerável (algumas taxonomias em repositórios possuem mais de 300 termos), **este é um gráfico paginado**. Isto quer dizer que por vez, são exibidos um padrão de **56 termos no máximo**. Este foi o valor escolhido para permitir uma leitura mínima dos dados no eixo horizontal e não pesar demais a memória do navegador que precisa processar estas informações para montar a visualização. Como a requisição feita para a API vem ordenada, pode-se ter garantia de que, os termos mostrados na primeira página, terão mais itens que nas seguintes. Ainda assim, além de navegar pelas páginas é possível alterar a quantidade de itens por página, porém sujeito ao risco de se travar o navegador!
+> [!WARNING]
+> Por ter o potencial de listar uma quantidade de dados considerável (algumas taxonomias em repositórios possuem mais de 300 termos), **este é um gráfico paginado**. Isto quer dizer que por vez, são exibidos um padrão de **56 termos no máximo**. Este foi o valor escolhido para permitir uma leitura mínima dos dados no eixo horizontal e não pesar demais a memória do navegador que precisa processar estas informações para montar a visualização. Como a requisição feita para a API vem ordenada, pode-se ter garantia de que, os termos mostrados na primeira página, terão mais itens que nas seguintes. Ainda assim, além de navegar pelas páginas é possível alterar a quantidade de itens por página, porém sujeito ao risco de se travar o navegador!
 
 <div style="max-width: 60%; margin: 0 auto;">
 
@@ -117,9 +119,9 @@ No primeiro gráfico do painel de relatórios de uma coleção, está um gráfic
 
 ## Distribuição de Preenchimento de Metadados na Coleção
 
-<div style="float: right; margin-left: 32px; margin-top: 24px;">
+<div style="margin-top: 24px;">
 
-![Captura de Tela do Bloco de Distribuição de Preenchimento de Metadados na Coleção](_assets/images/reports_12.png)
+![Captura de Tela do Bloco de Distribuição de Preenchimento de Metadados na Coleção](_assets/images/reports_12.png ':class=alignright')
 
 </div>
 

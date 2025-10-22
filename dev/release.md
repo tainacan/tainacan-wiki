@@ -94,7 +94,7 @@ cp -R $BUILD_PATH/* trunk/
 svn st | grep '^!' | awk '{print $2}' | xargs svn rm
 ```
 
-?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
+> [!NOTE] Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
 5. `svn add` every new files
 
@@ -201,7 +201,7 @@ cd $SVN_PATH
 svn st | grep '^!' | awk '{print $2}' | xargs svn rm
 ```
 
-?> Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
+> [!NOTE] Note: when using this `svn rm` or `svn add` commands listed here, you may receive a warning message of "insufficient input parameters". This will happen if you haven't added or removed any file, only modified, which should be ok.
 
 3. `svn add` every new files
 

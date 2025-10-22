@@ -1,134 +1,67 @@
-***
-
 # Metadata
 
-Class Metadata
 
+Repository for managing Tainacan metadata definitions.
 
+Handles all database operations for metadata including creation,
+updates, deletion, and querying with proper validation and logging.
+
+***
 
 * Full name: `\Tainacan\Repositories\Metadata`
-* Parent class: [`\Tainacan\Repositories\Repository`](./Repository.md)
-
-
+* Parent class: [`\Tainacan\Repositories\Repository`](./Repository)
 
 ## Properties
 
-
 ### entities_type
 
-
+The entity type this repository manages.
 
 ```php
-public $entities_type
+public string $entities_type
 ```
-
-
-
-
-
 
 ***
 
 ### default_metadata
 
-
-
 ```php
 protected $default_metadata
 ```
 
+***
 
+### current_taxonomy
 
-
-
+```php
+protected $current_taxonomy
+```
 
 ***
 
 ### metadata_types
 
-
-
 ```php
 public $metadata_types
 ```
-
-
-
-
-
 
 ***
 
 ### core_metadata
 
-
-
 ```php
 public $core_metadata
 ```
-
-
-
-
-
-
-***
-
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
 
 ***
 
 ## Methods
 
-
-### get_instance
-
-
+### init
 
 ```php
-public static get_instance(): mixed
+protected init(): mixed
 ```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-Register specific hooks for metadatum repository
-
-```php
-protected __construct(): mixed
-```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -139,14 +72,6 @@ return properties map
 ```php
 protected _get_map(): array
 ```
-
-
-
-
-
-
-
-
 
 **Return Value:**
 
@@ -174,10 +99,9 @@ properties map array, format like:
     'validation' => v::stringType(),
 ],
 
-
 **See Also:**
 
-* \Tainacan\Repositories\Repository::get_map() - 
+* \Tainacan\Repositories\Repository::get_map()
 
 ***
 
@@ -189,39 +113,17 @@ Get the labels for the custom post type of this repository
 public get_cpt_labels(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Labels in the format expected by register_post_type()
-
-
 
 ***
 
 ### register_post_type
 
-
-
 ```php
 public register_post_type(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -233,19 +135,9 @@ constant used in default metadatum in attribute collection_id
 public get_default_metadata_attribute(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 the value of constant
-
-
 
 ***
 
@@ -254,24 +146,14 @@ the value of constant
 register metadatum types class on array of types
 
 ```php
-public register_metadata_type( $class_name): mixed
+public register_metadata_type(mixed $class_name): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the instance |
-
-
-
+| Parameter     | Type      | Description                                     |
+|---------------|-----------|-------------------------------------------------|
+| `$class_name` | **mixed** | string \| object The class name or the instance |
 
 ***
 
@@ -280,24 +162,14 @@ public register_metadata_type( $class_name): mixed
 register metadatum types class on array of types
 
 ```php
-public unregister_metadata_type( $class_name): mixed
+public unregister_metadata_type(mixed $class_name): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the instance |
-
-
-
+| Parameter     | Type      | Description                                     |
+|---------------|-----------|-------------------------------------------------|
+| `$class_name` | **mixed** | string \| object The class name or the instance |
 
 ***
 
@@ -306,7 +178,7 @@ public unregister_metadata_type( $class_name): mixed
 fetch metadatum based on ID or WP_Query args
 
 ```php
-public fetch(array $args, string $output = null): \Tainacan\Entities\Metadatum|\WP_Query|array
+public fetch(array $args = [], string $output = null): \Tainacan\Entities\Metadatum|\WP_Query|array
 ```
 
 metadatum are stored as posts. Check WP_Query docs
@@ -317,24 +189,20 @@ appropriate WP_Query argument
 If a number is passed to $args, it will return a \Tainacan\Entities\Metadatum object.  But if the post is not found or
 does not match the entity post type, it will return an empty array
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **array** | WP_Query args &amp;#124;&amp;#124; int $args the metadatum id |
+| Parameter | Type       | Description                                                                                            |
+|-----------|------------|--------------------------------------------------------------------------------------------------------|
+| `$args`   | **array**  | WP_Query args \|\| int $args the metadatum id                                                          |
 | `$output` | **string** | The desired output format (@see \Tainacan\Repositories\Repository::fetch_output() for possible values) |
-
 
 **Return Value:**
 
 an instance of wp query OR array of entities;
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -350,23 +218,19 @@ to learn all args accepted in the $args parameter (@see https://developer.wordpr
 You can also use a mapped property, such as name and description, as an argument and it will be mapped to the
 appropriate WP_Query argument
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **array** | WP_Query args &amp;#124;&amp;#124; int $args the item id |
-
+| Parameter | Type      | Description                              |
+|-----------|-----------|------------------------------------------|
+| `$args`   | **array** | WP_Query args \|\| int $args the item id |
 
 **Return Value:**
 
 array of IDs;
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -378,26 +242,20 @@ fetch metadatum by collection, considering inheritance and order
 public fetch_by_collection(\Tainacan\Entities\Collection $collection, array $args = []): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-| `$args` | **array** | WP_Query args plus disabled_metadata |
-
+| Parameter     | Type                              | Description                          |
+|---------------|-----------------------------------|--------------------------------------|
+| `$collection` | **\Tainacan\Entities\Collection** |                                      |
+| `$args`       | **array**                         | WP_Query args plus disabled_metadata |
 
 **Return Value:**
 
 Entities\Metadatum
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -409,26 +267,20 @@ fetch metadata IDs by collection, considering inheritance
 public fetch_ids_by_collection(\Tainacan\Entities\Collection|int $collection, array $args = []): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection&#124;int** | object or ID |
-| `$args` | **array** | WP_Query args plus disabled_metadata |
-
+| Parameter     | Type                                   | Description                          |
+|---------------|----------------------------------------|--------------------------------------|
+| `$collection` | **\Tainacan\Entities\Collection\|int** | object or ID                         |
+| `$args`       | **array**                              | WP_Query args plus disabled_metadata |
 
 **Return Value:**
 
 List of metadata IDs
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -440,26 +292,20 @@ fetch metadatum by metadata section, considering order
 public fetch_by_metadata_section(\Tainacan\Entities\Metadata_Section $metadata_section, array $args = []): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadata_section` | **\Tainacan\Entities\Metadata_Section** |  |
-| `$args` | **array** | WP_Query args plus disabled_metadata |
-
+| Parameter           | Type                                    | Description                          |
+|---------------------|-----------------------------------------|--------------------------------------|
+| `$metadata_section` | **\Tainacan\Entities\Metadata_Section** |                                      |
+| `$args`             | **array**                               | WP_Query args plus disabled_metadata |
 
 **Return Value:**
 
 Entities\Metadatum
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -472,110 +318,72 @@ metadata not ordinated appear on the end of the list
 public order_result(array $result, \Tainacan\Entities\Collection $collection, bool $include_disabled = false): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$result` | **array** | Response from method fetch_by_collection |
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-| `$include_disabled` | **bool** | Wether to include disabled metadata in the results or not |
-
-
-
+| Parameter           | Type                              | Description                                                |
+|---------------------|-----------------------------------|------------------------------------------------------------|
+| `$result`           | **array**                         | Response from method fetch_by_collection                   |
+| `$collection`       | **\Tainacan\Entities\Collection** |                                                            |
+| `$include_disabled` | **bool**                          | Whether to include disabled metadata in the results or not |
 
 ***
 
 ### insert
 
-
-
 ```php
 public insert(\Tainacan\Entities\Metadatum $metadatum): \Tainacan\Entities\Metadatum
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
 
 **Return Value:**
 
-{@inheritDoc}
 
+
+
+- **See:** 
 
 **See Also:**
 
-* \Tainacan\Repositories\Repository::insert() - 
+* \Tainacan\Repositories\Repository::insert()
 
 ***
 
 ### pre_update_metadata_repository_level
 
-
-
 ```php
 public pre_update_metadata_repository_level(mixed $metadatum, mixed $attributes): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **mixed** |  |
-| `$attributes` | **mixed** |  |
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$metadatum`  | **mixed** |             |
+| `$attributes` | **mixed** |             |
 
 ***
 
 ### update
 
-
-
 ```php
-public update( $object, mixed $new_values = null): mixed|string|\Tainacan\Entities\Entity
+public update(mixed $object, mixed $new_values = null): mixed|string|\Tainacan\Entities\Entity
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$object` | **** |  |
-| `$new_values` | **mixed** |  |
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$object`     | **mixed** |             |
+| `$new_values` | **mixed** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -584,30 +392,22 @@ public update( $object, mixed $new_values = null): mixed|string|\Tainacan\Entiti
 fetch all registered metadatum type classes
 
 ```php
-public fetch_metadata_types( $output = &#039;CLASS&#039;): array
+public fetch_metadata_types(mixed $output = 'CLASS'): array
 ```
 
 Possible outputs are:
 CLASS (default) - returns the Class name of of metadatum types registered
 NAME - return an Array of the names of metadatum types registered
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$output` | **** | string CLASS &amp;#124; NAME |
-
+| Parameter | Type      | Description          |
+|-----------|-----------|----------------------|
+| `$output` | **mixed** | string CLASS \| NAME |
 
 **Return Value:**
 
 of Entities\Metadata_Types\Metadata_Type classes path name
-
-
 
 ***
 
@@ -619,104 +419,72 @@ That function update the core metadatum meta key, in case of changing the collec
 public maybe_update_core_metadata_meta_keys(\Tainacan\Entities\Collection $collection_new, \Tainacan\Entities\Collection $collection_old, \Tainacan\Entities\Metadatum $old_title_metadatum, \Tainacan\Entities\Metadatum $old_description_metadatum): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection_new` | **\Tainacan\Entities\Collection** |  |
-| `$collection_old` | **\Tainacan\Entities\Collection** |  |
-| `$old_title_metadatum` | **\Tainacan\Entities\Metadatum** |  |
-| `$old_description_metadatum` | **\Tainacan\Entities\Metadatum** |  |
+| Parameter                    | Type                              | Description |
+|------------------------------|-----------------------------------|-------------|
+| `$collection_new`            | **\Tainacan\Entities\Collection** |             |
+| `$collection_old`            | **\Tainacan\Entities\Collection** |             |
+| `$old_title_metadatum`       | **\Tainacan\Entities\Metadatum**  |             |
+| `$old_description_metadatum` | **\Tainacan\Entities\Metadatum**  |             |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
 ### get_data_core_metadata
 
-
-
 ```php
 private get_data_core_metadata(\Tainacan\Entities\Collection $collection): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-
-
-
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
 
 ***
 
 ### register_core_metadata
 
-
-
 ```php
 public register_core_metadata(\Tainacan\Entities\Collection $collection, bool $force = false): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-| `$force` | **bool** | if true will register core metadata even if collection is auto draft |
+| Parameter     | Type                              | Description                                                          |
+|---------------|-----------------------------------|----------------------------------------------------------------------|
+| `$collection` | **\Tainacan\Entities\Collection** |                                                                      |
+| `$force`      | **bool**                          | if true will register core metadata even if collection is auto draft |
 
+**Throws:**
 
-
+- [`ErrorException`](../../ErrorException)
+- [`Exception`](../../Exception)
 
 ***
 
 ### register_control_metadata
 
-
-
 ```php
 public register_control_metadata(\Tainacan\Entities\Collection $collection, bool $force = false): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-| `$force` | **bool** | if true will register control metadata even if collection is auto draft |
+| Parameter     | Type                              | Description                                                             |
+|---------------|-----------------------------------|-------------------------------------------------------------------------|
+| `$collection` | **\Tainacan\Entities\Collection** |                                                                         |
+| `$force`      | **bool**                          | if true will register control metadata even if collection is auto draft |
 
+**Throws:**
 
-
+- [`ErrorException`](../../ErrorException)
+- [`Exception`](../../Exception)
 
 ***
 
@@ -725,25 +493,19 @@ public register_control_metadata(\Tainacan\Entities\Collection $collection, bool
 block user from remove core metadata
 
 ```php
-public disable_delete_core_metadata( $before,  $post): mixed
+public disable_delete_core_metadata(mixed $before, mixed $post): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$before` | **** | wordpress pass a null value |
-| `$post` | **** | the post which is moving to trash |
+| Parameter | Type      | Description                       |
+|-----------|-----------|-----------------------------------|
+| `$before` | **mixed** | wordpress pass a null value       |
+| `$post`   | **mixed** | the post which is moving to trash |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -755,21 +517,15 @@ returns all core metadata from a specific collection
 public get_core_metadata(\Tainacan\Entities\Collection $collection): array|\WP_Query
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -781,25 +537,19 @@ Get the Core Title Metadatum for a collection
 public get_core_title_metadatum(\Tainacan\Entities\Collection $collection): \Tainacan\Entities\Metadatum
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
 
 **Return Value:**
 
 The Core Title Metadatum
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -811,25 +561,19 @@ Get the Core Description Metadatum for a collection
 public get_core_description_metadatum(\Tainacan\Entities\Collection $collection): \Tainacan\Entities\Metadatum
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
 
 **Return Value:**
 
 The Core Description Metadatum
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -841,25 +585,20 @@ create a metadatum entity and insert by an associative array ( attribute => valu
 public insert_array_metadatum(array $data): int
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **array** | the array of attributes to insert a metadatum |
-
+| Parameter | Type      | Description                                   |
+|-----------|-----------|-----------------------------------------------|
+| `$data`   | **array** | the array of attributes to insert a metadatum |
 
 **Return Value:**
 
 the metadatum id inserted
 
+**Throws:**
 
+- [`ErrorException`](../../ErrorException)
+- [`Exception`](../../Exception)
 
 ***
 
@@ -876,24 +615,38 @@ Each metadata is a label with the metadatum name and the value.
 If an ID, a slug or a Tainacan\Entities\Metadatum object is passed in the 'metadata' argument, it returns only one metadata, otherwise
 it returns all metadata
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum_id` | **int** | The ID of the metadata to fetch values from |
-| `$args` | **array&#124;string** | {<br />    Optional. Array or string of arguments.<br /><br />@type mixed $collection_idThe collection ID you want to consider or null for all collections. If a collectoin is set<br />then only values applied to items in this collection will be returned<br /><br />    @type int $numberThe number of values to return (for pagination). Default empty (unlimited)<br /><br />    @type int $offsetThe offset (for pagination). Default 0<br /><br />    @type array&amp;#124;bool $items_filterArray in the same format used in @see \Tainacan\Repositories\Items::fetch(). It will filter the results to only return values used in the items inside this criteria. If false, it will return all values, even unused ones. Defatul [] (all items)<br /><br />    @type array $includeArray if ids to be included in the result. Default [] (nothing)<br /><br />    @type array $searchString to search. It will only return values that has this string. Default &#039;&#039; (nothing)<br /><br />    @type array $parent_idUsed by taxonomy metadata. The ID of the parent term to retrieve terms from. Default 0<br /><br />    @type bool $count_itemsInclude the count of items that can be found in each value (uses $items_filter as well). Default false<br /><br />    @type string   $last_termThe last term returned when using a elasticsearch for calculates the facet.<br /><br />} |
+| Parameter       | Type              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-----------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `$metadatum_id` | **int**           | The ID of the metadata to fetch values from                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `$args`         | **array\|string** | {
+    Optional. Array or string of arguments.
 
+	@type mixed		 $collection_id				The collection ID you want to consider or null for all collections. If a collectoin is set
+												then only values applied to items in this collection will be returned
+
+    @type int		 $number					The number of values to return (for pagination). Default empty (unlimited)
+
+    @type int		 $offset					The offset (for pagination). Default 0
+
+    @type array\|bool $items_filter				Array in the same format used in @see \Tainacan\Repositories\Items::fetch(). It will filter the results to only return values used in the items inside this criteria. If false, it will return all values, even unused ones. Defatul [] (all items)
+
+    @type array		 $include					Array if ids to be included in the result. Default [] (nothing)
+
+    @type array		 $search					String to search. It will only return values that has this string. Default '' (nothing)
+
+    @type array		 $parent_id					Used by taxonomy metadata. The ID of the parent term to retrieve terms from. Default 0
+
+    @type bool		 $count_items				Include the count of items that can be found in each value (uses $items_filter as well). Default false
+
+    @type string   $last_term				The last term returned when using a elasticsearch for calculates the facet.
+
+} |
 
 **Return Value:**
 
 Array with the total number of values found. The total number of pages with the current number and the results with id and label for each value. Terms also include parent, taxonomy and number of children.
-
-
 
 ***
 
@@ -904,7 +657,7 @@ It efficiently runs through all the terms and checks what terms with a given $pa
 its descendants, keeping the order they originally came.
 
 ```php
-public _process_terms_tree(mixed $tree, mixed $search_value, mixed $search_type = &#039;parent&#039;): mixed
+public _process_terms_tree(mixed $tree, mixed $search_value, mixed $search_type = 'parent'): mixed
 ```
 
 It returns an array with the term objects with the given $parent that have items considering items in its descendants. The objects are
@@ -912,21 +665,13 @@ in the same format they came, as expected by the rest of the method.
 
 This method is public only for tests purposes, it should not be used anywhere else
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$tree` | **mixed** |  |
-| `$search_value` | **mixed** |  |
-| `$search_type` | **mixed** |  |
-
-
-
+| Parameter       | Type      | Description |
+|-----------------|-----------|-------------|
+| `$tree`         | **mixed** |             |
+| `$search_value` | **mixed** |             |
+| `$search_type`  | **mixed** |             |
 
 ***
 
@@ -938,21 +683,11 @@ Stores the value of the taxonomy_id option to use on update_taxonomy_metadatum m
 private pre_update_taxonomy_metadatum(mixed $metadatum): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **mixed** |  |
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$metadatum` | **mixed** |             |
 
 ***
 
@@ -967,23 +702,15 @@ private update_taxonomy_metadatum(mixed $metadatum): void
 This is used by Taxonomies repository to update the collections_ids property of the taxonomy as
 a metadatum type taxonomy is inserted or removed
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **mixed** |  |
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$metadatum` | **mixed** |             |
 
 **Return Value:**
 
 [type]        [description]
-
-
 
 ***
 
@@ -1007,76 +734,44 @@ $metadata_repository->fetch([
 		]
 ])
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **\Tainacan\Entities\Metadatum** |  |
-
-
-
+| Parameter    | Type                             | Description |
+|--------------|----------------------------------|-------------|
+| `$metadatum` | **\Tainacan\Entities\Metadatum** |             |
 
 ***
 
 ### delete
 
-
-
 ```php
 public delete(\Tainacan\Entities\Entity $entity, mixed $permanent = true): mixed|\Tainacan\Entities\Entity
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-| `$permanent` | **mixed** | If false, sendo to trash, if true, permanently delete. Default true |
-
+| Parameter    | Type                          | Description                                                         |
+|--------------|-------------------------------|---------------------------------------------------------------------|
+| `$entity`    | **\Tainacan\Entities\Entity** |                                                                     |
+| `$permanent` | **mixed**                     | If false, sendo to trash, if true, permanently delete. Default true |
 
 **Return Value:**
 
 @see https://developer.wordpress.org/reference/functions/wp_delete_post/
 
-
-
 ***
 
 ### delete_taxonomy_metadatum
-
-
 
 ```php
 private delete_taxonomy_metadatum(mixed $metadatum): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadatum` | **mixed** |  |
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$metadatum` | **mixed** |             |
 
 ***
 
@@ -1088,21 +783,11 @@ When a private taxonomy is saved, check if there are any public metadata and set
 public hook_taxonomies_saved_as_private(\Tainacan\Entities\Taxonomy $taxonomy): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$taxonomy` | **\Tainacan\Entities\Taxonomy** |  |
-
-
-
+| Parameter   | Type                            | Description |
+|-------------|---------------------------------|-------------|
+| `$taxonomy` | **\Tainacan\Entities\Taxonomy** |             |
 
 ***
 
@@ -1114,21 +799,11 @@ When a taxonomy is saved disabling allow_insert. All related metadata should set
 public hook_taxonomies_saved_not_allow_insert_new_terms(\Tainacan\Entities\Taxonomy $taxonomy): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$taxonomy` | **\Tainacan\Entities\Taxonomy** |  |
-
-
-
+| Parameter   | Type                            | Description |
+|-------------|---------------------------------|-------------|
+| `$taxonomy` | **\Tainacan\Entities\Taxonomy** |             |
 
 ***
 
@@ -1140,22 +815,12 @@ Test if a metadata is enabled on collection.
 public metadata_is_enabled(\Tainacan\Entities\Collection $collection, \Tainacan\Entities\Metadatum $metadata): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **\Tainacan\Entities\Collection** |  |
-| `$metadata` | **\Tainacan\Entities\Metadatum** |  |
-
-
-
+| Parameter     | Type                              | Description |
+|---------------|-----------------------------------|-------------|
+| `$collection` | **\Tainacan\Entities\Collection** |             |
+| `$metadata`   | **\Tainacan\Entities\Metadatum**  |             |
 
 ***
 
@@ -1167,126 +832,63 @@ When a metadata is saved, if the metadata section changes, the ordering needs to
 public hook_metadata_update_order(\Tainacan\Entities\Metadatum $metadata): void
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$metadata` | **\Tainacan\Entities\Metadatum** |  |
-
-
-
+| Parameter   | Type                             | Description |
+|-------------|----------------------------------|-------------|
+| `$metadata` | **\Tainacan\Entities\Metadatum** |             |
 
 ***
 
-
 ## Inherited methods
-
 
 ### disable_logs
 
-Disable creation of logs while inerting and updating entities
+Disables creation of logs while inserting and updating entities.
 
 ```php
-public disable_logs(): mixed
+public disable_logs(): void
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### enable_logs
 
-Enable creation of logs while inserting and updating entities
-if it was disabled
+Enables creation of logs while inserting and updating entities.
 
 ```php
-public enable_logs(): mixed
+public enable_logs(): void
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_enabled_logs
 
-Get if creation of logs while inserting and updating entities are enable
+Gets whether creation of logs while inserting and updating entities is enabled.
 
 ```php
-public get_enabled_logs(): mixed
+public get_enabled_logs(): bool
 ```
 
+**Return Value:**
 
-
-
-
-
-
-
-
-
+True if logging is enabled, false otherwise.
 
 ***
 
 ### __construct
 
-Register hooks
-
 ```php
-protected __construct(): mixed
+private __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### init_objects
 
-
-
 ```php
 public init_objects(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1298,14 +900,7 @@ return properties map
 protected _get_map(): array
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
-
 **Return Value:**
 
 properties map array, format like:
@@ -1332,27 +927,13 @@ properties map array, format like:
     'validation' => v::stringType(),
 ],
 
-
-
 ***
 
 ### get_map
 
-
-
 ```php
 public get_map(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1364,49 +945,27 @@ Return repository name
 public get_name(): string
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 The repository name
-
-
 
 ***
 
 ### insert
 
-
-
 ```php
-public insert(\Tainacan\Entities\Entity $obj): \Tainacan\Entities\Entity
+public insert(\Tainacan\Entities\Entity $obj): \Tainacan\Entities\Entity|bool
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$obj` | **\Tainacan\Entities\Entity** |  |
+| Parameter | Type                          | Description |
+|-----------|-------------------------------|-------------|
+| `$obj`    | **\Tainacan\Entities\Entity** |             |
 
+**Throws:**
 
-**Return Value:**
-
-| bool
-
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -1415,56 +974,34 @@ public insert(\Tainacan\Entities\Entity $obj): \Tainacan\Entities\Entity
 Insert object property stored as postmeta into the database
 
 ```php
-public insert_metadata(\Tainacan\Entities $obj, string $prop,  $diffs): null|false
+public insert_metadata(\Tainacan\Entities $obj, string $prop, mixed $diffs): null|false
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$obj` | **\Tainacan\Entities** | The entity object |
-| `$prop` | **string** | the property name, as declared in the map of the repository |
-| `$diffs` | **** |  |
-
+| Parameter | Type                   | Description                                                 |
+|-----------|------------------------|-------------------------------------------------------------|
+| `$obj`    | **\Tainacan\Entities** | The entity object                                           |
+| `$prop`   | **string**             | the property name, as declared in the map of the repository |
+| `$diffs`  | **mixed**              |                                                             |
 
 **Return Value:**
 
 on error
 
-
-
 ***
 
 ### maybe_add_slashes
-
-
 
 ```php
 public maybe_add_slashes(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -1473,27 +1010,19 @@ public maybe_add_slashes(mixed $value): mixed
 Prepare the output for the fetch() methods.
 
 ```php
-public fetch_output(\WP_Query $WP_Query, string $output = &#039;WP_Query&#039;): array|\WP_Query
+public fetch_output(\WP_Query $WP_Query, string $output = 'WP_Query'): array|\WP_Query
 ```
 
 Possible outputs are:
 WP_Query (default) - returns the WP_Object itself
 OBJECT - return an Array of Tainacan\Entities
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$WP_Query` | **\WP_Query** |  |
-| `$output` | **string** | `WP_Query` for a single WP_Query object or `OBJECT` for an array of Tainacan\Entities |
-
-
-
+| Parameter   | Type          | Description                                                                           |
+|-------------|---------------|---------------------------------------------------------------------------------------|
+| `$WP_Query` | **\WP_Query** |                                                                                       |
+| `$output`   | **string**    | `WP_Query` for a single WP_Query object or `OBJECT` for an array of Tainacan\Entities |
 
 ***
 
@@ -1523,23 +1052,15 @@ $TainacanMetadatas->fetch(['meta_query' => [
     ]
 ]]);
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **array** | [description] |
-
+| Parameter | Type      | Description   |
+|-----------|-----------|---------------|
+| `$args`   | **array** | [description] |
 
 **Return Value:**
 
 $args new $args array with mapped properties
-
-
 
 ***
 
@@ -1551,21 +1072,11 @@ Return default properties
 public get_default_properties(array $map): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$map` | **array** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$map`    | **array** |             |
 
 ***
 
@@ -1577,26 +1088,16 @@ return the value for a mapped property from database
 public get_mapped_property(\Tainacan\Entities\Entity $entity, string $prop): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-| `$prop` | **string** | id of property |
-
+| Parameter | Type                          | Description    |
+|-----------|-------------------------------|----------------|
+| `$entity` | **\Tainacan\Entities\Entity** |                |
+| `$prop`   | **string**                    | id of property |
 
 **Return Value:**
 
 property value
-
-
 
 ***
 
@@ -1608,72 +1109,49 @@ Return array of collections db identifiers
 public static get_collections_db_identifiers(): array[]
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
 ***
 
 ### get_entity_by_post
-
-
 
 ```php
 public static get_entity_by_post(int|\WP_Post $post): \Tainacan\Entities\Entity|bool
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$post` | **int&#124;\WP_Post** | &amp;#124;Entity |
+| Parameter | Type              | Description |
+|-----------|-------------------|-------------|
+| `$post`   | **int\|\WP_Post** | \|Entity    |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
 ### get_entity_by_post_type
 
-
-
 ```php
 public static get_entity_by_post_type(string $post_type, int|\WP_Post $post): \Tainacan\Entities\Entity|bool
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$post_type` | **string** |  |
-| `$post` | **int&#124;\WP_Post** | optional post ID or WordPress post data for creation of Entity |
-
+| Parameter    | Type              | Description                                                    |
+|--------------|-------------------|----------------------------------------------------------------|
+| `$post_type` | **string**        |                                                                |
+| `$post`      | **int\|\WP_Post** | optional post ID or WordPress post data for creation of Entity |
 
 **Return Value:**
 
 the entity for post_type, with data if $post is given or false
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
@@ -1685,25 +1163,16 @@ Return Entity's Repository
 public static get_repository(\Tainacan\Entities\Entity $entity): \Tainacan\Repositories\Repository|bool
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-
+| Parameter | Type                          | Description |
+|-----------|-------------------------------|-------------|
+| `$entity` | **\Tainacan\Entities\Entity** |             |
 
 **Return Value:**
 
 return the entity Repository or false
-
-
 
 ***
 
@@ -1717,23 +1186,15 @@ public fetch_one(array $args): false|\Tainacan\Entities
 
 Note: Does not work with Item_Metadata Repository
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **array** | Query Args as expected by fetch |
-
+| Parameter | Type      | Description                     |
+|-----------|-----------|---------------------------------|
+| `$args`   | **array** | Query Args as expected by fetch |
 
 **Return Value:**
 
 The entity or false if none was found
-
-
 
 ***
 
@@ -1745,131 +1206,76 @@ Shortcut to delete($entity, false)
 public trash(\Tainacan\Entities\Entity $entity): mixed|\Tainacan\Entities\Entity
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-
+| Parameter | Type                          | Description |
+|-----------|-------------------------------|-------------|
+| `$entity` | **\Tainacan\Entities\Entity** |             |
 
 **Return Value:**
 
 @see https://developer.wordpress.org/reference/functions/wp_delete_post/
-
-
 
 ***
 
 ### delete
 
-
-
 ```php
 public delete(\Tainacan\Entities\Entity $entity, bool $permanent = true): mixed|\Tainacan\Entities\Entity
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-| `$permanent` | **bool** | If false, sendo to trash, if true, permanently delete. Default true |
-
+| Parameter    | Type                          | Description                                                         |
+|--------------|-------------------------------|---------------------------------------------------------------------|
+| `$entity`    | **\Tainacan\Entities\Entity** |                                                                     |
+| `$permanent` | **bool**                      | If false, sendo to trash, if true, permanently delete. Default true |
 
 **Return Value:**
 
 @see https://developer.wordpress.org/reference/functions/wp_delete_post/
 
-
-
 ***
 
 ### fetch
 
-
-
 ```php
-public fetch( $args, mixed $output = null): mixed
+public fetch(mixed $args, mixed $output = null): mixed
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **** |  |
-| `$output` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$args`   | **mixed** |             |
+| `$output` | **mixed** |             |
 
 ***
 
 ### update
 
-
-
 ```php
-public update( $object, mixed $new_values = null): mixed
+public update(mixed $object, mixed $new_values = null): mixed
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$object` | **** |  |
-| `$new_values` | **mixed** |  |
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$object`     | **mixed** |             |
+| `$new_values` | **mixed** |             |
 
 ***
 
 ### register_post_type
 
-
-
 ```php
 public register_post_type(): mixed
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
-
-
-
 ***
 
 ### can_edit
@@ -1880,22 +1286,16 @@ Check if $user can edit/create a entity
 public can_edit(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-| `$user` | **int&#124;\WP_User&#124;null** | default is null for the current user |
+| Parameter | Type                          | Description                          |
+|-----------|-------------------------------|--------------------------------------|
+| `$entity` | **\Tainacan\Entities\Entity** |                                      |
+| `$user`   | **int\|\WP_User\|null**       | default is null for the current user |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -1907,22 +1307,16 @@ Check if $user can read the entity
 public can_read(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-| `$user` | **int&#124;\WP_User&#124;null** | default is null for the current user |
+| Parameter | Type                          | Description                          |
+|-----------|-------------------------------|--------------------------------------|
+| `$entity` | **\Tainacan\Entities\Entity** |                                      |
+| `$user`   | **int\|\WP_User\|null**       | default is null for the current user |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -1934,22 +1328,16 @@ Check if $user can delete the entity
 public can_delete(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-| `$user` | **int&#124;\WP_User&#124;null** | default is null for the current user |
+| Parameter | Type                          | Description                          |
+|-----------|-------------------------------|--------------------------------------|
+| `$entity` | **\Tainacan\Entities\Entity** |                                      |
+| `$user`   | **int\|\WP_User\|null**       | default is null for the current user |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -1961,22 +1349,16 @@ Check if $user can publish entity
 public can_publish(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$entity` | **\Tainacan\Entities\Entity** |  |
-| `$user` | **int&#124;\WP_User&#124;null** | default is null for the current user |
+| Parameter | Type                          | Description                          |
+|-----------|-------------------------------|--------------------------------------|
+| `$entity` | **\Tainacan\Entities\Entity** |                                      |
+| `$user`   | **int\|\WP_User\|null**       | default is null for the current user |
 
+**Throws:**
 
-
+- [`Exception`](../../Exception)
 
 ***
 
@@ -1985,53 +1367,15 @@ public can_publish(\Tainacan\Entities\Entity $entity, int|\WP_User|null $user = 
 Removes duplicates from multidimensional array
 
 ```php
-public unique_multidimensional_array( $array,  $key): array
+public unique_multidimensional_array(mixed $array, mixed $key): array
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$array` | **** |  |
-| `$key` | **** |  |
-
-
-
-
-***
-
-### insert_thumbnail
-
-Inserts or update thumbnail for items and collections and return an array
-with old thumbnail and new thumbnail
-
-```php
-private insert_thumbnail( $obj,  $diffs): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$obj` | **** |  |
-| `$diffs` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$array`  | **mixed** |             |
+| `$key`    | **mixed** |             |
 
 ***
 
@@ -2043,26 +1387,16 @@ Get IDs for all children, grand children till the depth parameter is reached
 public get_descendants_ids(int|\Tainacan\Entities\Entity $id, bool|int $depth = false): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$id` | **int&#124;\Tainacan\Entities\Entity** | The Entity ID or object |
-| `$depth` | **bool&#124;int** | The maximum depth to llok for descendants. default is false = no limit |
-
+| Parameter | Type                               | Description                                                            |
+|-----------|------------------------------------|------------------------------------------------------------------------|
+| `$id`     | **int\|\Tainacan\Entities\Entity** | The Entity ID or object                                                |
+| `$depth`  | **bool\|int**                      | The maximum depth to llok for descendants. default is false = no limit |
 
 **Return Value:**
 
 Array of IDs
-
-
 
 ***
 
@@ -2074,48 +1408,31 @@ Get the capabilities list for the post type of the entity
 public get_capabilities(): object
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Object with all the capabilities as member variables.
-
-
 
 ***
 
 ### sanitize_value
 
-
-
 ```php
 protected sanitize_value(mixed $content): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$content` | **mixed** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$content` | **mixed** |             |
 
 ***
 
+### get_instance
 
+```php
+public static get_instance(): mixed
+```
+
+* This method is **static**.
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

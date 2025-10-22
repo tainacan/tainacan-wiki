@@ -16,7 +16,8 @@ Ao instalar o Tainacan, porém, novas funções de usuário surgem. Vejamos a se
 
 Note que **as funções de usuário no Tainacan não garantem nenhum dos privilégios que podem ser necessários para se mexer no restante do conteúdo do WordPress**. Dessa maneira, é possível ter um usuário gestor do seu repositório que não interfira no conteúdo do blog. 
 
-?> O contrário porém, depende do nível. Enquanto o *Administrador no Tainacan* não tem nenhuma permissão sobre o painel administrativo do WordPress por padrão, o  *Administrador do WordPress* tem todas as permissões que o *Administrador no Tainacan*, além das suas próprias. O *Editor do WordPress* também possui todas as permissões que o *Administrador no Tainacan* possui. Por outro lado, o *Autor no Tainacan* tem por padrão o mesmo nível de permissão que um *Assinante do WordPress* no painel administrativo do WordPress.
+> [!NOTE]
+> O contrário porém, depende do nível. Enquanto o *Administrador no Tainacan* não tem nenhuma permissão sobre o painel administrativo do WordPress por padrão, o  *Administrador do WordPress* tem todas as permissões que o *Administrador no Tainacan*, além das suas próprias. O *Editor do WordPress* também possui todas as permissões que o *Administrador no Tainacan* possui. Por outro lado, o *Autor no Tainacan* tem por padrão o mesmo nível de permissão que um *Assinante do WordPress* no painel administrativo do WordPress.
 
 Vamos compreender algumas situações que podem ser desejáveis e qual o melhor tipo de função que pode ser atribuída para um usuário:
 
@@ -32,3 +33,4 @@ A seguir, entenda melhor:
 * As [Permissões do Tainacan](/pt-br/capabilities.md)
 * Como [Gerenciar Funções de Usuários](/pt-br/manage-user-roles.md)
 * Como [Gerenciar Permissões Específicas](/pt-br/manage-specific-capabilities.md) em certas coleções
+* Como [Alterar aspectos da aparência do admin](/pt-br/admin-appearance.md) por função de usuário

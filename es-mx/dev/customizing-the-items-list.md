@@ -47,7 +47,7 @@ Como vimos en nuestra introducción de [creación de temas compatibles](/es-mx/d
 | `$hide_hide_filters_button`                  | `bool`      | `false`      | Oculta el botón responsable de colapsar la barra lateral de filtros en el escritorio                       |   |
 | `$hide_search`                               | `bool`      | `false`      | Oculta la barra de búsqueda completa, incluyendo el enlace de búsqueda avanzada                                   |   |
 | `$hide_advanced_search`                      | `bool`      | `false`      | Oculta sólo el enlace de búsqueda avanzada.                                                             |   |
-| `$hide_displayed_metadata_dropdown`          | `bool`      | `false`      | Oculta el desplegable "Metadatos mostrados" incluso si los modos de vista actuales lo permiten                |   |
+| `$hide_displayed_metadata_button`          | `bool`      | `false`      | Oculta el desplegable "Metadatos mostrados" incluso si los modos de vista actuales lo permiten                |   |
 | `$hide_sorting_area`                         | `bool`      | `false`      | Oculta completamente todos los controles de ordenación                                                           |   |
 | `$hide_sort_by_button`                       | `bool`      | `false`      | Oculta el botón donde el usuario puede seleccionar los metadatos para ordenar por elementos (mantiene la dirección de ordenación) |   |
 | `$hide_exposers_button`                      | `bool`      | `false`      | Oculta el botón "Ver como...", también conocido como modal Expositores                                            |   |
@@ -115,7 +115,8 @@ Además, puedes usar variables css para sobreescribir las propias variables CSS 
 
 ```
 
-?> Si desea ver un enfoque más "visual" de estas variables en juego, consulte el [Bloque de búsqueda por aspectos](/es-mx/blocks-items#busqueda-por-aspectos) que permite ajustar la mayoría de ellas en el control de configuración del bloque.
+> [!NOTE]
+> Si desea ver un enfoque más "visual" de estas variables en juego, consulte el [Bloque de búsqueda por aspectos](/es-mx/blocks-items#busqueda-por-aspectos) que permite ajustar la mayoría de ellas en el control de configuración del bloque.
 
 ## Personalización más avanzada
 

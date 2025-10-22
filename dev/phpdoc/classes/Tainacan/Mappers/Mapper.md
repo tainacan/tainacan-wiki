@@ -1,91 +1,50 @@
-***
-
 # Mapper
 
 
-
-
+***
 
 * Full name: `\Tainacan\Mappers\Mapper`
 * This class is an **Abstract class**
 
-
-
 ## Properties
 
-
 ### slug
-
-
 
 ```php
 public $slug
 ```
 
-
-
-
-
-
 ***
 
 ### name
-
-
 
 ```php
 public $name
 ```
 
-
-
-
-
-
 ***
 
 ### allow_extra_metadata
-
-
 
 ```php
 public $allow_extra_metadata
 ```
 
-
-
-
-
-
 ***
 
 ### context_url
-
-
 
 ```php
 public $context_url
 ```
 
-
-
-
-
-
 ***
 
 ### type
 
-
-
 ```php
 public $type
 ```
-
-
-
-
-
 
 ***
 
@@ -112,93 +71,47 @@ array of supported metadata, false for not validade the list format:
 public array $metadata
 ```
 
-
-
-
-
-
 ***
 
 ### prefix
-
-
 
 ```php
 public $prefix
 ```
 
-
-
-
-
-
 ***
 
 ### sufix
-
-
 
 ```php
 public $sufix
 ```
 
-
-
-
-
-
 ***
 
 ### header
-
-
 
 ```php
 public $header
 ```
 
-
-
-
-
-
 ***
 
 ### show_ui
-
-
 
 ```php
 public $show_ui
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
 
-
 ### _toArray
-
-
 
 ```php
 public _toArray(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -212,26 +125,22 @@ public get_url(string $meta_slug): string
 
 Basically it identifies the property prefix and replace it with the URL of that prefix
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter    | Type       | Description                                                         |
+|--------------|------------|---------------------------------------------------------------------|
 | `$meta_slug` | **string** | The slug of the metadata present in this mapper to get the URL from |
-
 
 **Return Value:**
 
 The semantic URL for this metadata. Empty string in case of failure
 
-
-
 ***
 
+### __construct
+
+```php
+public __construct(): mixed
+```
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

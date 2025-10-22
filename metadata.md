@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Metadados" 
-		src="/_assets/images/icon_metadata.png"
-		width="42"
-		height="42">
-</div>
-
 # Metadados
 
 No Tainacan, os _“itens”_ são organizados por meio de _“coleções”_ e, cada _“coleção”_, pode ter _“metadados”_ específicos ou compartilhar _“metadados”_ entre si. Os _“metadados”_ são usados para descrever os _“itens”_, visando sua recuperação.
@@ -56,15 +48,15 @@ Novas _“coleções”_ podem ser criadas também com um modelo de “_metadado
 
 1. Faça login no WordPress com seu _“nome de usuário”_ e _“senha”_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/050.png)
 
 2. No _“painel administrativo”_, clique em _“Tainacan”_;
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/051.png)
 
 3. Clique em _“Metadados do Repositório”_;
 
-   ![Acesse o painel de controle](_assets\images\070.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/070.png)
 
 4. Para “_criar um novo metadado”_, basta clicar no _“metadado”_ e ele aparecerá por último na listagem do lado esquerdo. Você também pode usar o recurso de arrastar e soltar, que permite a _“ordenação do metadado”_ durante sua criação.
 
@@ -75,29 +67,29 @@ Novas _“coleções”_ podem ser criadas também com um modelo de “_metadado
 
 1. Faça login no WordPress com seu _“nome de usuário”_ e _“senha”_;
 
-   ![Acesse o painel de controle](_assets\images\050.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/050.png)
 
 2. No _“painel administrativo”_ clique em _“Tainacan”;_
 
-   ![Acesse o painel de controle](_assets\images\051.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/051.png)
 
 3. Crie uma _“coleção”_ como apresentado no tópico "_Criar Coleções_";
 
 4. Acesse a _“coleção”_ criada e clique em _“Metadados”;_
 
-   ![Acesse o painel de controle](_assets\images\064.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/064.png)
 
 5. Para _“criar um novo metadado”_, basta clicar no _“metadado”_ e ele aparecerá por último na listagem do lado esquerdo. Você também pode usar o recurso de arrastar e soltar, que permite a _“ordenação do metadado”_ durante sua criação. Consulte[ ](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados)[Tipos de metadados](https://tainacan.github.io/tainacan-wiki/#/pt-br/metadata?id=tipos-de-metadados) para saber o _“metadado”_ mais adequado para cada tipo de informação;
 
 6. Cada _“metadado”_ criado tem um conjunto de configurações e funções individuais para configuração. Abaixo, descrevemos as funções gerais que podem ser configuradas em praticamente todos os _“metadados”_. Consulte a área de metadados para aprender a usar configurações específicas (linkar);
 
-   ![Acesse o painel de controle](_assets\images\071.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/071.png)
 
    **“Nome”**: Nome do _“Metadado”_, Por exemplo: _“Material do item”_, _“Estado de conservação”_, e etc.;
 
    **“Descrição”**: Breve descrição, útil para descrever ou explicar como o _“metadado”_ deve ser preenchido. A descrição pode ser visualizada passando o cursor por sobre o ponto de interrogação, que fica ao lado do _“metadado”_, durante o preenchimento;
 
-   ![Acesse o painel de controle](_assets\images\descricao_metadado.png)
+   ![Acesse o painel de controle](pt-br/_assets/images/descricao_metadado.png)
 
    **“Placeholder (espaço reservado)”**: Campo usado por _metadados_ com campo de texto para dar uma curta instrução de preenchimento. Por exemplo: _"Digite aqui o nome completo..."_.
 
@@ -137,19 +129,19 @@ A seguir, descrevemos cada um dos _“tipos de metadados”_ disponíveis e suas
 
 Para _“metadados”_ de textos curtos e livres. Não permite a inserção de parágrafos;
 
-![Acesse o painel de controle](_assets\images\066.png)
+![Acesse o painel de controle](pt-br/_assets/images/066.png)
 
 ### Área de Texto
 
 Para _“metadados”_ de textos curtos e livres. Permite a inserção de parágrafos;
 
-![Acesse o painel de controle](_assets\images\067.png)
+![Acesse o painel de controle](pt-br/_assets/images/067.png)
 
 ### Data
 
 Para _“metadados”_ de datas completas no formato _“DD/MM/AAAA”_. Caso não tenha a data completa, sugerimos escolher outros campos para a inserção de datas, tais como _“numérico”_ e _“texto curto”_. Este _“metadado”_ permite a recuperação de _“itens”_ por intervalos de tempo em dois tipos de filtros. Acesse Filtros disponíveis para cada Tipo de Metadado para saber mais;
 
-![Acesse o painel de controle](_assets\images\076.png)
+![Acesse o painel de controle](pt-br/_assets/images/076.png)
 
 ### Numérico
 
@@ -191,7 +183,7 @@ Para _“metadados”_ que possuem um pequeno conjunto de termos controlados. Di
 
 4.Escolha o tipo de entrada de informações durante o preenchimento dos valores no _“metadado”_;
 
-![Acesse o painel de controle](_assets\images\077.png)
+![Acesse o painel de controle](pt-br/_assets/images/077.png)
 
 ​■**Entrada do tipo** **“Tag input”**:
 
@@ -207,17 +199,17 @@ Este tipo de entrada ajuda o usuário a saber quais são os termos disponíveis 
 
 5.Marque a opção _“Lista de opções sempre visível”_ se você está exibindo uma lista de caixa de seleção ou entrada de rádio e deseja que, durante o preenchimento, a lista de opções esteja sempre visível. Esta opção só está disponível para a entrada do tipo _“Checkbox”;_
 
-![Acesse o painel de controle](_assets\images\080.png)
+![Acesse o painel de controle](pt-br/_assets/images/080.png)
 
 6.Se necessário, habilite _“Permitir termos novos”_ para autorizar que novos termos de _“Taxonomia”_ sejam criados durante o envio de _“itens”_.
 
-![Acesse o painel de controle](_assets\images\081.png)
+![Acesse o painel de controle](pt-br/_assets/images/081.png)
 
 ■**“Link filtrado para a coleção”**
 
 Os termos de _“Taxonomia”_ se transformam em itens na página do _“Item”_. Isto dá ao usuário a possibilidade de visitar uma faceta ou recorte do acervo. Por exemplo: em uma ficha de uma moeda de ouro, ao clicar no link referente ao termo _"ouro"_ o visitante terá acesso a todos os _“itens”_ que foram classificados com o mesmo material. Como uma _“Taxonomia”_ pode ser compartilhada entre diferentes _“coleções”_ no Tainacan, você pode configurar se o link do _“item”_ vai dar acesso a itens de outras coleções ou somente da coleção em que o item está inserido.
 
-![Acesse o painel de controle](_assets\images\082.png)
+![Acesse o painel de controle](pt-br/_assets/images/082.png)
 
 ### Relacionamento
 
@@ -289,21 +281,21 @@ Como detalhado na seção de criação de metadados, os _“metadados”_ podem 
 
 1. Acesse o _“painel de controle”_ do WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/050.png)
 
 2. Na barra lateral esquerda, clique em _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/051.png)
 
 3. Clique em _"Metadados de Repositório"_ (metadados que são herdados por todas as coleções);
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\085.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/085.png)
 
    !>**Atenção**: As modificações em configurações de _“metadados a nível de repositório”_ podem afetar dados já preenchidos e informações em itens que serão ou já foram criados em todo o repositório.
 
 4. Clique no _“ícone de lápis”_ à direita do _“metadado”_ que deseja editar;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\086.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/086.png)
 
 5. Ao concluir as alterações, clique em _“Salvar”_ ou clique em _“Cancelar”_ para abortar a missão;
 
@@ -313,23 +305,23 @@ Como detalhado na seção de criação de metadados, os _“metadados”_ podem 
 
 1. Acesse o _“painel de controle”_ do WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/050.png)
 
 2. Na barra lateral esquerda, clique em _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/051.png)
 
 3. Clique na _“coleção”_ que você deseja editar;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\087.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/087.png)
 
 4. Clique em _“metadados”_;
 
-![Acesse o painel de controle](/pt-br/_assets\images\088.png)
+![Acesse o painel de controle](/pt-br/_assets/images/088.png)
 
 5. Clique no _“ícone lápis”_ para editar o _“metadado”;_
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\089.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/089.png)
 
 !>**Atenção**: Não é possível alterar o _“Tipo de Metadado”_. Por exemplo, alterar um _“metadado”_ do tipo “_Texto”_ para “_Texto Longo”_, ou “_Numérico”_ para _“Data”_.
 
@@ -339,19 +331,19 @@ Excluir _“Metadados a nível de Repositório”_:
 
 1. Acesse o _“painel de controle”_ do WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/050.png)
 
 2. Na barra lateral esquerda, clique em _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/051.png)
 
 3. Clique em _"Metadados de Repositório"_ (metadados que são herdados por todas as coleções);
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\085.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/085.png)
 
 4. Clique no “_ícone de lixeira”_ à direita do _“metadado”_ que deseja excluir;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\090.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/090.png)
 
 !>**Atenção**: Ao clicar no _“ícone de lixeira”_, o metadado é excluído imediatamente. Esta operação não poderá ser desfeita. A exclusão de _“metadados a nível de repositório”_ afetam **todos** os dados já preenchidos e informações em _“itens”_ que já foram criados em todo o repositório. Antes da exclusão do _“metadado”_, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Exclua o _“metadado”_ somente se tiver certeza de que não haverá perdas graves de informação. Consulte [Registro de atividades](/pt-br/activities) para saber mais.
 
@@ -359,24 +351,24 @@ Excluir _“Metadados a nível de Repositório”_:
 
 1. Acesse o _“painel de controle”_ do WordPress;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\050.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/050.png)
 
 2. Na barra lateral esquerda, clique em _“Tainacan”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\051.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/051.png)
 
 3. Clique na _“coleção”_ que você deseja editar;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\087.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/087.png)
 
 4. Clique em _“metadados”;_
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\088.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/088.png)
 
 5. Clique no _“ícone lixeira”_ para excluir o _“metadado”_;
 
-   ![Acesse o painel de controle](/pt-br/_assets\images\091.png)
+   ![Acesse o painel de controle](/pt-br/_assets/images/091.png)
 
 !>**Atenção:** Excluir _“Metadados a nível de coleção”_ afeta as informações de todos os _“itens”_ criados nesta _“coleção”_; Na tela de edição de _“Metadados”_ (a nível de repositório ou a nível de coleção), é possível visualizar os _“metadados já criados”_ (ou herdados) na coluna à esquerda; A exclusão do _“metadado”_ implica, também, na exclusão de seus valores em todos os _“itens”_ aos quais se aplica. Antes da exclusão do _“metadado”_, recomenda-se que este seja somente desabilitado (até que haja certeza de que a exclusão não implicará na perda de informações). Para _“desabilitar um metadado”_, basta clicar no botão ao lado da _“caneta de edição”_.
 
-![Acesse o painel de controle](/pt-br/_assets\images\092.png)
+![Acesse o painel de controle](/pt-br/_assets/images/092.png)

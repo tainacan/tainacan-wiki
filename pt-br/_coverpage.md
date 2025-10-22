@@ -10,10 +10,6 @@
 - Consuma dados via uma poderosa API
 - Apresente histórias ao público usando blocos Gutenberg
 
-[Wiki em Português](/pt-br/#wiki-do-tainacan)
-[Wiki in English](/#tainacan-wiki)
-[Wiki en Español](/es-mx/#wiki-do-tainacan)
-
-<!-- background color -->
-
-![color](#ffffff)
+[Wiki em Português](/pt-br/README#wiki-do-tainacan)
+[Wiki in English](/README#tainacan-wiki)
+[Wiki en Español](/es-mx/README#wiki-de-tainacan)

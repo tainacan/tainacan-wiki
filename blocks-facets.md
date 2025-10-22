@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE] This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Facets Blocks
 
@@ -8,7 +8,7 @@ No caso de metadados tipo Taxonomia, isto ganha uma nova dimensão, já que os t
 
 Para exibir estes tipo de listagem, usam-se os blocos de faceta, que além do link para a listagem filtrada, nos mostram quantos itens aquela faceta possui.
 
-> Observe que os Blocos de Facetas são diferentes dos [Blocos de Termos](/pt-br/blocks-terms), pois nem toda faceta precisa ser de uma Taxonomia. Posso ter uma faceta que mostra por exemplo, itens por um atributo de data _Ano de Criação_. Neste caso os nomes das facetas seriam "1999", "2001", "2005"... Outra diferença importante é que nos Blocos de Termos, podemos mostrar termos que ainda não possuem nenhum item associado a ele. Já nas facetas, mostramos aquelas que já são usadas por algum item.
+> [!NOTE] Observe que os Blocos de Facetas são diferentes dos [Blocos de Termos](/pt-br/blocks-terms), pois nem toda faceta precisa ser de uma Taxonomia. Posso ter uma faceta que mostra por exemplo, itens por um atributo de data _Ano de Criação_. Neste caso os nomes das facetas seriam "1999", "2001", "2005"... Outra diferença importante é que nos Blocos de Termos, podemos mostrar termos que ainda não possuem nenhum item associado a ele. Já nas facetas, mostramos aquelas que já são usadas por algum item.
 
 Atualmente o Tainacan oferece um bloco de faceta:
 
@@ -28,11 +28,7 @@ Para começar, escolha a origem da busca por metadados. Você pode procurar tant
 
 Com as facetas carregadas, podemos realizar algumas configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Configurações do Bloco Facetas](/pt-br/_assets/images/blocks_facets_list_1.png ':size=200')
-
-</div>
+![Lista de Configurações do Bloco Facetas](/pt-br/_assets/images/blocks_facets_list_1.png ':size=200 :class=alignright')
 
 ### Configurações do Gerais das Facetas
 

@@ -16,7 +16,7 @@ Each has it's specificities, but in case you're not satisfied with them, a devel
 
 As shown in [our post for extra view modes](http://tainacan.org/2018/06/13/custom-view-modes-how-will-the-world-see-your-collection/), we've created [a sample plugin](https://wordpress.org/plugins/tainacan-extra-view-modes/) with some inspirational ideas for custom view modes, such as this one:
 
-![Image with an example of an extra view mode, showing borders around items thumbnail.](/_assets/images/Example_of_an_Extra_View_Mode.jpeg)
+![Image with an example of an extra view mode, showing borders around items thumbnail.](/_assets/images/Example_of_an_Extra_View_Mode.jpeg ':class=alignwide')
 
 We here describe the process to create such a plugin. There are two strategies:
 
@@ -25,7 +25,8 @@ We here describe the process to create such a plugin. There are two strategies:
 
 The last one is more complex, but also gives you more customization and interaction options.
 
-!> The following content can be better understood using the source code from two **sample projects that we have made [available here](https://github.com/tainacan/tainacan-extra-view-mode-sample ":ignore")**.
+> [!WARNING]
+> The following content can be better understood using the source code from two **sample projects that we have made [available here](https://github.com/tainacan/tainacan-extra-view-mode-sample ":ignore")**.
 
 ### Template Strategy
 
@@ -98,7 +99,8 @@ function tainacan_extra_viewmode_template_demo_enqueue_styles() {
 
 ?>
 
-?> /* End of file */
+> [!NOTE]
+> /* End of file */
 ```
 
 The function `tainacan_register_view_mode` is part of Tainacan's plugin. Its first parameter is a unique _slug_ that will be used to identify your view mode. Then follows an array of parameters:
@@ -120,13 +122,8 @@ The function `tainacan_register_view_mode` is part of Tainacan's plugin. Its fir
 
 The `type` parameter is one of the most relevant here. When passing a template, the file path should be provided.
 
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Enabled Metadata Dropdown.png" 
-		src="/dev/_assets/images/Enabled_Metadata_Dropdown.png"
-		width="300"
-		height="256">
-</div>
+
+![Enabled Metadata Dropdown](/_assets/images/Enabled_Metadata_Dropdown.png ':class=alignright')
 
 View modes as Cards and Grid do not allow users to choose which metadata should be displayed, but rather decide that only certain will be visible. For this kind of view mode, it is used the `dynamic_metadata` parameter as `false`.
 
@@ -285,7 +282,8 @@ window.tainacan_extra_components["view-mode-demo-2"] = ViewModeDemo2;
 
 This simple file is accessing the `window.tainacan_extra_components` and telling which is the code for the view mode component of tag `view-mode-demo-2`, so that the `Vue` instance inside the Tainacan plugin can access and register it on the client side as well.
 
-!> You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
+> [!WARNING]
+> You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
 
 The component itself is imported from the `.vue` file, that we show bellow:
 

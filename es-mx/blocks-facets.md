@@ -24,11 +24,7 @@ Para empezar, elija la fuente de la búsqueda de metadatos. Puede buscar metadat
 
 Con los aspectos cargados, podemos realizar algunos ajustes que estarán disponibles en el panel lateral cuando tengamos el bloque activo.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de ajustes del bloque de aspectos](/_assets/images/blocks_facets_list_1.png ":size=200")
-
-</div>
+![Lista de ajustes del bloque de aspectos](/_assets/images/blocks_facets_list_1.png ':size=220 :class=alignright')
 
 ### Configuración general de los aspectos
 

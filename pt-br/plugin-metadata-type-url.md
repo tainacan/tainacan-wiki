@@ -16,7 +16,8 @@ Vá para a página de Metadados da sua coleção ou do seu repositório. Na sess
 
 ![Capura de tela da página de configuração do metadado](/../_assets/images/plugins_metadata_type_url_screenshot-1.png)
 
-?> Mesmo usando a opção "Forçar uso de iframe", pode não ser possível que aquela URL que você está usando não permita incorporar o conteúdo por iframe. Esta é uma configuração habilitada por autores do site que não pode ser ignorada.
+> [!NOTE]
+> Mesmo usando a opção "Forçar uso de iframe", pode não ser possível que aquela URL que você está usando não permita incorporar o conteúdo por iframe. Esta é uma configuração habilitada por autores do site que não pode ser ignorada.
 
 Com o metadado configurado e pronto, crie um novo item e insira valores de URLs nele. Você pode pré-visualizar com um botão enquanto estiver no formulário de edição do item, ou acessar a página do item para ver a prévia.
 

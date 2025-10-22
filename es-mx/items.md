@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Itens" 
-		src="/_assets/images/icon_items.png"
-		width="42"
-		height="42">
-</div>
-
-
 # Elementos
 
 Los **ítems** (llamados también “elementos”) son los contenidos reales del repositorio de Tainacan, que están representados por pinturas, películas, libros, etc. En Tainacan, los “ítems” están organizados por “colecciones” y cada **colección** tiene un conjunto de metadatos, los cuales se configuran de acuerdo a las características de los “ítems” que formarán parte de ella.
@@ -122,7 +113,7 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
 10. Para terminar la "creación de ítems", elige entre las siguientes opciones:
 
-    **● “Crear elemento”**: El “ítem” será agregado en la “colección”;
+    ● **“Crear elemento”**: El “ítem” será agregado en la “colección”;
 
     ● **“Guardar como borrador”**: El “ítem” agregado solo estará disponible en la sección “Borrador” de la “colección” (visible solo para quienes tengan permisos de administración en el repositorio);
 
@@ -180,7 +171,9 @@ El “elemento” es el conjunto formado por un documento (puede ser un “archi
 
    ![Accede al panel de control](_assets/images/Seleccionar_coleccion.png)
 
-4. Haz clic en el "icono de papelera" ubicado junto a la información del "ítem" que deseas eliminar. Puede usar "filtros" o el "campo de búsqueda" para ubicar el "ítem”:
+4. Haz clic en el "icono de papelera" ubicado junto a la información del "ítem" que deseas eliminar. 
+
+   ● Puede usar "filtros" o el "campo de búsqueda" para ubicar el "ítem”:
 
    > Nota: La “eliminación de ítems” también implica la “eliminación de documentos”, “información de metadatos” y “archivos adjuntos”.
 

@@ -1,24 +1,49 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+> [!NOTE]
+This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 # Inserir e editar arquivos
 
-Existem algumas formas de adicionar imagens aos itens do Tainacan. Esse tipo de ação pode ser realizada individualmente, adicionando a imagem direto ao item ou primeiro a biblioteca, em sequência ou em massa. Sendo que, todas as imagens utilizadas no tainacan se encontram alocadas na Biblioteca de mídia do WordPress.
+Apesar de poder ser uma URL para uma fonte externa, um item no Tainacan costuma ter seu Documento configurado como um arquivo, tal como uma imagem, vídeo, áudio ou PDF, que fica armazenado no banco de dados do WordPress. Além disso, pode se ter anexos - também arquivos - que oferecem mais informações sobre este item. Nesta página cobriremos alguns processos que podem ser feitos para submissão destes arquivos, adição em massa de itens a partir de arquivos e a edição de imagens diretamente pelo painel do _WordPress_;
+
+## Entendendo o fluxo de submissão
+
+Todas os arquivos utilizados no Tainacan também podem ser visualizados na _“Biblioteca de Mídia do WordPress”_, mas existem diferenças entre o fluxo de inserção feito pela bilioteca de mídias e pelo próprio Tainacan. A imagem a seguir nos auxilia a entender um pouco o que acontece por trás dos panos:
+
+![Diferenças no fluxo de upload de arquivos](pt-br/_assets/images/uploads.png  ':class=alignwide')
+
+Ao se enviar uma arquivo diretamente para a _“Biblioteca de Mídia do WordPress”_, este arquivo é armazenado na estrutura de pastas de uploads do _WordPress_, seguindo um sistema de pastas como o demonstrado, onde os arquivos estão organizados por data. Esta organização pode ser alterada no próprio _WordPress_ ou por uso de plugins.
+
+> [!NOTE]
+> Quando se adiciona um Documento ou Anexo para algum item do Tainacan, porém, o envio no modal de mídias que o Tainacan abre faz com que o arquivo seja armazenado em uma outra estrutura, que usa dos IDs da coleção e do item atual. Por conta disso, ao se abrir um modal de mídias a partir da tela de edição de itens do Tainacan, **só serão mostrados ali arquivos que possuem vínculo com o item e a opção de enviar novos**.
+
+Desta maneira podemos garantir por exemplo, controle de privacidade dos arquivos (que ainda pode ser melhorado como [explicado neste artigo](/pt-br/optimization#blindando-o-wordpress)). Note que os itens privados terão um início diferente: \_x\_.
+
+> [!WARNING]
+> Surge desta organização o impedimento de que mais de um arquivo seja usado por dois itens, por exemplo. Isto é importante porém, pois sem esta restrição a privacidade dos mesmos não poderia ser garantida, já que um item poderia ser público e outro privado.
+
+Portanto:
+
+1. Para um arquivo ser utilizado pelo item, ele precisa ser enviado específicamente para este item.
+2. Um arquivo enviado diretamente para a _“Biblioteca de Mídia do WordPress”_ só pode ser referenciado no item através do seu link público, porém não "
+   pertencerá" ao item;
+
+É comum o desejo de se usar arquivos enviados para a biblioteca de mídias em itens porque este espaço costuma ter acesso imediato, ao se entrar no admin do WordPress. Além disto, enviar item a item vários arquivos pode ser tedioso, porém temos dois caminhos para ser resolver isso, que mencionamos mais a frente: a [adição em massa de itens a partir de arquivos](#adição-em-massa-de-arquivos) e [importação de arquivos e anexos via CSV](/pt-br/importers#importar-arquivos-e-anexos);
 
 ## Biblioteca de mídia do WordPress
 
-Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídia do _WordPress_. As imagens podem ser incorporadas diretamente a biblioteca antes de serem adicionadas a um item. As edições nas imagens só podem ser realizadas na Biblioteca de mídia.
+Como mencionado, todos os arquivos utilizados no Tainacan ficam armazenados na _“Biblioteca de Mídia do WordPress”_, onde também podem ser feitas edições em arquivos que forem imagens.
 
 ### Inserir imagens
 
-1. Acesse o painel de controle do _WordPress_;
+1. Acesse o _“painel de controle”_ do _WordPress_;
 
-2. Na barra lateral esquerda clique em `Mídia` e então em `Biblioteca`;
+2. Na barra lateral esquerda, clique em _“Mídia”_ e então em _“Biblioteca”_;
 
-3. Na tela da Biblioteca de mídia clique em `Adicionar nova` no canto superior esquerdo;
+3. Na tela da _“Biblioteca de mídia”_ clique em _“Adicionar nova”_ no canto superior esquerdo;
 
-4. Arraste ou selecione a imagem que se deseja adicionar.
+4. Arraste ou selecione a _“imagem”_ que deseja adicionar.
 
-   ![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-biblioteca.gif)
+   ![Inserir imagem na biblioteca](_assets/gifs/inserindo-imagens-biblioteca.gif)
 
 ### Editar imagens
 
@@ -32,15 +57,21 @@ Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídi
 
 5. Realize as edições desejadas:
 
-   - Recortar;
-   - Rotacionar para a esquerda;
-   - Rotacionar para a direita;
-   - Virar na vertical;
-   - Virar na horizontal;
-   - Redimensionar a imagem;
-   - Recorte da imagem.
+   **“Recortar”**;
 
-![Inserir imagen na biblioteca](pt-br/_assets/gifs/editando-imagens-biblioteca.gif)
+   **“Rotacionar para a esquerda”**;
+
+   **“Rotacionar para a direita”**;
+
+   **“Virar na vertical”**;
+
+   **“Virar na horizontal”**;
+
+   **“Redimensionar a imagem”**;
+
+   **“Recorte da imagem”**.
+
+![Inserir imagen na biblioteca](_assets/gifs/editando-imagens-biblioteca.gif)
 
 ---
 
@@ -48,9 +79,9 @@ Todas as imagens utilizadas no Tainacan ficam armazenadas na Biblioteca de mídi
 
 As imagens podem ser inseridas diretamente ao item, sem que antes sejam adicionadas a Biblioteca de mídia. Existem três formas de realizar essa ação:
 
-1. Inserir a imagem individualmente em cada item;
-2. Inserir imagens em sequência em um conjunto de itens;
-3. Inserir imagens em massa.
+- **Inserir a imagem individualmente em cada item;**
+- **Inserir imagens em sequência em um conjunto de itens;**
+- **Inserir imagens em massa.**
 
 A ação de inserir imagens individualmente é indicada para os casos em que existem poucos itens em que imagens serão adicionadas. A inserção de imagens em sequência é adequada para um conjunto de itens, que pode abranger de dois até todos os itens de uma mesma página. Já a inserção de imagens em massa visa abranger uma grande quantidade de itens.
 
@@ -58,75 +89,118 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
 1. Acesse o painel de controle do _WordPress_;
 
-2. Na barra lateral esquerda clique em `Tainacan`;
+   ![Acesse o painel de controle](_assets\images\050.png)
+
+2. Na barra lateral esquerda, clique em _“Tainacan”_;
+
+   ![Acesse o painel de controle](_assets\images\051.png)
 
 3. Selecione uma coleção;
 
-4. Selecione o item desejado;
+4. Selecione o _“item”_ desejado e clique em _“Editar item”_;
 
-5. Clique em `Editar item`;
+   ![Acesse o painel de controle](_assets\images\selecione_a_imagem.png)
 
-6. Clique em `Arquivo`;
+5. Clique em _“Arquivo”_;
 
-7. Selecione uma imagem que já se encontra na Biblioteca de mídia ou envie uma imagem do seu computador;
+   ![Acesse o painel de controle](_assets\images\138.png)
 
-8. Clique em `Selecionar arquivo`;
+6. Selecione uma _“imagem”_ que já se encontra na _“Biblioteca de mídia”_ ou envie uma _“imagem”_ do seu computador;
 
-   1. No rodapé da página é exibida uma barra de progresso com as informações referentes:
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/M24K-V_FmMw" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
-   ```
+7. Clique em _“Selecionar arquivo”_;
+
+   No _“rodapé da página”_ é exibida uma barra de progresso com as informações referentes:
+
    * Última vez que as alterações realizadas foram salvas.
-   ```
 
-9. No canto inferior direito da tela clique em:
-   1. `Enviar para a lixeira` para que o item seja enviado para a lixeira;
-   2. `Voltar pra rascunho` para que o item tenha seu _status_ alterado para **rascunho**;
-   3. `Atualizar` para confirmar as alterações realizadas no item;
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/Eshy6yVO8Nw" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
+   
+8. No canto inferior direito da tela clique em:
 
-![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-individualmente.gif)
+![Acesse o painel de controle](_assets\images\141.png)
+
+- **“Enviar para a lixeira”**, para que o _“item”_ seja enviado para a lixeira;
+- **“Voltar para rascunho”**, para que o _“item”_ tenha seu _status_ alterado para _“rascunho”_;
+- **“Atualizar”**, para confirmar as alterações realizadas no “item”;
 
 ### Inserir imagem em sequência
 
-1. Acesse o painel de controle do _WordPress_;
+1. Acesse o _“painel de controle”_ do WordPress;
 
-2. Na barra lateral esquerda clique em `Tainacan`;
+   ![Acesse o painel de controle](_assets\images\050.png)
 
-3. Selecione uma coleção;
+2. Na barra lateral esquerda, clique em _“Tainacan”_;
 
-4. Clique nas caixas de seleção dos itens que deseja editar;
+   ![Acesse o painel de controle](_assets\images\051.png)
 
-   - [ ] Todos os itens da página podem ser selecionados ao clicar em `Selecionar todos os itens da página`.
+3. Selecione uma _“coleção”_;
 
-5. Clique em `Ações em massa` e então em `Editar itens selecionados em sequência`;
+4. Clique nas _“caixas de seleção”_ dos _“itens”_ que deseja editar;
 
-6. Clique em `Arquivo`;
+   I. Todos os “itens” da página podem ser selecionados ao clicar em “Selecionar todos os itens da página”.
 
-7. Selecione uma imagem que já se encontra na Biblioteca de mídia ou envie uma imagem do seu computador;
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/SWJlSRaveZ4" title="YouTube video player"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
+   
+5. Clique em “Ações em massa” e então em “Editar itens selecionados em sequência”;
 
-8. Clique em `Selecionar arquivo`;
+   ![Acesse o painel de controle](_assets\images\143.png)
 
-   1. No rodapé da página é exibida uma barra de progresso com as informações referentes:
+6. Clique em “Arquivo”
 
-   - Item atual e total de itens;
-   - Última vez que as alterações realizadas foram salvas;
+   ![Acesse o painel de controle](_assets\images\138.png)
 
-9. No canto inferior direito da tela clique em:
+7. Selecione uma “imagem” que já se encontra na “Biblioteca de mídia” ou envie uma “imagem” do seu computador;
 
-   1. `Enviar para a lixeira` para que o item exibido seja enviado para a lixeira;
-   2. `Voltar pra rascunho` para que o item exibido tenha seu _status_ alterado para **rascunho**;
-   3. `Atualizar` para confirmar as alterações realizadas no item;
+8. Clique em “Selecionar arquivo”;
 
-10. Clique em `Próximo` ou `Anterior` para editar o próximo item ou voltar ao anterior;
+   I. No “rodapé da página” é exibida uma barra de progresso com as informações referentes:
 
-11. Quando todos os itens forem editados no canto inferior direito da tela clique em:
+   i. Item atual e total de itens;
 
-    1. `Concluir` para concluir e salvar as edições realizadas em todos os itens;
-    2. `Atualizar` para confirmar as alterações realizadas no item exibido;
-    3. `Salvar como rascunho` para que o item exibido tenha seu _status_ alterado para **rascunho**;
-    4. `Anterior` para voltar ao item anterior.
+   ii. Última vez que as alterações realizadas foram salvas;
 
-![Inserir imagen na biblioteca](pt-br/_assets/gifs/inserindo-imagens-em-sequencia.gif)
+   <iframe
+       width="560"
+       height="513" 
+       src="https://www.youtube.com/embed/M24K-V_FmMw"
+       frameborder="0"
+       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+       allowfullscreen>
+   </iframe>
 
-### Inserir imagem em massa
+9. No canto inferior direito da tela, clique em:
 
-> Consulte [Importando arquivos e anexos](/pt-br/importers#importar-arquivos-e-anexos) para aprender como inserir imagens em massa.
+   I. “Anterior”, para voltar ao “item” anterior;
+
+   II. “Salvar como Rascunho”, para que o “item” exibido tenha seu status alterado para “rascunho”;
+
+   III. “Atualizar”, para confirmar as alterações realizadas no “item” e ir para o próximo.
+
+   ![Acesse o painel de controle](_assets\images\144.png)
+
+### Adição em massa de arquivos
+
+> [!TIP] Consulte [Importando arquivos e anexos](/pt-br/importers#importar-arquivos-e-anexos) para aprender como inserir imagens em massa.

@@ -1,96 +1,54 @@
-***
-
 # Cli
 
 
+Handles WP-CLI command registration for Tainacan.
 
+Registers all available Tainacan WP-CLI commands including
+garbage collection, attachment management, and collection operations.
 
+***
 
 * Full name: `\Tainacan\Cli`
 
-
-
-## Properties
-
-
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
-
 ## Methods
 
+### init
 
-### get_instance
-
-
-
-```php
-public static get_instance(): mixed
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
+Initializes the CLI functionality.
 
 ```php
-private __construct(): mixed
+private init(): void
 ```
 
-
-
-
-
-
-
-
-
-
+Sets up WP-CLI command registration after WordPress loads.
 
 ***
 
 ### add_commands
 
-
+Registers all Tainacan WP-CLI commands.
 
 ```php
-public add_commands(): mixed
+public add_commands(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
+## Inherited methods
+
+### get_instance
+
+```php
+public static get_instance(): mixed
+```
+
+* This method is **static**.
+***
+
+### __construct
+
+```php
+private __construct(): mixed
+```
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

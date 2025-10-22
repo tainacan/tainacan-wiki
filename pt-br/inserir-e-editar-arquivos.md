@@ -6,15 +6,17 @@ Apesar de poder ser uma URL para uma fonte externa, um item no Tainacan costuma 
 
 Todas os arquivos utilizados no Tainacan também podem ser visualizados na _“Biblioteca de Mídia do WordPress”_, mas existem diferenças entre o fluxo de inserção feito pela bilioteca de mídias e pelo próprio Tainacan. A imagem a seguir nos auxilia a entender um pouco o que acontece por trás dos panos:
 
-![Diferenças no fluxo de upload de arquivos](_assets/images/uploads.png)
+![Diferenças no fluxo de upload de arquivos](_assets/images/uploads.png  ':class=alignwide')
 
 Ao se enviar uma arquivo diretamente para a _“Biblioteca de Mídia do WordPress”_, este arquivo é armazenado na estrutura de pastas de uploads do _WordPress_, seguindo um sistema de pastas como o demonstrado, onde os arquivos estão organizados por data. Esta organização pode ser alterada no próprio _WordPress_ ou por uso de plugins.
 
-?> Quando se adiciona um Documento ou Anexo para algum item do Tainacan, porém, o envio no modal de mídias que o Tainacan abre faz com que o arquivo seja armazenado em uma outra estrutura, que usa dos IDs da coleção e do item atual. Por conta disso, ao se abrir um modal de mídias a partir da tela de edição de itens do Tainacan, **só serão mostrados ali arquivos que possuem vínculo com o item e a opção de enviar novos**.
+> [!NOTE]
+> Quando se adiciona um Documento ou Anexo para algum item do Tainacan, porém, o envio no modal de mídias que o Tainacan abre faz com que o arquivo seja armazenado em uma outra estrutura, que usa dos IDs da coleção e do item atual. Por conta disso, ao se abrir um modal de mídias a partir da tela de edição de itens do Tainacan, **só serão mostrados ali arquivos que possuem vínculo com o item e a opção de enviar novos**.
 
 Desta maneira podemos garantir por exemplo, controle de privacidade dos arquivos (que ainda pode ser melhorado como [explicado neste artigo](/pt-br/optimization#blindando-o-wordpress)). Note que os itens privados terão um início diferente: \_x\_.
 
-!> Surge desta organização o impedimento de que mais de um arquivo seja usado por dois itens, por exemplo. Isto é importante porém, pois sem esta restrição a privacidade dos mesmos não poderia ser garantida, já que um item poderia ser público e outro privado.
+> [!WARNING]
+> Surge desta organização o impedimento de que mais de um arquivo seja usado por dois itens, por exemplo. Isto é importante porém, pois sem esta restrição a privacidade dos mesmos não poderia ser garantida, já que um item poderia ser público e outro privado.
 
 Portanto:
 
@@ -198,4 +200,4 @@ A ação de inserir imagens individualmente é indicada para os casos em que exi
 
 ### Adição em massa de arquivos
 
-> Consulte [Importando arquivos e anexos](/pt-br/importers#importar-arquivos-e-anexos) para aprender como inserir imagens em massa.
+> [!TIP] Consulte [Importando arquivos e anexos](/pt-br/importers#importar-arquivos-e-anexos) para aprender como inserir imagens em massa.

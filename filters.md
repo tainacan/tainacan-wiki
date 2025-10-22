@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Filtros" 
-		src="_assets/images/icon_filters.png"
-		width="42"
-		height="42">
-</div>
-
 # Filters
 
 For each collection you can choose which of your metadata will be used as a filter option for results in a faceted search in the collection view.
@@ -38,7 +30,8 @@ And then [configure filters](#configure-filters) at the **repository*** or **col
 * Metadata at **repository level** are represented with the repository icon
 * Metadata at **collection level** (or inherited from a collection) are represented with the collection icon
 
-!> **Warning**: The filter will cease to exist if its respective metadata is disabled or deleted. The exclusion of the filter only implies the navigability of the collection view. This operation can only be undone by administrators. (See [Activity log](/activities) for more information)
+> [!WARNING]
+> **Warning**: The filter will cease to exist if its respective metadata is disabled or deleted. The exclusion of the filter only implies the navigability of the collection view. This operation can only be undone by administrators. (See [Activity log](/activities) for more information)
 * The values filled in the metadata of each item will appear as an option for selection in each filter, according to their configured **type of metadata** settings.
 * Tainacan currently has **seven types of metadata** by default, but new sets can be developed according to the individual needs of each installation and/or added to the Tainacan core. (See the article on [Plugin Development](/dev/) for more information)
 
@@ -104,7 +97,7 @@ Each type of metadata offers different types of filters for creation, see the va
 * Multiple Selection (checkbox)
 </details>
 
-> Note: When selecting a filter type for the creation, an example screen will be displayed to illustrate the characteristics of each type of filter value input.
+> [!NOTE] Note: When selecting a filter type for the creation, an example screen will be displayed to illustrate the characteristics of each type of filter value input.
 
 
 <!-- tabs:start -->
@@ -148,21 +141,25 @@ Each type of metadata offers different types of filters for creation, see the va
 3. To edit filters at the **repository** level click on `Repository Filters':
   1. To delete, click on the **dump** icon of the desired filter;
     
-    !> Warning: Clicking on the **dump icon** the filter is deleted immediately.
+    > [!WARNING]
+> Warning: Clicking on the **dump icon** the filter is deleted immediately.
     * Metadata at collection level (or inherited from a collection) are represented with the **Collection** icon
     * Another option available for inherited filters at the **repository** or **collection level above** is to disable the desired filter (instead of exclusion)
     
-    !> Warning: the exclusion of the filter only implies in the navigability of the collection visualization. This operation can only be undone by administrators. (See [Activity log](/activities) to know more). The filter will automatically disappear if its respective metadata is disabled or deleted.
+    > [!WARNING]
+> Warning: the exclusion of the filter only implies in the navigability of the collection visualization. This operation can only be undone by administrators. (See [Activity log](/activities) to know more). The filter will automatically disappear if its respective metadata is disabled or deleted.
     * To *retrieve* the desired filter, just create the filter again.
 4. To edit filters at **collections** level select the desired collection in the `Collections` section;
   2. In the icons to the right of the upper gray bar select **Filters**;
   3. To delete, click on the **bin icon** of the desired filter;
     
-    !> **Warning**: Clicking on the **dump icon** the filter is deleted immediately.
+    > [!WARNING]
+> **Warning**: Clicking on the **dump icon** the filter is deleted immediately.
     * Metadata at collection level (or inherited from a collection) are represented with the Collection icon
     * Another option available for inherited filters at the **repository** or **collection level above** is to disable the desired filter (instead of exclusion);
     
-    !> **Warning**: the exclusion of the filter implies only in the navigability of the collection view. This operation can only be undone by administrators. (See [Activity log](/activities) for more information). The filter will automatically cease to exist if its respective metadata is disabled or deleted.
+    > [!WARNING]
+> **Warning**: the exclusion of the filter implies only in the navigability of the collection view. This operation can only be undone by administrators. (See [Activity log](/activities) for more information). The filter will automatically cease to exist if its respective metadata is disabled or deleted.
     * To *retrieve* the desired filter, just create the filter again.
 
 <!-- tabs:end -->

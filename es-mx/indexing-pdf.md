@@ -1,43 +1,42 @@
-# Indexando o conteúdo de arquivos PDFs
+# Búsqueda en PDFs
 
-?> _TODO_ Esta página está en _portugués brasileño_ solo hasta ahora. **Si puede, ayúdenos a traducirlo al _español_.**
+En la versión 0.12 hemos puesto a disposición un enfoque experimental para indexar texto de archivos en formato _“PDF”_ cargados como un documento de _“elementos”_. Esto permite a los usuarios utilizar la _“busca textual”_ para buscar dentro de documentos _“PDF”_.
 
-A partir da versão 0.12 foi adicionado, de forma experimental, a operação de indexação do conteúdo de arquivos PDFs que foram inseridos como documento principal em um item. Isso permite que os usuários pesquisem texto dentro dos PDFs.
-Como esse recurso ainda está na versão beta (experimental) e pode não funcionar em todos os ambientes ou com todos os arquivos PDF, decidimos desativar essa função por padrão.
-Mas encorajamos os nossos usuários a ativar essa nova funcionalidade para nos ajudar a melhorar e amadurecer esse recurso.
+Sin embargo, esta funcionalidad está aún en fase de desarrollo y puede no funcionar correctamente en todos los contextos, o en todos los tipos de documentos _“PDF”_. Por lo tanto, hemos decidido que, por defecto, esta función no esté activada. Sin embargo, es totalmente posible que los usuarios habiliten esta función y nos ayuden a mejorarla.
 
-## Ativação
+## Habilitación de la indexación de texto en documentos en formato PDF
 
-Para ativar o recurso, você deve editar o arquivo `wp-config.php` e adicionar a seguinte linha:
+Para activar esta función, visite su [Página de configuración de Tainacan](es-mx/settings-page.md) y cambie la opción "Contenido de PDF". O, si tiene acceso al archivo `wp-config.php`, edítelo y añada la siguiente línea:
 
 ```
 define('TAINACAN_INDEX_PDF_CONTENT', true);
 ```
 
-Quando o recurso estiver ativado, os arquivos PDF enviados a partir deste momento terão seu conteúdo indexado e pesquisável.
+Una vez activada la función, los archivos _“PDF”_ creados como documentos de los _“elementos”_, *a partir de este momento*, su contenido indexable y accesible mediante _“búsqueda textual”_.
 
-## Pesquisando
+## Búsqueda del texto indexado de documentos en formato PDF
 
-O conteúdo do PDF indexado será pesquisado sempre que você usar o recurso "pesquisa de texto", que pesquisa em todos os metadados. (Se ativo, veja [Search Engine](/dev/search-engine.md))
-Você também pode pesquisar o conteúdo dos PDFs usando a pesquisa avançada. Existe uma nova opção chamada "Documento" que pesquisará dentro do conteúdo dos arquivos PDFs indexados.
+El contenido textual de _“PDF”_  indexado se buscará a través de la función de “_Búsqueda textual de Tainacán”_, que busca en todos _“metadatos”_. Ver más en: [Mecanismo de búsqueda](/es-mx/dev/search-engine.md)
 
-## Indexando arquivos existentes
+También puede buscar solo el contenido del “PDF” usando la opción _“Búsqueda Avanzada”_. Hay una nueva opción de búsqueda llamada _“Documento”_, ue buscará directamente en el contenido indexado de los documentos _“PDF”_ cargados.
 
-Se ao habilitar o recurso já houver arquivos PDF em seu repositório sendo utilizados como documentos dos itens, é possível executar um comando para indexar todos eles. Isso é feito utilizando a ferramenta CLI do WP.
+## Indexación de documentos PDF existentes
 
-Acesse seu servidor e digite:
+Si en el momento de activar la función de indexación del contenido textual de los _“PDFs”_ ya existen documentos en formato “PDF” en su repositorio, deberá _“ejecutar un comando para indexar el contenido de los PDFs ya existentes”_. Esto puede hacerse utilizando la herramienta WPCLI (póngase en contacto con su soporte técnico si es necesario).
+
+Conéctese a su servidor y escriba:
 
 ```
 wp tainacan index-content --collection=all
 ```
 
-Ou se você deseja indexar os arquivos PDF de apenas de uma coleção em específico:
+O si desea indexar documentos PDF de una colección específica:
 
 ```
-wp tainacan index-content --collection=<id da coleção>
+wp tainacan index-content --collection=<id of collection>
 ```
 
-Para obter ajuda de como utilizar esse comando, digite:
+Ingrese lo siguiente para obtener información sobre cómo usar el comando "index-content":
 
 ```
 wp tainacan index-content --help

@@ -22,7 +22,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 ## Recursos para el desarrollo
 
-### Fundamentos del desarrollo {docsify-ignore}
+### Fundamentos del desarrollo <!-- {docsify-ignore} -->
 
 <div class="two-columns-list">
 
@@ -30,12 +30,12 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 - [Conceptos clave](/es-mx/dev/key-concepts.md) - Lo primero es lo primero. Entendamos qué es qué en Tainacan.
 - [Interiores de Tainacan](/es-mx/dev/internal-api.md) - Referencia sobre las principales clases de Tainacan y cómo utilizarlas.
 - [Ganchos de Tainacan](/es-mx/dev/hooks.md) - Amplíe o modifique diferentes secciones de código sin modificar el plugin, utilizando Acciones y Filtros, tanto en el backend como en el frontend.
-- [API de Tainacan](https://tainacan.org/api-docs/ ":ignore") - Una API Rest JSON que puede utilizar para obtener contenido de una base de datos Tainacan.
+- [API de Tainacan](https://redocly.github.io/redoc/?url=https://github.com/tainacan/tainacan-wiki/raw/master/dev/openapi.json ":ignore") - Una API Rest JSON que puede utilizar para obtener contenido de una base de datos Tainacan.
 - [Roles y capacidades](/es-mx/dev/roles-capabilities.md) - Información básica sobre privacidad de datos y niveles de acceso en Tainacan.
 
 </div>
 
-### Más sobre el desarrollo de plugins {docsify-ignore}
+### Más sobre el desarrollo de plugins <!-- {docsify-ignore} -->
 
 <div class="three-columns-list">
 
@@ -47,7 +47,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 </div>
 
-### Extensión de Plugin {docsify-ignore}
+### Extensión de Plugin <!-- {docsify-ignore} -->
 
 <div class="two-columns-list">
 
@@ -60,7 +60,7 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 
 </div>
 
-### Desarrollo o ampliación de temas {docsify-ignore}
+### Desarrollo o ampliación de temas <!-- {docsify-ignore} -->
 
 <div class="two-columns-list">
 
@@ -68,11 +68,10 @@ Esta es una lista no exhaustiva de los temas más importantes que deberías inve
 - [Plantillas personalizadas de Tainacan](/es-mx/dev/custom-templates.md) - Plantillas personalizadas para las que Tainacan añade a la jerarquía de plantillas de WordPress
 - [Personalización de la lista de artículos](/es-mx/dev/customizing-the-items-list.md) - Modificar el aspecto de la lista de artículos
 - [Creación de modos de vista adicionales](/es-mx/dev/extra-view-modes) - Cómo crear modos de vista adicionales para mostrar la lista de elementos
-- [Soporte Gutenberg para temas](/es-mx/dev/theme-gutenberg-support.md) - Detalles para ofrecer una mejor compatibilidad con el último editor de bloques de contenido
 
 </div>
 
-### Configuración y rendimiento {docsify-ignore}
+### Configuración y rendimiento <!-- {docsify-ignore} -->
 
 <div class="three-columns-list">
 

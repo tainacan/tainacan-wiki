@@ -1,32 +1,13 @@
-***
-
 # Metadata_Type_Helper
+
 
 Class MetadataTypeHelper
 
-
+***
 
 * Full name: `\Tainacan\Metadata_Types\Metadata_Type_Helper`
 
-
-
 ## Properties
-
-
-### instance
-
-
-
-```php
-private static $instance
-```
-
-
-
-* This property is **static**.
-
-
-***
 
 ### registered_metadata_type
 
@@ -36,108 +17,31 @@ Stores external metadata type available to be used in Tainacan
 private $registered_metadata_type
 ```
 
-
-
-
-
-
 ***
 
 ### Tainacan_Metadata
-
-
 
 ```php
 private $Tainacan_Metadata
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
 
-
-### get_instance
-
-
-
-```php
-public static get_instance(): mixed
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-***
-
-### __construct
-
-
-
-```php
-private __construct(): mixed
-```
-
-
-
-
-
-
-
-
-
-
-
-***
-
 ### init
-
-
 
 ```php
 private init(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### register_metadata_type_component
 
-
-
 ```php
 public register_metadata_type_component(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -149,24 +53,14 @@ Register a new Metadata Type
 public register_metadata_type(string $handle, mixed $class_name, mixed $script_path, array|string $args = []): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$handle` | **string** | name of the component. Should be unique. |
-| `$class_name` | **mixed** |  |
-| `$script_path` | **mixed** |  |
-| `$args` | **array&#124;string** |  |
-
-
-
+| Parameter      | Type              | Description                              |
+|----------------|-------------------|------------------------------------------|
+| `$handle`      | **string**        | name of the component. Should be unique. |
+| `$class_name`  | **mixed**         |                                          |
+| `$script_path` | **mixed**         |                                          |
+| `$args`        | **array\|string** |                                          |
 
 ***
 
@@ -178,19 +72,9 @@ Get a list of all registered metadata type
 public get_registered_metadata_type(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 The list of registered metadata type
-
-
 
 ***
 
@@ -202,28 +86,33 @@ Get one specific metadata type by its slug
 public get_metadata_type(string $handle): array|false
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter | Type       | Description           |
+|-----------|------------|-----------------------|
 | `$handle` | **string** | Name of the component |
-
 
 **Return Value:**
 
 The metadata type definition or false if it is not found
 
-
-
 ***
 
+## Inherited methods
+
+### get_instance
+
+```php
+public static get_instance(): mixed
+```
+
+* This method is **static**.
+***
+
+### __construct
+
+```php
+private __construct(): mixed
+```
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

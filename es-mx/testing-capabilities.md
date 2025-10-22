@@ -144,7 +144,8 @@ Los permisos y la gestión de roles de usuario son algunas de las característic
 
 - [x] Confirme que puede ordenar y editar los metadatos, pero no borrarlos;
 
-?> Continúe describiendo la prueba.
+> [!NOTE]
+> Continúe describiendo la prueba.
 
 ## Establecer permisos específicos en una colección
 
@@ -158,4 +159,5 @@ Los permisos y la gestión de roles de usuario son algunas de las característic
 
 - [x] Compruebe que el permiso ha sido modificado;
 
-?> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).
+> [!NOTE]
+> Los problemas encontrados pueden ser reportados como un [issue en GitHub](https://github.com/tainacan/tainacan/issues ":ignore") o en el [foro de la comunidad de Tainacan](https://tainacan.discourse.group ":ignore"). Algunos errores comunes, como las páginas que no se cargan, pueden describirse mejor utilizando [sugerencias de la página de preguntas frecuentes](/es-mx/faq.md#creo-que-encontré-un-error-qué-tengo-que-hacer).

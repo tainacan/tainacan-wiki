@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Icono de Exportadores" 
-		src="_assets/images/icon_exporters.png"
-		width="40"
-		height="40">
-</div>
-
-
 # Exportadores
 
 Con Tainacan, puedes exportar tanto las colecciones como las Taxonomías (Vocabularios Controlados) en un archivo de hoja de cálculo CSV.

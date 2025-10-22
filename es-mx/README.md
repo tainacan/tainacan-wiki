@@ -1,8 +1,8 @@
-# Tainacan Wiki en español
+# Wiki de Tainacan
 
 **Hola y bienvenido a la Wiki!!** Este es el hogar de la documentacion para Tainacan una traduccion al español.
 
-> Tainacan es una plataforma de repositorio de código abierto, poderosa y flexible para _WordPress_. Administra y publica tus colecciones digitales tan fácilmente como publicar una publicación en su blog mientras tiene todas las herramientas de la plataforma de repositorio profesional disponibles.
+> *Tainacan es una plataforma de repositorio de código abierto, poderosa y flexible para _WordPress_. Administra y publica tus colecciones digitales tan fácilmente como publicar una publicación en su blog mientras tiene todas las herramientas de la plataforma de repositorio profesional disponibles.*
 
 Puede navegar o buscar temas específicos en el menú lateral. Sigue algunos enlaces relevantes:
 <br>

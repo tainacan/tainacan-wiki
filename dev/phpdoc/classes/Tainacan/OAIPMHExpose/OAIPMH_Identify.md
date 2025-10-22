@@ -1,256 +1,134 @@
-***
-
 # OAIPMH_Identify
+
 
 Support Dublin Core Mapping
 http://purl.org/dc/elements/1.1/
 
-
+***
 
 * Full name: `\Tainacan\OAIPMHExpose\OAIPMH_Identify`
-* Parent class: [`\Tainacan\OAIPMHExpose\OAIPMH_Expose`](./OAIPMH_Expose.md)
-
-
+* Parent class: [`\Tainacan\OAIPMHExpose\OAIPMH_Expose`](./OAIPMH_Expose)
 
 ## Properties
 
-
 ### working_node
-
-
 
 ```php
 protected $working_node
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
 
-
 ### identify
 
-
-
 ```php
-public identify( $data): mixed
+public identify(mixed $data): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$data`   | **mixed** |             |
 
 ***
 
-
 ## Inherited methods
 
-
 ### config
-
-
 
 ```php
 public config(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### is_valid_uri
 
-
-
 ```php
-public is_valid_uri( $url): bool
+public is_valid_uri(mixed $url): bool
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$url` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$url`    | **mixed** |             |
 
 ***
 
 ### is_valid_attrb
 
-
-
 ```php
-public is_valid_attrb( $attrb): false|int
+public is_valid_attrb(mixed $attrb): false|int
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attrb` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$attrb`  | **mixed** |             |
 
 ***
 
 ### formatDatestamp
 
-
-
 ```php
-public formatDatestamp( $datestamp): false|string
+public formatDatestamp(mixed $datestamp): false|string
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$datestamp` | **** |  |
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$datestamp` | **mixed** |             |
 
 ***
 
 ### checkDateFormat
 
-
-
 ```php
-public checkDateFormat( $date): bool|false|string
+public checkDateFormat(mixed $date): bool|false|string
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$date` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$date`   | **mixed** |             |
 
 ***
 
 ### prepare_set_names
 
-
-
 ```php
 public prepare_set_names(): array
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### oai_exit
 
-
-
 ```php
-public oai_exit( $args,  $errors): mixed
+public oai_exit(mixed $args, mixed $errors): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$args` | **** |  |
-| `$errors` | **** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$args`   | **mixed** |             |
+| `$errors` | **mixed** |             |
 
 ***
 
 ### create_token_dir
 
-
-
 ```php
 protected create_token_dir(): bool|string
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -261,16 +139,6 @@ Generate a string based on the current Unix timestamp in microseconds for creati
 ```php
 public get_token(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -285,23 +153,15 @@ public createResumToken(mixed $cursor, mixed $from, mixed $until, mixed $sets, m
 It has three parts which is separated by '#': cursor, extension of query, metadataPrefix.
 Called by listrecords.php.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$cursor` | **mixed** |  |
-| `$from` | **mixed** |  |
-| `$until` | **mixed** |  |
-| `$sets` | **mixed** |  |
-| `$metadataPrefix` | **mixed** |  |
-
-
-
+| Parameter         | Type      | Description |
+|-------------------|-----------|-------------|
+| `$cursor`         | **mixed** |             |
+| `$from`           | **mixed** |             |
+| `$until`          | **mixed** |             |
+| `$sets`           | **mixed** |             |
+| `$metadataPrefix` | **mixed** |             |
 
 ***
 
@@ -313,21 +173,11 @@ Read a saved ResumToken
 public readResumToken(mixed $resumptionToken): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$resumptionToken` | **mixed** |  |
-
-
-
+| Parameter          | Type      | Description |
+|--------------------|-----------|-------------|
+| `$resumptionToken` | **mixed** |             |
 
 ***
 
@@ -336,26 +186,16 @@ public readResumToken(mixed $resumptionToken): mixed
 utility funciton to mapping error codes to readable messages
 
 ```php
-public oai_error(mixed $code, mixed $argument = &#039;&#039;, mixed $value = &#039;&#039;): mixed
+public oai_error(mixed $code, mixed $argument = '', mixed $value = ''): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$code` | **mixed** |  |
-| `$argument` | **mixed** |  |
-| `$value` | **mixed** |  |
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$code`     | **mixed** |             |
+| `$argument` | **mixed** |             |
+| `$value`    | **mixed** |             |
 
 ***
 
@@ -367,24 +207,10 @@ function get_metadata_formats
 public get_metadata_formats(int $item_id = null): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_id` | **int** |  |
-
-
-
+| Parameter  | Type    | Description |
+|------------|---------|-------------|
+| `$item_id` | **int** |             |
 
 ***
-
-
-***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

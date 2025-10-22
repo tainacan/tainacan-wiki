@@ -187,13 +187,13 @@ Esto se puede hacer usando los siguientes comandos:
 
 Para los directorios:
 
-```shell
+```terminal
 find /caminho/para/a/pasta/do/wordpress/ -type d -exec chmod 755 {} \;
 ```
 
 Para los archivos:
 
-```shell
+```terminal
 find /caminho/para/a/pasta/do/wordpress/ -type f -exec chmod 644 {} \;
 ```
 

@@ -1,128 +1,72 @@
-***
-
 # Exposers_Handler
+
 
 Load exposers classes
 
-
+***
 
 * Full name: `\Tainacan\Exposers_Handler`
 
-
 ## Constants
 
-| Constant | Visibility | Type | Value |
-|:---------|:-----------|:-----|:------|
-|`TYPE_PARAM`|public| |&#039;exposer&#039;|
+| Constant     | Visibility | Type | Value     |
+|--------------|------------|------|-----------|
+| `TYPE_PARAM` | public     |      | 'exposer' |
 
 ## Properties
 
-
 ### exposers
-
-
 
 ```php
 protected $exposers
 ```
 
-
-
-
-
-
 ***
 
 ### instance
-
-
 
 ```php
 private static $instance
 ```
 
-
-
 * This property is **static**.
-
 
 ***
 
 ### request
 
-
-
 ```php
 private static $request
 ```
 
-
-
 * This property is **static**.
-
 
 ***
 
 ## Methods
 
-
 ### get_instance
-
-
 
 ```php
 public static get_instance(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
 ***
 
 ### __construct
-
-
 
 ```php
 public __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### init
 
-
-
 ```php
 public init(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -131,24 +75,14 @@ public init(): mixed
 register exposers type
 
 ```php
-public register_exposer( $class_name): mixed
+public register_exposer(mixed $class_name): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the instance |
-
-
-
+| Parameter     | Type      | Description                                     |
+|---------------|-----------|-------------------------------------------------|
+| `$class_name` | **mixed** | string \| object The class name or the instance |
 
 ***
 
@@ -157,24 +91,14 @@ public register_exposer( $class_name): mixed
 unregister exposers type
 
 ```php
-public unregister_exposer( $class_name): mixed
+public unregister_exposer(mixed $class_name): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the instance |
-
-
-
+| Parameter     | Type      | Description                                     |
+|---------------|-----------|-------------------------------------------------|
+| `$class_name` | **mixed** | string \| object The class name or the instance |
 
 ***
 
@@ -183,26 +107,16 @@ public unregister_exposer( $class_name): mixed
 Return namespaced class name
 
 ```php
-public check_class_name(string $class_name, bool $root = false, string $prefix = &#039;Tainacan\Exposer\&#039;): string
+public check_class_name(string $class_name, bool $root = false, string $prefix = 'TainacanExposer\'): string
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **string** |  |
-| `$root` | **bool** |  |
-| `$prefix` | **string** |  |
-
-
-
+| Parameter     | Type       | Description |
+|---------------|------------|-------------|
+| `$class_name` | **string** |             |
+| `$root`       | **bool**   |             |
+| `$prefix`     | **string** |             |
 
 ***
 
@@ -214,21 +128,11 @@ check if is a tainacan request
 public is_tainacan_request(\WP_REST_Request $request): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -240,21 +144,12 @@ check if query came from url
 public static request_has_url_param(\WP_REST_Request $request): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 ***
 
@@ -266,23 +161,13 @@ adapt request response to exposer type
 public rest_request_after_callbacks(\WP_REST_Response $response, \WP_REST_Server $handler, \WP_REST_Request $request): \WP_REST_Response
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$response` | **\WP_REST_Response** |  |
-| `$handler` | **\WP_REST_Server** |  |
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter   | Type                  | Description |
+|-------------|-----------------------|-------------|
+| `$response` | **\WP_REST_Response** |             |
+| `$handler`  | **\WP_REST_Server**   |             |
+| `$request`  | **\WP_REST_Request**  |             |
 
 ***
 
@@ -294,21 +179,11 @@ Return if exposer is registered
 public exposer_exists(string $exposer): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$exposer` | **string** |  |
-
-
-
+| Parameter  | Type       | Description |
+|------------|------------|-------------|
+| `$exposer` | **string** |             |
 
 ***
 
@@ -320,25 +195,16 @@ Return Exposer if request has exposer, false otherwise
 public static request_has_exposer(\WP_REST_Request $request): \Tainacan\Exposers\Exposer|bool
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 **Return Value:**
 
 false
-
-
 
 ***
 
@@ -350,25 +216,15 @@ Return list of registered exposers
 public get_exposers(string $output = ARRAY_N): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter | Type       | Description                      |
+|-----------|------------|----------------------------------|
 | `$output` | **string** | output format, ARRAY_N or OBJECT |
-
 
 **Return Value:**
 
 of slug or array of \Tainacan\Exposers\Exposer
-
-
 
 ***
 
@@ -383,49 +239,26 @@ public filter_check_items_request(mixed $response, mixed $request): mixed
 
 If it does not, return 404
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$response` | **mixed** |  |
-| `$request` | **mixed** |  |
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$response` | **mixed** |             |
+| `$request`  | **mixed** |             |
 
 ***
 
 ### get_exposer_urls
 
-
-
 ```php
-public static get_exposer_urls(string $base_url = &#039;&#039;): string|string[][]
+public static get_exposer_urls(string $base_url = ''): string|string[][]
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter   | Type       | Description                            |
+|-------------|------------|----------------------------------------|
 | `$base_url` | **string** | url base for exposer parameters append |
 
-
-
-
 ***
-
-
-***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

@@ -47,7 +47,7 @@ As seen in our introdution of [introduction about creating compatible theme](/de
 | `$hide_hide_filters_button`                  | `bool`      | `false`      | Hides the button resonsible for collpasing filters sidebar on desktop                           |   |
 | `$hide_search`                               | `bool`      | `false`      | Hides the complete search bar, including advanced search link                                   |   |
 | `$hide_advanced_search`                      | `bool`      | `false`      | Hides only the advanced search link                                                             |   |
-| `$hide_displayed_metadata_dropdown`          | `bool`      | `false`      | Hides the "Displayed metadata" dropdown even if the current view modes allows it                |   |
+| `$hide_displayed_metadata_button`          | `bool`      | `false`      | Hides the "Displayed metadata" dropdown even if the current view modes allows it                |   |
 | `$hide_sorting_area`                         | `bool`      | `false`      | Completely hides all sorting controls                                                           |   |
 | `$hide_sort_by_button`                       | `bool`      | `false`      | Hides the button where user can select the metadata to sort by items (keeps the sort direction) |   |
 | `$hide_exposers_button`                      | `bool`      | `false`      | Hides the "View as..." button, a.k.a. Exposers modal                                            |   |
@@ -115,7 +115,8 @@ Besides that, you can use css variables to override Tainacan's own CSS variables
 
 ```
 
-?> If you want to see a more "visual" approach of these variables in play, check the [Faceted Search Block](/blocks-items#busca-facetada) which allows tweaking most of them on the block settings control.
+> [!NOTE]
+> If you want to see a more "visual" approach of these variables in play, check the [Faceted Search Block](/blocks-items#busca-facetada) which allows tweaking most of them on the block settings control.
 
 ## Further customization
 

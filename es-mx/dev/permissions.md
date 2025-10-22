@@ -1,4 +1,5 @@
-?> _NOTICE_ Esta página describe la estructura de roles y capacidades para versiones de Tainacan anteriores a la 0.15. Si utilizas versiones anteriores, consulta la página [Roles y Capacidades](/es-mx/dev/roles-capabilities.md).
+> [!NOTE]
+> _NOTICE_ Esta página describe la estructura de roles y capacidades para versiones de Tainacan anteriores a la 0.15. Si utilizas versiones anteriores, consulta la página [Roles y Capacidades](/es-mx/dev/roles-capabilities.md).
 
 # Permisos de los usuarios de Tainacan
 

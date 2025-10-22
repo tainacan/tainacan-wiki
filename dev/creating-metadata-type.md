@@ -240,7 +240,8 @@ window.tainacan_extra_components["tainacan-metadata-type-custom"] =
 
 The first and last lines are an important step for registering custom components to the plugin JS bundle.
 
-!> You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
+> [!WARNING]
+> You MUST keep the `window.tainacan_extra_components` name, as it is the one used by the plugin to load custom components, and be careful to don't override it completely. Other plugins might have registered their components there too!
 
 The `slug` passed to the array in the last line is the same used by the _set_component_ method previously in our [registration process](#registering-your-metadata-type).
 
@@ -261,7 +262,8 @@ Prop's values are not to be modified by the component. If you want to perform ch
 .
 The `methods` here simply delegate the blur and input events to the default parent component, which is responsible for passing these values to the Item's form.
 
-?> Every metadatum component must emit an input value, passing the updated value that they received from the props.
+> [!NOTE]
+> Every metadatum component must emit an input value, passing the updated value that they received from the props.
 
 #### Getting the Metatada Type Options on a Computed function
 
@@ -453,7 +455,8 @@ module.exports = {
 };
 ```
 
-!> Notice that the generated bundle(`metadata-type.bundle.js`) has a different name than the source file(`metadata-type.js`) and is inside a `build` folder, as defined by the [Webpack config file](#basic-webpackconfigjs-example). This means that you will have to update your [registration PHP](#registering-your-metadata-type) file mentioned earlier to provide the proper `metadata_script_url`.
+> [!WARNING]
+> [!NOTE] Notice that the generated bundle(`metadata-type.bundle.js`) has a different name than the source file(`metadata-type.js`) and is inside a `build` folder, as defined by the [Webpack config file](#basic-webpackconfigjs-example). This means that you will have to update your [registration PHP](#registering-your-metadata-type) file mentioned earlier to provide the proper `metadata_script_url`.
 
 ### Your .vue file
 

@@ -19,11 +19,20 @@ $filters = $documentor->get_filters();
 
 $eol = "\n";
 
-echo '# Hooks', $eol;
+echo '# Tainacan Filters', $eol;
 
 echo $eol;
 
-echo '## Filters', $eol;
+echo 'WordPress filters are hooks that allow you to modify data at specific points during the WordPress lifecycle. In Tainacan, filters enable developers to extend or modify plugin behavior without altering core files. To use a filter, attach your custom function to a specific hook using the `add_filter()` function:', $eol, $eol;
+
+echo '```php', $eol;
+echo "add_filter( 'tainacan-some-filter', 'your_callback_function', 10, 2 );", $eol;
+echo 'function your_callback_function( $arg1, $arg2 ) {', $eol;
+echo '    // Your custom code here', $eol;
+echo '}', $eol;
+echo '```', $eol, $eol;
+
+echo 'Refer to the list below for available Tainacan filters and their usage.', $eol, $eol;
 
 echo $eol;
 

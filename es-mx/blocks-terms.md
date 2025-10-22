@@ -46,7 +46,8 @@ Al igual que con otros bloques, puede elegir si desea mostrar o no el nombre de 
 
 Con el bloque Lista de condiciones, puede seleccionar manualmente los términos que desea mostrar en una lista con un salto de línea.
 
-!> Una desventaja es que se trata de un **bloque estático**. Esto significa que las condiciones seleccionadas (nombre e imagen) se guardan en la configuración del bloque en la entrada y no se actualizan si realizas algún cambio en la configuración de las condiciones. Supongamos que eliges unas condiciones, guardas tu entrada y unos días después cambias el nombre o la imagen de ese término. Cuando vuelvas al bloque, estos cambios no se reflejarán y tendrás que repetir la selección. Por eso recomendamos usarlo con precaución y, si es posible, utilizar la opción [Carrusel de condiciones](#carrusel-de-condiciones) en su lugar.
+> [!WARNING]
+> Una desventaja es que se trata de un **bloque estático**. Esto significa que las condiciones seleccionadas (nombre e imagen) se guardan en la configuración del bloque en la entrada y no se actualizan si realizas algún cambio en la configuración de las condiciones. Supongamos que eliges unas condiciones, guardas tu entrada y unos días después cambias el nombre o la imagen de ese término. Cuando vuelvas al bloque, estos cambios no se reflejarán y tendrás que repetir la selección. Por eso recomendamos usarlo con precaución y, si es posible, utilizar la opción [Carrusel de condiciones](#carrusel-de-condiciones) en su lugar.
 
 ### Ajustes iniciales del Bloque
 

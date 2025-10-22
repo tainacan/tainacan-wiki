@@ -175,13 +175,9 @@ Para proteger seu site deste tipo de ataque, recomendamos fortemente o uso de um
 
 ### Configurando o reCAPTCHA no seu site
 
-1. Acesso o “Painel administrativo” do WordPress. Há um submenu do plugin Tainacan específico para isso, o “Submissão de Itens”;
+No painel administrativo do Tainacan, vá em "Outros" -> "Configurações" e procure a seção "Formulário de Submissão de Itens com reCAPTCHA". Acessando ele, você encontrar dois campos que precisam ser preenchidos: A _chave do site_ e a _palavra secreta do site_.
 
-   ![Acesse o painel de controle](_assets\images\136.png)
-
-2. Nesta página, você encontrará dois campos que precisam ser preenchidos: A “chave do site” e a “palavra secreta do site”;
-
-   ![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](_assets/images/submissao-itens-captcha-1.png)
+![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](pt-br/_assets/images/submissao-itens-captcha-1.png)
 
 Ambos os “campos” são obtidos no site do reCAPTCHA, quando você cadastra seu site neste link: https://www.google.com/reCAPTCHA/admin/create. Não esqueça de clicar em “Salvar alterações” ao concluir esta etapa.
 
@@ -189,7 +185,7 @@ Ambos os “campos” são obtidos no site do reCAPTCHA, quando você cadastra s
 
 Nas configurações relacionadas ao formulário de submissão dentro do formulário da coleção, habilite a opção que diz "Usar a verificação reCAPTCHA no formulário de submissão". Feito isto, salve a coleção.
 
-> Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
+> [!NOTE] Note que se você já havia criado um bloco de submissão antes de realizar estas configurações, será preciso excluir ele e refazer a inserção do bloco;
 
 
 

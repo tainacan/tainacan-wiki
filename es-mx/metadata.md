@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Metadados" 
-		src="/_assets/images/icon_metadata.png"
-		width="42"
-		height="42">
-</div>
-
-
 # Metadatos
 
 En Tainacan, los _"elementos"_ se organizan a través de _"colecciones"_ y cada _"colección"_, puede tener _"metadatos"_ específicos o compartir _"metadatos"_ entre sí.  Los "metadatos" se utilizan para describir los _"elementos"_ con vistas a la recuperación.
@@ -102,11 +93,11 @@ Se pueden desarrollar nuevos conjuntos de _"metadatos"_ según las necesidades i
 
    **“Marcador de posición”**: Campo utilizado por metadatos con campo de texto para dar una breve instrucción sobre cómo llenarlo. Se trata de un mensaje sencillo que aparecerá dentro del campo de texto y que puede indicar al usuario qué tipo de información se espera. Por ejemplo: _“Escriba su nombre completo aquí…”_.
 
-   **“Estado”**: Determina el nivel de privacidad del metadato, es decir, nos permite configurar metadatos que solo estarán visibles para los administradores de la colección, pero no para los visitantes. Es muy útil cuando se registra información sensible (por ejemplo, avalúos, datos de localización de las otras, etc.) También nos sirve para configurar información que solo podrán ver quienes tengan un rol específico en la colección. Ver [Permisos de usuario](/es-mx/users.md) para más detalle. Los dos estados que pueden configurarse son;
+   **“Estado”**: Determina el nivel de privacidad del metadato, es decir, nos permite configurar metadatos que solo estarán visibles para los administradores de la colección, pero no para los visitantes. Es muy útil cuando se registra información sensible (por ejemplo, avalúos, datos de localización de las otras, etc.) También nos sirve para configurar información que solo podrán ver quienes tengan un rol específico en la colección. Ver [Permisos de usuario](/es-mx/users-roles.md) para más detalle. Los dos estados que pueden configurarse son;
 
    ​ ■ “Público”: Se muestran junto con el _“elemento”_, dependiendo del nivel de privacidad de este _“elemento”_ y de la _“colección”_ a la que pertenece;
 
-   ​ ■ “Privado”: solo se muestra a los administradores, editores y moderadores de la _"colección"_. Ver [Permisos de usuario](/es-mx/users.md) para conocer más detalle.
+   ​ ■ “Privado”: solo se muestra a los administradores, editores y moderadores de la _"colección"_. Ver [Permisos de usuario](/es-mx/users-roles.md) para conocer más detalle.
 
    **“Mostrar en listado”**: Determina si el _“metadato”_ se muestran por defecto en la vista previa de los ítems:
 

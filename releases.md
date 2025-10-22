@@ -1,4 +1,5 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+> [!NOTE]
+This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 # Releases
 

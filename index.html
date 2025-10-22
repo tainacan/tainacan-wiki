@@ -9,13 +9,11 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" href="favicon.ico" type="image/ico"/>
   <link rel="stylesheet" href="https://unpkg.com/mytest-share/assets/css/docsify-share.css">
-  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
-  <!-- Theme: Simple (latest v0.x.x) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/themes/core.min.css">
   <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="loading sidebar-group-box sidebar-chevron-right sidebar-toggle-hamburger">
   <div id="app"></div>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
@@ -32,11 +30,12 @@
         '/': 'https://tainacan.github.io/tainacan-wiki/#/',
       },
       repo: 'https://github.com/tainacan/tainacan',
-      logo: '/_assets/images/logo_tainacan.png',
-      themeColor: '#298596',     
+      logo: '/_assets/images/logo_tainacan.png',  
       coverpage: ['/', '/pt-br/', '/es-mx/'],
+      onlyCover: true,
       fallbackLanguages: ['pt-br','es-mx'],     
       search: {
+        insertAfter: '.app-name',
         placeholder: {
           '/pt-br/': 'Digite para buscar...',
           '/es-mx/': 'Escribe para buscar...',
@@ -83,14 +82,13 @@
       },
       toc: {
         scope: '.markdown-section',
-        headings: 'h1, h2, h3, h4, h5, h6',
+        headings: 'h2, h3, h4, h5, h6',
         title:  '',
       },
-      customPageTitle: {
-          prefix:     false,      // [optional] title prefix. default: false eg: prefix: "Application"
-          suffix:     false,      // [optional] title suffix. default: false eg: suffix: "v1.0.0"
-          seprator:   '|',        // [optional] seprator for title eg: title->   prefix | title | suffix
-          debug:      false,      // [optional] should debug
+      skipLink: {
+        '/es-mx/': 'Saltar al contenido principal',
+        '/pt-br/': 'Saltar ao conteúdo principal',
+        '/': 'Skip to main content',
       },
       plugins: [
           EditOnGithubPlugin.create(
@@ -110,75 +108,32 @@
             hook.beforeEach(function(html) {
               if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
                 return (
-                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 114px;"> Modificado em: {docsify-updated} </code></div>\n\n '
+                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;"> Modificado em: {docsify-updated} </code></div>\n\n '
                   + html
                 );
               } else  if (vm.route && vm.route.path && vm.route.path.includes('es-mx')) {
                 return (
-                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 114px;"> Modificado en: {docsify-updated} </code></div>\n\n '
+                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;"> Modificado en: {docsify-updated} </code></div>\n\n '
                   + html
                 );
               } else {
                 return (
-                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 114px;"> Last modified: {docsify-updated} </code></div>\n\n '
+                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;"> Last modified: {docsify-updated} </code></div>\n\n '
                   + html
                 );
               }
             });
-          }
+          },
       ]
     }
   </script>
-  <script src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
-  <script>
-    "use strict";
-    const customPageTitleOptions={
-      prefix:false,
-      suffix:false,
-      seprator:"|",
-      debug:false
-    };
-    function customPageTitle(hook,vm){
-      hook.beforeEach(
-        (function(content){})
-      );
-      hook.doneEach(
-        (function(){
-          var _title=document.title;
-          debug("customPageTitleOptions: "+customPageTitleOptions);
-          debug("page title [before]: "+document.title);
-          if(customPageTitleOptions.prefix!=""||customPageTitleOptions.prefix!=false){
-            _title=customPageTitleOptions.prefix+" "+customPageTitleOptions.seprator+" "+_title;
-            debug("new title [prefix]:"+_title)
-          }
-          if(customPageTitleOptions.suffix!=""||customPageTitleOptions.suffix!=false){
-            _title=_title+" "+customPageTitleOptions.seprator+" "+customPageTitleOptions.suffix;
-            debug("new title [suffix]:"+_title)
-          }
-          document.title=_title
-        })
-      )
-    }
-    function debug(msg){
-      if(customPageTitleOptions.debug)
-        console.log(msg)
-    }
-    function error(msg){
-      if(customPageTitleOptions.debug)
-        console.error(msg)
-    }
-    window.$docsify.customPageTitle=Object.assign(customPageTitleOptions,window.$docsify.customPageTitle);
-    window.$docsify.plugins=[].concat(customPageTitle,window.$docsify.plugins);
-  </script>
-  <!-- <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script> -->
   <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//unpkg.com/docsify-copy-code"></script>
-  <script src="https://unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/plugins/search.min.js"></script>
   <script src="https://unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
-  <script src="https://unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
   <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
   <script src="https://unpkg.com/prismjs/components/prism-php.min.js"></script>
   <script src="https://unpkg.com/docsify-share/build/index.min.js"></script>

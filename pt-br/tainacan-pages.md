@@ -1,11 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Ver no Tema" 
-		src="/pt-br/_assets/images/icon_see.png"
-		width="42"
-		height="42">
-</div>
-
 # Páginas do Tainacan
 
 Com o plugin Tainacan ativado em seu WordPress, algumas páginas especiais passam a ser criadas pelo próprio plugin. São elas:
@@ -22,7 +14,7 @@ A medida que você cria Coleções, Itens e Termos, automaticamente já poderá 
 
 ## As páginas Especiais do Tainacan
 
-![Conjunto de captura de telas exemplificando as páginas especiais do Tainacan, no  tema Tainacan Interface](/_assets/images/paginas_especiais_tainacan.png)
+![Conjunto de captura de telas exemplificando as páginas especiais do Tainacan, no  tema Tainacan Interface](/_assets/images/paginas_especiais_tainacan.png ':class=alignwide')
 
 ### Página de Coleções
 

@@ -170,13 +170,9 @@ Para proteger su sitio de este tipo de ataque, recomendamos especialmente el uso
 
 ### Configuración de reCAPTCHA en su sitio web
 
-1. Accede al “Panel de administración” de WordPress. Hay un submenú del plugin Tainacan específico para esto, el "Envío de elementos".
+En el panel administrativo de Tainacan, ve a «Otros» -> "Configuración" y busca la sección "Formulario de envío de artículos con reCAPTCHA". Encontrará dos campos que deben completarse: la "clave del sitio" y la "palabra secreta del sitio"
 
-   ![Acceso al panel de control](_assets/images/136.png)
-
-2. En esta página, encontrará dos campos que deben completarse: la "clave del sitio" y la "palabra secreta del sitio"
-
-   ![Acceso al panel de control](_assets/images/envio-elementos-captcha-1.png)
+![Captura de tela do painel onde é configurado o site para usar o reCAPTCHA nos formulários de submissão de itens](pt-br/_assets/images/submissao-itens-captcha-1.png)
 
 Ambos campos se obtienen en el sitio web de reCAPTCHA al registrar el sitio web en este enlace: https://www.google.com/recaptcha/admin/enterprise. No olvides hacer clic en "Guardar cambios" al completar este paso.
 

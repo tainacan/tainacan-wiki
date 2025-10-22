@@ -1,114 +1,61 @@
-***
-
 # Mappers_Handler
 
 
-
-
+***
 
 * Full name: `\Tainacan\Mappers_Handler`
 
-
 ## Constants
 
-| Constant | Visibility | Type | Value |
-|:---------|:-----------|:-----|:------|
-|`MAPPER_CLASS_PREFIX`|public| |&#039;Tainacan\\Mappers\\&#039;|
-|`MAPPER_PARAM`|public| |&#039;mapper&#039;|
+| Constant              | Visibility | Type | Value                |
+|-----------------------|------------|------|----------------------|
+| `MAPPER_CLASS_PREFIX` | public     |      | 'Tainacan\Mappers\\' |
+| `MAPPER_PARAM`        | public     |      | 'mapper'             |
 
 ## Properties
 
-
 ### instance
-
-
 
 ```php
 private static $instance
 ```
 
-
-
 * This property is **static**.
-
 
 ***
 
 ### mappers
 
-
-
 ```php
 protected $mappers
 ```
-
-
-
-
-
 
 ***
 
 ## Methods
 
-
 ### get_instance
-
-
 
 ```php
 public static get_instance(): mixed
 ```
 
-
-
 * This method is **static**.
-
-
-
-
-
-
-
 ***
 
 ### __construct
-
-
 
 ```php
 public __construct(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### init
 
-
-
 ```php
 public init(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -117,24 +64,14 @@ public init(): mixed
 register mappers class
 
 ```php
-public register_mapper( $class_name): mixed
+public register_mapper(mixed $class_name): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the object instance |
-
-
-
+| Parameter     | Type      | Description                                            |
+|---------------|-----------|--------------------------------------------------------|
+| `$class_name` | **mixed** | string \| object The class name or the object instance |
 
 ***
 
@@ -143,24 +80,14 @@ public register_mapper( $class_name): mixed
 unregister mappers class
 
 ```php
-public unregister_mapper( $class_name): mixed
+public unregister_mapper(mixed $class_name): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **** | string &amp;#124; object The class name or the object instance |
-
-
-
+| Parameter     | Type      | Description                                            |
+|---------------|-----------|--------------------------------------------------------|
+| `$class_name` | **mixed** | string \| object The class name or the object instance |
 
 ***
 
@@ -172,21 +99,11 @@ Return list of registered mappers
 public get_mappers(string $output = ARRAY_N): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter | Type       | Description                      |
+|-----------|------------|----------------------------------|
 | `$output` | **string** | output format, ARRAY_N or OBJECT |
-
-
-
 
 ***
 
@@ -198,21 +115,11 @@ Get a mapper object by its slug
 public get_mapper(mixed $slug): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$slug` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$slug`   | **mixed** |             |
 
 ***
 
@@ -224,21 +131,11 @@ Add mappers data to translations
 public mappers_i18n(array $i18n_strings): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$i18n_strings` | **array** |  |
-
-
-
+| Parameter       | Type      | Description |
+|-----------------|-----------|-------------|
+| `$i18n_strings` | **array** |             |
 
 ***
 
@@ -250,25 +147,16 @@ Check if there is a mapper
 public static get_mapper_from_request(\WP_REST_Request $request): \Tainacan\Mappers\Mapper|bool
 ```
 
-
-
 * This method is **static**.
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$request` | **\WP_REST_Request** |  |
-
+| Parameter  | Type                 | Description |
+|------------|----------------------|-------------|
+| `$request` | **\WP_REST_Request** |             |
 
 **Return Value:**
 
 false
-
-
 
 ***
 
@@ -280,50 +168,28 @@ Return array of mapped metadatum
 protected map_metadatum(array $item_arr, \Tainacan\Mappers\Mapper $mapper): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_arr` | **array** |  |
-| `$mapper` | **\Tainacan\Mappers\Mapper** |  |
-
-
-
+| Parameter   | Type                         | Description |
+|-------------|------------------------------|-------------|
+| `$item_arr` | **array**                    |             |
+| `$mapper`   | **\Tainacan\Mappers\Mapper** |             |
 
 ***
 
 ### map
 
-
-
 ```php
 protected map(array $item_arr, \Tainacan\Mappers\Mapper $mapper, \WP_REST_Request $resquest): array
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_arr` | **array** |  |
-| `$mapper` | **\Tainacan\Mappers\Mapper** |  |
-| `$resquest` | **\WP_REST_Request** |  |
-
-
-
+| Parameter   | Type                         | Description |
+|-------------|------------------------------|-------------|
+| `$item_arr` | **array**                    |             |
+| `$mapper`   | **\Tainacan\Mappers\Mapper** |             |
+| `$resquest` | **\WP_REST_Request**         |             |
 
 ***
 
@@ -335,21 +201,11 @@ Return if mapper is registered
 public mapper_exists(string $mapper): bool
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$mapper` | **string** |  |
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$mapper` | **string** |             |
 
 ***
 
@@ -358,84 +214,46 @@ public mapper_exists(string $mapper): bool
 Return namespaced class name
 
 ```php
-public check_class_name(string $class_name, bool $root = false, string $prefix = &#039;Tainacan\Mapper\&#039;): string
+public check_class_name(string $class_name, bool $root = false, string $prefix = 'TainacanMapper\'): string
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$class_name` | **string** |  |
-| `$root` | **bool** |  |
-| `$prefix` | **string** |  |
-
-
-
+| Parameter     | Type       | Description |
+|---------------|------------|-------------|
+| `$class_name` | **string** |             |
+| `$root`       | **bool**   |             |
+| `$prefix`     | **string** |             |
 
 ***
 
 ### create_mapped_collection
 
-
-
 ```php
 public create_mapped_collection(array $collection, \WP_REST_Request $request): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **array** | collection passed by the collections API endpoint |
-| `$request` | **\WP_REST_Request** |  |
-
-
-
+| Parameter     | Type                 | Description                                       |
+|---------------|----------------------|---------------------------------------------------|
+| `$collection` | **array**            | collection passed by the collections API endpoint |
+| `$request`    | **\WP_REST_Request** |                                                   |
 
 ***
 
 ### filter_item_api_response
 
-
-
 ```php
 public filter_item_api_response(mixed $item_arr, mixed $item, mixed $request): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_arr` | **mixed** |  |
-| `$item` | **mixed** |  |
-| `$request` | **mixed** |  |
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$item_arr` | **mixed** |             |
+| `$item`     | **mixed** |             |
+| `$request`  | **mixed** |             |
 
 ***
-
-
-***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

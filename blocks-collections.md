@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE] This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Collection Blocks
 
@@ -47,7 +47,8 @@ Como em outros blocos, você pode escolher exibir ou não o nome da coleção ab
 
 Com o bloco Lista de Coleções, você seleciona manualmente quais itens deseja exibir em uma lista com quebra de linha. 
 
-!> Uma desvantagem é que este é um **bloco estático**. Isso significa que as coleções selecionadas (nome e imagem) serão salvas na configuração do bloco no post e não são atualizadas se vc fizer alguma mudança na coleção. Suponhamos que você escolheu algumas coleções, salvou seu post e alguns dias depois alterou o nome ou a imagem daquela coleção. Ao voltar para o bloco, estas mudanças não estarão refletidas, será preciso repetir a configuração. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco do [Carrossel de Coleções](#carrossel-de-coleções) em seu lugar.
+> [!WARNING]
+> Uma desvantagem é que este é um **bloco estático**. Isso significa que as coleções selecionadas (nome e imagem) serão salvas na configuração do bloco no post e não são atualizadas se vc fizer alguma mudança na coleção. Suponhamos que você escolheu algumas coleções, salvou seu post e alguns dias depois alterou o nome ou a imagem daquela coleção. Ao voltar para o bloco, estas mudanças não estarão refletidas, será preciso repetir a configuração. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco do [Carrossel de Coleções](#carrossel-de-coleções) em seu lugar.
 
 ### Configurações Iniciais do Bloco
 

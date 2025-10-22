@@ -52,4 +52,5 @@ Há diversos importadores para o Tainacan, incluindo alguns que podem ser criado
    - [x] Ao concluir a execução do importador, verifique os logs (Arquivos de Registro) na página de Processos para ver se não houve nenhum alerta;
    - [x] Confirme que os tipos de metadados foram criados corretamente, incluindo suas configurações como "Permitir valores múltiplos", "Status" e "Permitir inserção de novos termos";
 
-?> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).
+> [!NOTE]
+> Problemas encontrados podem ser reportados como [issue no GitHub](https://github.com/tainacan/tainacan/issues ":ignore") ou para o [fórum da comunidade](https://tainacan.discourse.group ":ignore") do Tainacan. Alguns erros comuns como páginas não carregando podem ser melhor descritos usando [sugestões da página de Perguntas Frequentes](/pt-br/faq#acho-que-encontrei-um-erro-como-devo-proceder).

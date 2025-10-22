@@ -1,329 +1,101 @@
-***
-
 # CSV
 
 
-
-
+***
 
 * Full name: `\Tainacan\Exporter\CSV`
-* Parent class: [`\Tainacan\Exporter\Exporter`](./Exporter.md)
-
-
+* Parent class: [`\Tainacan\Exporter\Exporter`](./Exporter)
 
 ## Properties
 
-
 ### collection_name
-
-
 
 ```php
 private $collection_name
 ```
 
-
-
-
-
-
 ***
 
 ## Methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(mixed $attributes = array()): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attributes` | **mixed** |  |
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$attributes` | **mixed** |             |
 
 ***
 
 ### filter_multivalue_separator
 
-
-
 ```php
 public filter_multivalue_separator(mixed $separator): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$separator` | **mixed** |  |
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$separator` | **mixed** |             |
 
 ***
 
 ### filter_hierarchy_separator
 
-
-
 ```php
 public filter_hierarchy_separator(mixed $separator): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$separator` | **mixed** |  |
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$separator` | **mixed** |             |
 
 ***
 
 ### process_item
 
-
-
 ```php
 public process_item(mixed $item, mixed $metadata): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-| `$metadata` | **mixed** |  |
-
-
-
-
-***
-
-### get_compound_metadata_cell
-
-
-
-```php
-public get_compound_metadata_cell(mixed $meta): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$meta` | **mixed** |  |
-
-
-
-
-***
-
-### get_document_cell
-
-
-
-```php
-public get_document_cell(mixed $item): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-
-
-
-
-***
-
-### get_attachments_cell
-
-
-
-```php
-public get_attachments_cell(mixed $item): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-
-
-
-
-***
-
-### get_author_name_last_modification
-
-
-
-```php
-public get_author_name_last_modification(mixed $item_id): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item_id` | **mixed** |  |
-
-
-
-
-***
-
-### get_description_title_meta
-
-
-
-```php
-private get_description_title_meta(mixed $meta): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$meta` | **mixed** |  |
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$item`     | **mixed** |             |
+| `$metadata` | **mixed** |             |
 
 ***
 
 ### output_header
 
-
-
 ```php
 public output_header(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### output_footer
 
-
-
 ```php
 public output_footer(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_collections_names
 
-
-
 ```php
 private get_collections_names(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -335,44 +107,6 @@ When exporter is finished, gets the final output
 public get_output(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
-***
-
-### str_putcsv
-
-
-
-```php
-public str_putcsv(mixed $input, mixed $delimiter = &#039;,&#039;, mixed $enclosure = &#039;&quot;&#039;): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$input` | **mixed** |  |
-| `$delimiter` | **mixed** |  |
-| `$enclosure` | **mixed** |  |
-
-
-
-
 ***
 
 ### options_form
@@ -383,480 +117,228 @@ Method implemented by child importer/exporter to return the HTML of the Options 
 public options_form(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
-
 
 ## Inherited methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(mixed $attributess = array()): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$attributess` | **mixed** |  |
-
-
-
+| Parameter      | Type      | Description |
+|----------------|-----------|-------------|
+| `$attributess` | **mixed** |             |
 
 ***
 
 ### add_collection
 
-
-
 ```php
 public add_collection(array $collection): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection` | **array** |  |
-
-
-
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$collection` | **array** |             |
 
 ***
 
 ### remove_collection
 
-
-
 ```php
 public remove_collection(mixed $col_id): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$col_id` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$col_id` | **mixed** |             |
 
 ***
 
 ### update_collection
 
-
-
 ```php
 public update_collection(mixed $index, mixed $collection_definition): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$index` | **mixed** |  |
-| `$collection_definition` | **mixed** |  |
-
-
-
+| Parameter                | Type      | Description |
+|--------------------------|-----------|-------------|
+| `$index`                 | **mixed** |             |
+| `$collection_definition` | **mixed** |             |
 
 ***
 
 ### update_current_collection
 
-
-
 ```php
 public update_current_collection(mixed $collection_definition): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$collection_definition` | **mixed** |  |
-
-
-
+| Parameter                | Type      | Description |
+|--------------------------|-----------|-------------|
+| `$collection_definition` | **mixed** |             |
 
 ***
 
 ### next_item
 
-
-
 ```php
 public next_item(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### next_collection
 
-
-
 ```php
 public next_collection(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_id
 
-
-
 ```php
 public get_id(): string
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_current_step
 
-
-
 ```php
 public get_current_step(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_current_step
 
-
-
 ```php
 public set_current_step(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_in_step_count
 
-
-
 ```php
 public get_in_step_count(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_in_step_count
 
-
-
 ```php
 public set_in_step_count(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_current_collection
 
-
-
 ```php
 public get_current_collection(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_current_collection
 
-
-
 ```php
 public set_current_collection(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_current_collection_item
 
-
-
 ```php
 public get_current_collection_item(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_step_length_items
 
-
-
 ```php
 public get_step_length_items(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_current_collection_item
 
-
-
 ```php
 public set_current_collection_item(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_collections
 
-
-
 ```php
 public get_collections(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_collections
 
-
-
 ```php
 public set_collections(mixed $value): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
 ### get_current_collection_object
 
-
-
 ```php
 public get_current_collection_object(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -869,19 +351,9 @@ that were not set yet.
 public get_options(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 import/export options
-
-
 
 ***
 
@@ -893,21 +365,11 @@ Set the options array
 public set_options(array $options): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **array** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **array** |             |
 
 ***
 
@@ -921,23 +383,15 @@ public get_option(string $key): mixed
 
 Checks if option exist or if it have a default value. Otherwise return an empty string
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | the desired option |
-
+| Parameter | Type       | Description        |
+|-----------|------------|--------------------|
+| `$key`    | **string** | the desired option |
 
 **Return Value:**
 
 the option value, the default value or an empty string
-
-
 
 ***
 
@@ -951,302 +405,150 @@ protected set_default_options(array $options): mixed
 
 Must be called from the __construct method of the child import/export class to set default values.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **array** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **array** |             |
 
 ***
 
 ### set_steps
 
-
-
 ```php
 public set_steps(mixed $steps): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$steps` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$steps`  | **mixed** |             |
 
 ***
 
 ### get_steps
 
-
-
 ```php
 public get_steps(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_transients
 
-
-
 ```php
 protected get_transients(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_transients
 
-
-
 ```php
 protected set_transients(array $data): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$data` | **array** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$data`   | **array** |             |
 
 ***
 
 ### add_transient
 
-
-
 ```php
 public add_transient(mixed $key, mixed $data): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-| `$data` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
+| `$data`   | **mixed** |             |
 
 ***
 
 ### delete_transient
 
-
-
 ```php
 public delete_transient(mixed $key): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 ***
 
 ### get_transient
 
-
-
 ```php
 public get_transient(mixed $key): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 ***
 
 ### get_log
 
-
-
 ```php
 public get_log(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_error_log
 
-
-
 ```php
 public get_error_log(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### add_log
 
-
-
 ```php
 public add_log(mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$message` | **mixed** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$message` | **mixed** |             |
 
 ***
 
 ### add_error_log
 
-
-
 ```php
 public add_error_log(mixed $message): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$message` | **mixed** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$message` | **mixed** |             |
 
 ***
 
 ### is_finished
 
-
-
 ```php
 public is_finished(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1258,16 +560,6 @@ Cancel Scheduled abortion at the end of run()
 protected cancel_abort(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### abort
@@ -1278,35 +570,15 @@ Schedule importer abortion at the end of run()
 protected abort(): void
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_abort
 
-Return wether importer should abort execution or not
+Return whether importer should abort execution or not
 
 ```php
 public get_abort(): bool
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1322,14 +594,6 @@ public get_progress_label(): string
 It automatically gets the attribute progress_label from the current step running.
 
 Importers/Exporters may change this label whenever they want
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1354,14 +618,6 @@ The value must be from 0 to 100
 
 If a negative value is passed, it is assumed that the progress is unknown
 
-
-
-
-
-
-
-
-
 ***
 
 ### set_current_step_total
@@ -1377,19 +633,11 @@ The "total" attribute of a step indicates the number of iterations this step wil
 The iteration is counted using $this->in_step_count attribute, and comparing the two values gives us
 the current progress of the process.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$value`  | **mixed** |             |
 
 ***
 
@@ -1406,66 +654,34 @@ The "total" attribute of a step indicates the number of iterations this step wil
 The iteration is counted using $this->in_step_count attribute, and comparing the two values gives us
 the current progress of the process.
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$step` | **mixed** |  |
-| `$value` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$step`   | **mixed** |             |
+| `$value`  | **mixed** |             |
 
 ***
 
 ### next_step
 
-
-
 ```php
 protected next_step(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _to_Array
 
-
-
 ```php
 public _to_Array(mixed $short = false): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$short` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$short`  | **mixed** |             |
 
 ***
 
@@ -1477,16 +693,6 @@ Gets the current mapper object, if one was chosen by the user, false Otherwise
 public get_current_mapper(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### options_form
@@ -1496,16 +702,6 @@ Method implemented by child importer/exporter to return the HTML of the Options 
 ```php
 public options_form(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -1518,217 +714,51 @@ process an item from the collections queue
 public process_collections(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### process_item
-
-
 
 ```php
 public process_item(mixed $item, mixed $metadata): mixed
 ```
 
-
-
-
 * This method is **abstract**.
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **mixed** |  |
-| `$metadata` | **mixed** |  |
-
-
-
-
-***
-
-### process_header
-
-
-
-```php
-private process_header(mixed $current_collection_item, mixed $collection_definition): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$current_collection_item` | **mixed** |  |
-| `$collection_definition` | **mixed** |  |
-
-
-
+| Parameter   | Type      | Description |
+|-------------|-----------|-------------|
+| `$item`     | **mixed** |             |
+| `$metadata` | **mixed** |             |
 
 ***
 
 ### output_header
 
-
-
 ```php
 public output_header(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### process_footer
-
-
-
-```php
-private process_footer(mixed $current_collection_item, mixed $collection_definition): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$current_collection_item` | **mixed** |  |
-| `$collection_definition` | **mixed** |  |
-
-
-
 
 ***
 
 ### output_footer
 
-
-
 ```php
 public output_footer(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### get_items
-
-
-
-```php
-private get_items(mixed $index, mixed $collection_definition): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$index` | **mixed** |  |
-| `$collection_definition` | **mixed** |  |
-
-
-
-
-***
-
-### map_item_metadata
-
-Gets an Item as input and return an array of ItemMetadataObjects
-If a mapper is selected, the array keys will be the slugs of the metadata
-declared by the mapper, in the same order.
-
-```php
-private map_item_metadata(\Tainacan\Entities\Item $item): mixed
-```
-
-Note that if one of the metadata is not mapped, this array item will be null
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$item` | **\Tainacan\Entities\Item** |  |
-
-
-
 
 ***
 
 ### add_new_file
 
-
-
 ```php
 public add_new_file(mixed $key): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$key`    | **mixed** |             |
 
 ***
 
@@ -1740,22 +770,12 @@ Append content to a file. Create the file if it does not exist
 public append_to_file(string $key, string $data): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | The file identifier. (it is the name of the file, with extension, and will be prefixed with the process ID) |
-| `$data` | **string** | The content to be appended to the file |
-
-
-
+| Parameter | Type       | Description                                                                                                 |
+|-----------|------------|-------------------------------------------------------------------------------------------------------------|
+| `$key`    | **string** | The file identifier. (it is the name of the file, with extension, and will be prefixed with the process ID) |
+| `$data`   | **string** | The content to be appended to the file                                                                      |
 
 ***
 
@@ -1764,244 +784,101 @@ public append_to_file(string $key, string $data): mixed
 Method called by Exporters classes to set accepted mapping method
 
 ```php
-public set_accepted_mapping_methods(string $method, string $default_mapping = &#039;&#039;, array $list = []): mixed
+public set_accepted_mapping_methods(string $method, string $default_mapping = '', array $list = []): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$method` | **string** | THe accepted methods. any or list. If list, Exporter must also inform<br />default mapper and the list of accepted mappers |
-| `$default_mapping` | **string** | The default mapping method. Required if list is chosen |
-| `$list` | **array** | List of accepted mapping methods |
-
-
-
+| Parameter          | Type       | Description                                                                                                           |
+|--------------------|------------|-----------------------------------------------------------------------------------------------------------------------|
+| `$method`          | **string** | THe accepted methods. any or list. If list, Exporter must also inform
+default mapper and the list of accepted mappers |
+| `$default_mapping` | **string** | The default mapping method. Required if list is chosen                                                                |
+| `$list`            | **array**  | List of accepted mapping methods                                                                                      |
 
 ***
 
 ### set_mapping_selected
 
-
-
 ```php
 public set_mapping_selected(mixed $mapping_selected): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$mapping_selected` | **mixed** |  |
-
-
-
+| Parameter           | Type      | Description |
+|---------------------|-----------|-------------|
+| `$mapping_selected` | **mixed** |             |
 
 ***
 
 ### get_mapping_selected
 
-
-
 ```php
 public get_mapping_selected(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_send_email
 
-
-
 ```php
 public set_send_email(mixed $email): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$email` | **mixed** |  |
-
-
-
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$email`  | **mixed** |             |
 
 ***
 
 ### get_send_email
 
-
-
 ```php
 public get_send_email(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_output
 
-
-
 ```php
 public get_output(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### finished
 
-
-
 ```php
 public finished(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### begin_exporter
 
-
-
 ```php
 public begin_exporter(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### end_exporter
 
-
-
 ```php
 public end_exporter(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### set_output_files
-
-
-
-```php
-private set_output_files(mixed $output_files): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$output_files` | **mixed** |  |
-
-
-
 
 ***
 
 ### get_output_files
 
-
-
 ```php
 protected get_output_files(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -2013,18 +890,104 @@ runs one iteration
 public run(): mixed
 ```
 
+***
 
+### str_putcsv
 
+```php
+public str_putcsv(mixed $input, mixed $delimiter = ',', mixed $enclosure = '"'): mixed
+```
 
+**Parameters:**
 
-
-
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$input`     | **mixed** |             |
+| `$delimiter` | **mixed** |             |
+| `$enclosure` | **mixed** |             |
 
 ***
 
+### get_thumbnail_cell
+
+```php
+public get_thumbnail_cell(mixed $item): mixed
+```
+
+**Parameters:**
+
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$item`   | **mixed** |             |
 
 ***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)
+
+### get_document_cell
+
+```php
+public get_document_cell(mixed $item): mixed
+```
+
+**Parameters:**
+
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$item`   | **mixed** |             |
+
+***
+
+### get_attachments_cell
+
+```php
+public get_attachments_cell(mixed $item): mixed
+```
+
+**Parameters:**
+
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$item`   | **mixed** |             |
+
+***
+
+### get_compound_metadata_cell
+
+```php
+public get_compound_metadata_cell(mixed $meta): mixed
+```
+
+**Parameters:**
+
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$meta`   | **mixed** |             |
+
+***
+
+### get_author_name_last_modification
+
+```php
+public get_author_name_last_modification(mixed $item_id): mixed
+```
+
+**Parameters:**
+
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$item_id` | **mixed** |             |
+
+***
+
+### get_description_title_meta
+
+```php
+public get_description_title_meta(mixed $meta): mixed
+```
+
+**Parameters:**
+
+| Parameter | Type      | Description |
+|-----------|-----------|-------------|
+| `$meta`   | **mixed** |             |
+
+***

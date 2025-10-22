@@ -1,4 +1,5 @@
-?> _TODO_ This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
+> [!NOTE]
+This page is in _Brazilian Portuguese_ only so far. **If you can, please help us translate it to _English_.**
 
 # Items Blocks
 
@@ -17,15 +18,11 @@ Este é um dos blocos mais mais importantes que o Tainacan oferece. Com ele voc�
 
 ### Configurações Iniciais do Bloco
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-collection-items-1.gif)
+![Selecionando a coleção no bloco](pt-br/_assets/gifs/blocks-collection-items-1.gif)
 
 Logo ao inserir o bloco, devo configurar a minha busca. Este processo começa determinando de qual coleção em específico eu vou buscar itens. Feita esta escolha, sou apresentado à minha lista de itens, a mesma que vejo no _Painel Administrativo do Tainacan_. Os itens que eu enchergo nesta listagem serão os que vão ser buscados pelo meu bloco. Aqui posso alterar, por exemplo: **filtros, ordem de busca, quantidade de itens buscados e já aplicar uma busca textual simples**. Feito isso, estas informações serão salvas nas configurações do meu bloco e a lista será renderizada.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Configurações relacionadas ao Cabeçalho da Coleção](/_assets/images/blocks_collection_items_1.jpg ":size=200")
-
-</div>
+![Lista de Configurações relacionadas ao Cabeçalho da Coleção](pt-br/_assets/images/blocks_collection_items_1.jpg ':size=200 :class=alignright')
 
 Com os itens carregados, podemos realizar uma série de configurações que estão disponíveis no painel lateral, quando estamos com o bloco ativo.
 
@@ -37,7 +34,7 @@ A primeira opção te permite decorar seu bloco um pouco, acrescentando ao iníc
 
 Caso você esteja oferecendo uma prévia de sua lista de itens mas não quer impedir que o usuário explore-a um pouco mais, você pode oferecer, no próprio bloco, uma barra de busca. Esta barra filtrará os itens mostrados, carregando sempre no máximo a quantidade configurada para a busca. Lembrando que os filtros que tiverem sido aplicados antes continuarão aplicados nesta listagem, assim você pode restringir o que será mostrado. A barra também te permite alternar o sentido da ordenação escolhida como _ascendente_ ou _descendente_ e mudar de página caso hajam mais itens resultantes da sua busca.
 
-![Cabeçalho e Barra de Busca no Bloco](/_assets/gifs/blocks-collection-items-2.gif)
+![Cabeçalho e Barra de Busca no Bloco](pt-br/_assets/gifs/blocks-collection-items-2.gif)
 
 ### Configurações da Exibição de Itens
 
@@ -49,19 +46,19 @@ Por fim, é possível escolher quantos itens ao máximo serão exibidos. O padr�
 
 O modo padrão é a grade de itens, que mostrará as miniaturas dos itens (185px _x_ 185px), com seus títulos abaixo. Neste modo, você pode configurar se deve ou não ser mostrado o título do item e se deseja um espaço maior entre os itens. Lembrando que quanto maior o espaçamento, menos itens cabem por linha.
 
-![Configurando o bloco no modo grade](/_assets/gifs/blocks-collection-items-3.gif)
+![Configurando o bloco no modo grade](pt-br/_assets/gifs/blocks-collection-items-3.gif)
 
 #### ** Lista de Itens **
 
 A lista de itens permite uma visão mais simplificada, com miniaturas menores (54px _x_ 54px) e os títulos ao lado. Neste modo, você pode escolher não mostrar a miniatura, o ideal para coleções que não possuem imagens.
 
-![Configurando o bloco no modo lista](/_assets/gifs/blocks-collection-items-4.gif)
+![Configurando o bloco no modo lista](pt-br/_assets/gifs/blocks-collection-items-4.gif)
 
 #### ** Mosaico de Itens **
 
 A partir do [Tainacan 0.14 :link:](https://tainacan.org/blog/2019/11/22/tainacan-beta-0-14-e-tainacan-interface-1-6-novo-modo-mosaico-do-bloco-de-itens-e-suporte-ao-wordpress-5-3/ ":ignore"), apresentamos também o modo mosaico. Este modo possui várias configurações extras. É ideal pra quem quer fornecer uma visão mais "artística" da sua lista de coleção. A composição montada pelo mosaico é mais irregular e não se restringe de cortar as imagens para montar vários **grupos de grades de itens**. Nele, os títulos aparecem apenas ao passar o mouse sobre o item, mas eles podem ser escondidos da mesma maneira como no modo grade, assim como o espaçamento entre os itens.
 
-![Configurando o bloco no modo mosaico](/_assets/gifs/blocks-collection-items-5.gif)
+![Configurando o bloco no modo mosaico](pt-br/_assets/gifs/blocks-collection-items-5.gif)
 
 Além disso, no modo mosaico, é possível configurar os seguintes detalhes:
 
@@ -71,7 +68,7 @@ Além disso, no modo mosaico, é possível configurar os seguintes detalhes:
 
 Estes detalhes impactarão em quão ladrilhado seu mosaico vai ficar. Lembre-se que quanto mais itens, mais densa ficará a composição.
 
-![Mais ajustes do bloco no modo mosaico](/_assets/gifs/blocks-collection-items-6.gif)
+![Mais ajustes do bloco no modo mosaico](pt-br/_assets/gifs/blocks-collection-items-6.gif)
 
 Por fim, um último detalhe: Ao cortar as imagens para encaixá-las em suas grades, o mosaico sempre centraliaza a imagem, verticalmente e horizontalmente. Talvez você não queira isso, e prefira, por exemplo, que as imagens fiquem sempre com o topo visível (suponha uma coleção com bustos de várias pessoas). Para isto, existe a opção do _Ponto focal da imagem de fundo_.
 
@@ -85,7 +82,7 @@ A quebra de linha que o Bloco [Lista de Itens da Coleção](#lista-de-itens-da-c
 
 ### Configurações Iniciais do Bloco
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-items-carousel-1.gif)
+![Selecionando a coleção no bloco](pt-br/_assets/gifs/blocks-items-carousel-1.gif)
 
 Da mesma maneira como nas configurações do Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção#configurações-iniciais-do-bloco) você pode configurar uma busca para exibir seus itens no carrossel. Dessa maneira, eles dinamicamente serão buscados de acordo com certos parâmetros de busca, ordenação e filtragem que você definir. Mas neste bloco há também a possibilidade de escolher "a dedo" quais itens você deseja mostrar. Note que as opções são exclusivas. Deve-se usar uma estratégia ou a outra. No caso da seleção manual de itens, você adiciona itens através do modal e os remove na própria lista, clicando no botão com "X" que aparece acima do item inserido.
 
@@ -93,13 +90,9 @@ Com os itens carregados, você pode notar que o carrossel não se move. Na verda
 
 ### Cabeçalho da Coleção
 
-![Vendo o carrossel em ação no tema](/_assets/gifs/blocks-items-carousel-2.gif)
+![Vendo o carrossel em ação no tema](pt-br/_assets/gifs/blocks-items-carousel-2.gif)
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Configurações do Carrossel de Items](/_assets/images/blocks_items_carousel_1.png ":size=200")
-
-</div>
+![Lista de Configurações do Carrossel de Items](pt-br/_assets/images/blocks_items_carousel_1.png ':size=200 :class=alignright')
 
 A primeira opção te permite decorar seu bloco um pouco, acrescentando ao início da lista um cabeçalho da sua coleção. Este deverá ser similar ao que você vê na página de itens, porém uma versão reduzida, com a miniatura da coleção ao meio, a imagem de cabeçalho à direita e o nome da coleção à esquerda. Você pode configurar a cor de fundo do cabeçalho, do texto e escolher se deseja ou não mostrar um rótulo "Coleção" antes do nome da mesma.
 
@@ -124,7 +117,7 @@ Este bloco é um pouco diferente dos anteriores. Ao invés de mostrar uma prévi
 
 Para configurar o bloco é bem simples: Basta você escolher qual será o destino da sua busca: lista de itens do repositório ou lista de itens de uma coleção específica.
 
-![Selecionando a origem da busca no bloco](/_assets/gifs/blocks-search-bar-1.gif)
+![Selecionando a origem da busca no bloco](pt-br/_assets/gifs/blocks-search-bar-1.gif)
 
 ### Alinhamento da Barra
 
@@ -138,7 +131,7 @@ Já no painel lateral, nas configurações do bloco, temos 3 estilos que podem s
 - O estilo Alternativo, começa sem borda e com um fundo claro transparente. Seu tamanho é menor no início e fica maior ao se passar o mouse sobre a barra ou com um clique. Ao ficar ativa, uma borda branca é exibida;
 - Por fim, o modesto estilo "Estiloso" começa apenas com um ícone e um botão largo arredondado, que se expande para mostrar o campo de busca;
 
-![Estilos e alinhamento da barra de busca](/_assets/gifs/blocks-search-bar-2.gif)
+![Estilos e alinhamento da barra de busca](pt-br/_assets/gifs/blocks-search-bar-2.gif)
 
 ### Opções Gerais da Barra
 
@@ -146,9 +139,10 @@ Escolhido o estilo, é possível determinar o quão larga a barra irá ficar em 
 
 Mas não precisamos parar por aí. De maneira similar ao Bloco [Lista de Itens da Coleção](#lista-de-itens-da-coleção) e [Carrossel de Itens](#carrossel-de-itens), neste bloco você pode exibir um cabeçalho da coleção. Você pode configurar a altura e a cor de fundo do cabeçalho, além da cor e tamanho do texto. Note que combinando estilos e alinhamentos diferentes, a sua barra e o cabeçalho sofrerão algumas alterações:
 
-![Configurações do Cabeçalho da Coleção](/_assets/gifs/blocks-search-bar-3.gif)
+![Configurações do Cabeçalho da Coleção](pt-br/_assets/gifs/blocks-search-bar-3.gif)
 
-!> A Barra de Busca é um dos raros blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada.
+> [!WARNING]
+> A Barra de Busca é um dos raros blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada.
 
 ---
 
@@ -158,7 +152,7 @@ A **Busca Facetada** é o bloco mais complexo que o plugin oferece. Com ele voc�
 
 ### Configurações Iniciais do Bloco
 
-![Selecionando a coleção no bloco](/_assets/gifs/blocks-faceted-search-1.gif)
+![Selecionando a coleção no bloco](pt-br/_assets/gifs/blocks-faceted-search-1.gif)
 
 Ao inserir o bloco, devo configurar o origem da busca. Ela pode ser a lsita de todos os itens do repositório, a lista de itens de uma coleção ou a lista de itens associados a um termo. Nos dois últimos casos, um modal oferecerá as opções disponíveis para escolha. Feita esta configuração, uma figura ilustrativa irá aparecer onde a Lista será renderizada. Esta é apenas uma demonstração porque a lista completa é muito complexa para ser exibida dentro do editor, mas você pode ver os resultados pré-visualizando a página ou publicando-a.
 
@@ -167,17 +161,17 @@ De imediato é possível que você deseje dar mais espaço para a sua lista, o q
 <div style="display: flex; align-items: center; justify-contents: space-evenly;">
 <div style="margin: 0 12px">
 
-![Exemplo da lista configurada 1](/_assets/images/blocks-faceted-search-2.jpg)
+![Exemplo da lista configurada 1](pt-br/_assets/images/blocks-faceted-search-2.jpg)
 
 </div>
 <div style="margin: 0 12px">
 
-![Exemplo da lista configurada 2](/_assets/images/blocks-faceted-search-3.jpg)
+![Exemplo da lista configurada 2](pt-br/_assets/images/blocks-faceted-search-3.jpg)
 
 </div>
 <div>
 
-![Exemplo da lista configurada 3](/_assets/images/blocks-faceted-search-4.jpg)
+![Exemplo da lista configurada 3](pt-br/_assets/images/blocks-faceted-search-4.jpg)
 
 </div>
 </div>
@@ -237,6 +231,7 @@ Para além do comportamento e presença de certos elementos no bloco, é possív
 
 <!-- tabs:end -->
 
-!> A Busca Facetada é um dos blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada. Isto ocorre porque ao se realizar qualquer busca a URL do site é complementada com os parâmetros que causariam conflito entre diferentes listas.
+> [!WARNING]
+> A Busca Facetada é um dos blocos que não permite que haja mais de um do seu tipo inserido no documento. Quando criada uma, a opção de inserir nova estará desabilitada. Isto ocorre porque ao se realizar qualquer busca a URL do site é complementada com os parâmetros que causariam conflito entre diferentes listas.
 
 ---

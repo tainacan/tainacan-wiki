@@ -1,21 +1,14 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Ícone de Itens" 
-		src="/_assets/images/icon_items.png"
-		width="42"
-		height="42">
-</div>
-
 # Itens
 
-Os “itens” são os verdadeiros conteúdos do repositório Tainacan, que são representados por pinturas, filmes, livros e, assim por diante. No Tainacan, os “itens” são organizados por “coleções” e, cada “coleção”, possui um conjunto de metadados, que são configurados conforme as características dos “itens” que irão fazer parte dela.
+Os **“itens”** são os verdadeiros conteúdos do repositório Tainacan, que são representados por pinturas, filmes, livros e, assim por diante. No Tainacan, os “itens” são organizados por **“coleções”** e, cada “coleção”, possui um conjunto de metadados, que são configurados conforme as características dos “itens” que irão fazer parte dela.
 
 > Na linguagem do WordPress, cada “item” é um “post” e, seu tipo de postagem, representa sua “coleção”
 
 O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL”), metadados e, também, eventuais documentos em anexo.
 
+<!-- tabs:start -->
 
-
+#### ** Criar **
 ## Criar Itens
 
 
@@ -121,7 +114,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 10. Para concluir a “criação do item”, escolha entre as opções abaixo:
 
-    **● “Publicar”**: O “item” será publicado na “coleção”;
+    ● **“Publicar”**: O “item” será publicado na “coleção”;
 
     ● **“Salvar como rascunho”**: O “item” adicionado ficará disponível apenas na seção “Rascunho” da “coleção”;
 
@@ -130,7 +123,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
     ![Acesse o painel de controle](\_assets\images\Criar_Itens_Descastar_Rascunho_Salvar.png)
 
     
-
+#### ** Editar **
 ## Editar Itens
 
 1. Acesse o painel de controle do WordPress;
@@ -155,7 +148,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
    ![Acesse o painel de controle](\_assets\images\Editar_Itens_Selecionar_Lapis.png)
 
-5. Para concluir a edição do , escolha entre as opções abaixo:
+5. Para concluir a edição do "item", escolha entre as opções abaixo:
 
    ● **“Atualizar”**: As alterações no “item” serão salvas;
 
@@ -166,7 +159,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
    ![Acesse o painel de controle](\_assets\images\Editar_itens_lixeira_rascunho_atualizar.png)
 
    
-
+#### ** Excluir **
 ## Excluir Itens
 
 1. Acesse o painel de controle do WordPress; 
@@ -197,6 +190,7 @@ Quando você exclui um *“item”* de uma *“coleção”* no Tainacan, ele é
 
 1. Os arquivos enviados para a lixeira estão disponíveis na aba *“Lixo”* da coleção; 
 
+
    ![Acesse o painel de controle](\_assets\images\Restaurar_Item_da_Lixeira.png)
 
 2. Clique na seta localizada à esquerda do *“ícone lixeira”* de cada *“item”* que deseja restaurar. Ao restaurar um *“item”* da lixeira, ele volta para o seu status anterior, *“publicado”* ou *“privado”*. 
@@ -216,4 +210,4 @@ Quando você exclui um *“item”* de uma *“coleção”* no Tainacan, ele é
    ![Acesse o painel de controle](\_assets\images\Deletar_Permanente_Item.png)
 
    
-
+<!-- tabs:end -->

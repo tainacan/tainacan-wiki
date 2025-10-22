@@ -19,11 +19,7 @@ Este es uno de los bloques más importantes que ofrece Tainacan. Con él configu
 
 En cuanto inserto el bloque, tengo que configurar mi búsqueda. Este proceso comienza determinando en qué colección concreta voy a buscar elementos. Una vez hecha esta elección, se me presenta mi lista de elementos, la misma que veo en el panel de administración de _Tainacan_. Los elementos que aparezcan en esta lista serán los que busque mi bloque. Aquí puedo cambiar, por ejemplo **filtros, orden de búsqueda, número de elementos buscados y ya aplicar una búsqueda textual simple**. Una vez hecho esto, esta información se guardará en la configuración de mi bloque y se mostrará la lista.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.jpg ":size=200")
-
-</div>
+![Lista de ajustes relacionadas con la cabecera de la colección](/_assets/images/blocks_collection_items_1.jpg ':size=220 :class=alignright')
 
 Con los elementos cargados, podemos realizar una serie de ajustes que estarán disponibles en el panel lateral cuando tengamos el bloque activo.
 
@@ -93,11 +89,7 @@ Con los elementos cargados, puede observar que el carrusel no se mueve. De hecho
 
 ![Ver el carrusel en acción en el tema](/_assets/gifs/blocks-collection-items-8.gif)
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de ajustes del carrusel de elementos](/_assets/images/blocks_items_carousel_1.png ":size=200")
-
-</div>
+![Lista de ajustes del carrusel de elementos](/_assets/images/blocks_items_carousel_1.png ':size=200 :class=alignright')
 
 La primera opción le permite decorar un poco su bloque añadiendo una cabecera para su colección en la parte superior de la lista. Debería ser similar a lo que se ve en la página de elementos, pero una versión reducida, con la miniatura de la colección en el centro, la imagen de cabecera a la derecha y el nombre de la colección a la izquierda. Puede configurar el color de fondo de la cabecera, el texto y elegir si desea mostrar o no una etiqueta "Colección" antes del nombre de la colección.
 
@@ -236,6 +228,7 @@ Además del comportamiento y la presencia de determinados elementos en el bloque
 
 <!-- tabs:end -->
 
-!> La búsqueda por atributos es uno de los bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea uno, se desactiva la opción de insertar uno nuevo. Esto se debe a que al realizar cualquier búsqueda, la URL del sitio se complementa con los parámetros que causarían conflicto entre las diferentes listas.
+> [!WARNING]
+> La búsqueda por atributos es uno de los bloques que no permite insertar más de uno de su tipo en el documento. Cuando se crea uno, se desactiva la opción de insertar uno nuevo. Esto se debe a que al realizar cualquier búsqueda, la URL del sitio se complementa con los parámetros que causarían conflicto entre las diferentes listas.
 
 ---

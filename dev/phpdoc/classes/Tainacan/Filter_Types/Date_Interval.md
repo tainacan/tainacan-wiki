@@ -1,61 +1,30 @@
-***
-
 # Date_Interval
+
 
 Class TainacanFilterType
 
-
+***
 
 * Full name: `\Tainacan\Filter_Types\Date_Interval`
-* Parent class: [`\Tainacan\Filter_Types\Filter_Type`](./Filter_Type.md)
-
-
-
+* Parent class: [`\Tainacan\Filter_Types\Filter_Type`](./Filter_Type)
 
 ## Methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
-
 ## Inherited methods
 
-
 ### __construct
-
-
 
 ```php
 public __construct(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -67,85 +36,39 @@ generate the metadata for this metadatum type
 public form(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_name
-
-
 
 ```php
 public set_name(string $name): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **string** | for the filter type |
-
-
-
+| Parameter | Type       | Description         |
+|-----------|------------|---------------------|
+| `$name`   | **string** | for the filter type |
 
 ***
 
 ### get_name
 
-
-
 ```php
 public get_name(): string
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### get_supported_types
 
-
-
 ```php
 public get_supported_types(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Supported types by the filter
-
-
 
 ***
 
@@ -157,41 +80,19 @@ specifies the types supported for the filter
 public set_supported_types(array $supported_types): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter          | Type      | Description         |
+|--------------------|-----------|---------------------|
 | `$supported_types` | **array** | the types supported |
-
-
-
 
 ***
 
 ### get_component
 
-
-
 ```php
 public get_component(): mixed
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
@@ -203,113 +104,55 @@ specifies the preview template for the filter type
 public set_preview_template(string $preview_template): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter           | Type       | Description         |
+|---------------------|------------|---------------------|
 | `$preview_template` | **string** | for the filter type |
-
-
-
 
 ***
 
 ### get_preview_template
 
-
-
 ```php
 public get_preview_template(): string
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### _toArray
 
-
-
 ```php
 public _toArray(): array
 ```
-
-
-
-
-
-
-
-
-
-
 
 ***
 
 ### set_options
 
-
-
 ```php
-public set_options( $options): mixed
+public set_options(mixed $options): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **mixed** |             |
 
 ***
 
 ### set_default_options
 
-
-
 ```php
 public set_default_options(array $options): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$options` | **array** |  |
-
-
-
+| Parameter  | Type      | Description |
+|------------|-----------|-------------|
+| `$options` | **array** |             |
 
 ***
 
@@ -323,75 +166,47 @@ public validate_options(\Tainacan\Entities\Filter $filter): true|array
 
 This method should be declared by each filter type sub classes
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
+| Parameter | Type                          | Description                                   |
+|-----------|-------------------------------|-----------------------------------------------|
 | `$filter` | **\Tainacan\Entities\Filter** | The metadatum object that is beeing validated |
-
 
 **Return Value:**
 
 True if options are valid. If invalid, returns an array where keys are the metadatum keys and values are error messages.
 
+**Throws:**
 
+- [`Exception`](../../Exception)
 
 ***
 
 ### set_component
 
-
-
 ```php
 public set_component(mixed $component): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$component` | **mixed** |  |
-
-
-
+| Parameter    | Type      | Description |
+|--------------|-----------|-------------|
+| `$component` | **mixed** |             |
 
 ***
 
 ### set_script
 
-
-
 ```php
 public set_script(string $script): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$script` | **string** |  |
-
-
-
+| Parameter | Type       | Description |
+|-----------|------------|-------------|
+| `$script` | **string** |             |
 
 ***
 
@@ -404,65 +219,53 @@ that were not set yet.
 public get_options(): array
 ```
 
-
-
-
-
-
-
-
-
 **Return Value:**
 
 Filter type options
-
-
 
 ***
 
 ### set_use_max_options
 
-
-
 ```php
 public set_use_max_options(mixed $use_max_options): mixed
 ```
 
-
-
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$use_max_options` | **mixed** |  |
-
-
-
+| Parameter          | Type      | Description |
+|--------------------|-----------|-------------|
+| `$use_max_options` | **mixed** |             |
 
 ***
 
 ### get_use_max_options
 
-
-
 ```php
 public get_use_max_options(): mixed
 ```
 
+***
 
+### set_use_input_placeholder
 
+```php
+public set_use_input_placeholder(mixed $use_input_placeholder): mixed
+```
 
+**Parameters:**
 
+| Parameter                | Type      | Description |
+|--------------------------|-----------|-------------|
+| `$use_input_placeholder` | **mixed** |             |
 
+***
 
+### get_use_input_placeholder
 
-
-
+```php
+public get_use_input_placeholder(): mixed
+```
 
 ***
 
@@ -476,23 +279,15 @@ public get_option(string $key): mixed
 
 Checks if option exist or if it have a default value. Otherwise return an empty string
 
-
-
-
-
-
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$key` | **string** | the desired option |
-
+| Parameter | Type       | Description        |
+|-----------|------------|--------------------|
+| `$key`    | **string** | the desired option |
 
 **Return Value:**
 
 the option value, the default value or an empty string
-
-
 
 ***
 
@@ -504,104 +299,42 @@ allow i18n from messages
 public get_form_labels(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_form_component
-
-
 
 ```php
 public get_form_component(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### get_script
-
-
 
 ```php
 public get_script(): string
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
 
 ### set_form_component
 
-
-
 ```php
-public set_form_component( $form_component): mixed
+public set_form_component(mixed $form_component): mixed
 ```
-
-
-
-
-
-
-
 
 **Parameters:**
 
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$form_component` | **** | The web component that will render the filter options form |
-
-
-
+| Parameter         | Type      | Description                                                |
+|-------------------|-----------|------------------------------------------------------------|
+| `$form_component` | **mixed** | The web component that will render the filter options form |
 
 ***
 
 ### get_filter_type
 
-
-
 ```php
 public get_filter_type(): mixed
 ```
 
-
-
-
-
-
-
-
-
-
-
 ***
-
-
-***
-> Automatically generated from source code comments on 2023-07-25 using [phpDocumentor](http://www.phpdoc.org/) and [saggre/phpdocumentor-markdown](https://github.com/Saggre/phpDocumentor-markdown)

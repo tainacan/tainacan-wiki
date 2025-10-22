@@ -1,6 +1,6 @@
 # Blocos do Item
 
-Os blocos do item são blocos relacionados ao envio ou exibição de um único item. Neste momento, existem 2 blocos com este perfil:
+Os blocos do item são blocos relacionados ao envio ou exibição de um único item. Atualmente, existem 2 blocos com este perfil:
 
 1. A [Galeria de Mídia do Item](#galeria-de-midias-do-item)
 2. O [Formulário de Submissão de Itens](#formulário-de-submissão-de-itens)

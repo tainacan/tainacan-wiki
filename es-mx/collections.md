@@ -1,12 +1,3 @@
-<div style="float: right; margin-left: 1rem;">
-	<img 
-		alt="Icono de Colecciones" 
-		src="_assets/images/icon_collections.png"
-		width="42"
-		height="42">
-</div>
-
-
 # Colecciones
 
 Una "colección" es un grupo de "elementos" que comparten un conjunto común de metadatos. Cada elemento subido a tu repositorio digital pertenecerá a una única “colección”.

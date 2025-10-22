@@ -12,11 +12,7 @@ No final de 2018, o WordPress 5.0 apresentou ao mundo seu novo editor de Posts e
 
 Focado em fornecer uma maneira dinâmica e visual para a editoração de conteúdo. Neste editor, todos os elementos de uma página, desde os mais simples parágrafos até a mais complexa galeria de imagens, são denominados **"Blocos"**. Com ele, fica fácil construir um post de lançamento de uma coleção, usando de imagens com diferentes alinhamentos, colunas, grades de texto, mapas, títulos ou botões mais chamativos. Além disso, [são diversos os plugins existentes](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para o WordPress que te oferecem novos blocos ricos e atraentes.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Blocos Gutenberg do Tainacan](/_assets/images/gutenberg-blocks-list.jpg ":size=450")
-
-</div>
+![Lista de Blocos Gutenberg do Tainacan](/_assets/images/gutenberg-blocks-list.jpg ':size=450 :class=alignright')
 
 ## Os Blocos Tainacan
 
@@ -48,11 +44,7 @@ Antes de começar a explorar os blocos do Tainacan, porém, talvez caiba entende
 2. É a região do conteúdo do bloco em si. Quando ativos - ou seja, clicados, em foco - os blocos do Tainacan em geral possuem uma região em cinza com a principal configuração a ser feita (geralmente escolher uma fonte dos dados mostrados, como uma coleção). Esta região não aparece na versão final do post, o que pode ser observado ao se mover o foco pra fora do bloco;
 3. É a barra lateral do editor onde, além das configurações do documento, estão as opções do bloco atualmente ativo. Nela ficam diversos tipos de opções relacionadas ao bloco. Todos os blocos possuem ao final desta sessão uma configuração avançada que permite atribuir classes aos blocos, o que pode ser usado para fazer customizações avançadas com CSS.
 
-<div style="float: right; margin-left: 32px;">
-
-![Lista de Possíveis Alinhamentos de Bloco](/_assets/images/gutenberg-blocks-alignments.png ":size=250")
-
-</div>
+![Lista de Possíveis Alinhamentos de Bloco](/_assets/images/gutenberg-blocks-alignments.png ':size=250 :class=alignright')
 
 ### Alinhamentos de Bloco
 
@@ -99,7 +91,8 @@ Primeiramente, esta simetria entre editor e página depende muito do quão bom f
 
 Não tenha medo de procurar por [outros blocos](https://br.wordpress.org/plugins/browse/blocks/ ":ignore") para instalar e testar em suas publicações.
 
-!> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia!
+> [!WARNING]
+> É importante dizer, porém, que a cada bloco novo, você cria uma dependência para seu site. Se um dia você desinstalar este bloco, aquelas postagens que os utilizaram terão seu conteúdo perdido ou no mínimo desfigurado. Então use com parcimônia!
 
 Eis aqui exemplos de blocos extras que gostamos:
 

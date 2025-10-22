@@ -1,4 +1,4 @@
-?> _TODO_  This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
+> [!NOTE] This page is in *Brazilian Portuguese* only so far. **If you can, please help us translate it to *English*.**
 
 # Terms Blocks
 
@@ -50,7 +50,8 @@ Como em outros blocos, você pode escolher exibir ou não o nome do termo abaixo
 
 Com o bloco Lista de Termos, você seleciona manualmente quais termos deseja exibir em uma lista com quebra de linha. 
 
-!> Uma desvantagem é que este é um **bloco estático**. Isso significa que os termos selecionados (nome e imagem) serão salvos na configuração do bloco no post e não são atualizados se vc fizer alguma mudança na configuração do termo. Suponhamos que você escolheu alguns termos, salvou seu post e alguns dias depois alterou o nome ou a imagem daquele termo. Ao voltar para o bloco, estas mudanças não estarão refletidas, será preciso repetir a seleção. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco do [Carrossel de Termos](#carrossel-de-termos) em seu lugar.
+> [!WARNING]
+> Uma desvantagem é que este é um **bloco estático**. Isso significa que os termos selecionados (nome e imagem) serão salvos na configuração do bloco no post e não são atualizados se vc fizer alguma mudança na configuração do termo. Suponhamos que você escolheu alguns termos, salvou seu post e alguns dias depois alterou o nome ou a imagem daquele termo. Ao voltar para o bloco, estas mudanças não estarão refletidas, será preciso repetir a seleção. Por isso recomendamos seu uso com cautela e se possível o uso do Bloco do [Carrossel de Termos](#carrossel-de-termos) em seu lugar.
 
 ### Configurações Iniciais do Bloco
 
