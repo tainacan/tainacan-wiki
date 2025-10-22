@@ -63,7 +63,7 @@ Cada metadado tem um conjunto de configurações possíveis. É um metadado obri
 
 > [Consulte a seção Tipos de Metadados](#tipos-de-metadados)
 
-É possível configurar metadados a nível de repositório, que serão herdados por todas coleções no repositório. Da mesma forma, coleções configuradas como "filha" herdam todos metadados da coleção selecionada. 
+É possível configurar metadados a nível de repositório, que serão herdados por todas coleções no repositório.
 
 > [Consulte a seção Coleções](#colecoes)
 
