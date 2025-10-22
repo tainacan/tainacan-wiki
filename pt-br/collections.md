@@ -22,7 +22,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 3. Clique em “criar coleção” na seção “coleções”. 
 
-   ![Acesse o painel de controle](\_assets\images\003.png)
+   ![Captura de tela mostrando o botão de criação de uma nova coleção](pt-br\_assets\images\collections.png)
 
   4. Nomeie a “coleção” no campo “Nome”;
 
