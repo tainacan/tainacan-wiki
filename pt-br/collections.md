@@ -20,7 +20,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
    ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
-3. Clique em “criar coleção” na seção “coleções”. 
+3. Clique em “criar coleção” na seção “coleções”;
 
    ![Tela do Tainacan destacando o botão usado para criar uma nova coleção](\_assets\images\collections.png)
 
@@ -34,7 +34,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
      ○ **“Privado”**: “coleções” com o status de “privado”, aparecem apenas para seu criador e usuários registrados do seu WordPress que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários;
 
-     ○ **Pendente**: “coleções” com o status “pendente” serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: “editores”, “moderadores” e “administradores”). Consulte Permissões de Usuários para saber mais.
+     ○ **“Pendente”**: “coleções” com o status “pendente” serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: “editores”, “moderadores” e “administradores”). Consulte Permissões de Usuários para saber mais.
 
      ![Campo de status da coleção, onde é possível escolher entre publicado, privado ou pendente](\_assets\images\status-da-colecao.png)
 
