@@ -14,15 +14,15 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 1. Acesse o “Painel de Controle” do WordPress;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Tela de login do WordPress, com os campos para acesso](\_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em “Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\002.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
 3. Clique em “criar coleção” na seção “coleções”. 
 
-   ![Captura de tela mostrando o botão de criação de uma nova coleção](\_assets\images\collections.png)
+   ![Tela do Tainacan destacando o botão usado para criar uma nova coleção](\_assets\images\collections.png)
 
   4. Nomeie a “coleção” no campo “Nome”;
 
