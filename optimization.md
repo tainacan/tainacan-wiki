@@ -82,7 +82,7 @@ Da mesma forma, caso seu servidor seja mais potente, você pode aumentar esse n�
 Para mudar essa configuração, adicione a seguinte linha no seu arquivo `wp-config.php`:
 
 ```php
-define(‘TAINACAN_API_MAX_ITEMS_PER_PAGE’, 96);
+define('TAINACAN_API_MAX_ITEMS_PER_PAGE', 96);
 ```
 
 Substituindo 96 pelo número de sua preferência.
