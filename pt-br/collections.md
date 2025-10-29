@@ -14,63 +14,63 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 1. Acesse o “Painel de Controle” do WordPress;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Tela de login do WordPress, com os campos para acesso](\_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em “Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\002.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
 3. Clique em “criar coleção” na seção “coleções”. 
 
-   ![Acesse o painel de controle](\_assets\images\003.png)
+   ![Tela do Tainacan destacando o botão usado para criar uma nova coleção](\_assets\images\collections.png)
 
   4. Nomeie a “coleção” no campo “Nome”;
 
-     ![Acesse o painel de controle](\_assets\images\004.png)
+     ![Digite o nome da coleção no campo Nome](\_assets\images\nomeando-colecao.png)
 
-  5. Defina seu status entre "publicado", "privado", ou "lixo". O status da “coleção” define a visibilidade dos seus itens. Veja a seguir:
+  5. Defina seu status entre "publicado", "privado", ou "pendente". O status da “coleção” define a visibilidade dos seus itens. Veja a seguir:
 
      ○ **“Publicado”**: “coleções” definidas como “publicado”, podem ser acessadas pelo público com acesso ao site assim que criadas;
 
      ○ **“Privado”**: “coleções” com o status de “privado”, aparecem apenas para seu criador e usuários registrados do seu WordPress que estão com a permissão padrão configurada. Você pode definir quem pode acessar as “coleções privadas” em Permissões de Usuários;
 
-     ○ **“Lixo”**: “coleções” no “lixo” serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: “editores”, “moderadores” e “administradores”). Consulte Permissões de Usuários para saber mais.
+     ○ **Pendente**: “coleções” com o status “pendente” serão visualizadas por usuários com permissão de acesso ao painel administrativo do Tainacan (por exemplo: “editores”, “moderadores” e “administradores”). Consulte Permissões de Usuários para saber mais.
 
-     ![Acesse o painel de controle](\_assets\images\005.png)
+     ![Campo de status da coleção, onde é possível escolher entre publicado, privado ou pendente](\_assets\images\status-da-colecao.png)
 
 6. Defina uma “miniatura” e uma “imagem do cabeçalho” com imagens que representem o conteúdo que fará parte dessa “coleção”:
 
    ○ A “imagem de miniatura” representará a “coleção” em diferentes ambientes no plugin e no tema do repositório (assim como a foto de um perfil no Facebook);
 
-   ![Acesse o painel de controle](\_assets\images\006.png)
+   ![Escolha imagens para a miniatura e o cabeçalho que melhor representem o tema ou os itens da coleção](\_assets\images\cabecalho-miniatura-da-colecao.png)
 
    ○ A “imagem do cabeçalho”, aparece na visualização da “coleção”, dependendo das configurações e do layout adotado. O tema padrão do Tainacan exibe a “imagem do cabeçalho” na “página da coleção”.
 
-   ![Acesse o painel de controle](\_assets\images\007.png)
+   ![Tela da coleção com imagens inseridas nos campos de miniatura e de cabeçalho](\_assets\images\imagens-da-colecao.png)
 
 7. Habilite a página de capa e adicione a URL específica caso esteja criando uma página com layout personalizado para exibir sua “coleção”. Essa configuração é opcional;
 
 8. Insira uma descrição sobre o conteúdo que fará parte desta “coleção”;
 
-   ![Acesse o painel de controle](\_assets\images\008.png)
+   ![Campo de descrição da coleção, destinado ao resumo do conteúdo que ela reúne](\_assets\images\descricao-da-colecao.png)
 
 9. Selecione um ou mais “modos de visualização” disponíveis no tema para a navegação na visualização da “coleção”;
 
    > Nota: Apenas os modos selecionados ficam disponíveis para “visualização da coleção”.
 
-   ![Acesse o painel de controle](\_assets\images\009.png)
+   ![Selecione um ou mais modos de visualização disponíveis no tema para exibir a coleção](\_assets\images\modos-de-visualizacao-da-colecao.png)
 
 10. Defina um “modo de visualização padrão” para sua “coleção”. Você pode selecionar entre aqueles definidos no passo 9;
 
-    ![Acesse o painel de controle](\_assets\images\010.png)
+    ![Defina um modo de visualização padrão para a coleção. Escolha entre os modos configurados na etapa anterior](\_assets\images\padrao-modo-visualizacao-da-colecao.png)
 
 11. Selecione se deseja “Permitir Comentários” na “coleção”. Os comentários podem ser geridos na seção de comentários do painel do WordPress. Saiba sobre o gerenciamento de comentários na documentação do WordPress; 
 
-    ![Acesse o painel de controle](\_assets\images\011.png)
+    ![Selecione se deseja permitir comentários na coleção](\_assets\images\comentarios-na-colecao.png)
 
 12. O campo “Slug” permite alterar a URL desta “coleção”. Por padrão, ela é criada a partir do nome da “coleção”, mas pode ser alterada neste campo;
 
-    ![Acesse o painel de controle](\_assets\images\063.png)
+    ![O campo Slug permite alterar a URL da coleção. ](\_assets\images\slug-da-colecao.png)
 
 13. Clique em “Salvar e ir para Metadados” para acessar a configuração de metadados desta “coleção”. Consulte Metadados para saber mais;
 
