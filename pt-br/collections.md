@@ -70,7 +70,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 12. O campo “Slug” permite alterar a URL desta “coleção”. Por padrão, ela é criada a partir do nome da “coleção”, mas pode ser alterada neste campo;
 
-    ![O campo Slug permite alterar a URL da coleção. ](\_assets\images\slug-da-colecao.png)
+    ![O campo Slug permite alterar a URL da coleção](\_assets\images\slug-da-colecao.png)
 
 13. Clique em “Salvar e ir para Metadados” para acessar a configuração de metadados desta “coleção”. Consulte Metadados para saber mais;
 
@@ -165,7 +165,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 2. Na barra lateral esquerda, clique em “Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\002.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
 3. Clique em “Ver todas as coleções” para acessar a “lista de coleções” do seu repositório;
 
@@ -201,7 +201,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 2. Na barra lateral esquerda, clique em “Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\002.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
 3. Clique em “Ver todas as coleções” para acessar a “lista de coleções” do seu repositório;
 

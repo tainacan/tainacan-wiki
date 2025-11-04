@@ -18,7 +18,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 2. Na barra lateral esquerda, clique em “Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\002.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
 3. Na seção “Coleções”, clique na “coleção” desejada;
 
@@ -132,7 +132,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 2. Na barra lateral esquerda, clique em “Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\002.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
 3. Na seção “coleções”, clique na “coleção” desejada;
 
@@ -168,7 +168,7 @@ O “Item” é o conjunto de um documento (“mídia”, “texto” ou “URL�
 
 2. Na barra lateral esquerda, clique em "Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\002.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
 3. Na seção "coleções”, clique na “coleção” desejada;
 
