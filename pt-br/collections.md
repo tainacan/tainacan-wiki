@@ -22,7 +22,7 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 3. Clique em “criar coleção” na seção “coleções”;
 
-   ![Tela do Tainacan destacando o botão usado para criar uma nova coleção](\_assets\images\collections.png)
+   ![Tela do Tainacan destacando o botão usado para criar uma nova coleção](\_assets\images\nova-colecao.png)
 
   4. Nomeie a “coleção” no campo “Nome”;
 
@@ -74,15 +74,15 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 13. Clique em “Salvar e ir para Metadados” para acessar a configuração de metadados desta “coleção”. Consulte Metadados para saber mais;
 
-    ![Acesse o painel de controle](\_assets\images\062.png)
+    ![Botão “Salvar e ir para Metadados”, que leva à configuração de metadados da coleção](\_assets\images\salvando-colecao.png)
 
 14. Ou
 
 15. Clique em “Salvar e ir para Filtros” para acessar a configuração de filtros desta “coleção”. Consulte Filtros para saber mais; 
 
-    ![Acesse o painel de controle](\_assets\images\061.png)
+    ![Botão “Salvar e ir para Filtros”, que leva à configuração de filtros da coleção](\_assets\images\salvando-colecao-2.png)
 
-16. Clique em “Concluir” para terminar a configuração desta nova “coleção”. ![Acesse o painel de controle](\_assets\images\060.png)
+16. Clique em “Concluir” para terminar a configuração desta nova “coleção”. ![Botão “Concluir”, que finaliza a configuração da nova coleção](\_assets\images\salvando-colecao-3.png)
 
 ## Editar Coleções
 1. Acesse o painel de controle do *WordPress*;
