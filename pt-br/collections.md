@@ -12,11 +12,11 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 
 ## Criar Coleções
 
-1. Acesse o “Painel de Controle” do WordPress;
+1. Acesse o “Painel de Controle” do *WordPress*;
 
    ![Tela de login do WordPress, com os campos para acesso](\_assets\images\050.png)
 
-2. Na barra lateral esquerda, clique em “Tainacan”;
+2. Na barra lateral esquerda, clique em *Tainacan*;
 
    ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
@@ -87,45 +87,41 @@ Para cada “coleção” você pode configurar um conjunto diferente de metadad
 ## Editar Coleções
 1. Acesse o painel de controle do *WordPress*;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Tela de login do WordPress, com os campos para acesso](\_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em “Tainacan”;
 
-   ![Acesse o painel de controle](\_assets\images\051.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
-3. Clique em "Ver todas as coleções";
+3. Clique em "Lista de coleções";
 
-   ![Acesse o painel de controle](\_assets\images\056.png)
+   ![Botão “Lista de coleções”, que você pode selecionar no menu lateral do Tainacan ou no cartão “Coleções” para acessar a lista de coleções](\_assets\images\lista-de-colecoes.png)
 
-4. Na seção “Coleções” clique no “ícone engrenagem” à direita para editar a “coleção” desejada.
+4. Na seção "Lista de coleções" clique no "ícone engrenagem" à direita para editar a "coleção" desejada.
 
-   ![Acesse o painel de controle](\_assets\images\058.png)
-
-
+   ![Selecione o "ícone de engrenagem" para editar a coleção desejada](\_assets\images\editar-colecao.png)
 
 ## Excluir Coleções
 
 1. Acesse o painel de controle do *WordPress*;
 
-   ![Acesse o painel de controle](\_assets\images\050.png)
+   ![Tela de login do WordPress, com os campos para acesso](\_assets\images\050.png)
 
 2. Na barra lateral esquerda, clique em *Tainacan*;
 
-   ![Acesse o painel de controle](\_assets\images\051.png)
+   ![Acesse o painel de controle do WordPress e selecione Tainacan no menu lateral](\_assets\images\abrir-tainacan.png)
 
-3. Clique em "Ver todas as coleções";
+3. Clique em "Lista de coleções";
 
-   ![Acesse o painel de controle](\_assets\images\056.png)
+   ![Botão “Lista de coleções”, que você pode selecionar no menu lateral do Tainacan ou no cartão “Coleções” para acessar a lista de coleções](\_assets\images\lista-de-colecoes.png)
 
 4. Na listagem de coleções, clique no “ícone de lixeira” para excluir a coleção desejada;
 
-   ![Acesse o painel de controle](\_assets\images\054.png)
+   ![Selecione o "ícone de lixeira" para excluir a coleção desejada](\_assets\images\excluir-colecao.png)
 
-5. As “coleções excluídas” vão para a aba "Lixo", em "Coleções".
+5. As “coleções excluídas” vão para o status "Lixo", em "Lista de coleções".
 
-   ![Acesse o painel de controle](\_assets\images\055.png)
-
-
+   ![As coleções que você excluir ficam disponíveis no status “Lixo”, dentro de “Lista de coleções”](\_assets\images\lixeira-de-colecoes.png)
 
 ### Excluir coleções em lote
 
