@@ -11,6 +11,44 @@ bulk metadata updates, bulk item modifications, and batch processing.
 * Full name: `\Tainacan\API\EndPoints\REST_Bulkedit_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Bulkedit_Controller {
+        -metadatum_repository : mixed
+        -collections_repository : mixed
+        +__construct()
+        +init_objects()
+        +register_routes()
+        +bulk_edit_permissions_check(request)
+        +create_item(request)
+        +set_status(request)
+        +trash_items(request)
+        +untrash_items(request)
+        +delete_items(request)
+        +add_value(request)
+        +set_value(request)
+        +clear_value(request)
+        +remove_value(request)
+        +copy_value(request)
+        +replace_value(request)
+        +set_comment_status(request)
+        +set_author_id(request)
+        +get_item(request)
+        +prepare_item_for_response(bulk_object, request)
+        -generic_action(method, request, keys)
+        +get_item_in_sequence(request)
+        +get_create_params(object_name)
+        +get_sequence_params()
+        +get_actions_params(action)
+        +get_actions_schema()
+        +get_bulk_schema()
+        +get_sequence_schema()
+        +get_schema()
+    }
+```
+
 ## Properties
 
 ### metadatum_repository

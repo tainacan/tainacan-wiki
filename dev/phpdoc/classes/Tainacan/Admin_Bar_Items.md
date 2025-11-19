@@ -10,6 +10,17 @@ collections, taxonomies, and terms when users have appropriate permissions.
 
 * Full name: `\Tainacan\Admin_Bar_Items`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Admin_Bar_Items {
+        -init()
+        +add_admin_bar_items_styles()
+        +add_admin_bar_items(admin_bar)
+    }
+```
+
 ## Methods
 
 ### init

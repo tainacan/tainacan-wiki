@@ -10,6 +10,23 @@ PDF content extraction, document processing, and search index updates.
 
 * Full name: `\Tainacan\Cli_Document`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Cli_Document {
+        -collection_repository : mixed
+        -items_repository : mixed
+        -result_count : mixed
+        -dry_run : mixed
+        +__construct()
+        +__invoke(args, assoc_args)
+        -index_item_all_collections()
+        -index_item(collection_id)
+        -index_content_document_item(item)
+    }
+```
+
 ## Properties
 
 ### collection_repository

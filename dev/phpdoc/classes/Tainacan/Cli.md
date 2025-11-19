@@ -10,6 +10,16 @@ garbage collection, attachment management, and collection operations.
 
 * Full name: `\Tainacan\Cli`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Cli {
+        -init()
+        +add_commands()
+    }
+```
+
 ## Methods
 
 ### init

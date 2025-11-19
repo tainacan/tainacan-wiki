@@ -12,6 +12,29 @@ object filtering, attribute handling, and standard WordPress REST API integratio
 * Parent class: [`WP_REST_Controller`](../../WP_REST_Controller)
 * This class is an **Abstract class**
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Controller {
+        +__construct()
+        #filter_object_by_attributes(object, attributes)
+        #prepare_item_for_updating(object, new_values)
+        #prepare_filters(request)
+        +add_support_to_tax_query_like(args)
+        #sanitize_value(value)
+        -prepare_meta(mapped, request, query, mapped_v, args)
+        #contains_array(array, query)
+        +get_fetch_only_param()
+        +get_wp_query_params()
+        #get_meta_queries_params()
+        +get_repository_schema(repository)
+        +get_permissions_schema()
+        +get_base_properties_schema()
+        +get_list_schema()
+    }
+```
+
 ## Methods
 
 ### __construct

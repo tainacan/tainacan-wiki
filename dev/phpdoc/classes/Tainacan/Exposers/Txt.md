@@ -8,6 +8,33 @@ Generate a text formated response
 * Full name: `\Tainacan\Exposers\Txt`
 * Parent class: [`\Tainacan\Exposers\Exposer`](./Exposer)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Exposer {
+        #mappers : mixed
+        +accept_no_mapper : mixed
+        +slug : mixed
+        -name : mixed
+        -description : mixed
+        #set_name(name)
+        #set_description(description)
+        +get_name()
+        +get_description()
+        +_toArray()
+        +get_mappers()
+    }
+    class Txt {
+        +mappers : mixed
+        +slug : mixed
+        +name : mixed
+        +rest_request_after_callbacks(response, handler, request)
+        #array_to_txt(data, txt)
+    }
+    Exposer <|-- Txt
+```
+
 ## Properties
 
 ### mappers

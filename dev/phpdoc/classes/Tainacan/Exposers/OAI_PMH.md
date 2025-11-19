@@ -8,6 +8,32 @@ Generate a OAI_PMH/oai_dc formated response
 * Full name: `\Tainacan\Exposers\OAI_PMH`
 * Parent class: [`\Tainacan\Exposers\Exposer`](./Exposer)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Exposer {
+        #mappers : mixed
+        +accept_no_mapper : mixed
+        +slug : mixed
+        -name : mixed
+        -description : mixed
+        #set_name(name)
+        #set_description(description)
+        +get_name()
+        +get_description()
+        +_toArray()
+        +get_mappers()
+    }
+    class OAI_PMH {
+        +mappers : mixed
+        +slug : mixed
+        +name : mixed
+        +rest_request_after_callbacks(response, handler, request)
+    }
+    Exposer <|-- OAI_PMH
+```
+
 ## Constants
 
 | Constant               | Visibility | Type | Value                                         |

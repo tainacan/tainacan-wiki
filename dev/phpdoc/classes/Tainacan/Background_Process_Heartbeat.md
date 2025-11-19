@@ -5,6 +5,16 @@
 
 * Full name: `\Tainacan\Background_Process_Heartbeat`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Background_Process_Heartbeat {
+        -init()
+        +bg_process_feedback(response, data)
+    }
+```
+
 ## Methods
 
 ### init

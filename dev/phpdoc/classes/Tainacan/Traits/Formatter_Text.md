@@ -7,6 +7,15 @@ Class for formatter texts
 
 * Full name: `\Tainacan\Traits\Formatter_Text`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Formatter_Text {
+        +$make_clickable_links(text)
+    }
+```
+
 ## Methods
 
 ### make_clickable_links

@@ -7,6 +7,19 @@ Defines Collection and Items relation
 
 * Full name: `\Tainacan\Traits\Entity_Collection_Relation`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Entity_Collection_Relation {
+        #collection : mixed
+        +get_collection_id()
+        +get_collection()
+        +set_collection_id(value)
+        +set_collection(collection)
+    }
+```
+
 ## Properties
 
 ### collection

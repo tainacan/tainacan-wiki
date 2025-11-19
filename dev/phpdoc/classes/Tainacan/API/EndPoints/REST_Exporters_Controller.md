@@ -11,6 +11,28 @@ export configuration, export execution, and export management.
 * Full name: `\Tainacan\API\EndPoints\REST_Exporters_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Exporters_Controller {
+        -collections_repository : mixed
+        +__construct()
+        +init_objects()
+        +register_routes()
+        +export_permissions_check(request)
+        +get_registered_exporters()
+        +create_item(request)
+        +update_item(request)
+        +run(request)
+        #map(item_arr, mapper)
+        #map_metadatum(item_arr, mapper)
+        +get_schema()
+        +get_schema_run()
+        +get_schema_exporters_available()
+    }
+```
+
 ## Properties
 
 ### collections_repository

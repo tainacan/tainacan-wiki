@@ -11,6 +11,20 @@ type registration, configuration, and management of metadata type definitions.
 * Full name: `\Tainacan\API\EndPoints\REST_Metadata_Types_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Metadata_Types_Controller {
+        +__construct()
+        +register_routes()
+        +prepare_item_for_response(item, request)
+        +get_items(request)
+        +get_items_permissions_check(request)
+        +get_schema()
+    }
+```
+
 ## Methods
 
 ### __construct

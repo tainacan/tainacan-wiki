@@ -11,6 +11,21 @@ metadata harvesting, repository configuration, and OAI-PMH compliance.
 * Full name: `\Tainacan\API\EndPoints\REST_Oaipmh_Expose_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Oaipmh_Expose_Controller {
+        +__construct()
+        +init_objects()
+        +register_routes()
+        +get_verb_permissions_check(request)
+        +get_verb(request)
+        +get_verb_params()
+        +get_schema()
+    }
+```
+
 ## Methods
 
 ### __construct

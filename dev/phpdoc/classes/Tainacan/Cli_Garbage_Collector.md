@@ -10,6 +10,23 @@ database entries, and maintaining Tainacan installation health.
 
 * Full name: `\Tainacan\Cli_Garbage_Collector`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Cli_Garbage_Collector {
+        +__invoke(args, assoc_args)
+        -get_orphan_items_query(select)
+        -delete_items(dry_run, deep)
+        -get_orphan_attachments_count()
+        -delete_attachments(dry_run, deep)
+        -filesize_formatted(size)
+        -delete_terms_taxonomies(dry_run, deep)
+        -delete_metadata(dry_run, deep)
+        -delete_transients(dry_run)
+    }
+```
+
 ## Methods
 
 ### __invoke

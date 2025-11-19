@@ -11,6 +11,30 @@ sequential item editing, batch sequence updates, and sequence management.
 * Full name: `\Tainacan\API\EndPoints\REST_Sequence_Edit_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Sequence_Edit_Controller {
+        -items_repository : mixed
+        -collections_repository : mixed
+        +__construct()
+        +init_objects()
+        +register_routes()
+        +prepare_item_for_response(item, request)
+        +sequence_edit_permissions_check(request)
+        +create_item(request)
+        +get_item(request)
+        +get_item_in_sequence(request)
+        +get_create_params(object_name)
+        +get_sequence_params()
+        +get_sequence_index_params()
+        +get_sequence_schema()
+        +get_sequence_index_schema()
+        +get_schema()
+    }
+```
+
 ## Properties
 
 ### items_repository

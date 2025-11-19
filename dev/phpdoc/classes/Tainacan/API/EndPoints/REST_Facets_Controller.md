@@ -11,6 +11,21 @@ facet creation, updates, deletion, and querying of collection facets.
 * Full name: `\Tainacan\API\EndPoints\REST_Facets_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Facets_Controller {
+        -metadatum_repository : mixed
+        +__construct()
+        +init_objects()
+        +register_routes()
+        +get_items(request)
+        +get_items_permissions_check(request)
+        +get_schema()
+    }
+```
+
 ## Properties
 
 ### metadatum_repository

@@ -11,6 +11,23 @@ exposer configuration, mappers configuration and exposer management.
 * Full name: `\Tainacan\API\EndPoints\REST_Exposers_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Exposers_Controller {
+        -metadatum_repository : mixed
+        -exposers : mixed
+        -mappers : mixed
+        #get_schema()
+        +__construct()
+        +init_objects()
+        +register_routes()
+        +get_items(request)
+        +get_items_permissions_check(request)
+    }
+```
+
 ## Properties
 
 ### metadatum_repository

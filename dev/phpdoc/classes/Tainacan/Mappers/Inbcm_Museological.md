@@ -6,6 +6,34 @@
 * Full name: `\Tainacan\Mappers\Inbcm_Museological`
 * Parent class: [`\Tainacan\Mappers\Mapper`](./Mapper)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Mapper {
+        +slug : mixed
+        +name : mixed
+        +allow_extra_metadata : mixed
+        +context_url : mixed
+        +type : mixed
+        +metadata : array
+        +prefix : mixed
+        +sufix : mixed
+        +header : mixed
+        +show_ui : mixed
+        +_toArray()
+        +get_url(meta_slug)
+        +__construct()
+    }
+    class Inbcm_Museological {
+        +slug : mixed
+        +name : mixed
+        +allow_extra_metadata : mixed
+        +__construct()
+    }
+    Mapper <|-- Inbcm_Museological
+```
+
 ## Properties
 
 ### slug

@@ -7,6 +7,20 @@ A wraper of DOMDocument for data provider
 
 * Full name: `\Tainacan\OAIPMHExpose\Xml_Create`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Xml_Create {
+        +doc : mixed
+        +__construct(par_array)
+        +addChild(mom_node, name, value)
+        +addChildDC(mom_node, name, value)
+        +create_request(par_array)
+        +display()
+    }
+```
+
 ## Properties
 
 ### doc

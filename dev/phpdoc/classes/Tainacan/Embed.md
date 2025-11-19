@@ -10,6 +10,23 @@ video, audio, and PDF files with responsive design support.
 
 * Full name: `\Tainacan\Embed`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Embed {
+        -aspect_ratios : array
+        #init()
+        +filter_video_embed(video, attr, url, rawattr)
+        +filter_audio_embed(audio, attr, url, rawattr)
+        +pdf_embed_handler(matches, attr, url, rawattr)
+        +oembed_get_thumbnail(url)
+        +oembed_get_thumbnail_filter(return, data, url)
+        +add_css()
+        +add_responsive_wrapper(html)
+    }
+```
+
 ## Properties
 
 ### aspect_ratios

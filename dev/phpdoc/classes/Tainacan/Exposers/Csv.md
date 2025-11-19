@@ -8,6 +8,12 @@ Generate a Csv formated response
 * Full name: `\Tainacan\Exposers\Csv`
 * Parent class: [`\Tainacan\Exposers\Exposer`](./Exposer)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+```
+
 ## Properties
 
 ### slug

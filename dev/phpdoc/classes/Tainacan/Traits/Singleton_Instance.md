@@ -7,6 +7,17 @@ Class for Singleton pattern
 
 * Full name: `\Tainacan\Traits\Singleton_Instance`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Singleton_Instance {
+        -instance : mixed
+        +$get_instance()
+        -__construct()
+    }
+```
+
 ## Properties
 
 ### instance

@@ -11,6 +11,25 @@ in WordPress, typically used for background processing tasks.
 * Full name: `\Tainacan\Async_Request`
 * This class is an **Abstract class**
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Async_Request {
+        #prefix : string
+        #action : string
+        #identifier : mixed
+        #data : array
+        +__construct()
+        +data(data)
+        +dispatch()
+        #get_query_args()
+        #get_query_url()
+        #get_post_args()
+        +maybe_handle()
+    }
+```
+
 ## Properties
 
 ### prefix

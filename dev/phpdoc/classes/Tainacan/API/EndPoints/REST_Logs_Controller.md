@@ -11,6 +11,25 @@ log creation, querying, and log management for audit trails.
 * Full name: `\Tainacan\API\EndPoints\REST_Logs_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Logs_Controller {
+        -logs_repository : mixed
+        +__construct()
+        +register_routes()
+        +prepare_item_for_response(item, request)
+        -prepare_legacy_item_for_response(item, request)
+        +get_items(request)
+        +get_items_permissions_check(request)
+        +get_item(request)
+        +get_item_permissions_check(request)
+        +get_endpoint_args_for_item_schema(method)
+        +get_schema()
+    }
+```
+
 ## Properties
 
 ### logs_repository

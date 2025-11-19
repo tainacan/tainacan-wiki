@@ -8,6 +8,35 @@ Generate a text formated response
 * Full name: `\Tainacan\Exposers\JSON_LD`
 * Parent class: [`\Tainacan\Exposers\Exposer`](./Exposer)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Exposer {
+        #mappers : mixed
+        +accept_no_mapper : mixed
+        +slug : mixed
+        -name : mixed
+        -description : mixed
+        #set_name(name)
+        #set_description(description)
+        +get_name()
+        +get_description()
+        +_toArray()
+        +get_mappers()
+    }
+    class JSON_LD {
+        +mappers : mixed
+        +slug : mixed
+        +name : mixed
+        #contexts : mixed
+        +rest_request_after_callbacks(response, handler, request)
+        #array_to_jsonld(data, jsonld)
+        +get_locale(obj)
+    }
+    Exposer <|-- JSON_LD
+```
+
 ## Properties
 
 ### mappers

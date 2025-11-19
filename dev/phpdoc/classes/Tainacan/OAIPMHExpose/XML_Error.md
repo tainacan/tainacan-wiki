@@ -10,6 +10,15 @@ It has only one derived member function
 * Full name: `\Tainacan\OAIPMHExpose\XML_Error`
 * Parent class: [`XML_Create`](./XML_Create)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class XML_Error {
+        +__construct(par_array, error_array)
+    }
+```
+
 ## Methods
 
 ### __construct

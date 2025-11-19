@@ -11,6 +11,40 @@ section creation, updates, deletion, and querying within collections.
 * Full name: `\Tainacan\API\EndPoints\REST_Metadata_Sections_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Metadata_Sections_Controller {
+        -metadata_sections_repository : mixed
+        -metadata_repository : mixed
+        -collection_repository : mixed
+        +__construct()
+        +init_objects()
+        +register_routes()
+        +prepare_item_for_database(request, collection_id)
+        +prepare_item_for_response(item, request)
+        +prepare_metadata_for_response(item, request)
+        +get_item(request)
+        +get_item_permissions_check(request)
+        +create_item(request)
+        +create_item_permissions_check(request)
+        +get_items(request)
+        +get_items_permissions_check(request)
+        +delete_item(request)
+        +delete_item_permissions_check(request)
+        +update_item(request)
+        +add_metadata(request)
+        +delete_metadata(request)
+        +get_metadata_list(request)
+        +update_item_permissions_check(request)
+        +get_wp_query_params()
+        +get_endpoint_args_for_item_schema(method)
+        +get_metadata_list_schema()
+        +get_schema()
+    }
+```
+
 ## Properties
 
 ### metadata_sections_repository

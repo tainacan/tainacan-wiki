@@ -11,6 +11,23 @@ mapper configuration, data transformation, and mapper management.
 * Full name: `\Tainacan\API\EndPoints\REST_Metadatum_Mappers_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Metadatum_Mappers_Controller {
+        #get_schema()
+        +__construct()
+        +register_routes()
+        +prepare_item_for_response(mapper, request)
+        +prepare_metadatum_for_response(item, request)
+        +get_items(request)
+        +get_items_permissions_check(request)
+        +update_item_permissions_check(request)
+        +update_item(request)
+    }
+```
+
 ## Methods
 
 ### get_schema

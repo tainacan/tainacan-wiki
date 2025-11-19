@@ -10,6 +10,24 @@ recalculation of metadata values and metadata validation operations.
 
 * Full name: `\Tainacan\Cli_Control_Metadata`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Cli_Control_Metadata {
+        -collection_repository : mixed
+        -items_repository : mixed
+        -result_count : mixed
+        -dry_run : mixed
+        +__construct()
+        +__invoke(args, assoc_args)
+        -recalculate_items_for_all_collections()
+        -recalculate_items(collection_id)
+        -recreate_control_metadata_collection_definitions()
+        -perform_item_recalculation(item)
+    }
+```
+
 ## Properties
 
 ### collection_repository

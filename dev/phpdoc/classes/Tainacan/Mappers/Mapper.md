@@ -6,6 +6,27 @@
 * Full name: `\Tainacan\Mappers\Mapper`
 * This class is an **Abstract class**
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Mapper {
+        +slug : mixed
+        +name : mixed
+        +allow_extra_metadata : mixed
+        +context_url : mixed
+        +type : mixed
+        +metadata : array
+        +prefix : mixed
+        +sufix : mixed
+        +header : mixed
+        +show_ui : mixed
+        +_toArray()
+        +get_url(meta_slug)
+        +__construct()
+    }
+```
+
 ## Properties
 
 ### slug

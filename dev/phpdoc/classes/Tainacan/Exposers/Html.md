@@ -8,6 +8,35 @@ Generate a Html formated response
 * Full name: `\Tainacan\Exposers\Html`
 * Parent class: [`\Tainacan\Exposers\Exposer`](./Exposer)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Exposer {
+        #mappers : mixed
+        +accept_no_mapper : mixed
+        +slug : mixed
+        -name : mixed
+        -description : mixed
+        #set_name(name)
+        #set_description(description)
+        +get_name()
+        +get_description()
+        +_toArray()
+        +get_mappers()
+    }
+    class Html {
+        +slug : mixed
+        +name : mixed
+        #mappers : mixed
+        +accept_no_mapper : mixed
+        +__construct()
+        +rest_request_after_callbacks(response, handler, request)
+        #array_to_html(data)
+    }
+    Exposer <|-- Html
+```
+
 ## Properties
 
 ### slug

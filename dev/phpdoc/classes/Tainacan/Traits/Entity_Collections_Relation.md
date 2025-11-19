@@ -5,6 +5,20 @@
 
 * Full name: `\Tainacan\Traits\Entity_Collections_Relation`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Entity_Collections_Relation {
+        +get_collections_ids()
+        +get_collections()
+        +set_collections_ids(value)
+        +set_collections(collections)
+        +add_collection_id(new_collection_id)
+        +remove_collection_id(collection_id)
+    }
+```
+
 ## Methods
 
 ### get_collections_ids

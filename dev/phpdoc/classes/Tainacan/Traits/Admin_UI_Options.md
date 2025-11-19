@@ -8,6 +8,17 @@ the URL or via the 'tainacan-admin-ui-options' filter.
 
 * Full name: `\Tainacan\Traits\Admin_UI_Options`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Admin_UI_Options {
+        #admin_ui_options : mixed
+        +get_available_admin_ui_options()
+        +has_admin_ui_option(option)
+    }
+```
+
 ## Properties
 
 ### admin_ui_options

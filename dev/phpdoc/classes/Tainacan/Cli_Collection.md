@@ -10,6 +10,23 @@ listing, removing items, and other collection operations.
 
 * Full name: `\Tainacan\Cli_Collection`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Cli_Collection {
+        -collection_repository : Collections
+        -items_repository : Items
+        -result_count : array
+        -dry_run : bool
+        +__construct()
+        +list()
+        +clean(args, assoc_args)
+        -delete_item(item, permanently)
+        -delete_attachments(item)
+    }
+```
+
 ## Properties
 
 ### collection_repository

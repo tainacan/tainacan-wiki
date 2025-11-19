@@ -11,6 +11,26 @@ import configuration, import execution, and import management.
 * Full name: `\Tainacan\API\EndPoints\REST_Importers_Controller`
 * Parent class: [`\Tainacan\API\REST_Controller`](../REST_Controller)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class REST_Importers_Controller {
+        #get_schema()
+        +__construct()
+        +register_routes()
+        +import_permissions_check(request)
+        +create_item(request)
+        +update_item(request)
+        +source_info(request)
+        +get_saved_mapping(request)
+        +get_item(request)
+        +add_file(request)
+        +run(request)
+        +get_registered_importers()
+    }
+```
+
 ## Methods
 
 ### get_schema

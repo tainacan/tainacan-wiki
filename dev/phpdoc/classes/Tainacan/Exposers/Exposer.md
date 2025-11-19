@@ -8,6 +8,25 @@ abstract class for implement exposer types
 * Full name: `\Tainacan\Exposers\Exposer`
 * This class is an **Abstract class**
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Exposer {
+        #mappers : mixed
+        +accept_no_mapper : mixed
+        +slug : mixed
+        -name : mixed
+        -description : mixed
+        #set_name(name)
+        #set_description(description)
+        +get_name()
+        +get_description()
+        +_toArray()
+        +get_mappers()
+    }
+```
+
 ## Properties
 
 ### mappers

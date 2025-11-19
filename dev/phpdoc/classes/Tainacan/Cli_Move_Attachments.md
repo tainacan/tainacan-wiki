@@ -10,6 +10,20 @@ directory structure introduced in Tainacan version 0.11.
 
 * Full name: `\Tainacan\Cli_Move_Attachments`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Cli_Move_Attachments {
+        -collections : mixed
+        -documents : mixed
+        +__invoke(args, assoc_args)
+        -is_item_attachment(att)
+        -is_document(attachment_id)
+        -get_collection(id)
+    }
+```
+
 ## Properties
 
 ### collections

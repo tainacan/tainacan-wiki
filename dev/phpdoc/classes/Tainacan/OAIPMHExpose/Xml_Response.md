@@ -10,6 +10,31 @@ This is the class to further develop to suits a publication need
 * Full name: `\Tainacan\OAIPMHExpose\Xml_Response`
 * Parent class: [`\Tainacan\OAIPMHExpose\Xml_Create`](./Xml_Create)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Xml_Response {
+        +verbNode : mixed
+        #verb : mixed
+        +__construct(par_array)
+        +add2_verbNode(nodeName, value)
+        +create_record()
+        +create_header(identifier, timestamp, ands_class, add_to_node, is_deleted)
+        +create_metadata(mom_record_node)
+        +create_resumpToken(token, expirationdatetime, num_rows, cursor)
+    }
+    class Xml_Create {
+        +doc : mixed
+        +__construct(par_array)
+        +addChild(mom_node, name, value)
+        +addChildDC(mom_node, name, value)
+        +create_request(par_array)
+        +display()
+    }
+    Xml_Create <|-- Xml_Response
+```
+
 ## Properties
 
 ### verbNode

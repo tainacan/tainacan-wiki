@@ -176,6 +176,58 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\API
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class REST_Controller { }
+    class endpoints_REST_Oaipmh_Expose_Controller { }
+    class endpoints_REST_Roles_Controller { }
+    class endpoints_REST_Metadata_Controller { }
+    class endpoints_REST_Exporters_Controller { }
+    class endpoints_REST_Items_Controller { }
+    class endpoints_REST_Metadata_Sections_Controller { }
+    class endpoints_REST_Background_Processes_Controller { }
+    class endpoints_REST_Reports_Controller { }
+    class endpoints_REST_Terms_Controller { }
+    class endpoints_REST_Metadata_Types_Controller { }
+    class endpoints_REST_Exposers_Controller { }
+    class endpoints_REST_Metadatum_Mappers_Controller { }
+    class endpoints_REST_Facets_Controller { }
+    class endpoints_REST_Filters_Controller { }
+    class endpoints_REST_Importers_Controller { }
+    class endpoints_REST_Collections_Controller { }
+    class endpoints_REST_Filter_Types_Controller { }
+    class endpoints_REST_Item_Metadata_Controller { }
+    class endpoints_REST_Bulkedit_Controller { }
+    class endpoints_REST_Taxonomies_Controller { }
+    class endpoints_REST_Logs_Controller { }
+    class endpoints_REST_Sequence_Edit_Controller { }
+    REST_Controller <|-- endpoints_REST_Background_Processes_Controller
+    REST_Controller <|-- endpoints_REST_Bulkedit_Controller
+    REST_Controller <|-- endpoints_REST_Collections_Controller
+    REST_Controller <|-- endpoints_REST_Exporters_Controller
+    REST_Controller <|-- endpoints_REST_Exposers_Controller
+    REST_Controller <|-- endpoints_REST_Facets_Controller
+    REST_Controller <|-- endpoints_REST_Filter_Types_Controller
+    REST_Controller <|-- endpoints_REST_Filters_Controller
+    REST_Controller <|-- endpoints_REST_Importers_Controller
+    REST_Controller <|-- endpoints_REST_Item_Metadata_Controller
+    REST_Controller <|-- endpoints_REST_Items_Controller
+    REST_Controller <|-- endpoints_REST_Logs_Controller
+    REST_Controller <|-- endpoints_REST_Metadata_Controller
+    REST_Controller <|-- endpoints_REST_Metadata_Sections_Controller
+    REST_Controller <|-- endpoints_REST_Metadata_Types_Controller
+    REST_Controller <|-- endpoints_REST_Metadatum_Mappers_Controller
+    REST_Controller <|-- endpoints_REST_Oaipmh_Expose_Controller
+    REST_Controller <|-- endpoints_REST_Reports_Controller
+    REST_Controller <|-- endpoints_REST_Roles_Controller
+    REST_Controller <|-- endpoints_REST_Sequence_Edit_Controller
+    REST_Controller <|-- endpoints_REST_Taxonomies_Controller
+    REST_Controller <|-- endpoints_REST_Terms_Controller
+```
 #### Classes
 
 | Class                                                       | Description                                            |
@@ -184,6 +236,35 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\API\EndPoints
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class REST_Oaipmh_Expose_Controller { }
+    class REST_Roles_Controller { }
+    class REST_Metadata_Controller { }
+    class REST_Exporters_Controller { }
+    class REST_Items_Controller { }
+    class REST_Metadata_Sections_Controller { }
+    class REST_Background_Processes_Controller { }
+    class REST_Reports_Controller { }
+    class REST_Terms_Controller { }
+    class REST_Metadata_Types_Controller { }
+    class REST_Exposers_Controller { }
+    class REST_Metadatum_Mappers_Controller { }
+    class REST_Facets_Controller { }
+    class REST_Filters_Controller { }
+    class REST_Importers_Controller { }
+    class REST_Collections_Controller { }
+    class REST_Filter_Types_Controller { }
+    class REST_Item_Metadata_Controller { }
+    class REST_Bulkedit_Controller { }
+    class REST_Taxonomies_Controller { }
+    class REST_Logs_Controller { }
+    class REST_Sequence_Edit_Controller { }
+```
 #### Classes
 
 | Class                                                                                                           | Description                                                         |
@@ -213,6 +294,47 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\Entities
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Collection { }
+    class Term { }
+    class Item { }
+    class Log { }
+    class Metadatum { }
+    class Filter { }
+    class Item_Metadata_Entity { }
+    class Taxonomy { }
+    class Entity { }
+    class Metadata_Section { }
+    Collection ..> Collection
+    Collection ..> Metadatum
+    Entity ..> Collection
+    Entity ..> Entity
+    Entity ..> Item
+    Entity <|-- Collection
+    Entity <|-- Filter
+    Entity <|-- Item
+    Entity <|-- Item_Metadata_Entity
+    Entity <|-- Log
+    Entity <|-- Metadata_Section
+    Entity <|-- Metadatum
+    Entity <|-- Taxonomy
+    Entity <|-- Term
+    Filter ..> Metadatum
+    Item ..> Item_Metadata_Entity
+    Item ..> Metadata_Section
+    Item ..> Metadatum
+    Item_Metadata_Entity ..> Item
+    Item_Metadata_Entity ..> Item_Metadata_Entity
+    Item_Metadata_Entity ..> Metadatum
+    Item_Metadata_Entity ..> Term
+    Metadatum ..> Metadata_Section
+    Metadatum ..> Metadatum
+```
 #### Classes
 
 | Class                                                                      | Description                                    |
@@ -230,6 +352,26 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\Exporter
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Exporter { }
+    class Term_Exporter { }
+    class XLSX_Exporter { }
+    class Exporter_Handler { }
+    class CSV { }
+    class Background_Exporter { }
+    class traits_Exporter_Handler_Cell { }
+    Exporter ..> Exporter_Handler
+    Exporter <|-- CSV
+    Exporter <|-- Term_Exporter
+    Exporter <|-- XLSX_Exporter
+    Exporter_Handler ..> Background_Exporter
+    Exporter_Handler ..> Exporter
+```
 #### Classes
 
 | Class                                                        | Description |
@@ -241,6 +383,32 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\Exposers
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Exposer { }
+    class Txt { }
+    class JSON_LD { }
+    class JSON_flat { }
+    class Xml { }
+    class Csv { }
+    class Html { }
+    class OAI_PMH { }
+    class Exposers_Handler { }
+    Exposer <|-- Csv
+    Exposer <|-- Html
+    Exposer <|-- JSON_LD
+    Exposer <|-- JSON_flat
+    Exposer <|-- OAI_PMH
+    Exposer <|-- Txt
+    Exposer <|-- Xml
+    Exposers_Handler ..> Exposer
+    JSON_LD ..> Exposers_Handler
+    Xml ..> Exposers_Handler
+```
 #### Classes
 
 | Class                                                | Description                                 |
@@ -286,6 +454,20 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\GenericProcess
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Generic_Process_Handler { }
+    class Generic_Process { }
+    class Bulk_Edit_Process { }
+    class Background_Generic_Process { }
+    Generic_Process <|-- Bulk_Edit_Process
+    Generic_Process_Handler ..> Background_Generic_Process
+    Generic_Process_Handler ..> Generic_Process
+```
 #### Classes
 
 | Class                                                                      | Description |
@@ -295,6 +477,31 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\Importer
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Importer { }
+    class Background_Importer { }
+    class Flickr_Importer { }
+    class Term_Importer { }
+    class Oaipmh_Importer { }
+    class Youtube_Importer { }
+    class Test_Importer { }
+    class Importer_Handler { }
+    class CSV { }
+    Importer ..> Importer_Handler
+    Importer <|-- CSV
+    Importer <|-- Flickr_Importer
+    Importer <|-- Oaipmh_Importer
+    Importer <|-- Term_Importer
+    Importer <|-- Test_Importer
+    Importer <|-- Youtube_Importer
+    Importer_Handler ..> Background_Importer
+    Importer_Handler ..> Importer
+```
 #### Classes
 
 | Class                                                              | Description   |
@@ -309,6 +516,24 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan\Mappers
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Mapper { }
+    class Mappers_Handler { }
+    class Dublin_Core { }
+    class Inbcm_Archive { }
+    class Inbcm_Bibliographic { }
+    class Inbcm_Museological { }
+    Mapper <|-- Dublin_Core
+    Mapper <|-- Inbcm_Archive
+    Mapper <|-- Inbcm_Bibliographic
+    Mapper <|-- Inbcm_Museological
+    Mappers_Handler ..> Mapper
+```
 #### Classes
 
 | Class                                                                   | Description                                                  |
@@ -346,6 +571,37 @@ http://purl.org/dc/elements/1.1/ |
 
 ### \Tainacan\OAIPMHExpose
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class OAIPMH_Get_Record { }
+    class OAIPMH_List_Identifiers { }
+    class OAIPMH_List_Sets { }
+    class OAIPMH_Expose { }
+    class OAIPMH_List_Metadata_Formats { }
+    class OAIPMH_Identify { }
+    class XML_Error { }
+    class Xml_Response { }
+    class OAIPMH_List_Records { }
+    class Xml_Create { }
+    OAIPMH_Expose ..> XML_Error
+    OAIPMH_Expose <|-- OAIPMH_Get_Record
+    OAIPMH_Expose <|-- OAIPMH_Identify
+    OAIPMH_Expose <|-- OAIPMH_List_Identifiers
+    OAIPMH_Expose <|-- OAIPMH_List_Metadata_Formats
+    OAIPMH_Expose <|-- OAIPMH_List_Records
+    OAIPMH_Expose <|-- OAIPMH_List_Sets
+    OAIPMH_Get_Record ..> Xml_Response
+    OAIPMH_Identify ..> Xml_Response
+    OAIPMH_List_Identifiers ..> Xml_Response
+    OAIPMH_List_Metadata_Formats ..> Xml_Response
+    OAIPMH_List_Records ..> Xml_Response
+    OAIPMH_List_Sets ..> Xml_Response
+    Xml_Create <|-- Xml_Response
+```
 #### Classes
 
 | Class                                                                                          | Description                                                   |
@@ -370,6 +626,60 @@ http://purl.org/dc/elements/1.1/  |
 
 ### \Tainacan\Repositories
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Metadata_Sections { }
+    class Logs { }
+    class Item_Metadata { }
+    class Metadata { }
+    class Items { }
+    class Collections { }
+    class Repository { }
+    class Filters { }
+    class Terms { }
+    class Taxonomies { }
+    Collections ..> Metadata
+    Item_Metadata ..> Items
+    Item_Metadata ..> Metadata
+    Item_Metadata ..> Taxonomies
+    Item_Metadata ..> Terms
+    Items ..> Collections
+    Items ..> Metadata
+    Items ..> Taxonomies
+    Logs ..> Repository
+    Logs ..> Taxonomies
+    Metadata ..> Items
+    Metadata ..> Metadata
+    Metadata ..> Taxonomies
+    Metadata_Sections ..> Metadata
+    Repository ..> Collections
+    Repository ..> Filters
+    Repository ..> Item_Metadata
+    Repository ..> Items
+    Repository ..> Logs
+    Repository ..> Metadata
+    Repository ..> Metadata_Sections
+    Repository ..> Repository
+    Repository ..> Taxonomies
+    Repository ..> Terms
+    Repository <|-- Collections
+    Repository <|-- Filters
+    Repository <|-- Item_Metadata
+    Repository <|-- Items
+    Repository <|-- Logs
+    Repository <|-- Metadata
+    Repository <|-- Metadata_Sections
+    Repository <|-- Taxonomies
+    Repository <|-- Terms
+    Taxonomies ..> Collections
+    Taxonomies ..> Metadata
+    Taxonomies ..> Terms
+    Terms ..> Taxonomies
+```
 #### Classes
 
 | Class                                                                    | Description                                            |
@@ -387,6 +697,19 @@ http://purl.org/dc/elements/1.1/  |
 
 ### \Tainacan\Traits
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    class Formatter_Text { }
+    class Admin_UI_Options { }
+    class Entity_Collection_Relation { }
+    class Entity_Collections_Relation { }
+    class SVG_Icon { }
+    class Singleton_Instance { }
+```
 #### Traits
 
 | Trait                                                                                  | Description                                                                                                                                                                                      |

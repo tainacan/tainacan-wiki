@@ -8,6 +8,15 @@ The svg files have a fill of currentColor and width and height of 1em to allow e
 
 * Full name: `\Tainacan\Traits\SVG_Icon`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class SVG_Icon {
+        +get_svg_icon(icon_slug)
+    }
+```
+
 ## Methods
 
 ### get_svg_icon

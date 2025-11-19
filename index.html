@@ -63,6 +63,9 @@
           '/'      : 'Copied'
         }
       },
+      mermaidConfig: {
+        querySelector: ".mermaid",
+      },
       auto2top: true,
       loadSidebar: true,
       mergeNavbar: true,
@@ -127,6 +130,16 @@
       ]
     }
   </script>
+  <!-- Import D3.js -->
+  <script src="//cdn.jsdelivr.net/npm/d3@7"></script>
+  <!-- Import mermaid.js -->
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({ startOnLoad: true });
+    window.mermaid = mermaid;
+  </script>
+  <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
+  <script src="//unpkg.com/docsify-mermaid-zoom/dist/docsify-mermaid-zoom.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
