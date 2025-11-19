@@ -12,6 +12,7 @@ Generate a Csv formated response
 
 ```mermaid
 classDiagram
+    direction TB
 ```
 
 ## Properties

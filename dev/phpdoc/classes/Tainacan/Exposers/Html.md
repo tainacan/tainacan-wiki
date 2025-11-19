@@ -12,6 +12,7 @@ Generate a Html formated response
 
 ```mermaid
 classDiagram
+    direction TB
     class Exposer {
         #mappers : mixed
         +accept_no_mapper : mixed

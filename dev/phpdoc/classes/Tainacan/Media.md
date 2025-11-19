@@ -14,6 +14,7 @@ including custom image sizes, attachment pages, and content indexing.
 
 ```mermaid
 classDiagram
+    direction TB
     class Media {
         -file_name : string|null
         -attachment_html_url_base : string

@@ -135,7 +135,22 @@
   <!-- Import mermaid.js -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
+    mermaid.initialize({ 
+      startOnLoad: true,
+      classDiagram: {
+        // Use ELK layout engine for better layout control
+        layout: 'elk',
+        elk: {
+          // Use LINEAR_SEGMENTS for more compact vertical layouts
+          nodePlacementStrategy: 'LINEAR_SEGMENTS',
+          // Reduce spacing between nodes
+          spacing: {
+            node: 80,
+            edge: 20
+          }
+        }
+      }
+    });
     window.mermaid = mermaid;
   </script>
   <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>

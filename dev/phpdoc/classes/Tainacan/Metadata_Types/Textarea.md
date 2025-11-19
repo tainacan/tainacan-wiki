@@ -8,6 +8,20 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\Textarea`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Textarea {
+        +__construct()
+        +get_form_labels()
+        +get_multivalue_prefix()
+        +get_multivalue_suffix()
+        +get_value_as_html(item_metadata)
+    }
+```
+
 ## Methods
 
 ### __construct

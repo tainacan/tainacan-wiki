@@ -8,6 +8,18 @@ Class TainacanFilterType
 * Full name: `\Tainacan\Filter_Types\Numeric`
 * Parent class: [`\Tainacan\Filter_Types\Filter_Type`](./Filter_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Numeric {
+        +__construct()
+        +get_form_labels()
+        +validate_options(filter)
+    }
+```
+
 ## Methods
 
 ### __construct

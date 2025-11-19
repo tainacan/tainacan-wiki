@@ -15,6 +15,7 @@ within collections, improving the user interface and organization.
 
 ```mermaid
 classDiagram
+    direction TB
     class Entity {
         #repository : Repository
         -errors : array

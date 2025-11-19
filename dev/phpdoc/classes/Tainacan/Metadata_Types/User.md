@@ -8,6 +8,21 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\User`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class User {
+        +__construct()
+        +user_exists(user)
+        +validate(item_metadata)
+        +get_form_labels()
+        +validate_options(metadatum)
+        +get_value_as_html(item_metadata)
+    }
+```
+
 ## Methods
 
 ### __construct

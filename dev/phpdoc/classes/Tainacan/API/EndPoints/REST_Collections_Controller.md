@@ -15,6 +15,7 @@ creation, updates, deletion, and querying of collections.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Collections_Controller {
         -collections_repository : mixed
         -collection : mixed

@@ -9,6 +9,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Entity_Collections_Relation {
         +get_collections_ids()
         +get_collections()

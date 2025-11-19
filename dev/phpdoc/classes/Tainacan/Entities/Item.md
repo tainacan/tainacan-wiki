@@ -15,6 +15,7 @@ metadata values, attachments, and relationships within collections.
 
 ```mermaid
 classDiagram
+    direction TB
     class Item {
         #terms : mixed
         #repository : string

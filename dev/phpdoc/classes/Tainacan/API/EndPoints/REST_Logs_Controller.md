@@ -15,6 +15,7 @@ log creation, querying, and log management for audit trails.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Logs_Controller {
         -logs_repository : mixed
         +__construct()

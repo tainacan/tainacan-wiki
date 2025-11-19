@@ -10,6 +10,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Mapper {
         +slug : mixed
         +name : mixed

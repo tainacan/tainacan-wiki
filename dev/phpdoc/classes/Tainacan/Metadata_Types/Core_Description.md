@@ -8,6 +8,20 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\Core_Description`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Core_Description {
+        +__construct()
+        +get_form_labels()
+        +form()
+        +validate_options(metadatum)
+        +get_value_as_html(item_metadata)
+    }
+```
+
 ## Methods
 
 ### __construct

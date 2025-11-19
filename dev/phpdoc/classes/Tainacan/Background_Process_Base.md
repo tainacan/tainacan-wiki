@@ -16,6 +16,7 @@ for long-running tasks like imports, exports, and bulk operations.
 
 ```mermaid
 classDiagram
+    direction TB
     class Async_Request {
         #prefix : string
         #action : string

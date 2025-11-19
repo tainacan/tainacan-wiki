@@ -10,6 +10,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Exporter {
         #id : identifier
         #options : array

@@ -15,6 +15,7 @@ export configuration, export execution, and export management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Exporters_Controller {
         -collections_repository : mixed
         +__construct()

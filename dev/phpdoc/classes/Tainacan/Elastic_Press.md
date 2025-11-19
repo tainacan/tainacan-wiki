@@ -16,6 +16,7 @@ https://www.elasticpress.io/
 
 ```mermaid
 classDiagram
+    direction TB
     class Elastic_Press {
         +last_aggregations : array
         +facets : array

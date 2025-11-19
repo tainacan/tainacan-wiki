@@ -11,6 +11,7 @@ Class for formatter texts
 
 ```mermaid
 classDiagram
+    direction TB
     class Formatter_Text {
         +$make_clickable_links(text)
     }

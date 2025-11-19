@@ -10,6 +10,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Generic_Process {
         #id : identifier
         #steps : array

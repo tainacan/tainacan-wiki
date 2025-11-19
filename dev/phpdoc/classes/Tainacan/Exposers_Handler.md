@@ -11,6 +11,7 @@ Load exposers classes
 
 ```mermaid
 classDiagram
+    direction TB
     class Exposers_Handler {
         #exposers : mixed
         -instance : mixed

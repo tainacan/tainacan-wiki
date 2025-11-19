@@ -16,6 +16,7 @@ to handle DB updates in the background.
 
 ```mermaid
 classDiagram
+    direction TB
     class Async_Request {
         #prefix : string
         #action : string

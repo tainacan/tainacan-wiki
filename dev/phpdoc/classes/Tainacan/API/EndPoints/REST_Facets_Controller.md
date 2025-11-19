@@ -15,6 +15,7 @@ facet creation, updates, deletion, and querying of collection facets.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Facets_Controller {
         -metadatum_repository : mixed
         +__construct()

@@ -8,6 +8,16 @@ Class TainacanFilterType
 * Full name: `\Tainacan\Filter_Types\Selectbox`
 * Parent class: [`\Tainacan\Filter_Types\Filter_Type`](./Filter_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Selectbox {
+        +__construct()
+    }
+```
+
 ## Methods
 
 ### __construct

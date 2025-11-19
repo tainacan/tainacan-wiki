@@ -15,6 +15,7 @@ report generation, data analysis, and statistical reporting.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Reports_Controller {
         -taxonomy_repository : mixed
         -metadatum_repository : mixed

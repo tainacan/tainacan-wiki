@@ -15,6 +15,7 @@ creation, updates, deletion, and querying of metadata definitions.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Metadata_Controller {
         -collection_repository : mixed
         -metadatum_repository : mixed

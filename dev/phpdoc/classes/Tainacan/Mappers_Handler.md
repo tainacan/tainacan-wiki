@@ -9,6 +9,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Mappers_Handler {
         -instance : mixed
         #mappers : mixed

@@ -8,6 +8,17 @@ Class TainacanFilterType
 * Full name: `\Tainacan\Filter_Types\Numeric_List_Interval`
 * Parent class: [`\Tainacan\Filter_Types\Filter_Type`](./Filter_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Numeric_List_Interval {
+        +__construct()
+        +get_form_labels()
+    }
+```
+
 ## Methods
 
 ### __construct

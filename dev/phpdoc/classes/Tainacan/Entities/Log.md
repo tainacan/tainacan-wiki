@@ -15,6 +15,7 @@ an audit trail for entity modifications and system activities.
 
 ```mermaid
 classDiagram
+    direction TB
     class Log {
         #title : mixed
         +post_type : mixed

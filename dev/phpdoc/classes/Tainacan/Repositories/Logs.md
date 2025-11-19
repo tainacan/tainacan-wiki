@@ -15,6 +15,7 @@ and operations within Tainacan including entity modifications.
 
 ```mermaid
 classDiagram
+    direction TB
     class Logs {
         +entities_type : mixed
         -current_diff : mixed

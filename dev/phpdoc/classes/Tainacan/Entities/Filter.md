@@ -15,6 +15,7 @@ allowing users to narrow down item results based on metadata criteria.
 
 ```mermaid
 classDiagram
+    direction TB
     class Filter {
         #name : mixed
         +post_type : mixed

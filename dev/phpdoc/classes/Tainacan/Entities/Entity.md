@@ -14,6 +14,7 @@ validation, error handling, and WordPress post type integration.
 
 ```mermaid
 classDiagram
+    direction TB
     class Entity {
         #repository : Repository
         -errors : array

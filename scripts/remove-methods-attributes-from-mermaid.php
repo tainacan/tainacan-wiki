@@ -130,6 +130,26 @@ foreach ($lines as $line) {
 // Output filtered content
 // Ensure there's a trailing newline
 $output = implode("\n", $filteredLines);
+
+// Add direction TB (top to bottom) for more compact vertical layout
+// This helps prevent ultra-wide horizontal layouts
+if (strpos($output, 'classDiagram') === 0) {
+    // Check if direction is already specified
+    if (strpos($output, 'direction') === false) {
+        // Insert direction TB after classDiagram line
+        $lines = explode("\n", $output);
+        $newLines = [];
+        foreach ($lines as $index => $line) {
+            $newLines[] = $line;
+            // Add direction after classDiagram header
+            if ($index === 0 && trim($line) === 'classDiagram') {
+                $newLines[] = '    direction TB';
+            }
+        }
+        $output = implode("\n", $newLines);
+    }
+}
+
 if (substr($output, -1) !== "\n") {
     $output .= "\n";
 }

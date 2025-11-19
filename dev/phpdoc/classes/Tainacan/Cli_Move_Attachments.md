@@ -14,6 +14,7 @@ directory structure introduced in Tainacan version 0.11.
 
 ```mermaid
 classDiagram
+    direction TB
     class Cli_Move_Attachments {
         -collections : mixed
         -documents : mixed

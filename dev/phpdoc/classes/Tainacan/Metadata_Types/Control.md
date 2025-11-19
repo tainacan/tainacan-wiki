@@ -8,6 +8,26 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\Control`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Control {
+        -metadataTypeControlHelper : mixed
+        +__construct()
+        +$get_helper()
+        +validate_options(metadatum)
+        +get_control_metadatum_value(value, control_metadatum, format)
+        +get_value_as_html(item_metadata)
+        +get_value_as_string(item_metadata)
+        -get_document_as_html(value)
+        +get_document_as_string(value)
+        -get_collection_as_html(value)
+        -get_collection_as_string(value)
+    }
+```
+
 ## Properties
 
 ### metadataTypeControlHelper

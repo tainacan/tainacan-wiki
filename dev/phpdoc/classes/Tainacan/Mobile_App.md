@@ -8,6 +8,20 @@ Pages is an abstract base class for all Tainacan admin pages.
 * Full name: `\Tainacan\Mobile_App`
 * Parent class: [`\Tainacan\Pages`](./Pages)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Mobile_App {
+        #get_page_slug()
+        +add_admin_menu()
+        +admin_enqueue_css()
+        +render_page()
+        +render_page_content()
+    }
+```
+
 ## Methods
 
 ### get_page_slug

@@ -7,6 +7,21 @@ Class TainacanFilterType
 
 * Full name: `\GeoCoordinate_Helper`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class GeoCoordinate_Helper {
+        +posts_join : mixed
+        +filter_where : mixed
+        +init()
+        +init_filters()
+        +posts_join(join, wp_query)
+        +posts_where(where, wp_query)
+    }
+```
+
 ## Properties
 
 ### posts_join

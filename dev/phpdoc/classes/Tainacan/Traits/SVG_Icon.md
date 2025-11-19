@@ -12,6 +12,7 @@ The svg files have a fill of currentColor and width and height of 1em to allow e
 
 ```mermaid
 classDiagram
+    direction TB
     class SVG_Icon {
         +get_svg_icon(icon_slug)
     }

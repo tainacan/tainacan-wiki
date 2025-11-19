@@ -15,6 +15,7 @@ filter type registration, configuration, and management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Filter_Types_Controller {
         +__construct()
         +register_routes()

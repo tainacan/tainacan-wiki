@@ -15,6 +15,7 @@ role creation, updates, deletion, and capability management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Roles_Controller {
         +__construct()
         +register_routes()

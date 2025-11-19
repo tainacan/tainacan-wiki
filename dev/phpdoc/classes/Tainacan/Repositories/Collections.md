@@ -15,6 +15,7 @@ updates, deletion, and querying with proper validation and logging.
 
 ```mermaid
 classDiagram
+    direction TB
     class Collections {
         +entities_type : string
         -old_collection : Collection

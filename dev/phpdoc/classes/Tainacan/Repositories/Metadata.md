@@ -15,6 +15,7 @@ updates, deletion, and querying with proper validation and logging.
 
 ```mermaid
 classDiagram
+    direction TB
     class Metadata {
         +entities_type : mixed
         #default_metadata : mixed

@@ -8,6 +8,23 @@ Class GeoCoordinate
 * Full name: `\Tainacan\Metadata_Types\GeoCoordinate`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class GeoCoordinate {
+        +__construct()
+        +get_form_labels()
+        -validateLatLong(lat, long)
+        +validate(item_metadata)
+        +get_value_as_string(item_metadata)
+        +get_value_as_html(item_metadata)
+        +get_options_as_html()
+        +validate_options(metadatum)
+    }
+```
+
 ## Methods
 
 ### __construct

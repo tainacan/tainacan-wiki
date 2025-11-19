@@ -13,6 +13,7 @@ http://purl.org/dc/elements/1.1/
 
 ```mermaid
 classDiagram
+    direction TB
     class OAIPMH_Get_Record {
         #working_node : mixed
         +errors : mixed

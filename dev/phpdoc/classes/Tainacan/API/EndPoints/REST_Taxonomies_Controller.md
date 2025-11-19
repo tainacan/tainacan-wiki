@@ -15,6 +15,7 @@ creation, updates, deletion, and querying of taxonomies.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Taxonomies_Controller {
         -taxonomy : mixed
         -taxonomy_repository : mixed

@@ -198,6 +198,64 @@ if [ -f "./vendor/bin/php-class-diagram" ]; then
             fi
         done
         
+        # Step 3b: Generate root Tainacan namespace overview (classes directly in \Tainacan namespace)
+        echo "  Step 3b: Generating root Tainacan namespace overview..."
+        php -r "
+            \$data = json_decode(file_get_contents('/tmp/tainacan-classes-from-phpdoc.json'), true);
+            if (\$data && isset(\$data['classes'])) {
+                \$rootClasses = [];
+                foreach (\$data['classes'] as \$classInfo) {
+                    // Classes in root Tainacan namespace have empty namespace
+                    if (empty(\$classInfo['namespace'])) {
+                        \$rootClasses[] = \$classInfo['fullName'];
+                    }
+                }
+                if (count(\$rootClasses) > 0) {
+                    fwrite(STDERR, 'Found ' . count(\$rootClasses) . ' classes in root Tainacan namespace\n');
+                    // We'll generate the diagram by scanning both classes and views directories
+                    // for files that contain these classes
+                }
+            }
+        " > /dev/null 2>&1
+        
+        # Generate root namespace overview by scanning both classes and views directories
+        # Create a temporary directory with symlinks or scan both
+        root_dirs="/src/tainacan/src/classes /src/tainacan/src/views"
+        root_temp_dir="/tmp/tainacan-root-namespace-temp"
+        rm -rf "$root_temp_dir"
+        mkdir -p "$root_temp_dir"
+        
+        # Find all PHP files in root namespace from both directories
+        for root_dir in $root_dirs; do
+            if [ -d "$root_dir" ]; then
+                find "$root_dir" -maxdepth 1 -name "class-tainacan-*.php" -type f | while read -r php_file; do
+                    # Check if file declares namespace Tainacan; (root namespace)
+                    if grep -q "^namespace Tainacan;" "$php_file" 2>/dev/null; then
+                        # Copy or symlink to temp directory
+                        cp "$php_file" "$root_temp_dir/" 2>/dev/null || true
+                    fi
+                done
+                
+                # Also check subdirectories that might have root namespace classes
+                # (like views/dashboard, views/settings, etc.)
+                find "$root_dir" -mindepth 2 -maxdepth 2 -name "class-tainacan-*.php" -type f | while read -r php_file; do
+                    if grep -q "^namespace Tainacan;" "$php_file" 2>/dev/null; then
+                        cp "$php_file" "$root_temp_dir/" 2>/dev/null || true
+                    fi
+                done
+            fi
+        done
+        
+        # Generate diagram for root namespace classes
+        if [ -d "$root_temp_dir" ] && [ "$(ls -A $root_temp_dir 2>/dev/null)" ]; then
+            echo "    Generating root Tainacan namespace overview..."
+            ./vendor/bin/php-class-diagram "$root_temp_dir" \
+                > "/src/tainacan-wiki/dev/diagrams/tainacan-namespace-Tainacan.puml" 2>/dev/null || true
+            rm -rf "$root_temp_dir"
+        else
+            echo "    Warning: No root namespace classes found"
+        fi
+        
         # Step 4: Generate all per-class diagrams in root folder, then organize them
         echo "  Step 4: Generating per-class diagrams..."
         
@@ -253,19 +311,29 @@ if [ -f "./vendor/bin/php-class-diagram" ]; then
                 // Find PHP file by searching for class-tainacan-{classname}.php
                 \$fileName = 'class-tainacan-' . strtolower(str_replace('_', '-', \$className)) . '.php';
                 
-                // Search recursively in classes directory
-                \$iterator = new RecursiveIteratorIterator(
-                    new RecursiveDirectoryIterator('/src/tainacan/src/classes', RecursiveDirectoryIterator::SKIP_DOTS)
-                );
+                // Search recursively in both classes and views directories
+                \$searchDirs = ['/src/tainacan/src/classes', '/src/tainacan/src/views'];
+                \$found = false;
                 
-                foreach (\$iterator as \$file) {
-                    if (\$file->isFile() && \$file->getFilename() === \$fileName) {
-                        \$phpFile = \$file->getPathname();
-                        \$classDir = dirname(\$phpFile);
-                        \$tempFile = '/tmp/tainacan-diagrams-temp/' . \$className . '.puml';
-                        echo \$classDir . '|' . \$tempFile . '|' . \$className . PHP_EOL;
-                        \$foundCount++;
-                        break;
+                foreach (\$searchDirs as \$searchDir) {
+                    if (!is_dir(\$searchDir)) {
+                        continue;
+                    }
+                    
+                    \$iterator = new RecursiveIteratorIterator(
+                        new RecursiveDirectoryIterator(\$searchDir, RecursiveDirectoryIterator::SKIP_DOTS)
+                    );
+                    
+                    foreach (\$iterator as \$file) {
+                        if (\$file->isFile() && \$file->getFilename() === \$fileName) {
+                            \$phpFile = \$file->getPathname();
+                            \$classDir = dirname(\$phpFile);
+                            \$tempFile = '/tmp/tainacan-diagrams-temp/' . \$className . '.puml';
+                            echo \$classDir . '|' . \$tempFile . '|' . \$className . PHP_EOL;
+                            \$foundCount++;
+                            \$found = true;
+                            break 2; // Break out of both loops
+                        }
                     }
                 }
             }

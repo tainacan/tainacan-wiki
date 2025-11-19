@@ -14,6 +14,7 @@ It has only one derived member function
 
 ```mermaid
 classDiagram
+    direction TB
     class XML_Error {
         +__construct(par_array, error_array)
     }

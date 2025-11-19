@@ -15,6 +15,7 @@ type registration, configuration, and management of metadata type definitions.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Metadata_Types_Controller {
         +__construct()
         +register_routes()

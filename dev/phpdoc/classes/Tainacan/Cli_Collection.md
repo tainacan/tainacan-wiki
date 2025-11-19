@@ -14,6 +14,7 @@ listing, removing items, and other collection operations.
 
 ```mermaid
 classDiagram
+    direction TB
     class Cli_Collection {
         -collection_repository : Collections
         -items_repository : Items

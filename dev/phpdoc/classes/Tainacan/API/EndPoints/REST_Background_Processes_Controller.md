@@ -15,6 +15,7 @@ process monitoring, status checking, and process management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Background_Processes_Controller {
         -table : String
         #get_schema()

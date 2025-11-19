@@ -738,3 +738,55 @@ a.fab:hover {
 .pagination-item .pagination-item-title {
     font-size: 1.3em;
 }
+
+/* Mermaid Diagrams */
+/* Limit width of Mermaid diagrams and enable horizontal scrolling */
+.markdown-section pre.mermaid,
+.markdown-section .mermaid {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    margin: 1rem 0;
+    position: relative;
+}
+
+/* Wrap Mermaid content in a scrollable container */
+.markdown-section pre.mermaid code.mermaid,
+.markdown-section .mermaid {
+    display: block;
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+/* Ensure Mermaid SVG doesn't break layout but can be scrolled */
+.markdown-section .mermaid svg {
+    display: block;
+    max-width: none; /* Allow SVG to be wider than container */
+    min-width: 100%; /* At least fill container */
+    height: auto;
+}
+
+/* Custom scrollbar styling for Mermaid diagrams */
+.markdown-section pre.mermaid::-webkit-scrollbar,
+.markdown-section .mermaid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.markdown-section pre.mermaid::-webkit-scrollbar-track,
+.markdown-section .mermaid::-webkit-scrollbar-track {
+    background: #f2f2f2;
+    border-radius: 4px;
+}
+
+.markdown-section pre.mermaid::-webkit-scrollbar-thumb,
+.markdown-section .mermaid::-webkit-scrollbar-thumb {
+    background: #187181;
+    border-radius: 4px;
+}
+
+.markdown-section pre.mermaid::-webkit-scrollbar-thumb:hover,
+.markdown-section .mermaid::-webkit-scrollbar-thumb:hover {
+    background: #0d4a52;
+}

@@ -14,6 +14,7 @@ PDF content extraction, document processing, and search index updates.
 
 ```mermaid
 classDiagram
+    direction TB
     class Cli_Document {
         -collection_repository : mixed
         -items_repository : mixed

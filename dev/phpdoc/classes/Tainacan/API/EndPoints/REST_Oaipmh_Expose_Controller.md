@@ -15,6 +15,7 @@ metadata harvesting, repository configuration, and OAI-PMH compliance.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Oaipmh_Expose_Controller {
         +__construct()
         +init_objects()

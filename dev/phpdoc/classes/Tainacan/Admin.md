@@ -8,6 +8,25 @@ Pages is an abstract base class for all Tainacan admin pages.
 * Full name: `\Tainacan\Admin`
 * Parent class: [`\Tainacan\Pages`](./Pages)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Admin {
+        -repository_links_slug : mixed
+        -collections_links_slug : mixed
+        #get_page_slug()
+        +init()
+        +add_admin_menu()
+        +admin_enqueue_css()
+        +admin_enqueue_js()
+        +admin_body_class(classes)
+        +render_page_content()
+        +ajax_sample_permalink()
+    }
+```
+
 ## Properties
 
 ### repository_links_slug

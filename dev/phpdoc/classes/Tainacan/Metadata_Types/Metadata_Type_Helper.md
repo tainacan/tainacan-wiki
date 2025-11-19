@@ -7,6 +7,22 @@ Class MetadataTypeHelper
 
 * Full name: `\Tainacan\Metadata_Types\Metadata_Type_Helper`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Metadata_Type_Helper {
+        -registered_metadata_type : mixed
+        -Tainacan_Metadata : mixed
+        -init()
+        +register_metadata_type_component()
+        +register_metadata_type(handle, class_name, script_path, args)
+        +get_registered_metadata_type()
+        +get_metadata_type(handle)
+    }
+```
+
 ## Properties
 
 ### registered_metadata_type

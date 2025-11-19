@@ -15,6 +15,7 @@ mapper configuration, data transformation, and mapper management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Metadatum_Mappers_Controller {
         #get_schema()
         +__construct()

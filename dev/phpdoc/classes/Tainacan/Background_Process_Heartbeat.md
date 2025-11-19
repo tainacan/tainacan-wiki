@@ -9,6 +9,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Background_Process_Heartbeat {
         -init()
         +bg_process_feedback(response, data)

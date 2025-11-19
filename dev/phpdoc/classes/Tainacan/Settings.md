@@ -8,6 +8,30 @@ Pages is an abstract base class for all Tainacan admin pages.
 * Full name: `\Tainacan\Settings`
 * Parent class: [`\Tainacan\Pages`](./Pages)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Settings {
+        #get_page_slug()
+        +init()
+        +add_admin_menu()
+        +admin_enqueue_css()
+        +render_page_content()
+        +settings_init()
+        +create_tainacan_setting(args)
+        +tainacan_settings_field_callback(args)
+        +default_field_callback(args)
+        +search_and_performance_section_description()
+        +theme_templates_section_description()
+        +items_list_defaults_section_description()
+        +print_section_info()
+        +tnc_option_recaptch_site_key()
+        +tnc_option_recaptch_secret_key()
+    }
+```
+
 ## Methods
 
 ### get_page_slug

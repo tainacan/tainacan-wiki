@@ -9,6 +9,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Exporter_Handler {
         #bg_exporter : Background_Exporter
         -registered_exporters : mixed

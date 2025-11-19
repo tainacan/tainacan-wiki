@@ -7,6 +7,21 @@ Class Plugins_Hooks
 
 * Full name: `\Tainacan\Plugin_Hooks`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Plugin_Hooks {
+        -registered_plugin : mixed
+        -init()
+        +register_plugin()
+        +register_vuejs_plugin(handle, script_path, args)
+        +get_registered_plugin()
+        +get_plugin(handle)
+    }
+```
+
 ## Properties
 
 ### registered_plugin

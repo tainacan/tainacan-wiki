@@ -15,6 +15,7 @@ in WordPress, typically used for background processing tasks.
 
 ```mermaid
 classDiagram
+    direction TB
     class Async_Request {
         #prefix : string
         #action : string

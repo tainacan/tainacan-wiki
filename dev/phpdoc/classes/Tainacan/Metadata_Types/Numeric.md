@@ -8,6 +8,18 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\Numeric`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Numeric {
+        +__construct()
+        +get_form_labels()
+        +validate_options(filter)
+    }
+```
+
 ## Methods
 
 ### __construct

@@ -9,6 +9,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Exporter_Handler_Cell {
         +str_putcsv(input, delimiter, enclosure)
         +get_thumbnail_cell(item)

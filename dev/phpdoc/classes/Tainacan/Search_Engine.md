@@ -18,6 +18,7 @@ Original plugin: http://wordpress.org/plugins/search-everything/
 
 ```mermaid
 classDiagram
+    direction TB
     class Search_Engine {
         +logging : bool
         +options : array

@@ -11,6 +11,7 @@ A wraper of DOMDocument for data provider
 
 ```mermaid
 classDiagram
+    direction TB
     class Xml_Create {
         +doc : mixed
         +__construct(par_array)

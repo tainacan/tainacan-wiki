@@ -8,6 +8,34 @@ Pages is an abstract base class for all Tainacan admin pages.
 * Full name: `\Tainacan\Dashboard`
 * Parent class: [`\Tainacan\Pages`](./Pages)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Dashboard {
+        -vue_component_page_slug : mixed
+        -tainacan_dashboard_cards : mixed
+        -disabled_cards : mixed
+        -default_news_feed_options : mixed
+        #get_page_slug()
+        +init()
+        +add_admin_menu()
+        +admin_enqueue_css()
+        +admin_enqueue_js()
+        +load_page()
+        +render_page_content()
+        +register_cards()
+        +add_dashboard_card(id, title, args)
+        +tainacan_repository_dashboard_card(args)
+        +tainacan_collections_dashboard_card(args)
+        +tainacan_help_dashboard_card(args)
+        +tainacan_news_dashboard_card(args)
+        +tainacan_ajax_fetch_dashboard_news()
+        +tainacan_collection_dashboard_card(args)
+    }
+```
+
 ## Properties
 
 ### vue_component_page_slug

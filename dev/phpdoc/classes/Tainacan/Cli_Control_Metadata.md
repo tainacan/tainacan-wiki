@@ -14,6 +14,7 @@ recalculation of metadata values and metadata validation operations.
 
 ```mermaid
 classDiagram
+    direction TB
     class Cli_Control_Metadata {
         -collection_repository : mixed
         -items_repository : mixed

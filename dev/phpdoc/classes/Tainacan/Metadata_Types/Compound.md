@@ -8,6 +8,25 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\Compound`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Compound {
+        +__construct()
+        +get_form_labels()
+        +get_options_as_html()
+        +save_children(metadatum)
+        +delete_children(metadatum)
+        +get_options()
+        +get_value_as_html(item_metadata)
+        +get_value_as_string(item_metadata)
+        -get_meta_html(meta)
+    }
+    Compound ..> Compound
+```
+
 ## Methods
 
 ### __construct

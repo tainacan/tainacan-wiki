@@ -14,6 +14,7 @@ database entries, and maintaining Tainacan installation health.
 
 ```mermaid
 classDiagram
+    direction TB
     class Cli_Garbage_Collector {
         +__invoke(args, assoc_args)
         -get_orphan_items_query(select)

@@ -32,14 +32,15 @@ if ($content === false) {
     exit(1);
 }
 
-// Find all namespace sections: ### \Namespace
-// Pattern: ### \Tainacan\Exporter
-$pattern = '/^(### \\\\[^\n]+)$/m';
+// Find all namespace sections: ### \Namespace or ### \ (root namespace)
+// Pattern: ### \Tainacan\Exporter or ### \
+$pattern = '/^(### \\\\[^\n]*)$/m';
 $matches = [];
 preg_match_all($pattern, $content, $matches, PREG_OFFSET_CAPTURE);
 
 $insertedCount = 0;
 $offset = 0;
+$insertedDiagrams = []; // Track which diagrams we've already inserted to avoid duplicates
 
 // Process matches in reverse order to maintain offsets
 $matches[0] = array_reverse($matches[0]);
@@ -48,13 +49,28 @@ foreach ($matches[0] as $match) {
     $namespaceLine = $match[0];
     $position = $match[1];
     
-    // Extract namespace from the line: ### \Tainacan\Exporter -> Tainacan\Exporter
-    if (preg_match('/^### \\\\(.+)$/', $namespaceLine, $nsMatches)) {
-        $namespace = $nsMatches[1];
-        
-        // Convert namespace to diagram filename: Tainacan\Exporter -> Tainacan-Exporter
-        $diagramName = str_replace('\\', '-', $namespace);
-        $diagramFile = $diagramsDir . '/tainacan-namespace-' . $diagramName . '.mmd';
+          // Extract namespace from the line: ### \Tainacan\Exporter -> Tainacan\Exporter
+          // Or: ### \ -> Tainacan (root namespace)
+          // Or: ### \Tainacan -> Tainacan (also root namespace)
+          if (preg_match('/^### (\\\\)(.*)$/', $namespaceLine, $nsMatches)) {
+              $namespacePart = $nsMatches[2]; // Part after the backslash
+              
+              // Handle root namespace (just \ or \Tainacan - both are the same)
+              if (empty($namespacePart) || $namespacePart === 'Tainacan') {
+                  $namespace = 'Tainacan';
+              } else {
+                  $namespace = $namespacePart; // Already without leading backslash
+              }
+              
+              // Convert namespace to diagram filename: Tainacan\Exporter -> Tainacan-Exporter
+              // For root: Tainacan -> Tainacan
+              $diagramName = str_replace('\\', '-', $namespace);
+              $diagramFile = $diagramsDir . '/tainacan-namespace-' . $diagramName . '.mmd';
+              
+              // Skip if we've already inserted this diagram
+              if (isset($insertedDiagrams[$diagramFile])) {
+                  continue;
+              }
         
         // Check if diagram exists
         if (file_exists($diagramFile) && is_file($diagramFile) && filesize($diagramFile) > 0) {
@@ -96,6 +112,7 @@ foreach ($matches[0] as $match) {
                     // Insert the diagram
                     $content = substr_replace($content, $diagramBlock, $insertPos, 0);
                     $insertedCount++;
+                    $insertedDiagrams[$diagramFile] = true; // Mark as inserted
                 }
             }
         }

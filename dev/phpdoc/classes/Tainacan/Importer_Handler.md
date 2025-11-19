@@ -9,6 +9,7 @@
 
 ```mermaid
 classDiagram
+    direction TB
     class Importer_Handler {
         #bg_importer : Background_Importer
         -registered_importers : mixed

@@ -15,6 +15,7 @@ updates, deletion, and querying with proper validation and logging.
 
 ```mermaid
 classDiagram
+    direction TB
     class Repository {
         +entities_type : string
         #use_logs : bool

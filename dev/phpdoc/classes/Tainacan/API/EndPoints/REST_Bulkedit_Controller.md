@@ -15,6 +15,7 @@ bulk metadata updates, bulk item modifications, and batch processing.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Bulkedit_Controller {
         -metadatum_repository : mixed
         -collections_repository : mixed

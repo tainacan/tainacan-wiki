@@ -8,6 +8,21 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\URL`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class URL {
+        +__construct()
+        +get_form_labels()
+        +get_value_as_html(item_metadata)
+        +get_single_value_as_html(value)
+        +get_value_as_string(item_metadata)
+        +validate(item_metadata)
+    }
+```
+
 ## Methods
 
 ### __construct

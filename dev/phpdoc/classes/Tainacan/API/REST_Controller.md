@@ -16,6 +16,7 @@ object filtering, attribute handling, and standard WordPress REST API integratio
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Controller {
         +__construct()
         #filter_object_by_attributes(object, attributes)

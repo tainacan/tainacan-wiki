@@ -15,6 +15,7 @@ section creation, updates, deletion, and querying within collections.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Metadata_Sections_Controller {
         -metadata_sections_repository : mixed
         -metadata_repository : mixed

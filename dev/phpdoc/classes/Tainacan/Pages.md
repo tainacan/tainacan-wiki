@@ -8,6 +8,35 @@ Pages is an abstract base class for all Tainacan admin pages.
 * Full name: `\Tainacan\Pages`
 * This class is an **Abstract class**
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Pages {
+        +tainacan_root_menu_slug : string
+        +tainacan_other_links_slug : string
+        #__construct()
+        +init()
+        +load_page()
+        +add_admin_menu()
+        +admin_enqueue_css()
+        +admin_enqueue_fonts()
+        +admin_enqueue_js()
+        +admin_body_class(classes)
+        +get_admin_js_user_data()
+        +get_admin_js_localization_params()
+        +register_user_meta()
+        +render_page()
+        +render_navigation_menu()
+        +render_breadcrumbs()
+        +render_navigation_menu_toggler_buttons()
+        +remove_admin_notices()
+        +admin_init_ui_options()
+        +admin_add_screen_options(current, screen)
+    }
+```
+
 ## Properties
 
 ### tainacan_root_menu_slug

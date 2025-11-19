@@ -12,6 +12,7 @@ Class TainacanMetadatumType
 
 ```mermaid
 classDiagram
+    direction TB
     class Taxonomy {
         #name : mixed
         +post_type : string

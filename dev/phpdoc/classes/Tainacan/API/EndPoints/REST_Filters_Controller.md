@@ -15,6 +15,7 @@ creation, updates, deletion, and querying of collection filters.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Filters_Controller {
         -collection : mixed
         -collection_repository : mixed

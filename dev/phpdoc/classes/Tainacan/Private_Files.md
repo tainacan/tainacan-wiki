@@ -14,6 +14,7 @@ and file organization within Tainacan collections and items.
 
 ```mermaid
 classDiagram
+    direction TB
     class Private_Files {
         +dir_separator : string
         #init()

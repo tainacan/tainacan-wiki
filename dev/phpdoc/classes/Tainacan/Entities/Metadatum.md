@@ -15,6 +15,7 @@ rules for item metadata within collections.
 
 ```mermaid
 classDiagram
+    direction TB
     class Metadatum {
         #name : mixed
         +enabled_for_collection : mixed

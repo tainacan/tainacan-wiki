@@ -15,6 +15,7 @@ items and their associated metadata, filters, and display settings.
 
 ```mermaid
 classDiagram
+    direction TB
     class Collection {
         #diplay_name : mixed
         +post_type : string

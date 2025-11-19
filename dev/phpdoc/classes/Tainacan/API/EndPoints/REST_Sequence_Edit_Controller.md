@@ -15,6 +15,7 @@ sequential item editing, batch sequence updates, and sequence management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Sequence_Edit_Controller {
         -items_repository : mixed
         -collections_repository : mixed

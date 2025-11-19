@@ -14,6 +14,7 @@ view modes, template tags, and theme compatibility features.
 
 ```mermaid
 classDiagram
+    direction TB
     class Theme_Helper {
         +visiting_collection_cover : mixed
         -registered_view_modes : mixed

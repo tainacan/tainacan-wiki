@@ -15,6 +15,7 @@ storing the actual data content for specific metadata fields.
 
 ```mermaid
 classDiagram
+    direction TB
     class Item_Metadata_Entity {
         #post_type : mixed
         #repository : string

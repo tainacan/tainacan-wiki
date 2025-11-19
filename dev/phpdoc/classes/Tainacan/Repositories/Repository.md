@@ -15,6 +15,7 @@ including logging, validation, and entity management.
 
 ```mermaid
 classDiagram
+    direction TB
     class Repository {
         +entities_type : string
         #use_logs : bool

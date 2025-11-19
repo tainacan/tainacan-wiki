@@ -14,6 +14,7 @@ This is the class to further develop to suits a publication need
 
 ```mermaid
 classDiagram
+    direction TB
     class Xml_Response {
         +verbNode : mixed
         #verb : mixed

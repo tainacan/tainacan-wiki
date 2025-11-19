@@ -11,6 +11,7 @@ Defines Collection and Items relation
 
 ```mermaid
 classDiagram
+    direction TB
     class Entity_Collection_Relation {
         #collection : mixed
         +get_collection_id()

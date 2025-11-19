@@ -14,6 +14,7 @@ video, audio, and PDF files with responsive design support.
 
 ```mermaid
 classDiagram
+    direction TB
     class Embed {
         -aspect_ratios : array
         #init()

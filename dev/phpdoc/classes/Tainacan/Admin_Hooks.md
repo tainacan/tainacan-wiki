@@ -5,6 +5,22 @@
 
 * Full name: `\Tainacan\Admin_Hooks`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Admin_Hooks {
+        -registered_hooks : mixed
+        -init()
+        +register_hooks()
+        +get_available_positions()
+        +get_available_contexts()
+        +get_registered_hooks()
+        +register(context, callback, position, conditional)
+    }
+```
+
 ## Properties
 
 ### registered_hooks

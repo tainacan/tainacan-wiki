@@ -15,6 +15,7 @@ specific categories or classifications for organizing items.
 
 ```mermaid
 classDiagram
+    direction TB
     class Term {
         +WP_Term : mixed
         #term_id : mixed

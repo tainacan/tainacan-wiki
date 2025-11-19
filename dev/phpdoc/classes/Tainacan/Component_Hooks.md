@@ -7,6 +7,21 @@ Class Components_Hooks
 
 * Full name: `\Tainacan\Component_Hooks`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Component_Hooks {
+        -registered_component : mixed
+        -init()
+        +register_component()
+        +register_vuejs_component(handle, script_path, args)
+        +get_registered_component()
+        +get_component(handle)
+    }
+```
+
 ## Properties
 
 ### registered_component

@@ -12,6 +12,7 @@ abstract class for implement exposer types
 
 ```mermaid
 classDiagram
+    direction TB
     class Exposer {
         #mappers : mixed
         +accept_no_mapper : mixed

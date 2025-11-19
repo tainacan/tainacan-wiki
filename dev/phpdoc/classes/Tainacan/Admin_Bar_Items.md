@@ -14,6 +14,7 @@ collections, taxonomies, and terms when users have appropriate permissions.
 
 ```mermaid
 classDiagram
+    direction TB
     class Admin_Bar_Items {
         -init()
         +add_admin_bar_items_styles()

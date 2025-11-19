@@ -130,6 +130,64 @@ scripts or plugin extenders.                                                    
 
 ### \Tainacan
 
+
+
+#### Namespace Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Background_Process_Heartbeat { }
+    class Private_Files { }
+    class __Bulk_Edit { }
+    class Async_Request { }
+    class Roles_Editor { }
+    class Mappers_Handler { }
+    class System_Check { }
+    class Embed { }
+    class Background_Process { }
+    class Cli_Move_Attachments { }
+    class Elastic_Press_lte4 { }
+    class Cli_Garbage_Collector { }
+    class Cli_Collection { }
+    class Admin { }
+    class Background_Process_Base { }
+    class Mobile_App { }
+    class Cli_Document { }
+    class Settings { }
+    class Cli_Control_Metadata { }
+    class Cli { }
+    class Theme_Helper { }
+    class Pages { }
+    class Dashboard { }
+    class Elastic_Press { }
+    class Admin_Bar_Items { }
+    class Media { }
+    class Search_Engine { }
+    class Exposers_Handler { }
+    Async_Request <|-- Background_Process_Base
+    Background_Process_Base <|-- Background_Process
+    Cli_Move_Attachments ..> Private_Files
+    Cli_Move_Attachments ..> Theme_Helper
+    Elastic_Press ..> Elastic_Press
+    Elastic_Press ..> Elastic_Press_lte4
+    Exposers_Handler ..> Mappers_Handler
+    Pages ..> Elastic_Press
+    Pages ..> Exposers_Handler
+    Pages ..> Mappers_Handler
+    Pages ..> Theme_Helper
+    Pages <|-- Admin
+    Pages <|-- Dashboard
+    Pages <|-- Mobile_App
+    Pages <|-- Roles_Editor
+    Pages <|-- Settings
+    Pages <|-- System_Check
+    Private_Files ..> Media
+    Private_Files ..> Theme_Helper
+    System_Check ..> Private_Files
+    Theme_Helper ..> Mappers_Handler
+    Theme_Helper ..> Theme_Helper
+```
 #### Classes
 
 | Class                                                                             | Description                                                           |
@@ -182,6 +240,7 @@ scripts or plugin extenders.                                                    
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Controller { }
     class endpoints_REST_Oaipmh_Expose_Controller { }
     class endpoints_REST_Roles_Controller { }
@@ -242,6 +301,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Oaipmh_Expose_Controller { }
     class REST_Roles_Controller { }
     class REST_Metadata_Controller { }
@@ -300,6 +360,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class Collection { }
     class Term { }
     class Item { }
@@ -358,6 +419,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class Exporter { }
     class Term_Exporter { }
     class XLSX_Exporter { }
@@ -389,6 +451,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class Exposer { }
     class Txt { }
     class JSON_LD { }
@@ -460,6 +523,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class Generic_Process_Handler { }
     class Generic_Process { }
     class Bulk_Edit_Process { }
@@ -483,6 +547,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class Importer { }
     class Background_Importer { }
     class Flickr_Importer { }
@@ -522,6 +587,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class Mapper { }
     class Mappers_Handler { }
     class Dublin_Core { }
@@ -577,6 +643,7 @@ http://purl.org/dc/elements/1.1/ |
 
 ```mermaid
 classDiagram
+    direction TB
     class OAIPMH_Get_Record { }
     class OAIPMH_List_Identifiers { }
     class OAIPMH_List_Sets { }
@@ -632,6 +699,7 @@ http://purl.org/dc/elements/1.1/  |
 
 ```mermaid
 classDiagram
+    direction TB
     class Metadata_Sections { }
     class Logs { }
     class Item_Metadata { }
@@ -703,6 +771,7 @@ classDiagram
 
 ```mermaid
 classDiagram
+    direction TB
     class Formatter_Text { }
     class Admin_UI_Options { }
     class Entity_Collection_Relation { }

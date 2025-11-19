@@ -12,6 +12,7 @@ the URL or via the 'tainacan-admin-ui-options' filter.
 
 ```mermaid
 classDiagram
+    direction TB
     class Admin_UI_Options {
         #admin_ui_options : mixed
         +get_available_admin_ui_options()

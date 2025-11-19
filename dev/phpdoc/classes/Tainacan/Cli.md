@@ -14,6 +14,7 @@ garbage collection, attachment management, and collection operations.
 
 ```mermaid
 classDiagram
+    direction TB
     class Cli {
         -init()
         +add_commands()

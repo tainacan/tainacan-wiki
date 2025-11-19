@@ -8,6 +8,16 @@ Class Taginput
 * Full name: `\Tainacan\Filter_Types\TaxonomyTaginput`
 * Parent class: [`\Tainacan\Filter_Types\Filter_Type`](./Filter_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class TaxonomyTaginput {
+        +__construct()
+    }
+```
+
 ## Methods
 
 ### __construct

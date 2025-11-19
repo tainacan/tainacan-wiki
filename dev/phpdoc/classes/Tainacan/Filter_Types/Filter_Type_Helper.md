@@ -7,6 +7,22 @@ Class FilterTypeHelper
 
 * Full name: `\Tainacan\Filter_Types\Filter_Type_Helper`
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Filter_Type_Helper {
+        -registered_filter_type : mixed
+        -Tainacan_Filters : mixed
+        -init()
+        +register_filter_type_compoment()
+        +register_filter_type(handle, class_name, script_path, args)
+        +get_registered_filter_type()
+        +get_filter_type(handle)
+    }
+```
+
 ## Properties
 
 ### registered_filter_type

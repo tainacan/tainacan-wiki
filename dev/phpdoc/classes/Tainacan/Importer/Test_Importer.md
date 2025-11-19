@@ -17,6 +17,7 @@ create test collections and items
 
 ```mermaid
 classDiagram
+    direction TB
     class Importer {
         -id : identifier
         #tmp_file : string

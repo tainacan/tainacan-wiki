@@ -8,6 +8,16 @@ Class TainacanMetadatumType
 * Full name: `\Tainacan\Metadata_Types\Selectbox`
 * Parent class: [`\Tainacan\Metadata_Types\Metadata_Type`](./Metadata_Type)
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    direction TB
+    class Selectbox {
+        +__construct()
+    }
+```
+
 ## Methods
 
 ### __construct

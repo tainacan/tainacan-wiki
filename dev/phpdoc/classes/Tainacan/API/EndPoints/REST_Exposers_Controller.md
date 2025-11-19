@@ -15,6 +15,7 @@ exposer configuration, mappers configuration and exposer management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Exposers_Controller {
         -metadatum_repository : mixed
         -exposers : mixed

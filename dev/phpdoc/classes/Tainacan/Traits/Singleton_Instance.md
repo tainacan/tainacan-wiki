@@ -11,6 +11,7 @@ Class for Singleton pattern
 
 ```mermaid
 classDiagram
+    direction TB
     class Singleton_Instance {
         -instance : mixed
         +$get_instance()

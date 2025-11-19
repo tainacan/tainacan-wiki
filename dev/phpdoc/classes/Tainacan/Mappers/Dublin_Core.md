@@ -13,6 +13,7 @@ http://purl.org/dc/elements/1.1/
 
 ```mermaid
 classDiagram
+    direction TB
     class Mapper {
         +slug : mixed
         +name : mixed

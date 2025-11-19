@@ -15,6 +15,7 @@ item metadata value creation, updates, deletion, and querying.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Item_Metadata_Controller {
         -metadatum : mixed
         -item_metadata_repository : mixed

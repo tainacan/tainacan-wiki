@@ -12,6 +12,7 @@ Generate a OAI_PMH/oai_dc formated response
 
 ```mermaid
 classDiagram
+    direction TB
     class Exposer {
         #mappers : mixed
         +accept_no_mapper : mixed

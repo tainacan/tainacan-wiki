@@ -15,6 +15,7 @@ import configuration, import execution, and import management.
 
 ```mermaid
 classDiagram
+    direction TB
     class REST_Importers_Controller {
         #get_schema()
         +__construct()

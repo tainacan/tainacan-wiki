@@ -14,6 +14,7 @@ specific to Tainacan functionality, including collection and item permissions.
 
 ```mermaid
 classDiagram
+    direction TB
     class Roles {
         -capabilities : array
         -meta_caps : array
