@@ -93,6 +93,14 @@ protected $display
 
 ***
 
+### allow_advanced_search
+
+```php
+protected $allow_advanced_search
+```
+
+***
+
 ### cardinality
 
 ```php
@@ -222,6 +230,28 @@ public set_display(mixed $display): mixed
 ```php
 public get_display(): mixed
 ```
+
+***
+
+### get_allow_advanced_search
+
+```php
+public get_allow_advanced_search(): string
+```
+
+***
+
+### set_allow_advanced_search
+
+```php
+public set_allow_advanced_search(string $allow_advanced_search): void
+```
+
+**Parameters:**
+
+| Parameter                | Type       | Description |
+|--------------------------|------------|-------------|
+| `$allow_advanced_search` | **string** |             |
 
 ***
 

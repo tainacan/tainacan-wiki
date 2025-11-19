@@ -46,6 +46,18 @@ public static string $content_index_meta
 
 ***
 
+### content_index_last
+
+Meta key for document content last index metadata.
+
+```php
+public static string $content_index_last
+```
+
+* This property is **static**.
+
+***
+
 ### THROW_EXCPTION_ON_FATAL_ERROR
 
 ```php

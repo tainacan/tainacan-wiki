@@ -394,14 +394,14 @@ public options_form(): mixed
 ### __construct
 
 ```php
-public __construct(mixed $attributess = array()): mixed
+public __construct(mixed $attributes = array()): mixed
 ```
 
 **Parameters:**
 
-| Parameter      | Type      | Description |
-|----------------|-----------|-------------|
-| `$attributess` | **mixed** |             |
+| Parameter     | Type      | Description |
+|---------------|-----------|-------------|
+| `$attributes` | **mixed** |             |
 
 ***
 

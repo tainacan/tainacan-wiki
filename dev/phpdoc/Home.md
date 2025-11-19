@@ -303,7 +303,6 @@ scripts or plugin extenders.                                                    
 | [`Flickr_Importer`](/dev/phpdoc/classes/Tainacan/Importer/Flickr_Importer.md)   |               |
 | [`Importer`](/dev/phpdoc/classes/Tainacan/Importer/Importer.md)                 |               |
 | [`Oaipmh_Importer`](/dev/phpdoc/classes/Tainacan/Importer/Oaipmh_Importer.md)   |               |
-| [`Old_Tainacan`](/dev/phpdoc/classes/Tainacan/Importer/Old_Tainacan.md)         |               |
 | [`Term_Importer`](/dev/phpdoc/classes/Tainacan/Importer/Term_Importer.md)       |               |
 | [`Test_Importer`](/dev/phpdoc/classes/Tainacan/Importer/Test_Importer.md)       | Test Importer |
 | [`Youtube_Importer`](/dev/phpdoc/classes/Tainacan/Importer/Youtube_Importer.md) |               |

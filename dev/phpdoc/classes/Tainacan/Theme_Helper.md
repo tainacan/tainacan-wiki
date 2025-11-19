@@ -548,7 +548,7 @@ for the visitors to choose from for each collection
 		@type bool		$dynamic_metadata	 	Whether to display or not (and use or not) the "displayed metadata" selector. Default false.
 		@type bool		$implements_skeleton 	Whether the view mode has its own strategy for disaplying loading state.
 		@type string	$skeleton_template	 	If the view mode is a template, this is the html of its loading state.
-		@type string	$placeholder_template 	The placeholder template is rendered in Gutenberg blocks to demo the view mode appearence.
+		@type string	$placeholder_template 	The placeholder template is rendered in Gutenberg blocks to demo the view mode appearance.
 		@type bool		$required_thumbnail		Whether the view mode considers essential that the item thumbnail is available, even if it is a placeholder.
 } |
 
@@ -641,6 +641,22 @@ public get_default_orderby(): string
 **Return Value:**
 
 The default orderby slug
+
+***
+
+### get_enable_item_link_query_params
+
+Get whether query parameters should be included in item links from faceted search.
+
+```php
+public get_enable_item_link_query_params(): bool
+```
+
+This can be tweaked in the settings page.
+
+**Return Value:**
+
+Whether to include query parameters in item links
 
 ***
 
@@ -811,27 +827,27 @@ public get_tainacan_related_items_list(array $args = []): string
 
 **Parameters:**
 
-| Parameter | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|-----------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Parameter | Type      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|-----------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `$args`   | **array** | {
  Optional. Array of arguments.
- @type string  $item_id							The Item ID
- @type string  $items_list_layout					The type of list to be rendered. Accepts 'grid', 'list', 'mosaic', 'carousel', 'gallery' and 'tainacan-view-mode.
- @type string  $order								Sorting direction to the related items query. Either 'desc' or 'asc'.
- @type string  $orderby							Sortby metadata. By now we're accepting only 'title' and 'date'.
- @type string  $class_name						Extra class to add to the wrapper, besides the default wp-block-tainacan-carousel-related-items
- @type string  $collection_heading_class_name		Extra class to add to the collection name wrapper. Defaults to ''
- @type string  $collection_heading_tag			Tag to be used as wrapper of the collection name. Defaults to h2
- @type boolean $hide_collection_heading			Whether to hide the collection name or not. Defaults to false
- @type string  $metadata_label_class_name			Extra class to add to the metadata label wrapper. Defaults to ''
- @type string  $metadata_label_tag				Tag to be used as wrapper of the metadata label. Defaults to p
- @type boolean $hide_metadata_label				Whether to hide the metadata label or not. Defaults to false
- @type array   $carousel_args						Array of arguments to be passed to the get_tainacan_items_carousel function if $items_list_layout == carousel
- @type array   $dynamic_items_args				Array of arguments to be passed to the get_tainacan_dynamic_items function if $items_list_layout != carousel && layout != gallery
- @type array   $items_gallery_args				Array of arguments to be passed to the get_tainacan_items_gallery function if $items_list_layout == gallery
- @type string  $view_more_link_style				Appearence of the "View all %s related items" link. Either 'button' or 'link'. Defaults to 'button'
- @type string  $view_more_link_position			Placement of the "View all %s related items" link. Either 'top-right', 'bottom-left' or 'bottom-right'. Defaults to 'bottom-left'
-@type string  $view_more_link_text				Inner text content of the "View all %s related items" link. Defaults to 'View all %s related items'. |
+ @type string  $itemId                            The Item ID
+ @type string  $itemsListLayout                   The type of list to be rendered. Accepts 'grid', 'list', 'mosaic', 'carousel', 'gallery' and 'tainacan-view-mode.
+ @type string  $order                             Sorting direction to the related items query. Either 'desc' or 'asc'.
+ @type string  $orderby                           Sortby metadata. By now we're accepting only 'title' and 'date'.
+ @type string  $className                         Extra class to add to the wrapper, besides the default wp-block-tainacan-carousel-related-items
+ @type string  $collectionHeadingClassName        Extra class to add to the collection name wrapper. Defaults to ''
+ @type string  $collectionHeadingTag              Tag to be used as wrapper of the collection name. Defaults to h2
+ @type boolean $hideCollectionHeading             Whether to hide the collection name or not. Defaults to false
+ @type string  $metadataLabelClassName            Extra class to add to the metadata label wrapper. Defaults to ''
+ @type string  $metadataLabelTag                  Tag to be used as wrapper of the metadata label. Defaults to p
+ @type boolean $hideMetadataLabel                 Whether to hide the metadata label or not. Defaults to false
+ @type array   $carouselArgs                      Array of arguments to be passed to the get_tainacan_items_carousel function if $itemsListLayout == carousel
+ @type array   $dynamicItemsArgs                  Array of arguments to be passed to the get_tainacan_dynamic_items function if $itemsListLayout != carousel && layout != gallery
+ @type array   $itemsGalleryArgs                  Array of arguments to be passed to the get_tainacan_items_gallery function if $itemsListLayout == gallery
+ @type string  $viewMoreLinkStyle                 Appearance of the "View all %s related items" link. Either 'button' or 'link'. Defaults to 'button'
+ @type string  $viewMoreLinkPosition              Placement of the "View all %s related items" link. Either 'top-right', 'bottom-left' or 'bottom-right'. Defaults to 'bottom-left'
+@type string  $viewMoreLinkText                  Inner text content of the "View all %s related items" link. Defaults to 'View all %s related items'. |
 
 **Return Value:**
 
