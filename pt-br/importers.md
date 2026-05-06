@@ -51,7 +51,11 @@ b. **“special_item_status”**: Informa o status do “Item”. Os valores pos
 
 ○ **“private”** (privado);
 
-○ **“publish”** (público).
+○ **“publish”** (público);
+
+○ **“pending”** (pendente);
+
+○ **“trash”** (lixo).
 
 c. **“special_document”**: permite que o usuário informe o documento do item. Consulte Importando arquivos e anexos;
 
