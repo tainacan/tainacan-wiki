@@ -27,7 +27,7 @@ Video tutorial in in Portuguese:
 
 ### *.csv* Parameters
 
-The file to be uploaded must be a standard .csv, where each row contains the information for an item, and each column the values for each specific metadata. In addition, the first row contains the column headings. 
+The file to be uploaded must be a standard .csv, where each row contains the information for an item, and each column the values for each specific metadata. In addition, the first row contains the column headings.
 
 Example:
 
