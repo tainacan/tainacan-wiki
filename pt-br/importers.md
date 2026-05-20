@@ -10,7 +10,7 @@ O “Importador CSV” permite que usuários importem “itens” para uma “co
 
 ### Parâmetros do CSV
 
-O arquivo para envio deve ser um “.csv padrão”, em que cada linha abriga a informação de um “item”, e cada coluna abriga os valores para cada “metadado” em específico. Além disso, a primeira linha deve conter os “títulos” das colunas.
+Os arquivos para envio devem ser um “.csv padrão”, em que cada linha abriga a informação de um “item”, e cada coluna abriga os valores para cada “metadado” em específico. Além disso, a primeira linha deve conter os “títulos” das colunas.
 
 **Exemplo:**
 
