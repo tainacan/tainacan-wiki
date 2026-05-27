@@ -31,6 +31,12 @@ sudo apt-get install phpunit composer ruby ruby-dev nodejs npm
 sudo gem install sass
 ```
 
+En Debian/Ubuntu, también necesitarás `subversion` (utilizado por el instalador de pruebas de WordPress) y las extensiones de PHP `gd` y `mysqli`:
+
+```
+sudo apt install subversion php-gd php-mysql -y
+```
+
 - Para instalar WP-Cli, visita [la documentación oficial](https://wp-cli.org/#installing).
 
 ## Configuración
@@ -40,7 +46,7 @@ En primer lugar, clone este repositorio.
 Ten en cuenta que NO puedes clonarlo directamente en el directorio `plugins` de WordPress. Clónelo en una carpeta propia y configure su compilación para que apunte a su carpeta local de `plugins` de WordPress.
 
 ```
-git clone git@git.github.com:tainacan/tainacan.git
+git clone git@github.com:tainacan/tainacan.git
 ```
 
 Configura una instalación de WordPress. Puede ser una instalación dedicada para desarrollar Tainacan o puedes usar una instancia existente que tengas. Depende de ti, pero necesitarás una, tanto para desarrollar y probar manualmente, como para ejecutar pruebas de integración automatizadas.
@@ -97,6 +103,14 @@ Los parámetros son:
 Dentro de la carpeta `tests`, edite el archivo llamado `bootstrap-config-sample.php` e informe la carpeta donde instaló su Librería de Pruebas de WordPress. Esta será `/path/to/wordpress-test-folder/wodpress-tests-lib`. Guarde el archivo como `bootstrap-config.php`.
 
 Ten en cuenta que el script de instalación creará un archivo de configuración en la carpeta de destino con tus credenciales de la base de datos. Si tienes que cambiarlo, tendrás que editarlo allí.
+
+> **Nota para usuarios de Linux + XAMPP:** después de ejecutar `install-wp-tests.sh`, abre el archivo de configuración generado en `/path/to/wordpress-test-folder/wordpress-tests-lib/wp-tests-config.php` y reemplaza `localhost` por `127.0.0.1` en la definición de `DB_HOST`:
+>
+> ```php
+> define( 'DB_HOST', '127.0.0.1' );
+> ```
+>
+> En Linux, `localhost` hace que PHP se conecte a través de un socket Unix (`/var/run/mysqld/mysqld.sock`), pero XAMPP utiliza una ruta de socket diferente (`/opt/lampp/var/mysql/mysql.sock`). Usar `127.0.0.1` fuerza una conexión TCP y evita el problema.
 
 Sólo tienes que hacer todo esto una vez, y ya estás listo para ejecutar pruebas.
 
