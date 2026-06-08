@@ -31,6 +31,12 @@ sudo apt-get install phpunit composer ruby ruby-dev nodejs npm
 sudo gem install sass
 ```
 
+On Debian/Ubuntu, you will also need `subversion` (used by the WordPress test installer) and the PHP `gd` and `mysqli` extensions:
+
+```
+sudo apt install subversion php-gd php-mysql -y
+```
+
 - To install WP-Cli, check [the official documentation](https://wp-cli.org/#installing).
 
 ## Setting up
@@ -40,7 +46,7 @@ First of all, clone this repository.
 Note that you can NOT clone it directly in the WordPress `plugins` directory. Clone it in a folder of its own and configure your build to point to your local WordPress `plugins` folder.
 
 ```
-git clone git@git.github.com:tainacan/tainacan.git
+git clone git@github.com:tainacan/tainacan.git
 ```
 
 Set up a WordPress installation. This could be a dedicated installation to develop Tainacan or you can use an existing instance you have. It is up to you, but you will need one, both for developing and manually testing, as well to run automated integration tests.
@@ -97,6 +103,14 @@ The parameters are:
 Inside the `tests` folder, edit the file called `bootstrap-config-sample.php` and inform the folder where you installed your WordPress Test Library. This will be `/path/to/wordpress-test-folder/wodpress-tests-lib`. Save the file as `bootstrap-config.php`.
 
 Note that the installation script will create a config file in the destination folder with your database credentials. If you have to change it, you will need to edit it there.
+
+> **Note for Linux + XAMPP users:** after running `install-wp-tests.sh`, open the generated config file at `/path/to/wordpress-test-folder/wordpress-tests-lib/wp-tests-config.php` and replace `localhost` with `127.0.0.1` in the `DB_HOST` definition:
+>
+> ```php
+> define( 'DB_HOST', '127.0.0.1' );
+> ```
+>
+> On Linux, `localhost` makes PHP connect through a Unix socket (`/var/run/mysqld/mysqld.sock`), but XAMPP uses a different socket path (`/opt/lampp/var/mysql/mysql.sock`). Using `127.0.0.1` forces a TCP connection and avoids the issue.
 
 You only need to do all this once, and now you are ready to run tests.
 
