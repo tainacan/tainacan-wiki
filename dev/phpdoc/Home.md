@@ -637,59 +637,29 @@ http://purl.org/dc/elements/1.1/ |
 
 ### \Tainacan\OAIPMHExpose
 
-
+OAI-PMH 2.0 provider classes used by `REST_Oaipmh_Expose_Controller` at `/wp-json/tainacan/v2/oai`.
 
 #### Namespace Diagram
 
 ```mermaid
 classDiagram
     direction TB
-    class OAIPMH_Get_Record { }
-    class OAIPMH_List_Identifiers { }
-    class OAIPMH_List_Sets { }
-    class OAIPMH_Expose { }
-    class OAIPMH_List_Metadata_Formats { }
-    class OAIPMH_Identify { }
-    class XML_Error { }
-    class Xml_Response { }
-    class OAIPMH_List_Records { }
-    class Xml_Create { }
-    OAIPMH_Expose ..> XML_Error
-    OAIPMH_Expose <|-- OAIPMH_Get_Record
-    OAIPMH_Expose <|-- OAIPMH_Identify
-    OAIPMH_Expose <|-- OAIPMH_List_Identifiers
-    OAIPMH_Expose <|-- OAIPMH_List_Metadata_Formats
-    OAIPMH_Expose <|-- OAIPMH_List_Records
-    OAIPMH_Expose <|-- OAIPMH_List_Sets
-    OAIPMH_Get_Record ..> Xml_Response
-    OAIPMH_Identify ..> Xml_Response
-    OAIPMH_List_Identifiers ..> Xml_Response
-    OAIPMH_List_Metadata_Formats ..> Xml_Response
-    OAIPMH_List_Records ..> Xml_Response
-    OAIPMH_List_Sets ..> Xml_Response
-    Xml_Create <|-- Xml_Response
+    class OAIPMH_Data_Provider { }
+    class OAIPMH_Xml_Generator { }
+    class OAIPMH_Token_Manager { }
+    class REST_Oaipmh_Expose_Controller { }
+    REST_Oaipmh_Expose_Controller ..> OAIPMH_Data_Provider
+    REST_Oaipmh_Expose_Controller ..> OAIPMH_Xml_Generator
+    REST_Oaipmh_Expose_Controller ..> OAIPMH_Token_Manager
 ```
+
 #### Classes
 
-| Class                                                                                          | Description                                                   |
-|------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [`OAIPMH_Expose`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_Expose.md)                               | Support Dublin Core Mapping
-http://purl.org/dc/elements/1.1/  |
-| [`OAIPMH_Get_Record`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_Get_Record.md)                       | Support Dublin Core Mapping
-http://purl.org/dc/elements/1.1/  |
-| [`OAIPMH_Identify`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_Identify.md)                           | Support Dublin Core Mapping
-http://purl.org/dc/elements/1.1/  |
-| [`OAIPMH_List_Identifiers`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_List_Identifiers.md)           | Support Dublin Core Mapping
-http://purl.org/dc/elements/1.1/  |
-| [`OAIPMH_List_Metadata_Formats`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_List_Metadata_Formats.md) | Support Dublin Core Mapping
-http://purl.org/dc/elements/1.1/  |
-| [`OAIPMH_List_Records`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_List_Records.md)                   | Support Dublin Core Mapping
-http://purl.org/dc/elements/1.1/  |
-| [`OAIPMH_List_Sets`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_List_Sets.md)                         | Support Dublin Core Mapping
-http://purl.org/dc/elements/1.1/  |
-| [`Xml_Create`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/Xml_Create.md)                                     | A wraper of DOMDocument for data provider                     |
-| [`XML_Error`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/XML_Error.md)                                       | Generate an XML response when a request cannot be finished    |
-| [`Xml_Response`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/Xml_Response.md)                                 | Generate an XML response to a request if no error has occured |
+| Class | Description |
+|-------|-------------|
+| [`OAIPMH_Data_Provider`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_Data_Provider.md) | Maps Tainacan entities to OAI record arrays |
+| [`OAIPMH_Xml_Generator`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_Xml_Generator.md) | Builds OAI-PMH XML with DOMDocument |
+| [`OAIPMH_Token_Manager`](/dev/phpdoc/classes/Tainacan/OAIPMHExpose/OAIPMH_Token_Manager.md) | Transient-backed resumptionToken storage |
 
 ### \Tainacan\Repositories
 
