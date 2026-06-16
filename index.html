@@ -108,7 +108,7 @@
             }
           ),
           function(hook, vm) {
-            hook.beforeEach(function(html) {
+            hook.afterEach(function(html) {
               if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
                 return (
                   '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;"> Modificado em: {docsify-updated} </code></div>\n\n '
