@@ -108,23 +108,60 @@
             }
           ),
           function(hook, vm) {
-            hook.afterEach(function(html) {
+            var isExternalContentPage = false;
+
+            function startsWithInclude(markdown) {
+              var firstLine = markdown.trim().split('\n')[0];
+              return /^\[.*?\]\([^)]+\s+['"]?:include/.test(firstLine);
+            }
+
+            function pageNoticeStyle() {
+              return 'font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;';
+            }
+
+            hook.beforeEach(function(markdown) {
+              isExternalContentPage = startsWithInclude(markdown);
+
+              if (isExternalContentPage) {
+                return markdown;
+              }
+
               if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
                 return (
-                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;"> Modificado em: {docsify-updated} </code></div>\n\n '
-                  + html
+                  '<div style="overflow: auto;"><code style="' + pageNoticeStyle() + '"> Modificado em: {docsify-updated} </code></div>\n\n '
+                  + markdown
                 );
-              } else  if (vm.route && vm.route.path && vm.route.path.includes('es-mx')) {
+              } else if (vm.route && vm.route.path && vm.route.path.includes('es-mx')) {
                 return (
-                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;"> Modificado en: {docsify-updated} </code></div>\n\n '
-                  + html
+                  '<div style="overflow: auto;"><code style="' + pageNoticeStyle() + '"> Modificado en: {docsify-updated} </code></div>\n\n '
+                  + markdown
                 );
               } else {
                 return (
-                  '<div style="overflow: auto;"><code style="font-size: 0.7rem; opacity: 0.75; float: left; position: absolute; top: 1rem;"> Last modified: {docsify-updated} </code></div>\n\n '
-                  + html
+                  '<div style="overflow: auto;"><code style="' + pageNoticeStyle() + '"> Last modified: {docsify-updated} </code></div>\n\n '
+                  + markdown
                 );
               }
+            });
+
+            hook.afterEach(function(html) {
+              if (!isExternalContentPage) {
+                return html;
+              }
+
+              var label;
+              if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
+                label = 'Conteúdo externo incorporado nesta página';
+              } else if (vm.route && vm.route.path && vm.route.path.includes('es-mx')) {
+                label = 'Contenido externo incorporado en esta página';
+              } else {
+                label = 'External content is rendered on this page';
+              }
+
+              return (
+                '<div style="overflow: auto;"><code style="' + pageNoticeStyle() + '">' + label + '</code></div>\n\n '
+                + html
+              );
             });
           },
       ]
