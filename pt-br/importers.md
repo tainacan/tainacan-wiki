@@ -51,7 +51,11 @@ b. **“special_item_status”**: Informa o status do “Item”. Os valores pos
 
 ○ **“private”** (privado);
 
-○ **“publish”** (público).
+○ **“publish”** (público);
+
+○ **“pending”** (pendente);
+
+○ **“trash”** (lixo).
 
 c. **“special_document”**: permite que o usuário informe o documento do item. Consulte Importando arquivos e anexos;
 
@@ -282,13 +286,13 @@ Nome,Assunto|taxonomy|multiple|required,Número de Registro|numeric|required|col
 
 15. Uma vez terminado com sucesso o “processo de importação”, vá para a “coleção” destino da importação e revise se os “metadados”, “itens” e “valores” estão de acordo com o esperado.
 
-### Importar CSV de vocabulários (Taxonomias)
+## Importar CSV de vocabulários (Taxonomias)
 
 Este importador permite que usuários adicionem termos a uma “taxonomia”. Essa ferramenta é útil para a importação de “vocabulários controlados” para uma instalação do Tainacan.
 
 ---
 
-#### Como configurar o CSV
+### Como configurar o CSV
 
 O formato de arquivo para a “importação de vocabulários” é o “.csv - comma separated values” (valores separados por vírgula).
 
@@ -332,7 +336,7 @@ Term 3,Definition of term 3,,
 Term 4,Definition of term 4,,
 ```
 
-#### Enviar o CSV para o Tainacan
+### Enviar o CSV para o Tainacan
 
 Uma vez terminada a criação do seu arquivo “.csv” com os termos desejados, siga estes passos:
 
@@ -372,7 +376,7 @@ Uma vez terminada a criação do seu arquivo “.csv” com os termos desejados,
 
 10. Uma vez terminado com sucesso o “processo de importação do vocabulário”, vá para a seção de “Taxonomias” e revise se a “Taxonomia” e os “Termos” foram importados como o esperado.
 
-### Importador teste
+## Importador teste
 
 O “Importador teste” é uma ferramenta útil para usuários que desejam testar funcionalidades do Tainacan, seja para conhecer melhor do que ela é capaz, seja para seguir um roteiro de testes pré-lançamento. Com ele, podemos “criar coleções” com “itens”, “metadados” e “filtros” genéricos de maneira rápida.
 

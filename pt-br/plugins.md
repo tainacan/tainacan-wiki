@@ -4,7 +4,6 @@ O Tainacan é um _plugin_ para o _WordPress_, o que significa que ele incrementa
 
 ## Plugins Disponíveis
 
-- [Expositor PDF](/pt-br/plugin-pdf-exposer) (Beta) - Adiciona o expositor PDF, que permite visualizar listas de itens no formato PDF.
 - [Metadado Tipo URL](/pt-br/plugin-metadata-type-url) - Adiciona um tipo de metadado que aceita URLs e exibe uma versão incorporada ou em iframe do seu conteúdo.
 - [Modos de Visualização Extra](/pt-br/plugin-extra-view-modes) - Adiciona vários modos de visualização alternativos para a lista de itens.
 - [WordPress 3DHOP](/pt-br/plugin-3d-hop) (Beta) - Adiciona suporte a documentos com modelos 3D utilizando o [3D HOP](http://3dhop.net/);
