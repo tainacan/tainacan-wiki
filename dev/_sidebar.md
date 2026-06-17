@@ -42,4 +42,3 @@
 - Other development topics
   - [Contributing](/dev/CONTRIBUTING.md 'How to contribute with Tainacan Development - Tainacan Wiki')
   - [Release](/dev/release.md 'How to release a new version of Tainacan - Tainacan Wiki')
-  - [Another external documentation experiment](/dev/docs/README)

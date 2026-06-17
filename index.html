@@ -99,9 +99,12 @@
         '/': 'Skip to main content',
       },
       alias: {
-        // External tainacan/docs/*.md — under /dev/docs/ so the dev sidebar is used
-        '/dev/docs/(.+\\.md)': TAINACAN_DOCS_RAW_BASE + '$1',
-        '/dev/docs/(.+)': TAINACAN_DOCS_RAW_BASE + '$1.md',
+        // External tainacan/docs/* — wiki URLs under /dev/ map to the plugin docs folder
+        '/dev/_sidebar.md': TAINACAN_DOCS_RAW_BASE + '_sidebar.md',
+        '/dev/(.+\\.md)': TAINACAN_DOCS_RAW_BASE + '$1',
+        '/dev/(.+\\.json)': TAINACAN_DOCS_RAW_BASE + '$1',
+        '/dev/(.+\\.mmd)': TAINACAN_DOCS_RAW_BASE + '$1',
+        '/dev/(.+)': TAINACAN_DOCS_RAW_BASE + '$1.md',
       },
       plugins: [
           EditOnGithubPlugin.create(
@@ -122,7 +125,7 @@
 
             function isTainacanExternalDocsRoute() {
               var path = vm.route && vm.route.path;
-              return path && /^\/dev\/docs\//.test(path);
+              return path && /^\/dev(\/|$)/.test(path);
             }
 
             function pageNoticeStyle() {
