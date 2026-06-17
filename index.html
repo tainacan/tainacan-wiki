@@ -22,6 +22,7 @@
   </script>
   <script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
   <script>
+    // Switch to develop (or master) after the docs migration branch is merged.
     var TAINACAN_DOCS_BRANCH = '1047-bring-developer-documentation-to-the-code-repository';
     var TAINACAN_DOCS_RAW_BASE = 'https://raw.githubusercontent.com/tainacan/tainacan/refs/heads/'
       + TAINACAN_DOCS_BRANCH
@@ -114,6 +115,9 @@
       alias: {
         // External tainacan/docs/* — wiki URLs under /dev/ map to the plugin docs folder
         '/dev/_sidebar.md': TAINACAN_DOCS_RAW_BASE + '_sidebar.md',
+        '/dev/README.md': TAINACAN_DOCS_RAW_BASE + 'README.md',
+        '/dev/README': TAINACAN_DOCS_RAW_BASE + 'README.md',
+        '/dev/': TAINACAN_DOCS_RAW_BASE + 'README.md',
         '/dev/(.+\\.md)': TAINACAN_DOCS_RAW_BASE + '$1',
         '/dev/(.+\\.json)': TAINACAN_DOCS_RAW_BASE + '$1',
         '/dev/(.+\\.mmd)': TAINACAN_DOCS_RAW_BASE + '$1',
