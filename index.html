@@ -41,6 +41,46 @@
         );
     }
 
+    function getTainacanExternalDocPath(route) {
+      if (!route) {
+        return null;
+      }
+
+      var path = route.path;
+      if (path && /^\/dev(\/|$)/.test(path)) {
+        var docPath = path.replace(/^\/dev\/?/, '');
+        if (!docPath) {
+          return 'README.md';
+        }
+        if (!/\.\w+$/.test(docPath)) {
+          docPath += '.md';
+        }
+        return docPath;
+      }
+
+      var file = route.file || '';
+      var rawMatch = file.match(
+        /raw\.githubusercontent\.com\/tainacan\/tainacan\/refs\/heads\/[^/]+\/docs\/(.+)$/
+      );
+      if (rawMatch) {
+        return rawMatch[1];
+      }
+
+      return null;
+    }
+
+    function getTainacanExternalDocEditUrl(route) {
+      var docPath = getTainacanExternalDocPath(route);
+      if (!docPath) {
+        return null;
+      }
+
+      return 'https://github.com/tainacan/tainacan/edit/'
+        + TAINACAN_DOCS_BRANCH
+        + '/docs/'
+        + docPath;
+    }
+
     window.$docsify = {
       name: 'Tainacan Wiki',
       nameLink: {
@@ -142,22 +182,10 @@
               var originalEditDoc = EditOnGithubPlugin.editDoc;
 
               EditOnGithubPlugin.editDoc = function(event, vm) {
-                var file = vm.route && vm.route.file;
+                var editUrl = getTainacanExternalDocEditUrl(vm.route);
 
-                if (file && /^\/dev(\/|$)/.test(file)) {
-                  var docPath = file.replace(/^\/dev\//, '');
-                  if (!docPath) {
-                    docPath = 'README.md';
-                  } else if (!/\.\w+$/.test(docPath)) {
-                    docPath += '.md';
-                  }
-
-                  window.open(
-                    'https://github.com/tainacan/tainacan/edit/'
-                    + TAINACAN_DOCS_BRANCH
-                    + '/docs/'
-                    + docPath
-                  );
+                if (editUrl) {
+                  window.open(editUrl);
                   event.preventDefault();
                   return false;
                 }
