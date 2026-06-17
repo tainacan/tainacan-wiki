@@ -122,7 +122,7 @@
       plugins: [
           EditOnGithubPlugin.create(
             'https://github.com/tainacan/tainacan-wiki/blob/master/',
-            null,
+            'https://github.com/tainacan/tainacan-wiki/edit/master/',
             function(file) {
               if (file.indexOf('pt-br') >= 0) {
                 return 'Editar no Github'
@@ -133,6 +133,35 @@
               }
             }
           ),
+          function(hook) {
+            hook.init(function() {
+              var originalEditDoc = EditOnGithubPlugin.editDoc;
+
+              EditOnGithubPlugin.editDoc = function(event, vm) {
+                var file = vm.route && vm.route.file;
+
+                if (file && /^\/dev(\/|$)/.test(file)) {
+                  var docPath = file.replace(/^\/dev\//, '');
+                  if (!docPath) {
+                    docPath = 'README.md';
+                  } else if (!/\.\w+$/.test(docPath)) {
+                    docPath += '.md';
+                  }
+
+                  window.open(
+                    'https://github.com/tainacan/tainacan/edit/'
+                    + TAINACAN_DOCS_BRANCH
+                    + '/docs/'
+                    + docPath
+                  );
+                  event.preventDefault();
+                  return false;
+                }
+
+                return originalEditDoc(event, vm);
+              };
+            });
+          },
           function(hook, vm) {
             var isExternalContentPage = false;
 

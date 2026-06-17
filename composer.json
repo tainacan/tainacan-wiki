@@ -1,7 +1,0 @@
-{
-    "require-dev": {
-        "pronamic/wp-documentor": "^1.4",
-        "saggre/phpdocumentor-markdown": "^1.0.0",
-        "smeghead/php-class-diagram": "^1.3"
-    }
-}
