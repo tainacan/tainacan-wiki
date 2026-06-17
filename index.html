@@ -99,9 +99,12 @@
         '/': 'Skip to main content',
       },
       alias: {
-        // Paths already ending in .md (e.g. sidebar links to /docs/README.md)
+        // External tainacan/docs/*.md — under /dev/docs/ so the dev sidebar is used
+        '/dev/docs/(.+\\.md)': TAINACAN_DOCS_RAW_BASE + '$1',
+        '/dev/docs/(.+)': TAINACAN_DOCS_RAW_BASE + '$1.md',
+        // Legacy /docs/* paths (bookmarks); use dev sidebar instead of root
+        '/docs/_sidebar.md': '/dev/_sidebar.md',
         '/docs/(.+\\.md)': TAINACAN_DOCS_RAW_BASE + '$1',
-        // Paths without extension (e.g. hash route #/docs/README)
         '/docs/(.+)': TAINACAN_DOCS_RAW_BASE + '$1.md',
       },
       plugins: [
@@ -128,7 +131,7 @@
 
             function isTainacanExternalDocsRoute() {
               var path = vm.route && vm.route.path;
-              return path && /^\/docs\//.test(path);
+              return path && /^\/(dev\/)?docs\//.test(path);
             }
 
             function pageNoticeStyle() {
