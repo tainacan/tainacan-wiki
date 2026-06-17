@@ -27,6 +27,19 @@
       + TAINACAN_DOCS_BRANCH
       + '/docs/';
 
+    function rewriteTainacanExternalAssets(markdown) {
+      return markdown
+        .replace(/\]\(\.\/_assets\//g, '](' + TAINACAN_DOCS_RAW_BASE + '_assets/')
+        .replace(/\]\(_assets\//g, '](' + TAINACAN_DOCS_RAW_BASE + '_assets/')
+        .replace(/\]\(\/_assets\//g, '](' + TAINACAN_DOCS_RAW_BASE + '_assets/')
+        .replace(/href="\.\/_assets\//g, 'href="' + TAINACAN_DOCS_RAW_BASE + '_assets/')
+        .replace(/href="\/_assets\//g, 'href="' + TAINACAN_DOCS_RAW_BASE + '_assets/')
+        .replace(
+          /https:\/\/github\.com\/tainacan\/tainacan-wiki\/raw\/[^/]+\/dev\/_assets\//g,
+          TAINACAN_DOCS_RAW_BASE + '_assets/'
+        );
+    }
+
     window.$docsify = {
       name: 'Tainacan Wiki',
       nameLink: {
@@ -136,7 +149,7 @@
               isExternalContentPage = isTainacanExternalDocsRoute();
 
               if (isExternalContentPage) {
-                return markdown;
+                return rewriteTainacanExternalAssets(markdown);
               }
 
               if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
