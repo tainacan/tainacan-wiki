@@ -1,1 +1,0 @@
-[README](https://raw.githubusercontent.com/tainacan/tainacan/refs/heads/1047-bring-developer-documentation-to-the-code-repository/docs/README.md ':include')
