@@ -1,5 +1,7 @@
 <div style='opacity: 0.75; border-top: 1px dashed #9f9f9f; padding: 1rem 0;'>
 
+Este sitio utiliza [Google Analytics](https://analytics.google.com/) para recopilar estadísticas anónimas de uso. Consulte la [política de privacidad de Google](https://policies.google.com/privacy) para más información.
+
 Esta documentación fue producida con el apoyo de [Fundação Nacional de Artes](https://www.funarte.gov.br/) y el [Instituto Brasileiro de Museus](https://www.gov.br/museus/pt-br).
 
 ![Logo de FUNARTE](/_assets/images/logo_funarte.png ":size=200")

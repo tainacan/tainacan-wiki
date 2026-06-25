@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@^5.0.0-rc/dist/themes/core.min.css">
   <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
   <link rel="stylesheet" href="./style.css">
+  <!-- Google tag (gtag.js) - Tainacan Wiki -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-112XZYZTS5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // send_page_view: false — hash routing is handled manually via Docsify hooks
+    gtag('config', 'G-112XZYZTS5', { send_page_view: false });
+  </script>
 </head>
 <body class="loading sidebar-group-box sidebar-chevron-right sidebar-toggle-hamburger">
   <div id="app"></div>
@@ -164,6 +173,21 @@
         '/dev/(.+)': TAINACAN_DOCS_RAW_BASE + '$1.md',
       },
       plugins: [
+          function(hook) {
+            function trackPageView() {
+              if (typeof gtag !== 'function') {
+                return;
+              }
+
+              gtag('event', 'page_view', {
+                page_title: document.title,
+                page_location: window.location.href,
+                page_path: window.location.hash || '/'
+              });
+            }
+
+            hook.doneEach(trackPageView);
+          },
           EditOnGithubPlugin.create(
             'https://github.com/tainacan/tainacan-wiki/blob/master/',
             'https://github.com/tainacan/tainacan-wiki/edit/master/',
