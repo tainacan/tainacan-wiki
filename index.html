@@ -315,25 +315,28 @@
   <script src="https://unpkg.com/docsify-mermaid-zoom@3.0.0/dist/docsify-mermaid-zoom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
   <script>
-    // docsify-toc@1 still calls Docsify.dom.toggleClass, which v5 removed.
+    // docsify-toc@1 calls Docsify.dom.toggleClass, which v5 removed.
+    // v5's dom object is an ES module namespace (non-extensible), so patching
+    // the method in place is ignored. Replace it with a mutable copy.
     (function () {
-      var dom = window.Docsify && window.Docsify.dom;
-      if (!dom || typeof dom.toggleClass === 'function') {
+      var api = window.Docsify;
+      if (!api || !api.dom || typeof api.dom.toggleClass === 'function') {
         return;
       }
-      dom.toggleClass = function (el, action, className) {
-        if (!el || !el.classList || !className) {
+
+      api.dom = Object.assign({}, api.dom, {
+        toggleClass: function (el, action, className) {
+          if (!el || !el.classList) {
+            return el;
+          }
+          if (action === 'add' || action === 'remove') {
+            el.classList[action](className);
+          } else {
+            el.classList.toggle(action);
+          }
           return el;
         }
-        if (action === 'add') {
-          el.classList.add(className);
-        } else if (action === 'remove') {
-          el.classList.remove(className);
-        } else {
-          el.classList.toggle(className, action);
-        }
-        return el;
-      };
+      });
     })();
   </script>
   <script src="https://cdn.jsdelivr.net/npm/@alertbox/docsify-footer@1.0.0-0/dist/docsify-footer.min.js"></script>
