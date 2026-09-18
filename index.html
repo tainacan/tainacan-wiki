@@ -19,14 +19,24 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     // send_page_view: false — hash routing is handled manually via Docsify hooks
-    gtag('config', 'G-112XZYZTS5', { send_page_view: false });
+    // cookie_domain: github.io is on the Public Suffix List, so GA's default
+    // "auto" domain (.github.io) is rejected by the browser.
+    gtag('config', 'G-112XZYZTS5', {
+      send_page_view: false,
+      cookie_domain: window.location.hostname
+    });
   </script>
 </head>
 <body class="loading sidebar-group-box sidebar-chevron-right sidebar-toggle-hamburger">
   <div id="app"></div>
   <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
+    // No sw.js is shipped with this wiki. Unregister leftovers from older Docsify templates.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (registrations) {
+        registrations.forEach(function (registration) {
+          registration.unregister();
+        });
+      });
     }
   </script>
   <script src="https://unpkg.com/docsify-edit-on-github@1.0.3/index.js"></script>
@@ -304,6 +314,28 @@
   <script src="https://unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
   <script src="https://unpkg.com/docsify-mermaid-zoom@3.0.0/dist/docsify-mermaid-zoom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@5/dist/docsify.min.js"></script>
+  <script>
+    // docsify-toc@1 still calls Docsify.dom.toggleClass, which v5 removed.
+    (function () {
+      var dom = window.Docsify && window.Docsify.dom;
+      if (!dom || typeof dom.toggleClass === 'function') {
+        return;
+      }
+      dom.toggleClass = function (el, action, className) {
+        if (!el || !el.classList || !className) {
+          return el;
+        }
+        if (action === 'add') {
+          el.classList.add(className);
+        } else if (action === 'remove') {
+          el.classList.remove(className);
+        } else {
+          el.classList.toggle(className, action);
+        }
+        return el;
+      };
+    })();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/@alertbox/docsify-footer@1.0.0-0/dist/docsify-footer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@5/dist/plugins/zoom-image.min.js"></script>
   <script src="https://unpkg.com/docsify-copy-code@3.0.2/dist/docsify-copy-code.min.js"></script>
