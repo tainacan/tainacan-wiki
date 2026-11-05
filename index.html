@@ -60,6 +60,83 @@
         );
     }
 
+    // Links in tainacan/docs stay relative so they resolve when the file is
+    // read on GitHub. Docsify serves those files under /dev/ and resolves a
+    // relative link from the current route, so the same link misses the page.
+    // Rewrite them against the document being rendered. This runs only for the
+    // page body: the sidebar is compiled on its own and keeps absolute /dev/ links.
+    function rewriteTainacanExternalDocLinks(markdown, docPath) {
+      var directory = docPath.replace(/[^/]*$/, '');
+      var parts = markdown.split(/(```[\s\S]*?```)/g);
+
+      function shouldRewrite(url) {
+        var path = url.split('#')[0];
+        if (!path || path.charAt(0) === '/' || path.charAt(0) === '#') {
+          return false;
+        }
+        if (/^[a-z][a-z0-9+.-]*:/i.test(path)) {
+          return false;
+        }
+        if (path.indexOf('_assets/') !== -1) {
+          return false;
+        }
+        var first = path.replace(/^\.\//, '').split('/')[0];
+        if (first.indexOf('.') !== -1 && path.charAt(0) !== '.' && !/\.(md|json|mmd)$/i.test(path)) {
+          return false;
+        }
+        return true;
+      }
+
+      function toWikiUrl(url) {
+        var hash = '';
+        var path = url;
+        var hashAt = url.indexOf('#');
+        if (hashAt !== -1) {
+          path = url.slice(0, hashAt);
+          hash = url.slice(hashAt);
+        }
+
+        var segments = (directory + path).split('/');
+        var resolved = [];
+        var i;
+        for (i = 0; i < segments.length; i++) {
+          if (segments[i] === '' || segments[i] === '.') {
+            continue;
+          }
+          if (segments[i] === '..') {
+            resolved.pop();
+            continue;
+          }
+          resolved.push(segments[i]);
+        }
+        if (!resolved.length) {
+          return null;
+        }
+
+        var target = resolved.join('/');
+        if (!/\.[A-Za-z0-9]+$/.test(target)) {
+          target += '.md';
+        }
+        return '/dev/' + target + hash;
+      }
+
+      return parts.map(function (part, index) {
+        if (index % 2 === 1) {
+          return part;
+        }
+        return part.replace(/(!?)\[([^\]]*)\]\(([^)\s]+)([^)]*)\)/g, function (match, bang, label, url, rest) {
+          if (bang || !shouldRewrite(url)) {
+            return match;
+          }
+          var rewritten = toWikiUrl(url);
+          if (!rewritten) {
+            return match;
+          }
+          return '[' + label + '](' + rewritten + rest + ')';
+        });
+      }).join('');
+    }
+
     function getTainacanExternalDocPath(route) {
       if (!route) {
         return null;
@@ -244,7 +321,12 @@
               isExternalContentPage = isTainacanExternalDocsRoute();
 
               if (isExternalContentPage) {
-                return rewriteTainacanExternalAssets(markdown);
+                markdown = rewriteTainacanExternalAssets(markdown);
+                var docPath = getTainacanExternalDocPath(vm.route);
+                if (docPath) {
+                  markdown = rewriteTainacanExternalDocLinks(markdown, docPath);
+                }
+                return markdown;
               }
 
               if (vm.route && vm.route.path && vm.route.path.includes('pt-br')) {
